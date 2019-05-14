@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+	{{ $vals := .Site.Taxonomies.categories }}
+	{{ range $key, $val := $vals }}
+	<div class="col-4">
+	    <div class="card">
+		<div class="card-title"><h4>{{ $key }}</h4></div>
+		<div class="card-body">
+		    {{ range $val.Pages }}
+		    <a class="list-group-item list-group-item-action" href="{{ .Permalink }}">{{ .Title }}</a>
+		    {{ end }}
+		</div>
+	    </div> <!-- card -->
+	</div>
+	{{ end }}
+    </div> <!-- title row  -->
+</div>

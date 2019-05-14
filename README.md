@@ -1,2 +1,0 @@
-# rustyeddy.com
-My Website

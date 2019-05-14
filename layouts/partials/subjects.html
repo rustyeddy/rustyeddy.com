@@ -1,0 +1,20 @@
+<div class="row">
+    {{ range .Params.categories }}
+    <div class="col">
+	<div class="card">
+	    <div class="card-title">
+		<h3 class="text-center">{{ .Title }}</h3>
+	    </div>
+	    <div class="card-body">
+		<ul class="list-group-flush">
+		    {{ range .Pages }}
+		    <li class="list-group-item">
+			<a href="{{ .Permalink }}" class="card-link">{{ .Title }}</a>
+		    </li>
+		    {{ end }}
+		</ul>
+	    </div>
+	</div>
+    </div>
+    {{ end }}
+</div>
