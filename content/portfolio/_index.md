@@ -1,5 +1,5 @@
 ---
-title: Portfolio
+title: portfolio
 date: 2019-05-14
 description: >
   This portfolio consists of some projects I choose to highlight from

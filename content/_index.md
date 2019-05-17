@@ -1,5 +1,5 @@
 ---
-title: Rusty Eddy
+title: rusty eddy
 date: 2019-05-14
 description: >
   Software Engineer ~ Distributed Systems
