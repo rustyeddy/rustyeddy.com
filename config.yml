@@ -2,3 +2,4 @@ baseURL: http://rustyeddy.com
 languageCode: en-us
 title: Rusty Eddy
 languageCode: en-us
+publishDir: docs
