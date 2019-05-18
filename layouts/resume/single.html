@@ -1,0 +1,23 @@
+{{ define "job" }}
+<div class="row">
+    <div class="col-2">
+      <small class='text-muted'>
+        {{ .Date.Format "Jan 2, 2006" }}
+	{{ .Params.Begin }}
+	{{ .Params.End }}
+      </small>
+    </div>
+
+    <div class="col-8">
+      <h2>Content </h2>
+      {{ .Content }}
+    </div>
+
+    <div class="col-2">
+      <small class='text-muted'>
+	{{ .Params.Company }}
+	{{ .Params.Title }}
+      </small>
+    </div>
+</div>
+{{ end }}
