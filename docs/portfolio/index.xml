@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>ESP32 C&#43;&#43; LED Blinker</title>
+      <link>http://rustyeddy.com/portfolio/esp32-c&#43;&#43;-blink-program/</link>
+      <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/portfolio/esp32-c&#43;&#43;-blink-program/</guid>
+      <description>I wrote an LED C++ class to configure an ESP32 GPIO pin as a digital output, such that we can turn the LED on and off, by setting the voltage to pin HIGH, turn the LED off by setting pin to 0.
+The ESP32 esp-idf development software, built on top of FreeRTOS is a rich and powerful environment that is friendly to command line hackers, but certainly C-centric. However, C++ programs are just a couple small &amp;ldquo;bookeeping items&amp;rdquo; away from full Ojbect Oriented Programming!</description>
+    </item>
+    
+    <item>
       <title>Mobile Robot Project</title>
       <link>http://rustyeddy.com/portfolio/mobile-robot-project/</link>
       <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>

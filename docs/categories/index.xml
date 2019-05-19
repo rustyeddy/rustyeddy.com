@@ -11,11 +11,38 @@
     
     
     <item>
+      <title>Esp32</title>
+      <link>http://rustyeddy.com/categories/esp32/</link>
+      <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/categories/esp32/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Freertos</title>
+      <link>http://rustyeddy.com/categories/freertos/</link>
+      <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/categories/freertos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Resume</title>
       <link>http://rustyeddy.com/categories/resume/</link>
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/categories/resume/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software</title>
+      <link>http://rustyeddy.com/categories/software/</link>
+      <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/categories/software/</guid>
       <description></description>
     </item>
     
