@@ -17,22 +17,23 @@ embedded systems and physical computing.  I like working on hard
 problems with talented people.
 
 ### What are you into?
-I have particular interest in Autonomous Navigation algorithms,
- Computer Vision, Real Time communications and machine learning.
+I have a particular interest in autonomous navigation algorithms,
+ computer vision, real time communications and machine learning.
 
 ### What have you worked on in the past?
-Three decades and counting developing, debugging and supporting
-software and complex computer networks.  Design and implement and
-support industrial strength, production quality systems. 
+Three decades and counting developing, I have been debugging and
+supporting software and complex computer networks.  As well as design,
+implement and support industrial strength, production quality software
+systems.
 
 #### Can you give a couple examples?
 
-I have written three computer networking protocols from scratch with
-only an RFC (or Internet-draft).  Added _multicast routing_ to early
-versions of Linux, FreeBSD kernels and others.  Built robots that
-drive themselve and also connect to the cloud.
+I have also written three computer networking protocols from scratch
+with only an RFC (or Internet-draft).  Added _multicast routing_ to
+early versions of Linux, FreeBSD kernels and others.  And tons of
+other stuff.
 
-And tons of other stuff.  You can see more on my [portfolio](/portfolio)
+You can see more on my [portfolio](/portfolio)
 
 ### What did you learn or acquire during that time?
 
