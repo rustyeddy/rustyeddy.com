@@ -8,7 +8,7 @@ company: Cal State University
 jobtitle: Senior Software Engineer
 ---
 
-I was hired by the CSU-Challors office for a _"special"_ project, a
+I was hired by the CSU Chancellors Office for a _"special"_ project, a
 habit I seem to have gotten myself into regularly over the
 years. [read more]({{.Permalink}})
 <!--more-->
