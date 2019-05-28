@@ -3,221 +3,253 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://localhost:1313/resume/jobs/eddy-consulting/</loc>
+    <loc>http://rustyeddy.com/resume/jobs/eddy-consulting/</loc>
     <lastmod>2018-09-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/resume/edu/usc/</loc>
+    <loc>http://rustyeddy.com/resume/edu/usc/</loc>
     <lastmod>1996-01-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/resume/jobs/att/</loc>
+    <loc>http://rustyeddy.com/resume/jobs/att/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/resume/jobs/directv/</loc>
+    <loc>http://rustyeddy.com/resume/jobs/directv/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/resume/jobs/cisco-systems/</loc>
+    <loc>http://rustyeddy.com/resume/jobs/cisco-systems/</loc>
     <lastmod>2006-02-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/resume/edu/csulb/</loc>
+    <loc>http://rustyeddy.com/resume/edu/csulb/</loc>
     <lastmod>1996-01-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/resume/jobs/</loc>
+    <loc>http://rustyeddy.com/resume/jobs/</loc>
     <lastmod>2018-09-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/resume/jobs/usc-isi/</loc>
+    <loc>http://rustyeddy.com/resume/jobs/usc-isi/</loc>
     <lastmod>2018-09-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/resume/edu/</loc>
+    <loc>http://rustyeddy.com/resume/edu/</loc>
     <lastmod>2018-09-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/resume/education/</loc>
+    <loc>http://rustyeddy.com/resume/education/</loc>
     <lastmod>2018-09-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/resume/jobs/retix/</loc>
+    <loc>http://rustyeddy.com/resume/jobs/retix/</loc>
     <lastmod>1995-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/resume/jobs/rockwell/</loc>
+    <loc>http://rustyeddy.com/resume/jobs/rockwell/</loc>
     <lastmod>1994-01-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/resume/jobs/csu-chancelor/</loc>
+    <loc>http://rustyeddy.com/resume/jobs/csu-chancelor/</loc>
     <lastmod>1995-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/portfolio/esp32-c&#43;&#43;-blink-program/</loc>
+    <loc>http://rustyeddy.com/portfolio/esp32-c&#43;&#43;-blink-program/</loc>
     <lastmod>2019-05-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/portfolio/mobile-robot-project/</loc>
+    <loc>http://rustyeddy.com/portfolio/mobile-robot-project/</loc>
     <lastmod>2019-05-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/resume/</loc>
+    <loc>http://rustyeddy.com/resume/</loc>
     <lastmod>2019-05-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/portfolio/</loc>
+    <loc>http://rustyeddy.com/portfolio/</loc>
     <lastmod>2019-05-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://rustyeddy.com/</loc>
     <lastmod>2019-05-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/notes/</loc>
+    <loc>http://rustyeddy.com/notes/</loc>
     <lastmod>2019-05-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/portfolio/arduino-software/</loc>
+    <loc>http://rustyeddy.com/notes/streaming-video/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/notes/streaming-video-protocols/</loc>
+    <lastmod>2019-04-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/portfolio/arduino-software/</loc>
     <lastmod>2019-03-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/portfolio/flask-server-control-raspberry-pi-camera/</loc>
+    <loc>http://rustyeddy.com/portfolio/flask-server-control-raspberry-pi-camera/</loc>
     <lastmod>2019-02-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/resume/interests/</loc>
+    <loc>http://rustyeddy.com/resume/interests/</loc>
     <lastmod>2018-09-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/resume/pubs/</loc>
+    <loc>http://rustyeddy.com/resume/pubs/</loc>
     <lastmod>2018-09-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/resume/skills/</loc>
+    <loc>http://rustyeddy.com/resume/skills/</loc>
     <lastmod>2018-09-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/portfolio/otto-micro-server/</loc>
+    <loc>http://rustyeddy.com/portfolio/otto-micro-server/</loc>
     <lastmod>2018-09-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/resume/about/</loc>
+    <loc>http://rustyeddy.com/resume/about/</loc>
     <lastmod>2018-08-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/resume/contact/</loc>
+    <loc>http://rustyeddy.com/resume/contact/</loc>
     <lastmod>2018-02-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/portfolio/multicast-routing/</loc>
+    <loc>http://rustyeddy.com/portfolio/multicast-routing/</loc>
     <lastmod>2017-04-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/portfolio/software-defined-networking/</loc>
+    <loc>http://rustyeddy.com/portfolio/software-defined-networking/</loc>
     <lastmod>2014-06-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/portfolio/pkt-the-network-tester/</loc>
+    <loc>http://rustyeddy.com/portfolio/pkt-the-network-tester/</loc>
     <lastmod>2008-05-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/architect/</loc>
+    <loc>http://rustyeddy.com/notes/computer-vision-and-opencv/</loc>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/architect/</loc>
     <lastmod>2018-08-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://rustyeddy.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/contact/</loc>
+    <loc>http://rustyeddy.com/tags/contact/</loc>
     <lastmod>2018-02-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/developer/</loc>
+    <loc>http://rustyeddy.com/tags/developer/</loc>
     <lastmod>2018-08-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/engineer/</loc>
+    <loc>http://rustyeddy.com/tags/engineer/</loc>
     <lastmod>2018-08-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/esp32/</loc>
+    <loc>http://rustyeddy.com/categories/esp32/</loc>
     <lastmod>2019-05-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/freertos/</loc>
+    <loc>http://rustyeddy.com/categories/freertos/</loc>
     <lastmod>2019-05-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/resume/</loc>
+    <loc>http://rustyeddy.com/tags/h264/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/resume/</loc>
     <lastmod>2018-09-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/resume/</loc>
+    <loc>http://rustyeddy.com/categories/resume/</loc>
     <lastmod>2018-09-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/robots/</loc>
+    <loc>http://rustyeddy.com/tags/robots/</loc>
     <lastmod>2018-08-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/software/</loc>
+    <loc>http://rustyeddy.com/tags/rtsp/</loc>
+    <lastmod>2019-04-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/categories/software/</loc>
     <lastmod>2019-05-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://rustyeddy.com/tags/</loc>
     <lastmod>2018-08-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/categories/video/</loc>
+    <lastmod>2019-04-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

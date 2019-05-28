@@ -52,7 +52,8 @@ from my [resume](http://resume.rustyeddy.com) and
 [portfolio](http://portfolio.rustyeddy.com):
 
 - [resume at this link here](http://rustyeddy.com/resume)
-- [portfolio here](http://rustyeddy.com/portfolio)
+- [portfolio here](http://rustyeddy.com/portfolio
+)
 
 I have significant experience with, and interest in: embedded systems,
 real time communication, control systems, cloud automation,

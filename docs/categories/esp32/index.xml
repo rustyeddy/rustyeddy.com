@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Esp32 on Rusty Eddy</title>
-    <link>http://localhost:1313/categories/esp32/</link>
+    <link>http://rustyeddy.com/categories/esp32/</link>
     <description>Recent content in Esp32 on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 19 May 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/categories/esp32/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://rustyeddy.com/categories/esp32/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ESP32 C&#43;&#43; LED Blinker</title>
-      <link>http://localhost:1313/portfolio/esp32-c&#43;&#43;-blink-program/</link>
+      <link>http://rustyeddy.com/portfolio/esp32-c&#43;&#43;-blink-program/</link>
       <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/portfolio/esp32-c&#43;&#43;-blink-program/</guid>
+      <guid>http://rustyeddy.com/portfolio/esp32-c&#43;&#43;-blink-program/</guid>
       <description>I wrote an LED C++ class to configure an ESP32 GPIO pin as a digital output, such that we can turn the LED on and off, by setting the voltage to pin HIGH, turn the LED off by setting pin to 0.
 The ESP32 esp-idf development software, built on top of FreeRTOS is a rich and powerful environment that is friendly to command line hackers, but certainly C-centric. However, C++ programs are just a couple small &amp;ldquo;bookeeping items&amp;rdquo; away from full Ojbect Oriented Programming!</description>
     </item>

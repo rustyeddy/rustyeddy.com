@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>portfolio on Rusty Eddy</title>
-    <link>http://localhost:1313/portfolio/</link>
+    <link>http://rustyeddy.com/portfolio/</link>
     <description>Recent content in portfolio on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 14 May 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/portfolio/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://rustyeddy.com/portfolio/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ESP32 C&#43;&#43; LED Blinker</title>
-      <link>http://localhost:1313/portfolio/esp32-c&#43;&#43;-blink-program/</link>
+      <link>http://rustyeddy.com/portfolio/esp32-c&#43;&#43;-blink-program/</link>
       <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/portfolio/esp32-c&#43;&#43;-blink-program/</guid>
+      <guid>http://rustyeddy.com/portfolio/esp32-c&#43;&#43;-blink-program/</guid>
       <description>I wrote an LED C++ class to configure an ESP32 GPIO pin as a digital output, such that we can turn the LED on and off, by setting the voltage to pin HIGH, turn the LED off by setting pin to 0.
 The ESP32 esp-idf development software, built on top of FreeRTOS is a rich and powerful environment that is friendly to command line hackers, but certainly C-centric. However, C++ programs are just a couple small &amp;ldquo;bookeeping items&amp;rdquo; away from full Ojbect Oriented Programming!</description>
     </item>
     
     <item>
       <title>Mobile Robot Project</title>
-      <link>http://localhost:1313/portfolio/mobile-robot-project/</link>
+      <link>http://rustyeddy.com/portfolio/mobile-robot-project/</link>
       <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/portfolio/mobile-robot-project/</guid>
+      <guid>http://rustyeddy.com/portfolio/mobile-robot-project/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Arduino Software</title>
-      <link>http://localhost:1313/portfolio/arduino-software/</link>
+      <link>http://rustyeddy.com/portfolio/arduino-software/</link>
       <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/portfolio/arduino-software/</guid>
+      <guid>http://rustyeddy.com/portfolio/arduino-software/</guid>
       <description>&lt;p&gt;A repo full of C/C++ software that can control a ton of sensors,
 communication shieds and even more sophisticated chips. The sample
 code pointed to by the following link:&lt;/p&gt;</description>
@@ -43,47 +43,47 @@ code pointed to by the following link:&lt;/p&gt;</description>
     
     <item>
       <title>Flask Webapp Control Raspberry Pi Server</title>
-      <link>http://localhost:1313/portfolio/flask-server-control-raspberry-pi-camera/</link>
+      <link>http://rustyeddy.com/portfolio/flask-server-control-raspberry-pi-camera/</link>
       <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/portfolio/flask-server-control-raspberry-pi-camera/</guid>
+      <guid>http://rustyeddy.com/portfolio/flask-server-control-raspberry-pi-camera/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Otto the Pluggable Micro Server for Macro Controllers</title>
-      <link>http://localhost:1313/portfolio/otto-micro-server/</link>
+      <link>http://rustyeddy.com/portfolio/otto-micro-server/</link>
       <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/portfolio/otto-micro-server/</guid>
+      <guid>http://rustyeddy.com/portfolio/otto-micro-server/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Multicast Routing</title>
-      <link>http://localhost:1313/portfolio/multicast-routing/</link>
+      <link>http://rustyeddy.com/portfolio/multicast-routing/</link>
       <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/portfolio/multicast-routing/</guid>
+      <guid>http://rustyeddy.com/portfolio/multicast-routing/</guid>
       <description> Multicast Routing Multicast protocol design and development, as well as other protocols like BGP, OSPF,
  USC/ISI pimd, gated pim-ssm, BGMP (defunct), BGP and OSPF Cisco Systems Carrier Routing System (CRS) Technical Lead for the Multicast Team Green Hills RTOS kernel development enabling multicast routing  References  link to pimd dug up by XXXX link to Cisco CRS link to GateD / &amp;hellip;  </description>
     </item>
     
     <item>
       <title>Software Defined Networking Hybrid Controller</title>
-      <link>http://localhost:1313/portfolio/software-defined-networking/</link>
+      <link>http://rustyeddy.com/portfolio/software-defined-networking/</link>
       <pubDate>Sun, 22 Jun 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/portfolio/software-defined-networking/</guid>
+      <guid>http://rustyeddy.com/portfolio/software-defined-networking/</guid>
       <description></description>
     </item>
     
     <item>
       <title>pkt The Network Test Tool</title>
-      <link>http://localhost:1313/portfolio/pkt-the-network-tester/</link>
+      <link>http://rustyeddy.com/portfolio/pkt-the-network-tester/</link>
       <pubDate>Thu, 22 May 2008 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/portfolio/pkt-the-network-tester/</guid>
+      <guid>http://rustyeddy.com/portfolio/pkt-the-network-tester/</guid>
       <description></description>
     </item>
     

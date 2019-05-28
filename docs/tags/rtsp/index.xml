@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rtsp on Rusty Eddy</title>
+    <link>http://rustyeddy.com/tags/rtsp/</link>
+    <description>Recent content in Rtsp on Rusty Eddy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://rustyeddy.com/tags/rtsp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Streaming Video Protocols</title>
+      <link>http://rustyeddy.com/notes/streaming-video-protocols/</link>
+      <pubDate>Sun, 28 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/streaming-video-protocols/</guid>
+      <description>RTSP What it is and How to use it Real Time Streaming Protocol (RTSP)
+This test I used raspivid to vlc to stream from my Raspberry Pi Camera, I used the following command retrieved from here
+```bash % raspivid -o - -t 0 |cvlc -v stream:///dev/stdin &amp;ndash;sout &amp;lsquo;#rtp{sdp=rtsp://:8554/}&amp;rsquo; :demux=h264</description>
+    </item>
+    
+  </channel>
+</rss>
