@@ -46,10 +46,18 @@
             <a href="http://rustyeddy.com/notes/streaming-video-protocols/">Streaming Video Protocols</a>
         </div>
         <div class="col"></div>
-    </div> 
-    <div class="row">
-        <div class="col"></div>
-        <div class="col-8">
+    </div> <div class="row">
+    <div class="col"></div>
+    <div class="col-lg-6">
+	<article class="article">
+	    
+
+<h2 id="rtp-real-time-protocol">RTP ~ Real Time Protocol</h2>
+
+<p>Actually holds payloads containing arbitrary, but time/delay sensitive
+media (audio, video, live conversations, etc).  Incorporates enough
+controls to allow for network congestion, reciever compensation and
+more.</p>
 
 <h2 id="rtsp-what-it-is-and-how-to-use-it">RTSP What it is and How to use it</h2>
 
@@ -59,11 +67,43 @@
 Camera, I used the following command retrieved from
 <a href="http://www.mybigideas.co.uk/RPi/RPiCamera/">here</a></p>
 
-<p>```bash
-% raspivid -o - -t 0 |cvlc -v stream:///dev/stdin &ndash;sout &lsquo;#rtp{sdp=rtsp://:8554/}&rsquo; :demux=h264</p>
+<pre><code class="language-bash">% raspivid -o - -t 0 |cvlc -v stream:///dev/stdin --sout '#rtp{sdp=rtsp://:8554/}' :demux=h264
+</code></pre>
+
+<p>With this, I ran the <em>vlc</em> on a Macbook Pro, I ran the vlc client and
+opened the following network connection:</p>
+
+<blockquote>
+<p>rtsp://10.24.2.10:8554/</p>
+</blockquote>
+
+<p>I was able to see the video just fine, however performance sluggish.
+I tried running VLC on my <a href="http://todo">Jetson nano</a>, it just
+crashed.  So much for that..</p>
+
+<p>My goal is not to figure out why VLC is crashing, rather to get low
+delay, glitch free video with as good quality as possble.  The high
+definition channel will be sent to the Webapp for live display,
+primarily for Human consumption.</p>
+
+<blockquote>
+<p>Need to identify the optimal real time video transport for a mobile
+vehicle.</p>
+</blockquote>
+
+<h2 id="hls-apple-centric-solution-transport">HLS - Apple Centric Solution Transport</h2>
+
+<p>As of now, I am under the impression that HLS is heavily Apple
+centric, and perhaps not the best open, &ldquo;agnostic&rdquo; solution.</p>
+
+<blockquote>
+<p>Todo: update my understanding of this.</p>
+</blockquote>
+
+	</article>
+    </div>
+    <div class="col"></div>
 </div>
-        <div class="col"></div>
-    </div> 
 </div>
 
     </div><footer id="footer" class="container mb-5 pb-5">

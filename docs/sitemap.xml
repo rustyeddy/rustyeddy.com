@@ -106,6 +106,11 @@
   </url>
   
   <url>
+    <loc>http://rustyeddy.com/notes/raspberry-pi-camera-multiple-ports/</loc>
+    <lastmod>2019-04-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://rustyeddy.com/portfolio/arduino-software/</loc>
     <lastmod>2019-03-22T00:00:00+00:00</lastmod>
   </url>
@@ -161,10 +166,6 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/notes/computer-vision-and-opencv/</loc>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/tags/architect/</loc>
     <lastmod>2018-08-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -208,6 +209,18 @@
   <url>
     <loc>http://rustyeddy.com/tags/h264/</loc>
     <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/picamera/</loc>
+    <lastmod>2019-04-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/raspberry-pi/</loc>
+    <lastmod>2019-04-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

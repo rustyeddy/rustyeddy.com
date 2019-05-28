@@ -31,7 +31,8 @@
 	<div class="col-md-6">
 	    <h1 class="text-center header h3 pb-1">Streaming Video is Complicated</h1>
 	    <h5 class="leadin text-center text-muted mt-0">
-		
+		One of the primary requirements of my Mobile Robot project is the ability to stream live or _realtime_ video while the vehicle roams about.  This turned out to be more complicated than I expected
+
 	    </h5>
 	</div>
 	<div class="col"></div>
@@ -45,10 +46,11 @@
             <a href="http://rustyeddy.com/notes/streaming-video/">Streaming Video is Complicated</a>
         </div>
         <div class="col"></div>
-    </div> 
-    <div class="row">
-        <div class="col"></div>
-        <div class="col-8">
+    </div> <div class="row">
+    <div class="col"></div>
+    <div class="col-lg-6">
+	<article class="article">
+	    
 
 <p>I need to stream live video from a moving vehical with a connected
 camera and a possibly connected wifi.</p>
@@ -125,41 +127,10 @@ camera, yet is capable of producing high quality images.  Even better,
 it is very <em>programmable</em> and is capable of producing filtered
 versions of the video it is producing.</p>
 
-<h3 id="raspberry-picamera-and-video">Raspberry PiCamera and Video</h3>
-
-<ul>
-<li><p>The live video stream(s) will potentially be recieved by more than
-one consumer: including but not limited to:</p>
-
-<ul>
-<li>Live streaming High Def video watch while the rover is roaming about</li>
-<li>OpenCV module to run Computer Vision algorighms</li>
-<li>Cloud storage for future replay</li>
-<li>Snapshots can be produced or pulled from vide
-<br /></li>
-</ul></li>
-
-<li><p>The Raspberry Pi Camera has multiple ports</p>
-
-<ul>
-<li>Video Ports (defaults):</li>
-<li>Port 0 for high res, slow, mildly distruptive snapshots (capture)</li>
-
-<li><p>Port 1 standard for video High Def video recording (1024, 768,
-1240, 1080), etc</p></li>
-
-<li><p>Additional ports</p></li>
-
-<li><p>Port 2 lowdef low frames fed to OpenCV</p></li>
-
-<li><p>Port 3 lowres capture triggered by events</p></li>
-</ul></li>
-
-<li><p>There are many standards and ways to do things</p></li>
-</ul>
+	</article>
+    </div>
+    <div class="col"></div>
 </div>
-        <div class="col"></div>
-    </div> 
 </div>
 
     </div><footer id="footer" class="container mb-5 pb-5">

@@ -13,6 +13,13 @@ tags:
   - rtsp
 ---
 
+## RTP ~ Real Time Protocol
+
+Actually holds payloads containing arbitrary, but time/delay sensitive
+media (audio, video, live conversations, etc).  Incorporates enough
+controls to allow for network congestion, reciever compensation and
+more. 
+
 ## RTSP What it is and How to use it
 
 **Real Time Streaming Protocol (RTSP)** 
@@ -24,3 +31,28 @@ Camera, I used the following command retrieved from
 
 ```bash
 % raspivid -o - -t 0 |cvlc -v stream:///dev/stdin --sout '#rtp{sdp=rtsp://:8554/}' :demux=h264
+```
+
+With this, I ran the _vlc_ on a Macbook Pro, I ran the vlc client and
+opened the following network connection:
+
+> rtsp://10.24.2.10:8554/
+
+I was able to see the video just fine, however performance sluggish.
+I tried running VLC on my [Jetson nano](http://todo), it just
+crashed.  So much for that..
+
+My goal is not to figure out why VLC is crashing, rather to get low
+delay, glitch free video with as good quality as possble.  The high
+definition channel will be sent to the Webapp for live display,
+primarily for Human consumption.
+
+> Need to identify the optimal real time video transport for a mobile
+> vehicle. 
+
+## HLS - Apple Centric Solution Transport
+
+As of now, I am under the impression that HLS is heavily Apple
+centric, and perhaps not the best open, "agnostic" solution.
+
+> Todo: update my understanding of this.

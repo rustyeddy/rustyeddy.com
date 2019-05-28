@@ -1,6 +1,6 @@
 ---
 title: Streaming Video is Complicated
-descrition: >
+description: >
   One of the primary requirements of my Mobile Robot project is the
   ability to stream live or _realtime_ video while the vehicle roams
   about.  This turned out to be more complicated than I expected
@@ -81,25 +81,4 @@ camera, yet is capable of producing high quality images.  Even better,
 it is very _programmable_ and is capable of producing filtered
 versions of the video it is producing.
 
-### Raspberry PiCamera and Video
-
-- The live video stream(s) will potentially be recieved by more than
-  one consumer: including but not limited to:
-
-  - Live streaming High Def video watch while the rover is roaming about
-  - OpenCV module to run Computer Vision algorighms
-  - Cloud storage for future replay
-  - Snapshots can be produced or pulled from vide
-  
-- The Raspberry Pi Camera has multiple ports
-  - Video Ports (defaults):
-    - Port 0 for high res, slow, mildly distruptive snapshots (capture)
-    - Port 1 standard for video High Def video recording (1024, 768,
-    1240, 1080), etc
-
-  - Additional ports
-    - Port 2 lowdef low frames fed to OpenCV
-	- Port 3 lowres capture triggered by events
-
-- There are many standards and ways to do things
 
