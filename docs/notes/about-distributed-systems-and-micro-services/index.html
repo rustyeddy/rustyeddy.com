@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="/style.css">
 
 
-<title>Streaming Video Protocols</title>
+<title>About MicroServices and Distributed Systems</title>
 <body><header class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
 	<a class="navbar-brand text-muted text-monospace" href="/">rusty eddy</a>
@@ -29,9 +29,9 @@
     <div class="row">
 	<div class="col"></div>
 	<div class="col-md-6">
-	    <h1 class="text-center header h3 pb-1">Streaming Video Protocols</h1>
+	    <h1 class="text-center header h3 pb-1">About MicroServices and Distributed Systems</h1>
 	    <h5 class="leadin text-center text-muted mt-0">
-		This is a hard one for me to wrap my head around.  I&#39;m a networking guy, and the number of options for wraping and unwraping video streams as they are being moved about is mind boggling, let us try to make some sense of it here
+		I am very much in favor of micro-service style architectures with builds service pipelines based on lean and efficient software components, rather than obese frameworks trying to be something they are not.  Here is what I mean:
 
 	    </h5>
 	</div>
@@ -43,7 +43,7 @@
     <div class="row">
         <div class="col"></div>
         <div class="col-8">
-            <a href="http://rustyeddy.com/notes/streaming-video-protocols/">Streaming Video Protocols</a>
+            <a href="http://rustyeddy.com/notes/about-distributed-systems-and-micro-services/">About MicroServices and Distributed Systems</a>
         </div>
         <div class="col"></div>
     </div> <div class="row">
@@ -52,64 +52,27 @@
 	<article class="article">
 	    
 
-<h2 id="rtp-real-time-protocol">RTP ~ Real Time Protocol</h2>
+<p>I am very much dedicated to building distributed, micro-service style
+systems. I prefer to piece solutions together based on lean,
+efficient, best of breed components.</p>
 
-<p>Actually holds payloads containing arbitrary, but time/delay sensitive
-media (audio, video, live conversations, etc).  Incorporates enough
-controls to allow for network congestion, reciever compensation and
-more.</p>
+<h2 id="more-complex">More Complex?</h2>
 
-<h2 id="rtsp-what-it-is-and-how-to-use-it">RTSP What it is and How to use it</h2>
+<p>Many rightly claim that a distributed system increases the complexity
+over the monolith, and it is true that communicaiton boundaries must
+be explicitly created, and that communications between the boundarys
+becomes a potential for failure, or reduced reliability that tightly
+couple systems do not have to deal with.</p>
 
-<p><strong>Real Time Streaming Protocol (RTSP)</strong></p>
+<p>This is true.  However, if done with care and an eye toward simplicity
+and robustness, a team can start developing patterns that are mandated
+according to the driving force of the application they are developing.</p>
 
-<p>General consensus says that RTSP is a good choice for low latency,
-local area networks.</p>
-
-<blockquote>
-<p>RTSP good for Local Low Latency, Bad for Internet</p>
-</blockquote>
-
-<p>This test I used <em>raspivid</em> to <em>vlc</em> to stream from my Raspberry Pi
-Camera, I used the following command retrieved from
-<a href="http://www.mybigideas.co.uk/RPi/RPiCamera/">here</a></p>
-
-<p><a href="https://gstconf.ubicast.tv/videos/latest-gstreamer-rtsp-server-features/">Video describing the use of gst-rtsp-server</a></p>
-
-<pre><code class="language-bash">% raspivid -o - -t 0 |cvlc -v stream:///dev/stdin --sout '#rtp{sdp=rtsp://:8554/}' :demux=h264
-</code></pre>
-
-<p>With this, I ran the <em>vlc</em> on a Macbook Pro, I ran the vlc client and
-opened the following network connection:</p>
-
-<blockquote>
-<p>rtsp://10.24.2.10:8554/</p>
-</blockquote>
-
-<p>I was able to see the video just fine, however performance sluggish.
-I tried running VLC on my <a href="http://todo">Jetson nano</a>, it just
-crashed.  So much for that..</p>
-
-<p>My goal is not to figure out why VLC is crashing, rather to get low
-delay, glitch free video with as good quality as possble.  The high
-definition channel will be sent to the Webapp for live display,
-primarily for Human consumption.</p>
-
-<blockquote>
-<p>Need to identify the optimal real time video transport for a mobile
-vehicle.</p>
-</blockquote>
-
-<h2 id="hls-apple-centric-solution-transport">HLS - Apple Centric Solution Transport</h2>
-
-<p>As of now, I am under the impression that HLS is heavily Apple
-centric, and perhaps not the best open, &ldquo;agnostic&rdquo; solution.</p>
-
-<blockquote>
-<p>Todo: update my understanding of this.</p>
-</blockquote>
-
-<h2 id="mpeg-dash">MPEG DASH</h2>
+<p>In otherwords, distributed systems force an explicit definition
+between APIs of subsystems.  That easily translates into communication
+busses that can be <em>snooped</em> or <em>mocked</em> to significantly enhance, and
+speed up both, finding and resolving bugs as well as making it
+significantly easier to create comprehensive tests.</p>
 
 	</article>
     </div>

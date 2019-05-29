@@ -24,9 +24,16 @@ more.
 
 **Real Time Streaming Protocol (RTSP)** 
 
+General consensus says that RTSP is a good choice for low latency,
+local area networks.
+
+> RTSP good for Local Low Latency, Bad for Internet
+
 This test I used _raspivid_ to _vlc_ to stream from my Raspberry Pi
 Camera, I used the following command retrieved from
 [here](http://www.mybigideas.co.uk/RPi/RPiCamera/)
+
+[Video describing the use of gst-rtsp-server](https://gstconf.ubicast.tv/videos/latest-gstreamer-rtsp-server-features/)
 
 
 ```bash
@@ -56,3 +63,7 @@ As of now, I am under the impression that HLS is heavily Apple
 centric, and perhaps not the best open, "agnostic" solution.
 
 > Todo: update my understanding of this.
+
+
+## MPEG DASH
+

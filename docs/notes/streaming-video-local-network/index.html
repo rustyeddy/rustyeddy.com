@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="/style.css">
 
 
-<title>Streaming Video Protocols</title>
+<title>Streaming Live Video on a Local Lan Vs. Internet</title>
 <body><header class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
 	<a class="navbar-brand text-muted text-monospace" href="/">rusty eddy</a>
@@ -29,9 +29,9 @@
     <div class="row">
 	<div class="col"></div>
 	<div class="col-md-6">
-	    <h1 class="text-center header h3 pb-1">Streaming Video Protocols</h1>
+	    <h1 class="text-center header h3 pb-1">Streaming Live Video on a Local Lan Vs. Internet</h1>
 	    <h5 class="leadin text-center text-muted mt-0">
-		This is a hard one for me to wrap my head around.  I&#39;m a networking guy, and the number of options for wraping and unwraping video streams as they are being moved about is mind boggling, let us try to make some sense of it here
+		Streaming video over a local LAN in real time, where say OpenCV is making realtime steering decisions, is surprisingly different than streaming live video chat over the Internet, find out why.
 
 	    </h5>
 	</div>
@@ -43,7 +43,7 @@
     <div class="row">
         <div class="col"></div>
         <div class="col-8">
-            <a href="http://rustyeddy.com/notes/streaming-video-protocols/">Streaming Video Protocols</a>
+            <a href="http://rustyeddy.com/notes/streaming-video-local-network/">Streaming Live Video on a Local Lan Vs. Internet</a>
         </div>
         <div class="col"></div>
     </div> <div class="row">
@@ -52,64 +52,55 @@
 	<article class="article">
 	    
 
-<h2 id="rtp-real-time-protocol">RTP ~ Real Time Protocol</h2>
+<p>Peter,</p>
 
-<p>Actually holds payloads containing arbitrary, but time/delay sensitive
-media (audio, video, live conversations, etc).  Incorporates enough
-controls to allow for network congestion, reciever compensation and
-more.</p>
+<p>Thank you for the feedback!  The AWS Orchestration part makes
+perfectly good sense.</p>
 
-<h2 id="rtsp-what-it-is-and-how-to-use-it">RTSP What it is and How to use it</h2>
+<p>RTSP is a good option for streaming video in a local setup up, where
+minimal delay is the highest priority.  However, RTSP does not
+typically do very well over the Internet due to the nature of
+RTP/UDP.</p>
 
-<p><strong>Real Time Streaming Protocol (RTSP)</strong></p>
+<p>Which brings up another question: will there be more than once
+transmitter/reciever per office (which RTSP could serve well).</p>
 
-<p>General consensus says that RTSP is a good choice for low latency,
-local area networks.</p>
+<p>In recent years people would use RTMP to stream video over the
+Internet, by adding a plguin to NGINX, each camera would
+stream to NGINX, NGINX then create the endpoints for the video,
+waiting for client connections to start recieving the video.</p>
 
-<blockquote>
-<p>RTSP good for Local Low Latency, Bad for Internet</p>
-</blockquote>
+<p>Nowadays MPEG-DASH over HTTP is building popularity, MPEG-DASH (taking
+over popularity from MJPEG) is an Open Protocol supported by most
+browswers including Chrome, but may be lagging with Safari.</p>
 
-<p>This test I used <em>raspivid</em> to <em>vlc</em> to stream from my Raspberry Pi
-Camera, I used the following command retrieved from
-<a href="http://www.mybigideas.co.uk/RPi/RPiCamera/">here</a></p>
+<p>I am happy to set up a PoC with both RTSP and HTTP serving MPEG-DASH
+from Raspberry Pis.  For generating video, I&rsquo;ll be using gstreamer
+most likely to transmit the Raspberry Pi Video.</p>
 
-<p><a href="https://gstconf.ubicast.tv/videos/latest-gstreamer-rtsp-server-features/">Video describing the use of gst-rtsp-server</a></p>
+<p>I can write up an architecture document with a bit more detail..</p>
 
-<pre><code class="language-bash">% raspivid -o - -t 0 |cvlc -v stream:///dev/stdin --sout '#rtp{sdp=rtsp://:8554/}' :demux=h264
-</code></pre>
+<p>What are your thoughts?</p>
 
-<p>With this, I ran the <em>vlc</em> on a Macbook Pro, I ran the vlc client and
-opened the following network connection:</p>
+<p>Video on a LAN required for Real Time control decisions, whether it is
+OpenCV churning through images while spitting out data used by <em>magoo</em>
+the guidance module.</p>
 
-<blockquote>
-<p>rtsp://10.24.2.10:8554/</p>
-</blockquote>
+<p>Low latency is and a non-glitchy video stream are imparative to
+driving a high speed vehicle correctly. This is true even when the
+vehicle is being controlled by a human with a joystick.</p>
 
-<p>I was able to see the video just fine, however performance sluggish.
-I tried running VLC on my <a href="http://todo">Jetson nano</a>, it just
-crashed.  So much for that..</p>
+<p>A half second delay in video translates to about 43.5 foot different
+in where the vehicle is vs. where it appears to be, or if the we have
+a .5 second drop in video, we will have &ldquo;jump&rdquo; that 43.5 feet.</p>
 
-<p>My goal is not to figure out why VLC is crashing, rather to get low
-delay, glitch free video with as good quality as possble.  The high
-definition channel will be sent to the Webapp for live display,
-primarily for Human consumption.</p>
+<p>This makes safe navigation of a high speed vehicle unsafe, whether it
+is being drivin by human or algorithm.</p>
 
-<blockquote>
-<p>Need to identify the optimal real time video transport for a mobile
-vehicle.</p>
-</blockquote>
+<h2 id="video-over-the-internet">Video Over the Internet</h2>
 
-<h2 id="hls-apple-centric-solution-transport">HLS - Apple Centric Solution Transport</h2>
-
-<p>As of now, I am under the impression that HLS is heavily Apple
-centric, and perhaps not the best open, &ldquo;agnostic&rdquo; solution.</p>
-
-<blockquote>
-<p>Todo: update my understanding of this.</p>
-</blockquote>
-
-<h2 id="mpeg-dash">MPEG DASH</h2>
+<p>Delay is inevetible. You are crossing unknown links and firewalls.
+Must wrap it all up under HTTP to make things the easiest.</p>
 
 	</article>
     </div>

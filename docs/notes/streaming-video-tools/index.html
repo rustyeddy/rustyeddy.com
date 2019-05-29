@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="/style.css">
 
 
-<title>Streaming Video Protocols</title>
+<title>Streaming Video Tools</title>
 <body><header class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
 	<a class="navbar-brand text-muted text-monospace" href="/">rusty eddy</a>
@@ -29,9 +29,9 @@
     <div class="row">
 	<div class="col"></div>
 	<div class="col-md-6">
-	    <h1 class="text-center header h3 pb-1">Streaming Video Protocols</h1>
+	    <h1 class="text-center header h3 pb-1">Streaming Video Tools</h1>
 	    <h5 class="leadin text-center text-muted mt-0">
-		This is a hard one for me to wrap my head around.  I&#39;m a networking guy, and the number of options for wraping and unwraping video streams as they are being moved about is mind boggling, let us try to make some sense of it here
+		The number of fantastic, but complex tools available for streaming is mind boggling, these are notes I started gathering as I worked through the redeye project.
 
 	    </h5>
 	</div>
@@ -43,73 +43,57 @@
     <div class="row">
         <div class="col"></div>
         <div class="col-8">
-            <a href="http://rustyeddy.com/notes/streaming-video-protocols/">Streaming Video Protocols</a>
+            <a href="http://rustyeddy.com/notes/streaming-video-tools/">Streaming Video Tools</a>
         </div>
         <div class="col"></div>
     </div> <div class="row">
     <div class="col"></div>
     <div class="col-lg-6">
 	<article class="article">
-	    
+	    <p>The grandparents of streaming video, and snapshots, read, writing
+and transcoding video and single frame images are <em>ffmpeg</em>, <em>vlc</em> and
+<em>gstreamer</em>.</p>
 
-<h2 id="rtp-real-time-protocol">RTP ~ Real Time Protocol</h2>
-
-<p>Actually holds payloads containing arbitrary, but time/delay sensitive
-media (audio, video, live conversations, etc).  Incorporates enough
-controls to allow for network congestion, reciever compensation and
-more.</p>
-
-<h2 id="rtsp-what-it-is-and-how-to-use-it">RTSP What it is and How to use it</h2>
-
-<p><strong>Real Time Streaming Protocol (RTSP)</strong></p>
-
-<p>General consensus says that RTSP is a good choice for low latency,
-local area networks.</p>
+<p>Other platforms, such as the wildly cool and inexpensive Raspberry Pi
+and attached CSI Camera (Raspberry Pi Camera) have thier own set of
+utilities: like raspivid.  Or the NVidia Nano with it&rsquo;s gst-streamer
+plugins and nvgst-capture/nvgst-playback utilies.</p>
 
 <blockquote>
-<p>RTSP good for Local Low Latency, Bad for Internet</p>
+<p>This writting is as of March 2019</p>
 </blockquote>
 
-<p>This test I used <em>raspivid</em> to <em>vlc</em> to stream from my Raspberry Pi
-Camera, I used the following command retrieved from
-<a href="http://www.mybigideas.co.uk/RPi/RPiCamera/">here</a></p>
+<p><strong>VLC</strong> less Complex than the Rest, and still in heavy use today.
+<a href="http://videolan.org">Videolan</a></p>
 
-<p><a href="https://gstconf.ubicast.tv/videos/latest-gstreamer-rtsp-server-features/">Video describing the use of gst-rtsp-server</a></p>
+<p><strong>FFMPEG</strong> flexible, complex long command line, also in use today but
+maybe loosing steam?  Maybe not?</p>
 
-<pre><code class="language-bash">% raspivid -o - -t 0 |cvlc -v stream:///dev/stdin --sout '#rtp{sdp=rtsp://:8554/}' :demux=h264
-</code></pre>
+<p>A very well written article <a href="https://isrv.pw/html5-live-streaming-with-mpeg-dash">about streaming video over the
+internet</a> states
+that he saw FFMPEG hit limits scaling his video beyond a
+medium-quality stream.</p>
 
-<p>With this, I ran the <em>vlc</em> on a Macbook Pro, I ran the vlc client and
-opened the following network connection:</p>
+<p>I was not even considering FFMPEG, since I already sided with
+gstreamer, or a home rolled solution if I really had to.  &ldquo;Had to&rdquo;
+meaning, that I could avoid installing some gigantic infra-struct type
+of system.</p>
 
-<blockquote>
-<p>rtsp://10.24.2.10:8554/</p>
-</blockquote>
+<p>I am very much dedicated to building distributed, micro-service style
+systems. I prefer to piece solutions together based on lean,
+efficient, best of breed components.</p>
 
-<p>I was able to see the video just fine, however performance sluggish.
-I tried running VLC on my <a href="http://todo">Jetson nano</a>, it just
-crashed.  So much for that..</p>
+<ul>
+<li>Allows simultaneous transmission of different resolutions / bitrates.</li>
+</ul>
 
-<p>My goal is not to figure out why VLC is crashing, rather to get low
-delay, glitch free video with as good quality as possble.  The high
-definition channel will be sent to the Webapp for live display,
-primarily for Human consumption.</p>
+<p><strong>GStreamer</strong> really complex pipelines but insanely flexible.</p>
 
-<blockquote>
-<p>Need to identify the optimal real time video transport for a mobile
-vehicle.</p>
-</blockquote>
-
-<h2 id="hls-apple-centric-solution-transport">HLS - Apple Centric Solution Transport</h2>
-
-<p>As of now, I am under the impression that HLS is heavily Apple
-centric, and perhaps not the best open, &ldquo;agnostic&rdquo; solution.</p>
-
-<blockquote>
-<p>Todo: update my understanding of this.</p>
-</blockquote>
-
-<h2 id="mpeg-dash">MPEG DASH</h2>
+<ul>
+<li>Allows tees to process more than one outgoing stream</li>
+<li>Can be &ldquo;easy&rdquo; to extend do to flexible pipelines</li>
+<li>used by nvidia to support it&rsquo;s proprietary drivers</li>
+</ul>
 
 	</article>
     </div>

@@ -106,6 +106,11 @@
   </url>
   
   <url>
+    <loc>http://rustyeddy.com/notes/streaming-video-tools/</loc>
+    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://rustyeddy.com/notes/raspberry-pi-camera-multiple-ports/</loc>
     <lastmod>2019-04-21T00:00:00+00:00</lastmod>
   </url>
@@ -118,6 +123,11 @@
   <url>
     <loc>http://rustyeddy.com/portfolio/flask-server-control-raspberry-pi-camera/</loc>
     <lastmod>2019-02-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/notes/streaming-video-local-network/</loc>
+    <lastmod>2018-12-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -143,6 +153,11 @@
   <url>
     <loc>http://rustyeddy.com/resume/about/</loc>
     <lastmod>2018-08-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/notes/about-distributed-systems-and-micro-services/</loc>
+    <lastmod>2018-02-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -201,8 +216,20 @@
   </url>
   
   <url>
+    <loc>http://rustyeddy.com/tags/ffmpeg/</loc>
+    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://rustyeddy.com/categories/freertos/</loc>
     <lastmod>2019-05-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/gstreamer/</loc>
+    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -263,6 +290,12 @@
   <url>
     <loc>http://rustyeddy.com/categories/video/</loc>
     <lastmod>2019-04-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/vlc/</loc>
+    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

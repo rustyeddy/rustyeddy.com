@@ -19,8 +19,8 @@
       <guid>http://rustyeddy.com/notes/streaming-video-protocols/</guid>
       <description>RTP ~ Real Time Protocol Actually holds payloads containing arbitrary, but time/delay sensitive media (audio, video, live conversations, etc). Incorporates enough controls to allow for network congestion, reciever compensation and more.
 RTSP What it is and How to use it Real Time Streaming Protocol (RTSP)
-This test I used raspivid to vlc to stream from my Raspberry Pi Camera, I used the following command retrieved from here
-% raspivid -o - -t 0 |cvlc -v stream:///dev/stdin --sout &#39;#rtp{sdp=rtsp://:8554/}&#39; :demux=h264  With this, I ran the vlc on a Macbook Pro, I ran the vlc client and opened the following network connection:</description>
+General consensus says that RTSP is a good choice for low latency, local area networks.
+ RTSP good for Local Low Latency, Bad for Internet</description>
     </item>
     
     <item>

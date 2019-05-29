@@ -48,6 +48,24 @@
     </item>
     
     <item>
+      <title>Ffmpeg</title>
+      <link>http://rustyeddy.com/tags/ffmpeg/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/ffmpeg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gstreamer</title>
+      <link>http://rustyeddy.com/tags/gstreamer/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/gstreamer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>H264</title>
       <link>http://rustyeddy.com/tags/h264/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
@@ -98,6 +116,15 @@
       <pubDate>Sun, 28 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/tags/rtsp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vlc</title>
+      <link>http://rustyeddy.com/tags/vlc/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/vlc/</guid>
       <description></description>
     </item>
     
