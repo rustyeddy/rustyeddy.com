@@ -8,11 +8,6 @@ description: >
 ---
 
 
-Peter, 
-
-Thank you for the feedback!  The AWS Orchestration part makes
-perfectly good sense. 
-
 RTSP is a good option for streaming video in a local setup up, where
 minimal delay is the highest priority.  However, RTSP does not
 typically do very well over the Internet due to the nature of
@@ -33,11 +28,6 @@ browswers including Chrome, but may be lagging with Safari.
 I am happy to set up a PoC with both RTSP and HTTP serving MPEG-DASH
 from Raspberry Pis.  For generating video, I'll be using gstreamer
 most likely to transmit the Raspberry Pi Video.
-
-I can write up an architecture document with a bit more detail..
-
-What are your thoughts?
-
 
 Video on a LAN required for Real Time control decisions, whether it is
 OpenCV churning through images while spitting out data used by _magoo_

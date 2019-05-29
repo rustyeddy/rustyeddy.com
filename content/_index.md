@@ -5,28 +5,32 @@ description: >
   Software Engineer ~ Distributed Systems
 ---
 
-## Hi, who are you?
+Following is a hypothetical interview, one very similar to the first
+5 minutes of every "interview" one needs to sit through.  And here
+goes the interview:
+
+### Hi, who are you?
 
 My name is George Eddy, my friends call me Rusty.  I live in
 Huntington Beach, CA with my family.
 
-### What do you do?
+#### What do you do?
 
 I am a hands on Software Engineer.  I work on robots, realtime
 embedded systems and physical computing.  I like working on hard
 problems with talented people.
 
-### What are you into?
+#### What are you into?
 I have a particular interest in autonomous navigation algorithms,
  computer vision, real time communications and machine learning.
 
-### What have you worked on in the past?
+#### What have you worked on in the past?
 Three decades and counting developing, I have been debugging and
 supporting software and complex computer networks.  As well as design,
 implement and support industrial strength, production quality software
 systems.
 
-#### Can you give a couple examples?
+##### Can you give a couple examples?
 
 I have also written three computer networking protocols from scratch
 with only an RFC (or Internet-draft).  Added _multicast routing_ to
@@ -35,18 +39,18 @@ other stuff.
 
 You can see more on my [portfolio](/portfolio)
 
-### What did you learn or acquire during that time?
+#### What did you learn or acquire during that time?
 
 My skills and previous titles include: Principal Engieer,
 Technical Lead, Member of The Technical Staff, Senior Software
 Engineer and Systems Programmer, amoug others.
 
-### And who have you worked for?
+#### And who have you worked for?
 I have worked for Fortune 500 companies including AT&T, Cisco Systems
 and McDonnel Douglas (now Boeing), USC/ISI.  I have also worked with
 startups and small business.
 
-### Do you have a Resume, or a Portfolio?
+#### Do you have a Resume, or a Portfolio?
 
 For the particular dates, titles and projects you can get more detail
 from my [resume](http://resume.rustyeddy.com) and 

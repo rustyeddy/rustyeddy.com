@@ -226,10 +226,9 @@ code pointed to by the following link:&lt;/p&gt;</description>
       <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/notes/streaming-video-local-network/</guid>
-      <description>Peter,
-Thank you for the feedback! The AWS Orchestration part makes perfectly good sense.
-RTSP is a good option for streaming video in a local setup up, where minimal delay is the highest priority. However, RTSP does not typically do very well over the Internet due to the nature of RTP/UDP.
-Which brings up another question: will there be more than once transmitter/reciever per office (which RTSP could serve well).</description>
+      <description>RTSP is a good option for streaming video in a local setup up, where minimal delay is the highest priority. However, RTSP does not typically do very well over the Internet due to the nature of RTP/UDP.
+Which brings up another question: will there be more than once transmitter/reciever per office (which RTSP could serve well).
+In recent years people would use RTMP to stream video over the Internet, by adding a plguin to NGINX, each camera would stream to NGINX, NGINX then create the endpoints for the video, waiting for client connections to start recieving the video.</description>
     </item>
     
     <item>
