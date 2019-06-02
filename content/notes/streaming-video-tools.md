@@ -23,6 +23,14 @@ plugins and nvgst-capture/nvgst-playback utilies.
 
 > This writting is as of March 2019
 
+### GStreamer Complex, Flexible, Future Proof
+
+**GStreamer** really complex pipelines but insanely flexible.
+
+- Allows tees to process more than one outgoing stream
+- Can be "easy" to extend do to flexible pipelines
+- used by nvidia to support it's proprietary drivers
+
 **VLC** less Complex than the Rest, and still in heavy use today.
 [Videolan](http://videolan.org) 
   
@@ -39,14 +47,5 @@ gstreamer, or a home rolled solution if I really had to.  "Had to"
 meaning, that I could avoid installing some gigantic infra-struct type
 of system.
 
-I am very much dedicated to building distributed, micro-service style
-systems. I prefer to piece solutions together based on lean,
-efficient, best of breed components.  
-
 - Allows simultaneous transmission of different resolutions / bitrates.
 
-**GStreamer** really complex pipelines but insanely flexible.
-
-- Allows tees to process more than one outgoing stream
-- Can be "easy" to extend do to flexible pipelines
-- used by nvidia to support it's proprietary drivers

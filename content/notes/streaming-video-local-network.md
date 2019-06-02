@@ -2,10 +2,32 @@
 title: Streaming Live Video on a Local Lan Vs. Internet
 date: 2018-12-23
 description: >
-  Streaming video over a local LAN in real time, where say OpenCV is
-  making realtime steering decisions, is surprisingly different than
-  streaming live video chat over the Internet, find out why.
+  Streaming video over a local area network can take on a
+  significantly different look than trying to live stream video over
+  the Internet.
 ---
+
+- differences in local vs. internet and streaming video
+
+- live stream vs. video on demand
+
+- what does real time mean?
+
+- what to do with late packets?
+
+- UDP vs. TCP in the local network
+
+- RTP and UDP
+
+- RTP and RTCP
+
+- RTP and RTSP
+
+- RTP and Multicast 
+
+- Tools used 
+
+TODO: workflowy outline
 
 
 RTSP is a good option for streaming video in a local setup up, where
