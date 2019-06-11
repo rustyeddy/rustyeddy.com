@@ -50,17 +50,62 @@
     <div class="col"></div>
     <div class="col-lg-6">
 	<article class="article">
-	    <p>The RedEye Computer Vision project streams video to the OpenCV library.</p>
+	    
 
-<p>&hellip;
-..
-l..</p>
+<p>The RedEye project goal is to build a fast and flexible video
+streaming application to be used on a mobile robot (i.e. a rover style
+vehicle).</p>
 
-<p>To find out more about the project goto -&gt; mobor/redeye</p>
+<h2 id="architecture">Architecture</h2>
 
-<p>More about rusty [resume] [portfolio]</p>
+<p>RedEye is an application with the purpose of capturing and consuming
+live video streams, filter incoming streams into formats ready for
+various consumers.</p>
 
-<p>About currently projects: [mobilerobot]</p>
+<p>In other words, RedEye can expect to manage cameras and capture video
+from one or more Raspberry Pi, Jetson Nano or Linux / MacOS USB port.</p>
+
+<p>The streams from these cameras can be dividing into multiple streams,
+with different formats, for example, one stream form a <em>car</em> cam might
+be converted into high res and low res streams, perhaps with different
+compression and encodings.</p>
+
+<p>The different streams may then be recieved by one or more consumers
+(sinks), for example the hi-res and lo-res streams above might be
+consumed by a HD Display for real time viewing, while the low
+resolution stream is consumed by our Computer Vision (OpenCV)
+algorightms.</p>
+
+<h3 id="cloud-storage-and-support">Cloud Storage and Support</h3>
+
+<p>In one or more of the afore mentioned streams may need to be archived
+for future replay. In this case the Store module can be used to stash
+video-clips and images on one of the major providers storage, add some
+indexing and we can assemble a replay application.</p>
+
+<p>RedEye is built on top of GStreamer and likewise heavily influenced by
+it&rsquo;s architecture, flexibility, power and ecosystem, which is heavy.
+Gstreamer is not easy to get started with, but it is very logical and
+consistent with a huge ecosystem, that a few well spent hours of
+lurning curve investment will payout in dividends!</p>
+
+<h2 id="feeding-the-beast">Feeding the Beast</h2>
+
+<p>Our main objective with RedEye is all about applying Vision to Real
+Time Vehicle Control. Real Time Vehicle control has two facets: HD
+display for Human Vision, Computer Vision for guidance feedback.</p>
+
+<blockquote>
+<p>Applying Vision to Real Time Vehicle Control</p>
+</blockquote>
+
+<p>High Definition feeds are consumed by Humans, in particuar the Human
+that is controlling the Robot, with a <em>Joystick</em> or a <em>keyboard</em> for
+example.</p>
+
+<p>Computer Vision will be used heavily as the near future approaches, as
+we start integrating more and more CV algorigthms into a navigation
+system.</p>
 
 	</article>
     </div>

@@ -36,11 +36,9 @@ The ESP32 esp-idf development software, built on top of FreeRTOS is a rich and p
       <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/portfolio/redeye-rpi-camera-and-python/</guid>
-      <description>The RedEye Computer Vision project streams video to the OpenCV library.
-&amp;hellip; .. l..
-To find out more about the project goto -&amp;gt; mobor/redeye
-More about rusty [resume] [portfolio]
-About currently projects: [mobilerobot]</description>
+      <description>The RedEye project goal is to build a fast and flexible video streaming application to be used on a mobile robot (i.e. a rover style vehicle).
+Architecture RedEye is an application with the purpose of capturing and consuming live video streams, filter incoming streams into formats ready for various consumers.
+In other words, RedEye can expect to manage cameras and capture video from one or more Raspberry Pi, Jetson Nano or Linux / MacOS USB port.</description>
     </item>
     
     <item>
@@ -51,7 +49,8 @@ About currently projects: [mobilerobot]</description>
       <guid>http://rustyeddy.com/portfolio/arduino-software/</guid>
       <description>&lt;p&gt;A repo full of C/C++ software that can control a ton of sensors,
 communication shieds and even more sophisticated chips. The sample
-code pointed to by the following link:&lt;/p&gt;</description>
+code pointed to by the following link:
+&lt;/p&gt;</description>
     </item>
     
     <item>

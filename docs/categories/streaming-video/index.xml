@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>streaming video on Rusty Eddy</title>
+    <title>Streaming Video on Rusty Eddy</title>
     <link>http://rustyeddy.com/categories/streaming-video/</link>
-    <description>Recent content in streaming video on Rusty Eddy</description>
+    <description>Recent content in Streaming Video on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 05 May 2019 00:00:00 +0000</lastBuildDate>
@@ -17,11 +17,9 @@
       <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/portfolio/redeye-rpi-camera-and-python/</guid>
-      <description>The RedEye Computer Vision project streams video to the OpenCV library.
-&amp;hellip; .. l..
-To find out more about the project goto -&amp;gt; mobor/redeye
-More about rusty [resume] [portfolio]
-About currently projects: [mobilerobot]</description>
+      <description>The RedEye project goal is to build a fast and flexible video streaming application to be used on a mobile robot (i.e. a rover style vehicle).
+Architecture RedEye is an application with the purpose of capturing and consuming live video streams, filter incoming streams into formats ready for various consumers.
+In other words, RedEye can expect to manage cameras and capture video from one or more Raspberry Pi, Jetson Nano or Linux / MacOS USB port.</description>
     </item>
     
   </channel>
