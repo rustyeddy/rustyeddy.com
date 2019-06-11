@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Video on Rusty Eddy</title>
+    <title>video on Rusty Eddy</title>
     <link>http://rustyeddy.com/categories/video/</link>
-    <description>Recent content in Video on Rusty Eddy</description>
+    <description>Recent content in video on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Apr 2019 00:00:00 +0000</lastBuildDate>
@@ -17,10 +17,9 @@
       <pubDate>Sun, 28 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/notes/streaming-video-protocols/</guid>
-      <description>RTP ~ Real Time Protocol Actually holds payloads containing arbitrary, but time/delay sensitive media (audio, video, live conversations, etc). Incorporates enough controls to allow for network congestion, reciever compensation and more.
+      <description>rtp rtsp rtmp hlsl mjpeg mpeg-dash mpeg jpeg  RTP ~ Real Time Protocol Actually holds payloads containing arbitrary, but time/delay sensitive media (audio, video, live conversations, etc). Incorporates enough controls to allow for network congestion, reciever compensation and more.
 RTSP What it is and How to use it Real Time Streaming Protocol (RTSP)
-General consensus says that RTSP is a good choice for low latency, local area networks.
- RTSP good for Local Low Latency, Bad for Internet</description>
+General consensus says that RTSP is a good choice for low latency, local area networks.</description>
     </item>
     
     <item>

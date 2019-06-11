@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hls on Rusty Eddy</title>
+    <link>http://rustyeddy.com/tags/hls/</link>
+    <description>Recent content in hls on Rusty Eddy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 31 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://rustyeddy.com/tags/hls/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Stream HLS from NGINX</title>
+      <link>http://rustyeddy.com/notes/stream-hls-from-nginx/</link>
+      <pubDate>Fri, 31 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/stream-hls-from-nginx/</guid>
+      <description>Setup gzip to compress text based M3U8 index files. They can be large and are downloaded frequently.
+ May need to shorten the TTL values for M3U8.
+ For VOD the index file is statis, hence does not change and only needs to be downloaded once.
+ Security over HTTPS
+ Browser to display video in HTML5 tags.
+  x264enc ! mpegtsmux ! hlssink max-files=5</description>
+    </item>
+    
+  </channel>
+</rss>

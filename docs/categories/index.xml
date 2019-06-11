@@ -6,12 +6,13 @@
     <description>Recent content in Categories on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 19 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://rustyeddy.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Esp32</title>
+      <title>esp32</title>
       <link>http://rustyeddy.com/categories/esp32/</link>
       <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
       
@@ -20,7 +21,7 @@
     </item>
     
     <item>
-      <title>Freertos</title>
+      <title>freertos</title>
       <link>http://rustyeddy.com/categories/freertos/</link>
       <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
       
@@ -29,16 +30,7 @@
     </item>
     
     <item>
-      <title>Resume</title>
-      <link>http://rustyeddy.com/categories/resume/</link>
-      <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/categories/resume/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Software</title>
+      <title>software</title>
       <link>http://rustyeddy.com/categories/software/</link>
       <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
       
@@ -47,11 +39,38 @@
     </item>
     
     <item>
-      <title>Video</title>
+      <title>computer vision</title>
+      <link>http://rustyeddy.com/categories/computer-vision/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/categories/computer-vision/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>streaming video</title>
+      <link>http://rustyeddy.com/categories/streaming-video/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/categories/streaming-video/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>video</title>
       <link>http://rustyeddy.com/categories/video/</link>
       <pubDate>Sun, 28 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/categories/video/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>resume</title>
+      <link>http://rustyeddy.com/categories/resume/</link>
+      <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/categories/resume/</guid>
       <description></description>
     </item>
     

@@ -135,6 +135,31 @@ years. &lt;a href=&#34;{{.Permalink}}&#34;&gt;read more&lt;/a&gt;&lt;/p&gt;</des
     </item>
     
     <item>
+      <title>Stream HLS from NGINX</title>
+      <link>http://rustyeddy.com/notes/stream-hls-from-nginx/</link>
+      <pubDate>Fri, 31 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/stream-hls-from-nginx/</guid>
+      <description>Setup gzip to compress text based M3U8 index files. They can be large and are downloaded frequently.
+ May need to shorten the TTL values for M3U8.
+ For VOD the index file is statis, hence does not change and only needs to be downloaded once.
+ Security over HTTPS
+ Browser to display video in HTML5 tags.
+  x264enc ! mpegtsmux ! hlssink max-files=5</description>
+    </item>
+    
+    <item>
+      <title>Using Gstreamer to create an RTSP Server</title>
+      <link>http://rustyeddy.com/notes/gstreamer-rtsp-server/</link>
+      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/gstreamer-rtsp-server/</guid>
+      <description>Of it earlier this month I set out to start streaming video From the CSI camera, that is a raspberry pie camera, From a moving vehicle for the vehicles guidance and navigation.
+I was surprised to find the the whole world is streaming video is Incredibly complex, NFL 2019 we do not have A solution that is easy universally adopted.
+TLDR; Gstreamer RTSP Pipeline We are streaming our video from a Raspberry Pi Camera (CSI) attached to, either a Raspberry Pi or a Jetson Nano, GST extracts the video from the CSI camera using a custom driver (raspicamsrc or nvargussrc) for the RPi or Nano respectively.</description>
+    </item>
+    
+    <item>
       <title>ESP32 C&#43;&#43; LED Blinker</title>
       <link>http://rustyeddy.com/portfolio/esp32-c&#43;&#43;-blink-program/</link>
       <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
@@ -150,6 +175,39 @@ The ESP32 esp-idf development software, built on top of FreeRTOS is a rich and p
       <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/portfolio/mobile-robot-project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RedEye Project Streaming Video and Computer Vision</title>
+      <link>http://rustyeddy.com/portfolio/redeye-rpi-camera-and-python/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/portfolio/redeye-rpi-camera-and-python/</guid>
+      <description>The RedEye Computer Vision project streams video to the OpenCV library.
+&amp;hellip; .. l..
+To find out more about the project goto -&amp;gt; mobor/redeye
+More about rusty [resume] [portfolio]
+About currently projects: [mobilerobot]</description>
+    </item>
+    
+    <item>
+      <title>WebRTC What is it?</title>
+      <link>http://rustyeddy.com/notes/webrtc-what-is-it/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/webrtc-what-is-it/</guid>
+      <description>WebRTC stands for Web Realtime Communications. Yea, I know you can Google too, now let&amp;rsquo;s ask, &amp;ldquo;What does that mean?&amp;rdquo;.
+Realtime Communication Generally speaking we all, intuitively know what Real Time means, it is a sense of what is happening now. OK, that is reasonable, after all it is how we live the majority of our lives.
+Communication &amp;ldquo;Topologies&amp;rdquo;  One to one One to many many to many many to one?</description>
+    </item>
+    
+    <item>
+      <title>GStreamer building realtime media pipelines</title>
+      <link>http://rustyeddy.com/notes/gstreamer-building-streaming-pipelines/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/gstreamer-building-streaming-pipelines/</guid>
       <description></description>
     </item>
     
@@ -170,10 +228,9 @@ High Demand For Low Resolution It turns out that computer vision alogrithms typi
       <pubDate>Sun, 28 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/notes/streaming-video-protocols/</guid>
-      <description>RTP ~ Real Time Protocol Actually holds payloads containing arbitrary, but time/delay sensitive media (audio, video, live conversations, etc). Incorporates enough controls to allow for network congestion, reciever compensation and more.
+      <description>rtp rtsp rtmp hlsl mjpeg mpeg-dash mpeg jpeg  RTP ~ Real Time Protocol Actually holds payloads containing arbitrary, but time/delay sensitive media (audio, video, live conversations, etc). Incorporates enough controls to allow for network congestion, reciever compensation and more.
 RTSP What it is and How to use it Real Time Streaming Protocol (RTSP)
-General consensus says that RTSP is a good choice for low latency, local area networks.
- RTSP good for Local Low Latency, Bad for Internet</description>
+General consensus says that RTSP is a good choice for low latency, local area networks.</description>
     </item>
     
     <item>
@@ -185,7 +242,7 @@ General consensus says that RTSP is a good choice for low latency, local area ne
       <description>The grandparents of streaming video, and snapshots, read, writing and transcoding video and single frame images are ffmpeg, vlc and gstreamer.
 Other platforms, such as the wildly cool and inexpensive Raspberry Pi and attached CSI Camera (Raspberry Pi Camera) have thier own set of utilities: like raspivid. Or the NVidia Nano with it&amp;rsquo;s gst-streamer plugins and nvgst-capture/nvgst-playback utilies.
  This writting is as of March 2019
- VLC less Complex than the Rest, and still in heavy use today.</description>
+ GStreamer Complex, Flexible, Future Proof GStreamer really complex pipelines but insanely flexible.</description>
     </item>
     
     <item>
@@ -226,9 +283,18 @@ code pointed to by the following link:&lt;/p&gt;</description>
       <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/notes/streaming-video-local-network/</guid>
-      <description>RTSP is a good option for streaming video in a local setup up, where minimal delay is the highest priority. However, RTSP does not typically do very well over the Internet due to the nature of RTP/UDP.
-Which brings up another question: will there be more than once transmitter/reciever per office (which RTSP could serve well).
-In recent years people would use RTMP to stream video over the Internet, by adding a plguin to NGINX, each camera would stream to NGINX, NGINX then create the endpoints for the video, waiting for client connections to start recieving the video.</description>
+      <description>differences in local vs. internet and streaming video
+ live stream vs. video on demand
+ what does real time mean?
+ what to do with late packets?
+ UDP vs. TCP in the local network
+ RTP and UDP
+ RTP and RTCP
+ RTP and RTSP
+ RTP and Multicast
+ Tools used
+  TODO: workflowy outline
+RTSP is a good option for streaming video in a local setup up, where minimal delay is the highest priority.</description>
     </item>
     
     <item>
@@ -288,6 +354,15 @@ AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;</description>
     </item>
     
     <item>
+      <title>Streaming Video ~ On Demand Vs. Live</title>
+      <link>http://rustyeddy.com/notes/streaming-video-on-demand-vs-live/</link>
+      <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/streaming-video-on-demand-vs-live/</guid>
+      <description> VOD can take time to buffer Live buffering creates delay and ruins effectiveness  </description>
+    </item>
+    
+    <item>
       <title>About MicroServices and Distributed Systems</title>
       <link>http://rustyeddy.com/notes/about-distributed-systems-and-micro-services/</link>
       <pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>
@@ -304,6 +379,17 @@ More Complex? Many rightly claim that a distributed system increases the complex
       
       <guid>http://rustyeddy.com/resume/contact/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Design Graphics with Canva</title>
+      <link>http://rustyeddy.com/notes/design-graphics-with-canva/</link>
+      <pubDate>Sun, 22 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/design-graphics-with-canva/</guid>
+      <description>Canva is a very simple yet powerful graphics art tool, for non-graphic artists. You can to on there and create free stuff, or, if you are a pro and create graphics all the time, you can optin for a reasonable montly fee.
+I created the RedEye logo for the Mobile Robot Project using Canva, it took me 15 minutes, including remembering my forgotten password.
+There are a ton of templates, graphics and photos that can be easily drag-n-dropped into place.</description>
     </item>
     
     <item>
@@ -331,6 +417,15 @@ More Complex? Many rightly claim that a distributed system increases the complex
       <pubDate>Thu, 22 May 2008 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/portfolio/pkt-the-network-tester/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Video Cheat Sheet</title>
+      <link>http://rustyeddy.com/notes/video-cheat-sheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/video-cheat-sheet/</guid>
       <description></description>
     </item>
     

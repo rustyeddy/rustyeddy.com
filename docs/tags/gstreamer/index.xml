@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Gstreamer on Rusty Eddy</title>
+    <title>gstreamer on Rusty Eddy</title>
     <link>http://rustyeddy.com/tags/gstreamer/</link>
-    <description>Recent content in Gstreamer on Rusty Eddy</description>
+    <description>Recent content in gstreamer on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 23 Apr 2019 00:00:00 +0000</lastBuildDate>
@@ -20,7 +20,7 @@
       <description>The grandparents of streaming video, and snapshots, read, writing and transcoding video and single frame images are ffmpeg, vlc and gstreamer.
 Other platforms, such as the wildly cool and inexpensive Raspberry Pi and attached CSI Camera (Raspberry Pi Camera) have thier own set of utilities: like raspivid. Or the NVidia Nano with it&amp;rsquo;s gst-streamer plugins and nvgst-capture/nvgst-playback utilies.
  This writting is as of March 2019
- VLC less Complex than the Rest, and still in heavy use today.</description>
+ GStreamer Complex, Flexible, Future Proof GStreamer really complex pipelines but insanely flexible.</description>
     </item>
     
   </channel>

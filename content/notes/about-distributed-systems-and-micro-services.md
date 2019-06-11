@@ -24,6 +24,8 @@ This is true.  However, if done with care and an eye toward simplicity
 and robustness, a team can start developing patterns that are mandated
 according to the driving force of the application they are developing.
 
+### Clearify and Simplify Interfaces Early
+
 In otherwords, distributed systems force an explicit definition
 between APIs of subsystems.  That easily translates into communication
 busses that can be _snooped_ or _mocked_ to significantly enhance, and
