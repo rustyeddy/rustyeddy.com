@@ -99,8 +99,7 @@ Other platforms, such as the wildly cool and inexpensive Raspberry Pi and attach
       <description>&lt;p&gt;As I started bumbling around trying to figure the best way to stream
 [live video from a moving vehicle], I found that the Raspberry Pi
 camera is capable of producing filtered versions of the images it is
-producing, through &lt;em&gt;video ports&lt;/em&gt;.
-&lt;/p&gt;</description>
+producing, through &lt;em&gt;video ports&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>

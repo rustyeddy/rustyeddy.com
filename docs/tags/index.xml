@@ -6,76 +6,13 @@
     <description>Recent content in Tags on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 31 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://rustyeddy.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Architect</title>
-      <link>http://rustyeddy.com/tags/architect/</link>
-      <pubDate>Sat, 11 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/architect/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>http://rustyeddy.com/tags/contact/</link>
-      <pubDate>Fri, 09 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/contact/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Developer</title>
-      <link>http://rustyeddy.com/tags/developer/</link>
-      <pubDate>Sat, 11 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/developer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Engineer</title>
-      <link>http://rustyeddy.com/tags/engineer/</link>
-      <pubDate>Sat, 11 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/engineer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ffmpeg</title>
-      <link>http://rustyeddy.com/tags/ffmpeg/</link>
-      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/ffmpeg/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Gstreamer</title>
-      <link>http://rustyeddy.com/tags/gstreamer/</link>
-      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/gstreamer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>H264</title>
-      <link>http://rustyeddy.com/tags/h264/</link>
-      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/h264/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hls</title>
+      <title>hls</title>
       <link>http://rustyeddy.com/tags/hls/</link>
       <pubDate>Fri, 31 May 2019 00:00:00 +0000</pubDate>
       
@@ -84,16 +21,7 @@
     </item>
     
     <item>
-      <title>Mpeg Dash</title>
-      <link>http://rustyeddy.com/tags/mpeg-dash/</link>
-      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/mpeg-dash/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mpeg Ts</title>
+      <title>mpeg-ts</title>
       <link>http://rustyeddy.com/tags/mpeg-ts/</link>
       <pubDate>Fri, 31 May 2019 00:00:00 +0000</pubDate>
       
@@ -102,52 +30,7 @@
     </item>
     
     <item>
-      <title>Picamera</title>
-      <link>http://rustyeddy.com/tags/picamera/</link>
-      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/picamera/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Raspberry Pi</title>
-      <link>http://rustyeddy.com/tags/raspberry-pi/</link>
-      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/raspberry-pi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Resume</title>
-      <link>http://rustyeddy.com/tags/resume/</link>
-      <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/resume/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Robots</title>
-      <link>http://rustyeddy.com/tags/robots/</link>
-      <pubDate>Sat, 11 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/robots/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rtmp</title>
-      <link>http://rustyeddy.com/tags/rtmp/</link>
-      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/rtmp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rtp</title>
+      <title>rtp</title>
       <link>http://rustyeddy.com/tags/rtp/</link>
       <pubDate>Fri, 31 May 2019 00:00:00 +0000</pubDate>
       
@@ -156,7 +39,25 @@
     </item>
     
     <item>
-      <title>Rtsp</title>
+      <title>mpeg-dash</title>
+      <link>http://rustyeddy.com/tags/mpeg-dash/</link>
+      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/mpeg-dash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rtmp</title>
+      <link>http://rustyeddy.com/tags/rtmp/</link>
+      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/rtmp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rtsp</title>
       <link>http://rustyeddy.com/tags/rtsp/</link>
       <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
       
@@ -165,7 +66,43 @@
     </item>
     
     <item>
-      <title>Vlc</title>
+      <title>webrtc</title>
+      <link>http://rustyeddy.com/tags/webrtc/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/webrtc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>h264</title>
+      <link>http://rustyeddy.com/tags/h264/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/h264/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ffmpeg</title>
+      <link>http://rustyeddy.com/tags/ffmpeg/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/ffmpeg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gstreamer</title>
+      <link>http://rustyeddy.com/tags/gstreamer/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/gstreamer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vlc</title>
       <link>http://rustyeddy.com/tags/vlc/</link>
       <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
       
@@ -174,11 +111,74 @@
     </item>
     
     <item>
-      <title>Webrtc</title>
-      <link>http://rustyeddy.com/tags/webrtc/</link>
-      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
+      <title>picamera</title>
+      <link>http://rustyeddy.com/tags/picamera/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/tags/webrtc/</guid>
+      <guid>http://rustyeddy.com/tags/picamera/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>raspberry pi</title>
+      <link>http://rustyeddy.com/tags/raspberry-pi/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/raspberry-pi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>resume</title>
+      <link>http://rustyeddy.com/tags/resume/</link>
+      <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/resume/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>architect</title>
+      <link>http://rustyeddy.com/tags/architect/</link>
+      <pubDate>Sat, 11 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/architect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>developer</title>
+      <link>http://rustyeddy.com/tags/developer/</link>
+      <pubDate>Sat, 11 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/developer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>engineer</title>
+      <link>http://rustyeddy.com/tags/engineer/</link>
+      <pubDate>Sat, 11 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/engineer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>robots</title>
+      <link>http://rustyeddy.com/tags/robots/</link>
+      <pubDate>Sat, 11 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/robots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>contact</title>
+      <link>http://rustyeddy.com/tags/contact/</link>
+      <pubDate>Fri, 09 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/contact/</guid>
       <description></description>
     </item>
     

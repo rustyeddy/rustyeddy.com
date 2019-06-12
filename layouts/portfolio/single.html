@@ -1,13 +1,23 @@
 {{ define "main" }}
-<div class="container">
-    <div class="row">
-        <div class="col"></div>
-        <div class="col-8">
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-        </div>
-        <div class="col"></div>
-    </div> <!-- row -->
 
-    {{- partial "content" . -}}
+<div class="container">
+    <nav class="nav justify-content-center pb-3">
+	<a class="nav-link" href="{{ .Params.github }}">github</a>
+	<a class="nav-link" href="{{ .Params.site }}">site</a>
+	<a class="nav-link active" href="/portfolio">portfolio</a>
+	<a class="nav-link" href="/resume">resume</a>
+    </nav>
+
+    <div class="row">
+      <div class="col"></div>
+      <div class="col-lg-8 pl-4 pr-4">
+	<article class="article">
+	  {{ .Content }}
+	</article>
+      </div>
+      <div class="col"></div>
+    </div>
+
+
 </div>
 {{ end }}
