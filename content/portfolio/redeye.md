@@ -10,6 +10,7 @@ categories:
   - streaming video
 github: http://github.com/mobilerobot-io/redeye
 site: http://mobilerobot-io/projects/redeye
+image: https://mobilerobot.sfo2.cdn.digitaloceanspaces.com/redeye-wide.png
 ---
 
 The RedEye project was born from the need to stream video from a
@@ -32,6 +33,8 @@ capable of producing. Which may include:
 
 - RTP / RTSP with UDP Multicast to support
 - One or more: MPEG-DASH, HLS and/or WebRTC
+
+<img src="https://docs.google.com/drawings/d/e/2PACX-1vQHtO4hTGzQKan-x5UKmwDieGndeGtNsTXT2iorDvcSuwiPBY1kkutZ1DH0D-Rd1VAtCzXzf3b3Zj4C/pub?w=710&amp;h=440">
 
 ### Video Sources
 

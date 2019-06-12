@@ -1,7 +1,17 @@
 {{ define "main" }}
 
 <div class="container">
-    <nav class="nav justify-content-center pb-3">
+  <div class="row">
+    <div class="col"></div>
+    <div class="col=5">
+      <img class="justify-content-center" src="{{ .Params.Image }}" />
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
+
+<div class="container">
+    <nav class="nav justify-content-center p-5">
 	<a class="nav-link" href="{{ .Params.github }}">github</a>
 	<a class="nav-link" href="{{ .Params.site }}">site</a>
 	<a class="nav-link active" href="/portfolio">portfolio</a>
