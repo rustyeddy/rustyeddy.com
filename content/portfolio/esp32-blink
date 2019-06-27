@@ -11,6 +11,7 @@ categories:
   - esp32
   - freertos
 github: http://github.com/mobilerobot-io/esp
+draft: true
 ---
 
 I wrote an LED C++ class to configure an ESP32 GPIO pin as a digital

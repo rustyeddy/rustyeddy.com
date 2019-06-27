@@ -11,36 +11,22 @@
 	<div class="col"></div> <!-- col-2 -->
     </div>
 
-    {{ range .Pages }}
     <div class="row">
-	<div class="col"></div> <!-- col-2 -->
-	<div class="col-8">
-	  <div class="title">
-	    <h5 class="h5">{{ .Title }}</h5>
-	    <!--
-		<a href="{{ .Permalink }}">{{ .Title }}</a>
--->
+	{{ range .Pages }}
+	<div class="col-4">
+	    <div class="card">
+		<div class="card-body">
+		    <h5 class="card-title">
+			<a href="{{ .Permalink }}">{{ .Title }}</a>
+		    </h5>
+		    <div class="card-text">
+			{{ .Description }}
+		    </div>
+		</div>
 	    </div>
 	</div> <!-- col -->
-	<div class="col"></div>
+	{{ end }}
     </div>
 
-    <div class="row mb-3">
-	<div class="col text-mute small text-right">
-	    <div class="date">
-		{{ .PublishDate.Format "January 2, 2006" }}
-	    </div>
-	    <div class="github">
-	      <a href="{{ .Params.github }}">github</a>
-	    </div>
-	</div> <!-- col-2 -->
-	<div class="col-8">
-	    <div class="description">
-		{{ .Description }}
-	    </div>
-	</div> <!-- col -->
-	<div class="col"></div>
-    </div>
-    {{ end }}
 </div>
 {{ end }}

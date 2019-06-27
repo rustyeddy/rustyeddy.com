@@ -6,4 +6,5 @@ description: >
   extreemly high volume, nation wide video distribution network, using
   modern Software Defined Networking (SDN) techniques and Open Source
   software.   My team and I built some really cool stuff!
+draft: true
 ---

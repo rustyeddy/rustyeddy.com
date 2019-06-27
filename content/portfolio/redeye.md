@@ -11,6 +11,7 @@ categories:
 github: http://github.com/mobilerobot-io/redeye
 site: http://mobilerobot-io/projects/redeye
 image: https://mobilerobot.sfo2.cdn.digitaloceanspaces.com/redeye-wide.png
+draft: true
 ---
 
 The RedEye project was born from the need to stream video from a

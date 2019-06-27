@@ -160,27 +160,6 @@ TLDR; Gstreamer RTSP Pipeline We are streaming our video from a Raspberry Pi Cam
     </item>
     
     <item>
-      <title>Mobile Robot Project</title>
-      <link>http://rustyeddy.com/portfolio/mobile-robot-project/</link>
-      <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/portfolio/mobile-robot-project/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>RedEye Streaming Video and Computer Vision</title>
-      <link>http://rustyeddy.com/portfolio/redeye/</link>
-      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/portfolio/redeye/</guid>
-      <description>The RedEye project was born from the need to stream video from a slowly moving robot with small inexpensive and easily available cameras.
-Key Points The video streams will be consumed by a HD video display, Computer Vision control algorithms and storage.
-GStreamer Framework The architecture is built around the powerful GStreamer libraries and toolset. Which means that we can immediately consume any video source that GStreamer supports.
-Likewise, we can produce any video stream output that GStreamer is capable of producing.</description>
-    </item>
-    
-    <item>
       <title>WebRTC What is it?</title>
       <link>http://rustyeddy.com/notes/webrtc-what-is-it/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
@@ -247,26 +226,6 @@ producing, through &lt;em&gt;video ports&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Arduino Software</title>
-      <link>http://rustyeddy.com/portfolio/arduino-software/</link>
-      <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/portfolio/arduino-software/</guid>
-      <description>&lt;p&gt;A repo full of C/C++ software that can control a ton of sensors,
-communication shieds and even more sophisticated chips. The sample
-code pointed to by the following link:&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Flask Webapp Control Raspberry Pi Server</title>
-      <link>http://rustyeddy.com/portfolio/flask-camera/</link>
-      <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/portfolio/flask-camera/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Streaming Live Video on a Local Lan Vs. Internet</title>
       <link>http://rustyeddy.com/notes/streaming-video-local-network/</link>
       <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
@@ -325,15 +284,6 @@ AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Otto the Pluggable Micro Server for Macro Controllers</title>
-      <link>http://rustyeddy.com/portfolio/otto-micro-server/</link>
-      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/portfolio/otto-micro-server/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Rusty Eddy</title>
       <link>http://rustyeddy.com/resume/about/</link>
       <pubDate>Sat, 11 Aug 2018 00:00:00 +0000</pubDate>
@@ -379,34 +329,6 @@ More Complex? Many rightly claim that a distributed system increases the complex
       <description>Canva is a very simple yet powerful graphics art tool, for non-graphic artists. You can to on there and create free stuff, or, if you are a pro and create graphics all the time, you can optin for a reasonable montly fee.
 I created the RedEye logo for the Mobile Robot Project using Canva, it took me 15 minutes, including remembering my forgotten password.
 There are a ton of templates, graphics and photos that can be easily drag-n-dropped into place.</description>
-    </item>
-    
-    <item>
-      <title>Multicast Routing</title>
-      <link>http://rustyeddy.com/portfolio/multicast-routing/</link>
-      <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/portfolio/multicast-routing/</guid>
-      <description> Multicast Routing Multicast protocol design and development, as well as other protocols like BGP, OSPF,
- USC/ISI pimd, gated pim-ssm, BGMP (defunct), BGP and OSPF Cisco Systems Carrier Routing System (CRS) Technical Lead for the Multicast Team Green Hills RTOS kernel development enabling multicast routing  References  link to pimd dug up by XXXX link to Cisco CRS link to GateD / &amp;hellip;  </description>
-    </item>
-    
-    <item>
-      <title>Software Defined Networking Hybrid Controller</title>
-      <link>http://rustyeddy.com/portfolio/software-defined-networking/</link>
-      <pubDate>Sun, 22 Jun 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/portfolio/software-defined-networking/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pkt The Network Test Tool</title>
-      <link>http://rustyeddy.com/portfolio/pkt-network-test-tool/</link>
-      <pubDate>Thu, 22 May 2008 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/portfolio/pkt-network-test-tool/</guid>
-      <description></description>
     </item>
     
     <item>

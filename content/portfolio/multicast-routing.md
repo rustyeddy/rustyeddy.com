@@ -5,6 +5,7 @@ description: >
   networking that I worked with on quite a few projects, some listed
   here.
 date: 2017-04-21
+draft: true
 ---
 
 ## Multicast Routing

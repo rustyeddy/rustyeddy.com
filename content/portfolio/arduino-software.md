@@ -5,6 +5,7 @@ description: >
   sensors, motor controllers and communicate with external
   controllers. 
 date: 2019-03-22
+draft: true
 ---
 
 A repo full of C/C++ software that can control a ton of sensors,

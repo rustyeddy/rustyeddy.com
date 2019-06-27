@@ -6,5 +6,6 @@ description: >
   on speed and simplicity.  Plugins are used add purpose to otto.
 date: 2018-09-20
 github: http://github.com/mobilerobot-io/otto
+draft: true
 ---
 

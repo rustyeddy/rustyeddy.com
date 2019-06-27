@@ -118,11 +118,6 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/portfolio/mobile-robot-project/</loc>
-    <lastmod>2019-05-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/resume/</loc>
     <lastmod>2019-05-15T00:00:00+00:00</lastmod>
   </url>
@@ -143,31 +138,8 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/categories/</loc>
-    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/portfolio/redeye/</loc>
-    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/notes/webrtc-what-is-it/</loc>
     <lastmod>2019-05-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/categories/computer-vision/</loc>
-    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/categories/streaming-video/</loc>
-    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -189,6 +161,12 @@
   <url>
     <loc>http://rustyeddy.com/tags/h264/</loc>
     <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/categories/</loc>
+    <lastmod>2019-04-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -244,16 +222,6 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/portfolio/arduino-software/</loc>
-    <lastmod>2019-03-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/portfolio/flask-camera/</loc>
-    <lastmod>2019-02-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/notes/streaming-video-local-network/</loc>
     <lastmod>2018-12-23T00:00:00+00:00</lastmod>
   </url>
@@ -283,11 +251,6 @@
     <loc>http://rustyeddy.com/tags/resume/</loc>
     <lastmod>2018-09-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/portfolio/otto-micro-server/</loc>
-    <lastmod>2018-09-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -343,21 +306,6 @@
   <url>
     <loc>http://rustyeddy.com/notes/design-graphics-with-canva/</loc>
     <lastmod>2017-10-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/portfolio/multicast-routing/</loc>
-    <lastmod>2017-04-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/portfolio/software-defined-networking/</loc>
-    <lastmod>2014-06-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/portfolio/pkt-network-test-tool/</loc>
-    <lastmod>2008-05-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
