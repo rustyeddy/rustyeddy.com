@@ -66,31 +66,8 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/notes/stream-hls-from-nginx/</loc>
-    <lastmod>2019-05-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/tags/</loc>
-    <lastmod>2019-05-31T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/hls/</loc>
-    <lastmod>2019-05-31T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/mpeg-ts/</loc>
-    <lastmod>2019-05-31T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/rtp/</loc>
-    <lastmod>2019-05-31T00:00:00+00:00</lastmod>
+    <lastmod>2019-05-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -146,11 +123,6 @@
     <loc>http://rustyeddy.com/tags/webrtc/</loc>
     <lastmod>2019-05-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/notes/gstreamer-building-streaming-pipelines/</loc>
-    <lastmod>2019-05-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -283,11 +255,6 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/notes/streaming-video-on-demand-vs-live/</loc>
-    <lastmod>2018-06-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/notes/about-distributed-systems-and-micro-services/</loc>
     <lastmod>2018-02-11T00:00:00+00:00</lastmod>
   </url>
@@ -306,10 +273,6 @@
   <url>
     <loc>http://rustyeddy.com/notes/design-graphics-with-canva/</loc>
     <lastmod>2017-10-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/notes/video-cheat-sheet/</loc>
   </url>
   
 </urlset>

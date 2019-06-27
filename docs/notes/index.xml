@@ -12,20 +12,6 @@
     
     
     <item>
-      <title>Stream HLS from NGINX</title>
-      <link>http://rustyeddy.com/notes/stream-hls-from-nginx/</link>
-      <pubDate>Fri, 31 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/notes/stream-hls-from-nginx/</guid>
-      <description>Setup gzip to compress text based M3U8 index files. They can be large and are downloaded frequently.
- May need to shorten the TTL values for M3U8.
- For VOD the index file is statis, hence does not change and only needs to be downloaded once.
- Security over HTTPS
- Browser to display video in HTML5 tags.
-  x264enc ! mpegtsmux ! hlssink max-files=5</description>
-    </item>
-    
-    <item>
       <title>Using Gstreamer to create an RTSP Server</title>
       <link>http://rustyeddy.com/notes/gstreamer-rtsp-server/</link>
       <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
@@ -45,15 +31,6 @@ TLDR; Gstreamer RTSP Pipeline We are streaming our video from a Raspberry Pi Cam
       <description>WebRTC stands for Web Realtime Communications. Yea, I know you can Google too, now let&amp;rsquo;s ask, &amp;ldquo;What does that mean?&amp;rdquo;.
 Realtime Communication Generally speaking we all, intuitively know what Real Time means, it is a sense of what is happening now. OK, that is reasonable, after all it is how we live the majority of our lives.
 Communication &amp;ldquo;Topologies&amp;rdquo;  One to one One to many many to many many to one?</description>
-    </item>
-    
-    <item>
-      <title>GStreamer building realtime media pipelines</title>
-      <link>http://rustyeddy.com/notes/gstreamer-building-streaming-pipelines/</link>
-      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/notes/gstreamer-building-streaming-pipelines/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -123,15 +100,6 @@ RTSP is a good option for streaming video in a local setup up, where minimal del
     </item>
     
     <item>
-      <title>Streaming Video ~ On Demand Vs. Live</title>
-      <link>http://rustyeddy.com/notes/streaming-video-on-demand-vs-live/</link>
-      <pubDate>Tue, 12 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/notes/streaming-video-on-demand-vs-live/</guid>
-      <description> VOD can take time to buffer Live buffering creates delay and ruins effectiveness  </description>
-    </item>
-    
-    <item>
       <title>About MicroServices and Distributed Systems</title>
       <link>http://rustyeddy.com/notes/about-distributed-systems-and-micro-services/</link>
       <pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>
@@ -150,15 +118,6 @@ More Complex? Many rightly claim that a distributed system increases the complex
       <description>Canva is a very simple yet powerful graphics art tool, for non-graphic artists. You can to on there and create free stuff, or, if you are a pro and create graphics all the time, you can optin for a reasonable montly fee.
 I created the RedEye logo for the Mobile Robot Project using Canva, it took me 15 minutes, including remembering my forgotten password.
 There are a ton of templates, graphics and photos that can be easily drag-n-dropped into place.</description>
-    </item>
-    
-    <item>
-      <title>Video Cheat Sheet</title>
-      <link>http://rustyeddy.com/notes/video-cheat-sheet/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/notes/video-cheat-sheet/</guid>
-      <description></description>
     </item>
     
   </channel>

@@ -6,6 +6,8 @@ body {
 
 h1, h2, h4, h3, h5, h6 {
     font-family: sans-serif;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
+.jumbotron {
+}
