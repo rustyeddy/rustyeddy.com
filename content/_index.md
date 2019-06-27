@@ -30,7 +30,7 @@ supporting software and complex computer networks.  As well as design,
 implement and support industrial strength, production quality software
 systems.
 
-##### Can you give a couple examples?
+#### Can you give a couple examples?
 
 I have also written three computer networking protocols from scratch
 with only an RFC (or Internet-draft).  Added _multicast routing_ to
