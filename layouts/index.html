@@ -1,16 +1,37 @@
-{{ define "main" }}
-<div class="container pt-5 pb-5">
-    <div class="row">
+<!DOCTYPE html>
+<html>
+  {{- partial "head.html" . -}}
+  <body>
+    {{- partial "header.html" . -}}
 
-	<div class="col"></div>
+    {{- partial "jumbotron.html" . -}}
 
-	<div class="col-6">
-	    <title class="display-4">{{ .Title }}</title>
+    <div id="main">
+	<div class="row">
+	    <div class="col-2"></div>
+	    <div class="col-4">{{ .Content }}</div>
+	    <div class="col-1"></div>
+	    <div class="col">
+		
+		<h3 class="text-center">Contact</h3>
+		<ul class="list-group text-center">
+		    <li class="list-group-item">(714) 362-5402</li>
+		    <li class="list-group-item">
+			<button type="button" class="btn btn-info">EMail</button>
+		    </li>
+		    <li class="list-group-item">
+			<a href="http://github.com/rustyeddy">Github</a>
+		    </li>
+		    <li class="list-group-item">
+			<a href="">LinkedIn</a>
+		    </li>
+		</ul>
+	    </div>
+	    <div class="col-2">
+	    </div>
 	</div>
 
-	<div class="col"></div>
     </div>
-    <div>{{- partial "content.html" . -}}</div>
-
-</div>
-{{ end }}
+    {{- partial "footer.html" . -}}
+  </body>
+</html>

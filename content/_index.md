@@ -2,9 +2,11 @@
 title: rusty eddy
 date: 2019-05-14
 description: >
-  Software Engineer ~ Distributed Systems
+  Software Engineer, Robot Mechanic and Stuff
 background-image: default.jpg
 ---
+
+## An Interview with Myself
 
 Following is a hypothetical interview, one very similar to the first
 5 minutes of every "interview" one needs to sit through.  And here
