@@ -3,6 +3,7 @@ title: rusty eddy
 date: 2019-05-14
 description: >
   Software Engineer ~ Distributed Systems
+background-image: default.jpg
 ---
 
 Following is a hypothetical interview, one very similar to the first

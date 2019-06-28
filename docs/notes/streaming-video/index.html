@@ -6,35 +6,52 @@
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="/style.css">
+<script>
+ $(".jumbotron").css({
+     height: $(window).height() + "px"
+ });
+
+ $(window).on("resize", function() {
+     $(".jumbotron").css({
+	 height: $(window).height()  + "px"
+     });
+ });
+</script>
 
 
 <title>Streaming Video is Complicated</title>
+
+
 <body><header class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white ">
 	<a class="navbar-brand text-muted text-monospace" href="/">rusty eddy</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	</button>
 	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-	    <nav class="navbar-nav justify-content-end">
-  		<a class="nav-link" href="/">home</a>
-  	        <a class="nav-link" href="/notes">notes</a>
-  	        <a class="nav-link" href="/resume">resume</a>
-  	        <a class="nav-link" href="/portfolio">portfolio</a>
+	    <nav class="navbar-nav">
+		<div class="nav  justify-content-end">
+  		    <a class="nav-link" href="/">home</a>
+  	            <a class="nav-link" href="/notes">notes</a>
+  	            <a class="nav-link" href="/resume">resume</a>
+  	            <a class="nav-link" href="/portfolio">portfolio</a>
+		</div>
  	    </nav>
 	</div>
     </nav>
 </header>
+
 <div class="jumbotron border-top border-bottom">
     <div class="row">
 	<div class="col"></div>
-	<div class="col-md-6">
-	    <h1 class="text-center header h3 pb-1">Streaming Video is Complicated</h1>
-	    <h5 class="leadin text-center text-muted mt-0">
+	<div class="col-md-4">
+	    <h1 class="header h3 pb-1">Streaming Video is Complicated</h1>
+	    <h5 class="leadin align-right text-muted mt-0">
 		One of the primary requirements of my Mobile Robot project is the ability to stream live or _realtime_ video while the vehicle roams about.  This turned out to be more complicated than I expected
 
 	    </h5>
 	</div>
+	<div class="col-md-4"></div>
 	<div class="col"></div>
     </div>
 </div>
@@ -47,8 +64,8 @@
         </div>
         <div class="col"></div>
     </div> <div class="row">
-    <div class="col"></div>
-    <div class="col-lg-7">
+    <div class="col-lg-2"></div>
+    <div class="text-small col-lg-4">
 	<article class="article">
 	  
 
