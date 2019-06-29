@@ -2,7 +2,7 @@
 title: rusty eddy
 date: 2019-05-14
 description: >
-  Software Engineer, Robot Mechanic and Stuff
+  I am a Software Engineer,  Robot Mechanic and Stuff
 background-image: default.jpg
 ---
 
