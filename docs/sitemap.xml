@@ -66,6 +66,11 @@
   </url>
   
   <url>
+    <loc>http://rustyeddy.com/portfolio/control-station/</loc>
+    <lastmod>2019-07-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://rustyeddy.com/tags/</loc>
     <lastmod>2019-05-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -115,8 +120,31 @@
   </url>
   
   <url>
+    <loc>http://rustyeddy.com/categories/</loc>
+    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/portfolio/redeye/</loc>
+    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://rustyeddy.com/notes/webrtc-what-is-it/</loc>
     <lastmod>2019-05-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/categories/computer-vision/</loc>
+    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/categories/streaming-video/</loc>
+    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -133,12 +161,6 @@
   <url>
     <loc>http://rustyeddy.com/tags/h264/</loc>
     <lastmod>2019-04-29T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/categories/</loc>
-    <lastmod>2019-04-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -273,6 +295,29 @@
   <url>
     <loc>http://rustyeddy.com/notes/design-graphics-with-canva/</loc>
     <lastmod>2017-10-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/notes/adafruit-music-maker-mp3-sheild/</loc>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/notes/opencv/</loc>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/adafruit/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/arduino/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/audio/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>

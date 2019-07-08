@@ -19,7 +19,7 @@
 </script>
 
 
-<title>Categories</title>
+<title>Control Station</title>
 
 
 <body><header class="container bg-white">
@@ -45,9 +45,10 @@
     <div class="row">
 	<div class="col"></div>
 	<div class="col-md-4">
-	    <h1 class="header h3 pb-1">Categories</h1>
+	    <h1 class="header h3 pb-1">Control Station</h1>
 	    <h5 class="leadin align-right text-muted mt-0">
-		
+		The Control Station project was designed to create a flexible remote control station for the Mobile Robot. 
+
 	    </h5>
 	</div>
 	<div class="col-md-4"></div>
@@ -55,116 +56,105 @@
     </div>
 </div>
 <div id="main">
+
 <div class="container">
-
-    <div class="row">
-	<div class="col"></div> 
-	<div class="col-8">
-	    <article class="article">
-		
-	    </article>
-	</div>
-	<div class="col"></div> 
+  <div class="row">
+    <div class="col"></div>
+    <div class="col=5">
+      <img class="justify-content-center" src="https://rustyeddy.sfo2.digitaloceanspaces.com/SensorStation.png" />
     </div>
-
-    
-    <div class="row">
-	<div class="col"></div> 
-	<div class="col-8">
-	    <div class="title">
-		<a href="http://rustyeddy.com/categories/computer-vision/">computer vision</a>
-	    </div>
-	</div> 
-	<div class="col"></div>
-    </div>
-
-    <div class="row mb-3">
-	<div class="col text-mute small text-right">
-	    <div class="date">
-		January 1, 0001
-	    </div>
-	</div> 
-	<div class="col-8">
-	    <div class="description">
-		
-	    </div>
-	</div> 
-	<div class="col"></div>
-    </div>
-    
-    <div class="row">
-	<div class="col"></div> 
-	<div class="col-8">
-	    <div class="title">
-		<a href="http://rustyeddy.com/categories/streaming-video/">streaming video</a>
-	    </div>
-	</div> 
-	<div class="col"></div>
-    </div>
-
-    <div class="row mb-3">
-	<div class="col text-mute small text-right">
-	    <div class="date">
-		January 1, 0001
-	    </div>
-	</div> 
-	<div class="col-8">
-	    <div class="description">
-		
-	    </div>
-	</div> 
-	<div class="col"></div>
-    </div>
-    
-    <div class="row">
-	<div class="col"></div> 
-	<div class="col-8">
-	    <div class="title">
-		<a href="http://rustyeddy.com/categories/video/">video</a>
-	    </div>
-	</div> 
-	<div class="col"></div>
-    </div>
-
-    <div class="row mb-3">
-	<div class="col text-mute small text-right">
-	    <div class="date">
-		January 1, 0001
-	    </div>
-	</div> 
-	<div class="col-8">
-	    <div class="description">
-		
-	    </div>
-	</div> 
-	<div class="col"></div>
-    </div>
-    
-    <div class="row">
-	<div class="col"></div> 
-	<div class="col-8">
-	    <div class="title">
-		<a href="http://rustyeddy.com/categories/resume/">resume</a>
-	    </div>
-	</div> 
-	<div class="col"></div>
-    </div>
-
-    <div class="row mb-3">
-	<div class="col text-mute small text-right">
-	    <div class="date">
-		January 1, 0001
-	    </div>
-	</div> 
-	<div class="col-8">
-	    <div class="description">
-		
-	    </div>
-	</div> 
-	<div class="col"></div>
-    </div>
-    
+    <div class="col"></div>
+  </div>
 </div>
+
+<div class="container">
+    <nav class="nav justify-content-center p-5">
+	<a class="nav-link" href="">github</a>
+	<a class="nav-link" href="http://github.com/mobilerobot-io/projects/control-station">site</a>
+	<a class="nav-link active" href="/portfolio">portfolio</a>
+	<a class="nav-link" href="/resume">resume</a>
+    </nav>
+
+    <div class="row">
+      <div class="col"></div>
+      <div class="col-lg-8 pl-4 pr-4">
+	<article class="article">
+	  
+
+<p>The first phase of the control station that you are looking at here
+includes a Joystick for human control that directly moves the Camera
+Pan &amp; Tilt assembly.  The ControlStation is designed to allow the
+addition of wireless connectivity and an easily interchangeable set of
+input devices (Joystick, Gyro Displays or Computer Algorithms and so
+on).  Output devices include motor controllers, cameras, displays and
+cloud storage for example.</p>
+
+<h2 id="project-requirements">Project Requirements</h2>
+
+<p>Following are the high level requirements, or goals for this project.</p>
+
+<ul>
+<li>Provide a joystick control for robot</li>
+<li>Provide Pan tilt Servo Control for Camera Stand</li>
+<li>Split micro controllers between Input and Output</li>
+<li>Wired i2c</li>
+<li>Wired serial / uart</li>
+<li>Wireless</li>
+<li>802.11</li>
+</ul>
+
+<p>Requirements 1-2 are complete, Requirement 3 is a Work In Progress
+(WIP) where the micro controllers have been split and are now
+communicating via I2C, remaining work to complete the serial code and
+the code to activate the receiver.</p>
+
+<h2 id="high-level-diagram">High Level Diagram</h2>
+
+<p><img src="{{ .Params.image }}" /></p>
+
+<h2 id="bill-of-materials">Bill Of Materials</h2>
+
+<ul>
+<li>3-5v Thumbstick Joystick</li>
+<li>2 sg109 Hobby Servos</li>
+<li>Pan and Tilt Assembly</li>
+<li>Arduino nano</li>
+</ul>
+
+<h2 id="source-code">Source Code</h2>
+
+<p>Following is an important snippet from the <a href="https://github.com/rustyeddy/Arduino">source code</a>:</p>
+
+<blockquote>
+<p>TODO: add GIST</p>
+</blockquote>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>This was a fun little project to rip out.  There is nothing more
+exciting for me, than to write some software that causes hardware to
+come alive.  As you will see in the soon coming video, each joystick
+movement translates into the same ration of motion by the Servos.
+This causes the mounted camera to move rather erratically.</p>
+
+<p>Another issue: to park the camera in a set location currently requires
+one to hold the joystick in a particular situation.  This is the
+result of rather naive programming.  An upcoming version of the
+software will use a more intelligent algorithm, and perhaps some
+appropriate control software.</p>
+
+<p>Until then we will mark this as a new requirement.</p>
+
+	</article>
+      </div>
+      <div class="col"></div>
+    </div>
+</div>
+
+<div class="call-to-action">
+    <h2>Call To Action</h2>
+</div>
+
 
     </div><footer id="footer" class="container mb-5 pb-5">
     <div class="row mt-5 pt-5">

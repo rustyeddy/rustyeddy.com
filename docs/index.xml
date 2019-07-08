@@ -21,7 +21,7 @@
 budgets and schedules, design software architecture and
 lead teams of engineers through entire software development
 lifecycles. Project work included but not limited to C; C++; Python;
-PHP; JavaScript; Java &amp;amp; MySQL. &lt;a href=&#34;{{ .Permalink }}&#34;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+PHP; JavaScript; Java &amp;amp; MySQL.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -66,7 +66,7 @@ OpenSource SDN controller project ONOS.&lt;/p&gt;</description>
 for the design, implementation and testing the complete suite of
 Multicast Routing protocols for the Cisco Carrier Routing System
 (CRS).  Worked this project from early design through product launch
-into maintenance. &lt;a href=&#34;{{.Permalink}}&#34;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+into maintenance. &lt;a href=&#34;{{ .Permalink }}&#34;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -135,6 +135,16 @@ years. &lt;a href=&#34;{{.Permalink}}&#34;&gt;read more&lt;/a&gt;&lt;/p&gt;</des
     </item>
     
     <item>
+      <title>Control Station</title>
+      <link>http://rustyeddy.com/portfolio/control-station/</link>
+      <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/portfolio/control-station/</guid>
+      <description>The first phase of the control station that you are looking at here includes a Joystick for human control that directly moves the Camera Pan &amp;amp; Tilt assembly. The ControlStation is designed to allow the addition of wireless connectivity and an easily interchangeable set of input devices (Joystick, Gyro Displays or Computer Algorithms and so on). Output devices include motor controllers, cameras, displays and cloud storage for example.
+Project Requirements Following are the high level requirements, or goals for this project.</description>
+    </item>
+    
+    <item>
       <title>Using Gstreamer to create an RTSP Server</title>
       <link>http://rustyeddy.com/notes/gstreamer-rtsp-server/</link>
       <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
@@ -143,6 +153,18 @@ years. &lt;a href=&#34;{{.Permalink}}&#34;&gt;read more&lt;/a&gt;&lt;/p&gt;</des
       <description>Of it earlier this month I set out to start streaming video From the CSI camera, that is a raspberry pie camera, From a moving vehicle for the vehicles guidance and navigation.
 I was surprised to find the the whole world is streaming video is Incredibly complex, NFL 2019 we do not have A solution that is easy universally adopted.
 TLDR; Gstreamer RTSP Pipeline We are streaming our video from a Raspberry Pi Camera (CSI) attached to, either a Raspberry Pi or a Jetson Nano, GST extracts the video from the CSI camera using a custom driver (raspicamsrc or nvargussrc) for the RPi or Nano respectively.</description>
+    </item>
+    
+    <item>
+      <title>RedEye Streaming Video and Computer Vision</title>
+      <link>http://rustyeddy.com/portfolio/redeye/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/portfolio/redeye/</guid>
+      <description>The RedEye project was born from the need to stream video from a slowly moving robot with small inexpensive and easily available cameras.
+Key Points The video streams will be consumed by a HD video display, Computer Vision control algorithms and storage.
+GStreamer Framework The architecture is built around the powerful GStreamer libraries and toolset. Which means that we can immediately consume any video source that GStreamer supports.
+Likewise, we can produce any video stream output that GStreamer is capable of producing.</description>
     </item>
     
     <item>
@@ -297,6 +319,26 @@ More Complex? Many rightly claim that a distributed system increases the complex
       <description>Canva is a very simple yet powerful graphics art tool, for non-graphic artists. You can to on there and create free stuff, or, if you are a pro and create graphics all the time, you can optin for a reasonable montly fee.
 I created the RedEye logo for the Mobile Robot Project using Canva, it took me 15 minutes, including remembering my forgotten password.
 There are a ton of templates, graphics and photos that can be easily drag-n-dropped into place.</description>
+    </item>
+    
+    <item>
+      <title>Adafruit Music Maker mp3 Sheild</title>
+      <link>http://rustyeddy.com/notes/adafruit-music-maker-mp3-sheild/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/adafruit-music-maker-mp3-sheild/</guid>
+      <description>The shield is driven by an SPI connection with the Arduino and relies on an SD card with music files on it to play. Must determine how to play streaming audio, then we&amp;rsquo;ll have something neat!
+Link to the documentation.
+The shield can also be jumpered and booted into Midi Mode and turned into a drum machine or a Garageband type of play along.</description>
+    </item>
+    
+    <item>
+      <title>OpenCV</title>
+      <link>http://rustyeddy.com/notes/opencv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/opencv/</guid>
+      <description>Building OpenCV is quite a task, so if you are just getting started, or do not need something in more recent versions, then by all means use your OSs package management facility to install OpenCV, otherwise here is a list of things that I did to get the latest version of OpenCV built so I could infuse it with some GStreamer to deliver streaming video to our CV algorithms.</description>
     </item>
     
   </channel>

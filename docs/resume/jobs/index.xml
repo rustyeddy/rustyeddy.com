@@ -21,7 +21,7 @@
 budgets and schedules, design software architecture and
 lead teams of engineers through entire software development
 lifecycles. Project work included but not limited to C; C++; Python;
-PHP; JavaScript; Java &amp;amp; MySQL. &lt;a href=&#34;{{ .Permalink }}&#34;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+PHP; JavaScript; Java &amp;amp; MySQL.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -57,7 +57,7 @@ OpenSource SDN controller project ONOS.&lt;/p&gt;</description>
 for the design, implementation and testing the complete suite of
 Multicast Routing protocols for the Cisco Carrier Routing System
 (CRS).  Worked this project from early design through product launch
-into maintenance. &lt;a href=&#34;{{.Permalink}}&#34;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+into maintenance. &lt;a href=&#34;{{ .Permalink }}&#34;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>

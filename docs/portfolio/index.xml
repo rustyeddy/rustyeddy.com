@@ -11,5 +11,27 @@
 	<atom:link href="http://rustyeddy.com/portfolio/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Control Station</title>
+      <link>http://rustyeddy.com/portfolio/control-station/</link>
+      <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/portfolio/control-station/</guid>
+      <description>The first phase of the control station that you are looking at here includes a Joystick for human control that directly moves the Camera Pan &amp;amp; Tilt assembly. The ControlStation is designed to allow the addition of wireless connectivity and an easily interchangeable set of input devices (Joystick, Gyro Displays or Computer Algorithms and so on). Output devices include motor controllers, cameras, displays and cloud storage for example.
+Project Requirements Following are the high level requirements, or goals for this project.</description>
+    </item>
+    
+    <item>
+      <title>RedEye Streaming Video and Computer Vision</title>
+      <link>http://rustyeddy.com/portfolio/redeye/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/portfolio/redeye/</guid>
+      <description>The RedEye project was born from the need to stream video from a slowly moving robot with small inexpensive and easily available cameras.
+Key Points The video streams will be consumed by a HD video display, Computer Vision control algorithms and storage.
+GStreamer Framework The architecture is built around the powerful GStreamer libraries and toolset. Which means that we can immediately consume any video source that GStreamer supports.
+Likewise, we can produce any video stream output that GStreamer is capable of producing.</description>
+    </item>
+    
   </channel>
 </rss>

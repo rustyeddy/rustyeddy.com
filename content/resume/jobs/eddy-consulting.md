@@ -13,7 +13,7 @@ Worked with clients to scope project requirements, establish
 budgets and schedules, design software architecture and
 lead teams of engineers through entire software development
 lifecycles. Project work included but not limited to C; C++; Python;
-PHP; JavaScript; Java & MySQL. [read more]({{ .Permalink }})
+PHP; JavaScript; Java & MySQL.
 <!--more-->
 
 * __Alchemy Networks / CloudTrek__: Ansible was used to automate the
