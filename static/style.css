@@ -11,7 +11,7 @@ h1, h2, h4, h3, h5, h6 {
 
 .jumbotron {
     color: white;
-    background-image: url('https://rustyeddy.sfo2.digitaloceanspaces.com/rusty-hero-wide.jpg');
+    background-image: url('https://source.unsplash.com/JgOeRuGD_Y4/1600x900');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,3 +19,6 @@ h1, h2, h4, h3, h5, h6 {
     height: 340px;
 }
 
+.jumbotron.home {
+    background-image: url('https://rustyeddy.sfo2.digitaloceanspaces.com/rusty-hero-wide.jpg');
+}
