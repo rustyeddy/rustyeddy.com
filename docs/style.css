@@ -11,7 +11,9 @@ h1, h2, h4, h3, h5, h6 {
 
 .jumbotron {
     color: white;
+
     background-image: url('https://source.unsplash.com/JgOeRuGD_Y4/1600x900');
+    /*background-image: url('https://source.unsplash.com/bviex5lwf3s/1600x900');*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
