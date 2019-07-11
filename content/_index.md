@@ -2,7 +2,7 @@
 title: rusty eddy
 date: 2019-05-14
 description: >
-  I am a Software Engineer, primarily interested in Robotics, Computer Vision and IoT. 
+  Software Engineer, primarily interested in Robotics, Computer Vision and IoT. 
 ---
 
 ## An Interview with Me
