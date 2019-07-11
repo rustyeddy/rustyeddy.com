@@ -2,51 +2,42 @@
 title: rusty eddy
 date: 2019-05-14
 description: >
-  I am a Software Engineer,  Robot Mechanic and Stuff
-background-image: default.jpg
+  I am a Software Engineer, primarily interested in Robotics, Computer Vision and IoT. 
 ---
 
-## An Interview with Myself
+## An Interview with Me
 
-Following is a hypothetical interview, one very similar to the first
-5 minutes of every "interview" one needs to sit through.  And here
-goes the interview:
+Since we are not sitting face to face here are some of the questions
+that you may have for me:
 
-### Hi, who are you?
+### So, tell me, who are you?
 
 My name is George Eddy, my friends call me Rusty.  I live in
-Huntington Beach, CA with my family.
+Huntington Beach, CA with my family.  I was born and raised in
+Southern California, Educated at CSULB and USC. I have worked in the
+Aerospace Industry, Computer Networking, Telecom and the Entertainment
+Industries. 
 
 #### What do you do?
 
-I am a hands on Software Engineer.  I work on robots, realtime
-embedded systems and physical computing.  I like working on hard
-problems with talented people.
+I am a hands on Software Engineer and I write a lot of software.
+These days, I work on robots, realtime embedded systems and computer
+vision.  I like working on hard problems with talented people.
 
-#### What are you into?
-I have a particular interest in autonomous navigation algorithms,
- computer vision, real time communications and machine learning.
 
 #### What have you worked on in the past?
-Three decades and counting developing, I have been debugging and
-supporting software and complex computer networks.  As well as design,
-implement and support industrial strength, production quality software
-systems.
 
-#### Can you give a couple examples?
+For over three decades and counting I have designed software enabling
+Computer Networks, Developing Servers and the Applications that run on
+them. Various applications that rely on robust, Industrial strength
+software.  Have a look at my [resume](http://rustyeddy.com/resume) and
+[portfolio](http://rustyeddy.com/portfolio) for more specifics.
 
-I have also written three computer networking protocols from scratch
-with only an RFC (or Internet-draft).  Added _multicast routing_ to
-early versions of Linux, FreeBSD kernels and others.  And tons of
-other stuff.
-
-You can see more on my [portfolio](/portfolio)
-
-#### What did you learn or acquire during that time?
+#### What Roles and Titles have you had?
 
 My skills and previous titles include: Principal Engieer,
 Technical Lead, Member of The Technical Staff, Senior Software
-Engineer and Systems Programmer, amoug others.
+Engineer and Systems Programmer, among others.
 
 #### And who have you worked for?
 I have worked for Fortune 500 companies including AT&T, Cisco Systems
@@ -63,7 +54,6 @@ from my [resume](http://resume.rustyeddy.com) and
 - [portfolio here](http://rustyeddy.com/portfolio
 )
 
-I have significant experience with, and interest in: embedded systems,
-real time communication, control systems, cloud automation,
-building micro-services and devops.
+### Interested In Working Together?
 
+TODO: add signup form here:
