@@ -7,8 +7,14 @@ description: >
 
 ## An Interview with Me
 
-Since we are not sitting face to face here are some of the questions
-that you may have for me:
+In almost every interview I have done involved a series of questions
+that pretty much follow the pattern below.  So I thought I would
+create a mock Interview with myself, anticipating the questions that
+you might have for me. 
+
+Now, If you actually have a different question or questions, please,
+by all means do contact me using the adjecent form (or any other way
+you would like).
 
 ### So, tell me, who are you?
 
@@ -20,40 +26,45 @@ Industries.
 
 #### What do you do?
 
-I am a hands on Software Engineer and I write a lot of software.
-These days, I work on robots, realtime embedded systems and computer
-vision.  I like working on hard problems with talented people.
+I am Software Engineer and Network architect. I still write a lot of
+software, and these days, I am particularly interested in robots,
+embedded systems and computer vision.  
+
+I like working on hard problems with talented people.
 
 
 #### What have you worked on in the past?
 
-For over three decades and counting I have designed software enabling
-Computer Networks, Developing Servers and the Applications that run on
-them. Various applications that rely on robust, Industrial strength
-software.  Have a look at my [resume](http://rustyeddy.com/resume) and
-[portfolio](http://rustyeddy.com/portfolio) for more specifics.
+Lot's of really cool things, some big complex projects as well as
+interesting proof of concept research projects.  
+
+Most of these involve computer networks, Real Time applications
+and/or high availability services.  There are plenty of other
+things that I have built, but these are what I consider my "Core
+Strengths". 
 
 #### What Roles and Titles have you had?
 
-My skills and previous titles include: Principal Engieer,
-Technical Lead, Member of The Technical Staff, Senior Software
-Engineer and Systems Programmer, among others.
+Principal Engieer, Technical Lead, Member of The Technical Staff,
+Senior Software Engineer and Systems Programmer are some of my
+previous Job titles.
+
+I throughouly enjoy being a technical lead, mentoring Jr. engineers and high level
+architecture.  However, I am also a very hands on programmer.
 
 #### And who have you worked for?
-I have worked for Fortune 500 companies including AT&T, Cisco Systems
-and McDonnel Douglas (now Boeing), USC/ISI.  I have also worked with
-startups and small business.
+I have worked for Fortune 500 companies including AT&T, Cisco Systems,
+McDonnel Douglas (now Boeing) and USC/ISI.
+
+I have also worked with startups and small businesses.  I really enjoy
+early stage projects and small agile teams of diverse and talented
+people.
 
 #### Do you have a Resume, or a Portfolio?
 
-For the particular dates, titles and projects you can get more detail
-from my [resume](http://resume.rustyeddy.com) and 
-[portfolio](http://portfolio.rustyeddy.com):
+I sure do, and it is online!  For the particular dates, titles and
+projects you can get more detail here:
 
 - [resume at this link here](http://rustyeddy.com/resume)
-- [portfolio here](http://rustyeddy.com/portfolio
-)
+- [portfolio here](http://rustyeddy.com/portfolio)
 
-### Interested In Working Together?
-
-TODO: add signup form here:
