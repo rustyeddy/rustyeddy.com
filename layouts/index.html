@@ -1,72 +1,49 @@
 <!DOCTYPE html>
 <html>
-  {{- partial "head.html" . -}}
-  <body>
-    {{- partial "header.html" . -}}
+    {{- partial "head.html" . -}}
+    <body>
+	{{- partial "header.html" . -}}
 
-    <div class="jumbotron home border-top border-bottom">
-      <div class="row">
-	  <div class="col"></div>
-	  <div class="col-md-4">
-	      <h1 class="header h3 pb-1">{{ .Title }}</h1>
-	      <h5 class="leadin align-right text-muted mt-0">
-		  {{ .Description }}
-	      </h5>
-	  </div>
-	  <div class="col-md-4"></div>
-	  <div class="col"></div>
-      </div>
-    </div>
+	{{- partial "jumbotron-head.html" . -}}
 
 
-    <div id="main">
-	<div class="row">
-	    <div class="col-2"></div>
-	    <div class="col-4">{{ .Content }}</div>
-	    <div class="col-1"></div>
-	    <div class="col">
-		
+	<div id="main">
+	    <div class="row">
+		<div class="col"></div>
+		<div class="col-5">{{ .Content }}</div>
+		<div class="col"></div>
+		<div class="col text-center">
+		    
+		    <form action="https://www.getdrip.com/forms/578495232/submissions" method="post" data-drip-embedded-form="578495232">
+			<h3 data-drip-attribute="headline">Contact?</h3>
+			<div>
+			    <label for="drip-email">Email Address</label><br />
+			    <input type="email" id="drip-email" name="fields[email]" value="" />
+			</div>
+			<div style="display: none;" aria-hidden="true">
+			    <label for="website">Website</label><br />
+			    <input type="text" id="website" name="website" tabindex="-1" autocomplete="false" value="" />
+			</div>
+			<div>
+			    <input type="submit" value="Sign Up" data-drip-attribute="sign-up-button" />
+			</div>
+		    </form>
 
-
-
-
-<form action="https://www.getdrip.com/forms/578495232/submissions" method="post" data-drip-embedded-form="578495232">
-  <h3 data-drip-attribute="headline">Questions or Comments?</h3>
-  <div data-drip-attribute="description">Please speak your min</div>
-    <div>
-        <label for="drip-email">Email Address</label><br />
-        <input type="email" id="drip-email" name="fields[email]" value="" />
-    </div>
-  <div style="display: none;" aria-hidden="true">
-    <label for="website">Website</label><br />
-    <input type="text" id="website" name="website" tabindex="-1" autocomplete="false" value="" />
-  </div>
-  <div>
-    <input type="submit" value="Sign Up" data-drip-attribute="sign-up-button" />
-  </div>
-</form>
-
-
-
-
-
-
-		<h3 class="text-center">Contact</h3>
-		<ul class="list-group text-center">
-		    <li class="list-group-item">(714) 362-5402</li>
-		    <li class="list-group-item">
-			<a href="http://github.com/rustyeddy">Github</a>
-		    </li>
-		    <li class="list-group-item">
-			<a href="https://linkedin.com/in/rustyeddy">LinkedIn</a>
-		    </li>
-		</ul>
+		    <br />
+		    <ul class="list-group text-center">
+			<li class="list-group-item">(714) 362-5402</li>
+			<li class="list-group-item">
+			    <a href="http://github.com/rustyeddy">Github</a>
+			</li>
+			<li class="list-group-item">
+			    <a href="https://linkedin.com/in/rustyeddy">LinkedIn</a>
+			</li>
+		    </ul>
+		</div>
+		<div class="col"></div>
 	    </div>
-	    <div class="col-2">
-	    </div>
+
 	</div>
-
-    </div>
-    {{- partial "footer.html" . -}}
-  </body>
+	{{- partial "footer.html" . -}}
+    </body>
 </html>

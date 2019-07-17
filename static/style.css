@@ -9,28 +9,17 @@ h1, h2, h4, h3, h5, h6 {
     margin-top: 1rem;
 }
 
-.jumbotron {
-    color: white;
 
-    background-image: url('https://mobilerobot.sfo2.cdn.digitaloceanspaces.com/ControlStation_logo.png');
-    /*background-image: url('https://source.unsplash.com/JgOeRuGD_Y4/1600x900');*/
-    /*background-image: url('https://source.unsplash.com/bviex5lwf3s/1600x900');*/
-    /*background: #113355;*/
-    background-position: center;
+.jumbotron.head-pic {
+    background-image: url('https://rustyeddy.sfo2.digitaloceanspaces.com/rusty-hero-wide.jpg');
+
     background-repeat: no-repeat;
     background-size: cover;
     /*height: 100vh;*/
     height: 340px;
+    background-position: center;
 }
 
-.jumbotron.home {
-    background-image: url('https://rustyeddy.sfo2.digitaloceanspaces.com/rusty-hero-wide.jpg');
-}
-
-
-.jumbotron.control-station {
-    background-image: url('https://source.unsplash.com/JgOeRuGD_Y4/1600x900');
-}
 
 .text-big {
     font-size: 1.4rem;
