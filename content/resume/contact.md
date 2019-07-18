@@ -13,5 +13,5 @@ sites:
   - http://mobilerobot.io
 linkedin: http://linkedin.com/rustyeddy
 github: http://github.com/rustyeddy
-twitter: "@rustyeddy"
+twitter: http://twitter.com/rustyeddy
 ---
