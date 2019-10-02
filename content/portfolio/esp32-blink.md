@@ -18,8 +18,6 @@ I wrote an LED C++ class to configure an ESP32 GPIO pin as a digital
 output, such that we can turn the LED on and off, by setting the
 voltage to pin HIGH, turn the LED off by setting _pin_ to 0.
 
-
-
 The ESP32 esp-idf development software, built on top of FreeRTOS is a
 rich and powerful environment that is friendly to command line
 hackers, but certainly C-centric.  However, C++ programs are just a

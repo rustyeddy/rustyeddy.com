@@ -2,21 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My Field Notes on Rusty Eddy</title>
-    <link>http://rustyeddy.com/notes/</link>
+    <link>http://localhost:1313/notes/</link>
     <description>Recent content in My Field Notes on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 13 May 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://rustyeddy.com/notes/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/notes/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Website Design and Developers, What is the Difference</title>
+      <link>http://localhost:1313/notes/website-roles/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/notes/website-roles/</guid>
+      <description>What roles does it take to develop a website?</description>
+    </item>
+    
+    <item>
       <title>Using Gstreamer to create an RTSP Server</title>
-      <link>http://rustyeddy.com/notes/gstreamer-rtsp-server/</link>
+      <link>http://localhost:1313/notes/gstreamer-rtsp-server/</link>
       <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/gstreamer-rtsp-server/</guid>
+      <guid>http://localhost:1313/notes/gstreamer-rtsp-server/</guid>
       <description>Of it earlier this month I set out to start streaming video From the CSI camera, that is a raspberry pie camera, From a moving vehicle for the vehicles guidance and navigation.
 I was surprised to find the the whole world is streaming video is Incredibly complex, NFL 2019 we do not have A solution that is easy universally adopted.
 TLDR; Gstreamer RTSP Pipeline We are streaming our video from a Raspberry Pi Camera (CSI) attached to, either a Raspberry Pi or a Jetson Nano, GST extracts the video from the CSI camera using a custom driver (raspicamsrc or nvargussrc) for the RPi or Nano respectively.</description>
@@ -24,10 +33,10 @@ TLDR; Gstreamer RTSP Pipeline We are streaming our video from a Raspberry Pi Cam
     
     <item>
       <title>WebRTC What is it?</title>
-      <link>http://rustyeddy.com/notes/webrtc-what-is-it/</link>
+      <link>http://localhost:1313/notes/webrtc-what-is-it/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/webrtc-what-is-it/</guid>
+      <guid>http://localhost:1313/notes/webrtc-what-is-it/</guid>
       <description>WebRTC stands for Web Realtime Communications. Yea, I know you can Google too, now let&amp;rsquo;s ask, &amp;ldquo;What does that mean?&amp;rdquo;.
 Realtime Communication Generally speaking we all, intuitively know what Real Time means, it is a sense of what is happening now. OK, that is reasonable, after all it is how we live the majority of our lives.
 Communication &amp;ldquo;Topologies&amp;rdquo;  One to one One to many many to many many to one?</description>
@@ -35,10 +44,10 @@ Communication &amp;ldquo;Topologies&amp;rdquo;  One to one One to many many to m
     
     <item>
       <title>Streaming Video is Complicated</title>
-      <link>http://rustyeddy.com/notes/streaming-video/</link>
+      <link>http://localhost:1313/notes/streaming-video/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/streaming-video/</guid>
+      <guid>http://localhost:1313/notes/streaming-video/</guid>
       <description>I need to stream live video from a moving vehical with a connected camera and a possibly connected wifi.
 Live High Resolution Video Video will stream from the vehicle to be picked up by video consumers and processed as required. Examples of consumers are Live Video Display on our (Webapp), OpenCV for vision algoritms.
 High Demand For Low Resolution It turns out that computer vision alogrithms typically run quite a bit faster on lower resolution images, the additional information from these hi-res images can slow down the type of algorithms we are interested in by many factors.</description>
@@ -46,10 +55,10 @@ High Demand For Low Resolution It turns out that computer vision alogrithms typi
     
     <item>
       <title>Streaming Video Protocols</title>
-      <link>http://rustyeddy.com/notes/streaming-video-protocols/</link>
+      <link>http://localhost:1313/notes/streaming-video-protocols/</link>
       <pubDate>Sun, 28 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/streaming-video-protocols/</guid>
+      <guid>http://localhost:1313/notes/streaming-video-protocols/</guid>
       <description>rtp rtsp rtmp hlsl mjpeg mpeg-dash mpeg jpeg  RTP ~ Real Time Protocol Actually holds payloads containing arbitrary, but time/delay sensitive media (audio, video, live conversations, etc). Incorporates enough controls to allow for network congestion, reciever compensation and more.
 RTSP What it is and How to use it Real Time Streaming Protocol (RTSP)
 General consensus says that RTSP is a good choice for low latency, local area networks.</description>
@@ -57,10 +66,10 @@ General consensus says that RTSP is a good choice for low latency, local area ne
     
     <item>
       <title>Streaming Video Tools</title>
-      <link>http://rustyeddy.com/notes/streaming-video-tools/</link>
+      <link>http://localhost:1313/notes/streaming-video-tools/</link>
       <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/streaming-video-tools/</guid>
+      <guid>http://localhost:1313/notes/streaming-video-tools/</guid>
       <description>The grandparents of streaming video, and snapshots, read, writing and transcoding video and single frame images are ffmpeg, vlc and gstreamer.
 Other platforms, such as the wildly cool and inexpensive Raspberry Pi and attached CSI Camera (Raspberry Pi Camera) have thier own set of utilities: like raspivid. Or the NVidia Nano with it&amp;rsquo;s gst-streamer plugins and nvgst-capture/nvgst-playback utilies.
  This writting is as of March 2019
@@ -69,22 +78,23 @@ Other platforms, such as the wildly cool and inexpensive Raspberry Pi and attach
     
     <item>
       <title>Raspberry Pi Camera and Multiple Ports</title>
-      <link>http://rustyeddy.com/notes/raspberry-pi-camera-multiple-ports/</link>
+      <link>http://localhost:1313/notes/raspberry-pi-camera-multiple-ports/</link>
       <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/raspberry-pi-camera-multiple-ports/</guid>
+      <guid>http://localhost:1313/notes/raspberry-pi-camera-multiple-ports/</guid>
       <description>&lt;p&gt;As I started bumbling around trying to figure the best way to stream
 [live video from a moving vehicle], I found that the Raspberry Pi
 camera is capable of producing filtered versions of the images it is
-producing, through &lt;em&gt;video ports&lt;/em&gt;.&lt;/p&gt;</description>
+producing, through &lt;em&gt;video ports&lt;/em&gt;.
+&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Streaming Live Video on a Local Lan Vs. Internet</title>
-      <link>http://rustyeddy.com/notes/streaming-video-local-network/</link>
+      <link>http://localhost:1313/notes/streaming-video-local-network/</link>
       <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/streaming-video-local-network/</guid>
+      <guid>http://localhost:1313/notes/streaming-video-local-network/</guid>
       <description>differences in local vs. internet and streaming video
  live stream vs. video on demand
  what does real time mean?
@@ -101,20 +111,20 @@ RTSP is a good option for streaming video in a local setup up, where minimal del
     
     <item>
       <title>About MicroServices and Distributed Systems</title>
-      <link>http://rustyeddy.com/notes/about-distributed-systems-and-micro-services/</link>
+      <link>http://localhost:1313/notes/about-distributed-systems-and-micro-services/</link>
       <pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/about-distributed-systems-and-micro-services/</guid>
+      <guid>http://localhost:1313/notes/about-distributed-systems-and-micro-services/</guid>
       <description>I am very much dedicated to building distributed, micro-service style systems. I prefer to piece solutions together based on lean, efficient, best of breed components.
 More Complex? Many rightly claim that a distributed system increases the complexity over the monolith, and it is true that communicaiton boundaries must be explicitly created, and that communications between the boundarys becomes a potential for failure, or reduced reliability that tightly couple systems do not have to deal with.</description>
     </item>
     
     <item>
       <title>Design Graphics with Canva</title>
-      <link>http://rustyeddy.com/notes/design-graphics-with-canva/</link>
+      <link>http://localhost:1313/notes/design-graphics-with-canva/</link>
       <pubDate>Sun, 22 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/design-graphics-with-canva/</guid>
+      <guid>http://localhost:1313/notes/design-graphics-with-canva/</guid>
       <description>Canva is a very simple yet powerful graphics art tool, for non-graphic artists. You can to on there and create free stuff, or, if you are a pro and create graphics all the time, you can optin for a reasonable montly fee.
 I created the RedEye logo for the Mobile Robot Project using Canva, it took me 15 minutes, including remembering my forgotten password.
 There are a ton of templates, graphics and photos that can be easily drag-n-dropped into place.</description>
@@ -122,10 +132,10 @@ There are a ton of templates, graphics and photos that can be easily drag-n-drop
     
     <item>
       <title>Adafruit Music Maker mp3 Sheild</title>
-      <link>http://rustyeddy.com/notes/adafruit-music-maker-mp3-sheild/</link>
+      <link>http://localhost:1313/notes/adafruit-music-maker-mp3-sheild/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/adafruit-music-maker-mp3-sheild/</guid>
+      <guid>http://localhost:1313/notes/adafruit-music-maker-mp3-sheild/</guid>
       <description>The shield is driven by an SPI connection with the Arduino and relies on an SD card with music files on it to play. Must determine how to play streaming audio, then we&amp;rsquo;ll have something neat!
 Link to the documentation.
 The shield can also be jumpered and booted into Midi Mode and turned into a drum machine or a Garageband type of play along.</description>
@@ -133,10 +143,10 @@ The shield can also be jumpered and booted into Midi Mode and turned into a drum
     
     <item>
       <title>OpenCV</title>
-      <link>http://rustyeddy.com/notes/opencv/</link>
+      <link>http://localhost:1313/notes/opencv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/opencv/</guid>
+      <guid>http://localhost:1313/notes/opencv/</guid>
       <description>Building OpenCV is quite a task, so if you are just getting started, or do not need something in more recent versions, then by all means use your OSs package management facility to install OpenCV, otherwise here is a list of things that I did to get the latest version of OpenCV built so I could infuse it with some GStreamer to deliver streaming video to our CV algorithms.</description>
     </item>
     

@@ -2,21 +2,15 @@
 title: rusty eddy
 date: 2019-05-14
 description: >
-  Software Engineer, primarily interested in Robotics, Computer Vision and IoT. 
+  I am a Software Engineer, primarily interested in IoT, Computer Vision the
+  Go programming language and the Raspberry Pi.
 ---
 
 ## An Interview with Me
 
-In almost every interview I have done involved a series of questions
-that pretty much follow the pattern below.  So I thought I would
-create a mock Interview with myself, anticipating the questions that
-you might have for me. 
+Pretty much every I have been interviewed in the past and until now, I get asked pretty much these exact same questions as I have answered below in my _mock_ interview below.
 
-Now, If you actually have a different question or questions, please,
-by all means do contact me using the adjecent form (or any other way
-you would like).
-
-### So, tell me, who are you?
+#### So, Who are you?
 
 My name is George Eddy, my friends call me Rusty.  I live in
 Huntington Beach, CA with my family.  I was born and raised in
@@ -27,11 +21,9 @@ Industries.
 #### What do you do?
 
 I am Software Engineer and Network architect. I still write a lot of
-software, and these days, I am particularly interested in robots,
-embedded systems and computer vision.  
+software, and these days, I am particularly interested in managing IoT devices, the maker movement and ComputerVision.
 
 I like working on hard problems with talented people.
-
 
 #### What have you worked on in the past?
 

@@ -9,13 +9,9 @@ h1, h2, h4, h3, h5, h6 {
     margin-top: 1rem;
 }
 
-
 .jumbotron.head-pic {
-    background-image: url('https://rustyeddy.sfo2.digitaloceanspaces.com/rusty-hero-wide.jpg');
-
     background-repeat: no-repeat;
     background-size: cover;
-    /*height: 100vh;*/
     height: 340px;
     background-position: center;
 }

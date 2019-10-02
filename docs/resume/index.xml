@@ -2,39 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>resume on Rusty Eddy</title>
-    <link>http://rustyeddy.com/resume/</link>
+    <link>http://localhost:1313/resume/</link>
     <description>Recent content in resume on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 May 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://rustyeddy.com/resume/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/resume/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Education</title>
-      <link>http://rustyeddy.com/resume/education/</link>
+      <link>http://localhost:1313/resume/education/</link>
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/education/</guid>
+      <guid>http://localhost:1313/resume/education/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Objectives</title>
+      <link>http://localhost:1313/resume/objectives/</link>
+      <pubDate>Sat, 21 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/resume/objectives/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Interests</title>
-      <link>http://rustyeddy.com/resume/interests/</link>
+      <link>http://localhost:1313/resume/interests/</link>
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/interests/</guid>
+      <guid>http://localhost:1313/resume/interests/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Publications</title>
-      <link>http://rustyeddy.com/resume/pubs/</link>
+      <link>http://localhost:1313/resume/pubs/</link>
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/pubs/</guid>
+      <guid>http://localhost:1313/resume/pubs/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Ramesh Govindan, et el.&lt;/strong&gt; &lt;em&gt;&amp;ldquo;An Architecture for Stable, Analyzable
 Internet Routing&amp;rdquo;&lt;/em&gt;, IEEE Network Magazine, Jan-Feb 1999.&lt;/p&gt;
 
@@ -46,33 +55,35 @@ with pkt&amp;rdquo;&lt;/em&gt;, Networld+Interop 99 Engineers Conference Proceed
 Defined Networking (SDN) Controller&amp;rdquo;&lt;/em&gt;, AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Rusty Eddy&lt;/strong&gt;, &lt;em&gt;&amp;ldquo;Testing Multicast SDN Networks in a Container&amp;rdquo;&lt;/em&gt;,
-AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;</description>
+AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Skills</title>
-      <link>http://rustyeddy.com/resume/skills/</link>
+      <link>http://localhost:1313/resume/skills/</link>
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/skills/</guid>
+      <guid>http://localhost:1313/resume/skills/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rusty Eddy</title>
-      <link>http://rustyeddy.com/resume/about/</link>
+      <link>http://localhost:1313/resume/about/</link>
       <pubDate>Sat, 11 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/about/</guid>
+      <guid>http://localhost:1313/resume/about/</guid>
       <description>Software | Communications | Robotics | ~ + ~ | Engineer | Developer | Architect</description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>http://rustyeddy.com/resume/contact/</link>
+      <link>http://localhost:1313/resume/contact/</link>
       <pubDate>Fri, 09 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/contact/</guid>
+      <guid>http://localhost:1313/resume/contact/</guid>
       <description></description>
     </item>
     
