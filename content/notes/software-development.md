@@ -43,3 +43,12 @@ For example: putting on your shoes and getting coffee are "concurrent" events, t
 Putting on socks then shoes is NOT concurrent, the sock MUST be put on before the shoes and must be done in order (synchronously).
 
 If two or more "concurrent" events are in fact running at the same time, they are said to be running in parallel.  
+
+For example, in Go it is typical to use "Go routines" to run parts of programs asynchronously. By placeing a 'go xxxxx' infront of a function runs the function ASYNCHRONOUSLY because these functions are CONCURRENT (can be ran at the same time).
+
+However, if there is only 1 CPU, each of these tasks will have to take turns being run through gold old CPU timesharing.
+
+Now if the computer happen to have 1 available CPU per tasks where each task ran on it's own CPU, then the program would in fact be running in PARALLEL, because each task is in fact executing at the same time (or asynchrounously).
+
+Did that make sense? :)
+
