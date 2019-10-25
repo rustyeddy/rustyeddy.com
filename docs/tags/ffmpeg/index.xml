@@ -1,22 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ffmpeg on Rusty Eddy</title>
-    <link>http://localhost:1313/tags/ffmpeg/</link>
-    <description>Recent content in Ffmpeg on Rusty Eddy</description>
+    <title>ffmpeg on Rusty Eddy</title>
+    <link>http://rustyeddy.com/tags/ffmpeg/</link>
+    <description>Recent content in ffmpeg on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 23 Apr 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/ffmpeg/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://rustyeddy.com/tags/ffmpeg/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Streaming Video Tools</title>
-      <link>http://localhost:1313/notes/streaming-video-tools/</link>
+      <link>http://rustyeddy.com/notes/streaming-video-tools/</link>
       <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/notes/streaming-video-tools/</guid>
+      <guid>http://rustyeddy.com/notes/streaming-video-tools/</guid>
       <description>The grandparents of streaming video, and snapshots, read, writing and transcoding video and single frame images are ffmpeg, vlc and gstreamer.
 Other platforms, such as the wildly cool and inexpensive Raspberry Pi and attached CSI Camera (Raspberry Pi Camera) have thier own set of utilities: like raspivid. Or the NVidia Nano with it&amp;rsquo;s gst-streamer plugins and nvgst-capture/nvgst-playback utilies.
  This writting is as of March 2019
