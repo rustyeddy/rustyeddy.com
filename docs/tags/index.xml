@@ -1,184 +1,184 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Rusty Eddy</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>http://rustyeddy.com/tags/</link>
     <description>Recent content in Tags on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Sep 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://rustyeddy.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Adafruit</title>
-      <link>http://localhost:1313/tags/adafruit/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/adafruit/</guid>
-      <description></description>
-    </item>
     
     <item>
-      <title>Architect</title>
-      <link>http://localhost:1313/tags/architect/</link>
-      <pubDate>Sat, 11 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/architect/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Arduino</title>
-      <link>http://localhost:1313/tags/arduino/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/arduino/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Audio</title>
-      <link>http://localhost:1313/tags/audio/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/audio/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>http://localhost:1313/tags/contact/</link>
-      <pubDate>Fri, 09 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/contact/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Developer</title>
-      <link>http://localhost:1313/tags/developer/</link>
-      <pubDate>Sat, 11 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/developer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Engineer</title>
-      <link>http://localhost:1313/tags/engineer/</link>
-      <pubDate>Sat, 11 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/engineer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ffmpeg</title>
-      <link>http://localhost:1313/tags/ffmpeg/</link>
-      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/ffmpeg/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Gstreamer</title>
-      <link>http://localhost:1313/tags/gstreamer/</link>
-      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/gstreamer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>H264</title>
-      <link>http://localhost:1313/tags/h264/</link>
-      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/h264/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mpeg Dash</title>
-      <link>http://localhost:1313/tags/mpeg-dash/</link>
-      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/mpeg-dash/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Picamera</title>
-      <link>http://localhost:1313/tags/picamera/</link>
-      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/picamera/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Raspberry Pi</title>
-      <link>http://localhost:1313/tags/raspberry-pi/</link>
-      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/raspberry-pi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Resume</title>
-      <link>http://localhost:1313/tags/resume/</link>
+      <title>resume</title>
+      <link>http://rustyeddy.com/tags/resume/</link>
       <pubDate>Sat, 21 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/resume/</guid>
+      <guid>http://rustyeddy.com/tags/resume/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Robots</title>
-      <link>http://localhost:1313/tags/robots/</link>
-      <pubDate>Sat, 11 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/robots/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rtmp</title>
-      <link>http://localhost:1313/tags/rtmp/</link>
+      <title>mpeg-dash</title>
+      <link>http://rustyeddy.com/tags/mpeg-dash/</link>
       <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/rtmp/</guid>
+      <guid>http://rustyeddy.com/tags/mpeg-dash/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Rtsp</title>
-      <link>http://localhost:1313/tags/rtsp/</link>
+      <title>rtmp</title>
+      <link>http://rustyeddy.com/tags/rtmp/</link>
       <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/rtsp/</guid>
+      <guid>http://rustyeddy.com/tags/rtmp/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Vlc</title>
-      <link>http://localhost:1313/tags/vlc/</link>
-      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      <title>rtsp</title>
+      <link>http://rustyeddy.com/tags/rtsp/</link>
+      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/vlc/</guid>
+      <guid>http://rustyeddy.com/tags/rtsp/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Webrtc</title>
-      <link>http://localhost:1313/tags/webrtc/</link>
+      <title>webrtc</title>
+      <link>http://rustyeddy.com/tags/webrtc/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/webrtc/</guid>
+      <guid>http://rustyeddy.com/tags/webrtc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>h264</title>
+      <link>http://rustyeddy.com/tags/h264/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/h264/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ffmpeg</title>
+      <link>http://rustyeddy.com/tags/ffmpeg/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/ffmpeg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gstreamer</title>
+      <link>http://rustyeddy.com/tags/gstreamer/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/gstreamer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vlc</title>
+      <link>http://rustyeddy.com/tags/vlc/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/vlc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>picamera</title>
+      <link>http://rustyeddy.com/tags/picamera/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/picamera/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>raspberry pi</title>
+      <link>http://rustyeddy.com/tags/raspberry-pi/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/raspberry-pi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>architect</title>
+      <link>http://rustyeddy.com/tags/architect/</link>
+      <pubDate>Sat, 11 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/architect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>developer</title>
+      <link>http://rustyeddy.com/tags/developer/</link>
+      <pubDate>Sat, 11 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/developer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>engineer</title>
+      <link>http://rustyeddy.com/tags/engineer/</link>
+      <pubDate>Sat, 11 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/engineer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>robots</title>
+      <link>http://rustyeddy.com/tags/robots/</link>
+      <pubDate>Sat, 11 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/robots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>contact</title>
+      <link>http://rustyeddy.com/tags/contact/</link>
+      <pubDate>Fri, 09 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>adafruit</title>
+      <link>http://rustyeddy.com/tags/adafruit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/adafruit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>arduino</title>
+      <link>http://rustyeddy.com/tags/arduino/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/arduino/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>audio</title>
+      <link>http://rustyeddy.com/tags/audio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/audio/</guid>
       <description></description>
     </item>
     
