@@ -18,7 +18,26 @@ RustyEddy.Com:
     url: /portfolio
     items:
       - Laser Calibration and Control (Radian)
+      - SDN Controller (DirecTV)
+      - Zero Touch Provisioning (AT&T)
+      - Automated Private Cloud Provision Software (Alchemy Networks)
       - Core Routing Systems (Cisco)
+      - Water Flow Measurement System/TSDB (Sierra Hydrographics)
       - Gated (ISI, Greenhills)
       - pimd (USC/ISI)
-
+      - Policy driven traceroute program (ISI)
+      - pkt Network test tool (ISI, IMS, Retix)
+      - Diagnostic network utilities and test automation (Retix)
+      - Embedded OS (Rockwell)
+  notes:
+    url: /notes
+    descr: >-
+      This is a section with content written on a variety of
+      topics. The articles will share a common template resulting in a
+      consistent look and feel.
+    articles:
+      - A Website Development Process
+      - A Process to Develop Webapps
+      - The Importance of Version Control, featuring **git**
+    
+    
