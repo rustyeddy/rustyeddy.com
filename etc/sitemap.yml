@@ -1,0 +1,24 @@
+---
+RustyEddy.Com:
+  home:
+    url: /
+    descr: >-
+      The home page, not sure exactly what this should say
+  about:
+    url: /about
+  resume:
+    url: /resume
+    sections:
+      - Contact
+      - Overview
+      - Work Experience
+      - Education
+      - Publications
+  portfolio:
+    url: /portfolio
+    items:
+      - Laser Calibration and Control (Radian)
+      - Core Routing Systems (Cisco)
+      - Gated (ISI, Greenhills)
+      - pimd (USC/ISI)
+
