@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>video on Rusty Eddy</title>
+    <title>Video on Rusty Eddy</title>
     <link>http://rustyeddy.com/categories/video/</link>
-    <description>Recent content in video on Rusty Eddy</description>
+    <description>Recent content in Video on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Apr 2019 00:00:00 +0000</lastBuildDate>
@@ -31,7 +31,8 @@ General consensus says that RTSP is a good choice for low latency, local area ne
       <description>&lt;p&gt;As I started bumbling around trying to figure the best way to stream
 [live video from a moving vehicle], I found that the Raspberry Pi
 camera is capable of producing filtered versions of the images it is
-producing, through &lt;em&gt;video ports&lt;/em&gt;.&lt;/p&gt;</description>
+producing, through &lt;em&gt;video ports&lt;/em&gt;.
+&lt;/p&gt;</description>
     </item>
     
   </channel>
