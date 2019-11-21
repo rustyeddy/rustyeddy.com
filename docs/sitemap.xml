@@ -17,6 +17,10 @@
   </url>
   
   <url>
+    <loc>http://rustyeddy.com/resume/jobs/alchemy/</loc>
+  </url>
+  
+  <url>
     <loc>http://rustyeddy.com/resume/jobs/directv/</loc>
   </url>
   
@@ -63,6 +67,11 @@
   <url>
     <loc>http://rustyeddy.com/resume/jobs/csu-chancelor/</loc>
     <lastmod>1995-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/about/</loc>
+    <lastmod>2019-11-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -123,6 +132,11 @@
   <url>
     <loc>http://rustyeddy.com/notes/webrtc-what-is-it/</loc>
     <lastmod>2019-05-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/resume/jobs/radian-laser/</loc>
+    <lastmod>2019-05-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -216,6 +230,10 @@
   </url>
   
   <url>
+    <loc>http://rustyeddy.com/portfolio/cloud-automation-ansible/</loc>
+  </url>
+  
+  <url>
     <loc>http://rustyeddy.com/categories/computer-vision/</loc>
     <lastmod>2019-05-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -224,6 +242,12 @@
   <url>
     <loc>http://rustyeddy.com/tags/contact/</loc>
     <lastmod>2018-02-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/develop-design/</loc>
+    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -258,6 +282,14 @@
   </url>
   
   <url>
+    <loc>http://rustyeddy.com/portfolio/laser-calibrator/</loc>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/portfolio/laser-kiosk/</loc>
+  </url>
+  
+  <url>
     <loc>http://rustyeddy.com/tags/mpeg-dash/</loc>
     <lastmod>2019-05-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -265,6 +297,10 @@
   
   <url>
     <loc>http://rustyeddy.com/notes/opencv/</loc>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/portfolio/oclv-website/</loc>
   </url>
   
   <url>

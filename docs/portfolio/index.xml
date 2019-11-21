@@ -42,5 +42,41 @@ GStreamer Framework The architecture is built around the powerful GStreamer libr
 Likewise, we can produce any video stream output that GStreamer is capable of producing.</description>
     </item>
     
+    <item>
+      <title>Cloud Automation With Ansible</title>
+      <link>http://rustyeddy.com/portfolio/cloud-automation-ansible/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/portfolio/cloud-automation-ansible/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Laser Calibrator</title>
+      <link>http://rustyeddy.com/portfolio/laser-calibrator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/portfolio/laser-calibrator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Laser Kiosk</title>
+      <link>http://rustyeddy.com/portfolio/laser-kiosk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/portfolio/laser-kiosk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Orange County Low Vision Website</title>
+      <link>http://rustyeddy.com/portfolio/oclv-website/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/portfolio/oclv-website/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

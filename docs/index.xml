@@ -48,6 +48,15 @@ introduced new resources.
     </item>
     
     <item>
+      <title>Cloud Trek</title>
+      <link>http://rustyeddy.com/resume/jobs/alchemy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/resume/jobs/alchemy/</guid>
+      <description>Cloud Automation with Ansible and CloudStack. Automate the installation and provisioning of Linux hosts with ansible.</description>
+    </item>
+    
+    <item>
       <title>DirecTV</title>
       <link>http://rustyeddy.com/resume/jobs/directv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -165,7 +174,9 @@ years. &lt;a href=&#34;{{.Permalink}}&#34;&gt;read more&lt;/a&gt;
       <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/notes/website-roles/</guid>
-      <description>What roles does it take to develop a website?</description>
+      <description>Should I hire a web designer or web developer and what is the difference?
+It is kinda funny, in the rest of the tech world the terms designer and developer mean distinctive things, and aside from a few rare unicorns, they very different roles.
+Developers write code and make things work, designers make things look good. But for one reason and another, in the world of Web these skills do infact overlap to some extent, and in some rare cases a single individual is skilled at both aesthetic presentation and the practical application of abstract logic.</description>
     </item>
     
     <item>
@@ -219,6 +230,15 @@ Likewise, we can produce any video stream output that GStreamer is capable of pr
       <description>WebRTC stands for Web Realtime Communications. Yea, I know you can Google too, now let&amp;rsquo;s ask, &amp;ldquo;What does that mean?&amp;rdquo;.
 Realtime Communication Generally speaking we all, intuitively know what Real Time means, it is a sense of what is happening now. OK, that is reasonable, after all it is how we live the majority of our lives.
 Communication &amp;ldquo;Topologies&amp;rdquo;  One to one One to many many to many many to one?</description>
+    </item>
+    
+    <item>
+      <title>Radian Laser Systems, LLC.</title>
+      <link>http://rustyeddy.com/resume/jobs/radian-laser/</link>
+      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/resume/jobs/radian-laser/</guid>
+      <description> Laser Calibrator Laser Kiosk Fleetmanagement, Cloud Automation, Containers  </description>
     </item>
     
     <item>
@@ -379,12 +399,48 @@ The shield can also be jumpered and booted into Midi Mode and turned into a drum
     </item>
     
     <item>
+      <title>Cloud Automation With Ansible</title>
+      <link>http://rustyeddy.com/portfolio/cloud-automation-ansible/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/portfolio/cloud-automation-ansible/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Laser Calibrator</title>
+      <link>http://rustyeddy.com/portfolio/laser-calibrator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/portfolio/laser-calibrator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Laser Kiosk</title>
+      <link>http://rustyeddy.com/portfolio/laser-kiosk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/portfolio/laser-kiosk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>OpenCV</title>
       <link>http://rustyeddy.com/notes/opencv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/notes/opencv/</guid>
       <description>Building OpenCV is quite a task, so if you are just getting started, or do not need something in more recent versions, then by all means use your OSs package management facility to install OpenCV, otherwise here is a list of things that I did to get the latest version of OpenCV built so I could infuse it with some GStreamer to deliver streaming video to our CV algorithms.</description>
+    </item>
+    
+    <item>
+      <title>Orange County Low Vision Website</title>
+      <link>http://rustyeddy.com/portfolio/oclv-website/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/portfolio/oclv-website/</guid>
+      <description></description>
     </item>
     
   </channel>
