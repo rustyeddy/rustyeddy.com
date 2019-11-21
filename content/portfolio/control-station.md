@@ -6,6 +6,7 @@ description: >
 date: 2019-07-04
 site: http://github.com/mobilerobot-io/projects/control-station
 image: https://rustyeddy.sfo2.digitaloceanspaces.com/SensorStation.png
+draft: true
 ---
 
 The first phase of the control station that you are looking at here

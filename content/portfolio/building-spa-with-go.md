@@ -5,6 +5,7 @@ description: >
   This article outlines a SPA architecture and the process of building
   the app from scratch.
 category: software
+draft: true
 ---
 
 ## The End Result
