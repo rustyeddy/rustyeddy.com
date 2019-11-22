@@ -105,12 +105,12 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/categories/resume/</loc>
+    <loc>http://rustyeddy.com/tags/resume/</loc>
     <lastmod>2019-09-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/tags/resume/</loc>
+    <loc>http://rustyeddy.com/categories/resume/</loc>
     <lastmod>2019-09-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -141,6 +141,11 @@
   
   <url>
     <loc>http://rustyeddy.com/</loc>
+    <lastmod>2019-05-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/interview/</loc>
     <lastmod>2019-05-14T00:00:00+00:00</lastmod>
   </url>
   
