@@ -2,8 +2,12 @@
 title: A Hypothetical Interview with Myself
 date: 2019-05-14
 description: >
-  Following is a hypothetical interview that represents the
-  beginning of most job interviews.
+  Design, Develop and Deliver Software
+summary: >
+  Over the years I have worked for large corporations and small
+  startups, I have been involved in phenomenol successes and dismal
+  failures. I am using this website to distill practices that I have
+  found that increase the likelyhood of success.
 ---
 
 ***So, Who are you?***
