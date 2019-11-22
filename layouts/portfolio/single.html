@@ -1,14 +1,14 @@
 {{ define "main" }}
 
 <div class="container">
-  <div class="row">
-    <div class="col"></div>
-    <div class="col=5">
-      <img class="justify-content-center" src="{{ .Params.Image }}" />
-    </div>
+    <div class="row">
+	<div class="col"></div>
+	<div class="col=5">
+	    <img class="justify-content-center" src="{{ .Params.Image }}" />
+	</div>
 
-    <div class="col"></div>
-  </div>
+	<div class="col"></div>
+    </div>
 </div>
 
 <div class="container">
@@ -20,16 +20,16 @@
     </nav>
 
     <div class="row">
-      <div class="col"></div>
-      <div class="col-lg-8 pl-4 pr-4">
-	<article class="article">
-	  {{ .Content }}
-	</article>
-	<div class="call-to-action">
-	  <h2>Call To Action</h2>
+	<div class="col"></div>
+	<div class="col-lg-8 pl-4 pr-4">
+	    <article class="article">
+		{{ .Content }}
+	    </article>
+	    <div class="call-to-action">
+		<h2>Call To Action</h2>
+	    </div>
 	</div>
-      </div>
-      <div class="col"></div>
+	<div class="col"></div>
     </div>
 </div>
 

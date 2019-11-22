@@ -13,7 +13,7 @@ Original member of the Multicast Routing team.  Team of 12 responsible
 for the design, implementation and testing the complete suite of
 Multicast Routing protocols for the Cisco Carrier Routing System
 (CRS).  Worked this project from early design through product launch
-into maintenance. [read more]( {{ .Permalink }} )
+into maintenance.
 <!--more-->
 
 Promoted to __technical lead__ with the responsibility to lead the

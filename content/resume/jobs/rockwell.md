@@ -12,7 +12,6 @@ division: Space Systems Division
 __Lead Sysadmin__: lead a team of 5 Sysadmins responsible for the
 use and well being of Engineering Departments 300+ UNIX
 workstations, servers (Sun, HP, DEC) and network. 
-[read more]({{.Permalink}}).... 
 <!--more-->
 
 * On a team that Developed a Real Time OS that was embedded in a

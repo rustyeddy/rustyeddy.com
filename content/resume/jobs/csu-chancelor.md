@@ -10,7 +10,7 @@ jobtitle: Senior Software Engineer
 
 I was hired by the CSU Chancellors Office for a _"special"_ project, a
 habit I seem to have gotten myself into regularly over the
-years. [read more]({{.Permalink}})
+years.
 <!--more-->
 
 The second purpose I was hired was to write a bulletin board system.

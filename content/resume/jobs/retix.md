@@ -9,8 +9,7 @@ jobtitle: Senior Software Engineer
 ---
 
 Promoted to lead the team of 6 engineers that developed and
-automated test plans for L2 switches, OSPF, RIP and BGP [read
-more]({{.Permalink}}) 
+automated test plans for L2 switches, OSPF, RIP and BGP 
 <!--more-->
 
 * Architected an automated test framework and lead junior engineers
