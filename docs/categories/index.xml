@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Rusty Eddy</title>
@@ -6,12 +6,13 @@
     <description>Recent content in Categories on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sat, 21 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://rustyeddy.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Resume</title>
+      <title>resume</title>
       <link>http://rustyeddy.com/categories/resume/</link>
       <pubDate>Sat, 21 Sep 2019 00:00:00 +0000</pubDate>
       
@@ -20,7 +21,7 @@
     </item>
     
     <item>
-      <title>Video</title>
+      <title>video</title>
       <link>http://rustyeddy.com/categories/video/</link>
       <pubDate>Sun, 28 Apr 2019 00:00:00 +0000</pubDate>
       
