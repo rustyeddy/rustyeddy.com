@@ -70,6 +70,11 @@
   </url>
   
   <url>
+    <loc>http://rustyeddy.com/about/me/</loc>
+    <lastmod>2019-11-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://rustyeddy.com/about/</loc>
     <lastmod>2019-11-11T00:00:00+00:00</lastmod>
   </url>
@@ -77,11 +82,6 @@
   <url>
     <loc>http://rustyeddy.com/notes/resources/</loc>
     <lastmod>2019-11-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/portfolio/building-spa-with-go/</loc>
-    <lastmod>2019-10-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -95,11 +95,6 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/portfolio/control-station/</loc>
-    <lastmod>2019-07-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/notes/gstreamer-rtsp-server/</loc>
     <lastmod>2019-05-30T00:00:00+00:00</lastmod>
   </url>
@@ -110,23 +105,18 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/portfolio/</loc>
+    <loc>http://rustyeddy.com/</loc>
     <lastmod>2019-05-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/</loc>
+    <loc>http://rustyeddy.com/portfolio/</loc>
     <lastmod>2019-05-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://rustyeddy.com/notes/</loc>
     <lastmod>2019-05-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/portfolio/redeye/</loc>
-    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -231,12 +221,6 @@
   
   <url>
     <loc>http://rustyeddy.com/portfolio/cloud-automation-ansible/</loc>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/categories/computer-vision/</loc>
-    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -346,12 +330,6 @@
   <url>
     <loc>http://rustyeddy.com/tags/rtsp/</loc>
     <lastmod>2019-05-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/categories/streaming-video/</loc>
-    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
