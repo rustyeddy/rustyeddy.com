@@ -1,22 +1,16 @@
 ---
 title: About This Site and Me
 date: 2019-11-11
-description: >
-  This page describes a bit about this website, whey I created it and,
-  of course me.
 ---
 
 I am a software devloper.
 
-Over the last 30 yeear I have worked for large and small companies,
-on large and small projects with both large and small teams.  I have
-been involved in, and witnessed phenomenol successes and abismal
-failures.
+Over the past 30+ years I have worked for large and small companies,
+on large and small projects with both large and small teams.  I worked
+on projects that have been a phenomenol successes and some that have
+been abismal failures.
 
-I Have live first hand the joys and perils of working with both large
-and small project and teams respectively. 
-
-I have realized that I enjoy, and in fact thrive on smaller teams with
+I enjoy, and in fact thrive on smaller teams with
 moderate sized, but technically challenging projects.  Projects that
 are often vague, chaotic and aggressively scheduled.
 
