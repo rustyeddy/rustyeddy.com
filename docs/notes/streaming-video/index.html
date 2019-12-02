@@ -64,78 +64,56 @@
     <div class="col"></div>
     <div class="col-md-8 hero-text">
 	<article class="article">
-	  
-
-<p>I need to stream live video from a moving vehical with a connected
+	  <p>I need to stream live video from a moving vehical with a connected
 camera and a possibly connected wifi.</p>
-
 <h2 id="live-high-resolution-video">Live High Resolution Video</h2>
-
 <p>Video will stream from the vehicle to be picked up by <em>video
 consumers</em> and processed as required.  Examples of <em>consumers</em> are
 Live Video Display on our (Webapp), OpenCV for vision algoritms.</p>
-
 <h2 id="high-demand-for-low-resolution">High Demand For Low Resolution</h2>
-
 <p>It turns out that computer vision alogrithms typically run quite a bit
 faster on lower resolution images, the additional information from
 these <em>hi-res</em> images can slow down the type of algorithms we are
 interested in by many factors.</p>
-
 <h3 id="snapshots-anyone">Snapshots Anyone?</h3>
-
 <p>Snapshots, as it turns out have a role in some important use cases,
 for now, we will assume that snapshots are a requirement.  Snapshots
 are available from a number of options: High resolution Photog quality
 images, there are quick images that are extracted from video as
 milestones, or artifacts.</p>
-
 <p>As it turns out, our Raspberry Pi Camera can help us with this quite
 bit.</p>
-
 <h2 id="video-consumers">Video Consumers</h2>
-
 <p>Video <em>Consumers</em> are what I am calling the software modules that
 recieve the video for further processing of some kind.  In some use
 cases we will have more than one <em>consumer</em> for a given Video group.</p>
-
 <h3 id="ip-multicast-video">IP Multicast Video</h3>
-
 <p>My end goal is to multicast the different video streams to different
 IP multicast video streams.  In this case each consumer simply joins
 that multicast video stream, and uses it as needed.</p>
-
 <p>For example:</p>
-
 <ul>
 <li>Hires snap  group 225.1.1.4 hires snapshot</li>
-<li>Hidef video group 225.1.1.1 streaming at 1024, 768<br /></li>
+<li>Hidef video group 225.1.1.1 streaming at 1024, 768</li>
 <li>Lodef video group 225.1.1.2 streaming at 640, 480</li>
 <li>lores snap  group 225.1.1.3 lores snapshot</li>
 </ul>
-
 <p>This allows both our Webapp with the live display and the Storage
 module to consume the live video stream and play it in real time for
 human consumption.  The <em>Storage</em> module will, on the other hand store
 the video stream for future access.</p>
-
 <h3 id="live-video-and-opencv">Live Video and OpenCV</h3>
-
 <p>The <em>lores</em> video, will be consumed by the OpenCV module to run
 through one or more computer vision algoritms.  The specific use case
 in play will determine which <em>computer vision algorithms</em> will be run.</p>
-
 <p>Examples that may run at a given time:</p>
-
 <ul>
 <li>Object Dection for real time navigation</li>
 <li>Perception for navigation</li>
 <li>Facial recognition for security and survelience</li>
 <li>Scene change detection for property management and theft</li>
 </ul>
-
 <h2 id="raspberry-picamera-and-video-ports">Raspberry PiCamera and Video Ports</h2>
-
 <p>The Raspberry Pi camera, price wise is very cheap ($25 usd) is a cheap
 camera, yet is capable of producing high quality images.  Even better,
 it is very <em>programmable</em> and is capable of producing filtered

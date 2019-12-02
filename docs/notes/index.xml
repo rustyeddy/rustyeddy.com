@@ -48,7 +48,7 @@ TLDR; Gstreamer RTSP Pipeline We are streaming our video from a Raspberry Pi Cam
       <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/notes/webrtc-what-is-it/</guid>
-      <description>WebRTC stands for Web Realtime Communications. Yea, I know you can Google too, now let&amp;rsquo;s ask, &amp;ldquo;What does that mean?&amp;rdquo;.
+      <description>WebRTC stands for Web Realtime Communications. Yea, I know you can Google too, now let&#39;s ask, &amp;ldquo;What does that mean?&amp;quot;.
 Realtime Communication Generally speaking we all, intuitively know what Real Time means, it is a sense of what is happening now. OK, that is reasonable, after all it is how we live the majority of our lives.
 Communication &amp;ldquo;Topologies&amp;rdquo;  One to one One to many many to many many to one?</description>
     </item>
@@ -82,7 +82,7 @@ General consensus says that RTSP is a good choice for low latency, local area ne
       
       <guid>http://rustyeddy.com/notes/streaming-video-tools/</guid>
       <description>The grandparents of streaming video, and snapshots, read, writing and transcoding video and single frame images are ffmpeg, vlc and gstreamer.
-Other platforms, such as the wildly cool and inexpensive Raspberry Pi and attached CSI Camera (Raspberry Pi Camera) have thier own set of utilities: like raspivid. Or the NVidia Nano with it&amp;rsquo;s gst-streamer plugins and nvgst-capture/nvgst-playback utilies.
+Other platforms, such as the wildly cool and inexpensive Raspberry Pi and attached CSI Camera (Raspberry Pi Camera) have thier own set of utilities: like raspivid. Or the NVidia Nano with it&#39;s gst-streamer plugins and nvgst-capture/nvgst-playback utilies.
  This writting is as of March 2019
  GStreamer Complex, Flexible, Future Proof GStreamer really complex pipelines but insanely flexible.</description>
     </item>
@@ -106,17 +106,16 @@ producing, through &lt;em&gt;video ports&lt;/em&gt;.&lt;/p&gt;</description>
       
       <guid>http://rustyeddy.com/notes/streaming-video-local-network/</guid>
       <description>differences in local vs. internet and streaming video
- live stream vs. video on demand
- what does real time mean?
- what to do with late packets?
- UDP vs. TCP in the local network
- RTP and UDP
- RTP and RTCP
- RTP and RTSP
- RTP and Multicast
- Tools used
-  TODO: workflowy outline
-RTSP is a good option for streaming video in a local setup up, where minimal delay is the highest priority.</description>
+  live stream vs. video on demand
+  what does real time mean?
+  what to do with late packets?
+  UDP vs. TCP in the local network
+  RTP and UDP
+  RTP and RTCP
+  RTP and RTSP
+  RTP and Multicast
+  Tools used
+  TODO: workflowy outline</description>
     </item>
     
     <item>
@@ -146,7 +145,7 @@ There are a ton of templates, graphics and photos that can be easily drag-n-drop
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/notes/adafruit-music-maker-mp3-sheild/</guid>
-      <description>The shield is driven by an SPI connection with the Arduino and relies on an SD card with music files on it to play. Must determine how to play streaming audio, then we&amp;rsquo;ll have something neat!
+      <description>The shield is driven by an SPI connection with the Arduino and relies on an SD card with music files on it to play. Must determine how to play streaming audio, then we&#39;ll have something neat!
 Link to the documentation.
 The shield can also be jumpered and booted into Midi Mode and turned into a drum machine or a Garageband type of play along.</description>
     </item>
@@ -157,7 +156,8 @@ The shield can also be jumpered and booted into Midi Mode and turned into a drum
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/notes/opencv/</guid>
-      <description>Building OpenCV is quite a task, so if you are just getting started, or do not need something in more recent versions, then by all means use your OSs package management facility to install OpenCV, otherwise here is a list of things that I did to get the latest version of OpenCV built so I could infuse it with some GStreamer to deliver streaming video to our CV algorithms.</description>
+      <description>Building OpenCV is quite a task, so if you are just getting started, or do not need something in more recent versions, then by all means use your OSs package management facility to install OpenCV, otherwise here is a list of things that I did to get the latest version of OpenCV built so I could infuse it with some GStreamer to deliver streaming video to our CV algorithms.
+Installing on Linux and a MacOS Install cmake to build these things from scratch.</description>
     </item>
     
   </channel>
