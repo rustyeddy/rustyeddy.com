@@ -10,7 +10,25 @@ tags:
   - raspberry-pi
   - rpi
   - ansible
-
+reference: https://ansible.org
 ---
 
+Ansible is a very powerful yet simple, in all its complexity. It is a
+wonderful tool that I get frequent use of.  It's real home I suppose
+is in the larger corporation _devops_ world, it is wonderfully well
+suited to a mid sized IoT environment.
 
+## A Few Highlight about Ansible
+
+- Create Playbooks that defines the configuration of a target
+  architecture. 
+  
+- **Ansible is _Idempotent_** meaning it defines the the desired
+  outcome, it is up to Ansible to make that outcome real.
+  
+- It can be run numerous times with very predictable results.
+
+- It is free but comes with the Ansible Tower (RedHat) premium add
+  on. 
+  
+  
