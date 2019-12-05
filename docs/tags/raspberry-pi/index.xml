@@ -23,5 +23,14 @@ camera is capable of producing filtered versions of the images it is
 producing, through &lt;em&gt;video ports&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
     
+    <item>
+      <title>Ansible</title>
+      <link>http://rustyeddy.com/notes/ansible/</link>
+      <pubDate>Mon, 03 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/ansible/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

@@ -13,7 +13,6 @@ categories:
 github: http://github.com/mobilerobot-io/esp
 draft: true
 ---
-
 I wrote an LED C++ class to configure an ESP32 GPIO pin as a digital
 output, such that we can turn the LED on and off, by setting the
 voltage to pin HIGH, turn the LED off by setting _pin_ to 0.

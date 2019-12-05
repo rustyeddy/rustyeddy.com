@@ -140,6 +140,24 @@ There are a ton of templates, graphics and photos that can be easily drag-n-drop
     </item>
     
     <item>
+      <title>Using CMake</title>
+      <link>http://rustyeddy.com/notes/cmake/</link>
+      <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/cmake/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ansible</title>
+      <link>http://rustyeddy.com/notes/ansible/</link>
+      <pubDate>Mon, 03 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/ansible/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Adafruit Music Maker mp3 Sheild</title>
       <link>http://rustyeddy.com/notes/adafruit-music-maker-mp3-sheild/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

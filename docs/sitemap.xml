@@ -105,12 +105,12 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/tags/resume/</loc>
+    <loc>http://rustyeddy.com/categories/resume/</loc>
     <lastmod>2019-09-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/categories/resume/</loc>
+    <loc>http://rustyeddy.com/tags/resume/</loc>
     <lastmod>2019-09-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -295,6 +295,46 @@
   </url>
   
   <url>
+    <loc>http://rustyeddy.com/tags/c/</loc>
+    <lastmod>2017-04-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/c&#43;&#43;/</loc>
+    <lastmod>2017-04-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/cmake/</loc>
+    <lastmod>2017-04-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/make/</loc>
+    <lastmod>2017-04-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/notes/cmake/</loc>
+    <lastmod>2017-04-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/notes/ansible/</loc>
+    <lastmod>2017-04-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/ansible/</loc>
+    <lastmod>2017-04-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/rpi/</loc>
+    <lastmod>2017-04-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://rustyeddy.com/tags/adafruit/</loc>
   </url>
   
@@ -328,10 +368,6 @@
   
   <url>
     <loc>http://rustyeddy.com/portfolio/oclv-website/</loc>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/resources/</loc>
   </url>
   
 </urlset>

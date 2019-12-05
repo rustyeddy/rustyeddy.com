@@ -34,7 +34,6 @@
   		    <a class="nav-link" href="/">home</a>
   	            <a class="nav-link" href="/notes">notes</a>
   	            <a class="nav-link" href="/resume">resume</a>
-  	            <a class="nav-link" href="/portfolio">portfolio</a>
 		</div>
  	    </nav>
 	</div>
@@ -43,14 +42,14 @@
 <div id="main">
 
 <div class="container">
-  <div class="row">
-    <div class="col"></div>
-    <div class="col=5">
-      <img class="justify-content-center" src="https://rustyeddy.sfo2.digitaloceanspaces.com/SensorStation.png" />
-    </div>
+    <div class="row">
+	<div class="col"></div>
+	<div class="col=5">
+	    <img class="justify-content-center" src="https://rustyeddy.sfo2.digitaloceanspaces.com/SensorStation.png" />
+	</div>
 
-    <div class="col"></div>
-  </div>
+	<div class="col"></div>
+    </div>
 </div>
 
 <div class="container">
@@ -62,23 +61,18 @@
     </nav>
 
     <div class="row">
-      <div class="col"></div>
-      <div class="col-lg-8 pl-4 pr-4">
-	<article class="article">
-	  
-
-<p>The first phase of the control station that you are looking at here
+	<div class="col"></div>
+	<div class="col-lg-8 pl-4 pr-4">
+	    <article class="article">
+		<p>The first phase of the control station that you are looking at here
 includes a Joystick for human control that directly moves the Camera
 Pan &amp; Tilt assembly.  The ControlStation is designed to allow the
 addition of wireless connectivity and an easily interchangeable set of
 input devices (Joystick, Gyro Displays or Computer Algorithms and so
 on).  Output devices include motor controllers, cameras, displays and
 cloud storage for example.</p>
-
 <h2 id="project-requirements">Project Requirements</h2>
-
 <p>Following are the high level requirements, or goals for this project.</p>
-
 <ul>
 <li>Provide a joystick control for robot</li>
 <li>Provide Pan tilt Servo Control for Camera Stand</li>
@@ -88,60 +82,49 @@ cloud storage for example.</p>
 <li>Wireless</li>
 <li>802.11</li>
 </ul>
-
 <p>Requirements 1-2 are complete, Requirement 3 is a Work In Progress
 (WIP) where the micro controllers have been split and are now
 communicating via I2C, remaining work to complete the serial code and
 the code to activate the receiver.</p>
-
 <h2 id="high-level-diagram">High Level Diagram</h2>
-
-<p><img src="{{ .Params.image }}" /></p>
-
+<p><!-- raw HTML omitted --></p>
 <h2 id="bill-of-materials">Bill Of Materials</h2>
-
 <ul>
 <li>3-5v Thumbstick Joystick</li>
 <li>2 sg109 Hobby Servos</li>
 <li>Pan and Tilt Assembly</li>
 <li>Arduino nano</li>
 </ul>
-
 <h2 id="source-code">Source Code</h2>
-
 <p>Following is an important snippet from the <a href="https://github.com/rustyeddy/Arduino">source code</a>:</p>
-
 <blockquote>
 <p>TODO: add GIST</p>
 </blockquote>
-
 <h2 id="conclusion">Conclusion</h2>
-
 <p>This was a fun little project to rip out.  There is nothing more
 exciting for me, than to write some software that causes hardware to
 come alive.  As you will see in the soon coming video, each joystick
 movement translates into the same ration of motion by the Servos.
 This causes the mounted camera to move rather erratically.</p>
-
 <p>Another issue: to park the camera in a set location currently requires
 one to hold the joystick in a particular situation.  This is the
 result of rather naive programming.  An upcoming version of the
 software will use a more intelligent algorithm, and perhaps some
 appropriate control software.</p>
-
 <p>Until then we will mark this as a new requirement.</p>
 
-	</article>
-	<div class="call-to-action">
-	  <h2>Call To Action</h2>
+	    </article>
+	    <div class="call-to-action">
+		<h2>Call To Action</h2>
+	    </div>
 	</div>
-      </div>
-      <div class="col"></div>
+	<div class="col"></div>
     </div>
 </div>
 
 
-    </div><footer id="footer" class="container mb-5 pb-5">
+
+	</div><footer id="footer" class="container mb-5 pb-5">
     <div class="row mt-5 pt-5">
 	<div class="col-2"></div>
 	<div class="col-8">
@@ -183,5 +166,6 @@ if (!doNotTrack) {
 </script>
 
 
-</body>
+
+    <script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10&v=2"></' + 'script>')</script></body>
 </html>

@@ -2,4 +2,4 @@ build:
 	hugo
 
 serve:
-	hugo serve --ignoreCache --noHTTPCache --renderToDisk --watch 
+	hugo serve --buildDrafts --ignoreCache --noHTTPCache --renderToDisk --watch 
