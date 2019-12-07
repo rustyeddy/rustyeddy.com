@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>video on Rusty Eddy</title>
-    <link>http://localhost:1313/categories/video/</link>
+    <link>http://rustyeddy.com/categories/video/</link>
     <description>Recent content in video on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Apr 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/categories/video/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://rustyeddy.com/categories/video/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Streaming Video Protocols</title>
-      <link>http://localhost:1313/notes/streaming-video-protocols/</link>
+      <link>http://rustyeddy.com/notes/streaming-video-protocols/</link>
       <pubDate>Sun, 28 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/notes/streaming-video-protocols/</guid>
+      <guid>http://rustyeddy.com/notes/streaming-video-protocols/</guid>
       <description>rtp rtsp rtmp hlsl mjpeg mpeg-dash mpeg jpeg  RTP ~ Real Time Protocol Actually holds payloads containing arbitrary, but time/delay sensitive media (audio, video, live conversations, etc). Incorporates enough controls to allow for network congestion, reciever compensation and more.
 RTSP What it is and How to use it Real Time Streaming Protocol (RTSP)
 General consensus says that RTSP is a good choice for low latency, local area networks.</description>
@@ -24,10 +24,10 @@ General consensus says that RTSP is a good choice for low latency, local area ne
     
     <item>
       <title>Raspberry Pi Camera and Multiple Ports</title>
-      <link>http://localhost:1313/notes/raspberry-pi-camera-multiple-ports/</link>
+      <link>http://rustyeddy.com/notes/raspberry-pi-camera-multiple-ports/</link>
       <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/notes/raspberry-pi-camera-multiple-ports/</guid>
+      <guid>http://rustyeddy.com/notes/raspberry-pi-camera-multiple-ports/</guid>
       <description>&lt;p&gt;As I started bumbling around trying to figure the best way to stream
 [live video from a moving vehicle], I found that the Raspberry Pi
 camera is capable of producing filtered versions of the images it is

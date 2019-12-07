@@ -6,27 +6,30 @@
 
 	{{- partial "jumbotron-head.html" . -}}
 	<div class="container">
-
-	    <div id="main">
-		<div class="row">
-		    <div class="col-4 m-5">
+	    <div class="row">
+		<div class="col-4 m-2">
 			{{- partial "interview.html" . -}}
 		    </div>
-
-		    <div class="col-4 text-center">
-
+		<div class="col-4 m-2 text-center">
 			<div class="card">
-			    <h1>Resume</h1>
-			</div> 
+			    <div class="card-body">
+				<h2><a href="/resume">Resume</a></h2>
+			    </div>
 
+			    <div class="card-body">
+				<h2><a href="/store">Store</a></h2>
+			    </div>
+
+			    <div class="card-body">
+				<h2><a href="/barnyard">Barnyard</a></h2>
+			    </div>
+			</div>
 		    </div>
-
-		    <div class="col-4"></div>
+		<div class="col-4 m-2">
+		    <h2>foo</h2>
 		</div>
-
 	    </div>
 	</div>
 	{{- partial "footer.html" . -}}
-	    
     </body>
 </html>
