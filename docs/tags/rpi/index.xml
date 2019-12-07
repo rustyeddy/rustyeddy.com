@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>rpi on Rusty Eddy</title>
-    <link>http://rustyeddy.com/tags/rpi/</link>
+    <link>http://localhost:1313/tags/rpi/</link>
     <description>Recent content in rpi on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 03 Apr 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://rustyeddy.com/tags/rpi/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/tags/rpi/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ansible</title>
-      <link>http://rustyeddy.com/notes/ansible/</link>
+      <link>http://localhost:1313/notes/ansible/</link>
       <pubDate>Mon, 03 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/ansible/</guid>
+      <guid>http://localhost:1313/notes/ansible/</guid>
       <description>Ansible is a very powerful yet simple, in all its complexity. It is a wonderful tool that I get frequent use of. It&#39;s real home I suppose is in the larger corporation devops world, it is wonderfully well suited to a mid sized IoT environment.
 A Few Highlight about Ansible   Create Playbooks that defines the configuration of a target architecture.
   Ansible is Idempotent meaning it defines the the desired outcome, it is up to Ansible to make that outcome real.</description>
