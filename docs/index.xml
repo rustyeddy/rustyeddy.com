@@ -345,7 +345,7 @@ There are a ton of templates, graphics and photos that can be easily drag-n-drop
       <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/notes/cmake/</guid>
-      <description></description>
+      <description>CMake is a growingly popular method for generating Makefile files depending on the build computer being used.</description>
     </item>
     
     <item>
@@ -372,28 +372,28 @@ The shield can also be jumpered and booted into Midi Mode and turned into a drum
     
     <item>
       <title>Cloud Automation With Ansible</title>
-      <link>http://rustyeddy.com/portfolio/cloud-automation-ansible/</link>
+      <link>http://rustyeddy.com/projects/cloud-automation-ansible/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/portfolio/cloud-automation-ansible/</guid>
+      <guid>http://rustyeddy.com/projects/cloud-automation-ansible/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Laser Calibrator</title>
-      <link>http://rustyeddy.com/portfolio/laser-calibrator/</link>
+      <link>http://rustyeddy.com/projects/laser-calibrator/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/portfolio/laser-calibrator/</guid>
+      <guid>http://rustyeddy.com/projects/laser-calibrator/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Laser Kiosk</title>
-      <link>http://rustyeddy.com/portfolio/laser-kiosk/</link>
+      <link>http://rustyeddy.com/projects/laser-kiosk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/portfolio/laser-kiosk/</guid>
+      <guid>http://rustyeddy.com/projects/laser-kiosk/</guid>
       <description></description>
     </item>
     
@@ -409,10 +409,10 @@ Installing on Linux and a MacOS Install cmake to build these things from scratch
     
     <item>
       <title>Orange County Low Vision Website</title>
-      <link>http://rustyeddy.com/portfolio/oclv-website/</link>
+      <link>http://rustyeddy.com/projects/oclv-website/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/portfolio/oclv-website/</guid>
+      <guid>http://rustyeddy.com/projects/oclv-website/</guid>
       <description></description>
     </item>
     

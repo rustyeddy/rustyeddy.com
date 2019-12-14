@@ -5,18 +5,8 @@
 
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="/style.css">
-<script>
- $(".jumbotron").css({
-     height: $(window).height() + "px"
- });
-
- $(window).on("resize", function() {
-     $(".jumbotron").css({
-	 height: $(window).height()  + "px"
-     });
- });
-</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
 
 
 <title>Streaming Video Protocols</title>
@@ -28,39 +18,37 @@
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	</button>
+
 	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 	    <nav class="navbar-nav">
 		<div class="nav  justify-content-end">
   		    <a class="nav-link" href="/">home</a>
+  	            <a class="nav-link" href="/interview">about</a>
   	            <a class="nav-link" href="/notes">notes</a>
   	            <a class="nav-link" href="/resume">resume</a>
+  	            <a class="nav-link" href="/projects">projects</a>
+  	            <a class="nav-link" href="/contact">contact</a>
 		</div>
  	    </nav>
 	</div>
+
     </nav>
 </header>
 <div id="main">
-<div class="container"><div class="jumbotron border-top border-bottom bg-success">
+<div class="container"><div class="jumbotron border-top border-bottom bg-white" >
     <div class="row">
-	<div class="col"></div>
-	<div class="col-md-4">
+	<div class="col-md"></div>
+	<div class="col-md-8">
 	    <h1 class="header h3 pb-1">Streaming Video Protocols</h1>
 	    <h5 class="leadin align-right text-muted mt-0">
 		This is a hard one for me to wrap my head around.  I&#39;m a networking guy, and the number of options for wraping and unwraping video streams as they are being moved about is mind boggling, let us try to make some sense of it here
 
 	    </h5>
 	</div>
-	<div class="col-md-4"></div>
-	<div class="col"></div>
+	<div class="col-md"></div>
     </div>
 </div>
-<div class="row pt-5">
-        <div class="col"></div>
-        <div class="col-8">
-            <a href="http://rustyeddy.com/notes/streaming-video-protocols/">Streaming Video Protocols</a>
-        </div>
-        <div class="col"></div>
-    </div> <div class="row">
+<div class="row">
     <div class="col"></div>
     <div class="col-md-8 hero-text">
 	<article class="article">
@@ -107,7 +95,7 @@ primarily for Human consumption.</p>
 <p>Need to identify the optimal real time video transport for a mobile
 vehicle.</p>
 </blockquote>
-<h2 id="hls--apple-centric-solution-transport">HLS - Apple Centric Solution Transport</h2>
+<h2 id="hls---apple-centric-solution-transport">HLS - Apple Centric Solution Transport</h2>
 <p>As of now, I am under the impression that HLS is heavily Apple
 centric, and perhaps not the best open, &ldquo;agnostic&rdquo; solution.</p>
 <blockquote>

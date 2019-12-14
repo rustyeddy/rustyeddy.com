@@ -5,30 +5,20 @@
 	{{- partial "header.html" . -}}
 
 	{{- partial "jumbotron-head.html" . -}}
+
 	<div class="container">
+
 	    <div class="row">
-		<div class="col-4 m-2">
-			{{- partial "interview.html" . -}}
-		    </div>
-		<div class="col-4 m-2 text-center">
-			<div class="card">
-			    <div class="card-body">
-				<h2><a href="/resume">Resume</a></h2>
-			    </div>
-
-			    <div class="card-body">
-				<h2><a href="/store">Store</a></h2>
-			    </div>
-
-			    <div class="card-body">
-				<h2><a href="/barnyard">Barnyard</a></h2>
-			    </div>
-			</div>
-		    </div>
-		<div class="col-4 m-2">
-		    <h2>foo</h2>
+		<div class="col-6">
+		    {{- partial "interview.html" . -}}
 		</div>
+
+		<div class="col-6">
+		    {{- partial "web-walker.html" . -}}
+		</div>
+
 	    </div>
+
 	</div>
 	{{- partial "footer.html" . -}}
     </body>

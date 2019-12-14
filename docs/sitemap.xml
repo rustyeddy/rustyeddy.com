@@ -105,12 +105,12 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/tags/resume/</loc>
+    <loc>http://rustyeddy.com/categories/resume/</loc>
     <lastmod>2019-09-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/categories/resume/</loc>
+    <loc>http://rustyeddy.com/tags/resume/</loc>
     <lastmod>2019-09-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -150,7 +150,7 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/portfolio/</loc>
+    <loc>http://rustyeddy.com/projects/</loc>
     <lastmod>2019-05-14T00:00:00+00:00</lastmod>
   </url>
   
@@ -220,12 +220,12 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/tags/raspberry-pi/</loc>
+    <loc>http://rustyeddy.com/notes/raspberry-pi-camera-multiple-ports/</loc>
     <lastmod>2019-04-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/notes/raspberry-pi-camera-multiple-ports/</loc>
+    <loc>http://rustyeddy.com/tags/raspberry-pi/</loc>
     <lastmod>2019-04-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -351,15 +351,15 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/portfolio/cloud-automation-ansible/</loc>
+    <loc>http://rustyeddy.com/projects/cloud-automation-ansible/</loc>
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/portfolio/laser-calibrator/</loc>
+    <loc>http://rustyeddy.com/projects/laser-calibrator/</loc>
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/portfolio/laser-kiosk/</loc>
+    <loc>http://rustyeddy.com/projects/laser-kiosk/</loc>
   </url>
   
   <url>
@@ -367,7 +367,7 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/portfolio/oclv-website/</loc>
+    <loc>http://rustyeddy.com/projects/oclv-website/</loc>
   </url>
   
 </urlset>

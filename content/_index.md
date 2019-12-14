@@ -2,20 +2,23 @@
 title: A Hypothetical Interview with Myself
 date: 2019-05-14
 description: >
-  Design, Develop and Deliver Software
+  I manage successful software projects
 summary: >
-  Over the years I have worked for large corporations and small
-  startups, I have been involved in phenomenol successes and dismal
-  failures. I am using this website to distill practices that I have
-  found that increase the likelyhood of success.
+  Because I follow a process built from industry practices I have
+  gathered over the years with two specific goals: stay light weight,
+  increase transperancy of the development process, for all involved.
 ---
 
 ***So, Who are you?***
 
-My name is George Eddy, my friends call me Rusty.  I live in
-Huntington Beach, CA with my family.  I was born and raised in
-Southern California, Educated at CSULB and USC. I have worked in the
-Aerospace Industry, Computer Networking, Telecom and the Entertainment
-Industries. 
+My name is George Eddy, my friends call me Rusty.
 
-[README More](/interview)
+I grew in the Harbor area of Los Angeles county CA. and now live in
+Huntington Beach, CA with my family.
+
+I develop software and manage software projects for a living. 
+
+I have BS and MS in Computer Science from CSULB and USC respectively.
+
+[Read More](/interview) or [Resume](/resume)
+
