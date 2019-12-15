@@ -13,6 +13,10 @@
   </url>
   
   <url>
+    <loc>http://rustyeddy.com/radianlaser.com</loc>
+  </url>
+  
+  <url>
     <loc>http://rustyeddy.com/resume/jobs/att/</loc>
   </url>
   
@@ -170,11 +174,6 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/resume/jobs/radian-laser/</loc>
-    <lastmod>2019-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/tags/h264/</loc>
     <lastmod>2019-04-29T00:00:00+00:00</lastmod>
   </url>
@@ -220,12 +219,12 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/notes/raspberry-pi-camera-multiple-ports/</loc>
+    <loc>http://rustyeddy.com/tags/raspberry-pi/</loc>
     <lastmod>2019-04-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/tags/raspberry-pi/</loc>
+    <loc>http://rustyeddy.com/notes/raspberry-pi-camera-multiple-ports/</loc>
     <lastmod>2019-04-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -355,6 +354,14 @@
   </url>
   
   <url>
+    <loc>http://rustyeddy.com/tags/embedded/</loc>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/firmware/</loc>
+  </url>
+  
+  <url>
     <loc>http://rustyeddy.com/projects/laser-calibrator/</loc>
   </url>
   
@@ -368,6 +375,10 @@
   
   <url>
     <loc>http://rustyeddy.com/projects/oclv-website/</loc>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/single-page-app/</loc>
   </url>
   
 </urlset>

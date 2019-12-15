@@ -111,7 +111,7 @@
     </item>
     
     <item>
-      <title>raspberry-pi</title>
+      <title>raspberry pi</title>
       <link>http://rustyeddy.com/tags/raspberry-pi/</link>
       <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
       
@@ -242,6 +242,33 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/tags/audio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>embedded</title>
+      <link>http://rustyeddy.com/tags/embedded/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/embedded/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>firmware</title>
+      <link>http://rustyeddy.com/tags/firmware/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/firmware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>single page app</title>
+      <link>http://rustyeddy.com/tags/single-page-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/single-page-app/</guid>
       <description></description>
     </item>
     

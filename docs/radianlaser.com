@@ -9,7 +9,7 @@
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 
-<title>Otto the Pluggable Micro Server for Macro Controllers</title>
+<title>Radian Laser</title>
 
 
 <body><header class="container bg-white">
@@ -34,41 +34,21 @@
 
     </nav>
 </header>
-<div id="main">
+<div id="main"><div class="row">
+    <div class="col"></div>
+    <div class="col-md-8 hero-text">
+	<article class="article">
+	  <p>Responsible for the design, development and support of numerous
+company software projects, including but not limited to control
+systems firmware, single page apps for operational concerns.</p>
+<p>Development involved C/C++, Go and Python primarily.  MicroServices
+and distributed communication design where large parts of the work we
+do.</p>
 
-<div class="container">
-    <div class="row">
-	<div class="col"></div>
-	<div class="col=5">
-	    <img class="justify-content-center" src="" />
-	</div>
-
-	<div class="col"></div>
+	</article>
     </div>
+    <div class="col"></div>
 </div>
-
-<div class="container">
-    <nav class="nav justify-content-center p-5">
-	<a class="nav-link" href="http://github.com/mobilerobot-io/otto">github</a>
-	<a class="nav-link" href="">site</a>
-	<a class="nav-link active" href="/portfolio">portfolio</a>
-	<a class="nav-link" href="/resume">resume</a>
-    </nav>
-
-    <div class="row">
-	<div class="col"></div>
-	<div class="col-lg-8 pl-4 pr-4">
-	    <article class="article">
-		
-	    </article>
-	    <div class="call-to-action">
-		<h2>Call To Action</h2>
-	    </div>
-	</div>
-	<div class="col"></div>
-    </div>
-</div>
-
 
 
 	</div><footer id="footer" class="container mb-5 pb-5">
@@ -114,5 +94,5 @@ if (!doNotTrack) {
 
 
 
-    <script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10&v=2"></' + 'script>')</script></body>
+    </body>
 </html>
