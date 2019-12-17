@@ -39,7 +39,7 @@ A Dynamic System The more specific or goals become the better we are able to asc
       <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/notes/resources/</guid>
-      <description> MicroServices Learn JavaScript ~ EC2015  </description>
+      <description> MicroServices  JavaScript  Learn JavaScript ~ EC2015 Axios Cheatsheet  </description>
     </item>
     
     <item>
@@ -221,6 +221,15 @@ The shield can also be jumpered and booted into Midi Mode and turned into a drum
       <guid>http://localhost:1313/notes/opencv/</guid>
       <description>Building OpenCV is quite a task, so if you are just getting started, or do not need something in more recent versions, then by all means use your OSs package management facility to install OpenCV, otherwise here is a list of things that I did to get the latest version of OpenCV built so I could infuse it with some GStreamer to deliver streaming video to our CV algorithms.
 Installing on Linux and a MacOS Install cmake to build these things from scratch.</description>
+    </item>
+    
+    <item>
+      <title>The Problem Statement</title>
+      <link>http://localhost:1313/notes/problem-statement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/notes/problem-statement/</guid>
+      <description>To research enough to clearly solve the problem is alot.</description>
     </item>
     
   </channel>

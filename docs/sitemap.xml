@@ -481,4 +481,8 @@
     <loc>http://localhost:1313/tags/single-page-app/</loc>
   </url>
   
+  <url>
+    <loc>http://localhost:1313/notes/problem-statement/</loc>
+  </url>
+  
 </urlset>
