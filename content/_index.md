@@ -13,10 +13,10 @@ summary: >
 
 My name is George Eddy, my friends call me Rusty.
 
-I grew in the Harbor area of Los Angeles county CA. and now live in
-Huntington Beach, CA with my family.
+I grew in Wilmington, CA .the Harbor area of South Los Angeles county
+CA. and now live in Huntington Beach, CA with my family.
 
-I develop software and manage software projects for a living. 
+I manage software develop and server operations for a living. 
 
 I have BS and MS in Computer Science from CSULB and USC respectively.
 

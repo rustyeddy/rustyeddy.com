@@ -12,3 +12,8 @@ reference: https://cmake.org/cmake/help/latest/guide/tutorial/index.html
 CMake is a growingly popular method for generating Makefile files
 depending on the _build_ computer being used.
 
+#### Add an include directory -I.../include
+
+```
+include_directories(./include ../another/include)
+```

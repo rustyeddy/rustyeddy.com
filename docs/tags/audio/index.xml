@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>audio on Rusty Eddy</title>
-    <link>http://localhost:1313/tags/audio/</link>
+    <link>http://rustyeddy.com/tags/audio/</link>
     <description>Recent content in audio on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://localhost:1313/tags/audio/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://rustyeddy.com/tags/audio/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Adafruit Music Maker mp3 Sheild</title>
-      <link>http://localhost:1313/notes/adafruit-music-maker-mp3-sheild/</link>
+      <link>http://rustyeddy.com/notes/adafruit-music-maker-mp3-sheild/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/notes/adafruit-music-maker-mp3-sheild/</guid>
+      <guid>http://rustyeddy.com/notes/adafruit-music-maker-mp3-sheild/</guid>
       <description>The shield is driven by an SPI connection with the Arduino and relies on an SD card with music files on it to play. Must determine how to play streaming audio, then we&#39;ll have something neat!
 Link to the documentation.
 The shield can also be jumpered and booted into Midi Mode and turned into a drum machine or a Garageband type of play along.</description>
