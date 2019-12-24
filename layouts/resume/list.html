@@ -1,42 +1,27 @@
 {{ define "main" }}
 
-<div class="jumbotron head-pic border-top border-bottom">
-    <div class="row">
-	<div class="col"></div>
-	<div class="col-md-4">
-	  <h1 class="header h3 text-light pb-1">{{ .Title }}</h1>
-	  {{ with .GetPage "/resume/contact.md" }}
-	  <ul class="list text-white">
-	    <li class='list-item'>rusty eddy</li>
-	    <li class='list-item'>software engineer</li>
-	    <li class='list-item'>huntington beach, CA</li>
-	    <li class='list-item'>{{ .Params.phone }}</li>
-	    <li class='list-item'>{{ .Params.email }}</li>
-	  </ul>
-	  {{ end }}
-	</div>
-	<div class="col-md-4"></div>
-	<div class="col"></div>
-    </div>
-</div>
-
-
 <div class="container">
 
-    {{ with .Site.GetPage "/resume/about.md" }}
-
-    <nav class="nav justify-content-center border-bottom mb-5 pb-4">
-	<a class="nav-link active" href="{{ .Params.linkedin }}">linkedin</a>
-	<a class="nav-link" href="{{ .Params.github }}">github</a>
-	<a class="nav-link" ref="{{ .Params.twitter }}">twitter</a>
-
-	<a class="nav-link" href="http://rustyeddy.com">website</a>
-	<a class="nav-link" href="http://resume.rustyeddy.com">resume</a>
-	<a class="nav-link" href="http://mobilerobot.io">mobile robot project</a>
-    </nav>
-
-    {{ end }}
-
+    <section id="contact" class="container text-center">
+	<div class="row m-4 p-4 border-top border-bottom">
+	    <div class="col">
+		Rusty Eddy<br/>
+		419 Main St. #439<br/>
+		Huntington Beach, CA
+	    </div>
+	    <div class="col">
+		Micro Services with Go<br/>
+		Cloud Automation for IoT<br/>
+		Embedded Realtime Design
+	    </div>
+	    <div class="col">
+		(714) 362-5402<br/>
+		<a href="mailto:rusty@rustyeddy.com">rusty@rustyeddy.com</a><br/>
+		<a href="https://linkedin.com/rustyeddy">linkedin</a><br/>
+	    </div>
+	</div>
+    </section>
+    
     <section id="skills" class="container text-center">
 	<div class="row">
 	    <div class="col"></div>

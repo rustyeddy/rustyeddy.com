@@ -35,18 +35,6 @@ Development involved C/C++, Go and Python primarily. MicroServices and distribut
     </item>
     
     <item>
-      <title>AT&amp;T</title>
-      <link>http://rustyeddy.com/resume/jobs/att/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/resume/jobs/att/</guid>
-      <description>&lt;p&gt;Co Architect on a &lt;em&gt;Zero Configuration&lt;/em&gt; network provision and
-configuration management system.  We designed a sieres of
-&lt;em&gt;micro-services&lt;/em&gt; to integrate existing company services, and
-introduced new resources.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Cloud Trek</title>
       <link>http://rustyeddy.com/resume/jobs/alchemy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -56,11 +44,11 @@ introduced new resources.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>DirecTV</title>
-      <link>http://rustyeddy.com/resume/jobs/directv/</link>
+      <title>DirecTV / AT&amp;T</title>
+      <link>http://rustyeddy.com/resume/jobs/att/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/jobs/directv/</guid>
+      <guid>http://rustyeddy.com/resume/jobs/att/</guid>
       <description>&lt;p&gt;Architectural lead, and software development lead for a new &lt;em&gt;Software
 Defined Networking&lt;/em&gt; &lt;em&gt;Multicast Route Controller&lt;/em&gt;.  Contributed to the
 OpenSource SDN controller project ONOS.&lt;/p&gt;</description>
