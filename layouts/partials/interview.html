@@ -1,10 +1,21 @@
-<div class="card border-0">
-    <div class="card-title">
-	<h4 class="card-title text-center">{{ .Title }}</h4>
-    </div>
-    <div class="card-body">
-	<div class="card-text">
-	    {{ .Content }}
+<div class="container">
+    <div class="row">
+	<div class="col"></div>
+
+	<div class="col-8">
+	    <div class="card border-0">
+		<div class="card-title">
+		    <h4 class="card-title text-center">{{ .Title }}</h4>
+		</div>
+		<div class="card-body">
+		    <div class="card-text">
+			{{ .Content }}
+		    </div>
+		</div>
+	    </div>
 	</div>
+
+	<div class="col"></div>
+
     </div>
 </div>
