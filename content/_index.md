@@ -4,10 +4,9 @@ date: 2019-05-14
 description: >
   Design, Develop and Deploy Software
 summary: >
-  Years of building software and witnessing both successes and
-  failures, I have become increasingly intersted in establishing a set
-  of best practices for small to mid sized software development
-  projects. Join me here.
+  I am in the process of building a software developerment process
+  aimed at making small to mid sized web application development more
+  predictable and reliable for the people paying for it.
 ---
 
 ***So, Who are you?***

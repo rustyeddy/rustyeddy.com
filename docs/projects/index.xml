@@ -11,53 +11,5 @@
 	<atom:link href="http://rustyeddy.com/projects/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>Crawl</title>
-      <link>http://rustyeddy.com/projects/crawl/</link>
-      <pubDate>Sun, 22 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/projects/crawl/</guid>
-      <description>This page is the Software Requirements document, hence the respective sections below.
-Goal and Requirement The purpose of crawl is to walk a website recording the response rate from the server(s) and the reachability of every link on a given page.
-The first iteration will provide a REST API and a Web UI with a form and a page that displays the results of a single page walk.
-Ops Overview The program crawl can be run interactively as a command line tool with appropriate arguments, it can also be run as a daemon, listening for incoming URLs from the API</description>
-    </item>
-    
-    <item>
-      <title>Cloud Automation With Ansible</title>
-      <link>http://rustyeddy.com/projects/cloud-automation-ansible/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/projects/cloud-automation-ansible/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Laser Calibrator</title>
-      <link>http://rustyeddy.com/projects/laser-calibrator/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/projects/laser-calibrator/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Laser Kiosk</title>
-      <link>http://rustyeddy.com/projects/laser-kiosk/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/projects/laser-kiosk/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Orange County Low Vision Website</title>
-      <link>http://rustyeddy.com/projects/oclv-website/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/projects/oclv-website/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>
