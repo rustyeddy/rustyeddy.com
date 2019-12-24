@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>resume on Rusty Eddy</title>
-    <link>http://rustyeddy.com/categories/resume/</link>
+    <link>http://localhost:1313/categories/resume/</link>
     <description>Recent content in resume on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 21 Sep 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://rustyeddy.com/categories/resume/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/categories/resume/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Objectives</title>
-      <link>http://rustyeddy.com/resume/objectives/</link>
+      <link>http://localhost:1313/resume/objectives/</link>
       <pubDate>Sat, 21 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/objectives/</guid>
+      <guid>http://localhost:1313/resume/objectives/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Interests</title>
-      <link>http://rustyeddy.com/resume/interests/</link>
+      <link>http://localhost:1313/resume/interests/</link>
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/interests/</guid>
+      <guid>http://localhost:1313/resume/interests/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Skills</title>
-      <link>http://rustyeddy.com/resume/skills/</link>
+      <link>http://localhost:1313/resume/skills/</link>
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/skills/</guid>
+      <guid>http://localhost:1313/resume/skills/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rusty Eddy</title>
-      <link>http://rustyeddy.com/resume/about/</link>
+      <link>http://localhost:1313/resume/about/</link>
       <pubDate>Sat, 11 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/about/</guid>
+      <guid>http://localhost:1313/resume/about/</guid>
       <description>Software | Communications | Robotics | ~ + ~ | Engineer | Developer | Architect</description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>http://rustyeddy.com/resume/contact/</link>
+      <link>http://localhost:1313/resume/contact/</link>
       <pubDate>Fri, 09 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/contact/</guid>
+      <guid>http://localhost:1313/resume/contact/</guid>
       <description></description>
     </item>
     
