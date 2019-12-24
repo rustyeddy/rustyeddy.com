@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>portfolio on Rusty Eddy</title>
-    <link>http://localhost:1313/projects/</link>
+    <link>http://rustyeddy.com/projects/</link>
     <description>Recent content in portfolio on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 14 May 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://rustyeddy.com/projects/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Mobile Robot I/O</title>
-      <link>http://localhost:1313/projects/mobilerobot/</link>
+      <link>http://rustyeddy.com/projects/mobilerobot/</link>
       <pubDate>Sat, 21 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/projects/mobilerobot/</guid>
+      <guid>http://rustyeddy.com/projects/mobilerobot/</guid>
       <description>&lt;p&gt;There are a number of exciting things about this project, building the
 vehicle itself, the remote control and the streaming camera just at
 the surface. The thing that excites me the most are the communications
@@ -26,10 +26,10 @@ this project.&lt;/p&gt;</description>
     
     <item>
       <title>Moni the Web Sitter</title>
-      <link>http://localhost:1313/projects/moni/</link>
+      <link>http://rustyeddy.com/projects/moni/</link>
       <pubDate>Sat, 21 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/projects/moni/</guid>
+      <guid>http://rustyeddy.com/projects/moni/</guid>
       <description>&lt;p&gt;Moni was built to monitor resources I manage that are attached to the
 web. Keeping track of servers, apps, websites and devices quickly
 becomes a mess. Moni can server as an inventory database periodically
@@ -37,11 +37,11 @@ checking the health and performance of the things it manages.&lt;/p&gt;</descrip
     </item>
     
     <item>
-      <title>RedEye Streaming Video and Computer Vision</title>
-      <link>http://localhost:1313/projects/redeye/</link>
+      <title>Redeye Computer Vision</title>
+      <link>http://rustyeddy.com/projects/redeye/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/projects/redeye/</guid>
+      <guid>http://rustyeddy.com/projects/redeye/</guid>
       <description>The RedEye project was born from the need to stream video from a slowly moving robot with small inexpensive and easily available cameras.
 Key Points The video streams will be consumed by a HD video display, Computer Vision control algorithms and storage.
 GStreamer Framework The architecture is built around the powerful GStreamer libraries and toolset. Which means that we can immediately consume any video source that GStreamer supports.
@@ -50,10 +50,10 @@ Likewise, we can produce any video stream output that GStreamer is capable of pr
     
     <item>
       <title>Sensor Station</title>
-      <link>http://localhost:1313/projects/sensor-station/</link>
+      <link>http://rustyeddy.com/projects/sensor-station/</link>
       <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/projects/sensor-station/</guid>
+      <guid>http://rustyeddy.com/projects/sensor-station/</guid>
       <description></description>
     </item>
     

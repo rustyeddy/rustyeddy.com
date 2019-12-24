@@ -1,8 +1,9 @@
 ---
-title: RedEye Streaming Video and Computer Vision
+title: Redeye Computer Vision
 description: > 
   RedEye project manages live video streams used for autonomous
-  vehicle control.
+  vehicle control, includes efficient application of computer vision
+  algorithms to streaming video.
 date: 2019-05-05
 permalink: redeye
 categories: 

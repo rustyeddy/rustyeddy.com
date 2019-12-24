@@ -94,5 +94,5 @@ if (!doNotTrack) {
 
 
 
-    <script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10&v=2"></' + 'script>')</script></body>
+    </body>
 </html>
