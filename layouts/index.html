@@ -7,18 +7,21 @@
 	{{- partial "jumbotron-head.html" . -}}
 
 	<div class="container">
-
 	    <div class="row">
-		<div class="col-6">
-		    {{- partial "interview.html" . -}}
-		</div>
-
-		<div class="col-6">
+		<div class="col"></div>
+		<div class="col-8">
 		    {{- partial "web-walker.html" . -}}
 		</div>
-
+		<div class="col"></div>
 	    </div>
 
+	    <div class="row">
+		<div class="col"></div>
+		<div class="col-8">
+		    {{- partial "interview.html" . -}}
+		</div>
+		<div class="col"></div>
+	    </div>
 	</div>
 	{{- partial "footer.html" . -}}
     </body>

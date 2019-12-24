@@ -2,18 +2,19 @@
 title: A Hypothetical Interview with Myself
 date: 2019-05-14
 description: >
-  I manage successful software projects
+  Design, Develop and Deploy Software
 summary: >
-  Because I follow a process built from industry practices I have
-  gathered over the years with two specific goals: stay light weight,
-  increase transperancy of the development process, for all involved.
+  Years of building software and witnessing both successes and
+  failures, I have become increasingly intersted in establishing a set
+  of best practices for small to mid sized software development
+  projects. Join me here.
 ---
 
 ***So, Who are you?***
 
 My name is George Eddy, my friends call me Rusty.
 
-I grew in Wilmington, CA .the Harbor area of South Los Angeles county
+I grew in Wilmington, CA. the Harbor area of South Los Angeles county
 CA. and now live in Huntington Beach, CA with my family.
 
 I manage software develop and server operations for a living. 

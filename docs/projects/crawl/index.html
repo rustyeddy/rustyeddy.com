@@ -9,7 +9,7 @@
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 
-<title>A Hypothetical Interview with Myself</title>
+<title>Crawl</title>
 
 
 <body><header class="container bg-white">
@@ -34,87 +34,59 @@
 
     </nav>
 </header>
-<div class="jumbotron head-pic border-top border-bottom bg-white">
-    <div class="container">
-	
-	<div class="row p-4">
-	    <div class="col-1"></div>
-	    <div class="col-2">
-		<img class="img-fluid rounded-circle" src="img/rusty-background.jpg">
-	    </div>
-	    <div class="col-1"></div>
+<div id="main">
 
-	    <div class="col-5">
-		<h5 class="header pb-1">
-		    Design, Develop and Deploy Software
-
-		</h5>
-		<div class="leadin align-right text-muted">
-		    Years of building software and witnessing both successes and failures, I have become increasingly intersted in establishing a set of best practices for small to mid sized software development projects. Join me here.
-		</div>
-	    </div>
-	    <div class="col"><ul class="list-group-flush text-center">
-    <li class="list-group-item">(714) 362-5402</li>
-    <li class="list-group-item">419 Main St. #439</li>
-    <li class="list-group-item">Huntington Beach, CA</li>
-</ul>
-</div>
-	</div>
-    </div>
-</div>
 <div class="container">
-	    <div class="row">
-		<div class="col"></div>
-		<div class="col-8"><div class="card border-0">
-    <div class="card-title">
-	<h4 class="card-title text-center">Web Walker</h4>
-    </div>
-    <div class="card-body">
-	<div class="card-text">
-	    <p>
-		Join me on my little pet project _crawl_, a simple web
-		walker built to monitor the websites that I own and those
-		I am responsible for managing. 
-	    </p>
-	    <p>
-		The web walker backend is written with Go and includes
-		a self contained web server built on the library
-		colly.
-	    </p>
-	    <p>
-		<a href="/projects/crawl">Read more about Crawl</a>
-	    </p>
-
+    <div class="row">
+	<div class="col"></div>
+	<div class="col=5">
+	    <img class="justify-content-center" src="" />
 	</div>
-	
+
+	<div class="col"></div>
     </div>
 </div>
-</div>
-		<div class="col"></div>
+
+<div class="container">
+    <nav class="nav justify-content-center p-5">
+	<a class="nav-link" href="">github</a>
+	<a class="nav-link" href="">site</a>
+	<a class="nav-link active" href="/portfolio">portfolio</a>
+	<a class="nav-link" href="/resume">resume</a>
+    </nav>
+
+    <div class="row">
+	<div class="col"></div>
+	<div class="col-lg-8 pl-4 pr-4">
+	    <article class="article">
+		<p>This page is the <em>Software Requirements</em> document, hence the
+respective sections below.</p>
+<h2 id="goal-and-requirement">Goal and Requirement</h2>
+<p>The purpose of <em>crawl</em> is to walk a website recording the response
+rate from the server(s) and the reachability of every link on a given
+page.</p>
+<p>The first iteration will provide a REST API and a Web UI with a form
+and a page that displays the results of a single page walk.</p>
+<h2 id="ops-overview">Ops Overview</h2>
+<p>The program <em>crawl</em> can be run interactively as a command line tool
+with appropriate arguments, it can also be run as a <em>daemon</em>,
+listening for incoming URLs from the API</p>
+<h2 id="architecture">Architecture</h2>
+<h2 id="development">Development</h2>
+<h2 id="deployment">Deployment</h2>
+<h2 id="support">Support</h2>
+
+	    </article>
+	    <div class="call-to-action">
+		<h2>Call To Action</h2>
 	    </div>
-
-	    <div class="row">
-		<div class="col"></div>
-		<div class="col-8"><div class="card border-0">
-    <div class="card-title">
-	<h4 class="card-title text-center">A Hypothetical Interview with Myself</h4>
-    </div>
-    <div class="card-body">
-	<div class="card-text">
-	    <p><em><strong>So, Who are you?</strong></em></p>
-<p>My name is George Eddy, my friends call me Rusty.</p>
-<p>I grew in Wilmington, CA. the Harbor area of South Los Angeles county
-CA. and now live in Huntington Beach, CA with my family.</p>
-<p>I manage software develop and server operations for a living.</p>
-<p>I have BS and MS in Computer Science from CSULB and USC respectively.</p>
-<p><a href="/interview">Read More</a> or <a href="/resume">Resume</a></p>
-
 	</div>
+	<div class="col"></div>
     </div>
 </div>
-</div>
-		<div class="col"></div>
-	    </div>
+
+
+
 	</div><footer id="footer" class="container mb-5 pb-5">
     <div class="row mt-5 pt-5">
 	<div class="col-2"></div>
@@ -157,5 +129,6 @@ if (!doNotTrack) {
 </script>
 
 
-</body>
+
+    </body>
 </html>
