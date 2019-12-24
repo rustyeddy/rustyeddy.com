@@ -74,6 +74,16 @@
   </url>
   
   <url>
+    <loc>http://rustyeddy.com/projects/mobilerobot/</loc>
+    <lastmod>2019-12-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/projects/moni/</loc>
+    <lastmod>2019-12-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://rustyeddy.com/notes/bootstrap/</loc>
     <lastmod>2019-12-20T00:00:00+00:00</lastmod>
   </url>
@@ -114,12 +124,12 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/categories/resume/</loc>
+    <loc>http://rustyeddy.com/tags/resume/</loc>
     <lastmod>2019-09-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/tags/resume/</loc>
+    <loc>http://rustyeddy.com/categories/resume/</loc>
     <lastmod>2019-09-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -161,6 +171,21 @@
   <url>
     <loc>http://rustyeddy.com/notes/</loc>
     <lastmod>2019-05-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/categories/computer-vision/</loc>
+    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/projects/redeye/</loc>
+    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/categories/streaming-video/</loc>
+    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -219,18 +244,23 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/tags/raspberry-pi/</loc>
+    <loc>http://rustyeddy.com/notes/raspberry-pi-camera-multiple-ports/</loc>
     <lastmod>2019-04-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/notes/raspberry-pi-camera-multiple-ports/</loc>
+    <loc>http://rustyeddy.com/tags/raspberry-pi/</loc>
     <lastmod>2019-04-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://rustyeddy.com/notes/design-mechanically/</loc>
     <lastmod>2019-03-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/projects/sensor-station/</loc>
+    <lastmod>2019-02-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>

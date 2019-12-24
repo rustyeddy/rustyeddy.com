@@ -10,4 +10,3 @@ I have worked on some great projects with some amazing people for a
 variety of different companies.  Here are few of the things that I am
 able to show you (not under NDA).
 
-

@@ -2,13 +2,13 @@
 <div class="container-fluid">
 
     <div class="row text-center">
-	<div class="col"></div> <!-- col-2 -->
-	<div class="col-8">
+	<div class="col"></div>
+	<div class="col-4">
 	    <article class="article text-big">
 		{{ .Content }}
 	    </article>
 	</div>
-	<div class="col"></div> <!-- col-2 -->
+	<div class="col"></div>
     </div>
 
 </div>
@@ -17,21 +17,24 @@
 
     <div class="row mt-5 pt-5">
 	{{ range .Pages }}
-	<div class="col-6">
+	<div class="col-4">
 	    <div class="card">
 		<div class="card-body">
-		    <img class="card-image" src="{{ .Params.image }}" />
+		    <img class="img-fluid" src="{{ .Params.image }}" />
 		    <h5 class="card-title">
 			<a href="{{ .Permalink }}">{{ .Title }}</a>
 		    </h5>
 		    <div class="card-text">
 			{{ .Description }}
+			<span><a href="{{ .Permalink }}">read more ...</a></span>
 		    </div>
 		</div>
 	    </div>
-	</div> <!-- col -->
+	</div>
 	{{ end }}
-    </div>
+    </div> 
+
+</div>
 
 </div>
 {{ end }}

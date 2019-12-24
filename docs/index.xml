@@ -151,6 +151,31 @@ years.&lt;/p&gt;</description>
     </item>
     
     <item>
+      <title>Mobile Robot I/O</title>
+      <link>http://rustyeddy.com/projects/mobilerobot/</link>
+      <pubDate>Sat, 21 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/projects/mobilerobot/</guid>
+      <description>&lt;p&gt;There are a number of exciting things about this project, building the
+vehicle itself, the remote control and the streaming camera just at
+the surface. The thing that excites me the most are the communications
+that take place to make this all happen. See where we are at building
+this project.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Moni the Web Walking Baby Sitter</title>
+      <link>http://rustyeddy.com/projects/moni/</link>
+      <pubDate>Sat, 21 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/projects/moni/</guid>
+      <description>This page is the Software Requirements document, hence the respective sections below.
+Goal and Requirement The purpose of crawl is to walk a website recording the response rate from the server(s) and the reachability of every link on a given page.
+The first iteration will provide a REST API and a Web UI with a form and a page that displays the results of a single page walk.
+Ops Overview The program crawl can be run interactively as a command line tool with appropriate arguments, it can also be run as a daemon, listening for incoming URLs from the API</description>
+    </item>
+    
+    <item>
       <title>Bootstrap makes WebUI look great!</title>
       <link>http://rustyeddy.com/notes/bootstrap/</link>
       <pubDate>Fri, 20 Dec 2019 00:00:00 +0000</pubDate>
@@ -197,6 +222,18 @@ Developers write code and make things work, designers make things look good. But
       <description>Of it earlier this month I set out to start streaming video From the CSI camera, that is a raspberry pie camera, From a moving vehicle for the vehicles guidance and navigation.
 I was surprised to find the the whole world is streaming video is Incredibly complex, NFL 2019 we do not have A solution that is easy universally adopted.
 TLDR; Gstreamer RTSP Pipeline We are streaming our video from a Raspberry Pi Camera (CSI) attached to, either a Raspberry Pi or a Jetson Nano, GST extracts the video from the CSI camera using a custom driver (raspicamsrc or nvargussrc) for the RPi or Nano respectively.</description>
+    </item>
+    
+    <item>
+      <title>RedEye Streaming Video and Computer Vision</title>
+      <link>http://rustyeddy.com/projects/redeye/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/projects/redeye/</guid>
+      <description>The RedEye project was born from the need to stream video from a slowly moving robot with small inexpensive and easily available cameras.
+Key Points The video streams will be consumed by a HD video display, Computer Vision control algorithms and storage.
+GStreamer Framework The architecture is built around the powerful GStreamer libraries and toolset. Which means that we can immediately consume any video source that GStreamer supports.
+Likewise, we can produce any video stream output that GStreamer is capable of producing.</description>
     </item>
     
     <item>
@@ -266,6 +303,15 @@ producing, through &lt;em&gt;video ports&lt;/em&gt;.&lt;/p&gt;</description>
   Color Palette
   &amp;ndash; Primary Color + variant hues &amp;ndash; Secondary Color + varient hues &amp;ndash; Tertiary Color + varient hues &amp;ndash; Success, Alert, Warning, Error, etc.
  Wireframes &amp;ndash; Home page wireframe &amp;ndash; Blog Section wireframe  </description>
+    </item>
+    
+    <item>
+      <title>Sensor Station</title>
+      <link>http://rustyeddy.com/projects/sensor-station/</link>
+      <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/projects/sensor-station/</guid>
+      <description></description>
     </item>
     
     <item>
