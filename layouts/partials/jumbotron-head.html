@@ -3,12 +3,20 @@
 	
 	<div class="row">
 	    <div class="col-1"></div>
-	    <div class="col-2">
-		<img class="img-fluid rounded-circle" src="img/rusty-background.jpg">
-	    </div>
-	    <div class="col-1"></div>
+	    <div class="col-4">
+		<div class="text-center">
+		    <img id="myhead" class="img-fluid rounded-circle" src="img/rusty-background.jpg">
+		</div>
+		<div class="text-center">
+		    <nav class="navbar justify-content-center navbar-light bg-white">
+			<a class="nav-item nav-link" href="https://linkedin.com/in/rusty.eddy">LinkedIn</a>
+			<a class="nav-item nav-link" href="https://twitter.com/rustyeddy">Twitter</a>
+			<a class="nav-itemlink" href="https://github.com/rustyeddy">Github</a>
+		    </nav>
+		</div>
 
-	    <div class="col-5">
+	    </div>
+	    <div class="col">
 		<h5 class="header pb-1">
 		    {{ .Description }}
 		</h5>
@@ -16,9 +24,7 @@
 		    {{ .Summary }}
 		</div>
 	    </div>
-	    <div class="col">
-		{{- partial "contact.html" . -}}
-	    </div>
+	    <div class="col-1"></div>
 	</div>
     </div>
 </div>
