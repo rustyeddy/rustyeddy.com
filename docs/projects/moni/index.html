@@ -9,7 +9,7 @@
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 
-<title>Moni the Web Walking Baby Sitter</title>
+<title>Moni the Web Sitter</title>
 
 
 <body><header class="container bg-white">
@@ -41,7 +41,7 @@
     <div class="row">
 	<div class="col"></div>
 	<div class="col-8">
-	    <h2 class="text-center">Moni the Web Walking Baby Sitter</h2>
+	    <h2 class="text-center">Moni the Web Sitter</h2>
 	    <nav class="nav justify-content-center">
 		<a class="nav-link" href="">github</a>
 		<a class="nav-link" href="">site</a>
@@ -69,9 +69,48 @@
 	<div class="col"></div>
 	<div class="col-lg-8 pl-4 pr-4">
 	    <article class="article">
-		<p>This page is the <em>Software Requirements</em> document, hence the
-respective sections below.</p>
+		<p>Moni was built to monitor resources I manage that are attached to the
+web. Keeping track of servers, apps, websites and devices quickly
+becomes a mess. Moni can server as an inventory database periodically
+checking the health and performance of the things it manages.</p>
 <h2 id="goal-and-requirement">Goal and Requirement</h2>
+<p>The primary goals of Moni are as follows:</p>
+<h3 id="moni-backend-server">Moni Backend Server</h3>
+<ul>
+<li>Provide a CRUD REST API for Sites</li>
+<li>Utilise colly to crawl specified website and child pages</li>
+<li>Record and classify external vs internal links</li>
+<li>Test for performance of a given page</li>
+<li>Test for accessibility of all links, external and internal</li>
+</ul>
+<h3 id="moni-storage">Moni Storage</h3>
+<p>What type of persistance should we use?  We can go crazy with this
+one, mongo, mysql, postgress, other NoSQL?  Sure we can, but let us
+keep this simple and just use the file system for persistence.  Yea, I
+know this is no kind of <em>modern web app</em> without a sexy data
+persistance engine, right?</p>
+<p>Well, lets what we would like to store <em>exactly</em>? For now, we really
+just want to store the domain name, the other external information we
+will gather, from the respective <strong>source of truth</strong> reside in
+external sources, for this reason we can avoid <em>caching</em> these results
+in our own databases, and build them live from the SOT.</p>
+<h4 id="tbd-timeseries-database">TBD TimeSeries Database</h4>
+<p>In a short period of time, we will want to record a series of data
+over time and hence a <em>Time Series Database</em> such as <em>influxDB</em>(<a href="http://influxdb.io">http://influxdb.io</a>) is</p>
+<h3 id="moni-spa">Moni SPA</h3>
+<ul>
+<li>A single page with the following capabilities
+<ul>
+<li>display list of all sites</li>
+<li>display list of pages on a given site</li>
+<li>display links from a given page</li>
+<li>display aliveness of page</li>
+<li>display aliveness of every link from page</li>
+<li>display response time of every page</li>
+</ul>
+</li>
+</ul>
+<h3 id="moni">Moni</h3>
 <p>The purpose of <em>crawl</em> is to walk a website recording the response
 rate from the server(s) and the reachability of every link on a given
 page.</p>
@@ -85,7 +124,6 @@ listening for incoming URLs from the API</p>
 <h2 id="development">Development</h2>
 <h2 id="deployment">Deployment</h2>
 <h2 id="support">Support</h2>
-
 	    </article>
 	</div>
 	<div class="col"></div>

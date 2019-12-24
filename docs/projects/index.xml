@@ -25,15 +25,15 @@ this project.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Moni the Web Walking Baby Sitter</title>
+      <title>Moni the Web Sitter</title>
       <link>http://localhost:1313/projects/moni/</link>
       <pubDate>Sat, 21 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/projects/moni/</guid>
-      <description>This page is the Software Requirements document, hence the respective sections below.
-Goal and Requirement The purpose of crawl is to walk a website recording the response rate from the server(s) and the reachability of every link on a given page.
-The first iteration will provide a REST API and a Web UI with a form and a page that displays the results of a single page walk.
-Ops Overview The program crawl can be run interactively as a command line tool with appropriate arguments, it can also be run as a daemon, listening for incoming URLs from the API</description>
+      <description>&lt;p&gt;Moni was built to monitor resources I manage that are attached to the
+web. Keeping track of servers, apps, websites and devices quickly
+becomes a mess. Moni can server as an inventory database periodically
+checking the health and performance of the things it manages.&lt;/p&gt;</description>
     </item>
     
     <item>
