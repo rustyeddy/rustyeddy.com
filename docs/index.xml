@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>A Hypothetical Interview with Myself on Rusty Eddy</title>
@@ -21,7 +21,8 @@
 budgets and schedules, design software architecture and
 lead teams of engineers through entire software development
 lifecycles. Project work included but not limited to C; C++; Python;
-PHP; JavaScript; Java &amp;amp; MySQL.&lt;/p&gt;</description>
+PHP; JavaScript; Java &amp;amp; MySQL.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -58,9 +59,7 @@ Development involved C/C++, Go and Python primarily. MicroServices and distribut
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/resume/jobs/att/</guid>
-      <description>&lt;p&gt;Architectural lead, and software development lead for a new &lt;em&gt;Software
-Defined Networking&lt;/em&gt; &lt;em&gt;Multicast Route Controller&lt;/em&gt;.  Contributed to the
-OpenSource SDN controller project ONOS.&lt;/p&gt;</description>
+      <description>Architectural lead, and software development lead for a new Software Defined Networking Multicast Route Controller. Contributed to the OpenSource SDN controller project ONOS. Co Architect on a Zero Configuration network provision and configuration management system. We designed a sieres of micro-services to integrate existing company services, and introduced new resources.</description>
     </item>
     
     <item>
@@ -73,7 +72,8 @@ OpenSource SDN controller project ONOS.&lt;/p&gt;</description>
 for the design, implementation and testing the complete suite of
 Multicast Routing protocols for the Cisco Carrier Routing System
 (CRS).  Worked this project from early design through product launch
-into maintenance.&lt;/p&gt;</description>
+into maintenance.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -94,7 +94,8 @@ into maintenance.&lt;/p&gt;</description>
       <description>&lt;p&gt;Led the effort to add IGMP/PIM and Multicast Routing Information
 Base (MRIB) to the Open Source &lt;em&gt;GateD&lt;/em&gt; suite of routing protocols.
 Lead graduate students and others that would eventually become
-prominent members of the computer networking community.&lt;/p&gt;</description>
+prominent members of the computer networking community.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -113,7 +114,8 @@ prominent members of the computer networking community.&lt;/p&gt;</description>
       
       <guid>http://rustyeddy.com/resume/jobs/retix/</guid>
       <description>&lt;p&gt;Promoted to lead the team of 6 engineers that developed and
-automated test plans for L2 switches, OSPF, RIP and BGP&lt;/p&gt;</description>
+automated test plans for L2 switches, OSPF, RIP and BGP
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -124,7 +126,8 @@ automated test plans for L2 switches, OSPF, RIP and BGP&lt;/p&gt;</description>
       <guid>http://rustyeddy.com/resume/jobs/rockwell/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Lead Sysadmin&lt;/strong&gt;: lead a team of 5 Sysadmins responsible for the
 use and well being of Engineering Departments 300+ UNIX
-workstations, servers (Sun, HP, DEC) and network.&lt;/p&gt;</description>
+workstations, servers (Sun, HP, DEC) and network.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -135,7 +138,20 @@ workstations, servers (Sun, HP, DEC) and network.&lt;/p&gt;</description>
       <guid>http://rustyeddy.com/resume/jobs/csu-chancelor/</guid>
       <description>&lt;p&gt;I was hired by the CSU Chancellors Office for a &lt;em&gt;&amp;ldquo;special&amp;rdquo;&lt;/em&gt; project, a
 habit I seem to have gotten myself into regularly over the
-years.&lt;/p&gt;</description>
+years.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Micro Services in Go and Python</title>
+      <link>http://rustyeddy.com/services/go-micro-services/</link>
+      <pubDate>Sat, 28 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/services/go-micro-services/</guid>
+      <description>&lt;p&gt;I will work with you on Design, Implementation and Deployment of
+service or services you are in need of.  I work primarily with
+&lt;a href=&#34;http://golang.org&#34;&gt;go&lt;/a&gt; and occaisionally &lt;em&gt;Python&lt;/em&gt;.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -158,7 +174,8 @@ I like it!</description>
 vehicle itself, the remote control and the streaming camera just at
 the surface. The thing that excites me the most are the communications
 that take place to make this all happen. See where we are at building
-this project.&lt;/p&gt;</description>
+this project.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -170,7 +187,8 @@ this project.&lt;/p&gt;</description>
       <description>&lt;p&gt;Moni was built to monitor resources I manage that are attached to the
 web. Keeping track of servers, apps, websites and devices quickly
 becomes a mess. Moni can server as an inventory database periodically
-checking the health and performance of the things it manages.&lt;/p&gt;</description>
+checking the health and performance of the things it manages.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -188,7 +206,7 @@ checking the health and performance of the things it manages.&lt;/p&gt;</descrip
       <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/notes/resources/</guid>
-      <description> MicroServices  JavaScript  Learn JavaScript ~ EC2015 Axios Cheatsheet  </description>
+      <description>  MicroServices  JavaScript  Learn JavaScript ~ EC2015 Axios Cheatsheet  </description>
     </item>
     
     <item>
@@ -240,7 +258,7 @@ Likewise, we can produce any video stream output that GStreamer is capable of pr
       <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/notes/webrtc-what-is-it/</guid>
-      <description>WebRTC stands for Web Realtime Communications. Yea, I know you can Google too, now let&#39;s ask, &amp;ldquo;What does that mean?&amp;quot;.
+      <description>WebRTC stands for Web Realtime Communications. Yea, I know you can Google too, now let&amp;rsquo;s ask, &amp;ldquo;What does that mean?&amp;rdquo;.
 Realtime Communication Generally speaking we all, intuitively know what Real Time means, it is a sense of what is happening now. OK, that is reasonable, after all it is how we live the majority of our lives.
 Communication &amp;ldquo;Topologies&amp;rdquo;  One to one One to many many to many many to one?</description>
     </item>
@@ -274,7 +292,7 @@ General consensus says that RTSP is a good choice for low latency, local area ne
       
       <guid>http://rustyeddy.com/notes/streaming-video-tools/</guid>
       <description>The grandparents of streaming video, and snapshots, read, writing and transcoding video and single frame images are ffmpeg, vlc and gstreamer.
-Other platforms, such as the wildly cool and inexpensive Raspberry Pi and attached CSI Camera (Raspberry Pi Camera) have thier own set of utilities: like raspivid. Or the NVidia Nano with it&#39;s gst-streamer plugins and nvgst-capture/nvgst-playback utilies.
+Other platforms, such as the wildly cool and inexpensive Raspberry Pi and attached CSI Camera (Raspberry Pi Camera) have thier own set of utilities: like raspivid. Or the NVidia Nano with it&amp;rsquo;s gst-streamer plugins and nvgst-capture/nvgst-playback utilies.
  This writting is as of March 2019
  GStreamer Complex, Flexible, Future Proof GStreamer really complex pipelines but insanely flexible.</description>
     </item>
@@ -288,7 +306,8 @@ Other platforms, such as the wildly cool and inexpensive Raspberry Pi and attach
       <description>&lt;p&gt;As I started bumbling around trying to figure the best way to stream
 [live video from a moving vehicle], I found that the Raspberry Pi
 camera is capable of producing filtered versions of the images it is
-producing, through &lt;em&gt;video ports&lt;/em&gt;.&lt;/p&gt;</description>
+producing, through &lt;em&gt;video ports&lt;/em&gt;.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -297,8 +316,8 @@ producing, through &lt;em&gt;video ports&lt;/em&gt;.&lt;/p&gt;</description>
       <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/notes/design-mechanically/</guid>
-      <description>  Typography &amp;ndash; Fonts and Sizes &amp;mdash; Header Font Family &amp;amp; Sizes &amp;mdash; Body font family and sizes
-  Color Palette
+      <description> Typography &amp;ndash; Fonts and Sizes &amp;mdash; Header Font Family &amp;amp; Sizes &amp;mdash; Body font family and sizes
+ Color Palette
   &amp;ndash; Primary Color + variant hues &amp;ndash; Secondary Color + varient hues &amp;ndash; Tertiary Color + varient hues &amp;ndash; Success, Alert, Warning, Error, etc.
  Wireframes &amp;ndash; Home page wireframe &amp;ndash; Blog Section wireframe  </description>
     </item>
@@ -319,16 +338,17 @@ producing, through &lt;em&gt;video ports&lt;/em&gt;.&lt;/p&gt;</description>
       
       <guid>http://rustyeddy.com/notes/streaming-video-local-network/</guid>
       <description>differences in local vs. internet and streaming video
-  live stream vs. video on demand
-  what does real time mean?
-  what to do with late packets?
-  UDP vs. TCP in the local network
-  RTP and UDP
-  RTP and RTCP
-  RTP and RTSP
-  RTP and Multicast
-  Tools used
-  TODO: workflowy outline</description>
+ live stream vs. video on demand
+ what does real time mean?
+ what to do with late packets?
+ UDP vs. TCP in the local network
+ RTP and UDP
+ RTP and RTCP
+ RTP and RTSP
+ RTP and Multicast
+ Tools used
+  TODO: workflowy outline
+RTSP is a good option for streaming video in a local setup up, where minimal delay is the highest priority.</description>
     </item>
     
     <item>
@@ -348,13 +368,18 @@ producing, through &lt;em&gt;video ports&lt;/em&gt;.&lt;/p&gt;</description>
       <guid>http://rustyeddy.com/resume/pubs/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Ramesh Govindan, et el.&lt;/strong&gt; &lt;em&gt;&amp;ldquo;An Architecture for Stable, Analyzable
 Internet Routing&amp;rdquo;&lt;/em&gt;, IEEE Network Magazine, Jan-Feb 1999.&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Rusty Eddy, Ramesh Govindan,&lt;/strong&gt; &lt;em&gt;&amp;ldquo;Testing Protocol Implementations
 with pkt&amp;rdquo;&lt;/em&gt;, Networld+Interop 99 Engineers Conference Proceedings, June
 1999&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Rusty Eddy&lt;/strong&gt;, &lt;em&gt;&amp;ldquo;Emulating Multicast Routing Protocols in a Software
 Defined Networking (SDN) Controller&amp;rdquo;&lt;/em&gt;, AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Rusty Eddy&lt;/strong&gt;, &lt;em&gt;&amp;ldquo;Testing Multicast SDN Networks in a Container&amp;rdquo;&lt;/em&gt;,
-AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;</description>
+AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -411,8 +436,8 @@ There are a ton of templates, graphics and photos that can be easily drag-n-drop
       <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/notes/cmake/</guid>
-      <description>CMake is a growingly popular method for generating Makefile files depending on the build computer being used.
-Add an include directory -I&amp;hellip;/include include_directories(./include ../another/include) </description>
+      <description> CMake is a growingly popular method for generating Makefile files depending on the build computer being used.
+Add an include directory -I&amp;hellip;/include include_directories(./include ../another/include)  </description>
     </item>
     
     <item>
@@ -421,9 +446,9 @@ Add an include directory -I&amp;hellip;/include include_directories(./include ..
       <pubDate>Mon, 03 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/notes/ansible/</guid>
-      <description>Ansible is a very powerful yet simple, in all its complexity. It is a wonderful tool that I get frequent use of. It&#39;s real home I suppose is in the larger corporation devops world, it is wonderfully well suited to a mid sized IoT environment.
-A Few Highlight about Ansible   Create Playbooks that defines the configuration of a target architecture.
-  Ansible is Idempotent meaning it defines the the desired outcome, it is up to Ansible to make that outcome real.</description>
+      <description>Ansible is a very powerful yet simple, in all its complexity. It is a wonderful tool that I get frequent use of. It&amp;rsquo;s real home I suppose is in the larger corporation devops world, it is wonderfully well suited to a mid sized IoT environment.
+A Few Highlight about Ansible  Create Playbooks that defines the configuration of a target architecture.
+ Ansible is Idempotent meaning it defines the the desired outcome, it is up to Ansible to make that outcome real.</description>
     </item>
     
     <item>
@@ -432,7 +457,7 @@ A Few Highlight about Ansible   Create Playbooks that defines the configuration 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/notes/adafruit-music-maker-mp3-sheild/</guid>
-      <description>The shield is driven by an SPI connection with the Arduino and relies on an SD card with music files on it to play. Must determine how to play streaming audio, then we&#39;ll have something neat!
+      <description>The shield is driven by an SPI connection with the Arduino and relies on an SD card with music files on it to play. Must determine how to play streaming audio, then we&amp;rsquo;ll have something neat!
 Link to the documentation.
 The shield can also be jumpered and booted into Midi Mode and turned into a drum machine or a Garageband type of play along.</description>
     </item>
@@ -443,8 +468,7 @@ The shield can also be jumpered and booted into Midi Mode and turned into a drum
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/notes/opencv/</guid>
-      <description>Building OpenCV is quite a task, so if you are just getting started, or do not need something in more recent versions, then by all means use your OSs package management facility to install OpenCV, otherwise here is a list of things that I did to get the latest version of OpenCV built so I could infuse it with some GStreamer to deliver streaming video to our CV algorithms.
-Installing on Linux and a MacOS Install cmake to build these things from scratch.</description>
+      <description>Building OpenCV is quite a task, so if you are just getting started, or do not need something in more recent versions, then by all means use your OSs package management facility to install OpenCV, otherwise here is a list of things that I did to get the latest version of OpenCV built so I could infuse it with some GStreamer to deliver streaming video to our CV algorithms.</description>
     </item>
     
     <item>

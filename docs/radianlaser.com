@@ -41,6 +41,7 @@
 	  <p>Responsible for the design, development and support of numerous
 company software projects, including but not limited to control
 systems firmware, single page apps for operational concerns.</p>
+
 <p>Development involved C/C++, Go and Python primarily.  MicroServices
 and distributed communication design where large parts of the work we
 do.</p>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -70,17 +70,17 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/tags/</loc>
-    <lastmod>2019-12-25T00:00:00+00:00</lastmod>
+    <loc>http://rustyeddy.com/services/go-micro-services/</loc>
+    <lastmod>2019-12-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/services/</loc>
+    <lastmod>2019-12-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://rustyeddy.com/notes/vue-frontends/</loc>
-    <lastmod>2019-12-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/vue/</loc>
     <lastmod>2019-12-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -110,48 +110,13 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/tags/develop-design/</loc>
-    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/notes/website-roles/</loc>
     <lastmod>2019-10-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/categories/</loc>
-    <lastmod>2019-09-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/resume/objectives/</loc>
     <lastmod>2019-09-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/resume/</loc>
-    <lastmod>2019-09-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/categories/resume/</loc>
-    <lastmod>2019-09-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/mpeg-dash/</loc>
-    <lastmod>2019-05-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/rtmp/</loc>
-    <lastmod>2019-05-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/rtsp/</loc>
-    <lastmod>2019-05-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -180,33 +145,13 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/categories/computer-vision/</loc>
-    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/projects/redeye/</loc>
-    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/categories/streaming-video/</loc>
-    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/webrtc/</loc>
     <lastmod>2019-05-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://rustyeddy.com/notes/webrtc-what-is-it/</loc>
     <lastmod>2019-05-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/h264/</loc>
-    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -220,42 +165,12 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/categories/video/</loc>
-    <lastmod>2019-04-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/ffmpeg/</loc>
-    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/gstreamer/</loc>
-    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/notes/streaming-video-tools/</loc>
     <lastmod>2019-04-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/tags/vlc/</loc>
-    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/picamera/</loc>
-    <lastmod>2019-04-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/notes/raspberry-pi-camera-multiple-ports/</loc>
-    <lastmod>2019-04-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/raspberry-pi/</loc>
     <lastmod>2019-04-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -290,26 +205,6 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/tags/architect/</loc>
-    <lastmod>2018-08-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/developer/</loc>
-    <lastmod>2018-08-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/engineer/</loc>
-    <lastmod>2018-08-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/robots/</loc>
-    <lastmod>2018-08-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/resume/about/</loc>
     <lastmod>2018-08-11T00:00:00+00:00</lastmod>
   </url>
@@ -325,33 +220,8 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/tags/contact/</loc>
-    <lastmod>2018-02-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/notes/design-graphics-with-canva/</loc>
     <lastmod>2017-10-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/c/</loc>
-    <lastmod>2017-04-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/c&#43;&#43;/</loc>
-    <lastmod>2017-04-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/cmake/</loc>
-    <lastmod>2017-04-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/make/</loc>
-    <lastmod>2017-04-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -365,17 +235,8 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/tags/ansible/</loc>
-    <lastmod>2017-04-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/rpi/</loc>
-    <lastmod>2017-04-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/tags/adafruit/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -383,19 +244,118 @@
   </url>
   
   <url>
+    <loc>http://rustyeddy.com/tags/ansible/</loc>
+    <lastmod>2017-04-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/architect/</loc>
+    <lastmod>2018-08-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://rustyeddy.com/tags/arduino/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://rustyeddy.com/tags/audio/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/c/</loc>
+    <lastmod>2017-04-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/c&#43;&#43;/</loc>
+    <lastmod>2017-04-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/cmake/</loc>
+    <lastmod>2017-04-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/categories/computer-vision/</loc>
+    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/contact/</loc>
+    <lastmod>2018-02-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/develop-design/</loc>
+    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/developer/</loc>
+    <lastmod>2018-08-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://rustyeddy.com/tags/embedded/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/engineer/</loc>
+    <lastmod>2018-08-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/ffmpeg/</loc>
+    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://rustyeddy.com/tags/firmware/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/gstreamer/</loc>
+    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/h264/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/make/</loc>
+    <lastmod>2017-04-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/mpeg-dash/</loc>
+    <lastmod>2019-05-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -403,11 +363,96 @@
   </url>
   
   <url>
+    <loc>http://rustyeddy.com/tags/picamera/</loc>
+    <lastmod>2019-04-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/raspberry-pi/</loc>
+    <lastmod>2019-04-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/resume/</loc>
+    <lastmod>2019-09-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/categories/resume/</loc>
+    <lastmod>2019-09-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/robots/</loc>
+    <lastmod>2018-08-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/rpi/</loc>
+    <lastmod>2017-04-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/rtmp/</loc>
+    <lastmod>2019-05-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/rtsp/</loc>
+    <lastmod>2019-05-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://rustyeddy.com/tags/single-page-app/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/categories/streaming-video/</loc>
+    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/</loc>
+    <lastmod>2017-04-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://rustyeddy.com/notes/problem-statement/</loc>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/categories/video/</loc>
+    <lastmod>2019-04-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/vlc/</loc>
+    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/vue/</loc>
+    <lastmod>2019-12-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/webrtc/</loc>
+    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>

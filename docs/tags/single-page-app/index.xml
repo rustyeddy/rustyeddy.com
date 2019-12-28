@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>single page app on Rusty Eddy</title>
+    <title>Single Page App on Rusty Eddy</title>
     <link>http://rustyeddy.com/tags/single-page-app/</link>
-    <description>Recent content in single page app on Rusty Eddy</description>
+    <description>Recent content in Single Page App on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
