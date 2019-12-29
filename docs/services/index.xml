@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Services on Rusty Eddy</title>
-    <link>http://localhost:1313/services/</link>
+    <link>http://rustyeddy.com/services/</link>
     <description>Recent content in Services on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 27 Dec 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/services/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://rustyeddy.com/services/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Micro Services in Go and Python</title>
-      <link>http://localhost:1313/services/go-micro-services/</link>
+      <link>http://rustyeddy.com/services/go-micro-services/</link>
       <pubDate>Sat, 28 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/services/go-micro-services/</guid>
+      <guid>http://rustyeddy.com/services/go-micro-services/</guid>
       <description>&lt;p&gt;I will work with you on Design, Implementation and Deployment of
 service or services you are in need of.  I work primarily with
 &lt;a href=&#34;http://golang.org&#34;&gt;go&lt;/a&gt; and occaisionally &lt;em&gt;Python&lt;/em&gt;.
@@ -25,19 +25,19 @@ service or services you are in need of.  I work primarily with
     
     <item>
       <title></title>
-      <link>http://localhost:1313/services/static-site-spa/</link>
+      <link>http://rustyeddy.com/services/static-site-spa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/services/static-site-spa/</guid>
+      <guid>http://rustyeddy.com/services/static-site-spa/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Wetsites and Apps</title>
-      <link>http://localhost:1313/services/webapp-development/</link>
+      <link>http://rustyeddy.com/services/webapp-development/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/services/webapp-development/</guid>
+      <guid>http://rustyeddy.com/services/webapp-development/</guid>
       <description>&lt;p&gt;My User Interface development goto solution is a webapp (HTML, CSS &amp;amp;
 JavaScript), to this end, I do not specialize on any popular frame
 work per se, rather I prefer to build smaller solutions that address

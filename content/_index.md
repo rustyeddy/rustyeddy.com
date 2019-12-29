@@ -9,16 +9,7 @@ summary: >
   predictable and reliable for the people paying for it.
 ---
 
-***So, Who are you?***
-
-My name is George Eddy, my friends call me Rusty.
-
-I grew in Wilmington, CA. the Harbor area of South Los Angeles county
-CA. and now live in Huntington Beach, CA with my family.
-
-I manage software develop and server operations for a living. 
-
-I have BS and MS in Computer Science from CSULB and USC respectively.
-
-[Read More](/interview) or [Resume](/resume)
+I am a Software Engineer working with IoT companies building
+microservices, robots and interested in real-time communications and
+computer visualization. 
 
