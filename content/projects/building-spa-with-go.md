@@ -8,7 +8,16 @@ category: software
 draft: true
 ---
 
-## The End Result
+## Goal
 
-## Architecture
+To have a small Touch Screen display act as an _Internet Clock_, in
+other words, the Internet will ensure the clock is always correct,
+even in timezones during time change.
+
+- gorilla mux for SPA
+- bootstrap for a little style
+- vue.js for the clock
+
+
+
 
