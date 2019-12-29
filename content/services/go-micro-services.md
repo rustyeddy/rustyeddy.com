@@ -23,6 +23,6 @@ I can develop services that provide (as well as consume)
 ## Additional Information
 
 When developing micro services we also need to consider are the
-logging system(s) used
+logging system(s), acceptance tests and deployment.
 
 
