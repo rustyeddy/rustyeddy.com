@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Work History on Rusty Eddy</title>
@@ -21,8 +21,7 @@
 budgets and schedules, design software architecture and
 lead teams of engineers through entire software development
 lifecycles. Project work included but not limited to C; C++; Python;
-PHP; JavaScript; Java &amp;amp; MySQL.
-&lt;/p&gt;</description>
+PHP; JavaScript; Java &amp;amp; MySQL.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -31,8 +30,8 @@ PHP; JavaScript; Java &amp;amp; MySQL.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/resume/jobs/radian-laser/</guid>
-      <description>Responsible for the design, development and support of numerous company software projects, including but not limited to control systems firmware, single page apps for operational concerns.
-Development involved C/C++, Go and Python primarily. MicroServices and distributed communication design where large parts of the work we do.</description>
+      <description>I am responsible for the design, development and support of numerous company software projects, including but not limited to the control system firmware, single page apps for laser operation and calibration.
+Development involved C/C++, Go and Python primarily. MicroServices developed on the esp32, Raspberry PI and public cloud providers like AWS and Azure.</description>
     </item>
     
     <item>
@@ -41,7 +40,7 @@ Development involved C/C++, Go and Python primarily. MicroServices and distribut
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/resume/jobs/alchemy/</guid>
-      <description>Cloud Automation with Ansible and CloudStack. Automate the installation and provisioning of Linux hosts with ansible.</description>
+      <description>I worked on Cloud Automation with Ansible and CloudStack. The objective was to automate the provisioning of CloudStack on a Xen Server for new clients, the clients are then able to use cloud stack to provision there own virtual machines with license free Open Source software.</description>
     </item>
     
     <item>
@@ -50,7 +49,9 @@ Development involved C/C++, Go and Python primarily. MicroServices and distribut
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/resume/jobs/att/</guid>
-      <description>Architectural lead, and software development lead for a new Software Defined Networking Multicast Route Controller. Contributed to the OpenSource SDN controller project ONOS. Co Architect on a Zero Configuration network provision and configuration management system. We designed a sieres of micro-services to integrate existing company services, and introduced new resources.</description>
+      <description>&lt;p&gt;Architectural lead, and software development lead for a new &lt;em&gt;Software
+Defined Networking&lt;/em&gt; &lt;em&gt;Multicast Route Controller&lt;/em&gt;.  Contributed to the
+OpenSource SDN controller project ONOS.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -63,8 +64,7 @@ Development involved C/C++, Go and Python primarily. MicroServices and distribut
 for the design, implementation and testing the complete suite of
 Multicast Routing protocols for the Cisco Carrier Routing System
 (CRS).  Worked this project from early design through product launch
-into maintenance.
-&lt;/p&gt;</description>
+into maintenance.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -76,8 +76,7 @@ into maintenance.
       <description>&lt;p&gt;Led the effort to add IGMP/PIM and Multicast Routing Information
 Base (MRIB) to the Open Source &lt;em&gt;GateD&lt;/em&gt; suite of routing protocols.
 Lead graduate students and others that would eventually become
-prominent members of the computer networking community.
-&lt;/p&gt;</description>
+prominent members of the computer networking community.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -87,8 +86,7 @@ prominent members of the computer networking community.
       
       <guid>http://rustyeddy.com/resume/jobs/retix/</guid>
       <description>&lt;p&gt;Promoted to lead the team of 6 engineers that developed and
-automated test plans for L2 switches, OSPF, RIP and BGP
-&lt;/p&gt;</description>
+automated test plans for L2 switches, OSPF, RIP and BGP&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -99,8 +97,7 @@ automated test plans for L2 switches, OSPF, RIP and BGP
       <guid>http://rustyeddy.com/resume/jobs/rockwell/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Lead Sysadmin&lt;/strong&gt;: lead a team of 5 Sysadmins responsible for the
 use and well being of Engineering Departments 300+ UNIX
-workstations, servers (Sun, HP, DEC) and network.
-&lt;/p&gt;</description>
+workstations, servers (Sun, HP, DEC) and network.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -111,8 +108,7 @@ workstations, servers (Sun, HP, DEC) and network.
       <guid>http://rustyeddy.com/resume/jobs/csu-chancelor/</guid>
       <description>&lt;p&gt;I was hired by the CSU Chancellors Office for a &lt;em&gt;&amp;ldquo;special&amp;rdquo;&lt;/em&gt; project, a
 habit I seem to have gotten myself into regularly over the
-years.
-&lt;/p&gt;</description>
+years.&lt;/p&gt;</description>
     </item>
     
   </channel>

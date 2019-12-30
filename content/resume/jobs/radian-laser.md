@@ -1,6 +1,6 @@
 ---
 title: Radian Laser
-start: 2019-05-01
+start: 2019-07-01
 finish: present
 company: Radian Laser Systems, LLC
 weight: 140
@@ -13,10 +13,11 @@ tags:
 reference: radianlaser.com
 ---
 
-Responsible for the design, development and support of numerous
-company software projects, including but not limited to control
-systems firmware, single page apps for operational concerns.
+I am responsible for the design, development and support of numerous
+company software projects, including but not limited to the control
+system firmware, single page apps for laser operation and calibration.
 
 Development involved C/C++, Go and Python primarily.  MicroServices
-and distributed communication design where large parts of the work we
-do. 
+developed on the esp32, Raspberry PI and public cloud providers like
+AWS and Azure.
+

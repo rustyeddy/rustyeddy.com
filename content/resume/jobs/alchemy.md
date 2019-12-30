@@ -8,5 +8,8 @@ weight: 150
 jobtitle: Principal Engineer ~ Networking
 ---
 
-Cloud Automation with Ansible and CloudStack. Automate the
-installation and provisioning of Linux hosts with _ansible_.
+I worked on _Cloud Automation_ with _Ansible_ and _CloudStack_. The
+objective was to automate the provisioning of CloudStack on a Xen
+Server for new clients, the clients are then able to use cloud stack
+to provision there own virtual machines with license free Open Source
+software. 

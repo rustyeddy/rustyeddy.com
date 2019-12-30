@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Embedded on Rusty Eddy</title>
+    <title>embedded on Rusty Eddy</title>
     <link>http://rustyeddy.com/tags/embedded/</link>
-    <description>Recent content in Embedded on Rusty Eddy</description>
+    <description>Recent content in embedded on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
@@ -16,8 +16,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/resume/jobs/radian-laser/</guid>
-      <description>Responsible for the design, development and support of numerous company software projects, including but not limited to control systems firmware, single page apps for operational concerns.
-Development involved C/C++, Go and Python primarily. MicroServices and distributed communication design where large parts of the work we do.</description>
+      <description>I am responsible for the design, development and support of numerous company software projects, including but not limited to the control system firmware, single page apps for laser operation and calibration.
+Development involved C/C++, Go and Python primarily. MicroServices developed on the esp32, Raspberry PI and public cloud providers like AWS and Azure.</description>
     </item>
     
   </channel>

@@ -14,7 +14,9 @@
 
 <body><header class="container bg-white">
     <nav class="navbar navbar-expand-lg navbar-light">
+
 	<a class="navbar-brand text-muted text-monospace" href="/">rusty eddy</a>
+
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	</button>
@@ -23,11 +25,9 @@
 	    <nav class="navbar-nav">
 		<div class="nav  justify-content-end">
   		    <a class="nav-link" href="/">home</a>
-  	            <a class="nav-link" href="/notes">notes</a>
+		    
   	            <a class="nav-link" href="/resume">resume</a>
-  	            <a class="nav-link" href="/projects">projects</a>
-  	            <a class="nav-link" href="/services">services</a>
-  	            <a class="nav-link" href="/about">about</a>
+
 		</div>
  	    </nav>
 	</div>
@@ -52,9 +52,7 @@
     <div class="col"></div>
     <div class="col-md-8 hero-text">
 	<article class="article">
-	  
-
-<ul>
+	  <ul>
 <li>rtp</li>
 <li>rtsp</li>
 <li>rtmp</li>
@@ -64,64 +62,45 @@
 <li>mpeg</li>
 <li>jpeg</li>
 </ul>
-
-<h2 id="rtp-real-time-protocol">RTP ~ Real Time Protocol</h2>
-
+<h2 id="rtp--real-time-protocol">RTP ~ Real Time Protocol</h2>
 <p>Actually holds payloads containing arbitrary, but time/delay sensitive
 media (audio, video, live conversations, etc).  Incorporates enough
 controls to allow for network congestion, reciever compensation and
 more.</p>
-
 <h2 id="rtsp-what-it-is-and-how-to-use-it">RTSP What it is and How to use it</h2>
-
 <p><strong>Real Time Streaming Protocol (RTSP)</strong></p>
-
 <p>General consensus says that RTSP is a good choice for low latency,
 local area networks.</p>
-
 <blockquote>
 <p>RTSP good for Local Low Latency, Bad for Internet</p>
 </blockquote>
-
 <p>This test I used <em>raspivid</em> to <em>vlc</em> to stream from my Raspberry Pi
 Camera, I used the following command retrieved from
 <a href="http://www.mybigideas.co.uk/RPi/RPiCamera/">here</a></p>
-
 <p><a href="https://gstconf.ubicast.tv/videos/latest-gstreamer-rtsp-server-features/">Video describing the use of gst-rtsp-server</a></p>
-
-<pre><code class="language-bash">% raspivid -o - -t 0 |cvlc -v stream:///dev/stdin --sout '#rtp{sdp=rtsp://:8554/}' :demux=h264
-</code></pre>
-
-<p>With this, I ran the <em>vlc</em> on a Macbook Pro, I ran the vlc client and
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">% raspivid -o - -t <span style="color:#ae81ff">0</span> |cvlc -v stream:///dev/stdin --sout <span style="color:#e6db74">&#39;#rtp{sdp=rtsp://:8554/}&#39;</span> :demux<span style="color:#f92672">=</span>h264
+</code></pre></div><p>With this, I ran the <em>vlc</em> on a Macbook Pro, I ran the vlc client and
 opened the following network connection:</p>
-
 <blockquote>
 <p>rtsp://10.24.2.10:8554/</p>
 </blockquote>
-
 <p>I was able to see the video just fine, however performance sluggish.
 I tried running VLC on my <a href="http://todo">Jetson nano</a>, it just
 crashed.  So much for that..</p>
-
 <p>My goal is not to figure out why VLC is crashing, rather to get low
 delay, glitch free video with as good quality as possble.  The high
 definition channel will be sent to the Webapp for live display,
 primarily for Human consumption.</p>
-
 <blockquote>
 <p>Need to identify the optimal real time video transport for a mobile
 vehicle.</p>
 </blockquote>
-
-<h2 id="hls-apple-centric-solution-transport">HLS - Apple Centric Solution Transport</h2>
-
+<h2 id="hls---apple-centric-solution-transport">HLS - Apple Centric Solution Transport</h2>
 <p>As of now, I am under the impression that HLS is heavily Apple
 centric, and perhaps not the best open, &ldquo;agnostic&rdquo; solution.</p>
-
 <blockquote>
 <p>Todo: update my understanding of this.</p>
 </blockquote>
-
 <h2 id="mpeg-dash">MPEG DASH</h2>
 
 	</article>
@@ -164,5 +143,5 @@ if (!doNotTrack) {
 
 
 
-    <script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script></body>
+    <script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10&v=2"></' + 'script>')</script></body>
 </html>

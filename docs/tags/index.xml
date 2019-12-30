@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Rusty Eddy</title>
@@ -6,12 +6,31 @@
     <description>Recent content in Tags on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Wed, 25 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://rustyeddy.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Embedded</title>
+      <title>vue</title>
+      <link>http://rustyeddy.com/tags/vue/</link>
+      <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/vue/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>develop, design</title>
+      <link>http://rustyeddy.com/tags/develop-design/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/develop-design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>embedded</title>
       <link>http://rustyeddy.com/tags/embedded/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -20,7 +39,7 @@
     </item>
     
     <item>
-      <title>Firmware</title>
+      <title>firmware</title>
       <link>http://rustyeddy.com/tags/firmware/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -29,20 +48,11 @@
     </item>
     
     <item>
-      <title>Single Page App</title>
+      <title>single page app</title>
       <link>http://rustyeddy.com/tags/single-page-app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/tags/single-page-app/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Vue</title>
-      <link>http://rustyeddy.com/tags/vue/</link>
-      <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/vue/</guid>
       <description></description>
     </item>
     
