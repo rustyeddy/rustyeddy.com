@@ -25,11 +25,9 @@
 	    <nav class="navbar-nav">
 		<div class="nav  justify-content-end">
   		    <a class="nav-link" href="/">home</a>
-  	            <a class="nav-link" href="/notes">notes</a>
+		    
   	            <a class="nav-link" href="/resume">resume</a>
-  	            <a class="nav-link" href="/projects">projects</a>
-  	            <a class="nav-link" href="/services">services</a>
-  	            <a class="nav-link" href="/about">about</a>
+
 		</div>
  	    </nav>
 	</div>

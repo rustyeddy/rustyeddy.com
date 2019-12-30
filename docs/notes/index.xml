@@ -26,17 +26,6 @@ fits my way of programming and thinking about code.
     </item>
     
     <item>
-      <title>WebRTC What is it?</title>
-      <link>http://rustyeddy.com/notes/webrtc-what-is-it/</link>
-      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/notes/webrtc-what-is-it/</guid>
-      <description>WebRTC stands for Web Realtime Communications. Yea, I know you can Google too, now let&amp;rsquo;s ask, &amp;ldquo;What does that mean?&amp;rdquo;.
-Realtime Communication Generally speaking we all, intuitively know what Real Time means, it is a sense of what is happening now. OK, that is reasonable, after all it is how we live the majority of our lives.
-Communication &amp;ldquo;Topologies&amp;rdquo;  One to one One to many many to many many to one?</description>
-    </item>
-    
-    <item>
       <title></title>
       <link>http://rustyeddy.com/notes/website-roles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

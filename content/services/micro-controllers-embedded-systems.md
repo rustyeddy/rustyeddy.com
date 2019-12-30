@@ -4,6 +4,7 @@ date: 2019-12-27
 description: >
   Raspberry PI, Arduinos and esp32 in network devices, lasers, sensor
   networks and all sorts of cool things!
+draft: true
 ---
 
 This is my foundation systems and embedded programming, which these

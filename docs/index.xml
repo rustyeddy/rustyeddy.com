@@ -143,42 +143,6 @@ years.
     </item>
     
     <item>
-      <title>Micro Services in Go and Python</title>
-      <link>http://rustyeddy.com/services/go-micro-services/</link>
-      <pubDate>Sat, 28 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/services/go-micro-services/</guid>
-      <description>&lt;p&gt;I will work with you on Design, Implementation and Deployment of
-service or services you are in need of.  I work primarily with
-&lt;a href=&#34;http://golang.org&#34;&gt;go&lt;/a&gt; and occaisionally &lt;em&gt;Python&lt;/em&gt;.
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Micro Controllers and Embedded Systems</title>
-      <link>http://rustyeddy.com/services/micro-controllers-embedded-systems/</link>
-      <pubDate>Fri, 27 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/services/micro-controllers-embedded-systems/</guid>
-      <description>&lt;p&gt;This is my foundation systems and embedded programming, which these
-days has translated into a lot of programming for the Raspberry Pi, an
-Arduino or even better the esp32.  See some related projects &amp;hellip;
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Website Maintanance</title>
-      <link>http://rustyeddy.com/services/site-maintanance/</link>
-      <pubDate>Fri, 27 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/services/site-maintanance/</guid>
-      <description>&lt;p&gt;Websites sometimes grow long in the tooth, or slow down for now
-reason, even worse, it gets attacked by some bad person, or more
-commonly a friendly, but fat fingered friendly editor.
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Using Vue to Develop Webapps</title>
       <link>http://rustyeddy.com/notes/vue-frontends/</link>
       <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
@@ -238,17 +202,6 @@ checking the health and performance of the things it manages.
 Key Points The video streams will be consumed by a HD video display, Computer Vision control algorithms and storage.
 GStreamer Framework The architecture is built around the powerful GStreamer libraries and toolset. Which means that we can immediately consume any video source that GStreamer supports.
 Likewise, we can produce any video stream output that GStreamer is capable of producing.</description>
-    </item>
-    
-    <item>
-      <title>WebRTC What is it?</title>
-      <link>http://rustyeddy.com/notes/webrtc-what-is-it/</link>
-      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/notes/webrtc-what-is-it/</guid>
-      <description>WebRTC stands for Web Realtime Communications. Yea, I know you can Google too, now let&amp;rsquo;s ask, &amp;ldquo;What does that mean?&amp;rdquo;.
-Realtime Communication Generally speaking we all, intuitively know what Real Time means, it is a sense of what is happening now. OK, that is reasonable, after all it is how we live the majority of our lives.
-Communication &amp;ldquo;Topologies&amp;rdquo;  One to one One to many many to many many to one?</description>
     </item>
     
     <item>
@@ -327,29 +280,6 @@ AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;
       <description>- title: Designers and Developers, What is the Difference? date: 2018-10-01 description: &amp;gt; So you are going to have a website built and you are not sure how to hire? A website designer, a developer? What is the difference? We will cover these differences in this article. category: develop
 tags: develop, design Should I hire a web designer or web developer and what is the difference?
 It is kinda funny, in the rest of the tech world the terms designer and developer mean distinctive things, and aside from a few rare unicorns, they very different roles.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://rustyeddy.com/services/embedded-systems/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/services/embedded-systems/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Wetsites and Apps</title>
-      <link>http://rustyeddy.com/services/webapp-development/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/services/webapp-development/</guid>
-      <description>&lt;p&gt;My User Interface development goto solution is a webapp (HTML, CSS &amp;amp;
-JavaScript), to this end, I do not specialize on any popular frame
-work per se, rather I prefer to build smaller solutions that address
-particular problems, I am typically transparent with the connections
-to databases and other external services.
-&lt;/p&gt;</description>
     </item>
     
   </channel>

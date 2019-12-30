@@ -1,6 +1,8 @@
 ---
 title: Wetsites and Apps
 description: Front end web application development.
+date: 2019-04-04
+draft: true
 ---
 
 My User Interface development goto solution is a webapp (HTML, CSS &
@@ -8,7 +10,7 @@ JavaScript), to this end, I do not specialize on any popular frame
 work per se, rather I prefer to build smaller solutions that address
 particular problems, I am typically transparent with the connections
 to databases and other external services.
-<!--more-->
+<!-more-->
 
 ## Front End Work
 

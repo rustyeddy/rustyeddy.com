@@ -1,3 +1,4 @@
+
 ---
 title: Micro Services in Go and Python
 date: 2019-12-28
@@ -5,6 +6,7 @@ projects:
   - http://github.com/rustyeddy/moni
   - http://github.com/rustyeddy/spaclock
   - http://github.com/rustyeddy/redeye
+draft: true
 ---
 
 I will work with you on Design, Implementation and Deployment of
