@@ -1,42 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>resume on Rusty Eddy</title>
+    <title>George (Rusty) Eddy Resume on Rusty Eddy</title>
     <link>http://rustyeddy.com/resume/</link>
-    <description>Recent content in resume on Rusty Eddy</description>
+    <description>Recent content in George (Rusty) Eddy Resume on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://rustyeddy.com/resume/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Education</title>
-      <link>http://rustyeddy.com/resume/education/</link>
-      <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/resume/education/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Objectives</title>
-      <link>http://rustyeddy.com/resume/objectives/</link>
-      <pubDate>Sat, 21 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/resume/objectives/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Interests</title>
-      <link>http://rustyeddy.com/resume/interests/</link>
-      <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/resume/interests/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Publications</title>
@@ -58,33 +31,6 @@ Defined Networking (SDN) Controller&amp;rdquo;&lt;/em&gt;, AT&amp;amp;T 2016 Sof
 AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Skills</title>
-      <link>http://rustyeddy.com/resume/skills/</link>
-      <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/resume/skills/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rusty Eddy</title>
-      <link>http://rustyeddy.com/resume/about/</link>
-      <pubDate>Sat, 11 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/resume/about/</guid>
-      <description>Software | Communications | Robotics | ~ + ~ | Engineer | Developer | Architect</description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>http://rustyeddy.com/resume/contact/</link>
-      <pubDate>Fri, 09 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/resume/contact/</guid>
-      <description></description>
     </item>
     
   </channel>

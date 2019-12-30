@@ -2,7 +2,7 @@
 title: Radian Laser
 start: 2019-05-01
 finish: present
-company: Radian Laser Systems, LLC Networks
+company: Radian Laser Systems, LLC
 weight: 140
 jobtitle: Software Engineer
 category: software
@@ -10,7 +10,7 @@ tags:
   - embedded
   - firmware
   - single page app
-url: radianlaser.com
+reference: radianlaser.com
 ---
 
 Responsible for the design, development and support of numerous

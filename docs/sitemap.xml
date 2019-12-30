@@ -13,7 +13,7 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/radianlaser.com</loc>
+    <loc>http://rustyeddy.com/resume/jobs/radian-laser/</loc>
   </url>
   
   <url>
@@ -46,11 +46,6 @@
   
   <url>
     <loc>http://rustyeddy.com/resume/edu/</loc>
-    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/resume/education/</loc>
     <lastmod>2018-09-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -90,11 +85,6 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/resume/objectives/</loc>
-    <lastmod>2019-09-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/resume/</loc>
     <lastmod>2019-05-15T00:00:00+00:00</lastmod>
   </url>
@@ -125,28 +115,8 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/resume/interests/</loc>
-    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/resume/pubs/</loc>
     <lastmod>2018-09-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/resume/skills/</loc>
-    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/resume/about/</loc>
-    <lastmod>2018-08-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/resume/contact/</loc>
-    <lastmod>2018-02-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -156,12 +126,6 @@
   
   <url>
     <loc>http://rustyeddy.com/notes/website-roles/</loc>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/architect/</loc>
-    <lastmod>2018-08-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -176,48 +140,12 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/tags/contact/</loc>
-    <lastmod>2018-02-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/developer/</loc>
-    <lastmod>2018-08-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/tags/embedded/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/tags/engineer/</loc>
-    <lastmod>2018-08-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/tags/firmware/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/resume/</loc>
-    <lastmod>2019-09-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/categories/resume/</loc>
-    <lastmod>2019-09-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/robots/</loc>
-    <lastmod>2018-08-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -234,7 +162,6 @@
   
   <url>
     <loc>http://rustyeddy.com/tags/</loc>
-    <lastmod>2018-08-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

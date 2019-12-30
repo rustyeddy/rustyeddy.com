@@ -6,37 +6,9 @@
     <description>Recent content in Tags on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://rustyeddy.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Architect</title>
-      <link>http://rustyeddy.com/tags/architect/</link>
-      <pubDate>Sat, 11 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/architect/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>http://rustyeddy.com/tags/contact/</link>
-      <pubDate>Fri, 09 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/contact/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Developer</title>
-      <link>http://rustyeddy.com/tags/developer/</link>
-      <pubDate>Sat, 11 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/developer/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Embedded</title>
@@ -48,38 +20,11 @@
     </item>
     
     <item>
-      <title>Engineer</title>
-      <link>http://rustyeddy.com/tags/engineer/</link>
-      <pubDate>Sat, 11 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/engineer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Firmware</title>
       <link>http://rustyeddy.com/tags/firmware/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/tags/firmware/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Resume</title>
-      <link>http://rustyeddy.com/tags/resume/</link>
-      <pubDate>Sat, 21 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/resume/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Robots</title>
-      <link>http://rustyeddy.com/tags/robots/</link>
-      <pubDate>Sat, 11 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/robots/</guid>
       <description></description>
     </item>
     
