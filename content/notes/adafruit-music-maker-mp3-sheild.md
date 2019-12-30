@@ -8,7 +8,7 @@ tags:
   - audio
   - arduino
 date: 2019-07-1
-references: 
+draft: true
 ---
 
 The shield is driven by an SPI connection with the Arduino and relies

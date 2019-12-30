@@ -1,5 +1,7 @@
 ---
 title: OpenCV
+date: 2018-04-04
+draft: true
 ---
 
 Building OpenCV is quite a task, so if you are just getting started, or

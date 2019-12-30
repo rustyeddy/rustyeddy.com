@@ -7,6 +7,7 @@ description: >
 category: programming
 tags: [ make, cmake, c, c++ ]
 reference: https://cmake.org/cmake/help/latest/guide/tutorial/index.html
+draft: true
 ---
 
 CMake is a growingly popular method for generating Makefile files

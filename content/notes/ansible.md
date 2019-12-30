@@ -11,6 +11,7 @@ tags:
   - rpi
   - ansible
 reference: https://ansible.org
+draft: true
 ---
 
 Ansible is a very powerful yet simple, in all its complexity. It is a

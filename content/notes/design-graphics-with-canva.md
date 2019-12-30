@@ -6,6 +6,7 @@ description: >
 reference: http://canva.com
 category: tools
 date: 2017-10-22
+draft: true
 ---
 
 [Canva](http://canva.com) is a very simple yet powerful graphics art
@@ -19,10 +20,12 @@ took me 15 minutes, including remembering my forgotten password.
 There are a ton of templates, graphics and photos that can be easily
 drag-n-dropped into place.
 
+Can see some of the example graphics that I have created as the
+thumbnails of the portfolio pages.
+
 ## Pro Upgrades
 
-- Branding have your style guide saved and ready to go.
-
+> TODO: Branding have your style guide saved and ready to go. 
 
 Save your style guide and past logos. Templates that have pred
 

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mpeg Dash on Rusty Eddy</title>
-    <link>http://rustyeddy.com/tags/mpeg-dash/</link>
+    <link>http://localhost:1313/tags/mpeg-dash/</link>
     <description>Recent content in Mpeg Dash on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 30 May 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://rustyeddy.com/tags/mpeg-dash/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/tags/mpeg-dash/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Using Gstreamer to create an RTSP Server</title>
-      <link>http://rustyeddy.com/notes/gstreamer-rtsp-server/</link>
+      <link>http://localhost:1313/notes/gstreamer-rtsp-server/</link>
       <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/gstreamer-rtsp-server/</guid>
+      <guid>http://localhost:1313/notes/gstreamer-rtsp-server/</guid>
       <description>Of it earlier this month I set out to start streaming video From the CSI camera, that is a raspberry pie camera, From a moving vehicle for the vehicles guidance and navigation.
 I was surprised to find the the whole world is streaming video is Incredibly complex, NFL 2019 we do not have A solution that is easy universally adopted.
 TLDR; Gstreamer RTSP Pipeline We are streaming our video from a Raspberry Pi Camera (CSI) attached to, either a Raspberry Pi or a Jetson Nano, GST extracts the video from the CSI camera using a custom driver (raspicamsrc or nvargussrc) for the RPi or Nano respectively.</description>

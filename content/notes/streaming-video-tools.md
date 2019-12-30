@@ -10,6 +10,7 @@ tags:
   - gstreamer
   - vlc
   - ffmpeg
+draft: true
 ---
 
 The grandparents of streaming video, and snapshots, read, writing

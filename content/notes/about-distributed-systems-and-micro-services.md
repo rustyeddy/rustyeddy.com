@@ -6,6 +6,7 @@ description: >
   builds service pipelines based on lean and efficient software
   components, rather than obese frameworks trying to be something they
   are not.  Here is what I mean:
+draft: true
 ---
 
 I am very much dedicated to building distributed, micro-service style

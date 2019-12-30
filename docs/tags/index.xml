@@ -6,28 +6,10 @@
     <description>Recent content in Tags on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Apr 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://rustyeddy.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Adafruit</title>
-      <link>http://rustyeddy.com/tags/adafruit/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/adafruit/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ansible</title>
-      <link>http://rustyeddy.com/tags/ansible/</link>
-      <pubDate>Mon, 03 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/ansible/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Architect</title>
@@ -39,65 +21,11 @@
     </item>
     
     <item>
-      <title>Arduino</title>
-      <link>http://rustyeddy.com/tags/arduino/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/arduino/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Audio</title>
-      <link>http://rustyeddy.com/tags/audio/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/audio/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>C</title>
-      <link>http://rustyeddy.com/tags/c/</link>
-      <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/c/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>C&#43;&#43;</title>
-      <link>http://rustyeddy.com/tags/c&#43;&#43;/</link>
-      <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/c&#43;&#43;/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Cmake</title>
-      <link>http://rustyeddy.com/tags/cmake/</link>
-      <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/cmake/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Contact</title>
       <link>http://rustyeddy.com/tags/contact/</link>
       <pubDate>Fri, 09 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/tags/contact/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Develop Design</title>
-      <link>http://rustyeddy.com/tags/develop-design/</link>
-      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/develop-design/</guid>
       <description></description>
     </item>
     
@@ -129,74 +57,11 @@
     </item>
     
     <item>
-      <title>Ffmpeg</title>
-      <link>http://rustyeddy.com/tags/ffmpeg/</link>
-      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/ffmpeg/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Firmware</title>
       <link>http://rustyeddy.com/tags/firmware/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/tags/firmware/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Gstreamer</title>
-      <link>http://rustyeddy.com/tags/gstreamer/</link>
-      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/gstreamer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>H264</title>
-      <link>http://rustyeddy.com/tags/h264/</link>
-      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/h264/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Make</title>
-      <link>http://rustyeddy.com/tags/make/</link>
-      <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/make/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mpeg Dash</title>
-      <link>http://rustyeddy.com/tags/mpeg-dash/</link>
-      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/mpeg-dash/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Picamera</title>
-      <link>http://rustyeddy.com/tags/picamera/</link>
-      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/picamera/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Raspberry Pi</title>
-      <link>http://rustyeddy.com/tags/raspberry-pi/</link>
-      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/raspberry-pi/</guid>
       <description></description>
     </item>
     
@@ -219,47 +84,11 @@
     </item>
     
     <item>
-      <title>Rpi</title>
-      <link>http://rustyeddy.com/tags/rpi/</link>
-      <pubDate>Mon, 03 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/rpi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rtmp</title>
-      <link>http://rustyeddy.com/tags/rtmp/</link>
-      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/rtmp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rtsp</title>
-      <link>http://rustyeddy.com/tags/rtsp/</link>
-      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/rtsp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Single Page App</title>
       <link>http://rustyeddy.com/tags/single-page-app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/tags/single-page-app/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Vlc</title>
-      <link>http://rustyeddy.com/tags/vlc/</link>
-      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/vlc/</guid>
       <description></description>
     </item>
     

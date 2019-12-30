@@ -5,6 +5,7 @@ description: >
   Streaming video over a local area network can take on a
   significantly different look than trying to live stream video over
   the Internet.
+draft: true
 ---
 
 - differences in local vs. internet and streaming video

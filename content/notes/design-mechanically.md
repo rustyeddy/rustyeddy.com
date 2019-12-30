@@ -5,6 +5,10 @@ description: >
   good designs just by following a set of well established best
   practices from some designers.
 category: design
+references:
+  - refactoring the UI
+  - Rafal Tomal eBook
+draft: true
 ---
 
 - Typography
