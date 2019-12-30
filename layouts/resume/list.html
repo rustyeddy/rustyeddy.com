@@ -4,12 +4,18 @@
 
     <section id="contact" class="container text-center">
 	<div class="row m-4 p-4 border-top border-bottom">
-	    <div class="col">
+
+	    <div class="col text-center">
+		<img id="myhead" class="img-fluid rounded-circle" src="/img/rusty-background.jpg">
+	    </div>
+
+	    <div class="col align-middle pt-4">
 		Rusty Eddy<br/>
 		419 Main St. #439<br/>
 		Huntington Beach, CA
 	    </div>
-	    <div class="col">
+
+	    <div class="col align-middle pt-4">
 		(714) 362-5402<br/>
 		<a href="mailto:rusty@rustyeddy.com">rusty@rustyeddy.com</a><br/>
 		<a href="https://linkedin.com/rustyeddy">linkedin</a><br/>
@@ -18,10 +24,10 @@
     </section>
 
     <section id="career-summary" class="container">
-	<div class="row">
+	<div class="row mt-4">
 	    <div class="col"></div>
 	    <div class="col-10">
-		<h2 class="text-center">Career Summary</h2>
+		<h2 class="text-center">Career Summary and Interests</h2>
 		<div class="content">
 		    {{ .Content }}
 		</div>
@@ -32,7 +38,7 @@
     </section>
 
     
-    <section id="jobs" class="container mb-3">
+    <section id="jobs" class="container mt-5 mb-5">
 	<h3 class="text-center">Work History</h3>
 
 	{{ $jobs := .Site.GetPage "/resume/jobs" }}

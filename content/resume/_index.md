@@ -20,14 +20,16 @@ sites:
 ---
 
 I am a Software Engineer with over three decades of building software
-and leading teams of software engineers, and others. My primary
-experience and interest is Computer Networks, Real Time Communication,
-Distributed Systes, MicroServices and DevOps. _My technologies are Go,
-C/C++, Python and JavaScript. In the past I also know other language
-well such and PHP, Java and Lisp._
+and leading teams of software engineers. My primary experience and
+interests are in Computer Networks and Distributed Systems, Realtime
+Communication, DevOps and Cloud Automation. 
 
-I am interested in consulting projects for Software Design, Team
-Building, Establish Software Process and CI/CD pipelines. I can also
-be hired as a lead programmer in aras of MicroController development,
-MicroServices and Cloud Automation. It does not take much to get me
-started and successful contributing.
+Technology wise my background is Go, C/C++, Python, JavaScript and
+Unix administration. For web applications I have used HTML/CSS and
+JavaScript extensively. VueJS is a recent addition to my existing
+skill set.
+
+I am a Contract Programmer and Consultant, If you would like to
+discuss working together please contact me, however you prefer:
+[contact](/contact). 
+
