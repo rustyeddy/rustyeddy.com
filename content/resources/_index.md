@@ -4,6 +4,7 @@ date: 2017-04-03
 description: >
   This section is a collection of some pretty good or excellent
   resources I have come upon around the web.
+draft: true
 ---
 
 I hope you find something here useful, if you have some additional

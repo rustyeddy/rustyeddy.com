@@ -21,3 +21,4 @@ Development involved C/C++, Go and Python primarily.  MicroServices
 developed on the esp32, Raspberry PI and public cloud providers like
 AWS and Azure.
 
+
