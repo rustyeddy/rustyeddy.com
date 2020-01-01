@@ -38,24 +38,7 @@
     </section>
 
     
-    <section id="jobs" class="container mt-5 mb-5">
-	<h3 class="text-center">Work History</h3>
-
-	{{ $jobs := .Site.GetPage "/resume/jobs" }}
-	{{ range $jobs.Pages }}
-	<div class="row">
-	    <div class="col-3 text-right">
-		<h5>{{ .Params.company }}</h5>
-		{{ .Params.start }} to {{ .Params.finish }}
-	    </div>
-	    <div class="col-8">
-		<h5>{{ .Params.jobtitle }}</h5>
-		{{ .Summary }}
-	    </div>
-	    <div col="col"></div>
-	</div> <!-- row -->
-	{{ end }}
-    </section>
+    {{- partial "joblist.html" . -}}
 
     {{ with .GetPage "/resume/edu/_index.md" }}
     <section class="container mb-5">
