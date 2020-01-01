@@ -1,6 +1,6 @@
 body {
     background: red;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -21,17 +21,24 @@ h3.header-subtitle {
     font-style: italic;
 }
 
-.duration {
-    font-style: italic;
-    font-size: .9rem;
-}
-
 #my-head {
     max-height: 40px;
     max-width: 40px;
 }
 
 .name {
-    font-style: italic;
     font-wieght: bold;
+}
+
+.degree {
+    font-size: 38px;
+}
+
+.duration {
+    font-style: italic;
+    font-size: .9rem;
+}
+
+.school {
+    font-size: 32px;
 }

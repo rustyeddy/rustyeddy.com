@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ansible on Rusty Eddy</title>
+    <title>Ansible on Rusty Eddy</title>
     <link>http://localhost:1313/tags/ansible/</link>
-    <description>Recent content in ansible on Rusty Eddy</description>
+    <description>Recent content in Ansible on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 03 Apr 2017 00:00:00 +0000</lastBuildDate>
