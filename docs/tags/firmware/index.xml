@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>firmware on Rusty Eddy</title>
+    <link>http://rustyeddy.com/tags/firmware/</link>
+    <description>Recent content in firmware on Rusty Eddy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://rustyeddy.com/tags/firmware/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Radian Laser</title>
+      <link>http://rustyeddy.com/resume/jobs/radian-laser/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/resume/jobs/radian-laser/</guid>
+      <description>I am responsible for the design, development and support of numerous company software projects, including but not limited to the control system firmware, single page apps for laser operation and calibration.
+Development involved C/C++, Go and Python primarily. MicroServices developed on the esp32, Raspberry PI and public cloud providers like AWS and Azure.</description>
+    </item>
+    
+  </channel>
+</rss>

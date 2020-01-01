@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>computer vision on Rusty Eddy</title>
+    <link>http://rustyeddy.com/categories/computer-vision/</link>
+    <description>Recent content in computer vision on Rusty Eddy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://rustyeddy.com/categories/computer-vision/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Redeye Computer Vision</title>
+      <link>http://rustyeddy.com/projects/redeye/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/projects/redeye/</guid>
+      <description>The RedEye project was born from the need to stream video from a slowly moving robot with small inexpensive and easily available cameras.
+Key Points The video streams will be consumed by a HD video display, Computer Vision control algorithms and storage.
+GStreamer Framework The architecture is built around the powerful GStreamer libraries and toolset. Which means that we can immediately consume any video source that GStreamer supports.
+Likewise, we can produce any video stream output that GStreamer is capable of producing.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,5 +1,5 @@
 ---
-title: George (Rusty) Eddy Resume
+title: resume
 date: 2019-05-15
 description: >
   I am a Software Engineer, Consultant and Contract Programmer. I live
