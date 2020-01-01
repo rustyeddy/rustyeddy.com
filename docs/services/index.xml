@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Services on Rusty Eddy</title>
+    <link>http://localhost:1313/services/</link>
+    <description>Recent content in Services on Rusty Eddy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Dec 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/services/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Micro Controllers and Embedded Systems</title>
+      <link>http://localhost:1313/services/embedded-systems/</link>
+      <pubDate>Sat, 28 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/services/embedded-systems/</guid>
+      <description>Use ths to discuss how I can use Go and Python to build micro services.</description>
+    </item>
+    
+    <item>
+      <title>Micro Services in Go and Python</title>
+      <link>http://localhost:1313/services/go-micro-services/</link>
+      <pubDate>Sat, 28 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/services/go-micro-services/</guid>
+      <description>&lt;p&gt;I will work with you on Design, Implementation and Deployment of
+service or services you are in need of.  I work primarily with
+&lt;a href=&#34;http://golang.org&#34;&gt;go&lt;/a&gt; and occaisionally &lt;em&gt;Python&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Micro Controllers and Embedded Systems</title>
+      <link>http://localhost:1313/services/micro-controllers-embedded-systems/</link>
+      <pubDate>Fri, 27 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/services/micro-controllers-embedded-systems/</guid>
+      <description>&lt;p&gt;This is my foundation systems and embedded programming, which these
+days has translated into a lot of programming for the Raspberry Pi, an
+Arduino or even better the esp32.  See some related projects &amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Website Maintanance</title>
+      <link>http://localhost:1313/services/site-maintanance/</link>
+      <pubDate>Fri, 27 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/services/site-maintanance/</guid>
+      <description>&lt;p&gt;Websites sometimes grow long in the tooth, or slow down for now
+reason, even worse, it gets attacked by some bad person, or more
+commonly a friendly, but fat fingered friendly editor.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Wetsites and Apps</title>
+      <link>http://localhost:1313/services/webapp-development/</link>
+      <pubDate>Thu, 04 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/services/webapp-development/</guid>
+      <description>My User Interface development goto solution is a webapp (HTML, CSS &amp;amp; JavaScript), to this end, I do not specialize on any popular frame work per se, rather I prefer to build smaller solutions that address particular problems, I am typically transparent with the connections to databases and other external services. &amp;lt;!-more&amp;ndash;&amp;gt;
+Front End Work I build webapp for IoT devices, for example a dashboard on a 6&amp;rdquo; Raspberry Pi, like the one below.</description>
+    </item>
+    
+  </channel>
+</rss>

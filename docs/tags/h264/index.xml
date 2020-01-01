@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>h264 on Rusty Eddy</title>
+    <link>http://localhost:1313/tags/h264/</link>
+    <description>Recent content in h264 on Rusty Eddy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 29 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/h264/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Streaming Video is Complicated</title>
+      <link>http://localhost:1313/notes/streaming-video/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/notes/streaming-video/</guid>
+      <description>I need to stream live video from a moving vehical with a connected camera and a possibly connected wifi.
+Live High Resolution Video Video will stream from the vehicle to be picked up by video consumers and processed as required. Examples of consumers are Live Video Display on our (Webapp), OpenCV for vision algoritms.
+High Demand For Low Resolution It turns out that computer vision alogrithms typically run quite a bit faster on lower resolution images, the additional information from these hi-res images can slow down the type of algorithms we are interested in by many factors.</description>
+    </item>
+    
+    <item>
+      <title>Streaming Video Protocols</title>
+      <link>http://localhost:1313/notes/streaming-video-protocols/</link>
+      <pubDate>Sun, 28 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/notes/streaming-video-protocols/</guid>
+      <description>rtp rtsp rtmp hlsl mjpeg mpeg-dash mpeg jpeg  RTP ~ Real Time Protocol Actually holds payloads containing arbitrary, but time/delay sensitive media (audio, video, live conversations, etc). Incorporates enough controls to allow for network congestion, reciever compensation and more.
+RTSP What it is and How to use it Real Time Streaming Protocol (RTSP)
+General consensus says that RTSP is a good choice for low latency, local area networks.</description>
+    </item>
+    
+  </channel>
+</rss>

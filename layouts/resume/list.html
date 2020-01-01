@@ -2,62 +2,81 @@
 
 <div class="container">
 
+</div>
+
+<div class="container">
+
     <section id="career-summary" class="container">
-	<div class="row mt-4">
-	    <div class="col"></div>
-	    <div class="col-8">
+	<div class="row">
+	    <div class="col">
 		<h2 class="text-center">Career Summary and Interests</h2>
+	    </div>
+	</div>
+	
+	<div class="row">
+	    <div class="col-3 align-middle text-right">
+		<div class="name">Rusty Eddy</div>
+		<div class="city">Huntington Beach, CA</div>
+		<div class="email">rusty@rustyeddy.com</div>
+		<div class="phone">(714) 362-5402</div>
+	    </div>
+	    <div class="col-8">
 		<div class="content">
 		    {{ .Content }}
 		</div>
 	    </div>
-	    <div class="col"></div>
+		<div class="col"></div>
 	</div>
-
-    </section>
+        </section>
 
     
     <section id="jobs" class="container mt-5 mb-5">
-	<h3 class="text-center">Work History</h3>
+		<h3 class="text-center">Work History</h3>
 
-	{{ $jobs := .Site.GetPage "/resume/jobs" }}
-	{{ range $jobs.Pages }}
-	<div class="row mt-4">
-	    <div class="col-3 text-right">
-		<h5 class="company">{{ .Params.company }}</h5>
-		<div class="duration">
-		    <span class="start">{{ .Params.start }}</span> to <span class="finish">{{ .Params.finish }}</span>
+		{{ $jobs := .Site.GetPage "/resume/jobs" }}
+		{{ range $jobs.Pages }}
+		<div class="row mt-4">
+		<div class="col-3 text-right">
+			<h5 class="company">{{ .Params.company }}</h5>
+			<div class="duration">
+			<span class="start">{{ .Params.start }}</span> to <span class="finish">{{ .Params.finish }}</span>
 		</div>
 	    </div>
-	    <div class="col-7">
-		<h5 class="job-title">{{ .Params.jobtitle }}</h5>
-		<div class="summary">
-		    {{ .Summary }}
+		<div class="col-7">
+			<h5 class="job-title">{{ .Params.jobtitle }}</h5>
+			<div class="summary">
+			{{ .Summary }}
 		</div>
 	    </div>
-	    <div col="col"></div>
+		<div col="col"></div>
 	</div> <!-- row -->
-	{{ end }}
-    </section>
+		{{ end }}
+        </section>
 
-    {{ with .GetPage "/resume/edu/_index.md" }}
     <section class="container mb-5 mt-5">
 	<div class="row">
-	    <div class="col"></div>
-	    <div class="col-8 text-center">
-		<h3>{{ .Title }}</h3>
-		{{ range .Pages }}
-		<div class="school mb-5">
-		    <h6 class="m-0 p-0">{{ .Params.graduate }}</h6>
-		    <h5 class="m-0 p-0">{{ .Params.degree }}</h5>
-		    <h4 class="m-0 p-0">{{ .Params.school }}</h4>
-		</div>
-		{{ end }}
-	    </div> <!-- center column -->
-	    <div class="col"></col>
+	    <div class="col">
+		<h3 class="text-center">Education</h3>
 	    </div>
+	</div>
+	{{ with .GetPage "/resume/edu/_index.md" }}
+	{{ range .Pages }}
+	<div class="row mt-4">
+	    <div class="col-3"></div>
+	    <div class="col-7">
+		<div class="mb-0 p-0">
+		    {{ .Params.degree }}
+		    <span class="mb-0 p-0">{{ .Params.graduate }}</span>
+		</div>
+		<div class="mb-0 p-0">{{ .Params.school }}</div>
+	    </div>
+	    <div class="col"></div>
+	</div> <!-- center column -->
+	{{ end }}
+	{{ end }}
+
     </section>
-    {{ end }}
+
 
     {{ with .GetPage "/resume/pubs.md" }}
     <section id="pubs" class="container mb-5">

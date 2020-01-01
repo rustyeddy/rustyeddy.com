@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>vue on Rusty Eddy</title>
-    <link>http://localhost:1313/tags/vue/</link>
+    <link>http://rustyeddy.com/tags/vue/</link>
     <description>Recent content in vue on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 25 Dec 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/vue/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://rustyeddy.com/tags/vue/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Using Vue to Develop Webapps</title>
-      <link>http://localhost:1313/notes/vue-frontends/</link>
+      <link>http://rustyeddy.com/notes/vue-frontends/</link>
       <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/notes/vue-frontends/</guid>
+      <guid>http://rustyeddy.com/notes/vue-frontends/</guid>
       <description>&lt;p&gt;I am using (&lt;em&gt;VUE&lt;/em&gt;)[&lt;a href=&#34;http://vuejs.org&#34;&gt;http://vuejs.org&lt;/a&gt;] to develop the frontend of
 (&lt;em&gt;moni&lt;/em&gt;)[&lt;a href=&#34;http://rustyeddy.com/projects/moni&#34;&gt;http://rustyeddy.com/projects/moni&lt;/a&gt;] I really like Vue, though
 I am not a frontend developer nor much of a JavaScript fan. Developing

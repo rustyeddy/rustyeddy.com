@@ -25,3 +25,13 @@ h3.header-subtitle {
     font-style: italic;
     font-size: .9rem;
 }
+
+#my-head {
+    max-height: 40px;
+    max-width: 40px;
+}
+
+.name {
+    font-style: italic;
+    font-wieght: bold;
+}

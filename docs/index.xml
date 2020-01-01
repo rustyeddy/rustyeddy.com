@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>A Hypothetical Interview with Myself on Rusty Eddy</title>
-    <link>http://localhost:1313/</link>
+    <link>http://rustyeddy.com/</link>
     <description>Recent content in A Hypothetical Interview with Myself on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 14 May 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://rustyeddy.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Eddy Consulting, LLC</title>
-      <link>http://localhost:1313/resume/jobs/eddy-consulting/</link>
+      <link>http://rustyeddy.com/resume/jobs/eddy-consulting/</link>
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/jobs/eddy-consulting/</guid>
+      <guid>http://rustyeddy.com/resume/jobs/eddy-consulting/</guid>
       <description>&lt;p&gt;Worked with clients to scope project requirements, establish
 budgets and schedules, design software architecture and
 lead teams of engineers through entire software development
@@ -26,38 +26,38 @@ PHP; JavaScript; Java &amp;amp; MySQL.&lt;/p&gt;</description>
     
     <item>
       <title>University of Southern California ~ MSCS</title>
-      <link>http://localhost:1313/resume/edu/usc/</link>
+      <link>http://rustyeddy.com/resume/edu/usc/</link>
       <pubDate>Tue, 02 Jan 1996 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/edu/usc/</guid>
+      <guid>http://rustyeddy.com/resume/edu/usc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Radian Laser</title>
-      <link>http://localhost:1313/resume/jobs/radian-laser/</link>
+      <link>http://rustyeddy.com/resume/jobs/radian-laser/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/jobs/radian-laser/</guid>
+      <guid>http://rustyeddy.com/resume/jobs/radian-laser/</guid>
       <description>I am responsible for the design, development and support of numerous company software projects, including but not limited to the control system firmware, single page apps for laser operation and calibration.
 Development involved C/C++, Go and Python primarily. MicroServices developed on the esp32, Raspberry PI and public cloud providers like AWS and Azure.</description>
     </item>
     
     <item>
       <title>Cloud Trek</title>
-      <link>http://localhost:1313/resume/jobs/alchemy/</link>
+      <link>http://rustyeddy.com/resume/jobs/alchemy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/jobs/alchemy/</guid>
+      <guid>http://rustyeddy.com/resume/jobs/alchemy/</guid>
       <description>I worked on Cloud Automation with Ansible and CloudStack. The objective was to automate the provisioning of CloudStack on a Xen Server for new clients, the clients are then able to use cloud stack to provision there own virtual machines with license free Open Source software.</description>
     </item>
     
     <item>
       <title>DirecTV / AT&amp;T</title>
-      <link>http://localhost:1313/resume/jobs/att/</link>
+      <link>http://rustyeddy.com/resume/jobs/att/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/jobs/att/</guid>
+      <guid>http://rustyeddy.com/resume/jobs/att/</guid>
       <description>&lt;p&gt;Architectural lead, and software development lead for a new &lt;em&gt;Software
 Defined Networking&lt;/em&gt; &lt;em&gt;Multicast Route Controller&lt;/em&gt;.  Contributed to the
 OpenSource SDN controller project ONOS.&lt;/p&gt;</description>
@@ -65,10 +65,10 @@ OpenSource SDN controller project ONOS.&lt;/p&gt;</description>
     
     <item>
       <title>Cisco Systems</title>
-      <link>http://localhost:1313/resume/jobs/cisco-systems/</link>
+      <link>http://rustyeddy.com/resume/jobs/cisco-systems/</link>
       <pubDate>Wed, 01 Feb 2006 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/jobs/cisco-systems/</guid>
+      <guid>http://rustyeddy.com/resume/jobs/cisco-systems/</guid>
       <description>&lt;p&gt;Original member of the Multicast Routing team.  Team of 12 responsible
 for the design, implementation and testing the complete suite of
 Multicast Routing protocols for the Cisco Carrier Routing System
@@ -78,19 +78,19 @@ into maintenance.&lt;/p&gt;</description>
     
     <item>
       <title>California State University, Long Beach</title>
-      <link>http://localhost:1313/resume/edu/csulb/</link>
+      <link>http://rustyeddy.com/resume/edu/csulb/</link>
       <pubDate>Tue, 02 Jan 1996 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/edu/csulb/</guid>
+      <guid>http://rustyeddy.com/resume/edu/csulb/</guid>
       <description></description>
     </item>
     
     <item>
       <title>USC ~ ISI</title>
-      <link>http://localhost:1313/resume/jobs/usc-isi/</link>
+      <link>http://rustyeddy.com/resume/jobs/usc-isi/</link>
       <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/jobs/usc-isi/</guid>
+      <guid>http://rustyeddy.com/resume/jobs/usc-isi/</guid>
       <description>&lt;p&gt;Led the effort to add IGMP/PIM and Multicast Routing Information
 Base (MRIB) to the Open Source &lt;em&gt;GateD&lt;/em&gt; suite of routing protocols.
 Lead graduate students and others that would eventually become
@@ -99,20 +99,20 @@ prominent members of the computer networking community.&lt;/p&gt;</description>
     
     <item>
       <title>Retix</title>
-      <link>http://localhost:1313/resume/jobs/retix/</link>
+      <link>http://rustyeddy.com/resume/jobs/retix/</link>
       <pubDate>Tue, 01 Aug 1995 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/jobs/retix/</guid>
+      <guid>http://rustyeddy.com/resume/jobs/retix/</guid>
       <description>&lt;p&gt;Promoted to lead the team of 6 engineers that developed and
 automated test plans for L2 switches, OSPF, RIP and BGP&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Rockwell, Intl. Space Systems Division</title>
-      <link>http://localhost:1313/resume/jobs/rockwell/</link>
+      <link>http://rustyeddy.com/resume/jobs/rockwell/</link>
       <pubDate>Mon, 03 Jan 1994 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/jobs/rockwell/</guid>
+      <guid>http://rustyeddy.com/resume/jobs/rockwell/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Lead Sysadmin&lt;/strong&gt;: lead a team of 5 Sysadmins responsible for the
 use and well being of Engineering Departments 300+ UNIX
 workstations, servers (Sun, HP, DEC) and network.&lt;/p&gt;</description>
@@ -120,95 +120,21 @@ workstations, servers (Sun, HP, DEC) and network.&lt;/p&gt;</description>
     
     <item>
       <title>California State University ~ Chancelors Office</title>
-      <link>http://localhost:1313/resume/jobs/csu-chancelor/</link>
+      <link>http://rustyeddy.com/resume/jobs/csu-chancelor/</link>
       <pubDate>Tue, 01 Aug 1995 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/jobs/csu-chancelor/</guid>
+      <guid>http://rustyeddy.com/resume/jobs/csu-chancelor/</guid>
       <description>&lt;p&gt;I was hired by the CSU Chancellors Office for a &lt;em&gt;&amp;ldquo;special&amp;rdquo;&lt;/em&gt; project, a
 habit I seem to have gotten myself into regularly over the
 years.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Web Developers Guide to Web Design</title>
-      <link>http://localhost:1313/notes/website-design-process/</link>
-      <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/notes/website-design-process/</guid>
-      <description>Thankfully the Internet has some kind soles that also happen to be incredible designers and they have taken the time and energy to communicate their design best practices with us. So I am taking a tiny bit of time to write a short brief on the design process I have acquired from various sources over the years, it looks something like this:
-Scribble Out Ideas Brain Storm, Brain Dump, whatever.</description>
-    </item>
-    
-    <item>
-      <title>Advice for Future Professional Programmers</title>
-      <link>http://localhost:1313/notes/advice-for-future-programmers/</link>
-      <pubDate>Sat, 28 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/notes/advice-for-future-programmers/</guid>
-      <description>&lt;p&gt;I have gathered some thoughts here for people just starting out, or
-thinking about becoming a programmer. I am no expert in this matter,
-but I have ben making a living as a software engineer (or similar
-term) for the last three decades, this is some of the lint I&amp;rsquo;ve
-gathered on the journey.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Micro Controllers and Embedded Systems</title>
-      <link>http://localhost:1313/services/embedded-systems/</link>
-      <pubDate>Sat, 28 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/services/embedded-systems/</guid>
-      <description>Use ths to discuss how I can use Go and Python to build micro services.</description>
-    </item>
-    
-    <item>
-      <title>Micro Services in Go and Python</title>
-      <link>http://localhost:1313/services/go-micro-services/</link>
-      <pubDate>Sat, 28 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/services/go-micro-services/</guid>
-      <description>&lt;p&gt;I will work with you on Design, Implementation and Deployment of
-service or services you are in need of.  I work primarily with
-&lt;a href=&#34;http://golang.org&#34;&gt;go&lt;/a&gt; and occaisionally &lt;em&gt;Python&lt;/em&gt;.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Store the simple object storage library.</title>
-      <link>http://localhost:1313/projects/store/</link>
-      <pubDate>Sat, 28 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/projects/store/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Micro Controllers and Embedded Systems</title>
-      <link>http://localhost:1313/services/micro-controllers-embedded-systems/</link>
-      <pubDate>Fri, 27 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/services/micro-controllers-embedded-systems/</guid>
-      <description>&lt;p&gt;This is my foundation systems and embedded programming, which these
-days has translated into a lot of programming for the Raspberry Pi, an
-Arduino or even better the esp32.  See some related projects &amp;hellip;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Website Maintanance</title>
-      <link>http://localhost:1313/services/site-maintanance/</link>
-      <pubDate>Fri, 27 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/services/site-maintanance/</guid>
-      <description>&lt;p&gt;Websites sometimes grow long in the tooth, or slow down for now
-reason, even worse, it gets attacked by some bad person, or more
-commonly a friendly, but fat fingered friendly editor.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Using Vue to Develop Webapps</title>
-      <link>http://localhost:1313/notes/vue-frontends/</link>
+      <link>http://rustyeddy.com/notes/vue-frontends/</link>
       <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/notes/vue-frontends/</guid>
+      <guid>http://rustyeddy.com/notes/vue-frontends/</guid>
       <description>&lt;p&gt;I am using (&lt;em&gt;VUE&lt;/em&gt;)[&lt;a href=&#34;http://vuejs.org&#34;&gt;http://vuejs.org&lt;/a&gt;] to develop the frontend of
 (&lt;em&gt;moni&lt;/em&gt;)[&lt;a href=&#34;http://rustyeddy.com/projects/moni&#34;&gt;http://rustyeddy.com/projects/moni&lt;/a&gt;] I really like Vue, though
 I am not a frontend developer nor much of a JavaScript fan. Developing
@@ -218,10 +144,10 @@ fits my way of programming and thinking about code.&lt;/p&gt;</description>
     
     <item>
       <title>Mobile Robot I/O</title>
-      <link>http://localhost:1313/projects/mobilerobot/</link>
+      <link>http://rustyeddy.com/projects/mobilerobot/</link>
       <pubDate>Sat, 21 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/projects/mobilerobot/</guid>
+      <guid>http://rustyeddy.com/projects/mobilerobot/</guid>
       <description>&lt;p&gt;There are a number of exciting things about this project, building the
 vehicle itself, the remote control and the streaming camera just at
 the surface. The thing that excites me the most are the communications
@@ -231,10 +157,10 @@ this project.&lt;/p&gt;</description>
     
     <item>
       <title>Moni the Web Sitter</title>
-      <link>http://localhost:1313/projects/moni/</link>
+      <link>http://rustyeddy.com/projects/moni/</link>
       <pubDate>Sat, 21 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/projects/moni/</guid>
+      <guid>http://rustyeddy.com/projects/moni/</guid>
       <description>&lt;p&gt;Moni was built to monitor resources I manage that are attached to the
 web. Keeping track of servers, apps, websites and devices quickly
 becomes a mess. Moni can server as an inventory database periodically
@@ -242,99 +168,11 @@ checking the health and performance of the things it manages.&lt;/p&gt;</descrip
     </item>
     
     <item>
-      <title>Bootstrap makes WebUI look great!</title>
-      <link>http://localhost:1313/notes/bootstrap/</link>
-      <pubDate>Fri, 20 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/notes/bootstrap/</guid>
-      <description>&lt;p&gt;references:
-  - &lt;a href=&#34;http://getbootstrap.com&#34;&gt;Bootstrap&lt;/a&gt;
-  - &lt;a href=&#34;https://hackerthemes.com/bootstrap-cheatsheet/&#34;&gt;Bootstrap Checklist&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Every Web UI needs A little bit of styling to make a page or website
-not only readable, but be useable with out making your user throwup.
-Bootstrap is a great way to quickly get started building some nice and
-orderly looking web pages. A little more about Bootstrap now.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Webdev Guide</title>
-      <link>http://localhost:1313/notes/webdev/</link>
-      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/notes/webdev/</guid>
-      <description>This section of my website is a collection of processes and best practices regarding software development. I gather them here, in an attempt to remember and formalize.
-Over the years, I have collected a set of practices and certain software practices and patterns. When I work for a client these practices will be documented as part of the development process.
-This section of my website is dedicated to the development of web sites and apps.</description>
-    </item>
-    
-    <item>
-      <title>Website Development Process</title>
-      <link>http://localhost:1313/notes/website-development-process/</link>
-      <pubDate>Sun, 03 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/notes/website-development-process/</guid>
-      <description>Measurable Goal To be truely effective and objective we need to be clear about an outcome or desired effect of every project we take one. It is best to select a single overiding, measurable goal.
-That goal should be measurable, it could be a dollar amount in sales, a number of email subscribers (or InstaTwitter followers) or any number of other things.
-A Dynamic System The more specific or goals become the better we are able to ascertain the success of our project.</description>
-    </item>
-    
-    <item>
-      <title>Building a Single Page App with Go</title>
-      <link>http://localhost:1313/projects/building-spa-with-go/</link>
-      <pubDate>Sun, 20 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/projects/building-spa-with-go/</guid>
-      <description> Goal To have a small Touch Screen display act as an Internet Clock, in other words, the Internet will ensure the clock is always correct, even in timezones during time change.
- gorilla mux for SPA bootstrap for a little style vue.js for the clock  </description>
-    </item>
-    
-    <item>
-      <title>Control Station</title>
-      <link>http://localhost:1313/projects/control-station/</link>
-      <pubDate>Thu, 04 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/projects/control-station/</guid>
-      <description>The first phase of the control station that you are looking at here includes a Joystick for human control that directly moves the Camera Pan &amp;amp; Tilt assembly. The ControlStation is designed to allow the addition of wireless connectivity and an easily interchangeable set of input devices (Joystick, Gyro Displays or Computer Algorithms and so on). Output devices include motor controllers, cameras, displays and cloud storage for example.
-Project Requirements Following are the high level requirements, or goals for this project.</description>
-    </item>
-    
-    <item>
-      <title>Using Gstreamer to create an RTSP Server</title>
-      <link>http://localhost:1313/notes/gstreamer-rtsp-server/</link>
-      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/notes/gstreamer-rtsp-server/</guid>
-      <description>Of it earlier this month I set out to start streaming video From the CSI camera, that is a raspberry pie camera, From a moving vehicle for the vehicles guidance and navigation.
-I was surprised to find the the whole world is streaming video is Incredibly complex, NFL 2019 we do not have A solution that is easy universally adopted.
-TLDR; Gstreamer RTSP Pipeline We are streaming our video from a Raspberry Pi Camera (CSI) attached to, either a Raspberry Pi or a Jetson Nano, GST extracts the video from the CSI camera using a custom driver (raspicamsrc or nvargussrc) for the RPi or Nano respectively.</description>
-    </item>
-    
-    <item>
-      <title>ESP32 C&#43;&#43; LED Blinker</title>
-      <link>http://localhost:1313/projects/esp32-blink/</link>
-      <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/projects/esp32-blink/</guid>
-      <description>I wrote an LED C++ class to configure an ESP32 GPIO pin as a digital output, such that we can turn the LED on and off, by setting the voltage to pin HIGH, turn the LED off by setting pin to 0.
-The ESP32 esp-idf development software, built on top of FreeRTOS is a rich and powerful environment that is friendly to command line hackers, but certainly C-centric. However, C++ programs are just a couple small &amp;ldquo;bookeeping items&amp;rdquo; away from full Ojbect Oriented Programming!</description>
-    </item>
-    
-    <item>
-      <title>Mobile Robot Project</title>
-      <link>http://localhost:1313/projects/mobile-robot-project/</link>
-      <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/projects/mobile-robot-project/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Redeye Computer Vision</title>
-      <link>http://localhost:1313/projects/redeye/</link>
+      <link>http://rustyeddy.com/projects/redeye/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/projects/redeye/</guid>
+      <guid>http://rustyeddy.com/projects/redeye/</guid>
       <description>The RedEye project was born from the need to stream video from a slowly moving robot with small inexpensive and easily available cameras.
 Key Points The video streams will be consumed by a HD video display, Computer Vision control algorithms and storage.
 GStreamer Framework The architecture is built around the powerful GStreamer libraries and toolset. Which means that we can immediately consume any video source that GStreamer supports.
@@ -342,161 +180,20 @@ Likewise, we can produce any video stream output that GStreamer is capable of pr
     </item>
     
     <item>
-      <title>WebRTC What is it?</title>
-      <link>http://localhost:1313/notes/webrtc-what-is-it/</link>
-      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/notes/webrtc-what-is-it/</guid>
-      <description>WebRTC stands for Web Realtime Communications. Yea, I know you can Google too, now let&amp;rsquo;s ask, &amp;ldquo;What does that mean?&amp;rdquo;.
-Realtime Communication Generally speaking we all, intuitively know what Real Time means, it is a sense of what is happening now. OK, that is reasonable, after all it is how we live the majority of our lives.
-Communication &amp;ldquo;Topologies&amp;rdquo;  One to one One to many many to many many to one?</description>
-    </item>
-    
-    <item>
-      <title>Streaming Video is Complicated</title>
-      <link>http://localhost:1313/notes/streaming-video/</link>
-      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/notes/streaming-video/</guid>
-      <description>I need to stream live video from a moving vehical with a connected camera and a possibly connected wifi.
-Live High Resolution Video Video will stream from the vehicle to be picked up by video consumers and processed as required. Examples of consumers are Live Video Display on our (Webapp), OpenCV for vision algoritms.
-High Demand For Low Resolution It turns out that computer vision alogrithms typically run quite a bit faster on lower resolution images, the additional information from these hi-res images can slow down the type of algorithms we are interested in by many factors.</description>
-    </item>
-    
-    <item>
-      <title>Streaming Video Protocols</title>
-      <link>http://localhost:1313/notes/streaming-video-protocols/</link>
-      <pubDate>Sun, 28 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/notes/streaming-video-protocols/</guid>
-      <description>rtp rtsp rtmp hlsl mjpeg mpeg-dash mpeg jpeg  RTP ~ Real Time Protocol Actually holds payloads containing arbitrary, but time/delay sensitive media (audio, video, live conversations, etc). Incorporates enough controls to allow for network congestion, reciever compensation and more.
-RTSP What it is and How to use it Real Time Streaming Protocol (RTSP)
-General consensus says that RTSP is a good choice for low latency, local area networks.</description>
-    </item>
-    
-    <item>
-      <title>Streaming Video Tools</title>
-      <link>http://localhost:1313/notes/streaming-video-tools/</link>
-      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/notes/streaming-video-tools/</guid>
-      <description>The grandparents of streaming video, and snapshots, read, writing and transcoding video and single frame images are ffmpeg, vlc and gstreamer.
-Other platforms, such as the wildly cool and inexpensive Raspberry Pi and attached CSI Camera (Raspberry Pi Camera) have thier own set of utilities: like raspivid. Or the NVidia Nano with it&amp;rsquo;s gst-streamer plugins and nvgst-capture/nvgst-playback utilies.
- This writting is as of March 2019
- GStreamer Complex, Flexible, Future Proof GStreamer really complex pipelines but insanely flexible.</description>
-    </item>
-    
-    <item>
-      <title>Raspberry Pi Camera and Multiple Ports</title>
-      <link>http://localhost:1313/notes/raspberry-pi-camera-multiple-ports/</link>
-      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/notes/raspberry-pi-camera-multiple-ports/</guid>
-      <description>&lt;p&gt;As I started bumbling around trying to figure the best way to stream
-[live video from a moving vehicle], I found that the Raspberry Pi
-camera is capable of producing filtered versions of the images it is
-producing, through &lt;em&gt;video ports&lt;/em&gt;.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Wetsites and Apps</title>
-      <link>http://localhost:1313/services/webapp-development/</link>
-      <pubDate>Thu, 04 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/services/webapp-development/</guid>
-      <description>My User Interface development goto solution is a webapp (HTML, CSS &amp;amp; JavaScript), to this end, I do not specialize on any popular frame work per se, rather I prefer to build smaller solutions that address particular problems, I am typically transparent with the connections to databases and other external services. &amp;lt;!-more&amp;ndash;&amp;gt;
-Front End Work I build webapp for IoT devices, for example a dashboard on a 6&amp;rdquo; Raspberry Pi, like the one below.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:1313/notes/design-mechanically/</link>
-      <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/notes/design-mechanically/</guid>
-      <description> Typography &amp;ndash; Fonts and Sizes &amp;mdash; Header Font Family &amp;amp; Sizes &amp;mdash; Body font family and sizes
- Color Palette
-  &amp;ndash; Primary Color + variant hues &amp;ndash; Secondary Color + varient hues &amp;ndash; Tertiary Color + varient hues &amp;ndash; Success, Alert, Warning, Error, etc.
- Wireframes &amp;ndash; Home page wireframe &amp;ndash; Blog Section wireframe  </description>
-    </item>
-    
-    <item>
-      <title>Arduino Software</title>
-      <link>http://localhost:1313/projects/arduino-software/</link>
-      <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/projects/arduino-software/</guid>
-      <description>&lt;p&gt;A repo full of C/C++ software that can control a ton of sensors,
-communication shieds and even more sophisticated chips. The sample
-code pointed to by the following link:&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Sync vs. Async, Blocking vs. Non-blocking</title>
-      <link>http://localhost:1313/notes/sync-async/</link>
-      <pubDate>Sun, 03 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/notes/sync-async/</guid>
-      <description>A pratical example of asynchronous is a &amp;ldquo;blocking&amp;rdquo; call vs. non-blocking call. For example you are going to call a web service to gather a lot of data, it will take a long time. You can:
-1) Make a blocking call (synchronous) that pauses (blocks) the program from doing anything else until you receive a reply (or error).
-2) Make a non-blocking (asynchronous) call that requests the data from the remote server, after sending the request the program continues to run even though the response from the server has not yet been returned.</description>
-    </item>
-    
-    <item>
-      <title>Flask Webapp Control Raspberry Pi Server</title>
-      <link>http://localhost:1313/projects/flask-camera/</link>
-      <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/projects/flask-camera/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Sensor Station</title>
-      <link>http://localhost:1313/projects/sensor-station/</link>
+      <link>http://rustyeddy.com/projects/sensor-station/</link>
       <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/projects/sensor-station/</guid>
+      <guid>http://rustyeddy.com/projects/sensor-station/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Streaming Live Video on a Local Lan Vs. Internet</title>
-      <link>http://localhost:1313/notes/streaming-video-local-network/</link>
-      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/notes/streaming-video-local-network/</guid>
-      <description>differences in local vs. internet and streaming video
- live stream vs. video on demand
- what does real time mean?
- what to do with late packets?
- UDP vs. TCP in the local network
- RTP and UDP
- RTP and RTCP
- RTP and RTSP
- RTP and Multicast
- Tools used
-  TODO: workflowy outline
-RTSP is a good option for streaming video in a local setup up, where minimal delay is the highest priority.</description>
-    </item>
-    
-    <item>
-      <title>Software Development Guide</title>
-      <link>http://localhost:1313/notes/software-dev-guide/</link>
-      <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/notes/software-dev-guide/</guid>
-      <description>&lt;p&gt;This guide is best suited for small to mid sized development projects,
-a good example are micro-services or embedded development for small
-manufactures, makers and IoT companies.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Designers and Developers, What is the Difference?</title>
-      <link>http://localhost:1313/notes/website-roles/</link>
+      <link>http://rustyeddy.com/notes/website-roles/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/notes/website-roles/</guid>
+      <guid>http://rustyeddy.com/notes/website-roles/</guid>
       <description>Should I hire a web designer or web developer and what is the difference?
 It is kinda funny, in the rest of the tech world the terms designer and developer mean distinctive things, and aside from a few rare unicorns, they very different roles.
 Developers write code and make things work, designers make things look good. But for one reason and another, in the world of Web these skills do infact overlap to some extent, and in some rare cases a single individual is skilled at both aesthetic presentation and the practical application of abstract logic.</description>
@@ -504,10 +201,10 @@ Developers write code and make things work, designers make things look good. But
     
     <item>
       <title>Publications</title>
-      <link>http://localhost:1313/resume/pubs/</link>
+      <link>http://rustyeddy.com/resume/pubs/</link>
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/pubs/</guid>
+      <guid>http://rustyeddy.com/resume/pubs/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Ramesh Govindan, et el.&lt;/strong&gt; &lt;em&gt;&amp;ldquo;An Architecture for Stable, Analyzable
 Internet Routing&amp;rdquo;&lt;/em&gt;, IEEE Network Magazine, Jan-Feb 1999.&lt;/p&gt;
 
@@ -520,150 +217,6 @@ Defined Networking (SDN) Controller&amp;rdquo;&lt;/em&gt;, AT&amp;amp;T 2016 Sof
 
 &lt;p&gt;&lt;strong&gt;Rusty Eddy&lt;/strong&gt;, &lt;em&gt;&amp;ldquo;Testing Multicast SDN Networks in a Container&amp;rdquo;&lt;/em&gt;,
 AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Otto the Pluggable Micro Server for Macro Controllers</title>
-      <link>http://localhost:1313/projects/otto-micro-server/</link>
-      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/projects/otto-micro-server/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>OpenCV</title>
-      <link>http://localhost:1313/notes/opencv/</link>
-      <pubDate>Wed, 04 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/notes/opencv/</guid>
-      <description>Building OpenCV is quite a task, so if you are just getting started, or do not need something in more recent versions, then by all means use your OSs package management facility to install OpenCV, otherwise here is a list of things that I did to get the latest version of OpenCV built so I could infuse it with some GStreamer to deliver streaming video to our CV algorithms.</description>
-    </item>
-    
-    <item>
-      <title>About MicroServices and Distributed Systems</title>
-      <link>http://localhost:1313/notes/about-distributed-systems-and-micro-services/</link>
-      <pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/notes/about-distributed-systems-and-micro-services/</guid>
-      <description>I am very much dedicated to building distributed, micro-service style systems. I prefer to piece solutions together based on lean, efficient, best of breed components.
-More Complex? Many rightly claim that a distributed system increases the complexity over the monolith, and it is true that communicaiton boundaries must be explicitly created, and that communications between the boundarys becomes a potential for failure, or reduced reliability that tightly couple systems do not have to deal with.</description>
-    </item>
-    
-    <item>
-      <title>Design Graphics with Canva</title>
-      <link>http://localhost:1313/notes/design-graphics-with-canva/</link>
-      <pubDate>Sun, 22 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/notes/design-graphics-with-canva/</guid>
-      <description>Canva is a very simple yet powerful graphics art tool, for non-graphic artists. You can to on there and create free stuff, or, if you are a pro and create graphics all the time, you can optin for a reasonable montly fee.
-I created the RedEye logo for the Mobile Robot Project using Canva, it took me 15 minutes, including remembering my forgotten password.
-There are a ton of templates, graphics and photos that can be easily drag-n-dropped into place.</description>
-    </item>
-    
-    <item>
-      <title>Multicast Routing</title>
-      <link>http://localhost:1313/projects/multicast-routing/</link>
-      <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/projects/multicast-routing/</guid>
-      <description> Multicast Routing Multicast protocol design and development, as well as other protocols like BGP, OSPF,
- USC/ISI pimd, gated pim-ssm, BGMP (defunct), BGP and OSPF Cisco Systems Carrier Routing System (CRS) Technical Lead for the Multicast Team Green Hills RTOS kernel development enabling multicast routing  References  link to pimd dug up by XXXX link to Cisco CRS link to GateD / &amp;hellip;  </description>
-    </item>
-    
-    <item>
-      <title>Using CMake</title>
-      <link>http://localhost:1313/notes/cmake/</link>
-      <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/notes/cmake/</guid>
-      <description> CMake is a growingly popular method for generating Makefile files depending on the build computer being used.
-Add an include directory -I&amp;hellip;/include include_directories(./include ../another/include)  </description>
-    </item>
-    
-    <item>
-      <title>Ansible</title>
-      <link>http://localhost:1313/notes/ansible/</link>
-      <pubDate>Mon, 03 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/notes/ansible/</guid>
-      <description>Ansible is a very powerful yet simple, in all its complexity. It is a wonderful tool that I get frequent use of. It&amp;rsquo;s real home I suppose is in the larger corporation devops world, it is wonderfully well suited to a mid sized IoT environment.
-A Few Highlight about Ansible  Create Playbooks that defines the configuration of a target architecture.
- Ansible is Idempotent meaning it defines the the desired outcome, it is up to Ansible to make that outcome real.</description>
-    </item>
-    
-    <item>
-      <title>Software Defined Networking Hybrid Controller</title>
-      <link>http://localhost:1313/projects/software-defined-networking/</link>
-      <pubDate>Sun, 22 Jun 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/projects/software-defined-networking/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pkt The Network Test Tool</title>
-      <link>http://localhost:1313/projects/pkt-network-test-tool/</link>
-      <pubDate>Thu, 22 May 2008 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/projects/pkt-network-test-tool/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Adafruit Music Maker mp3 Sheild</title>
-      <link>http://localhost:1313/notes/adafruit-music-maker-mp3-sheild/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/notes/adafruit-music-maker-mp3-sheild/</guid>
-      <description>The shield is driven by an SPI connection with the Arduino and relies on an SD card with music files on it to play. Must determine how to play streaming audio, then we&amp;rsquo;ll have something neat!
-Link to the documentation.
-The shield can also be jumpered and booted into Midi Mode and turned into a drum machine or a Garageband type of play along.</description>
-    </item>
-    
-    <item>
-      <title>Cloud Automation With Ansible</title>
-      <link>http://localhost:1313/projects/cloud-automation-ansible/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/projects/cloud-automation-ansible/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Laser Calibrator</title>
-      <link>http://localhost:1313/projects/laser-calibrator/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/projects/laser-calibrator/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Laser Kiosk</title>
-      <link>http://localhost:1313/projects/laser-kiosk/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/projects/laser-kiosk/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Orange County Low Vision Website</title>
-      <link>http://localhost:1313/projects/oclv-website/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/projects/oclv-website/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Resources Weekend Designers</title>
-      <link>http://localhost:1313/resources/graphic-design/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/resources/graphic-design/</guid>
-      <description>resources: - canva - unsplash - death to stock photo</description>
     </item>
     
   </channel>
