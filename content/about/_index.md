@@ -1,6 +1,8 @@
 ---
 title: About This Site and Me
 date: 2019-11-11
+layout: style
+draft: true
 ---
 
 I am a software devloper.

@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="container">
+    <div class="row">
+	<h3 class="text-center">Colors</h3>
+    </div>
+    <div class="row">
+	{{ range $name, $val := $.Site.Data.colors }}
+	<div class="col" style="background={{$val}}'">
+	    {{ $name }}
+	</div>
+	{{ end }}
+    </div>
+</div>
+{{ end }}
