@@ -2,57 +2,255 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Rusty Eddy</title>
-    <link>http://rustyeddy.com/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 25 Dec 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://rustyeddy.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>vue</title>
-      <link>http://rustyeddy.com/tags/vue/</link>
+      <link>http://localhost:1313/tags/vue/</link>
       <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/tags/vue/</guid>
+      <guid>http://localhost:1313/tags/vue/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mpeg-dash</title>
+      <link>http://localhost:1313/tags/mpeg-dash/</link>
+      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/mpeg-dash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rtmp</title>
+      <link>http://localhost:1313/tags/rtmp/</link>
+      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/rtmp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rtsp</title>
+      <link>http://localhost:1313/tags/rtsp/</link>
+      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/rtsp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>webrtc</title>
+      <link>http://localhost:1313/tags/webrtc/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/webrtc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>h264</title>
+      <link>http://localhost:1313/tags/h264/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/h264/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ffmpeg</title>
+      <link>http://localhost:1313/tags/ffmpeg/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/ffmpeg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gstreamer</title>
+      <link>http://localhost:1313/tags/gstreamer/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/gstreamer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vlc</title>
+      <link>http://localhost:1313/tags/vlc/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/vlc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>picamera</title>
+      <link>http://localhost:1313/tags/picamera/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/picamera/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>raspberry-pi</title>
+      <link>http://localhost:1313/tags/raspberry-pi/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/raspberry-pi/</guid>
       <description></description>
     </item>
     
     <item>
       <title>develop, design</title>
-      <link>http://rustyeddy.com/tags/develop-design/</link>
+      <link>http://localhost:1313/tags/develop-design/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/tags/develop-design/</guid>
+      <guid>http://localhost:1313/tags/develop-design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>c</title>
+      <link>http://localhost:1313/tags/c/</link>
+      <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>c&#43;&#43;</title>
+      <link>http://localhost:1313/tags/c&#43;&#43;/</link>
+      <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/c&#43;&#43;/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cmake</title>
+      <link>http://localhost:1313/tags/cmake/</link>
+      <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/cmake/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>make</title>
+      <link>http://localhost:1313/tags/make/</link>
+      <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/make/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ansible</title>
+      <link>http://localhost:1313/tags/ansible/</link>
+      <pubDate>Mon, 03 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/ansible/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rpi</title>
+      <link>http://localhost:1313/tags/rpi/</link>
+      <pubDate>Mon, 03 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/rpi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>adafruit</title>
+      <link>http://localhost:1313/tags/adafruit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/adafruit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>arduino</title>
+      <link>http://localhost:1313/tags/arduino/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/arduino/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>audio</title>
+      <link>http://localhost:1313/tags/audio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/audio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>canva</title>
+      <link>http://localhost:1313/tags/canva/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/canva/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dtsp</title>
+      <link>http://localhost:1313/tags/dtsp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/dtsp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>embedded</title>
-      <link>http://rustyeddy.com/tags/embedded/</link>
+      <link>http://localhost:1313/tags/embedded/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/tags/embedded/</guid>
+      <guid>http://localhost:1313/tags/embedded/</guid>
       <description></description>
     </item>
     
     <item>
       <title>firmware</title>
-      <link>http://rustyeddy.com/tags/firmware/</link>
+      <link>http://localhost:1313/tags/firmware/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/tags/firmware/</guid>
+      <guid>http://localhost:1313/tags/firmware/</guid>
       <description></description>
     </item>
     
     <item>
       <title>single page app</title>
-      <link>http://rustyeddy.com/tags/single-page-app/</link>
+      <link>http://localhost:1313/tags/single-page-app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/tags/single-page-app/</guid>
+      <guid>http://localhost:1313/tags/single-page-app/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>unsplash</title>
+      <link>http://localhost:1313/tags/unsplash/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/unsplash/</guid>
       <description></description>
     </item>
     

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Work History on Rusty Eddy</title>
-    <link>http://rustyeddy.com/resume/jobs/</link>
+    <link>http://localhost:1313/resume/jobs/</link>
     <description>Recent content in Work History on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 21 Sep 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://rustyeddy.com/resume/jobs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/resume/jobs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Eddy Consulting, LLC</title>
-      <link>http://rustyeddy.com/resume/jobs/eddy-consulting/</link>
+      <link>http://localhost:1313/resume/jobs/eddy-consulting/</link>
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/jobs/eddy-consulting/</guid>
+      <guid>http://localhost:1313/resume/jobs/eddy-consulting/</guid>
       <description>&lt;p&gt;Worked with clients to scope project requirements, establish
 budgets and schedules, design software architecture and
 lead teams of engineers through entire software development
@@ -26,29 +26,29 @@ PHP; JavaScript; Java &amp;amp; MySQL.&lt;/p&gt;</description>
     
     <item>
       <title>Radian Laser</title>
-      <link>http://rustyeddy.com/resume/jobs/radian-laser/</link>
+      <link>http://localhost:1313/resume/jobs/radian-laser/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/jobs/radian-laser/</guid>
+      <guid>http://localhost:1313/resume/jobs/radian-laser/</guid>
       <description>I am responsible for the design, development and support of numerous company software projects, including but not limited to the control system firmware, single page apps for laser operation and calibration.
 Development involved C/C++, Go and Python primarily. MicroServices developed on the esp32, Raspberry PI and public cloud providers like AWS and Azure.</description>
     </item>
     
     <item>
       <title>Cloud Trek</title>
-      <link>http://rustyeddy.com/resume/jobs/alchemy/</link>
+      <link>http://localhost:1313/resume/jobs/alchemy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/jobs/alchemy/</guid>
+      <guid>http://localhost:1313/resume/jobs/alchemy/</guid>
       <description>I worked on Cloud Automation with Ansible and CloudStack. The objective was to automate the provisioning of CloudStack on a Xen Server for new clients, the clients are then able to use cloud stack to provision there own virtual machines with license free Open Source software.</description>
     </item>
     
     <item>
       <title>DirecTV / AT&amp;T</title>
-      <link>http://rustyeddy.com/resume/jobs/att/</link>
+      <link>http://localhost:1313/resume/jobs/att/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/jobs/att/</guid>
+      <guid>http://localhost:1313/resume/jobs/att/</guid>
       <description>&lt;p&gt;Architectural lead, and software development lead for a new &lt;em&gt;Software
 Defined Networking&lt;/em&gt; &lt;em&gt;Multicast Route Controller&lt;/em&gt;.  Contributed to the
 OpenSource SDN controller project ONOS.&lt;/p&gt;</description>
@@ -56,10 +56,10 @@ OpenSource SDN controller project ONOS.&lt;/p&gt;</description>
     
     <item>
       <title>Cisco Systems</title>
-      <link>http://rustyeddy.com/resume/jobs/cisco-systems/</link>
+      <link>http://localhost:1313/resume/jobs/cisco-systems/</link>
       <pubDate>Wed, 01 Feb 2006 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/jobs/cisco-systems/</guid>
+      <guid>http://localhost:1313/resume/jobs/cisco-systems/</guid>
       <description>&lt;p&gt;Original member of the Multicast Routing team.  Team of 12 responsible
 for the design, implementation and testing the complete suite of
 Multicast Routing protocols for the Cisco Carrier Routing System
@@ -69,10 +69,10 @@ into maintenance.&lt;/p&gt;</description>
     
     <item>
       <title>USC ~ ISI</title>
-      <link>http://rustyeddy.com/resume/jobs/usc-isi/</link>
+      <link>http://localhost:1313/resume/jobs/usc-isi/</link>
       <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/jobs/usc-isi/</guid>
+      <guid>http://localhost:1313/resume/jobs/usc-isi/</guid>
       <description>&lt;p&gt;Led the effort to add IGMP/PIM and Multicast Routing Information
 Base (MRIB) to the Open Source &lt;em&gt;GateD&lt;/em&gt; suite of routing protocols.
 Lead graduate students and others that would eventually become
@@ -81,20 +81,20 @@ prominent members of the computer networking community.&lt;/p&gt;</description>
     
     <item>
       <title>Retix</title>
-      <link>http://rustyeddy.com/resume/jobs/retix/</link>
+      <link>http://localhost:1313/resume/jobs/retix/</link>
       <pubDate>Tue, 01 Aug 1995 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/jobs/retix/</guid>
+      <guid>http://localhost:1313/resume/jobs/retix/</guid>
       <description>&lt;p&gt;Promoted to lead the team of 6 engineers that developed and
 automated test plans for L2 switches, OSPF, RIP and BGP&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Rockwell, Intl. Space Systems Division</title>
-      <link>http://rustyeddy.com/resume/jobs/rockwell/</link>
+      <link>http://localhost:1313/resume/jobs/rockwell/</link>
       <pubDate>Mon, 03 Jan 1994 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/jobs/rockwell/</guid>
+      <guid>http://localhost:1313/resume/jobs/rockwell/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Lead Sysadmin&lt;/strong&gt;: lead a team of 5 Sysadmins responsible for the
 use and well being of Engineering Departments 300+ UNIX
 workstations, servers (Sun, HP, DEC) and network.&lt;/p&gt;</description>
@@ -102,10 +102,10 @@ workstations, servers (Sun, HP, DEC) and network.&lt;/p&gt;</description>
     
     <item>
       <title>California State University ~ Chancelors Office</title>
-      <link>http://rustyeddy.com/resume/jobs/csu-chancelor/</link>
+      <link>http://localhost:1313/resume/jobs/csu-chancelor/</link>
       <pubDate>Tue, 01 Aug 1995 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/jobs/csu-chancelor/</guid>
+      <guid>http://localhost:1313/resume/jobs/csu-chancelor/</guid>
       <description>&lt;p&gt;I was hired by the CSU Chancellors Office for a &lt;em&gt;&amp;ldquo;special&amp;rdquo;&lt;/em&gt; project, a
 habit I seem to have gotten myself into regularly over the
 years.&lt;/p&gt;</description>
