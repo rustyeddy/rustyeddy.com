@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -65,13 +65,9 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/services/</loc>
-    <lastmod>2019-12-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/tags/</loc>
     <lastmod>2019-12-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -82,6 +78,7 @@
   <url>
     <loc>http://rustyeddy.com/tags/vue/</loc>
     <lastmod>2019-12-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -92,6 +89,12 @@
   <url>
     <loc>http://rustyeddy.com/projects/moni/</loc>
     <lastmod>2019-12-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/projects/</loc>
+    <lastmod>2019-12-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -110,11 +113,6 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/projects/</loc>
-    <lastmod>2019-05-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/notes/</loc>
     <lastmod>2019-05-13T00:00:00+00:00</lastmod>
   </url>
@@ -122,11 +120,7 @@
   <url>
     <loc>http://rustyeddy.com/categories/</loc>
     <lastmod>2019-05-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/categories/computer-vision/</loc>
-    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -135,8 +129,15 @@
   </url>
   
   <url>
+    <loc>http://rustyeddy.com/categories/computer-vision/</loc>
+    <lastmod>2019-05-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://rustyeddy.com/categories/streaming-video/</loc>
     <lastmod>2019-05-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -152,6 +153,7 @@
   <url>
     <loc>http://rustyeddy.com/tags/develop-design/</loc>
     <lastmod>2018-10-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -160,20 +162,18 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/resources/</loc>
-    <lastmod>2017-04-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/tags/embedded/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://rustyeddy.com/tags/firmware/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://rustyeddy.com/tags/single-page-app/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>

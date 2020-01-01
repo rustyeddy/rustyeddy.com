@@ -1,11 +1,12 @@
 body {
     background: white;
-    font-family: serif;
-    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+
 }
 
 h1, h2, h4, h3, h5, h6 {
-    font-family: sans-serif;
+    font-family: Volkorn, serif;
     margin-top: 1rem;
 }
 
