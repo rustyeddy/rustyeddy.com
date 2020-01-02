@@ -1,0 +1,25 @@
+{
+  "name": "rustyeddy.com",
+  "version": "1.0.0",
+  "description": "My Website",
+  "main": "docs/index.html",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rustyeddy/rustyeddy.com.git"
+  },
+  "author": "Rusty Eddy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rustyeddy/rustyeddy.com/issues"
+  },
+  "homepage": "https://github.com/rustyeddy/rustyeddy.com#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  }
+}
