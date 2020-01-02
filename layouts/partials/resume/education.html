@@ -1,0 +1,22 @@
+<section class="container">
+    <div class="row">
+	<div class="col">
+	    <h3 class="text-center">Education</h3>
+	</div>
+    </div>
+    {{ with .GetPage "/resume/edu/_index.md" }}
+    {{ range .Pages }}
+    <div class="row">
+	<div class="col-3"></div>
+	<div class="col-7">
+	    <div class="h5 degree">
+		{{ .Params.degree }}, 
+		<span class="h6 graduate text-muted">{{ .Params.graduate }}</span>
+	    </div>
+	    <h6 class="h6 school">{{ .Params.school }}</h6>
+	</div>
+	<div class="col"></div>
+    </div> <!-- center column -->
+    {{ end }}
+    {{ end }}
+</section>
