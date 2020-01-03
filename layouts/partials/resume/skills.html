@@ -1,0 +1,13 @@
+{{ with .GetPage "/resume/skills.md" }}
+<section id="pubs" class="container">
+    <div class="row">
+	<div class="col-3 text-right">
+	    <h6>{{ .Title }}</h6>	    
+	</div>
+	<div class="col-7">
+	    {{ .Content }}
+	</div>
+	<div class="col"></div>
+    </div>
+</section>
+{{ end }}

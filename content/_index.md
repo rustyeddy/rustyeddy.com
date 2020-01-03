@@ -5,10 +5,8 @@ description: >
   I Design, Develop and Deliver Software
 ---
 
-I am a Sofware Engineer making a living as a Consultant and Contract
-Developer. I built this website to showcase my [resume](/resume), 
-[projects](/projects) and [services](/services). 
+I am a Sofware Engineer and Programmer for Hire. I built this website
+to showcase my [resume](/resume), [projects](/projects) and
+[services](/services). Even more exciting I created this website was
+to document Software Engineering Best Practices.
 
-Another, more exciting reason I created this website was to document
-Software Engineering Best Practices.
-<!--more-->

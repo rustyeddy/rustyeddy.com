@@ -1,27 +1,12 @@
 {{ define "main" }}
-<div class="container">
+<div class="resume">
+    {{- partial "resume/summary.html" . }}
 
-    <section id="career-summary" class="container">
-	<div class="row">
-	    <div class="col">
-		<h2 class="text-center">Career Summary and Interests</h2>
-	    </div>
-	</div>
-	
-	<div class="row">
-	    <div class="col-3 align-middle text-right">
-		<div class="h5 name">Rusty Eddy</div>
-		<div class="city">Huntington Beach, CA</div>
-		<div class="email">rusty@rustyeddy.com</div>
-		<div class="phone">(714) 362-5402</div>
-	    </div>
+    {{- partial "resume/skills.html" . }}
 
-	    <div class="col-7">
-		<div class="content">
-		    {{ .Content }}
-		</div>
-	    </div>
+    {{- partial "resume/joblist.html" . -}}
 
+<<<<<<< HEAD
 	    <div class="col"></div>
 	</div>
     </section>
@@ -85,7 +70,11 @@
 	</div>
     </section>
     {{ end }}
+=======
+    {{- partial "resume/education.html" . -}}
+>>>>>>> 9885e445e481f13f33d3bd7ab2813683be0bb99c
 
+    {{- partial "resume/pubs.html" . -}}
 </div>
 {{ end }}
 
