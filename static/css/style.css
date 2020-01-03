@@ -7800,10 +7800,17 @@ h6 {
 .smaller-text {
   font-size: 14px; }
 
+.client {
+  font-size: 14px;
+  font-style: italic; }
+
 img.thehead {
   max-width: 120px; }
 
 .resume .job .duration {
   font-size: 11px; }
+
+footer {
+  margin: 40px 0; }
 
 /*# sourceMappingURL=style.css.map */

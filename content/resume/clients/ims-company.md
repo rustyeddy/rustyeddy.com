@@ -11,8 +11,9 @@ jobtitle: Principal Engineer
 company: The IMS Company
 consulting: true
 ---
-__The IMS Company__: Lead a project to replicate entertainment media
-(music, video and games) from a single media source to hundreds of
-in­flight entertainment units with minimal redundancy.  Contributed
-to the design and development of an inflight entertainment
-server. Python, C/C++ and Java.
+
+Lead a project to replicate entertainment media (music, video and
+games) from a single media source to hundreds of in­flight
+entertainment units with minimal redundancy.  Contributed to the
+design and development of an inflight entertainment server. Python,
+C/C++ and Java.
