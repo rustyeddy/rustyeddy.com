@@ -8,5 +8,5 @@ description: >
 - Go, C/C++, Python and JavaScript (and many others..)
 - Computer Networks, distributed systems and realtime communications
 - DevOps, cloud automation and continuous delivery
-- Fullstack software development, reactive ends with vuejs
+- Fullstack software development, reactive ends with VueJS
 - MicroServices: REST, GraphQL, Websockets and more.

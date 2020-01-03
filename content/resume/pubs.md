@@ -15,5 +15,4 @@ Defined Networking (SDN) Controller"_, AT&T 2016 Software Symposium
 
 __Rusty Eddy__, _"Testing Multicast SDN Networks in a Container"_,
 AT&T 2016 Software Symposium
-
 <!--more-->

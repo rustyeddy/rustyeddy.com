@@ -26,17 +26,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/resume/clients/radian-laser/</guid>
-      <description>I am responsible for the design, development and support of numerous company software projects, including but not limited to the control system firmware, single page apps for laser operation and calibration.
-Development involved C/C++, Go and Python primarily. MicroServices developed on the esp32, Raspberry PI and public cloud providers like AWS and Azure.</description>
-    </item>
-    
-    <item>
-      <title>Sierra Hydrographics</title>
-      <link>http://rustyeddy.com/resume/clients/sierra-hydrog/</link>
-      <pubDate>Sat, 02 Jan 2010 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/resume/clients/sierra-hydrog/</guid>
-      <description>Lead design and development of automated data collection for hydrological gauging stations. Data is gathered by pulling data from line of sight telemetry radios and NOAA/LRGS satellite ground stations. Data is fed to timeseries server for hydrological calculations and alert monitoring. System has evolved into a set of micro services using a messaging system with REDIS and series of REST and SOAP APIs. Development over the years has involved, PHP, Python, Java.</description>
+      <description>My work at Radian spans from writing, testing and release management of laser cutter firmware, touch panel operation and calibration utilities, and finally cloud based remote fleet management, and Over-The-Air (OTA) software updates.
+ C/C++, Go and Python Raspberry Pi, esp32 firmware Ansible, AWS and Cloud Automation  </description>
     </item>
     
     <item>
@@ -73,6 +64,15 @@ Development involved C/C++, Go and Python primarily. MicroServices developed on 
       
       <guid>http://rustyeddy.com/resume/clients/green-hills/</guid>
       <description>Project lead added multicast forwarding to the Integrity RTOS kernal. Modified multicast routing daemon to run on same operating system allowing the product to serve as the foundation for a military grade network switch/router. Added IPv6 Nieghbor Discovery to the suite of routing protocols. C/C++ and Network Routing Protocols; Real Time OS.</description>
+    </item>
+    
+    <item>
+      <title>Sierra Hydrographics</title>
+      <link>http://rustyeddy.com/resume/clients/sierra-hydrog/</link>
+      <pubDate>Sat, 02 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/resume/clients/sierra-hydrog/</guid>
+      <description>Lead design and development of automated data collection for hydrological gauging stations. Data is gathered by pulling data from line of sight telemetry radios and NOAA/LRGS satellite ground stations. Data is fed to timeseries server for hydrological calculations and alert monitoring. System has evolved into a set of micro services using a messaging system with REDIS and series of REST and SOAP APIs. Development over the years has involved, PHP, Python, Java.</description>
     </item>
     
     <item>
@@ -152,7 +152,7 @@ years.
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/resume/summary/</guid>
-      <description>I am a Software Engineer living in Huntington Beach, CA with my family. I am a Software Engineer for hire from time to time. I build micro-services, preferable in Go and applications for micro-controllers and embedded devices, typically in C/C++ and Python.</description>
+      <description>I am a Software Engineer and Contract Programmer living in Huntington Beach, CA with my family. I build micro-services and work on micro-controllers, usually with Go, C/C++, Python and JavaScript (among other techs).</description>
     </item>
     
     <item>
@@ -161,7 +161,7 @@ years.
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/resume/skills/</guid>
-      <description> Go, C/C++, Python and JavaScript (and many others..) Computer Networks, distributed systems and realtime communications DevOps, cloud automation and continuous delivery Fullstack software development, reactive ends with vuejs MicroServices: REST, GraphQL, Websockets and more.  </description>
+      <description> Go, C/C++, Python and JavaScript (and many others..) Computer Networks, distributed systems and realtime communications DevOps, cloud automation and continuous delivery Fullstack software development, reactive ends with VueJS MicroServices: REST, GraphQL, Websockets and more.  </description>
     </item>
     
     <item>
@@ -254,9 +254,8 @@ with pkt&amp;rdquo;&lt;/em&gt;, Networld+Interop 99 Engineers Conference Proceed
 Defined Networking (SDN) Controller&amp;rdquo;&lt;/em&gt;, AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Rusty Eddy&lt;/strong&gt;, &lt;em&gt;&amp;ldquo;Testing Multicast SDN Networks in a Container&amp;rdquo;&lt;/em&gt;,
-AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+AT&amp;amp;T 2016 Software Symposium
+&lt;/p&gt;</description>
     </item>
     
   </channel>

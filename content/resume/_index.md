@@ -18,5 +18,3 @@ email: rusty@rustyeddy.com
 sites: 
   - http://rustyeddy.com
 ---
-
-

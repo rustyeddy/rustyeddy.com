@@ -4,7 +4,7 @@
 	    <h3>Work History</h3>
 	</div>
     </div>
-
+    {{ with .GetPage "/resume/clients/_index.md" }}
     <div class="row job">
 	<div class="col-3 text-right">
 	    <h5 class="jobtitle">Eddy Consulting, LLC</h5>
@@ -14,12 +14,12 @@
 	</div>
 	<div class="col-7">
 	    <h5 class="company">Partial Client List</h5>
+	    {{ .Content }}
 	</div>
 	<div col="col"></div>
 
     </div> <!-- row -->
 
-    {{ with .GetPage "/resume/clients/_index.md" }}
     {{ range .Pages }}
     <div class="row">
 	<div class="col-3">

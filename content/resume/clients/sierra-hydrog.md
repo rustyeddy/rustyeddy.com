@@ -4,7 +4,7 @@ date: 2010-01-02
 start: Nov 2014
 finish: Dec 2016
 company: Sierra Hydrographics
-weight: 120
+weight: 180
 jobtitle: Software Engineer
 consulting: true
 ---

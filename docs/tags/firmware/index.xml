@@ -16,8 +16,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/resume/clients/radian-laser/</guid>
-      <description>I am responsible for the design, development and support of numerous company software projects, including but not limited to the control system firmware, single page apps for laser operation and calibration.
-Development involved C/C++, Go and Python primarily. MicroServices developed on the esp32, Raspberry PI and public cloud providers like AWS and Azure.</description>
+      <description>My work at Radian spans from writing, testing and release management of laser cutter firmware, touch panel operation and calibration utilities, and finally cloud based remote fleet management, and Over-The-Air (OTA) software updates.
+ C/C++, Go and Python Raspberry Pi, esp32 firmware Ansible, AWS and Cloud Automation  </description>
     </item>
     
   </channel>

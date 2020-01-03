@@ -17,7 +17,7 @@
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/resume/summary/</guid>
-      <description>I am a Software Engineer living in Huntington Beach, CA with my family. I am a Software Engineer for hire from time to time. I build micro-services, preferable in Go and applications for micro-controllers and embedded devices, typically in C/C++ and Python.</description>
+      <description>I am a Software Engineer and Contract Programmer living in Huntington Beach, CA with my family. I build micro-services and work on micro-controllers, usually with Go, C/C++, Python and JavaScript (among other techs).</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/resume/skills/</guid>
-      <description> Go, C/C++, Python and JavaScript (and many others..) Computer Networks, distributed systems and realtime communications DevOps, cloud automation and continuous delivery Fullstack software development, reactive ends with vuejs MicroServices: REST, GraphQL, Websockets and more.  </description>
+      <description> Go, C/C++, Python and JavaScript (and many others..) Computer Networks, distributed systems and realtime communications DevOps, cloud automation and continuous delivery Fullstack software development, reactive ends with VueJS MicroServices: REST, GraphQL, Websockets and more.  </description>
     </item>
     
     <item>
@@ -46,9 +46,8 @@ with pkt&amp;rdquo;&lt;/em&gt;, Networld+Interop 99 Engineers Conference Proceed
 Defined Networking (SDN) Controller&amp;rdquo;&lt;/em&gt;, AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Rusty Eddy&lt;/strong&gt;, &lt;em&gt;&amp;ldquo;Testing Multicast SDN Networks in a Container&amp;rdquo;&lt;/em&gt;,
-AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+AT&amp;amp;T 2016 Software Symposium
+&lt;/p&gt;</description>
     </item>
     
   </channel>

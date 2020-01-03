@@ -12,14 +12,20 @@ tags:
   - single page app
 reference: radianlaser.com
 consulting: true
+tools:
+  - C/C++, Go, Python and JavaScript
+  - Ansible
+  - Raspberry Pi
+  - ESP32
 ---
 
-I am responsible for the design, development and support of numerous
-company software projects, including but not limited to the control
-system firmware, single page apps for laser operation and calibration.
+My work at Radian spans from writing, testing and release management
+of laser cutter firmware, touch panel operation and calibration
+utilities, and finally cloud based remote fleet management, and
+Over-The-Air (OTA) software updates.
 
-Development involved C/C++, Go and Python primarily.  MicroServices
-developed on the esp32, Raspberry PI and public cloud providers like
-AWS and Azure.
+- C/C++, Go and Python
+- Raspberry Pi, esp32 firmware
+- Ansible, AWS and Cloud Automation
 
 

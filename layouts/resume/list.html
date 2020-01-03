@@ -6,73 +6,7 @@
 
     {{- partial "resume/joblist.html" . -}}
 
-<<<<<<< HEAD
-	    <div class="col"></div>
-	</div>
-    </section>
-
-    
-    <section id="jobs" class="container mt-5 mb-5">
-	<h3 class="text-center">Work History</h3>
-
-	{{ $jobs := .Site.GetPage "/resume/jobs" }}
-	{{ range $jobs.Pages }}
-	<div class="row mt-4">
-	    <div class="col-3 text-right">
-		<h5 class="company">{{ .Params.jobtitle }}</h5>
-		<div class="duration">
-		    <span class="start">{{ .Params.start }}</span> to <span class="finish">{{ .Params.finish }}</span>
-		</div>
-	    </div>
-	    <div class="col-7">
-		<h5 class="job-title">{{ .Params.company }}</h5>
-		<div class="summary">
-		    {{ .Summary }}
-		</div>
-	    </div>
-	    <div col="col"></div>
-	</div>
-	{{ end }}
-    </section>
-
-    <section class="container text-center mb-5 mt-5">
-	<div class="row">
-	    <div class="col">
-		<h3 class="mb-5 mt-5">Education</h3>
-	    </div>
-	</div>
-	{{ with .GetPage "/resume/edu/_index.md" }}
-	{{ range .Pages }}
-	<div class="row mt-4 mb-0">
-	    <div class="col-3 m-0"></div>
-	    <div class="col-7 m-0">
-		<div class="h5 degree m-0 p-0">{{ .Params.degree }}</div>
-		<div class="h6 school mb-0 p-0">{{ .Params.school }}</div>
-		<div class="h6 graduate text-muted m-0 p-0">{{ .Params.graduate }}</div>
-	    </div>
-	    <div class="col m-0"></div>
-	</div> <!-- center column -->
-	{{ end }}
-	{{ end }}
-
-    </section>
-
-
-    {{ with .GetPage "/resume/pubs.md" }}
-    <section id="pubs" class="container mb-5">
-	<div class="row">
-	    <div class="col-2"></div>
-	    <div class="col">
-		<h3 class="text-center">{{ .Title }}</h3>
-		{{ .Content }}
-	    </div>
-	    <div class="col-2"></div>
-	</div>
-    </section>
-    {{ end }}
-=======
     {{- partial "resume/education.html" . -}}
->>>>>>> 9885e445e481f13f33d3bd7ab2813683be0bb99c
 
     {{- partial "resume/pubs.html" . -}}
 </div>
