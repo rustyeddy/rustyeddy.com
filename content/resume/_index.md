@@ -19,17 +19,4 @@ sites:
   - http://rustyeddy.com
 ---
 
-I am a Software Engineer with over three decades of building software
-and leading teams of software engineers. My primary experience and
-interests are in Computer Networks and Distributed Systems, Realtime
-Communication, DevOps and Cloud Automation. 
-
-Technology wise my background is Go, C/C++, Python, JavaScript and
-Unix administration. For web applications I have used HTML/CSS and
-JavaScript extensively. VueJS is a recent addition to my existing
-skill set.
-
-I am a Contract Programmer and Consultant, If you would like to
-discuss working together please contact me, however you prefer:
-[contact](/contact). 
 

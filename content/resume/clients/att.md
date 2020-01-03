@@ -4,7 +4,8 @@ date: Dec 2016
 start: Nov 2014
 finish: Dec 2016
 company: DirecTV / AT&T
-weight: 160
+consulting: true
+weight: 120
 jobtitle: Principal Engineer ~ Networking
 ---
 
@@ -15,5 +16,7 @@ OpenSource SDN controller project ONOS.
 Co Architect on a _Zero Configuration_ network provision and
 configuration management system.  We designed a sieres of
 _micro-services_ to integrate existing company services, and
-introduced new resources.
+introduced new resources.  Mention Mininet.
+
+
 

@@ -4,7 +4,8 @@ date: July 2017
 start: January 2017
 finish: June 2017
 company: Alchemy Networks
-weight: 150
+weight: 120
+consulting: true
 jobtitle: Principal Engineer ~ Networking
 ---
 

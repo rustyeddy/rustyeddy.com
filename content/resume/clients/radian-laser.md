@@ -3,7 +3,7 @@ title: Radian Laser
 start: 2019-07-01
 finish: present
 company: Radian Laser Systems, LLC
-weight: 140
+weight: 110
 jobtitle: Software Engineer
 category: software
 tags: 
@@ -11,6 +11,7 @@ tags:
   - firmware
   - single page app
 reference: radianlaser.com
+consulting: true
 ---
 
 I am responsible for the design, development and support of numerous

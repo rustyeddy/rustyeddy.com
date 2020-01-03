@@ -1,12 +1,14 @@
 {{ define "main" }}
+<div class="resume">
+    {{- partial "resume/summary.html" . }}
 
-    {{- partial "resume/intro.html" . -}}
+    {{- partial "resume/skills.html" . }}
 
     {{- partial "resume/joblist.html" . -}}
 
     {{- partial "resume/education.html" . -}}
 
     {{- partial "resume/pubs.html" . -}}
-
+</div>
 {{ end }}
 

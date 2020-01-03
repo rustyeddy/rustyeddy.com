@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://rustyeddy.com/resume/jobs/eddy-consulting/</loc>
+    <loc>http://rustyeddy.com/resume/clients/</loc>
     <lastmod>2018-09-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -13,15 +13,30 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/resume/jobs/radian-laser/</loc>
+    <loc>http://rustyeddy.com/resume/clients/radian-laser/</loc>
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/resume/jobs/alchemy/</loc>
+    <loc>http://rustyeddy.com/resume/clients/sierra-hydrog/</loc>
+    <lastmod>2010-01-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/resume/jobs/att/</loc>
+    <loc>http://rustyeddy.com/resume/clients/alchemy/</loc>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/resume/clients/att/</loc>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/resume/clients/ims-company/</loc>
+    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/resume/clients/green-hills/</loc>
+    <lastmod>2020-01-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -62,6 +77,16 @@
   <url>
     <loc>http://rustyeddy.com/resume/jobs/csu-chancelor/</loc>
     <lastmod>1995-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/resume/summary/</loc>
+    <lastmod>2020-01-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/resume/skills/</loc>
+    <lastmod>2020-01-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>

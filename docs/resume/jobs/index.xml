@@ -12,49 +12,6 @@
     
     
     <item>
-      <title>Eddy Consulting, LLC</title>
-      <link>http://rustyeddy.com/resume/jobs/eddy-consulting/</link>
-      <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/resume/jobs/eddy-consulting/</guid>
-      <description>&lt;p&gt;Worked with clients to scope project requirements, establish
-budgets and schedules, design software architecture and
-lead teams of engineers through entire software development
-lifecycles. Project work included but not limited to C; C++; Python;
-PHP; JavaScript; Java &amp;amp; MySQL.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Radian Laser</title>
-      <link>http://rustyeddy.com/resume/jobs/radian-laser/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/resume/jobs/radian-laser/</guid>
-      <description>I am responsible for the design, development and support of numerous company software projects, including but not limited to the control system firmware, single page apps for laser operation and calibration.
-Development involved C/C++, Go and Python primarily. MicroServices developed on the esp32, Raspberry PI and public cloud providers like AWS and Azure.</description>
-    </item>
-    
-    <item>
-      <title>Cloud Trek</title>
-      <link>http://rustyeddy.com/resume/jobs/alchemy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/resume/jobs/alchemy/</guid>
-      <description>I worked on Cloud Automation with Ansible and CloudStack. The objective was to automate the provisioning of CloudStack on a Xen Server for new clients, the clients are then able to use cloud stack to provision there own virtual machines with license free Open Source software.</description>
-    </item>
-    
-    <item>
-      <title>DirecTV / AT&amp;T</title>
-      <link>http://rustyeddy.com/resume/jobs/att/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/resume/jobs/att/</guid>
-      <description>&lt;p&gt;Architectural lead, and software development lead for a new &lt;em&gt;Software
-Defined Networking&lt;/em&gt; &lt;em&gt;Multicast Route Controller&lt;/em&gt;.  Contributed to the
-OpenSource SDN controller project ONOS.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Cisco Systems</title>
       <link>http://rustyeddy.com/resume/jobs/cisco-systems/</link>
       <pubDate>Wed, 01 Feb 2006 00:00:00 +0000</pubDate>
@@ -85,8 +42,9 @@ prominent members of the computer networking community.&lt;/p&gt;</description>
       <pubDate>Tue, 01 Aug 1995 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/resume/jobs/retix/</guid>
-      <description>&lt;p&gt;Promoted to lead the team of 6 engineers that developed and
-automated test plans for L2 switches, OSPF, RIP and BGP&lt;/p&gt;</description>
+      <description>Promoted to lead the team of 6 engineers that developed and automated test plans for L2 switches, OSPF, RIP and BGP
+  Architected an automated test framework and lead junior engineers in developing the automated tests. C; C++; Perl; TCL
+  Provided 3rd level customer support, serious customer problems that could not be resolved by customer support or field engineers became my teams responsibility to diagnose and determine workarounds when required.</description>
     </item>
     
     <item>

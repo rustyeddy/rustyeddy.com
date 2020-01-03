@@ -12,19 +12,6 @@
     
     
     <item>
-      <title>Eddy Consulting, LLC</title>
-      <link>http://rustyeddy.com/resume/jobs/eddy-consulting/</link>
-      <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/resume/jobs/eddy-consulting/</guid>
-      <description>&lt;p&gt;Worked with clients to scope project requirements, establish
-budgets and schedules, design software architecture and
-lead teams of engineers through entire software development
-lifecycles. Project work included but not limited to C; C++; Python;
-PHP; JavaScript; Java &amp;amp; MySQL.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>University of Southern California ~ MSCS</title>
       <link>http://rustyeddy.com/resume/edu/usc/</link>
       <pubDate>Tue, 02 Jan 1996 00:00:00 +0000</pubDate>
@@ -35,32 +22,59 @@ PHP; JavaScript; Java &amp;amp; MySQL.&lt;/p&gt;</description>
     
     <item>
       <title>Radian Laser</title>
-      <link>http://rustyeddy.com/resume/jobs/radian-laser/</link>
+      <link>http://rustyeddy.com/resume/clients/radian-laser/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/jobs/radian-laser/</guid>
+      <guid>http://rustyeddy.com/resume/clients/radian-laser/</guid>
       <description>I am responsible for the design, development and support of numerous company software projects, including but not limited to the control system firmware, single page apps for laser operation and calibration.
 Development involved C/C++, Go and Python primarily. MicroServices developed on the esp32, Raspberry PI and public cloud providers like AWS and Azure.</description>
     </item>
     
     <item>
+      <title>Sierra Hydrographics</title>
+      <link>http://rustyeddy.com/resume/clients/sierra-hydrog/</link>
+      <pubDate>Sat, 02 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/resume/clients/sierra-hydrog/</guid>
+      <description>Lead design and development of automated data collection for hydrological gauging stations. Data is gathered by pulling data from line of sight telemetry radios and NOAA/LRGS satellite ground stations. Data is fed to timeseries server for hydrological calculations and alert monitoring. System has evolved into a set of micro services using a messaging system with REDIS and series of REST and SOAP APIs. Development over the years has involved, PHP, Python, Java.</description>
+    </item>
+    
+    <item>
       <title>Cloud Trek</title>
-      <link>http://rustyeddy.com/resume/jobs/alchemy/</link>
+      <link>http://rustyeddy.com/resume/clients/alchemy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/jobs/alchemy/</guid>
+      <guid>http://rustyeddy.com/resume/clients/alchemy/</guid>
       <description>I worked on Cloud Automation with Ansible and CloudStack. The objective was to automate the provisioning of CloudStack on a Xen Server for new clients, the clients are then able to use cloud stack to provision there own virtual machines with license free Open Source software.</description>
     </item>
     
     <item>
       <title>DirecTV / AT&amp;T</title>
-      <link>http://rustyeddy.com/resume/jobs/att/</link>
+      <link>http://rustyeddy.com/resume/clients/att/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/jobs/att/</guid>
+      <guid>http://rustyeddy.com/resume/clients/att/</guid>
       <description>&lt;p&gt;Architectural lead, and software development lead for a new &lt;em&gt;Software
 Defined Networking&lt;/em&gt; &lt;em&gt;Multicast Route Controller&lt;/em&gt;.  Contributed to the
 OpenSource SDN controller project ONOS.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The IMS Company</title>
+      <link>http://rustyeddy.com/resume/clients/ims-company/</link>
+      <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/resume/clients/ims-company/</guid>
+      <description>The IMS Company: Lead a project to replicate entertainment media (music, video and games) from a single media source to hundreds of in­flight entertainment units with minimal redundancy. Contributed to the design and development of an inflight entertainment server. Python, C/C++ and Java.</description>
+    </item>
+    
+    <item>
+      <title>Green Hills Software</title>
+      <link>http://rustyeddy.com/resume/clients/green-hills/</link>
+      <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/resume/clients/green-hills/</guid>
+      <description>Project lead added multicast forwarding to the Integrity RTOS kernal. Modified multicast routing daemon to run on same operating system allowing the product to serve as the foundation for a military grade network switch/router. Added IPv6 Nieghbor Discovery to the suite of routing protocols. C/C++ and Network Routing Protocols; Real Time OS.</description>
     </item>
     
     <item>
@@ -103,8 +117,9 @@ prominent members of the computer networking community.&lt;/p&gt;</description>
       <pubDate>Tue, 01 Aug 1995 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/resume/jobs/retix/</guid>
-      <description>&lt;p&gt;Promoted to lead the team of 6 engineers that developed and
-automated test plans for L2 switches, OSPF, RIP and BGP&lt;/p&gt;</description>
+      <description>Promoted to lead the team of 6 engineers that developed and automated test plans for L2 switches, OSPF, RIP and BGP
+  Architected an automated test framework and lead junior engineers in developing the automated tests. C; C++; Perl; TCL
+  Provided 3rd level customer support, serious customer problems that could not be resolved by customer support or field engineers became my teams responsibility to diagnose and determine workarounds when required.</description>
     </item>
     
     <item>
@@ -127,6 +142,24 @@ workstations, servers (Sun, HP, DEC) and network.&lt;/p&gt;</description>
       <description>&lt;p&gt;I was hired by the CSU Chancellors Office for a &lt;em&gt;&amp;ldquo;special&amp;rdquo;&lt;/em&gt; project, a
 habit I seem to have gotten myself into regularly over the
 years.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Career Summary</title>
+      <link>http://rustyeddy.com/resume/summary/</link>
+      <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/resume/summary/</guid>
+      <description>I am a Software Engineer living in Huntington Beach, CA with my family. I am a Software Engineer for hire from time to time. I build micro-services, preferable in Go and applications for micro-controllers and embedded devices, typically in C/C++ and Python.</description>
+    </item>
+    
+    <item>
+      <title>Skills and Interests</title>
+      <link>http://rustyeddy.com/resume/skills/</link>
+      <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/resume/skills/</guid>
+      <description> Go, C/C++, Python and JavaScript (and many others..) Computer Networks, distributed systems and realtime communications DevOps, cloud automation and continuous delivery Fullstack software development, reactive ends with vuejs MicroServices: REST, GraphQL, Websockets and more.  </description>
     </item>
     
     <item>
