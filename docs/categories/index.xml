@@ -6,12 +6,13 @@
     <description>Recent content in Categories on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 05 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://rustyeddy.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Computer Vision</title>
+      <title>computer vision</title>
       <link>http://rustyeddy.com/categories/computer-vision/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
       
@@ -20,7 +21,7 @@
     </item>
     
     <item>
-      <title>Streaming Video</title>
+      <title>streaming video</title>
       <link>http://rustyeddy.com/categories/streaming-video/</link>
       <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
       
