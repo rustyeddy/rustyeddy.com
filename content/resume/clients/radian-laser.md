@@ -17,17 +17,17 @@ projects:
   - Laser Kiosk to control laser with 7" touch panel
   - Embedded RealTime OS Firmware: for motor controls and various sensors
   - Fleet Management and Cloud Automation
-tools:
+tech:
   - C/C++, Go, Python and JavaScript
-  - DevOps with Ansible and Linux 
+  - Over The Air (OTA) with Ansible and Cloud
   - Platforms: Raspberry Pi, esp32, Linux and FreeRTOS
   - Ansible for Cloud Automation
 ---
 
-Radian is a small startup company that sells Laser Engravers and
-Cutters. I managed four projects for Radian that included two Web
-applications for control and calibration of the lasers. I also took
-over develop and maintanance of the Laser Engraver firmaware and Fleet
-Management project.<!--more-->
+Radian is a small, fast moving startup that sells Laser Engravers and
+Cutters. I manage five software projects, including two Web
+Applications for the control and calibration of the Laser system. I
+am also responsible for the successful delivery and maintanance of the
+products Firmaware and Fleet Management system.<!--more-->
 	
 > TODO: update the template to create lists of projects and technologies...

@@ -17,11 +17,11 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/resume/clients/radian-laser/</guid>
-      <description>&lt;p&gt;Radian is a small startup company that sells Laser Engravers and
-Cutters. I managed four projects for Radian that included two Web
-applications for control and calibration of the lasers. I also took
-over develop and maintanance of the Laser Engraver firmaware and Fleet
-Management project.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Radian is a small, fast moving startup that sells Laser Engravers and
+Cutters. I manage five software projects, including two Web
+Applications for the control and calibration of the Laser system. I
+am also responsible for the successful delivery and maintanance of the
+products Firmaware and Fleet Management system.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -30,7 +30,11 @@ Management project.&lt;/p&gt;</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/resume/clients/alchemy/</guid>
-      <description>I worked on Cloud Automation with Ansible and CloudStack. The objective was to automate the provisioning of CloudStack on a Xen Server for new clients, the clients are then able to use cloud stack to provision there own virtual machines with license free Open Source software.</description>
+      <description>&lt;p&gt;Alchemy Networks is an indepently owned service provider. They began
+offering private cloud services to their clients. I helped them
+automate the provisioning of their clients private cloud as part of
+the clients on-boarding process.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -39,9 +43,7 @@ Management project.&lt;/p&gt;</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/resume/clients/att/</guid>
-      <description>&lt;p&gt;Architectural lead, and software development lead for a new &lt;em&gt;Software
-Defined Networking&lt;/em&gt; &lt;em&gt;Multicast Route Controller&lt;/em&gt;.  Contributed to the
-OpenSource SDN controller project ONOS.&lt;/p&gt;</description>
+      <description>Architectural lead, and software development lead for a new Software Defined Networking Multicast Route Controller. Contributed to the OpenSource SDN controller project ONOS. Co Architect on a Zero Configuration network provision and configuration management system. We designed a sieres of micro-services to integrate existing company services, and introduced new resources. Mention Mininet.</description>
     </item>
     
     <item>

@@ -9,10 +9,10 @@ jobtitle: Principal Engineer
 company: Eddy Consulting, LLC
 ---
 
-The past 15 I have worked with many clients and many projects. I have
-been a single developer, as well as build aand lead teams of 10 to 20
-engineers. I am first and foremost a programmer, however, I have
-worked with clients to scope project requirements, establish 
-budgets and schedules, design software architecture and
-lead teams of engineers through entire software development
-lifecycles. 
+In the past 15 years I have worked with many clients on a variety of
+projects. I can work in the capacity of an individual developer, team
+member or a team lead.
+
+I am first and foremost a programmer, however, I do work regularly on
+schedules and budgets through the entire software development
+lifecycle.  <!--more-->

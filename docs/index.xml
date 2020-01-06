@@ -26,11 +26,11 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/resume/clients/radian-laser/</guid>
-      <description>&lt;p&gt;Radian is a small startup company that sells Laser Engravers and
-Cutters. I managed four projects for Radian that included two Web
-applications for control and calibration of the lasers. I also took
-over develop and maintanance of the Laser Engraver firmaware and Fleet
-Management project.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Radian is a small, fast moving startup that sells Laser Engravers and
+Cutters. I manage five software projects, including two Web
+Applications for the control and calibration of the Laser system. I
+am also responsible for the successful delivery and maintanance of the
+products Firmaware and Fleet Management system.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -39,7 +39,11 @@ Management project.&lt;/p&gt;</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/resume/clients/alchemy/</guid>
-      <description>I worked on Cloud Automation with Ansible and CloudStack. The objective was to automate the provisioning of CloudStack on a Xen Server for new clients, the clients are then able to use cloud stack to provision there own virtual machines with license free Open Source software.</description>
+      <description>&lt;p&gt;Alchemy Networks is an indepently owned service provider. They began
+offering private cloud services to their clients. I helped them
+automate the provisioning of their clients private cloud as part of
+the clients on-boarding process.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -48,9 +52,7 @@ Management project.&lt;/p&gt;</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/resume/clients/att/</guid>
-      <description>&lt;p&gt;Architectural lead, and software development lead for a new &lt;em&gt;Software
-Defined Networking&lt;/em&gt; &lt;em&gt;Multicast Route Controller&lt;/em&gt;.  Contributed to the
-OpenSource SDN controller project ONOS.&lt;/p&gt;</description>
+      <description>Architectural lead, and software development lead for a new Software Defined Networking Multicast Route Controller. Contributed to the OpenSource SDN controller project ONOS. Co Architect on a Zero Configuration network provision and configuration management system. We designed a sieres of micro-services to integrate existing company services, and introduced new resources. Mention Mininet.</description>
     </item>
     
     <item>
@@ -90,7 +92,8 @@ OpenSource SDN controller project ONOS.&lt;/p&gt;</description>
 for the design, implementation and testing the complete suite of
 Multicast Routing protocols for the Cisco Carrier Routing System
 (CRS).  Worked this project from early design through product launch
-into maintenance.&lt;/p&gt;</description>
+into maintenance.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -111,7 +114,8 @@ into maintenance.&lt;/p&gt;</description>
       <description>&lt;p&gt;Led the effort to add IGMP/PIM and Multicast Routing Information
 Base (MRIB) to the Open Source &lt;em&gt;GateD&lt;/em&gt; suite of routing protocols.
 Lead graduate students and others that would eventually become
-prominent members of the computer networking community.&lt;/p&gt;</description>
+prominent members of the computer networking community.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -133,7 +137,8 @@ prominent members of the computer networking community.&lt;/p&gt;</description>
       <guid>http://rustyeddy.com/resume/jobs/rockwell/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Lead Sysadmin&lt;/strong&gt;: lead a team of 5 Sysadmins responsible for the
 use and well being of Engineering Departments 300+ UNIX
-workstations, servers (Sun, HP, DEC) and network.&lt;/p&gt;</description>
+workstations, servers (Sun, HP, DEC) and network.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -144,7 +149,8 @@ workstations, servers (Sun, HP, DEC) and network.&lt;/p&gt;</description>
       <guid>http://rustyeddy.com/resume/jobs/csu-chancelor/</guid>
       <description>&lt;p&gt;I was hired by the CSU Chancellors Office for a &lt;em&gt;&amp;ldquo;special&amp;rdquo;&lt;/em&gt; project, a
 habit I seem to have gotten myself into regularly over the
-years.&lt;/p&gt;</description>
+years.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -175,7 +181,8 @@ years.&lt;/p&gt;</description>
 (&lt;em&gt;moni&lt;/em&gt;)[&lt;a href=&#34;http://rustyeddy.com/projects/moni&#34;&gt;http://rustyeddy.com/projects/moni&lt;/a&gt;] I really like Vue, though
 I am not a frontend developer nor much of a JavaScript fan. Developing
 with Vue makes sense to me, the Single File Component (SFC) really
-fits my way of programming and thinking about code.&lt;/p&gt;</description>
+fits my way of programming and thinking about code.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -188,7 +195,8 @@ fits my way of programming and thinking about code.&lt;/p&gt;</description>
 vehicle itself, the remote control and the streaming camera just at
 the surface. The thing that excites me the most are the communications
 that take place to make this all happen. See where we are at building
-this project.&lt;/p&gt;</description>
+this project.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -200,7 +208,8 @@ this project.&lt;/p&gt;</description>
       <description>&lt;p&gt;Moni was built to monitor resources I manage that are attached to the
 web. Keeping track of servers, apps, websites and devices quickly
 becomes a mess. Moni can server as an inventory database periodically
-checking the health and performance of the things it manages.&lt;/p&gt;</description>
+checking the health and performance of the things it manages.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -252,7 +261,8 @@ with pkt&amp;rdquo;&lt;/em&gt;, Networld+Interop 99 Engineers Conference Proceed
 Defined Networking (SDN) Controller&amp;rdquo;&lt;/em&gt;, AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Rusty Eddy&lt;/strong&gt;, &lt;em&gt;&amp;ldquo;Testing Multicast SDN Networks in a Container&amp;rdquo;&lt;/em&gt;,
-AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;</description>
+AT&amp;amp;T 2016 Software Symposium
+&lt;/p&gt;</description>
     </item>
     
   </channel>
