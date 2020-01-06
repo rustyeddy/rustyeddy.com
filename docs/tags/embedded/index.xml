@@ -16,8 +16,11 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/resume/clients/radian-laser/</guid>
-      <description>My work at Radian spans from writing, testing and release management of laser cutter firmware, touch panel operation and calibration utilities, and finally cloud based remote fleet management, and Over-The-Air (OTA) software updates.
- C/C++, Go and Python Raspberry Pi, esp32 firmware Ansible, AWS and Cloud Automation  </description>
+      <description>&lt;p&gt;Radian is a small startup company that sells Laser Engravers and
+Cutters. I managed four projects for Radian that included two Web
+applications for control and calibration of the lasers. I also took
+over develop and maintanance of the Laser Engraver firmaware and Fleet
+Management project.&lt;/p&gt;</description>
     </item>
     
   </channel>

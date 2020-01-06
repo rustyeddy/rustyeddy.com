@@ -12,20 +12,22 @@ tags:
   - single page app
 reference: radianlaser.com
 consulting: true
+projects:
+  - Laser Calibration SPA with Realtime Display
+  - Laser Kiosk to control laser with 7" touch panel
+  - Embedded RealTime OS Firmware: for motor controls and various sensors
+  - Fleet Management and Cloud Automation
 tools:
   - C/C++, Go, Python and JavaScript
-  - Ansible
-  - Raspberry Pi
-  - ESP32
+  - DevOps with Ansible and Linux 
+  - Platforms: Raspberry Pi, esp32, Linux and FreeRTOS
+  - Ansible for Cloud Automation
 ---
 
-My work at Radian spans from writing, testing and release management
-of laser cutter firmware, touch panel operation and calibration
-utilities, and finally cloud based remote fleet management, and
-Over-The-Air (OTA) software updates.
-
-- C/C++, Go and Python
-- Raspberry Pi, esp32 firmware
-- Ansible, AWS and Cloud Automation
-
-
+Radian is a small startup company that sells Laser Engravers and
+Cutters. I managed four projects for Radian that included two Web
+applications for control and calibration of the lasers. I also took
+over develop and maintanance of the Laser Engraver firmaware and Fleet
+Management project.<!--more-->
+	
+> TODO: update the template to create lists of projects and technologies...
