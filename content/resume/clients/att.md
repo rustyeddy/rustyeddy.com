@@ -7,16 +7,30 @@ company: DirecTV / AT&T
 consulting: true
 weight: 120
 jobtitle: Principal Engineer ~ Networking
+tech:
+  - Software Defined Networking and OpenFlow
+  - Java, Python and C
+  - Computer Networking
+  - Multicast Networking
+projects:
+  - Multicast Delivery Network
+  - Zero Touch Provisioning 
+  - ONOS SDN Controller
 ---
 
-Architectural lead, and software development lead for a new _Software
-Defined Networking_ _Multicast Route Controller_.  Contributed to the
-OpenSource SDN controller project ONOS.
+I worked with DirecTV during the purchase and transition to AT&T. I
+was hired by DirecTV to build and lead the Software Defined Network
+(SDN) Architecture team to design the new generation of multicast
+video delivery network.
 <!--more-->
-Co Architect on a _Zero Configuration_ network provision and
-configuration management system.  We designed a sieres of
-_micro-services_ to integrate existing company services, and
-introduced new resources.  Mention Mininet.
 
+DirecTVs video delivery network responsible for getting video feeds
+from various sources to the customers, was built from equipment that
+was coming to _end of life_.
+
+I was hired to architect the SDN replacement solution, as well as over
+see the proof of concept. So we developed a SDN to IPv4 multicast
+gateway.  The work was primarily Java, ONOS and Openflow, with large
+doses of computer networking and routing.
 
 

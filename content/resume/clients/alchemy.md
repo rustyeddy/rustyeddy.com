@@ -17,10 +17,9 @@ projects:
   - Zero Touch Config for Private Cloud Provisioning 
 ---
 
-Alchemy Networks is an indepently owned service provider. They began
-offering private cloud services to their clients. I helped them
-automate the provisioning of their clients private cloud as part of
-the clients on-boarding process.
+Alchemy Networks is an indepently owned service provider. When they
+began offering private cloud services to their clients, I was tasked
+with automate the provisioning of the clients new private cloud.
 <!--more-->
 
 The objective of this project was to automate provisioning of
