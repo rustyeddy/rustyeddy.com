@@ -30,10 +30,12 @@ products Firmaware and Fleet Management system.&lt;/p&gt;</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/resume/clients/alchemy/</guid>
-      <description>&lt;p&gt;Alchemy Networks is an indepently owned service provider. When they
-began offering private cloud services to their clients, I was tasked
-with automate the provisioning of the clients new private cloud.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;Alchemy Networks is an indepently owned service provider. I automated
+the provisioning of their Private Cloud Service offering. I was an
+individual contributor on this project, I worked loosely with one
+other developer.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -42,20 +44,29 @@ with automate the provisioning of the clients new private cloud.
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/resume/clients/att/</guid>
-      <description>&lt;p&gt;I worked with DirecTV during the purchase and transition to AT&amp;amp;T. I
-was hired by DirecTV to build and lead the Software Defined Network
-(SDN) Architecture team to design the new generation of multicast
-video delivery network.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;I was hired by DirecTV (and subsequentyly AT&amp;amp;T) to help lead the new
+Software Defined Networking (SDN) team. We were tasked with replacing
+the companies aging production Video Distribution Network with a new
+modernized design. Project goals included:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Replace aged network with modern SDN solution&lt;/li&gt;
+&lt;li&gt;Solution to incrementally replace existing production network&lt;/li&gt;
+&lt;li&gt;Development would build on industry standard OpenSource solutions&lt;/li&gt;
+&lt;li&gt;Had to be Reliable and Scalable&lt;/li&gt;
+&lt;li&gt;Linux, OpenFlow, Java and Python&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Details and additional projects follow:&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>The IMS Company</title>
-      <link>http://rustyeddy.com/resume/clients/ims-company/</link>
-      <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
+      <title>Sierra Hydrographics</title>
+      <link>http://rustyeddy.com/resume/clients/sierra-hydrog/</link>
+      <pubDate>Sat, 02 Jan 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/clients/ims-company/</guid>
-      <description>Lead a project to replicate entertainment media (music, video and games) from a single media source to hundreds of in­flight entertainment units with minimal redundancy. Contributed to the design and development of an inflight entertainment server. Python, C/C++ and Java.</description>
+      <guid>http://rustyeddy.com/resume/clients/sierra-hydrog/</guid>
+      <description>Lead design and development of automated data collection for hydrological gauging stations. Data is gathered by pulling data from line of sight telemetry radios and NOAA/LRGS satellite ground stations. Data is fed to timeseries server for hydrological calculations and alert monitoring. System has evolved into a set of micro services using a messaging system with REDIS and series of REST and SOAP APIs. Development over the years has involved, PHP, Python, Java.</description>
     </item>
     
     <item>
@@ -68,12 +79,12 @@ video delivery network.
     </item>
     
     <item>
-      <title>Sierra Hydrographics</title>
-      <link>http://rustyeddy.com/resume/clients/sierra-hydrog/</link>
-      <pubDate>Sat, 02 Jan 2010 00:00:00 +0000</pubDate>
+      <title>The IMS Company</title>
+      <link>http://rustyeddy.com/resume/clients/ims-company/</link>
+      <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/clients/sierra-hydrog/</guid>
-      <description>Lead design and development of automated data collection for hydrological gauging stations. Data is gathered by pulling data from line of sight telemetry radios and NOAA/LRGS satellite ground stations. Data is fed to timeseries server for hydrological calculations and alert monitoring. System has evolved into a set of micro services using a messaging system with REDIS and series of REST and SOAP APIs. Development over the years has involved, PHP, Python, Java.</description>
+      <guid>http://rustyeddy.com/resume/clients/ims-company/</guid>
+      <description>Lead a project to replicate entertainment media (music, video and games) from a single media source to hundreds of in­flight entertainment units with minimal redundancy. Contributed to the design and development of an inflight entertainment server. Python, C/C++ and Java. I build with Linux, FreeRTOS and Open Source tools daily.</description>
     </item>
     
   </channel>

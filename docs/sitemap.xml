@@ -25,8 +25,8 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/resume/clients/ims-company/</loc>
-    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
+    <loc>http://rustyeddy.com/resume/clients/sierra-hydrog/</loc>
+    <lastmod>2010-01-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -35,8 +35,8 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/resume/clients/sierra-hydrog/</loc>
-    <lastmod>2010-01-02T00:00:00+00:00</lastmod>
+    <loc>http://rustyeddy.com/resume/clients/ims-company/</loc>
+    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -140,7 +140,19 @@
   </url>
   
   <url>
+    <loc>http://rustyeddy.com/tags/c-c&#43;&#43;-perl-python-and-java/</loc>
+    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://rustyeddy.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/computer-network-multicast/</loc>
+    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -185,7 +197,7 @@
   
   <url>
     <loc>http://rustyeddy.com/tags/</loc>
-    <lastmod>2018-10-01T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

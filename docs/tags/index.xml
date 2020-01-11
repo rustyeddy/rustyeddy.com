@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 21 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://rustyeddy.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>C/C&#43;&#43; Perl Python and Java</title>
+      <link>http://rustyeddy.com/tags/c-c&#43;&#43;-perl-python-and-java/</link>
+      <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/c-c&#43;&#43;-perl-python-and-java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computer Network Multicast</title>
+      <link>http://rustyeddy.com/tags/computer-network-multicast/</link>
+      <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/computer-network-multicast/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Develop Design</title>

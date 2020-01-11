@@ -13,6 +13,6 @@ In the past 15 years I have worked with many clients on a variety of
 projects. I can work in the capacity of an individual developer, team
 member or a team lead.
 
-I am first and foremost a programmer, however, I do work regularly on
-schedules and budgets through the entire software development
-lifecycle.  <!--more-->
+In addition to leadership and architectural roles, I program daily and
+keep up with the industry and the ever changing landscape to be sure I
+am applying the best solutions to any given problem.<!--more-->
