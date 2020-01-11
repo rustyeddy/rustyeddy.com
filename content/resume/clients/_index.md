@@ -13,6 +13,6 @@ In the past 15 years I have worked with many clients on a variety of
 projects. I can work in the capacity of an individual developer, team
 member or a team lead.
 
-In addition to leadership and architectural roles, I program daily and
-keep up with the industry and the ever changing landscape to be sure I
-am applying the best solutions to any given problem.<!--more-->
+In addition to leadership and architectural activities, I program
+daily and keep up with the ever changing software industry to be sure
+I am applying the best solutions to any given project.<!--more-->

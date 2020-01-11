@@ -30,7 +30,9 @@ modernized design. Project goals included:
 - Had to be Reliable and Scalable
 - Linux, OpenFlow, Java and Python 
 
-Details and additional projects follow:<!--more-->
+<!--more-->
+
+Details and additional projects follow:
 
 ## Software Defined Networking and ONOS
 

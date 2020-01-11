@@ -18,6 +18,8 @@ tags:
 Lead a project to replicate entertainment media (music, video and
 games) from a single media source to hundreds of in­flight
 entertainment units with minimal redundancy.  Contributed to the
-design and development of an inflight entertainment server. Python,
-C/C++ and Java. I build with Linux, FreeRTOS and Open Source tools
-daily. 
+design and development of an inflight entertainment server.
+
+> Perl, Python, C/C++ and Java
+
+<!--more-->

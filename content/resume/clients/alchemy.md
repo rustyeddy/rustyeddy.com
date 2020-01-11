@@ -23,6 +23,7 @@ the provisioning of their Private Cloud Service offering. I was an
 individual contributor on this project, I worked loosely with one
 other developer.
 
+> Ansible, Linux, Python, Websockets, Networking
 <!--more-->
 
 The objective of this project was to automate provisioning of
