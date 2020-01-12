@@ -6,7 +6,9 @@ description: >
 ---
 
 - Go, C/C++, Python and JavaScript (and many others..)
-- Computer Networks, distributed systems and realtime communications
+- Computer Networks, Multicast Video Distribution
+- Distributed systems and realtime communications
 - DevOps, cloud automation and continuous delivery
 - Fullstack software development, reactive ends with VueJS
-- MicroServices: REST, GraphQL, Websockets and more.
+- MicroServices: REST APIs, Websockets, etc.
+- Linux Systems and OpenSource Software

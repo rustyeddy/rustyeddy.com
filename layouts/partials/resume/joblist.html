@@ -20,12 +20,9 @@
     </div> <!-- row -->
 
     <div class="row">
-	<div class="col-3">
-	    <div class="text-right client text-muted mb-0">
-		<h5 class="company text-right mb-0 pb-0">Partial Client List</h5>
-	    </div>
+	<div class="col text-center">
+	    <h5 class="company mb-0 pb-0">Partial Client List</h5>
 	</div>
-	<div class="col"></div>
     </div>
 
     {{ range .Pages }}
@@ -37,12 +34,7 @@
 	</div>
 	<div class="col-7">
 	    <div class="smaller-text">
-		{{ if .Summary }}
 		{{ .Summary }}
-		<a href="{{ .Permalink }}">[Read More... ]</a>
-		{{ else }}
-		{{ .Content }}
-		{{ end }}
 	    </div>
 	</div>
 	<div class="col"></div>

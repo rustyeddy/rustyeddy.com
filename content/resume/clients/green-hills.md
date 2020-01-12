@@ -13,5 +13,8 @@ Project lead added multicast forwarding to the _Integrity_ RTOS
 kernal.  Modified multicast routing daemon to run on same operating
 system allowing the product to serve as the foundation for a military
 grade network switch/router.  Added IPv6 Nieghbor Discovery to the
-suite of routing protocols.  C/C++ and Network Routing Protocols; Real
-Time OS.
+suite of routing protocols.  
+
+> C/C++ and Network Routing Protocols; Real Time OS.
+
+<!--more-->

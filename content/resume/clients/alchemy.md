@@ -13,13 +13,17 @@ tech:
   - cloudstack
   - javascript
   - websockets
+  - Linux admin
 projects:
-  - Zero Touch Config for Private Cloud Provisioning 
+  - Zero Touch Private Cloud Provisioning 
 ---
 
-Alchemy Networks is an indepently owned service provider. When they
-began offering private cloud services to their clients, I was tasked
-with automate the provisioning of the clients new private cloud.
+Alchemy Networks is an indepently owned service provider. I automated
+the provisioning of their Private Cloud Service offering. I was an
+individual contributor on this project, I worked loosely with one
+other developer.
+
+> Ansible, Linux, Python, Websockets, Networking
 <!--more-->
 
 The objective of this project was to automate provisioning of
