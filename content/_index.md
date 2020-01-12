@@ -6,5 +6,4 @@ description: >
 ---
 
 I am a Sofware Engineer and Programmer for Hire. I built this website
-for my [resume](/resume). And eventually other things like
-[projects](/projects) and [services](/services).
+for my [resume](/resume), and eventually other things.

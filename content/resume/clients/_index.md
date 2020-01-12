@@ -9,7 +9,7 @@ jobtitle: Principal Engineer
 company: Eddy Consulting, LLC
 ---
 
-In the past 15 years I have worked with many clients on a variety of
+For the past 15 years I have worked with many clients on a variety of
 projects. I can work in the capacity of an individual developer, team
 member or a team lead.
 
