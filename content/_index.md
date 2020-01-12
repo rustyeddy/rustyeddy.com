@@ -6,7 +6,5 @@ description: >
 ---
 
 I am a Sofware Engineer and Programmer for Hire. I built this website
-to showcase my [resume](/resume), [projects](/projects) and
-[services](/services). Even more exciting I created this website was
-to document Software Engineering Best Practices.
-
+for my [resume](/resume). And eventually other things like
+[projects](/projects) and [services](/services).
