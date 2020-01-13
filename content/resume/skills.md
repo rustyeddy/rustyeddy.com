@@ -9,6 +9,6 @@ description: >
 - Computer Networks, Multicast Video Distribution
 - Distributed systems and realtime communications
 - DevOps, cloud automation and continuous delivery
-- Fullstack software development, reactive ends with VueJS
+- Fullstack software development, reactive front-ends with VueJS
 - MicroServices: REST APIs, Websockets, etc.
 - Linux Systems and OpenSource Software
