@@ -7,6 +7,6 @@ degree: MS Computer Science
 school: University of Southern California
 degreeAbrev: MSCS
 schoolAbrev: USC
-graduate: Jan 28, 1996
+graduate: January 1996
 ---
 

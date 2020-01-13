@@ -8,11 +8,7 @@ company: Cal State University
 jobtitle: Senior Software Engineer
 ---
 
-I was hired by the CSU Chancellors Office for a _"special"_ project, a
-habit I seem to have gotten myself into regularly over the
-years.
+I was hired to install and manage the departments first AT&T Unix
+Mini-computers, UUNET connection and write a bulletin board system for
+California State Educators.
 <!--more-->
-
-The second purpose I was hired was to write a bulletin board system.
-It was a very simple, yet flexible and powerful that it took off like
-wild fire.

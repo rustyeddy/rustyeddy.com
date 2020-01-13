@@ -11,7 +11,7 @@ jobtitle: Senior Systems Programmer
 
 Led the effort to add IGMP/PIM and Multicast Routing Information
 Base (MRIB) to the Open Source _GateD_ suite of routing protocols.
-Lead graduate students and others that would eventually become
+Mentored graduate students and others that would eventually become
 prominent members of the computer networking community.
 <!--more-->
 

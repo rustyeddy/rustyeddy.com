@@ -25,8 +25,8 @@ into maintenance.&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Computer Networks, Multicast Routing, C/C++, Real Time, Distributed
-Systems&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+Systems
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -37,8 +37,9 @@ Systems&lt;/p&gt;
       <guid>http://rustyeddy.com/resume/jobs/usc-isi/</guid>
       <description>&lt;p&gt;Led the effort to add IGMP/PIM and Multicast Routing Information
 Base (MRIB) to the Open Source &lt;em&gt;GateD&lt;/em&gt; suite of routing protocols.
-Lead graduate students and others that would eventually become
-prominent members of the computer networking community.&lt;/p&gt;</description>
+Mentored graduate students and others that would eventually become
+prominent members of the computer networking community.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -48,8 +49,8 @@ prominent members of the computer networking community.&lt;/p&gt;</description>
       
       <guid>http://rustyeddy.com/resume/jobs/retix/</guid>
       <description>Promoted to lead the team of 6 engineers that developed and automated test plans for L2 switches, OSPF, RIP and BGP
- Architected an automated test framework and lead junior engineers in developing the automated tests. C; C++; Perl; TCL
- Provided 3rd level customer support, serious customer problems that could not be resolved by customer support or field engineers became my teams responsibility to diagnose and determine workarounds when required.</description>
+ Implemented an automated test framework and led junior engineers in developing the automated test suites. C; C++; Perl; TCL
+ Provided 3rd level customer support, serious customer problems that could not be resolved by customer support or field engineers became my teams responsibility to diagnose and determine solutions and workarounds was required.</description>
     </item>
     
     <item>
@@ -58,9 +59,13 @@ prominent members of the computer networking community.&lt;/p&gt;</description>
       <pubDate>Mon, 03 Jan 1994 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/resume/jobs/rockwell/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Lead Sysadmin&lt;/strong&gt;: lead a team of 5 Sysadmins responsible for the
-use and well being of Engineering Departments 300+ UNIX
-workstations, servers (Sun, HP, DEC) and network.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Led a team of 5 Sysadmins responsible for the use and well being of
+Engineering Departments 300+ UNIX workstations, servers (Sun, HP, DEC)
+and network.&lt;/p&gt;
+
+&lt;p&gt;On a team that Developed a Real Time OS that was embedded in a variety
+of space and military projects.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -69,9 +74,10 @@ workstations, servers (Sun, HP, DEC) and network.&lt;/p&gt;</description>
       <pubDate>Tue, 01 Aug 1995 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/resume/jobs/csu-chancelor/</guid>
-      <description>&lt;p&gt;I was hired by the CSU Chancellors Office for a &lt;em&gt;&amp;ldquo;special&amp;rdquo;&lt;/em&gt; project, a
-habit I seem to have gotten myself into regularly over the
-years.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I was hired to install and manage the departments first AT&amp;amp;T Unix
+Mini-computers, UUNET connection and write a bulletin board system for
+California State Educators.
+&lt;/p&gt;</description>
     </item>
     
   </channel>
