@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Computer Network Multicast on Rusty Eddy</title>
+    <title>Computer Network, Multicast on Rusty Eddy</title>
     <link>http://rustyeddy.com/tags/computer-network-multicast/</link>
-    <description>Recent content in Computer Network Multicast on Rusty Eddy</description>
+    <description>Recent content in Computer Network, Multicast on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 21 Sep 2018 00:00:00 +0000</lastBuildDate>
@@ -24,9 +24,7 @@ design and development of an inflight entertainment server.&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Perl, Python, C/C++ and Java&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/blockquote&gt;</description>
     </item>
     
   </channel>
