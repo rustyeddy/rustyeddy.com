@@ -24,8 +24,8 @@ am also responsible for the successful delivery and maintanance of the
 products Firmaware and Fleet Management system.&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;C/C++, Go &amp;amp; Python, embedded systems and microservices.&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+&lt;p&gt;C/C++, Go &amp;amp; Python, embedded systems and microservices.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -36,12 +36,12 @@ products Firmaware and Fleet Management system.&lt;/p&gt;
       <guid>http://rustyeddy.com/resume/clients/alchemy/</guid>
       <description>&lt;p&gt;Alchemy Networks is an indepently owned service provider. I automated
 the provisioning of their Private Cloud Service offering. I was an
-individual contributor on this project, I worked loosely with one
-other developer.&lt;/p&gt;
+individual contributor on this project. I collaborated with another
+developer.&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;Ansible, Linux, Python, Websockets, Networking&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+&lt;p&gt;Ansible, Linux, Python, Websockets, Networking
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -61,7 +61,9 @@ modernized design. Project goals included:&lt;/p&gt;
 &lt;li&gt;Development would build on industry standard OpenSource solutions&lt;/li&gt;
 &lt;li&gt;Had to be Reliable and Scalable&lt;/li&gt;
 &lt;li&gt;Linux, OpenFlow, Java and Python&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -70,17 +72,15 @@ modernized design. Project goals included:&lt;/p&gt;
       <pubDate>Sat, 02 Jan 2010 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/resume/clients/sierra-hydrog/</guid>
-      <description>&lt;p&gt;Lead design and development of automated data collection for
+      <description>&lt;p&gt;Led the design and development of automated data collection for
 hydrological gauging stations.  Data is gathered by pulling data from
 line of sight telemetry radios and NOAA/LRGS satellite ground
 stations. Data is fed to timeseries server for hydrological
-calculations and alert monitoring.  System has evolved into a set of
-micro services using a messaging system with REDIS and series of REST
-and SOAP APIs.&lt;/p&gt;
+calculations and alert monitoring.&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;Timeseries database, C/C++, PHP, Python and Java.&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+&lt;p&gt;Timeseries database, C/C++, PHP, Python and Java.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -89,15 +89,17 @@ and SOAP APIs.&lt;/p&gt;
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/resume/clients/green-hills/</guid>
-      <description>&lt;p&gt;Project lead added multicast forwarding to the &lt;em&gt;Integrity&lt;/em&gt; RTOS
+      <description>&lt;p&gt;I worked on a small team that added multicast forwarding to the &lt;em&gt;Integrity&lt;/em&gt; RTOS
 kernal.  Modified multicast routing daemon to run on same operating
 system allowing the product to serve as the foundation for a military
-grade network switch/router.  Added IPv6 Nieghbor Discovery to the
+grade network switch/router.  Added IPv6 Neighbor Discovery to the
 suite of routing protocols.&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;C/C++ and Network Routing Protocols; Real Time OS.&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -106,14 +108,16 @@ suite of routing protocols.&lt;/p&gt;
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/resume/clients/ims-company/</guid>
-      <description>&lt;p&gt;Lead a project to replicate entertainment media (music, video and
+      <description>&lt;p&gt;Led a project to replicate entertainment media (music, video and
 games) from a single media source to hundreds of in­flight
 entertainment units with minimal redundancy.  Contributed to the
 design and development of an inflight entertainment server.&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Perl, Python, C/C++ and Java&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

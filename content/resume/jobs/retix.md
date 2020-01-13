@@ -11,11 +11,11 @@ jobtitle: Senior Software Engineer
 Promoted to lead the team of 6 engineers that developed and
 automated test plans for L2 switches, OSPF, RIP and BGP 
 
-* Architected an automated test framework and lead junior engineers
-  in developing the automated tests.  C; C++; Perl; TCL
+* Implemented an automated test framework and led junior engineers
+  in developing the automated test suites.  C; C++; Perl; TCL
 
 * Provided 3rd level customer support, serious customer problems that
   could not be resolved by customer support or field engineers became
-  my teams responsibility to diagnose and determine workarounds when
-  required.
+  my teams responsibility to diagnose and determine solutions and
+  workarounds was required.
 

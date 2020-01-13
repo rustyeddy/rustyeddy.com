@@ -9,13 +9,13 @@ company: Rockwell Intl.
 division: Space Systems Division
 ---
 
-__Lead Sysadmin__: lead a team of 5 Sysadmins responsible for the
-use and well being of Engineering Departments 300+ UNIX
-workstations, servers (Sun, HP, DEC) and network. 
-<!--more-->
+Led a team of 5 Sysadmins responsible for the use and well being of
+Engineering Departments 300+ UNIX workstations, servers (Sun, HP, DEC)
+and network.
 
-* On a team that Developed a Real Time OS that was embedded in a
-  variety of space and military projects.
+On a team that Developed a Real Time OS that was embedded in a variety
+of space and military projects.
+<!--more-->
 
 * Key team member that built the companies first hypertext Unified
   Information System (UNIS).  The system took Space Shuttle Drawings

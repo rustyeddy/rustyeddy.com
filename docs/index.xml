@@ -33,8 +33,8 @@ am also responsible for the successful delivery and maintanance of the
 products Firmaware and Fleet Management system.&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;C/C++, Go &amp;amp; Python, embedded systems and microservices.&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+&lt;p&gt;C/C++, Go &amp;amp; Python, embedded systems and microservices.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -45,12 +45,12 @@ products Firmaware and Fleet Management system.&lt;/p&gt;
       <guid>http://rustyeddy.com/resume/clients/alchemy/</guid>
       <description>&lt;p&gt;Alchemy Networks is an indepently owned service provider. I automated
 the provisioning of their Private Cloud Service offering. I was an
-individual contributor on this project, I worked loosely with one
-other developer.&lt;/p&gt;
+individual contributor on this project. I collaborated with another
+developer.&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;Ansible, Linux, Python, Websockets, Networking&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+&lt;p&gt;Ansible, Linux, Python, Websockets, Networking
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -70,7 +70,9 @@ modernized design. Project goals included:&lt;/p&gt;
 &lt;li&gt;Development would build on industry standard OpenSource solutions&lt;/li&gt;
 &lt;li&gt;Had to be Reliable and Scalable&lt;/li&gt;
 &lt;li&gt;Linux, OpenFlow, Java and Python&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -79,17 +81,15 @@ modernized design. Project goals included:&lt;/p&gt;
       <pubDate>Sat, 02 Jan 2010 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/resume/clients/sierra-hydrog/</guid>
-      <description>&lt;p&gt;Lead design and development of automated data collection for
+      <description>&lt;p&gt;Led the design and development of automated data collection for
 hydrological gauging stations.  Data is gathered by pulling data from
 line of sight telemetry radios and NOAA/LRGS satellite ground
 stations. Data is fed to timeseries server for hydrological
-calculations and alert monitoring.  System has evolved into a set of
-micro services using a messaging system with REDIS and series of REST
-and SOAP APIs.&lt;/p&gt;
+calculations and alert monitoring.&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;Timeseries database, C/C++, PHP, Python and Java.&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+&lt;p&gt;Timeseries database, C/C++, PHP, Python and Java.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -98,15 +98,17 @@ and SOAP APIs.&lt;/p&gt;
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/resume/clients/green-hills/</guid>
-      <description>&lt;p&gt;Project lead added multicast forwarding to the &lt;em&gt;Integrity&lt;/em&gt; RTOS
+      <description>&lt;p&gt;I worked on a small team that added multicast forwarding to the &lt;em&gt;Integrity&lt;/em&gt; RTOS
 kernal.  Modified multicast routing daemon to run on same operating
 system allowing the product to serve as the foundation for a military
-grade network switch/router.  Added IPv6 Nieghbor Discovery to the
+grade network switch/router.  Added IPv6 Neighbor Discovery to the
 suite of routing protocols.&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;C/C++ and Network Routing Protocols; Real Time OS.&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -115,14 +117,16 @@ suite of routing protocols.&lt;/p&gt;
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/resume/clients/ims-company/</guid>
-      <description>&lt;p&gt;Lead a project to replicate entertainment media (music, video and
+      <description>&lt;p&gt;Led a project to replicate entertainment media (music, video and
 games) from a single media source to hundreds of in­flight
 entertainment units with minimal redundancy.  Contributed to the
 design and development of an inflight entertainment server.&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Perl, Python, C/C++ and Java&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -139,8 +143,8 @@ into maintenance.&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Computer Networks, Multicast Routing, C/C++, Real Time, Distributed
-Systems&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+Systems
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -160,8 +164,9 @@ Systems&lt;/p&gt;
       <guid>http://rustyeddy.com/resume/jobs/usc-isi/</guid>
       <description>&lt;p&gt;Led the effort to add IGMP/PIM and Multicast Routing Information
 Base (MRIB) to the Open Source &lt;em&gt;GateD&lt;/em&gt; suite of routing protocols.
-Lead graduate students and others that would eventually become
-prominent members of the computer networking community.&lt;/p&gt;</description>
+Mentored graduate students and others that would eventually become
+prominent members of the computer networking community.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -171,8 +176,8 @@ prominent members of the computer networking community.&lt;/p&gt;</description>
       
       <guid>http://rustyeddy.com/resume/jobs/retix/</guid>
       <description>Promoted to lead the team of 6 engineers that developed and automated test plans for L2 switches, OSPF, RIP and BGP
- Architected an automated test framework and lead junior engineers in developing the automated tests. C; C++; Perl; TCL
- Provided 3rd level customer support, serious customer problems that could not be resolved by customer support or field engineers became my teams responsibility to diagnose and determine workarounds when required.</description>
+ Implemented an automated test framework and led junior engineers in developing the automated test suites. C; C++; Perl; TCL
+ Provided 3rd level customer support, serious customer problems that could not be resolved by customer support or field engineers became my teams responsibility to diagnose and determine solutions and workarounds was required.</description>
     </item>
     
     <item>
@@ -181,9 +186,13 @@ prominent members of the computer networking community.&lt;/p&gt;</description>
       <pubDate>Mon, 03 Jan 1994 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/resume/jobs/rockwell/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Lead Sysadmin&lt;/strong&gt;: lead a team of 5 Sysadmins responsible for the
-use and well being of Engineering Departments 300+ UNIX
-workstations, servers (Sun, HP, DEC) and network.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Led a team of 5 Sysadmins responsible for the use and well being of
+Engineering Departments 300+ UNIX workstations, servers (Sun, HP, DEC)
+and network.&lt;/p&gt;
+
+&lt;p&gt;On a team that Developed a Real Time OS that was embedded in a variety
+of space and military projects.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -192,9 +201,10 @@ workstations, servers (Sun, HP, DEC) and network.&lt;/p&gt;</description>
       <pubDate>Tue, 01 Aug 1995 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/resume/jobs/csu-chancelor/</guid>
-      <description>&lt;p&gt;I was hired by the CSU Chancellors Office for a &lt;em&gt;&amp;ldquo;special&amp;rdquo;&lt;/em&gt; project, a
-habit I seem to have gotten myself into regularly over the
-years.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I was hired to install and manage the departments first AT&amp;amp;T Unix
+Mini-computers, UUNET connection and write a bulletin board system for
+California State Educators.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -225,7 +235,8 @@ years.&lt;/p&gt;</description>
 (&lt;em&gt;moni&lt;/em&gt;)[&lt;a href=&#34;http://rustyeddy.com/projects/moni&#34;&gt;http://rustyeddy.com/projects/moni&lt;/a&gt;] I really like Vue, though
 I am not a frontend developer nor much of a JavaScript fan. Developing
 with Vue makes sense to me, the Single File Component (SFC) really
-fits my way of programming and thinking about code.&lt;/p&gt;</description>
+fits my way of programming and thinking about code.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -238,7 +249,8 @@ fits my way of programming and thinking about code.&lt;/p&gt;</description>
 vehicle itself, the remote control and the streaming camera just at
 the surface. The thing that excites me the most are the communications
 that take place to make this all happen. See where we are at building
-this project.&lt;/p&gt;</description>
+this project.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -250,7 +262,8 @@ this project.&lt;/p&gt;</description>
       <description>&lt;p&gt;Moni was built to monitor resources I manage that are attached to the
 web. Keeping track of servers, apps, websites and devices quickly
 becomes a mess. Moni can server as an inventory database periodically
-checking the health and performance of the things it manages.&lt;/p&gt;</description>
+checking the health and performance of the things it manages.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -302,7 +315,8 @@ with pkt&amp;rdquo;&lt;/em&gt;, Networld+Interop 99 Engineers Conference Proceed
 Defined Networking (SDN) Controller&amp;rdquo;&lt;/em&gt;, AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Rusty Eddy&lt;/strong&gt;, &lt;em&gt;&amp;ldquo;Testing Multicast SDN Networks in a Container&amp;rdquo;&lt;/em&gt;,
-AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;</description>
+AT&amp;amp;T 2016 Software Symposium
+&lt;/p&gt;</description>
     </item>
     
   </channel>
