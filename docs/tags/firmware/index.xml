@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>firmware on Rusty Eddy</title>
+    <title>Firmware on Rusty Eddy</title>
     <link>http://rustyeddy.com/tags/firmware/</link>
-    <description>Recent content in firmware on Rusty Eddy</description>
+    <description>Recent content in Firmware on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
@@ -23,8 +23,8 @@ am also responsible for the successful delivery and maintanance of the
 products Firmaware and Fleet Management system.&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;C/C++, Go &amp;amp; Python, embedded systems and microservices.&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+&lt;p&gt;C/C++, Go &amp;amp; Python, embedded systems and microservices.
+&lt;/p&gt;</description>
     </item>
     
   </channel>
