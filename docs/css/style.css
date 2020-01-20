@@ -7811,6 +7811,13 @@ img.thehead {
   font-size: 11px; }
 
 footer {
-  margin: 40px 0; }
+  margin: 40px 0; 
 
 /*# sourceMappingURL=style.css.map */
+
+blockquote {
+	margin: 1.5rem;
+	padding: 1rem;
+	font-style: italic;
+	border: solid 1px;
+}
