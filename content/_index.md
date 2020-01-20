@@ -7,7 +7,7 @@ description: >
 
 #### About Me
 
-I am a Sofware Engineer and Team Leader for Hire. I specialize in
+I am a Software Engineer and Team Leader for Hire. I specialize in
 systems architecture and improving the software process for companies
 in the Robotics, IoT and Manufacturing space.
 
@@ -24,7 +24,7 @@ management.
 
 > I stay up to date on emerging technologies and adapt as necessary,
 > while at the same time avoid being distracted with all things new and
-> shiney. 
+> shiny. 
 
 Languages and Technologies I work with regularly include (but not
 limited to): Go, REST API & Websockets, JavaScript and Vue. Python and
