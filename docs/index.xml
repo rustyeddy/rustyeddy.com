@@ -230,19 +230,6 @@ fits my way of programming and thinking about code.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Mobile Robot I/O</title>
-      <link>http://rustyeddy.com/projects/mobilerobot/</link>
-      <pubDate>Sat, 21 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/projects/mobilerobot/</guid>
-      <description>&lt;p&gt;There are a number of exciting things about this project, building the
-vehicle itself, the remote control and the streaming camera just at
-the surface. The thing that excites me the most are the communications
-that take place to make this all happen. See where we are at building
-this project.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Moni the Web Sitter</title>
       <link>http://rustyeddy.com/projects/moni/</link>
       <pubDate>Sat, 21 Dec 2019 00:00:00 +0000</pubDate>
@@ -264,15 +251,6 @@ checking the health and performance of the things it manages.&lt;/p&gt;</descrip
 Key Points The video streams will be consumed by a HD video display, Computer Vision control algorithms and storage.
 GStreamer Framework The architecture is built around the powerful GStreamer libraries and toolset. Which means that we can immediately consume any video source that GStreamer supports.
 Likewise, we can produce any video stream output that GStreamer is capable of producing.</description>
-    </item>
-    
-    <item>
-      <title>Sensor Station</title>
-      <link>http://rustyeddy.com/projects/sensor-station/</link>
-      <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/projects/sensor-station/</guid>
-      <description></description>
     </item>
     
     <item>

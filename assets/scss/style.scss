@@ -44,9 +44,11 @@ h6 {
 
 blockquote {
     margin: 1.4rem;
-    background: $secondary;
+    padding: 1rem;
+    background: #e2e2e2;
     font-size: small;
     font-style: italic;
+    border: 1 solid $primary;
 }
 
 .row {

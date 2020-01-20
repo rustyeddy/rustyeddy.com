@@ -7791,6 +7791,14 @@ a.text-dark:hover, a.text-dark:focus {
 h6 {
   font-style: italic; }
 
+blockquote {
+  margin: 1.4rem;
+  padding: 1rem;
+  background: #e2e2e2;
+  font-size: small;
+  font-style: italic;
+  border: 1 solid #007bff; }
+
 .row {
   margin-top: 2rem; }
 
@@ -7811,13 +7819,6 @@ img.thehead {
   font-size: 11px; }
 
 footer {
-  margin: 40px 0; 
+  margin: 40px 0; }
 
 /*# sourceMappingURL=style.css.map */
-
-blockquote {
-	margin: 1.5rem;
-	padding: 1rem;
-	font-style: italic;
-	border: solid 1px;
-}
