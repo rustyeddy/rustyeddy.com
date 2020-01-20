@@ -57,5 +57,14 @@ Likewise, we can produce any video stream output that GStreamer is capable of pr
       <description></description>
     </item>
     
+    <item>
+      <title>SPA Clock</title>
+      <link>http://rustyeddy.com/projects/spaclock/</link>
+      <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/projects/spaclock/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

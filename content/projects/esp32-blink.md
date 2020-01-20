@@ -50,7 +50,7 @@ problems, this is when the Arduino starts to become out matched.
 
 Welcome the ESP-IDF riding on the excellent OpenSource FreeRTOS.  This
 environment is a legit embedded systems development environment.  We
-have full access to timers, schedulers, CPUs, tasks, interupts,
+h ave full access to timers, schedulers, CPUs, tasks, interupts,
 communication abstrations, messaging, IPC primatives and so much more.
 
 The best part is, that it works perfect as a command line _first_

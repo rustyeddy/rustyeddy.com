@@ -80,6 +80,11 @@
   </url>
   
   <url>
+    <loc>http://rustyeddy.com/software/</loc>
+    <lastmod>2020-01-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://rustyeddy.com/resume/summary/</loc>
     <lastmod>2020-01-02T00:00:00+00:00</lastmod>
   </url>
@@ -163,6 +168,11 @@
   <url>
     <loc>http://rustyeddy.com/projects/sensor-station/</loc>
     <lastmod>2019-02-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/projects/spaclock/</loc>
+    <lastmod>2019-01-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
