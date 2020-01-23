@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on Rusty Eddy</title>
+    <title>portfolio on Rusty Eddy</title>
     <link>http://rustyeddy.com/projects/</link>
-    <description>Recent content in Projects on Rusty Eddy</description>
+    <description>Recent content in portfolio on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://rustyeddy.com/projects/index.xml" rel="self" type="application/rss+xml" />
     
@@ -41,7 +41,9 @@ Likewise, we can produce any video stream output that GStreamer is capable of pr
       <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/projects/spaclock/</guid>
-      <description></description>
+      <description>Description SPA Clock is an embedded webserver intended to run on a Rasberry Pi (or similar linux system) with a touchscreen and internet connection.
+Not only does this bring you a Zero Touch clock, just plug it in, connect it to the internet and always have accurate time through power outages and timezone changes, never reset your clock again.
+ A clock that keeps perfect time and never needs to be reset!</description>
     </item>
     
   </channel>

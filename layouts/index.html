@@ -6,9 +6,18 @@
     <body>
 	{{- partial "header.html" . -}}
 
-	<div class="container">
-	    <div class="row mt-5 pt-5">
-		<div class="col-2"></div>
+	{{- partial "footer.html" . -}}
+
+	<div class="container home">
+	    <div class="row row-header">
+		<div class="col"></div>
+		<div class="col-6">
+		    <h1 class="text-center">{{ .Title }}</h1>
+		</div>
+		<div class="col"></div>
+	    </div>
+	    <div class="row">
+		<div class="col"></div>
 
 		<div class="col-8">
 		    {{ .Content }}
@@ -18,6 +27,5 @@
 	    </div>
 	</div>
 
-	{{- partial "footer.html" . -}}
     </body>
 </html>
