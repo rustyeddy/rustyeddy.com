@@ -25,9 +25,10 @@ I enjoy developing software for physical systems using
 micro-controllers (Raspberry PI, Arduino, esp32), realtime
 communications (i2c, websockets, MQTT), and embedded firmware.
 
-IoT has me doing a lot of cloud automation and systems administration
-as well as solving some interesting operational challenges with fleet
-management. 
+I am equally fascinated with the challenges of managing networks of
+these devices. IoT involves a lot of cloud automation and systems
+administration as well as solving some interesting operational
+challenges with fleet management. 
 
 > I stay up to date on emerging technologies and adapt as necessary,
 > while at the same time avoid being distracted with all things new and
