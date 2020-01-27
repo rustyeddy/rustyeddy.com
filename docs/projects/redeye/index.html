@@ -24,9 +24,10 @@
 
 	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 
-	    <nav class="navbar-nav w-100">
-		<div class="nav w-50">
+	    <nav class="navbar-nav w-100 justify-content-end">
+		<div class="nav w-100">
 		    
+  	            <a class="nav-link" href="/projects/spaclock">projects</a>
   	            <a class="nav-link" href="/resume">resume</a>
 		</div>
  	    </nav>
@@ -70,60 +71,84 @@
 	<div class="col"></div>
 	<div class="col-lg-8 pl-4 pr-4">
 	    <article class="article">
-		<p>The RedEye project was born from the need to stream video from a
+		
+
+<p>The RedEye project was born from the need to stream video from a
 <em>slowly</em> moving robot with <em>small inexpensive</em> and easily available
 cameras.</p>
+
 <h2 id="key-points">Key Points</h2>
+
 <p>The video streams will be consumed by a HD video display, Computer
 Vision control algorithms and storage.</p>
+
 <h3 id="gstreamer-framework">GStreamer Framework</h3>
+
 <p>The architecture is built around the powerful GStreamer libraries and
 toolset. Which means that we can immediately <em>consume</em> any video source
 that GStreamer supports.</p>
+
 <p>Likewise, we can <em>produce</em> any video stream output that GStreamer is
 capable of producing. Which may include:</p>
+
 <ul>
 <li>RTP / RTSP with UDP Multicast to support</li>
 <li>One or more: MPEG-DASH, HLS and/or WebRTC</li>
 </ul>
-<!-- raw HTML omitted -->
+
+<p><img src="https://docs.google.com/drawings/d/e/2PACX-1vQHtO4hTGzQKan-x5UKmwDieGndeGtNsTXT2iorDvcSuwiPBY1kkutZ1DH0D-Rd1VAtCzXzf3b3Zj4C/pub?w=710&amp;h=440"></p>
+
 <h3 id="video-sources">Video Sources</h3>
+
 <p>RedEye currently supports the <a href="http://raspberrypi.org">Raspberry Pi</a>
 with a <a href="http://raspberrypi.org/camera">CSI Camera</a>, the
 <a href="http://nvidia.com/jetson/nano">NVidia Jetson Nano</a> also with the RPi
 camera.  RedEye also supports Linux USB video cameras using the
 <em>video4linux</em> package.  MacOS USB and builtin cameras are also supported.</p>
+
 <p>Videos can also be sourced from files including: mp4, mov, h264 and
 other formats.  They can also be consumed from a URL for example: an
 HTTP/HTM5 Video or RTSP realtime stream.</p>
+
 <h3 id="stream-multiplexer">Stream Multiplexer</h3>
+
 <p>The video from these cameras can be divided into multiple streams
 with different formats. For example, video from a <em>car</em> camera
 might be converted into a high res stream and and a low res stream.
 These two streams might also use different compression and encoding
 algorithms.</p>
+
 <p>The High Def stream above could be consumed by HD Video Display,
 while the second low res stream will be consumed by the OpenCV library.</p>
+
 <h3 id="cloud-storage-and-support">Cloud Storage and Support</h3>
+
 <p>One or more of the afore mentioned streams may need to be archived for
 future replay. In this case the
 <a href="http://github.com/mobilerobot-io/store">Store</a> module can be used to
 stash video-clips and images on one of the major Cloud provider storage.</p>
+
 <h2 id="feeding-the-beast">Feeding the Beast</h2>
+
 <p>Our main objective with RedEye is all about applying Computer Vision
 to Real Time Vehicle Control. Real Time Vehicle control has two
 facets: the first is an HD display for human control, the second is a
 low def stream for the Computer Vision algorithms.</p>
+
 <p>A demonstration of the RedEye software can be see here:</p>
+
 <blockquote>
 <p>Youtube Video Coming Soon</p>
 </blockquote>
+
 <h2 id="conclusion">Conclusion</h2>
+
 <p>Getting quality high speed video in realtime turned out to be much
 more challenging and complex than I initially expected.  If you are
 interested in any aspect of <em>real time streaming video</em>, especially as
 it applies to Computer Vision algorithms, drop me a line, I would love
 to chat and swap ideas!</p>
+
 <blockquote>
 <p>EMail Anyone?</p>
 </blockquote>

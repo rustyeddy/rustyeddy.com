@@ -7,7 +7,7 @@ description: >
   access other important things.
 resources:
   home: http://rustyeddy.com
-  github: https://github.com/rustyeddy/spaclock
+  github: https://github.com/rustyeddy/projects/spaclock
   website: http://clock.rustyeddy.com
   resume: http://rustyeddy.com/resume
 ---
