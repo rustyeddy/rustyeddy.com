@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Single Page App on Rusty Eddy</title>
+    <title>single page app on Rusty Eddy</title>
     <link>http://rustyeddy.com/tags/single-page-app/</link>
-    <description>Recent content in Single Page App on Rusty Eddy</description>
+    <description>Recent content in single page app on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
@@ -21,10 +21,9 @@ Cutters. I manage five software projects, including two Web
 Applications for the control and calibration of the Laser system. I
 am also responsible for the successful delivery and maintanance of the
 products Firmaware and Fleet Management system.&lt;/p&gt;
-
 &lt;blockquote&gt;
-&lt;p&gt;C/C++, Go &amp;amp; Python, embedded systems and microservices.
-&lt;/p&gt;</description>
+&lt;p&gt;C/C++, Go &amp;amp; Python, embedded systems and microservices.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
     </item>
     
   </channel>
