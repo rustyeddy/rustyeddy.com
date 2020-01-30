@@ -15,56 +15,61 @@ resources:
 ## Description
 
 SPA Clock is an embedded webserver intended to run on a Rasberry Pi
-(or similar linux system) with a touchscreen and internet connection.
+(or similar linux system) with a touchscreen and Internet connection.
 
-Not only does this bring you a _Zero Touch_ clock, just plug it in,
-connect it to the internet and always have accurate time through power
-outages and timezone changes, never reset your clock again.
+This clock comes with _Zero Touch configuration_. Just plug it in,
+connect it to the internet and always have accurate time! 
 
-> A clock that keeps **perfect** time and never needs to be reset!
+> Even through power outages and timezone changes, you'll never have
+> to reset your clock again.
 
-That is out the gate, you also get other cool things like weather,
-stock market or control your home lights and sound system..
+Now wait, that is not all! You also get other cool things like the
+date and current local weather!  
 
 It is all OpenSource and easy to modify or extend with a simple yet
-really powerful plugin system!
+really powerful plugin system! 
 
-## Technologies
+## Open Source Technologies
 
-SPAClock was built with all modern technologies. While SPAClock is
-compact, easy to modify and a __great way__ to get start developing
-modern web applications.
+SPAClock was built with current but proven technologies. It is
+compact, easy to modify and a __great way__ to start developing modern
+web applications.
 
-SPAClock is also built to be fast, easy to use and operate, reliable
-and safe, in other words SPA clock was built with industrial strength
-software development practices!
+
+SPA Clock was built with _industrial strength_ software development
+_best practices_ to be fast, easy to use, reliable and safe. 
 
 > SPAClock is **production ready**!
 
-This modern web application is what is also referred to as a _Single
-Page Application_ or _(SPA)_. Here is the bulk of what we used to
-build this application:
+Here is the bulk of what was used to build this application:
 
-- Go (the language) creates a tight, effecient micro-server
+- Go (the language) creates a tight, efficient micro-server
   - server static web pages and artifacts
   - REST API for various configuration and stuff
   - Websocket for realtime browser based perusing
   - MQTT for messaging between devices and controllers
-- Vue.js for Front End
-- Cloud Automation for Deployment
+- Vue.js for Front End application framework
+- Cloud Automation for Deployment and Operations
 
 
 ## Why SPA Clock?
 
 I started building the Single Page Application Internet Clock
-(SPAClock) for two reasons: provide perspective suitors with a live
-and unemumbered portfolio example.
+(SPAClock) for two reasons: 
 
-In otherwords, my most complete and relevant work has been for hire,
-and hence I can not provide more than a simple description of work
-I've done since much of it has never been public facing.
+#### 1. Show Off (my Talents :)
 
-The other reason for SPAClock is that I wanted to learn Vue, seems
-like some fun and I am being left out of all the
-JavaScript/Webdev/frontend madness. :)
+To provide perspective clients with an unencumbered portfolio
+example. 
+
+In otherwords: my most complete and relevant work has been
+for hire and hence, I can't provide more than a simple
+description of the work.
+
+#### 2. Learn Vue and Improve Frontend Skills
+
+The other reason for SPAClock is that I wanted to learn Vue.js and
+level up my _front end_ development skills. 
+
+> So, what do you think?
 

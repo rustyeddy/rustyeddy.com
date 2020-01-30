@@ -251,9 +251,10 @@ Likewise, we can produce any video stream output that GStreamer is capable of pr
       <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/projects/spaclock/</guid>
-      <description>Description SPA Clock is an embedded webserver intended to run on a Rasberry Pi (or similar linux system) with a touchscreen and internet connection.
-Not only does this bring you a Zero Touch clock, just plug it in, connect it to the internet and always have accurate time through power outages and timezone changes, never reset your clock again.
- A clock that keeps perfect time and never needs to be reset!</description>
+      <description>Description SPA Clock is an embedded webserver intended to run on a Rasberry Pi (or similar linux system) with a touchscreen and Internet connection.
+This clock comes with Zero Touch configuration. Just plug it in, connect it to the internet and always have accurate time!
+ Even through power outages and timezone changes, you&amp;rsquo;ll never have to reset your clock again.
+ Now wait, that is not all! You also get other cool things like the date and current local weather!</description>
     </item>
     
     <item>
