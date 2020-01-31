@@ -32,4 +32,7 @@ suited to a mid sized IoT environment.
 - It is free but comes with the Ansible Tower (RedHat) premium add
   on. 
   
-  
+## Getting Started
+
+The first and most important thing when getting started with Ansibel
+is placing keys on all hosts to be managed.
