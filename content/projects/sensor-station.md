@@ -13,7 +13,7 @@ tags:
 github: http://github.com/mobilerobot-io/esp
 ---
 
-Thermo is built with an esp32 WRoom32 development board, with a
+SensorStation is built with an esp32 WRoom32 development board, with a
 temprature sensor and a standard wifi connection, it is able to
 periodically broadcast the local temprature via MQTT.
 
