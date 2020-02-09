@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About Me on Rusty Eddy</title>
-    <link>http://localhost:1313/</link>
+    <link>http://rustyeddy.com/</link>
     <description>Recent content in About Me on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 14 May 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://rustyeddy.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>University of Southern California ~ MSCS</title>
-      <link>http://localhost:1313/resume/edu/usc/</link>
+      <link>http://rustyeddy.com/resume/edu/usc/</link>
       <pubDate>Tue, 02 Jan 1996 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/edu/usc/</guid>
+      <guid>http://rustyeddy.com/resume/edu/usc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Radian Laser</title>
-      <link>http://localhost:1313/resume/clients/radian-laser/</link>
+      <link>http://rustyeddy.com/resume/clients/radian-laser/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/clients/radian-laser/</guid>
+      <guid>http://rustyeddy.com/resume/clients/radian-laser/</guid>
       <description>&lt;p&gt;Radian is a small, fast moving startup that sells Laser Engravers and
 Cutters. I manage five software projects, including two Web
 Applications for the control and calibration of the Laser system. I
@@ -38,10 +38,10 @@ products Firmaware and Fleet Management system.&lt;/p&gt;
     
     <item>
       <title>Cloud Trek</title>
-      <link>http://localhost:1313/resume/clients/alchemy/</link>
+      <link>http://rustyeddy.com/resume/clients/alchemy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/clients/alchemy/</guid>
+      <guid>http://rustyeddy.com/resume/clients/alchemy/</guid>
       <description>&lt;p&gt;Alchemy Networks is an indepently owned service provider. I automated
 the provisioning of their Private Cloud Service offering. I was an
 individual contributor on this project. I collaborated with another
@@ -53,10 +53,10 @@ developer.&lt;/p&gt;
     
     <item>
       <title>DirecTV / AT&amp;T</title>
-      <link>http://localhost:1313/resume/clients/att/</link>
+      <link>http://rustyeddy.com/resume/clients/att/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/clients/att/</guid>
+      <guid>http://rustyeddy.com/resume/clients/att/</guid>
       <description>&lt;p&gt;I was hired by DirecTV (and subsequentyly AT&amp;amp;T) to help lead the new
 Software Defined Networking (SDN) team. We were tasked with replacing
 the companies aging production Video Distribution Network with a new
@@ -72,10 +72,10 @@ modernized design. Project goals included:&lt;/p&gt;
     
     <item>
       <title>Sierra Hydrographics</title>
-      <link>http://localhost:1313/resume/clients/sierra-hydrog/</link>
+      <link>http://rustyeddy.com/resume/clients/sierra-hydrog/</link>
       <pubDate>Sat, 02 Jan 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/clients/sierra-hydrog/</guid>
+      <guid>http://rustyeddy.com/resume/clients/sierra-hydrog/</guid>
       <description>&lt;p&gt;Led the design and development of automated data collection for
 hydrological gauging stations.  Data is gathered by pulling data from
 line of sight telemetry radios and NOAA/LRGS satellite ground
@@ -88,10 +88,10 @@ calculations and alert monitoring.&lt;/p&gt;
     
     <item>
       <title>Green Hills Software</title>
-      <link>http://localhost:1313/resume/clients/green-hills/</link>
+      <link>http://rustyeddy.com/resume/clients/green-hills/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/clients/green-hills/</guid>
+      <guid>http://rustyeddy.com/resume/clients/green-hills/</guid>
       <description>&lt;p&gt;I worked on a small team that added multicast forwarding to the &lt;em&gt;Integrity&lt;/em&gt; RTOS
 kernal.  Modified multicast routing daemon to run on same operating
 system allowing the product to serve as the foundation for a military
@@ -104,10 +104,10 @@ suite of routing protocols.&lt;/p&gt;
     
     <item>
       <title>The IMS Company</title>
-      <link>http://localhost:1313/resume/clients/ims-company/</link>
+      <link>http://rustyeddy.com/resume/clients/ims-company/</link>
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/clients/ims-company/</guid>
+      <guid>http://rustyeddy.com/resume/clients/ims-company/</guid>
       <description>&lt;p&gt;Led a project to replicate entertainment media (music, video and
 games) from a single media source to hundreds of in­flight
 entertainment units with minimal redundancy.  Contributed to the
@@ -119,10 +119,10 @@ design and development of an inflight entertainment server.&lt;/p&gt;
     
     <item>
       <title>Cisco Systems</title>
-      <link>http://localhost:1313/resume/jobs/cisco-systems/</link>
+      <link>http://rustyeddy.com/resume/jobs/cisco-systems/</link>
       <pubDate>Wed, 01 Feb 2006 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/jobs/cisco-systems/</guid>
+      <guid>http://rustyeddy.com/resume/jobs/cisco-systems/</guid>
       <description>&lt;p&gt;Original member of the Multicast Routing team.  Team of 12 responsible
 for the design, implementation and testing the complete suite of
 Multicast Routing protocols for the Cisco Carrier Routing System
@@ -136,19 +136,19 @@ Systems&lt;/p&gt;
     
     <item>
       <title>California State University, Long Beach</title>
-      <link>http://localhost:1313/resume/edu/csulb/</link>
+      <link>http://rustyeddy.com/resume/edu/csulb/</link>
       <pubDate>Tue, 02 Jan 1996 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/edu/csulb/</guid>
+      <guid>http://rustyeddy.com/resume/edu/csulb/</guid>
       <description></description>
     </item>
     
     <item>
       <title>USC ~ ISI</title>
-      <link>http://localhost:1313/resume/jobs/usc-isi/</link>
+      <link>http://rustyeddy.com/resume/jobs/usc-isi/</link>
       <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/jobs/usc-isi/</guid>
+      <guid>http://rustyeddy.com/resume/jobs/usc-isi/</guid>
       <description>&lt;p&gt;Led the effort to add IGMP/PIM and Multicast Routing Information
 Base (MRIB) to the Open Source &lt;em&gt;GateD&lt;/em&gt; suite of routing protocols.
 Mentored graduate students and others that would eventually become
@@ -157,10 +157,10 @@ prominent members of the computer networking community.&lt;/p&gt;</description>
     
     <item>
       <title>Retix</title>
-      <link>http://localhost:1313/resume/jobs/retix/</link>
+      <link>http://rustyeddy.com/resume/jobs/retix/</link>
       <pubDate>Tue, 01 Aug 1995 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/jobs/retix/</guid>
+      <guid>http://rustyeddy.com/resume/jobs/retix/</guid>
       <description>Promoted to lead the team of 6 engineers that developed and automated test plans for L2 switches, OSPF, RIP and BGP
   Implemented an automated test framework and led junior engineers in developing the automated test suites. C; C++; Perl; TCL
   Provided 3rd level customer support, serious customer problems that could not be resolved by customer support or field engineers became my teams responsibility to diagnose and determine solutions and workarounds was required.</description>
@@ -168,10 +168,10 @@ prominent members of the computer networking community.&lt;/p&gt;</description>
     
     <item>
       <title>Rockwell, Intl. Space Systems Division</title>
-      <link>http://localhost:1313/resume/jobs/rockwell/</link>
+      <link>http://rustyeddy.com/resume/jobs/rockwell/</link>
       <pubDate>Mon, 03 Jan 1994 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/jobs/rockwell/</guid>
+      <guid>http://rustyeddy.com/resume/jobs/rockwell/</guid>
       <description>&lt;p&gt;Led a team of 5 Sysadmins responsible for the use and well being of
 Engineering Departments 300+ UNIX workstations, servers (Sun, HP, DEC)
 and network.&lt;/p&gt;
@@ -181,10 +181,10 @@ of space and military projects.&lt;/p&gt;</description>
     
     <item>
       <title>California State University ~ Chancelors Office</title>
-      <link>http://localhost:1313/resume/jobs/csu-chancelor/</link>
+      <link>http://rustyeddy.com/resume/jobs/csu-chancelor/</link>
       <pubDate>Tue, 01 Aug 1995 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/jobs/csu-chancelor/</guid>
+      <guid>http://rustyeddy.com/resume/jobs/csu-chancelor/</guid>
       <description>&lt;p&gt;I was hired to install and manage the departments first AT&amp;amp;T Unix
 Mini-computers, UUNET connection and write a bulletin board system for
 California State Educators.&lt;/p&gt;</description>
@@ -192,10 +192,10 @@ California State Educators.&lt;/p&gt;</description>
     
     <item>
       <title>How to Cross Compile for the Raspberry Pi</title>
-      <link>http://localhost:1313/notes/cross-compile-raspberrypi/</link>
+      <link>http://rustyeddy.com/notes/cross-compile-raspberrypi/</link>
       <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/notes/cross-compile-raspberrypi/</guid>
+      <guid>http://rustyeddy.com/notes/cross-compile-raspberrypi/</guid>
       <description>Production software development for a Raspberry Pi is a fairly common thing now. This is great for many reasons, but does have the downside that compiling large hunks of software on an RPI is slow compared to a modern lowend laptop.
 Cross Compile to Rescue To speed things up a bit we will do something the embedded world has been doing from day 1, cross compile.
 That is, we are going to use our fast desktop/laptop x86 linux box to compile our program(s) for us, only it will produce a file that is capable of running remotely on the Raspberry Pi.</description>
@@ -203,38 +203,51 @@ That is, we are going to use our fast desktop/laptop x86 linux box to compile ou
     
     <item>
       <title>Career Summary</title>
-      <link>http://localhost:1313/resume/summary/</link>
+      <link>http://rustyeddy.com/resume/summary/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/summary/</guid>
+      <guid>http://rustyeddy.com/resume/summary/</guid>
       <description>I am a Software Engineer and Contract Programmer living in Huntington Beach, CA with my family. I build micro-services and work on micro-controllers, usually with Go, C/C++, Python and JavaScript (among other techs).</description>
     </item>
     
     <item>
       <title>Skills and Interests</title>
-      <link>http://localhost:1313/resume/skills/</link>
+      <link>http://rustyeddy.com/resume/skills/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/skills/</guid>
+      <guid>http://rustyeddy.com/resume/skills/</guid>
       <description> Go, C/C++, Python and JavaScript (and many others..) Computer Networks, Multicast Video Distribution Distributed systems and realtime communications DevOps, cloud automation and continuous delivery Fullstack software development, reactive front-ends with VueJS MicroServices: REST APIs, Websockets, etc. Linux Systems and OpenSource Software  </description>
     </item>
     
     <item>
+      <title>Advice for Future Professional Programmers</title>
+      <link>http://rustyeddy.com/notes/advice-for-future-programmers/</link>
+      <pubDate>Sat, 28 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/advice-for-future-programmers/</guid>
+      <description>&lt;p&gt;I have gathered some thoughts here for people just starting out, or
+thinking about becoming a programmer. I am no expert in this matter,
+but I have ben making a living as a software engineer (or similar
+term) for the last three decades, this is some of the lint I&amp;rsquo;ve
+gathered on the journey.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Using Vue to Develop Webapps</title>
-      <link>http://localhost:1313/notes/vue-frontends/</link>
+      <link>http://rustyeddy.com/notes/vue-frontends/</link>
       <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/notes/vue-frontends/</guid>
+      <guid>http://rustyeddy.com/notes/vue-frontends/</guid>
       <description>Every piece of software that gets used has to speak to the external world somehow. Some might be programattically through messaging or REST, it may be a human with a GUI based desktop or perhaps a Web app.
 Well, I think it is clear that web apps are taking over the world. I am also like the fact that web applications can pretty much run on anything (not just a windows machine, or IOS phone), but anything with a browser.</description>
     </item>
     
     <item>
       <title>Sensor Station</title>
-      <link>http://localhost:1313/projects/sensor-station/</link>
+      <link>http://rustyeddy.com/projects/sensor-station/</link>
       <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/projects/sensor-station/</guid>
+      <guid>http://rustyeddy.com/projects/sensor-station/</guid>
       <description>SensorStation is built with an esp32 WRoom32 development board, with a temprature sensor and a standard wifi connection, it is able to periodically broadcast the local temprature via MQTT.
 Features Thermo32 has the following features currently implemented:
  Temprature sampling with tmp36 Wifi connection to broadcast temprature MQTT client to advertise temprature to broker LED is flashed to indicate temprature has been sampled and broadcast. ESP-IDF / FreeRTOS, small, concurrent efficient and flexible.</description>
@@ -242,10 +255,10 @@ Features Thermo32 has the following features currently implemented:
     
     <item>
       <title>SPA Clock</title>
-      <link>http://localhost:1313/projects/spaclock/</link>
+      <link>http://rustyeddy.com/projects/spaclock/</link>
       <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/projects/spaclock/</guid>
+      <guid>http://rustyeddy.com/projects/spaclock/</guid>
       <description>Description SPA Clock is an embedded webserver intended to run on a Rasberry Pi (or similar linux system) with a touchscreen and Internet connection.
 This clock comes with Zero Touch configuration. Just plug it in, connect it to the internet and always have accurate time!
  Even through power outages and timezone changes, you&amp;rsquo;ll never have to reset your clock again.
@@ -254,10 +267,10 @@ This clock comes with Zero Touch configuration. Just plug it in, connect it to t
     
     <item>
       <title>Designers and Developers, What is the Difference?</title>
-      <link>http://localhost:1313/notes/website-roles/</link>
+      <link>http://rustyeddy.com/notes/website-roles/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/notes/website-roles/</guid>
+      <guid>http://rustyeddy.com/notes/website-roles/</guid>
       <description>Should I hire a web designer or web developer and what is the difference?
 It is kinda funny, in the rest of the tech world the terms designer and developer mean distinctive things, and aside from a few rare unicorns, they very different roles.
 Developers write code and make things work, designers make things look good. But for one reason and another, in the world of Web these skills do infact overlap to some extent, and in some rare cases a single individual is skilled at both aesthetic presentation and the practical application of abstract logic.</description>
@@ -265,10 +278,10 @@ Developers write code and make things work, designers make things look good. But
     
     <item>
       <title>Publications</title>
-      <link>http://localhost:1313/resume/pubs/</link>
+      <link>http://rustyeddy.com/resume/pubs/</link>
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/pubs/</guid>
+      <guid>http://rustyeddy.com/resume/pubs/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Ramesh Govindan, et el.&lt;/strong&gt; &lt;em&gt;&amp;ldquo;An Architecture for Stable, Analyzable
 Internet Routing&amp;rdquo;&lt;/em&gt;, IEEE Network Magazine, Jan-Feb 1999.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Rusty Eddy, Ramesh Govindan,&lt;/strong&gt; &lt;em&gt;&amp;ldquo;Testing Protocol Implementations
@@ -282,10 +295,10 @@ AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;</description>
     
     <item>
       <title>MicroServices and Distributed Systems Force Clarity</title>
-      <link>http://localhost:1313/notes/about-distributed-systems-and-micro-services/</link>
+      <link>http://rustyeddy.com/notes/about-distributed-systems-and-micro-services/</link>
       <pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/notes/about-distributed-systems-and-micro-services/</guid>
+      <guid>http://rustyeddy.com/notes/about-distributed-systems-and-micro-services/</guid>
       <description>I am very much dedicated to building distributed, micro-service style systems. I prefer to piece solutions together based on lean, efficient, best of breed components.
 Besides, I work with micro-controller type of devices regularly which forces me to build out distributed system by definition.
 More Complex? Many rightly claim that a distributed system increases the complexity over the monolith, and it is true that communicaiton boundaries must be explicitly created, and that communications between the boundarys becomes a potential for failure, or reduced reliability that tightly couple systems do not have to deal with.</description>
@@ -293,13 +306,25 @@ More Complex? Many rightly claim that a distributed system increases the complex
     
     <item>
       <title>Design Graphics with Canva</title>
-      <link>http://localhost:1313/notes/design-graphics-with-canva/</link>
+      <link>http://rustyeddy.com/notes/design-graphics-with-canva/</link>
       <pubDate>Sun, 22 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/notes/design-graphics-with-canva/</guid>
+      <guid>http://rustyeddy.com/notes/design-graphics-with-canva/</guid>
       <description>Hey I am no designer and you can accuse me of lacking originality when it comes to my design sensibilities, which can be dreadfully observed in my current version of this website (Oct 2017).
  Editorial update the above statement still holds true in early 2020.
  I love Canva it is super intuitive for a non-designer like me. It allows me to quickly create beautiful and consistent graphics for a variety of purposes including blog articles, social media properties, and such.</description>
+    </item>
+    
+    <item>
+      <title>Adafruit Music Maker mp3 Sheild</title>
+      <link>http://rustyeddy.com/notes/adafruit-music-maker-mp3-sheild/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/adafruit-music-maker-mp3-sheild/</guid>
+      <description>The shield is driven by an SPI connection with the Arduino and relies on an SD card with music files on it to play. Must determine how to play streaming audio, then we&amp;rsquo;ll have something neat!
+Link to the documentation.
+The shield can also be jumpered and booted into Midi Mode and turned into a drum machine or a Garageband type of play along, this might be fun!
+I suppose we could also add a microphone to record sound for some kind of reason.</description>
     </item>
     
   </channel>

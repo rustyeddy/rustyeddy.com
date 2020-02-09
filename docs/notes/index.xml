@@ -2,42 +2,55 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My Field Notes on Rusty Eddy</title>
-    <link>http://localhost:1313/notes/</link>
+    <link>http://rustyeddy.com/notes/</link>
     <description>Recent content in My Field Notes on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 13 May 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/notes/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://rustyeddy.com/notes/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to Cross Compile for the Raspberry Pi</title>
-      <link>http://localhost:1313/notes/cross-compile-raspberrypi/</link>
+      <link>http://rustyeddy.com/notes/cross-compile-raspberrypi/</link>
       <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/notes/cross-compile-raspberrypi/</guid>
+      <guid>http://rustyeddy.com/notes/cross-compile-raspberrypi/</guid>
       <description>Production software development for a Raspberry Pi is a fairly common thing now. This is great for many reasons, but does have the downside that compiling large hunks of software on an RPI is slow compared to a modern lowend laptop.
 Cross Compile to Rescue To speed things up a bit we will do something the embedded world has been doing from day 1, cross compile.
 That is, we are going to use our fast desktop/laptop x86 linux box to compile our program(s) for us, only it will produce a file that is capable of running remotely on the Raspberry Pi.</description>
     </item>
     
     <item>
+      <title>Advice for Future Professional Programmers</title>
+      <link>http://rustyeddy.com/notes/advice-for-future-programmers/</link>
+      <pubDate>Sat, 28 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/advice-for-future-programmers/</guid>
+      <description>&lt;p&gt;I have gathered some thoughts here for people just starting out, or
+thinking about becoming a programmer. I am no expert in this matter,
+but I have ben making a living as a software engineer (or similar
+term) for the last three decades, this is some of the lint I&amp;rsquo;ve
+gathered on the journey.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Using Vue to Develop Webapps</title>
-      <link>http://localhost:1313/notes/vue-frontends/</link>
+      <link>http://rustyeddy.com/notes/vue-frontends/</link>
       <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/notes/vue-frontends/</guid>
+      <guid>http://rustyeddy.com/notes/vue-frontends/</guid>
       <description>Every piece of software that gets used has to speak to the external world somehow. Some might be programattically through messaging or REST, it may be a human with a GUI based desktop or perhaps a Web app.
 Well, I think it is clear that web apps are taking over the world. I am also like the fact that web applications can pretty much run on anything (not just a windows machine, or IOS phone), but anything with a browser.</description>
     </item>
     
     <item>
       <title>Designers and Developers, What is the Difference?</title>
-      <link>http://localhost:1313/notes/website-roles/</link>
+      <link>http://rustyeddy.com/notes/website-roles/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/notes/website-roles/</guid>
+      <guid>http://rustyeddy.com/notes/website-roles/</guid>
       <description>Should I hire a web designer or web developer and what is the difference?
 It is kinda funny, in the rest of the tech world the terms designer and developer mean distinctive things, and aside from a few rare unicorns, they very different roles.
 Developers write code and make things work, designers make things look good. But for one reason and another, in the world of Web these skills do infact overlap to some extent, and in some rare cases a single individual is skilled at both aesthetic presentation and the practical application of abstract logic.</description>
@@ -45,10 +58,10 @@ Developers write code and make things work, designers make things look good. But
     
     <item>
       <title>MicroServices and Distributed Systems Force Clarity</title>
-      <link>http://localhost:1313/notes/about-distributed-systems-and-micro-services/</link>
+      <link>http://rustyeddy.com/notes/about-distributed-systems-and-micro-services/</link>
       <pubDate>Sun, 11 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/notes/about-distributed-systems-and-micro-services/</guid>
+      <guid>http://rustyeddy.com/notes/about-distributed-systems-and-micro-services/</guid>
       <description>I am very much dedicated to building distributed, micro-service style systems. I prefer to piece solutions together based on lean, efficient, best of breed components.
 Besides, I work with micro-controller type of devices regularly which forces me to build out distributed system by definition.
 More Complex? Many rightly claim that a distributed system increases the complexity over the monolith, and it is true that communicaiton boundaries must be explicitly created, and that communications between the boundarys becomes a potential for failure, or reduced reliability that tightly couple systems do not have to deal with.</description>
@@ -56,13 +69,25 @@ More Complex? Many rightly claim that a distributed system increases the complex
     
     <item>
       <title>Design Graphics with Canva</title>
-      <link>http://localhost:1313/notes/design-graphics-with-canva/</link>
+      <link>http://rustyeddy.com/notes/design-graphics-with-canva/</link>
       <pubDate>Sun, 22 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/notes/design-graphics-with-canva/</guid>
+      <guid>http://rustyeddy.com/notes/design-graphics-with-canva/</guid>
       <description>Hey I am no designer and you can accuse me of lacking originality when it comes to my design sensibilities, which can be dreadfully observed in my current version of this website (Oct 2017).
  Editorial update the above statement still holds true in early 2020.
  I love Canva it is super intuitive for a non-designer like me. It allows me to quickly create beautiful and consistent graphics for a variety of purposes including blog articles, social media properties, and such.</description>
+    </item>
+    
+    <item>
+      <title>Adafruit Music Maker mp3 Sheild</title>
+      <link>http://rustyeddy.com/notes/adafruit-music-maker-mp3-sheild/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/adafruit-music-maker-mp3-sheild/</guid>
+      <description>The shield is driven by an SPI connection with the Arduino and relies on an SD card with music files on it to play. Must determine how to play streaming audio, then we&amp;rsquo;ll have something neat!
+Link to the documentation.
+The shield can also be jumpered and booted into Midi Mode and turned into a drum machine or a Garageband type of play along, this might be fun!
+I suppose we could also add a microphone to record sound for some kind of reason.</description>
     </item>
     
   </channel>
