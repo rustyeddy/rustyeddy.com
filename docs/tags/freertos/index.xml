@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>freertos on Rusty Eddy</title>
+    <link>http://rustyeddy.com/tags/freertos/</link>
+    <description>Recent content in freertos on Rusty Eddy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://rustyeddy.com/tags/freertos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sensor Station</title>
+      <link>http://rustyeddy.com/projects/sensor-station/</link>
+      <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/projects/sensor-station/</guid>
+      <description>SensorStation is built with an esp32 WRoom32 development board, with a temprature sensor and a standard wifi connection, it is able to periodically broadcast the local temprature via MQTT.
+Features Thermo32 has the following features currently implemented:
+ Temprature sampling with tmp36 Wifi connection to broadcast temprature MQTT client to advertise temprature to broker LED is flashed to indicate temprature has been sampled and broadcast. ESP-IDF / FreeRTOS, small, concurrent efficient and flexible.</description>
+    </item>
+    
+  </channel>
+</rss>

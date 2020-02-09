@@ -5,10 +5,13 @@ description: >
   This Single Page App (SPA) is a clock connected to the internet,
   which, in addition to being _zero touch_ with perfect time, it also
   access other important things.
+categories: 
+  - micro service
+  - fullstack
 resources:
-  home: http://rustyeddy.com
-  github: https://github.com/rustyeddy/projects/spaclock
-  website: http://clock.rustyeddy.com
+  home: http://rustyeddy.com/projects/spaclock
+  github: https://github.com/rustyeddy/spaclock
+  website: http://rustyeddy.com
   resume: http://rustyeddy.com/resume
 ---
 
