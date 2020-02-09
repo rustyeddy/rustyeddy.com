@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>resume on Rusty Eddy</title>
-    <link>http://localhost:1313/resume/</link>
+    <link>http://rustyeddy.com/resume/</link>
     <description>Recent content in resume on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 May 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/resume/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://rustyeddy.com/resume/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Career Summary</title>
-      <link>http://localhost:1313/resume/summary/</link>
+      <link>http://rustyeddy.com/resume/summary/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/summary/</guid>
+      <guid>http://rustyeddy.com/resume/summary/</guid>
       <description>I am a Software Engineer and Contract Programmer living in Huntington Beach, CA with my family. I build micro-services and work on micro-controllers, usually with Go, C/C++, Python and JavaScript (among other techs).</description>
     </item>
     
     <item>
       <title>Skills and Interests</title>
-      <link>http://localhost:1313/resume/skills/</link>
+      <link>http://rustyeddy.com/resume/skills/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/skills/</guid>
+      <guid>http://rustyeddy.com/resume/skills/</guid>
       <description> Go, C/C++, Python and JavaScript (and many others..) Computer Networks, Multicast Video Distribution Distributed systems and realtime communications DevOps, cloud automation and continuous delivery Fullstack software development, reactive front-ends with VueJS MicroServices: REST APIs, Websockets, etc. Linux Systems and OpenSource Software  </description>
     </item>
     
     <item>
       <title>Publications</title>
-      <link>http://localhost:1313/resume/pubs/</link>
+      <link>http://rustyeddy.com/resume/pubs/</link>
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/pubs/</guid>
+      <guid>http://rustyeddy.com/resume/pubs/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Ramesh Govindan, et el.&lt;/strong&gt; &lt;em&gt;&amp;ldquo;An Architecture for Stable, Analyzable
 Internet Routing&amp;rdquo;&lt;/em&gt;, IEEE Network Magazine, Jan-Feb 1999.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Rusty Eddy, Ramesh Govindan,&lt;/strong&gt; &lt;em&gt;&amp;ldquo;Testing Protocol Implementations

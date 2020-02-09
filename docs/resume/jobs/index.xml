@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Work History on Rusty Eddy</title>
-    <link>http://localhost:1313/resume/jobs/</link>
+    <link>http://rustyeddy.com/resume/jobs/</link>
     <description>Recent content in Work History on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 21 Sep 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/resume/jobs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://rustyeddy.com/resume/jobs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Cisco Systems</title>
-      <link>http://localhost:1313/resume/jobs/cisco-systems/</link>
+      <link>http://rustyeddy.com/resume/jobs/cisco-systems/</link>
       <pubDate>Wed, 01 Feb 2006 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/jobs/cisco-systems/</guid>
+      <guid>http://rustyeddy.com/resume/jobs/cisco-systems/</guid>
       <description>&lt;p&gt;Original member of the Multicast Routing team.  Team of 12 responsible
 for the design, implementation and testing the complete suite of
 Multicast Routing protocols for the Cisco Carrier Routing System
@@ -30,10 +30,10 @@ Systems&lt;/p&gt;
     
     <item>
       <title>USC ~ ISI</title>
-      <link>http://localhost:1313/resume/jobs/usc-isi/</link>
+      <link>http://rustyeddy.com/resume/jobs/usc-isi/</link>
       <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/jobs/usc-isi/</guid>
+      <guid>http://rustyeddy.com/resume/jobs/usc-isi/</guid>
       <description>&lt;p&gt;Led the effort to add IGMP/PIM and Multicast Routing Information
 Base (MRIB) to the Open Source &lt;em&gt;GateD&lt;/em&gt; suite of routing protocols.
 Mentored graduate students and others that would eventually become
@@ -42,10 +42,10 @@ prominent members of the computer networking community.&lt;/p&gt;</description>
     
     <item>
       <title>Retix</title>
-      <link>http://localhost:1313/resume/jobs/retix/</link>
+      <link>http://rustyeddy.com/resume/jobs/retix/</link>
       <pubDate>Tue, 01 Aug 1995 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/jobs/retix/</guid>
+      <guid>http://rustyeddy.com/resume/jobs/retix/</guid>
       <description>Promoted to lead the team of 6 engineers that developed and automated test plans for L2 switches, OSPF, RIP and BGP
   Implemented an automated test framework and led junior engineers in developing the automated test suites. C; C++; Perl; TCL
   Provided 3rd level customer support, serious customer problems that could not be resolved by customer support or field engineers became my teams responsibility to diagnose and determine solutions and workarounds was required.</description>
@@ -53,10 +53,10 @@ prominent members of the computer networking community.&lt;/p&gt;</description>
     
     <item>
       <title>Rockwell, Intl. Space Systems Division</title>
-      <link>http://localhost:1313/resume/jobs/rockwell/</link>
+      <link>http://rustyeddy.com/resume/jobs/rockwell/</link>
       <pubDate>Mon, 03 Jan 1994 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/jobs/rockwell/</guid>
+      <guid>http://rustyeddy.com/resume/jobs/rockwell/</guid>
       <description>&lt;p&gt;Led a team of 5 Sysadmins responsible for the use and well being of
 Engineering Departments 300+ UNIX workstations, servers (Sun, HP, DEC)
 and network.&lt;/p&gt;
@@ -66,10 +66,10 @@ of space and military projects.&lt;/p&gt;</description>
     
     <item>
       <title>California State University ~ Chancelors Office</title>
-      <link>http://localhost:1313/resume/jobs/csu-chancelor/</link>
+      <link>http://rustyeddy.com/resume/jobs/csu-chancelor/</link>
       <pubDate>Tue, 01 Aug 1995 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resume/jobs/csu-chancelor/</guid>
+      <guid>http://rustyeddy.com/resume/jobs/csu-chancelor/</guid>
       <description>&lt;p&gt;I was hired to install and manage the departments first AT&amp;amp;T Unix
 Mini-computers, UUNET connection and write a bulletin board system for
 California State Educators.&lt;/p&gt;</description>

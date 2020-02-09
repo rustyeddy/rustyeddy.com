@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>fullstack on Rusty Eddy</title>
-    <link>http://localhost:1313/categories/fullstack/</link>
+    <link>http://rustyeddy.com/categories/fullstack/</link>
     <description>Recent content in fullstack on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 19 Jan 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/categories/fullstack/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://rustyeddy.com/categories/fullstack/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>SPA Clock</title>
-      <link>http://localhost:1313/projects/spaclock/</link>
+      <link>http://rustyeddy.com/projects/spaclock/</link>
       <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/projects/spaclock/</guid>
+      <guid>http://rustyeddy.com/projects/spaclock/</guid>
       <description>Description SPA Clock is an embedded webserver intended to run on a Rasberry Pi (or similar linux system) with a touchscreen and Internet connection.
 This clock comes with Zero Touch configuration. Just plug it in, connect it to the internet and always have accurate time!
  Even through power outages and timezone changes, you&amp;rsquo;ll never have to reset your clock again.
