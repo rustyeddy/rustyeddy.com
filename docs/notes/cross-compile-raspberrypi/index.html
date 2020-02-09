@@ -10,7 +10,7 @@
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 
-<title>My Field Notes</title>
+<title>How to Cross Compile for the Raspberry Pi</title>
 
 
 <body><header class="container bg-white">
@@ -37,99 +37,57 @@
     </nav>
 </header>
 <div id="main">
-<div class="container">
-
-    <div class="row mt-5">
-	<div class="col"></div> 
-	<div class="col-8">
-	    <article class="article">
-		<p>Here are a few notes that I have jotted along the way.  I am currently
-spending a good hunk of my time working on the <a href="http://mobilerobot.io">Mobile Robot
-Project</a>, my
-<a href="http://rustyeddy.com/resume">Resume can be found here</a>, <a href="http://rustyeddy.com/portfolio">and a much
-neglected portfolio here</a>.  I hope you
-find something here that is helpful, if so drop me a line!</p>
-
-	    </article>
-	</div>
-	<div class="col"></div> 
-    </div>
-
-    
+<div class="container"><div class="jumbotron border-top border-bottom bg-white" >
     <div class="row">
-	<div class="col"></div> 
-	<div class="col-8">
-	    <div class="title">
-		<a href="http://rustyeddy.com/notes/vue-frontends/">Using Vue to Develop Webapps</a>
-	    </div>
-	</div> 
-	<div class="col"></div>
-    </div>
-
-    <div class="row mb-3">
-	<div class="col text-mute small text-right">
-	    <div class="date">
-		December 25, 2019
-	    </div>
-	</div> 
-	<div class="col-8">
-	    <div class="description">
-		VueJS is a JavaScript framework that has become immensly popular in recent years for good reason in my humblest of opinions.  Check it out, what do you think?
-
-	    </div>
-	</div> 
-	<div class="col"></div>
-    </div>
-    
-    <div class="row">
-	<div class="col"></div> 
-	<div class="col-8">
-	    <div class="title">
-		<a href="http://rustyeddy.com/notes/cross-compile-raspberrypi/">How to Cross Compile for the Raspberry Pi</a>
-	    </div>
-	</div> 
-	<div class="col"></div>
-    </div>
-
-    <div class="row mb-3">
-	<div class="col text-mute small text-right">
-	    <div class="date">
-		February 7, 2019
-	    </div>
-	</div> 
-	<div class="col-8">
-	    <div class="description">
+	<div class="col-md"></div>
+	<div class="col-md-8">
+	    <h1 class="header h3 pb-1">How to Cross Compile for the Raspberry Pi</h1>
+	    <h5 class="leadin align-right text-muted mt-0">
 		
-	    </div>
-	</div> 
-	<div class="col"></div>
+	    </h5>
+	</div>
+	<div class="col-md"></div>
     </div>
-    
-    <div class="row">
-	<div class="col"></div> 
-	<div class="col-8">
-	    <div class="title">
-		<a href="http://rustyeddy.com/notes/website-roles/">Designers and Developers, What is the Difference?</a>
-	    </div>
-	</div> 
-	<div class="col"></div>
-    </div>
+</div>
+<div class="row">
+    <div class="col"></div>
+    <div class="col-md-8 hero-text">
+	<article class="article">
+	  <p>Production software development for a Raspberry Pi is a fairly common
+thing now.  This is great for many reasons, but does have the downside
+that compiling large hunks of software on an RPI is slow compared to a
+modern lowend laptop.</p>
+<h2 id="cross-compile-to-rescue">Cross Compile to Rescue</h2>
+<p>To speed things up a bit we will do something the embedded world has
+been doing from day 1, cross compile.</p>
+<p>That is, we are going to use our fast desktop/laptop x86 linux box to
+compile our program(s) for us, only it will produce a file that is
+capable of running remotely on the Raspberry Pi.</p>
+<p>Once we have built our <em>target</em> application, we will need to do a
+couple other things, including transfer it to our target
+architecture.</p>
+<p>The basic workflow is as follows:</p>
+<ol>
+<li>
+<p>Compile your application <em>image</em> for the target architecture using
+the appropriate <em>tool-chain</em>.</p>
+</li>
+<li>
+<p>Transfer the new image to the target host: in our case a simple ssh
+will do, NFS could be used as well to effectively eliminate this
+step.</p>
+</li>
+<li>
+<p>Start/Restart the application with the new image. This can be a
+simple stop the old/start the new cold switch over, or it may be
+more complex depending</p>
+</li>
+</ol>
 
-    <div class="row mb-3">
-	<div class="col text-mute small text-right">
-	    <div class="date">
-		October 1, 2018
-	    </div>
-	</div> 
-	<div class="col-8">
-	    <div class="description">
-		So you are going to have a website built and you are not sure how to hire?  A website designer, a developer? What is the difference? We will cover these differences in this article.
-
-	    </div>
-	</div> 
-	<div class="col"></div>
+	</article>
     </div>
-    
+    <div class="col"></div>
+</div>
 </div>
 
 

@@ -246,6 +246,17 @@ Likewise, we can produce any video stream output that GStreamer is capable of pr
     </item>
     
     <item>
+      <title>How to Cross Compile for the Raspberry Pi</title>
+      <link>http://rustyeddy.com/notes/cross-compile-raspberrypi/</link>
+      <pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/cross-compile-raspberrypi/</guid>
+      <description>Production software development for a Raspberry Pi is a fairly common thing now. This is great for many reasons, but does have the downside that compiling large hunks of software on an RPI is slow compared to a modern lowend laptop.
+Cross Compile to Rescue To speed things up a bit we will do something the embedded world has been doing from day 1, cross compile.
+That is, we are going to use our fast desktop/laptop x86 linux box to compile our program(s) for us, only it will produce a file that is capable of running remotely on the Raspberry Pi.</description>
+    </item>
+    
+    <item>
       <title>SPA Clock</title>
       <link>http://rustyeddy.com/projects/spaclock/</link>
       <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
