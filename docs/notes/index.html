@@ -29,6 +29,7 @@
 		    
   	            <a class="nav-link" href="/projects/spaclock">projects</a>
   	            <a class="nav-link" href="/resume">resume</a>
+  	            <a class="nav-link" href="/notes">notes</a>
 		</div>
  	    </nav>
 
@@ -49,6 +50,116 @@ Project</a>, my
 <a href="http://rustyeddy.com/resume">Resume can be found here</a>, <a href="http://rustyeddy.com/portfolio">and a much
 neglected portfolio here</a>.  I hope you
 find something here that is helpful, if so drop me a line!</p>
+<h2 id="road-map">Road Map</h2>
+<ul>
+<li>Start with a specific measureable goal and build from that
+<ul>
+<li>Every addition or new feature serves a specific purpose</li>
+<li>The new feature does not disrupt previous use</li>
+</ul>
+</li>
+<li>Story board and Wireframe
+<ul>
+<li>Identify use cases</li>
+<li>Walk through use cases with story boards</li>
+<li>Wireframe every step of the story</li>
+<li>Every frame of the story requires content
+<ul>
+<li>written</li>
+<li>video</li>
+<li>images</li>
+<li>other: pdf, etc</li>
+</ul>
+</li>
+<li>Every story has a specific measurable conclusion</li>
+</ul>
+</li>
+<li>Style Guide
+<ul>
+<li>Getting some help from friends
+<ul>
+<li>Rafal Tomal</li>
+<li>Refactoring UI</li>
+<li>Nathan &hellip;</li>
+</ul>
+</li>
+<li>From Wireframes to Layouts
+<ul>
+<li>Designer to Developer (lets loose labels and embrace strengths
+and weaknesses)</li>
+</ul>
+</li>
+<li>Color Pallete</li>
+<li>Typography</li>
+<li>Template from Layouts</li>
+</ul>
+</li>
+<li>Development Host
+<ul>
+<li>Never develop in the wild
+<ul>
+<li>Risk of disaster increases astronomically</li>
+<li>&ldquo;Fixes&rdquo; get out of sync, all fixes must funnel through a well
+defined process.</li>
+<li>Using devhost</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ALWAYS use protection, we have a VCS!
+<ul>
+<li>Version control, we&rsquo;ll use github</li>
+<li>Everything is easy to find, but YOU must follow the rules</li>
+<li>Everything can be automated to ensure quality!</li>
+<li>Everyhinng can be REMEMBERED!!</li>
+</ul>
+</li>
+<li>Keeping it Simple
+<ul>
+<li>Static sites generated from hugo (you can use jekyll, or..)</li>
+<li>Just need simple hosting (no databases, etc.) github pages will do
+just fine, thank you</li>
+</ul>
+</li>
+<li>Tracking Bugs and Requesting Features
+<ul>
+<li>Issue tracking and github issues</li>
+<li>Github projects (alternatives) and kanban board</li>
+<li>issues, to commits, to test runs to release, to closing.</li>
+</ul>
+</li>
+<li>Production Hosting
+<ul>
+<li>CI/CD release process: hugo to github pages</li>
+<li>add build step</li>
+<li>discuss other &ldquo;static&rdquo; hosting alternatives</li>
+<li>discuss other hosting options that includes databases</li>
+<li>mention other sophisticated backed ends</li>
+</ul>
+</li>
+<li>DevOps
+<ul>
+<li>CI CD process from fix the production</li>
+<li>Monitoring and responding to problems</li>
+<li>Problem tracking to testbed
+<ul>
+<li>turn production bugs into futur tests</li>
+</ul>
+</li>
+<li>collecting lots of data, what to do?</li>
+</ul>
+</li>
+</ul>
+<p>That&rsquo;s, there is nothing left todo! Time to kick back and chill out.
+That is, unless you want to do something with all this work, like
+market it to real <strong>paying</strong> users!  Or build out a GraphQL backend
+with MQTT to support your fantastic <em>Single Page App</em>..</p>
+<p>Then, there&rsquo;s plenty more work to do, but let&rsquo;s kick it for a bit.</p>
+<h2 id="other-tech-topics">Other Tech Topics</h2>
+<ul>
+<li>Streaming Video</li>
+<li>Ansible and Fleet management</li>
+</ul>
 
 	    </article>
 	</div>
@@ -60,7 +171,32 @@ find something here that is helpful, if so drop me a line!</p>
 	<div class="col"></div> 
 	<div class="col-8">
 	    <div class="title">
-		<a href="http://rustyeddy.com/notes/vue-frontends/">Using Vue to Develop Webapps</a>
+		<a href="http://localhost:1313/notes/cross-compile-raspberrypi/">How to Cross Compile for the Raspberry Pi</a>
+	    </div>
+	</div> 
+	<div class="col"></div>
+    </div>
+
+    <div class="row mb-3">
+	<div class="col text-mute small text-right">
+	    <div class="date">
+		February 7, 2020
+	    </div>
+	</div> 
+	<div class="col-8">
+	    <div class="description">
+		Building software for the Raspberry Pi is both fun, and these days part of professional environment. Developing, includin gcompiling on a RPI is painfully slow for large software.  Here we will try to speed that process up by developing on a laptop and running on a PI, see how I fare...
+
+	    </div>
+	</div> 
+	<div class="col"></div>
+    </div>
+    
+    <div class="row">
+	<div class="col"></div> 
+	<div class="col-8">
+	    <div class="title">
+		<a href="http://localhost:1313/notes/vue-frontends/">Using Vue to Develop Webapps</a>
 	    </div>
 	</div> 
 	<div class="col"></div>
@@ -85,31 +221,7 @@ find something here that is helpful, if so drop me a line!</p>
 	<div class="col"></div> 
 	<div class="col-8">
 	    <div class="title">
-		<a href="http://rustyeddy.com/notes/cross-compile-raspberrypi/">How to Cross Compile for the Raspberry Pi</a>
-	    </div>
-	</div> 
-	<div class="col"></div>
-    </div>
-
-    <div class="row mb-3">
-	<div class="col text-mute small text-right">
-	    <div class="date">
-		February 7, 2019
-	    </div>
-	</div> 
-	<div class="col-8">
-	    <div class="description">
-		
-	    </div>
-	</div> 
-	<div class="col"></div>
-    </div>
-    
-    <div class="row">
-	<div class="col"></div> 
-	<div class="col-8">
-	    <div class="title">
-		<a href="http://rustyeddy.com/notes/website-roles/">Designers and Developers, What is the Difference?</a>
+		<a href="http://localhost:1313/notes/website-roles/">Designers and Developers, What is the Difference?</a>
 	    </div>
 	</div> 
 	<div class="col"></div>
@@ -124,6 +236,31 @@ find something here that is helpful, if so drop me a line!</p>
 	<div class="col-8">
 	    <div class="description">
 		So you are going to have a website built and you are not sure how to hire?  A website designer, a developer? What is the difference? We will cover these differences in this article.
+
+	    </div>
+	</div> 
+	<div class="col"></div>
+    </div>
+    
+    <div class="row">
+	<div class="col"></div> 
+	<div class="col-8">
+	    <div class="title">
+		<a href="http://localhost:1313/notes/design-graphics-with-canva/">Design Graphics with Canva</a>
+	    </div>
+	</div> 
+	<div class="col"></div>
+    </div>
+
+    <div class="row mb-3">
+	<div class="col text-mute small text-right">
+	    <div class="date">
+		October 22, 2017
+	    </div>
+	</div> 
+	<div class="col-8">
+	    <div class="description">
+		There is no reason to have ugly graphics, or a cheap looking logo for anything you are serious about. Canva makes it sinful to accept ugly graphics.
 
 	    </div>
 	</div> 
@@ -176,5 +313,5 @@ if (!doNotTrack) {
 
 
 
-    </body>
+    <script src="/livereload.js?port=1313&mindelay=10&v=2" data-no-instant defer></script></body>
 </html>

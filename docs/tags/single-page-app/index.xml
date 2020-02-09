@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>single page app on Rusty Eddy</title>
-    <link>http://rustyeddy.com/tags/single-page-app/</link>
+    <link>http://localhost:1313/tags/single-page-app/</link>
     <description>Recent content in single page app on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://rustyeddy.com/tags/single-page-app/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/tags/single-page-app/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Radian Laser</title>
-      <link>http://rustyeddy.com/resume/clients/radian-laser/</link>
+      <link>http://localhost:1313/resume/clients/radian-laser/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/clients/radian-laser/</guid>
+      <guid>http://localhost:1313/resume/clients/radian-laser/</guid>
       <description>&lt;p&gt;Radian is a small, fast moving startup that sells Laser Engravers and
 Cutters. I manage five software projects, including two Web
 Applications for the control and calibration of the Laser system. I

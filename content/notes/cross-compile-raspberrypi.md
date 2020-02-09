@@ -1,6 +1,12 @@
 ---
 title: How to Cross Compile for the Raspberry Pi
-date: 2019-02-07
+date: 2020-02-07
+description: >
+  Building software for the Raspberry Pi is both fun, and these days
+  part of professional environment. Developing, includin gcompiling on
+  a RPI is painfully slow for large software.  Here we will try to
+  speed that process up by developing on a laptop and running on a PI,
+  see how I fare...
 ---
 
 Production software development for a Raspberry Pi is a fairly common
