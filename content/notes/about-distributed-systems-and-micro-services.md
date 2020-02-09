@@ -1,17 +1,20 @@
 ---
-title: About MicroServices and Distributed Systems
+title: MicroServices and Distributed Systems Force Clarity
 date: 2018-02-11
 description: > 
-  I am very much in favor of micro-service style architectures with
-  builds service pipelines based on lean and efficient software
-  components, rather than obese frameworks trying to be something they
-  are not.  Here is what I mean:
-draft: true
+  The process of building a distrubuted system forces one to identify,
+  explicitly the procise protocol the two machines will communicate
+  with. This present opportunity to carry this rigor of formality
+  through out system design.
+category: rambling
 ---
 
 I am very much dedicated to building distributed, micro-service style
 systems. I prefer to piece solutions together based on lean,
-efficient, best of breed components.  
+efficient, best of breed components.
+
+Besides, I work with _micro-controller_ type of devices regularly
+which forces me to build out distributed system by definition.
 
 ## More Complex?
 
@@ -21,9 +24,13 @@ be explicitly created, and that communications between the boundarys
 becomes a potential for failure, or reduced reliability that tightly
 couple systems do not have to deal with.
 
-This is true.  However, if done with care and an eye toward simplicity
-and robustness, a team can start developing patterns that are mandated
-according to the driving force of the application they are developing.
+Using the above observations as guiding principals for enforcing the
+discipline to benefit from a smoother construction phase of developing
+the system. 
+
+If done with care and an eye toward simplicity and robustness, a team
+can start developing patterns that are mandated according to the
+driving force of the application they are developing.
 
 ### Clearify and Simplify Interfaces Early
 
@@ -32,3 +39,6 @@ between APIs of subsystems.  That easily translates into communication
 busses that can be _snooped_ or _mocked_ to significantly enhance, and
 speed up both, finding and resolving bugs as well as making it
 significantly easier to create comprehensive tests.
+
+> Todo: maybe this would be a good time to layout some examples of
+> clear boundary definitions, e.g. we defined API's.
