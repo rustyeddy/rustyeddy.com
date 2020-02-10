@@ -3,7 +3,6 @@ title: Bootstrap makes WebUI look great!
 date: 2019-12-20
 description: >
   This document contains some references for Bootstrap
-draft: true
 ---
 
 references:
@@ -16,5 +15,11 @@ Bootstrap is a great way to quickly get started building some nice and
 orderly looking web pages. A little more about Bootstrap now.
 <!--more-->
 
-Bootstrap is used as the basis for styling this website.
+Bootstrap is used as the basis for styling this website, and most everthing I
+am responsible for designing, primarily because it looks great (professional),
+it is easy to use and customize and I understand it pretty well.
+
+> That means I get fairly good looking and professional pages with little
+> effort. Not original, but that is not my goal.
+
 
