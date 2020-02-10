@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My Field Notes on Rusty Eddy</title>
@@ -32,7 +32,8 @@ That is, we are going to use our fast desktop/laptop x86 linux box to compile ou
 thinking about becoming a programmer. I am no expert in this matter,
 but I have ben making a living as a software engineer (or similar
 term) for the last three decades, this is some of the lint I&amp;rsquo;ve
-gathered on the journey.&lt;/p&gt;</description>
+gathered on the journey.
+&lt;/p&gt;</description>
     </item>
     
     <item>

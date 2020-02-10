@@ -55,35 +55,39 @@
     <div class="col"></div>
     <div class="col-md-8 hero-text">
 	<article class="article">
-	  <p>Production software development for a Raspberry Pi is a fairly common
+	  
+
+<p>Production software development for a Raspberry Pi is a fairly common
 thing now.  This is great for many reasons, but does have the downside
 that compiling large hunks of software on an RPI is slow compared to a
 modern lowend laptop.</p>
+
 <h2 id="cross-compile-to-rescue">Cross Compile to Rescue</h2>
+
 <p>To speed things up a bit we will do something the embedded world has
 been doing from day 1, cross compile.</p>
+
 <p>That is, we are going to use our fast desktop/laptop x86 linux box to
 compile our program(s) for us, only it will produce a file that is
 capable of running remotely on the Raspberry Pi.</p>
+
 <p>Once we have built our <em>target</em> application, we will need to do a
 couple other things, including transfer it to our target
 architecture.</p>
+
 <p>The basic workflow is as follows:</p>
+
 <ol>
-<li>
-<p>Compile your application <em>image</em> for the target architecture using
-the appropriate <em>tool-chain</em>.</p>
-</li>
-<li>
-<p>Transfer the new image to the target host: in our case a simple ssh
+<li><p>Compile your application <em>image</em> for the target architecture using
+the appropriate <em>tool-chain</em>.</p></li>
+
+<li><p>Transfer the new image to the target host: in our case a simple ssh
 will do, NFS could be used as well to effectively eliminate this
-step.</p>
-</li>
-<li>
-<p>Start/Restart the application with the new image. This can be a
+step.</p></li>
+
+<li><p>Start/Restart the application with the new image. This can be a
 simple stop the old/start the new cold switch over, or it may be
-more complex depending</p>
-</li>
+more complex depending</p></li>
 </ol>
 
 	</article>

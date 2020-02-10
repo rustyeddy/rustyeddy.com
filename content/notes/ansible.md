@@ -21,8 +21,17 @@ suited to a mid sized IoT environment.
 
 ## A Few Highlight about Ansible
 
-- Create Playbooks that defines the configuration of a target
-  architecture. 
+### Scripts are Docutation
+
+Create Playbooks that combine a series of specific roles to get define
+specific _roles_ the configuration steps to get a desired
+outcome. Once you figure out how to get something installed correctly,
+just script it out.
+
+If and when things change and the script breaks, fix it, simple.
+
+> We have just ensured we can repeat the same successful installation
+> over and over again, in record breaking time!
   
 - **Ansible is _Idempotent_** meaning it defines the the desired
   outcome, it is up to Ansible to make that outcome real.

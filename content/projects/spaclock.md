@@ -13,6 +13,7 @@ resources:
   github: https://github.com/rustyeddy/spaclock
   website: http://rustyeddy.com
   resume: http://rustyeddy.com/resume
+image: https://rustyeddy.sfo2.digitaloceanspaces.com/SensorStation.png
 ---
 
 ## Description
