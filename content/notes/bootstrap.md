@@ -3,6 +3,8 @@ title: Bootstrap makes WebUI look great!
 date: 2019-12-20
 description: >
   This document contains some references for Bootstrap
+todo:
+  - images of some bootstrap examples
 ---
 
 references:
@@ -22,4 +24,9 @@ it is easy to use and customize and I understand it pretty well.
 > That means I get fairly good looking and professional pages with little
 > effort. Not original, but that is not my goal.
 
+## Bootstrap Examples
 
+- (This website)[http://rustyeddy.com]
+- (Orange County Low Vision)[http://oclowvision.com]
+
+> Do you want some? TODO put a button here to sign up.
