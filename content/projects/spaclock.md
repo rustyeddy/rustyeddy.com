@@ -39,11 +39,7 @@ SPAClock was built with current but proven technologies. It is
 compact, easy to modify and a __great way__ to start developing modern
 web applications.
 
-
-SPA Clock was built with _industrial strength_ software development
-_best practices_ to be fast, easy to use, reliable and safe. 
-
-> SPAClock is **production ready**!
+### Tech Stack
 
 Here is the bulk of what was used to build this application:
 
@@ -54,7 +50,6 @@ Here is the bulk of what was used to build this application:
   - MQTT for messaging between devices and controllers
 - Vue.js for Front End application framework
 - Cloud Automation for Deployment and Operations
-
 
 ## Why SPA Clock?
 

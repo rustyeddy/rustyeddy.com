@@ -6,7 +6,7 @@ description: >
   sales and reduce phone time for customer service.
 github: https://github.com/rustyeddy/oclv
 site: https://oclowvision.com/
-image: http://rustyeddy.com/img/oclv-website.jpg
+image: oclv-home-page.jpg
 ---
 
 Orange County Low Vision is old-school when it comes to personal

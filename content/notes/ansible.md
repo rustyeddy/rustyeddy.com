@@ -21,7 +21,7 @@ suited to a mid sized IoT environment.
 
 ## A Few Highlight about Ansible
 
-### Scripts are Docutation
+### Scripts are the Documentation
 
 Create Playbooks that combine a series of specific roles to get define
 specific _roles_ the configuration steps to get a desired
@@ -33,15 +33,6 @@ If and when things change and the script breaks, fix it, simple.
 > We have just ensured we can repeat the same successful installation
 > over and over again, in record breaking time!
   
-- **Ansible is _Idempotent_** meaning it defines the the desired
-  outcome, it is up to Ansible to make that outcome real.
-  
-- It can be run numerous times with very predictable results.
-
-- It is free but comes with the Ansible Tower (RedHat) premium add
-  on. 
-  
-## Getting Started
-
-The first and most important thing when getting started with Ansibel
-is placing keys on all hosts to be managed.
+By virtue of creating accurate names and descriptions of the tasks
+required for ansible, it will provide some great documentation of the
+actions performed by the varies roles.
