@@ -15,18 +15,21 @@ githubs:
 image: https://rustyeddy.sfo2.digitaloceanspaces.com/SensorStation.png
 ---
 
-SensorStation is built with an esp32 WRoom32 development board, with a
-temprature sensor and a standard wifi connection, it is able to
-periodically broadcast the local temprature via MQTT.
+SensorStation is built with an esp32 WRoom32 development board and a
+connected temprature sensor with on chip wifi. The software runs an
+event loop with a timer periodically broadcasting the local current
+temperature via MQTT.
+
+> TODO: place a pic of the breadboard
 
 ## Features 
 
 Thermo32 has the following features currently implemented:
 
-1. Temprature sampling with tmp36
-2. Wifi connection to broadcast temprature
-3. MQTT client to advertise temprature to broker 
-4. LED is flashed to indicate temprature has been sampled and
+1. Temperature sampling with a [tmp36 temperature](https://learn.adafruit.com/tmp36-temperature-sensor)
+2. On chip Wifi connection for Internet access
+3. MQTT client to advertise temperature to broker 
+4. LED flashes to indicate temperature has been sampled and
    broadcast. 
 5. ESP-IDF / FreeRTOS, small, concurrent efficient and flexible.
 
@@ -47,7 +50,7 @@ Thermo32 has the following features currently implemented:
 
 ## Hardware 
 
-The _thermo32_ has been built on the esp32 with the FreeRTOS / ESP-IDF
+The _Sensor Station_ has been built on the esp32 with the FreeRTOS / ESP-IDF
 software package. The ESP32 comes with a number of pins that provide
 an astounding array of functionality.
 
@@ -55,7 +58,7 @@ an astounding array of functionality.
 
 - esp32 development board
 - tmp36 temprature sensor
-- led and resistor
+- LED and resistor
 - breadboard and wires
 
 ### Schematic
@@ -64,38 +67,28 @@ an astounding array of functionality.
 
 ## Power and Batteries
 
-Provide some words on how to power this module while holding to low
-sfffpower requirements.
+> Todo: I need to research battery options for devices that will be
+> completely wireless.
 
-## Operating and Managing
 
-Since this is an IoT device, it will hold some requirements that
-traditionall, _non-connected_ devices did not have to worry about, as
-well as capabilities, that were not previously accessable by _normal
-people_, outside industry.
+## Temperature and Sampling
 
-Now we are starting to see a plethora of these things invading our
-home and business networks. Managing them, triaging problems and
-rolling out releases that do not break working application is
-paramount! 
+The chip is capabile of reading temperature samples much faster than
+we as humans can process. It is also possible that one or more of the
+samples may not have been read accurately due to various reasons. For
+that reason we take 64 samples back to back (in less than a second),
+average the samples together then determine the final _sampled_
+temperature.
 
-## Taking the Temprature and Sampling
+### Samples and Alarms
 
-The chip is capabile of getting temprature readings at such a manner
-much faster than we need to be consuming them, since it is also
-possible that one or more of the samples may not be very accurate due
-to noise, our read process is to take 64 samples back to back then
-average them out to the final _sampled_ temprature.
+Historic sampling of things like temperature are typically stored in
+increments of every 15 minutes or so. Since the esp32 is capable of taking
+samples much faster than every minute, we can also watch for anomolies like
+temperature spikes from something that caught on fire, for example. 
 
-### Sample History vs. Recorded History
+## Historic Data On Board
 
-During normal operation it is possible to average out a sampling every
-5 seconds with plenty of cycles to spare. This maybe an important or
-interesting number to track for abrupt temprature raises, such as
-something catching on fire.
-
-However for historical purposes, we most likely only want to track the
-temprature in say 15 minute increments over the course of years. This
-being the case, we will be able to configure the device to hold
-backlog for a period of time, then just archive every 15 minutes of
-
+We will keep a limited history of sensor data on chip in the event of
+the network being inaccessable or a new user wanting recent historical
+temperature readings.
