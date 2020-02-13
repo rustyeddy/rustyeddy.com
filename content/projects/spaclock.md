@@ -61,9 +61,12 @@ I started building the Single Page Application Internet Clock
 To provide perspective clients with an unencumbered portfolio
 example. 
 
-In otherwords: my most complete and relevant work has been
-for hire and hence, I can't provide more than a simple
-description of the work.
+In otherwords: most of my work has been paid for by an employer or
+client, for which I lack the permission to show. In most cases I do
+not even have access to my past work. (Makes me very sad).
+
+This project is something I have been doing on my spare time to
+_show_ rather than _tell_ you about my code slingin skills.
 
 #### 2. Learn Vue and Improve Frontend Skills
 
