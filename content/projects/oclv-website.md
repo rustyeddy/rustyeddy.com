@@ -28,19 +28,13 @@ favorite kind!):
 1. Produce one additional sale per month.
 2. Spend less time on the phone with customer support
 
-A website, if _grown_ correctly should expose the company to a group
-of _qualified_ potential clients that currently have no way of knowing
-that OCLV can make their lives significantly better! Or that OCLV even
-exists! 
-
-
-1. That OCLV has products that help their needs
-2. That OCLV even exists at all, they end up buying from a lessor or
-   inappropriate vendor
+The websites job is to expose the company to a group of _qualified_
+potential clients that previously had no way of knowing that OCLV
+exists, let alone can possibly make ther lives significantly better!
 
 ## Project Results
 
-The Website was launched in December of 2019, I am happy to say, OCLV
+The Website was launched in December of 2019. I am happy to say, OCLV
 has acquired their very first, online client! Bravo, well done! We
 plan on learning from this one and hopefully doubling that in the near
 future! 
