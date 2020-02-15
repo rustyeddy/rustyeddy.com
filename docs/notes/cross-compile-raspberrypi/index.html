@@ -44,7 +44,7 @@
 	<div class="col-md-8">
 	    <h1 class="header h3 pb-1">How to Cross Compile for the Raspberry Pi</h1>
 	    <h5 class="leadin align-right text-muted mt-0">
-		Building software for the Raspberry Pi is both fun, and these days part of professional environment. Developing, includin gcompiling on a RPI is painfully slow for large software.  Here we will try to speed that process up by developing on a laptop and running on a PI, see how I fare...
+		Building software for the Raspberry Pi is both fun, and these days part of many professional prodcts. However, building complex software on a Raspberry Pi can be very painful. Read about my attempt(s) at speeding up my development cycle with cross-compiling. 
 
 	    </h5>
 	</div>
@@ -57,35 +57,26 @@
 	<article class="article">
 	  <p>Production software development for a Raspberry Pi is a fairly common
 thing now.  This is great for many reasons, but does have the downside
-that compiling large hunks of software on an RPI is slow compared to a
-modern lowend laptop.</p>
-<h2 id="cross-compile-to-rescue">Cross Compile to Rescue</h2>
-<p>To speed things up a bit we will do something the embedded world has
-been doing from day 1, cross compile.</p>
-<p>That is, we are going to use our fast desktop/laptop x86 linux box to
-compile our program(s) for us, only it will produce a file that is
-capable of running remotely on the Raspberry Pi.</p>
-<p>Once we have built our <em>target</em> application, we will need to do a
-couple other things, including transfer it to our target
-architecture.</p>
-<p>The basic workflow is as follows:</p>
-<ol>
-<li>
-<p>Compile your application <em>image</em> for the target architecture using
-the appropriate <em>tool-chain</em>.</p>
-</li>
-<li>
-<p>Transfer the new image to the target host: in our case a simple ssh
-will do, NFS could be used as well to effectively eliminate this
-step.</p>
-</li>
-<li>
-<p>Start/Restart the application with the new image. This can be a
-simple stop the old/start the new cold switch over, or it may be
-more complex depending</p>
-</li>
-</ol>
-
+that compiling large hunks of software on the PI is extremely
+slow compared to a modern laptop.</p>
+<p>The other major downside is that the development tools either do not run
+on the pi, they are painfully slow to use, or hard to build.</p>
+<p>Wouldn&rsquo;t it be nice to build software for a Raspberry Pi with the same
+rich development environment and speed we have on our desktop!</p>
+<h2 id="set-up-cross-compiling">Set up cross compiling</h2>
+<p>The embeded world has been doing this for decades: using your desktop
+(linux, mac or windows) to build software that will run on a totally
+different chip architecture and operating system, or in many cases no
+OS at all.</p>
+<p>To do this we have a bit of preparation to do:</p>
+<h3 id="the-arm-toolchain">The ARM Toolchain</h3>
+<p>First we are going to grab <em>toolchain</em> (the compiler, linker, etc.)
+that will compile our code on our Linux development machine and
+produce a Raspberry Pi executable.</p>
+<blockquote>
+<p>TODO put a link to down load</p>
+</blockquote>
+<p>&hellip;</p>
 	</article>
     </div>
     <div class="col"></div>

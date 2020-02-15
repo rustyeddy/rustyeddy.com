@@ -3,39 +3,39 @@ title: How to Cross Compile for the Raspberry Pi
 date: 2020-02-07
 description: >
   Building software for the Raspberry Pi is both fun, and these days
-  part of professional environment. Developing, includin gcompiling on
-  a RPI is painfully slow for large software.  Here we will try to
-  speed that process up by developing on a laptop and running on a PI,
-  see how I fare...
+  part of many professional prodcts. However, building complex
+  software on a Raspberry Pi can be very painful. Read about my
+  attempt(s) at speeding up my development cycle with
+  cross-compiling. 
 ---
 
 Production software development for a Raspberry Pi is a fairly common
 thing now.  This is great for many reasons, but does have the downside
-that compiling large hunks of software on an RPI is slow compared to a
-modern lowend laptop.
+that compiling large hunks of software on the PI is extremely
+slow compared to a modern laptop.
+<!--more-->
 
-## Cross Compile to Rescue
+The other major downside is that the development tools either do not run
+on the pi, they are painfully slow to use, or hard to build.
 
-To speed things up a bit we will do something the embedded world has
-been doing from day 1, cross compile.
+Wouldn't it be nice to build software for a Raspberry Pi with the same
+rich development environment and speed we have on our desktop!
 
-That is, we are going to use our fast desktop/laptop x86 linux box to
-compile our program(s) for us, only it will produce a file that is
-capable of running remotely on the Raspberry Pi.
+## Set up cross compiling
 
-Once we have built our _target_ application, we will need to do a
-couple other things, including transfer it to our target
-architecture. 
+The embeded world has been doing this for decades: using your desktop
+(linux, mac or windows) to build software that will run on a totally
+different chip architecture and operating system, or in many cases no
+OS at all. 
 
-The basic workflow is as follows:
+To do this we have a bit of preparation to do:
 
-1. Compile your application _image_ for the target architecture using
-   the appropriate _tool-chain_.
+### The ARM Toolchain
 
-2. Transfer the new image to the target host: in our case a simple ssh
-   will do, NFS could be used as well to effectively eliminate this
-   step. 
-   
-3. Start/Restart the application with the new image. This can be a
-   simple stop the old/start the new cold switch over, or it may be
-   more complex depending
+First we are going to grab _toolchain_ (the compiler, linker, etc.)
+that will compile our code on our Linux development machine and
+produce a Raspberry Pi executable. 
+
+> TODO put a link to down load
+
+...

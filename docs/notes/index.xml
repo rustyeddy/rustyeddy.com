@@ -17,9 +17,10 @@
       <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/notes/cross-compile-raspberrypi/</guid>
-      <description>Production software development for a Raspberry Pi is a fairly common thing now. This is great for many reasons, but does have the downside that compiling large hunks of software on an RPI is slow compared to a modern lowend laptop.
-Cross Compile to Rescue To speed things up a bit we will do something the embedded world has been doing from day 1, cross compile.
-That is, we are going to use our fast desktop/laptop x86 linux box to compile our program(s) for us, only it will produce a file that is capable of running remotely on the Raspberry Pi.</description>
+      <description>&lt;p&gt;Production software development for a Raspberry Pi is a fairly common
+thing now.  This is great for many reasons, but does have the downside
+that compiling large hunks of software on the PI is extremely
+slow compared to a modern laptop.&lt;/p&gt;</description>
     </item>
     
     <item>
