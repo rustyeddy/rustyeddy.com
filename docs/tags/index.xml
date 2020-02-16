@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Rusty Eddy</title>
@@ -6,103 +6,13 @@
     <description>Recent content in Tags on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 21 Apr 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://rustyeddy.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>vue</title>
-      <link>http://rustyeddy.com/tags/vue/</link>
-      <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/vue/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>esp32</title>
-      <link>http://rustyeddy.com/tags/esp32/</link>
-      <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/esp32/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>freertos</title>
-      <link>http://rustyeddy.com/tags/freertos/</link>
-      <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/freertos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>develop, design</title>
-      <link>http://rustyeddy.com/tags/develop-design/</link>
-      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/develop-design/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>C/C&#43;&#43;, Perl, Python and Java</title>
-      <link>http://rustyeddy.com/tags/c/c&#43;&#43;-perl-python-and-java/</link>
-      <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/c/c&#43;&#43;-perl-python-and-java/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Computer Network, Multicast</title>
-      <link>http://rustyeddy.com/tags/computer-network-multicast/</link>
-      <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/computer-network-multicast/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>c</title>
-      <link>http://rustyeddy.com/tags/c/</link>
-      <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/c/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>c&#43;&#43;</title>
-      <link>http://rustyeddy.com/tags/c&#43;&#43;/</link>
-      <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/c&#43;&#43;/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>cmake</title>
-      <link>http://rustyeddy.com/tags/cmake/</link>
-      <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/cmake/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>make</title>
-      <link>http://rustyeddy.com/tags/make/</link>
-      <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/make/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>adafruit</title>
+      <title>Adafruit</title>
       <link>http://rustyeddy.com/tags/adafruit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -111,7 +21,7 @@
     </item>
     
     <item>
-      <title>arduino</title>
+      <title>Arduino</title>
       <link>http://rustyeddy.com/tags/arduino/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -120,7 +30,7 @@
     </item>
     
     <item>
-      <title>audio</title>
+      <title>Audio</title>
       <link>http://rustyeddy.com/tags/audio/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -129,7 +39,61 @@
     </item>
     
     <item>
-      <title>embedded</title>
+      <title>C</title>
+      <link>http://rustyeddy.com/tags/c/</link>
+      <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;</title>
+      <link>http://rustyeddy.com/tags/c&#43;&#43;/</link>
+      <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/c&#43;&#43;/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C/C&#43;&#43; Perl Python and Java</title>
+      <link>http://rustyeddy.com/tags/c-c&#43;&#43;-perl-python-and-java/</link>
+      <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/c-c&#43;&#43;-perl-python-and-java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cmake</title>
+      <link>http://rustyeddy.com/tags/cmake/</link>
+      <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/cmake/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computer Network Multicast</title>
+      <link>http://rustyeddy.com/tags/computer-network-multicast/</link>
+      <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/computer-network-multicast/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Develop Design</title>
+      <link>http://rustyeddy.com/tags/develop-design/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/develop-design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Embedded</title>
       <link>http://rustyeddy.com/tags/embedded/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -138,7 +102,16 @@
     </item>
     
     <item>
-      <title>firmware</title>
+      <title>Esp32</title>
+      <link>http://rustyeddy.com/tags/esp32/</link>
+      <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/esp32/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Firmware</title>
       <link>http://rustyeddy.com/tags/firmware/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -147,11 +120,38 @@
     </item>
     
     <item>
-      <title>single page app</title>
+      <title>Freertos</title>
+      <link>http://rustyeddy.com/tags/freertos/</link>
+      <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/freertos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Make</title>
+      <link>http://rustyeddy.com/tags/make/</link>
+      <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/make/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Single Page App</title>
       <link>http://rustyeddy.com/tags/single-page-app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/tags/single-page-app/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vue</title>
+      <link>http://rustyeddy.com/tags/vue/</link>
+      <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/vue/</guid>
       <description></description>
     </item>
     

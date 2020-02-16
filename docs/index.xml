@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About Me on Rusty Eddy</title>
@@ -31,9 +31,10 @@ Cutters. I manage five software projects, including two Web
 Applications for the control and calibration of the Laser system. I
 am also responsible for the successful delivery and maintanance of the
 products Firmaware and Fleet Management system.&lt;/p&gt;
+
 &lt;blockquote&gt;
-&lt;p&gt;C/C++, Go &amp;amp; Python, embedded systems and microservices.&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+&lt;p&gt;C/C++, Go &amp;amp; Python, embedded systems and microservices.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -46,9 +47,10 @@ products Firmaware and Fleet Management system.&lt;/p&gt;
 the provisioning of their Private Cloud Service offering. I was an
 individual contributor on this project. I collaborated with another
 developer.&lt;/p&gt;
+
 &lt;blockquote&gt;
-&lt;p&gt;Ansible, Linux, Python, Websockets, Networking&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+&lt;p&gt;Ansible, Linux, Python, Websockets, Networking
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -61,13 +63,16 @@ developer.&lt;/p&gt;
 Software Defined Networking (SDN) team. We were tasked with replacing
 the companies aging production Video Distribution Network with a new
 modernized design. Project goals included:&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;Replace aged network with modern SDN solution&lt;/li&gt;
 &lt;li&gt;Solution to incrementally replace existing production network&lt;/li&gt;
 &lt;li&gt;Development would build on industry standard OpenSource solutions&lt;/li&gt;
 &lt;li&gt;Had to be Reliable and Scalable&lt;/li&gt;
 &lt;li&gt;Linux, OpenFlow, Java and Python&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -81,9 +86,10 @@ hydrological gauging stations.  Data is gathered by pulling data from
 line of sight telemetry radios and NOAA/LRGS satellite ground
 stations. Data is fed to timeseries server for hydrological
 calculations and alert monitoring.&lt;/p&gt;
+
 &lt;blockquote&gt;
-&lt;p&gt;Timeseries database, C/C++, PHP, Python and Java.&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+&lt;p&gt;Timeseries database, C/C++, PHP, Python and Java.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -97,9 +103,12 @@ kernal.  Modified multicast routing daemon to run on same operating
 system allowing the product to serve as the foundation for a military
 grade network switch/router.  Added IPv6 Neighbor Discovery to the
 suite of routing protocols.&lt;/p&gt;
+
 &lt;blockquote&gt;
 &lt;p&gt;C/C++ and Network Routing Protocols; Real Time OS.&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -112,9 +121,12 @@ suite of routing protocols.&lt;/p&gt;
 games) from a single media source to hundreds of in­flight
 entertainment units with minimal redundancy.  Contributed to the
 design and development of an inflight entertainment server.&lt;/p&gt;
+
 &lt;blockquote&gt;
 &lt;p&gt;Perl, Python, C/C++ and Java&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -128,10 +140,11 @@ for the design, implementation and testing the complete suite of
 Multicast Routing protocols for the Cisco Carrier Routing System
 (CRS).  Worked this project from early design through product launch
 into maintenance.&lt;/p&gt;
+
 &lt;blockquote&gt;
 &lt;p&gt;Computer Networks, Multicast Routing, C/C++, Real Time, Distributed
-Systems&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+Systems
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -152,7 +165,8 @@ Systems&lt;/p&gt;
       <description>&lt;p&gt;Led the effort to add IGMP/PIM and Multicast Routing Information
 Base (MRIB) to the Open Source &lt;em&gt;GateD&lt;/em&gt; suite of routing protocols.
 Mentored graduate students and others that would eventually become
-prominent members of the computer networking community.&lt;/p&gt;</description>
+prominent members of the computer networking community.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -162,8 +176,8 @@ prominent members of the computer networking community.&lt;/p&gt;</description>
       
       <guid>http://rustyeddy.com/resume/jobs/retix/</guid>
       <description>Promoted to lead the team of 6 engineers that developed and automated test plans for L2 switches, OSPF, RIP and BGP
-  Implemented an automated test framework and led junior engineers in developing the automated test suites. C; C++; Perl; TCL
-  Provided 3rd level customer support, serious customer problems that could not be resolved by customer support or field engineers became my teams responsibility to diagnose and determine solutions and workarounds was required.</description>
+ Implemented an automated test framework and led junior engineers in developing the automated test suites. C; C++; Perl; TCL
+ Provided 3rd level customer support, serious customer problems that could not be resolved by customer support or field engineers became my teams responsibility to diagnose and determine solutions and workarounds was required.</description>
     </item>
     
     <item>
@@ -175,8 +189,10 @@ prominent members of the computer networking community.&lt;/p&gt;</description>
       <description>&lt;p&gt;Led a team of 5 Sysadmins responsible for the use and well being of
 Engineering Departments 300+ UNIX workstations, servers (Sun, HP, DEC)
 and network.&lt;/p&gt;
+
 &lt;p&gt;On a team that Developed a Real Time OS that was embedded in a variety
-of space and military projects.&lt;/p&gt;</description>
+of space and military projects.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -187,7 +203,8 @@ of space and military projects.&lt;/p&gt;</description>
       <guid>http://rustyeddy.com/resume/jobs/csu-chancelor/</guid>
       <description>&lt;p&gt;I was hired to install and manage the departments first AT&amp;amp;T Unix
 Mini-computers, UUNET connection and write a bulletin board system for
-California State Educators.&lt;/p&gt;</description>
+California State Educators.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -199,7 +216,8 @@ California State Educators.&lt;/p&gt;</description>
       <description>&lt;p&gt;Production software development for a Raspberry Pi is a fairly common
 thing now.  This is great for many reasons, but does have the downside
 that compiling large hunks of software on the PI is extremely
-slow compared to a modern laptop.&lt;/p&gt;</description>
+slow compared to a modern laptop.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -227,10 +245,12 @@ slow compared to a modern laptop.&lt;/p&gt;</description>
       
       <guid>http://rustyeddy.com/notes/advice-for-future-programmers/</guid>
       <description>&lt;p&gt;I have gathered some thoughts here for people just starting out, or
-thinking about becoming a programmer. I am no expert in this matter,
-but I have ben making a living as a software engineer (or similar
-term) for the last three decades, this is some of the lint I&amp;rsquo;ve
-gathered on the journey.&lt;/p&gt;</description>
+thinking about becoming a programmer. I am not an expert in job search
+or hiring,
+but I have been making a living as a software engineer for the last
+three decades. This is some of the lint I&amp;rsquo;ve gathered on my adventure
+(so far).
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -249,15 +269,15 @@ Well, I think it is clear that web apps are taking over the world. I am also lik
       <pubDate>Fri, 20 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/notes/bootstrap/</guid>
-      <description>&lt;p&gt;references:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://getbootstrap.com&#34;&gt;Bootstrap&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://hackerthemes.com/bootstrap-cheatsheet/&#34;&gt;Bootstrap Checklist&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+      <description>&lt;p&gt;references:
+  - &lt;a href=&#34;http://getbootstrap.com&#34;&gt;Bootstrap&lt;/a&gt;
+  - &lt;a href=&#34;https://hackerthemes.com/bootstrap-cheatsheet/&#34;&gt;Bootstrap Checklist&lt;/a&gt;&lt;/p&gt;
+
 &lt;p&gt;Every Web UI needs A little bit of styling to make a page or website
 not only readable, but be useable with out making your user throwup.
 Bootstrap is a great way to quickly get started building some nice and
-orderly looking web pages. A little more about Bootstrap now.&lt;/p&gt;</description>
+orderly looking web pages. A little more about Bootstrap now.
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -303,13 +323,17 @@ Developers write code and make things work, designers make things look good. But
       <guid>http://rustyeddy.com/resume/pubs/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Ramesh Govindan, et el.&lt;/strong&gt; &lt;em&gt;&amp;ldquo;An Architecture for Stable, Analyzable
 Internet Routing&amp;rdquo;&lt;/em&gt;, IEEE Network Magazine, Jan-Feb 1999.&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Rusty Eddy, Ramesh Govindan,&lt;/strong&gt; &lt;em&gt;&amp;ldquo;Testing Protocol Implementations
 with pkt&amp;rdquo;&lt;/em&gt;, Networld+Interop 99 Engineers Conference Proceedings, June
 1999&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Rusty Eddy&lt;/strong&gt;, &lt;em&gt;&amp;ldquo;Emulating Multicast Routing Protocols in a Software
 Defined Networking (SDN) Controller&amp;rdquo;&lt;/em&gt;, AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Rusty Eddy&lt;/strong&gt;, &lt;em&gt;&amp;ldquo;Testing Multicast SDN Networks in a Container&amp;rdquo;&lt;/em&gt;,
-AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;</description>
+AT&amp;amp;T 2016 Software Symposium
+&lt;/p&gt;</description>
     </item>
     
     <item>

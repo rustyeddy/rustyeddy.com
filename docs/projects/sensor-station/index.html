@@ -72,15 +72,21 @@
 	<div class="col"></div>
 	<div class="col-lg-8 pl-4 pr-4">
 	    <article class="article">
-		<p>SensorStation is built with an esp32 WRoom32 development board and a
+		
+
+<p>SensorStation is built with an esp32 WRoom32 development board and a
 connected temprature sensor with on chip wifi. The software runs an
 event loop with a timer periodically broadcasting the local current
 temperature via MQTT.</p>
+
 <blockquote>
 <p>TODO: place a pic of the breadboard</p>
 </blockquote>
+
 <h2 id="features">Features</h2>
+
 <p>Thermo32 has the following features currently implemented:</p>
+
 <ol>
 <li>Temperature sampling with a <a href="https://learn.adafruit.com/tmp36-temperature-sensor">tmp36 temperature</a></li>
 <li>On chip Wifi connection for Internet access</li>
@@ -89,7 +95,9 @@ temperature via MQTT.</p>
 broadcast.</li>
 <li>ESP-IDF / FreeRTOS, small, concurrent efficient and flexible.</li>
 </ol>
+
 <h3 id="feature-roadmap">Feature Roadmap</h3>
+
 <ol>
 <li>Limited history of previous reads (15 minute increments)</li>
 <li>HTTP Server with HTML pages to display time and temprature</li>
@@ -98,45 +106,61 @@ broadcast.</li>
 <li>MQTT configuration changes</li>
 <li>HTML configuration changes</li>
 </ol>
+
 <h2 id="resources">Resources</h2>
+
 <ul>
 <li>Github: <a href="http://github.com/rustyeddy/thermo32">http://github.com/rustyeddy/thermo32</a></li>
 <li>ESP32 Chip: <a href="http://esp32.org">ESP32</a></li>
 <li>ESP-IDF: <a href="https://docs.espressif.com/projects/esp-idf/en/latest/index.html">ESP-IDF</a></li>
 </ul>
+
 <h2 id="hardware">Hardware</h2>
+
 <p>The <em>Sensor Station</em> has been built on the esp32 with the FreeRTOS / ESP-IDF
 software package. The ESP32 comes with a number of pins that provide
 an astounding array of functionality.</p>
+
 <h3 id="bill-of-materials">Bill Of Materials</h3>
+
 <ul>
 <li>esp32 development board</li>
 <li>tmp36 temprature sensor</li>
 <li>LED and resistor</li>
 <li>breadboard and wires</li>
 </ul>
+
 <h3 id="schematic">Schematic</h3>
+
 <blockquote>
 <p>TODO: create a fritzing schematic of this layout</p>
 </blockquote>
+
 <h2 id="power-and-batteries">Power and Batteries</h2>
+
 <blockquote>
 <p>Todo: I need to research battery options for devices that will be
 completely wireless.</p>
 </blockquote>
+
 <h2 id="temperature-and-sampling">Temperature and Sampling</h2>
+
 <p>The chip is capabile of reading temperature samples much faster than
 we as humans can process. It is also possible that one or more of the
 samples may not have been read accurately due to various reasons. For
 that reason we take 64 samples back to back (in less than a second),
 average the samples together then determine the final <em>sampled</em>
 temperature.</p>
+
 <h3 id="samples-and-alarms">Samples and Alarms</h3>
+
 <p>Historic sampling of things like temperature are typically stored in
 increments of every 15 minutes or so. Since the esp32 is capable of taking
 samples much faster than every minute, we can also watch for anomolies like
 temperature spikes from something that caught on fire, for example.</p>
+
 <h2 id="historic-data-on-board">Historic Data On Board</h2>
+
 <p>We will keep a limited history of sensor data on chip in the event of
 the network being inaccessable or a new user wanting recent historical
 temperature readings.</p>

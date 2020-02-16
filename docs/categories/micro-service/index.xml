@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>micro service on Rusty Eddy</title>
+    <title>Micro Service on Rusty Eddy</title>
     <link>http://rustyeddy.com/categories/micro-service/</link>
-    <description>Recent content in micro service on Rusty Eddy</description>
+    <description>Recent content in Micro Service on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 19 Jan 2019 00:00:00 +0000</lastBuildDate>

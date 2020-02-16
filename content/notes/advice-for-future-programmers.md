@@ -8,42 +8,71 @@ category: rambling
 ---
 
 I have gathered some thoughts here for people just starting out, or
-thinking about becoming a programmer. I am no expert in this matter,
-but I have ben making a living as a software engineer (or similar
-term) for the last three decades, this is some of the lint I've
-gathered on the journey.
+thinking about becoming a programmer. I am not an expert in job search
+or hiring,
+but I have been making a living as a software engineer for the last
+three decades. This is some of the lint I've gathered on my adventure
+(so far).
 <!--more-->
 
 ## Too Many Shiny Things
 
-There are too many things to know. Period. So do NOT try to learn
-everything, rather determine the _right_ set of things to become
-really good at, and learn how to figure the otherstuff out as you need
-to. 
+There are too many things to know. Period. Do NOT try to learn
+everything. Rather determine what you want to become better at right
+now. Focus on that particular skill until you can do something useful
+and the key concepts have been cemented in your head.
+
+> A relatively short period of intense focus can produce skills
+> that can be profitably relied on for years to come.
+
+On the other hand fleeting around with every little JavaScript
+framework that floats by will leave you in a permanent state of being
+_dazed and confused_. 
+
+You can move on to something different, knowing you have a solid tool
+in your growing tool belt.
 
 ### Techs Come and Techs Go
 
-Technologies come (and sometimes go) at blinding rates to the point it
+Technologies come (and mostly go) at blinding rates to the point it
 can very easily and thouroughly wreck a programmers **true
-productivity** toward occomplishing something useful. 
+productivity**. 
+
+By _productivity_ I mean satisfying the end users desires by placing
+the _needs of the project_ **above** _the needs of the technology_. 
+
+Sometimes a less elegent solution quickly and perfectly solves a
+customers problem. Please, note, I am not refering to laziness that
+results in mounting technical debt. 
+
+What I am talking about is putting away the shotgun. Sometimes the
+sole of a shoe is a perfectly fine way to kill a roach.
 
 To excell at programming (or anything for that matter) one must see a
-project through to an efficient and usefull end product.  To do this,
-it is critical to stay focused on **what** you are trying to get the
-application to do, NOT on **how** you can or can not do it.
+project through to an efficient and usefull end product.  To be
+**successful** it is critical to stay focused on **what** you are
+doing and not get distracted with **how** you are doing it.
 
 ## Learn Everywhere
 
 Get a degree in Computer Science, go to a reputable Code Camp, take
-some online sources, yes, you can learn from all of the above. I have
-my prefrences, but at the end of the day:
+some online courses, yes, you can learn from all of the above. I have
+my prefrences, but at the end of the day...
 
-Can you deliver an application that makes your user happy. Stay
-focused on them, where you learned to do things and how you learned to
-do them are all secondary to:
+The only thing that matters is you delivering the software that most
+efficiently solves the customers problems, (typically) with as little
+expense as possible.
 
-> Learn to listen to your client and solve there problem, you will be
+### Most Important, Listen ...
+
+Can you deliver an application that makes your end user happy, staying
+focused on them and their needs?  Where you were trained and what you
+learned will become a very distant second.
+
+> Learn to listen to your client and solve their problem, you will be
 > a winner!
+
+You learn something almost _everywhere_, if you pay attention.
 
 ## Get Real Experience
 
