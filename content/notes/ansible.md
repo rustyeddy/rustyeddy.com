@@ -89,3 +89,64 @@ provisioned_. This is ideal, allowing us to create 100% __zero touch__
 provisioning! 
 
 anyway, back to ansible...
+
+## Using Ansible to Setup Devops
+
+Setting up a _personal development_ host can be tedious, depending on
+the particular tools you use. In my particular case, most of my
+development is done on Linux, for either Linux or some embedded system
+and I use _emacs_.
+
+> yes, I use the greatest editor that has ever lived, and still lives!
+
+Installing emacs is pretty trivial if you are content with your
+operating systems package manager. For example, I often use ubuntu
+(ubuntu19) at the time of this writing.
+
+The package manage (apt) installs emacs-25, bummer. Often times, I am
+more than happy to go with day old tools and such (if they worked
+before, they should still work just fine), however, emacs in this case
+is a whole version behind.
+
+> raspbian installs emacs25, I want emacs26
+
+Now, I could go through the trouble of setting up the package manager
+to update the latest version, but in my case, I think I will just
+build and install it from src.
+
+I want to build this for my new Raspberry Pi 4(!). I am doing some
+development for the Raspberry PI, and I find the Pi4 compiles **much
+faster** than the older pis.
+
+And emacs is plenty spry enough to happily run on the rpi4.
+
+However, building emacs does require quite a bit of supporting
+libraries if you want to build it with _windowing support_, which I
+do. 
+
+> you can actually build emacs to run as a pure terminal application..
+
+The above is a really cool option in some cases, however I want to add
+GTK-3 support because I will be X-ing into the (often headless) RPI4.
+
+> after some failed ./configure attempts and subsequent apt-get
+> installs ..
+
+I finally got the complete series of steps down to successfully build
+emacs-26 for the latest version of raspberry pi. If you follow the
+steps in order it is pretty easy to do, you just have to wait a
+while. 
+
+### Emacs Compilation (Raspberry Pi) in Ansible
+
+I decided to encode the series of steps to compile and install emacs
+with an ansible-playbook. It works on Raspberry pi, I have not tried
+ubuntu or another form of debian, but I expect that will work also.
+
+> Here is the gist for my ansible install and build emacs
+
+
+### Running the Playbook
+
+> Todo insert instructions to run playbook here.
+
