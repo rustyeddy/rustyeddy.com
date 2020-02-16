@@ -4,6 +4,10 @@ date: 2019-03-03
 draft: true
 ---
 
+## Synchronous vs. Asynchronous
+
+### Blocking and Non-Blocking
+
 A pratical example of asynchronous is a "blocking" call
 vs. non-blocking call.  For example you are going to call a web
 service to gather a lot of data, it will take a long time.  You can:

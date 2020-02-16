@@ -17,26 +17,35 @@ Of it earlier this month I set out to start streaming video From the
 CSI camera, that is a raspberry pie camera, From a moving vehicle for
 the vehicles guidance and navigation.
 
-I was surprised to find the the whole world is streaming video
-is Incredibly complex, NFL 2019 we do not have A solution that is easy
-universally adopted. 
+I was surprised to find that the whole world of streaming video is
+Incredibly complex. In 2019 we are streaming everything from stupid
+instagram videos to the NFL, yet do not have A solution that is easy
+universally adopted.
 
 ## TLDR; Gstreamer RTSP Pipeline
 
-We are streaming our video from a Raspberry Pi Camera (CSI) attached
-to, either a Raspberry Pi or a Jetson Nano, GST extracts the video
-from the CSI camera using a custom driver (raspicamsrc or nvargussrc)
-for the RPi or Nano respectively.
+We can stream video righout out of our Raspberry Pi's Camera (CSI)
+attached to, either a Raspberry Pi or a Jetson Nano, GST extracts the
+video from the CSI camera using a custom driver (raspicamsrc or
+nvargussrc) for the RPi or Nano respectively.
 
 ### Camera Generates Hidef and Lodef Streams
 
-Two streames are sent from two active video ports on the camera,
-highres and a lowres streams, the streams are independently passed
-through gstreamer pipelines to be encoded and scaled accordingly.
+Two streames are sent from two active video ports on the camera (of
+highres and a lowres streams course you gotta ask for it), the streams
+are independently passed through gstreamer pipelines to be encoded and
+scaled accordingly. 
 
 ### RTSP Live Video Endpoints
 
-The RTSP server created two _"endpoints"_ 
+The RTSP server created two _"endpoints"_ that can be attached to
+recieve the video to be viewed or stored, etc. So in some cases it
+can make sense to have every video camera be the RTSP server.
+
+The RTSP server does not necessarily serve the video, you can have a
+single RTSP server manage a variety of remote cameras.
+
+> Fact check: is the above really true?
 
 
 ## No Simple Choice to Stream Live Video
@@ -50,9 +59,10 @@ reviews including the browsers people select.
 
 We have a number of protocols for live streaming.
 
-### RTSP For Local Consumption
+### GStreamer for Video
 
-Jesus comes live command line utilities or tool GST launchThat makes
+GStreamer comes as a command line utilities or the tool GST launch
+that make experimenting with various _video pipelines_ quite easy.
 it easy to experiment and bill with a callPipelines with.  Well that
 tool is extremely powerful and many people use itAsset application
 framework directly, gst-launch-1.0 Was never meant to be an
