@@ -250,15 +250,9 @@ I think it is clear that web apps are taking over the world. It is a powerful no
       <pubDate>Fri, 20 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/notes/bootstrap/</guid>
-      <description>&lt;p&gt;references:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://getbootstrap.com&#34;&gt;Bootstrap&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://hackerthemes.com/bootstrap-cheatsheet/&#34;&gt;Bootstrap Checklist&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Every Web UI needs A little bit of styling to make a page or website
-not only readable, but be useable with out making your user throwup.
-Bootstrap is a great way to quickly get started building some nice and
-orderly looking web pages. A little more about Bootstrap now.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Bootstrap is a great way to get your ugly little fledgling website
+into something respectable in no time. Do not waste time futzing with
+silly formating directives, focuse on the site itself!&lt;/p&gt;</description>
     </item>
     
     <item>
