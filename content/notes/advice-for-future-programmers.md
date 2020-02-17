@@ -55,7 +55,7 @@ doing and not get distracted with **how** you are doing it.
 
 ## Learn Everywhere
 
-Get a degree in Computer Science, go to a reputable Code Camp, take
+Get a degree in Computer Science, go to a reputable Code Camp. Take
 some online courses, yes, you can learn from all of the above. I have
 my prefrences, but at the end of the day...
 
@@ -74,20 +74,15 @@ learned will become a very distant second.
 
 You learn something almost _everywhere_, if you pay attention.
 
-## Get Real Experience
-
-It is absolutely critical that your software get into the hands of
-_real users_ that provide _real feedback_ of your work. You need to
-take these inputs prioritize them, determine which features can
-reasonably implemented, develop and deliver.
-
 ### Fix Open Source Bugs
 
-There are great Open Source projects and there a zillions of bugs to
-be fixed, that would make the world a better place if they are fixed.
+One of the best things you can do to get your career started (or
+rejuvinated) is working on real problems with modern technology.
+There is no better place than a good Open Source project to get that
+experience.
 
-Go find one, mesh with the community, fix it, submit it, go through
-reviews, modify your changes, live through a commit to master.
+Go find a good one, mesh with the community, fix some bugs
+and get humbled a few times:
 
 You will have done several things:
 
@@ -95,9 +90,9 @@ You will have done several things:
 2. Learned a lot of very valuable supporting tech skills
 3. Learned to deal with people to accomplish a common goal
 4. Grew thick enough skin to deal with an asshole or two
-5. You have some gold stars to hang by your name.
+5. Hang some gold stars by your name.
 
-And more important than all of that, you most likely impressed some
+More important than all of that, you most likely impressed some
 powerful and influencial hackers that could quite possibly lead to an
 exciting and florishing career!
 
