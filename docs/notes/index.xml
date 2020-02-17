@@ -43,8 +43,8 @@ three decades. This is some of the lint I&amp;rsquo;ve gathered on my adventure
       <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/notes/vue-frontends/</guid>
-      <description>Every piece of software that gets used has to speak to the external world somehow. Some might be programattically through messaging or REST, it may be a human with a GUI based desktop or perhaps a Web app.
-Well, I think it is clear that web apps are taking over the world. I am also like the fact that web applications can pretty much run on anything (not just a windows machine, or IOS phone), but anything with a browser.</description>
+      <description>Every piece of software that exists has to speak to the external world in some manner. It might be programattically through messaging or an API call. It could be a human clicking through an GUI on our laptop or phone.
+I think it is clear that web apps are taking over the world. It is a powerful notion that they can pretty much run on any computing devices that support a browser, which is almost everything with a screen.</description>
     </item>
     
     <item>
