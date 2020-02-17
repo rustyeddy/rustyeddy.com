@@ -5,8 +5,8 @@ category: frontend
 tags: vue
 description: >
   VueJS is a JavaScript framework that has become immensly popular in
-  recent years for good reason in my humblest of opinions.  Check it
-  out, what do you think?
+  recent years for good reason in my humble opinion.  I am specifically
+  interested in using vue to develop kiosk style dashboards.
 todo:
   - place links to vue resources
   - list what I have accomplished with vue so far
@@ -14,57 +14,70 @@ resources:
   - http://vuejs.org
 ---
 
-Every piece of software that gets used has to speak to the external
-world somehow. Some might be programattically through messaging or
-REST, it may be a human with a GUI based desktop or perhaps a Web app.
+Every piece of software that exists has to speak to the external world
+in some manner. It might be programattically through messaging or an
+API call. It could be a human clicking through an GUI on our laptop or
+phone.
 
-Well, I think it is clear that _web apps_ are taking over the world. I
-am also like the fact that web applications can pretty much run on
-anything (not just a windows machine, or IOS phone), but _anything_
-with a browser.
+I think it is clear that _web apps_ are taking over the world. It is a
+powerful notion that they can pretty much run on any computing devices
+that support a _browser_, which is almost everything with a screen.
 
-- web apps run on anything
-- web apps run from anywhere
-- web apps are not dependent on server or browser
+> for embedded systems check out the WPE project!
 
-So that means that almost all of my projects, which are basically IoT
-type of projects will need some form of human GUI, therefore I figure
-the smartest thing I could do is:
+That means that projects in the IoT space that need some form of human
+GUI can benefit from one of the largest develop echo systems in
+existance, web development.
 
 > learn to develop a modern web app, then my stuff will run
 > everywhere! 
 
-## Webapp Run from Anywhere
+## Learning Java Script
 
-I am using [_VUE_](http://vuejs.org) to develop the frontend of
-[_SPAClock_](http://rustyeddy.com/projects/spaclock). I am not a
-JavaScript developer and I am only modestly familiar with JavaScript
-and it's endless myriad of build tools and things.
+I am not much of a _Front End_ developer. I do know HTML and CSS, SCSS
+fairly well, though my joy and enthusiasm dicking with layouts and css
+nuances quickly runs thin..
 
-I've browsed about and listned to lots of the Angular, React, Ember,
-Vue just seems fit a bit better without demanding a wrecking ball
-approach to development.
+But I do realize, and appreciate the value of a well done User
+Interface leading to an excellent User eXperience! The type of work I
+do needs to communicate complex thought in real time, sometimes with
+sifting through lots of data.
 
-## I am using training wheels
+So I want to become comfortable with a powerful, flexible and
+well known way to develop IoT dashboards. 
 
-I just inlclude the CDN links and have started using VUE for fairly
-simple UI tasks. 
+### Go with the VUE
 
-My real goal here is to start using the SinglePageCompenents, I am
-particularly interested in the html style templates, rather than try
-to edit them as strings (DOUBLE CAPITAL YUUUUUUKK!).
+Of all the JavaScript frame works [_VUE_](http://vuejs.org) just seems
+to be the best fit for what I'm trying to do. I plan to use the
+[_SPAClock_](http://rustyeddy.com/projects/spaclock) project to create
+a great VUE interface.
+
+## CDN and Training Wheels
+
+I just include the CDN link to the vue.js package and have coded some
+very simple UI tasks. 
+
+My real goal here is to start using the _Single Page Components_ and
+being able to take advantage of reusable interface packages. 
+
+I am not looking forward to getting lost in the JavaScript package
+manager hell...
 
 ### What Have I Done?
 
-Todo: make a list of what I have accomplished with vue so far... 
+So far not much more than the intro tutorials, I need to make another
+pass at giving the front end of the SPAClock a great VUE!
 
-My main question now is
+My main question now is:
 
 > Do I need to use vue-cli or straight to some build set? Can I stick
-> to the CDM?
+> to the CDN?
 
 I do not know the answer to this question yet. If you would like me to
-find the answer, just ask, I will!!!
+find the answer, just ask, I will!!!  Even better, if you can answer
+this question, please do!
 
 Chow Dog!
+
 
