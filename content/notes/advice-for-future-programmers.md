@@ -5,6 +5,7 @@ description: >
   Here is my advice to you if you are beginning to program, or
   thinking about starting and want to do it for money. 
 category: rambling
+draft: true
 ---
 
 I have gathered some thoughts here for people just starting out, or
