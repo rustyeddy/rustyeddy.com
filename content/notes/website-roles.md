@@ -5,6 +5,7 @@ description: >
   So you are going to have a website built and you are not sure how to hire?  A website designer, a developer? What is the difference? We will cover these differences in this article.
 category: develop
 tags: develop, design
+draft: true
 ---
 
 Should I hire a _web designer_ or _web developer_ and what is the difference?

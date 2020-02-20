@@ -6,6 +6,7 @@ description: >
   without having to futz much at all with css.
 todo:
   - images of some bootstrap examples
+draft: true
 ---
 
 Bootstrap is a great way to get your ugly little fledgling website

@@ -7,6 +7,7 @@ description: >
 category: programming
 tags: [ make, cmake, c, c++ ]
 reference: https://cmake.org/cmake/help/latest/guide/tutorial/index.html
+draft: true
 ---
 
 The Unix build tool is a _declarative dependency tracking build tool_.
