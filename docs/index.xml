@@ -209,30 +209,6 @@ California State Educators.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Sensor Station</title>
-      <link>http://rustyeddy.com/projects/sensor-station/</link>
-      <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/projects/sensor-station/</guid>
-      <description>SensorStation is built with an esp32 WRoom32 development board and a connected temprature sensor with on chip wifi. The software runs an event loop with a timer periodically broadcasting the local current temperature via MQTT.
- TODO: place a pic of the breadboard
- Features Thermo32 has the following features currently implemented:
- Temperature sampling with a tmp36 temperature On chip Wifi connection for Internet access MQTT client to advertise temperature to broker LED flashes to indicate temperature has been sampled and broadcast.</description>
-    </item>
-    
-    <item>
-      <title>SPA Clock</title>
-      <link>http://rustyeddy.com/projects/spaclock/</link>
-      <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/projects/spaclock/</guid>
-      <description>Description SPA Clock is an embedded webserver intended to run on a Rasberry Pi (or similar linux system) with a touchscreen and Internet connection.
-This clock comes with Zero Touch configuration. Just plug it in, connect it to the internet and always have accurate time!
- Even through power outages and timezone changes, you&amp;rsquo;ll never have to reset your clock again.
- Now wait, that is not all! You also get other cool things like the date and current local weather!</description>
-    </item>
-    
-    <item>
       <title>Publications</title>
       <link>http://rustyeddy.com/resume/pubs/</link>
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
@@ -247,17 +223,6 @@ with pkt&amp;rdquo;&lt;/em&gt;, Networld+Interop 99 Engineers Conference Proceed
 Defined Networking (SDN) Controller&amp;rdquo;&lt;/em&gt;, AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Rusty Eddy&lt;/strong&gt;, &lt;em&gt;&amp;ldquo;Testing Multicast SDN Networks in a Container&amp;rdquo;&lt;/em&gt;,
 AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Orange County Low Vision Website</title>
-      <link>http://rustyeddy.com/projects/oclv-website/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/projects/oclv-website/</guid>
-      <description>Orange County Low Vision is old-school when it comes to personal customer service. According to Kelly Eddy, the owner of OCLV:
- &amp;ldquo;Many of our clients are well into their 80&amp;rsquo;s and above, further more we typically do business in their homes. Trust is everything.&amp;rdquo;
- Since Personal Service and Trust have always been the foundation of OCLV &amp;ldquo;business&amp;rdquo; model, it is impairative the new website project reflect the same personable reality, yet leverage the internet to the benefit of the business and the client.</description>
     </item>
     
   </channel>

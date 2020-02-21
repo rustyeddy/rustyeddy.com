@@ -90,36 +90,6 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/categories/</loc>
-    <lastmod>2019-05-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/esp32/</loc>
-    <lastmod>2019-05-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/freertos/</loc>
-    <lastmod>2019-05-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/categories/iot/</loc>
-    <lastmod>2019-05-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/projects/sensor-station/</loc>
-    <lastmod>2019-05-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/</loc>
-    <lastmod>2019-05-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/resume/</loc>
     <lastmod>2019-05-15T00:00:00+00:00</lastmod>
   </url>
@@ -127,31 +97,6 @@
   <url>
     <loc>http://rustyeddy.com/</loc>
     <lastmod>2019-05-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/projects/</loc>
-    <lastmod>2019-05-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/categories/fullstack/</loc>
-    <lastmod>2019-01-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/categories/micro-service/</loc>
-    <lastmod>2019-01-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/projects/spaclock/</loc>
-    <lastmod>2019-01-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/c/c&#43;&#43;-perl-python-and-java/</loc>
-    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -165,8 +110,16 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/resources/</loc>
-    <lastmod>2017-04-03T00:00:00+00:00</lastmod>
+    <loc>http://rustyeddy.com/tags/</loc>
+    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/c/c&#43;&#43;-perl-python-and-java/</loc>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/categories/</loc>
   </url>
   
   <url>
@@ -175,10 +128,6 @@
   
   <url>
     <loc>http://rustyeddy.com/tags/firmware/</loc>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/projects/oclv-website/</loc>
   </url>
   
   <url>
