@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>About Me on Rusty Eddy</title>
+    <title>Rusty Eddy</title>
     <link>http://rustyeddy.com/</link>
-    <description>Recent content in About Me on Rusty Eddy</description>
+    <description>Recent content on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://rustyeddy.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -256,30 +256,6 @@ silly formating directives, focuse on the site itself!&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Sensor Station</title>
-      <link>http://rustyeddy.com/projects/sensor-station/</link>
-      <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/projects/sensor-station/</guid>
-      <description>SensorStation is built with an esp32 WRoom32 development board and a connected temprature sensor with on chip wifi. The software runs an event loop with a timer periodically broadcasting the local current temperature via MQTT.
- TODO: place a pic of the breadboard
- Features Thermo32 has the following features currently implemented:
- Temperature sampling with a tmp36 temperature On chip Wifi connection for Internet access MQTT client to advertise temperature to broker LED flashes to indicate temperature has been sampled and broadcast.</description>
-    </item>
-    
-    <item>
-      <title>SPA Clock</title>
-      <link>http://rustyeddy.com/projects/spaclock/</link>
-      <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/projects/spaclock/</guid>
-      <description>Description SPA Clock is an embedded webserver intended to run on a Rasberry Pi (or similar linux system) with a touchscreen and Internet connection.
-This clock comes with Zero Touch configuration. Just plug it in, connect it to the internet and always have accurate time!
- Even through power outages and timezone changes, you&amp;rsquo;ll never have to reset your clock again.
- Now wait, that is not all! You also get other cool things like the date and current local weather!</description>
-    </item>
-    
-    <item>
       <title>Designers and Developers, What is the Difference?</title>
       <link>http://rustyeddy.com/notes/website-roles/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
@@ -349,17 +325,6 @@ So Many Makes, So Little Time In that time, especially during the early years of
 Link to the documentation.
 The shield can also be jumpered and booted into Midi Mode and turned into a drum machine or a Garageband type of play along, this might be fun!
 I suppose we could also add a microphone to record sound for some kind of reason.</description>
-    </item>
-    
-    <item>
-      <title>Orange County Low Vision Website</title>
-      <link>http://rustyeddy.com/projects/oclv-website/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/projects/oclv-website/</guid>
-      <description>Orange County Low Vision is old-school when it comes to personal customer service. According to Kelly Eddy, the owner of OCLV:
- &amp;ldquo;Many of our clients are well into their 80&amp;rsquo;s and above, further more we typically do business in their homes. Trust is everything.&amp;rdquo;
- Since Personal Service and Trust have always been the foundation of OCLV &amp;ldquo;business&amp;rdquo; model, it is impairative the new website project reflect the same personable reality, yet leverage the internet to the benefit of the business and the client.</description>
     </item>
     
   </channel>

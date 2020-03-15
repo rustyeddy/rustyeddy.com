@@ -21,24 +21,6 @@
     </item>
     
     <item>
-      <title>esp32</title>
-      <link>http://rustyeddy.com/tags/esp32/</link>
-      <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/esp32/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>freertos</title>
-      <link>http://rustyeddy.com/tags/freertos/</link>
-      <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/freertos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>develop, design</title>
       <link>http://rustyeddy.com/tags/develop-design/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
@@ -48,11 +30,11 @@
     </item>
     
     <item>
-      <title>C/C&#43;&#43;, Perl, Python and Java</title>
-      <link>http://rustyeddy.com/tags/c/c&#43;&#43;-perl-python-and-java/</link>
+      <title>c</title>
+      <link>http://rustyeddy.com/tags/c/</link>
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/tags/c/c&#43;&#43;-perl-python-and-java/</guid>
+      <guid>http://rustyeddy.com/tags/c/</guid>
       <description></description>
     </item>
     
@@ -62,15 +44,6 @@
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/tags/computer-network-multicast/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>c</title>
-      <link>http://rustyeddy.com/tags/c/</link>
-      <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/c/</guid>
       <description></description>
     </item>
     
@@ -125,6 +98,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/tags/audio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C/C&#43;&#43;, Perl, Python and Java</title>
+      <link>http://rustyeddy.com/tags/c/c&#43;&#43;-perl-python-and-java/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/c/c&#43;&#43;-perl-python-and-java/</guid>
       <description></description>
     </item>
     
