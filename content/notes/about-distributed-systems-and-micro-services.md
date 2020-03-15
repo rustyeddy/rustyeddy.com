@@ -7,6 +7,7 @@ description: >
   with. This present opportunity to carry this rigor of formality
   through out system design.
 category: rambling
+draft: true
 ---
 
 I am very much dedicated to building distributed, micro-service style
