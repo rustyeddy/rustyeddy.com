@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Rusty Eddy</title>
@@ -12,16 +12,7 @@
     
     
     <item>
-      <title>C/C&#43;&#43; Perl Python and Java</title>
-      <link>http://rustyeddy.com/tags/c-c&#43;&#43;-perl-python-and-java/</link>
-      <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/c-c&#43;&#43;-perl-python-and-java/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Computer Network Multicast</title>
+      <title>Computer Network, Multicast</title>
       <link>http://rustyeddy.com/tags/computer-network-multicast/</link>
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
       
@@ -30,7 +21,16 @@
     </item>
     
     <item>
-      <title>Embedded</title>
+      <title>C/C&#43;&#43;, Perl, Python and Java</title>
+      <link>http://rustyeddy.com/tags/c/c&#43;&#43;-perl-python-and-java/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/c/c&#43;&#43;-perl-python-and-java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>embedded</title>
       <link>http://rustyeddy.com/tags/embedded/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -39,16 +39,7 @@
     </item>
     
     <item>
-      <title>Esp32</title>
-      <link>http://rustyeddy.com/tags/esp32/</link>
-      <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/esp32/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Firmware</title>
+      <title>firmware</title>
       <link>http://rustyeddy.com/tags/firmware/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -57,16 +48,7 @@
     </item>
     
     <item>
-      <title>Freertos</title>
-      <link>http://rustyeddy.com/tags/freertos/</link>
-      <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/freertos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Single Page App</title>
+      <title>single page app</title>
       <link>http://rustyeddy.com/tags/single-page-app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

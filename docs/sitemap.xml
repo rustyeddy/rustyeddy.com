@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -80,6 +80,12 @@
   </url>
   
   <url>
+    <loc>http://rustyeddy.com/</loc>
+    <lastmod>2020-01-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://rustyeddy.com/resume/summary/</loc>
     <lastmod>2020-01-02T00:00:00+00:00</lastmod>
   </url>
@@ -87,11 +93,6 @@
   <url>
     <loc>http://rustyeddy.com/resume/skills/</loc>
     <lastmod>2020-01-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/projects/sensor-station/</loc>
-    <lastmod>2019-05-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -105,8 +106,8 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/projects/spaclock/</loc>
-    <lastmod>2019-01-19T00:00:00+00:00</lastmod>
+    <loc>http://rustyeddy.com/tags/computer-network-multicast/</loc>
+    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -115,90 +116,33 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/</loc>
-    <lastmod>1996-01-02T00:00:00+00:00</lastmod>
+    <loc>http://rustyeddy.com/tags/</loc>
+    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://rustyeddy.com/lander/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/tags/c-c&#43;&#43;-perl-python-and-java/</loc>
-    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>http://rustyeddy.com/tags/c/c&#43;&#43;-perl-python-and-java/</loc>
   </url>
   
   <url>
     <loc>http://rustyeddy.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/computer-network-multicast/</loc>
-    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://rustyeddy.com/tags/embedded/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/esp32/</loc>
-    <lastmod>2019-05-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://rustyeddy.com/tags/firmware/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/freertos/</loc>
-    <lastmod>2019-05-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/categories/fullstack/</loc>
-    <lastmod>2019-01-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/categories/iot/</loc>
-    <lastmod>2019-05-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/categories/micro-service/</loc>
-    <lastmod>2019-01-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/projects/oclv-website/</loc>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/projects/</loc>
-    <lastmod>2019-05-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://rustyeddy.com/tags/single-page-app/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/</loc>
-    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>
