@@ -5,6 +5,7 @@
 	</div>
     </div>
     {{ with .GetPage "/resume/clients/_index.md" }}
+
     <div class="row job">
 	<div class="col-3 text-right">
 	    <h5 class="jobtitle">Eddy Consulting, LLC</h5>
@@ -19,14 +20,14 @@
 
     </div> <!-- row -->
 
-    <div class="row">
+    <div class="row mt-4 mb-1">
 	<div class="col text-center">
 	    <h5 class="company mb-0 pb-0">Partial Client List</h5>
 	</div>
     </div>
 
     {{ range .Pages }}
-    <div class="row">
+    <div class="row mt-1">
 	<div class="col-3">
 	    <div class="text-right client text-muted">
 		{{ .Params.company }}
@@ -45,7 +46,7 @@
     {{ $jobs := .Site.GetPage "/resume/jobs" }}
     {{ range $jobs.Pages }}
 
-    <div class="row job">
+    <div class="row job mt-4">
 	<div class="col-3 text-right">
 	    <h6 class="jobtitle">{{ .Params.company }}</h6>
 	    <div class="duration">
