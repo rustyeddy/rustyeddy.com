@@ -12,8 +12,6 @@ Robotics, IoT and Manufacturing space.
 > There is nothing like writing a program to bring a piece of hardware
 > to life! Or get two pieces of equipment to "talk" to one another.
 
-{{< contact >}}
-
 I live in Huntington Beach CA, with my family, contribute to maker
 projects and tinker with home and vehical automation when I am not
 surfing. 
