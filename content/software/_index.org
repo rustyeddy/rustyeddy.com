@@ -1,4 +1,85 @@
 #+title: The Software Development Process
 #+date: 2020-04-05
 
-* Software Development Gone Wild
+* TODO Choose a headline 
+** Or better yet, split test
+** Stop your software project from going wild
+
+It's like being a parent that finds their teenage daughter starring in
+/Girls Gone Wild/. 
+
+Things have spun out of control and you have no idea how they got to
+this point. They are probably wondering if things, some sense of
+normalcy, peace and control can ever return.
+
+** Do NOT loose sleep over your next software project. 
+
+Waking up in a cold sweat from a night mare about bugs, not the icky
+creepy crawly kind ...
+
+Sorry for the predictable, cheesy and yet, unavoidable analogy. 
+
+Anyway, if you find yourself wondering what the /developers/ on your
+team are talking about, or wondering why team members can never
+remember what you told them, even after them two or three
+times. 
+
+Believe it or not, if you embrace /a process/, I am /not/ talking
+about a intrusive oger of tasks and reports that amount to throwing 6
+inches of molases on a race track before a 100 yard dash.
+
+No, I am talking about a sweet, /Just Enough Process (JEP)/ to keep
+the entire team organized, tasks and goals /clearly/ stated and all
+vital communication recorded for accuracy and perhaps posterity.
+
+Yep, you can ... 
+
+* Process Your Problems AWAY!
+
+Through JEP you can start gaining a sense of clarity that will lead to
+a team that is huddled around a single and unified goal. All with a
+clear vision of a **successful outcome** looks like, and the passion
+to move the project to the only real definition of **success**: a joy
+filled customer!
+
+Here are the /most/ important elements of a /successful software
+project/, IMHO. The following list is far from exhaustive, hell we
+don't have the room (or enough of your or my attention) to cover
+everything, but.
+
+Following these guidelines will get you off to a good start.
+
+** Clarity and Unification toward a single Goal
+*** The big idea or objective
+*** First pass at Milestones and an MVP
+** Staying in Sync
+*** Version Control
+** Testing
+*** Test Plans Preceed Development
+*** Test plans Tie to Milestones and Tasks
+** Deploy and Updates
+*** Bugs will be found, prompt fixes are expected
+*** New wonderful features will be expected
+*** A seemless, zero touch upgrade experience will be GREATLY appreciated! 
+** Capturing Feedback
+
+Make it easy for customers to report bugs so you can squash the bug
+in a prompt and painless manner.
+
+Your customers are going to expect /wonderful new features/, so you
+will certainly want to get them to your clients as prompt and painless
+as possible.
+  
+** Adding Some Analytics
+Deployed software is a living being and needs to /live/
+somewhere. Living spaces ain't free, a little bit of budgeting and
+tracking can help you make decisions that will save lots of cash.
+
+Also find weak links in your system that could be pissing your visitor
+off. If we are pissing our visitors off, we at least better know why,
+and most of them will not take the time to tell us why...
+
+* Summary
+
+Do the above things when you are developing software and all of our
+lives are bound to get better, right?
