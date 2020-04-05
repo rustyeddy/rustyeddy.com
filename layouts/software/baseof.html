@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head-cheese.html" . -}}
+    <body>
+	{{- partial "header.html" . -}}
+
+	<div id="main">
+
+	    {{- block "main" . -}}
+	    {{- partial "content.html" . -}}
+  	    {{ end }}
+
+	</div>
+	{{- block "footer" . -}}
+	{{- partial "footer.html" . -}}
+	{{ end }}
+    </body>
+</html>

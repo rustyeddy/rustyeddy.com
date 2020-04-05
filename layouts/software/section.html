@@ -1,0 +1,37 @@
+{{ define "main" }}
+<div class="container">
+
+    <div class="row mt-5">
+	<div class="col"></div> <!-- col-2 -->
+	<div class="col-8">
+	    <article class="article">
+		{{ .Content }}
+	    </article>
+	</div>
+	<div class="col"></div> <!-- col-2 -->
+    </div>
+
+    {{ range .Pages }}
+    <div class="row">
+	<div class="col"></div> <!-- col-2 -->
+	<div class="col-8">
+	    <h2 class="title text-center">
+		<a href="{{ .Permalink }}">{{ .Title }}</a>
+	    </h2>
+	</div> <!-- col -->
+	<div class="col"></div>
+    </div>
+
+    <div class="row mb-3">
+	<div class="col text-mute small text-right">
+	</div> <!-- col-2 -->
+	<div class="col-8">
+	    <div class="description">
+		{{ .Content }}
+	    </div>
+	</div> <!-- col -->
+	<div class="col"></div>
+    </div>
+    {{ end }}
+</div>
+{{ end }}

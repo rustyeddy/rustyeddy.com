@@ -1,5 +1,6 @@
 #+title: The Feedback Loop Bugs Tracking and Feature Requests
 #+date: 2020-04-05
+#+weight: 50
 
 As we pointed out on the previous page, we know there are going to
 [occaisonal] bugs and we can expect an onslaught of feature requests. 

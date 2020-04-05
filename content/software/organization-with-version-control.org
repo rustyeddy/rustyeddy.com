@@ -1,11 +1,27 @@
 #+title: Organization with Version Control
 #+date: 2020-04-05
+#+weight: 20
+
+With at least a first slash at some milestones and goals that the
+entire team can huddle around. 
+
+** Let's roll up our sleeves and get Buzzin!
+
+But before we scatter to our cubes and bury our heads behind
+terminals, let's all agree to get on the same page by choosing a set
+of tools (manual or electric) that we all are going to agree on using
+in a /consistent and collaborative way/!
 
 It is even more amazing the number of /professionals/ that still make
 local copies to files of all sorts and then attempt to /synchronize/
 all change by emailing files back and forth.
 
-** Stop It!
+*** Stop It!
 
 We are in the ~20th century folks!~, I mean the 21st century! Let's
-get our /shit together/ and start using /version control/.
+get our /shit together/ and start using /version
+
+** TODO Git Version Control to the Rescue!
+
+talk about some git stuff right here.
+

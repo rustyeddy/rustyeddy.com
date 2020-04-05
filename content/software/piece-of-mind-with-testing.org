@@ -1,5 +1,10 @@
 #+title: Piece of Mind with Testing
 #+date: 2020-04-05
+#+weight: 30
+
+** Good Job Keeping Files Organized
+
+** Next Up Treating Your Customers with Respect (They will appreciate it!)
 
 Please: **DO NOT** recruite your customers to be your /QA/
 department. Especially if they are unanaware, thinking they are
@@ -8,3 +13,51 @@ getting a **usable** piece of software.
 It is time to start adopting a /Test Driven Development (TDD)/
 mindset. Even if you are knee deep into an existing development
 project, get started building out our TDD now!
+
+** Test Driven Development
+
+*** Dev Testing
+*** System Testing
+*** Acceptance Testing 
+The big umberlla. Give the big boss a place they can weigh in on their
+concerns.  Also, give your customer the assurance they need. If the
+software does not work out to their satisfaction, they can always
+smash the **Not Accepted** button.
+
+Of course, they will be requested to give a full and descriptive
+reason behind the failed test. 
+
+> This is NOT a technical problem. This is a communication problem!
+(Most likely).
+
+
+*** Test Plans For Everyone
+
+Test Plans also help Ensure that the milestones and tasks Are
+adequate. Well done test plans Tend to expose Gaps in software
+architecture And in turn the planning process. 
+
+It is critical that everybody Including management Understand the
+tests And sign off on the test plans. 
+
+** Before Development comes a Test Plan!
+
+Do not start development before you have a test plan. Period. 
+
+It can be simple, And it will not be complete, But it must precess
+any development, And is required Prior to acceptance testing.
+
+** Lets Automate Everything!
+
+OK! We will try to. But lets Except the very real probability. That we
+won't be able to automate hundred percent Of everything Out of the
+gate. And we may very well Be advised To perform manual testing.
+
+Always. And Thouroughly.
+
+Not testing for any reason Is not acceptable. The only acceptable
+answer tonight testing Is no delivery.
+
+That's More than enough To motivate us To automate As completely And
+thoroughly as possible. 
+
