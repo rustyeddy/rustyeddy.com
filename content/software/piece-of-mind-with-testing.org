@@ -1,0 +1,10 @@
+#+title: Piece of Mind with Testing
+#+date: 2020-04-05
+
+Please: **DO NOT** recruite your customers to be your /QA/
+department. Especially if they are unanaware, thinking they are
+getting a **usable** piece of software.
+
+It is time to start adopting a /Test Driven Development (TDD)/
+mindset. Even if you are knee deep into an existing development
+project, get started building out our TDD now!

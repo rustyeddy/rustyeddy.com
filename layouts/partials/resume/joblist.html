@@ -4,6 +4,7 @@
 	    <h3>Work History</h3>
 	</div>
     </div>
+
     {{ with .GetPage "/resume/clients/_index.md" }}
 
     <div class="row job">
@@ -18,11 +19,11 @@
 	</div>
 	<div col="col"></div>
 
-    </div> <!-- row -->
+    </div> <!-- Eddy Consulting -->
 
     <div class="row mt-4 mb-1">
 	<div class="col text-center">
-	    <h5 class="company mb-0 pb-0">Partial Client List</h5>
+	    <h4 class="company mb-1 pb-1">Partial Client List</h4>
 	</div>
     </div>
 
@@ -34,9 +35,7 @@
 	    </div>
 	</div>
 	<div class="col-7">
-	    <div class="smaller-text">
-		{{ .Summary }}
-	    </div>
+	    {{ .Summary }}
 	</div>
 	<div class="col"></div>
     </div> <!-- center column -->

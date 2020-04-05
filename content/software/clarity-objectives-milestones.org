@@ -1,0 +1,5 @@
+#+title: Getting Clearity with Objectives and Milestones
+#+date: 2020-04-05
+
+It is amazing how many complex and expensive software projects start
+with nothing more than a /proof of concept/.

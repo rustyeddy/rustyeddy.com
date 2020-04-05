@@ -1,0 +1,11 @@
+#+title: Organization with Version Control
+#+date: 2020-04-05
+
+It is even more amazing the number of /professionals/ that still make
+local copies to files of all sorts and then attempt to /synchronize/
+all change by emailing files back and forth.
+
+** Stop It!
+
+We are in the ~20th century folks!~, I mean the 21st century! Let's
+get our /shit together/ and start using /version control/.

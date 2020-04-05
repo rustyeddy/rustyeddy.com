@@ -1,0 +1,9 @@
+#+title: No Hassle Updates with CI/CD
+#+date: 2020-04-05
+
+If you make a useful piece of software, such as a website, users will
+request features, and yes occaisonally find bugs (even though you are
+adament about your TDD practice).
+
+Rolling out new versions of software to your users in a manner that
+does not make their life a nightmare should be your primary goal!
