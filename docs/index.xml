@@ -6,7 +6,7 @@
     <description>Recent content on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://rustyeddy.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -223,6 +223,24 @@ with pkt&amp;rdquo;&lt;/em&gt;, Networld+Interop 99 Engineers Conference Proceed
 Defined Networking (SDN) Controller&amp;rdquo;&lt;/em&gt;, AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Rusty Eddy&lt;/strong&gt;, &lt;em&gt;&amp;ldquo;Testing Multicast SDN Networks in a Container&amp;rdquo;&lt;/em&gt;,
 AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://rustyeddy.com/notes/zeromq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/zeromq/</guid>
+      <description> ZeroMQ   Man I hope this software is as good as the opening of the ZGuide! </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://rustyeddy.com/quotes/massively-connected/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/quotes/massively-connected/</guid>
+      <description>ZeroMQ ZGuide   We live in a connected world, and modern software has to navigate this world. So the building blocks for tomorrow&amp;#39;s very largest solutions are connected and massively parallel. It&amp;#39;s not enough for code to be &amp;#34;strong and silent&amp;#34; any more. Code has to talk to code. Code has to be chatty, sociable, well-connected. Code has to run like the human brain, trillions of individual neurons firing off messages to each other, a massively parallel network with no central control, no single point of failure, yet able to solve immensely difficult problems.</description>
     </item>
     
   </channel>
