@@ -1,4 +1,7 @@
 #+title: Rusty Eddy
+#+description: News Flash
 #+date: 2020-02-02
 
-* Rusty Eddy Website
+** A clean slate
+
+
