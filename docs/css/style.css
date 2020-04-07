@@ -7788,12 +7788,15 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
+h1, h2, h4, h3, h5, h6 {
+  margin-top: 2rem;
+  font-weight: bold; }
+
 h6 {
   font-style: italic; }
 
 blockquote {
   margin: 1.4rem;
-  padding: 1rem;
   font-style: italic;
   border: 1 solid #007bff; }
 
@@ -7813,6 +7816,13 @@ blockquote {
 img.thehead {
   max-width: 120px; }
 
+#edu h4, #edu h5, #edu h6 {
+  font-weight: normal;
+  margin-top: .5rem;
+  margin-bottom: .2rem; }
+
+.resume h5, .resume h6 {
+  margin-top: .1rem; }
 .resume .job .duration {
   font-size: 11px; }
 

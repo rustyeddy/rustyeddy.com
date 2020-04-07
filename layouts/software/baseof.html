@@ -4,13 +4,13 @@
     <body>
 	{{- partial "header.html" . -}}
 
-	<div id="main">
+	<section id="main">
 
 	    {{- block "main" . -}}
 	    {{- partial "content.html" . -}}
   	    {{ end }}
 
-	</div>
+	</section>
 	{{- block "footer" . -}}
 	{{- partial "footer.html" . -}}
 	{{ end }}
