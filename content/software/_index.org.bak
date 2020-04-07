@@ -18,9 +18,9 @@ software.
 I have worked on over a hundred software projects, a few great
 successes, some honorable mentions, and a couple miserable failures. 
 
-It has been my observation that successful projects all had /just the
+It has been my observation that succesfull projects all had /just the
 right process/ in place. The failures varied from no process to too
-much.  No process leads to chaos, bugs and arguments. Too much process
+much.  No process leads to choas, bugs and arguments. Too much process
 kills efficiency, creativity and morale.
 
 ** Making Software Predictable
@@ -31,15 +31,15 @@ end I have put together a 6-part series that will help take the
 mystery and stress out of /managing software development/.
 
 In this series I establish 6 critical resources that we will use to
-build a work-flow from 100% free tools (like github) and Open Source
+build a workflow from 100% free tools (like github) and Open Source
 software.  All project demos documentation and code can be found in
-github for free!
+github, for free of course!
 
 *** What to Expect
 
 We will cover the entire Software Development Life Cycle (SDLC)
 process before any code is written, through the delivery and
-maintenance of a production piece of software. 
+mainanance of a production piece of software. 
 
 **** Table of Contents
 
@@ -48,7 +48,7 @@ maintenance of a production piece of software.
 + Test First and Always
 + Automatic Updates
 + Issue Tracking
-+ Analytics and Elastic
++ Analytics and Elasticating
 
 ** Join Me!
 

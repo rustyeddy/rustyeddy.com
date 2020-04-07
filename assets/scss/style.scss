@@ -42,6 +42,7 @@ $headings-font-family:	$font-family-sans-serif;
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 h1, h2, h4, h3, h5, h6 {
+    margin-top: 2rem;
 }
 
 h6 {
