@@ -1,0 +1,6 @@
+#+title: Notes
+#+date: 2020-04-07
+#+description: These are a few notes I have gathered along the cyber highway.
+#+draft: true
+
+
