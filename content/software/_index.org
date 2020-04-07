@@ -1,9 +1,8 @@
-#+title: The Software Development Process
+#+title: Predictable Software Development
+#+description: Do you ever stress over a software project, or lose sleep wondering how to start?
 #+subtitle: Take control of your project
 #+date: 2020-04-05
 #+draft: true
-
-* Making Software Predictable
 
 Are you are involved in a software development project that is
 spinning out of control? Or maybe you want to keep from losing control?
@@ -33,30 +32,10 @@ organized, predictable, efficient and a pleasure to work on. To that
 end I have put together a 6-part series that will help take the
 mystery and stress out of /managing software development/.
 
-** Software Starter Kit
+** The Software Project Starter Kit
 
 In this series I establish 6 critical resources that should be part of
 any non-trivial tutorial style alwayswe will use to
 build a work-flow from 100% free tools (like github) and Open Source
 software.  All project demos documentation and code can be found in
 github for free!
-
-*** What to Expect
-
-We will cover the entire Software Development Life Cycle (SDLC)
-process before any code is written, through the delivery and
-maintenance of a production piece of software. 
-
-**** Table of Contents
-
-+ Clearly stated goals and Milestones
-+ Version Control all the Things
-+ Test First and Always
-+ Automatic Updates
-+ Issue Tracking
-+ Analytics and Elastic
-
-** Join Me!
-
-Want to come along, learn and maybe even pitch in?
-

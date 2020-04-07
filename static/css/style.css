@@ -7800,6 +7800,9 @@ blockquote {
   font-style: italic;
   border: 1 solid #007bff; }
 
+footer {
+  margin: 40px 0; }
+
 .row-header {
   margin-top: 4rem; }
 
@@ -7826,7 +7829,7 @@ img.thehead {
 .resume .job .duration {
   font-size: 11px; }
 
-footer {
-  margin: 40px 0; }
+.cta-text {
+  font-size: 1rem; }
 
 /*# sourceMappingURL=style.css.map */

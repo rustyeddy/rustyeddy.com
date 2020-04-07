@@ -56,6 +56,11 @@ blockquote {
     border: 1 solid $primary;
 }
 
+
+footer {
+    margin: 40px 0;
+}
+
 .row {
 }
 
@@ -102,6 +107,7 @@ img.thehead {
     }
 }
 
-footer {
-    margin: 40px 0;
+.cta-text {
+    font-size: 1rem;
 }
+
