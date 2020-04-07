@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head-cheese.html" . -}}
+    <body>
+	{{- partial "header.html" . -}}
+
+	{{- partial "blog-header.html" . -}}
+
+	<section id="main" class="container">
+	    {{- block "main" . -}}
+	    {{- partial "content.html" . -}}
+  	    {{ end }}
+	</section>
+
+	<section id="cta" class="container">
+	    {{- block "cta" . -}}
+	    {{- partial "cta-software" . -}}
+	    {{- end -}}
+	</section>
+
+
+	{{- block "footer" . -}}
+	{{- partial "footer.html" . -}}
+	{{ end }}
+    </body>
+</html>

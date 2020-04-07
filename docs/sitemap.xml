@@ -86,7 +86,12 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/software/</loc>
+    <loc>http://rustyeddy.com/notes/</loc>
+    <lastmod>2020-04-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/notes/web-dev-guide/</loc>
     <lastmod>2020-04-05T00:00:00+00:00</lastmod>
   </url>
   
@@ -152,10 +157,6 @@
   
   <url>
     <loc>http://rustyeddy.com/tags/firmware/</loc>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/notes/</loc>
   </url>
   
   <url>
