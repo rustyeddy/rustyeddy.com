@@ -1,4 +1,28 @@
 #+title: Rusty Eddy
-#+description: News Flash
+#+description: Software Engineer and Network Architect
 #+date: 2020-02-02
 
+** Current Projects and Stuff
+
+I currently work at [[http://radianlaser.com][Radian Laser Systems, LLC.]] on /embedded and distributed
+systems/, /cloud automation/ and /Realtime Dashboards/ as a
+contractor. I /occaisonally/ take on side projects if it I have some
+time and does not conflict with my existing commitments.
+
+*** Streaming Video and Computer Vision
+
+I am working on a /project/ called **RedEye** all about building a
+network of cameras loaded with /AI/ algorithms and able to communicate
+with one another and the outside world. 
+
+**** TODO Put up RedEye Info page
+
+*** Managing Predictable Software Projects
+
+I have deemed myself the curator of what I am calling
+[[/software][Predictable Software Practices]] that may interest you if you happen to
+manage or pay for software development.
+
+#+BEGIN_CENTER
+  /*Would you like to chat? (714) 362-5402*/
+#+END_CENTER 

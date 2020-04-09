@@ -1,4 +1,4 @@
-#+title: Getting Clearity with Objectives and Milestones
+#+title: A Clear Goal and Measurable Milestones
 #+date: 2020-04-05
 #+weight: 10
 

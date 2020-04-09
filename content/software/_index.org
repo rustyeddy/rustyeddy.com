@@ -29,17 +29,23 @@ creativity and morale.
 I am on a mission to define /Just Enough Process/ to keep projects
 organized, predictable, efficient and a pleasure to work on. To that
 end I have put together a 6-part series that /I believe/ are the
-**mandatory** foundations of beginning the journey to peaceful
+**mandatory** ingrediants to predictable results and **peaceful**
 software releases.
 
 *** Why I am doing this?
 
-I am a Software Engineer and I love what I do, it is also what I do
-for a living. 
+I am a Software Engineer and I love what I do, at least most of the time.
+When things suck it is usually because of unreasonable expectations,
+or a team ruled by chaos.  
+
+
+#+BEGIN_QUOTE:
+I want to avoid suck projects.
+#+END_QUOTE:
 
 The people that I work for, my clients, customers, employers and users
-all deserve the absolute best from my knowledge and experience as well
-as my present day skills.
+all deserve the absolute best from my knowledge and experience, in
+addition to my present day skills.
 
 #+BEGIN_QUOTE:
 I want to provide the best possible service for my clients, and
@@ -51,12 +57,10 @@ software projects delivered on time and in budget. It makes my life
 soooo much easier, and it's great for business. But most important, it
 is the best thing for my clients!  
 
-
-
 ** The Software Project Starter Kit
 
-In this series I establish 6 critical resources that should be part of
-any non-trivial tutorial style alwayswe will use to
-build a work-flow from 100% free tools (like github) and Open Source
-software.  All project demos documentation and code can be found in
-github for free!
+In this series I have established, what I believe are the 6 critical
+resources that ***must*** be part of every ***serious*** software
+project. We will get into /what/ the typical problems are, what we
+can do to avoid these problems followed by a demonstration of these
+processes using 100% free tools and Open Source software.
