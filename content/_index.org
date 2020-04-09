@@ -6,8 +6,8 @@
 
 I currently work at [[http://radianlaser.com][Radian Laser Systems, LLC.]] on /embedded and distributed
 systems/, /cloud automation/ and /Realtime Dashboards/ as a
-contractor. I /occaisonally/ take on side projects if it I have some
-time and does not conflict with my existing commitments.
+contractor. I will /occaisonally/ take on an additional project if it
+is a good fit and the schedule permits.
 
 *** Streaming Video and Computer Vision
 
