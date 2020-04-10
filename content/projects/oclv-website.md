@@ -7,6 +7,7 @@ description: >
 github: https://github.com/rustyeddy/oclv
 site: https://oclowvision.com/
 image: oclv-home-page.jpg
+draft: true
 ---
 
 Orange County Low Vision is old-school when it comes to personal
