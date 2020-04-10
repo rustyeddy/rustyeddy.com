@@ -16,11 +16,19 @@
                 {{ with .Params.github  }}
                 <a class="nav-link" href="{{ . }}">github</a>
                 {{ end }}
-	    </nav>
-	    <nav class="nav justify-content-center">
-                {{ with .Params.site  }}
-                <a class="nav-link" href="{{ . }}">site</a>
+                {{ with .Params.twitter  }}
+                <a class="nav-link" href="{{ . }}">twitter</a>
                 {{ end }}
+                {{ with .Params.site  }}
+                <a class="nav-link" href="{{ . }}">website</a>
+                {{ end }}
+                {{ with .Params.linkedin  }}
+                <a class="nav-link" href="{{ . }}">linkedin</a>
+                {{ end }}
+                {{ with .Params.phone  }}
+                <span class="nav-link">{{ . }}</span>
+                {{ end }}
+
 	    </nav>
 
 	</div>
