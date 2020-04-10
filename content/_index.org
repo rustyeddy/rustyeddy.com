@@ -1,6 +1,6 @@
 #+title: Rusty Eddy
 #+description: Software Engineer and Network Architect
-#+date: 2020-02-02
+#+date: 2020-04-10
 
 ** Current Projects and Stuff
 

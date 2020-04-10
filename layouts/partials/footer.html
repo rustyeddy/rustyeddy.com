@@ -6,8 +6,16 @@
 	    <div class="city">Huntington Beach, CA. 92648</div>
 	</div>
 	<div class="col-3 text-center">
-	    <div>Site by <a href="/">me</a> :)</div>
-	    <div>&#xA9; 2008 to 2020 ~ Eddy Consulting, LLC.</div>
+	    <div>
+                Last update ~
+                {{ with .Params }}
+				{{ with .lastmod }}
+                {{ dateFormat "Monday, Jan 2, 2006" . }}
+				{{ end }}
+				{{ .date }}
+                {{ end }}
+            </div>
+	    <div>&#xA9; 2008 to 2020 ~ <a href="/">Eddy Consulting, LLC.</a></div>
 	</div>
 	<div class="col">
 	    <div class="text-left">

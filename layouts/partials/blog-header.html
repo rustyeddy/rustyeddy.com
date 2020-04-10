@@ -9,14 +9,20 @@
 	</div>
 	<div class="col-md"></div>
     </div>
-    <div class="row">
+    <div class="row text-center smaller-text">
 	<div class="col"></div>
 	<div class="col-8">
 	    <nav class="nav justify-content-center">
-		<a class="nav-link" href="{{ .Params.resources.github }}">github</a>
-		<a class="nav-link" href="{{ .Params.resources.site }}">site</a>
-		<a class="nav-link active" href="/projects">projects</a>
+                {{ with .Params.github  }}
+                <a class="nav-link" href="{{ . }}">github</a>
+                {{ end }}
 	    </nav>
+	    <nav class="nav justify-content-center">
+                {{ with .Params.site  }}
+                <a class="nav-link" href="{{ . }}">site</a>
+                {{ end }}
+	    </nav>
+
 	</div>
 	<div class="col"></div>
     </div>
