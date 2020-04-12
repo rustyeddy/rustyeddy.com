@@ -9,7 +9,8 @@ resources:
   website: http://rustyeddy.com/
   resume: http://rustyeddy.com/resume
 image: /img/redeye-screen-600.png
-logo: /img/redeye-red.png
+logo: /img/oclv-website.jpg
+draft: true
 ---
 
 RedEye is a computer network protocol lover boy that is full hotness

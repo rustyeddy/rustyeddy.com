@@ -1,13 +1,13 @@
 ---
-title: Orange County Low Vision Website
+title: OC Low Vision Website
 description: >
   Orange County Low Vision is a small distributor for low vision
   reading devices. See how we worked together to help OCLV increase
   sales and reduce phone time for customer service.
 github: https://github.com/rustyeddy/oclv
 site: https://oclowvision.com/
-image: oclv-home-page.jpg
-draft: true
+image: /img/oclv-home-page.jpg
+logo: /img/oclv-website.jpg
 ---
 
 Orange County Low Vision is old-school when it comes to personal

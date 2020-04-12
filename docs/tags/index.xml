@@ -6,28 +6,10 @@
     <description>Recent content in Tags on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 21 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://rustyeddy.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>esp32</title>
-      <link>http://rustyeddy.com/tags/esp32/</link>
-      <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/esp32/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>freertos</title>
-      <link>http://rustyeddy.com/tags/freertos/</link>
-      <pubDate>Sun, 19 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/tags/freertos/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Computer Network, Multicast</title>

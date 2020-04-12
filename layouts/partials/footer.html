@@ -9,21 +9,22 @@
 	    <div>
                 Last update ~
                 {{ with .Params }}
-				{{ with .lastmod }}
+		{{ with .lastmod }}
                 {{ dateFormat "Monday, Jan 2, 2006" . }}
-				{{ end }}
-				{{ .date }}
+		{{ end }}
+                {{ else }}
+		{{ .date }}
                 {{ end }}
             </div>
-	    <div>&#xA9; 2008 to 2020 ~ <a href="/">Eddy Consulting, LLC.</a></div>
+	    <div>site by <a href="/">Eddy Consulting, LLC.</a> ~ &#xA9; 2008 to 2020 </div>
 	</div>
 	<div class="col">
 	    <div class="text-left">
+	        <div class="phone">(714) 362-5402</div>
 		<a href="https://github.com/rustyeddy">github</a> .
 		<a href="https://twitter.com/rustyeddy">twitter</a> .
 		<a href="https://linkedin.com/rustyeddy">linkedin</a><br/>	    
 	    </div>
-	    <div class="phone">(714) 362-5402</div>
 	</div>
 	<div class="col"></div>
     </section>
