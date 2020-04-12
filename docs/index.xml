@@ -313,6 +313,17 @@ Camera APIs The Camera provides APIs for camera control, configuration and stora
     </item>
     
     <item>
+      <title>OC Low Vision Website</title>
+      <link>http://rustyeddy.com/projects/oclv-website/</link>
+      <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/projects/oclv-website/</guid>
+      <description>Orange County Low Vision is old school when it comes to personal customer service. According to Kelly Eddy, the owner of OCLV:
+ &amp;ldquo;Many of our clients are well into their 80&amp;rsquo;s and above, further more we typically do business in their homes. Trust is everything.&amp;rdquo;
+ Since Personal Service and Trust have always been the foundation of OCLV &amp;ldquo;business&amp;rdquo; model, it is impairative the new website project reflect the same personable reality, yet leverage the internet to the benefit of the business and the client.</description>
+    </item>
+    
+    <item>
       <title>Publications</title>
       <link>http://rustyeddy.com/resume/pubs/</link>
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
@@ -336,17 +347,6 @@ AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;</description>
       
       <guid>http://rustyeddy.com/quotes/massively-connected/</guid>
       <description>ZeroMQ ZGuide   We live in a connected world, and modern software has to navigate this world. So the building blocks for tomorrow&amp;#39;s very largest solutions are connected and massively parallel. It&amp;#39;s not enough for code to be &amp;#34;strong and silent&amp;#34; any more. Code has to talk to code. Code has to be chatty, sociable, well-connected. Code has to run like the human brain, trillions of individual neurons firing off messages to each other, a massively parallel network with no central control, no single point of failure, yet able to solve immensely difficult problems.</description>
-    </item>
-    
-    <item>
-      <title>OC Low Vision Website</title>
-      <link>http://rustyeddy.com/projects/oclv-website/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/projects/oclv-website/</guid>
-      <description>Orange County Low Vision is old-school when it comes to personal customer service. According to Kelly Eddy, the owner of OCLV:
- &amp;ldquo;Many of our clients are well into their 80&amp;rsquo;s and above, further more we typically do business in their homes. Trust is everything.&amp;rdquo;
- Since Personal Service and Trust have always been the foundation of OCLV &amp;ldquo;business&amp;rdquo; model, it is impairative the new website project reflect the same personable reality, yet leverage the internet to the benefit of the business and the client.</description>
     </item>
     
   </channel>

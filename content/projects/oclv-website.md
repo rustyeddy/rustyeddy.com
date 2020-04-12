@@ -1,16 +1,17 @@
 ---
 title: OC Low Vision Website
+date: 2019-03-17
 description: >
   Orange County Low Vision is a small distributor for low vision
   reading devices. See how we worked together to help OCLV increase
   sales and reduce phone time for customer service.
 github: https://github.com/rustyeddy/oclv
 site: https://oclowvision.com/
-image: /img/oclv-home-page.jpg
+image: /img/oclv-website.jpg
 logo: /img/oclv-website.jpg
 ---
 
-Orange County Low Vision is old-school when it comes to personal
+Orange County Low Vision is _old school_ when it comes to personal
 customer service. According to Kelly Eddy, the owner of OCLV:
 
 > "Many of our clients are well into their 80's and above, further more
