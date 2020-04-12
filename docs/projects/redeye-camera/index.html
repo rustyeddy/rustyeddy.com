@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+
+<title>RedEye Camera ~ Backend</title>
+
+
+<body><header class="container bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light">
+
+	<a class="navbar-brand text-muted text-monospace" href="/"><span claa="h1">rusty eddy:</span></a>
+
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+	    <nav class="navbar-nav w-100 justify-content-end">
+		<div class="nav w-100">
+  	            <a class="nav-link" href="/resume"> resume &nbsp</a>
+  		    <a class="nav-link" href="/about"> about &nbsp</a>
+  		    <a class="nav-link" href="/software"> software &nbsp</a>
+  		    <a class="nav-link" href="/projects"> projects &nbsp</a>
+  		    
+		</div>
+ 	    </nav>
+	</div>
+    </nav>
+</header>
+<div class="jumbotron border-top border-bottom bg-white" >
+    <div class="row">
+	<div class="col-md"></div>
+	<div class="col-md-8">
+	  <h1 class="header h2 text-center pb-1">RedEye Camera ~ Backend</h1>
+	    <p class="leadin align-right text-muted text-center mt-0">
+		RedEye is smart camera software built with Open Computer Vision (OpenCV) with simple control and configuration APIs
+	    </p>
+	</div>
+	<div class="col-md"></div>
+    </div>
+    <div class="row text-center smaller-text">
+	<div class="col"></div>
+	<div class="col-8">
+	    <nav class="nav justify-content-center">
+                
+                <a class="nav-link" href="https://github.com/redeyelab/redeye">github</a>
+                
+                
+                
+                <a class="nav-link" href="http://rustyeddy.com/projects/redeye">website</a>
+                
+                
+                
+
+	    </nav>
+
+	</div>
+	<div class="col"></div>
+    </div>
+</div>
+<div id="main body">
+
+<div class="container">
+    <div class="row pt-4 mb-5 mt-5">
+	<div class="col"></div>
+	<div class="col-8 text-center">
+	    <img class="img-fluid justify-content-center" src="/img/redeye-cmdline-snapshot.png" />
+	</div>
+	<div class="col"></div>
+    </div>
+</div>
+
+
+<div class="container">
+
+    <div class="row mt-4">
+	<div class="col"></div>
+	<div class="col-lg-8 pl-4 pr-4">
+	    <article class="article">
+		<h2 id="about-the-camera-software">About the Camera Software</h2>
+<p>The <em>RedEye Camera</em> software streams video over <em>IP</em> through
+configurable <em>Computer Vision Pipelines</em> with example
+pipelines that include:</p>
+<ul>
+<li>Face Detection</li>
+<li>Motion Detection</li>
+<li>Object Tracking</li>
+</ul>
+<p>Pipelines can be built as plugins and added directly to the camera
+with runtime configuration. This allows you to add your own <em>Computer
+Vision</em> application(s) without worrying <strong>too much</strong> about the
+software that controls the camera.</p>
+<h2 id="camera-apis">Camera APIs</h2>
+<p>The Camera provides APIs for  <em>camera control</em>, <em>configuration</em> and
+<em>storage</em>. These APIs give you complete control over the
+cameras functionality. Most of this functionality can be had through
+the built in webapp, or any other communication mechanism you choose.</p>
+<p>The camera design is <strong>API first</strong> which means that all of the cameras
+functionality is exposed through the same libraries the camera
+operates from, giving you a tremendous amount of flexibility to
+integrate cameras into your application.</p>
+<h3 id="control-configuration-and-storage">Control, Configuration and Storage</h3>
+<p>The APIs collectively provide control over the cameras <em>play</em>, <em>pause</em>
+and <em>snap</em> controls, a myriad of configurations including
+<em>resolution</em>, <em>Frames Per Second</em>, <em>Color</em> and a ton more.</p>
+<p>The <em>storage</em> interface provides very flexible options when it comes
+to where and how to store video clips and snapshots..</p>
+<h3 id="supported-protocols">Supported Protocols</h3>
+<p>All APIs can be accessed in one or more of the following ways:</p>
+<ul>
+<li>Built Reactive Webapp</li>
+<li>REST API</li>
+<li>MQTT Messaging</li>
+<li>Websockets</li>
+</ul>
+<p>If you have any questions, find a bug or would like to use this
+software, please drop me a line, or fill out an issue.</p>
+<h2 class="mb-4 mt-0">Sample Source From Github</h2>
+
+<script src="https://gist.github.com/rustyeddy/522ba1a1da015ac9cfc0523c4b25dd67.js"></script>
+
+
+
+	    </article>
+	</div>
+	<div class="col"></div>
+    </div>
+</div>
+
+
+
+	</div><footer id="footer" class="container-fluid footer small-text pt-4 border-top">
+    <section class="row">
+	<div class="col"></div>
+	<div class="col text-right">
+	    <div class="address">419 Main St. #439</div>
+	    <div class="city">Huntington Beach, CA. 92648</div>
+	</div>
+	<div class="col-3 text-center">
+	    <div>
+                Last update ~
+                
+		
+                Wednesday, Apr 1, 2020
+		
+                
+            </div>
+	    <div>site by <a href="/">Eddy Consulting, LLC.</a> ~ &#xA9; 2008 to 2020 </div>
+	</div>
+	<div class="col">
+	    <div class="text-left">
+	        <div class="phone">(714) 362-5402</div>
+		<a href="https://github.com/rustyeddy">github</a> .
+		<a href="https://twitter.com/rustyeddy">twitter</a> .
+		<a href="https://linkedin.com/rustyeddy">linkedin</a><br/>	    
+	    </div>
+	</div>
+	<div class="col"></div>
+    </section>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-19940083-13', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+    </body>
+</html>

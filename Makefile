@@ -3,7 +3,7 @@ build:
 	hugo
 
 drafts: assets/scss/style.scss
-	hugo serve --buildDrafts --ignoreCache --noHTTPCache --watch 
+	hugo serve --buildDrafts --ignoreCache --noHTTPCache --bind "0.0.0.0" --watch 
 
 serve:
 	hugo serve --ignoreCache --noHTTPCache --watch 

@@ -55,7 +55,7 @@ The content for this website was created with
 _html pages_ with [hugo](https://gohugo.io/) the _static site_
 generator.
 
-The site is minimally styled with [bootstrap](http://getboostrap.io)
+The site is minimally styled with [bootstrap](http://getbootstrap.com)
 and hosted by [github pages](https://pages.github.com/). The source
 for this site can be found at this [github repo](https://github.com/rustyeddy/rustyeddy.com).
 

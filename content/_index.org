@@ -1,6 +1,6 @@
 #+title: Rusty Eddy
 #+description: Software Engineer and Network Architect
-#+date: 2020-02-02
+#+date: 2020-04-10
 
 ** Current Projects and Stuff
 
@@ -11,7 +11,7 @@ is a good fit and the schedule permits.
 
 *** Streaming Video and Computer Vision
 
-I am working on a /project/ called **RedEye** all about building a
+I am working on a /project/ called [[/projects/redeye][RedEye]] all about building a
 network of cameras loaded with /AI/ algorithms and able to communicate
 with one another and the outside world. 
 

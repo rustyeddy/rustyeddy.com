@@ -9,4 +9,29 @@
 	</div>
 	<div class="col-md"></div>
     </div>
+    <div class="row text-center smaller-text">
+	<div class="col"></div>
+	<div class="col-8">
+	    <nav class="nav justify-content-center">
+                {{ with .Params.github  }}
+                <a class="nav-link" href="{{ . }}">github</a>
+                {{ end }}
+                {{ with .Params.twitter  }}
+                <a class="nav-link" href="{{ . }}">twitter</a>
+                {{ end }}
+                {{ with .Params.site  }}
+                <a class="nav-link" href="{{ . }}">website</a>
+                {{ end }}
+                {{ with .Params.linkedin  }}
+                <a class="nav-link" href="{{ . }}">linkedin</a>
+                {{ end }}
+                {{ with .Params.phone  }}
+                <span class="nav-link">{{ . }}</span>
+                {{ end }}
+
+	    </nav>
+
+	</div>
+	<div class="col"></div>
+    </div>
 </div>

@@ -1,4 +1,4 @@
-#+title: Predictable Software Development
+#+title: Predictable IoT Software Development
 #+description: Do you ever stress over a software project, or lose sleep wondering how to start?
 #+subtitle: Take control of your project
 #+date: 2020-04-05

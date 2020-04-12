@@ -6,7 +6,7 @@
     <description>Recent content on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://rustyeddy.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -245,6 +245,18 @@ California State Educators.&lt;/p&gt;</description>
     </item>
     
     <item>
+      <title>RedEye Webapp ~ Front End</title>
+      <link>http://rustyeddy.com/projects/redeye-gui/</link>
+      <pubDate>Wed, 08 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/projects/redeye-gui/</guid>
+      <description>About The Image The image above depicts the RedEye camera running with the Motion Detection VideoPipeline Plugin. It is identifying and tracking moving objects within the video.
+About The Webapp This Webapp was written with the Vue.js Framework. It uses Bootstrap for styling up the web page.
+Single Page Application (SPA) The website is a true Single Page Application (SPA) using the Vue Router and Vuex for state management.
+RedEye Camera API The backend is the RedEye Camera written in Go.</description>
+    </item>
+    
+    <item>
       <title>Call To Action - Let me Know What do You think</title>
       <link>http://rustyeddy.com/software/call-to-action/</link>
       <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
@@ -272,6 +284,17 @@ California State Educators.&lt;/p&gt;</description>
     </item>
     
     <item>
+      <title>RedEye Camera ~ Backend</title>
+      <link>http://rustyeddy.com/projects/redeye-camera/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/projects/redeye-camera/</guid>
+      <description>About the Camera Software The RedEye Camera software streams video over IP through configurable Computer Vision Pipelines with example pipelines that include:
+ Face Detection Motion Detection Object Tracking  Pipelines can be built as plugins and added directly to the camera with runtime configuration. This allows you to add your own Computer Vision application(s) without worrying too much about the software that controls the camera.
+Camera APIs The Camera provides APIs for camera control, configuration and storage.</description>
+    </item>
+    
+    <item>
       <title>Career Summary</title>
       <link>http://rustyeddy.com/resume/summary/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
@@ -287,6 +310,17 @@ California State Educators.&lt;/p&gt;</description>
       
       <guid>http://rustyeddy.com/resume/skills/</guid>
       <description> Go, C/C++, Python and JavaScript (and many others..) Computer Networks, Multicast Video Distribution Distributed systems and realtime communications DevOps, cloud automation and continuous delivery Fullstack software development, reactive front-ends with VueJS MicroServices: REST APIs, Websockets, etc. Linux Systems and OpenSource Software  </description>
+    </item>
+    
+    <item>
+      <title>OC Low Vision Website</title>
+      <link>http://rustyeddy.com/projects/oclv-website/</link>
+      <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/projects/oclv-website/</guid>
+      <description>Orange County Low Vision is old school when it comes to personal customer service. According to Kelly Eddy, the owner of OCLV:
+ &amp;ldquo;Many of our clients are well into their 80&amp;rsquo;s and above, further more we typically do business in their homes. Trust is everything.&amp;rdquo;
+ Since Personal Service and Trust have always been the foundation of OCLV &amp;ldquo;business&amp;rdquo; model, it is impairative the new website project reflect the same personable reality, yet leverage the internet to the benefit of the business and the client.</description>
     </item>
     
     <item>

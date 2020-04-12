@@ -16,3 +16,8 @@ Links to the fonts download: [[https://fonts.googleapis.com/css2?family=Lora:ita
 Qucksand]]
 
 
+
+** Portfolio
+
+*** Image List size is 130px
+    
