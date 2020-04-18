@@ -1,0 +1,6 @@
+#+title: No Hassle Updates with CI/CD
+#+date: 2020-04-03
+#+weight: 40
+
+
+Next: [[/software/optimize][Measure and Optimize]]

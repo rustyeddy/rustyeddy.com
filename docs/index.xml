@@ -12,39 +12,39 @@
     
     
     <item>
-      <title>A Clear Goal and Measurable Milestones</title>
-      <link>http://rustyeddy.com/software/clarity-objectives-milestones/</link>
+      <title>Objective and Milestones</title>
+      <link>http://rustyeddy.com/software/objectives-and-milestones/</link>
       <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/software/clarity-objectives-milestones/</guid>
-      <description>How to Start   It is amazing how many complex and expensive software projects start with nothing more than a proof of concept. Objective   The first things above all is to state a clear, measurable objective. It should go without saying, the objective must also be reasonable.  Believe it or not, I have seen people post (on Upwork) jobs asking to create a Facebook Like website for $500.</description>
+      <guid>http://rustyeddy.com/software/objectives-and-milestones/</guid>
+      <description>Symptoms     Team is in a growing state of chaos    Measuring Progress is impossible    Measuring Quality is impossible    Budget tracking is impossible    Team is loosing moral    Team members are not working on the most important tasks    The best team members leave   Potential Problems     No Clear, Reachable Objective Goals    No Milestones or Milestones are not measurable (can be completed)    Nobody really understands the customers needs and wants    The goals keep changing increasing confusion and waste    Team leadership is not engaged with user before and during R&amp;amp;D   The Solution   As a preface, before getting into the particulars of solving this type of problem I would like to make it clear that this framework is a direct [perhaps imperfect] reflection of the seminal works of Steve Blank Four Steps to Epiphany and Eric Ries and the Lean Startup, as well as the principals of Agile development.</description>
     </item>
     
     <item>
-      <title>Organization with Version Control</title>
-      <link>http://rustyeddy.com/software/organization-with-version-control/</link>
+      <title>Software Development Life Cycle</title>
+      <link>http://rustyeddy.com/software/software-development-life-cycle/</link>
       <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/software/organization-with-version-control/</guid>
-      <description>With at least a first slash at some milestones and goals that the entire team can huddle around. Let&amp;#39;s roll up our sleeves and get Buzzin!   But before we scatter to our cubes and bury our heads behind terminals, let&amp;#39;s all agree to get on the same page by choosing a set of tools (manual or electric) that we all are going to agree on using in a consistent and collaborative way!</description>
+      <guid>http://rustyeddy.com/software/software-development-life-cycle/</guid>
+      <description> Symptoms     Changes made to software are often lost    Large forklift changes frequently cause compilation problems and long integration times.    Programmers are often working with different variations of the code, usually gets ugly when somebody has to merge them    Team members store various items of the project (including software in wild and bizzare places)   Problem     Do not have a defined process for the SDLC    Lack of version control    Next: Testing </description>
     </item>
     
     <item>
       <title>Piece of Mind with Testing</title>
-      <link>http://rustyeddy.com/software/piece-of-mind-with-testing/</link>
+      <link>http://rustyeddy.com/software/testing/</link>
       <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/software/piece-of-mind-with-testing/</guid>
-      <description>Good Job Keeping Files Organized  Next Up Treating Your Customers with Respect (They will appreciate it!)   Please: DO NOT recruite your customers to be your QA department. Especially if they are unanaware, thinking they are getting a usable piece of software.  It is time to start adopting a Test Driven Development (TDD) mindset. Even if you are knee deep into an existing development project, get started building out our TDD now!</description>
+      <guid>http://rustyeddy.com/software/testing/</guid>
+      <description> Symptoms     Clients become the testers    CICD </description>
     </item>
     
     <item>
       <title>No Hassle Updates with CI/CD</title>
-      <link>http://rustyeddy.com/software/no-hassle-updates-with-cicd/</link>
+      <link>http://rustyeddy.com/software/cicd/</link>
       <pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/software/no-hassle-updates-with-cicd/</guid>
-      <description>Glad to hear testing is going well!  Now it is time to Get the soccer out to the users For the real test. This test is measurable Buyer customers feedback Good Software is Continually Improved   The greater the success software Is directly proportionate to The number of features that are requested As well as the number of bugs that are found.  &amp;gt; Bug reports means your softwar is getting used.</description>
+      <guid>http://rustyeddy.com/software/cicd/</guid>
+      <description> Next: Measure and Optimize </description>
     </item>
     
     <item>
@@ -58,11 +58,11 @@
     
     <item>
       <title>Uncovering Unseen Improvements with Analytics</title>
-      <link>http://rustyeddy.com/software/uncovering-unseen-improvements-with-analytics/</link>
+      <link>http://rustyeddy.com/software/optimize/</link>
       <pubDate>Sat, 04 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/software/uncovering-unseen-improvements-with-analytics/</guid>
-      <description> This is a draft, make some great content! </description>
+      <guid>http://rustyeddy.com/software/optimize/</guid>
+      <description> What to Expect We will cover the entire Software Development Life Cycle (SDLC) process before any code is written, through the delivery and maintenance of a production piece of software. As this series moves along, I will be demonstrating the techniques using 100% free tools and OpenSource software, such that you can easily follow along.    Table of Contents Clear Goal and Milestones Version Control all the Things Test First and Always Automatic Updates Issue Tracking Analytics and Elastic       </description>
     </item>
     
     <item>
@@ -267,15 +267,6 @@ RedEye Camera API The backend is the RedEye Camera written in Go.</description>
     
     <item>
       <title>The Software Development Process</title>
-      <link>http://rustyeddy.com/software/index-01/</link>
-      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/software/index-01/</guid>
-      <description>Loosing sleep over your next software project.   Waking up in a cold sweat from a night mare about bugs, not the icky creepy crawly kind …  Sorry for the predictable, cheesy and yet, unavoidable analogy. But the reality may infact be worse than disgusting caca roaches, but things that make your customers sad and your boss mad.  Software bugs. Ick!!! Describe Symptoms  Do you wonder why programmers who are supposed to be sooo smart can&amp;#39;t seem to remember shit?</description>
-    </item>
-    
-    <item>
-      <title>The Software Development Process</title>
       <link>http://rustyeddy.com/software/lander02/</link>
       <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
       
@@ -347,6 +338,15 @@ AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;</description>
       
       <guid>http://rustyeddy.com/quotes/massively-connected/</guid>
       <description>ZeroMQ ZGuide   We live in a connected world, and modern software has to navigate this world. So the building blocks for tomorrow&amp;#39;s very largest solutions are connected and massively parallel. It&amp;#39;s not enough for code to be &amp;#34;strong and silent&amp;#34; any more. Code has to talk to code. Code has to be chatty, sociable, well-connected. Code has to run like the human brain, trillions of individual neurons firing off messages to each other, a massively parallel network with no central control, no single point of failure, yet able to solve immensely difficult problems.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://rustyeddy.com/software/scratch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/scratch/</guid>
+      <description>With at least a first slash at some milestones and goals that the entire team can huddle around. Let&amp;#39;s roll up our sleeves and get Buzzin!   But before we scatter to our cubes and bury our heads behind terminals, let&amp;#39;s all agree to get on the same page by choosing a set of tools (manual or electric) that we all are going to agree on using in a consistent and collaborative way!</description>
     </item>
     
   </channel>

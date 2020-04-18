@@ -3,22 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://rustyeddy.com/software/clarity-objectives-milestones/</loc>
+    <loc>http://rustyeddy.com/software/objectives-and-milestones/</loc>
     <lastmod>2020-04-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/software/organization-with-version-control/</loc>
+    <loc>http://rustyeddy.com/software/software-development-life-cycle/</loc>
     <lastmod>2020-04-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/software/piece-of-mind-with-testing/</loc>
+    <loc>http://rustyeddy.com/software/testing/</loc>
     <lastmod>2020-04-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/software/no-hassle-updates-with-cicd/</loc>
+    <loc>http://rustyeddy.com/software/cicd/</loc>
     <lastmod>2020-04-03T00:00:00+00:00</lastmod>
   </url>
   
@@ -28,7 +28,7 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/software/uncovering-unseen-improvements-with-analytics/</loc>
+    <loc>http://rustyeddy.com/software/optimize/</loc>
     <lastmod>2020-04-04T00:00:00+00:00</lastmod>
   </url>
   
@@ -130,11 +130,6 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/software/index-01/</loc>
-    <lastmod>2020-04-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/software/lander02/</loc>
     <lastmod>2020-04-05T00:00:00+00:00</lastmod>
   </url>
@@ -196,6 +191,10 @@
   
   <url>
     <loc>http://rustyeddy.com/quotes/massively-connected/</loc>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/software/scratch/</loc>
   </url>
   
   <url>

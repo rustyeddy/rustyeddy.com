@@ -2,6 +2,7 @@
 #+description: Do you ever stress over a software project, or lose sleep wondering how to start?
 #+subtitle: Take control of your project
 #+date: 2020-04-05
+#+next: /software/objective-and-milestones
 
 Are you are involved in a software development project that is
 spinning out of control? Or maybe you want to keep from losing control?
@@ -64,3 +65,7 @@ resources that ***must*** be part of every ***serious*** software
 project. We will get into /what/ the typical problems are, what we
 can do to avoid these problems followed by a demonstration of these
 processes using 100% free tools and Open Source software.
+
+Next: [[/software/objectives-and-milestones][Objectives and Milestones]]
+
+

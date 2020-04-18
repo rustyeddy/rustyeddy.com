@@ -1,0 +1,9 @@
+#+title: Piece of Mind with Testing
+#+date: 2020-04-05
+#+weight: 30
+
+* Symptoms
+
+- Clients become the testers
+
+[[/software/cicd][CICD]]

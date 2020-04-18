@@ -1,0 +1,43 @@
+#+title: Objective and Milestones
+#+date: 2020-04-05
+#+weight: 10
+
+* Symptoms
+
+- Team is in a growing state of chaos
+- Measuring Progress is impossible
+- Measuring Quality is impossible 
+- Budget tracking is impossible
+- Team is loosing moral
+- Team members are not working on the most important tasks
+- The best team members leave
+
+* Potential Problems
+
+- No Clear, Reachable Objective Goals
+- No Milestones or Milestones are not measurable (can be completed)
+- Nobody /really/ understands the customers needs and wants
+- The goals keep changing increasing confusion and waste
+- Team leadership is not engaged with user before and during R&D
+
+* The Solution
+
+As a preface, before getting into the particulars of solving this
+type of problem I would like to make it clear that this framework is a
+direct [perhaps imperfect] reflection of the seminal works of Steve
+Blank /Four Steps to Epiphany/  and Eric Ries and the /Lean Startup/,
+as well as the **principals** of /Agile/ development.
+
+In a nutshell, both of these movements, as well as the myriad of other
+similar movements in nearly every industry is all about maintaining
+close and constant communication with your /user/ iterating toward a
+predicable and success conclusion to software projects.
+
+** Reference Material
+
+- The Lean Startup
+- The Agile Methodology
+- The Startup Owners Manual
+
+Next: [[/software/software-development-life-cycle][Software Development Life Cycle]]
+
