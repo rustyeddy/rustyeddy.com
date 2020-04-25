@@ -6,18 +6,29 @@
     <description>Recent content in Notes on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://rustyeddy.com/notes/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Web Development Guide</title>
-      <link>http://rustyeddy.com/notes/web-dev-guide/</link>
-      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
+      <title>Building a Product or Service</title>
+      <link>http://rustyeddy.com/notes/building-a-product-or-service/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/web-dev-guide/</guid>
-      <description> Website Development Guide   This is an overview of the entire website development process. At least the one I use. If you have a different or better way of doing things, I would love to hear from you! Style Guide   Links to the fonts download: https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&amp;amp;family=Quicksand:wght@400;600&amp;amp;display=swap Qucksand]] </description>
+      <guid>http://rustyeddy.com/notes/building-a-product-or-service/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Webdev Guide</title>
+      <link>http://rustyeddy.com/notes/webdev-guide/</link>
+      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/webdev-guide/</guid>
+      <description>This section of my website is a collection of processes and best practices regarding software development. I gather them here, in an attempt to remember and formalize.
+Over the years, I have collected a set of practices and certain software practices and patterns. When I work for a client these practices will be documented as part of the development process.
+This section of my website is dedicated to the development of web sites and apps.</description>
     </item>
     
     <item>

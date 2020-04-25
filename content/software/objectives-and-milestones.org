@@ -1,26 +1,139 @@
 #+title: Objective and Milestones
 #+date: 2020-04-05
+#+description: Without Vision, The People Parish.
 #+weight: 10
 
-* Symptoms
+https://www.youtube.com/watch?v=bQxqIKTO2Ck
 
-- Team is in a growing state of chaos
-- Measuring Progress is impossible
-- Measuring Quality is impossible 
-- Budget tracking is impossible
-- Team is loosing moral
+Thank You, Arnold! I could not have said it any better!
+
+Let's be clear about one thing, if you don't agree with Arnold, we got
+no business going on this ride together, may as well get of the bus
+now.
+
+If you 
+
+* The Big Idea
+
+Software development project will tend toward chaos, like most other
+human sport involving more than two people. Unless of course those
+team is bound by a /clear/ and /common/ vision.
+
+Software development projects that are too focused on long term
+deliveries that are, NOT within immediate reach risk diverging from
+the end users need that it never gets used. Or almost as bad hated,
+by customers.
+
+Every project should be working toward a spefic
+
+** 
+
+
+unless 
+together by a common vision, clearified by a clear, 
+
+1. Goals much be short term, realistic and measurable. 
+
+> No long term out of sight goals
+
+2. Only the /Customer/ establishes the goal. A later during /testing/
+   approves the work during /acceptance test/.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Are you (or have you) run a software project and are familiar with any
+of these:
+
+- Software project schedule and/or budget are out of control.
+- No idea how far along the software is progressing, or not.
+- Software teams seems to be out of sync.
+- The team morale decline and people leave, especially the good ones. 
+
+
+This is age old wisdom dates back before Sun Tzu. Great leaders of all
+ages have been knowing how to set an army (or team in our case) of
+diverse peoples huddled around a common vision, a vision that /they
+believe/, they can obtain.
+
+A great software leader is much like (I imagine) the /cocksman/ of a
+rowboat needs to be. That is to make sure the boat is going in right
+direction, ensuring all the energy of the individual rowers work in
+unison, getting them closer to the goal, rather than a set of oars all
+arbitrarily fighting against each other.
+
+* Are any of these problems familiar?
+
+** Team is in chaos and morale in decline
+
+When the objectives are vague or frequently changing, it allows
+shenanigans and **waste[1]** creep in, rapidly. Nothing will suck the
+spirit out the a good team like waste! 
+
+> Which is just one reason to build a great team! Which is outside the
+scope of this here paar.tic.u.lar docuement. [Todo: find some good
+references on team building..].
+
+[1] Waste is anything that does not benefit the customer (TODO get a
+reference, I believe from the Toyota manual).
+
+- Measuring Progress, Quality and realistic cost to complete is
+  impossible. 
 - Team members are not working on the most important tasks
-- The best team members leave
+- Direction keeps shifting according to unpredictable forces
+- Nobody is clear on Who we are building 
 
-* Potential Problems
 
+
+** Team leader is making all the design decisions
+** Customer / User has not been spoken with in weeks
+** Project Objectives constantly change
+** Time and Budget Estimates are NEVER right
+
+* Problems Problems
+
+** Not knowing who the customer is or what THEY want
+** 
+
+** Inaccurate Requirements
+** Lack of Clear Objective
+** 
+
+
+
+- Management by Crises
 - No Clear, Reachable Objective Goals
 - No Milestones or Milestones are not measurable (can be completed)
 - Nobody /really/ understands the customers needs and wants
 - The goals keep changing increasing confusion and waste
 - Team leadership is not engaged with user before and during R&D
 
+** Management By Crisis
+
+
+
 * The Solution
+
+** Life Becomes Stress free when you are not overwhelmed with the things you
+
+Likewise, my life as a _Developer_ and _Project Manager_ has become
+infinitely easier because I now focus my time, budget and resources on
+fewer tasks.
+
+Which means that It is also **MUCH EASIER** to ensure a **HIGH LEVEL**
+of **Quality** when the feature scope has been minimized.
+
 
 As a preface, before getting into the particulars of solving this
 type of problem I would like to make it clear that this framework is a
@@ -40,4 +153,5 @@ predicable and success conclusion to software projects.
 - The Startup Owners Manual
 
 Next: [[/software/software-development-life-cycle][Software Development Life Cycle]]
+
 

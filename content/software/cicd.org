@@ -2,5 +2,16 @@
 #+date: 2020-04-03
 #+weight: 40
 
+1. Give your customers their bug fixes and new features in days or
+   weeks, not months or years.    
+2. Forklift updgrades that break stuff are not sexy. Regular small
+   hardly noticed updates are always appreciated!
 
-Next: [[/software/optimize][Measure and Optimize]]
+
+* Symptoms
+
+- No idea if your systems are bleeding
+- No idea if you are over paying
+- Can not identify total bill expenses
+
+Next: [[/software/measure-and-optimize][Measure and Optimize]]

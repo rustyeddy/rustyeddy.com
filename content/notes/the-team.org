@@ -1,0 +1,42 @@
+#+title: The team
+#+date: 2020-04-19
+#+description: The team is made of up many different roles, some team members play many roles.
+#+draft: true
+
+* Go Team!
+
+Software is a *team sport*. It is totally possible to have a single
+developer build a product, but that product is going to need users,
+and presumably somebody to pay for it. 
+
+There is almost certainly quite a bit of work connecting the well
+written piece from the developer to a hopefully happy and possibly
+growing user base.
+
+
+** A bit About Team Building 
+
+I have been a team member and have lead small to moderate sized teams,
+but I do NOT consider myself anything of a /Team Building/ expert.
+
+<disclaimer>
+There are many great resources on the net regarding this subject (TODO
+research some good /team building/ resources), however beyond the
+scope of this document. 
+</disclaimer>
+
+I will only speak on this topic from a practical perspective since
+most projects (except for 100% solo gigs) require a /"team"/ of more
+than one. 
+
+Here are some of my general observations building a software team:
+
+- Not all team members can be superstars, it is mathematically
+  impossible
+- Superstars can [sometimes] be hard headed assholes, anyway.
+- Smart group of qualified and eager people (that get along) make a
+  great team!
+- Get rid of the assholes, ESPECIALLY if they are in charge.
+- Prefer passion and smarts over specific skill except in times of
+  crunch
+- Free the team from cruch times.

@@ -2,8 +2,23 @@
 #+date: 2020-04-05
 #+weight: 30
 
+1. Do not force your customers to find your bugs.
+2. Good software becomes great when old features become more reliable
+   and new features do resurect old bugs.
+
+NOTE: This is when the customer set objective to the customer
+acceptance. 
+
 * Symptoms
 
-- Clients become the testers
+** Software is always crashing or acting unpredictable
+** Customers become the QA department, and get angry
+** Problems pop like a wack-a-mole
+** Testing is tedious
+** Testing resources are scarce and developers have very limited test time. 
+** Development and Test enviromnent are very different than production
 
-[[/software/cicd][CICD]]
+* Problems
+
+* Solution
+  

@@ -1,16 +1,12 @@
 #+title: The Feedback Loop Bugs Tracking and Feature Requests
 #+date: 2020-04-05
 #+weight: 50
+#+next: /software/cta
 
-As we pointed out on the previous page, we know there are going to
-[occaisonal] bugs and we can expect an onslaught of feature requests. 
+1) Customer engagement happens before the product is created, during all of the 
+the entire process (iterations) of the agile development process.
 
-Let's make it really easy for our clients to communicate with us.
+2) By this point, the customer engagement should be pretty well
+   established adn that "bugs" should be handled similar to other
+   communications. 
 
-> Help desk software..
-
-- Fix bugs quick
-- Acknowledge and roadmap features
-- Engage in general discussions
-
-Consider help desk software.

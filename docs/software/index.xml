@@ -17,7 +17,7 @@
       <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/software/objectives-and-milestones/</guid>
-      <description>Symptoms     Team is in a growing state of chaos    Measuring Progress is impossible    Measuring Quality is impossible    Budget tracking is impossible    Team is loosing moral    Team members are not working on the most important tasks    The best team members leave   Potential Problems     No Clear, Reachable Objective Goals    No Milestones or Milestones are not measurable (can be completed)    Nobody really understands the customers needs and wants    The goals keep changing increasing confusion and waste    Team leadership is not engaged with user before and during R&amp;amp;D   The Solution   As a preface, before getting into the particulars of solving this type of problem I would like to make it clear that this framework is a direct [perhaps imperfect] reflection of the seminal works of Steve Blank Four Steps to Epiphany and Eric Ries and the Lean Startup, as well as the principals of Agile development.</description>
+      <description>https://www.youtube.com/watch?v=bQxqIKTO2Ck The Big Idea   Software development project will tend toward chaos, like most other human sport involving more than two people. Unless of course those team is bound by a clear and common vision.  Software development projects that are too focused on long term deliveries that are, NOT within immediate reach risk diverging from the end users need that it never gets used. Or almost as bad hated, by customers.</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/software/software-development-life-cycle/</guid>
-      <description> Symptoms     Changes made to software are often lost    Large forklift changes frequently cause compilation problems and long integration times.    Programmers are often working with different variations of the code, usually gets ugly when somebody has to merge them    Team members store various items of the project (including software in wild and bizzare places)   Problem     Do not have a defined process for the SDLC    Lack of version control    Next: Testing </description>
+      <description>The entire team stays in sync and consistently follow the    projects establish Software Development Life Cycle process.    Avoiding key elements of this process will accumulate technical debt that caries an interest rate that you do NOT want snowball.   Symptoms     Changes made to software are often lost    Large forklift changes frequently cause compilation problems and long integration times.</description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@
       <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/software/testing/</guid>
-      <description> Symptoms     Clients become the testers    CICD </description>
+      <description>Do not force your customers to find your bugs.    Good software becomes great when old features become more reliable and new features do resurect old bugs.    NOTE: This is when the customer set objective to the customer acceptance. Symptoms  Software is always crashing or acting unpredictable  Customers become the QA department, and get angry  Problems pop like a wack-a-mole  Testing is tedious  Testing resources are scarce and developers have very limited test time.</description>
     </item>
     
     <item>
@@ -44,7 +44,7 @@
       <pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/software/cicd/</guid>
-      <description> Next: Measure and Optimize </description>
+      <description>    Give your customers their bug fixes and new features in days or weeks, not months or years.    Forklift updgrades that break stuff are not sexy. Regular small hardly noticed updates are always appreciated!   Symptoms     No idea if your systems are bleeding    No idea if you are over paying    Can not identify total bill expenses    Next: Measure and Optimize </description>
     </item>
     
     <item>
@@ -53,16 +53,16 @@
       <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/software/feedback-loop-bugs/</guid>
-      <description>As we pointed out on the previous page, we know there are going to [occaisonal] bugs and we can expect an onslaught of feature requests.  Let&amp;#39;s make it really easy for our clients to communicate with us.  &amp;gt; Help desk software..    Fix bugs quick    Acknowledge and roadmap features    Engage in general discussions    Consider help desk software.</description>
+      <description>   Customer engagement happens before the product is created, during all of the    the entire process (iterations) of the agile development process.    By this point, the customer engagement should be pretty well established adn that &amp;#34;bugs&amp;#34; should be handled similar to other communications.   </description>
     </item>
     
     <item>
-      <title>Uncovering Unseen Improvements with Analytics</title>
-      <link>http://rustyeddy.com/software/optimize/</link>
+      <title>Improvements with Measurements and Analytics</title>
+      <link>http://rustyeddy.com/software/measure-and-optimize/</link>
       <pubDate>Sat, 04 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/software/optimize/</guid>
-      <description> What to Expect We will cover the entire Software Development Life Cycle (SDLC) process before any code is written, through the delivery and maintenance of a production piece of software. As this series moves along, I will be demonstrating the techniques using 100% free tools and OpenSource software, such that you can easily follow along.    Table of Contents Clear Goal and Milestones Version Control all the Things Test First and Always Automatic Updates Issue Tracking Analytics and Elastic       </description>
+      <guid>http://rustyeddy.com/software/measure-and-optimize/</guid>
+      <description> Symptoms     Do you know if you are loosing business because of bottlenecks in your workflow?    Are you over paying for services    Do you know how efficient your system is.    Next: Join The Gang! </description>
     </item>
     
     <item>
@@ -71,7 +71,7 @@
       <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/software/call-to-action/</guid>
-      <description> Please Take My Survey  </description>
+      <description>&amp;lt;section id=&amp;#34;cta&amp;#34; class=&amp;#34;row cta-text&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;col-sm-6&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;card&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;card-body&amp;#34;&amp;gt; &amp;lt;h5 class=&amp;#34;card-title&amp;#34;&amp;gt;What to Expect&amp;lt;/h5&amp;gt; &amp;lt;p class=&amp;#34;card-text&amp;#34;&amp;gt;	We will cover the entire Software Development Life Cycle (SDLC) process before any code is written, through the delivery and maintenance of a production piece of software. &amp;lt;/p&amp;gt; &amp;lt;p class=&amp;#34;card-text&amp;#34;&amp;gt; As this series moves along, I will be demonstrating the techniques using 100% free tools and OpenSource software, such that you can easily follow along.</description>
     </item>
     
     <item>

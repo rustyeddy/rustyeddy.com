@@ -2,9 +2,11 @@
 title: Web Developers Guide to Web Design
 date: 2019-12-30
 description: >
-  I am a developer with modest design skills, on a good day, beyond
-  medicore on most. But not to worry! We can learn some basic rules
-  from some great Designers and here are some tips
+  I am a developer with modest design skills on a good day, and no
+  formal training in the great arts of Design and User
+  eXperience. However, I have compiled a set of BPs that allow the non
+  designer in me to produce good looking and professional UIs at
+  least I think so, what do you think?. 
 categories: 
   - design
   - process
@@ -13,24 +15,73 @@ tages:
 draft: true
 ---
 
-Thankfully the Internet has some kind soles that also happen to be
-incredible designers and they have taken the time and energy to
-communicate their design best practices with us. So I am taking a tiny
-bit of time to write a short brief on the design process I have
-acquired from various sources over the years, it looks something like
-this:
+Thankfully the Internet is full of great designers with kind soles
+that have distilled their years
+of _training_, _experience_ and most of all _personal direction_ into
+a set of general guidelines and formulas that make even no-talents
+like myself look like a pro!
 
-## Scribble Out Ideas
+[TODO Give some credits and reference some of these folks].
 
-Brain Storm, Brain Dump, whatever. Get something down, for me paper is
-necessary. Draw tools on computers slow me down alot. If you are
-proficient with graphic design tools, God bless you, I envy you!
+## My Prespective on UI Design
 
-For me colored pens and a moleskine are my tools of choice.
+At the moment of this writing I am in the processes of building a
+startup. I am in the _customer discovery_ phase. 
 
-1. Scribble out ideas, brain storm, brain dump
-2. Wireframe every page (paper or online is fine), I like paper. Maybe
-   because I am part caveman.
+> I am closely following the _The Startup Owners Manual_ and _The Lean
+> Startup_ principals, which means that I need to rapidly iterate
+> through UIs.
+
+My biggest pain point with UI design at the moment is the need to
+change it quickly, while plugging it into a _backend_ that may be an
+existing production service or a _mockup_ of a service that is to be.
+
+Basically, I need to be able to show people the future that I can help
+create for them. In turn, they need to tell me the future they _want
+to have_ created for them.
+
+### People Expect Beautiful
+
+The days are gone when you could slap up an Ugly interface and expect
+to amass a large user base like craigslist. Or at least it is much
+harder now that user expectations are up. 
+
+I need to build a UI that /looks and acts/ like the finished
+application, because that is the only %100 sure wat if my app will be
+used by my customer.
+
+If we work together we can iterate ourselve to _meeting of minds_ were
+I can begin to build a product or service solution that my client can
+NOT wait to pay me for.
+
+### UI Designed By Users
+
+Ideally, I really want my users to design the UI _with_ me. I enjoy
+doing _interactive design sessions_ where the user(s) are watching as
+I make changes and start getting feedback.
+
+Every full iteration needs to be viewed and _accepted_ by the
+customer, and hence the need for acceptance testing.
+
+I want to be able to iterate through UI's in a _scientific_ manner
+building the ultimate _User Experience_ by optimizing through test,
+measurements and feedback.
+
+
+## The Design Process - Understanding the User
+
+We need to understand the user and how they expect to, or would like
+to interact with the backend software that this front end is being
+made for.
+
+
+## Storyboard and Wireframing
+
+Identify a single /Persona/ and a specific **use case** one of each,
+period. 
+
+Storyboard that use-case meaning draw each step the client will make
+through the journey of purchase.
 
 ### Wireframes
 

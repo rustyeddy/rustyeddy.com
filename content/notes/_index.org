@@ -1,6 +1,6 @@
 #+title: Notes
 #+date: 2020-04-07
-#+description: These are a few notes I have gathered along the cyber highway.
-#+draft: true
+#+description: These are some very import notes on the practical application of modern technology, that is at least how I see it.
+
 
 

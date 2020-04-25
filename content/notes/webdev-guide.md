@@ -2,10 +2,10 @@
 title: Webdev Guide
 date: 2019-12-01
 description: >
-  This is a guide to help small software development teams effeciently
-  and transparently develop software applications that run on the web.
+  This is an overview of the process I use when I need to create a
+  front end for an MVP. This is the best combination of professional
+  design and being able to quickly iterate with a small team.
 category: software
-draft: true
 ---
 
 This section of my website is a collection of _processes_ and _best

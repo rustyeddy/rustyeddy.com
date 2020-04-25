@@ -2,6 +2,13 @@
 #+date: 2020-04-05
 #+weight: 20
 
+1. The entire team stays in sync and consistently follow the
+projects establish /Software Development Life Cycle/ process.
+
+2. Avoiding key elements of this process will accumulate technical
+   debt that caries an interest rate that you do NOT want snowball.
+
+
 * Symptoms
 
 - Changes made to software are often lost
