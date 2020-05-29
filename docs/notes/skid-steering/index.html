@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+
+<title>Skid Steering</title>
+
+
+<body><header class="container bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light">
+
+	<a class="navbar-brand text-muted text-monospace" href="/"><span claa="h1">rusty eddy:</span></a>
+
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+	    <nav class="navbar-nav w-100 justify-content-end">
+		<div class="nav w-100">
+  	            <a class="nav-link" href="/resume"> resume &nbsp</a>
+  		    <a class="nav-link" href="/about"> about &nbsp</a>
+  		    <a class="nav-link" href="/software"> software &nbsp</a>
+  		    <a class="nav-link" href="/projects"> projects &nbsp</a>
+  		    <a class="nav-link" href="/notes"> notes </a>
+		</div>
+ 	    </nav>
+	</div>
+    </nav>
+</header>
+<div class="jumbotron border-top border-bottom bg-white" >
+    <div class="row">
+	<div class="col-md"></div>
+	<div class="col-md-8">
+	  <h1 class="header h2 text-center pb-1">Skid Steering</h1>
+	    <p class="leadin align-right text-muted text-center mt-0">
+		Skid Steering is probably the simplest form of steering a vehicle, both its mechanics and software are very simple and a great place to jump in and get our feet oily.
+
+	    </p>
+	</div>
+	<div class="col-md"></div>
+    </div>
+    <div class="row text-center smaller-text">
+	<div class="col"></div>
+	<div class="col-8">
+	    <nav class="nav justify-content-center">
+                
+                
+                
+                
+                
+
+	    </nav>
+
+	</div>
+	<div class="col"></div>
+    </div>
+</div>
+<div id="main body">
+<div class="container"><div class="row">
+    <div class="col"></div>
+    <div class="col-md-8 hero-text">
+	<article class="article">
+	  
+
+<p>Skid steering basics</p>
+
+<ul>
+<li>Based on <em>fixed direction wheels[1] or tracks</em></li>
+<li>There are two <em>groups</em> or <em>sides</em> of wheels: left and right</li>
+<li>All wheels in a group MUST always point in the same direction</li>
+<li>All wheels in a group MUST always rotate at the same rate</li>
+<li>Direction is determined by the speed of the two wheel groups
+
+<ul>
+<li>To move straight all motors rotate at the same rate</li>
+<li>Forward and Reverse are determined by positive and negative values</li>
+<li>Turning is achieved by varying the throttle on the right and left</li>
+</ul></li>
+</ul>
+
+<h3 id="example">Example</h3>
+
+<p>The <code>Skidder</code> class has the following API, as you can see all of
+the movements we desire can be accomplished with a single API call</p>
+
+<pre><code class="language-skidder.set_throttle(left_throttle,">does not get much simpler than this!
+
+</code></pre>
+
+<p>python
+skidder = Skidder()</p>
+
+<h1 id="move-forward-at-full-speed">Move forward at full speed</h1>
+
+<p>skidder.set_throttle(1, 1)</p>
+
+<h1 id="move-in-reverse-at-half-throttle">Move in reverse at half throttle</h1>
+
+<p>skidder.set_throttle(-0.5, -0.5)</p>
+
+<h1 id="turn-right-arch-at-60">Turn right arch at 60%</h1>
+
+<p>skidder.set_throttle(.6, 0)</p>
+
+<h1 id="turn-left-on-a-dime-and-fast-at-70">Turn left on a dime (and fast) at 70%</h1>
+
+<p>skidder.set_throttle(-0.7, 0.7)</p>
+
+<h1 id="stop">Stop</h1>
+
+<p>skidder.set_throttle(0, 0)</p>
+
+<h1 id="coast">Coast</h1>
+
+<p>skidder.set_throttle(None, None)
+```</p>
+
+<p>With this simple library we can control the most simple of Mobile
+Robots (or maybe a forklift).</p>
+
+<h3 id="note-about-speed-and-accuracy">Note About Speed and Accuracy</h3>
+
+<p>This library is very simple, it only knows how to control the
+<strong><em>percentage of potential load</em></strong> the motors will be provided.  The
+Adafruit library appropriate uses the term <strong>throttle</strong>, because we
+can not know the <strong>speed</strong> of the motor without some form of
+<strong>external feedback</strong>.</p>
+
+<h4 id="can-not-directly-control-speed">Can NOT Directly Control Speed!</h4>
+
+<p>Of course, the library does not know what motors are being used, how
+they are geared (how the gear ratio&rsquo;s are set).  Even if we knew the
+motors, we still do not know, directly the load being supplied which
+will directly effect the rotation of the motors.</p>
+
+<h4 id="nor-control-turn-radius">Nor Control Turn Radius</h4>
+
+<p>It follows to reason that the inability to control <em>speed</em> directly
+also means that we can NOT control the degree of our turns!  For
+example a faster spinning motor will rotate a chasis more degrees than
+a slower rotating motor.  This can be changed simply by the power
+supply being used, including the charge if batteries are being used.</p>
+
+<h3 id="external-feedback-required">External Feedback Required</h3>
+
+<p>This is not such a big deal when the vehicle is controlled by a Human,
+the humans makes control decisions in their brains and translate that
+to DATA INPUTS, from a joystick or keyboard possibly.</p>
+
+<h4 id="computer-controls-require-external-feedback">Computer Controls Require External Feedback</h4>
+
+<p>For the reasons stated above, Skid steering requires external feedback
+to be accurately used with computer automated controlers, like <a href="http://github.com/mobilerobot-io/otto">otto&rsquo;s
+magoo</a>.</p>
+
+<p>The possibilities for external controls are many! Including distance
+sensors, computer vision, radar, maps of many varieties, etc. The
+choices are so vast that we would be remis to become too committed to
+one or two technologies.</p>
+
+<p>For that reason our <a href="http://mobilerobot-io/rpid">Raspberry Pi Device Controller
+(rpid)</a> project was created to allow for
+external feedback of incoming <em>new state</em> combined with existing state
+measured against the <em>desired state</em> creates a new objective that
+will in turn be translated into a Control OUTPUT to the <em>skid</em> channel
+with a left and right throttles to effectively control the vehicle.</p>
+
+<h3 id="skid-steering-demonstrated">Skid Steering Demonstrated</h3>
+
+<p>Here are some diagrams and a video demonstrating <em>skid steering</em> in
+real life:</p>
+
+<blockquote>
+<p>Todo create skid steer video</p>
+
+<p>Todo create skid steer diagrams</p>
+</blockquote>
+
+<h2 id="disclaimer-semantics-of-the-term-wheel">Disclaimer ~ Semantics of the term Wheel</h2>
+
+<p>[1] Disclaimer ~ I will often use the term wheels in a very generic
+sense, sometimes the use of wheels is specificly to wheels, sometimes
+I will use it generically to include [tank tracks] or other types
+of elements that rotate to move the vehicle.</p>
+
+<p>As distinguished from <em>legs</em> or other types of <em>mobility enablers</em>.</p>
+
+<h2 id="references">References</h2>
+
+	</article>
+    </div>
+    <div class="col"></div>
+</div>
+</div>
+
+
+	</div><footer id="footer" class="container-fluid footer small-text pt-4 border-top">
+    <section class="row">
+	<div class="col"></div>
+	<div class="col text-right">
+	    <div class="address">419 Main St. #439</div>
+	    <div class="city">Huntington Beach, CA. 92648</div>
+	</div>
+	<div class="col-3 text-center">
+	    <div>
+                Last update ~
+                
+		
+                Wednesday, May 15, 2019
+		
+                
+            </div>
+	    <div>site by <a href="/">Eddy Consulting, LLC.</a> ~ &#xA9; 2008 to 2020 </div>
+	</div>
+	<div class="col">
+	    <div class="text-left">
+	        <div class="phone">(714) 362-5402</div>
+		<a href="https://github.com/rustyeddy">github</a> .
+		<a href="https://twitter.com/rustyeddy">twitter</a> .
+		<a href="https://linkedin.com/rustyeddy">linkedin</a><br/>	    
+	    </div>
+	</div>
+	<div class="col"></div>
+    </section>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-19940083-13', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+    </body>
+</html>
