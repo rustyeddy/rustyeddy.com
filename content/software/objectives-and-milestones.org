@@ -7,24 +7,24 @@
 
 {{< youtube id="bQxqIKTO2Ck" autoplay="true" >}}
 
-Watch from the begining of the speach from 0:17 seconds to the 42
-second mark (or the whole thing it is great).
+Watch from the begining of the speech from 0:17 seconds to the 42
+second mark (or if you want the whole thing. It is great).
 
 Thank You, Arnold! I could not have said it any better! 
 
 * First Rule of Success ~ Have a Vision
 
 Arnold says the **First Rule of Success** is to have a vision. I
-totaly agree with that. I mean, how can you consider something a
+totally agree with that. I mean, how can you consider something a
 success if you haven't defined what success is. 
 
 As much as is true that a vision in life is essential to success, it
 is equally true with /Software Projects/. 
 
 Without a clearly articulated vision, equiped with measurable tasks
-the project will devolve toward chaos. Unless they are able to huddle
+the project will evolve toward chaos. Unless they are able to huddle
 around the game plan and apply their passion to the project like a
-championship badmitten team.
+championship badminton team.
 
 ** Whose Vision? Hint: Not yours! 
 
@@ -35,26 +35,25 @@ up as we go! Since we don't want to stiffle creativity.
 Yea, no. We're not doing any of that stuff.
 
 The biggest mistake ever made since the caveman began programming
-(besides not testing and accepting cavewomen programmers) is building
-what YOU THINK the customer or user wants, with out the bother of
+(besides not testing), is building what YOU THINK the customer or user wants without the bother of
 including the customer.
 
 Get to know your customer.!. 
 
 :BEGIN_QUOTE:
 **Waste** is building something (or doing anything) that does not benefit
-the customer. It is also 
+the customer.  
 :END:
 
 ** 4 Epiphanies + Agile = The Lean Start
 
 Most people are aware of the basic concept of /The Lean Startup/
-championed by Eric Ries after being forced to take a business class,
-along with his business partner in order to aquire an additional round
+which was championed by Eric Ries and his partner, after being forced to take a business class
+in order to aquire an additional round
 of funding to keep their startup from folding.
 
-The class was taught by Steven Blank at UC Berkeley Haas School of
-Business was about to change the world. Or at least the infamous
+The class, taught by Steven Blank at UC Berkeley Haas School of
+Business, was about to change the world. Or at least the infamous
 /Silicon Valley/ startup scene.  
 
 Dr. Blank had figured out the "formula" to success in the High Tech
@@ -76,7 +75,6 @@ To have your customers / owners so closely involved in the development
 processes that you are building exactly what they tell you to build.
 If you help them tell you what they really need, it is hard to mess
 that up.
-
 
 
 
@@ -107,14 +105,18 @@ of **Quality** when the feature scope has been minimized.
 
 ** Getting Our House In Order
 
-I am going advocate the Kanban board to keep track of everything task
-oriented. 
+I advocate the Kanban board to keep track of tasks and the
+status of the project, if you are not familiar with the idea of a
+Kanban Board, have a quick look here [[/notes/kanban][Kanban Board]], we will bust out a
+phase 1 of an interesting project.
 
-We are going to use the /principals/ of /Agile Development/, however
-not, necessarily
+BTW - I wholly advocate the the /principals/ of /Agile Development/
+and strive to practice /agile/ on every project I work on. However, I
+have never gone through "official" training on the matter, so we'll
+lack some of the official terminology.
 
+** TODO Reference Material HERE.
 
-** Reference Material
 Next: [[/software/software-development-life-cycle][Software Development Life Cycle]]
 
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Project Portfolio on Rusty Eddy</title>
@@ -19,8 +19,7 @@
       <guid>http://rustyeddy.com/projects/redeye-gui/</guid>
       <description>About The Image The image above depicts the RedEye camera running with the Motion Detection VideoPipeline Plugin. It is identifying and tracking moving objects within the video.
 About The Webapp This Webapp was written with the Vue.js Framework. It uses Bootstrap for styling up the web page.
-Single Page Application (SPA) The website is a true Single Page Application (SPA) using the Vue Router and Vuex for state management.
-RedEye Camera API The backend is the RedEye Camera written in Go.</description>
+Single Page Application (SPA) The website is a true Single Page Application (SPA) using the Vue Router and Vuex for state management.</description>
     </item>
     
     <item>

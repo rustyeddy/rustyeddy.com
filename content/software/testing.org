@@ -21,4 +21,27 @@ acceptance.
 * Problems
 
 * Solution
-  
+
+Begin the project by defining exactly what success is. Write an
+automated test that with either verify or deny the outcome of the
+test. 
+
+** Tests become a development harness
+
+Development is a very repetitve process, the more it can be automated,
+by taking away manual steps the development process can be shortend
+dramaticlly and keep the programmer on task!
+
+* Testing Maintain Quality
+
+Your customers will NOT be mad because you find all the bugs before
+they do!.
+
+* What should be tested?
+
+There are a variety of tests that /could/ be performed, but we are
+going to focus on those tests that are going to give us the most bang
+for the buck.
+
+
+

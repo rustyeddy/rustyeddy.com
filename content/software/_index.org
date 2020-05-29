@@ -27,10 +27,11 @@ No process leads to chaos, bugs and arguments. Too much process kills efficiency
 creativity and morale.
 #+END_QUOTE:
 
-I am on a mission to define /Just Enough Process/ to keep projects
+I have created this section of my website as a place to collect the /Software Development Best Practices/ 
+  on a mission to define /Just Enough Process/ to keep projects
 organized, predictable, efficient and a pleasure to work on. To that
 end I have put together a 6-part series that /I believe/ are the
-**mandatory** ingrediants to predictable results and **peaceful**
+**mandatory** ingredients to predictable results and **peaceful**
 software releases.
 
 *** Why I am doing this?
@@ -69,3 +70,5 @@ processes using 100% free tools and Open Source software.
 Next: [[/software/objectives-and-milestones][Objectives and Milestones]]
 
 
+
+## Content Outline

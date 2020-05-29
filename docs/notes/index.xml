@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Notes on Rusty Eddy</title>
+    <title>Mobile Robot Projects on Rusty Eddy</title>
     <link>http://rustyeddy.com/notes/</link>
-    <description>Recent content in Notes on Rusty Eddy</description>
+    <description>Recent content in Mobile Robot Projects on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 24 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://rustyeddy.com/notes/index.xml" rel="self" type="application/rss+xml" />
     
@@ -29,6 +29,101 @@
       <description>This section of my website is a collection of processes and best practices regarding software development. I gather them here, in an attempt to remember and formalize.
 Over the years, I have collected a set of practices and certain software practices and patterns. When I work for a client these practices will be documented as part of the development process.
 This section of my website is dedicated to the development of web sites and apps.</description>
+    </item>
+    
+    <item>
+      <title>Red Eye Video Server</title>
+      <link>http://rustyeddy.com/notes/redeye/</link>
+      <pubDate>Fri, 24 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/redeye/</guid>
+      <description>The Red Eye project is a service definition rapper around inexpensive cameras attached to inexpesive micro-controllers that take pretty good video.
+The video streams are built using the GStreamer library. The camera native capabilities are used to extract as high quailty, realtime images possible.
+The video streams will be consumed by one or more sinks, including but not limited to Files, cloud storage, High Def Display and Computer Vision libraries.</description>
+    </item>
+    
+    <item>
+      <title>Skid Steering</title>
+      <link>http://rustyeddy.com/notes/skid-steering/</link>
+      <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/skid-steering/</guid>
+      <description>Skid steering basics
+ Based on fixed direction wheels[1] or tracks There are two groups or sides of wheels: left and right All wheels in a group MUST always point in the same direction All wheels in a group MUST always rotate at the same rate Direction is determined by the speed of the two wheel groups  To move straight all motors rotate at the same rate Forward and Reverse are determined by positive and negative values Turning is achieved by varying the throttle on the right and left   Example The Skidder class has the following API, as you can see all of the movements we desire can be accomplished with a single API call</description>
+    </item>
+    
+    <item>
+      <title>Control Station Display</title>
+      <link>http://rustyeddy.com/notes/touch-screen-display/</link>
+      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/touch-screen-display/</guid>
+      <description>&lt;p&gt;We are going to build a simple control station that begins with a
+Raspberry Pi and connected &lt;em&gt;7 inch touchscreen tablet&lt;/em&gt;.  I have it
+setup in &amp;ldquo;kiosk mode&amp;rdquo;, which is basically full page chrome without the
+tabs and tool bars etc.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sensor Station</title>
+      <link>http://rustyeddy.com/notes/sensor-station/</link>
+      <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/sensor-station/</guid>
+      <description>Sensor by rusty-1</description>
+    </item>
+    
+    <item>
+      <title>Inexpensive Motor Controllers for Arduino and Raspberry Pi</title>
+      <link>http://rustyeddy.com/notes/motor-controlor-notes/</link>
+      <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/motor-controlor-notes/</guid>
+      <description>&lt;p&gt;I prefer to use an Arduino with a Motor Controller over say a
+Raspberry Pi with a motor-controller.  I believe the Arudino has
+better support for dedicated Real-time software vs. the Raspberry Pi
+and as a superior platform for general computing including running
+Control Software.  This is how we do it on the West side &amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Control System Design</title>
+      <link>http://rustyeddy.com/notes/control-design/</link>
+      <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/control-design/</guid>
+      <description>Early in the process of building the first set of mobile robots I discovered that I was not going to settle on a single micro controller.
+The first two obvious choices being the Arduino or Raspberry Pi, for which I tried both with a modest level of success. I quickly realized that I would not be providing my sole focus on either platform, neither was sufficient for my grand plans for a number of reasons.</description>
+    </item>
+    
+    <item>
+      <title>Power</title>
+      <link>http://rustyeddy.com/notes/power/</link>
+      <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/power/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Comparing the Arduino and Raspberry Pi</title>
+      <link>http://rustyeddy.com/notes/rpi-v-arduino/</link>
+      <pubDate>Wed, 14 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/rpi-v-arduino/</guid>
+      <description>Arduino vs. Raspberry Pi in Control Systems I believe the Arudino has better hardware support, a real-time clock and due to itself simplicity creates a better platform to interact with external hardware in real-time.
+The Raspberry Pi, however has a much more powerful set of processors, more memory and a general purpose operating system making it a more suitable choice for general purpose, sophisticated software, such as communicaitons and control software.</description>
+    </item>
+    
+    <item>
+      <title>IP Multicast the basics</title>
+      <link>http://rustyeddy.com/notes/ip-multicast/</link>
+      <pubDate>Sat, 03 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/ip-multicast/</guid>
+      <description>IP Multicast addresses The typical IP addresses used by computers networking today are known as unicast addresses, meaning that every unicast address as a single (physical or logical) end point.
+Most all computer networking is point to point between two specific IP addresses, you name it: web browsing, email exchange, transfer files and so much more.
+However, there are other more specific forms on communication available and occasionally used: Broadcast and Multicast.</description>
     </item>
     
     <item>

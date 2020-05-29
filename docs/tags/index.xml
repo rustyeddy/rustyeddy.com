@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Rusty Eddy</title>
@@ -6,10 +6,55 @@
     <description>Recent content in Tags on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://rustyeddy.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>gnc</title>
+      <link>http://rustyeddy.com/tags/gnc/</link>
+      <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/gnc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>steering</title>
+      <link>http://rustyeddy.com/tags/steering/</link>
+      <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/steering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tft display</title>
+      <link>http://rustyeddy.com/tags/tft-display/</link>
+      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/tft-display/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>touch screen</title>
+      <link>http://rustyeddy.com/tags/touch-screen/</link>
+      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/touch-screen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C/C&#43;&#43;, Perl, Python and Java</title>
+      <link>http://rustyeddy.com/tags/c/c&#43;&#43;-perl-python-and-java/</link>
+      <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/c/c&#43;&#43;-perl-python-and-java/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Computer Network, Multicast</title>
@@ -21,11 +66,38 @@
     </item>
     
     <item>
-      <title>C/C&#43;&#43;, Perl, Python and Java</title>
-      <link>http://rustyeddy.com/tags/c/c&#43;&#43;-perl-python-and-java/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>adafruit</title>
+      <link>http://rustyeddy.com/tags/adafruit/</link>
+      <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/tags/c/c&#43;&#43;-perl-python-and-java/</guid>
+      <guid>http://rustyeddy.com/tags/adafruit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>arduino</title>
+      <link>http://rustyeddy.com/tags/arduino/</link>
+      <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/arduino/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>motorshield</title>
+      <link>http://rustyeddy.com/tags/motorshield/</link>
+      <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/motorshield/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>raspberry pi</title>
+      <link>http://rustyeddy.com/tags/raspberry-pi/</link>
+      <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/raspberry-pi/</guid>
       <description></description>
     </item>
     
