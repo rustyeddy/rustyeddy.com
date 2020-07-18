@@ -194,12 +194,26 @@
   </url>
   
   <url>
+    <loc>http://rustyeddy.com/software/logging/</loc>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/elk/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://rustyeddy.com/tags/embedded/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://rustyeddy.com/tags/firmware/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/logstash/</loc>
     <priority>0</priority>
   </url>
   

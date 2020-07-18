@@ -48,6 +48,15 @@
     </item>
     
     <item>
+      <title>elk</title>
+      <link>http://rustyeddy.com/tags/elk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/elk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>embedded</title>
       <link>http://rustyeddy.com/tags/embedded/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -62,6 +71,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/tags/firmware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>logstash</title>
+      <link>http://rustyeddy.com/tags/logstash/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/logstash/</guid>
       <description></description>
     </item>
     
