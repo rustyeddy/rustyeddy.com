@@ -1,0 +1,16 @@
+* ZeroMQ ZGuide
+
+We live in a connected world, and modern software has to navigate this
+world. So the building blocks for tomorrow's very largest solutions
+are connected and massively parallel. It's not enough for code to be
+"strong and silent" any more. Code has to talk to code. Code has to be
+chatty, sociable, well-connected. Code has to run like the human
+brain, trillions of individual neurons firing off messages to each
+other, a massively parallel network with no central control, no single
+point of failure, yet able to solve immensely difficult problems. And
+it's no accident that the future of code looks like the human brain,
+because the endpoints of every network are, at some level, human
+brains.  
+
+Connecting computers is so difficult that software and services to do
+this is a multi-billion dollar business. 

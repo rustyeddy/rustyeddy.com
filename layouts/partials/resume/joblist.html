@@ -1,10 +1,12 @@
-<section id="jobs" class="container mt-5">
+<section id="jobs" class="container">
     <div class="row">
 	<div class="col text-center">
 	    <h3>Work History</h3>
 	</div>
     </div>
+
     {{ with .GetPage "/resume/clients/_index.md" }}
+
     <div class="row job">
 	<div class="col-3 text-right">
 	    <h5 class="jobtitle">Eddy Consulting, LLC</h5>
@@ -17,25 +19,23 @@
 	</div>
 	<div col="col"></div>
 
-    </div> <!-- row -->
+    </div> <!-- Eddy Consulting -->
 
-    <div class="row">
+    <div class="row mt-4 mb-1">
 	<div class="col text-center">
-	    <h5 class="company mb-0 pb-0">Partial Client List</h5>
+	    <h4 class="company mb-1 pb-1">Partial Client List</h4>
 	</div>
     </div>
 
     {{ range .Pages }}
-    <div class="row">
+    <div class="row mt-3">
 	<div class="col-3">
 	    <div class="text-right client text-muted">
 		{{ .Params.company }}
 	    </div>
 	</div>
 	<div class="col-7">
-	    <div class="smaller-text">
-		{{ .Summary }}
-	    </div>
+	    {{ .Summary }}
 	</div>
 	<div class="col"></div>
     </div> <!-- center column -->
@@ -45,7 +45,7 @@
     {{ $jobs := .Site.GetPage "/resume/jobs" }}
     {{ range $jobs.Pages }}
 
-    <div class="row job">
+    <div class="row job mt-4">
 	<div class="col-3 text-right">
 	    <h6 class="jobtitle">{{ .Params.company }}</h6>
 	    <div class="duration">

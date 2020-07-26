@@ -1,20 +1,23 @@
-<section class="container">
+<section id="edu" class="container mt-2">
     <div class="row">
 	<div class="col">
 	    <h3 class="text-center">Education</h3>
 	</div>
     </div>
-    {{ with .GetPage "/resume/edu/_index.md" }}
-    {{ range .Pages }}
+
     <div class="row text-center">
-	<div class="col">
-	    <div class="h5 degree">
-		{{ .Params.degree }}, 
-	    </div>
-	    <h6 class="h6 school">{{ .Params.school }}</h6>
-	    <div class="graduate text-muted">{{ .Params.graduate }}</div>
+	<div class="col"></div>
+	<div class="col-5">
+	    <h5 class="text-center">BS Computer Science</h5>
+	    <h4>California State University, Long Beach</h4>
+	    <h6>Jan 1989</h6>
 	</div>
-    </div> <!-- center column -->
-    {{ end }}
-    {{ end }}
+	<div class="col-5">
+	    <h5 class="text-center">MS Computer Science</h5>
+	    <h4>University of Southern California</h4>
+	    <h6>Jan 1996</h6>
+	</div>
+	<div class="col"></div>
+    </div>
+
 </section>

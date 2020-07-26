@@ -6,26 +6,44 @@
     <description>Recent content in Tags on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://rustyeddy.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>vue</title>
-      <link>http://rustyeddy.com/tags/vue/</link>
-      <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
+      <title>gnc</title>
+      <link>http://rustyeddy.com/tags/gnc/</link>
+      <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/tags/vue/</guid>
+      <guid>http://rustyeddy.com/tags/gnc/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>develop, design</title>
-      <link>http://rustyeddy.com/tags/develop-design/</link>
-      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      <title>steering</title>
+      <link>http://rustyeddy.com/tags/steering/</link>
+      <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/tags/develop-design/</guid>
+      <guid>http://rustyeddy.com/tags/steering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tft display</title>
+      <link>http://rustyeddy.com/tags/tft-display/</link>
+      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/tft-display/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>touch screen</title>
+      <link>http://rustyeddy.com/tags/touch-screen/</link>
+      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/touch-screen/</guid>
       <description></description>
     </item>
     
@@ -44,6 +62,42 @@
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/tags/computer-network-multicast/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>adafruit</title>
+      <link>http://rustyeddy.com/tags/adafruit/</link>
+      <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/adafruit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>arduino</title>
+      <link>http://rustyeddy.com/tags/arduino/</link>
+      <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/arduino/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>motorshield</title>
+      <link>http://rustyeddy.com/tags/motorshield/</link>
+      <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/motorshield/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>raspberry pi</title>
+      <link>http://rustyeddy.com/tags/raspberry-pi/</link>
+      <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/tags/raspberry-pi/</guid>
       <description></description>
     </item>
     

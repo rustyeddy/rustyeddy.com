@@ -2,32 +2,62 @@
 title: Design Graphics with Canva
 description: >
   There is no reason to have ugly graphics, or a cheap looking logo
-  ever again. Canva makes it so simple to create very cool graphcs.
+  for anything you are serious about. Canva makes it sinful to accept
+  ugly graphics.
 reference: http://canva.com
-category: tools
+category: design
 date: 2017-10-22
 draft: true
 ---
 
-[Canva](http://canva.com) is a very simple yet powerful graphics art
-tool, for non-graphic artists.  You can to on there and create free
-stuff, or, if you are a pro and create graphics all the time, you can
-optin for a reasonable montly fee.
+Hey I am no designer and you can accuse me of lacking originality when
+it comes to my design sensibilities, which can be dreadfully observed
+in my current version of this website (Oct 2017).
+
+> ***Editorial update*** the above statement still holds true in
+> early 2020. 
+
+I love [Canva](http://canva.com) it is super intuitive for a
+non-designer like me.  It allows me to quickly create beautiful and
+consistent graphics for a variety of purposes including blog articles,
+social media properties, and such.
+
+> Canva will never replace a quality designer in tune with your vision.
+> But, when you don't have a top notch designer on the ready, Canva
+> is! 
+
+In my case, I use Canva to create some blog images to stir emotion and
+interest, while occaisionally passing along something informative.  At
+times I'll even use Canva to create images used in production
+software.
+
+For me, The key to keeping Canva, or any design project I find myself
+spearheading, an ultimate success is closely following the direction
+of smart and talented designers, while nozzling my own creative juices
+from splattering all over an other wise brilliant piece of work.
+
+> A significant metric for the *success* of a project is NOT being a
+> gigantic time suck.
+
+When it comes to design projects, I try to stay out of my own
+way.. Let the designers shine! In this case it is the huge 
+
+That's it, _beautiful image_! Move on.!.
+
+Some examples of images I created on Canva are "logos" for a couple of
+my personal projects:
+
+- TODO: control-station logo
+- TODO: redeye logo
+- TODO: SPAClock Logo
 
 I created the RedEye logo for the Mobile Robot Project using Canva, it
 took me 15 minutes, including remembering my forgotten password.
 
-There are a ton of templates, graphics and photos that can be easily
-drag-n-dropped into place.
+Canva provides a ton of templates, graphics and photos that can easily
+be dropped into place. 
 
-Can see some of the example graphics that I have created as the
-thumbnails of the portfolio pages.
-
-## Pro Upgrades
-
-> TODO: Branding have your style guide saved and ready to go. 
-
-Save your style guide and past logos. Templates that have pred
+> TODO: Any interest in professional upgrades
 
 ## Design School
 

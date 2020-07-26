@@ -4,13 +4,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Nixie+One|Open+Sans|Vollkorn:400,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 
-<title>Watch Me Build a Modern Software Application</title>
+<title>Predictable IoT Software Development</title>
+
+<script>(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
+0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+for(h=0;h<l.length;h++)c(e,l[h]);var f="set set_once union unset remove delete".split(" ");e.get_group=function(){function a(c){b[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));e.push([d,call2])}}for(var b={},d=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<f.length;c++)a(f[c]);return b};a._i.push([b,d,g])};a.__SV=1.2;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js";d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d)}})(document,window.mixpanel||[]);
+mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</script>
 
 
 <body><header class="container bg-white">
@@ -24,110 +28,171 @@
 
 	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 
-	    <nav class="navbar-nav w-100">
-		<div class="nav w-50">
-		    
-  	            <a class="nav-link" href="/resume">resume</a>
+	    <nav class="navbar-nav w-100 justify-content-end">
+		<div class="nav w-100">
+  	            <a class="nav-link" href="/resume"> resume &nbsp</a>
+  		    <a class="nav-link" href="/about"> about &nbsp</a>
+  		    <a class="nav-link" href="/software"> software &nbsp</a>
+  		    <a class="nav-link" href="/projects"> projects &nbsp</a>
+  		    <a class="nav-link" href="/notes"> notes </a>
 		</div>
  	    </nav>
-
 	</div>
-
     </nav>
 </header>
-<div id="main">
-<div class="container">
+<div class="jumbotron border-top border-bottom bg-white" >
+    <div class="row">
+	<div class="col-md"></div>
+	<div class="col-md-8">
+	  <h1 class="header h2 text-center pb-1">Predictable IoT Software Development</h1>
+	    <p class="leadin align-right text-muted text-center mt-0">
+		Do you ever stress over a software project, or lose sleep wondering how to start?
+	    </p>
+	</div>
+	<div class="col-md"></div>
+    </div>
+    <div class="row text-center smaller-text">
+	<div class="col"></div>
+	<div class="col-8">
+	    <nav class="nav justify-content-center">
+                
+                
+                
+                
+                
 
-    <div class="row mt-5">
+	    </nav>
+
+	</div>
+	<div class="col"></div>
+    </div>
+</div>
+<section id="main" class="container">
+<div class="container mt-5">
+
+    <div class="row">
 	<div class="col"></div> 
 	<div class="col-8">
 	    <article class="article">
 		
-
-<p>I am going to build a modern software application using all web
-technologies. It will be a Single Page App (SPA) using Go on the
-backend and Vue.js on the front.</p>
-
-<h2 id="we-will-use">We will Use</h2>
-
-<p>Go and a couple package by Gorilla will serve up the HTML, CSS and
-JavaScript. Go will also provide a REST API and Websocket interface,
-with an MQTT client coming soon.</p>
-
-<p>JavaScript and Vue.js will be used on the front end, for a totally
-reactive and modern user experience.</p>
-
-<h2 id="we-will-build">We will Build</h2>
-
-<p>An internet clock. We&rsquo;ll use a Raspberry Pi with a 7&rdquo; touch
-screen. Though any old browser will do.  The clock will be connected
-to the Internet with the following features available:</p>
-
-<ul>
-<li>Never need to set the clock, it uses internet NTP</li>
-<li></li>
-</ul>
-
-<h2 id="we-will-run">We will Run</h2>
+<p>
+Are you are involved in a software development project that is
+spinning out of control? Or maybe you want to keep from losing control?
+</p>
+<p>
+If so, I created a cool little <em>Software Project Starter Kit</em> you may
+find helpful (and calming!). This guide is not about <em>programming</em>
+rather is is all about the <em>process</em> of <strong><strong>delivering</strong></strong> <em>production</em>
+software. 
+</p>
+<h2 id="headline-1">
+The Process will Set You Free
+</h2>
+<p>
+I have worked on over a hundred software projects, a few great
+successes, some honorable mentions, and a couple miserable failures. 
+</p>
+<p>
+It has been my observation that successful projects tend to all have
+<em>just the right process</em> in place. The projects that failed did so for
+a variety of reasons, which often included no process to too much
+process. 
+</p>
+<blockquote>
+<p>
+No process leads to chaos, bugs and arguments. Too much process kills efficiency,
+creativity and morale.
+</p>
+</blockquote>
+<p>
+I have created this section of my website as a place to collect the <em>Software Development Best Practices</em> 
+on a mission to define <em>Just Enough Process</em> to keep projects
+organized, predictable, efficient and a pleasure to work on. To that
+end I have put together a 6-part series that <em>I believe</em> are the
+<strong><strong>mandatory</strong></strong> ingredients to predictable results and <strong><strong>peaceful</strong></strong>
+software releases.
+</p>
+<h3 id="headline-2">
+Why I am doing this?
+</h3>
+<p>
+I am a Software Engineer and I love what I do, at least most of the time.
+When things suck it is usually because of unreasonable expectations,
+or a team ruled by chaos.  
+</p>
+<blockquote>
+<p>
+I want to avoid suck projects.
+</p>
+</blockquote>
+<p>
+The people that I work for, my clients, customers, employers and users
+all deserve the absolute best from my knowledge and experience, in
+addition to my present day skills.
+</p>
+<blockquote>
+<p>
+I want to provide the best possible service for my clients, and
+free my team to focus on their strengths by establishing <em>Just Enough Process</em>.
+</p>
+</blockquote>
+<p>
+I am hell bent on understanding and providing my clients <em>predictable</em>
+software projects delivered on time and in budget. It makes my life
+soooo much easier, and it&#39;s great for business. But most important, it
+is the best thing for my clients!  
+</p>
+<h2 id="headline-3">
+The Software Project Starter Kit
+</h2>
+<p>
+In this series I have established, what I believe are the 6 critical
+resources that <strong><strong><strong>must</strong></strong></strong> be part of every <strong><strong><strong>serious</strong></strong></strong> software
+project. We will get into <em>what</em> the typical problems are, what we
+can do to avoid these problems followed by a demonstration of these
+processes using 100% free tools and Open Source software.
+</p>
+<p>
+Next: <a href="/software/objectives-and-milestones">Objectives and Milestones</a>
+</p>
 
 	    </article>
 	</div>
 	<div class="col"></div> 
     </div>
 
-    
-    <div class="row">
-	<div class="col"></div> 
-	<div class="col-8">
-	    <div class="title">
-		<a href="http://rustyeddy.com/software/logging/">Logging</a>
-	    </div>
-	</div> 
-	<div class="col"></div>
-    </div>
-
-    <div class="row mb-3">
-	<div class="col text-mute small text-right">
-	    <div class="date">
-		January 1, 0001
-	    </div>
-	</div> 
-	<div class="col-8">
-	    <div class="description">
-		Logging is perhaps the most important thing we have when running production software.
-
-	    </div>
-	</div> 
-	<div class="col"></div>
-    </div>
-    
 </div>
 
-
-	</div><footer id="footer" class="container footer">
-    <div class="row mt-4 pt-4 mb-4 pb-4">
+	</section><footer id="footer" class="container-fluid footer small-text pt-4 border-top">
+    <section class="row">
 	<div class="col"></div>
-	<div class="col-3 align-middle text-right">
-	    <div class="name">Rusty Eddy</div>
+	<div class="col text-right">
 	    <div class="address">419 Main St. #439</div>
-	    <div class="city">Huntington Beach, CA</div>
-	    <div class="zip">92648</div>
+	    <div class="city">Huntington Beach, CA. 92648</div>
 	</div>
-
-	<div class="col-2 text-center">
-	    <img id="myhead" class="img-fluid rounded-circle thehead" src="/img/rusty-background.jpg" />
+	<div class="col-3 text-center">
+	    <div>
+                Last update ~
+                
+		
+                Sunday, Apr 5, 2020
+		
+                
+            </div>
+	    <div>site by <a href="/">Eddy Consulting, LLC.</a> ~ &#xA9; 2008 to 2020 </div>
 	</div>
-
-	<div class="col-3 align-middle">
-	    <div class="phone">(714) 362-5402</div>
-	    <a href="mailto:rusty@rustyeddy.com">rusty@rustyeddy.com</a><br/>
-	    <a href="https://github.com/rustyeddy">github</a> .
-	    <a href="https://twitter.com/rustyeddy">twitter</a> .
-	    <a href="https://linkedin.com/rustyeddy">linkedin</a><br/>
+	<div class="col">
+	    <div class="text-left">
+	        <div class="phone">(714) 362-5402</div>
+		<a href="https://github.com/rustyeddy">github</a> .
+		<a href="https://twitter.com/rustyeddy">twitter</a> .
+		<a href="https://linkedin.com/rustyeddy">linkedin</a><br/>	    
+	    </div>
 	</div>
 	<div class="col"></div>
-    </div>
+    </section>
 </footer>
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

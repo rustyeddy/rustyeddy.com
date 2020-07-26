@@ -6,18 +6,11 @@
     <body>
 	{{- partial "header.html" . -}}
 
-	<div class="container">
-	    <div class="row mt-5 pt-5">
-		<div class="col-2"></div>
+	{{- partial "blog-header.html" . -}}
 
-		<div class="col-8">
-		    {{ .Content }}
-		</div>
-
-		<div class="col"></div>
-	    </div>
-	</div>
+	{{- partial "content.html" . -}}
 
 	{{- partial "footer.html" . -}}
+
     </body>
 </html>

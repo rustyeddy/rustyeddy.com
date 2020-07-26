@@ -6,26 +6,62 @@
     <description>Recent content in Categories on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://rustyeddy.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>computer vision</title>
-      <link>http://rustyeddy.com/categories/computer-vision/</link>
-      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
+      <title>software</title>
+      <link>http://rustyeddy.com/categories/software/</link>
+      <pubDate>Fri, 24 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/categories/computer-vision/</guid>
+      <guid>http://rustyeddy.com/categories/software/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>streaming video</title>
-      <link>http://rustyeddy.com/categories/streaming-video/</link>
-      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
+      <title>video</title>
+      <link>http://rustyeddy.com/categories/video/</link>
+      <pubDate>Fri, 24 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/categories/streaming-video/</guid>
+      <guid>http://rustyeddy.com/categories/video/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mechanics</title>
+      <link>http://rustyeddy.com/categories/mechanics/</link>
+      <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/categories/mechanics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hardware</title>
+      <link>http://rustyeddy.com/categories/hardware/</link>
+      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/categories/hardware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>electronics</title>
+      <link>http://rustyeddy.com/categories/electronics/</link>
+      <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/categories/electronics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>motors</title>
+      <link>http://rustyeddy.com/categories/motors/</link>
+      <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/categories/motors/</guid>
       <description></description>
     </item>
     

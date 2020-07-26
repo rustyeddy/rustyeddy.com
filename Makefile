@@ -1,11 +1,16 @@
+all:
 build:
 	hugo
 
-drafts:
-	hugo serve --buildDrafts --ignoreCache --noHTTPCache --watch 
+drafts: assets/scss/style.scss
+	hugo serve --buildDrafts --ignoreCache --noHTTPCache --bind "0.0.0.0" --watch 
 
 serve:
-	hugo serve --ignoreCache --noHTTPCache --watch 
+	hugo serve --ignoreCache --noHTTPCache --watch --bind "0.0.0.0" 
 
-prod:
+prod: assets/scss/style.scss
 	hugo serve --ignoreCache --noHTTPCache --renderToDisk --watch
+
+scss static/css/style.css: assets/scss/style.scss
+	scss assets/scss/style.scss:static/css/style.css
+

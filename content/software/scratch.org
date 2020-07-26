@@ -1,0 +1,556 @@
+#+title Archive Footage
+
+With at least a first slash at some milestones and goals that the
+entire team can huddle around. 
+
+** Let's roll up our sleeves and get Buzzin!
+
+But before we scatter to our cubes and bury our heads behind
+terminals, let's all agree to get on the same page by choosing a set
+of tools (manual or electric) that we all are going to agree on using
+in a /consistent and collaborative way/!
+
+It is even more amazing the number of /professionals/ that still make
+local copies to files of all sorts and then attempt to /synchronize/
+all change by emailing files back and forth.
+
+*** Stop It!
+
+We are in the ~20th century folks!~, I mean the 21st century! Let's
+get our /shit together/ and start using /version
+
+** TODO Git Version Control to the Rescue!
+
+talk about some git stuff right here.
+
+
+* Archive
+** How to Start
+
+It is amazing how many complex and expensive software projects start
+with nothing more than a /proof of concept/. 
+
+** Objective
+
+The first things above all is to state a clear, measurable
+objective. It should go without saying, the objective must also be
+reasonable. 
+
+Believe it or not, I have seen people post (on Upwork) jobs asking to
+create a /Facebook Like/ website for $500. Sheesh, I wonder if /Mark/
+(Zuck to you outsiders...) knows he way over paid to build
+/Facebook/.?. 
+
+Back to the point.. By setting clear, measurable and realistic goals
+does a /boat load/ of good things that we'll get into in bit, but one
+of the most important things is:
+
+> You position you and your team to succeed! 
+
+*** TODO Keep the Objective Clearly Posted
+
+This most likely seems like a trivial thing to do, Even a bit
+managerial. However it can Save a tremendous amount of time and energy
+Heading downTechnical rabbit trails And fixing weird bugs That may
+have otherWise Been avoided altogether By selecting an alternative
+solution By simply having the endgame in mind. 
+
+
+*** Establish Communication Protocol
+    
+Communication should be:
+
+1. easy for everybody
+2. captured to context, history for example, to capture the rationale
+   behind decisions that may have required a controversial
+   trade-off. Invaluable for repeating the same convesation. 
+
+   Also can be used to determine when old practices can be
+   obsoleted. Technology has a way obliterating completely rational
+   decision that were made a mere two years ago..
+3. DO NOT Allow project communications To be spread amongst email,
+   Texts, Social media accounts and various Other arbitrary Cyber
+   nooks and crannies.
+
+You will Lose all history and context. Debates and decisions Will be
+unnecessarily repeated.
+
+** Define a Minimum Viable Product (MVP)
+
+Focus on building something usable at first. Forget all the features
+And sexy designs, Just make sure you have something that's Necessary
+and usable.
+
+Easy and bug free always win over Doing sexy features.
+
+Build something usable With the minimum features to have a happy
+customer, With relatively bug free software. (Low tech debt).
+
+Now start iterating on features.
+
+** **Draft** Milestones and Tasks
+
+Expect them to change /they will anyway/.
+
+Milestone should each add something usable to the project. When
+necessary, Milestones will be associated with deadlines and target
+dates. 
+
+Milestones are also good time For intermittent payment. 
+
+Make An effort to improve Estimates and guesstimates. 
+
+** Advanced Topic - Separate POC from Development
+
+A POC is taking a conceptAnd demonstrating that it can actually be
+done in hardware and/or software. And implementation is
+takingApproving POC And turning it into something usable To somebody
+other than the developer. 
+
+Embrace this fact, And projecting software Development times and cost
+Become much less mysterious. 
+
+*** TODO Create an example PoC to Development
+
+Was it Rodney Brooks that Said Plan on Throwing away your first
+version. Because you will anyway.
+
+I Believe the motive behind this was simplyThe fact that Software
+development takes on to very different Trajectories Depending on
+whether you are buildingA known entity, Or are exploringA new
+development or concept.
+
+The POC is really about Going from not knowing what you don't know,
+Two knowing what you need To do. In the process of going from POC to
+implementation Is identifying that what you do know And associating
+that with Established industry patterns And best practices. 
+
+To Basically starting a development job not knowingWhen if or
+howYou're going to accomplish the desired goal.
+** Communication Parity
+
+The Ultimate goal here is communication parity. The two key factors to
+communicating and keeping parity Is the clarity of communication,
+Which should be reflected in the milestones and Tasks, In the captured
+history. 
+
+Best results happen when buy-in comes fromAll interested
+parties. Owners, Stakeholders, Providers And even management. 
+
+Communications should resemble a web vs. a tree, communications do not
+need to Real-time in most cases. ButResponses absolutely need to
+be Timely In order for the process to continue Finish on time. 
+
+
+* Testing
+
+
+** Good Job Keeping Files Organized
+
+** Next Up Treating Your Customers with Respect (They will appreciate it!)
+
+Please: **DO NOT** recruite your customers to be your /QA/
+department. Especially if they are unanaware, thinking they are
+getting a **usable** piece of software.
+
+It is time to start adopting a /Test Driven Development (TDD)/
+mindset. Even if you are knee deep into an existing development
+project, get started building out our TDD now!
+
+** Test Driven Development
+
+*** Dev Testing
+*** System Testing
+*** Acceptance Testing 
+The big umberlla. Give the big boss a place they can weigh in on their
+concerns.  Also, give your customer the assurance they need. If the
+software does not work out to their satisfaction, they can always
+smash the **Not Accepted** button.
+
+Of course, they will be requested to give a full and descriptive
+reason behind the failed test. 
+
+> This is NOT a technical problem. This is a communication problem!
+(Most likely).
+
+
+*** Test Plans For Everyone
+
+Test Plans also help Ensure that the milestones and tasks Are
+adequate. Well done test plans Tend to expose Gaps in software
+architecture And in turn the planning process. 
+
+It is critical that everybody Including management Understand the
+tests And sign off on the test plans. 
+
+** Before Development comes a Test Plan!
+
+Do not start development before you have a test plan. Period. 
+
+It can be simple, And it will not be complete, But it must precess
+any development, And is required Prior to acceptance testing.
+
+** Lets Automate Everything!
+
+OK! We will try to. But lets Except the very real probability. That we
+won't be able to automate hundred percent Of everything Out of the
+gate. And we may very well Be advised To perform manual testing.
+
+Always. And Thouroughly.
+
+Not testing for any reason Is not acceptable. The only acceptable
+answer tonight testing Is no delivery.
+
+That's More than enough To motivate us To automate As completely And
+thoroughly as possible. 
+
+
+** CICD
+
+
+Glad to hear testing is going well!
+
+Now it is time to Get the soccer out to the users For the real
+test. This test is measurable Buyer customers feedback 
+
+** Good Software is Continually Improved
+
+The greater the success software Is directly proportionate to The
+number of features that are requested As well as the number of bugs
+that are found. 
+
+> Bug reports means your softwar is getting used.!.
+
+That is obvious if people are happy using a software That they might
+have some requests that would flow in from time to time. 
+
+What might seem counterintuitive is the fact that, Even well done
+successful software will have bugs. Period. Good teams understand and
+embrace that... The Bugs will be fixed And the customers will be even
+happier 
+
+On the other hand, Bad software that is really buggy We'll never
+really get used (the day of Micro$oft FUD are happy fading in the
+past). 
+
+** Customer Expect Seamless Updates 
+
+Rolling out new versions of software to your users in a manner that
+does not make their life a nightmare should be your primary goal!
+
+Customers do not want forklift style updates to their
+software. Certainly the days of having to backup all your dataMaybe
+even back up your entire computer hard drive, Uninstall a previous
+version of the software Hold your breath, Type in A 64 character
+nonsensical string of gibberish, Click start, Listen to the CD start
+the world. 
+
+Hold your breath, And watch a number of minutes of a progress bar is
+tick by.
+
+And if all a successful you smileLittle little bit of breath out,
+Opened version of the software hope everything is okay. Going to the
+file menu to open up your backed up data, 
+
+Hold your breath again, Click load And hope to high heaven and it read
+your old data correctly.
+
+If So all is well carry-on.
+
+If not, Call customer support, Prepare to wait for Possibly hours, Oh
+and by the way Have your credit card ready to go, Just in case.
+
+Support ain't free..
+
+** Nope, that ain't good no more..
+
+Now on the other hand logging to want to Google's things And look
+aroundNo doubt some things of changed on you.  Okay baby they went a
+little overboard, We need to find somewhere and write the middle. 
+
+
+* Index 01
+
+
+** Loosing sleep over your next software project. 
+
+Waking up in a cold sweat from a night mare about bugs, not the icky
+creepy crawly kind ...
+
+Sorry for the predictable, cheesy and yet, unavoidable analogy. But
+the reality may infact be **worse than disgusting caca roaches**, but
+things that make your customers sad and your boss mad.
+
+Software bugs. Ick!!! 
+
+
+** Describe Symptoms
+
+*** Do you wonder why programmers who are supposed to be sooo smart can't seem to remember shit? 
+
+I can't count the times I've told a team member what we are doing, or
+in a meeting, mention a particular task that needs to be addressed,
+only to find three weeks lather that nothing has been accomplished.
+
+It is just about enough to make me want to start writing things down.
+
+**** How to get everybody on the same page
+
+
+
+If you want to /be a part of/ a functional team that benefits from
+your leader ship, I suggest you make it clean
+
+
+By clearly stating a) The single most important objective of the
+project, which must be reasonable. Followed by b) first pass at establishing clear
+and measurable milestones.
+
+Measurable, means that can at very minimum be counted as done.
+
+*** Have You started Scheduling Pizza Runs 2:00am the night before a realease?
+
+Every release, you swear you will apply the lessons learned from this
+and previous mistakes to never repeat them resulting in predictable
+stress free releases.
+
+However, you are still ordering Pizza at 2:00am, not so because of
+hunger, more so to ease the intense coffee buzz zinging in your head
+yer the ol tummy a bit nautious. 
+
+That is not a good comb with the pre-release stress knowing the
+success of the company is directly related to the success of your
+this software project.
+
+*** Why are programmers always talking gibberish, no matter what country they are from? 
+
+Would it it strike fear in your heart if the doctor responsible
+for saving your life only spoke /Gaelic/?
+
+Well, can't imagine it feels any better knowing your team of
+engineers, the ones responsible for the success of the software
+project, and infact **directly** responsible for the success of your
+company only speak /techalic/? (at /Galelic/ can be translated with
+help of the Internet)
+
+*** Ah, I can go on for hours
+
+As I /jot/ these thoughts down, endless stories, lessons and anecdotes
+flood my brain. Alas, me little fingers only move so fast..
+
+So I will not go on for hours, rather, I suggest that you:
+
+**** Embrace the Process
+
+It will set you free! Believe it or not! 
+
+If you embrace /a process/, I am /not/ talking about a intrusive oger
+of tasks and reports that amount to throwing 6 inches of molases on a
+race track just before a 100 yard dash.
+
+No, not that, but 
+
+**** Just Enough Process (JEP)
+
+Yep, /Just Enough Process (JEP)/ to keep the entire team organized,
+tasks and goals /clearly/ stated and all vital communication recorded
+for accuracy and perhaps posterity.
+
+Yes, it is possible, not easy, but quite doable!
+
+* Process Your Problems AWAY!
+
+Through JEP you can start gaining a sense of clarity that will lead to
+a team huddled around a single and unified goal. All with a
+clear vision of a **successful outcome** looks like, with the passion
+to move the project to the only real definition of **success**: a joy
+filled customer!
+
+** My Best Practices
+
+Here are the /most/ important elements of a /successful software
+project/, IMHO. The following list is far from exhaustive, hell we
+don't have the room (or enough of your or my attention) to cover
+everything, but.
+
+Following these guidelines will get you off to a good start.
+
+** Clarity and Unification toward a single Goal
+
+*** The One Goal
+
+The best thing you can do as a leader is establish a clear, reasonable
+and measurable goal. That can be quadrupled if the team can align
+their values and passion to something that can really be done.
+
+*** Milestones
+
+The first step in this process is to take a first pass at
+Milestones. Milestones will set the pace and priority for which the
+application comes together. 
+
+As we get more into this process, we will consider /best practices/ to
+**accurrately** predicting software cost. 
+
+*** The Reality of Budgets and Schedules
+
+This will apply equally well to the schedule. I may have some thoughts
+on this topic that sound a little radical, but if you let the logic
+play out, you'll may find your perspective on the matter of schedule
+and budget to shift getting something useful from the project ASAP.
+
+** Staying in Sync
+Getting a diverse team of techies, designers, writers and managers on
+the same page emitting high voltage energy to the project is a great
+accomplishment, well done!
+
+*** Channeled Energy
+
+With all that energy MUST be /choreographed/ not necessarily
+orchestrated (more on this later), in the right, positive direction.  
+
+An amazing accomplishment, Congrats3!
+
+But don't let the team burn out of control! The last thing we want are a
+bunch of race cars making up the race track during the race. 
+
+Perhaps a better analogy would have been a team of Klydsdales pulling
+a wagon toward the drivers destination is more appropriate, but the
+thought of equating high paid developers with caged animals seemed a
+little condescending.
+
+Sorry, I do loose track at times (feel free to tell me to speed things
+up a bit, by the way..).
+
+*** Version Control is The Foundation of Software
+
+Period. Without version control you have a mess or /ping.c/!.  
+
+The cool thing is, version control is all the rage!!! Every developer
+worth their salt has a github account (whether they use it or not), I
+suggest everybody involved in the software development process do the
+same. 
+
+*** Build Your Process Around Your Development Team
+
+Developers are likely amoung largest expense, why not make them  as
+efficient (and as happy, they may give you a $2/hr discount) by
+accepting the fact that you don't have to be a developer to benefit
+from processes that originated from the software industry.
+
+**** Rustys Wacky Views
+
+Someday, software development tools and processes are going to
+transcent just the software development community, for good reason.
+
+Smart managers will embrace this and loose the fear of /all things
+programmer/ and understand enough to be on sync with perhaps your most
+valuable asset.
+
+
+** Testing
+Please: **DO NOT** recruite your customers to be your /QA/
+department. Especially if they are unanaware, thinking they are
+getting a **usable** piece of software.
+
+It is time to start adopting a /Test Driven Development (TDD)/
+mindset. Even if you are knee deep into an existing development
+project, get started building out our TDD now!
+
+*** Before Development comes a Test Plan!
+
+Do not start development before you have a test plan. Period. 
+
+It can be simple, And it will not be complete, But it must precess
+any development, And is required Prior to acceptance testing.
+
+*** Test plans Tie to Milestones and Tasks
+
+Now here is where we get some slickness going. We are going to create
+a test or tests (as many as needed) that will tie back to the tasks
+and milestones that we have began to layout.
+
+As the tests are passed, and the code is commited to the repo, we can
+check another well done task off, getting us closer to our milestone
+and hence goal.
+
+This also begins to give us insight to /realistic/ development
+times. Letting us adjust our predictions for the next time around. 
+
+** Deploy and Updates
+
+Well now that code has passed /acceptance/, that is, as soon as it is
+/acceptable/ for your customers to have:
+
+**** SHIP IT!
+
+But, goodness, gracious, Again DO NOT make this painful on your
+peeps. Updates should come easy. That'll keep them happy for sure! 
+
+*** Bugs will exist
+
+Even the cleanest home is going to have a bug somewhere, right? Yep,
+same for software. We are going to embrace the bug, and then squish it
+(electronically of course).
+
+This will re-inforce your clients love for you. The rare bug they
+do encounter get squashed and a fixed promptly and transparently roles
+out to your customers. 
+
+*** Success demands New Features 
+
+Your users will be so happy and confident in the software, they will
+be expecting wonderful new features to be rolling out. 
+
+They don't want to wait for them, nor do they want the old features to
+break! 
+
+*** A seemless, zero touch upgrade experience will be GREATLY appreciated! 
+
+Zero Touch! The holy grail of complicated software and network
+systems.
+
+** Capturing Feedback
+
+Make it easy for customers to talk to us. We want bug Reports so we
+can squash them little bastards.
+
+We want feedback, nobody wants to work on levers and gadgets that
+nobody is going to use. 
+
+The best feedback we can get is always going to be the people that use
+the software, oh yea, and the people that pay for it.
+  
+** Adding Some Analytics
+Deployed software is a living being and needs to /live/
+somewhere. Living spaces ain't free, a little bit of budgeting and
+tracking can help you make decisions that will save lots of cash.
+
+Also find weak links in your system that could be pissing your visitor
+off. If we are pissing our visitors off, we at least better know why,
+and most of them will not take the time to tell us why...
+
+* Summary
+
+I have determined that I am going to start documenting and organizing
+my /hobos bag/ brain of /Software Development Best Practices (SDBP)/,
+let's call it.
+
+I have built this bag of experience, skill and opinions over many
+years of working on, and leading /wonderously successful/ and
+/horribly tragic/ software projects.
+
+I certainly do NOT want to experience the /horribly tragic/ projects
+any longer, as well I do NOT want my clients to suffer anything of the
+sort. 
+
+So, at as base, I have documented the practices into **repeatable
+processes** and hopefully, they get vetted by experience software
+jockeys and managers alike.
+
+Also, I would really like to hear, what you fear, or ailes you when
+your knee deep in a software process.
+
+>> Would You Mind doign me a Favor - CTA << 
+
+* CICD
