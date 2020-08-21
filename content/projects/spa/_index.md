@@ -1,10 +1,10 @@
 ---
-title: SPA Clock
+title: SPA - Single Page Application Micro-Server
 date: 2019-01-19
 description: >
-  This Single Page App (SPA) is a clock connected to the internet,
-  which, in addition to being _zero touch_ with perfect time, it also
-  access other important things.
+  This Single Page App (SPA) is a small, simple and pretty fast web server
+  ideal for building dashboards on little computers like the Raspberry
+  PI, as well as                   
 categories: 
   - micro service
   - fullstack

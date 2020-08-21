@@ -1,7 +1,9 @@
 ---
 title: RedEye Camera ~ Backend
 date: 2020-04-01
-description: RedEye is smart camera software built with Open Computer Vision (OpenCV) with simple control and configuration APIs
+description: -
+  RedEye is smart camera software built with Open Computer Vision
+  (OpenCV) with simple control and configuration APIs 
 site: http://rustyeddy.com/projects/redeye
 github: https://github.com/redeyelab/redeye
 image: /img/redeye-cmdline-snapshot.png

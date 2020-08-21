@@ -263,10 +263,10 @@ California State Educators.&lt;/p&gt;</description>
     
     <item>
       <title>RedEye Webapp ~ Front End</title>
-      <link>http://rustyeddy.com/projects/redeye-gui/</link>
+      <link>http://rustyeddy.com/projects/redeye/redeye-gui/</link>
       <pubDate>Wed, 08 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/projects/redeye-gui/</guid>
+      <guid>http://rustyeddy.com/projects/redeye/redeye-gui/</guid>
       <description>About The Image The image above depicts the RedEye camera running with the Motion Detection VideoPipeline Plugin. It is identifying and tracking moving objects within the video.
 About The Webapp This Webapp was written with the Vue.js Framework. It uses Bootstrap for styling up the web page.
 Single Page Application (SPA) The website is a true Single Page Application (SPA) using the Vue Router and Vuex for state management.</description>
@@ -297,17 +297,6 @@ Single Page Application (SPA) The website is a true Single Page Application (SPA
       
       <guid>http://rustyeddy.com/software/lander02/</guid>
       <description> TODO Put Headline here  Clear Objectives and Milestones with Kanban (PM)   If you find yourself with what feels like an excessive amount of instances of mis-communication Organization and Synchronization with Version Control (VC)  Quality Assurance with Testing with Test Driven Design (TDD)  Painless updates for happy clients with (CI/CD)  Maintain clear communication with your clients (Help Desk)  Analyze your systems and flush out bottle necks and operational waste (Analytics)  </description>
-    </item>
-    
-    <item>
-      <title>RedEye Camera ~ Backend</title>
-      <link>http://rustyeddy.com/projects/redeye-camera/</link>
-      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/projects/redeye-camera/</guid>
-      <description>About the Camera Software The RedEye Camera software streams video over IP through configurable Computer Vision Pipelines with example pipelines that include:
- Face Detection Motion Detection Object Tracking  Pipelines can be built as plugins and added directly to the camera with runtime configuration. This allows you to add your own Computer Vision application(s) without worrying too much about the software that controls the camera.
-Camera APIs The Camera provides APIs for camera control, configuration and storage.</description>
     </item>
     
     <item>
@@ -379,17 +368,6 @@ tabs and tool bars etc.&lt;/p&gt;</description>
       
       <guid>http://rustyeddy.com/notes/sensor-station/</guid>
       <description>Sensor by rusty-1</description>
-    </item>
-    
-    <item>
-      <title>OC Low Vision Website</title>
-      <link>http://rustyeddy.com/projects/oclv-website/</link>
-      <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/projects/oclv-website/</guid>
-      <description>Orange County Low Vision is old school when it comes to personal customer service. According to Kelly Eddy, the owner of OCLV:
- &amp;ldquo;Many of our clients are well into their 80&amp;rsquo;s and above, further more we typically do business in their homes. Trust is everything.&amp;rdquo;
- Since Personal Service and Trust have always been the foundation of OCLV &amp;ldquo;business&amp;rdquo; model, it is impairative the new website project reflect the same personable reality, yet leverage the internet to the benefit of the business and the client.</description>
     </item>
     
     <item>
@@ -499,6 +477,26 @@ However, there are other more specific forms on communication available and occa
       
       <guid>http://rustyeddy.com/software/scratch/</guid>
       <description>With at least a first slash at some milestones and goals that the entire team can huddle around. Let&amp;#39;s roll up our sleeves and get Buzzin!   But before we scatter to our cubes and bury our heads behind terminals, let&amp;#39;s all agree to get on the same page by choosing a set of tools (manual or electric) that we all are going to agree on using in a consistent and collaborative way!</description>
+    </item>
+    
+    <item>
+      <title>A MicroService Dashboard for MicroControllers</title>
+      <link>http://rustyeddy.com/projects/spa/the-frontend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/projects/spa/the-frontend/</guid>
+      <description> Written in vue Vuetify has been added to make it really pretty and use great components  </description>
+    </item>
+    
+    <item>
+      <title>An HTTP Server written in Go</title>
+      <link>http://rustyeddy.com/projects/spa/the-server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/projects/spa/the-server/</guid>
+      <description>HTML5 Websites Serves a web page routed in the &amp;lsquo;-pub&amp;rsquo; path. If path is empty, it will serve up an in-memory page, meaning you will get a web page regardless of whether you provide a filesystem or not.
+Serve HTML Websites To run the static website directly from memory do this:
+% spa  If you want to run a specific website that contains a directory with an index.html file in it, we can serve that up like this:</description>
     </item>
     
     <item>
