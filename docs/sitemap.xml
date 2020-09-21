@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -140,11 +140,6 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/software/lander02/</loc>
-    <lastmod>2020-04-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/quotes/</loc>
     <lastmod>2020-04-01T00:00:00+00:00</lastmod>
   </url>
@@ -172,7 +167,6 @@
   <url>
     <loc>http://rustyeddy.com/categories/</loc>
     <lastmod>2019-05-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -183,36 +177,21 @@
   <url>
     <loc>http://rustyeddy.com/categories/software/</loc>
     <lastmod>2019-05-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://rustyeddy.com/categories/video/</loc>
     <lastmod>2019-05-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/notes/skid-steering/</loc>
-    <lastmod>2019-05-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/</loc>
-    <lastmod>2019-05-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://rustyeddy.com/tags/gnc/</loc>
     <lastmod>2019-05-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://rustyeddy.com/categories/mechanics/</loc>
     <lastmod>2019-05-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -221,9 +200,18 @@
   </url>
   
   <url>
+    <loc>http://rustyeddy.com/notes/skid-steering/</loc>
+    <lastmod>2019-05-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://rustyeddy.com/tags/steering/</loc>
     <lastmod>2019-05-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/</loc>
+    <lastmod>2019-05-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -249,19 +237,16 @@
   <url>
     <loc>http://rustyeddy.com/categories/hardware/</loc>
     <lastmod>2019-04-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://rustyeddy.com/tags/tft-display/</loc>
     <lastmod>2019-04-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://rustyeddy.com/tags/touch-screen/</loc>
     <lastmod>2019-04-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -275,15 +260,8 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/tags/c/c&#43;&#43;-perl-python-and-java/</loc>
-    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/tags/computer-network-multicast/</loc>
     <lastmod>2018-09-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -292,44 +270,38 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/notes/motor-controlor-notes/</loc>
-    <lastmod>2018-08-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/tags/adafruit/</loc>
     <lastmod>2018-08-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://rustyeddy.com/tags/arduino/</loc>
     <lastmod>2018-08-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://rustyeddy.com/categories/electronics/</loc>
     <lastmod>2018-08-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/notes/motor-controlor-notes/</loc>
+    <lastmod>2018-08-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://rustyeddy.com/categories/motors/</loc>
     <lastmod>2018-08-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://rustyeddy.com/tags/motorshield/</loc>
     <lastmod>2018-08-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://rustyeddy.com/tags/raspberry-pi/</loc>
     <lastmod>2018-08-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -354,17 +326,10 @@
   
   <url>
     <loc>http://rustyeddy.com/notes/zeromq/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://rustyeddy.com/quotes/massively-connected/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/resources/messaging-and-communication-packages/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -372,11 +337,19 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/projects/spa/the-frontend/</loc>
+    <loc>http://rustyeddy.com/tags/c/c&#43;&#43;-perl-python-and-java/</loc>
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/projects/spa/the-server/</loc>
+    <loc>http://rustyeddy.com/tags/elk/</loc>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/embedded/</loc>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/tags/firmware/</loc>
   </url>
   
   <url>
@@ -384,33 +357,11 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/resources/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/elk/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/embedded/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/tags/firmware/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/tags/logstash/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>http://rustyeddy.com/tags/single-page-app/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>

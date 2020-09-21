@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Project Portfolio on Rusty Eddy</title>
@@ -10,26 +10,6 @@
     
 	<atom:link href="http://rustyeddy.com/projects/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>A MicroService Dashboard for MicroControllers</title>
-      <link>http://rustyeddy.com/projects/spa/the-frontend/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/projects/spa/the-frontend/</guid>
-      <description> Written in vue Vuetify has been added to make it really pretty and use great components  </description>
-    </item>
-    
-    <item>
-      <title>An HTTP Server written in Go</title>
-      <link>http://rustyeddy.com/projects/spa/the-server/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/projects/spa/the-server/</guid>
-      <description>HTML5 Websites Serves a web page routed in the &amp;lsquo;-pub&amp;rsquo; path. If path is empty, it will serve up an in-memory page, meaning you will get a web page regardless of whether you provide a filesystem or not.
-Serve HTML Websites To run the static website directly from memory do this:
-% spa  If you want to run a specific website that contains a directory with an index.html file in it, we can serve that up like this:</description>
-    </item>
     
   </channel>
 </rss>

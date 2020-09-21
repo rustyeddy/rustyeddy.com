@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rusty Eddy</title>
@@ -85,7 +85,6 @@ Cutters. I manage five software projects, including two Web
 Applications for the control and calibration of the Laser system. I
 am also responsible for the successful delivery and maintanance of the
 products Firmaware and Fleet Management system.&lt;/p&gt;
-
 &lt;blockquote&gt;
 &lt;p&gt;C/C++, Go &amp;amp; Python, embedded systems and microservices.&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -101,7 +100,6 @@ products Firmaware and Fleet Management system.&lt;/p&gt;
 the provisioning of their Private Cloud Service offering. I was an
 individual contributor on this project. I collaborated with another
 developer.&lt;/p&gt;
-
 &lt;blockquote&gt;
 &lt;p&gt;Ansible, Linux, Python, Websockets, Networking&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -117,7 +115,6 @@ developer.&lt;/p&gt;
 Software Defined Networking (SDN) team. We were tasked with replacing
 the companies aging production Video Distribution Network with a new
 modernized design. Project goals included:&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;Replace aged network with modern SDN solution&lt;/li&gt;
 &lt;li&gt;Solution to incrementally replace existing production network&lt;/li&gt;
@@ -138,7 +135,6 @@ hydrological gauging stations.  Data is gathered by pulling data from
 line of sight telemetry radios and NOAA/LRGS satellite ground
 stations. Data is fed to timeseries server for hydrological
 calculations and alert monitoring.&lt;/p&gt;
-
 &lt;blockquote&gt;
 &lt;p&gt;Timeseries database, C/C++, PHP, Python and Java.&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -155,7 +151,6 @@ kernal.  Modified multicast routing daemon to run on same operating
 system allowing the product to serve as the foundation for a military
 grade network switch/router.  Added IPv6 Neighbor Discovery to the
 suite of routing protocols.&lt;/p&gt;
-
 &lt;blockquote&gt;
 &lt;p&gt;C/C++ and Network Routing Protocols; Real Time OS.&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -171,7 +166,6 @@ suite of routing protocols.&lt;/p&gt;
 games) from a single media source to hundreds of in­flight
 entertainment units with minimal redundancy.  Contributed to the
 design and development of an inflight entertainment server.&lt;/p&gt;
-
 &lt;blockquote&gt;
 &lt;p&gt;Perl, Python, C/C++ and Java&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -188,7 +182,6 @@ for the design, implementation and testing the complete suite of
 Multicast Routing protocols for the Cisco Carrier Routing System
 (CRS).  Worked this project from early design through product launch
 into maintenance.&lt;/p&gt;
-
 &lt;blockquote&gt;
 &lt;p&gt;Computer Networks, Multicast Routing, C/C++, Real Time, Distributed
 Systems&lt;/p&gt;
@@ -223,8 +216,8 @@ prominent members of the computer networking community.&lt;/p&gt;</description>
       
       <guid>http://rustyeddy.com/resume/jobs/retix/</guid>
       <description>Promoted to lead the team of 6 engineers that developed and automated test plans for L2 switches, OSPF, RIP and BGP
- Implemented an automated test framework and led junior engineers in developing the automated test suites. C; C++; Perl; TCL
- Provided 3rd level customer support, serious customer problems that could not be resolved by customer support or field engineers became my teams responsibility to diagnose and determine solutions and workarounds was required.</description>
+  Implemented an automated test framework and led junior engineers in developing the automated test suites. C; C++; Perl; TCL
+  Provided 3rd level customer support, serious customer problems that could not be resolved by customer support or field engineers became my teams responsibility to diagnose and determine solutions and workarounds was required.</description>
     </item>
     
     <item>
@@ -236,7 +229,6 @@ prominent members of the computer networking community.&lt;/p&gt;</description>
       <description>&lt;p&gt;Led a team of 5 Sysadmins responsible for the use and well being of
 Engineering Departments 300+ UNIX workstations, servers (Sun, HP, DEC)
 and network.&lt;/p&gt;
-
 &lt;p&gt;On a team that Developed a Real Time OS that was embedded in a variety
 of space and military projects.&lt;/p&gt;</description>
     </item>
@@ -269,7 +261,8 @@ California State Educators.&lt;/p&gt;</description>
       <guid>http://rustyeddy.com/projects/redeye/redeye-gui/</guid>
       <description>About The Image The image above depicts the RedEye camera running with the Motion Detection VideoPipeline Plugin. It is identifying and tracking moving objects within the video.
 About The Webapp This Webapp was written with the Vue.js Framework. It uses Bootstrap for styling up the web page.
-Single Page Application (SPA) The website is a true Single Page Application (SPA) using the Vue Router and Vuex for state management.</description>
+Single Page Application (SPA) The website is a true Single Page Application (SPA) using the Vue Router and Vuex for state management.
+RedEye Camera API The backend is the RedEye Camera written in Go.</description>
     </item>
     
     <item>
@@ -288,15 +281,6 @@ Single Page Application (SPA) The website is a true Single Page Application (SPA
       
       <guid>http://rustyeddy.com/software/outline/</guid>
       <description>Overview     Assumption: The customer is known    Assumption: The application has been vetted    Make Software Development Predictable. We want to make the software development processes predictable, to remove the mysterious schedules and never ending drain to the budget.    Right size the process: Process is essential for success. Minimizing process is essential for effeciency.    I want to document the things that make my life, as a developer easier and most important, help deliver what my customers want, on time and within bugdet.</description>
-    </item>
-    
-    <item>
-      <title>The Software Development Process</title>
-      <link>http://rustyeddy.com/software/lander02/</link>
-      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/software/lander02/</guid>
-      <description> TODO Put Headline here  Clear Objectives and Milestones with Kanban (PM)   If you find yourself with what feels like an excessive amount of instances of mis-communication Organization and Synchronization with Version Control (VC)  Quality Assurance with Testing with Test Driven Design (TDD)  Painless updates for happy clients with (CI/CD)  Maintain clear communication with your clients (Help Desk)  Analyze your systems and flush out bottle necks and operational waste (Analytics)  </description>
     </item>
     
     <item>
@@ -346,7 +330,7 @@ The video streams will be consumed by one or more sinks, including but not limit
       
       <guid>http://rustyeddy.com/notes/skid-steering/</guid>
       <description>Skid steering basics
- Based on fixed direction wheels[1] or tracks There are two groups or sides of wheels: left and right All wheels in a group MUST always point in the same direction All wheels in a group MUST always rotate at the same rate Direction is determined by the speed of the two wheel groups  To move straight all motors rotate at the same rate Forward and Reverse are determined by positive and negative values Turning is achieved by varying the throttle on the right and left   Example The Skidder class has the following API, as you can see all of the movements we desire can be accomplished with a single API call</description>
+ Based on fixed direction wheels[1] or tracks There are two groups or sides of wheels: left and right All wheels in a group MUST always point in the same direction All wheels in a group MUST always rotate at the same rate Direction is determined by the speed of the two wheel groups  To move straight all motors rotate at the same rate Forward and Reverse are determined by positive and negative values Turning is achieved by varying the throttle on the right and left    Example The Skidder class has the following API, as you can see all of the movements we desire can be accomplished with a single API call skidder.</description>
     </item>
     
     <item>
@@ -367,7 +351,7 @@ tabs and tool bars etc.&lt;/p&gt;</description>
       <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/notes/sensor-station/</guid>
-      <description>Sensor by rusty-1</description>
+      <description></description>
     </item>
     
     <item>
@@ -378,14 +362,11 @@ tabs and tool bars etc.&lt;/p&gt;</description>
       <guid>http://rustyeddy.com/resume/pubs/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Ramesh Govindan, et el.&lt;/strong&gt; &lt;em&gt;&amp;ldquo;An Architecture for Stable, Analyzable
 Internet Routing&amp;rdquo;&lt;/em&gt;, IEEE Network Magazine, Jan-Feb 1999.&lt;/p&gt;
-
 &lt;p&gt;&lt;strong&gt;Rusty Eddy, Ramesh Govindan,&lt;/strong&gt; &lt;em&gt;&amp;ldquo;Testing Protocol Implementations
 with pkt&amp;rdquo;&lt;/em&gt;, Networld+Interop 99 Engineers Conference Proceedings, June
 1999&lt;/p&gt;
-
 &lt;p&gt;&lt;strong&gt;Rusty Eddy&lt;/strong&gt;, &lt;em&gt;&amp;ldquo;Emulating Multicast Routing Protocols in a Software
 Defined Networking (SDN) Controller&amp;rdquo;&lt;/em&gt;, AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;
-
 &lt;p&gt;&lt;strong&gt;Rusty Eddy&lt;/strong&gt;, &lt;em&gt;&amp;ldquo;Testing Multicast SDN Networks in a Container&amp;rdquo;&lt;/em&gt;,
 AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;</description>
     </item>
@@ -463,40 +444,11 @@ However, there are other more specific forms on communication available and occa
     
     <item>
       <title></title>
-      <link>http://rustyeddy.com/resources/messaging-and-communication-packages/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/resources/messaging-and-communication-packages/</guid>
-      <description>Messaging and Communications   ZeroMQ :: is a messaging package that has an emphasis on fast and intuitive API. Man I hope this package is as good as it&amp;#39;s beginning guide  Gorilla/mux :: A built to serve up REST api&amp;#39;s, gorilla does that and some more important stuff like serve up static websites and provide support for initiating websockets  Gorilla/websocket :: Handles the full websocket spec. Works great with the standard http router and Gorilla/mux the full featured router.</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>http://rustyeddy.com/software/scratch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/software/scratch/</guid>
       <description>With at least a first slash at some milestones and goals that the entire team can huddle around. Let&amp;#39;s roll up our sleeves and get Buzzin!   But before we scatter to our cubes and bury our heads behind terminals, let&amp;#39;s all agree to get on the same page by choosing a set of tools (manual or electric) that we all are going to agree on using in a consistent and collaborative way!</description>
-    </item>
-    
-    <item>
-      <title>A MicroService Dashboard for MicroControllers</title>
-      <link>http://rustyeddy.com/projects/spa/the-frontend/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/projects/spa/the-frontend/</guid>
-      <description> Written in vue Vuetify has been added to make it really pretty and use great components  </description>
-    </item>
-    
-    <item>
-      <title>An HTTP Server written in Go</title>
-      <link>http://rustyeddy.com/projects/spa/the-server/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/projects/spa/the-server/</guid>
-      <description>HTML5 Websites Serves a web page routed in the &amp;lsquo;-pub&amp;rsquo; path. If path is empty, it will serve up an in-memory page, meaning you will get a web page regardless of whether you provide a filesystem or not.
-Serve HTML Websites To run the static website directly from memory do this:
-% spa  If you want to run a specific website that contains a directory with an index.html file in it, we can serve that up like this:</description>
     </item>
     
     <item>

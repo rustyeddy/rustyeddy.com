@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Predictable IoT Software Development on Rusty Eddy</title>
+    <title>Discovering Predictable IoT Software Development on Rusty Eddy</title>
     <link>http://rustyeddy.com/software/</link>
-    <description>Recent content in Predictable IoT Software Development on Rusty Eddy</description>
+    <description>Recent content in Discovering Predictable IoT Software Development on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 05 Apr 2020 00:00:00 +0000</lastBuildDate>
@@ -81,15 +81,6 @@
       
       <guid>http://rustyeddy.com/software/outline/</guid>
       <description>Overview     Assumption: The customer is known    Assumption: The application has been vetted    Make Software Development Predictable. We want to make the software development processes predictable, to remove the mysterious schedules and never ending drain to the budget.    Right size the process: Process is essential for success. Minimizing process is essential for effeciency.    I want to document the things that make my life, as a developer easier and most important, help deliver what my customers want, on time and within bugdet.</description>
-    </item>
-    
-    <item>
-      <title>The Software Development Process</title>
-      <link>http://rustyeddy.com/software/lander02/</link>
-      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/software/lander02/</guid>
-      <description> TODO Put Headline here  Clear Objectives and Milestones with Kanban (PM)   If you find yourself with what feels like an excessive amount of instances of mis-communication Organization and Synchronization with Version Control (VC)  Quality Assurance with Testing with Test Driven Design (TDD)  Painless updates for happy clients with (CI/CD)  Maintain clear communication with your clients (Help Desk)  Analyze your systems and flush out bottle necks and operational waste (Analytics)  </description>
     </item>
     
     <item>
