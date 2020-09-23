@@ -110,6 +110,11 @@
   </url>
   
   <url>
+    <loc>http://rustyeddy.com/sensors/</loc>
+    <lastmod>2020-09-06T10:32:26-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://rustyeddy.com/notes/building-a-product-or-service/</loc>
     <lastmod>2020-04-20T00:00:00+00:00</lastmod>
   </url>
@@ -117,11 +122,6 @@
   <url>
     <loc>http://rustyeddy.com/</loc>
     <lastmod>2020-04-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/projects/redeye/redeye-gui/</loc>
-    <lastmod>2020-04-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -141,11 +141,6 @@
   
   <url>
     <loc>http://rustyeddy.com/quotes/</loc>
-    <lastmod>2020-04-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/projects/redeye/</loc>
     <lastmod>2020-04-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -220,11 +215,6 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/projects/</loc>
-    <lastmod>2019-05-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/notes/</loc>
     <lastmod>2019-04-24T00:00:00+00:00</lastmod>
   </url>
@@ -252,11 +242,6 @@
   <url>
     <loc>http://rustyeddy.com/notes/sensor-station/</loc>
     <lastmod>2019-04-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/projects/oclv/</loc>
-    <lastmod>2019-03-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
