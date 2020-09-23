@@ -88,42 +88,40 @@ Insert Diagram Here.
 </h3>
 <p>
 It starts by collecting data, cleaning and distribtuing the data to a
-dashboard, databases, control logic and other interesting
-places. 
+dashboard, databases, control logic and other interesting places. 
 </p>
 <h4 id="headline-3">
 Example Application
 </h4>
 <p>
-Spread a number of ss around a yard with the following sensors: soil
-moisture, light sensor, temprature and humidity. All this data is
-gathered by small inexpensive devices (micro-controllers) that run off
-solar or battery power collecting afore mentioned data.
+Spread a number of <em>Sensor Stations</em> around a yard with the following
+sensors: soil moisture, light sensor, temprature and humidity. All
+this data is gathered by small inexpensive devices (micro-controllers)
+that run off solar or battery power collecting afore mentioned data.
 </p>
 <p>
-The data is transmitted via MQTT channels (Publish /
-Subscription). We have a <em>Macro-controller</em> as the hub gathering data,
-perhaps reformatting it and sending it to a variety of <em>subscribers</em>
-such as a <em>Real time</em> Dashboard (Web/UI) and cloud based
-<em>Time-SeriesDB</em>. 
+The data is transmitted via wireless network to a <em>Macro-controller</em>
+that collects, cleanses and passes the data along to it&#39;s desired
+locations including but not limited to: a <em>real-time dashboard</em>,
+<em>time-series database</em> and <em>control logic</em>.
+</p>
+<p>
+The data can then be used to turn on and off lights and sprinklers,
+amoung a variety of other cool things.
 </p>
 <h2 id="headline-4">
 Components
 </h2>
 <h3 id="headline-5">
-Micro-Controllers (esp32)
+Micro Controllers
 </h3>
 <p>
-Microcontrollers are mini bare bone computers that we will program to
-support actually do what is being documented here.
-</p>
-<p>
-For our purposes we will build little devices that are fitted with
-sensors including soil moisture, air temp, humidty and such. The
-devices will be able to transmit data wirelessly back to a <em>Macro
-Controller</em> that cares for the data and sends it to it&#39;s various
-destinations including but not limited to: control / business logic,
-databases, dashboards and so on.
+For our purposes we will build <em>Sensor Stations</em> from little,
+inexpensive micro-controllers are fitted with sensors including soil
+moisture, air temp, humidty and such. The devices will be able to
+transmit data wirelessly back to a <em>Macro Controller</em> that cares for
+the data and sends it to it&#39;s various destinations such as control
+logic, databases, dashboards and so on.
 </p>
 <h4 id="headline-6">
 <span class="todo">TODO</span>
@@ -134,14 +132,16 @@ Mesh Network
 </h3>
 <p>
 The micro controllers are capable of forming self configuring <em>mesh</em>
-networks with slimmed down minimal protocols ideal for semi-low data
-rate application to moderate speeds capable of supporting distributed
-video. 
+networks with slimmed down wireless network protocols (wifi &amp; ble)
+ideal for low to moderate data rate sensor advertisements may include
+streaming video in certain conditions.
 </p>
 <p>
 The mesh network allows devices to be scattered about in arbitrary
 patterns to form networks that are capable of covering large areas
-even with out any power or network infrastructure.
+even with out any power or network infrastructure.  The <em>Mesh</em> is self
+forming and healing, zero configuration, zero infrastructure capable
+network with an optional <em>IP Gateway</em>.
 </p>
 <p>
 The mesh networks are advertised capable of 10Mps (or 1mps) per device

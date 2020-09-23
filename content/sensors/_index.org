@@ -9,54 +9,52 @@ a complete _Earth to Cloud_ /IoT/ framework.
 ** TODO Insert Diagram Here.
 
 It starts by collecting data, cleaning and distribtuing the data to a
-dashboard, databases, control logic and other interesting
-places. 
+dashboard, databases, control logic and other interesting places. 
 
 *** Example Application
 
-Spread a number of ss around a yard with the following sensors: soil
-moisture, light sensor, temprature and humidity. All this data is
-gathered by small inexpensive devices (micro-controllers) that run off
-solar or battery power collecting afore mentioned data.
+Spread a number of /Sensor Stations/ around a yard with the following
+sensors: soil moisture, light sensor, temprature and humidity. All
+this data is gathered by small inexpensive devices (micro-controllers)
+that run off solar or battery power collecting afore mentioned data.
 
-The data is transmitted via MQTT channels (Publish /
-Subscription). We have a /Macro-controller/ as the hub gathering data,
-perhaps reformatting it and sending it to a variety of /subscribers/
-such as a /Real time/ Dashboard (Web/UI) and cloud based
-/Time-SeriesDB/. 
+The data is transmitted via wireless network to a /Macro-controller/
+that collects, cleanses and passes the data along to it's desired
+locations including but not limited to: a /real-time dashboard/,
+/time-series database/ and /control logic/.
+
+The data can then be used to turn on and off lights and sprinklers,
+amoung a variety of other cool things.
 
 * Components
-** Micro-Controllers (esp32)
 
-Microcontrollers are mini bare bone computers that we will program to
-support actually do what is being documented here.
+** Micro Controllers
 
-For our purposes we will build little devices that are fitted with
-sensors including soil moisture, air temp, humidty and such. The
-devices will be able to transmit data wirelessly back to a /Macro
-Controller/ that cares for the data and sends it to it's various
-destinations including but not limited to: control / business logic,
-databases, dashboards and so on.
+For our purposes we will build /Sensor Stations/ from little,
+inexpensive micro-controllers are fitted with sensors including soil
+moisture, air temp, humidty and such. The devices will be able to
+transmit data wirelessly back to a /Macro Controller/ that cares for
+the data and sends it to it's various destinations such as control
+logic, databases, dashboards and so on.
 
 *** TODO esp32 link to esp32
-
-
 
 ** Mesh Network
 
 The micro controllers are capable of forming self configuring /mesh/
-networks with slimmed down minimal protocols ideal for semi-low data
-rate application to moderate speeds capable of supporting distributed
-video. 
+networks with slimmed down wireless network protocols (wifi & ble)
+ideal for low to moderate data rate sensor advertisements may include
+streaming video in certain conditions.
    
 The mesh network allows devices to be scattered about in arbitrary
 patterns to form networks that are capable of covering large areas
-even with out any power or network infrastructure.
+even with out any power or network infrastructure.  The /Mesh/ is self
+forming and healing, zero configuration, zero infrastructure capable
+network with an optional /IP Gateway/.
 
 The mesh networks are advertised capable of 10Mps (or 1mps) per device
 stream up to 200m (NEED TO CHECK THESE NUMBERS) and of course in the
 real world YMMV.
-
 
 ** Dashboard (Web App)
 
