@@ -64,19 +64,24 @@ maintaining this system.
 ** Macro Controller
 
 The Macro-Controller is basically what is known as a /micro-server/,
-this one happens to be built with IoT applications in mind. It does
-however include a number of powerful feature one would expect from any
-industrial strength server.
+this one happens to be built with IoT applications in mind. It
+includes a number of powerful features one would expect from a modern
+industrial strength micro server.
 
 Feature List:
 
 - Serves up HTML for Webapp (SPA)
 - Serves up HTTP / JSON for REST API
 - Speaks MQTT with IoT devices
-- Speaks Websocket to serve up moder /Real-Time/ web applications
-- Simple, low configuration 
+- Speaks Websocket to with /real-time/ modern web applications
+- Simple, very little (to no) configuration required
 - Zero Configuration (plug it in and let it go!)
 
+*** Software
+
+- Go: fast. /REALLY/ fast!
+- Application is a single binary, Just like the good ole days!
+-- No big ass frameworks to lug around, build or conflict.
 
 ** Separation of Data and Control
 
