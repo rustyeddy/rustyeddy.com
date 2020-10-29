@@ -5,7 +5,7 @@
 #+next: /software/objective-and-milestones
 
 Are you are involved in a software development project that is
-spinning out of control? Or maybe you want to keep from losing control?
+spinning out of control? Or maybe you want to keep it from losing control?
 
 If so, I created a cool little /Software Project Starter Kit/ you may
 find helpful (and calming!). This guide is not about /programming/
