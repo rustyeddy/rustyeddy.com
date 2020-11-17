@@ -18,27 +18,26 @@ Arnold says the **First Rule of Success** is to have a vision. I
 totally agree with that. I mean, how can you consider something a
 success if you haven't defined what success is. 
 
-As much as is true that a vision in life is essential to success, it
+As much is true, that a vision in life is essential to success, it
 is equally true with /Software Projects/. 
 
-Without a clearly articulated vision, equiped with measurable tasks
-the project will evolve toward chaos. Unless they are able to huddle
+Without a clearly articulated vision equipped with measurable tasks,
+the project will evolve toward chaos. That is unless they are able to huddle
 around the game plan and apply their passion to the project like a
-championship badminton team.
+championship Football team.
 
 ** Whose Vision? Hint: Not yours! 
 
 Ok we need a vision, but how do we come up with one? Brainstorming? Or
 maybe, if we have a really creative team we'll do /agile/ and make it
-up as we go! Since we don't want to stiffle creativity.
+up as we go! We don't want to stiffle creativity.....
 
 Yea, no. We're not doing any of that stuff.
 
 The biggest mistake ever made since the caveman began programming
-(besides not testing), is building what YOU THINK the customer or user wants without the bother of
-including the customer.
+(besides not testing), is building what YOU THINK the customer or user wants without bothering to include the customer.
 
-Get to know your customer.!. 
+It is crucial to know your customer.!. 
 
 :BEGIN_QUOTE:
 **Waste** is building something (or doing anything) that does not benefit
@@ -48,8 +47,8 @@ the customer.
 ** 4 Epiphanies + Agile = The Lean Start
 
 Most people are aware of the basic concept of /The Lean Startup/
-which was championed by Eric Ries and his partner, after being forced to take a business class
-in order to aquire an additional round
+which was championed by Eric Ries and his partner. This was developed after being forced to take a business class
+in order to receive an additional round
 of funding to keep their startup from folding.
 
 The class, taught by Steven Blank at UC Berkeley Haas School of
@@ -62,10 +61,10 @@ World of Silicon Valley.
 Eric, a Software Engineer experienced the /Epiphanies/ with /Agile
 Software Development/ and the valley has never been the same. 
 
-The Lean Startup emerged, it is next to impossible to get funding in
-the Valley within 10 short years after the Lean Start up. Without
+The Lean Startup emerged! It is now next to impossible to get funding in
+the Valley within 10 short years after the Lean Start up began. Without
 going into to detail, we are entering this train **assuming** you have
-done some 
+done some research on this.
 
 ** The Secret 
 
@@ -74,20 +73,20 @@ The Secret is, drum roll please...
 To have your customers / owners so closely involved in the development
 processes that you are building exactly what they tell you to build.
 If you help them tell you what they really need, it is hard to mess
-that up.
+it up.
 
 
 
 
 
-* Signs that a Change Needed
+* Signs that Change is Needed
 
 - Management by Crises
 - No Clear, Reachable Objective Goals
 - Milestones are not measurable (can be completed) or reasonable (can
   be done at all).
 - Nobody /really/ understands the customers needs and wants
-- The goals keep changing increasing confusion and waste
+- The goals keep changing, increasing confusion and waste
 - Team leadership is not engaged with user before and during R&D
 
 *** Reduce the Scope of the Project to something that can be finished.
@@ -106,9 +105,8 @@ of **Quality** when the feature scope has been minimized.
 ** Getting Our House In Order
 
 I advocate the Kanban board to keep track of tasks and the
-status of the project, if you are not familiar with the idea of a
-Kanban Board, have a quick look here [[/notes/kanban][Kanban Board]], we will bust out a
-phase 1 of an interesting project.
+status of the project. If you are not familiar with the idea of a
+Kanban Board, have a quick look here [[/notes/kanban][Kanban Board]].
 
 BTW - I wholly advocate the the /principals/ of /Agile Development/
 and strive to practice /agile/ on every project I work on. However, I
