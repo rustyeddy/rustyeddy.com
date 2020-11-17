@@ -19,7 +19,7 @@ projects:
   - ONOS SDN Controller
 ---
 
-I was hired by DirecTV (and subsequentyly AT&T) to help lead the new
+I was hired by DirecTV (and subsequently AT&T) to help lead the new
 Software Defined Networking (SDN) team. We were tasked with replacing
 the companies aging production Video Distribution Network with a new
 modernized design. Project goals included:
