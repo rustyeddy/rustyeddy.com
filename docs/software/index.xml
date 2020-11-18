@@ -35,7 +35,7 @@
       <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/software/testing/</guid>
-      <description>Do not force your customers to find your bugs.    Good software becomes great when old features become more reliable and new features do resurect old bugs.    NOTE: This is when the customer set objective to the customer acceptance. Symptoms  Software is always crashing or acting unpredictable  Customers become the QA department, and get angry  Problems pop like a wack-a-mole  Testing is tedious  Testing resources are scarce and developers have very limited test time.</description>
+      <description>Do not force your customers to find your bugs.    Good software becomes great, when old features become more reliable and new features resurect old bugs.    NOTE: This is when the customer sets objectives to the customer acceptance. Symptoms  Software is always crashing or acting unpredictable  Customers become the QA department (and get angry)  Problems pop like a wack-a-mole  Testing is tedious  Testing resources are scarce and developers have very limited test time  Development and Test enviromnent are very different than production  Problems  Solution   Begin the project by defining exactly what success is.</description>
     </item>
     
     <item>

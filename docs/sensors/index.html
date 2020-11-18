@@ -94,20 +94,20 @@ dashboard, databases, control logic and other interesting places.
 Example Application
 </h4>
 <p>
-Spread a number of <em>Sensor Stations</em> around a yard with the following
-sensors: soil moisture, light sensor, temprature and humidity. All
+We will spread a number of <em>Sensor Stations</em> around a yard with the following
+sensors: soil moisture, light, temperature and humidity sensors. All
 this data is gathered by small inexpensive devices (micro-controllers)
-that run off solar or battery power collecting afore mentioned data.
+that run off solar or battery power collecting the above mentioned data.
 </p>
 <p>
 The data is transmitted via wireless network to a <em>Macro-controller</em>
 that collects, cleanses and passes the data along to it&#39;s desired
-locations including but not limited to: a <em>real-time dashboard</em>,
+locations, including but not limited to: a <em>real-time dashboard</em>,
 <em>time-series database</em> and <em>control logic</em>.
 </p>
 <p>
-The data can then be used to turn on and off lights and sprinklers,
-amoung a variety of other cool things.
+The data can then be used to turn on and off lights and sprinklers
+among a variety of other cool things.
 </p>
 <h2 id="headline-4">
 Components
@@ -117,10 +117,10 @@ Micro Controllers
 </h3>
 <p>
 For our purposes we will build <em>Sensor Stations</em> from little,
-inexpensive micro-controllers are fitted with sensors including soil
+inexpensive micro-controllers that are fitted with sensors including soil
 moisture, air temp, humidty and such. The devices will be able to
 transmit data wirelessly back to a <em>Macro Controller</em> that cares for
-the data and sends it to it&#39;s various destinations such as control
+the data and sends it to various destinations such as control
 logic, databases, dashboards and so on.
 </p>
 <h4 id="headline-6">
@@ -133,14 +133,14 @@ Mesh Network
 <p>
 The micro controllers are capable of forming self configuring <em>mesh</em>
 networks with slimmed down wireless network protocols (wifi &amp; ble)
-ideal for low to moderate data rate sensor advertisements may include
+which are ideal for low to moderate data rate sensor advertisements that may include
 streaming video in certain conditions.
 </p>
 <p>
 The mesh network allows devices to be scattered about in arbitrary
-patterns to form networks that are capable of covering large areas
+patterns to form networks which are capable of covering large areas
 even with out any power or network infrastructure.  The <em>Mesh</em> is self
-forming and healing, zero configuration, zero infrastructure capable
+forming and healing, has zero configuration, zero infrastructure capable
 network with an optional <em>IP Gateway</em>.
 </p>
 <p>
@@ -159,8 +159,8 @@ maintaining this system.
 Macro Controller
 </h3>
 <p>
-The Macro-Controller is basically what is known as a <em>micro-server</em>,
-this one happens to be built with IoT applications in mind. It
+The Macro-Controller is basically what is known as a <em>micro-server</em>.
+This one happens to be built with IoT applications in mind. It
 includes a number of powerful features one would expect from a modern
 industrial strength micro server.
 </p>
@@ -219,10 +219,10 @@ Application is a single binary, Just like the good ole days!
 Separation of Data and Control
 </h3>
 <p>
-As will be seen as this architecture is drawn out, there is an
+What will be seen as this architecture is drawn out, is there is an
 quasi-abstract layer of communication between the providers of data
-and the consumers of that data, this provides us with all sorts of
-advantages to do great things, but it does indeed bring along it&#39;s own
+and the consumers of that data. This provides us with all sorts of
+advantages to do great things, but it does bring along it&#39;s own
 level of complexity that must be cared for out of the gate.
 </p>
 <h4 id="headline-12">
