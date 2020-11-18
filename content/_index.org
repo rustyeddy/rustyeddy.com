@@ -1,5 +1,5 @@
 #+title: Rusty Eddy
-#+description: Software Engineer and Network Architect
+#+description: Software Engineer, Network Architect and IoT Hacker
 #+date: 2020-04-10
 
 ** Current Projects and Stuff

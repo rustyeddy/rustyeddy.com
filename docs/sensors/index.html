@@ -74,177 +74,82 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 	<div class="col"></div> 
 	<div class="col-8">
 	    <article class="article">
-		
-<h2 id="headline-1">
-Sensor Station
-</h2>
-<p>
-Sensor Station is a collection of software components built to provide
-a complete <span style="text-decoration: underline;">Earth to Cloud</span> <em>IoT</em> framework.
-</p>
-<h3 id="headline-2">
-<span class="todo">TODO</span>
-Insert Diagram Here.
-</h3>
-<p>
-It starts by collecting data, cleaning and distribtuing the data to a
-dashboard, databases, control logic and other interesting places. 
-</p>
-<h4 id="headline-3">
-Example Application
-</h4>
-<p>
-Spread a number of <em>Sensor Stations</em> around a yard with the following
+		<h1 id="sensor-station">Sensor Station</h1>
+<p>Sensor Station is a collection of software components that make up a /built to provide
+a complete <em>Earth to Cloud</em> /IoT/ framework.</p>
+<h2 id="todo-insert-diagram-here">TODO Insert Diagram Here.</h2>
+<p>It starts by collecting data, cleaning and distribtuing the data to a
+dashboard, databases, control logic and other interesting places.</p>
+<h3 id="example-application">Example Application</h3>
+<p>Spread a number of /Sensor Stations/ around a yard with the following
 sensors: soil moisture, light sensor, temprature and humidity. All
 this data is gathered by small inexpensive devices (micro-controllers)
-that run off solar or battery power collecting afore mentioned data.
-</p>
-<p>
-The data is transmitted via wireless network to a <em>Macro-controller</em>
-that collects, cleanses and passes the data along to it&#39;s desired
-locations including but not limited to: a <em>real-time dashboard</em>,
-<em>time-series database</em> and <em>control logic</em>.
-</p>
-<p>
-The data can then be used to turn on and off lights and sprinklers,
-amoung a variety of other cool things.
-</p>
-<h2 id="headline-4">
-Components
-</h2>
-<h3 id="headline-5">
-Micro Controllers
-</h3>
-<p>
-For our purposes we will build <em>Sensor Stations</em> from little,
+that run off solar or battery power collecting afore mentioned data.</p>
+<p>The data is transmitted via wireless network to a /Macro-controller/
+that collects, cleanses and passes the data along to it&rsquo;s desired
+locations including but not limited to: a /real-time dashboard/,
+/time-series database/ and /control logic/.</p>
+<p>The data can then be used to turn on and off lights and sprinklers,
+amoung a variety of other cool things.</p>
+<ul>
+<li>Components</li>
+</ul>
+<h2 id="micro-controllers">Micro Controllers</h2>
+<p>For our purposes we will build /Sensor Stations/ from little,
 inexpensive micro-controllers are fitted with sensors including soil
 moisture, air temp, humidty and such. The devices will be able to
-transmit data wirelessly back to a <em>Macro Controller</em> that cares for
-the data and sends it to it&#39;s various destinations such as control
-logic, databases, dashboards and so on.
-</p>
-<h4 id="headline-6">
-<span class="todo">TODO</span>
-esp32 link to esp32
-</h4>
-<h3 id="headline-7">
-Mesh Network
-</h3>
-<p>
-The micro controllers are capable of forming self configuring <em>mesh</em>
+transmit data wirelessly back to a /Macro Controller/ that cares for
+the data and sends it to it&rsquo;s various destinations such as control
+logic, databases, dashboards and so on.</p>
+<p>*** TODO esp32 link to esp32</p>
+<p>** Mesh Network</p>
+<p>The micro controllers are capable of forming self configuring /mesh/
 networks with slimmed down wireless network protocols (wifi &amp; ble)
 ideal for low to moderate data rate sensor advertisements may include
-streaming video in certain conditions.
-</p>
-<p>
-The mesh network allows devices to be scattered about in arbitrary
+streaming video in certain conditions.</p>
+<p>The mesh network allows devices to be scattered about in arbitrary
 patterns to form networks that are capable of covering large areas
-even with out any power or network infrastructure.  The <em>Mesh</em> is self
+even with out any power or network infrastructure.  The /Mesh/ is self
 forming and healing, zero configuration, zero infrastructure capable
-network with an optional <em>IP Gateway</em>.
-</p>
-<p>
-The mesh networks are advertised capable of 10Mps (or 1mps) per device
+network with an optional /IP Gateway/.</p>
+<p>The mesh networks are advertised capable of 10Mps (or 1mps) per device
 stream up to 200m (NEED TO CHECK THESE NUMBERS) and of course in the
-real world YMMV.
-</p>
-<h3 id="headline-8">
-Dashboard (Web App)
-</h3>
-<p>
-A nice modern dashboard application for monitoring, configuring and
-maintaining this system.
-</p>
-<h3 id="headline-9">
-Macro Controller
-</h3>
-<p>
-The Macro-Controller is basically what is known as a <em>micro-server</em>,
+real world YMMV.</p>
+<p>** Dashboard (Web App)</p>
+<p>A nice modern dashboard application for monitoring, configuring and
+maintaining this system.</p>
+<p>** Macro Controller</p>
+<p>The Macro-Controller is basically what is known as a /micro-server/,
 this one happens to be built with IoT applications in mind. It
 includes a number of powerful features one would expect from a modern
-industrial strength micro server.
-</p>
-<p>
-Feature List:
-</p>
+industrial strength micro server.</p>
+<p>Feature List:</p>
 <ul>
-<li>
-<p>
-Serves up HTML for Webapp (SPA)
-</p>
-</li>
-<li>
-<p>
-Serves up HTTP / JSON for REST API
-</p>
-</li>
-<li>
-<p>
-Speaks MQTT with IoT devices
-</p>
-</li>
-<li>
-<p>
-Speaks Websocket to with <em>real-time</em> modern web applications
-</p>
-</li>
-<li>
-<p>
-Simple, very little (to no) configuration required
-</p>
-</li>
-<li>
-<p>
-Zero Configuration (plug it in and let it go!)
-</p>
-<h4 id="headline-10">
-Software
-</h4>
-</li>
-<li>
-<p>
-Go: fast. <em>REALLY</em> fast!
-</p>
-</li>
-<li>
-<p>
-Application is a single binary, Just like the good ole days!
-</p>
-</li>
+<li>Serves up HTML for Webapp (SPA)</li>
+<li>Serves up HTTP / JSON for REST API</li>
+<li>Speaks MQTT with IoT devices</li>
+<li>Speaks Websocket to with /real-time/ modern web applications</li>
+<li>Simple, very little (to no) configuration required</li>
+<li>Zero Configuration (plug it in and let it go!)</li>
 </ul>
-<p>
-– No big ass frameworks to lug around, build or conflict.
-</p>
-<h3 id="headline-11">
-Separation of Data and Control
-</h3>
-<p>
-As will be seen as this architecture is drawn out, there is an
+<p>*** Software</p>
+<ul>
+<li>Go: fast. /REALLY/ fast!</li>
+<li>Application is a single binary, Just like the good ole days!
+&ndash; No big ass frameworks to lug around, build or conflict.</li>
+</ul>
+<p>** Separation of Data and Control</p>
+<p>As will be seen as this architecture is drawn out, there is an
 quasi-abstract layer of communication between the providers of data
 and the consumers of that data, this provides us with all sorts of
-advantages to do great things, but it does indeed bring along it&#39;s own
-level of complexity that must be cared for out of the gate.
-</p>
-<h4 id="headline-12">
-<span class="todo">TODO</span>
-Speak more about messaging?
-</h4>
-<h3 id="headline-13">
-Cloud Support and Automation
-</h3>
-<h4 id="headline-14">
-<span class="todo">TODO</span>
-Write Up cloud automation
-</h4>
-<p>
-A lot can, and will be said about cloud automation. 
-</p>
-<h4 id="headline-15">
-On Prem / Public Cloud / Hybrid
-</h4>
-<h4 id="headline-16">
-Automation, tools and Blueprints
-</h4>
+advantages to do great things, but it does indeed bring along it&rsquo;s own
+level of complexity that must be cared for out of the gate.</p>
+<p>*** TODO Speak more about messaging?</p>
+<p>** Cloud Support and Automation</p>
+<p>*** TODO Write Up cloud automation</p>
+<p>A lot can, and will be said about cloud automation.</p>
+<p>*** On Prem / Public Cloud / Hybrid
+*** Automation, tools and Blueprints</p>
 
 	    </article>
 	</div>
