@@ -3,19 +3,19 @@
 #+weight: 30
 
 1. Do not force your customers to find your bugs.
-2. Good software becomes great when old features become more reliable
-   and new features do resurect old bugs.
+2. Good software becomes great, when old features become more reliable
+   and new features resurect old bugs.
 
-NOTE: This is when the customer set objective to the customer
+NOTE: This is when the customer sets objectives to the customer
 acceptance. 
 
 * Symptoms
 
 ** Software is always crashing or acting unpredictable
-** Customers become the QA department, and get angry
+** Customers become the QA department (and get angry)
 ** Problems pop like a wack-a-mole
 ** Testing is tedious
-** Testing resources are scarce and developers have very limited test time. 
+** Testing resources are scarce and developers have very limited test time
 ** Development and Test enviromnent are very different than production
 
 * Problems
@@ -23,24 +23,24 @@ acceptance.
 * Solution
 
 Begin the project by defining exactly what success is. Write an
-automated test that with either verify or deny the outcome of the
+automated test that will either verify or deny the outcome of the
 test. 
 
 ** Tests become a development harness
 
-Development is a very repetitve process, the more it can be automated,
-by taking away manual steps the development process can be shortend
+Development is a very repetitve process. The more it can be automated
+by taking away manual steps, the development process can be shortend
 dramaticlly and keep the programmer on task!
 
 * Testing Maintain Quality
 
-Your customers will NOT be mad because you find all the bugs before
+Your customers will NOT be mad because you find the bugs before
 they do!.
 
 * What should be tested?
 
 There are a variety of tests that /could/ be performed, but we are
-going to focus on those tests that are going to give us the most bang
+going to focus on those tests that give us the most bang
 for the buck.
 
 
