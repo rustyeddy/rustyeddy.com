@@ -1,18 +1,37 @@
 ---
-title: Predictable IoT Software Development
-description: Get the mystery out of software projects.
+title: Discovering Predictable IoT Software Development
+description: Trying to get the mystery out of software projects.
 date: 2020-04-05
 next: /software/objective-and-milestones
 ---
 
 If you have been involved with a software development project of
-significant size, they can quickly feel like they are spinning
-out of control, and evermore slipping behind ever agressive deadline?
+significant size you may agree that they can quickly feel like they
+are spinning out of control.  Evermore falling behind the ever
+agressive deadlines?
 
-If so, I created a cool little _Software Project Starter Kit_ you may
-find helpful (and calming!). This guide is not about _programming_
-rather is is all about the _process_ of **delivering** _production_
-software. 
+Have experienced bugs that start appearing out of nowhere, especially
+late at night when your nursing the downside of a day's worth of
+coffee. 
+
+Well, I have too many times.  And ***everytime*** I find myself asking
+why I keep letting this happen.?.  Like an alcaholic waking up at a 2:30an
+with his head propped up by the beer drizzed counter. Or broke gambler
+walking into the morning light to face the realities of his new day.
+
+## Stop the Madness!
+
+I have created this little _project_ to help myself organize and
+document the practices that I should and MUST adopt when engaging in a
+software development activity, especially when money is involved.
+
+I will try to cover the entire _Software Development Lifecycle (SDLC)_
+so that I feel confident that I am managing the entire _Software
+Development Lifecycle (SDLC)._
+
+_Software Project Starter Kit_ you may find helpful (and
+calming!). This guide is not about _programming_ rather is is all
+about the _process_ of **delivering** _production_ software.
 
 ## The Process will Set You Free
 

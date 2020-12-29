@@ -1,42 +1,49 @@
-#+title: Sensor Station I/O
-#+date: 2020-09-06T10:32:26-07:00
+---
+title: Sensor Station I/O
+date: 2020-09-06T10:32:26-07:00
+---
 
-* Sensor Station
+# Sensor Station
 
+<<<<<<< HEAD:content/sensors/_index.org
 Sensor Station is a collection of software components built to provide
 a complete _Earth to Cloud_ /IoT/ framework. In reality _Sensor
 Station_ is a collection of smaller projects that all **optionally**
 operate together in a single ecosystem.
+=======
+Sensor Station is a collection of software components that make up a /built to provide
+a complete _Earth to Cloud_ /IoT/ framework.
+>>>>>>> 61b3f6407371bf7db9fe46dd5c0f8c2e38fb2e09:content/sensors/_index.md
 
-** TODO Insert Diagram Here.
+## TODO Insert Diagram Here.
 
 It starts by collecting data, cleaning and distribtuing the data to a
 dashboard, databases, control logic and other interesting places. 
 
-*** Example Application
+### Example Application
 
-We will spread a number of /Sensor Stations/ around a yard with the following
-sensors: soil moisture, light, temperature and humidity sensors. All
+Spread a number of /Sensor Stations/ around a yard with the following
+sensors: soil moisture, light sensor, temprature and humidity. All
 this data is gathered by small inexpensive devices (micro-controllers)
-that run off solar or battery power collecting the above mentioned data.
+that run off solar or battery power collecting afore mentioned data.
 
 The data is transmitted via wireless network to a /Macro-controller/
 that collects, cleanses and passes the data along to it's desired
-locations, including but not limited to: a /real-time dashboard/,
+locations including but not limited to: a /real-time dashboard/,
 /time-series database/ and /control logic/.
 
-The data can then be used to turn on and off lights and sprinklers
-among a variety of other cool things.
+The data can then be used to turn on and off lights and sprinklers,
+amoung a variety of other cool things.
 
 * Components
 
-** Micro Controllers
+## Micro Controllers
 
 For our purposes we will build /Sensor Stations/ from little,
-inexpensive micro-controllers that are fitted with sensors including soil
+inexpensive micro-controllers are fitted with sensors including soil
 moisture, air temp, humidty and such. The devices will be able to
 transmit data wirelessly back to a /Macro Controller/ that cares for
-the data and sends it to various destinations such as control
+the data and sends it to it's various destinations such as control
 logic, databases, dashboards and so on.
 
 *** TODO esp32 link to esp32
@@ -45,13 +52,13 @@ logic, databases, dashboards and so on.
 
 The micro controllers are capable of forming self configuring /mesh/
 networks with slimmed down wireless network protocols (wifi & ble)
-which are ideal for low to moderate data rate sensor advertisements that may include
+ideal for low to moderate data rate sensor advertisements may include
 streaming video in certain conditions.
    
 The mesh network allows devices to be scattered about in arbitrary
-patterns to form networks which are capable of covering large areas
+patterns to form networks that are capable of covering large areas
 even with out any power or network infrastructure.  The /Mesh/ is self
-forming and healing, has zero configuration, zero infrastructure capable
+forming and healing, zero configuration, zero infrastructure capable
 network with an optional /IP Gateway/.
 
 The mesh networks are advertised capable of 10Mps (or 1mps) per device
@@ -65,8 +72,8 @@ maintaining this system.
 
 ** Macro Controller
 
-The Macro-Controller is basically what is known as a /micro-server/.
-This one happens to be built with IoT applications in mind. It
+The Macro-Controller is basically what is known as a /micro-server/,
+this one happens to be built with IoT applications in mind. It
 includes a number of powerful features one would expect from a modern
 industrial strength micro server.
 
@@ -87,10 +94,10 @@ Feature List:
 
 ** Separation of Data and Control
 
-What will be seen as this architecture is drawn out, is there is an
+As will be seen as this architecture is drawn out, there is an
 quasi-abstract layer of communication between the providers of data
-and the consumers of that data. This provides us with all sorts of
-advantages to do great things, but it does bring along it's own
+and the consumers of that data, this provides us with all sorts of
+advantages to do great things, but it does indeed bring along it's own
 level of complexity that must be cared for out of the gate.
 
 *** TODO Speak more about messaging?
