@@ -4,7 +4,9 @@
 * Sensor Station
 
 Sensor Station is a collection of software components built to provide
-a complete _Earth to Cloud_ /IoT/ framework.
+a complete _Earth to Cloud_ /IoT/ framework. In reality _Sensor
+Station_ is a collection of smaller projects that all **optionally**
+operate together in a single ecosystem.
 
 ** TODO Insert Diagram Here.
 
