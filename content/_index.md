@@ -7,8 +7,8 @@ date: 2020-04-10
 ### Welcome to my Site!
 
 This site is mostly about my professional self, what I have
-accomplished in the past, what I am working on now and what I am
-excited about working on as we get past 2020!
+accomplished in the past, what I am working on now as we get past
+2020! 
 
 Here you can find my [resume](/resume) as well as a
 [portfolio](/projects) with just a *couple* of the projects that I
