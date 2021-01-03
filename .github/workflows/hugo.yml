@@ -47,7 +47,7 @@ jobs:
 
     # Step 6 - Push our generated site to our gh-pages branch
     - name: Deploy
-      uses: rustyeddy/rustyeddy.com/master
+      uses: rustyeddy/rustyeddy.com@master
       with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
