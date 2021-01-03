@@ -34,7 +34,7 @@ jobs:
 
     # Step 3 - Clean and don't fail
     - name: Clean public directory
-      run: rm -rf public
+      run: rm -rf docs
 
     # Step 4 - Builds the site using the latest version of Hugo
     # Also specifies the theme we want to use
@@ -43,11 +43,11 @@ jobs:
 
     # Step 5 - Create name file
     - name: Create cname file
-      run: echo 'rustyeddy.com' > public/CNAME
+      run: echo 'rustyeddy.com' > docs/CNAME
 
     # Step 6 - Push our generated site to our gh-pages branch
     - name: Deploy
-      uses: rustyeddy.com/main
+      uses: rustyeddy.com/master
       with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
