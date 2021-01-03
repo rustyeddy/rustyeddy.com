@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mechanics on Rusty Eddy</title>
+    <link>http://rustyeddy.com/categories/mechanics/</link>
+    <description>Recent content in mechanics on Rusty Eddy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://rustyeddy.com/categories/mechanics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Skid Steering</title>
+      <link>http://rustyeddy.com/notes/skid-steering/</link>
+      <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/skid-steering/</guid>
+      <description>Skid steering basics
+ Based on fixed direction wheels[1] or tracks There are two groups or sides of wheels: left and right All wheels in a group MUST always point in the same direction All wheels in a group MUST always rotate at the same rate Direction is determined by the speed of the two wheel groups  To move straight all motors rotate at the same rate Forward and Reverse are determined by positive and negative values Turning is achieved by varying the throttle on the right and left    Example The Skidder class has the following API, as you can see all of the movements we desire can be accomplished with a single API call skidder.</description>
+    </item>
+    
+  </channel>
+</rss>
