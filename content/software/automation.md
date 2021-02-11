@@ -18,3 +18,17 @@ point:
 
 And that is a good thing! _Predictable Production Quality_ software starts and ends with
 _Quality_. Low quality software 
+
+## Lets Automate Everything!
+
+OK! We will try to. But lets Except the very real probability. That we
+won't be able to automate hundred percent Of everything Out of the
+gate. And we may very well Be advised To perform manual testing.
+
+Always. And Thouroughly.
+
+Not testing for any reason Is not acceptable. The only acceptable
+answer tonight testing Is no delivery.
+
+That's More than enough To motivate us To automate As completely And
+thoroughly as possible. 

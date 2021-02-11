@@ -9,7 +9,6 @@ description: >
   at the gate.
 ---
 
-
 ## Paradise Ain't Perfect
 
 Or maybe there is so much conflict that Hawaii doesn't look like it is

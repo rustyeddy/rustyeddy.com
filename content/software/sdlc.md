@@ -1,15 +1,18 @@
-#+title: Software Development Life Cycle
-#+date: 2020-04-05
-#+weight: 20
+---
+title: Software Development Life Cycle
+date: 2020-04-05
+weight: 200
+description: >
+  High Level overview of the Software Development Lifecycle.
+---
 
-1. The entire team stays in sync and consistently follow the
+The entire team stays in sync and consistently follow the
 projects establish /Software Development Life Cycle/ process.
 
-2. Avoiding key elements of this process will accumulate technical
-   debt that caries an interest rate that you do NOT want snowball.
+Avoiding key elements of this process will accumulate technical
+debt that caries an interest rate that you do NOT want snowball.
 
-
-* Symptoms
+## Symptoms
 
 - Changes made to software are often lost
 - Large forklift changes frequently cause compilation problems and
@@ -19,9 +22,8 @@ projects establish /Software Development Life Cycle/ process.
 - Team members store various items of the project (including software
   in wild and bizzare places)
 
-* Problem
+## Problem
 
 - Do not have a defined process for the SDLC
 - Lack of version control
 
-Next: [[/software/testing][Testing]]

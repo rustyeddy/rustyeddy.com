@@ -17,52 +17,41 @@
       <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/software/objectives-and-milestones/</guid>
-      <description>Watch from the begining of the speech from 0:17 seconds to the 42 second mark (or if you want the whole thing. It is great).  Thank You, Arnold! I could not have said it any better! First Rule of Success ~ Have a Vision   Arnold says the First Rule of Success is to have a vision. I totally agree with that. I mean, how can you consider something a success if you haven&amp;#39;t defined what success is.</description>
+      <description>Watch from the begining of the speech from 0:17 seconds to the 42 second mark (or if you want the whole thing. It is great).  Thank You, Arnold! I could not have said it any better!  Arnold says the First Rule of Success is to have a vision. I totally agree with that. I mean, how can you consider something a success if you haven&amp;#39;t defined what success is.</description>
     </item>
     
     <item>
-      <title>Software Development Life Cycle</title>
-      <link>http://rustyeddy.com/software/software-development-life-cycle/</link>
+      <title>Proof of Concept vs. Production</title>
+      <link>http://rustyeddy.com/software/poc-vs-production/</link>
+      <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/poc-vs-production/</guid>
+      <description>A POC is taking a conceptAnd demonstrating that it can actually be done in hardware and/or software. And implementation is takingApproving POC And turning it into something usable To somebody other than the developer.
+Embrace this fact, And projecting software Development times and cost Become much less mysterious.
+ TODO Create an example PoC to Development
+ Was it Rodney Brooks that Said Plan on Throwing away your first version. Because you will anyway.</description>
+    </item>
+    
+    <item>
+      <title>Collection of Best Practices</title>
+      <link>http://rustyeddy.com/software/best-practices/</link>
       <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/software/software-development-life-cycle/</guid>
-      <description>The entire team stays in sync and consistently follow the    projects establish Software Development Life Cycle process.    Avoiding key elements of this process will accumulate technical debt that caries an interest rate that you do NOT want snowball.   Symptoms     Changes made to software are often lost    Large forklift changes frequently cause compilation problems and long integration times.</description>
+      <guid>http://rustyeddy.com/software/best-practices/</guid>
+      <description>This site is dedicated to collecting and adhering to our Industries Best Practices. Since software in general is so broad, I am going to focus this website on building application that fit in the Internet of Things (IoT) space.
+This space typically focuses on building solutions within the following technologies:
+ MicroServices Embedded Systems Real Time Distributed Systems Cloud Automation Persistent Delivery  Regardless of technology or industry, we are going to focus on the timeless principals of building robust software that must perform reliably.</description>
     </item>
     
     <item>
-      <title>Piece of Mind with Testing</title>
-      <link>http://rustyeddy.com/software/testing/</link>
-      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
+      <title>Software Gone Wild</title>
+      <link>http://rustyeddy.com/software/software-gone-wild/</link>
+      <pubDate>Mon, 02 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/software/testing/</guid>
-      <description>Do not force your customers to find your bugs.    Good software becomes great, when old features become more reliable and new features resurect old bugs.    NOTE: This is when the customer sets objectives to the customer acceptance. Symptoms  Software is always crashing or acting unpredictable  Customers become the QA department (and get angry)  Problems pop like a wack-a-mole  Testing is tedious  Testing resources are scarce and developers have very limited test time  Development and Test enviromnent are very different than production  Problems  Solution   Begin the project by defining exactly what success is.</description>
-    </item>
-    
-    <item>
-      <title>No Hassle Updates with CI/CD</title>
-      <link>http://rustyeddy.com/software/cicd/</link>
-      <pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/software/cicd/</guid>
-      <description>    Give your customers their bug fixes and new features in days or weeks, not months or years.    Forklift updgrades that break stuff are not sexy. Regular small hardly noticed updates are always appreciated!   Symptoms     No idea if your systems are bleeding    No idea if you are over paying    Can not identify total bill expenses    Next: Measure and Optimize </description>
-    </item>
-    
-    <item>
-      <title>The Feedback Loop Bugs Tracking and Feature Requests</title>
-      <link>http://rustyeddy.com/software/feedback-loop-bugs/</link>
-      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/software/feedback-loop-bugs/</guid>
-      <description>   Customer engagement happens before the product is created, during all of the    the entire process (iterations) of the agile development process.    By this point, the customer engagement should be pretty well established adn that &amp;#34;bugs&amp;#34; should be handled similar to other communications.   </description>
-    </item>
-    
-    <item>
-      <title>Improvements with Measurements and Analytics</title>
-      <link>http://rustyeddy.com/software/measure-and-optimize/</link>
-      <pubDate>Sat, 04 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/software/measure-and-optimize/</guid>
-      <description> Symptoms     Do you know if you are loosing business because of bottlenecks in your workflow?    Are you over paying for services    Do you know how efficient your system is.    Next: Join The Gang! </description>
+      <guid>http://rustyeddy.com/software/software-gone-wild/</guid>
+      <description>We all have heard about home remodels or car restorations that get out of hand with these negative outcomes:
+ Exploded Budgets Unknown Delivery Dates despite somebody making very firm, or implied promises Fickle bunch of high priced, privileged specialist types you are dependent on  The end product is something different than
+The end product, what everybody actually uses and ends up talking about is a rushed, shoddy low quality product that did not live up to all the preplanning and socializng.</description>
     </item>
     
     <item>
@@ -172,6 +161,27 @@ design and development of an inflight entertainment server.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Software Development Life Cycle</title>
+      <link>http://rustyeddy.com/software/sdlc/</link>
+      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/sdlc/</guid>
+      <description>The entire team stays in sync and consistently follow the projects establish /Software Development Life Cycle/ process.
+Avoiding key elements of this process will accumulate technical debt that caries an interest rate that you do NOT want snowball.
+Symptoms  Changes made to software are often lost Large forklift changes frequently cause compilation problems and long integration times. Programmers are often working with different variations of the code, usually gets ugly when somebody has to merge them Team members store various items of the project (including software in wild and bizzare places)  Problem  Do not have a defined process for the SDLC Lack of version control  </description>
+    </item>
+    
+    <item>
+      <title>Software is Invisable</title>
+      <link>http://rustyeddy.com/software/software-invisable/</link>
+      <pubDate>Mon, 10 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/software-invisable/</guid>
+      <description>Software is 10x worse, you can&amp;rsquo;t see it!!! If houses and cars are so hard to predictably forecast and manage, how in the world should we expect software a magic model in some smart persons head translated to electronic signals running through a managerie of boxes, cables and power switches.
+ Here is the kicker: we want the software to do something it has never done before. Yet we want to accurately predict and schedule a successful delivery of an ill-defined goal.</description>
+    </item>
+    
+    <item>
       <title>Cisco Systems</title>
       <link>http://rustyeddy.com/resume/jobs/cisco-systems/</link>
       <pubDate>Wed, 01 Feb 2006 00:00:00 +0000</pubDate>
@@ -198,6 +208,16 @@ Systems&lt;/p&gt;
     </item>
     
     <item>
+      <title>How to Build a QA Team</title>
+      <link>http://rustyeddy.com/software/customer-are-not-qa/</link>
+      <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/customer-are-not-qa/</guid>
+      <description>DO NOT recruite your customers to be your /QA/ department. Especially if they are unanaware, thinking they are getting a usable piece of software.
+It is time to start adopting a /Test Driven Development (TDD)/ mindset. Even if you are knee deep into an existing development project, get started building out our TDD now!</description>
+    </item>
+    
+    <item>
       <title>USC ~ ISI</title>
       <link>http://rustyeddy.com/resume/jobs/usc-isi/</link>
       <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
@@ -210,6 +230,26 @@ prominent members of the computer networking community.&lt;/p&gt;</description>
     </item>
     
     <item>
+      <title>The Process is King</title>
+      <link>http://rustyeddy.com/software/process-is-king/</link>
+      <pubDate>Sat, 10 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/process-is-king/</guid>
+      <description>Having everybody involved in the process from the beginning gathering requirements through the end supporting bugs to delivering updates into a production environment.
+This is only possible through process, software is a team sport, every player must, as Bill Belichick is famous for saying to his 6 time Suport Bowl Championship team, &amp;ldquo;Just do you job.&amp;rdquo;
+ Is is only possible for everybody to do their job when it is clearly defined and how every job interfaces with the other.</description>
+    </item>
+    
+    <item>
+      <title>No Hassle Updates with CI/CD</title>
+      <link>http://rustyeddy.com/software/cicd/</link>
+      <pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/cicd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Retix</title>
       <link>http://rustyeddy.com/resume/jobs/retix/</link>
       <pubDate>Tue, 01 Aug 1995 00:00:00 +0000</pubDate>
@@ -218,6 +258,27 @@ prominent members of the computer networking community.&lt;/p&gt;</description>
       <description>Promoted to lead the team of 6 engineers that developed and automated test plans for L2 switches, OSPF, RIP and BGP
   Implemented an automated test framework and led junior engineers in developing the automated test suites. C; C++; Perl; TCL
   Provided 3rd level customer support, serious customer problems that could not be resolved by customer support or field engineers became my teams responsibility to diagnose and determine solutions and workarounds was required.</description>
+    </item>
+    
+    <item>
+      <title>The Feedback Loop Bugs Tracking and Feature Requests</title>
+      <link>http://rustyeddy.com/software/feedback-loop-bugs/</link>
+      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/feedback-loop-bugs/</guid>
+      <description>Customer engagement happens before the product is created, during all of the the entire process (iterations) of the agile development process.
+  By this point, the customer engagement should be pretty well established adn that &amp;ldquo;bugs&amp;rdquo; should be handled similar to other communications.
+  Capturing Feedback Make it easy for customers to talk to us. We want bug Reports so we can squash them little bastards.</description>
+    </item>
+    
+    <item>
+      <title>Agile is the Answer!</title>
+      <link>http://rustyeddy.com/software/agile/</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/agile/</guid>
+      <description>Agile help fix the problem but is insufficient with out some other critical elements, the foremost element is actually adapting the spirit of agile and living it day to day.
+ When living in a truly agile (striving for minimalist) universe, clarity becomes simple as the top of a mountain, the path to success is a series of well executed re-directions to forge the trail to the same mountain everybody was looking at before the journey started.</description>
     </item>
     
     <item>
@@ -234,6 +295,26 @@ of space and military projects.&lt;/p&gt;</description>
     </item>
     
     <item>
+      <title>Improvements with Measurements and Analytics</title>
+      <link>http://rustyeddy.com/software/measure-and-optimize/</link>
+      <pubDate>Sat, 04 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/measure-and-optimize/</guid>
+      <description>Symptoms  Do you know if you are loosing business because of bottlenecks in your workflow? Are you over paying for services Do you know how efficient your system is.  Next: [[call-to-action][Join The Gang!]]</description>
+    </item>
+    
+    <item>
+      <title>Promise Land</title>
+      <link>http://rustyeddy.com/software/promise-land/</link>
+      <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/promise-land/</guid>
+      <description>Whorra, Whorra, Whoora, What to do? On The Other Hand could you imaging running a project that was predictible, where developers where productively adding features most requested by your most valuable customers.
+How about a software team that is able to repeatedly, identify, fix, testing and release the few bugs found in production with a matter of hours vs. days or weeks?
+Real fixes, these are not special versions of code for that special customer.</description>
+    </item>
+    
+    <item>
       <title>California State University ~ Chancelors Office</title>
       <link>http://rustyeddy.com/resume/jobs/csu-chancelor/</link>
       <pubDate>Tue, 01 Aug 1995 00:00:00 +0000</pubDate>
@@ -242,6 +323,110 @@ of space and military projects.&lt;/p&gt;</description>
       <description>&lt;p&gt;I was hired to install and manage the departments first AT&amp;amp;T Unix
 Mini-computers, UUNET connection and write a bulletin board system for
 California State Educators.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Paradise Aint Perfect</title>
+      <link>http://rustyeddy.com/software/paradise-aint-perfect/</link>
+      <pubDate>Mon, 03 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/paradise-aint-perfect/</guid>
+      <description>Paradise Ain&amp;rsquo;t Perfect Or maybe there is so much conflict that Hawaii doesn&amp;rsquo;t look like it is really everybodies paradise.
+The point to all of this, a little bit of drilling down to all of the passangers, the captiain and crew as well as the owner of the boat would have all had better results.
+If it was discovered before hand, that &amp;ldquo;Going to Hawaii&amp;rdquo;, really consisted of two groups: one going to Maui and one going to Kaui.</description>
+    </item>
+    
+    <item>
+      <title>Software is Iterative</title>
+      <link>http://rustyeddy.com/software/iterative/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/iterative/</guid>
+      <description>Good Software is Continually Improved
+ The greater the success software Is directly proportionate to The number of features that are requested As well as the number of bugs that are found.
+ Bug reports means your softwar is getting used.!.
+ That is obvious if people are happy using a software That they might have some requests that would flow in from time to time.
+What might seem counterintuitive is the fact that, Even well done successful software will have bugs.</description>
+    </item>
+    
+    <item>
+      <title>Minimum Viable Product (MVP)</title>
+      <link>http://rustyeddy.com/software/mvp/</link>
+      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/mvp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Automation</title>
+      <link>http://rustyeddy.com/software/automation/</link>
+      <pubDate>Wed, 04 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/automation/</guid>
+      <description>And It is All Automated? I read an article a couple days back (find reference) that made the point:
+ Once everything is automated, it is forgotten about until something goes wrong.
+ And that is a good thing! Predictable Production Quality software starts and ends with Quality. Low quality software
+Lets Automate Everything! OK! We will try to. But lets Except the very real probability. That we won&amp;rsquo;t be able to automate hundred percent Of everything Out of the gate.</description>
+    </item>
+    
+    <item>
+      <title>Visibility</title>
+      <link>http://rustyeddy.com/software/visibility/</link>
+      <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/visibility/</guid>
+      <description>Visibility into the software process. Visibility to the software process.</description>
+    </item>
+    
+    <item>
+      <title>Why smart professional persistently fail.</title>
+      <link>http://rustyeddy.com/software/why-smart-professionals-fail/</link>
+      <pubDate>Tue, 03 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/why-smart-professionals-fail/</guid>
+      <description>If you want to /be a part of/ a functional team that benefits from your leader ship, I suggest you make it clean
+By clearly stating a) The single most important objective of the project, which must be reasonable. Followed by b) first pass at establishing clear and measurable milestones.
+Measurable, means that can at very minimum be counted as done.</description>
+    </item>
+    
+    <item>
+      <title>Piece of Mind with Testing</title>
+      <link>http://rustyeddy.com/software/testing/</link>
+      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/testing/</guid>
+      <description>Do not force your customers to find your bugs. Good software becomes great, when old features become more reliable and new features resurect old bugs.  NOTE: This is when the customer sets objectives to the customer acceptance.
+Symptoms Software is always crashing or acting unpredictable Customers become the QA department (and get angry) Problems pop like a wack-a-mole Testing is tedious Testing resources are scarce and developers have very limited test time Development and Test enviromnent are very different than production Problems Solution ~ Test Driven Development Begin the project by defining exactly what success is.</description>
+    </item>
+    
+    <item>
+      <title>Notebooks</title>
+      <link>http://rustyeddy.com/software/notebooks/</link>
+      <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/notebooks/</guid>
+      <description>Start making good use of these notes.</description>
+    </item>
+    
+    <item>
+      <title>Establishing a Path</title>
+      <link>http://rustyeddy.com/software/clarity-and-vision/</link>
+      <pubDate>Tue, 20 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/clarity-and-vision/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Establish a common language for everyone</title>
+      <link>http://rustyeddy.com/software/common-language-for-everyone/</link>
+      <pubDate>Thu, 03 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/common-language-for-everyone/</guid>
+      <description>TODO - Add the story of Martin Luther and the 91thesis..
+ Would it it strike fear in your heart if the doctor responsible for saving your life only spoke /Gaelic/?
+Well, can&amp;rsquo;t imagine it feels any better knowing your team of engineers, the ones responsible for the success of the software project, and infact directly responsible for the success of your company only speak /techalic/? (at /Galelic/ can be translated with help of the Internet)</description>
     </item>
     
     <item>
@@ -373,6 +558,15 @@ Control Software.  This is how we do it on the West side &amp;hellip;&lt;/p&gt;<
     </item>
     
     <item>
+      <title>The Reality of Budgets and Schedules</title>
+      <link>http://rustyeddy.com/software/reality-of-budgets-and-schedules/</link>
+      <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/reality-of-budgets-and-schedules/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Control System Design</title>
       <link>http://rustyeddy.com/notes/control-design/</link>
       <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
@@ -380,6 +574,17 @@ Control Software.  This is how we do it on the West side &amp;hellip;&lt;/p&gt;<
       <guid>http://rustyeddy.com/notes/control-design/</guid>
       <description>Early in the process of building the first set of mobile robots I discovered that I was not going to settle on a single micro controller.
 The first two obvious choices being the Arduino or Raspberry Pi, for which I tried both with a modest level of success. I quickly realized that I would not be providing my sole focus on either platform, neither was sufficient for my grand plans for a number of reasons.</description>
+    </item>
+    
+    <item>
+      <title>Preparing for Failure</title>
+      <link>http://rustyeddy.com/software/preparing-for-failure/</link>
+      <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/preparing-for-failure/</guid>
+      <description>Every release, you swear you will apply the lessons learned from this and previous mistakes to never repeat them resulting in predictable stress free releases.
+However, you are still ordering Pizza at 2:00am, not so because of hunger, more so to ease the intense coffee buzz zinging in your head yer the ol tummy a bit nautious.
+That is not a good comb with the pre-release stress knowing the success of the company is directly related to the success of your this software project.</description>
     </item>
     
     <item>
@@ -431,21 +636,27 @@ However, there are other more specific forms on communication available and occa
     </item>
     
     <item>
-      <title></title>
-      <link>http://rustyeddy.com/software/scratch/</link>
+      <title>Accountability and Traceability</title>
+      <link>http://rustyeddy.com/software/accountability-and-traceability/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/software/scratch/</guid>
-      <description>With at least a first slash at some milestones and goals that the entire team can huddle around. Let&amp;#39;s roll up our sleeves and get Buzzin!   But before we scatter to our cubes and bury our heads behind terminals, let&amp;#39;s all agree to get on the same page by choosing a set of tools (manual or electric) that we all are going to agree on using in a consistent and collaborative way!</description>
+      <guid>http://rustyeddy.com/software/accountability-and-traceability/</guid>
+      <description>Communication should be:
+  easy for everybody
+  captured to context, history for example, to capture the rationale behind decisions that may have required a controversial trade-off. Invaluable for repeating the same convesation.
+Also can be used to determine when old practices can be obsoleted. Technology has a way obliterating completely rational decision that were made a mere two years ago..
+  Do NOT allow project communications To be spread amongst email, Texts, Social media accounts and various Other arbitrary Cyber nooks and crannies.</description>
     </item>
     
     <item>
-      <title>Logging</title>
-      <link>http://rustyeddy.com/software/logging/</link>
+      <title>Seemless Customer Experience</title>
+      <link>http://rustyeddy.com/software/seemless/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/software/logging/</guid>
-      <description></description>
+      <guid>http://rustyeddy.com/software/seemless/</guid>
+      <description>** Customer Expect Seamless Updates
+Rolling out new versions of software to your users in a manner that does not make their life a nightmare should be your primary goal!
+Customers do not want forklift style updates to their software. Certainly the days of having to backup all your dataMaybe even back up your entire computer hard drive, Uninstall a previous version of the software Hold your breath, Type in A 64 character nonsensical string of gibberish, Click start, Listen to the CD start the world.</description>
     </item>
     
   </channel>

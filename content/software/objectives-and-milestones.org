@@ -1,9 +1,10 @@
-#+title: Objective and Milestones
-#+date: 2020-04-05
-#+description: Without Vision, The People Parish.
-#+weight: 10
-#+references[]: [The Lean Startup, The Agile Methodology, The Startup Owners Manual]
-
+---
+title: Objective and Milestones
+date: 2020-04-05
+description: Without Vision, The People Parish.
+weight: 10
+references[]: [The Lean Startup, The Agile Methodology, The Startup Owners Manual]
+---
 
 {{< youtube id="bQxqIKTO2Ck" autoplay="true" >}}
 
@@ -12,7 +13,7 @@ second mark (or if you want the whole thing. It is great).
 
 Thank You, Arnold! I could not have said it any better! 
 
-* First Rule of Success ~ Have a Vision
+## First Rule of Success ~ Have a Vision
 
 Arnold says the **First Rule of Success** is to have a vision. I
 totally agree with that. I mean, how can you consider something a
@@ -26,7 +27,7 @@ the project will evolve toward chaos. That is unless they are able to huddle
 around the game plan and apply their passion to the project like a
 championship Football team.
 
-** Whose Vision? Hint: Not yours! 
+### Whose Vision? Hint: Not yours! 
 
 Ok we need a vision, but how do we come up with one? Brainstorming? Or
 maybe, if we have a really creative team we'll do /agile/ and make it
@@ -44,7 +45,7 @@ It is crucial to know your customer.!.
 the customer.  
 :END:
 
-** 4 Epiphanies + Agile = The Lean Start
+### 4 Epiphanies + Agile = The Lean Start
 
 Most people are aware of the basic concept of /The Lean Startup/
 which was championed by Eric Ries and his partner. This was developed after being forced to take a business class
@@ -66,7 +67,7 @@ the Valley within 10 short years after the Lean Start up began. Without
 going into to detail, we are entering this train **assuming** you have
 done some research on this.
 
-** The Secret 
+## The Secret 
 
 The Secret is, drum roll please...
 
@@ -75,11 +76,7 @@ processes that you are building exactly what they tell you to build.
 If you help them tell you what they really need, it is hard to mess
 it up.
 
-
-
-
-
-* Signs that Change is Needed
+# Signs that Change is Needed
 
 - Management by Crises
 - No Clear, Reachable Objective Goals
@@ -89,7 +86,7 @@ it up.
 - The goals keep changing, increasing confusion and waste
 - Team leadership is not engaged with user before and during R&D
 
-*** Reduce the Scope of the Project to something that can be finished.
+### Reduce the Scope of the Project to something that can be finished.
 
 Likewise, my life as a _Developer_ and _Project Manager_ has become
 infinitely easier because I now focus my time, budget and resources on
@@ -102,7 +99,7 @@ And, the customer has something usable, sooner rather than later.
 Which means that It is also **MUCH EASIER** to ensure a **HIGH LEVEL**
 of **Quality** when the feature scope has been minimized.
 
-** Getting Our House In Order
+## Getting Our House In Order
 
 I advocate the Kanban board to keep track of tasks and the
 status of the project. If you are not familiar with the idea of a
@@ -113,7 +110,7 @@ and strive to practice /agile/ on every project I work on. However, I
 have never gone through "official" training on the matter, so we'll
 lack some of the official terminology.
 
-** TODO Reference Material HERE.
+## TODO Reference Material HERE.
 
 Next: [[/software/software-development-life-cycle][Software Development Life Cycle]]
 

@@ -1,14 +1,22 @@
 {{ define "main" }}
-<div class="container mt-5">
+<div class="container">
 
     <div class="row">
-	<div class="col"></div> <!-- col-2 -->
-	<div class="col-8">
-	    <article class="article">
-		{{ .Content }}
-	    </article>
+	{{ range .Pages }}
+	<div class="col-4">
+	    <div class="card">
+		<h6 class="card-header bg-white">
+		    {{ .Title }}
+		</h6>
+
+		<div class="card-body">
+		    <div class="card-text text-muted small">
+			{{ .Description }}
+		    </div>
+		</div>
+	    </div>
 	</div>
-	<div class="col"></div> <!-- col-2 -->
+	{{ end }}
     </div>
 
 </div>
