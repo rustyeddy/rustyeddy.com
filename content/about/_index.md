@@ -5,32 +5,24 @@ description: >
   I Design, Develop and Deliver Software
 ---
 
-I am a Software Engineer and Team Leader. I specialize in systems
-architecture and improving the software process for companies in the
-Robotics, IoT and Manufacturing space. 
+I am a Software Engineer and IIoT hacker. I specialize in systems
+architecture, software process, robotics and industrial laser
+engravers and cuttes.
 
-> There is nothing like writing a program to bring a piece of hardware
-> to life! Or get two pieces of equipment to "talk" to one another.
-
-I live in Huntington Beach CA, with my family, contribute to maker
-projects and tinker with home and vehical automation when I am not
-surfing. 
-
-Early in my programming life I became fascinated with computer
-networks and the idea that I could connect two or more computers and
-make them talk to each other.
+See my [resume](http://rustyeddy.com/resume) for current work
+situation [Radian Laser Systems, LLC](http://radianlaser.com).
 
 > My core interest revolves around computer networks and
 > communications which has had me involved in solving problems with
 > realtime communication at massive scale.
 
-I enjoy developing software for physical systems using
-micro-controllers (Raspberry PI, Arduino, esp32), realtime
+I like to develop software for physical systems using
+micro-controllers (Raspberry PI, esp32 and Arduino), realtime
 communications (i2c, websockets, MQTT), and embedded firmware.
 
-I am equally fascinated with the challenges of managing interconnected
-networks of IoT devices, which involve heavy doses of cloud
-automation and systems administration.
+I am equally experienced with the challenges of _Systems Engineering_
+managing interconnected networks of IoT device hardware, which involve
+heavy doses of cloud automation and systems administration.
 
 > I stay up to date on emerging technologies and adapt as necessary,
 > while at the same time avoid being distracted with all things new and

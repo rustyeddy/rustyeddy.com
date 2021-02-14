@@ -2,6 +2,7 @@
 title: Collection of Best Practices
 date: 2020-04-05
 weight: 100
+draft: true
 description: >
   I have started this little side project to gather industry best
   practices to design, build and deliver software.

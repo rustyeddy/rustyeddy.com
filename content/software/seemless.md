@@ -1,5 +1,6 @@
 ---
 title: Seemless Customer Experience
+draft: true
 description: >
   How to deliver a seemless customer experience. SaaS products have
   the best platform to provide a seemless "upgrade path", but what

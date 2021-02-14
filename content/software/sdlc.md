@@ -1,7 +1,8 @@
 ---
 title: Software Development Life Cycle
 date: 2020-04-05
-weight: 200
+weight: 2000
+draft: true
 description: >
   High Level overview of the Software Development Lifecycle.
 ---

@@ -1,8 +1,14 @@
 ---
 title: Accountability and Traceability
+date: 2018-04-03
+draft: true
 description: >
-  Following the process creates a trail of accountability and
-  traceability. 
+  Two of the biggest red flags in a software project is a lack of
+  history or accountability. The person that walks into a project own
+  all of the bad decisions and lies that have previously been told,
+  the software person has nowhere else to turn. Using Version control
+  to establish both accountability for decisions and trace
+  modifications to their origin.
 ---
     
 Communication should be:

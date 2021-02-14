@@ -1,7 +1,8 @@
 ---
 title: The Feedback Loop Bugs Tracking and Feature Requests
 date: 2020-04-05
-weight: 500
+draft: true
+weight: 5000
 description: >
   Software by nature has a builtin "feedback loop" with users. It
   stands to reason that the proper metering can produce very powerful

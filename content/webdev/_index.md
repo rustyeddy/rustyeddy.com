@@ -1,6 +1,7 @@
 ---
 title: Web Developers Guide
 date: 2020-10-10
+draft: true
 description: >
   A practical guide to getting an effective website built. Owners that
   expect websites to achieve specific results should read this.

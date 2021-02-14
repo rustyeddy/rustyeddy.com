@@ -3,26 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://rustyeddy.com/software/objectives-and-milestones/</loc>
-    <lastmod>2020-04-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/software/poc-vs-production/</loc>
-    <lastmod>2020-04-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/software/best-practices/</loc>
-    <lastmod>2020-04-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/software/software-gone-wild/</loc>
-    <lastmod>2020-03-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/resume/clients/</loc>
     <lastmod>2018-09-21T00:00:00+00:00</lastmod>
   </url>
@@ -60,16 +40,6 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/software/sdlc/</loc>
-    <lastmod>2020-04-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/software/software-invisable/</loc>
-    <lastmod>2020-02-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/resume/jobs/cisco-systems/</loc>
     <lastmod>2006-02-01T00:00:00+00:00</lastmod>
   </url>
@@ -77,11 +47,6 @@
   <url>
     <loc>http://rustyeddy.com/resume/edu/csulb/</loc>
     <lastmod>1996-01-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/software/customer-are-not-qa/</loc>
-    <lastmod>2019-04-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -95,16 +60,6 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/software/process-is-king/</loc>
-    <lastmod>2020-10-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/software/cicd/</loc>
-    <lastmod>2020-04-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/resume/edu/</loc>
     <lastmod>2018-09-21T00:00:00+00:00</lastmod>
   </url>
@@ -115,28 +70,8 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/software/feedback-loop-bugs/</loc>
-    <lastmod>2020-04-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/software/agile/</loc>
-    <lastmod>2020-02-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/resume/jobs/rockwell/</loc>
     <lastmod>1994-01-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/software/measure-and-optimize/</loc>
-    <lastmod>2020-04-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/software/promise-land/</loc>
-    <lastmod>2020-02-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -145,67 +80,13 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/software/paradise-aint-perfect/</loc>
-    <lastmod>2020-02-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/software/iterative/</loc>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/software/mvp/</loc>
-    <lastmod>2021-02-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/software/automation/</loc>
-    <lastmod>2020-03-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/software/visibility/</loc>
-    <lastmod>2021-02-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/software/why-smart-professionals-fail/</loc>
-    <lastmod>2020-03-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/software/testing/</loc>
-    <lastmod>2020-04-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/software/notebooks/</loc>
-    <lastmod>2021-02-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/hire/</loc>
     <lastmod>2020-11-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/software/clarity-and-vision/</loc>
-    <lastmod>2020-10-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/webdev/</loc>
-    <lastmod>2020-10-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/sensors/</loc>
     <lastmod>2020-09-06T10:32:26-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/software/common-language-for-everyone/</loc>
-    <lastmod>2020-09-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -219,17 +100,7 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/software/call-to-action/</loc>
-    <lastmod>2020-04-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/software/</loc>
-    <lastmod>2020-04-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/software/outline/</loc>
     <lastmod>2020-04-05T00:00:00+00:00</lastmod>
   </url>
   
@@ -384,18 +255,8 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/software/reality-of-budgets-and-schedules/</loc>
-    <lastmod>2018-07-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/notes/control-design/</loc>
     <lastmod>2018-05-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/software/preparing-for-failure/</loc>
-    <lastmod>2018-04-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -422,10 +283,6 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/software/accountability-and-traceability/</loc>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/tags/c/c&#43;&#43;-perl-python-and-java/</loc>
   </url>
   
@@ -435,10 +292,6 @@
   
   <url>
     <loc>http://rustyeddy.com/tags/firmware/</loc>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/software/seemless/</loc>
   </url>
   
   <url>

@@ -1,7 +1,8 @@
 ---
 title: Promise Land 
 date: 2020-02-20
-weight: 600
+weight: 6000
+draft: true
 description: >
   Celebrating the start of an exciting project ends such that the
   first was the only celebration. Somehow everybody died before they

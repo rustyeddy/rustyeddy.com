@@ -1,9 +1,16 @@
 ---
-title: Objective and Milestones
+title: Measurable Goals and Clear Victories
 date: 2020-04-05
-description: Without Vision, The People Parish.
-weight: 10
-references[]: [The Lean Startup, The Agile Methodology, The Startup Owners Manual]
+weight: 100
+draft: true
+description: >
+  There are two things that kill a promising software project quicker
+  than anything: lack of a measured and achievable objective and
+  ego. This document talks about fixing the first problem.
+references: 
+  - The Lean Startup
+  - The Agile Methodology
+  - The Startup Owners Manual
 ---
 
 {{< youtube id="bQxqIKTO2Ck" autoplay="true" >}}
@@ -15,22 +22,19 @@ Thank You, Arnold! I could not have said it any better!
 
 ## First Rule of Success ~ Have a Vision
 
-Arnold says the **First Rule of Success** is to have a vision. I
-totally agree with that. I mean, how can you consider something a
-success if you haven't defined what success is. 
-
-As much is true, that a vision in life is essential to success, it
-is equally true with /Software Projects/. 
+Arnold says the **First Rule of Success** is to have a vision. As much
+is true, that a vision in life is essential to success, it is equally
+true with _Software Projects_.
 
 Without a clearly articulated vision equipped with measurable tasks,
-the project will evolve toward chaos. That is unless they are able to huddle
-around the game plan and apply their passion to the project like a
-championship Football team.
+the project will evolve toward chaos. That is unless they are able to
+huddle around the game plan and apply their passion to the project
+like a championship Football team.
 
 ### Whose Vision? Hint: Not yours! 
 
 Ok we need a vision, but how do we come up with one? Brainstorming? Or
-maybe, if we have a really creative team we'll do /agile/ and make it
+maybe, if we have a really creative team we'll do _agile_ and make it
 up as we go! We don't want to stiffle creativity.....
 
 Yea, no. We're not doing any of that stuff.
@@ -47,20 +51,20 @@ the customer.
 
 ### 4 Epiphanies + Agile = The Lean Start
 
-Most people are aware of the basic concept of /The Lean Startup/
-which was championed by Eric Ries and his partner. This was developed after being forced to take a business class
-in order to receive an additional round
-of funding to keep their startup from folding.
+Most people are aware of the basic concept of _The Lean Startup_ which
+was championed by Eric Ries and his partner. This was developed after
+being forced to take a business class in order to receive an
+additional round of funding to keep their startup from folding.
 
 The class, taught by Steven Blank at UC Berkeley Haas School of
 Business, was about to change the world. Or at least the infamous
-/Silicon Valley/ startup scene.  
+_Silicon Valley_ startup scene.  
 
 Dr. Blank had figured out the "formula" to success in the High Tech
 World of Silicon Valley. 
 
-Eric, a Software Engineer experienced the /Epiphanies/ with /Agile
-Software Development/ and the valley has never been the same. 
+Eric, a Software Engineer experienced the _Epiphanies_ with _Agile
+Software Development_ and the valley has never been the same. 
 
 The Lean Startup emerged! It is now next to impossible to get funding in
 the Valley within 10 short years after the Lean Start up began. Without
@@ -71,7 +75,7 @@ done some research on this.
 
 The Secret is, drum roll please...
 
-To have your customers / owners so closely involved in the development
+To have your customers _ owners so closely involved in the development
 processes that you are building exactly what they tell you to build.
 If you help them tell you what they really need, it is hard to mess
 it up.
@@ -82,7 +86,7 @@ it up.
 - No Clear, Reachable Objective Goals
 - Milestones are not measurable (can be completed) or reasonable (can
   be done at all).
-- Nobody /really/ understands the customers needs and wants
+- Nobody _really_ understands the customers needs and wants
 - The goals keep changing, increasing confusion and waste
 - Team leadership is not engaged with user before and during R&D
 
@@ -103,15 +107,12 @@ of **Quality** when the feature scope has been minimized.
 
 I advocate the Kanban board to keep track of tasks and the
 status of the project. If you are not familiar with the idea of a
-Kanban Board, have a quick look here [[/notes/kanban][Kanban Board]].
+Kanban Board, have a quick look here [[_notes_kanban][Kanban Board]].
 
-BTW - I wholly advocate the the /principals/ of /Agile Development/
-and strive to practice /agile/ on every project I work on. However, I
+BTW - I wholly advocate the the _principals_ of _Agile Development_
+and strive to practice _agile_ on every project I work on. However, I
 have never gone through "official" training on the matter, so we'll
 lack some of the official terminology.
 
-## TODO Reference Material HERE.
-
-Next: [[/software/software-development-life-cycle][Software Development Life Cycle]]
 
 

@@ -1,7 +1,8 @@
 ---
 title: Paradise Aint Perfect
 date: 2020-02-03
-weight: 700
+weight: 7000
+draft: true
 description: >
   Perfection is an illusion. We are not striving for perfection, we
   are striving for correctness. It is imparative we do NOT get

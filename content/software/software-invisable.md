@@ -1,6 +1,7 @@
 ---
 title: Software is Invisable
 date: 2020-02-10
+draft: true
 weight: 200
 description: >
   We are all aware of home remodels and car restorations that have

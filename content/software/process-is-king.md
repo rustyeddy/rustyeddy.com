@@ -1,7 +1,8 @@
 ---
 title: The Process is King
 date: 2020-10-10
-weight: 400
+weight: 4000
+draft: true
 description: >
   Software is a team sport. Everybody on the field, not just the
   programmers have to be on the same page.

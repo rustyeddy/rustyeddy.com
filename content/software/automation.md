@@ -2,6 +2,7 @@
 title: Automation
 date: 2020-03-04
 weight: 1000
+draft: true
 description: >
   Automation is hard to get right, but when it starts working the
   results become ephemeral. You do not realise how much you have been

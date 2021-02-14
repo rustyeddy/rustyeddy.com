@@ -1,7 +1,8 @@
 ---
 title: Software Gone Wild
 date: 2020-03-02
-weight: 100
+weight: 1000
+draft: true
 description: >
   Software and "software projects" are wildly famous for spinning out
   of control. For good reason, it is easy to do.

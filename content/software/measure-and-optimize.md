@@ -1,11 +1,13 @@
 ---
 title: Improvements with Measurements and Analytics
 date: 2020-04-04
-weight: 600
+weight: 6000
+draft: true
 description: >
-  They only way to truely improve in a fast paced, technical
-  environment modern software is to test, measure, analyize and
-  interate. How to get started without a Ph.D. in statistics.
+  The only way to truely improve in the fast paced, technical
+  environment of modern software is to test, measure, analyize and
+  interate both quick and smart. How to effectively integrate
+  analytics into your production code without getting a Ph.D.
 ---
 
 ## Symptoms
@@ -14,4 +16,3 @@ description: >
 - Are you over paying for services
 - Do you know how efficient your system is.
 
-Next: [[call-to-action][Join The Gang!]]

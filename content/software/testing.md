@@ -2,6 +2,7 @@
 title: Piece of Mind with Testing
 date: 2020-04-05
 weight: 3000
+draft: true
 description: > 
   Testing is the ultimate safety net for programmers.
 ---

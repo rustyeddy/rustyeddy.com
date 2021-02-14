@@ -3,6 +3,7 @@ title: Establish a common language for everyone
 date: 2020-09-03
 description: > 
   User Stories, yes I said it.  We are going to create user stories. 
+draft: true
 ---
 
   

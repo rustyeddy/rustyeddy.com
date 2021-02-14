@@ -2,6 +2,7 @@
 title: How to Build a QA Team
 date: 2019-04-03
 weight: 289
+draft: true
 description: >
   Do not force your customers to be your QA department. If you do not
   have a QA department with a very clear objective to ensure high
