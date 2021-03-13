@@ -5,9 +5,8 @@ description: >
   I Design, Develop and Deliver Software
 ---
 
-I am a Software Engineer and IIoT hacker. I specialize in systems
-architecture, software process, robotics and industrial laser
-engravers and cuttes.
+I am a Software Engineer and IoT hacker. I specialize in systems
+architecture, software process, robotics and industrial CNC equipment.
 
 See my [resume](http://rustyeddy.com/resume) for current work
 situation [Radian Laser Systems, LLC](http://radianlaser.com).
