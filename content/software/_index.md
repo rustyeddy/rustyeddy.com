@@ -7,49 +7,46 @@ description: >
 date: 2020-04-05
 ---
 
-Do you lead or manage software a project but you lack the time and or
+Do you lead or manage a software  project but you lack the time and or
 background to:
 
 - Develop a fully vetted systems architecture
 - Establish "just enough" process for a small team to maximize
   efficiency. 
 - Build a team and mentor JR members
-- Establish coding practice and perform code Survey's and Reviews
+- Establish coding practice and perform code Surveys and Reviews
 
 I have been developing software for 3+ decades and have witnessed many
 dismal failures and some smashing successes. There are elements of
 successful projects and failures that are obvious, but
 
-If you have experienced, or would like to potentially avoid some of
+If you have experienced or would like to potentially avoid some of
 these problems, join in my journey to define _Predictible Software
 Development_. 
 
 ## What my team does for Your Team
 
-1. Establish your project true and measurable objective, by drilling
-   down to well up the **true** requirements
+1. Establish your project with true and measurable objectives, by drilling
+   down to the **true** requirements
 2. Map the **true** requirements to bite sized measurable tasks with
-   clearly defined objectives that can be measured and checked.
-3. Global visibility as to the progress of the project
-4. Present management and marketing with tools to communicate
-   customers desires and operational issues into future software
-   releases
-5. Define and automate the entire testing and release processes.
-6. Consult with the developers on the team to focus everybody toward a
-   singular goal and bring the entire team up to speed ASAP.
+   clearly defined objectives that can be measured and checked off
+3. Global visibility as the project progresses 
+4. Provide management with tools to convert 
+   customers desires to project objectives
+5. Define and automate the entire test and release processes
+6. Build and mentor your development team, perform code audits and reviews
    
    
 ## Software is a Team Sport
 
-Which implies you must have the right team. The _World Series_ is not
+This implies you must have the right team. The _World Series_ is not
 won by a team of just good "baseball players", you have to have a few
-lights out pitchers, a golden glove short stop and fast out fielders
-with good arms.  And you have to have a hitting squad that can
+lights out pitchers, a golden glove short stop and fast outfielders
+with good arms. You also must have a hitting squad that can
 cummulatively put points on the board in a consistent manner.
    
-> Hiring a pre-packaged "team of engieers" will most likely under
+> Hiring a pre-packaged "team of engieers" will most likely under-
 > perform a well picked staff that combines key skills while moving
 > temporary skills in and out.
 
-Have you suffered from a disconnect with your development team, or
-as a lead developer have to deal with an unreasonable HIPPO?
+Call to action goes here....
