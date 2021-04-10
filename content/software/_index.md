@@ -52,7 +52,6 @@ as possible in your existing project.
 6. [Peer Reviews](/software/peer-reviews)
 7. [Making a Commitment](software/committing-and-merging-code)
 8. [Release Process](software/release-process)
-   
 
 Which implies you must have the right team. The _World Series_ is not
 won by a team of just good "baseball players", you have to have a few
