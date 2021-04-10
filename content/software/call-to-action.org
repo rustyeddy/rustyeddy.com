@@ -1,7 +1,0 @@
----
-title: Call To Action - Let me Know What do You think
-date: 2020-04-05
-draft: true
----
-
-{{%  cta-software %}}
