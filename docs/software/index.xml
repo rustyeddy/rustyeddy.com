@@ -1,15 +1,67 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Notes on Running Predictable Software Projects on Rusty Eddy</title>
+    <title>How to run a stress free software project with predictable results on Rusty Eddy</title>
     <link>http://rustyeddy.com/software/</link>
-    <description>Recent content in Notes on Running Predictable Software Projects on Rusty Eddy</description>
+    <description>Recent content in How to run a stress free software project with predictable results on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 05 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://rustyeddy.com/software/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Organinizing Software Projects with Kanban</title>
+      <link>http://rustyeddy.com/software/kanban/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/kanban/</guid>
+      <description>Expect the task list to be ever evolving. During the discovery session and defining the MVP You will begin to identify an initial set of tasks, And as the project precedes additional tasks will be realized.
+Whenever and however a new task Is identified that task will be placed on the kanban board in the to do list.
+The item is ordered in the to do list according to its priority amongst the other tasks in the to do list.</description>
+    </item>
+    
+    <item>
+      <title>Acceptance Tests</title>
+      <link>http://rustyeddy.com/software/notes/acceptance-tests/</link>
+      <pubDate>Fri, 02 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/notes/acceptance-tests/</guid>
+      <description>One of the first things that ought to be done, but seldom get the attention it needs are the specific criteria that must be met to make the customer/user happy.
+We are going to call this group of criteria the projects Acceptance Test. Ideally all acceptance tests can be automated with software, however they may be cases that manual intervention is required to conduct an entire set of Acceptance tests.</description>
+    </item>
+    
+    <item>
+      <title>Software Team Sport</title>
+      <link>http://rustyeddy.com/software/team-sport/</link>
+      <pubDate>Tue, 06 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/team-sport/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Customer Discovery and MVP</title>
+      <link>http://rustyeddy.com/software/discovery-session/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/discovery-session/</guid>
+      <description>Consists of one or more customer discovery sessions, where all users and owners of The software will be interviewed forTheir expectations needs and desires from the upcoming software project.
+The customer discovery is then turned into user stories, which are then vetted to collected inhe user storiesAre broke down into Tasks that are Small, autonmous and measurable.
+The test that we come up with must be completed within a day or two.</description>
+    </item>
+    
+    <item>
+      <title>Tools and Workflow</title>
+      <link>http://rustyeddy.com/software/tools-and-workflow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/tools-and-workflow/</guid>
+      <description>Tools and Workflow For this Article we are going to use Github, Which is a pretty standard part Of my workflow.
+As many of you may know git is a software version control system, And get wraps a lot of very useful features around The source control tool like:
+ Git soure control Github Issues for tracking features requests and bugs Kanban board to visually track and manage Actions: Automated debugs Pull requests for code review before committing Static HTTP server for web page documentation Release packages  With these capabilities Built into github We have pretty much everything that we need To run our entire software development process.</description>
+    </item>
     
   </channel>
 </rss>

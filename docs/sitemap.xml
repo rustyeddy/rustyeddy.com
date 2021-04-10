@@ -80,6 +80,20 @@
   </url>
   
   <url>
+    <loc>http://rustyeddy.com/software/kanban/</loc>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/software/notes/acceptance-tests/</loc>
+    <lastmod>2021-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/software/team-sport/</loc>
+    <lastmod>2021-04-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://rustyeddy.com/hire/</loc>
     <lastmod>2020-11-08T00:00:00+00:00</lastmod>
   </url>
@@ -287,6 +301,10 @@
   </url>
   
   <url>
+    <loc>http://rustyeddy.com/software/discovery-session/</loc>
+  </url>
+  
+  <url>
     <loc>http://rustyeddy.com/tags/embedded/</loc>
   </url>
   
@@ -296,6 +314,10 @@
   
   <url>
     <loc>http://rustyeddy.com/tags/single-page-app/</loc>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/software/tools-and-workflow/</loc>
   </url>
   
 </urlset>
