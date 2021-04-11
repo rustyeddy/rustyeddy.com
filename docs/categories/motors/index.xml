@@ -6,10 +6,36 @@
     <description>Recent content in motors on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://rustyeddy.com/categories/motors/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Raspberry Pi Motor Control Software</title>
+      <link>http://rustyeddy.com/notes/rpi-motor-control-service/</link>
+      <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/rpi-motor-control-service/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;TODO ~ replace image with one of the Raspberry Pi Controller&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This software adds a Skid Steer motor control software to the
+&lt;a href=&#34;http://github.com/mobilerobot-io/rpid&#34;&gt;Raspberry Pi Device Server&lt;/a&gt;
+device server.  RPID adds motor controls accessible via both MQTT and
+REST APIs, as well as directly with the Skidder python library.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Arduino Motor Control Software</title>
+      <link>http://rustyeddy.com/notes/arduino-motor-controllers/</link>
+      <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/arduino-motor-controllers/</guid>
+      <description>Pictured about is the OSEPP v2 Motor Shield which can be used as a functional replacement to the Adafruit v2 motorshield, the motorshield I recommend.
+ Source code can be found here http://github.com/mobilerobot-io/arduino/ within the src/mctl directory.
+ Arduino Motorsheild and Distributed Controls The software in the repository is to be loaded on an Arduino with either an Adafruit v2 Arduino or OSEPP 6612 MotorShield. The software accepts commands as incoming text strings from one of several possible serial inputs; UART, RF Radio, Blue Tooth, etc.</description>
+    </item>
     
     <item>
       <title>Inexpensive Motor Controllers for Arduino and Raspberry Pi</title>

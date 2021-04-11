@@ -8,7 +8,6 @@ date: 2019-04-29
 category: communication
 tags: 
   - h264
-draft: true
 ---
 
 I need to stream live video from a moving vehical with a connected

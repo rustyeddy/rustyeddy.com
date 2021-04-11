@@ -61,7 +61,3 @@ repository.
 - Monty ~ mico-controller monitoring program
 
 A link to the [github repository](http://github.com/mobilerobot-io/otto
-
-
-
-

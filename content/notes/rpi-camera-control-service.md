@@ -20,7 +20,6 @@ todo:
 image: https://mobilerobot.sfo2.cdn.digitaloceanspaces.com/display-and-motors.jpg
 resources:
   github: http://github.com/mobilerobot-io/ripid
-draft: true
 ---
 
 I have created a python / Flask based server to run on the Raspberry

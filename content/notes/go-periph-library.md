@@ -13,12 +13,7 @@ tags:
   - periph.io
   - gpio
 reference: http://perhiph.io
-draft: true
 ---
 
 Periph provides a lot of useful utilitie along with example source
 code to help start developing our own interactions.
-
-
-
-

@@ -103,7 +103,6 @@ measured against the _desired state_ creates a new objective that
 will in turn be translated into a Control OUTPUT to the _skid_ channel
 with a left and right throttles to effectively control the vehicle.
 
-
 ### Skid Steering Demonstrated
 
 Here are some diagrams and a video demonstrating _skid steering_ in

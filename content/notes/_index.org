@@ -1,6 +1,0 @@
-#+title: Notes
-#+date: 2020-04-07
-#+description: These are some very import notes on the practical application of modern technology, that is at least how I see it.
-
-
-

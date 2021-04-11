@@ -8,8 +8,9 @@ description: >
 I am a Software Engineer and IoT hacker. I specialize in systems
 architecture, software process, robotics and industrial CNC equipment.
 
-See my [resume](http://rustyeddy.com/resume) for current work
-situation [Radian Laser Systems, LLC](http://radianlaser.com).
+I currently work with [Radian Laser Systems, LLC](http://radianlaser.com) 
+as the Principal Engineer for the _API Driven Laser Systems_. See my
+[resume](http://rustyeddy.com/resume) for a work history. 
 
 > My core interest revolves around computer networks and
 > communications which has had me involved in solving problems with

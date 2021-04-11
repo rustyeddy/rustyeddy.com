@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>picamera on Rusty Eddy</title>
+    <link>http://rustyeddy.com/tags/picamera/</link>
+    <description>Recent content in picamera on Rusty Eddy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://rustyeddy.com/tags/picamera/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Raspberry Pi Camera and Multiple Ports</title>
+      <link>http://rustyeddy.com/notes/raspberry-pi-camera-multiple-ports/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/raspberry-pi-camera-multiple-ports/</guid>
+      <description>&lt;p&gt;As I started bumbling around trying to figure the best way to stream
+[live video from a moving vehicle], I found that the Raspberry Pi
+camera is capable of producing filtered versions of the images it is
+producing, through &lt;em&gt;video ports&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Raspbery Pi Camera Control Service</title>
+      <link>http://rustyeddy.com/notes/rpi-camera-control-service/</link>
+      <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/rpi-camera-control-service/</guid>
+      <description>I have created a python / Flask based server to run on the Raspberry accepting REST calls to perform application specific functions.
+I have created a flask server that will accept REST requests to control the PiCamera, AdaFruitMotorSheild and other stuff.
+Refer to the PiCamera documentation here: https://picamera.readthedocs.io/en/release-1.13/.
+The software can be found in github repository.
+And how to write and operate a flask based server for your project.
+TODO ~ Turn streaming On and Off The next task is to turn video streaming On and Off, this may require duping and modifying somewhat a python script &amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,7 +1,6 @@
 ---
 title: Sync vs. Async, Blocking vs. Non-blocking
 date: 2019-03-03
-draft: true
 ---
 
 ## Synchronous vs. Asynchronous

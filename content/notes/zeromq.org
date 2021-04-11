@@ -1,3 +1,0 @@
-* ZeroMQ
-
-Man I hope this software is as good as the opening of the ZGuide! 

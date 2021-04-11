@@ -22,5 +22,28 @@ The video streams are built using the GStreamer library. The camera native capab
 The video streams will be consumed by one or more sinks, including but not limited to Files, cloud storage, High Def Display and Computer Vision libraries.</description>
     </item>
     
+    <item>
+      <title>Streaming Video Protocols</title>
+      <link>http://rustyeddy.com/notes/streaming-video-protocols/</link>
+      <pubDate>Sun, 28 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/streaming-video-protocols/</guid>
+      <description>rtp rtsp rtmp hlsl mjpeg mpeg-dash mpeg jpeg  RTP ~ Real Time Protocol Actually holds payloads containing arbitrary, but time/delay sensitive media (audio, video, live conversations, etc). Incorporates enough controls to allow for network congestion, reciever compensation and more.
+RTSP What it is and How to use it Real Time Streaming Protocol (RTSP)
+General consensus says that RTSP is a good choice for low latency, local area networks.</description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi Camera and Multiple Ports</title>
+      <link>http://rustyeddy.com/notes/raspberry-pi-camera-multiple-ports/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/raspberry-pi-camera-multiple-ports/</guid>
+      <description>&lt;p&gt;As I started bumbling around trying to figure the best way to stream
+[live video from a moving vehicle], I found that the Raspberry Pi
+camera is capable of producing filtered versions of the images it is
+producing, through &lt;em&gt;video ports&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    
   </channel>
 </rss>

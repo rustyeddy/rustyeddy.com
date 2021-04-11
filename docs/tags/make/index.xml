@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>make on Rusty Eddy</title>
+    <link>http://rustyeddy.com/tags/make/</link>
+    <description>Recent content in make on Rusty Eddy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 21 Apr 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://rustyeddy.com/tags/make/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using CMake</title>
+      <link>http://rustyeddy.com/notes/cmake/</link>
+      <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/cmake/</guid>
+      <description>The Unix build tool is a declarative dependency tracking build tool. Make was born in 1976, and is still how most C and C++ programs and libraries are built today, including the Linux operating system and GNU Compilers and half of all the worlds systems software.
+So Many Makes, So Little Time In that time, especially during the early years of commercial fragmentation and little benefit from Open Source software, the make tool and corresponding Makefile become splintered in implementation details.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -13,8 +13,6 @@ tags:
   - rtos
   - embedded
 github: http://github.com/mobilerobot-io/esp/console
-image: xxx
-draft: true
 ---
 
 You need to push the RESET button to get them to write flash.

@@ -11,7 +11,6 @@ categories:
 tags:
   - tlv
 image: https://mobilerobot.sfo2.cdn.digitaloceanspaces.com/display-and-motors.jpg
-draft: true
 ---
 
 TLV is a very simple communication protocol that can be used to send

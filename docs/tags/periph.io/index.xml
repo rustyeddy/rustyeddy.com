@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>periph.io on Rusty Eddy</title>
+    <link>http://rustyeddy.com/tags/periph.io/</link>
+    <description>Recent content in periph.io on Rusty Eddy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://rustyeddy.com/tags/periph.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Go Periph Library</title>
+      <link>http://rustyeddy.com/notes/go-periph-library/</link>
+      <pubDate>Sun, 28 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/go-periph-library/</guid>
+      <description>Periph provides a lot of useful utilitie along with example source code to help start developing our own interactions.</description>
+    </item>
+    
+  </channel>
+</rss>

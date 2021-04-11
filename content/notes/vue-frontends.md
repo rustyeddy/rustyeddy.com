@@ -12,7 +12,6 @@ todo:
   - list what I have accomplished with vue so far
 resources:
   - http://vuejs.org
-draft: true
 ---
 
 Every piece of software that exists has to speak to the external world
