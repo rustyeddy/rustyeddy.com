@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Arduino Motor Control Software</title>
+      <link>http://rustyeddy.com/notes/arduino-motor-controllers/</link>
+      <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/arduino-motor-controllers/</guid>
+      <description>Pictured about is the OSEPP v2 Motor Shield which can be used as a functional replacement to the Adafruit v2 motorshield, the motorshield I recommend.
+ Source code can be found here http://github.com/mobilerobot-io/arduino/ within the src/mctl directory.
+ Arduino Motorsheild and Distributed Controls The software in the repository is to be loaded on an Arduino with either an Adafruit v2 Arduino or OSEPP 6612 MotorShield. The software accepts commands as incoming text strings from one of several possible serial inputs; UART, RF Radio, Blue Tooth, etc.</description>
+    </item>
+    
+    <item>
       <title>Inexpensive Motor Controllers for Arduino and Raspberry Pi</title>
       <link>http://rustyeddy.com/notes/motor-controlor-notes/</link>
       <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>

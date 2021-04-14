@@ -33,6 +33,43 @@ The video streams will be consumed by one or more sinks, including but not limit
     </item>
     
     <item>
+      <title>Raspberry Pi Motor Control Software</title>
+      <link>http://rustyeddy.com/notes/rpi-motor-control-service/</link>
+      <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/rpi-motor-control-service/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;TODO ~ replace image with one of the Raspberry Pi Controller&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This software adds a Skid Steer motor control software to the
+&lt;a href=&#34;http://github.com/mobilerobot-io/rpid&#34;&gt;Raspberry Pi Device Server&lt;/a&gt;
+device server.  RPID adds motor controls accessible via both MQTT and
+REST APIs, as well as directly with the Skidder python library.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MQTT For Controllor Communication</title>
+      <link>http://rustyeddy.com/notes/mqtt-comm/</link>
+      <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/mqtt-comm/</guid>
+      <description>&lt;p&gt;The MQTT message bus is a simple but critical element of our MBR
+software design.  MQTT provides what is known as a &lt;em&gt;publish/suscribe&lt;/em&gt;
+or &lt;em&gt;pubsub&lt;/em&gt; communications model.  This model of machine to machine
+communication has some attractive benefits for realtime driving
+algorithms that we will discuss in this post.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Go Periph Library</title>
+      <link>http://rustyeddy.com/notes/go-periph-library/</link>
+      <pubDate>Sun, 28 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/go-periph-library/</guid>
+      <description>Periph provides a lot of useful utilitie along with example source code to help start developing our own interactions.</description>
+    </item>
+    
+    <item>
       <title>Control Station Display</title>
       <link>http://rustyeddy.com/notes/touch-screen-display/</link>
       <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
@@ -42,6 +79,30 @@ The video streams will be consumed by one or more sinks, including but not limit
 Raspberry Pi and connected &lt;em&gt;7 inch touchscreen tablet&lt;/em&gt;.  I have it
 setup in &amp;ldquo;kiosk mode&amp;rdquo;, which is basically full page chrome without the
 tabs and tool bars etc.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>TLV the Type Length Vector Protocol</title>
+      <link>http://rustyeddy.com/notes/tlv-and-realitime-communication/</link>
+      <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/tlv-and-realitime-communication/</guid>
+      <description>&lt;p&gt;TLV is a very simple communication protocol that can be used to send
+messages around a complex, distributed system.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Raspbery Pi Camera Control Service</title>
+      <link>http://rustyeddy.com/notes/rpi-camera-control-service/</link>
+      <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/rpi-camera-control-service/</guid>
+      <description>I have created a python / Flask based server to run on the Raspberry accepting REST calls to perform application specific functions.
+I have created a flask server that will accept REST requests to control the PiCamera, AdaFruitMotorSheild and other stuff.
+Refer to the PiCamera documentation here: https://picamera.readthedocs.io/en/release-1.13/.
+The software can be found in github repository.
+And how to write and operate a flask based server for your project.
+TODO ~ Turn streaming On and Off The next task is to turn video streaming On and Off, this may require duping and modifying somewhat a python script &amp;hellip;</description>
     </item>
     
   </channel>

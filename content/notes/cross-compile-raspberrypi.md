@@ -10,7 +10,6 @@ description: >
 resources:
   - https://github.com/raspberrypi/tools
   - https://www.raspberrypi.org/documentation/linux/kernel/building.md
-draft: true
 ---
 
 Production software development for a Raspberry Pi is a fairly common
@@ -34,7 +33,6 @@ We need to grab the tools from here:
 ```sh
 /radian/RadianConfig/build$ cmake .. -DCMAKE_TOOLCHAIN_FILE=../toolchain.armhf
 ```
-
 
 Now we can read this document: 
 

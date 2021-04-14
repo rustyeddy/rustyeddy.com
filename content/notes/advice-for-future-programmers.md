@@ -101,3 +101,9 @@ exciting and florishing career!
 
 There are stupid questions. A stupid question is one that can be
 answered by Google in less than two minutes.
+
+## Never quit and be Humble!
+
+If you ever get discouraged and quit, you can't win. If you win and
+become arrogant you'll loose. Even an old dude like me gets schooled
+constantly.

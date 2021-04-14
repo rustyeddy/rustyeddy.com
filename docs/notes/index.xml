@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mobile Robot Projects on Rusty Eddy</title>
+    <title>Notes I&#39;ve kept along the way on Rusty Eddy</title>
     <link>http://rustyeddy.com/notes/</link>
-    <description>Recent content in Mobile Robot Projects on Rusty Eddy</description>
+    <description>Recent content in Notes I&#39;ve kept along the way on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 24 Apr 2019 00:00:00 +0000</lastBuildDate>
@@ -12,23 +12,58 @@
     
     
     <item>
-      <title>Building a Product or Service</title>
-      <link>http://rustyeddy.com/notes/building-a-product-or-service/</link>
-      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      <title>WPE an Excellerated Raspberry Pi Kiosk</title>
+      <link>http://rustyeddy.com/notes/rpi-wpe-web-kiosk/</link>
+      <pubDate>Fri, 25 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/building-a-product-or-service/</guid>
-      <description></description>
+      <guid>http://rustyeddy.com/notes/rpi-wpe-web-kiosk/</guid>
+      <description>The WPE project (TODO: place reference) allows you to create a hardware accelerated web viewing_ experience with an embedded system and inexpenive display.
+For example a Raspberry Pi with an 7inch tftp touch screen has my brain racing with ideas for applications.
+About WPE WPE creates a cool hardware accelerated kiosk, just point at a URL and the app displays the application takes over the screen.
+ It is awesome! But, it has one major drawback.</description>
     </item>
     
     <item>
-      <title>Webdev Guide</title>
-      <link>http://rustyeddy.com/notes/webdev-guide/</link>
-      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
+      <title>How to Cross Compile for the Raspberry Pi</title>
+      <link>http://rustyeddy.com/notes/cross-compile-raspberrypi/</link>
+      <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/webdev-guide/</guid>
-      <description>This section of my website is a collection of processes and best practices regarding software development. I gather them here, in an attempt to remember and formalize.
-Over the years, I have collected a set of practices and certain software practices and patterns. When I work for a client these practices will be documented as part of the development process.
-This section of my website is dedicated to the development of web sites and apps.</description>
+      <guid>http://rustyeddy.com/notes/cross-compile-raspberrypi/</guid>
+      <description>&lt;p&gt;Production software development for a Raspberry Pi is a fairly common
+thing now.  This is great for many reasons, but does have the downside
+that compiling large hunks of software on the PI is extremely
+slow compared to even a low end laptop.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using Vue to Develop Webapps</title>
+      <link>http://rustyeddy.com/notes/vue-frontends/</link>
+      <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/vue-frontends/</guid>
+      <description>Every piece of software that exists has to speak to the external world in some manner. It might be programattically through messaging or an API call. It could be a human clicking through an GUI on our laptop or phone.
+I think it is clear that web apps are taking over the world. It is a powerful notion that they can pretty much run on any computing devices that support a browser, which is almost everything with a screen.</description>
+    </item>
+    
+    <item>
+      <title>Bootstrap makes WebUI look great!</title>
+      <link>http://rustyeddy.com/notes/bootstrap/</link>
+      <pubDate>Fri, 20 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/bootstrap/</guid>
+      <description>&lt;p&gt;Bootstrap is a great way to get your ugly little fledgling website
+into something respectable in no time. Do not waste time futzing with
+silly formating directives, focuse on the site itself!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Using Gstreamer to create an RTSP Server</title>
+      <link>http://rustyeddy.com/notes/gstreamer-rtsp-server/</link>
+      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/gstreamer-rtsp-server/</guid>
+      <description>Of it earlier this month I set out to start streaming video From the CSI camera, that is a raspberry pie camera, From a moving vehicle for the vehicles guidance and navigation.
+I was surprised to find that the whole world of streaming video is Incredibly complex. In 2019 we are streaming everything from stupid instagram videos to the NFL, yet do not have A solution that is easy universally adopted.</description>
     </item>
     
     <item>
@@ -53,6 +88,99 @@ The video streams will be consumed by one or more sinks, including but not limit
     </item>
     
     <item>
+      <title>Raspberry Pi Motor Control Software</title>
+      <link>http://rustyeddy.com/notes/rpi-motor-control-service/</link>
+      <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/rpi-motor-control-service/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;TODO ~ replace image with one of the Raspberry Pi Controller&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This software adds a Skid Steer motor control software to the
+&lt;a href=&#34;http://github.com/mobilerobot-io/rpid&#34;&gt;Raspberry Pi Device Server&lt;/a&gt;
+device server.  RPID adds motor controls accessible via both MQTT and
+REST APIs, as well as directly with the Skidder python library.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MQTT For Controllor Communication</title>
+      <link>http://rustyeddy.com/notes/mqtt-comm/</link>
+      <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/mqtt-comm/</guid>
+      <description>&lt;p&gt;The MQTT message bus is a simple but critical element of our MBR
+software design.  MQTT provides what is known as a &lt;em&gt;publish/suscribe&lt;/em&gt;
+or &lt;em&gt;pubsub&lt;/em&gt; communications model.  This model of machine to machine
+communication has some attractive benefits for realtime driving
+algorithms that we will discuss in this post.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Arduino Software</title>
+      <link>http://rustyeddy.com/notes/arduino-software/</link>
+      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/arduino-software/</guid>
+      <description>Arduino Software My github repo below is contains collection of Arduino code, sketches and libraries that achieve a variety of simple but useful tasks, none are necessarily a project in and of itself, but may be included in a number of projects providing support for specific functionality.
+Here is a description of some Arduino code you can find.
+Sketches include   esp8266 a series of sketches for the esp8266 chip</description>
+    </item>
+    
+    <item>
+      <title>Streaming Video is Complicated</title>
+      <link>http://rustyeddy.com/notes/streaming-video/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/streaming-video/</guid>
+      <description>I need to stream live video from a moving vehical with a connected camera and a possibly connected wifi.
+Live High Resolution Video Video will stream from the vehicle to be picked up by video consumers and processed as required. Examples of consumers are Live Video Display on our (Webapp), OpenCV for vision algoritms.
+High Demand For Low Resolution It turns out that computer vision alogrithms typically run quite a bit faster on lower resolution images, the additional information from these hi-res images can slow down the type of algorithms we are interested in by many factors.</description>
+    </item>
+    
+    <item>
+      <title>Streaming Video Protocols</title>
+      <link>http://rustyeddy.com/notes/streaming-video-protocols/</link>
+      <pubDate>Sun, 28 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/streaming-video-protocols/</guid>
+      <description>rtp rtsp rtmp hlsl mjpeg mpeg-dash mpeg jpeg  RTP ~ Real Time Protocol Actually holds payloads containing arbitrary, but time/delay sensitive media (audio, video, live conversations, etc). Incorporates enough controls to allow for network congestion, reciever compensation and more.
+RTSP What it is and How to use it Real Time Streaming Protocol (RTSP)
+General consensus says that RTSP is a good choice for low latency, local area networks.</description>
+    </item>
+    
+    <item>
+      <title>The Go Periph Library</title>
+      <link>http://rustyeddy.com/notes/go-periph-library/</link>
+      <pubDate>Sun, 28 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/go-periph-library/</guid>
+      <description>Periph provides a lot of useful utilitie along with example source code to help start developing our own interactions.</description>
+    </item>
+    
+    <item>
+      <title>The ESP32</title>
+      <link>http://rustyeddy.com/notes/esp32/</link>
+      <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/esp32/</guid>
+      <description>You need to push the RESET button to get them to write flash.
+A power packed chip that I have just started playing with. Give some quick specs here: and compare with other well known options (arduino&amp;rsquo;s, stm32 or Raspberry Pi.
+Standout Features  Builtin Wifi &amp;amp; BT and others Dual Core Powerful esp-idf FreeRTOS (Arduino optional) Great Feature Set!  Usage Interactive Console over UART This demonstrates using the serial port for an interactive console while ESP is running other things.</description>
+    </item>
+    
+    <item>
+      <title>Streaming Video Tools</title>
+      <link>http://rustyeddy.com/notes/streaming-video-tools/</link>
+      <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/streaming-video-tools/</guid>
+      <description>The grandparents of streaming video, and snapshots, read, writing and transcoding video and single frame images are ffmpeg, vlc and gstreamer.
+Other platforms, such as the wildly cool and inexpensive Raspberry Pi and attached CSI Camera (Raspberry Pi Camera) have thier own set of utilities: like raspivid. Or the NVidia Nano with it&amp;rsquo;s gst-streamer plugins and nvgst-capture/nvgst-playback utilies.
+ This writting is as of March 2019
+ GStreamer Complex, Flexible, Future Proof GStreamer really complex pipelines but insanely flexible.</description>
+    </item>
+    
+    <item>
       <title>Control Station Display</title>
       <link>http://rustyeddy.com/notes/touch-screen-display/</link>
       <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
@@ -65,12 +193,90 @@ tabs and tool bars etc.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Sensor Station</title>
-      <link>http://rustyeddy.com/notes/sensor-station/</link>
-      <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
+      <title>Raspberry Pi Camera and Multiple Ports</title>
+      <link>http://rustyeddy.com/notes/raspberry-pi-camera-multiple-ports/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/sensor-station/</guid>
-      <description></description>
+      <guid>http://rustyeddy.com/notes/raspberry-pi-camera-multiple-ports/</guid>
+      <description>&lt;p&gt;As I started bumbling around trying to figure the best way to stream
+[live video from a moving vehicle], I found that the Raspberry Pi
+camera is capable of producing filtered versions of the images it is
+producing, through &lt;em&gt;video ports&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>TLV the Type Length Vector Protocol</title>
+      <link>http://rustyeddy.com/notes/tlv-and-realitime-communication/</link>
+      <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/tlv-and-realitime-communication/</guid>
+      <description>&lt;p&gt;TLV is a very simple communication protocol that can be used to send
+messages around a complex, distributed system.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The NRF240L1 RF Transceiver</title>
+      <link>http://rustyeddy.com/notes/nrf24l01/</link>
+      <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/nrf24l01/</guid>
+      <description>This RC reciever chip is very easy to use out of the box, yet provides some very sophisticated capabilities. The first project We&amp;rsquo;ll start using this chip will be a remote control Joystick for our mobile robot.
+Todos:  point to the datasheet load personal photos of my project with NRF20L  pull the image from evernote   fritz a diagram post code that I use and or wrote Try to do an eagle cad  Source Voltage According to Benjamin David Fraser Plugging the NRF24L02 directly into the Arduino 3.</description>
+    </item>
+    
+    <item>
+      <title>Raspbery Pi Camera Control Service</title>
+      <link>http://rustyeddy.com/notes/rpi-camera-control-service/</link>
+      <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/rpi-camera-control-service/</guid>
+      <description>I have created a python / Flask based server to run on the Raspberry accepting REST calls to perform application specific functions.
+I have created a flask server that will accept REST requests to control the PiCamera, AdaFruitMotorSheild and other stuff.
+Refer to the PiCamera documentation here: https://picamera.readthedocs.io/en/release-1.13/.
+The software can be found in github repository.
+And how to write and operate a flask based server for your project.
+TODO ~ Turn streaming On and Off The next task is to turn video streaming On and Off, this may require duping and modifying somewhat a python script &amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Sync vs. Async, Blocking vs. Non-blocking</title>
+      <link>http://rustyeddy.com/notes/sync-async/</link>
+      <pubDate>Sun, 03 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/sync-async/</guid>
+      <description>Synchronous vs. Asynchronous Blocking and Non-Blocking A pratical example of asynchronous is a &amp;ldquo;blocking&amp;rdquo; call vs. non-blocking call. For example you are going to call a web service to gather a lot of data, it will take a long time. You can:
+  Make a blocking call (synchronous) that pauses (blocks) the program from doing anything else until you receive a reply (or error).
+  Make a non-blocking (asynchronous) call that requests the data from the remote server, after sending the request the program continues to run even though the response from the server has not yet been returned.</description>
+    </item>
+    
+    <item>
+      <title>Streaming Live Video on a Local Lan Vs. Internet</title>
+      <link>http://rustyeddy.com/notes/streaming-video-local-network/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/streaming-video-local-network/</guid>
+      <description>differences in local vs. internet and streaming video
+  live stream vs. video on demand
+  what does real time mean?
+  what to do with late packets?
+  UDP vs. TCP in the local network
+  RTP and UDP
+  RTP and RTCP
+  RTP and RTSP
+  RTP and Multicast
+  Tools used
+  TODO: workflowy outline</description>
+    </item>
+    
+    <item>
+      <title>Arduino Motor Control Software</title>
+      <link>http://rustyeddy.com/notes/arduino-motor-controllers/</link>
+      <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/arduino-motor-controllers/</guid>
+      <description>Pictured about is the OSEPP v2 Motor Shield which can be used as a functional replacement to the Adafruit v2 motorshield, the motorshield I recommend.
+ Source code can be found here http://github.com/mobilerobot-io/arduino/ within the src/mctl directory.
+ Arduino Motorsheild and Distributed Controls The software in the repository is to be loaded on an Arduino with either an Adafruit v2 Arduino or OSEPP 6612 MotorShield. The software accepts commands as incoming text strings from one of several possible serial inputs; UART, RF Radio, Blue Tooth, etc.</description>
     </item>
     
     <item>
@@ -97,15 +303,6 @@ The first two obvious choices being the Arduino or Raspberry Pi, for which I tri
     </item>
     
     <item>
-      <title>Power</title>
-      <link>http://rustyeddy.com/notes/power/</link>
-      <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/notes/power/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Comparing the Arduino and Raspberry Pi</title>
       <link>http://rustyeddy.com/notes/rpi-v-arduino/</link>
       <pubDate>Wed, 14 Mar 2018 00:00:00 +0000</pubDate>
@@ -127,12 +324,46 @@ However, there are other more specific forms on communication available and occa
     </item>
     
     <item>
-      <title></title>
-      <link>http://rustyeddy.com/notes/zeromq/</link>
+      <title>Design Graphics with Canva</title>
+      <link>http://rustyeddy.com/notes/design-graphics-with-canva/</link>
+      <pubDate>Sun, 22 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/design-graphics-with-canva/</guid>
+      <description>Hey I am no designer and you can accuse me of lacking originality when it comes to my design sensibilities, which can be dreadfully observed in my current version of this website (Oct 2017).
+ Editorial update the above statement still holds true in early 2020.
+ I love Canva it is super intuitive for a non-designer like me. It allows me to quickly create beautiful and consistent graphics for a variety of purposes including blog articles, social media properties, and such.</description>
+    </item>
+    
+    <item>
+      <title>Using CMake</title>
+      <link>http://rustyeddy.com/notes/cmake/</link>
+      <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/cmake/</guid>
+      <description>The Unix build tool is a declarative dependency tracking build tool. Make was born in 1976, and is still how most C and C++ programs and libraries are built today, including the Linux operating system and GNU Compilers and half of all the worlds systems software.
+So Many Makes, So Little Time In that time, especially during the early years of commercial fragmentation and little benefit from Open Source software, the make tool and corresponding Makefile become splintered in implementation details.</description>
+    </item>
+    
+    <item>
+      <title>Ansible</title>
+      <link>http://rustyeddy.com/notes/ansible/</link>
+      <pubDate>Mon, 03 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/ansible/</guid>
+      <description>Ansible is a very powerful yet simple, in all its complexity. It is a wonderful tool that I get frequent use of. It&amp;rsquo;s real home I suppose is in the larger corporation devops world, it is wonderfully well suited to a mid sized IoT environment.
+A Few Highlight about Ansible Scripts are Accurate and Repeatable Create Playbooks that combine a series of specific roles to get define specific roles the configuration steps to get a desired outcome.</description>
+    </item>
+    
+    <item>
+      <title>Adafruit Music Maker mp3 Sheild</title>
+      <link>http://rustyeddy.com/notes/adafruit-music-maker-mp3-sheild/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/zeromq/</guid>
-      <description> ZeroMQ   Man I hope this software is as good as the opening of the ZGuide! </description>
+      <guid>http://rustyeddy.com/notes/adafruit-music-maker-mp3-sheild/</guid>
+      <description>The shield is driven by an SPI connection with the Arduino and relies on an SD card with music files on it to play. Must determine how to play streaming audio, then we&amp;rsquo;ll have something neat!
+Link to the documentation.
+The shield can also be jumpered and booted into Midi Mode and turned into a drum machine or a Garageband type of play along, this might be fun!
+I suppose we could also add a microphone to record sound for some kind of reason.</description>
     </item>
     
   </channel>

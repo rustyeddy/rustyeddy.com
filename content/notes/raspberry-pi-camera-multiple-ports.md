@@ -10,7 +10,6 @@ categories:
 tags:
   - raspberry pi
   - picamera
-draft: true
 ---
 
 As I started bumbling around trying to figure the best way to stream

@@ -6,8 +6,9 @@ description: >
   This document I briefly describe the primary elements of my software
   development process, if more details are required, then perhaps I
   will find to the time to expand.
-draft: true
 ---
+
+[TODO Move this stuff to /software]
 
 This guide is best suited for small to mid sized development projects,
 a good example are micro-services or embedded development for small

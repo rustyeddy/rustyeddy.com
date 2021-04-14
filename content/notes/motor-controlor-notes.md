@@ -57,7 +57,6 @@ Before I get into any detail on these "hobby" controllers is
 
 
 
-
 What are the first things to consider when developing a mobile robot
 Is how you're going to make it move, and that is typically using
 motors.  The cool thing is that inexpensive electrical motors are

@@ -8,7 +8,6 @@ reference:
 
   - https://github.com/WebPlatformForEmbedded/buildroot
   - https://medium.com/@decrocksam/building-web-applications-for-wpe-webkit-using-node-js-3347146013f3
-draft: true
 ---
 
 The WPE project (TODO: place reference) allows you to create a

@@ -1,10 +1,10 @@
 ---
 title: Minimum Viable Product (MVP)
-weight: 884
-date: 2021-02-01
-draft: true
 description: >
-  Identify the smallest, quickest, useful thing to deliver to a
-  customer, focus relentlessly on that, and nothing else to deliver.
+  The MVP is the first thing a development team should be working
+  toward. It should be the quickest way to a success.
 ---
- 
+
+The MVP as Its name suggests should be The thing that makes The
+customer happy And can be delivered in the shortest period of time by
+the development team.

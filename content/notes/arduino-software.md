@@ -5,7 +5,6 @@ description: >
   This is a small sample of C/C++ sketches I wrote for the
   Arduino. Examples of other embedded chips including esp8266 and
   esp32 are also available.
-draft: true
 ---
 
 ## Arduino Software
