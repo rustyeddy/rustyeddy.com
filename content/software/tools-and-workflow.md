@@ -4,7 +4,7 @@ title: Tools and Workflow
 
 ## Tools and Workflow
 
-For this Article we are going to use Github, Which is a pretty
+For this article we are going to use Github, Which is a pretty
 standard part Of my workflow.
 
 As many of you may know git is a software version control system, And
