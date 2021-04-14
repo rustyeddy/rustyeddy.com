@@ -7,9 +7,9 @@ description: >
 date: 2020-04-05
 ---
 
-Ever get overwhlemed or feel stress coming on, everytime you think or
-talk about the software project?  If any of the following problems
-seem to be recurring issues:
+Ever get overwhelmed or feel stress coming on everytime you think or
+talk about the software project?  Do any of the following problems
+seem to be recurring issues?
 
 1. The team does not seem to all be in sync
 2. Management has little to no visibility on progress of the project
@@ -18,15 +18,17 @@ seem to be recurring issues:
 5. You can't seem to find programmers that communicate very well
 
 These are just 5 examples of the type of problems I have run across
-time and time again. Software is hard And there're good reasons for
-these problems. Software is hard, But when you get it right, If you
+time and time again. Software is hard and there're good reasons for
+these problems. Software is hard, but when you get it right, you
 can change your business.
 
 ## This arcticle will help
 
 I have been developing software for 3+ decades and have witnessed many
 dismal failures and some smashing successes. There are elements of
-successful projects and failures that are obvious, but
+successful projects and failures that are obvious, some elements not so 
+obvious, but more than any single problem, consistently following the 
+process is the biggest problem. 
 
 If you have experienced or would like to potentially avoid some of
 these problems, join in my journey to define _Predictible Software
@@ -39,7 +41,7 @@ improve your software development project. If you have the luxury
 of being at the beginning of a project you can just follow these
 guidelines straight away.
 
-Otherwise if you're knee-deep into an existing project, You still can
+Otherwise if you're knee-deep into an existing project, you still can
 and should adopt these practices to implement them as much and as soon
 as possible in your existing project.
 

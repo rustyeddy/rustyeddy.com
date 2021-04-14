@@ -5,7 +5,7 @@ description: >
   Software Engineer, Network Architect and IoT Hacker
 address: 419 Main St #439
 email: rusty@rustyeddy.com
-linkedin: http://linkedin.com/rustyeddy
+linkedin: http://linkedin.com/in/rustyeddy
 github: http://github.com/rustyeddy
 twitter: http://twitter.com/rustyeddy
 name: Rusty Eddy
