@@ -191,14 +191,25 @@ California State Educators.&lt;/p&gt;</description>
     </item>
     
     <item>
+      <title>Customer Discovery and MVP</title>
+      <link>http://rustyeddy.com/software/discovery-session/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/discovery-session/</guid>
+      <description>This consists of one or more customer discovery sessions, where all users and owners of the software will be interviewed for their expectations, needs and desires from the upcoming software project.
+The customer discovery is then turned into user stories, which are then vetted to collect the user stories. Then they are broke down into tasks that are Small, autonmous and measurable.
+The test that we come up with must be completed within a day or two.</description>
+    </item>
+    
+    <item>
       <title>Organinizing Software Projects with Kanban</title>
       <link>http://rustyeddy.com/software/kanban/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/software/kanban/</guid>
-      <description>Expect the task list to be ever evolving. During the discovery session and defining the MVP You will begin to identify an initial set of tasks, And as the project precedes additional tasks will be realized.
-Whenever and however a new task Is identified that task will be placed on the kanban board in the to do list.
-The item is ordered in the to do list according to its priority amongst the other tasks in the to do list.</description>
+      <description>Expect the task list to be ever evolving. During the discovery session and defining the MVP you will begin to identify an initial set of tasks, and as the project precedes additional tasks will be realized.
+Whenever and however a new task is identified, that task will be placed on the kanban board in the to do list section.
+The item is ordered in the to do list according to its priority amongst the other tasks on the to do list.</description>
     </item>
     
     <item>
@@ -620,23 +631,12 @@ I suppose we could also add a microphone to record sound for some kind of reason
     </item>
     
     <item>
-      <title>Customer Discovery and MVP</title>
-      <link>http://rustyeddy.com/software/discovery-session/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/software/discovery-session/</guid>
-      <description>Consists of one or more customer discovery sessions, where all users and owners of The software will be interviewed forTheir expectations needs and desires from the upcoming software project.
-The customer discovery is then turned into user stories, which are then vetted to collected inhe user storiesAre broke down into Tasks that are Small, autonmous and measurable.
-The test that we come up with must be completed within a day or two.</description>
-    </item>
-    
-    <item>
       <title>Minimum Viable Product (MVP)</title>
       <link>http://rustyeddy.com/software/mvp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/software/mvp/</guid>
-      <description>The MVP as Its name suggests should be The thing that makes The customer happy And can be delivered in the shortest period of time by the development team.</description>
+      <description>The MVP, as its name suggests, should be the thing that makes The customer happy and can be delivered in the shortest period of time by the development team.</description>
     </item>
     
     <item>
@@ -645,9 +645,9 @@ The test that we come up with must be completed within a day or two.</descriptio
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/software/tools-and-workflow/</guid>
-      <description>Tools and Workflow For this Article we are going to use Github, Which is a pretty standard part Of my workflow.
-As many of you may know git is a software version control system, And get wraps a lot of very useful features around The source control tool like:
- Git soure control Github Issues for tracking features requests and bugs Kanban board to visually track and manage Actions: Automated debugs Pull requests for code review before committing Static HTTP server for web page documentation Release packages  With these capabilities Built into github We have pretty much everything that we need To run our entire software development process.</description>
+      <description>Tools and Workflow For this article we are going to use Github, Which is a pretty standard part of my workflow.
+As many of you may know git is a software version control system. Github wraps a lot of very useful features around the source control tool like:
+ Git soure control Github issues for tracking features, requests and bugs Kanban board to visually track and manage Actions: Automated debugs Pull requests for code review before committing Static HTTP server for web page documentation Release packages  With these capabilities built into github we have pretty much everything that we need to run our entire software development process.</description>
     </item>
     
   </channel>
