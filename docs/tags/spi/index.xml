@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>spi on Rusty Eddy</title>
@@ -18,7 +18,7 @@
       
       <guid>http://rustyeddy.com/notes/nrf24l01/</guid>
       <description>This RC reciever chip is very easy to use out of the box, yet provides some very sophisticated capabilities. The first project We&amp;rsquo;ll start using this chip will be a remote control Joystick for our mobile robot.
-Todos:  point to the datasheet load personal photos of my project with NRF20L  pull the image from evernote   fritz a diagram post code that I use and or wrote Try to do an eagle cad  Source Voltage According to Benjamin David Fraser Plugging the NRF24L02 directly into the Arduino 3.</description>
+Todos:  point to the datasheet load personal photos of my project with NRF20L  pull the image from evernote  fritz a diagram post code that I use and or wrote Try to do an eagle cad  Source Voltage According to Benjamin David Fraser Plugging the NRF24L02 directly into the Arduino 3.</description>
     </item>
     
   </channel>

@@ -33,7 +33,9 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
   	            <a class="nav-link" href="/resume"> resume &nbsp</a>
   		    <a class="nav-link" href="/about"> about &nbsp</a>
   		    <a class="nav-link" href="/software"> software &nbsp</a>
+  		    <a class="nav-link" href="/sensors"> sensor station &nbsp</a>
   		    <a class="nav-link" href="/notes"> notes </a>
+
 		    
 		</div>
  	    </nav>
@@ -46,7 +48,8 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 	<div class="col-md-8">
 	  <h1 class="header h2 text-center pb-1">Sensor Station I/O</h1>
 	    <p class="leadin align-right text-muted text-center mt-0">
-		
+		Sensor Station is an Irrigation Application, sensors monitor soil moisture, while relays are used to activate a drip system all automated with an AI backend.
+
 	    </p>
 	</div>
 	<div class="col-md"></div>
@@ -74,79 +77,26 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 	<div class="col"></div> 
 	<div class="col-8">
 	    <article class="article">
-		<h1 id="sensor-station">Sensor Station</h1>
-<p>Sensor Station is a collection of software components that make up a built to provide
-a complete <em>Earth to Cloud</em> <em>IoT</em> framework.</p>
+		
+
+<h1 id="sensor-station">Sensor Station</h1>
+
+<p>Sensor Station is a collection of software components that make up an
+<em>Irrigation Application</em>, soil moisture sensors periodically gather
+soil moisture levels (and other data) and <em>publish</em> that data via
+MQTT.</p>
+
+<p>A Station Hub subscribes to the soil moisture (and other data)
+channels, the moisture level is used to trigger a command to be
+<em>published</em> on an appropriate <em>MQTT</em> channel.</p>
+
+<p>The data may (or may not) also get recorded locally, sent to a
+_TimeSeries DataBase (TSDB) and/or streamed to a realtime Dashboard.</p>
+
 <h2 id="todo-insert-diagram-here">TODO Insert Diagram Here.</h2>
+
 <p>It starts by collecting data, cleaning and distribtuing the data to a
 dashboard, databases, control logic and other interesting places.</p>
-<h3 id="example-application">Example Application</h3>
-<p>Spread a number of <em>Sensor Stations</em> around a yard with the following
-sensors: soil moisture, light sensor, temprature and humidity. All
-this data is gathered by small inexpensive devices (micro-controllers)
-that run off solar or battery power collecting afore mentioned data.</p>
-<p>The data is transmitted via wireless network to a <em>Macro-controller</em>
-that collects, cleanses and passes the data along to it&rsquo;s desired
-locations including but not limited to: a <em>real-time dashboard</em>,
-<em>time-series database</em> and <em>control logic</em>.</p>
-<p>The data can then be used to turn on and off lights and sprinklers,
-amoung a variety of other cool things.</p>
-<h2 id="components">Components</h2>
-<h3 id="micro-controllers">Micro Controllers</h3>
-<p>For our purposes we will build <em>Sensor Stations</em> from little,
-inexpensive micro-controllers are fitted with sensors including soil
-moisture, air temp, humidty and such. The devices will be able to
-transmit data wirelessly back to a <em>Macro Controller</em> that cares for
-the data and sends it to it&rsquo;s various destinations such as control
-logic, databases, dashboards and so on.</p>
-<h3 id="mesh-network">Mesh Network</h3>
-<p>The micro controllers are capable of forming self configuring <em>mesh</em>
-networks with slimmed down wireless network protocols (wifi &amp; ble)
-ideal for low to moderate data rate sensor advertisements may include
-streaming video in certain conditions.</p>
-<p>The mesh network allows devices to be scattered about in arbitrary
-patterns to form networks that are capable of covering large areas
-even with out any power or network infrastructure.  The <em>Mesh</em> is self
-forming and healing, zero configuration, zero infrastructure capable
-network with an optional <em>IP Gateway</em>.</p>
-<p>The mesh networks are advertised capable of 10Mps (or 1mps) per device
-stream up to 200m (NEED TO CHECK THESE NUMBERS) and of course in the
-real world YMMV.</p>
-<h3 id="dashboard-web-app">Dashboard (Web App)</h3>
-<p>A nice modern dashboard application for monitoring, configuring and
-maintaining this system.</p>
-<h2 id="macro-controller">Macro Controller</h2>
-<p>The Macro-Controller is basically what is known as a <em>micro-server</em>,
-this one happens to be built with IoT applications in mind. It
-includes a number of powerful features one would expect from a modern
-industrial strength micro server.</p>
-<p>Feature List:</p>
-<ul>
-<li>Serves up HTML for Webapp (SPA)</li>
-<li>Serves up HTTP _ JSON for REST API</li>
-<li>Speaks MQTT with IoT devices</li>
-<li>Speaks Websocket to with <em>real-time</em> modern web applications</li>
-<li>Simple, very little (to no) configuration required</li>
-<li>Zero Configuration (plug it in and let it go!)</li>
-</ul>
-<h2 id="software">Software</h2>
-<ul>
-<li>Go: fast. <em>REALLY</em> fast!</li>
-<li>Application is a single binary, Just like the good ole days!
-&ndash; No big ass frameworks to lug around, build or conflict.</li>
-</ul>
-<h3 id="separation-of-data-and-control">Separation of Data and Control</h3>
-<p>As will be seen as this architecture is drawn out, there is an
-quasi-abstract layer of communication between the providers of data
-and the consumers of that data, this provides us with all sorts of
-advantages to do great things, but it does indeed bring along it&rsquo;s own
-level of complexity that must be cared for out of the gate.</p>
-<h3 id="todo-speak-more-about-messaging">TODO Speak more about messaging?</h3>
-<h2 id="cloud-support-and-automation">Cloud Support and Automation</h2>
-<h3 id="todo-write-up-cloud-automation">TODO Write Up cloud automation</h3>
-<p>A lot can, and will be said about cloud automation.</p>
-<h2 id="on-prem-_-public-cloud-_-hybrid">On Prem _ Public Cloud _ Hybrid</h2>
-<h2 id="automation-tools-and-blueprints">Automation, tools and Blueprints</h2>
 
 	    </article>
 	</div>
