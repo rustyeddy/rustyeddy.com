@@ -1,5 +1,5 @@
 ---
-title: Software Team Sport
+title: Software is a Team Sport
 date: 2021-04-06
 ---
 
@@ -45,5 +45,19 @@ project.
 
 ## Teams Must Communicate and Adapt
 
+Teams need to all be on the same page, with a central, well known
+place form of communication. There need to be a place to capture
+communication, record decisions and replay history.
 
+### Github Communications Tool
+
+1. Record issues to do: requirements, bugs, design and documentation
+2. Capture discussions for decisions that have been made
+3. Capture changes to code and why
+4. Capture discussions during code review
+5. README.md files are necessary for getting everything started.
+
+Code can not be changed with out the reasons being recorded and the
+results validated. Treat discussions and decisions the same way and a
+history really can teach a lot.
 

@@ -93,6 +93,21 @@
   </url>
   
   <url>
+    <loc>http://rustyeddy.com/software/acceptance-tests/</loc>
+    <lastmod>2021-05-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/software/fork-in-the-code/</loc>
+    <lastmod>2021-05-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/software/release-process/</loc>
+    <lastmod>2021-05-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://rustyeddy.com/software/team-sport/</loc>
     <lastmod>2021-04-06T00:00:00+00:00</lastmod>
   </url>
@@ -560,6 +575,10 @@
   
   <url>
     <loc>http://rustyeddy.com/tags/firmware/</loc>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/software/making-a-commitment/</loc>
   </url>
   
   <url>

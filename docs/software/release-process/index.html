@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 
-<title>How to run a stress free software project with predictable results</title>
+<title>Release Process</title>
 
 <script>(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
 0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
@@ -44,10 +44,9 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="row">
 	<div class="col-md"></div>
 	<div class="col-md-8">
-	  <h1 class="header h2 text-center pb-1">How to run a stress free software project with predictable results</h1>
+	  <h1 class="header h2 text-center pb-1">Release Process</h1>
 	    <p class="leadin align-right text-muted text-center mt-0">
-		Software is hard to do correctly, and even harder to deliver on time and within budget. This page is dedicated to assembling some case studies and establish software development best practices.
-
+		
 	    </p>
 	</div>
 	<div class="col-md"></div>
@@ -69,206 +68,18 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     </div>
 </div>
 <section id="main" class="container">
-<div class="container">
+<div class="container"><div class="row">
+    <div class="col"></div>
+    <div class="col-md-8 hero-text">
+	<article class="article">
+	  <p>Once the code has been commited, an action will be taken to compile a
+latest version of the code into a tarball and hoist upon the release
+server.</p>
 
-    <div class="row">
-	<div class="col"></div>
-	<div class="col-8">
-	    <p>Ever get overwhelmed or feel stress coming on everytime you think or
-talk about the software project?  Do any of the following problems
-seem to be recurring issues?</p>
-<ol>
-<li>The team does not seem to all be in sync</li>
-<li>Management has little to no visibility on progress of the project</li>
-<li>Deadlines are consistently missed</li>
-<li>Your customers are debugging your software (and getting angry)</li>
-<li>You can&rsquo;t seem to find programmers that communicate very well</li>
-</ol>
-<p>These are just 5 examples of the type of problems I have run across
-time and time again. Software is hard and there&rsquo;re good reasons for
-these problems. Software is hard, but when you get it right, you
-can change your business.</p>
-<h2 id="this-arcticle-will-help">This arcticle will help</h2>
-<p>I have been developing software for 3+ decades and have witnessed many
-dismal failures and some smashing successes. There are elements of
-successful projects and failures that are obvious, some elements not so
-obvious, but more than any single problem, consistently following the
-process is the biggest problem.</p>
-<p>If you have experienced or would like to potentially avoid some of
-these problems, join in my journey to define <em>Predictible Software
-Development</em>.</p>
-<h2 id="how-to-make-software-predictable">How to make software predictable</h2>
-<p>Here is a high level overview of Practices that you can start doing to
-improve your software development project. If you have the luxury
-of being at the beginning of a project you can just follow these
-guidelines straight away.</p>
-<p>Otherwise if you&rsquo;re knee-deep into an existing project, you still can
-and should adopt these practices to implement them as much and as soon
-as possible in your existing project.</p>
-<ol>
-<li><a href="/software/discovery-session">Discovery Session</a></li>
-<li><a href="/software/kanban">Managing with Kanban</a></li>
-<li><a href="/software/tools-and-workflow">Tools and Workflow</a></li>
-<li><a href="/software/team-sport">Software is a Team Sport</a></li>
-<li><a href="/software/fork-in-the-code">Fork in the Code</a></li>
-<li><a href="/software/acceptance-tests">Acceptance Tests</a></li>
-<li><a href="/software/peer-reviews">Peer Reviews</a></li>
-<li><a href="software/committing-and-merging-code">Making a Commitment</a></li>
-<li><a href="software/release-process">Release Process</a></li>
-</ol>
-
-	</div>
-	<div class="col"></div>
+	</article>
     </div>
-    <div class="row">
-
-	
-	<div class="col-4">
-	    <div class="card">
-		<h6 class="card-header bg-white">
-		    Customer Discovery and MVP
-		</h6>
-
-		<div class="card-body">
-		    <div class="card-text text-muted small">
-			How to derive the true (deep) requirements and mutually agree upon the MVP
-
-		    </div>
-		</div>
-	    </div>
-	</div>
-	
-	<div class="col-4">
-	    <div class="card">
-		<h6 class="card-header bg-white">
-		    Organinizing Software Projects with Kanban
-		</h6>
-
-		<div class="card-body">
-		    <div class="card-text text-muted small">
-			Kanban is absurdly simple yet insainly useful! Just like your revision control system, you can not do without a Kanban board!
-
-		    </div>
-		</div>
-	    </div>
-	</div>
-	
-	<div class="col-4">
-	    <div class="card">
-		<h6 class="card-header bg-white">
-		    Acceptance Tests
-		</h6>
-
-		<div class="card-body">
-		    <div class="card-text text-muted small">
-			Acceptance Tests are the official criteria that will determine if *all users* of the software are happy.
-
-		    </div>
-		</div>
-	    </div>
-	</div>
-	
-	<div class="col-4">
-	    <div class="card">
-		<h6 class="card-header bg-white">
-		    Acceptance Tests
-		</h6>
-
-		<div class="card-body">
-		    <div class="card-text text-muted small">
-			
-		    </div>
-		</div>
-	    </div>
-	</div>
-	
-	<div class="col-4">
-	    <div class="card">
-		<h6 class="card-header bg-white">
-		    Fork in the Code
-		</h6>
-
-		<div class="card-body">
-		    <div class="card-text text-muted small">
-			
-		    </div>
-		</div>
-	    </div>
-	</div>
-	
-	<div class="col-4">
-	    <div class="card">
-		<h6 class="card-header bg-white">
-		    Release Process
-		</h6>
-
-		<div class="card-body">
-		    <div class="card-text text-muted small">
-			
-		    </div>
-		</div>
-	    </div>
-	</div>
-	
-	<div class="col-4">
-	    <div class="card">
-		<h6 class="card-header bg-white">
-		    Software is a Team Sport
-		</h6>
-
-		<div class="card-body">
-		    <div class="card-text text-muted small">
-			
-		    </div>
-		</div>
-	    </div>
-	</div>
-	
-	<div class="col-4">
-	    <div class="card">
-		<h6 class="card-header bg-white">
-		    Making a Commitment
-		</h6>
-
-		<div class="card-body">
-		    <div class="card-text text-muted small">
-			
-		    </div>
-		</div>
-	    </div>
-	</div>
-	
-	<div class="col-4">
-	    <div class="card">
-		<h6 class="card-header bg-white">
-		    Minimum Viable Product (MVP)
-		</h6>
-
-		<div class="card-body">
-		    <div class="card-text text-muted small">
-			The MVP is the first thing a development team should be working toward. It should be the quickest way to a success.
-
-		    </div>
-		</div>
-	    </div>
-	</div>
-	
-	<div class="col-4">
-	    <div class="card">
-		<h6 class="card-header bg-white">
-		    Tools and Workflow
-		</h6>
-
-		<div class="card-body">
-		    <div class="card-text text-muted small">
-			
-		    </div>
-		</div>
-	    </div>
-	</div>
-	
-    </div>
-
+    <div class="col"></div>
+</div>
 </div>
 
 	</section><footer id="footer" class="container-fluid footer small-text pt-4 border-top">
@@ -283,7 +94,7 @@ as possible in your existing project.</p>
                 Last update ~
                 
 		
-                Sunday, Apr 5, 2020
+                Monday, May 3, 2021
 		
                 
             </div>

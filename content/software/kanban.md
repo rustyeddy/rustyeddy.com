@@ -56,6 +56,6 @@ Take some time here to note things of particular interest while working
 on a particular task.
 
 Using github as an example, we can have our kanban card link to a
-getup issue. That getup issue is then assigned to the person working
+Github issue. That Github issue is then assigned to the person working
 on a particular task.
 
