@@ -44,12 +44,52 @@ We are going to call this group of criteria the projects Acceptance Test. Ideall
     </item>
     
     <item>
-      <title>Software Team Sport</title>
+      <title>Acceptance Tests</title>
+      <link>http://rustyeddy.com/software/acceptance-tests/</link>
+      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/acceptance-tests/</guid>
+      <description>Todo give some good examples of acceptance tests.</description>
+    </item>
+    
+    <item>
+      <title>Fork in the Code</title>
+      <link>http://rustyeddy.com/software/fork-in-the-code/</link>
+      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/fork-in-the-code/</guid>
+      <description> Git is a tool used by most, now. Git Workflow Github is a service built around git. git version control github issues github authentication github web hooks and api github pull requests github discussions github actions github wikis </description>
+    </item>
+    
+    <item>
+      <title>Release Process</title>
+      <link>http://rustyeddy.com/software/release-process/</link>
+      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/release-process/</guid>
+      <description>Once the code has been commited, an action will be taken to compile a latest version of the code into a tarball and hoist upon the release server.</description>
+    </item>
+    
+    <item>
+      <title>Software is a Team Sport</title>
       <link>http://rustyeddy.com/software/team-sport/</link>
       <pubDate>Tue, 06 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/software/team-sport/</guid>
-      <description>Software is a sport.</description>
+      <description>&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD
+Software is a sport. Software as a team sport. Like all other teams, it must act as a functional support system. While many teams have a Quaterback or The Driver, There is unquestionably a large number of personnel all built with specific functions to successfully deliver or accomplish the goal of the team.
+No difference with software.
+Programmers and sometimes management or maybe an architect are the center of attention most of the time, There is a specific need for a diverse set of skills and experiences.</description>
+    </item>
+    
+    <item>
+      <title>Making a Commitment</title>
+      <link>http://rustyeddy.com/software/making-a-commitment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/making-a-commitment/</guid>
+      <description>This document takes us to the point we have new code that has been peer reviewed, tested and now ready to become part of production.
+TODO: Walk through, merging the branch and ticking off a nightly build to the repository.</description>
     </item>
     
     <item>
