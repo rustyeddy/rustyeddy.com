@@ -44,6 +44,16 @@ We are going to call this group of criteria the projects Acceptance Test. Ideall
     </item>
     
     <item>
+      <title>Peer Reviews</title>
+      <link>http://rustyeddy.com/software/peer-reviews/</link>
+      <pubDate>Tue, 04 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/peer-reviews/</guid>
+      <description>The github pull request and peer review.
+They are kept with the code!</description>
+    </item>
+    
+    <item>
       <title>Acceptance Tests</title>
       <link>http://rustyeddy.com/software/acceptance-tests/</link>
       <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
@@ -71,25 +81,24 @@ We are going to call this group of criteria the projects Acceptance Test. Ideall
     </item>
     
     <item>
+      <title>Making a Commitment</title>
+      <link>http://rustyeddy.com/software/making-a-commitment/</link>
+      <pubDate>Sun, 02 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/making-a-commitment/</guid>
+      <description>This document takes us to the point we have new code that has been peer reviewed, tested and now ready to become part of production.
+TODO: Walk through, merging the branch and ticking off a nightly build to the repository.</description>
+    </item>
+    
+    <item>
       <title>Software is a Team Sport</title>
       <link>http://rustyeddy.com/software/team-sport/</link>
       <pubDate>Tue, 06 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/software/team-sport/</guid>
-      <description>&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD
-Software is a sport. Software as a team sport. Like all other teams, it must act as a functional support system. While many teams have a Quaterback or The Driver, There is unquestionably a large number of personnel all built with specific functions to successfully deliver or accomplish the goal of the team.
+      <description>Software as a team sport. Like all other teams, it must act as a functional support system. While many teams have a Quaterback or The Driver, There is unquestionably a large number of personnel all built with specific functions to successfully deliver or accomplish the goal of the team.
 No difference with software.
 Programmers and sometimes management or maybe an architect are the center of attention most of the time, There is a specific need for a diverse set of skills and experiences.</description>
-    </item>
-    
-    <item>
-      <title>Making a Commitment</title>
-      <link>http://rustyeddy.com/software/making-a-commitment/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/software/making-a-commitment/</guid>
-      <description>This document takes us to the point we have new code that has been peer reviewed, tested and now ready to become part of production.
-TODO: Walk through, merging the branch and ticking off a nightly build to the repository.</description>
     </item>
     
     <item>

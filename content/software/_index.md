@@ -52,6 +52,6 @@ as possible in your existing project.
 5. [Fork in the Code](/software/fork-in-the-code)
 3. [Acceptance Tests](/software/acceptance-tests)
 6. [Peer Reviews](/software/peer-reviews)
-7. [Making a Commitment](software/committing-and-merging-code)
+7. [Making a Commitment](software/making-a-commitment)
 8. [Release Process](software/release-process)
 

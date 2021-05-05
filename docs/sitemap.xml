@@ -93,6 +93,11 @@
   </url>
   
   <url>
+    <loc>http://rustyeddy.com/software/peer-reviews/</loc>
+    <lastmod>2021-05-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://rustyeddy.com/software/acceptance-tests/</loc>
     <lastmod>2021-05-03T00:00:00+00:00</lastmod>
   </url>
@@ -105,6 +110,11 @@
   <url>
     <loc>http://rustyeddy.com/software/release-process/</loc>
     <lastmod>2021-05-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/software/making-a-commitment/</loc>
+    <lastmod>2021-05-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -661,10 +671,6 @@
   
   <url>
     <loc>http://rustyeddy.com/resources/industrial-open-source/</loc>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/software/making-a-commitment/</loc>
   </url>
   
   <url>
