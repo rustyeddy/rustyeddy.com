@@ -78,50 +78,67 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 	  <blockquote>
 <p>TODO ~ replace image with one of the Raspberry Pi Controller</p>
 </blockquote>
+
 <p>This software adds a Skid Steer motor control software to the
 <a href="http://github.com/mobilerobot-io/rpid">Raspberry Pi Device Server</a>
 device server.  RPID adds motor controls accessible via both MQTT and
 REST APIs, as well as directly with the Skidder python library.</p>
+
 <p>This project was to build a simple automous driving vehical using a
 single Raspberry Pi and a simple DC motor controller.  The RPi acts
 as the macro controller making control decisions and managing
-communications.</p>
-<!-- raw HTML omitted -->
+communications.
+<!--more--></p>
+
 <p>The same RPi is also the Micro-controller, in other words on this
 Robot the RPi is both the Macro and Micro controllers, making the
 control decision as well as executing the control commands.</p>
+
 <h2 id="controlling-the-motors">Controlling The Motors</h2>
+
 <p>This software is a component that plugs into the
 <a href="/projects/rpid">Raspberry Pi Device Server (RPID)</a>
 allowing the motors to be controlled directly by the Skidder API, or
 via MQTT messages and/or HTTP REST requests. Oh, there is also a
 keyboard controller if you ssh into the vehicle.</p>
+
 <blockquote>
 <p>TODO Place image 5-17 img-1 here</p>
 </blockquote>
+
 <h3 id="mqtt-skid-channel">MQTT Skid Channel</h3>
+
 <p>The RPID MQTT server will subscribe to the <em>/control/skid</em> channel and
 respond to commands accordingly.  Skid channel is simple, expecting
 two floating point numbers, representing the load (voltage) supplied
 to the motors.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">% mosquitto_sub -t /control/skid 
-</code></pre></div><p>Messages to control our skid steer vehical over MQTT will basically be
+
+<pre><code class="language-bash">% mosquitto_sub -t /control/skid 
+</code></pre>
+
+<p>Messages to control our skid steer vehical over MQTT will basically be
 two floating point values between -1 and +1 inclusive.  The numbers
 represent the percentage of the load to let the motors have (throttle)
 and the +/- sign represents the direction the motor will turn.</p>
+
 <blockquote>
 <p>/control/skid:l/r</p>
 </blockquote>
+
 <h3 id="rest-skid-endpoint">REST Skid Endpoint</h3>
+
 <blockquote>
 <p>GET /skid/
 PUT /skid/l/r</p>
 </blockquote>
+
 <p>Get or Set the left and right throttles.  The throttles values are
 represented by floating point numbers between -1 and 1 inclusive,
 representing the percentage of load, and direction that will be
 applied to the right and left throttles.</p>
+
 <h2 id="adafruit-rpi-motor-controller">Adafruit RPi Motor Controller</h2>
+
 <p>For this Robot, we are using the wonderful <a href="http://adafruit.com/todo">Adafruit Raspberry Pi
 DC/Stepper motor controller</a>. This is the
 <em>one</em> robot that we directly drive a motor controller from the
@@ -129,68 +146,92 @@ Raspberry Pi.  That aspect of this project differs than our other
 robots that are built with
 <a href="/notes/distributed-controllers">distributed controllers</a> used by the
 other robots I have built.</p>
+
 <h3 id="rpi-macro-controler-and-micro-controller">RPi Macro Controler and Micro Controller</h3>
+
 <p>In other cases the <em>Master Controller</em> software runs run on a
 Raspberry Pi (or most any other debian linux host like a laptop or
 Jetson Nano) where as the <em>Micro Controller</em> typically runs on an
 embedded <em>Arduino like device</em>, possibly an esp8266, esp32 or stm32.</p>
+
 <h3 id="localized-micro-and-macro-controllers">Localized Micro and Macro Controllers</h3>
+
 <p>In this software we will keep the same message based communication
 system, as well as REST support architecture as used on the other
 robots.  In this case we will implement the Micro-controller
 requirements as part of the <a href="/todo">RPi DeviceService</a> used by the
 <a href="/todo">Raspberry Pi Camera server</a>.</p>
+
 <p>That means we will be able to control the voltage sent to (throttle)
 the motors and hence control speed and direction the vehicle moves.</p>
+
 <h2 id="a-note-about-performance-and-communicaiton-overhead">A Note about Performance and Communicaiton Overhead</h2>
+
 <p>In this case the RPi with minimal sensors, low speed motors and maybe
 a camera should be easily at home in a single multi-core RPi.  This
 being the case, we could optimize communications by removing the
 messaging and translation layers from the
 <a href="/mobile-robot-architecture">MBR Architecture</a>.</p>
+
 <p>However, for the sake of a single architecture and minimized set of
 software tools and configurations, we will leave the communicaiton
 layers in place.</p>
+
 <p>Consistency and maintainance are extreemly important when it comes to
 real-world production systems. But would we choose this over
 performance in a production system?</p>
+
 <p>The answer depends on the demands of the application, in this case, I
 suspect the level of communicaiton overhead will be minimal, or
 trivial when compared to the Bandwidth and other resources available.
 That I believe removing the communicaitons layer would provide no
 noticible, production quality performance improvements.  And at the
 cost of maintanance and complexity.</p>
+
 <p>Of course speculation takes a deep backseat to real world numbers and
 careful testing.  So, I reserve the <em>right to be wrong</em>!</p>
+
 <h3 id="brushed-dc-motors">Brushed DC Motors</h3>
+
 <p>We are using <em>Brushed DC</em> motors, about the cheapest possible motors
 one can buy.  These particular motors accept 6 to 12v.  Powering bots
 is particularly important, if you want to chase your tail on weird
 problems, work with under powered electronics for a while!</p>
+
 <h2 id="powering-the-vehicle">Powering The Vehicle</h2>
+
 <p>We can not share power with the Raspberry Pi as it does not have
 nearly enough power to run two motors, especially during heavy load.
 Therefore we must seek out additional power to be supplied
 independently to the Motor Controller.</p>
+
 <h3 id="motor-control-software">Motor Control Software</h3>
+
 <p>The control software that rides on the raspberry pie will consist of,
 A copy of an empty MQTT broker, most likely mosquito. It will also
 consist of The control software described in (Control Software
 Design)[/notes/control-software-design] in the notes section of this
 site.</p>
+
 <h3 id="speed-and-steering">Speed and Steering</h3>
+
 <p>In this case we have a two wheel vehicle, with two motors. Our control
 Algorithm will employ skid steering, The simplest possible navigation
 mechanism we could develop.</p>
+
 <p>Hence, The control algorithm will take its inputsTranslate them into
 skid steer during instructions,Which basically consists of varying the
 velocityOf the right and left group of wheels, In our case two
 wheels.</p>
+
 <h3 id="outputs">Outputs</h3>
+
 <p>Since the motors are controlled directly by Adafruit software, we will
 may create an individual process, separate from the control software
 just to handle the motor controls.</p>
+
 <h2 id="bill-of-materials">Bill of Materials</h2>
+
 <ul>
 <li>Raspberry Pi V3+</li>
 <li>Adafruit Motorsheild</li>

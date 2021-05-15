@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>How to run a stress free software project with predictable results on Rusty Eddy</title>
@@ -68,7 +68,7 @@ They are kept with the code!</description>
       <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/software/fork-in-the-code/</guid>
-      <description>Git is a tool used by most, now. Git Workflow Github is a service built around git. git version control github issues github authentication github web hooks and api github pull requests github discussions github actions github wikis </description>
+      <description> Git is a tool used by most, now. Git Workflow Github is a service built around git. git version control github issues github authentication github web hooks and api github pull requests github discussions github actions github wikis </description>
     </item>
     
     <item>

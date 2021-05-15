@@ -79,41 +79,60 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 thing now.  This is great for many reasons, but does have the downside
 that compiling large hunks of software on the PI is extremely
 slow compared to even a low end laptop.</p>
+
 <h2 id="getting-the-toolchain">Getting The Toolchain</h2>
+
 <p>Fortunantely the good folk at Raspberry Pi made the tool chain they
 use internally available as a download, second <em>they</em> wrote a really
 good document on how to use it.</p>
+
 <p>We need to grab the tools from here:</p>
+
 <ul>
 <li>cross-compile tools: <a href="https://github.com/raspberrypi/tools">https://github.com/raspberrypi/tools</a>
+
 <ul>
 <li>install them by following the directions they provide</li>
+</ul></li>
+
+<li><p>cmake for arm</p>
+
+<pre><code class="language-sh">/radian/RadianConfig/build$ cmake .. -DCMAKE_TOOLCHAIN_FILE=../toolchain.armhf
+</code></pre></li>
 </ul>
-</li>
-<li>cmake for arm</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">/radian/RadianConfig/build$ cmake .. -DCMAKE_TOOLCHAIN_FILE<span style="color:#f92672">=</span>../toolchain.armhf
-</code></pre></div><p>Now we can read this document:</p>
+
+<p>Now we can read this document:</p>
+
 <p>The other major downside to building on a Pi is that you may not be
 able to set up your desired development environment, or that is way to
 slow.</p>
+
 <p>Setting up the environment for cross compiling.</p>
+
 <h2 id="set-up-cross-compiling">Set up cross compiling</h2>
+
 <p>The first part is grabbing the correct toolchain. Google searches lead
 in a bunch of different directions.</p>
+
 <h3 id="finding-the-toolchain">Finding the Toolchain</h3>
+
 <p>The embeded world has been doing this for decades: using your desktop
 (linux, mac or windows) to build software that will run on a totally
 different chip architecture and operating system, or in many cases no
 OS at all.</p>
+
 <p>To do this we have a bit of preparation to do:</p>
+
 <h3 id="the-arm-toolchain">The ARM Toolchain</h3>
+
 <p>First we are going to grab <em>toolchain</em> (the compiler, linker, etc.)
 that will compile our code on our Linux development machine and
 produce a Raspberry Pi executable.</p>
+
 <blockquote>
 <p>TODO put a link to down load</p>
 </blockquote>
+
 <p>&hellip;</p>
 	</article>
     </div>
