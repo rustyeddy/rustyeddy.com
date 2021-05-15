@@ -75,57 +75,42 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="col"></div>
     <div class="col-md-8 hero-text">
 	<article class="article">
-	  
-
-<p>This RC reciever chip is very easy to use out of the box, yet provides
+	  <p>This RC reciever chip is very easy to use out of the box, yet provides
 some very sophisticated capabilities.  The first project We&rsquo;ll start
 using this chip will be a remote control Joystick for our mobile
 robot.</p>
-
 <h2 id="todos">Todos:</h2>
-
 <ul>
 <li>point to the datasheet</li>
 <li>load personal photos of my project with NRF20L
-
 <ul>
 <li>pull the image from evernote</li>
-</ul></li>
+</ul>
+</li>
 <li>fritz a diagram</li>
 <li>post code that I use and or wrote</li>
 <li>Try to do an eagle cad</li>
 </ul>
-
 <h2 id="source-voltage">Source Voltage</h2>
-
 <p>According to <a href="https://medium.com/@benjamindavidfraser/arduino-nrf24l01-communications-947e1acb33fb">Benjamin David
 Fraser</a>
 Plugging the NRF24L02 directly into the Arduino 3.3v power supply pin,
 will produce unregulated power, which will eventually lead to flaky or
 failed communications.</p>
-
 <p>He suggests either buying a voltage regulator to ensure we get a
 smooth regulated 3.3v.</p>
-
 <p>Or you could stick a 1-10 uF Capacitor between the Vcc and Ground
 terminals, that minimally should regulated the 5v step down to a
 regulated 3.3v.</p>
-
 <h2 id="spi-interface">SPI Interface</h2>
-
 <p>The NRF24L01 operates from the SPI Interface, so controlling the chip
 with the standard pin outs on the Arduino or Raspberry Pi will be
 adequate for controlling the chip.</p>
-
 <h2 id="point-to-point-send-and-recieve">Point To Point Send and Recieve</h2>
-
 <h2 id="mesh-networks">Mesh Networks</h2>
-
 <h2 id="support-on-arduino">Support on Arduino</h2>
-
 <p>We have it connected and communicating between two ends of an
 Arduino.  On one end we have the <a href="/projects/joystick">joystick</a></p>
-
 <h2 id="suipport-on-raspberry-pi">Suipport on Raspberry Pi</h2>
 
 	</article>

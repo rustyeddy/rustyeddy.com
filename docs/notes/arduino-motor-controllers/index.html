@@ -77,133 +77,96 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="col"></div>
     <div class="col-md-8 hero-text">
 	<article class="article">
-	  
-
-<p>Pictured about is the <a href="https://www.osepp.com/electronic-modules/shields/120-motor-shield-6612">OSEPP v2
+	  <p>Pictured about is the <a href="https://www.osepp.com/electronic-modules/shields/120-motor-shield-6612">OSEPP v2
 Motor Shield</a>
 which can be used as a functional replacement to the <a href="https://learn.adafruit.com/adafruit-dc-and-stepper-motor-hat-for-raspberry-pi/using-dc-motors">Adafruit v2
 motorshield</a>,
 the motorshield I recommend.</p>
-
 <blockquote>
 <p>Source code can be found here
 <a href="http://github.com/mobilerobot-io/arduino/">http://github.com/mobilerobot-io/arduino/</a>
 within the src/mctl directory.</p>
 </blockquote>
-
 <h2 id="arduino-motorsheild-and-distributed-controls">Arduino Motorsheild and Distributed Controls</h2>
-
 <p>The software in the repository is to be loaded on an Arduino with
 either an Adafruit v2 Arduino or OSEPP 6612 MotorShield.  The software
 accepts commands as incoming text strings from one of several possible
 <em>serial inputs</em>; UART, RF Radio, Blue Tooth, etc.</p>
-
 <blockquote>
 <p>TODO: place diagram showing an arduino accepting commands from a RPi</p>
 </blockquote>
-
 <p>Input commands are parsed and the commands are acted on
 accordingly. For example, our SkidSteer provide the following
 <em>throttle</em> method to change the speed and direction of the vehicle.</p>
-
 <p>I prefer to use an Arduino with a <em>Motor Shield</em> as a dedicated
 micro-controller regulating the voltage supplied to the DC motors, it
 may carry on local conversions or control calculations dedicated to
 proper motor handling.</p>
-
 <p>Additional sensors and guidance inputs can be handled by additional,
 perhaps less critical controllers.  Hopefully reducing the chance of
 critical motor controllers from failing.</p>
-
 <h3 id="the-big-skidder">The Big Skidder</h3>
-
 <p>My primary vehical is a 4wd, that is 4 DC motors directy spinning two
 rubber tires.  I also have available two, two wheeled vehicals and a
 <em>train tracked</em> vehical.</p>
-
 <p>In all cases each of these vehicle employ <a href="/notes/skid-steering"><em>skid
 steering</em></a> on account a one wheel (wheels or
 tread) will be skidding along when your turnin.</p>
-
 <h2 id="required-motors-and-controller">Required Motors and Controller</h2>
-
 <p>We need to power the following motors (at minimum):</p>
-
 <ul>
 <li>4 DC Motors</li>
 <li>2 Servos</li>
 </ul>
-
 <h2 id="adafruit-motorshield">Adafruit MotorShield</h2>
-
 <p>The first phase of building Robots I recommend the Adafruit Motor
 Shield V2.  I also tried the OSEPP 6612 and Adafruit Motor Shield v1
 (before I realized there was a version 2).</p>
-
 <p>Links to the shields can be found here:</p>
-
 <ol>
 <li><a href="https://learn.adafruit.com/adafruit-dc-and-stepper-motor-hat-for-raspberry-pi/using-dc-motors">Adafruit v2 Arduino DC/Stepper MotorController</a></li>
-<li>[OSEPP v2 MotorController]()</li>
+<li><a href="">OSEPP v2 MotorController</a></li>
 </ol>
-
 <blockquote>
 <p>Insert picture of Adafruit Motor shield</p>
 </blockquote>
-
-<h3 id="osepp-shields-v1-v2">OSEPP Shields v1 &amp; v2</h3>
-
+<h3 id="osepp-shields-v1--v2">OSEPP Shields v1 &amp; v2</h3>
 <p>The OSEPP MotorSheilds effectively duplicate the functionality of the
 Adafruite MotorShields.</p>
-
 <p>The documentation is hard to find and must be pieced together through
 the documentation of their hardware kits.  I do find the hardware to
 be of a sturdy make.  The use connectors to help in learning, the
 Adafruit are more through for real prototyping.</p>
-
 <p>For particular details about the controller and other hardware please
 refer to the Adafruit and respective product websites.</p>
-
 <h2 id="arudio-mctl-software">Arudio MCTL Software</h2>
-
 <p>The code in this library can be compiled by with the
 <a href="http://arduino.io/downloads">Arduino IDE</a> to an UNO with an Adafrutit
 v.2 (or compatible) motor controller.  One of the MBR vehicles OSEPP
 Two Wheel balancer uses an OSEPP motor library wich is very similar
 (but) different than the Adafruit version.</p>
-
 <h3 id="reads-from-serial-input">Reads From Serial Input</h3>
-
 <p>This could be virtually any &ldquo;stream&rdquo; of data from a UART, RF, Blue
 Tooth or Wifi ports.  Regardless, the software reads from the
 appropriate input, parses the incoming commands and adjusts power to
 the motors accordingly.</p>
-
 <blockquote>
 <p>Place snippet of Skidder software class here</p>
 </blockquote>
-
 <h3 id="mqtt-and-motor-control-channel">MQTT and Motor Control Channel</h3>
-
 <p>Connect the motor controller to the MQTT control channel.  NOTE: on
 vehicle may use the motor control channel when availble, however, must
 always be able to regain control (or shutdown completely) if the
 control channel has been lost.</p>
-
 <h2 id="testing-and-validation">Testing and Validation</h2>
-
 <p>How is this software tested and valided for promotion?</p>
-
 <blockquote>
 <p>Todo document the testing procedure</p>
 </blockquote>
-
 <h2 id="maintanance-and-upgrades">Maintanance and Upgrades</h2>
-
 <blockquote>
 <p>Todo document the deployment and production release producedure.</p>
 </blockquote>
-
 <p>Alas, too many projects, to little time!</p>
 
 	</article>

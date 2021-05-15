@@ -80,69 +80,50 @@ software design.  MQTT provides what is known as a <em>publish/suscribe</em>
 or <em>pubsub</em> communications model.  This model of machine to machine
 communication has some attractive benefits for realtime driving
 algorithms that we will discuss in this post.</p>
-
 <h2 id="pubsub-message-bus-and-realtime-communications">Pubsub message bus and realtime communications</h2>
-
 <p>The pubsub communication model boasts some properties that are
 attractive to <em>a real time</em> application.  Specifically, messages can
 be sent and delivered efficiently with little delay, provided none of
 the resources are over burdened.</p>
-
 <h2 id="decoupling-the-controller-from-control-object">Decoupling the Controller from Control Object</h2>
-
 <p>Traditionally, the software, and most likely the hardware intrinsicly
 ties a particular device with a specific controller.  For example, a
 Joystick or Keyboard.  Replacing, say the keyboard with Joystick
 control requires new  software to be added to the controlled item, as
 well as created for the controller.</p>
-
 <p>It also opens up opportunity for logging, learning, testing and
 replays!</p>
-
 <p>Keyboards, programs or canned messages can be formed to sned the same
 communication.</p>
-
 <h3 id="talk-to-the-bus">Talk to The Bus</h3>
-
 <p>All entities talk to the bus, and read from the bus.  No two
 components speak directly to one another.  This allows an incredible
 amount of flexibility, but it does add a level of abstraction and
 compexity.</p>
-
 <h4 id="publishers">Publishers</h4>
-
 <p>Adding a message bus requires us to adjust from a tight,
 input -&gt; output coupling to a <em>decoupled</em> intention based messaging
 system.</p>
-
 <p>For example, a Joystick can publish rapid stick movement /
 positioning informaiton to an MQTT bus such that <em>subscribers</em> like
 the <em>Control software</em>, a logger or debugger as well.</p>
-
 <p>A temprature sensor may send out periodic temprature. Distance, light,
 heat and other sensor can periodical advertise to appropriate
 channels.</p>
-
-<h2 id="funcation-call-rest-vs-pub-sub">Funcation Call, REST vs. Pub/Sub</h2>
-
+<h2 id="funcation-call-rest-vs-pubsub">Funcation Call, REST vs. Pub/Sub</h2>
 <p>[Todo] put a link here to a page that compares communication models:
 such as Routing Protocols, Web/REST servers, RealTime sockets,
 Real-time Websockets, real time messaging.</p>
-
 <h3 id="mbr-and-the-pubsub-commuication-model">MBR and the Pubsub Commuication Model</h3>
-
 <p>For our application, we will be controlling a set of DC motors through
 a micro-controller (i.e. Arduino with shield) attached via some
 serial/RF/BT/??? mechanism.</p>
-
 <p>For this project we will focus on the MQTT protocol and we will
 specifically use <em>Mosquitto</em> the MQTT broker.</p>
-
 <p>useful for many types of computer communication,
 including <em>real time</em> control software, like we use to drive our
 mobile vehicle.  This article will go into detail on our controll
 system software and the various components required to make it happen!</p>
-
 <p>The MQTT message server a general purpose as a systems message bus our
 project components can use to read and write data in near realtime.
 This data is used for a number of purposes, to advertise changes to
@@ -150,141 +131,110 @@ control inputs and sensors, publish control messages to motor
 controllors and by the dashboard to display our realtime sensor
 data. This describes how our MQTT bus is being used and how we got it
 all hooked up!</p>
-
 <h2 id="mqtt-bus-uses">MQTT Bus Uses</h2>
-
 <ul>
 <li>Advertise Joystick inputs for vehicle control</li>
 <li>Advertise Sensor readings for sensor networks</li>
 <li>Consume vehical controls by the motor controllers</li>
 <li>Consume all sorts of data for the Dashboard and realtime graphs</li>
 </ul>
-
 <h2 id="architecture">Architecture</h2>
-
 <p>Mosquitto MQTT Broker is running on a system wide Raspberry Pi. All
 sensor and control inputs are written to the appropriate topics on the
 MQTT bus.</p>
-
 <p>In the future we&rsquo;ll want to run an MQTT bus on vehical incase we
 loose contact with our control station.</p>
-
 <h2 id="mqtt-channels">MQTT Channels</h2>
-
 <ul>
-<li>sensors/<sensor>/data</li>
-<li>motor/<cmd>/data&hellip;</li>
+<li>sensors/<!-- raw HTML omitted -->/data</li>
+<li>motor/<!-- raw HTML omitted -->/data&hellip;</li>
 <li>errors</li>
 <li>warnings</li>
 </ul>
-
 <h2 id="todo">TODO</h2>
-
 <ul>
 <li>draw an image of the MQTT communication</li>
 <li>document the MQTT installation process for broker</li>
 <li>document otto mqtt client to output process</li>
 <li>show some code examples.</li>
 </ul>
-
-<hr />
-
+<hr>
 <p>date: 2019-03-04
 description: &gt;
-  This project has use create a micro service that provides access to the
-  Raspberry Pi Camera and Adafruit Motor Controller.  So I built a
-  service that can be controlled via Web App, REST API or MQTT message
-  bus.
-categories:
-  - software
-  - micro service
-tags:
-  - picamera
-  - pi camera
-  - camera
-  - motorkit
-todo:
-  - images
-  - video
-  - block diagrams
-  - link to github report
+This project has use create a micro service that provides access to the
+Raspberry Pi Camera and Adafruit Motor Controller.  So I built a
+service that can be controlled via Web App, REST API or MQTT message
+bus.
+categories:</p>
+<ul>
+<li>software</li>
+<li>micro service
+tags:</li>
+<li>picamera</li>
+<li>pi camera</li>
+<li>camera</li>
+<li>motorkit
+todo:</li>
+<li>images</li>
+<li>video</li>
+<li>block diagrams</li>
+<li>link to github report
 image: <a href="https://mobilerobot.sfo2.cdn.digitaloceanspaces.com/display-and-motors.jpg">https://mobilerobot.sfo2.cdn.digitaloceanspaces.com/display-and-motors.jpg</a>
-resources:</p>
-
-<h2 id="github-http-github-com-mobilerobot-io-rpid">github: <a href="http://github.com/mobilerobot-io/rpid">http://github.com/mobilerobot-io/rpid</a></h2>
-
+resources:
+github: <a href="http://github.com/mobilerobot-io/rpid">http://github.com/mobilerobot-io/rpid</a></li>
+</ul>
+<hr>
 <p>This application provides access and control to various Raspberry
 devices like the camera, GPIO pins, or a possible MotorShield if
-needed.
-<!--more--></p>
-
+needed.</p>
+<!-- raw HTML omitted -->
 <p>Access is provided via a Webapp and REST API thanks to
 <a href="http://getflask.org/todo">Flask</a>.  Control can also be done by
 sending the appropriate messages to specific MQTT message buses.</p>
-
 <h2 id="optional-motorsheild">Optional Motorsheild</h2>
-
 <p>I built a Raspberry Pi mobile robot [r3] with just a Raspberry Pi and
 the <a href="http://todo/url">Adafruit RPi MotorController</a>, if the
 MotorController is present the corresponding Adafruit <em>motor</em>
 controller library will be installed and used.</p>
-
 <p>If the Motorshield is not present, the motorcontroller library will
 not be loaded, or a Fake (do nothing) library will be loaded on
 devices that do not including the Adafruit MC, which includes
 non-Raspberry Pi platforms.</p>
-
 <blockquote>
 <p>TODO: put a link to installing the Motorshield library, and a quick
 cheat.</p>
 </blockquote>
-
 <h3 id="motors-and-skid-steering">Motors and Skid Steering</h3>
-
 <p>The &lsquo;motors&rsquo; provides the library <code>Skidder</code> that provides a <em>Skid
 Steering</em> steering control, that uses the Adafruit MotorKit library to
 control the <em>throttles</em> of the motors being used.</p>
-
 <blockquote>
 <p>For a brief overview of <a href="/notes/skid-steering">Skid Steering refer to this article</a></p>
 </blockquote>
-
 <p>That article will describe this project within the bigger Mobile Robot
 Architecture (MRA).</p>
-
 <h3 id="pi-cameras-and-video-control">Pi Cameras and Video Control</h3>
-
 <p>Another big hunk of the device server is controlling the Video
 camera.  We have the ability to start and start recording video, or
 take snapshots.</p>
-
 <p>The videos and images can be transfered to a remote host if a network
 is available, they can be saved on vehicle if no network is available
 until one is.</p>
-
 <p>The camera is also able to <em>stream</em> video over a network, if present,
 for <em>real time</em> consumption of the video as it is being filmed.</p>
-
 <h4 id="video-is-consumed-by-humans-and-computers">Video is Consumed by Humans and Computers</h4>
-
 <p>The video is made accessible to Humans for and Computers alike by
 multicasting the video over an IP network with an IP multicast
 address.</p>
-
 <blockquote>
 <p>Read more about <a href="/notes/ip-multicast">IP Multicast here</a></p>
 </blockquote>
-
 <p>Refer to the PiCamera documentation here:
 <a href="https://picamera.readthedocs.io/en/release-1.13/">https://picamera.readthedocs.io/en/release-1.13/</a>.</p>
-
 <p>The software can be found in <a href="http://github.com/mobilerobot-io/rpid">github
 repository</a>.</p>
-
 <p>And how to write and operate a flask based server for your project.</p>
-
-<h2 id="todo-turn-streaming-on-and-off">TODO ~ Turn streaming On and Off</h2>
-
+<h2 id="todo--turn-streaming-on-and-off">TODO ~ Turn streaming On and Off</h2>
 <p>The next task is to turn video streaming On and Off, this may require
 duping and modifying somewhat a python script &hellip;</p>
 	</article>

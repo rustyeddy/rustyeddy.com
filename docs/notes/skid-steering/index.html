@@ -75,131 +75,96 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="col"></div>
     <div class="col-md-8 hero-text">
 	<article class="article">
-	  
-
-<p>Skid steering basics</p>
-
+	  <p>Skid steering basics</p>
 <ul>
 <li>Based on <em>fixed direction wheels[1] or tracks</em></li>
 <li>There are two <em>groups</em> or <em>sides</em> of wheels: left and right</li>
 <li>All wheels in a group MUST always point in the same direction</li>
 <li>All wheels in a group MUST always rotate at the same rate</li>
 <li>Direction is determined by the speed of the two wheel groups
-
 <ul>
 <li>To move straight all motors rotate at the same rate</li>
 <li>Forward and Reverse are determined by positive and negative values</li>
 <li>Turning is achieved by varying the throttle on the right and left</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <h3 id="example">Example</h3>
-
 <p>The <code>Skidder</code> class has the following API, as you can see all of
-the movements we desire can be accomplished with a single API call</p>
+the movements we desire can be accomplished with a single API call
+<code>skidder.set_throttle(left_throttle, right_throttle)</code>,
+does not get much simpler than this!</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">skidder <span style="color:#f92672">=</span> Skidder()
 
-<pre><code class="language-skidder.set_throttle(left_throttle,">does not get much simpler than this!
+<span style="color:#75715e"># Move forward at full speed</span>
+skidder<span style="color:#f92672">.</span>set_throttle(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>)
 
-</code></pre>
+<span style="color:#75715e"># Move in reverse at half throttle</span>
+skidder<span style="color:#f92672">.</span>set_throttle(<span style="color:#f92672">-</span><span style="color:#ae81ff">0.5</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">0.5</span>)
 
-<p>python
-skidder = Skidder()</p>
+<span style="color:#75715e"># Turn right arch at 60% </span>
+skidder<span style="color:#f92672">.</span>set_throttle(<span style="color:#f92672">.</span><span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">0</span>)
 
-<h1 id="move-forward-at-full-speed">Move forward at full speed</h1>
+<span style="color:#75715e"># Turn left on a dime (and fast) at 70%</span>
+skidder<span style="color:#f92672">.</span>set_throttle(<span style="color:#f92672">-</span><span style="color:#ae81ff">0.7</span>, <span style="color:#ae81ff">0.7</span>)
 
-<p>skidder.set_throttle(1, 1)</p>
+<span style="color:#75715e"># Stop</span>
+skidder<span style="color:#f92672">.</span>set_throttle(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>)
 
-<h1 id="move-in-reverse-at-half-throttle">Move in reverse at half throttle</h1>
-
-<p>skidder.set_throttle(-0.5, -0.5)</p>
-
-<h1 id="turn-right-arch-at-60">Turn right arch at 60%</h1>
-
-<p>skidder.set_throttle(.6, 0)</p>
-
-<h1 id="turn-left-on-a-dime-and-fast-at-70">Turn left on a dime (and fast) at 70%</h1>
-
-<p>skidder.set_throttle(-0.7, 0.7)</p>
-
-<h1 id="stop">Stop</h1>
-
-<p>skidder.set_throttle(0, 0)</p>
-
-<h1 id="coast">Coast</h1>
-
-<p>skidder.set_throttle(None, None)
-```</p>
-
-<p>With this simple library we can control the most simple of Mobile
+<span style="color:#75715e"># Coast </span>
+skidder<span style="color:#f92672">.</span>set_throttle(None, None)
+</code></pre></div><p>With this simple library we can control the most simple of Mobile
 Robots (or maybe a forklift).</p>
-
 <h3 id="note-about-speed-and-accuracy">Note About Speed and Accuracy</h3>
-
 <p>This library is very simple, it only knows how to control the
-<strong><em>percentage of potential load</em></strong> the motors will be provided.  The
+<em><strong>percentage of potential load</strong></em> the motors will be provided.  The
 Adafruit library appropriate uses the term <strong>throttle</strong>, because we
 can not know the <strong>speed</strong> of the motor without some form of
 <strong>external feedback</strong>.</p>
-
 <h4 id="can-not-directly-control-speed">Can NOT Directly Control Speed!</h4>
-
 <p>Of course, the library does not know what motors are being used, how
 they are geared (how the gear ratio&rsquo;s are set).  Even if we knew the
 motors, we still do not know, directly the load being supplied which
 will directly effect the rotation of the motors.</p>
-
 <h4 id="nor-control-turn-radius">Nor Control Turn Radius</h4>
-
 <p>It follows to reason that the inability to control <em>speed</em> directly
 also means that we can NOT control the degree of our turns!  For
 example a faster spinning motor will rotate a chasis more degrees than
 a slower rotating motor.  This can be changed simply by the power
 supply being used, including the charge if batteries are being used.</p>
-
 <h3 id="external-feedback-required">External Feedback Required</h3>
-
 <p>This is not such a big deal when the vehicle is controlled by a Human,
 the humans makes control decisions in their brains and translate that
 to DATA INPUTS, from a joystick or keyboard possibly.</p>
-
 <h4 id="computer-controls-require-external-feedback">Computer Controls Require External Feedback</h4>
-
 <p>For the reasons stated above, Skid steering requires external feedback
 to be accurately used with computer automated controlers, like <a href="http://github.com/mobilerobot-io/otto">otto&rsquo;s
 magoo</a>.</p>
-
 <p>The possibilities for external controls are many! Including distance
 sensors, computer vision, radar, maps of many varieties, etc. The
 choices are so vast that we would be remis to become too committed to
 one or two technologies.</p>
-
 <p>For that reason our <a href="http://mobilerobot-io/rpid">Raspberry Pi Device Controller
 (rpid)</a> project was created to allow for
 external feedback of incoming <em>new state</em> combined with existing state
 measured against the <em>desired state</em> creates a new objective that
 will in turn be translated into a Control OUTPUT to the <em>skid</em> channel
 with a left and right throttles to effectively control the vehicle.</p>
-
 <h3 id="skid-steering-demonstrated">Skid Steering Demonstrated</h3>
-
 <p>Here are some diagrams and a video demonstrating <em>skid steering</em> in
 real life:</p>
-
 <blockquote>
 <p>Todo create skid steer video</p>
-
+</blockquote>
+<blockquote>
 <p>Todo create skid steer diagrams</p>
 </blockquote>
-
-<h2 id="disclaimer-semantics-of-the-term-wheel">Disclaimer ~ Semantics of the term Wheel</h2>
-
+<h2 id="disclaimer--semantics-of-the-term-wheel">Disclaimer ~ Semantics of the term Wheel</h2>
 <p>[1] Disclaimer ~ I will often use the term wheels in a very generic
 sense, sometimes the use of wheels is specificly to wheels, sometimes
 I will use it generically to include [tank tracks] or other types
 of elements that rotate to move the vehicle.</p>
-
 <p>As distinguished from <em>legs</em> or other types of <em>mobility enablers</em>.</p>
-
 <h2 id="references">References</h2>
 
 	</article>

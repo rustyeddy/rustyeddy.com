@@ -75,62 +75,61 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="col"></div>
     <div class="col-md-8 hero-text">
 	<article class="article">
-	  
-
-<h2 id="arduino-software">Arduino Software</h2>
-
+	  <h2 id="arduino-software">Arduino Software</h2>
 <p>My github repo below is contains collection of Arduino code, sketches
 and libraries that achieve a variety of simple but useful tasks, none
 are necessarily a project in and of itself, but may be included in a
 number of projects providing support for specific functionality.</p>
-
 <p>Here is a description of some Arduino code you can find.</p>
-
 <h2 id="sketches-include">Sketches include</h2>
-
 <ul>
-<li><p>esp8266 a series of sketches for the esp8266 chip</p></li>
-
-<li><p><strong>LCDKeypad</strong> drives a 16x2 LCD display with 7 additional buttons. These
+<li>
+<p>esp8266 a series of sketches for the esp8266 chip</p>
+</li>
+<li>
+<p><strong>LCDKeypad</strong> drives a 16x2 LCD display with 7 additional buttons. These
 display&rsquo;s are very useful for projects that need to display short
-but important info.</p></li>
-
-<li><p><strong>SensorStation</strong> load this software on an arduino loaded with
+but important info.</p>
+</li>
+<li>
+<p><strong>SensorStation</strong> load this software on an arduino loaded with
 sensors that will broadcast to an external station.  Sensors can be
-configured at runtime.</p></li>
-</ul>
-
+configured at runtime.</p>
 <p>Various serial interfaces exist for UART, RF, Bluetooth and Wifi
-  according to what is available.</p>
-
-<ul>
-<li><p><strong>Balance</strong> controls a 2-wheeled balancing robot with the help of an
-MPU6050 gyroscope and accelorometer.</p></li>
-
-<li><p><strong>Blink</strong> Hello, World!</p></li>
-
-<li><p><strong>i2c</strong> Uses the Wire library to implement the
+according to what is available.</p>
+</li>
+<li>
+<p><strong>Balance</strong> controls a 2-wheeled balancing robot with the help of an
+MPU6050 gyroscope and accelorometer.</p>
+</li>
+<li>
+<p><strong>Blink</strong> Hello, World!</p>
+</li>
+<li>
+<p><strong>i2c</strong> Uses the Wire library to implement the
 <a href="/projects/realtime-communications-and-tlvs">TLVs application layer protocol</a>
 enabling an Arduino wired to an I2C bus to communicate with other
-devices in a well defined, organzed manner.</p></li>
-
-<li><p><strong>lcd</strong> An alternative LCD program for a display that lacks the
-input buttons of the LCDKeypad code.</p></li>
-
-<li><p><strong>mctl</strong> Runs on an arduino accepting CONTROL OUTPUT <em>skid</em> messages
+devices in a well defined, organzed manner.</p>
+</li>
+<li>
+<p><strong>lcd</strong> An alternative LCD program for a display that lacks the
+input buttons of the LCDKeypad code.</p>
+</li>
+<li>
+<p><strong>mctl</strong> Runs on an arduino accepting CONTROL OUTPUT <em>skid</em> messages
 from a serial port (e.g. UART, RF, Bluetooth, etc) with the format
-/control/skid/<left>/<right>, modifying the load given to the
-throttle.</p></li>
-
-<li><p><strong>rf24joy</strong> This is code for the <a href="/projects/rf-joystick">RF Joystick
+/control/skid/<!-- raw HTML omitted -->/<!-- raw HTML omitted -->, modifying the load given to the
+throttle.</p>
+</li>
+<li>
+<p><strong>rf24joy</strong> This is code for the <a href="/projects/rf-joystick">RF Joystick
 project</a>.  It allows and Nano connected to a
 joystick with two degrees of freedom and a button.   Nano accepts
 signals from the Joystick, and attached button, advertised the data
-over an RF (Nordic Labs RF24L01 chip)</p></li>
+over an RF (Nordic Labs RF24L01 chip)</p>
+</li>
 </ul>
-
 <h2 id="alternative-chips">Alternative Chips</h2>
-
 <p>For more recent and more complex project I will tend to use other more
 sophisticated chipsets like the esp8266, esp32 and stm32, they are
 cheaper and more powerful than the Arduino, in the case of the esp8266

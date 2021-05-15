@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>camera on Rusty Eddy</title>
@@ -21,7 +21,8 @@
 I have created a flask server that will accept REST requests to control the PiCamera, AdaFruitMotorSheild and other stuff.
 Refer to the PiCamera documentation here: https://picamera.readthedocs.io/en/release-1.13/.
 The software can be found in github repository.
-And how to write and operate a flask based server for your project.</description>
+And how to write and operate a flask based server for your project.
+TODO ~ Turn streaming On and Off The next task is to turn video streaming On and Off, this may require duping and modifying somewhat a python script &amp;hellip;</description>
     </item>
     
   </channel>

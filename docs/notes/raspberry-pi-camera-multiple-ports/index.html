@@ -79,38 +79,41 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 [live video from a moving vehicle], I found that the Raspberry Pi
 camera is capable of producing filtered versions of the images it is
 producing, through <em>video ports</em>.</p>
-
 <h3 id="raspberry-picamera-and-video">Raspberry PiCamera and Video</h3>
-
 <ul>
-<li><p>The live video stream(s) will potentially be recieved by more than
+<li>
+<p>The live video stream(s) will potentially be recieved by more than
 one consumer: including but not limited to:</p>
-
 <ul>
 <li>Live streaming High Def video watch while the rover is roaming about</li>
 <li>OpenCV module to run Computer Vision algorighms</li>
 <li>Cloud storage for future replay</li>
-<li>Snapshots can be produced or pulled from vide
-<br /></li>
-</ul></li>
-
-<li><p>The Raspberry Pi Camera has multiple ports</p>
-
+<li>Snapshots can be produced or pulled from vide</li>
+</ul>
+</li>
+<li>
+<p>The Raspberry Pi Camera has multiple ports</p>
 <ul>
-<li>Video Ports (defaults):</li>
+<li>
+<p>Video Ports (defaults):</p>
+<ul>
 <li>Port 0 for high res, slow, mildly distruptive snapshots (capture)</li>
-
-<li><p>Port 1 standard for video High Def video recording (1024, 768,
-1240, 1080), etc</p></li>
-
-<li><p>Additional ports</p></li>
-
-<li><p>Port 2 lowdef low frames fed to OpenCV</p></li>
-
-<li><p>Port 3 lowres capture triggered by events</p></li>
-</ul></li>
-
-<li><p>There are many standards and ways to do things</p></li>
+<li>Port 1 standard for video High Def video recording (1024, 768,
+1240, 1080), etc</li>
+</ul>
+</li>
+<li>
+<p>Additional ports</p>
+<ul>
+<li>Port 2 lowdef low frames fed to OpenCV</li>
+<li>Port 3 lowres capture triggered by events</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>There are many standards and ways to do things</p>
+</li>
 </ul>
 	</article>
     </div>
