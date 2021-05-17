@@ -30,12 +30,13 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 
 	    <nav class="navbar-nav w-100 justify-content-end">
 		<div class="nav w-100">
-  	            <a class="nav-link" href="/resume"> resume &nbsp</a>
-  		    <a class="nav-link" href="/about"> about &nbsp</a>
-  		    <a class="nav-link" href="/software"> software &nbsp</a>
-  		    <a class="nav-link" href="/sensors"> sensor station &nbsp</a>
-  		    <a class="nav-link" href="/notes"> notes </a>
-
+  	            <a class="nav-link" href="/resume">resume </a>
+  		    <a class="nav-link" href="/about">about </a>
+  		    <a class="nav-link" href="/software">software </a>
+  		    <a class="nav-link" href="/computer-vision">computer vision </a>
+  		    <a class="nav-link" href="/cnc">cnc </a>
+  		    <a class="nav-link" href="/sensors">sensors </a>
+  		    <a class="nav-link" href="/notes">notes </a>
 		    
 		</div>
  	    </nav>
@@ -75,88 +76,65 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="col"></div>
     <div class="col-md-8 hero-text">
 	<article class="article">
-	  
-
-<p>Ansible is a very powerful yet simple, in all its complexity. It is a
+	  <p>Ansible is a very powerful yet simple, in all its complexity. It is a
 wonderful tool that I get frequent use of.  It&rsquo;s real home I suppose
 is in the larger corporation <em>devops</em> world, it is wonderfully well
 suited to a mid sized IoT environment.</p>
-
 <h2 id="a-few-highlight-about-ansible">A Few Highlight about Ansible</h2>
-
 <h3 id="scripts-are-accurate-and-repeatable">Scripts are Accurate and Repeatable</h3>
-
 <p>Create Playbooks that combine a series of specific roles to get define
 specific <em>roles</em> the configuration steps to get a desired
 outcome. Once you figure out how to get something installed correctly,
 just script it out.</p>
-
 <p>If and when things change and the script breaks, fix it, simple.</p>
-
 <blockquote>
 <p>We have just ensured we can repeat the same successful installation
 over and over again, in record breaking time!</p>
 </blockquote>
-
 <h3 id="processes-get-documented">Processes Get Documented</h3>
-
 <p>By virtue of creating accurate names and descriptions of the tasks
 required for ansible, it will provide some great documentation of the
 actions performed by the varies roles.</p>
-
 <h2 id="how-ansible-works">How Ansible Works</h2>
-
 <p>Ansible runs <em>playbooks</em> from any host you care to run it from: we&rsquo;ll
 call it the: <em>&ldquo;ansible host&rdquo;</em>. The <em>ansible host</em> can then over see
 the configuration management of any number of <em>target hosts</em>, we&rsquo;ll
 call them <em>&ldquo;targets&rdquo;</em>.</p>
-
 <p>At any given time <em>ansible</em> can be used to launch a single command or
 more typically a playbook that will invoke a series of actions to
 ensure all <em>targets</em> are configured and operating in the state
 specified by a series of <em>roles</em> that make up the ansible playbook.</p>
-
 <p>Ansible playbooks can (and often are) run from: a laptop by a
 developer during test builds, or large enterprise servers that
 entrusted with maintainnig order and consistency in large complex
 enterprise arrangements.</p>
-
 <p>Heck, Ansible can even be run from a <em>Raspberry Pi</em>! I think it
 provides some really powerful, and useful solutions to IoT problems.</p>
-
 <h2 id="getting-started-with-ansible">Getting Started with Ansible</h2>
-
 <p>Running <em>ansible</em> at all requires the <em>ansible host</em> to be able to
 remotely login and control the <em>targets</em>. This must be established
 before ansible can do anything else.</p>
-
 <blockquote>
 <p>Prepare your ansible targets with public ssh keys!</p>
 </blockquote>
-
 <p>The key to getting started with ansible is to prepare all target hosts
 with the appropriate public SSH key(s) providing the <em>ansible host</em>
 with controlling access. This is the best, easiest and recommended way
 to get started.</p>
-
 <h3 id="preload-targets-with-keys">Preload Targets with Keys</h3>
-
 <p>For physical servers (bare metal) this may require some manual
 preparation to load each <em>target</em> with the appropriate ssh key. May
 seem like a pain, but it is really trivial compared to the amount of
 work you will save allowing ansible to do the work.</p>
-
 <blockquote>
 <p>Ansible provides other ways to access and control the targets, but
 when possible ssh keys are the best way to go.</p>
 </blockquote>
-
 <p>In cases of <em>Virtual Machines (VM)</em> and <em>Containers (containers)</em> the
 necessary public keys maybe (depending on the virtual provider)
 preloaded when the new VM or container is <em>spun up or
 provisioned</em>. This is ideal, allowing us to create 100% <strong>zero touch</strong>
 provisioning!</p>
-
 <p>anyway, back to ansible&hellip;</p>
 
 	</article>

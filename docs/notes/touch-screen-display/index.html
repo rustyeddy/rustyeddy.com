@@ -30,12 +30,13 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 
 	    <nav class="navbar-nav w-100 justify-content-end">
 		<div class="nav w-100">
-  	            <a class="nav-link" href="/resume"> resume &nbsp</a>
-  		    <a class="nav-link" href="/about"> about &nbsp</a>
-  		    <a class="nav-link" href="/software"> software &nbsp</a>
-  		    <a class="nav-link" href="/sensors"> sensor station &nbsp</a>
-  		    <a class="nav-link" href="/notes"> notes </a>
-
+  	            <a class="nav-link" href="/resume">resume </a>
+  		    <a class="nav-link" href="/about">about </a>
+  		    <a class="nav-link" href="/software">software </a>
+  		    <a class="nav-link" href="/computer-vision">computer vision </a>
+  		    <a class="nav-link" href="/cnc">cnc </a>
+  		    <a class="nav-link" href="/sensors">sensors </a>
+  		    <a class="nav-link" href="/notes">notes </a>
 		    
 		</div>
  	    </nav>
@@ -79,61 +80,43 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 Raspberry Pi and connected <em>7 inch touchscreen tablet</em>.  I have it
 setup in &ldquo;kiosk mode&rdquo;, which is basically full page chrome without the
 tabs and tool bars etc.</p>
-
 <p>The touchscreen installation was nearly trivial, though I am using two
 power supplies, it would complain with just one.</p>
-
 <p>I decided that it would really cool to use a Raspberry Pi as the
 <em>control station</em> for MBR, even cooler, why not attach a 7in touch
 screen to the RPI for configuring and monitoring the robot / system.</p>
-
 <h2 id="power">Power</h2>
-
 <p>The standard power taken from Mains should be fed with a 2Amp power
 supply connected to the <strong>Display Adapter Card</strong>.</p>
-
 <p>You can optionally attach and additional 2am power supply to the
 RaspiBerry Pi thus driving power to the display and adapter card, in
 addition to the power supplied to the display, thus powering the Pi
 and Display seperately.</p>
-
 <h2 id="graphics">Graphics</h2>
-
 <p>Graphics for control software can be done in a number of different
 ways.  Unless compelled by good reason otherwise, we&rsquo;ll stick to
 webapps: HTML, CSS and JavaScript through a web server.</p>
-
 <p>This will allow us the most bang for our buck.</p>
-
 <p>TODO: add a pic of the control station.</p>
-
 <h2 id="chromium-kiosk-mode">Chromium Kiosk Mode</h2>
-
 <p>Our user interface will be local server software that will provider
 our controller with everyting it needs to do to control our mobile
 robots and assocociated components.</p>
-
 <blockquote>
 <p>TODO ~ locate the chromium kiosk mode and how to start in that
 mode.</p>
 </blockquote>
-
 <h3 id="monitor-mode">Monitor Mode</h3>
-
 <p>Monitor mode will provide us with a <em>health status</em> of our
 environment, Configuration mode allows us to modify configurations and
 control mode allows us to control our vehicles.</p>
-
 <p>We are going to write a Webapp served up by the local machine, which
 will be run in Kiosk mode.  We&rsquo;ll need to determine all the screens
 that will run in Kiosk mode, but we will have our local server,
 serving up some cool stuff!</p>
-
 <h2 id="additional-spi-pins">Additional SPI(?) Pins</h2>
-
 <p>The adapter board attached to the screen has a couple additional pins
 that allow stuff.</p>
-
 <p>TODO: check out the pins on this display</p>
 	</article>
     </div>
