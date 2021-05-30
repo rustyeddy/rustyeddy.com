@@ -80,7 +80,7 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/software/discovery-session/</loc>
+    <loc>http://rustyeddy.com/software/customer-discovery-and-mvp/</loc>
   </url>
   
   <url>
@@ -93,23 +93,8 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/cnc/</loc>
-    <lastmod>2021-05-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/software/peer-reviews/</loc>
     <lastmod>2021-05-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/software/acceptance-tests/</loc>
-    <lastmod>2021-05-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/software/fork-in-the-code/</loc>
-    <lastmod>2021-05-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -118,8 +103,13 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/software/making-a-commitment/</loc>
-    <lastmod>2021-05-02T00:00:00+00:00</lastmod>
+    <loc>http://rustyeddy.com/software/tools-workflow-and-github/</loc>
+    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/cnc/</loc>
+    <lastmod>2021-05-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -598,15 +588,7 @@
   </url>
   
   <url>
-    <loc>http://rustyeddy.com/software/mvp/</loc>
-  </url>
-  
-  <url>
     <loc>http://rustyeddy.com/tags/single-page-app/</loc>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/software/tools-and-workflow/</loc>
   </url>
   
 </urlset>

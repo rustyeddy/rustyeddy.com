@@ -1,6 +1,5 @@
 {{ define "main" }}
 <div class="container">
-
     <div class="row">
 	<div class="col"></div>
 	<div class="col-8">
@@ -8,25 +7,22 @@
 	</div>
 	<div class="col"></div>
     </div>
-    <!-- 
-         <div class="row">
 
-	 {{ range .Pages }}
-	 <div class="col-4">
-	 <div class="card">
-	 <h6 class="card-header bg-white">
-	 {{ .Title }}
-	 </h6>
-
-	 <div class="card-body">
-	 <div class="card-text text-muted small">
-	 {{ .Description }}
-	 </div>
-	 </div>
-	 </div>
-	 </div>
-	 {{ end }}
-         </div>
-    -->
+    <div class="row">
+	<div class="col-2"></div>
+	<div class="col-8">
+            <ul class="list-group-flush">
+	        {{ range .Pages }}
+                <li class="list-group-item list-group-item-action">
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    <div class="text-muted">
+                        {{ .Description }}
+                    </div>
+                </li>
+	        {{ end }}
+            </ul>
+	    <div class="col"></div>
+        </div> 
+    </div>
 </div>
 {{ end }}

@@ -192,10 +192,10 @@ California State Educators.&lt;/p&gt;</description>
     
     <item>
       <title>Customer Discovery and MVP</title>
-      <link>http://rustyeddy.com/software/discovery-session/</link>
+      <link>http://rustyeddy.com/software/customer-discovery-and-mvp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/software/discovery-session/</guid>
+      <guid>http://rustyeddy.com/software/customer-discovery-and-mvp/</guid>
       <description>This consists of one or more customer discovery sessions, where all users and owners of the software will be interviewed for their expectations, needs and desires from the upcoming software project.
 The customer discovery is then turned into user stories, which are then vetted to collect the user stories. Then they are broke down into tasks that are Small, autonmous and measurable.
 The test that we come up with must be completed within a day or two.</description>
@@ -233,24 +233,6 @@ They are kept with the code!</description>
     </item>
     
     <item>
-      <title>Acceptance Tests</title>
-      <link>http://rustyeddy.com/software/acceptance-tests/</link>
-      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/software/acceptance-tests/</guid>
-      <description>Todo give some good examples of acceptance tests.</description>
-    </item>
-    
-    <item>
-      <title>Fork in the Code</title>
-      <link>http://rustyeddy.com/software/fork-in-the-code/</link>
-      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/software/fork-in-the-code/</guid>
-      <description>Git is a tool used by most, now. Git Workflow Github is a service built around git. git version control github issues github authentication github web hooks and api github pull requests github discussions github actions github wikis </description>
-    </item>
-    
-    <item>
       <title>Release Process</title>
       <link>http://rustyeddy.com/software/release-process/</link>
       <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
@@ -260,13 +242,14 @@ They are kept with the code!</description>
     </item>
     
     <item>
-      <title>Making a Commitment</title>
-      <link>http://rustyeddy.com/software/making-a-commitment/</link>
-      <pubDate>Sun, 02 May 2021 00:00:00 +0000</pubDate>
+      <title>Tools, Workflow and Github</title>
+      <link>http://rustyeddy.com/software/tools-workflow-and-github/</link>
+      <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/software/making-a-commitment/</guid>
-      <description>This document takes us to the point we have new code that has been peer reviewed, tested and now ready to become part of production.
-TODO: Walk through, merging the branch and ticking off a nightly build to the repository.</description>
+      <guid>http://rustyeddy.com/software/tools-workflow-and-github/</guid>
+      <description>Tools and Workflow We are going to start working through a typical light weight workflow. The most important part of any software development workflow is a version control system aka VC or VCS.
+Done correctly, your VC will track every change to your source code with clear well written summaries (logs) of the problem that was solved.
+Git for Version Control Like a majority of the world today (2021) we will use the version control system (git)[http://git-scm.</description>
     </item>
     
     <item>
@@ -677,26 +660,6 @@ A Few Highlight about Ansible Scripts are Accurate and Repeatable Create Playboo
 Link to the documentation.
 The shield can also be jumpered and booted into Midi Mode and turned into a drum machine or a Garageband type of play along, this might be fun!
 I suppose we could also add a microphone to record sound for some kind of reason.</description>
-    </item>
-    
-    <item>
-      <title>Minimum Viable Product (MVP)</title>
-      <link>http://rustyeddy.com/software/mvp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/software/mvp/</guid>
-      <description>The MVP, as its name suggests, should be the thing that makes The customer happy and can be delivered in the shortest period of time by the development team.</description>
-    </item>
-    
-    <item>
-      <title>Tools and Workflow</title>
-      <link>http://rustyeddy.com/software/tools-and-workflow/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/software/tools-and-workflow/</guid>
-      <description>Tools and Workflow For this article we are going to use Github, Which is a pretty standard part of my workflow.
-As many of you may know git is a software version control system. Github wraps a lot of very useful features around the source control tool like:
- Git soure control Github issues for tracking features, requests and bugs Kanban board to visually track and manage Actions: Automated debugs Pull requests for code review before committing Static HTTP server for web page documentation Release packages  With these capabilities built into github we have pretty much everything that we need to run our entire software development process.</description>
     </item>
     
   </channel>
