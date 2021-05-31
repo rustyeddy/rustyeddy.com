@@ -22,9 +22,15 @@ Here is a link to the [CNC Motor and Arduino Kit](https://www.amazon.com/dp/B07Q
 
 ## Software
 
-[GRBL CNC Software](https://github.com/gnea/grbl)
+The [GRBL CNC Software](https://github.com/gnea/grbl) basically does
+one thing, but it does that one very import thing very well and that
+is drive the motors from G-Code that has been sent to the Arduino to
+control the stepper drivers. 
 
 ### Universal G-Code Sender
+
+Need something to take the G-Code and send it to the GRBL system
+could I write some python Fusion360 code to do this directly?
 
 ## The Arduino and CNC Cape
 
@@ -54,4 +60,7 @@ stepper provided with the kit (from Pololu). It features:
 
 [TODO: place the pinouts from the motor drivers.]
 
-## 
+## Installation Process
+
+1. Build and Install GRBL on the Arduino first. This allows it to take
+control of the CNC shield once that has been added.

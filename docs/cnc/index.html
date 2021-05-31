@@ -87,8 +87,13 @@ Robot anyway.</p>
 </ul>
 <p>Here is a link to the <a href="https://www.amazon.com/dp/B07QLM5PG5?psc=1&amp;ref=ppx_yo2_dt_b_product_details">CNC Motor and Arduino Kit</a></p>
 <h2 id="software">Software</h2>
-<p><a href="https://github.com/gnea/grbl">GRBL CNC Software</a></p>
+<p>The <a href="https://github.com/gnea/grbl">GRBL CNC Software</a> basically does
+one thing, but it does that one very import thing very well and that
+is drive the motors from G-Code that has been sent to the Arduino to
+control the stepper drivers.</p>
 <h3 id="universal-g-code-sender">Universal G-Code Sender</h3>
+<p>Need something to take the G-Code and send it to the GRBL system
+could I write some python Fusion360 code to do this directly?</p>
 <h2 id="the-arduino-and-cnc-cape">The Arduino and CNC Cape</h2>
 <p>A good Youtube video Advising safe adjustment of the Arduino CNC
 shield: <a href="https://youtu.be/OfyT1xTZC6o">https://youtu.be/OfyT1xTZC6o</a></p>
@@ -111,7 +116,11 @@ stepper provided with the kit (from Pololu). It features:</p>
 (rated for up to 2.2 A per coil with sufficient additional cooling)</li>
 </ul>
 <p>[TODO: place the pinouts from the motor drivers.]</p>
-<h2 id="heading"></h2>
+<h2 id="installation-process">Installation Process</h2>
+<ol>
+<li>Build and Install GRBL on the Arduino first. This allows it to take
+control of the CNC shield once that has been added.</li>
+</ol>
 
 	    </article>
 	</div>
