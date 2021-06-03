@@ -1,9 +1,13 @@
 ---
-title: Tools, Workflow and Github
-date: 2021-05-28
+title: Making Changes to Code
+date: 2020-06-12
+weight: 30
+description: >
+  All the planning has now come to this, it is time to change code,
+  what happens now? The clearest evidence of a rookie team is the lack
+  of a Version Control (VC) system. Your VC will keep your code in a
+  single place complete a complete history.
 ---
-
-## Tools and Workflow
 
 We are going to start working through a typical light weight
 workflow. The most important part of **any** software development

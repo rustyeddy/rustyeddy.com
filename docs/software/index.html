@@ -45,7 +45,7 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 	<div class="col-md-8">
 	  <h1 class="header h2 text-center pb-1">The Process of Delivering Predictable Software</h1>
 	    <p class="leadin align-right text-muted text-center mt-0">
-		Software is hard to do correctly, and even harder to deliver on time and within budget. This page is dedicated to assembling some case studies and establish software development best practices.
+		Software is hard to do correctly, and even harder to deliver on time and within budget. This page is dedicated to assembling some case studies and establish software development best practices, with the explicit goal of making software development projects more predictable.
 
 	    </p>
 	</div>
@@ -69,116 +69,24 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 </div>
 <section id="main" class="container">
 <div class="container">
+
     <div class="row">
 	<div class="col"></div>
 	<div class="col-8">
-	    <p>This page is an attempt to document a complete, yet light weight
-Software Development LifeCycle (SDLC) process / workflow. The
-processes and tools used in this document are 100% free, however the
-principals supported and studied can translate into many very
+	    <h2 id="the-process-is-timeless-the-tools-are-free">The Process is Timeless the Tools are Free</h2>
+<p>This collection of articles will lay a solid foundation for starting
+and even right siding a software development project that has gone off
+the rails, you can use these nuggets as guiding light for the software
+development projects you lead.</p>
+<p>The process of developing software that is covered on the following
+page is <em>timeless</em>, all the principals will translate across <em>&ldquo;tech
+stacks&rdquo;</em> and <em>decades</em> here are some timeless principals, while still
+being aware of the rapid innovations in technology of today.</p>
+<h3 id="practical-examples-to-timeless-principals">Practical Examples to Timeless Principals</h3>
+<p>We will use the ubiquitous Github for examples.</p>
+<p>The processes and tools used in this document are 100% free, however
+the principals supported and studied can translate into many very
 different eco-systems, free and paid.</p>
-<h2 id="why-is-software-so-difficult">Why Is Software So Difficult?</h2>
-<ul>
-<li>One reason is that you can&rsquo;t see it.</li>
-<li>There is no single right way to do software</li>
-<li>Software is a combination of Art, Science and Engineering</li>
-<li>It changes very fast</li>
-</ul>
-<p>A couple having their <em>Dream House</em> built does not have to have to
-know much about construction to get a sense of how well progress is
-moving along on their <em>dream</em> house.</p>
-<p>Software is much harder to track, by it&rsquo;s very nature. However, just
-as construction projects can easily go off rails, <em>software projects</em>
-can be perceived as even worse.</p>
-<p>Software can be properly managed just like construction projects, if
-the right processes and tools are established and enforced throughout
-the product lifecycle.</p>
-<h2 id="establishing-goals-and-tasks">Establishing Goals and Tasks</h2>
-<p>There are a lot ways to track project progress with <em>Project
-Management</em> tools, we are going to make it really simple
-<a href="https://en.wikipedia.org/wiki/Kanban">Kanban Board</a> type of card
-list.</p>
-<p>Before we can do anything we must establish our <em>goals</em>, this can take
-on many forms, such as the <em>Minimum Viable Product (MVP)</em> established
-by Eric Reis in the excellent book <em>Lean Startup</em>.</p>
-<h3 id="goals-are-most-effective-when">Goals are most effective when</h3>
-<ul>
-<li>Communicated in normal people language (user stories)</li>
-<li>Everybody understands and agrees with the Goals</li>
-<li>Measurable and easy to determine when they are complete</li>
-<li>Tasks should be 1-3 days max if possible (the will always be exceptions)</li>
-<li>Prioritized to provide users (stakeholders) constant incremental value</li>
-</ul>
-<h3 id="github-projects">Github Projects</h3>
-<p>Github provides a relatively new (for me in 2020 anyway) feature that
-allows you to define rows of tasks, for example &ldquo;Todo&rdquo;, &ldquo;Work In
-Progress&rdquo; and &ldquo;Done&rdquo;. Cards are created with tasks and moved across
-the board accordingly.</p>
-<blockquote>
-<p>TODO - Provide a screenshot</p>
-</blockquote>
-<h3 id="github-issues">Github Issues</h3>
-<p>Project cards represent a big picture wide array of tasks, it is the
-&ldquo;Github Issues&rdquo; that track all of the actual coding work and changes
-that take place.</p>
-<p><em>Github Projects</em> allows a single click to convert a <em>Card</em> into a
-<em>Github Issue</em> then allowing the issue to be tracked by the <em>Project
-Card</em> as the github issue does what it does tracking discussions and
-changes through a new features lifetime.</p>
-<blockquote>
-<p>TODO - Screen shot github issues and project cards linkes.</p>
-</blockquote>
-<h3 id="github-clone-and-branch">Github Clone and Branch</h3>
-<p>This is the beginning process a developer uses to create a <em>workspace</em>
-they will make changes to the source code, add tests and possibly make
-other changes to the software eco-system.</p>
-<p>In a nutshell, once a developer has a task to work on, she will
-essentially follow these steps:</p>
-<ol>
-<li>Get on her personal <em>workstation</em></li>
-<li>Make a copy of the source code to be worked on</li>
-<li>Create a <em>branch</em> in <em>git</em> such that her code does not effect
-anybody elses code (yet).</li>
-</ol>
-<p>Our developer is now free to make all the changes she desires, and
-conduct small experiments, make mistakes with this private copy of
-code becuase it is only available to her, and does not effect anybody
-else.</p>
-<p>Until she needs to put her bug fix back in the &ldquo;main&rdquo; branch of code
-everybody else uses, Q&amp;A, collegues, customers, everybody! She better
-make sure is excellent!</p>
-<p>She also must ensure that it does not break a previously working test,
-the dreaded regression error.</p>
-<h3 id="testing-unit-and-systems">Testing Unit and Systems</h3>
-<p>Before her new code can be integrated into the existing, heavily
-trusted code base, we have to make <strong>sure</strong> it is of the same quality
-as the existing codebase, by adding one or more adequate <strong>tests</strong> to
-the systems tests.</p>
-<h4 id="automated-vs-manual-tests">Automated vs. Manual Tests</h4>
-<p>Tests are far more effective when the are clearly written down. Even
-better written down and automated.</p>
-<p>It is inevitable that some tests, at least in certain industries
-some tests may have to be conducted manually. Ideally, however you
-will try automating tests as close to 100% as possible.</p>
-<p>With automated tests it will be common to run a complete suite of
-tests for every software change, every fix, every addition of new
-code and even a complete test run after removing dead code.</p>
-<p>Why not?</p>
-<p>Nothing will give a developer more confidence than comprehensive
-regression tests that are easy to run and easy to add new tests and
-modify existing tests.</p>
-<p>Automated tests will most likely provide the ability to run a subset
-of test or even pick a single specific test to run.</p>
-<p>The key is that a developer is free to run and re-run tests to her
-hearts content until she is convinced the code is ready to everybody
-else.</p>
-<p>But first, it must pass the peer review&hellip;</p>
-<h3 id="peer-review-aka-pull-request">Peer Review aka Pull Request</h3>
-<p>Github has long since provided support for the concept of a <em>pull
-request</em>. One way to think about it is a request to <em>pull your
-changes</em> into the main line.</p>
-<p>One great benefit it provides is the platform for new and changed code
-to be <del>scrutinized</del> reviewed.</p>
 
 	</div>
 	<div class="col"></div>
@@ -190,9 +98,25 @@ to be <del>scrutinized</del> reviewed.</p>
             <ul class="list-group-flush">
 	        
                 <li class="list-group-item list-group-item-action">
+                    <a href="http://rustyeddy.com/software/software-is-hard/">Software is Hard</a>
+                    <div class="text-muted">
+                        Software development projects have a nasty reputation for getting out of control and being difficult to manage and complete. This article will identify some of the reasons software is so difficult and how we can start running successful projects.
+
+                    </div>
+                </li>
+	        
+                <li class="list-group-item list-group-item-action">
                     <a href="http://rustyeddy.com/software/customer-discovery-and-mvp/">Customer Discovery and MVP</a>
                     <div class="text-muted">
                         How to derive the true (deep) requirements and mutually agree upon the MVP
+
+                    </div>
+                </li>
+	        
+                <li class="list-group-item list-group-item-action">
+                    <a href="http://rustyeddy.com/software/establishing-goals-and-tasks/">Establishing Goals and Tasks</a>
+                    <div class="text-muted">
+                        The necessary first step is to get clarity on what the software will do. The fewer and more specific your goals are stated the greater likelyhood of them being achieved. Tasks must be reasonable,  clear and measurable, delivering early value to the user.
 
                     </div>
                 </li>
@@ -206,36 +130,55 @@ to be <del>scrutinized</del> reviewed.</p>
                 </li>
 	        
                 <li class="list-group-item list-group-item-action">
-                    <a href="http://rustyeddy.com/software/notes/acceptance-tests/">Acceptance Tests</a>
+                    <a href="http://rustyeddy.com/software/making-changes-to-code/">Making Changes to Code</a>
                     <div class="text-muted">
-                        Acceptance Tests are the official criteria that will determine if *all users* of the software are happy.
+                        All the planning has now come to this, it is time to change code, what happens now? The clearest evidence of a rookie team is the lack of a Version Control (VC) system. Your VC will keep your code in a single place complete a complete history.
 
                     </div>
                 </li>
 	        
                 <li class="list-group-item list-group-item-action">
-                    <a href="http://rustyeddy.com/software/peer-reviews/">Peer Reviews</a>
+                    <a href="http://rustyeddy.com/software/clone-and-branch/">Clone and Branch</a>
                     <div class="text-muted">
-                        
+                        Enough theory, let&#39;s talk code. Before making any changes to the code, a developer with clone then branch a local copy of the software last latest code.
+
+                    </div>
+                </li>
+	        
+                <li class="list-group-item list-group-item-action">
+                    <a href="http://rustyeddy.com/software/testing/">Testing Software</a>
+                    <div class="text-muted">
+                        Testing software is pretty self explanatory, the technical details are many, but most important the positive ramifications throughout the evolving project are profound, let me explain why ...
+
+                    </div>
+                </li>
+	        
+                <li class="list-group-item list-group-item-action">
+                    <a href="http://rustyeddy.com/software/peer-review/">Peer Reviews</a>
+                    <div class="text-muted">
+                        Making changes to code on ones own in isolation can be problematic for a number of reasons, however, when you get a pair scrutinizing eyes on your code all sorts of things are going to come up that you probably had not considered.
+
+                    </div>
+                </li>
+	        
+                <li class="list-group-item list-group-item-action">
+                    <a href="http://rustyeddy.com/software/commit-and-merge/">Mainlining Your Vetted Code</a>
+                    <div class="text-muted">
+                        Once the sometimes ardjous process of being confronted with a problem to solve, coding it up, debugging, passing all tests and then getting hammered by a peer. Wow, finally it becomes available to everybody.
+
                     </div>
                 </li>
 	        
                 <li class="list-group-item list-group-item-action">
                     <a href="http://rustyeddy.com/software/release-process/">Release Process</a>
                     <div class="text-muted">
-                        
+                        Things really get interesting when users start using new code, this topic alone will fill volumes, just be sure there will be feedback, feature requests, bugs, opinions make sure everybody knows where to go for tracking.
+
                     </div>
                 </li>
 	        
                 <li class="list-group-item list-group-item-action">
-                    <a href="http://rustyeddy.com/software/tools-workflow-and-github/">Tools, Workflow and Github</a>
-                    <div class="text-muted">
-                        
-                    </div>
-                </li>
-	        
-                <li class="list-group-item list-group-item-action">
-                    <a href="http://rustyeddy.com/software/team-sport/">Software is a Team Sport</a>
+                    <a href="http://rustyeddy.com/software/team-sport/">By the way.. Software is a Team Sport</a>
                     <div class="text-muted">
                         
                     </div>
@@ -245,6 +188,7 @@ to be <del>scrutinized</del> reviewed.</p>
 	    <div class="col"></div>
         </div> 
     </div>
+
 </div>
 
 	</section><footer id="footer" class="container-fluid footer small-text pt-4 border-top">

@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 
-<title>Release Process</title>
+<title>Mainlining Your Vetted Code</title>
 
 <script>(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
 0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
@@ -43,9 +43,9 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="row">
 	<div class="col-md"></div>
 	<div class="col-md-8">
-	  <h1 class="header h2 text-center pb-1">Release Process</h1>
+	  <h1 class="header h2 text-center pb-1">Mainlining Your Vetted Code</h1>
 	    <p class="leadin align-right text-muted text-center mt-0">
-		Things really get interesting when users start using new code, this topic alone will fill volumes, just be sure there will be feedback, feature requests, bugs, opinions make sure everybody knows where to go for tracking.
+		Once the sometimes ardjous process of being confronted with a problem to solve, coding it up, debugging, passing all tests and then getting hammered by a peer. Wow, finally it becomes available to everybody.
 
 	    </p>
 	</div>
@@ -72,9 +72,28 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="col"></div>
     <div class="col-md-8 hero-text">
 	<article class="article">
-	  <p>Once the code has been commited, an action will be taken to compile a
-latest version of the code into a tarball and hoist upon the release
-server.</p>
+	  <h2 id="github-making-the-commitment">Github making the Commitment</h2>
+<p>Now it is time for the developer to commit the changes she has
+made. This step is pretty simple, however we want to make sure we are
+doing it correctly.</p>
+<p>When the code is merged into the <strong>main</strong> or <strong>master</strong> repository,
+just like commitments, it will be accomponied by the logs comments
+that go along with the log files.</p>
+<p>This can provide the viewer with, literally a line by line replay of
+the entire history of a software development project. The commitments
+can also be directly related to the particular <strong>github issues</strong> that
+spurred the updates to the code in the first place.</p>
+<p>This is a very powerful way for not only developers, but users,
+management and marketing can use as a quick way to summarize updates
+to the software.</p>
+<h2 id="releasing-binaries-and-packages">Releasing Binaries and Packages</h2>
+<p>In many cases, it may be desirable or even mandatory to provide some
+form of packaging around your application. In the case of Open Source
+Go program, we might just provide the source repository and a
+pre-built binary for certain platforms, for example.</p>
+<blockquote>
+<p>Todo Show a binary get created and served up on Github.</p>
+</blockquote>
 
 	</article>
     </div>
@@ -94,7 +113,7 @@ server.</p>
                 Last update ~
                 
 		
-                Monday, May 3, 2021
+                Sunday, Apr 4, 2021
 		
                 
             </div>

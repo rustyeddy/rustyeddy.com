@@ -3,6 +3,54 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://rustyeddy.com/software/software-is-hard/</loc>
+    <lastmod>2021-06-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/software/customer-discovery-and-mvp/</loc>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/software/establishing-goals-and-tasks/</loc>
+    <lastmod>2021-05-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/software/kanban/</loc>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/software/making-changes-to-code/</loc>
+    <lastmod>2020-06-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/software/clone-and-branch/</loc>
+    <lastmod>2019-04-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/software/testing/</loc>
+    <lastmod>2019-05-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/software/peer-review/</loc>
+    <lastmod>2020-02-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/software/commit-and-merge/</loc>
+    <lastmod>2021-04-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://rustyeddy.com/software/release-process/</loc>
+    <lastmod>2021-05-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://rustyeddy.com/resume/clients/</loc>
     <lastmod>2018-09-21T00:00:00+00:00</lastmod>
   </url>
@@ -77,34 +125,6 @@
   <url>
     <loc>http://rustyeddy.com/resume/jobs/csu-chancelor/</loc>
     <lastmod>1995-08-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/software/customer-discovery-and-mvp/</loc>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/software/kanban/</loc>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/software/notes/acceptance-tests/</loc>
-    <lastmod>2021-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/software/peer-reviews/</loc>
-    <lastmod>2021-05-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/software/release-process/</loc>
-    <lastmod>2021-05-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://rustyeddy.com/software/tools-workflow-and-github/</loc>
-    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>

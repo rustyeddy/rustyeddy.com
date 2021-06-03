@@ -3,7 +3,7 @@ title: Organinizing Software Projects with Kanban
 description: >
   Kanban is absurdly simple yet insainly useful! Just like your
   revision control system, you can not do without a Kanban board!
-weight: 2000
+weight: 20
 ---
 
 Expect the task list to be ever evolving. During the discovery session
@@ -59,3 +59,39 @@ Using github as an example, we can have our kanban card link to a
 Github issue. That Github issue is then assigned to the person working
 on a particular task.
 
+
+### Project Tracking and Kanban
+
+There are a lot ways to track project progress with _Project
+Management_ tools, we are going to make it really simple 
+[Kanban Board](https://en.wikipedia.org/wiki/Kanban) type of card
+list.
+
+Kanban is about as simple and sufficient as it gets. [Todo Kanban reference]
+
+> Find a really good Kanban example
+
+### Github Projects
+
+Github provides the relatively new (in 2020) feature called projects,
+that allow one to easily create a Kanban board. Github projects allow
+one to create a card and track it as a github issue.
+
+allows you to define rows of tasks, for example "Todo", "Work In
+Progress" and "Done". Cards are created with tasks and moved across
+the board accordingly.
+
+> TODO - Provide a screenshot
+
+### Github Issues
+
+Project cards represent a big picture wide array of tasks, it is the
+"Github Issues" that track all of the actual coding work and changes
+that take place.
+
+_Github Projects_ allows a single click to convert a _Card_ into a
+_Github Issue_ then allowing the issue to be tracked by the _Project
+Card_ as the github issue does what it does tracking discussions and
+changes through a new features lifetime.
+
+> TODO - Screen shot github issues and project cards linkes.

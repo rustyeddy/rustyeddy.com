@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 
-<title>Release Process</title>
+<title>Making Changes to Code</title>
 
 <script>(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
 0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
@@ -43,9 +43,9 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="row">
 	<div class="col-md"></div>
 	<div class="col-md-8">
-	  <h1 class="header h2 text-center pb-1">Release Process</h1>
+	  <h1 class="header h2 text-center pb-1">Making Changes to Code</h1>
 	    <p class="leadin align-right text-muted text-center mt-0">
-		Things really get interesting when users start using new code, this topic alone will fill volumes, just be sure there will be feedback, feature requests, bugs, opinions make sure everybody knows where to go for tracking.
+		All the planning has now come to this, it is time to change code, what happens now? The clearest evidence of a rookie team is the lack of a Version Control (VC) system. Your VC will keep your code in a single place complete a complete history.
 
 	    </p>
 	</div>
@@ -72,9 +72,50 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="col"></div>
     <div class="col-md-8 hero-text">
 	<article class="article">
-	  <p>Once the code has been commited, an action will be taken to compile a
-latest version of the code into a tarball and hoist upon the release
-server.</p>
+	  <p>We are going to start working through a typical light weight
+workflow. The most important part of <strong>any</strong> software development
+workflow is a <strong>version control system</strong> aka <em>VC</em> or <em>VCS</em>.</p>
+<p>Done correctly, your VC will track <em>every change</em> to your source code
+with clear well written summaries (logs) of the problem that was
+solved.</p>
+<h3 id="git-for-version-control">Git for Version Control</h3>
+<p>Like a majority of the world today (2021) we will use the version
+control system (git)[http://git-scm.org] invented by <em>Linus Torvalds</em>
+to help with development of the widely distributed Open Source
+software <a href="http://kernel.org">Linux</a>.</p>
+<p>I am not going to write a git tutorial here, mostly because great ones
+already exist. Rather I&rsquo;ll just point to a couple references:</p>
+<h3 id="github-for-services-and-workflow">Github for Services and Workflow</h3>
+<p>In this series we are going to focus on (Github)[https://github.com]
+the 800lb Gorilla of Github of <em>social programming</em> services.</p>
+<p>For this article we are going to use Github, Which is a pretty
+standard part of my workflow.</p>
+<p>As many of you may know git is a software version control system.
+Github wraps a lot of very useful features around the source control tool
+like:</p>
+<ol>
+<li>Git soure control</li>
+<li>Github issues for tracking features, requests and bugs</li>
+<li>Kanban board to visually track and manage</li>
+<li>Actions: Automated debugs</li>
+<li>Pull requests for code review before committing</li>
+<li>Static HTTP server for web page documentation</li>
+<li>Release packages</li>
+</ol>
+<p>With these capabilities built into github we have pretty
+much everything that we need to run our entire software development
+process.</p>
+<p>During the process of identifying the MVP, we can use the github
+<em>Projects Board</em> to list and track task items as well as prioritize.
+There is no one correct way to go through this process. This is one way
+that I find pretty natural.</p>
+<p>As the MVP is broken down into tasks, the tasks are then placed in the
+backlog of the Kanban board. They will then be ordered according to
+priority. In other words, the first task on the list is the next task
+that will be worked on.</p>
+<p>When somebody becomes available that next task is assigned to the
+available person and is moved over into the <em>Work In Progress (WIP)</em>
+list.</p>
 
 	</article>
     </div>
@@ -94,7 +135,7 @@ server.</p>
                 Last update ~
                 
 		
-                Monday, May 3, 2021
+                Friday, Jun 12, 2020
 		
                 
             </div>

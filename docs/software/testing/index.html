@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 
-<title>Release Process</title>
+<title>Testing Software</title>
 
 <script>(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
 0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
@@ -43,9 +43,9 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="row">
 	<div class="col-md"></div>
 	<div class="col-md-8">
-	  <h1 class="header h2 text-center pb-1">Release Process</h1>
+	  <h1 class="header h2 text-center pb-1">Testing Software</h1>
 	    <p class="leadin align-right text-muted text-center mt-0">
-		Things really get interesting when users start using new code, this topic alone will fill volumes, just be sure there will be feedback, feature requests, bugs, opinions make sure everybody knows where to go for tracking.
+		Testing software is pretty self explanatory, the technical details are many, but most important the positive ramifications throughout the evolving project are profound, let me explain why ...
 
 	    </p>
 	</div>
@@ -72,9 +72,59 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="col"></div>
     <div class="col-md-8 hero-text">
 	<article class="article">
-	  <p>Once the code has been commited, an action will be taken to compile a
-latest version of the code into a tarball and hoist upon the release
-server.</p>
+	  <h2 id="monitor-production-and-bug-issues">Monitor Production and Bug Issues</h2>
+<p>Once the applicaiton has been released into the wild, if it is to be
+of any success, it will start collecting a set of <em>feature requests</em>
+and <em>gasp</em> even <em>bugs</em>.</p>
+<p>Once again, github Issues will help us track both of these. We can use
+Github <em>projects</em> to <em>Kanban</em> board the thing.</p>
+<hr>
+<h3 id="testing-unit-and-systems">Testing Unit and Systems</h3>
+<p>Before her new code can be integrated into the existing, heavily
+trusted code base, we have to make <strong>sure</strong> it is of the same quality
+as the existing codebase, by adding one or more adequate <strong>tests</strong> to
+the systems tests.</p>
+<h4 id="automated-vs-manual-tests">Automated vs. Manual Tests</h4>
+<p>Tests are far more effective when the are clearly written down. Even
+better written down and automated.</p>
+<p>It is inevitable that some tests, at least in certain industries
+some tests may have to be conducted manually. Ideally, however you
+will try automating tests as close to 100% as possible.</p>
+<p>With automated tests it will be common to run a complete suite of
+tests for every software change, every fix, every addition of new
+code and even a complete test run after removing dead code.</p>
+<p>Why not?</p>
+<p>Nothing will give a developer more confidence than comprehensive
+regression tests that are easy to run and easy to add new tests and
+modify existing tests.</p>
+<p>Automated tests will most likely provide the ability to run a subset
+of test or even pick a single specific test to run.</p>
+<p>The key is that a developer is free to run and re-run tests to her
+hearts content until she is convinced the code is ready to everybody
+else.</p>
+<p>But first, it must pass the peer review&hellip;</p>
+<p>One of the first things that ought to be done, but seldom get the
+attention it needs are the specific criteria that must be met to make
+the customer/user happy.</p>
+<p>We are going to call this group of criteria the projects <strong>Acceptance
+Test</strong>. Ideally all acceptance tests can be automated with software,
+however they may be cases that manual intervention is required to
+conduct an entire set of Acceptance tests.</p>
+<h2 id="whitebox-vs-blackbox-testing">Whitebox vs. Blackbox Testing</h2>
+<p>My intention here&rsquo;s not to get into a dissertation on testing in test
+methodologies. Rather I would like to point out a couple very
+important and fundamental types of tests thatMust be conducted.</p>
+<p>That includes both white box and blackbox tests. White box tests are
+done with access to the internal details of the software, These are
+typically represented by unit tests.</p>
+<p>Blackbox tests on the other hand no access to the internal structure
+of the software. Rather the tests are conducted from a systematic for
+external point of view, just as an end user of the software we&rsquo;ll be
+expecting this software to behave.</p>
+<h2 id="acceptance-tests-are-blackbox">Acceptance Tests are Blackbox</h2>
+<p>The acceptance tests are by definition, what the customer expects the
+software to do, and has in effect agreed to be happy with the software
+once it passes acceptance tests.</p>
 
 	</article>
     </div>
@@ -94,7 +144,7 @@ server.</p>
                 Last update ~
                 
 		
-                Monday, May 3, 2021
+                Saturday, May 4, 2019
 		
                 
             </div>

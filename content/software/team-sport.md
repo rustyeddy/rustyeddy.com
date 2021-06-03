@@ -1,5 +1,5 @@
 ---
-title: Software is a Team Sport
+title: By the way.. Software is a Team Sport
 date: 2021-04-06
 ---
 

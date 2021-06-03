@@ -2,7 +2,7 @@
 title: Customer Discovery and MVP
 description: >
   How to derive the true (deep) requirements and mutually agree upon the MVP
-weight: 1000
+weight: 10
 ---
 
 This consists of one or more customer discovery sessions, where all *users*
