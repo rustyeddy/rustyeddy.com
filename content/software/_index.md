@@ -12,12 +12,12 @@ date: 2020-04-05
 
 This collection of articles will lay a solid foundation for starting
 and even right siding a software development project that has gone off
-the rails, you can use these nuggets as guiding light for the software
+the rails. You can use these nuggets as guiding light for the software
 development projects you lead.
 
 The process of developing software that is covered on the following
-page is _timeless_, all the principals will translate across _"tech
-stacks"_ and _decades_ here are some timeless principals, while still
+pages is _timeless_, all the principals will translate across _"tech
+stacks"_ and _decades_ Here are some timeless principals, while still
 being aware of the rapid innovations in technology of today.
 
 ### Practical Examples to Timeless Principals
