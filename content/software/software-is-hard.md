@@ -4,9 +4,10 @@ date: 2021-06-02
 weight: 10
 description: >
   Software development projects have a nasty reputation for getting
-  out of control and being difficult to manage and complete. This
-  article will identify some of the reasons software is so difficult
-  and how we can start running successful projects.
+  out of control and being difficult to manage and complete. For
+  starters, software can not be seen and it usually automates complex
+  topics. This article will identify some of the reasons software is
+  so difficult and how we can start running successful projects.
 ---
 
 ## Why Is Software So Difficult?

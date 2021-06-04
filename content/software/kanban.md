@@ -1,8 +1,10 @@
 ---
 title: Organinizing Software Projects with Kanban
 description: >
-  Kanban is absurdly simple yet insainly useful! Just like your
-  revision control system, you can not do without a Kanban board!
+  Kanban boards represent tasks with cards where every card lives in a
+  column representing planned work, work in progress and
+  complete. Absurdly simple, profoundly liberating and insane to
+  ignore! Guide us oh Kanban.
 weight: 20
 ---
 

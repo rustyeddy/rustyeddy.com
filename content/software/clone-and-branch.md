@@ -16,7 +16,7 @@ In a nutshell, once a developer has a task to work on, she will
 essentially follow these steps:
 
 1. Get on her personal _workstation_
-2. Make a copy of the source code to be worked on
+2. Make a copy of the source code she will work on
 3. Create a _branch_ in _git_ such that her code does not effect
 anybody elses code (yet).
 

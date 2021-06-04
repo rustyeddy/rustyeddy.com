@@ -1,7 +1,11 @@
 ---
 title: Customer Discovery and MVP
 description: >
-  How to derive the true (deep) requirements and mutually agree upon the MVP
+  Customer Discovery is used to dig deep into the customer or the user
+  of the software. This is a significant and important topic that will
+  set your project on a trajectory of either success or failure. Make
+  sure you get started right.
+  
 weight: 10
 ---
 

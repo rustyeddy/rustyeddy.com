@@ -34,10 +34,10 @@ The test that we come up with must be completed within a day or two.</descriptio
     
     <item>
       <title>Establishing Goals and Tasks</title>
-      <link>http://rustyeddy.com/software/establishing-goals-and-tasks/</link>
+      <link>http://rustyeddy.com/software/goals-and-tasks/</link>
       <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/software/establishing-goals-and-tasks/</guid>
+      <guid>http://rustyeddy.com/software/goals-and-tasks/</guid>
       <description>Software can be properly managed just like construction projects, if the right processes and tools are established and enforced throughout the product lifecycle.
 Establishing Goals and Tasks Like any project doing anything one must establish Goals, the fewer and more specific, the better.
 Before any activity starts, the leaders, users, developers and everybody involved has got to be crystal clear on what their most immediate next task is.
@@ -56,14 +56,15 @@ The item is ordered in the to do list according to its priority amongst the othe
     </item>
     
     <item>
-      <title>Making Changes to Code</title>
-      <link>http://rustyeddy.com/software/making-changes-to-code/</link>
+      <title>Tracking Changes to Code</title>
+      <link>http://rustyeddy.com/software/tracking-changes-to-code/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/software/making-changes-to-code/</guid>
-      <description>We are going to start working through a typical light weight workflow. The most important part of any software development workflow is a version control system aka VC or VCS.
-Done correctly, your VC will track every change to your source code with clear well written summaries (logs) of the problem that was solved.
-Git for Version Control Like a majority of the world today (2021) we will use the version control system (git)[http://git-scm.</description>
+      <guid>http://rustyeddy.com/software/tracking-changes-to-code/</guid>
+      <description>It fritens me to be introduced to a software project that has a single copy in the developers folder, or worse developers and users are manually copying folder of complex gathers of code.
+If you are working like this STOP!
+ Start using Version Control NOW!
+ Done correctly, your VC will track every change to your source code with clear well written summaries (logs) of the problem that was solved.</description>
     </item>
     
     <item>
@@ -74,7 +75,7 @@ Git for Version Control Like a majority of the world today (2021) we will use th
       <guid>http://rustyeddy.com/software/clone-and-branch/</guid>
       <description>This is the beginning process a developer uses to create a workspace they will make changes to the source code, add tests and possibly make other changes to the software eco-system.
 In a nutshell, once a developer has a task to work on, she will essentially follow these steps:
- Get on her personal workstation Make a copy of the source code to be worked on Create a branch in git such that her code does not effect anybody elses code (yet).</description>
+ Get on her personal workstation Make a copy of the source code she will work on Create a branch in git such that her code does not effect anybody elses code (yet).</description>
     </item>
     
     <item>

@@ -3,7 +3,8 @@ title: Establishing Goals and Tasks
 date: 2021-05-03
 weight: 15
 description: >
-  The necessary first step is to get clarity on what the software will
+  It is goal setting time! Sounds cliche but it is that important and
+  necessary first step is to get clarity on what the software will
   do. The fewer and more specific your goals are stated the greater
   likelyhood of them being achieved. Tasks must be reasonable, 
   clear and measurable, delivering early value to the user.

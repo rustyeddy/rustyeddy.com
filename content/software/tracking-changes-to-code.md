@@ -1,21 +1,30 @@
 ---
-title: Making Changes to Code
+title: Tracking Changes to Code
 date: 2020-06-12
 weight: 30
 description: >
   All the planning has now come to this, it is time to change code,
   what happens now? The clearest evidence of a rookie team is the lack
   of a Version Control (VC) system. Your VC will keep your code in a
-  single place complete a complete history.
+  single place where EVERYBODY CAN FIND complete with a complete
+  documented history of all changes.
 ---
 
-We are going to start working through a typical light weight
-workflow. The most important part of **any** software development
-workflow is a **version control system** aka _VC_ or _VCS_.
+It fritens me to be introduced to a software project that has a single
+copy in the developers folder, or worse developers and users are
+manually copying folder of complex gathers of code.
+
+If you are working like this STOP!
+
+> Start using Version Control NOW!
 
 Done correctly, your VC will track _every change_ to your source code
 with clear well written summaries (logs) of the problem that was
 solved.
+
+Version Control (VC) have been around since the 1970's at least. RCS,
+CVS, SVN and lot's of clunky and lame pay versions. Now we have
+GIT. 
 
 ### Git for Version Control
 
