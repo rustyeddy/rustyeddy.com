@@ -5,7 +5,6 @@ description: >
   of the software. This is a significant and important topic that will
   set your project on a trajectory of either success or failure. Make
   sure you get started right.
-  
 weight: 10
 ---
 
@@ -14,14 +13,14 @@ and *owners* of the software will be interviewed for their expectations,
 needs and desires from the upcoming software project.
 
 The customer discovery is then turned into user stories, which are
-then vetted to collect the user stories. Then they are broke down into tasks
-that are Small, autonmous and measurable.
+then vetted to collect the user stories. Then they are broken down into tasks
+that are small, autonomous and measurable.
 
 The test that we come up with must be completed within a day or
 two. Any task that requires three days or more should probably be
-broke down into smaller bite-size tasks.
+broken down into smaller bite-size tasks.
 
-We do not want to create tasks so that they're big, ambiguous and
+We do not want to create tasks so that they're too big, ambiguous or
 subject to misinterpretation. If your team is not making progress in a
 day or two you should be able to know what immediately.
 
@@ -37,12 +36,12 @@ recipes with very strict rules.
 ### MVP
 
 An important result of the customer discovery session is a mutual
-agreement on what the minimum or useful (viable) piece of software which can
+agreement on what the minimum or useful (viable) piece of software is, which can
 be delivered as soon as possible.
 
-The MVP is then broke down into specific tasks and perhaps milestones.
+The MVP is then broken down into specific tasks and perhaps milestones.
 
 The tasks and milestones are turned into cards placed on the to do
-list of our kanban board.
+list of our kanban board (Which is something we will talk more about later)
 
 

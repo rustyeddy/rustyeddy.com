@@ -19,7 +19,7 @@ One great benefit it provides is the platform for new and changed code
 to be ~~scrutinized~~ reviewed.
 
 This is the point that you can start increasing your confidence in the
-code, we now have tests that are passing, and we have had the code
-under scrutiney (peer review) it has passed both water marks.
+code. We now have tests that are passing and we have had the code
+under scrutiney (peer review). It has passed both water marks.
 
 Now it is time to make a commitment.

@@ -3,14 +3,14 @@ title: Establishing Goals and Tasks
 date: 2021-05-03
 weight: 15
 description: >
-  It is goal setting time! Sounds cliche but it is that important and
-  necessary first step is to get clarity on what the software will
-  do. The fewer and more specific your goals are stated the greater
+  It is goal setting time! Sounds cliche but it is an important and
+  necessary first step for getting clarity on what the software will
+  do. The fewer and more specific your goals are stated, the greater
   likelyhood of them being achieved. Tasks must be reasonable, 
   clear and measurable, delivering early value to the user.
 ---
 
-Software can be properly managed just like construction projects, if
+Software can be properly managed just like construction projects. That is only if
 the right processes and tools are established and enforced throughout
 the product lifecycle.
 
@@ -33,7 +33,7 @@ least enough for now.
 
 ### Minimum Viable Product (MVP)
 
-Before we can do anything we must establish our _goals_, this can take
+Before we can do anything we must establish our _goals_. This can take
 on many forms, such as the _Minimum Viable Product (MVP)_ established
 by Eric Reis in the excellent book _Lean Startup_.
 

@@ -9,8 +9,8 @@ weight: 20
 ---
 
 Expect the task list to be ever evolving. During the discovery session
-and defining the MVP you will begin to identify an initial set of
-tasks, and as the project precedes additional tasks will be realized.
+and defining the MVP, you will begin to identify an initial set of
+tasks. As the project precedes, additional tasks will be realized.
 
 Whenever and however a new task is identified, that task will be placed
 on the kanban board in the to do list section.
@@ -21,12 +21,12 @@ amongst the other tasks on the to do list.
 ## Stacking Small Victories
 
 Keep the tasks small, quick turn arounds of less than an hour to a day
-or two max. If tasks become three or four days they most likely can
+or two max. If tasks become three or four days, they most likely can
 and should be broken into smaller tasks.
 
 This is important because the development team needs to see victories
-and needs to have successes. Likewise management needs to see
-progress as well and customers need to experience new features and
+and needs to have successes. Likewise, management needs to see
+progress, as well and customers need to experience new features and
 improvements. 
 
 ## Assigning Todo Items
@@ -48,7 +48,7 @@ like:
 To sum it up, the WIP(work in progress) keeps going until it is complete. This means tests have
 passed and code reviews have as well.
 
-Eventually the task is moved into the *Complete* column and the
+Eventually, the task is moved into the *Complete* column and the
 software is delivered to the customer. (More on the software release
 process later).
 
@@ -65,7 +65,7 @@ on a particular task.
 ### Project Tracking and Kanban
 
 There are a lot ways to track project progress with _Project
-Management_ tools, we are going to make it really simple 
+Management_ tools, we are going to make it super simple 
 [Kanban Board](https://en.wikipedia.org/wiki/Kanban) type of card
 list.
 
@@ -75,11 +75,11 @@ Kanban is about as simple and sufficient as it gets. [Todo Kanban reference]
 
 ### Github Projects
 
-Github provides the relatively new (in 2020) feature called projects,
+Github provides a relatively new (in 2020) feature called projects,
 that allow one to easily create a Kanban board. Github projects allow
-one to create a card and track it as a github issue.
+them to create a card and track it as a github issue.
 
-allows you to define rows of tasks, for example "Todo", "Work In
+This allows you to define rows of tasks, for example "Todo", "Work In
 Progress" and "Done". Cards are created with tasks and moved across
 the board accordingly.
 
@@ -91,9 +91,9 @@ Project cards represent a big picture wide array of tasks, it is the
 "Github Issues" that track all of the actual coding work and changes
 that take place.
 
-_Github Projects_ allows a single click to convert a _Card_ into a
-_Github Issue_ then allowing the issue to be tracked by the _Project
-Card_ as the github issue does what it does tracking discussions and
+_Github Projects_ allow a single click to convert a _Card_ into a
+_Github Issue_ which then allows the issue to be tracked by the _Project
+Card_ as the github issue do what it does tracking discussions and
 changes through a new features lifetime.
 
 > TODO - Screen shot github issues and project cards linkes.
