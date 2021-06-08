@@ -28,7 +28,7 @@
       
       <guid>http://rustyeddy.com/software/customer-discovery-and-mvp/</guid>
       <description>This consists of one or more customer discovery sessions, where all users and owners of the software will be interviewed for their expectations, needs and desires from the upcoming software project.
-The customer discovery is then turned into user stories, which are then vetted to collect the user stories. Then they are broke down into tasks that are Small, autonmous and measurable.
+The customer discovery is then turned into user stories, which are then vetted to collect the user stories. Then they are broken down into tasks that are small, autonomous and measurable.
 The test that we come up with must be completed within a day or two.</description>
     </item>
     
@@ -38,10 +38,9 @@ The test that we come up with must be completed within a day or two.</descriptio
       <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/software/goals-and-tasks/</guid>
-      <description>Software can be properly managed just like construction projects, if the right processes and tools are established and enforced throughout the product lifecycle.
+      <description>Software can be properly managed just like construction projects. That is only if the right processes and tools are established and enforced throughout the product lifecycle.
 Establishing Goals and Tasks Like any project doing anything one must establish Goals, the fewer and more specific, the better.
-Before any activity starts, the leaders, users, developers and everybody involved has got to be crystal clear on what their most immediate next task is.
- Read The Lean Startup to really understand how to get specific about building a product your target market will be crazy about.</description>
+Before any activity starts, the leaders, users, developers and everybody involved has got to be crystal clear on what their most immediate next task is.</description>
     </item>
     
     <item>
@@ -50,7 +49,7 @@ Before any activity starts, the leaders, users, developers and everybody involve
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/software/kanban/</guid>
-      <description>Expect the task list to be ever evolving. During the discovery session and defining the MVP you will begin to identify an initial set of tasks, and as the project precedes additional tasks will be realized.
+      <description>Expect the task list to be ever evolving. During the discovery session and defining the MVP, you will begin to identify an initial set of tasks. As the project precedes, additional tasks will be realized.
 Whenever and however a new task is identified, that task will be placed on the kanban board in the to do list section.
 The item is ordered in the to do list according to its priority amongst the other tasks on the to do list.</description>
     </item>
@@ -61,7 +60,7 @@ The item is ordered in the to do list according to its priority amongst the othe
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/software/tracking-changes-to-code/</guid>
-      <description>It fritens me to be introduced to a software project that has a single copy in the developers folder, or worse developers and users are manually copying folder of complex gathers of code.
+      <description>It frightens me to be introduced to a software project that has a single copy in the developers folder, or worse developers and users are manually copying folders of complex gathers of code.
 If you are working like this STOP!
  Start using Version Control NOW!
  Done correctly, your VC will track every change to your source code with clear well written summaries (logs) of the problem that was solved.</description>
@@ -73,9 +72,9 @@ If you are working like this STOP!
       <pubDate>Thu, 11 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/software/clone-and-branch/</guid>
-      <description>This is the beginning process a developer uses to create a workspace they will make changes to the source code, add tests and possibly make other changes to the software eco-system.
+      <description>This is the beginning process a developer uses to create a workspace. They will make changes to the source code, add tests and possibly make other changes to the software eco-system.
 In a nutshell, once a developer has a task to work on, she will essentially follow these steps:
- Get on her personal workstation Make a copy of the source code she will work on Create a branch in git such that her code does not effect anybody elses code (yet).</description>
+ Get on her personal workstation Make a copy of the source code she will work on Create a branch in git such that her code does not effect anyone elses code (yet).</description>
     </item>
     
     <item>
@@ -85,7 +84,7 @@ In a nutshell, once a developer has a task to work on, she will essentially foll
       
       <guid>http://rustyeddy.com/software/testing/</guid>
       <description>Monitor Production and Bug Issues Once the applicaiton has been released into the wild, if it is to be of any success, it will start collecting a set of feature requests and gasp even bugs.
-Once again, github Issues will help us track both of these. We can use Github projects to Kanban board the thing.
+Once again, github issues will help us track both of these. We can use Github projects to Kanban board the thing.
  Testing Unit and Systems Before her new code can be integrated into the existing, heavily trusted code base, we have to make sure it is of the same quality as the existing codebase, by adding one or more adequate tests to the systems tests.</description>
     </item>
     
@@ -97,7 +96,7 @@ Once again, github Issues will help us track both of these. We can use Github pr
       <guid>http://rustyeddy.com/software/peer-review/</guid>
       <description>Peer Review aka Pull Request Github has long since provided support for the concept of a pull request. One way to think about it is a request to pull your changes into the main line.
 One great benefit it provides is the platform for new and changed code to be scrutinized reviewed.
-This is the point that you can start increasing your confidence in the code, we now have tests that are passing, and we have had the code under scrutiney (peer review) it has passed both water marks.</description>
+This is the point that you can start increasing your confidence in the code. We now have tests that are passing and we have had the code under scrutiney (peer review).</description>
     </item>
     
     <item>
@@ -106,9 +105,9 @@ This is the point that you can start increasing your confidence in the code, we 
       <pubDate>Sun, 04 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/software/commit-and-merge/</guid>
-      <description>Github making the Commitment Now it is time for the developer to commit the changes she has made. This step is pretty simple, however we want to make sure we are doing it correctly.
-When the code is merged into the main or master repository, just like commitments, it will be accomponied by the logs comments that go along with the log files.
-This can provide the viewer with, literally a line by line replay of the entire history of a software development project.</description>
+      <description>Github making the Commitment Now it is time for the developer to commit the changes she has made. This step is pretty simple, however, we want to make sure we are doing it correctly.
+When the code is merged into the main or master repository, just like commitments, it will be accomponied by the log comments that go along with the log files.
+This can provide the viewer with literally a line by line replay of the entire history of a software development project.</description>
     </item>
     
     <item>
