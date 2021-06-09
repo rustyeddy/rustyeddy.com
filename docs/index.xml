@@ -17,8 +17,9 @@
       <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/software/software-is-hard/</guid>
-      <description>Why Is Software So Difficult? Software development projects are one of the most notoriously mis-understood and broken processes. There are a number of reasons, not the least of which is the extent that software is abstract and it does abstract things, most of the time.
- One reason is that you can&amp;rsquo;t see it. Most people have no idea what programming really is There is no single right way to do software Software is a combination of Art, Science and Engineering It changes very fast  A couple having their Dream House built does not have to have to know much about construction to get a sense of how well progress is moving along on their dream house.</description>
+      <description>Why Is Software So Difficult? Software development projects are one of the most notoriously mis-understood and incorrectly managed of all the common processes used through out the business world.
+There are a number of reasons for chaos, software often is solving a complex problem, you can&amp;rsquo;t see software. But perhaps the worst of all problems with software projects are the diverging expectations between developers and users.
+Software is Not Regulated Another reason software projects are capable of running so far amok is a lack of regulations.</description>
     </item>
     
     <item>
@@ -27,20 +28,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/software/customer-discovery-and-mvp/</guid>
-      <description>This consists of one or more customer discovery sessions, where all users and owners of the software will be interviewed for their expectations, needs and desires from the upcoming software project.
-The customer discovery is then turned into user stories, which are then vetted to collect the user stories. Then they are broken down into tasks that are small, autonomous and measurable.
-The test that we come up with must be completed within a day or two.</description>
-    </item>
-    
-    <item>
-      <title>Establishing Goals and Tasks</title>
-      <link>http://rustyeddy.com/software/goals-and-tasks/</link>
-      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/software/goals-and-tasks/</guid>
-      <description>Software can be properly managed just like construction projects. That is only if the right processes and tools are established and enforced throughout the product lifecycle.
-Establishing Goals and Tasks Like any project doing anything one must establish Goals, the fewer and more specific, the better.
-Before any activity starts, the leaders, users, developers and everybody involved has got to be crystal clear on what their most immediate next task is.</description>
+      <description>Customer Discovery consists of one or more customer discovery sessions, where all users and owners of the software will be interviewed for their expectations, needs and desires from the upcoming software project.
+User Stories The information gathered from these sessions are then articulated in a series of non-technical descriptions of how the software is used by everybody.
+These descriptions of the software requirements are often referred to as User Stories. Basically, each story walks through one of the ways in which the planned software will be used.</description>
     </item>
     
     <item>
