@@ -31,9 +31,8 @@ communication and following _Best Practices_.
 For people that do not really understand how _software_ works, it can
 be a nightmare. After all, who can you trust?
 
-There are **no laws or regulations** to monitor and enforce that
-the software development processes and procedures have been performed
-correctly, leaving the buyer with what they asked for (but better).
+There are **no laws or regulations** that will ensure that the outcome
+of your software project will be what you wanted.
 
 As developers, managers and users, we all want:
 
@@ -46,24 +45,23 @@ also true there are _many ways_ to do software _incorrectly_.
 
 Software development is largely a collection of _Best Practices_ which
 are heavily influenced by the application you are building, the "tech
-stack(s)" being used and the specific culture of the organization.
+stack(s)" being used and the specific culture of your organization.
 
-I am hoping to collect a set of _Best Practices_ for small teams of
-developers building small agile applications, particularly aimed at
-the _Industrial IoT_ aka _Industrial Automation_ market.
+And that is why we are here, to identify the _good practices_ and
+renounce the _bad practices_.
 
 The lessons and processes captured here are meant to be timeless and
 translate well across industries, development styles and "tech stacks".
 
-Bottom line: when the users, management, marketing and developers
-have regular and effective communication, the _Software Development
-Process_ becomes
+Bottom line: we want to employ _Just Enough Process_ to learn to run
+stress free, successful software development projects. Software
+projects that I like to call 
 
-> Predictable
+> Predictable.
 
 The lack of predictability can be quickly identified with a disconnect
-between the _expectations of the user_ and the load, expectations and
-capabilities of the developers.
+between the _expectations of the user_ and the activities of the
+development team.  The worst enemy of predictability is a ...
 
 ## Communication Breakdown
 
@@ -80,7 +78,7 @@ queries, and ...
 
 ### What the Developer Thinks
 
-I'll give her a JSON file to start with and we'll work from there...
+I'll give her a _JSON_ file to start with and we'll work from there...
 
 ### Who is Right?
 
