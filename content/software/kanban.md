@@ -1,22 +1,62 @@
 ---
-title: Organinizing Software Projects with Kanban
+title: Organizing Software Projects with Kanban
 description: >
-  Kanban boards represent tasks with cards where every card lives in a
-  column representing planned work, work in progress and
-  complete. Absurdly simple, profoundly liberating and insane to
-  ignore! Guide us oh Kanban.
+  Tracking tasks does not have to be Rocket Science, and it should not
+  be.  Absurdly simple, profoundly liberating and insane to 
+  ignore! We are going to look into Kanban.
 weight: 20
 ---
 
-Expect the task list to be ever evolving. During the discovery session
-and defining the MVP, you will begin to identify an initial set of
-tasks. As the project precedes, additional tasks will be realized.
+Kanban is fantastically simple, we'll create a board with 3 columns,
+Todo, Work In Progress and Complete.
 
-Whenever and however a new task is identified, that task will be placed
-on the kanban board in the to do list section.
+Each column is populated with a single card for every task that must be
+done. The cards are prioritised and move through the system as the
+work progresses.
 
-The item is ordered in the to do list according to its priority
-amongst the other tasks on the to do list.
+## Good Kanban Reference
+
+> TODO add a good reference video to how Kanban works
+
+The important things I take-a-way from the idea of Kanban is if:
+
+- the tasks have been written in a 1-2 day granularity
+- the _board_ is being updated regulary
+
+Then _everybody_ will know exactly what progress has been made since
+last reference.
+
+### Task Lists Evolve 
+
+We must embrace this fact. The tasks we began thinking about during
+the _Customer Disovery_ session while defining the _MVP_ was probably
+pretty accurate, but almost certainly _incomplete_.
+
+> You can not know what you do not yet know
+
+This is the most difficult rub in developing software in a novel way:
+
+The reality is that unforeseen issues will pop up that must be added
+to our _Todo_ list at any given time. We'll also find that many of our
+original tasks were very high level and will necessarily be broken
+down into compartmental tasks.
+
+### Assigning Todo Items
+
+As a person or resource becomes available, it is matched up with the
+next task in the to do list according to the needs of the to task and
+the skill of the person available.
+
+The task or the kanban card is then assigned to that particular
+person and moved into the Work In Progress (WIP) list. 
+
+### Contstrainst on the WIP
+
+A _prioritized Todo list_ and a _WIP_ that allows only a single (or
+two) item(s) per person will help ensure the progress of the project
+is visible to everybody that cares to look.
+
+As items move from _Todo_ to _WIP_ to _Complete_ the 
 
 ## Stacking Small Victories
 
@@ -29,49 +69,9 @@ and needs to have successes. Likewise, management needs to see
 progress, as well and customers need to experience new features and
 improvements. 
 
-## Assigning Todo Items
-
-As a person or resource becomes available, it is matched up with the
-next task in the to do list according to the needs of the to task and
-the skill of the person available.
-
-The task or the kanban card is then assigned to that particular
-person and moved into the Work In Progress (WIP) list. 
-
-I am needing to explain kanban here because there're many good
-references that do a better job than I could. Here are a couple that i
-like:
-
-- TODO Kanban explained youtube
-- TODO Kanban explained webpage
-
-To sum it up, the WIP(work in progress) keeps going until it is complete. This means tests have
-passed and code reviews have as well.
-
 Eventually, the task is moved into the *Complete* column and the
 software is delivered to the customer. (More on the software release
 process later).
-
-## Work In Progress
-
-Take some time here to note things of particular interest while working
-on a particular task.
-
-Using github as an example, we can have our kanban card link to a
-Github issue. That Github issue is then assigned to the person working
-on a particular task.
-
-
-### Project Tracking and Kanban
-
-There are a lot ways to track project progress with _Project
-Management_ tools, we are going to make it super simple 
-[Kanban Board](https://en.wikipedia.org/wiki/Kanban) type of card
-list.
-
-Kanban is about as simple and sufficient as it gets. [Todo Kanban reference]
-
-> Find a really good Kanban example
 
 ### Github Projects
 

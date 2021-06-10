@@ -6,6 +6,7 @@ description: >
   Testing software is pretty self explanatory. The technical details
   are many, but most important the positive ramifications throughout
   the evolving project are profound. Let me explain why ...
+draft: true
 ---
 
 ## Monitor Production and Bug Issues

@@ -6,6 +6,7 @@ description: >
   Enough theory, let's talk code. Before making any changes to the
   code, a developer will clone then branch a local copy of
   the software's most recent code.
+draft: true
 ---
 
 This is the beginning process a developer uses to create a _workspace_.

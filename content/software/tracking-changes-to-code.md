@@ -8,6 +8,7 @@ description: >
   of a Version Control (VC) system. Your VC will keep your code in a
   single place where EVERYBODY CAN FIND a complete
   documented history of all changes.
+draft: true
 ---
 
 It frightens me to be introduced to a software project that has a single

@@ -1,6 +1,7 @@
 ---
 title: By the way.. Software is a Team Sport
 date: 2021-04-06
+draft: true
 ---
 
 Software as a team sport. Like all other teams, it must act as a

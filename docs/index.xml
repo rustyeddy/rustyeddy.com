@@ -34,79 +34,15 @@ These descriptions of the software requirements are often referred to as User St
     </item>
     
     <item>
-      <title>Organinizing Software Projects with Kanban</title>
+      <title>Organizing Software Projects with Kanban</title>
       <link>http://rustyeddy.com/software/kanban/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/software/kanban/</guid>
-      <description>Expect the task list to be ever evolving. During the discovery session and defining the MVP, you will begin to identify an initial set of tasks. As the project precedes, additional tasks will be realized.
-Whenever and however a new task is identified, that task will be placed on the kanban board in the to do list section.
-The item is ordered in the to do list according to its priority amongst the other tasks on the to do list.</description>
-    </item>
-    
-    <item>
-      <title>Tracking Changes to Code</title>
-      <link>http://rustyeddy.com/software/tracking-changes-to-code/</link>
-      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/software/tracking-changes-to-code/</guid>
-      <description>It frightens me to be introduced to a software project that has a single copy in the developers folder, or worse developers and users are manually copying folders of complex gathers of code.
-If you are working like this STOP!
- Start using Version Control NOW!
- Done correctly, your VC will track every change to your source code with clear well written summaries (logs) of the problem that was solved.</description>
-    </item>
-    
-    <item>
-      <title>Clone and Branch</title>
-      <link>http://rustyeddy.com/software/clone-and-branch/</link>
-      <pubDate>Thu, 11 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/software/clone-and-branch/</guid>
-      <description>This is the beginning process a developer uses to create a workspace. They will make changes to the source code, add tests and possibly make other changes to the software eco-system.
-In a nutshell, once a developer has a task to work on, she will essentially follow these steps:
- Get on her personal workstation Make a copy of the source code she will work on Create a branch in git such that her code does not effect anyone elses code (yet).</description>
-    </item>
-    
-    <item>
-      <title>Testing Software</title>
-      <link>http://rustyeddy.com/software/testing/</link>
-      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/software/testing/</guid>
-      <description>Monitor Production and Bug Issues Once the applicaiton has been released into the wild, if it is to be of any success, it will start collecting a set of feature requests and gasp even bugs.
-Once again, github issues will help us track both of these. We can use Github projects to Kanban board the thing.
- Testing Unit and Systems Before her new code can be integrated into the existing, heavily trusted code base, we have to make sure it is of the same quality as the existing codebase, by adding one or more adequate tests to the systems tests.</description>
-    </item>
-    
-    <item>
-      <title>Peer Reviews</title>
-      <link>http://rustyeddy.com/software/peer-review/</link>
-      <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/software/peer-review/</guid>
-      <description>Peer Review aka Pull Request Github has long since provided support for the concept of a pull request. One way to think about it is a request to pull your changes into the main line.
-One great benefit it provides is the platform for new and changed code to be scrutinized reviewed.
-This is the point that you can start increasing your confidence in the code. We now have tests that are passing and we have had the code under scrutiney (peer review).</description>
-    </item>
-    
-    <item>
-      <title>Mainlining Your Vetted Code</title>
-      <link>http://rustyeddy.com/software/commit-and-merge/</link>
-      <pubDate>Sun, 04 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/software/commit-and-merge/</guid>
-      <description>Github making the Commitment Now it is time for the developer to commit the changes she has made. This step is pretty simple, however, we want to make sure we are doing it correctly.
-When the code is merged into the main or master repository, just like commitments, it will be accomponied by the log comments that go along with the log files.
-This can provide the viewer with literally a line by line replay of the entire history of a software development project.</description>
-    </item>
-    
-    <item>
-      <title>Release Process</title>
-      <link>http://rustyeddy.com/software/release-process/</link>
-      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/software/release-process/</guid>
-      <description>Once the code has been commited, an action will be taken to compile a latest version of the code into a tarball and hoist upon the release server.</description>
+      <description>Kanban is fantastically simple, we&amp;rsquo;ll create a board with 3 columns, Todo, Work In Progress and Complete.
+Each column is populated with a single card for every task that must be done. The cards are prioritised and move through the system as the work progresses.
+Good Kanban Reference  TODO add a good reference video to how Kanban works
+ The important things I take-a-way from the idea of Kanban is if:</description>
     </item>
     
     <item>
@@ -286,17 +222,6 @@ of space and military projects.&lt;/p&gt;</description>
       <description>&lt;p&gt;I was hired to install and manage the departments first AT&amp;amp;T Unix
 Mini-computers, UUNET connection and write a bulletin board system for
 California State Educators.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>By the way.. Software is a Team Sport</title>
-      <link>http://rustyeddy.com/software/team-sport/</link>
-      <pubDate>Tue, 06 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://rustyeddy.com/software/team-sport/</guid>
-      <description>Software as a team sport. Like all other teams, it must act as a functional support system. While many teams have a Quaterback or The Driver, There is unquestionably a large number of personnel all built with specific functions to successfully deliver or accomplish the goal of the team.
-No difference with software.
-Programmers and sometimes management or maybe an architect are the center of attention most of the time, There is a specific need for a diverse set of skills and experiences.</description>
     </item>
     
     <item>
