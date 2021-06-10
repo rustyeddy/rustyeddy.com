@@ -10,7 +10,7 @@ weight: 10
 
 _Customer Discovery_ consists of one or more customer discovery
 sessions, where all *users* and *owners* of the software will be
-interviewed for their expectations, needs and desires from the
+interviewed for their expectations, needs and desires for the
 upcoming software project. 
 
 ## User Stories
@@ -32,30 +32,28 @@ It is important to keep the language common and avoid tech talk such
 that _everybody_ involved with the building and using the software can
 participate in the conversation.
 
-These user stories will later get broke down into specific tasks.
+These user stories will later get broken down into specific tasks.
 
 The real value to user stories is to create them like they are
-recipes. Essentailly software is about writing recipes with very
-strict rules.   
+recipes. Essentially software is about writing recipes with very
+specific rules.   
 
 ## The Good 'ol Minimum Viable Product (MVP)
 
 An important result of the customer discovery session is a mutual
-agreement on what the minimum or useful (viable) piece of software is,
+agreement on what the minimum or useful (viable) piece of software is and 
 which can be delivered as soon as possible.
 
-The primary purpose of the MVP is to get stuff out the door, we
+The primary purpose of the MVP is to get stuff out the door. We
 specifically want to avoid _disconnected development teams_.
 
-Software can be properly managed just like construction projects. That
-is only if the right processes and tools are established and enforced
+Software can be properly managed just like  construction project. That's only if the right processes and tools are established and enforced
 throughout the product lifecycle.
 
-> Read The [Lean Startup](http://theleanstartup.com/) to really understand how to get specific about
-  building a product your target market will be crazy about.
+> Read The [Lean Startup](http://theleanstartup.com/) to really understand how to get specific about building a product your target market will be crazy about.
 
-This is an involved and very important topic. I will not attempt to
-repeat nor summarize them in this document, but we will assume that we
+This is an involved and very important topic. I'm not going to attempt to
+repeat or summarize them in this document, but we will assume that we
 have a pretty clear picture of the application we are developing, at
 least enough for now.
 
@@ -67,7 +65,7 @@ broken down into smaller bite-size tasks.
 
 We do not want to create tasks so that they're too big, ambiguous or
 subject to misinterpretation. If your team is not making progress in a
-day or two you should be able to know what immediately.
+day or two you should be able to know that immediately.
 
 Keeping the granularity of tasks small allows the team to _start
 stacking victories quickly_ and more important, gives everybody a
@@ -76,18 +74,18 @@ chance to see when a software project is about to make a left turn.
 
 ### Goals are Most Effective When ...
 
-Goals do not have to be obnoxious, obtuse and vague nor
+Goals do not have to be obnoxious, obtuse, vague or
 pendantic. Just be real and reasonable.
 
 If you want working software, provide a working set of goals.
 
-- Few in Number, very Targeted
+- Few in number, very targeted
 - Communicated in normal people language (user stories)
 - Provide users quick and immediate value
 - Prioritized to deliver _usable value_ incrementally
 - Measurable and easy to determine when they are complete
 - Everybody understands and agrees with the Goals
-- Tasks should be 1-3 days max if possible (the will always be exceptions)
+- Tasks should be 1-3 days max if possible (there will always be exceptions)
 
 All these tasks have to add up to the MVP. Anything that does not
 directly and immediately get the software project closer to an MVP
