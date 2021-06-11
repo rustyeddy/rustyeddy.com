@@ -40,9 +40,8 @@ These descriptions of the software requirements are often referred to as User St
       
       <guid>http://rustyeddy.com/software/kanban/</guid>
       <description>Kanban is fantastically simple, we&amp;rsquo;ll create a board with 3 columns, Todo, Work In Progress and Complete.
-Each column is populated with a single card for every task that must be done. The cards are prioritised and move through the system as the work progresses.
-Good Kanban Reference  TODO add a good reference video to how Kanban works
- The important things I take-a-way from the idea of Kanban is if:</description>
+Each column is populated with a single card for every task that must be done. The cards are prioritized and move through the system as the work progresses.
+Good Kanban Reference My goal is NOT to describe Kanban itself, rather here is a good video if you are not already familiar with it.</description>
     </item>
     
   </channel>
