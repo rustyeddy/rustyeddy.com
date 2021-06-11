@@ -45,6 +45,18 @@ Good Kanban Reference My goal is NOT to describe Kanban itself, rather here is a
     </item>
     
     <item>
+      <title>Tracking Changes to Code</title>
+      <link>http://rustyeddy.com/software/tracking-changes-to-code/</link>
+      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/tracking-changes-to-code/</guid>
+      <description>It frightens me everytime I am introduced to a new software project where the &amp;ldquo;latest&amp;rdquo; source code is somebodies folder somewhere and copies are being zipped and copied via email or thumbdrive.
+This process is confusing from the get go, and just goes downhill from there.
+ If you are working like this STOP! Start using Version Control NOW!
+ Done correctly, your VC will track every change to your source code with clear well written summaries (logs) of the problem that was solved.</description>
+    </item>
+    
+    <item>
       <title>University of Southern California ~ MSCS</title>
       <link>http://rustyeddy.com/resume/edu/usc/</link>
       <pubDate>Tue, 02 Jan 1996 00:00:00 +0000</pubDate>

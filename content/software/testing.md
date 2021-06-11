@@ -3,22 +3,10 @@ title: Testing Software
 date: 2019-05-04
 weight: 60
 description: >
-  Testing software is pretty self explanatory. The technical details
-  are many, but most important the positive ramifications throughout
-  the evolving project are profound. Let me explain why ...
+  Testing software is pretty self explanatory, it seems. The technical
+  details are many, more important are the positive ramifications
+  throughout the project as it evolves are profound. Let me explain why ...
 draft: true
----
-
-## Monitor Production and Bug Issues
-
-Once the applicaiton has been released into the wild, if it is to be
-of any success, it will start collecting a set of _feature requests_
-and _gasp_ even _bugs_.
-
-Once again, github issues will help us track both of these. We can use
-Github _projects_ to _Kanban_ board the thing.
-
-
 ---
 
 ### Testing Unit and Systems
