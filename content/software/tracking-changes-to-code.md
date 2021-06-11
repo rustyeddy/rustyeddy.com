@@ -25,13 +25,13 @@ solved.
 
 ## Git and Version Control
 
-Version Control (VC) have been around since the 1970's at least. These
+Version Control (VC) has been around since at least the 1970's . These
 included RCS, CVS, SVN and lot's of clunky and lame pay versions. Now
 we have GIT.
 
 Git was development by the famous _Linus Torvalds_ author of Linux to
 handle the distributed nature of the [_Linux Kernel_](http://kernel.org).
-Devleopment and the thousands of software developers that continuously
+Development and the thousands of software developers that continuously
 contribute to the code base. 
 
 ### Github is Git as a Service
@@ -47,8 +47,8 @@ Source software projects.
 In this series we are going to focus on (Github)[https://github.com]
 (the 800lb Gorilla of Github of _social programming_ services).
 
-For this article we are going to use Github, Which is an standard and
-essential part of my workflow. The following services we'll be able to
+For this article we are going to use Github, which is an standard and
+essential part of my workflow. The following services we will be able to
 start using as part of our workflow from github:
 
 1. Git soure control
@@ -59,13 +59,13 @@ start using as part of our workflow from github:
 6. Static HTTP server for web page documentation
 7. Release packages
 
-With these capabilities built into github, we have pretty
-much everything that we need to run our entire software development
+With these capabilities built into github, we pretty
+much have everything that we need to run our entire software development
 process. 
 
 During the process of identifying the MVP, we can use the github
 *Projects Board* to list and track task items, as well as prioritize. 
-There is not one correct way to go through this process. This is just one way
+There is not one correct way to go through this process, this is just one way
 that I find pretty natural.
 
 As the MVP is broken down into tasks, the tasks are then placed in the
