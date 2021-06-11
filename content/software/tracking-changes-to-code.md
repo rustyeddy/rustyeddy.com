@@ -8,47 +8,48 @@ description: >
   of a Version Control (VC) system. Your VC will keep your code in a
   single place where EVERYBODY CAN FIND a complete
   documented history of all changes.
-draft: true
 ---
 
-It frightens me to be introduced to a software project that has a single
-copy in the developers folder, or worse developers and users are
-manually copying folders of complex gathers of code.
+It frightens me everytime I am introduced to a new software project
+where the "latest" source code is somebodies folder somewhere and
+copies are being _zipped_ and _copied_ via email or thumbdrive.
 
-If you are working like this STOP!
+This process is confusing from the get go, and just goes downhill from
+there. 
 
-> Start using Version Control NOW!
+> If you are working like this STOP! Start using Version Control NOW!
 
 Done correctly, your VC will track _every change_ to your source code
 with clear well written summaries (logs) of the problem that was
 solved.
 
-Version Control (VC) have been around since the 1970's at least. These included RCS,
-CVS, SVN and lot's of clunky and lame pay versions. Now we have
-GIT. 
+## Git and Version Control
 
-### Git for Version Control
+Version Control (VC) have been around since the 1970's at least. These
+included RCS, CVS, SVN and lot's of clunky and lame pay versions. Now
+we have GIT.
 
-Like a majority of the world today (2021) we will use the version
-control system (git)[http://git-scm.org] invented by _Linus Torvalds_
-to help with development of the widely distributed Open Source
-software [Linux](http://kernel.org).
+Git was development by the famous _Linus Torvalds_ author of Linux to
+handle the distributed nature of the [_Linux Kernel_](http://kernel.org).
+Devleopment and the thousands of software developers that continuously
+contribute to the code base. 
 
-I am not going to write a git tutorial here, mostly because great ones
-already exist. Rather I'll just point to a couple references:
+### Github is Git as a Service
 
+Github revolutionized software development by taking the widely
+popular _Git_ version control system and wrapping online services
+around them, such as an _Issue Tracker_, _Project Kanban Board_ and a
+whole social infrastructure allowing developers to easily share Open
+Source software projects.
 
 ### Github for Services and Workflow
 
 In this series we are going to focus on (Github)[https://github.com]
 (the 800lb Gorilla of Github of _social programming_ services).
 
-For this article we are going to use Github, Which is a pretty
-standard part of my workflow.
-
-As many of you may know git is a software version control system. 
-Github wraps a lot of very useful features around the source control tool
-like:
+For this article we are going to use Github, Which is an standard and
+essential part of my workflow. The following services we'll be able to
+start using as part of our workflow from github:
 
 1. Git soure control
 2. Github issues for tracking features, requests and bugs
@@ -74,4 +75,5 @@ that will be worked on.
 
 When somebody becomes available, that next task is assigned to the
 available person and is moved over into the *Work In Progress (WIP)*
-list.
+list then that task becomes a github issue to be tracked until the
+project is committed.
