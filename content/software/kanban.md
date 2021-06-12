@@ -52,6 +52,16 @@ matched up with the next task on the to do list.
 The task or the kanban card is then assigned to that particular
 person and moved into the Work In Progress (WIP) list. 
 
+### Tests Define the Exit Criteria
+
+During this phase of the process, a deeper level of thought needs to
+be put into the _tests_ that must be written to establish a successful
+completion of this task.
+
+These tests will become part of the software itself, continuing for
+evermore ensure to be run everytime a change is committed to the
+source base, the quality of software consistently gets better.
+
 ### Contstraints on the WIP
 
 A _prioritized Todo list_ and a _WIP_ that allows only a single (or
@@ -102,4 +112,4 @@ perfect combination of the right balance between communicating with
 _non-technical_ project stake holders and the more technical details
 developers need to program by.
 
-> TODO - Screen shot github issues and project cards linkes.
+> TODO - Screen shot github issues and project cards links.
