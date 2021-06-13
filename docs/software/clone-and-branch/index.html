@@ -30,10 +30,10 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 
 	    <nav class="navbar-nav w-100 justify-content-end">
 		<div class="nav w-100">
-  	            <a class="nav-link" href="/resume">resume </a>
-  		    <a class="nav-link" href="/about">about </a>
   		    <a class="nav-link" href="/software">software </a>
   		    <a class="nav-link" href="/notes">notes </a>
+  	            <a class="nav-link" href="/resume">resume </a>
+  		    <a class="nav-link" href="/about">about </a>
 		</div>
  	    </nav>
 	</div>
@@ -45,7 +45,7 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 	<div class="col-md-8">
 	  <h1 class="header h2 text-center pb-1">Clone and Branch</h1>
 	    <p class="leadin align-right text-muted text-center mt-0">
-		Enough theory, let&#39;s talk code. Before making any changes to the code, a developer will clone then branch a local copy of the software&#39;s most recent code.
+		Enough theory, let&#39;s talk code. Before making any changes to the code we are going to rely on git our Version Control System to ensure that changes to code are meticulously vetted into the mainline with not a semi-colon out of place.
 
 	    </p>
 	</div>
@@ -86,17 +86,37 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 	<div class="col"></div>
 	<div class="col-lg-8 pl-4 pr-4">
 	    <article class="article">
-		<p>This is the beginning process a developer uses to create a <em>workspace</em>.
-They will make changes to the source code, add tests and possibly make
-other changes to the software eco-system.</p>
-<p>In a nutshell, once a developer has a task to work on, she will
-essentially follow these steps:</p>
-<ol>
-<li>Get on her personal <em>workstation</em></li>
-<li>Make a copy of the source code she will work on</li>
-<li>Create a <em>branch</em> in <em>git</em> such that her code does not effect
-anyone elses code (yet).</li>
-</ol>
+		<p>Initial changes to software are always done to a <strong>copy</strong> of the
+actual source code. This provides a local sandbox for the developer to
+make changes, experiement with fixes and and do really weird things
+that will never be allowed in the final product (we will cover this in
+the peer review section).</p>
+<h2 id="clone-the-repo">Clone The Repo</h2>
+<p>Our actual &ldquo;<em>Source Code</em>&rdquo; resides in what&rsquo;s called a <em>Software
+Repository</em> which is a server in the cloud, however the work performed
+by the developer is typically done on a local <em>computer</em>.</p>
+<h3 id="branch-mainline">Branch Mainline</h3>
+<p>The Repository maintains a <em>versioned history</em> of all changes to the
+source code. Such that the entire history of the source code can be
+&ldquo;played back&rdquo; so to speak.</p>
+<p>To support parallel development efforts by many programmers VC systems
+support <em>branching</em>, where a developer can create a new <em>history</em> of
+source changes.</p>
+<p>The power part of branching is that they isolate new early changes of
+code from high quality production code, which still providing a
+complete history of the <em>divergent</em> or <em>branched</em> software.</p>
+<h3 id="trim-branches-quickly">Trim Branches Quickly</h3>
+<p>Branches have been part of VC systems for decades, despite thier
+necessary benefits, they can contribute to bulk, duplication and
+confusion (what branch did I leave that peach on?)</p>
+<p><em>Best Practices</em> have identified short lived <em>feature</em> or I like the
+term <em>task</em> based branches are a well supported practice.</p>
+<p>The idea is that every new task gets a <em>feature branch</em>, since a given
+task should only take 1 or 2 days to complete, the code in the branch
+is vetted, tested and comitted to mainline in a day or so.</p>
+<p>Once the branched code has been commited to the <em>mainline</em> the feature
+branch can be deleted forever.</p>
+<h2 id="sandbox-freedom">Sandbox Freedom</h2>
 <p>Our developer is now free to make all the changes she desires,
 conduct small experiments, and make mistakes with this private copy of
 code becuase it is only available to her, and does not effect anyone
@@ -106,6 +126,7 @@ everyone else uses (Q&amp;A, collegues, customers). Everybody! She better
 make sure it is excellent!</p>
 <p>She also must ensure that it does not break a previously working test,
 the dreaded regression error.</p>
+<p>This leads us to the next topic, my favorite: <a href="/software/testing">testing</a></p>
 
 	    </article>
 	</div>

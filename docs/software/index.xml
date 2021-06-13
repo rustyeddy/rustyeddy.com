@@ -50,10 +50,20 @@ Good Kanban Reference My goal is NOT to describe Kanban itself. Instead, here is
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/software/tracking-changes-to-code/</guid>
-      <description>It frightens me everytime I am introduced to a new software project where the &amp;ldquo;latest&amp;rdquo; source code is somebodies folder somewhere and copies are being zipped and copied via email or thumbdrive.
-This process is confusing from the get go, and just goes downhill from there.
- If you are working like this STOP! Start using Version Control NOW!
- Done correctly, your VC will track every change to your source code with clear well written summaries (logs) of the problem that was solved.</description>
+      <description>It frightens me everytime I am introduced to a new software project where the &amp;ldquo;latest&amp;rdquo; source code is somebodies folder somewhere with copies being passed around on thumb drives.
+Such a lack process invites confusion from the beginning and inspires questions like:
+ which copy of the file has your changes?
+ If you are working like this STOP! It does not have to be this way. no, start using Version Control now!</description>
+    </item>
+    
+    <item>
+      <title>Clone and Branch</title>
+      <link>http://rustyeddy.com/software/clone-and-branch/</link>
+      <pubDate>Thu, 11 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/clone-and-branch/</guid>
+      <description>Initial changes to software are always done to a copy of the actual source code. This provides a local sandbox for the developer to make changes, experiement with fixes and and do really weird things that will never be allowed in the final product (we will cover this in the peer review section).
+Clone The Repo Our actual &amp;ldquo;Source Code&amp;rdquo; resides in what&amp;rsquo;s called a Software Repository which is a server in the cloud, however the work performed by the developer is typically done on a local computer.</description>
     </item>
     
   </channel>
