@@ -4,13 +4,19 @@ description: Software Engineer, Network Architect and IoT Hacker
 date: 2020-04-10
 ---
 
-Three plus decades have left me with a lot of experience with
-successful software projects and dismal failures. Over time, I have
-attempted to build a set of _Best Practices_ I can rely on as I attack
-new software projects.
+Software that likes to make hardware **talk**
+(computer networks), **move** (Robotics) and **see** (computer
+vision). 
+
+My have a [resume](/resume) with my work life summed in a couple
+pages. 
 
 I have started this little project to do a *much* better job of
 documenting these "Best Practices" and with *your help*, I hope to
-make them useful for more than myself.
+make them useful for more than just myself, but anybody running a
+small development project. Like you, maybe?  :)
+
+Check out my [Software Best Practices Project](/software) and let me
+know what you think?
 
 

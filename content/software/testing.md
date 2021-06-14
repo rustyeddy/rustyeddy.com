@@ -9,9 +9,41 @@ description: >
 draft: true
 ---
 
-### Testing Unit and Systems
+## Testing Unit and Systems
 
-Before her new code can be integrated into the existing, heavily
+Before our developers new code can be integrated into the existing
+production code base it must be _tested_ and _vetted_.
+
+Software Testing has been written about extensively so I won't spend
+time hear discussing testing directly as there are as many ways to
+test software as there are technologies.
+
+I do support the notion of _Test Driven Development (TDD)_ which I
+frequently do _not_ adhere to out of laziness, haste or carelessness
+(I know sad but I'm just being honest here).
+
+> TODO Reference to TDD
+
+Testing movements can be taken to far, so like all other things
+"Software Development" there is a balance that must be achieved
+suitable for the application. 
+
+Here are some _requirements_ for a full good software development
+system. 
+
+- Tests must cover all features and bug code changes
+- Tests should automated 100% if possible
+- Tests should combine _white_ and _black_ box testing
+- Tests must be 100% repeatable
+- Tests should be easy to run selectively
+- Tests should produce nice reports
+
+
+
+
+
+
+ heavily
 trusted code base, we have to make **sure** it is of the same quality
 as the existing codebase, by adding one or more adequate **tests** to
 the systems tests.
