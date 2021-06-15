@@ -4,37 +4,36 @@ date: 2019-05-04
 weight: 60
 description: >
   Testing software is pretty self explanatory, it seems. The technical
-  details are many, more important are the positive ramifications
-  throughout the project as it evolves are profound. Let me explain why ...
+  details are many, but more important are the positive ramifications as it evolves
+  throughout the project that are profound. Let me explain why ...
 ---
 
 ## Testing Unit and Systems
 
 Before any developers new code can be integrated into the _mainline_ 
-production code base it must be _tested_, _vetted_ and _peer
+production code base, it must be _tested_, _vetted_ and _peer
 reviewed_. 
 
-Software Testing has been written about extensively so I won't spend
-time here discussing testing directly as there are as many ways to
+Software Testing has been written about extensively, so I won't spend
+time here discussing testing directly, as there are as many ways to
 test software as there are technologies.
 
 ### Test Driven Development
 
-_Test Driven Development (TDD)_ a _principal_ for which I agree, but
-for which I don't _always_ adhere to in practice, usually out of
+_Test Driven Development (TDD)_ a _principal_ for which I agree is necessary, but I don't _always_ adhere to in practice. This is  usually out of
 laziness, haste or carelessness (I know sad but I'm just being honest
-here). However it is worth paying attention to...
+here). However, it is worth paying attention to...
 
-Anyway, the basic rules are:
+Anyways, the basic rules are:
 
 1. Write your test **before** writing the code
 2. The test **will fail** initially
-3. It is the _programmers_ job to write code such that the test now passes.
+3. It is the _programmers_ job to write code such that the test will pass.
 
 Brilliant!
 
 That is hard to argue with. However, taking the upfront time to build
-the tests before just hammering out the code is much harder to do than
+the tests before just hammering out the code, is much harder to do than
 say.
 
 ## TDD is hard, not technically, but emotionally
@@ -45,42 +44,42 @@ level or two.
 
 > When defining tests, ask the "Five whys?"
 
-Once you have done the hard brain work, and exposed the applications
+Once you have done the hard brain work and exposed the applications,
 **true requirements** implementing the test becomes striaght forward.
 
 > TODO Reference to TDD
 
-Testing movements can be taken to far, for example spending a lot of
+Testing movements can be taken too far, for example spending a lot of
 time writing tests that are effectively worthless just for the sake of
 writing a test.
 
 However, testing is critical and we *must* find a good
-balance. Following are some general points that a good set of tests
+balance. The following are some general points that a good set of tests
 provide: 
 
 - Tests must cover all features and bug code changes
 - Tests must be 100% repeatable
-- Tests should automated 100% if possible
+- Tests should be automated 100%, if possible
 - Tests should combine _white_ and _black_ box testing
 - Tests should be easy to run selectively
 - Tests should produce nice reports
 
-Faithfully writting tests for new features and regression test for bug
+Faithfully writing tests for new features and regression test for bug
 fixes contributes over time to a increasingly stable code base.
 
 ### Testing Builds Confidence
 
-As software projects evolves overtime developers and users gain
+As software projects evolve over time, developers and users gain
 benefits beyond just _stable software_ including:
 
-1. Confidence to the point of taking the software for granted, they
+1. Confidence to the point of taking the software for granted. They then
 begin to rely on the software without even realizing it.
 
 2. Operational problems become rare because most issue are caught and
 fixed in a lab or a _controlled_ system on the client site.
 
 3. When problems do occur they are typically resolved very
-quickly. Stable products tend to be well document, have meaning ful
+quickly. Stable products tend to be well documented, as well as having meaningful
 logs and great support tools.
 
 4. Software Development Becomes Faster
@@ -88,26 +87,26 @@ logs and great support tools.
 The test environment creates a _factory_ for producing well machined
 software.
 
-> High quality code can be developed and release quickly, with little
+> High quality code can be developed and released quickly, with little
   risk of new failures.
 
 A good test rig will allow the developer to easily run selective tests
 from the _developers development process (REPL)_. The result is a much
-higher rate of software delivery with out an increase in error rates.
+higher rate of software delivery without an increase in error rates.
 
 ## Automated vs. Manual Tests
 
-Tests are far more effective when the are clearly written down. Even
+Tests are far more effective when they are clearly written down. Even
 better, written down AND automated. 
 
-It is inevitable that some tests, at least in certain industries may
-have to be conducted manually. Like making sure a robot hand does not
-break a glass bottle, for example.  Ideally however, you will try
-automating tests as close to 100% of our tests as possible.
+It is inevitable that some tests, at least in certain industries, may
+have to be conducted manually. For example, making sure a robot hand does not
+break a glass bottle.  Ideally however, you will try
+automating tests as close to 100% as possible.
 
 ### Complete Test Runs ALL the Time
 
-With automated tests it will be common to run a complete suite of
+With automated tests, it will be common to run a complete suite of
 tests for every software change, every fix, every addition of new
 code and even a complete test run after removing dead code.
 
@@ -129,7 +128,7 @@ content until she is convinced the code is ready for everybody else.
 
 _White Box_ testing means the _test function_ has _internal_ access to
 the the actual code being tested. In otherwords, the code can directly
-call any internal function or examing internal data structures.
+call any internal function or examine internal data structures.
 
 > _Unit Testing_ is a standard form of _Whitebox Test_.
 
@@ -154,8 +153,8 @@ and _client_.
 Before any _release_ passes to a customer, the entire suite of
 _Acceptance Tests_ must **pass without fail**.
 
-Acceptance tests are _System Tests_ in that they will often involved
-co-ordination among two or more _sub-systems_ or _micro-services_ as
+Acceptance tests are _System Tests_ in that they will often involve
+co-ordination among two or more _sub-systems_ or _micro-services_, as
 we like to call them now.  For example, a database and inputs from a
 sensor are two _sub-systems_ that are frequently found in _embedded_
 and _IoT_ style software projects.
