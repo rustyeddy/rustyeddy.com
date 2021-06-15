@@ -6,7 +6,6 @@ description: >
   Testing software is pretty self explanatory, it seems. The technical
   details are many, more important are the positive ramifications
   throughout the project as it evolves are profound. Let me explain why ...
-draft: true
 ---
 
 ## Testing Unit and Systems
@@ -15,8 +14,10 @@ Before our developers new code can be integrated into the existing
 production code base it must be _tested_ and _vetted_.
 
 Software Testing has been written about extensively so I won't spend
-time hear discussing testing directly as there are as many ways to
+time here discussing testing directly as there are as many ways to
 test software as there are technologies.
+
+## Test Driven Development (TDD)
 
 I do support the notion of _Test Driven Development (TDD)_ which I
 frequently do _not_ adhere to out of laziness, haste or carelessness
@@ -24,38 +25,51 @@ frequently do _not_ adhere to out of laziness, haste or carelessness
 
 > TODO Reference to TDD
 
-Testing movements can be taken to far, so like all other things
-"Software Development" there is a balance that must be achieved
-suitable for the application. 
+Testing movements can be taken to far, for example spending a lot of
+time writing tests that are effectively worthless just for the sake of
+writing a test.
 
-Here are some _requirements_ for a full good software development
-system. 
+However, testing is critical and we *must* find a good
+balance. Following are some general points that a good set of tests
+provide: 
 
 - Tests must cover all features and bug code changes
+- Tests must be 100% repeatable
 - Tests should automated 100% if possible
 - Tests should combine _white_ and _black_ box testing
-- Tests must be 100% repeatable
 - Tests should be easy to run selectively
 - Tests should produce nice reports
 
+Faithfully writting tests for new features and regression test for bug
+fixes contributes over time to a increasingly stable code base.
 
+### Testing Builds Confidence
 
+As the software project evolves overtime, the developers and users
+gain two very important things, in addition to the obvious benefit of
+working software, everybody gains:
 
+1. Confidence to the point of taking the software for granted, they
+begin to rely on the software without even realizing it.
 
+2. Operational problems become rare because most issue are caught and
+fixed in a lab or a _controlled_ system on the client site.
 
- heavily
-trusted code base, we have to make **sure** it is of the same quality
-as the existing codebase, by adding one or more adequate **tests** to
-the systems tests.
+3. When problems do occur they are typically resolved very
+quickly. One by product of stable, well tested software is how easy
+they are to troubleshoot.
 
-#### Automated vs. Manual Tests
+## Automated vs. Manual Tests
 
 Tests are far more effective when the are clearly written down. Even
-better, written down AND automated.
+better, written down AND automated. 
 
-It is inevitable that some tests, at least in certain industries,
-may have to be conducted manually. Ideally however, you
-will try automating tests as close to 100% as possible.
+It is inevitable that some tests, at least in certain industries may
+have to be conducted manually. Like making sure a robot hand does not
+break a glass bottle, for example.  Ideally however, you will try
+automating tests as close to 100% of our tests as possible.
+
+### Complete Test Runs ALL the Time
 
 With automated tests it will be common to run a complete suite of
 tests for every software change, every fix, every addition of new
@@ -70,36 +84,46 @@ modify existing ones.
 Automated tests will most likely provide the ability to run a subset
 of test or even pick a single specific one to run.
 
-The key is that a developer is free to run and re-run tests to her
-hearts content until she is convinced the code is ready for everybody
-else.
-
-But first, it must pass the peer review...
-
-
-One of the first things that ought to be done, but seldom gets the
-attention it needs, is the specific criteria that must be met to make
-the customer/user happy. 
-
-We are going to call this group of criteria the projects **Acceptance
-Test**. Ideally, all acceptance tests can be automated with software,
-however, they may be cases that manual intervention is required to
-conduct an entire set of acceptance tests.
+_The key is_ a developer is free to run and re-run tests to her hearts
+content until she is convinced the code is ready for everybody else.
 
 ## Whitebox vs. Blackbox Testing
 
-My intention here is not to get into a dissertation on testing in test
-methodologies. Rather, I would like to point out a couple very
-important and fundamental types of tests that MUST be conducted.
+### Whitebox Testing
 
-This includes both white box and blackbox tests. White box tests are
-done with access to the internal details of the software. These are
-typically represented by unit tests.
+_White Box_ testing means the _test function_ has _internal_ access to
+the the actual code being tested. In otherwords, the code can directly
+call any internal function or examing internal data structures.
 
-Blackbox tests on the other hand. allow no access to the internal structure
-of the software. Rather, the tests are conducted from a systematic or
-external point of view, just as an end user of the software will be
-expecting this software to behave. 
+> _Unit Testing_ is a standard form of _Whitebox Test_.
+
+Other _whitebox_ tests may include performance and stress tests.
+
+### Black Box Testing
+
+Blackbox tests have _no access or knoweledge_ of any _internal_
+functions or data structures, other than the applications "Public
+Interface".
+
+> _System Tests_ are a standard form of _Blackbox Testing_
+
+Other _blackbox_ tests may also include performance and stress tests.
+
+## Acceptance Tests ~ Pass without Fail
+
+Acceptance test is the term we will use for our _final system tests_. 
+The tests that validate the _delivery agreement_ between _development_
+and _client_.
+
+Before any _release_ passes to a customer, the entire suite of
+_Acceptance Tests_ must **pass without fail**.
+
+Acceptance tests are _System Tests_ in that they will often involved
+co-ordination among two or more _sub-systems_ or _micro-services_ as
+we like to call them now.  For example, a database and inputs from a
+sensor are two _sub-systems_ that are frequently found in _embedded_
+and _IoT_ style software projects.
+
 
 ## Acceptance Tests are Blackbox
 
