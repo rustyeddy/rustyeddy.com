@@ -97,25 +97,28 @@ Repository</em> which is a server in the cloud, however the work performed
 by the developer is typically done on a local <em>computer</em>.</p>
 <h3 id="branch-mainline">Branch Mainline</h3>
 <p>The Repository maintains a <em>versioned history</em> of all changes to the
-source code. Such that the entire history of the source code can be
-&ldquo;played back&rdquo; so to speak.</p>
-<p>To support parallel development efforts by many programmers VC systems
-support <em>branching</em>, where a developer can create a new <em>history</em> of
-source changes.</p>
-<p>The power part of branching is that they isolate new early changes of
-code from high quality production code, while still providing a
-complete history of the <em>divergent</em> or <em>branched</em> software.</p>
+source code. The entire history of the source code can be &ldquo;played
+back&rdquo; so to speak.</p>
+<p>To support parallel development efforts by many programmers, our
+<em>Version Control System</em> (git) provides a feature called
+<em>branching</em>, where a developer can create a new <em>branch</em> which
+supports a new set of changes (history) that will not effect the main
+source code.</p>
+<p>The power of branching provides the developer a &ldquo;sandbox&rdquo; for making
+changes to their local copy of the source code for experiementation
+before the code is subsequently tested and <em>merged</em> into the main
+branch.</p>
 <h3 id="trim-branches-quickly">Trim Branches Quickly</h3>
-<p>Branches have been part of VC systems for decades, despite their
-necessary benefits. They can contribute to bulk, duplication and
-confusion (what branch did I leave that peach on?)</p>
+<p>Branches have been part of <em>VCS</em> for decades, however, despite the
+necessary benefits they provide, they can also contribute to
+duplicated code and general confusion, like: which branch did I leave
+that peach on?</p>
 <p><em>Best Practices</em> have identified short lived <em>feature</em> or I like the
 term <em>task</em> based branches are a well supported practice.</p>
-<p>The idea is that every new task gets a <em>feature branch</em>. Since a given
-task should only take 1 or 2 days to complete, the code in the branch
-is vetted, tested and comitted to mainline in a day or so.</p>
-<p>Once the branched code has been commited to the <em>mainline</em> the feature
-branch can be deleted forever.</p>
+<p>A <em>feature branch</em> is created by the developer for every new task they
+work on. Once that task is complete, typically 1 to 2 days, the
+<em>feature branch</em> will then be deleted after the new code has been
+<em>commited</em> to the <em>main branch</em>.</p>
 <h2 id="sandbox-freedom">Sandbox Freedom</h2>
 <p>Our developer is now free to make all the changes she desires,
 conduct small experiments, and make mistakes with this private copy of
