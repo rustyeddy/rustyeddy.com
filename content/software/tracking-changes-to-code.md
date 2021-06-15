@@ -59,9 +59,12 @@ Fortunantely for us, _github_ provides quite a few services integrated
 around git itself giving us a rich set of tools to build a sophisticated
 development environment, and all for _free_.
 
-Github does work on a _freemium_ model, hence you do get addition
-capabilities for pay for features in _private_ repositories. However
-Open Source projects everything is free.
+Github works on a _freemium_ model where all Open Source projects get
+all features for free. However, private repositories will be required
+to pay a nominal fee to unlock all of githubs features.
+
+For our purposes, everything we need is free, so don't pull out your
+wallet! 
 
 ## Enough Theory?
 

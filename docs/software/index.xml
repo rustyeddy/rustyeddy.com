@@ -62,7 +62,7 @@ Such a lack process invites confusion from the beginning and inspires questions 
       <pubDate>Thu, 11 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>http://rustyeddy.com/software/clone-and-branch/</guid>
-      <description>Initial changes to software are always done to a copy of the actual source code. This provides a local sandbox for the developer to make changes, experiement with fixes and and do really weird things that will never be allowed in the final product (we will cover this in the peer review section).
+      <description>Initial changes to software are always done to a copy of the actual source code. This provides a local sandbox for the developer to make changes, experiement with fixes and do really weird things that will never be allowed in the final product (we will cover this in the peer review section).
 Clone The Repo Our actual &amp;ldquo;Source Code&amp;rdquo; resides in what&amp;rsquo;s called a Software Repository which is a server in the cloud, however the work performed by the developer is typically done on a local computer.</description>
     </item>
     

@@ -24,32 +24,34 @@ by the developer is typically done on a local _computer_.
 ### Branch Mainline
 
 The Repository maintains a _versioned history_ of all changes to the
-source code. Such that the entire history of the source code can be
-"played back" so to speak.
+source code. The entire history of the source code can be "played
+back" so to speak.
 
-To support parallel development efforts by many programmers VC systems
-support _branching_, where a developer can create a new _history_ of
-source changes.
+To support parallel development efforts by many programmers, our
+_Version Control System_ (git) provides a feature called
+_branching_, where a developer can create a new _branch_ which
+supports a new set of changes (history) that will not effect the main
+source code.
 
-The power part of branching is that they isolate new early changes of
-code from high quality production code, while still providing a
-complete history of the _divergent_ or _branched_ software.
+The power of branching provides the developer a "sandbox" for making
+changes to their local copy of the source code for experiementation
+before the code is subsequently tested and _merged_ into the main
+branch. 
 
 ### Trim Branches Quickly
 
-Branches have been part of VC systems for decades, despite their
-necessary benefits. They can contribute to bulk, duplication and
-confusion (what branch did I leave that peach on?)
+Branches have been part of _VCS_ for decades, however, despite the
+necessary benefits they provide, they can also contribute to
+duplicated code and general confusion, like: which branch did I leave
+that peach on? 
 
 _Best Practices_ have identified short lived _feature_ or I like the
 term _task_ based branches are a well supported practice.
 
-The idea is that every new task gets a _feature branch_. Since a given
-task should only take 1 or 2 days to complete, the code in the branch
-is vetted, tested and comitted to mainline in a day or so.
-
-Once the branched code has been commited to the _mainline_ the feature
-branch can be deleted forever.
+A _feature branch_ is created by the developer for every new task they
+work on. Once that task is complete, typically 1 to 2 days, the
+_feature branch_ will then be deleted after the new code has been
+_commited_ to the _main branch_. 
 
 ## Sandbox Freedom
 
