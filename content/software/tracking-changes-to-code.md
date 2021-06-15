@@ -56,10 +56,10 @@ To be clear, there are some other _great_ services built around _git_,
 are just two. 
 
 Fortunantely for us, _github_ provides quite a few services integrated
-around git itself giving us a rich set of tools build a sophisticated
-development environment, and for _free_.
+around git itself giving us a rich set of tools to build a sophisticated
+development environment, and all for _free_.
 
-github does work on a _freemium_ model, hence you do get addition
+Github does work on a _freemium_ model, hence you do get addition
 capabilities for pay for features in _private_ repositories. However
 Open Source projects everything is free.
 
