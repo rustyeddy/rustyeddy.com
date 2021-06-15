@@ -67,6 +67,17 @@ Clone The Repo Our actual &amp;ldquo;Source Code&amp;rdquo; resides in what&amp;
     </item>
     
     <item>
+      <title>Testing Software</title>
+      <link>http://rustyeddy.com/software/testing/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/testing/</guid>
+      <description>Testing Unit and Systems Before any developers new code can be integrated into the mainline production code base it must be tested, vetted and peer reviewed.
+Software Testing has been written about extensively so I won&amp;rsquo;t spend time here discussing testing directly as there are as many ways to test software as there are technologies.
+Test Driven Development Test Driven Development (TDD) a principal for which I agree, but for which I don&amp;rsquo;t always adhere to in practice, usually out of laziness, haste or carelessness (I know sad but I&amp;rsquo;m just being honest here).</description>
+    </item>
+    
+    <item>
       <title>University of Southern California ~ MSCS</title>
       <link>http://rustyeddy.com/resume/edu/usc/</link>
       <pubDate>Tue, 02 Jan 1996 00:00:00 +0000</pubDate>

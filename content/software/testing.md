@@ -10,18 +10,43 @@ description: >
 
 ## Testing Unit and Systems
 
-Before our developers new code can be integrated into the existing
-production code base it must be _tested_ and _vetted_.
+Before any developers new code can be integrated into the _mainline_ 
+production code base it must be _tested_, _vetted_ and _peer
+reviewed_. 
 
 Software Testing has been written about extensively so I won't spend
 time here discussing testing directly as there are as many ways to
 test software as there are technologies.
 
-## Test Driven Development (TDD)
+### Test Driven Development
 
-I do support the notion of _Test Driven Development (TDD)_ which I
-frequently do _not_ adhere to out of laziness, haste or carelessness
-(I know sad but I'm just being honest here).
+_Test Driven Development (TDD)_ a _principal_ for which I agree, but
+for which I don't _always_ adhere to in practice, usually out of
+laziness, haste or carelessness (I know sad but I'm just being honest
+here). However it is worth paying attention to...
+
+Anyway, the basic rules are:
+
+1. Write your test **before** writing the code
+2. The test **will fail** initially
+3. It is the _programmers_ job to write code such that the test now passes.
+
+Brilliant!
+
+That is hard to argue with. However, taking the upfront time to build
+the tests before just hammering out the code is much harder to do than
+say.
+
+## TDD is hard, not technically, but emotionally
+
+The hard part about writing _tests_ upfront is that it forces us to
+_really_ define what we are building.  You have to _drill down_ a
+level or two.
+
+> When defining tests, ask the "Five whys?"
+
+Once you have done the hard brain work, and exposed the applications
+**true requirements** implementing the test becomes striaght forward.
 
 > TODO Reference to TDD
 
@@ -45,9 +70,8 @@ fixes contributes over time to a increasingly stable code base.
 
 ### Testing Builds Confidence
 
-As the software project evolves overtime, the developers and users
-gain two very important things, in addition to the obvious benefit of
-working software, everybody gains:
+As software projects evolves overtime developers and users gain
+benefits beyond just _stable software_ including:
 
 1. Confidence to the point of taking the software for granted, they
 begin to rely on the software without even realizing it.
@@ -56,8 +80,20 @@ begin to rely on the software without even realizing it.
 fixed in a lab or a _controlled_ system on the client site.
 
 3. When problems do occur they are typically resolved very
-quickly. One by product of stable, well tested software is how easy
-they are to troubleshoot.
+quickly. Stable products tend to be well document, have meaning ful
+logs and great support tools.
+
+4. Software Development Becomes Faster
+
+The test environment creates a _factory_ for producing well machined
+software.
+
+> High quality code can be developed and release quickly, with little
+  risk of new failures.
+
+A good test rig will allow the developer to easily run selective tests
+from the _developers development process (REPL)_. The result is a much
+higher rate of software delivery with out an increase in error rates.
 
 ## Automated vs. Manual Tests
 
