@@ -3,13 +3,12 @@ title: Mainlining Your Vetted Code
 date: 2021-04-04
 weight: 80
 description: >
-  Once the sometimes ardjous process of being confronted with a
-  problem to solve, coding it up, debugging, passing all tests and
-  then getting hammered by a peer. Wow, finally it becomes available
-  to everybody.
+  Once a developer has taken her code through the demanding process of
+  getting it tested and OK'd by peers, it is time to make that code
+  available to everybody... 
 ---
 
-## Github making the Commitment
+## Github and making the Commitment
 
 Now it is time for the developer to _commit_ the changes she has been
 working on, tested and pushed through the peer reviews. This step is
@@ -49,15 +48,16 @@ development.
 
 ## Tagging - Releases
 
-Git also provides a feature called _tagging_, it is in fact very
-similar to _branching_, except they are meant to _label_ a specific
+Git also provides a feature called _tagging_, which is in fact very
+similar to _branching_. _Tags_ however are meant to _label_ a specific
 reference of the source at a specific point in time.
 
-Software release is a typical example: a tag **v1.0.2** which would
-not be unusual.
+_Software releases_ are a good reason to use _tags_. For example: a
+tag **v1.0.2** would be a typical tag that might be used to reference
+the version of code after **v1.0.1**.
 
-This allow the team to _reference_ and _re-create_ that specific
-version of the code again. 
+This practice allows the team, or anybody interested, the ability to
+_reference_ and _re-create_ a specific past version of the software.
 
 ## Automated Builds and Testing
 
