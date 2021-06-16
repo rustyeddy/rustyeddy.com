@@ -40,12 +40,16 @@ people that like each other.
 
 ### Peer Reviews and Pull Requests
 
-Good 'ol _github_ comes through again! The process known as _pull
-requests_ essentially has the developer with private code changes
-she wants to put  back into mainline has the ability to _post_ the
-changes for _review_ via a _pull request_.
+Good 'ol _github_ comes through again! Github has sort of invented
+this feature called a _Pull Request_ that are the perfect vehical to
+perform peer reviews.
 
 The PR makes it easy for _reviewers_ to view the exact changes made to
-the code. It also allows reviewers and the developer to record
+the code. It also allows reviewers and the developers to record
+conversation that rationalized the current state of code, and changes
+that were requested by reviewers and how the developer responds.
 
-Now it is time to make a commitment.
+Sometimes interesting fodder, but now it is time ...
+
+> To make a commitment!
+
