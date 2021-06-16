@@ -96,7 +96,7 @@ Reviewers, typically don&amp;rsquo;t like (or at least don&amp;rsquo;t love) rev
       <guid>http://rustyeddy.com/software/commit-and-merge/</guid>
       <description>Github making the Commitment Now it is time for the developer to commit the changes she has been working on, tested and pushed through the peer reviews. This step is pretty simple, however, we want to make sure we are doing it correctly.
  Todo example commit
- When the code is merged into the main or master repository, just like commitments, it will be accomponied by the log comments that go along with the log files.</description>
+ When the code is merged into the main or master repository, just like commitments, it will be accompanied by the log comments that go along with the log files.</description>
     </item>
     
   </channel>
