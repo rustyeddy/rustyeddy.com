@@ -64,8 +64,8 @@ provide:
 - Tests should be easy to run selectively
 - Tests should produce nice reports
 
-Faithfully writing tests for new features and regression test for bug
-fixes contributes over time to a increasingly stable code base.
+Faithfully writing tests along with new code contributes over time to
+a increasingly stable code base.  
 
 ### Testing Builds Confidence
 
@@ -106,9 +106,8 @@ automating tests as close to 100% as possible.
 
 ### Complete Test Runs ALL the Time
 
-With automated tests, it will be common to run a complete suite of
-tests for every software change, every fix, every addition of new
-code and even a complete test run after removing dead code.
+With automated tests it is easy to run a complete suite of
+tests for every software change and addition of new code.
 
 Why not?
 
@@ -137,8 +136,8 @@ Other _whitebox_ tests may include performance and stress tests.
 ### Black Box Testing
 
 Blackbox tests have _no access or knoweledge_ of any _internal_
-functions or data structures, other than the applications "Public
-Interface".
+functions or data structures, other than the applications "Application
+Programming Interface".
 
 > _System Tests_ are a standard form of _Blackbox Testing_
 
@@ -158,11 +157,4 @@ co-ordination among two or more _sub-systems_ or _micro-services_, as
 we like to call them now.  For example, a database and inputs from a
 sensor are two _sub-systems_ that are frequently found in _embedded_
 and _IoT_ style software projects.
-
-
-## Acceptance Tests are Blackbox
-
-The acceptance tests are by definition what the customer expects the
-software to do, and has in effect agreed to be happy with, the software
-once it passes acceptance tests.
 
