@@ -7,34 +7,65 @@ description: >
   problem to solve, coding it up, debugging, passing all tests and
   then getting hammered by a peer. Wow, finally it becomes available
   to everybody.
-draft: true
 ---
-
 
 ## Github making the Commitment
 
-Now it is time for the developer to commit the changes she has
-made. This step is pretty simple, however, we want to make sure we are
-doing it correctly.
+Now it is time for the developer to _commit_ the changes she has been
+working on, tested and pushed through the peer reviews. This step is
+pretty simple, however, we want to make sure we are doing it
+correctly.
+
+> Todo example commit
 
 When the code is merged into the **main** or **master** repository,
 just like commitments, it will be accomponied by the log comments
 that go along with the log files.
 
+Additionally, every _commit_ will have a _unique identifier_, a big
+nasty looking hex-i-decimal string garaunteed to probably be locally
+unique. 
+
+### History in the Making
+
+Well written comments, source diffs and a unique identifier come
+together to create a specific moment in the code life history.
+
+Stringing all commitments together, one forms a very accurate history
+of the source development. If the comments are well written, that
+history is accomponied by a wonderful narative told by the developers
+as the software is being written. 
+
+## The Beginning of Visibility
+
 This can provide the viewer with literally a line by line replay of
 the entire history of a software development project. The commitments
 can also be directly related to the particular **github issues** that
-spurred the updates to the code in the first place.
+has spurred the updates to the code in the first place.
 
-This is a very powerful way for not only developers, but also users,
-management and marketing, as a quick way to summarize updates
-to the software.
+This is a very powerful way for not only developers but also users,
+management and marketing a deep insight into the process of software
+development. 
 
-## Releasing Binaries and Packages
+## Tagging - Releases
 
-In many cases, it may be desirable or even mandatory to provide some
-form of packaging around your application. For example in the case of Open Source
-Go program, we might just provide the source repository and a
-pre-built binary for certain platforms. 
+Git also provides a feature called _tagging_, it is infact very
+similar to _branching_ except they are meant to _label_ a specific
+reference of the source at a specific point in time.
 
-> Todo Show a binary get created and served up on Github.
+Software release is a typical example: a tag **v1.0.2** which would
+not be unusual.
+
+This allow the team to _reference_ and _re-create_ that specific
+version of the code again. 
+
+## Automated Builds and Testing
+
+Github provides a ton of goodies with it's well define _API_ and the
+plethora of _web-hooks_ it provides.
+
+In the next section we'll get into _automatically_ building new images
+upon every commitment, running the images through automated tests and
+finally sending **only** the tested images to a file server for
+general access. 
+

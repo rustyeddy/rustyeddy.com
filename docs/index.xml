@@ -89,6 +89,17 @@ Reviewers, typically don&amp;rsquo;t like (or at least don&amp;rsquo;t love) rev
     </item>
     
     <item>
+      <title>Mainlining Your Vetted Code</title>
+      <link>http://rustyeddy.com/software/commit-and-merge/</link>
+      <pubDate>Sun, 04 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/commit-and-merge/</guid>
+      <description>Github making the Commitment Now it is time for the developer to commit the changes she has been working on, tested and pushed through the peer reviews. This step is pretty simple, however, we want to make sure we are doing it correctly.
+ Todo example commit
+ When the code is merged into the main or master repository, just like commitments, it will be accomponied by the log comments that go along with the log files.</description>
+    </item>
+    
+    <item>
       <title>University of Southern California ~ MSCS</title>
       <link>http://rustyeddy.com/resume/edu/usc/</link>
       <pubDate>Tue, 02 Jan 1996 00:00:00 +0000</pubDate>
