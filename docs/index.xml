@@ -100,6 +100,17 @@ Reviewers, typically don&amp;rsquo;t like (or at least don&amp;rsquo;t love) rev
     </item>
     
     <item>
+      <title>Release Process</title>
+      <link>http://rustyeddy.com/software/release-process/</link>
+      <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/software/release-process/</guid>
+      <description>This is the point where software is ready to be passed along to the user/customer, an official release. We will want to formalize the process of releasing the softare.
+For example, when a new release is cut the following process may be in place:
+ Commit to main in Github repository New version number is generated Automated build is triggered Automated system tests are run New binary test images are copied to a distribution server or pushed to production servers The actual process will vary according to many factors of the application  The main point to make at this point, one phase of the software development may have been completed, for example you delivered that MVP!</description>
+    </item>
+    
+    <item>
       <title>University of Southern California ~ MSCS</title>
       <link>http://rustyeddy.com/resume/edu/usc/</link>
       <pubDate>Tue, 02 Jan 1996 00:00:00 +0000</pubDate>

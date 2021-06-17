@@ -10,38 +10,24 @@
     </div>
 
     <div class="row">
-	<div class="col-2"></div>
-	<div class="col-8">
-            <ul class="list-group-flush">
-	        {{ range .Pages }}
-                <li class="list-group-item list-group-item-action">
-                    <a href="{{ .Permalink }}">{{ .Title }}</a>
-                    <div class="text-muted">
-                        {{ .Description }}
+        <div class="card-deck">
+	    {{ range .Pages }}
+	    <div class="col-4">
+                <div class="card">
+                    <div class="card-text">
+                        <div class="card-header">
+                            <a href="{{ .Permalink }}">{{ .Title }}</a>
+                        </div>
+                        <div class="card-body">
+                            <div class="small text-muted">
+                                {{ .Description }}
+                            </div>
+                        </div>
                     </div>
-                </li>
-	        {{ end }}
-            </ul>
-	    <div class="col"></div>
-        </div> 
-    </div>
-
-    <div class="row">
-	<div class="col-2"></div>
-	<div class="col-8">
-
-            <h2>Coming up ...</h2>
-            <ul>
-                <li>Continuous Deliver = Automated Releases</li>
-                <li>Software is a Team sport - Notes on Team building</li>
-                <li>Beyond Delivery - Continous Improvement</li>
-            </ul>
-            <p>
-                Incorporating operational experience and user issues
-                back into the product Roadmap.
-            </p>
+                </div>
+            </div>
+	    {{ end }}
         </div>
-	<div class="col"></div>
     </div>
 </div>
 

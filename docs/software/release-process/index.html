@@ -30,10 +30,10 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 
 	    <nav class="navbar-nav w-100 justify-content-end">
 		<div class="nav w-100">
-  	            <a class="nav-link" href="/resume">resume </a>
-  		    <a class="nav-link" href="/about">about </a>
   		    <a class="nav-link" href="/software">software </a>
   		    <a class="nav-link" href="/notes">notes </a>
+  	            <a class="nav-link" href="/resume">resume </a>
+  		    <a class="nav-link" href="/about">about </a>
 		</div>
  	    </nav>
 	</div>
@@ -45,7 +45,7 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 	<div class="col-md-8">
 	  <h1 class="header h2 text-center pb-1">Release Process</h1>
 	    <p class="leadin align-right text-muted text-center mt-0">
-		Things really get interesting when users start using new code. This topic alone will fill volumes, just be sure there will be feedback, feature requests, bugs, opinions make sure everybody knows where to go for tracking.
+		Things really get interesting when users start using the new code. Bug reports and feature requests will start to flow in. Be ready to handle and respond to the requests.
 
 	    </p>
 	</div>
@@ -86,9 +86,28 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 	<div class="col"></div>
 	<div class="col-lg-8 pl-4 pr-4">
 	    <article class="article">
-		<p>Once the code has been commited, an action will be taken to compile a
-latest version of the code into a tarball and hoist upon the release
-server.</p>
+		<p>This is the point where software is ready to be passed along to the
+user/customer, an <em>official release</em>. We will want to formalize the
+process of releasing the softare.</p>
+<p>For example, when a new release is cut the following process may be in
+place:</p>
+<ol>
+<li>Commit to main in Github repository</li>
+<li>New <em>version number</em> is generated</li>
+<li>Automated build is triggered</li>
+<li>Automated system tests are run</li>
+<li>New binary test images are copied to a distribution server or
+pushed to production servers</li>
+<li>The actual process will vary according to many factors of the
+application</li>
+</ol>
+<p>The main point to make at this point, one phase of the software
+<em>development</em> may have been completed, for example you delivered that
+MVP!</p>
+<p>However, the journey has only just begun! If your software is
+successful, I am sure it will be! You are going to be living with it
+for a LONG time!</p>
+<p>Make it easy and predictable!</p>
 
 	    </article>
 	</div>
