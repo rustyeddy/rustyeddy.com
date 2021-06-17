@@ -3,7 +3,7 @@
 
     <div class="row">
 	<div class="col"></div>
-	<div class="col-8">
+	<div class="col-9">
 	    {{ .Content }}
 	</div>
 	<div class="col"></div>
@@ -12,19 +12,28 @@
     <div class="row">
         <div class="card-deck">
 	    {{ range .Pages }}
-	    <div class="col-4">
-                <div class="card">
-                    <div class="card-text">
-                        <div class="card-header">
-                            <a href="{{ .Permalink }}">{{ .Title }}</a>
-                        </div>
-                        <div class="card-body">
-                            <div class="small text-muted">
-                                {{ .Description }}
+            <div class="row mb-4">
+                <div class="col"></div>
+	        <div class="col-10">
+                    <div class="card">
+                        <div class="card-text">
+                            <div class="card-header">
+                                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                            </div>
+                            <div class="card-body">
+                                <div class="text-muted">
+                                    {{ .Description }}
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="small text-muted">
+                                    <a href="{{ .Permalink }}">read more ...</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="col"></div>
             </div>
 	    {{ end }}
         </div>

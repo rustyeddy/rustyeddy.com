@@ -13,7 +13,6 @@ tags:
 githubs: 
   - https://github.com/rustyeddy/sensorstation.io
 image: https://rustyeddy.sfo2.digitaloceanspaces.com/SensorStation.png
-draft: true
 ---
 
 SensorStation is built with an esp32 WRoom32 development board and a

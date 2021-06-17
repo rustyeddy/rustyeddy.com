@@ -302,6 +302,18 @@ About WPE WPE creates a cool hardware accelerated kiosk, just point at a URL and
     </item>
     
     <item>
+      <title>RedEye Webapp ~ Front End</title>
+      <link>http://rustyeddy.com/projects/redeye/redeye-gui/</link>
+      <pubDate>Wed, 08 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/projects/redeye/redeye-gui/</guid>
+      <description>About The Image The image above depicts the RedEye camera running with the Motion Detection VideoPipeline Plugin. It is identifying and tracking moving objects within the video.
+About The Webapp This Webapp was written with the Vue.js Framework. It uses Bootstrap for styling up the web page.
+Single Page Application (SPA) The website is a true Single Page Application (SPA) using the Vue Router and Vuex for state management.
+RedEye Camera API The backend is the RedEye Camera written in Go.</description>
+    </item>
+    
+    <item>
       <title>How to Cross Compile for the Raspberry Pi</title>
       <link>http://rustyeddy.com/notes/cross-compile-raspberrypi/</link>
       <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>

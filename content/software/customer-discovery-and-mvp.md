@@ -1,10 +1,9 @@
 ---
 title: Customer Discovery and MVP
 description: >
-  Customer Discovery is used to dig deep into the customer or the user
-  of the software. This is a significant and important topic that will
-  set your project on a trajectory of either success or failure. Make
-  sure you get started right.
+  We are going to dig deep into our users needs and observe how they
+  want to use the software, this will ultimately lead us to our
+  MVP. We will know exactly what to build!
 weight: 10
 ---
 
