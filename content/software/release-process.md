@@ -4,15 +4,15 @@ date: 2021-05-03
 weight: 100
 description: >
   Things really get interesting when users start using the new
-  code. Bug reports and feature requests will start to flow in. Be
-  ready to handle and respond to the requests.
+  code. Bug reports and feature requests will start to flow in. Will you be
+  ready to handle and respond to the requests?
 ---
 
 This is the point where software is ready to be passed along to the
 user/customer, an _official release_. We will want to formalize the
 process of releasing the softare.
 
-For example, when a new release is cut the following process may be in
+For example, when a new release is cut, the following process may be in
 place:
 
 1. Commit to main in Github repository
@@ -29,7 +29,7 @@ _development_ may have been completed, for example you delivered that
 MVP!
 
 However, the journey has only just begun! If your software is
-successful, I am sure it will be! You are going to be living with it
+successful, as I am sure it will be! You are going to be living with it
 for a LONG time!
 
 Make it easy and predictable!
