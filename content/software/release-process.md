@@ -3,9 +3,10 @@ title: Release Process
 date: 2021-05-03
 weight: 100
 description: >
-  Things really get interesting when users start using the new
-  code. Bug reports and feature requests will start to flow in. Will you be
-  ready to handle and respond to the requests?
+  Once code has gone through the long process of being made ready for
+  the end user it is time to let them have it.  But it is not over
+  yet, bug reports and feature requests will start to flow in, you
+  best be ready for them!
 ---
 
 This is the point where software is ready to be passed along to the
@@ -24,13 +25,15 @@ pushed to production servers
 5. The actual process will vary according to many factors of the
 application
 
-The main point to make at this point, one phase of the software
-_development_ may have been completed, for example you delivered that
-MVP!
+With every successful software project you will be doing releases
+regularly. It is best to make your release as easy and painless as
+possible.
 
-However, the journey has only just begun! If your software is
-successful, as I am sure it will be! You are going to be living with it
-for a LONG time!
+With any luck, the delivery of your very first copy of the software
+will not be the last.
 
-Make it easy and predictable!
+The journey has only just begun. You are going to be living with it
+for a LONG time.
+
+Make your software development process easy and predictable!
 

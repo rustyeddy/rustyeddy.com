@@ -106,8 +106,8 @@ Reviewers, typically don&amp;rsquo;t like (or at least don&amp;rsquo;t love) rev
       
       <guid>http://rustyeddy.com/software/release-process/</guid>
       <description>This is the point where software is ready to be passed along to the user/customer, an official release. We will want to formalize the process of releasing the softare.
-For example, when a new release is cut the following process may be in place:
- Commit to main in Github repository New version number is generated Automated build is triggered Automated system tests are run New binary test images are copied to a distribution server or pushed to production servers The actual process will vary according to many factors of the application  The main point to make at this point, one phase of the software development may have been completed, for example you delivered that MVP!</description>
+For example, when a new release is cut, the following process may be in place:
+ Commit to main in Github repository New version number is generated Automated build is triggered Automated system tests are run New binary test images are copied to a distribution server or pushed to production servers The actual process will vary according to many factors of the application  With every successful software project you will be doing releases regularly.</description>
     </item>
     
     <item>
@@ -287,6 +287,15 @@ of space and military projects.&lt;/p&gt;</description>
       <description>&lt;p&gt;I was hired to install and manage the departments first AT&amp;amp;T Unix
 Mini-computers, UUNET connection and write a bulletin board system for
 California State Educators.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>I bought a CNC Machine</title>
+      <link>http://rustyeddy.com/notes/cnc/</link>
+      <pubDate>Wed, 16 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/cnc/</guid>
+      <description>I bought a &amp;lt; $200 Sainsmart CNC machine complete with an Arduino CNC Shield! The packaging was solid, heavy and well protected. Heck I got almost $200 worth of packaging.</description>
     </item>
     
     <item>

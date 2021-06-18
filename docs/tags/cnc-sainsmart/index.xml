@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cnc, sainsmart on Rusty Eddy</title>
+    <link>http://rustyeddy.com/tags/cnc-sainsmart/</link>
+    <description>Recent content in cnc, sainsmart on Rusty Eddy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Jun 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://rustyeddy.com/tags/cnc-sainsmart/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>I bought a CNC Machine</title>
+      <link>http://rustyeddy.com/notes/cnc/</link>
+      <pubDate>Wed, 16 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/cnc/</guid>
+      <description>I bought a &amp;lt; $200 Sainsmart CNC machine complete with an Arduino CNC Shield! The packaging was solid, heavy and well protected. Heck I got almost $200 worth of packaging.</description>
+    </item>
+    
+  </channel>
+</rss>
