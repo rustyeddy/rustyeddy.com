@@ -11,30 +11,29 @@
 
     <div class="row">
 
-	    {{ range .Pages }}
-            <div class="row mb-4">
-                <div class="col"></div>
-	        <div class="col-10">
-                    <div class="card">
-                        <div class="card-text">
-                            <div class="card-header">
-                                <a href="{{ .Permalink }}">{{ .Title }}</a>
+	{{ range .Pages }}
+        <div class="row mb-4">
+            <div class="col"></div>
+	    <div class="col-8">
+                <div class="card">
+                    <div class="card-text">
+                        <div class="card-header">
+                            <a href="{{ .Permalink }}">{{ .Title }}</a>
+                        </div>
+                        <div class="card-body">
+                            <div class="text-muted">
+                                {{ .Description }}
                             </div>
-                            <div class="card-body">
-                                <div class="text-muted">
-                                    {{ .Description }}
-                                </div>
-                                <div class="small text-muted">
-                                    <a href="{{ .Permalink }}">read more ...</a>
-                                </div>
+                            <div class="small text-muted">
+                                <a href="{{ .Permalink }}">read more ...</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col"></div>
             </div>
-	    {{ end }}
-
+            <div class="col"></div>
+        </div>
+	{{ end }}
     </div>
 </div>
 
