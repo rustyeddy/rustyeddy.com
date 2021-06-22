@@ -12,7 +12,8 @@ tags:
   - freertos
 githubs: 
   - https://github.com/rustyeddy/sensorstation.io
-image: https://rustyeddy.sfo2.digitaloceanspaces.com/SensorStation.png
+image: /img/sensorstation.png
+draft: true
 ---
 
 SensorStation is built with an esp32 WRoom32 development board and a

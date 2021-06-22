@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 
-<title>Clone and Branch</title>
+<title>RedEye Webapp ~ Front End</title>
 
 <script>(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
 0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
@@ -44,10 +44,9 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="row">
 	<div class="col-md"></div>
 	<div class="col-md-8">
-	  <h1 class="header h2 text-center pb-1">Clone and Branch</h1>
+	  <h1 class="header h2 text-center pb-1">RedEye Webapp ~ Front End</h1>
 	    <p class="leadin align-right text-muted text-center mt-0">
-		Enough theory, let&#39;s talk code. Before making any changes to the code we are going to rely on git, our Version Control System to ensure that changes to code are meticulously vetted into the mainline with not a semi-colon out of place.
-
+		RedEye is smart camera software built with Open Computer Vision (OpenCV) with simple control and configuration APIs
 	    </p>
 	</div>
 	<div class="col-md"></div>
@@ -57,7 +56,11 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 	<div class="col-8">
 	    <nav class="nav justify-content-center">
                 
+                <a class="nav-link" href="https://github.com/redeyelab/redeye">github</a>
                 
+                
+                
+                <a class="nav-link" href="http://rustyeddy.com/projects/redeye">website</a>
                 
                 
                 
@@ -68,68 +71,34 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 	<div class="col"></div>
     </div>
 </div>
-<section id="main" class="container">
-
-<div class="container">
-    <div class="row pt-4 mb-5 mt-5">
-	<div class="col"></div>
-	<div class="col-8 text-center">
-	    <img class="img-fluid justify-content-center" src="" />
-	</div>
-	<div class="col"></div>
-    </div>
-</div>
-
+<div id="main body">
 <div class="container">
 
-    <div class="row mt-4">
+    <div class="row text-center mb-4">
 	<div class="col"></div>
-	<div class="col-lg-8 pl-4 pr-4">
-	    <article class="article">
-		<p>Initial changes to software are always done to a <strong>copy</strong> of the
-actual source code. This provides a local sandbox for the developer to
-make changes, experiement with fixes and do really weird things
-that will never be allowed in the final product (we will cover this in
-the peer review section).</p>
-<h2 id="clone-the-repo">Clone The Repo</h2>
-<p>Our actual &ldquo;<em>Source Code</em>&rdquo; resides in what&rsquo;s called a <em>Software
-Repository</em> which is a server in the cloud, however the work performed
-by the developer is typically done on a local <em>computer</em>.</p>
-<h3 id="branch-mainline">Branch Mainline</h3>
-<p>The Repository maintains a <em>versioned history</em> of all changes to the
-source code. The entire history of the source code can be &ldquo;played
-back&rdquo; so to speak.</p>
-<p>To support parallel development efforts by many programmers, our
-<em>Version Control System</em> (git) provides a feature called
-<em>branching</em>, where a developer can create a new <em>branch</em> which
-supports a new set of changes (history) that will not effect the main
-source code.</p>
-<p>The power of branching provides the developer a &ldquo;sandbox&rdquo; for making
-changes to their local copy of the source code for experiementation
-before the code is subsequently tested and <em>merged</em> into the main
-branch.</p>
-<h3 id="trim-branches-quickly">Trim Branches Quickly</h3>
-<p>Branches have been part of <em>VCS</em> for decades, however, despite the
-necessary benefits they provide, they can also contribute to
-duplicated code and general confusion, like: which branch did I leave
-that peach on?</p>
-<p><em>Best Practices</em> have identified short lived <em>feature</em> or I like the
-term <em>task</em> based branches are a well supported practice.</p>
-<p>A <em>feature branch</em> is created by the developer for every new task they
-work on. Once that task is complete, typically 1 to 2 days, the
-<em>feature branch</em> will then be deleted after the new code has been
-<em>commited</em> to the <em>main branch</em>.</p>
-<h2 id="sandbox-freedom">Sandbox Freedom</h2>
-<p>Our developer is now free to make all the changes she desires,
-conduct small experiments, and make mistakes with this private copy of
-code. This is becuase it&rsquo;s only available to her and does not effect anyone
-else.</p>
-<p>That is, until she needs to put her bug fix back in the &ldquo;main&rdquo; branch of code
-everyone else uses (Q&amp;A, collegues, customers). Everybody! She better
-make sure it is spot on!</p>
-<p>She also must ensure that it does not break a previously working test,
-the dreaded regression error.</p>
-<p>This leads us to the next topic, my favorite: <a href="/software/testing">testing</a></p>
+	<div class="col-6">
+	    <article class="article text-big">
+		<h3 id="about-the-image">About The Image</h3>
+<p>The image above depicts the RedEye camera running with the <em>Motion
+Detection VideoPipeline Plugin</em>. It is identifying and tracking moving
+objects within the video.</p>
+<h3 id="about-the-webapp">About The Webapp</h3>
+<p>This <em>Webapp</em> was written with the <a href="https://vuejs.org/">Vue.js
+Framework</a>. It uses
+<a href="http://getbootstrap.com">Bootstrap</a> for styling up the web page.</p>
+<h3 id="single-page-application-spa">Single Page Application (SPA)</h3>
+<p>The website is a true <em>Single Page Application (SPA)</em> using the <em>Vue
+Router</em> and <em>Vuex</em> for state management.</p>
+<h3 id="redeye-camera-api">RedEye Camera API</h3>
+<p>The backend is the RedEye Camera written in Go. It supports a:</p>
+<ul>
+<li>REST Interface</li>
+<li>MQTT for Messaging</li>
+<li>Websockets for realtime updates</li>
+<li>SPA for human interaction</li>
+</ul>
+<h3 id="interested-in-the-redeye-project">Interested in the RedEye Project?</h3>
+<p>Fnd out more here: <a href="http://rustyeddy.com/redeye">RedEye Smart Camera</a></p>
 
 	    </article>
 	</div>
@@ -138,17 +107,17 @@ the dreaded regression error.</p>
 
 </div>
 
-<div class="container mt-4">
+<div class="container">
     <div class="row">
-        <div class="col"></div>
-        <div class="col-8">
-            <script async data-uid="50dfcceaf3" src="https://skilled-producer-5787.ck.page/50dfcceaf3/index.js"></script>
-        </div>
-        <div class="col"></div>
-    </div>
+	
+    </div> 
+
 </div>
 
-	</section><footer id="footer" class="container-fluid footer small-text pt-4 border-top">
+</div>
+
+
+	</div><footer id="footer" class="container-fluid footer small-text pt-4 border-top">
     <section class="row">
 	<div class="col"></div>
 	<div class="col text-right">
@@ -160,7 +129,7 @@ the dreaded regression error.</p>
                 Last update ~
                 
 		
-                Thursday, Apr 11, 2019
+                Wednesday, Apr 8, 2020
 		
                 
             </div>
