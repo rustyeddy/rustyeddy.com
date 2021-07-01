@@ -46,7 +46,8 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 	<div class="col-md-8">
 	  <h1 class="header h2 text-center pb-1">RedEye Camera Backend</h1>
 	    <p class="leadin align-right text-muted text-center mt-0">
-		RedEye is smart camera software built with Open Computer Vision (OpenCV) with simple control and configuration APIs
+		RedEye is API driven camera server with built in capabilities of running video streams through OpenCV filters. The API provides complete control over the camera. 
+
 	    </p>
 	</div>
 	<div class="col-md"></div>
@@ -78,7 +79,15 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 	<div class="col"></div>
 	<div class="col-6">
 	    <article class="article text-big">
-		<h2 id="about-the-camera-software">About the Camera Software</h2>
+		<p>RedEye camera service softwre provides the following services:</p>
+<ol>
+<li>Camera Stream Control (play and pause)</li>
+<li>OpenCV filters to employ <em>Computer Vision</em> algorithms</li>
+<li>Snapshots can be saved locally or in the cloud</li>
+<li>Video can be saved locally or in the cloud</li>
+<li>MQTT Commands to save snapshot</li>
+</ol>
+<h2 id="about-the-camera-software">About the Camera Software</h2>
 <p>The <em>RedEye Camera</em> software streams video over <em>IP</em> through
 configurable <em>Computer Vision Pipelines</em> with example
 pipelines that include:</p>

@@ -1,6 +1,6 @@
 ---
 title: Rusty Eddy
-description: Software Engineer, Network Architect and IoT Hacker
+description: Software Engineer, Service Oriented Architect and IoT Hacker.
 date: 2020-04-10
 ---
 

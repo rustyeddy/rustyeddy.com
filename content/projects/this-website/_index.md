@@ -1,5 +1,5 @@
 ---
-title: Rusty Eddy Website
+title: How I Made This Web Site
 date: 2020-04-04
 description: > 
   This is my personal website which you happen to be looking at. It
