@@ -13,6 +13,7 @@ tags:
   - santa barbara
   - san simeon
   - morro bay
+draft: true
 ---
 
 ## The Agenda

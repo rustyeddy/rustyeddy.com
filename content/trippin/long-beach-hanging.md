@@ -9,6 +9,7 @@ description: >
 category: daytrip
 tags:
   - long beach
+draft: true
 ---
 
 ## Night Life and Food
@@ -29,4 +30,4 @@ largest commercial shipping traffic in the United States.
 The biggest of cruise ships, cargo containers Yachts, Sail boats,
 water craft and hmmm. I'm forgetting something...
 
-Oh yea, _world class deep see  fishing_ just off the coast.
+Oh yea, _world class deep see fishing_ just off the coast.
