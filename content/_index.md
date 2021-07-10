@@ -10,6 +10,13 @@ vision).
 
 ## RedEye - The Intelligent Video Network
 
+RedEye is a Streaming Video framework with _Computer Vision_ pipelines. It allows
+you to dynamically control and view a network of video cameras allowing AI computer
+vision filters to be swapped dynamically.  Live video streams, snapshots or pre-recorded
+videos can be fed into the RedEye VN. 
+
+RedEye consists of the following software components:
+
 - Camera software: _M-JPEG Streamer_ with _Computer Vision_
 - Real-Time Video Hub: _Serve Up Web App_ with _real time_ data over _websockets_
 - APP / WebUI that displays video stream filtered with AI pipelines in Real-Time.
