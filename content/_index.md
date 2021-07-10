@@ -1,6 +1,8 @@
 ---
 title: Rusty Eddy
 description: Software Engineer, Service Oriented Architect and IoT Hacker.
+languages: C/C++, Go, Python and JavaScript
+tech: OpenCV, Ansible, Cloud Automation
 date: 2020-04-10
 ---
 
@@ -20,6 +22,9 @@ RedEye consists of the following software components:
 - Camera software: _M-JPEG Streamer_ with _Computer Vision_
 - Real-Time Video Hub: _Serve Up Web App_ with _real time_ data over _websockets_
 - APP / WebUI that displays video stream filtered with AI pipelines in Real-Time.
+
+If you are interested in _streaming video_, _computer vision_ and seeing real software
+being developed now, RedEye is a very interesting project!
 
 ## How To Write Predicable Software
 
