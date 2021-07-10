@@ -6,7 +6,7 @@ tech: OpenCV, Ansible, Cloud Automation
 date: 2020-04-10
 ---
 
-I like to write software that likes to make hardware **talk**
+I like to write software that makes hardware **talk**
 (computer networks), **move** (Robotics) and **see** (computer
 vision). 
 
@@ -23,15 +23,23 @@ RedEye consists of the following software components:
 - Real-Time Video Hub: _Serve Up Web App_ with _real time_ data over _websockets_
 - APP / WebUI that displays video stream filtered with AI pipelines in Real-Time.
 
-If you are interested in _streaming video_, _computer vision_ and seeing real software
-being developed now, RedEye is a very interesting project!
+If you are interested in _streaming video_, _computer vision_ and
+seeing real software being developed now, RedEye just might grab your
+interest!
 
 ## How To Write Predicable Software
 
-I have started this little project to do a *much* better job of
-documenting these "Best Practices" and with *your help*, I hope to
-make them useful for more than just myself, but anybody running a
-small development project. Like you, maybe?  :)
+I have been writing software for nearly 3 decades (sheesh), I have
+been part of some massive failures and a few great successes and a
+variety of _delivered_ projects of various quality.
+
+I have started this little project to collect and document what I
+consider my "Best Practices" for delivering exactly the software that
+is needed in a timely and **predictable** manner.
+
+With *your help*, I hope to make them useful for more than just
+myself, but anybody running a small development project. Like you,
+maybe?  :)
 
 If your interested and would like to comment, check out my [Software Best Practices Project](/software) and let me 
 know what you think?
