@@ -12,6 +12,7 @@ tech:
   - JavaScript
   - VueJS
   - Axiom and Websocket
+draft: true
 ---
 
 ### About The Image
