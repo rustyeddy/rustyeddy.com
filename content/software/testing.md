@@ -1,11 +1,15 @@
 ---
-title: Testing Software
+title: Improving Quality by Testing Software
 date: 2019-05-04
 weight: 60
 description: >
-  Testing software is pretty self explanatory, it seems. The technical
-  details are many, but more important are the positive ramifications as it evolves
-  throughout the project that are profound. Let me explain why ...
+  Developers when programming use VCS to create a temporary private
+  branch to work from to avoid negatively effecting others while
+  changing code. The developer and rest of the team rely on Software
+  Testing to ensure new and changed code does what is required of it,
+  and the new code MUST NOT break existing functionality. Getting
+  testing right has many profound positive effects on the project, let
+  me explain.
 ---
 
 ## Testing Unit and Systems

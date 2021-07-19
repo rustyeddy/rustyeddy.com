@@ -45,11 +45,11 @@ Good Kanban Reference My goal is NOT to describe Kanban itself. Instead, here is
     </item>
     
     <item>
-      <title>Tracking Changes to Code</title>
-      <link>http://rustyeddy.com/software/tracking-changes-to-code/</link>
+      <title>Version Control and Tracking Progress</title>
+      <link>http://rustyeddy.com/software/vcs-tracking-progress/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/software/tracking-changes-to-code/</guid>
+      <guid>http://rustyeddy.com/software/vcs-tracking-progress/</guid>
       <description>It frightens me everytime I am introduced to a new software project where the &amp;ldquo;latest&amp;rdquo; source code is somebodies folder somewhere with copies being passed around on thumb drives.
 Such a lack process invites confusion from the beginning and inspires questions like:
  which copy of the file has your changes?
@@ -57,7 +57,7 @@ Such a lack process invites confusion from the beginning and inspires questions 
     </item>
     
     <item>
-      <title>Testing Software</title>
+      <title>Improving Quality by Testing Software</title>
       <link>http://rustyeddy.com/software/testing/</link>
       <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
       
@@ -68,7 +68,7 @@ Test Driven Development Test Driven Development (TDD) a principal for which I ag
     </item>
     
     <item>
-      <title>Peer Reviews</title>
+      <title>Peer Reviews - And Culture</title>
       <link>http://rustyeddy.com/software/peer-review/</link>
       <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
       
@@ -79,11 +79,11 @@ Reviewers, typically don&amp;rsquo;t like (or at least don&amp;rsquo;t love) rev
     </item>
     
     <item>
-      <title>Mainlining Your Vetted Code</title>
-      <link>http://rustyeddy.com/software/commit-and-merge/</link>
+      <title>Commit Code and Make History</title>
+      <link>http://rustyeddy.com/software/commit-code-make-history/</link>
       <pubDate>Sun, 04 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/software/commit-and-merge/</guid>
+      <guid>http://rustyeddy.com/software/commit-code-make-history/</guid>
       <description>Github and making the Commitment Now it is time for the developer to commit the changes she has been working on, tested and pushed through the peer reviews. This step is pretty simple, however, we want to make sure we are doing it correctly.
  Todo example commit
  When the code is merged into the main or master repository, just like commitments, it will be accompanied by the log comments that go along with the log files.</description>

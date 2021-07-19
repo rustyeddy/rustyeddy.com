@@ -1,8 +1,9 @@
 ---
-title: Peer Reviews
+title: Peer Reviews - And Culture
 date: 2020-02-02
 weight: 70
 description: >
+  A necessary part of building a culture 
   Making changes to code on one's own in isolation can be problematic
   for a number of reasons, however, when you get a pair of scrutinizing
   eyes on your code, all sorts of things are going to come up that you
