@@ -7,6 +7,7 @@ description: >
   code we are going to rely on git, our Version Control System to
   ensure that changes to code are meticulously vetted into the
   mainline with not a semi-colon out of place.
+draft: true
 ---
 
 Initial changes to software are always done to a **copy** of the
