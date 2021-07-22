@@ -10,6 +10,7 @@ site: http://rustyeddy.com/projects/redeye
 github: https://github.com/redeyelab/redeye
 image: /img/redeye-cmdline-snapshot.png
 logo: /img/redeye-right.png
+draft: true
 ---
 
 A _RedEye camera_ is a _Video Streamer_ software that can be controlled

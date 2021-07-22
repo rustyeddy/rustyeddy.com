@@ -203,6 +203,11 @@
   </url>
   
   <url>
+    <loc>http://rustyeddy.com/projects/redeye/</loc>
+    <lastmod>2020-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://rustyeddy.com/notes/cross-compile-raspberrypi/</loc>
     <lastmod>2020-02-07T00:00:00+00:00</lastmod>
   </url>
