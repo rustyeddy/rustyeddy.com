@@ -4,46 +4,65 @@ date: 2021-07-22
 description: >
   Take some inexpensive Raspberry Pi's and maybe a Jetson Nano or two
   and build applications around streaming video, Computer Vision and
-  AI, then combine that with physical computing and you have a
+  AI. Combine those ingrediants with physical computing and you have a
   robotics application or an addition to your industrial manufacturing
   process. Want to build an object tracking video application?
 ---
 
-RedEye was built from some common elements I used to build an _Automated
+## What is RedEye About?
+
+RedEye is built from common elements I used to build an _Automated
 Irrigation System_ for my Organic Garden. I thought it would be
 interesting to add a _Computer Vision_ algorithm for _"Pest
 Detection_" (I'll let you know how that goes).
 
-I have also been involved in similar application to add _Computer
-Vision_ to an _Industrial Control System_ a very interesting topic,
-but an entirely different conversation.
+A similar application to add _Computer Vision_ to an _Industrial
+Control System_ is a very interesting project but a whole different
+conversation. 
 
-## RedEye is OpenSource
+Anyway, the commonalities with organic garding and industrial
+automation: streaming video, computer vision, physical
+computing, network connectivity and a sexy WebApp have got me really
+excited and compelled me to develop RedEye.
+
+### RedEye is OpenSource
 
 I started an OpenSource _"passion project"_ to use a network of
-in-expensive cameras to make it easy to build really interesting, and
-potentially world changing applications by adding some computer video
-with some smarts.
+in-expensive cameras to make it easy to build really interesting and
+potentially world changing applications by adding some smarts to
+multiple video streams.
 
-You can think of RedEye, in a way as the combination of a network
+You can think of RedEye sort of lika a combination of a network
 _Security Camera_ system combined with an _Industrial Control System_
-that can integrate Computer Vision and AI into an application.
+that integrates Computer Vision and AI into an application.
 
-## What is RedEye?
+### Running RedEye
 
-RedEye is a piece of software that runs on an inexpensive, networked,
-Linux type of computer. A _Raspberry Pi_ or _NVidia Jetson Nano_ or a
-_Laptop with built in camera_ can become a RedEye camera.
+RedEye is just a piece of software that runs on most common _Linux_
+computers with a camera. Either build or download the appropriate
+image on one of the supported devices and start it up.
 
-The RedEye _smart_ cameras have been to communicate with one another
-as well as easily integrated into external control systems and
-applications. 
+> TODO - Create images for download
+
+Runs on an inexpensive, networked, Linux type of computer. A
+_Raspberry Pi_ or _NVidia Jetson Nano_ or a _Laptop with built in
+camera_ can become a RedEye camera.
+
+## What Makes RedEye so Cool?
+
+The RedEye _smart_ cameras have a plugin system that will allow you
+load one of our cool example applications, or of course create your
+own! 
+
+RedEye cameras know who to find one other, applications can be
+programmed to manage one or more of these cameras. Standard network
+management tools can be used to manage and troubleshoot cameras.
 
 That means a _RedEye_ application is not just about a single camera,
 it is about application built on the collective intelligence of all
 cameras in the network. 
 
-## RedEye Features
+### RedEye Features
 
 1. Camera Control: complete control of video frames read from camera
 2. WebUI with live video stream
