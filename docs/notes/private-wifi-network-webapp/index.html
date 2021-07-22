@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 
-<title>rpi</title>
+<title>How to build a private wifi network for your webapp</title>
 
 <script>(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
 0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
@@ -45,9 +45,10 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="row">
 	<div class="col-md"></div>
 	<div class="col-md-8">
-	  <h1 class="header h2 text-center pb-1">rpi</h1>
+	  <h1 class="header h2 text-center pb-1">How to build a private wifi network for your webapp</h1>
 	    <p class="leadin align-right text-muted text-center mt-0">
-		
+		Thier are times when a device loaded with software needs to be configured without a keyboard or monitor. A WebApp is a great way to do just that, but what if you can&#39;t or don&#39;t want to connect to an existing Wifi network. We will discuss these scenarios in this document. 
+
 	    </p>
 	</div>
 	<div class="col-md"></div>
@@ -69,44 +70,77 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     </div>
 </div>
 <div id="main body">
-<div class="container">
+<div class="container"><div class="row">
+    <div class="col"></div>
+    <div class="col-md-8 hero-text">
+	<article class="article">
+	  <p>I work with <em>physical computing</em> or devices that have rather
+sophisticated software that needs to be configured, monitored and
+controlled.</p>
+<h2 id="building-a-private-wifi">Building a Private Wifi</h2>
+<p>Here is the situation, I just plugged a white box into the wall and it
+has a steady green light. I can see two other lights, one of which is
+red. The other two lights are off.</p>
+<p>This device is pretty cool, it will control the lights in my garage, I
+have a well lit garage. But I need to configure this thing to set up
+lighting schedules, basically synchronize with daylight.</p>
+<h3 id="making-a-wireless-connection">Making a Wireless Connection</h3>
+<p>I can&rsquo;t stick a monitor or a keyboard cable into this thing. However,
+since my device is running good old <em>Linux</em> with a nice Wifi chip, we
+are going to turn it into an Access Point (AP).</p>
+<p>To make this connection happen we are going to do the following:</p>
+<ol>
+<li>Install and configure <em>Device</em> as an AP with a specific SSID</li>
+<li>Device with a browser like Firefox connects with wireless SSID</li>
+<li>Browser (firefox) connects to device URL</li>
+<li>Device sends configuration pages to Browser</li>
+<li>User configures the device then saves and exits</li>
+</ol>
+<p>At this point the device operates on it&rsquo;s own, not needing anymore
+interaction. However, this same method of configuring the device can
+used to monitor through a dashboard.</p>
+<h3 id="configuring-the-ap">Configuring the AP</h3>
+<p><em>HostAPd</em> is a very popular <em>Linux</em> tool that will help us easily
+configure the <em>Device</em> as an <em>AP</em> advertising a specific SSID.</p>
+<p><em>hostapd</em> is available from <em>Debian</em> distributions with the familar
+apt packaging.</p>
+<blockquote>
+<p>apt-get install -y hostapd</p>
+</blockquote>
+<p>This needs to be configured, here is what I do to help configure every
+device with a <em>unique</em> but <em>recognizable</em> <em>SSID</em>. The WebApp user
+should have a simple time connecting with the private network and
+subsequently the browser connects to the server and bang, off and
+running.</p>
+<h2 id="reasons-for-a-private-wifi">Reasons for a Private Wifi</h2>
+<p>Ok. Why not just connect to an exiting network? In some cases we will
+connect to an existing network and hence take advantage of <em>Internet
+Services</em> and on premise infrastructure.</p>
+<h3 id="no-access-allowed">No Access Allowed</h3>
+<p>There are many cases, like a top secret skunk works projects or an
+industrial production facility where they want to isolate unnecessary
+external devices from internal infra structure.</p>
+<h3 id="reduce-security-vulnerabilities">Reduce Security Vulnerabilities</h3>
+<p>Creating private networks allows control of who and how that network
+can be accessed. By limiting access to external networks from my
+lighting system and am reducing the surface of my security
+vulnerabilities.</p>
+<h3 id="no-access-at-all">No Access At All</h3>
+<p>Sometimes we are in the middle of almost nowhere, like the High
+Sierra&rsquo;s, there is no <em>Internet</em> or Wifi Infrastructure. And good luck
+trying to get a cell phone signal (hey T-Mobile!) up there.</p>
+<p>However, a little wifi connectivity can still be had! Thank You <em>Solar
+Power!</em>.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>This article is not finished, I ran out of time. I will finish it, but
+only if somebody asks me to.  Heck if nobody will read it, then should
+I spend the time?</p>
+<p>Is the sound of a singing bird beautiful if nobody hear&rsquo;s it?</p>
 
-    <div class="row mt-5">
-	<div class="col"></div> 
-	<div class="col-8">
-	    <article class="article">
-		
-	    </article>
-	</div>
-	<div class="col"></div> 
+	</article>
     </div>
-
-    
-    <div class="row">
-	<div class="col"></div> 
-	<div class="col-8">
-	    <div class="title">
-		<a href="http://rustyeddy.com/notes/ansible/">Ansible</a>
-	    </div>
-	</div> 
-	<div class="col"></div>
-    </div>
-
-    <div class="row mb-4">
-	<div class="col text-mute small text-right">
-	    <div class="date">
-		April 3, 2017
-	    </div>
-	</div> 
-	<div class="col-8">
-	    <div class="description">
-		Ansible is an ideal tool to efficiently configure and manage a network of computers.  See how I use ansible to manage a fleet of Raspberry PIs and their build servers.
-
-	    </div>
-	</div> 
-	<div class="col"></div>
-    </div>
-    
+    <div class="col"></div>
+</div>
 </div>
 
 
@@ -121,6 +155,8 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 	    <div>
                 Last update ~
                 
+		
+                Thursday, Jul 22, 2021
 		
                 
             </div>

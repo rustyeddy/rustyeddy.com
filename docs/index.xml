@@ -280,6 +280,17 @@ California State Educators.&lt;/p&gt;</description>
     </item>
     
     <item>
+      <title>How to build a private wifi network for your webapp</title>
+      <link>http://rustyeddy.com/notes/private-wifi-network-webapp/</link>
+      <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://rustyeddy.com/notes/private-wifi-network-webapp/</guid>
+      <description>I work with physical computing or devices that have rather sophisticated software that needs to be configured, monitored and controlled.
+Building a Private Wifi Here is the situation, I just plugged a white box into the wall and it has a steady green light. I can see two other lights, one of which is red. The other two lights are off.
+This device is pretty cool, it will control the lights in my garage, I have a well lit garage.</description>
+    </item>
+    
+    <item>
       <title>I bought a CNC Machine</title>
       <link>http://rustyeddy.com/notes/cnc/</link>
       <pubDate>Wed, 16 Jun 2021 00:00:00 +0000</pubDate>
