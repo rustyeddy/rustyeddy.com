@@ -4,9 +4,9 @@ date: 2021-07-22
 description: >
   Take some inexpensive Raspberry Pi's and maybe a Jetson Nano or two
   and build applications around streaming video, Computer Vision and
-  AI. Combine those ingrediants with physical computing and you have a
+  AI. Combine those ingredients with physical computing and you have a
   robotics application or an addition to your industrial manufacturing
-  process. Want to build an object tracking video application?
+  process. 
 ---
 
 ## What is RedEye About?
@@ -16,14 +16,9 @@ Irrigation System_ for my Organic Garden. I thought it would be
 interesting to add a _Computer Vision_ algorithm for _"Pest
 Detection_" (I'll let you know how that goes).
 
-A similar application to add _Computer Vision_ to an _Industrial
-Control System_ is a very interesting project but a whole different
-conversation. 
-
-Anyway, the commonalities with organic garding and industrial
-automation: streaming video, computer vision, physical
-computing, network connectivity and a sexy WebApp have got me really
-excited and compelled me to develop RedEye.
+RedEye makes the job of creating _streaming video applications_ with
+_Artificial Intelligence_ and _Physical Computing_ significantly easier
+than it is now.
 
 ### RedEye is OpenSource
 
@@ -44,9 +39,8 @@ image on one of the supported devices and start it up.
 
 > TODO - Create images for download
 
-Runs on an inexpensive, networked, Linux type of computer. A
-_Raspberry Pi_ or _NVidia Jetson Nano_ or a _Laptop with built in
-camera_ can become a RedEye camera.
+Running RedEye is really just as easy as downloading it and starting
+it up!
 
 ## What Makes RedEye so Cool?
 
@@ -54,12 +48,12 @@ The RedEye _smart_ cameras have a plugin system that will allow you
 load one of our cool example applications, or of course create your
 own! 
 
-RedEye cameras know who to find one other, applications can be
+RedEye cameras know how to find one other, applications can be
 programmed to manage one or more of these cameras. Standard network
 management tools can be used to manage and troubleshoot cameras.
 
 That means a _RedEye_ application is not just about a single camera,
-it is about application built on the collective intelligence of all
+it is about applications built on the collective intelligence of all
 cameras in the network. 
 
 ### RedEye Features
@@ -71,8 +65,7 @@ cameras in the network.
 _MQTT_ and various other micro-controller style I/O support
 5. MQTT messaging for Integration with real time applications
 5. REST Interface for easy configuration and monitoring
-6. Websockets for a RealTime dashboard. Not just live video, see
-live sensor data as well.
+6. Websockets provide RealTime data updates necessary for live dashboards
 7. Optional Private wireless networks independent of exiting Wifi
 Infrastructure 
 
