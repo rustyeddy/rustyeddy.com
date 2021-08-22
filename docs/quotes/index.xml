@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Great Quotes on Rusty Eddy</title>
-    <link>http://rustyeddy.com/quotes/</link>
+    <link>http://www.rustyeddy.com/quotes/</link>
     <description>Recent content in Great Quotes on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 01 Apr 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://rustyeddy.com/quotes/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.rustyeddy.com/quotes/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>http://rustyeddy.com/quotes/massively-connected/</link>
+      <link>http://www.rustyeddy.com/quotes/massively-connected/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/quotes/massively-connected/</guid>
+      <guid>http://www.rustyeddy.com/quotes/massively-connected/</guid>
       <description>ZeroMQ ZGuide   We live in a connected world, and modern software has to navigate this world. So the building blocks for tomorrow&amp;#39;s very largest solutions are connected and massively parallel. It&amp;#39;s not enough for code to be &amp;#34;strong and silent&amp;#34; any more. Code has to talk to code. Code has to be chatty, sociable, well-connected. Code has to run like the human brain, trillions of individual neurons firing off messages to each other, a massively parallel network with no central control, no single point of failure, yet able to solve immensely difficult problems.</description>
     </item>
     

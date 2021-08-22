@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>The RedEye Intelligent Video Network Project on Rusty Eddy</title>
-    <link>http://rustyeddy.com/projects/</link>
+    <link>http://www.rustyeddy.com/projects/</link>
     <description>Recent content in The RedEye Intelligent Video Network Project on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 14 May 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://rustyeddy.com/projects/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.rustyeddy.com/projects/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>spi on Rusty Eddy</title>
-    <link>http://rustyeddy.com/tags/spi/</link>
+    <link>http://www.rustyeddy.com/tags/spi/</link>
     <description>Recent content in spi on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 25 Mar 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://rustyeddy.com/tags/spi/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.rustyeddy.com/tags/spi/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The NRF240L1 RF Transceiver</title>
-      <link>http://rustyeddy.com/notes/nrf24l01/</link>
+      <link>http://www.rustyeddy.com/notes/nrf24l01/</link>
       <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/nrf24l01/</guid>
+      <guid>http://www.rustyeddy.com/notes/nrf24l01/</guid>
       <description>This RC reciever chip is very easy to use out of the box, yet provides some very sophisticated capabilities. The first project We&amp;rsquo;ll start using this chip will be a remote control Joystick for our mobile robot.
 Todos:  point to the datasheet load personal photos of my project with NRF20L  pull the image from evernote   fritz a diagram post code that I use and or wrote Try to do an eagle cad  Source Voltage According to Benjamin David Fraser Plugging the NRF24L02 directly into the Arduino 3.</description>
     </item>

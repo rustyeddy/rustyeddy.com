@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>rtos on Rusty Eddy</title>
-    <link>http://rustyeddy.com/tags/rtos/</link>
+    <link>http://www.rustyeddy.com/tags/rtos/</link>
     <description>Recent content in rtos on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 25 Apr 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://rustyeddy.com/tags/rtos/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.rustyeddy.com/tags/rtos/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The ESP32</title>
-      <link>http://rustyeddy.com/notes/esp32/</link>
+      <link>http://www.rustyeddy.com/notes/esp32/</link>
       <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/esp32/</guid>
+      <guid>http://www.rustyeddy.com/notes/esp32/</guid>
       <description>You need to push the RESET button to get them to write flash.
 A power packed chip that I have just started playing with. Give some quick specs here: and compare with other well known options (arduino&amp;rsquo;s, stm32 or Raspberry Pi.
 Standout Features  Builtin Wifi &amp;amp; BT and others Dual Core Powerful esp-idf FreeRTOS (Arduino optional) Great Feature Set!  Usage Interactive Console over UART This demonstrates using the serial port for an interactive console while ESP is running other things.</description>

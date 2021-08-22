@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>motors on Rusty Eddy</title>
-    <link>http://rustyeddy.com/categories/motors/</link>
+    <link>http://www.rustyeddy.com/categories/motors/</link>
     <description>Recent content in motors on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 14 May 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://rustyeddy.com/categories/motors/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.rustyeddy.com/categories/motors/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Raspberry Pi Motor Control Software</title>
-      <link>http://rustyeddy.com/notes/rpi-motor-control-service/</link>
+      <link>http://www.rustyeddy.com/notes/rpi-motor-control-service/</link>
       <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/rpi-motor-control-service/</guid>
+      <guid>http://www.rustyeddy.com/notes/rpi-motor-control-service/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;TODO ~ replace image with one of the Raspberry Pi Controller&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -28,10 +28,10 @@ REST APIs, as well as directly with the Skidder python library.&lt;/p&gt;</descr
     
     <item>
       <title>Arduino Motor Control Software</title>
-      <link>http://rustyeddy.com/notes/arduino-motor-controllers/</link>
+      <link>http://www.rustyeddy.com/notes/arduino-motor-controllers/</link>
       <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/arduino-motor-controllers/</guid>
+      <guid>http://www.rustyeddy.com/notes/arduino-motor-controllers/</guid>
       <description>Pictured about is the OSEPP v2 Motor Shield which can be used as a functional replacement to the Adafruit v2 motorshield, the motorshield I recommend.
  Source code can be found here http://github.com/mobilerobot-io/arduino/ within the src/mctl directory.
  Arduino Motorsheild and Distributed Controls The software in the repository is to be loaded on an Arduino with either an Adafruit v2 Arduino or OSEPP 6612 MotorShield. The software accepts commands as incoming text strings from one of several possible serial inputs; UART, RF Radio, Blue Tooth, etc.</description>
@@ -39,10 +39,10 @@ REST APIs, as well as directly with the Skidder python library.&lt;/p&gt;</descr
     
     <item>
       <title>Inexpensive Motor Controllers for Arduino and Raspberry Pi</title>
-      <link>http://rustyeddy.com/notes/motor-controlor-notes/</link>
+      <link>http://www.rustyeddy.com/notes/motor-controlor-notes/</link>
       <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/motor-controlor-notes/</guid>
+      <guid>http://www.rustyeddy.com/notes/motor-controlor-notes/</guid>
       <description>&lt;p&gt;I prefer to use an Arduino with a Motor Controller over say a
 Raspberry Pi with a motor-controller.  I believe the Arudino has
 better support for dedicated Real-time software vs. the Raspberry Pi

@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CNC - Computer Controlled Dremel on Rusty Eddy</title>
-    <link>http://rustyeddy.com/cnc/</link>
+    <link>http://www.rustyeddy.com/cnc/</link>
     <description>Recent content in CNC - Computer Controlled Dremel on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 10 May 2021 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://rustyeddy.com/cnc/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.rustyeddy.com/cnc/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

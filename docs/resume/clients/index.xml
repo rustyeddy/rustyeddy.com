@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Eddy Consulting, LLC on Rusty Eddy</title>
-    <link>http://rustyeddy.com/resume/clients/</link>
+    <link>http://www.rustyeddy.com/resume/clients/</link>
     <description>Recent content in Eddy Consulting, LLC on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 21 Sep 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://rustyeddy.com/resume/clients/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.rustyeddy.com/resume/clients/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Radian Laser</title>
-      <link>http://rustyeddy.com/resume/clients/radian-laser/</link>
+      <link>http://www.rustyeddy.com/resume/clients/radian-laser/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/clients/radian-laser/</guid>
+      <guid>http://www.rustyeddy.com/resume/clients/radian-laser/</guid>
       <description>&lt;p&gt;Radian is a small, fast moving startup that sells Laser Engravers and
 Cutters. I manage five software projects, including two Web
 Applications for the control and calibration of the Laser system. I
@@ -29,10 +29,10 @@ products Firmaware and Fleet Management system.&lt;/p&gt;
     
     <item>
       <title>Cloud Trek</title>
-      <link>http://rustyeddy.com/resume/clients/alchemy/</link>
+      <link>http://www.rustyeddy.com/resume/clients/alchemy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/clients/alchemy/</guid>
+      <guid>http://www.rustyeddy.com/resume/clients/alchemy/</guid>
       <description>&lt;p&gt;Alchemy Networks is an indepently owned service provider. I automated
 the provisioning of their Private Cloud Service offering. I was an
 individual contributor on this project. I collaborated with another
@@ -44,10 +44,10 @@ developer.&lt;/p&gt;
     
     <item>
       <title>DirecTV / AT&amp;T</title>
-      <link>http://rustyeddy.com/resume/clients/att/</link>
+      <link>http://www.rustyeddy.com/resume/clients/att/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/clients/att/</guid>
+      <guid>http://www.rustyeddy.com/resume/clients/att/</guid>
       <description>&lt;p&gt;I was hired by DirecTV (and subsequently AT&amp;amp;T) to help lead the new
 Software Defined Networking (SDN) team. We were tasked with replacing
 the companies aging production Video Distribution Network with a new
@@ -63,10 +63,10 @@ modernized design. Project goals included:&lt;/p&gt;
     
     <item>
       <title>Sierra Hydrographics</title>
-      <link>http://rustyeddy.com/resume/clients/sierra-hydrog/</link>
+      <link>http://www.rustyeddy.com/resume/clients/sierra-hydrog/</link>
       <pubDate>Sat, 02 Jan 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/clients/sierra-hydrog/</guid>
+      <guid>http://www.rustyeddy.com/resume/clients/sierra-hydrog/</guid>
       <description>&lt;p&gt;Led the design and development of automated data collection for
 hydrological gauging stations.  Data is gathered by pulling data from
 line of sight telemetry radios and NOAA/LRGS satellite ground
@@ -79,10 +79,10 @@ calculations and alert monitoring.&lt;/p&gt;
     
     <item>
       <title>Green Hills Software</title>
-      <link>http://rustyeddy.com/resume/clients/green-hills/</link>
+      <link>http://www.rustyeddy.com/resume/clients/green-hills/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/clients/green-hills/</guid>
+      <guid>http://www.rustyeddy.com/resume/clients/green-hills/</guid>
       <description>&lt;p&gt;I worked on a small team that added multicast forwarding to the &lt;em&gt;Integrity&lt;/em&gt; RTOS
 kernal.  Modified multicast routing daemon to run on same operating
 system allowing the product to serve as the foundation for a military
@@ -95,10 +95,10 @@ suite of routing protocols.&lt;/p&gt;
     
     <item>
       <title>The IMS Company</title>
-      <link>http://rustyeddy.com/resume/clients/ims-company/</link>
+      <link>http://www.rustyeddy.com/resume/clients/ims-company/</link>
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/clients/ims-company/</guid>
+      <guid>http://www.rustyeddy.com/resume/clients/ims-company/</guid>
       <description>&lt;p&gt;Led a project to replicate entertainment media (music, video and
 games) from a single media source to hundreds of in­flight
 entertainment units with minimal redundancy.  Contributed to the

@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>How I Made This Web Site on Rusty Eddy</title>
-    <link>http://rustyeddy.com/projects/this-website/</link>
+    <link>http://www.rustyeddy.com/projects/this-website/</link>
     <description>Recent content in How I Made This Web Site on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 04 Apr 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://rustyeddy.com/projects/this-website/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.rustyeddy.com/projects/this-website/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

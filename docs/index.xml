@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rusty Eddy</title>
-    <link>http://rustyeddy.com/</link>
+    <link>http://www.rustyeddy.com/</link>
     <description>Recent content on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://rustyeddy.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.rustyeddy.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Software is Hard</title>
-      <link>http://rustyeddy.com/software/software-is-hard/</link>
+      <link>http://www.rustyeddy.com/software/software-is-hard/</link>
       <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/software/software-is-hard/</guid>
+      <guid>http://www.rustyeddy.com/software/software-is-hard/</guid>
       <description>Why Is Software So Difficult? Software development projects are one of the most notoriously mis-understood and incorrectly managed of all the common processes used throughout the business world.
 There are a number of reasons for software projects being classified as a disastor so often. Software often is solving a complex problem that unfortunately can&amp;rsquo;t be seen.
 Perhaps the worst problem with software projects are the diverging expectations between developers and users.</description>
@@ -24,10 +24,10 @@ Perhaps the worst problem with software projects are the diverging expectations 
     
     <item>
       <title>Customer Discovery and MVP</title>
-      <link>http://rustyeddy.com/software/customer-discovery-and-mvp/</link>
+      <link>http://www.rustyeddy.com/software/customer-discovery-and-mvp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/software/customer-discovery-and-mvp/</guid>
+      <guid>http://www.rustyeddy.com/software/customer-discovery-and-mvp/</guid>
       <description>Customer Discovery consists of one or more customer discovery sessions, where all users and owners of the software will be interviewed for their expectations, needs and desires for the upcoming software project.
 User Stories The information gathered from these sessions are then articulated in a series of non-technical descriptions of how the software is used by everybody.
 These descriptions of the software requirements are often referred to as User Stories. Basically, each story walks through one of the ways in which the planned software will be used.</description>
@@ -35,10 +35,10 @@ These descriptions of the software requirements are often referred to as User St
     
     <item>
       <title>Organizing Software Projects with Kanban</title>
-      <link>http://rustyeddy.com/software/kanban/</link>
+      <link>http://www.rustyeddy.com/software/kanban/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/software/kanban/</guid>
+      <guid>http://www.rustyeddy.com/software/kanban/</guid>
       <description>Kanban is fantastically simple. We will create a board with 3 columns, Todo, Work In Progress and Complete.
 Each column is populated with a single card for every task that must be done. The cards are prioritized and move through the system as the work progresses.
 Good Kanban Reference My goal is NOT to describe Kanban itself. Instead, here is a good video if you are not already familiar with it.</description>
@@ -46,10 +46,10 @@ Good Kanban Reference My goal is NOT to describe Kanban itself. Instead, here is
     
     <item>
       <title>Version Control and Tracking Progress</title>
-      <link>http://rustyeddy.com/software/vcs-tracking-progress/</link>
+      <link>http://www.rustyeddy.com/software/vcs-tracking-progress/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/software/vcs-tracking-progress/</guid>
+      <guid>http://www.rustyeddy.com/software/vcs-tracking-progress/</guid>
       <description>It frightens me everytime I am introduced to a new software project where the &amp;ldquo;latest&amp;rdquo; source code is somebodies folder somewhere with copies being passed around on thumb drives.
 Such a lack process invites confusion from the beginning and inspires questions like:
  which copy of the file has your changes?
@@ -58,10 +58,10 @@ Such a lack process invites confusion from the beginning and inspires questions 
     
     <item>
       <title>Improving Quality by Testing Software</title>
-      <link>http://rustyeddy.com/software/testing/</link>
+      <link>http://www.rustyeddy.com/software/testing/</link>
       <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/software/testing/</guid>
+      <guid>http://www.rustyeddy.com/software/testing/</guid>
       <description>Testing Unit and Systems Before any developers new code can be integrated into the mainline production code base, it must be tested, vetted and peer reviewed.
 Software Testing has been written about extensively, so I won&amp;rsquo;t spend time here discussing testing directly, as there are as many ways to test software as there are technologies.
 Test Driven Development Test Driven Development (TDD) a principal for which I agree is necessary, but I don&amp;rsquo;t always adhere to in practice.</description>
@@ -69,10 +69,10 @@ Test Driven Development Test Driven Development (TDD) a principal for which I ag
     
     <item>
       <title>Peer Reviews - And Culture</title>
-      <link>http://rustyeddy.com/software/peer-review/</link>
+      <link>http://www.rustyeddy.com/software/peer-review/</link>
       <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/software/peer-review/</guid>
+      <guid>http://www.rustyeddy.com/software/peer-review/</guid>
       <description>A Peer Review is the process of one or more peers knowledgable about your code who can examine and scrutinize every line. This is a painful process, but so necessary.
 Peer Reviews Are Painful but Worth IT! For the programmer, that means having your work criticized by other people. Maybe even people that think they are smarter than you, but are not.
 Reviewers, typically don&amp;rsquo;t like (or at least don&amp;rsquo;t love) reviewing other peoples code.</description>
@@ -80,10 +80,10 @@ Reviewers, typically don&amp;rsquo;t like (or at least don&amp;rsquo;t love) rev
     
     <item>
       <title>Commit Code and Make History</title>
-      <link>http://rustyeddy.com/software/commit-code-make-history/</link>
+      <link>http://www.rustyeddy.com/software/commit-code-make-history/</link>
       <pubDate>Sun, 04 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/software/commit-code-make-history/</guid>
+      <guid>http://www.rustyeddy.com/software/commit-code-make-history/</guid>
       <description>Github and making the Commitment Now it is time for the developer to commit the changes she has been working on, tested and pushed through the peer reviews. This step is pretty simple, however, we want to make sure we are doing it correctly.
  Todo example commit
  When the code is merged into the main or master repository, just like commitments, it will be accompanied by the log comments that go along with the log files.</description>
@@ -91,10 +91,10 @@ Reviewers, typically don&amp;rsquo;t like (or at least don&amp;rsquo;t love) rev
     
     <item>
       <title>Release Process</title>
-      <link>http://rustyeddy.com/software/release-process/</link>
+      <link>http://www.rustyeddy.com/software/release-process/</link>
       <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/software/release-process/</guid>
+      <guid>http://www.rustyeddy.com/software/release-process/</guid>
       <description>This is the point where software is ready to be passed along to the user/customer, an official release. We will want to formalize the process of releasing the softare.
 For example, when a new release is cut, the following process may be in place:
  Commit to main in Github repository New version number is generated Automated build is triggered Automated system tests are run New binary test images are copied to a distribution server or pushed to production servers The actual process will vary according to many factors of the application  With every successful software project you will be doing releases regularly.</description>
@@ -102,19 +102,19 @@ For example, when a new release is cut, the following process may be in place:
     
     <item>
       <title>University of Southern California ~ MSCS</title>
-      <link>http://rustyeddy.com/resume/edu/usc/</link>
+      <link>http://www.rustyeddy.com/resume/edu/usc/</link>
       <pubDate>Tue, 02 Jan 1996 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/edu/usc/</guid>
+      <guid>http://www.rustyeddy.com/resume/edu/usc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Radian Laser</title>
-      <link>http://rustyeddy.com/resume/clients/radian-laser/</link>
+      <link>http://www.rustyeddy.com/resume/clients/radian-laser/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/clients/radian-laser/</guid>
+      <guid>http://www.rustyeddy.com/resume/clients/radian-laser/</guid>
       <description>&lt;p&gt;Radian is a small, fast moving startup that sells Laser Engravers and
 Cutters. I manage five software projects, including two Web
 Applications for the control and calibration of the Laser system. I
@@ -127,10 +127,10 @@ products Firmaware and Fleet Management system.&lt;/p&gt;
     
     <item>
       <title>Cloud Trek</title>
-      <link>http://rustyeddy.com/resume/clients/alchemy/</link>
+      <link>http://www.rustyeddy.com/resume/clients/alchemy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/clients/alchemy/</guid>
+      <guid>http://www.rustyeddy.com/resume/clients/alchemy/</guid>
       <description>&lt;p&gt;Alchemy Networks is an indepently owned service provider. I automated
 the provisioning of their Private Cloud Service offering. I was an
 individual contributor on this project. I collaborated with another
@@ -142,10 +142,10 @@ developer.&lt;/p&gt;
     
     <item>
       <title>DirecTV / AT&amp;T</title>
-      <link>http://rustyeddy.com/resume/clients/att/</link>
+      <link>http://www.rustyeddy.com/resume/clients/att/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/clients/att/</guid>
+      <guid>http://www.rustyeddy.com/resume/clients/att/</guid>
       <description>&lt;p&gt;I was hired by DirecTV (and subsequently AT&amp;amp;T) to help lead the new
 Software Defined Networking (SDN) team. We were tasked with replacing
 the companies aging production Video Distribution Network with a new
@@ -161,10 +161,10 @@ modernized design. Project goals included:&lt;/p&gt;
     
     <item>
       <title>Sierra Hydrographics</title>
-      <link>http://rustyeddy.com/resume/clients/sierra-hydrog/</link>
+      <link>http://www.rustyeddy.com/resume/clients/sierra-hydrog/</link>
       <pubDate>Sat, 02 Jan 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/clients/sierra-hydrog/</guid>
+      <guid>http://www.rustyeddy.com/resume/clients/sierra-hydrog/</guid>
       <description>&lt;p&gt;Led the design and development of automated data collection for
 hydrological gauging stations.  Data is gathered by pulling data from
 line of sight telemetry radios and NOAA/LRGS satellite ground
@@ -177,10 +177,10 @@ calculations and alert monitoring.&lt;/p&gt;
     
     <item>
       <title>Green Hills Software</title>
-      <link>http://rustyeddy.com/resume/clients/green-hills/</link>
+      <link>http://www.rustyeddy.com/resume/clients/green-hills/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/clients/green-hills/</guid>
+      <guid>http://www.rustyeddy.com/resume/clients/green-hills/</guid>
       <description>&lt;p&gt;I worked on a small team that added multicast forwarding to the &lt;em&gt;Integrity&lt;/em&gt; RTOS
 kernal.  Modified multicast routing daemon to run on same operating
 system allowing the product to serve as the foundation for a military
@@ -193,10 +193,10 @@ suite of routing protocols.&lt;/p&gt;
     
     <item>
       <title>The IMS Company</title>
-      <link>http://rustyeddy.com/resume/clients/ims-company/</link>
+      <link>http://www.rustyeddy.com/resume/clients/ims-company/</link>
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/clients/ims-company/</guid>
+      <guid>http://www.rustyeddy.com/resume/clients/ims-company/</guid>
       <description>&lt;p&gt;Led a project to replicate entertainment media (music, video and
 games) from a single media source to hundreds of in­flight
 entertainment units with minimal redundancy.  Contributed to the
@@ -208,10 +208,10 @@ design and development of an inflight entertainment server.&lt;/p&gt;
     
     <item>
       <title>Cisco Systems</title>
-      <link>http://rustyeddy.com/resume/jobs/cisco-systems/</link>
+      <link>http://www.rustyeddy.com/resume/jobs/cisco-systems/</link>
       <pubDate>Wed, 01 Feb 2006 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/jobs/cisco-systems/</guid>
+      <guid>http://www.rustyeddy.com/resume/jobs/cisco-systems/</guid>
       <description>&lt;p&gt;Original member of the Multicast Routing team.  Team of 12 responsible
 for the design, implementation and testing the complete suite of
 Multicast Routing protocols for the Cisco Carrier Routing System
@@ -225,19 +225,19 @@ Systems&lt;/p&gt;
     
     <item>
       <title>California State University, Long Beach</title>
-      <link>http://rustyeddy.com/resume/edu/csulb/</link>
+      <link>http://www.rustyeddy.com/resume/edu/csulb/</link>
       <pubDate>Tue, 02 Jan 1996 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/edu/csulb/</guid>
+      <guid>http://www.rustyeddy.com/resume/edu/csulb/</guid>
       <description></description>
     </item>
     
     <item>
       <title>USC ~ ISI</title>
-      <link>http://rustyeddy.com/resume/jobs/usc-isi/</link>
+      <link>http://www.rustyeddy.com/resume/jobs/usc-isi/</link>
       <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/jobs/usc-isi/</guid>
+      <guid>http://www.rustyeddy.com/resume/jobs/usc-isi/</guid>
       <description>&lt;p&gt;Led the effort to add IGMP/PIM and Multicast Routing Information
 Base (MRIB) to the Open Source &lt;em&gt;GateD&lt;/em&gt; suite of routing protocols.
 Mentored graduate students and others that would eventually become
@@ -246,10 +246,10 @@ prominent members of the computer networking community.&lt;/p&gt;</description>
     
     <item>
       <title>Retix</title>
-      <link>http://rustyeddy.com/resume/jobs/retix/</link>
+      <link>http://www.rustyeddy.com/resume/jobs/retix/</link>
       <pubDate>Tue, 01 Aug 1995 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/jobs/retix/</guid>
+      <guid>http://www.rustyeddy.com/resume/jobs/retix/</guid>
       <description>Promoted to lead the team of 6 engineers that developed and automated test plans for L2 switches, OSPF, RIP and BGP
   Implemented an automated test framework and led junior engineers in developing the automated test suites. C; C++; Perl; TCL
   Provided 3rd level customer support, serious customer problems that could not be resolved by customer support or field engineers became my teams responsibility to diagnose and determine solutions and workarounds was required.</description>
@@ -257,10 +257,10 @@ prominent members of the computer networking community.&lt;/p&gt;</description>
     
     <item>
       <title>Rockwell, Intl. Space Systems Division</title>
-      <link>http://rustyeddy.com/resume/jobs/rockwell/</link>
+      <link>http://www.rustyeddy.com/resume/jobs/rockwell/</link>
       <pubDate>Mon, 03 Jan 1994 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/jobs/rockwell/</guid>
+      <guid>http://www.rustyeddy.com/resume/jobs/rockwell/</guid>
       <description>&lt;p&gt;Led a team of 5 Sysadmins responsible for the use and well being of
 Engineering Departments 300+ UNIX workstations, servers (Sun, HP, DEC)
 and network.&lt;/p&gt;
@@ -270,10 +270,10 @@ of space and military projects.&lt;/p&gt;</description>
     
     <item>
       <title>California State University ~ Chancelors Office</title>
-      <link>http://rustyeddy.com/resume/jobs/csu-chancelor/</link>
+      <link>http://www.rustyeddy.com/resume/jobs/csu-chancelor/</link>
       <pubDate>Tue, 01 Aug 1995 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/jobs/csu-chancelor/</guid>
+      <guid>http://www.rustyeddy.com/resume/jobs/csu-chancelor/</guid>
       <description>&lt;p&gt;I was hired to install and manage the departments first AT&amp;amp;T Unix
 Mini-computers, UUNET connection and write a bulletin board system for
 California State Educators.&lt;/p&gt;</description>
@@ -281,10 +281,10 @@ California State Educators.&lt;/p&gt;</description>
     
     <item>
       <title>How to build a private wifi network for your webapp</title>
-      <link>http://rustyeddy.com/notes/private-wifi-network-webapp/</link>
+      <link>http://www.rustyeddy.com/notes/private-wifi-network-webapp/</link>
       <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/private-wifi-network-webapp/</guid>
+      <guid>http://www.rustyeddy.com/notes/private-wifi-network-webapp/</guid>
       <description>I work with physical computing or devices that have rather sophisticated software that needs to be configured, monitored and controlled.
 Building a Private Wifi Here is the situation, I just plugged a white box into the wall and it has a steady green light. I can see two other lights, one of which is red. The other two lights are off.
 This device is pretty cool, it will control the lights in my garage, I have a well lit garage.</description>
@@ -292,19 +292,19 @@ This device is pretty cool, it will control the lights in my garage, I have a we
     
     <item>
       <title>I bought a CNC Machine</title>
-      <link>http://rustyeddy.com/notes/cnc/</link>
+      <link>http://www.rustyeddy.com/notes/cnc/</link>
       <pubDate>Wed, 16 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/cnc/</guid>
+      <guid>http://www.rustyeddy.com/notes/cnc/</guid>
       <description>I bought a &amp;lt; $200 Sainsmart CNC machine complete with an Arduino CNC Shield! The packaging was solid, heavy and well protected. Heck I got almost $200 worth of packaging.</description>
     </item>
     
     <item>
       <title>WPE an Excellerated Raspberry Pi Kiosk</title>
-      <link>http://rustyeddy.com/notes/rpi-wpe-web-kiosk/</link>
+      <link>http://www.rustyeddy.com/notes/rpi-wpe-web-kiosk/</link>
       <pubDate>Fri, 25 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/rpi-wpe-web-kiosk/</guid>
+      <guid>http://www.rustyeddy.com/notes/rpi-wpe-web-kiosk/</guid>
       <description>The WPE project (TODO: place reference) allows you to create a hardware accelerated web viewing_ experience with an embedded system and inexpenive display.
 For example a Raspberry Pi with an 7inch tftp touch screen has my brain racing with ideas for applications.
 About WPE WPE creates a cool hardware accelerated kiosk, just point at a URL and the app displays the application takes over the screen.
@@ -313,10 +313,10 @@ About WPE WPE creates a cool hardware accelerated kiosk, just point at a URL and
     
     <item>
       <title>How to Cross Compile for the Raspberry Pi</title>
-      <link>http://rustyeddy.com/notes/cross-compile-raspberrypi/</link>
+      <link>http://www.rustyeddy.com/notes/cross-compile-raspberrypi/</link>
       <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/cross-compile-raspberrypi/</guid>
+      <guid>http://www.rustyeddy.com/notes/cross-compile-raspberrypi/</guid>
       <description>&lt;p&gt;Production software development for a Raspberry Pi is a fairly common
 thing now.  This is great for many reasons, but does have the downside
 that compiling large hunks of software on the PI is extremely
@@ -325,38 +325,38 @@ slow compared to even a low end laptop.&lt;/p&gt;</description>
     
     <item>
       <title>Career Summary</title>
-      <link>http://rustyeddy.com/resume/summary/</link>
+      <link>http://www.rustyeddy.com/resume/summary/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/summary/</guid>
+      <guid>http://www.rustyeddy.com/resume/summary/</guid>
       <description>I am a Software Engineer and Contract Programmer living in Huntington Beach, CA with my family. I build micro-services and work on micro-controllers, usually with Go, C/C++, Python and JavaScript (among other techs).</description>
     </item>
     
     <item>
       <title>Skills and Interests</title>
-      <link>http://rustyeddy.com/resume/skills/</link>
+      <link>http://www.rustyeddy.com/resume/skills/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/skills/</guid>
+      <guid>http://www.rustyeddy.com/resume/skills/</guid>
       <description> Go, C/C++, Python and JavaScript (and many others..) Computer Networks, Multicast Video Distribution Distributed systems and realtime communications DevOps, cloud automation and continuous delivery Fullstack software development, reactive front-ends with VueJS MicroServices: REST APIs, Websockets, etc. Linux Systems and OpenSource Software  </description>
     </item>
     
     <item>
       <title>Using Vue to Develop Webapps</title>
-      <link>http://rustyeddy.com/notes/vue-frontends/</link>
+      <link>http://www.rustyeddy.com/notes/vue-frontends/</link>
       <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/vue-frontends/</guid>
+      <guid>http://www.rustyeddy.com/notes/vue-frontends/</guid>
       <description>Every piece of software that exists has to speak to the external world in some manner. It might be programattically through messaging or an API call. It could be a human clicking through an GUI on our laptop or phone.
 I think it is clear that web apps are taking over the world. It is a powerful notion that they can pretty much run on any computing devices that support a browser, which is almost everything with a screen.</description>
     </item>
     
     <item>
       <title>Bootstrap makes WebUI look great!</title>
-      <link>http://rustyeddy.com/notes/bootstrap/</link>
+      <link>http://www.rustyeddy.com/notes/bootstrap/</link>
       <pubDate>Fri, 20 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/bootstrap/</guid>
+      <guid>http://www.rustyeddy.com/notes/bootstrap/</guid>
       <description>&lt;p&gt;Bootstrap is a great way to get your ugly little fledgling website
 into something respectable in no time. Do not waste time futzing with
 silly formating directives, focuse on the site itself!&lt;/p&gt;</description>
@@ -364,20 +364,20 @@ silly formating directives, focuse on the site itself!&lt;/p&gt;</description>
     
     <item>
       <title>Using Gstreamer to create an RTSP Server</title>
-      <link>http://rustyeddy.com/notes/gstreamer-rtsp-server/</link>
+      <link>http://www.rustyeddy.com/notes/gstreamer-rtsp-server/</link>
       <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/gstreamer-rtsp-server/</guid>
+      <guid>http://www.rustyeddy.com/notes/gstreamer-rtsp-server/</guid>
       <description>Of it earlier this month I set out to start streaming video From the CSI camera, that is a raspberry pie camera, From a moving vehicle for the vehicles guidance and navigation.
 I was surprised to find that the whole world of streaming video is Incredibly complex. In 2019 we are streaming everything from stupid instagram videos to the NFL, yet do not have A solution that is easy universally adopted.</description>
     </item>
     
     <item>
       <title>Red Eye Video Server</title>
-      <link>http://rustyeddy.com/notes/redeye/</link>
+      <link>http://www.rustyeddy.com/notes/redeye/</link>
       <pubDate>Fri, 24 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/redeye/</guid>
+      <guid>http://www.rustyeddy.com/notes/redeye/</guid>
       <description>The Red Eye project is a service definition rapper around inexpensive cameras attached to inexpesive micro-controllers that take pretty good video.
 The video streams are built using the GStreamer library. The camera native capabilities are used to extract as high quailty, realtime images possible.
 The video streams will be consumed by one or more sinks, including but not limited to Files, cloud storage, High Def Display and Computer Vision libraries.</description>
@@ -385,20 +385,20 @@ The video streams will be consumed by one or more sinks, including but not limit
     
     <item>
       <title>Skid Steering</title>
-      <link>http://rustyeddy.com/notes/skid-steering/</link>
+      <link>http://www.rustyeddy.com/notes/skid-steering/</link>
       <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/skid-steering/</guid>
+      <guid>http://www.rustyeddy.com/notes/skid-steering/</guid>
       <description>Skid steering basics
  Based on fixed direction wheels[1] or tracks There are two groups or sides of wheels: left and right All wheels in a group MUST always point in the same direction All wheels in a group MUST always rotate at the same rate Direction is determined by the speed of the two wheel groups  To move straight all motors rotate at the same rate Forward and Reverse are determined by positive and negative values Turning is achieved by varying the throttle on the right and left    Example The Skidder class has the following API, as you can see all of the movements we desire can be accomplished with a single API call skidder.</description>
     </item>
     
     <item>
       <title>Raspberry Pi Motor Control Software</title>
-      <link>http://rustyeddy.com/notes/rpi-motor-control-service/</link>
+      <link>http://www.rustyeddy.com/notes/rpi-motor-control-service/</link>
       <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/rpi-motor-control-service/</guid>
+      <guid>http://www.rustyeddy.com/notes/rpi-motor-control-service/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;TODO ~ replace image with one of the Raspberry Pi Controller&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -410,10 +410,10 @@ REST APIs, as well as directly with the Skidder python library.&lt;/p&gt;</descr
     
     <item>
       <title>MQTT For Controllor Communication</title>
-      <link>http://rustyeddy.com/notes/mqtt-comm/</link>
+      <link>http://www.rustyeddy.com/notes/mqtt-comm/</link>
       <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/mqtt-comm/</guid>
+      <guid>http://www.rustyeddy.com/notes/mqtt-comm/</guid>
       <description>&lt;p&gt;The MQTT message bus is a simple but critical element of our MBR
 software design.  MQTT provides what is known as a &lt;em&gt;publish/suscribe&lt;/em&gt;
 or &lt;em&gt;pubsub&lt;/em&gt; communications model.  This model of machine to machine
@@ -423,10 +423,10 @@ algorithms that we will discuss in this post.&lt;/p&gt;</description>
     
     <item>
       <title>Arduino Software</title>
-      <link>http://rustyeddy.com/notes/arduino-software/</link>
+      <link>http://www.rustyeddy.com/notes/arduino-software/</link>
       <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/arduino-software/</guid>
+      <guid>http://www.rustyeddy.com/notes/arduino-software/</guid>
       <description>Arduino Software My github repo below is contains collection of Arduino code, sketches and libraries that achieve a variety of simple but useful tasks, none are necessarily a project in and of itself, but may be included in a number of projects providing support for specific functionality.
 Here is a description of some Arduino code you can find.
 Sketches include   esp8266 a series of sketches for the esp8266 chip</description>
@@ -434,10 +434,10 @@ Sketches include   esp8266 a series of sketches for the esp8266 chip</descriptio
     
     <item>
       <title>Streaming Video is Complicated</title>
-      <link>http://rustyeddy.com/notes/streaming-video/</link>
+      <link>http://www.rustyeddy.com/notes/streaming-video/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/streaming-video/</guid>
+      <guid>http://www.rustyeddy.com/notes/streaming-video/</guid>
       <description>I need to stream live video from a moving vehical with a connected camera and a possibly connected wifi.
 Live High Resolution Video Video will stream from the vehicle to be picked up by video consumers and processed as required. Examples of consumers are Live Video Display on our (Webapp), OpenCV for vision algoritms.
 High Demand For Low Resolution It turns out that computer vision alogrithms typically run quite a bit faster on lower resolution images, the additional information from these hi-res images can slow down the type of algorithms we are interested in by many factors.</description>
@@ -445,10 +445,10 @@ High Demand For Low Resolution It turns out that computer vision alogrithms typi
     
     <item>
       <title>Streaming Video Protocols</title>
-      <link>http://rustyeddy.com/notes/streaming-video-protocols/</link>
+      <link>http://www.rustyeddy.com/notes/streaming-video-protocols/</link>
       <pubDate>Sun, 28 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/streaming-video-protocols/</guid>
+      <guid>http://www.rustyeddy.com/notes/streaming-video-protocols/</guid>
       <description>rtp rtsp rtmp hlsl mjpeg mpeg-dash mpeg jpeg  RTP ~ Real Time Protocol Actually holds payloads containing arbitrary, but time/delay sensitive media (audio, video, live conversations, etc). Incorporates enough controls to allow for network congestion, reciever compensation and more.
 RTSP What it is and How to use it Real Time Streaming Protocol (RTSP)
 General consensus says that RTSP is a good choice for low latency, local area networks.</description>
@@ -456,19 +456,19 @@ General consensus says that RTSP is a good choice for low latency, local area ne
     
     <item>
       <title>The Go Periph Library</title>
-      <link>http://rustyeddy.com/notes/go-periph-library/</link>
+      <link>http://www.rustyeddy.com/notes/go-periph-library/</link>
       <pubDate>Sun, 28 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/go-periph-library/</guid>
+      <guid>http://www.rustyeddy.com/notes/go-periph-library/</guid>
       <description>Periph provides a lot of useful utilitie along with example source code to help start developing our own interactions.</description>
     </item>
     
     <item>
       <title>The ESP32</title>
-      <link>http://rustyeddy.com/notes/esp32/</link>
+      <link>http://www.rustyeddy.com/notes/esp32/</link>
       <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/esp32/</guid>
+      <guid>http://www.rustyeddy.com/notes/esp32/</guid>
       <description>You need to push the RESET button to get them to write flash.
 A power packed chip that I have just started playing with. Give some quick specs here: and compare with other well known options (arduino&amp;rsquo;s, stm32 or Raspberry Pi.
 Standout Features  Builtin Wifi &amp;amp; BT and others Dual Core Powerful esp-idf FreeRTOS (Arduino optional) Great Feature Set!  Usage Interactive Console over UART This demonstrates using the serial port for an interactive console while ESP is running other things.</description>
@@ -476,10 +476,10 @@ Standout Features  Builtin Wifi &amp;amp; BT and others Dual Core Powerful esp-i
     
     <item>
       <title>Streaming Video Tools</title>
-      <link>http://rustyeddy.com/notes/streaming-video-tools/</link>
+      <link>http://www.rustyeddy.com/notes/streaming-video-tools/</link>
       <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/streaming-video-tools/</guid>
+      <guid>http://www.rustyeddy.com/notes/streaming-video-tools/</guid>
       <description>The grandparents of streaming video, and snapshots, read, writing and transcoding video and single frame images are ffmpeg, vlc and gstreamer.
 Other platforms, such as the wildly cool and inexpensive Raspberry Pi and attached CSI Camera (Raspberry Pi Camera) have thier own set of utilities: like raspivid. Or the NVidia Nano with it&amp;rsquo;s gst-streamer plugins and nvgst-capture/nvgst-playback utilies.
  This writting is as of March 2019
@@ -488,10 +488,10 @@ Other platforms, such as the wildly cool and inexpensive Raspberry Pi and attach
     
     <item>
       <title>Control Station Display</title>
-      <link>http://rustyeddy.com/notes/touch-screen-display/</link>
+      <link>http://www.rustyeddy.com/notes/touch-screen-display/</link>
       <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/touch-screen-display/</guid>
+      <guid>http://www.rustyeddy.com/notes/touch-screen-display/</guid>
       <description>&lt;p&gt;We are going to build a simple control station that begins with a
 Raspberry Pi and connected &lt;em&gt;7 inch touchscreen tablet&lt;/em&gt;.  I have it
 setup in &amp;ldquo;kiosk mode&amp;rdquo;, which is basically full page chrome without the
@@ -500,10 +500,10 @@ tabs and tool bars etc.&lt;/p&gt;</description>
     
     <item>
       <title>Raspberry Pi Camera and Multiple Ports</title>
-      <link>http://rustyeddy.com/notes/raspberry-pi-camera-multiple-ports/</link>
+      <link>http://www.rustyeddy.com/notes/raspberry-pi-camera-multiple-ports/</link>
       <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/raspberry-pi-camera-multiple-ports/</guid>
+      <guid>http://www.rustyeddy.com/notes/raspberry-pi-camera-multiple-ports/</guid>
       <description>&lt;p&gt;As I started bumbling around trying to figure the best way to stream
 [live video from a moving vehicle], I found that the Raspberry Pi
 camera is capable of producing filtered versions of the images it is
@@ -512,30 +512,30 @@ producing, through &lt;em&gt;video ports&lt;/em&gt;.&lt;/p&gt;</description>
     
     <item>
       <title>TLV the Type Length Vector Protocol</title>
-      <link>http://rustyeddy.com/notes/tlv-and-realitime-communication/</link>
+      <link>http://www.rustyeddy.com/notes/tlv-and-realitime-communication/</link>
       <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/tlv-and-realitime-communication/</guid>
+      <guid>http://www.rustyeddy.com/notes/tlv-and-realitime-communication/</guid>
       <description>&lt;p&gt;TLV is a very simple communication protocol that can be used to send
 messages around a complex, distributed system.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>The NRF240L1 RF Transceiver</title>
-      <link>http://rustyeddy.com/notes/nrf24l01/</link>
+      <link>http://www.rustyeddy.com/notes/nrf24l01/</link>
       <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/nrf24l01/</guid>
+      <guid>http://www.rustyeddy.com/notes/nrf24l01/</guid>
       <description>This RC reciever chip is very easy to use out of the box, yet provides some very sophisticated capabilities. The first project We&amp;rsquo;ll start using this chip will be a remote control Joystick for our mobile robot.
 Todos:  point to the datasheet load personal photos of my project with NRF20L  pull the image from evernote   fritz a diagram post code that I use and or wrote Try to do an eagle cad  Source Voltage According to Benjamin David Fraser Plugging the NRF24L02 directly into the Arduino 3.</description>
     </item>
     
     <item>
       <title>Raspbery Pi Camera Control Service</title>
-      <link>http://rustyeddy.com/notes/rpi-camera-control-service/</link>
+      <link>http://www.rustyeddy.com/notes/rpi-camera-control-service/</link>
       <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/rpi-camera-control-service/</guid>
+      <guid>http://www.rustyeddy.com/notes/rpi-camera-control-service/</guid>
       <description>I have created a python / Flask based server to run on the Raspberry accepting REST calls to perform application specific functions.
 I have created a flask server that will accept REST requests to control the PiCamera, AdaFruitMotorSheild and other stuff.
 Refer to the PiCamera documentation here: https://picamera.readthedocs.io/en/release-1.13/.
@@ -546,10 +546,10 @@ TODO ~ Turn streaming On and Off The next task is to turn video streaming On and
     
     <item>
       <title>Sync vs. Async, Blocking vs. Non-blocking</title>
-      <link>http://rustyeddy.com/notes/sync-async/</link>
+      <link>http://www.rustyeddy.com/notes/sync-async/</link>
       <pubDate>Sun, 03 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/sync-async/</guid>
+      <guid>http://www.rustyeddy.com/notes/sync-async/</guid>
       <description>Synchronous vs. Asynchronous Blocking and Non-Blocking A pratical example of asynchronous is a &amp;ldquo;blocking&amp;rdquo; call vs. non-blocking call. For example you are going to call a web service to gather a lot of data, it will take a long time. You can:
   Make a blocking call (synchronous) that pauses (blocks) the program from doing anything else until you receive a reply (or error).
   Make a non-blocking (asynchronous) call that requests the data from the remote server, after sending the request the program continues to run even though the response from the server has not yet been returned.</description>
@@ -557,10 +557,10 @@ TODO ~ Turn streaming On and Off The next task is to turn video streaming On and
     
     <item>
       <title>Streaming Live Video on a Local Lan Vs. Internet</title>
-      <link>http://rustyeddy.com/notes/streaming-video-local-network/</link>
+      <link>http://www.rustyeddy.com/notes/streaming-video-local-network/</link>
       <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/streaming-video-local-network/</guid>
+      <guid>http://www.rustyeddy.com/notes/streaming-video-local-network/</guid>
       <description>differences in local vs. internet and streaming video
   live stream vs. video on demand
   what does real time mean?
@@ -576,10 +576,10 @@ TODO ~ Turn streaming On and Off The next task is to turn video streaming On and
     
     <item>
       <title>Publications</title>
-      <link>http://rustyeddy.com/resume/pubs/</link>
+      <link>http://www.rustyeddy.com/resume/pubs/</link>
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/resume/pubs/</guid>
+      <guid>http://www.rustyeddy.com/resume/pubs/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Ramesh Govindan, et el.&lt;/strong&gt; &lt;em&gt;&amp;ldquo;An Architecture for Stable, Analyzable
 Internet Routing&amp;rdquo;&lt;/em&gt;, IEEE Network Magazine, Jan-Feb 1999.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Rusty Eddy, Ramesh Govindan,&lt;/strong&gt; &lt;em&gt;&amp;ldquo;Testing Protocol Implementations
@@ -593,10 +593,10 @@ AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;</description>
     
     <item>
       <title>Arduino Motor Control Software</title>
-      <link>http://rustyeddy.com/notes/arduino-motor-controllers/</link>
+      <link>http://www.rustyeddy.com/notes/arduino-motor-controllers/</link>
       <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/arduino-motor-controllers/</guid>
+      <guid>http://www.rustyeddy.com/notes/arduino-motor-controllers/</guid>
       <description>Pictured about is the OSEPP v2 Motor Shield which can be used as a functional replacement to the Adafruit v2 motorshield, the motorshield I recommend.
  Source code can be found here http://github.com/mobilerobot-io/arduino/ within the src/mctl directory.
  Arduino Motorsheild and Distributed Controls The software in the repository is to be loaded on an Arduino with either an Adafruit v2 Arduino or OSEPP 6612 MotorShield. The software accepts commands as incoming text strings from one of several possible serial inputs; UART, RF Radio, Blue Tooth, etc.</description>
@@ -604,10 +604,10 @@ AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;</description>
     
     <item>
       <title>Inexpensive Motor Controllers for Arduino and Raspberry Pi</title>
-      <link>http://rustyeddy.com/notes/motor-controlor-notes/</link>
+      <link>http://www.rustyeddy.com/notes/motor-controlor-notes/</link>
       <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/motor-controlor-notes/</guid>
+      <guid>http://www.rustyeddy.com/notes/motor-controlor-notes/</guid>
       <description>&lt;p&gt;I prefer to use an Arduino with a Motor Controller over say a
 Raspberry Pi with a motor-controller.  I believe the Arudino has
 better support for dedicated Real-time software vs. the Raspberry Pi
@@ -617,30 +617,30 @@ Control Software.  This is how we do it on the West side &amp;hellip;&lt;/p&gt;<
     
     <item>
       <title>Control System Design</title>
-      <link>http://rustyeddy.com/notes/control-design/</link>
+      <link>http://www.rustyeddy.com/notes/control-design/</link>
       <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/control-design/</guid>
+      <guid>http://www.rustyeddy.com/notes/control-design/</guid>
       <description>Early in the process of building the first set of mobile robots I discovered that I was not going to settle on a single micro controller.
 The first two obvious choices being the Arduino or Raspberry Pi, for which I tried both with a modest level of success. I quickly realized that I would not be providing my sole focus on either platform, neither was sufficient for my grand plans for a number of reasons.</description>
     </item>
     
     <item>
       <title>Comparing the Arduino and Raspberry Pi</title>
-      <link>http://rustyeddy.com/notes/rpi-v-arduino/</link>
+      <link>http://www.rustyeddy.com/notes/rpi-v-arduino/</link>
       <pubDate>Wed, 14 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/rpi-v-arduino/</guid>
+      <guid>http://www.rustyeddy.com/notes/rpi-v-arduino/</guid>
       <description>Arduino vs. Raspberry Pi in Control Systems I believe the Arudino has better hardware support, a real-time clock and due to itself simplicity creates a better platform to interact with external hardware in real-time.
 The Raspberry Pi, however has a much more powerful set of processors, more memory and a general purpose operating system making it a more suitable choice for general purpose, sophisticated software, such as communicaitons and control software.</description>
     </item>
     
     <item>
       <title>IP Multicast the basics</title>
-      <link>http://rustyeddy.com/notes/ip-multicast/</link>
+      <link>http://www.rustyeddy.com/notes/ip-multicast/</link>
       <pubDate>Sat, 03 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/ip-multicast/</guid>
+      <guid>http://www.rustyeddy.com/notes/ip-multicast/</guid>
       <description>IP Multicast addresses The typical IP addresses used by computers networking today are known as unicast addresses, meaning that every unicast address as a single (physical or logical) end point.
 Most all computer networking is point to point between two specific IP addresses, you name it: web browsing, email exchange, transfer files and so much more.
 However, there are other more specific forms on communication available and occasionally used: Broadcast and Multicast.</description>
@@ -648,10 +648,10 @@ However, there are other more specific forms on communication available and occa
     
     <item>
       <title>Design Graphics with Canva</title>
-      <link>http://rustyeddy.com/notes/design-graphics-with-canva/</link>
+      <link>http://www.rustyeddy.com/notes/design-graphics-with-canva/</link>
       <pubDate>Sun, 22 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/design-graphics-with-canva/</guid>
+      <guid>http://www.rustyeddy.com/notes/design-graphics-with-canva/</guid>
       <description>Hey I am no designer and you can accuse me of lacking originality when it comes to my design sensibilities, which can be dreadfully observed in my current version of this website (Oct 2017).
  Editorial update the above statement still holds true in early 2020.
  I love Canva it is super intuitive for a non-designer like me. It allows me to quickly create beautiful and consistent graphics for a variety of purposes including blog articles, social media properties, and such.</description>
@@ -659,39 +659,39 @@ However, there are other more specific forms on communication available and occa
     
     <item>
       <title>Using CMake</title>
-      <link>http://rustyeddy.com/notes/cmake/</link>
+      <link>http://www.rustyeddy.com/notes/cmake/</link>
       <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/cmake/</guid>
+      <guid>http://www.rustyeddy.com/notes/cmake/</guid>
       <description>The Unix build tool is a declarative dependency tracking build tool. Make was born in 1976, and is still how most C and C++ programs and libraries are built today, including the Linux operating system and GNU Compilers and half of all the worlds systems software.
 So Many Makes, So Little Time In that time, especially during the early years of commercial fragmentation and little benefit from Open Source software, the make tool and corresponding Makefile become splintered in implementation details.</description>
     </item>
     
     <item>
       <title>Ansible</title>
-      <link>http://rustyeddy.com/notes/ansible/</link>
+      <link>http://www.rustyeddy.com/notes/ansible/</link>
       <pubDate>Mon, 03 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/ansible/</guid>
+      <guid>http://www.rustyeddy.com/notes/ansible/</guid>
       <description>Ansible is a very powerful yet simple, in all its complexity. It is a wonderful tool that I get frequent use of. It&amp;rsquo;s real home I suppose is in the larger corporation devops world, it is wonderfully well suited to a mid sized IoT environment.
 A Few Highlight about Ansible Scripts are Accurate and Repeatable Create Playbooks that combine a series of specific roles to get define specific roles the configuration steps to get a desired outcome.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://rustyeddy.com/quotes/massively-connected/</link>
+      <link>http://www.rustyeddy.com/quotes/massively-connected/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/quotes/massively-connected/</guid>
+      <guid>http://www.rustyeddy.com/quotes/massively-connected/</guid>
       <description>ZeroMQ ZGuide   We live in a connected world, and modern software has to navigate this world. So the building blocks for tomorrow&amp;#39;s very largest solutions are connected and massively parallel. It&amp;#39;s not enough for code to be &amp;#34;strong and silent&amp;#34; any more. Code has to talk to code. Code has to be chatty, sociable, well-connected. Code has to run like the human brain, trillions of individual neurons firing off messages to each other, a massively parallel network with no central control, no single point of failure, yet able to solve immensely difficult problems.</description>
     </item>
     
     <item>
       <title>Adafruit Music Maker mp3 Sheild</title>
-      <link>http://rustyeddy.com/notes/adafruit-music-maker-mp3-sheild/</link>
+      <link>http://www.rustyeddy.com/notes/adafruit-music-maker-mp3-sheild/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://rustyeddy.com/notes/adafruit-music-maker-mp3-sheild/</guid>
+      <guid>http://www.rustyeddy.com/notes/adafruit-music-maker-mp3-sheild/</guid>
       <description>The shield is driven by an SPI connection with the Arduino and relies on an SD card with music files on it to play. Must determine how to play streaming audio, then we&amp;rsquo;ll have something neat!
 Link to the documentation.
 The shield can also be jumpered and booted into Midi Mode and turned into a drum machine or a Garageband type of play along, this might be fun!
