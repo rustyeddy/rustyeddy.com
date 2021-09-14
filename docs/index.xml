@@ -280,6 +280,17 @@ California State Educators.&lt;/p&gt;</description>
     </item>
     
     <item>
+      <title>Private Wireless Network for IoT Devices</title>
+      <link>http://www.rustyeddy.com/private-wireless-network/</link>
+      <pubDate>Mon, 30 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rustyeddy.com/private-wireless-network/</guid>
+      <description>Overview A Private Wirelss Network is a common solution, one relatively simple way to create a PWN using a Raspberry Pi, some free software and a bit of brain greese we can turn our favorite $50 linux computer into a PWN provider aka Wireless Access Point (WAP).
+Automation! Yes, my favorite words. I took the time to automate the configuration of a RPI into a Private WAP.
+Building a Private WAP Normally an RPI will be configured to accesss a wireless network as a client provided the RPI has been configured via an accessible SSID and correct password.</description>
+    </item>
+    
+    <item>
       <title>How to build a private wifi network for your webapp</title>
       <link>http://www.rustyeddy.com/notes/private-wifi-network-webapp/</link>
       <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
