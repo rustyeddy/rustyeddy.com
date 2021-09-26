@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rusty Eddy</title>
@@ -30,7 +30,7 @@ Perhaps the worst problem with software projects are the diverging expectations 
       <guid>http://www.rustyeddy.com/software/customer-discovery-and-mvp/</guid>
       <description>Customer Discovery consists of one or more customer discovery sessions, where all users and owners of the software will be interviewed for their expectations, needs and desires for the upcoming software project.
 User Stories The information gathered from these sessions are then articulated in a series of non-technical descriptions of how the software is used by everybody.
-These descriptions of the software requirements are often referred to as User Stories. Basically, each story walks through one of the ways in which the planned software will be used.</description>
+These descriptions of the software requirements are often referred to as User Stories.</description>
     </item>
     
     <item>
@@ -120,6 +120,7 @@ Cutters. I manage five software projects, including two Web
 Applications for the control and calibration of the Laser system. I
 am also responsible for the successful delivery and maintanance of the
 products Firmaware and Fleet Management system.&lt;/p&gt;
+
 &lt;blockquote&gt;
 &lt;p&gt;C/C++, Go &amp;amp; Python, embedded systems and microservices.&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -135,6 +136,7 @@ products Firmaware and Fleet Management system.&lt;/p&gt;
 the provisioning of their Private Cloud Service offering. I was an
 individual contributor on this project. I collaborated with another
 developer.&lt;/p&gt;
+
 &lt;blockquote&gt;
 &lt;p&gt;Ansible, Linux, Python, Websockets, Networking&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -150,6 +152,7 @@ developer.&lt;/p&gt;
 Software Defined Networking (SDN) team. We were tasked with replacing
 the companies aging production Video Distribution Network with a new
 modernized design. Project goals included:&lt;/p&gt;
+
 &lt;ul&gt;
 &lt;li&gt;Replace aged network with modern SDN solution&lt;/li&gt;
 &lt;li&gt;Solution to incrementally replace existing production network&lt;/li&gt;
@@ -170,6 +173,7 @@ hydrological gauging stations.  Data is gathered by pulling data from
 line of sight telemetry radios and NOAA/LRGS satellite ground
 stations. Data is fed to timeseries server for hydrological
 calculations and alert monitoring.&lt;/p&gt;
+
 &lt;blockquote&gt;
 &lt;p&gt;Timeseries database, C/C++, PHP, Python and Java.&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -186,6 +190,7 @@ kernal.  Modified multicast routing daemon to run on same operating
 system allowing the product to serve as the foundation for a military
 grade network switch/router.  Added IPv6 Neighbor Discovery to the
 suite of routing protocols.&lt;/p&gt;
+
 &lt;blockquote&gt;
 &lt;p&gt;C/C++ and Network Routing Protocols; Real Time OS.&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -201,6 +206,7 @@ suite of routing protocols.&lt;/p&gt;
 games) from a single media source to hundreds of in­flight
 entertainment units with minimal redundancy.  Contributed to the
 design and development of an inflight entertainment server.&lt;/p&gt;
+
 &lt;blockquote&gt;
 &lt;p&gt;Perl, Python, C/C++ and Java&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -217,6 +223,7 @@ for the design, implementation and testing the complete suite of
 Multicast Routing protocols for the Cisco Carrier Routing System
 (CRS).  Worked this project from early design through product launch
 into maintenance.&lt;/p&gt;
+
 &lt;blockquote&gt;
 &lt;p&gt;Computer Networks, Multicast Routing, C/C++, Real Time, Distributed
 Systems&lt;/p&gt;
@@ -251,8 +258,8 @@ prominent members of the computer networking community.&lt;/p&gt;</description>
       
       <guid>http://www.rustyeddy.com/resume/jobs/retix/</guid>
       <description>Promoted to lead the team of 6 engineers that developed and automated test plans for L2 switches, OSPF, RIP and BGP
-  Implemented an automated test framework and led junior engineers in developing the automated test suites. C; C++; Perl; TCL
-  Provided 3rd level customer support, serious customer problems that could not be resolved by customer support or field engineers became my teams responsibility to diagnose and determine solutions and workarounds was required.</description>
+ Implemented an automated test framework and led junior engineers in developing the automated test suites. C; C++; Perl; TCL
+ Provided 3rd level customer support, serious customer problems that could not be resolved by customer support or field engineers became my teams responsibility to diagnose and determine solutions and workarounds was required.</description>
     </item>
     
     <item>
@@ -264,6 +271,7 @@ prominent members of the computer networking community.&lt;/p&gt;</description>
       <description>&lt;p&gt;Led a team of 5 Sysadmins responsible for the use and well being of
 Engineering Departments 300+ UNIX workstations, servers (Sun, HP, DEC)
 and network.&lt;/p&gt;
+
 &lt;p&gt;On a team that Developed a Real Time OS that was embedded in a variety
 of space and military projects.&lt;/p&gt;</description>
     </item>
@@ -277,6 +285,15 @@ of space and military projects.&lt;/p&gt;</description>
       <description>&lt;p&gt;I was hired to install and manage the departments first AT&amp;amp;T Unix
 Mini-computers, UUNET connection and write a bulletin board system for
 California State Educators.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Summer Wind Checklist</title>
+      <link>http://www.rustyeddy.com/sailing/summer-wind-checklist/</link>
+      <pubDate>Sat, 25 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rustyeddy.com/sailing/summer-wind-checklist/</guid>
+      <description> Prepare Boat for Departure  Open Salt inflow valve: Open Yellow Salt Handle (to Salt not fresh water) Open Cooling Water inflow valve (Red Handle) Open Fuel Valve (Blue Handle)  Prepare Motor for Departure  Inspect or leaks from Exhaust Elbow Check Oil Check tension on belts Check packing gland leakage Close Engine Stop Magic Key Check Fuel Level (stick)  After Starting the Motor  Check engine hours Look for salt water flowing out the back through hull  Electrical - Prepare to Leave  Turn Battery power to 2 Turn off shore breaker Turn off shore power Disconnect Shore cable Turn off power on shore pedestal  Safety  Check sound device - Place by helm Check flares Check fire extinguishers 1 Throwable PFD 1 Type X PFD for each Adult 1 Type X PDD for each Child Prepare swim step  Radio  Turn on stationary radio Turn on hand radio Radio Checks  </description>
     </item>
     
     <item>
@@ -311,15 +328,25 @@ This device is pretty cool, it will control the lights in my garage, I have a we
     </item>
     
     <item>
+      <title>Raspberry PI Resources</title>
+      <link>http://www.rustyeddy.com/resources/raspberry-pi/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rustyeddy.com/resources/raspberry-pi/</guid>
+      <description>Some raspberry Pi resources.
+ Raspberry PI WiringPI  </description>
+    </item>
+    
+    <item>
       <title>WPE an Excellerated Raspberry Pi Kiosk</title>
       <link>http://www.rustyeddy.com/notes/rpi-wpe-web-kiosk/</link>
       <pubDate>Fri, 25 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>http://www.rustyeddy.com/notes/rpi-wpe-web-kiosk/</guid>
-      <description>The WPE project (TODO: place reference) allows you to create a hardware accelerated web viewing_ experience with an embedded system and inexpenive display.
+      <description>The WPE project (TODO: place reference) allows you to create a _hardware accelerated web viewing__ experience with an embedded system and inexpenive display.
 For example a Raspberry Pi with an 7inch tftp touch screen has my brain racing with ideas for applications.
 About WPE WPE creates a cool hardware accelerated kiosk, just point at a URL and the app displays the application takes over the screen.
- It is awesome! But, it has one major drawback.</description>
+ It is awesome!</description>
     </item>
     
     <item>
@@ -401,7 +428,7 @@ The video streams will be consumed by one or more sinks, including but not limit
       
       <guid>http://www.rustyeddy.com/notes/skid-steering/</guid>
       <description>Skid steering basics
- Based on fixed direction wheels[1] or tracks There are two groups or sides of wheels: left and right All wheels in a group MUST always point in the same direction All wheels in a group MUST always rotate at the same rate Direction is determined by the speed of the two wheel groups  To move straight all motors rotate at the same rate Forward and Reverse are determined by positive and negative values Turning is achieved by varying the throttle on the right and left    Example The Skidder class has the following API, as you can see all of the movements we desire can be accomplished with a single API call skidder.</description>
+ Based on fixed direction wheels[1] or tracks There are two groups or sides of wheels: left and right All wheels in a group MUST always point in the same direction All wheels in a group MUST always rotate at the same rate Direction is determined by the speed of the two wheel groups  To move straight all motors rotate at the same rate Forward and Reverse are determined by positive and negative values Turning is achieved by varying the throttle on the right and left   Example The Skidder class has the following API, as you can see all of the movements we desire can be accomplished with a single API call</description>
     </item>
     
     <item>
@@ -413,6 +440,7 @@ The video streams will be consumed by one or more sinks, including but not limit
       <description>&lt;blockquote&gt;
 &lt;p&gt;TODO ~ replace image with one of the Raspberry Pi Controller&lt;/p&gt;
 &lt;/blockquote&gt;
+
 &lt;p&gt;This software adds a Skid Steer motor control software to the
 &lt;a href=&#34;http://github.com/mobilerobot-io/rpid&#34;&gt;Raspberry Pi Device Server&lt;/a&gt;
 device server.  RPID adds motor controls accessible via both MQTT and
@@ -440,7 +468,7 @@ algorithms that we will discuss in this post.&lt;/p&gt;</description>
       <guid>http://www.rustyeddy.com/notes/arduino-software/</guid>
       <description>Arduino Software My github repo below is contains collection of Arduino code, sketches and libraries that achieve a variety of simple but useful tasks, none are necessarily a project in and of itself, but may be included in a number of projects providing support for specific functionality.
 Here is a description of some Arduino code you can find.
-Sketches include   esp8266 a series of sketches for the esp8266 chip</description>
+Sketches include  esp8266 a series of sketches for the esp8266 chip</description>
     </item>
     
     <item>
@@ -538,7 +566,7 @@ messages around a complex, distributed system.&lt;/p&gt;</description>
       
       <guid>http://www.rustyeddy.com/notes/nrf24l01/</guid>
       <description>This RC reciever chip is very easy to use out of the box, yet provides some very sophisticated capabilities. The first project We&amp;rsquo;ll start using this chip will be a remote control Joystick for our mobile robot.
-Todos:  point to the datasheet load personal photos of my project with NRF20L  pull the image from evernote   fritz a diagram post code that I use and or wrote Try to do an eagle cad  Source Voltage According to Benjamin David Fraser Plugging the NRF24L02 directly into the Arduino 3.</description>
+Todos:  point to the datasheet load personal photos of my project with NRF20L  pull the image from evernote  fritz a diagram post code that I use and or wrote Try to do an eagle cad  Source Voltage According to Benjamin David Fraser Plugging the NRF24L02 directly into the Arduino 3.</description>
     </item>
     
     <item>
@@ -551,8 +579,7 @@ Todos:  point to the datasheet load personal photos of my project with NRF20L  p
 I have created a flask server that will accept REST requests to control the PiCamera, AdaFruitMotorSheild and other stuff.
 Refer to the PiCamera documentation here: https://picamera.readthedocs.io/en/release-1.13/.
 The software can be found in github repository.
-And how to write and operate a flask based server for your project.
-TODO ~ Turn streaming On and Off The next task is to turn video streaming On and Off, this may require duping and modifying somewhat a python script &amp;hellip;</description>
+And how to write and operate a flask based server for your project.</description>
     </item>
     
     <item>
@@ -562,8 +589,8 @@ TODO ~ Turn streaming On and Off The next task is to turn video streaming On and
       
       <guid>http://www.rustyeddy.com/notes/sync-async/</guid>
       <description>Synchronous vs. Asynchronous Blocking and Non-Blocking A pratical example of asynchronous is a &amp;ldquo;blocking&amp;rdquo; call vs. non-blocking call. For example you are going to call a web service to gather a lot of data, it will take a long time. You can:
-  Make a blocking call (synchronous) that pauses (blocks) the program from doing anything else until you receive a reply (or error).
-  Make a non-blocking (asynchronous) call that requests the data from the remote server, after sending the request the program continues to run even though the response from the server has not yet been returned.</description>
+1) Make a blocking call (synchronous) that pauses (blocks) the program from doing anything else until you receive a reply (or error).
+2) Make a non-blocking (asynchronous) call that requests the data from the remote server, after sending the request the program continues to run even though the response from the server has not yet been returned.</description>
     </item>
     
     <item>
@@ -573,16 +600,17 @@ TODO ~ Turn streaming On and Off The next task is to turn video streaming On and
       
       <guid>http://www.rustyeddy.com/notes/streaming-video-local-network/</guid>
       <description>differences in local vs. internet and streaming video
-  live stream vs. video on demand
-  what does real time mean?
-  what to do with late packets?
-  UDP vs. TCP in the local network
-  RTP and UDP
-  RTP and RTCP
-  RTP and RTSP
-  RTP and Multicast
-  Tools used
-  TODO: workflowy outline</description>
+ live stream vs. video on demand
+ what does real time mean?
+ what to do with late packets?
+ UDP vs. TCP in the local network
+ RTP and UDP
+ RTP and RTCP
+ RTP and RTSP
+ RTP and Multicast
+ Tools used
+  TODO: workflowy outline
+RTSP is a good option for streaming video in a local setup up, where minimal delay is the highest priority.</description>
     </item>
     
     <item>
@@ -593,11 +621,14 @@ TODO ~ Turn streaming On and Off The next task is to turn video streaming On and
       <guid>http://www.rustyeddy.com/resume/pubs/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Ramesh Govindan, et el.&lt;/strong&gt; &lt;em&gt;&amp;ldquo;An Architecture for Stable, Analyzable
 Internet Routing&amp;rdquo;&lt;/em&gt;, IEEE Network Magazine, Jan-Feb 1999.&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Rusty Eddy, Ramesh Govindan,&lt;/strong&gt; &lt;em&gt;&amp;ldquo;Testing Protocol Implementations
 with pkt&amp;rdquo;&lt;/em&gt;, Networld+Interop 99 Engineers Conference Proceedings, June
 1999&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Rusty Eddy&lt;/strong&gt;, &lt;em&gt;&amp;ldquo;Emulating Multicast Routing Protocols in a Software
 Defined Networking (SDN) Controller&amp;rdquo;&lt;/em&gt;, AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;Rusty Eddy&lt;/strong&gt;, &lt;em&gt;&amp;ldquo;Testing Multicast SDN Networks in a Container&amp;rdquo;&lt;/em&gt;,
 AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;</description>
     </item>
@@ -698,6 +729,24 @@ A Few Highlight about Ansible Scripts are Accurate and Repeatable Create Playboo
     </item>
     
     <item>
+      <title></title>
+      <link>http://www.rustyeddy.com/resources/messaging-and-communication-packages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rustyeddy.com/resources/messaging-and-communication-packages/</guid>
+      <description>Messaging and Communications   ZeroMQ :: is a messaging package that has an emphasis on fast and intuitive API. Man I hope this package is as good as it&amp;#39;s beginning guide  Gorilla/mux :: A built to serve up REST api&amp;#39;s, gorilla does that and some more important stuff like serve up static websites and provide support for initiating websockets  Gorilla/websocket :: Handles the full websocket spec. Works great with the standard http router and Gorilla/mux the full featured router.</description>
+    </item>
+    
+    <item>
+      <title>A MicroService Dashboard for MicroControllers</title>
+      <link>http://www.rustyeddy.com/projects/spa/the-frontend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rustyeddy.com/projects/spa/the-frontend/</guid>
+      <description> Written in vue Vuetify has been added to make it really pretty and use great components  </description>
+    </item>
+    
+    <item>
       <title>Adafruit Music Maker mp3 Sheild</title>
       <link>http://www.rustyeddy.com/notes/adafruit-music-maker-mp3-sheild/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -707,6 +756,35 @@ A Few Highlight about Ansible Scripts are Accurate and Repeatable Create Playboo
 Link to the documentation.
 The shield can also be jumpered and booted into Midi Mode and turned into a drum machine or a Garageband type of play along, this might be fun!
 I suppose we could also add a microphone to record sound for some kind of reason.</description>
+    </item>
+    
+    <item>
+      <title>An HTTP Server written in Go</title>
+      <link>http://www.rustyeddy.com/projects/spa/the-server/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rustyeddy.com/projects/spa/the-server/</guid>
+      <description>HTML5 Websites Serves a web page routed in the &amp;lsquo;-pub&amp;rsquo; path. If path is empty, it will serve up an in-memory page, meaning you will get a web page regardless of whether you provide a filesystem or not.
+Serve HTML Websites To run the static website directly from memory do this:
+% spa  If you want to run a specific website that contains a directory with an index.html file in it, we can serve that up like this:</description>
+    </item>
+    
+    <item>
+      <title>Industrial Open Source Hardware and Software</title>
+      <link>http://www.rustyeddy.com/resources/industrial-open-source/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rustyeddy.com/resources/industrial-open-source/</guid>
+      <description> Build Botics  </description>
+    </item>
+    
+    <item>
+      <title>http - resources regarding HTTP and related tech</title>
+      <link>http://www.rustyeddy.com/resources/http/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rustyeddy.com/resources/http/</guid>
+      <description>HTTPS Server with Golang</description>
     </item>
     
   </channel>

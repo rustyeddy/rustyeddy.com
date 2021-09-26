@@ -74,48 +74,65 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="col"></div>
     <div class="col-md-8 hero-text">
 	<article class="article">
-	  <p>The Unix build tool is a <em>declarative dependency tracking build tool</em>.
+	  
+
+<p>The Unix build tool is a <em>declarative dependency tracking build tool</em>.
 Make was born in 1976, and is still how most C and C++ programs and
 libraries are built today, including the Linux operating system and
 GNU Compilers and half of all the worlds systems software.</p>
+
 <h2 id="so-many-makes-so-little-time">So Many Makes, So Little Time</h2>
+
 <p>In that time, especially during the early years of commercial
 fragmentation and little benefit from Open Source software, the <em>make</em>
 tool and corresponding Makefile become splintered in implementation
 details. For example each of BSD and AT&amp;T Unixen had a flavor, the
 Free Software Foundation had it&rsquo;s GNUMake, all of which still live
 today!</p>
+
 <h3 id="one-make-to-unite-them-all">One Make to Unite Them All</h3>
+
 <p>Any attempt at unifying makefiles is basically hopeless, I forgot to
 mention the world of Windows and embedded systems have billions of
 lines of code depended some variation of <em>make</em> or another.</p>
+
 <blockquote>
 <p>A single standard Makefile, not possible. We need another solution.</p>
 </blockquote>
+
 <p>A standard Makefile, with any level of sophistication will not be
 happening anytime soon, so the makers of CMake!  According to
 Wikipedia:</p>
+
 <blockquote>
 <p>CMake development began in 1999 in response to the need for a
 cross-platform build environment for the Insight Segmentation and
 Registration Toolkit. The project is funded by the United States
 National Library of Medicine as part of the Visible Human Project.</p>
 </blockquote>
-<p>Kudo&rsquo;s to the (<em>National Library of Medicine</em>)[https://www.nlm.nih.gov/] and
+
+<p>Kudo&rsquo;s to the (<em>National Library of Medicine</em>)[<a href="https://www.nlm.nih.gov/">https://www.nlm.nih.gov/</a>] and
 the early creators of CMake. The took a bit of a different approach.</p>
+
 <p>You basically define how you want to software built, you specify your
 desires in CMakeLists.txt which gets generated in a <em>Makefile</em>, the
 flavor of the Makefile is based on the build system of the host
 Operating System.</p>
+
 <blockquote>
 <p>CMakeLists.txt has an approach akin to &ldquo;When in Rome do as the Romans&rdquo;</p>
 </blockquote>
+
 <p>Now you have Makefiles generated that are tuned specifically to the
 host operating system.</p>
+
 <p>Here is an example <em>cmake</em> command you would used to add the compiler
 option  <code>-I.../include</code> at compile time.</p>
+
 <pre><code>include_directories(./include ../another/include)
-</code></pre><blockquote>
+</code></pre>
+
+<blockquote>
 <p>Goto my CMakefile cheet sheet !</p>
 </blockquote>
 

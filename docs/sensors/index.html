@@ -76,17 +76,24 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 	<div class="col"></div> 
 	<div class="col-8">
 	    <article class="article">
-		<h1 id="sensor-station">Sensor Station</h1>
+		
+
+<h1 id="sensor-station">Sensor Station</h1>
+
 <p>Sensor Station is a collection of software components that make up an
 <em>Irrigation Application</em>, soil moisture sensors periodically gather
 soil moisture levels (and other data) and <em>publish</em> that data via
 MQTT.</p>
+
 <p>A Station Hub subscribes to the soil moisture (and other data)
 channels, the moisture level is used to trigger a command to be
 <em>published</em> on an appropriate <em>MQTT</em> channel.</p>
+
 <p>The data may (or may not) also get recorded locally, sent to a
 _TimeSeries DataBase (TSDB) and/or streamed to a realtime Dashboard.</p>
+
 <h2 id="todo-insert-diagram-here">TODO Insert Diagram Here.</h2>
+
 <p>It starts by collecting data, cleaning and distribtuing the data to a
 dashboard, databases, control logic and other interesting places.</p>
 

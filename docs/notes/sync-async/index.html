@@ -73,46 +73,55 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="col"></div>
     <div class="col-md-8 hero-text">
 	<article class="article">
-	  <h2 id="synchronous-vs-asynchronous">Synchronous vs. Asynchronous</h2>
+	  
+
+<h2 id="synchronous-vs-asynchronous">Synchronous vs. Asynchronous</h2>
+
 <h3 id="blocking-and-non-blocking">Blocking and Non-Blocking</h3>
+
 <p>A pratical example of asynchronous is a &ldquo;blocking&rdquo; call
 vs. non-blocking call.  For example you are going to call a web
 service to gather a lot of data, it will take a long time.  You can:</p>
-<ol>
-<li>
-<p>Make a blocking call (synchronous) that pauses (blocks) the program
+
+<p>1) Make a blocking call (synchronous) that pauses (blocks) the program
 from doing anything else until you receive a reply (or error).</p>
-</li>
-<li>
-<p>Make a non-blocking (asynchronous) call that requests the data from
+
+<p>2) Make a non-blocking (asynchronous) call that requests the data from
 the remote server, after sending the request the program continues to
 run even though the response from the server has not yet been
 returned.</p>
-</li>
-</ol>
+
 <p>You can design your &ldquo;I/O&rdquo; requests to be blocking or non-blocking,
 depending on the applications requirements.</p>
+
 <p>Concurrency in go is a different, but related concept. Concurrency is
 the ABILITY for two or more different &ldquo;instruction&rdquo; sets to run
 simultaneously.  They do NOT HAVE to run simultaneously, but they
 could under the right circumstances, that is considered concurrent.</p>
+
 <p>For example: putting on your shoes and getting coffee are &ldquo;concurrent&rdquo;
 events, they could, theoretically be done at the same time, but do not
 have to.</p>
+
 <p>Putting on socks then shoes is NOT concurrent, the sock MUST be put on
 before the shoes and must be done in order (synchronously).</p>
+
 <p>If two or more &ldquo;concurrent&rdquo; events are in fact running at the same
 time, they are said to be running in parallel.</p>
+
 <p>For example, in Go it is typical to use &ldquo;Go routines&rdquo; to run parts of
 programs asynchronously. By placeing a &lsquo;go xxxxx&rsquo; infront of a
 function runs the function ASYNCHRONOUSLY because these functions are
 CONCURRENT (can be ran at the same time).</p>
+
 <p>However, if there is only 1 CPU, each of these tasks will have to take
 turns being run through gold old CPU timesharing.</p>
+
 <p>Now if the computer happen to have 1 available CPU per tasks where
 each task ran on it&rsquo;s own CPU, then the program would in fact be
 running in PARALLEL, because each task is in fact executing at the
 same time (or asynchrounously).</p>
+
 <p>Did that make sense? :)</p>
 
 	</article>

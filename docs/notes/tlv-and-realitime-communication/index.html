@@ -76,61 +76,88 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 	<article class="article">
 	  <p>TLV is a very simple communication protocol that can be used to send
 messages around a complex, distributed system.</p>
+
 <p>The TLV protocol provides only message formatting by definition.  How
 the application handles said messages is up to the application, that
 is NO assumptions or gaurauntees about losing message, parts of
 messages, ordering or retransmission.</p>
+
 <p>If any of these more advanced capabilities are to be provided, they
 must be done so at the application layer (so to speak).</p>
+
 <h3 id="generic-underlying-transports">Generic Underlying Transports</h3>
+
 <p>The underlying physical and mac layers will have a huge effect on the
 possibility of packet loss, ordering, delay and possible bandwidth.
 Each of the communicaiton mediums we use, we will post a comparison of
 characteristics, bandwidth, delay and reliability amoung other
 things.</p>
+
 <h2 id="tlv-and-tlstring">TLV and TLString</h2>
+
 <p>Type, Length Vector (Value) is as old as the hills, but still just as
 useful!  Type length Vector is byte oriented, with three types of
 messages: compact (1 byte), short (2 bytes) and full (up to 0xffff
 size).</p>
+
 <pre><code>+--------+--------+--------+--------+
 |  Type  | Length | Value  ...
 +--------+--------+--------+--------+
-</code></pre><p>The first byte is the type of message, the second byte is the length
+</code></pre>
+
+<p>The first byte is the type of message, the second byte is the length
 of the message, inclusive, that is the 2 bytes of the Tyte and Length
 field are INCLUDED in the Length of the message.</p>
+
 <h3 id="compact-messages">Compact Messages</h3>
+
 <p>The nature of many types of communication are just quick short
 messages that only require a single byte, which not only determines
 the <em>type</em> of message, it also supplies <em>no payload</em> beyond the type.</p>
+
 <p>In this case, TLV supports the message type <strong>compact</strong> or
 <strong>1-byte</strong>.</p>
+
 <h3 id="short-messages">Short Messages</h3>
+
 <p>In a similar vein, some types my contain only a single value, for
 example a sensor value between 0 &amp; 0xff can be advertised with only
 two bytes.</p>
+
 <p>Normally, a two byte message: 1-byte for type and 1 byte for the
 length would require a 3rd byte for the value.  Hence, that makes the
 two byte message unused.</p>
+
 <p>To that end, we provide a 2nd small optimization: Short messages
 support the message type and a message value between 0x0 and 0xff in
 the length field, thus reducing the <em>Short Message</em> from 3 bytes to 2
 bytes.</p>
+
 <h3 id="distinguishing-compact-short-and-normal-packets">Distinguishing Compact, Short and Normal Packets</h3>
+
 <p>The packet types can be identified by the first two bytes of the type
 field.  Compact packets always have the first two bits of the type
 set:</p>
+
 <h4 id="compact-packets">Compact Packets</h4>
+
 <pre><code>+--------+
 |11xxxxxx|
 +--------+
-</code></pre><p>Compact packets are a single byte in the <strong>range of 0xC0 to 0xFF</strong>,
+</code></pre>
+
+<p>Compact packets are a single byte in the <strong>range of 0xC0 to 0xFF</strong>,
 depending on how the remaining 2^6 bits are set.</p>
+
 <h4 id="short-packets">Short Packets</h4>
+
 <pre><code>+--------+--------+
 |10xxxxxx| Value  |
 +--------+--------+
-</code></pre><h4 id="reserved-packets">Reserved Packets</h4>
+</code></pre>
+
+<h4 id="reserved-packets">Reserved Packets</h4>
+
 <pre><code>+--------+--------+
 |01xxxxxx| Value  |
 +--------+--------+
@@ -138,13 +165,19 @@ depending on how the remaining 2^6 bits are set.</p>
 The reserved range can be associated with the Short or Regular packet
 types is one type is getting used up quicker than another.
 
-</code></pre><p>Short packets are two bytes, with the type value in the range of 0x80
+</code></pre>
+
+<p>Short packets are two bytes, with the type value in the range of 0x80
 to 0xBF.  Again, short packets have (2^6 = 32)  independent types.</p>
+
 <h4 id="regular-packets">Regular Packets</h4>
+
 <pre><code>+--------+--------+--------+--------+
 |00  Type  | Length | Value  ...
 +--------+--------+--------+--------+
-</code></pre><p>If desired, the compact and short packets can be turned off,
+</code></pre>
+
+<p>If desired, the compact and short packets can be turned off,
 altogether allocating the entire 2^8 == 256 types to be regular
 messages.</p>
 	</article>

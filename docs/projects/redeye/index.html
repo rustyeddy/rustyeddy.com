@@ -80,32 +80,48 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 	<div class="col"></div>
 	<div class="col-8">
 	    <article class="article text-big">
-		<p>A <em>RedEye camera</em> is a <em>Video Streamer</em> software that can be controlled
+		
+
+<p>A <em>RedEye camera</em> is a <em>Video Streamer</em> software that can be controlled
 via an <em>API</em>, save video images and snapshots locally or in the
 cloud.</p>
+
 <h2 id="what-makes-redeye-so-smart">What Makes RedEye so Smart</h2>
+
 <h3 id="computer-vision-with-opencv">Computer Vision with OpenCV</h3>
+
 <p>Also, <em>Redeye</em> can run video streams or single images through
 <em>Computer Vision AI filters</em> written the <em>OpenCV</em>(<a href="http://opencv.org">http://opencv.org</a>).</p>
+
 <p>Computer Vision algorithms, however complex can be written as a plugin
 and dynamically switched at runtime.</p>
+
 <h3 id="robotics-with-gpio">Robotics with GPIO</h3>
+
 <p>If that ain&rsquo;t enough RedEye also has access to it&rsquo;s hosts <em>GPIO</em>
 library, if available. For example, RedEye loves to control motors and
 robot arms when running on a Rasberry Pi or NVidia Jetson Nano. !</p>
+
 <h3 id="iiot-with-api">IIoT with API</h3>
+
 <p>RedEye was built with MQTT support at it&rsquo;s core, along with it&rsquo;s RPC
 style API RedEye camera&rsquo;s can be integrated into one heck of a diverse
 range of applications!</p>
+
 <blockquote>
 <p>It will be nice to show some here.</p>
 </blockquote>
+
 <h2 id="streaming-video">Streaming Video</h2>
+
 <p>RedEye uses OpenCV to handle all the crazy details of opening and
 initialization the computers variety of camera types in a single
 intuitive interface. We will stick with that, no need to mess it up.</p>
+
 <h2 id="camera-commands-api">Camera Commands (API)</h2>
+
 <p>The Camera Server API supports the following commands:</p>
+
 <ol>
 <li>Config: get and set configurations</li>
 <li>Play: start streaming video (open)</li>
@@ -116,62 +132,83 @@ intuitive interface. We will stick with that, no need to mess it up.</p>
 <li>Store: get and set storage location(s) and creds</li>
 <li>MQTT: broker and credentials</li>
 </ol>
+
 <h2 id="run">Run</h2>
+
 <h2 id="where-can-be-done-with-images-and-video">Where Can be done with Images and Video?</h2>
+
 <p>Images and videos can go a lot of places! Including, but not limited
 to the following:</p>
+
 <ol>
 <li>Display on local screen</li>
 <li>Serve video and images up over HTTP/HTML5</li>
 <li>Save video and images on the Local Filesystem</li>
 <li>Save video and images on a Remote (Cloud) Filesystem</li>
 </ol>
+
 <p>The location(s) of video and images can be setup before hand. Dropbox,
 AWS, Flicker, Unsplash or Youtube. If you have a favorite respository
 for your photos or video configure the storage box ahead of time with
 appropriate access keys and what not, from that point on your can be
 safe knowing your images and videos are safely stored where ever you
 want them.</p>
+
 <h2 id="about-the-camera-software">About the Camera Software</h2>
+
 <p><em>RedEye</em> is really more of a <em>Service</em> <em>Oriented</em> <em>Architecture (SOA)</em>
 than an application really.</p>
+
 <p>The <em>RedEye Camera</em> software streams video over <em>IP</em> through
 configurable <em>Computer Vision Pipelines</em> with example
 pipelines that include:</p>
+
 <ul>
 <li>Face Detection</li>
 <li>Motion Detection</li>
 <li>Object Tracking</li>
 </ul>
+
 <p>Pipelines can be built as plugins and added directly to the camera
 with runtime configuration. This allows you to add your own <em>Computer
 Vision</em> application(s) without worrying <strong>too much</strong> about the
 software that controls the camera.</p>
+
 <h2 id="camera-apis">Camera APIs</h2>
+
 <p>The Camera provides APIs for  <em>camera control</em>, <em>configuration</em> and
 <em>storage</em>. These APIs give you complete control over the
 cameras functionality. Most of this functionality can be had through
 the built in webapp, or any other communication mechanism you choose.</p>
+
 <p>The camera design is <strong>API first</strong> which means that all of the cameras
 functionality is exposed through the same libraries the camera
 operates from, giving you a tremendous amount of flexibility to
 integrate cameras into your application.</p>
+
 <h3 id="control-configuration-and-storage">Control, Configuration and Storage</h3>
+
 <p>The APIs collectively provide control over the cameras <em>play</em>, <em>pause</em>
 and <em>snap</em> controls, a myriad of configurations including
 <em>resolution</em>, <em>Frames Per Second</em>, <em>Color</em> and a ton more.</p>
+
 <p>The <em>storage</em> interface provides very flexible options when it comes
 to where and how to store video clips and snapshots..</p>
+
 <h3 id="supported-protocols">Supported Protocols</h3>
+
 <p>All APIs can be accessed in one or more of the following ways:</p>
+
 <ul>
 <li>Built Reactive Webapp</li>
 <li>REST API</li>
 <li>MQTT Messaging</li>
 <li>Websockets</li>
 </ul>
+
 <p>If you have any questions, find a bug or would like to use this
 software, please drop me a line, or fill out an issue.</p>
+
 <h2 class="mb-4 mt-0">Sample Source From Github</h2>
 
 <script src="https://gist.github.com/rustyeddy/522ba1a1da015ac9cfc0523c4b25dd67.js"></script>

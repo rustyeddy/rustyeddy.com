@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Resources on Rusty Eddy</title>
+    <link>http://www.rustyeddy.com/resources/</link>
+    <description>Recent content in Resources on Rusty Eddy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 Jan 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.rustyeddy.com/resources/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Raspberry PI Resources</title>
+      <link>http://www.rustyeddy.com/resources/raspberry-pi/</link>
+      <pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rustyeddy.com/resources/raspberry-pi/</guid>
+      <description>Some raspberry Pi resources.
+ Raspberry PI WiringPI  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://www.rustyeddy.com/resources/messaging-and-communication-packages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rustyeddy.com/resources/messaging-and-communication-packages/</guid>
+      <description>Messaging and Communications   ZeroMQ :: is a messaging package that has an emphasis on fast and intuitive API. Man I hope this package is as good as it&amp;#39;s beginning guide  Gorilla/mux :: A built to serve up REST api&amp;#39;s, gorilla does that and some more important stuff like serve up static websites and provide support for initiating websockets  Gorilla/websocket :: Handles the full websocket spec. Works great with the standard http router and Gorilla/mux the full featured router.</description>
+    </item>
+    
+    <item>
+      <title>Industrial Open Source Hardware and Software</title>
+      <link>http://www.rustyeddy.com/resources/industrial-open-source/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rustyeddy.com/resources/industrial-open-source/</guid>
+      <description> Build Botics  </description>
+    </item>
+    
+    <item>
+      <title>http - resources regarding HTTP and related tech</title>
+      <link>http://www.rustyeddy.com/resources/http/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rustyeddy.com/resources/http/</guid>
+      <description>HTTPS Server with Golang</description>
+    </item>
+    
+  </channel>
+</rss>

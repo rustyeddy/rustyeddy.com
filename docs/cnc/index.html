@@ -75,11 +75,16 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 	<div class="col"></div> 
 	<div class="col-8">
 	    <article class="article">
-		<p>I bought a starter 3D printer kit with the intentions of turning my
+		
+
+<p>I bought a starter 3D printer kit with the intentions of turning my
 Dremel [Todo Insert Pic] into a Robot! We&rsquo;ll being controlled by a
 Robot anyway.</p>
+
 <h2 id="electronics-and-motors-kit">Electronics and Motors Kit</h2>
+
 <p>The bunch came as a kit for about $62 USD, the kit included:</p>
+
 <ul>
 <li>Imitation Arduino</li>
 <li><em>CH340G CNC Shield v3.0</em> for Arduino</li>
@@ -87,38 +92,55 @@ Robot anyway.</p>
 <li><em>Nema 17 Stepper Motors with Mounts</em> +3 (m3 screws)</li>
 <li><em>End Piece Limit Switches</em> +3</li>
 </ul>
+
 <p>Here is a link to the <a href="https://www.amazon.com/dp/B07QLM5PG5?psc=1&amp;ref=ppx_yo2_dt_b_product_details">CNC Motor and Arduino Kit</a></p>
+
 <h2 id="software">Software</h2>
+
 <p>The <a href="https://github.com/gnea/grbl">GRBL CNC Software</a> basically does
 one thing, but it does that one very import thing very well and that
 is drive the motors from G-Code that has been sent to the Arduino to
 control the stepper drivers.</p>
+
 <h3 id="universal-g-code-sender">Universal G-Code Sender</h3>
+
 <p>Need something to take the G-Code and send it to the GRBL system
 could I write some python Fusion360 code to do this directly?</p>
+
 <h2 id="the-arduino-and-cnc-cape">The Arduino and CNC Cape</h2>
+
 <p>A good Youtube video Advising safe adjustment of the Arduino CNC
 shield: <a href="https://youtu.be/OfyT1xTZC6o">https://youtu.be/OfyT1xTZC6o</a></p>
+
 <h3 id="grbl-cnc-software">GRBL CNC Software</h3>
+
 <h2 id="the-nema-17-stepper-motors">The Nema 17 Stepper Motors</h2>
+
 <h2 id="the-pololu-drv8825-motor-drivers">The Pololu DRV8825 Motor Drivers</h2>
+
 <p>Resources:</p>
+
 <ul>
 <li><a href="https://www.pololu.com/product/2133">Pololu DRV8825 Motor Driver Carrier High Current</a></li>
 <li><a href="https://www.ti.com/lit/ds/symlink/drv8825.pdf">DRV8825 Datasheet</a> from Texas Instruments</li>
 </ul>
+
 <p>This is the breakout board for TI’s DRV8825 microstepping bipolar
 stepper provided with the kit (from Pololu). It features:</p>
+
 <ul>
 <li>adjustable current limiting</li>
 <li>over-current and over-temprature protection</li>
-<li>six microstep resolutions (down to 1/32-step)</li>
+<li>six microstep resolutions (down to <sup>1</sup>&frasl;<sub>32</sub>-step)</li>
 <li>It operates froom 8.2v to 45v</li>
 <li>Can deliver up to approximately 1.5 A per phase without a heat sink or forced air flow
 (rated for up to 2.2 A per coil with sufficient additional cooling)</li>
 </ul>
+
 <p>[TODO: place the pinouts from the motor drivers.]</p>
+
 <h2 id="installation-process">Installation Process</h2>
+
 <ol>
 <li>Build and Install GRBL on the Arduino first. This allows it to take
 control of the CNC shield once that has been added.</li>
