@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Work History on Rusty Eddy</title>
@@ -6,11 +6,7 @@
     <description>Recent content in Work History on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Sep 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://www.rustyeddy.com/resume/jobs/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 21 Sep 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://www.rustyeddy.com/resume/jobs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cisco Systems</title>
       <link>http://www.rustyeddy.com/resume/jobs/cisco-systems/</link>
@@ -22,7 +18,6 @@ for the design, implementation and testing the complete suite of
 Multicast Routing protocols for the Cisco Carrier Routing System
 (CRS).  Worked this project from early design through product launch
 into maintenance.&lt;/p&gt;
-
 &lt;blockquote&gt;
 &lt;p&gt;Computer Networks, Multicast Routing, C/C++, Real Time, Distributed
 Systems&lt;/p&gt;
@@ -48,8 +43,8 @@ prominent members of the computer networking community.&lt;/p&gt;</description>
       
       <guid>http://www.rustyeddy.com/resume/jobs/retix/</guid>
       <description>Promoted to lead the team of 6 engineers that developed and automated test plans for L2 switches, OSPF, RIP and BGP
- Implemented an automated test framework and led junior engineers in developing the automated test suites. C; C++; Perl; TCL
- Provided 3rd level customer support, serious customer problems that could not be resolved by customer support or field engineers became my teams responsibility to diagnose and determine solutions and workarounds was required.</description>
+  Implemented an automated test framework and led junior engineers in developing the automated test suites. C; C++; Perl; TCL
+  Provided 3rd level customer support, serious customer problems that could not be resolved by customer support or field engineers became my teams responsibility to diagnose and determine solutions and workarounds was required.</description>
     </item>
     
     <item>
@@ -61,7 +56,6 @@ prominent members of the computer networking community.&lt;/p&gt;</description>
       <description>&lt;p&gt;Led a team of 5 Sysadmins responsible for the use and well being of
 Engineering Departments 300+ UNIX workstations, servers (Sun, HP, DEC)
 and network.&lt;/p&gt;
-
 &lt;p&gt;On a team that Developed a Real Time OS that was embedded in a variety
 of space and military projects.&lt;/p&gt;</description>
     </item>

@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sensor Station I/O on Rusty Eddy</title>
+    <title>Sensor Station on Rusty Eddy</title>
     <link>http://www.rustyeddy.com/sensors/</link>
-    <description>Recent content in Sensor Station I/O on Rusty Eddy</description>
+    <description>Recent content in Sensor Station on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Sep 2020 10:32:26 -0700</lastBuildDate>
-    
-	<atom:link href="http://www.rustyeddy.com/sensors/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 06 Sep 2020 10:32:26 -0700</lastBuildDate><atom:link href="http://www.rustyeddy.com/sensors/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -27,15 +27,10 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 	</button>
 
 	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-
 	    <nav class="navbar-nav w-100 justify-content-end">
 		<div class="nav w-100">
-  		    <a class="nav-link" href="/software">software </a>
-  		    <a class="nav-link" href="/notes">notes </a>
-  		    <a class="nav-link" href="/redeye">redeye </a>
-  	            <a class="nav-link" href="/resume">resume </a>
-                    
-  		    <a class="nav-link" href="/about">about </a>
+  		    <a class="nav-link" href="/sensors">sensor station&nbsp</a>
+  	            <a class="nav-link" href="/resume">resume</a> 
 		</div>
  	    </nav>
 	</div>
@@ -82,115 +77,91 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 could even say micro-services that act in concert to provide
 interesting applications built from streaming video sources, Computer
 Vision algorithms and Visualizations driven by a comprehensive API.</p>
-
 <h2 id="redeye-components">RedEye Components</h2>
-
 <p>RedEye is an OpenSource software project with a powerful API for
 integration with a variety of applications including but not limited
 to Robotics, Enviromental and Industrial Automation.</p>
-
 <p>RedEye intends to be 100% API driven, infact supporting the following
 communication protocols: HTTP Server for REST and HTML, MQTT Client
 and Websockets for messaging and M-JPEG for video stream delivery.</p>
-
 <ol>
-<li><p><a href="https://github.com/redeyelabs/recam"><em>recam</em></a>: streams video from
+<li>
+<p><a href="https://github.com/redeyelabs/recam"><em>recam</em></a>: streams video from
 networked camers (Raspberry Pi, Jetson Nano, Linux w/Webcam, etc.)
-through Computer Vision AlgoRithms and interfaces with Robotics!</p></li>
-
-<li><p><a href="https://github.com/redeyelabs/station"><em>station</em></a>: controls video
+through Computer Vision AlgoRithms and interfaces with Robotics!</p>
+</li>
+<li>
+<p><a href="https://github.com/redeyelabs/station"><em>station</em></a>: controls video
 streams, save videos, snapshots and change AI Algorigthms on cameras
-within it&rsquo;s network.</p></li>
-
-<li><p><a href="https://github.com/redeyelabs/app"><em>app</em></a>: Webapp served by the
+within it&rsquo;s network.</p>
+</li>
+<li>
+<p><a href="https://github.com/redeyelabs/app"><em>app</em></a>: Webapp served by the
 station, a modern, nice looking app that can be used to watch video,
-observe algorights and even change them, on the fly.</p></li>
-
-<li><p><a href="http://github.com/redeyelabs/aeye"><em>aeye</em></a>: The A-Eye module (like
+observe algorights and even change them, on the fly.</p>
+</li>
+<li>
+<p><a href="http://github.com/redeyelabs/aeye"><em>aeye</em></a>: The A-Eye module (like
 the name? Pretty clever huh?) is a collection of <em>Computer Vision</em>
 <em>filter</em> plugins (easy to write, check out the examples) you can use
-OpenCV, NVidia Stuff or roll your own!</p></li>
+OpenCV, NVidia Stuff or roll your own!</p>
+</li>
 </ol>
-
 <p>There links to each of these applications below where all the detail
 about how to get, build and run these applications can be found. Heck,
 in due time we may even get some containers built for easy deployment.</p>
-
 <h2 id="redeye-architecture">RedEye Architecture</h2>
-
 <p>RedEye can be called a <em>Service Oriented Architecture</em> made from the
 following <em>Micro Services</em> (Buzzword Kill). Bottom line is that each
 of the applications use standard open protocols making it very easy to
 integrate RedEye into many different applications and automations.</p>
-
-<h3 id="http-webui-rest-and-file-uploads">HTTP - WebUI, REST and File Uploads</h3>
-
+<h3 id="http---webui-rest-and-file-uploads">HTTP - WebUI, REST and File Uploads</h3>
 <p>The HTTP protocol is used quite a bit both for it&rsquo;s REST interface as
 well as serving up HTML for the WebUI and providing file uploads. The
 recam and stations module provide HTTP servers.</p>
-
-<h3 id="mqtt-messaging">MQTT - Messaging</h3>
-
+<h3 id="mqtt---messaging">MQTT - Messaging</h3>
 <p>RedEye depenends on an MQTT broker to facilatate <em>camera discovery</em>,
 <em>event and error logging</em> and <em>camera controls</em>. Both <em>recam</em> and
 <em>stations</em> are MQTT clients.</p>
-
 <h3 id="websockets">Websockets</h3>
-
 <p>RedEye comes with a WebUI (written in Vue)! Websockets provide
 realtime communication between the <em>Stations</em> service and the
 WebUI. Websockets allow humans to control much of the run time control
 of the network as well as observe it&rsquo;s health.</p>
-
-<h3 id="m-jpeg-video-streamer">M-JPEG - Video Streamer</h3>
-
+<h3 id="m-jpeg---video-streamer">M-JPEG - Video Streamer</h3>
 <p>M-JPEG is not the most efficient video streaming mechanism but it is
 relatively simple, used for a couple decades around the Internet and
 Computer Vision algorithms, which is what we&rsquo;re all about!</p>
-
 <p>All camera [recams] stream their video&rsquo;s using M-JPEG accessible via a
 common URLs:</p>
-
 <ul>
 <li><a href="http://cam1.mobilerobot.io/video0">http://cam1.mobilerobot.io/video0</a></li>
 <li><a href="http://cam1.mobilerobot.io/video1">http://cam1.mobilerobot.io/video1</a></li>
 </ul>
-
 <p>The above URLs are used to access the first and second video cameras
 on the device with the name: cam1 in mobilerobot.io.</p>
-
 <h3 id="computer-vision-filters">Computer Vision Filters</h3>
-
 <p>Computer vision filters are very simple to integrate into RedEye: a
 shared library that exposes a single public function:</p>
-
 <blockquote>
 <p>void* filter( void* img );</p>
 </blockquote>
-
 <p>The filter can be included with RedEye and recompiled, or the filter
 can be built as a shared library and loaded at runtime.</p>
-
 <p>Computer vision filters simply take an image in, do some possible
 transformations and return the transformed image. Entire pipelines can
 be built by stacking independent filters.</p>
-
 <h2 id="external-controls">External Controls</h2>
-
 <p>RedEye easily interfaces with GPIO libraries like WiringPI that can be
 used to control electro-mechanical devices like industrial robots or
 agricultural controls.</p>
-
 <p>It is also easy (for a competent programmer) to integrate a variety of
 external physical devices via Serial Port, i2c, SPI and good ol TCP
 sockets.</p>
-
 <h2 id="open-source-all-on-github">Open Source all on Github</h2>
-
 <p>RedEye is an <em>Open Source</em> project that organizes and controls a
 network of in-expensive Raspberry Pi and Jetson Nano Camera&rsquo;s for
 example, though in theory any M-JPEG streamer would do!</p>
-
 <h2 id="give-it-a-try-let-me-know-what-you-think">Give it a Try, Let me know what you think!</h2>
 	    </article>
 	</div>
@@ -207,15 +178,16 @@ example, though in theory any M-JPEG streamer would do!</p>
 	    <div class="card">
 		<div class="card-body">
 
-		    <img height="315px" class="card-img" src="" />
+		    <img height="315px" class="card-img" src="/img/rusty-background.jpg" />
 
 		    <h5 class="card-title">
-			<a href="http://www.rustyeddy.com/projects/spa/the-frontend/">A MicroService Dashboard for MicroControllers</a>
+			<a href="http://www.rustyeddy.com/projects/this-website/">How I Made This Web Site</a>
 		    </h5>
 
 		    <div class="card-text">
-			
-			<span><a href="http://www.rustyeddy.com/projects/spa/the-frontend/">read more ...</a></span>
+			This is my personal website which you happen to be looking at. It is a static site authored with plaintext and generated by the static site generator hugo.
+
+			<span><a href="http://www.rustyeddy.com/projects/this-website/">read more ...</a></span>
 		    </div>
 
 		</div>
@@ -226,15 +198,16 @@ example, though in theory any M-JPEG streamer would do!</p>
 	    <div class="card">
 		<div class="card-body">
 
-		    <img height="315px" class="card-img" src="" />
+		    <img height="315px" class="card-img" src="/img/redeye-right.png" />
 
 		    <h5 class="card-title">
-			<a href="http://www.rustyeddy.com/projects/spa/the-server/">An HTTP Server written in Go</a>
+			<a href="http://www.rustyeddy.com/projects/redeye/">RedEye Camera</a>
 		    </h5>
 
 		    <div class="card-text">
-			Serve up HTML5 compiliant websites!
-			<span><a href="http://www.rustyeddy.com/projects/spa/the-server/">read more ...</a></span>
+			RedEye is API driven camera server with built in capabilities of running video streams through Computer Vision algorithms and controlling Robots with GPIO and other IO methods. The API provides complete control over the camera and accessories.  
+
+			<span><a href="http://www.rustyeddy.com/projects/redeye/">read more ...</a></span>
 		    </div>
 
 		</div>

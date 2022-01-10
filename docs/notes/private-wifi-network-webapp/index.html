@@ -27,15 +27,10 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 	</button>
 
 	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-
 	    <nav class="navbar-nav w-100 justify-content-end">
 		<div class="nav w-100">
-  		    <a class="nav-link" href="/software">software </a>
-  		    <a class="nav-link" href="/notes">notes </a>
-  		    <a class="nav-link" href="/redeye">redeye </a>
-  	            <a class="nav-link" href="/resume">resume </a>
-                    
-  		    <a class="nav-link" href="/about">about </a>
+  		    <a class="nav-link" href="/sensors">sensor station&nbsp</a>
+  	            <a class="nav-link" href="/resume">resume</a> 
 		</div>
  	    </nav>
 	</div>
@@ -74,30 +69,21 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="col"></div>
     <div class="col-md-8 hero-text">
 	<article class="article">
-	  
-
-<p>I work with <em>physical computing</em> or devices that have rather
+	  <p>I work with <em>physical computing</em> or devices that have rather
 sophisticated software that needs to be configured, monitored and
 controlled.</p>
-
 <h2 id="building-a-private-wifi">Building a Private Wifi</h2>
-
 <p>Here is the situation, I just plugged a white box into the wall and it
 has a steady green light. I can see two other lights, one of which is
 red. The other two lights are off.</p>
-
 <p>This device is pretty cool, it will control the lights in my garage, I
 have a well lit garage. But I need to configure this thing to set up
 lighting schedules, basically synchronize with daylight.</p>
-
 <h3 id="making-a-wireless-connection">Making a Wireless Connection</h3>
-
 <p>I can&rsquo;t stick a monitor or a keyboard cable into this thing. However,
 since my device is running good old <em>Linux</em> with a nice Wifi chip, we
 are going to turn it into an Access Point (AP).</p>
-
 <p>To make this connection happen we are going to do the following:</p>
-
 <ol>
 <li>Install and configure <em>Device</em> as an AP with a specific SSID</li>
 <li>Device with a browser like Firefox connects with wireless SSID</li>
@@ -105,63 +91,45 @@ are going to turn it into an Access Point (AP).</p>
 <li>Device sends configuration pages to Browser</li>
 <li>User configures the device then saves and exits</li>
 </ol>
-
 <p>At this point the device operates on it&rsquo;s own, not needing anymore
 interaction. However, this same method of configuring the device can
 used to monitor through a dashboard.</p>
-
 <h3 id="configuring-the-ap">Configuring the AP</h3>
-
 <p><em>HostAPd</em> is a very popular <em>Linux</em> tool that will help us easily
 configure the <em>Device</em> as an <em>AP</em> advertising a specific SSID.</p>
-
 <p><em>hostapd</em> is available from <em>Debian</em> distributions with the familar
 apt packaging.</p>
-
 <blockquote>
 <p>apt-get install -y hostapd</p>
 </blockquote>
-
 <p>This needs to be configured, here is what I do to help configure every
 device with a <em>unique</em> but <em>recognizable</em> <em>SSID</em>. The WebApp user
 should have a simple time connecting with the private network and
 subsequently the browser connects to the server and bang, off and
 running.</p>
-
 <h2 id="reasons-for-a-private-wifi">Reasons for a Private Wifi</h2>
-
 <p>Ok. Why not just connect to an exiting network? In some cases we will
 connect to an existing network and hence take advantage of <em>Internet
 Services</em> and on premise infrastructure.</p>
-
 <h3 id="no-access-allowed">No Access Allowed</h3>
-
 <p>There are many cases, like a top secret skunk works projects or an
 industrial production facility where they want to isolate unnecessary
 external devices from internal infra structure.</p>
-
 <h3 id="reduce-security-vulnerabilities">Reduce Security Vulnerabilities</h3>
-
 <p>Creating private networks allows control of who and how that network
 can be accessed. By limiting access to external networks from my
 lighting system and am reducing the surface of my security
 vulnerabilities.</p>
-
 <h3 id="no-access-at-all">No Access At All</h3>
-
 <p>Sometimes we are in the middle of almost nowhere, like the High
 Sierra&rsquo;s, there is no <em>Internet</em> or Wifi Infrastructure. And good luck
 trying to get a cell phone signal (hey T-Mobile!) up there.</p>
-
 <p>However, a little wifi connectivity can still be had! Thank You <em>Solar
 Power!</em>.</p>
-
 <h2 id="conclusion">Conclusion</h2>
-
 <p>This article is not finished, I ran out of time. I will finish it, but
 only if somebody asks me to.  Heck if nobody will read it, then should
 I spend the time?</p>
-
 <p>Is the sound of a singing bird beautiful if nobody hear&rsquo;s it?</p>
 
 	</article>

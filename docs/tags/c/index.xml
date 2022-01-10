@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>c on Rusty Eddy</title>
@@ -6,10 +6,21 @@
     <description>Recent content in c on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Apr 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://www.rustyeddy.com/tags/c/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Fri, 21 Sep 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://www.rustyeddy.com/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The IMS Company</title>
+      <link>http://www.rustyeddy.com/resume/clients/ims-company/</link>
+      <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rustyeddy.com/resume/clients/ims-company/</guid>
+      <description>&lt;p&gt;Led a project to replicate entertainment media (music, video and
+games) from a single media source to hundreds of in­flight
+entertainment units with minimal redundancy.  Contributed to the
+design and development of an inflight entertainment server.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Perl, Python, C/C++ and Java&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
     
     <item>
       <title>Using CMake</title>

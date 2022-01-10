@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>The Process of Delivering Predictable Software on Rusty Eddy</title>
@@ -6,11 +6,7 @@
     <description>Recent content in The Process of Delivering Predictable Software on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Apr 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://www.rustyeddy.com/software/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 05 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://www.rustyeddy.com/software/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Software is Hard</title>
       <link>http://www.rustyeddy.com/software/software-is-hard/</link>
@@ -30,7 +26,7 @@ Perhaps the worst problem with software projects are the diverging expectations 
       <guid>http://www.rustyeddy.com/software/customer-discovery-and-mvp/</guid>
       <description>Customer Discovery consists of one or more customer discovery sessions, where all users and owners of the software will be interviewed for their expectations, needs and desires for the upcoming software project.
 User Stories The information gathered from these sessions are then articulated in a series of non-technical descriptions of how the software is used by everybody.
-These descriptions of the software requirements are often referred to as User Stories.</description>
+These descriptions of the software requirements are often referred to as User Stories. Basically, each story walks through one of the ways in which the planned software will be used.</description>
     </item>
     
     <item>

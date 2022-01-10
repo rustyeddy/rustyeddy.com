@@ -30,12 +30,14 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 
 	    <nav class="navbar-nav w-100 justify-content-end">
 		<div class="nav w-100">
-  		    <a class="nav-link" href="/software">software </a>
-  		    <a class="nav-link" href="/notes">notes </a>
-  		    <a class="nav-link" href="/redeye">redeye </a>
-  	            <a class="nav-link" href="/resume">resume </a>
-                    
+  		    <a class="nav-link" href="/">home </a>
+  		    <a class="nav-link" href="/sensors">sensor </a>
   		    <a class="nav-link" href="/about">about </a>
+  	            <a class="nav-link" href="/resume">resume </a>
+  		    <a class="nav-link" href="/contact">contact </a>
+
+                    
+
 		</div>
  	    </nav>
 	</div>
@@ -74,34 +76,24 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="col"></div>
     <div class="col-md-8 hero-text">
 	<article class="article">
-	  
-
-<h2 id="overview">Overview</h2>
-
+	  <h2 id="overview">Overview</h2>
 <p>A <em>Private Wirelss Network</em> is a common solution, one relatively
 simple way to create a PWN using a <em>Raspberry Pi</em>, some free software
 and a bit of brain greese we can turn our favorite $50 linux computer
 into a PWN provider aka <em>Wireless Access Point (WAP)</em>.</p>
-
 <h3 id="automation">Automation!</h3>
-
 <p>Yes, my favorite words. I took the time to automate the configuration
 of a RPI into a Private WAP.</p>
-
 <h2 id="building-a-private-wap">Building a Private WAP</h2>
-
 <p><em>Normally</em> an RPI will be configured to accesss a wireless network as
 a client provided the RPI has been configured via an accessible <em>SSID</em>
 and correct <em>password</em>.</p>
-
 <p>Using popular and powerful free software:</p>
-
 <ul>
 <li>dnsmasq</li>
 <li>hostapd</li>
 <li>route tables updates</li>
 </ul>
-
 <p>and a couple other itmes that will be discussed in the detailed
 <em>playbook</em>.</p>
 

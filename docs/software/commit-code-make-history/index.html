@@ -27,15 +27,10 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 	</button>
 
 	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-
 	    <nav class="navbar-nav w-100 justify-content-end">
 		<div class="nav w-100">
-  		    <a class="nav-link" href="/software">software </a>
-  		    <a class="nav-link" href="/notes">notes </a>
-  		    <a class="nav-link" href="/redeye">redeye </a>
-  	            <a class="nav-link" href="/resume">resume </a>
-                    
-  		    <a class="nav-link" href="/about">about </a>
+  		    <a class="nav-link" href="/sensors">sensor station&nbsp</a>
+  	            <a class="nav-link" href="/resume">resume</a> 
 		</div>
  	    </nav>
 	</div>
@@ -87,66 +82,47 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 	<div class="col"></div>
 	<div class="col-lg-8 pl-4 pr-4">
 	    <article class="article">
-		
-
-<h2 id="github-and-making-the-commitment">Github and making the Commitment</h2>
-
+		<h2 id="github-and-making-the-commitment">Github and making the Commitment</h2>
 <p>Now it is time for the developer to <em>commit</em> the changes she has been
 working on, tested and pushed through the peer reviews. This step is
 pretty simple, however, we want to make sure we are doing it
 correctly.</p>
-
 <blockquote>
 <p>Todo example commit</p>
 </blockquote>
-
 <p>When the code is merged into the <strong>main</strong> or <strong>master</strong> repository,
 just like commitments, it will be accompanied by the log comments
 that go along with the log files.</p>
-
 <p>Additionally, every <em>commit</em> will have a <em>unique identifier</em>, a big
 nasty looking hex-i-decimal string guaranteed to most likely be locally
 unique.</p>
-
 <h3 id="history-in-the-making">History in the Making</h3>
-
 <p>Well written comments, source diffs and a unique identifier come
 together to create a specific moment in the code life history.</p>
-
 <p>Stringing all commitments together, one forms a very accurate history
 of the source development. If the comments are well written, that
 history is accompanied by a wonderful narrative told by the developers
 as the software is being written.</p>
-
 <h2 id="the-beginning-of-visibility">The Beginning of Visibility</h2>
-
 <p>This can provide the viewer with literally a line by line replay of
 the entire history of a software development project. The commitments
 can also be directly related to the particular <strong>github issues</strong> that
 have spurred the updates to the code in the first place.</p>
-
 <p>This is a very powerful way for not only developers, but also users,
 management and marketing a deep insight into the process of software
 development.</p>
-
-<h2 id="tagging-releases">Tagging - Releases</h2>
-
+<h2 id="tagging---releases">Tagging - Releases</h2>
 <p>Git also provides a feature called <em>tagging</em>, which is in fact very
 similar to <em>branching</em>. <em>Tags</em> however are meant to <em>label</em> a specific
 reference of the source at a specific point in time.</p>
-
 <p><em>Software releases</em> are a good reason to use <em>tags</em>. For example: a
 tag <strong>v1.0.2</strong> would be a typical tag that might be used to reference
 the version of code after <strong>v1.0.1</strong>.</p>
-
 <p>This practice allows the team, or anybody interested, the ability to
 <em>reference</em> and <em>re-create</em> a specific past version of the software.</p>
-
 <h2 id="automated-builds-and-testing">Automated Builds and Testing</h2>
-
 <p>Github provides a ton of goodies with it&rsquo;s well defined <em>API</em> and the
 plethora of <em>web-hooks</em> it provides.</p>
-
 <p>In the next section we&rsquo;ll get into <em>automatically</em> building new images
 upon every committment, running the images through automated tests and
 finally sending <strong>only</strong> the tested images to a file server for
