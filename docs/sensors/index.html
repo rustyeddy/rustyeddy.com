@@ -71,19 +71,14 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 	<div class="col"></div> 
 	<div class="col-8">
 	    <article class="article">
-		<h2 id="what-does-sensor-station-include">What does Sensor Station Include?</h2>
-<ul>
-<li>Dashboard to view real-time and historic sensor data</li>
-<li>Battery operated sensors that transmit data wirelessly</li>
-<li>Cloud storage and control allowing global accessibility</li>
-</ul>
-<p><img src="images/ss-diagram.png" alt=""></p>
+		<p><img src="images/ss-diagram.png" alt=""></p>
 <h2 id="how-does-sensor-station-work">How Does Sensor Station Work?</h2>
-<p>Sensor Station is a System rather than single application we have
-wireless, battery power sensors that transmit environmental data to a
-hub that serves up a real-time dashboard as well as stashes this data
-away in the cloud&rsquo;s historical time series data base.</p>
-<h3 id="todo-place-image-here">TODO place image here</h3>
+<p>Sensor Station is a System rather than single application: we have a
+set of battery powered, wireless sensors that transmit environmental
+data (temprature, humidity, moisture and light) to a hub that serves
+up this data on a real-time dashboard. Optionally, if and when an
+Internet connection is available, the hub will stash it&rsquo;s local data
+(<em>timeseries</em> database) in <em>the cloud</em>.</p>
 <h2 id="the-software">The Software</h2>
 <h3 id="sensors---wireless-and-battery-powered">Sensors - Wireless and Battery Powered</h3>
 <p>Taking advantage of the esp32 Mesh Network, sophisticated power modes

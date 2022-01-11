@@ -9,22 +9,16 @@ description: >
 ---
 
 
-## What does Sensor Station Include?
-
-- Dashboard to view real-time and historic sensor data
-- Battery operated sensors that transmit data wirelessly
-- Cloud storage and control allowing global accessibility
-
 ![](images/ss-diagram.png)
 
 ## How Does Sensor Station Work?
 
-Sensor Station is a System rather than single application we have
-wireless, battery power sensors that transmit environmental data to a
-hub that serves up a real-time dashboard as well as stashes this data
-away in the cloud's historical time series data base. 
-
-### TODO place image here
+Sensor Station is a System rather than single application: we have a
+set of battery powered, wireless sensors that transmit environmental
+data (temprature, humidity, moisture and light) to a hub that serves
+up this data on a real-time dashboard. Optionally, if and when an
+Internet connection is available, the hub will stash it's local data
+(_timeseries_ database) in _the cloud_.
 
 ## The Software 
 

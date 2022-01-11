@@ -1,6 +1,6 @@
 ---
 title: Rusty Eddy
-description: Software Engineer
+description: Software Engineer & IoT Hacker
 date: 2020-04-10
 ---
 
