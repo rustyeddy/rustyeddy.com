@@ -1,5 +1,6 @@
 ---
-title: Sensor Station 
+title: IOT Project Sensor Station 
+url: iot-project-sensor-station
 date: 2020-09-06T10:32:26-07:00
 description: >
   Sensor Station is a project to gather environmental data from
