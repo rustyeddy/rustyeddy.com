@@ -1,13 +1,14 @@
 ---
-title: About Me
+title: About Me and This Site
 date: 2019-05-14
 description: >
   I Design, Develop and Deliver Software
 ---
 
-I am have been a Software Engineer for over 30years. I do Software
-Architecture and Programming daily. I specialize in backend systems
-and IIoT applications development.
+I have been building software for over three decades. I practice the
+_Art of Computer Programming_ and _Systems Architecture_ on a daily. 
+I enjoy _backend programmer_,  _real-time systems_ and _IoT
+projects_.
 
 I live in Huntington Beach, California with my family. I can usually
 be found in, on or around the Pacific Ocean when I am not engaged in

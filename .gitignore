@@ -13,3 +13,5 @@
 *.out
 
 .sass-cache
+.hugo_build.lock
+

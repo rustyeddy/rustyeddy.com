@@ -31,6 +31,7 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 		<div class="nav w-100">
   		    <a class="nav-link" href="/sensors">sensor station&nbsp</a>
   	            <a class="nav-link" href="/resume">resume</a> 
+  	            <a class="nav-link" href="/about">about</a> 
 		</div>
  	    </nav>
 	</div>
@@ -75,23 +76,50 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 <h2 id="how-does-sensor-station-work">How Does Sensor Station Work?</h2>
 <p>Sensor Station is a System rather than single application: we have a
 set of battery powered, wireless sensors that transmit environmental
-data (temprature, humidity, moisture and light) to a hub that serves
+data (temperature, humidity, moisture and light) to a hub that serves
 up this data on a real-time dashboard. Optionally, if and when an
 Internet connection is available, the hub will stash it&rsquo;s local data
-(<em>timeseries</em> database) in <em>the cloud</em>.</p>
-<h2 id="the-software">The Software</h2>
+(<em>time-series</em> database) in <em>the cloud</em>.</p>
+<h2 id="the-components">The Components</h2>
 <h3 id="sensors---wireless-and-battery-powered">Sensors - Wireless and Battery Powered</h3>
 <p>Taking advantage of the esp32 Mesh Network, sophisticated power modes
-and over-the-air updates</p>
+allow these sensors to last for years before a battery change is
+necessary, when battery power starts running low, the sensor will let
+you know!</p>
+<p>These sensors can be spread around in areas with little to no existing
+network or <em>internet connection</em>.</p>
+<p>Over-The-Air updates make pushing updated and fixed software out to
+devices as soon as new code has been released. No need to attaching
+USB cables and doing firmware updates!</p>
 <h3 id="hub---aggregate-and-care-for-sensors-mesh-network">Hub - Aggregate and care for sensors mesh network</h3>
-<p>The Hub aggregates and cares for it&rsquo;s self organizing mesh network of
-sensors. It is the conduit between the dashboard and the cloud!</p>
-<h3 id="dashboard---real-time-and-historic">Dashboard - Real-Time and Historic</h3>
-<p>The dashboard is a WebUI built into the Hub providing a window  into
-your environments health.</p>
+<p>The Sensor Data Aggregation Hub or just <em>Hub</em> gathers data from all
+sensors within it&rsquo;s <em>network</em>, makes that data available in
+<em>real-time</em> via <em>websockets</em>.</p>
+<p>The <em>Hub</em> is also a <em>web server</em> and will serve up an embedded web
+allowing anybody authorized to watch data transmitted in
+<em>real-time</em>. The <em>users</em> can also access <em>historical</em> data from the
+more detailed <em>device</em> and <em>data</em> pages.</p>
+<p>The <em>Hub</em> also takes care of it&rsquo;s self organizing mesh network of
+sensors. Finally the <em>Hub</em> is the conduit between the dashboard and
+the cloud.</p>
+<h3 id="dashboard---real-time-and-historic-environmental-data">Dashboard - Real-Time and Historic Environmental Data</h3>
+<p>The dashboard is a WebUI built into the Hub providing a window into
+your environmental health. All sensor data is transmitted over a
+dedicated <em>MQTT</em> <em>channel</em>, the channel is comprised of a <em>path</em> that
+looks like a <em>directory structure</em> or URL path. Contained in the path
+are the <em>identification</em> of the device and the name of the <em>sensor</em>.</p>
+<p>With this design, any <em>data publisher</em> can contribute to the <em>Sensor
+Station Application</em>.</p>
 <h3 id="cloud---globalizing-your-environment">Cloud - Globalizing your Environment</h3>
-<p>Time series data is pushed to the cloud for global access, as well as
-global control!</p>
+<p><em>Cloud</em> support extends the reach of the data globally allowing access
+to both <em>real-time</em> and <em>historical datas</em>, it also expands the length
+data can be kept. Rather than a couple weeks to a month per hub, the
+data loaded in the cloud can be persisted for <em>years</em> at very low
+cost.</p>
+<p>Entire fleets of hubs can be managed from the cloud console making it
+easy to manage, monitor and update large deployments of not only
+sensor station but also the <em>hubs</em>.</p>
+<p>Global Real-Time Monitoring</p>
 <h2 id="open-source--open-tech">Open Source / Open Tech</h2>
 <ul>
 <li>Go backend ~ small, FAST and easy to deploy</li>
