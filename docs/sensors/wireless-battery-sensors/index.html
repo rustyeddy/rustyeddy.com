@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 
-<title>IOT Project Sensor Station</title>
+<title>Wireless Battery Powered Sensors</title>
 
 <script>(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
 0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
@@ -41,10 +41,9 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="row">
 	<div class="col-md"></div>
 	<div class="col-md-8">
-	  <h1 class="header h2 text-center pb-1">IOT Project Sensor Station</h1>
+	  <h1 class="header h2 text-center pb-1">Wireless Battery Powered Sensors</h1>
 	    <p class="leadin align-right text-muted text-center mt-0">
-		Sensor Station is a project to gather environmental data from inexpensive battery operated, wireless sensors. The data is  aggregated and accessible via a builtin Web Dashboard. The stations can be made globally accessible via a web account.
-
+		
 	    </p>
 	</div>
 	<div class="col-md"></div>
@@ -66,103 +65,16 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     </div>
 </div>
 <div id="main body">
-<div class="container">
+<div class="container"><div class="row">
+    <div class="col"></div>
+    <div class="col-md-8 hero-text">
+	<article class="article">
+	  <p>Wireless</p>
 
-    <div class="row mt-5">
-	<div class="col"></div> 
-	<div class="col-8">
-	    <article class="article">
-		<p><img src="images/ss-diagram.png" alt=""></p>
-<h2 id="how-does-sensor-station-work">How Does Sensor Station Work?</h2>
-<p>Sensor Station is a System rather than single application: we have a
-set of battery powered, wireless sensors that transmit environmental
-data (temperature, humidity, moisture and light) to a hub that serves
-up this data on a real-time dashboard. Optionally, if and when an
-Internet connection is available, the hub will stash it&rsquo;s local data
-(<em>time-series</em> database) in <em>the cloud</em>.</p>
-<h2 id="the-components">The Components</h2>
-<h3 id="sensors---wireless-and-battery-powered">Sensors - Wireless and Battery Powered</h3>
-<p>Taking advantage of the esp32 Mesh Network, sophisticated power modes
-allow these sensors to last for years before a battery change is
-necessary, when battery power starts running low, the sensor will let
-you know!</p>
-<p>These sensors can be spread around in areas with little to no existing
-network or <em>internet connection</em>.</p>
-<p>Over-The-Air updates make pushing updated and fixed software out to
-devices as soon as new code has been released. No need to attaching
-USB cables and doing firmware updates!</p>
-<h3 id="hub---aggregate-and-care-for-sensors-mesh-network">Hub - Aggregate and care for sensors mesh network</h3>
-<p>The Sensor Data Aggregation Hub or just <em>Hub</em> gathers data from all
-sensors within it&rsquo;s <em>network</em>, makes that data available in
-<em>real-time</em> via <em>websockets</em>.</p>
-<p>The <em>Hub</em> is also a <em>web server</em> and will serve up an embedded web
-allowing anybody authorized to watch data transmitted in
-<em>real-time</em>. The <em>users</em> can also access <em>historical</em> data from the
-more detailed <em>device</em> and <em>data</em> pages.</p>
-<p>The <em>Hub</em> also takes care of it&rsquo;s self organizing mesh network of
-sensors. Finally the <em>Hub</em> is the conduit between the dashboard and
-the cloud.</p>
-<h3 id="dashboard---real-time-and-historic-environmental-data">Dashboard - Real-Time and Historic Environmental Data</h3>
-<p>The dashboard is a WebUI built into the Hub providing a window into
-your environmental health. All sensor data is transmitted over a
-dedicated <em>MQTT</em> <em>channel</em>, the channel is comprised of a <em>path</em> that
-looks like a <em>directory structure</em> or URL path. Contained in the path
-are the <em>identification</em> of the device and the name of the <em>sensor</em>.</p>
-<p>With this design, any <em>data publisher</em> can contribute to the <em>Sensor
-Station Application</em>.</p>
-<h3 id="cloud---globalizing-your-environment">Cloud - Globalizing your Environment</h3>
-<p><em>Cloud</em> support extends the reach of the data globally allowing access
-to both <em>real-time</em> and <em>historical datas</em>, it also expands the length
-data can be kept. Rather than a couple weeks to a month per hub, the
-data loaded in the cloud can be persisted for <em>years</em> at very low
-cost.</p>
-<p>Entire fleets of hubs can be managed from the cloud console making it
-easy to manage, monitor and update large deployments of not only
-sensor station but also the <em>hubs</em>.</p>
-<p>Global Real-Time Monitoring</p>
-<h2 id="open-source--open-tech">Open Source / Open Tech</h2>
-<ul>
-<li>Go backend ~ small, FAST and easy to deploy</li>
-<li>VueJS Dashboard ~ styled with Paper it does not get any sexier</li>
-<li>REST API ~ it was designed to be part of an automation</li>
-<li>Web Sockets ~ makes the real-time dashboard not only possible, but
-exciting!</li>
-<li>Ansible Deployment ~ It does not get any easy to deploy a complex
-environment with a nice clean ansible fired CI/CD pipeline</li>
-<li>Cloud Native ~ Our application(s) were designed to run as well in
-the cloud, a container or a baremetal host all the same!</li>
-</ul>
-
-	    </article>
-	</div>
-	<div class="col"></div> 
+	</article>
     </div>
-
-    
-    <div class="row">
-	<div class="col"></div> 
-	<div class="col-8">
-	    <div class="title">
-		<a href="http://www.rustyeddy.com/sensors/wireless-battery-sensors/">Wireless Battery Powered Sensors</a>
-	    </div>
-	</div> 
-	<div class="col"></div>
-    </div>
-
-    <div class="row mb-3">
-	<div class="col text-mute small text-right">
-	    <div class="date">
-		January 13, 2021
-	    </div>
-	</div> 
-	<div class="col-8">
-	    <div class="description">
-		
-	    </div>
-	</div> 
-	<div class="col"></div>
-    </div>
-    
+    <div class="col"></div>
+</div>
 </div>
 
 
@@ -178,7 +90,7 @@ the cloud, a container or a baremetal host all the same!</li>
                 Last update ~
                 
 		
-                Sunday, Sep 6, 2020
+                Wednesday, Jan 13, 2021
 		
                 
             </div>

@@ -7,5 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 06 Sep 2020 10:32:26 -0700</lastBuildDate><atom:link href="http://www.rustyeddy.com/iot-project-sensor-station/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wireless Battery Powered Sensors</title>
+      <link>http://www.rustyeddy.com/sensors/wireless-battery-sensors/</link>
+      <pubDate>Wed, 13 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rustyeddy.com/sensors/wireless-battery-sensors/</guid>
+      <description>Wireless</description>
+    </item>
+    
   </channel>
 </rss>
