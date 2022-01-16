@@ -1,0 +1,43 @@
+{{ define "main" }}
+<div class="container">
+
+    <div class="row mb-4">
+	<div class="col"></div>
+	<div class="col-8">
+	    <article class="article text-big">
+		{{ .Content }}
+                <img src="/img/ss-diagram.png" />
+	    </article>
+	</div>
+	<div class="col"></div>
+    </div>
+
+</div>
+
+<div class="container">
+
+    {{ range .Pages }}
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-8">
+	    <div class="card mb-4">
+	        <div class="card-body">
+		    <h5 class="card-title">
+		        <a href="{{ .Permalink }}">{{ .Title }}</a>
+		    </h5>
+
+		    <div class="card-text">
+		        {{ .Description }}
+		        <span><a href="{{ .Permalink }}">read more ...</a></span>
+		    </div>
+	        </div>
+            </div>
+	</div>
+        <div class="col"></div>
+    </div> 
+    {{ end }}
+
+</div>
+
+</div>
+{{ end }}
