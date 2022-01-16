@@ -5,7 +5,7 @@ description: >
   Wireless sensors with smart battery management can be deployed for
   years in are heavily connected systems or remote areas with no
   infrastructure at all.
-order: 10
+weight: 10
 ---
 
 Taking advantage of the esp32 Mesh Network, sophisticated power modes

@@ -1,7 +1,7 @@
 ---
 title: IoT Real-time Dashboard
 date: 2022-01-12
-order: 30
+weight: 30
 description: >
   The dashboard is a WebUI built into the Hub providing a window into
   your environmental health with real-time data and historic values.

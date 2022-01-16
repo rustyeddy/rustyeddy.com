@@ -5,7 +5,7 @@ description: >
   The Sensor Hub gathers data from all connected sensors, aggregates
   the data for real-time and historic display. The also gets your data
   to the cloud if you have the desire and an Internet connection.
-order: 20
+weight: 20
 ---
 
 ### Hub - Aggregate and care for sensors mesh network

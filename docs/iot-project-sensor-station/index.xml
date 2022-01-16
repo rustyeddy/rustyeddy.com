@@ -8,6 +8,17 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 06 Sep 2020 10:32:26 -0700</lastBuildDate><atom:link href="http://www.rustyeddy.com/iot-project-sensor-station/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Wireless Battery Powered Sensors</title>
+      <link>http://www.rustyeddy.com/sensors/wireless-sensors/</link>
+      <pubDate>Wed, 13 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rustyeddy.com/sensors/wireless-sensors/</guid>
+      <description>Taking advantage of the esp32 Mesh Network, sophisticated power modes allow these sensors to last for years before a battery change is necessary, when battery power starts running low, the sensor will let you know!
+These sensors can be spread around in areas with little to no existing network or internet connection.
+Over-The-Air updates make pushing updated and fixed software out to devices as soon as new code has been released.</description>
+    </item>
+    
+    <item>
       <title>IoT Project Hub</title>
       <link>http://www.rustyeddy.com/sensors/hub/</link>
       <pubDate>Thu, 13 Jan 2022 00:00:00 +0000</pubDate>
@@ -28,26 +39,6 @@ With this design, any data publisher can contribute to the Sensor Station Applic
     </item>
     
     <item>
-      <title>Open Source Software</title>
-      <link>http://www.rustyeddy.com/sensors/open-source/</link>
-      <pubDate>Mon, 10 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.rustyeddy.com/sensors/open-source/</guid>
-      <description>Open Source / Open Tech  Go backend ~ small, FAST and easy to deploy VueJS Dashboard ~ styled with Paper it does not get any sexier REST API ~ it was designed to be part of an automation Web Sockets ~ makes the real-time dashboard not only possible, but exciting! Ansible Deployment ~ It does not get any easy to deploy a complex environment with a nice clean ansible fired CI/CD pipeline Cloud Native ~ Our application(s) were designed to run as well in the cloud, a container or a baremetal host all the same!</description>
-    </item>
-    
-    <item>
-      <title>Wireless Battery Powered Sensors</title>
-      <link>http://www.rustyeddy.com/sensors/wireless-sensors/</link>
-      <pubDate>Wed, 13 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.rustyeddy.com/sensors/wireless-sensors/</guid>
-      <description>Taking advantage of the esp32 Mesh Network, sophisticated power modes allow these sensors to last for years before a battery change is necessary, when battery power starts running low, the sensor will let you know!
-These sensors can be spread around in areas with little to no existing network or internet connection.
-Over-The-Air updates make pushing updated and fixed software out to devices as soon as new code has been released.</description>
-    </item>
-    
-    <item>
       <title>IoT Project Cloud Automation</title>
       <link>http://www.rustyeddy.com/sensors/cloud/</link>
       <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
@@ -55,6 +46,15 @@ Over-The-Air updates make pushing updated and fixed software out to devices as s
       <guid>http://www.rustyeddy.com/sensors/cloud/</guid>
       <description>IoT Project Cloud Cloud support extends the reach of the data globally allowing access to both real-time and historical datas, it also expands the length data can be kept. Rather than a couple weeks to a month per hub, the data loaded in the cloud can be persisted for years at very low cost.
 Entire fleets of hubs can be managed from the cloud console making it easy to manage, monitor and update large deployments of not only sensor station but also the hubs.</description>
+    </item>
+    
+    <item>
+      <title>Open Source Software</title>
+      <link>http://www.rustyeddy.com/sensors/open-source/</link>
+      <pubDate>Mon, 10 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rustyeddy.com/sensors/open-source/</guid>
+      <description>Open Source / Open Tech  Go backend ~ small, FAST and easy to deploy VueJS Dashboard ~ styled with Paper it does not get any sexier REST API ~ it was designed to be part of an automation Web Sockets ~ makes the real-time dashboard not only possible, but exciting! Ansible Deployment ~ It does not get any easy to deploy a complex environment with a nice clean ansible fired CI/CD pipeline Cloud Native ~ Our application(s) were designed to run as well in the cloud, a container or a baremetal host all the same!</description>
     </item>
     
   </channel>
