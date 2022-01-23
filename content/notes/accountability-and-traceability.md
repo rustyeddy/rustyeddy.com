@@ -4,12 +4,22 @@ date: 2018-04-03
 draft: true
 description: >
   Two of the biggest red flags in a software project is a lack of
-  history or accountability. The person that walks into a project own
-  all of the bad decisions and lies that have previously been told,
-  the software person has nowhere else to turn. Using Version control
-  to establish both accountability for decisions and trace
-  modifications to their origin.
+  history or accountability. 
 ---
+
+When a software developer or developers(s) leave a project without the
+use of process or version control, it is a crap shoot as to the
+quality of the code you will discover.
+
+The odds are the code will be _crap_. Most people that are skilled and
+care enough to write _clean code_, likewise are most likely following
+some _process_ or _best practices_ by using version control and
+documeneting the architecture.
+
+The person that walks into a project own all of the bad decisions and
+lies that have previously been told, the software person has nowhere
+else to turn. Using Version control to establish both accountability
+for decisions and trace modifications to their origin.
     
 Communication should be:
 

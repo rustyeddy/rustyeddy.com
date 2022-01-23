@@ -8,17 +8,6 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 06 Sep 2020 10:32:26 -0700</lastBuildDate><atom:link href="http://www.rustyeddy.com/iot-project-sensor-station/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Wireless Battery Powered Sensors</title>
-      <link>http://www.rustyeddy.com/sensors/wireless-sensors/</link>
-      <pubDate>Wed, 13 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.rustyeddy.com/sensors/wireless-sensors/</guid>
-      <description>Taking advantage of the esp32 Mesh Network, sophisticated power modes allow these sensors to last for years before a battery change is necessary, when battery power starts running low, the sensor will let you know!
-These sensors can be spread around in areas with little to no existing network or internet connection.
-Over-The-Air updates make pushing updated and fixed software out to devices as soon as new code has been released.</description>
-    </item>
-    
-    <item>
       <title>IoT Project Hub</title>
       <link>http://www.rustyeddy.com/sensors/hub/</link>
       <pubDate>Thu, 13 Jan 2022 00:00:00 +0000</pubDate>
@@ -34,7 +23,7 @@ The Hub is also a web server and will serve up an embedded web allowing anybody 
       <pubDate>Wed, 12 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>http://www.rustyeddy.com/sensors/webapp/</guid>
-      <description>Dashboard - Real-Time and Historic Environmental Data The dashboard is a WebUI built into the Hub providing a window into your environmental health. All sensor data is transmitted over a dedicated MQTT channel, the channel is comprised of a path that looks like a directory structure or URL path. Contained in the path are the identification of the device and the name of the sensor.
+      <description>Dashboard WebApp The dashboard is a WebUI built into the Hub providing a window into your environmental health. All sensor data is transmitted over a dedicated MQTT channel, the channel is comprised of a path that looks like a directory structure or URL path. Contained in the path are the identification of the device and the name of the sensor.
 With this design, any data publisher can contribute to the Sensor Station Application.</description>
     </item>
     

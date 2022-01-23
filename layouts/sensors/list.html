@@ -19,9 +19,10 @@
     {{ range .Pages }}
     <div class="row">
         <div class="col"></div>
-        <div class="col-8">
+        <div class="col-6">
 	    <div class="card mb-4">
 	        <div class="card-body">
+
 		    <h5 class="card-title">
 		        <a href="{{ .Permalink }}">{{ .Title }}</a>
 		    </h5>
@@ -29,9 +30,11 @@
 		    <div class="card-text">
 		        {{ .Description }}
 		    </div>
+
                     <div class="pt-2">
 		        <a href="{{ .Permalink }}">read more ...</a>
                     </div>
+
 	        </div>
             </div>
 	</div>

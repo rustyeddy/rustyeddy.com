@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 
-<title>Wireless Battery Powered Sensors</title>
+<title>Wireless Battery Powered IoT Sensors</title>
 
 <script>(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
 0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
@@ -41,9 +41,9 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="row">
 	<div class="col-md"></div>
 	<div class="col-md-8">
-	  <h1 class="header h2 text-center pb-1">Wireless Battery Powered Sensors</h1>
+	  <h1 class="header h2 text-center pb-1">Wireless Battery Powered IoT Sensors</h1>
 	    <p class="leadin align-right text-muted text-center mt-0">
-		Wireless sensors with smart battery management can be deployed for years in are heavily connected systems or remote areas with no infrastructure at all.
+		This document specifies the requirements including an MVP for this IoT sensor hardware project. A small wireless device with sensors transmit data such as temperature, humidity, moisture and pressure. The sensors may be thrown around in areas without infra-structure or connected to the cloud when infrastructure is available.
 
 	    </p>
 	</div>
@@ -84,15 +84,47 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 	<div class="col"></div>
 	<div class="col-md-8 pl-4 pr-4">
 	    <article class="article">
-		<p>Taking advantage of the esp32 Mesh Network, sophisticated power modes
-allow these sensors to last for years before a battery change is
-necessary, when battery power starts running low, the sensor will let
-you know!</p>
-<p>These sensors can be spread around in areas with little to no existing
-network or internet connection.</p>
-<p>Over-The-Air updates make pushing updated and fixed software out to
-devices as soon as new code has been released. No need to attaching
-USB cables and doing firmware updates!</p>
+		<h2 id="iot-sensors-data-published">IoT Sensors data Published</h2>
+<blockquote>
+<p>Todo provide schematic of esp32 with</p>
+</blockquote>
+<h3 id="type-of-sensors">Type of Sensors</h3>
+<p>Plan support for the following type of sensors. Now I must determine
+exactly what model(s) of these sensors are going to be good fits.</p>
+<ul>
+<li>Temprature</li>
+<li>Humidity</li>
+<li>Moisture</li>
+<li>Light</li>
+<li>Pressure</li>
+</ul>
+<h3 id="data-sent-to-a-hub">Data sent to a Hub</h3>
+<p>The IoT Hub acts as both the <em>message broker</em> for IoT data sent from
+sensors. It is also a <em>subscriber</em> of said data with the explicit job
+of displaying data real-time and archiving historic data whether it is
+local or in the cloud.</p>
+<h3 id="tbd-control-inputs">TBD: Control inputs</h3>
+<p>The <em>IoT Station</em> does not have to be a publisher only. It is also
+possible that the <em>IoT Station</em> act as a subscriber to control things
+like relays or a potientiometer.</p>
+<h2 id="how-does-ss-work">How Does SS work?</h2>
+<h3 id="data-transmitted-via-mqtt">Data Transmitted Via MQTT</h3>
+<p>Data will be transmitted by the very popular, well understood and
+supported protocol MQTT.</p>
+<h3 id="a-tcp-connection-is-required">A TCP Connection is required</h3>
+<h3 id="mqtt-requires-a-broker">MQTT Requires a broker</h3>
+<h3 id="the-broker-is-the-sensor-hubsensorssensor-hub">The Broker is the <a href="/sensors/sensor-hub">Sensor Hub</a></h3>
+<h2 id="implementation-esp32">Implementation esp32</h2>
+<h2 id="batteries">Batteries</h2>
+<h3 id="sleep-modes">Sleep Modes</h3>
+<h3 id="solar">Solar</h3>
+<h2 id="networking">Networking</h2>
+<h3 id="infrastructure-or-not">Infrastructure or Not?</h3>
+<h4 id="wired-power">Wired Power?</h4>
+<h4 id="wireless-internet-connectivity">Wireless Internet Connectivity?</h4>
+<h3 id="wifi-802x">Wifi 802.x</h3>
+<h3 id="mesh-network">Mesh Network</h3>
+<h2 id="ota-updates">OTA Updates</h2>
 
 	    </article>
 	</div>
