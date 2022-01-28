@@ -85,17 +85,54 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 	<div class="col"></div>
 	<div class="col-md-8 pl-4 pr-4">
 	    <article class="article">
-		<h3 id="hub---aggregate-and-care-for-sensors-mesh-network">Hub - Aggregate and care for sensors mesh network</h3>
+		<h2 id="the-hub-a-sensor-data-collector">The Hub a Sensor Data Collector</h2>
 <p>The Sensor Data Aggregation Hub or just <em>Hub</em> gathers data from all
 sensors within it&rsquo;s <em>network</em>, makes that data available in
-<em>real-time</em> via <em>websockets</em>.</p>
-<p>The <em>Hub</em> is also a <em>web server</em> and will serve up an embedded web
-allowing anybody authorized to watch data transmitted in
-<em>real-time</em>. The <em>users</em> can also access <em>historical</em> data from the
-more detailed <em>device</em> and <em>data</em> pages.</p>
-<p>The <em>Hub</em> also takes care of it&rsquo;s self organizing mesh network of
-sensors. Finally the <em>Hub</em> is the conduit between the dashboard and
-the cloud.</p>
+<em>real-time</em> via <em>websockets</em> or historic data via the REST API.
+Additionally the HUB comes with a REST API and Web server.</p>
+<h2 id="mqtt-to-gather-data">MQTT to Gather Data</h2>
+<p>The Hub gather data via the well supported <a href="https://mqtt.org">MQTT</a>
+light weight IoT messaging protocol. The hub gathers data by
+<em>subscribing</em> to MQTT <em>channels</em> or <em>topics</em> such as:</p>
+<ul>
+<li>/ss/data/{stationid}/tepmf</li>
+<li>/ss/data/{stationid}/humidity</li>
+<li>/ss/data/{stationid}/soil</li>
+</ul>
+<p>Where the topic <em>path</em> are composed of the following elements:</p>
+<ul>
+<li>/ss/data let&rsquo;s us know this message contains sensor data</li>
+<li>{stationid} is the IP address of the IoT station that sends the data</li>
+<li>tempf is an example of the type of data (temprature in this case) to
+be sent.</li>
+</ul>
+<p>For example an IoT station with the ID <em>1.1.2.1</em> will start
+<em>publishing</em> temprature data via MQTT on the following path. The rate
+the data is published is up to the application.  MQTT will just make
+sure the data is reliably delivered to <em>all subscribers</em>, including
+our IoT.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/ss/data/1.1.2.1/tempf
+</code></pre></div><p>The actual <em>data</em> transmitted via the MQTT channel is simply the
+temperature in <em>farenhiet</em>. If the IoT Station transmits data every 15
+minutes you might see a series about like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">73.3, 73.4, 74.1, 75.0 ...
+</code></pre></div><h2 id="rest-api">REST API</h2>
+<p>IoT Hub provides a REST API allowing other programs to access datasets
+from the Hub for various applications. Some of the important REST API
+<em>endpoints</em> are:</p>
+<ul>
+<li>GET /stations</li>
+<li>GET /station/{stationid}</li>
+<li>GET /data/{stationid}/{sensor}/{start}/{end}</li>
+<li>DELETE /data/{stationid}/{sensor}/{start}/{end}</li>
+</ul>
+<p>The first two gather and reply with <em>IoT Station</em> specific meta data,
+such as the station ID, sensors it hosts and other performance and
+health characteristics.</p>
+<h2 id="web-server--webapp">Web Server / Webapp</h2>
+<h2 id="persistence">Persistence</h2>
+<h3 id="local">Local</h3>
+<h3 id="cloud">Cloud</h3>
 
 	    </article>
 	</div>

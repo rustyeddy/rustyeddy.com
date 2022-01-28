@@ -35,8 +35,8 @@ These descriptions of the software requirements are often referred to as User St
       <pubDate>Thu, 13 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>http://www.rustyeddy.com/sensors/hub/</guid>
-      <description>Hub - Aggregate and care for sensors mesh network The Sensor Data Aggregation Hub or just Hub gathers data from all sensors within it&amp;rsquo;s network, makes that data available in real-time via websockets.
-The Hub is also a web server and will serve up an embedded web allowing anybody authorized to watch data transmitted in real-time. The users can also access historical data from the more detailed device and data pages.</description>
+      <description>The Hub a Sensor Data Collector The Sensor Data Aggregation Hub or just Hub gathers data from all sensors within it&amp;rsquo;s network, makes that data available in real-time via websockets or historic data via the REST API. Additionally the HUB comes with a REST API and Web server.
+MQTT to Gather Data The Hub gather data via the well supported MQTT light weight IoT messaging protocol. The hub gathers data by subscribing to MQTT channels or topics such as:</description>
     </item>
     
     <item>
