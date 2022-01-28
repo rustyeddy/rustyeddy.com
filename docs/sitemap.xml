@@ -36,11 +36,17 @@
     <loc>http://www.rustyeddy.com/software/release-process/</loc>
     <lastmod>2021-05-03T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://www.rustyeddy.com/resume/clients/sugo-music/</loc>
+    <lastmod>2021-01-27T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://www.rustyeddy.com/resume/clients/</loc>
     <lastmod>2018-09-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/resume/edu/usc/</loc>
     <lastmod>1996-01-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/resume/clients/sahara-networks/</loc>
+    <lastmod>2021-01-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/resume/clients/radian-laser/</loc>
   </url><url>
@@ -101,6 +107,27 @@
   </url><url>
     <loc>http://www.rustyeddy.com/computer-vision/</loc>
     <lastmod>2021-04-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/amazon-web-services-aws/</loc>
+    <lastmod>2021-01-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/c&#43;&#43;/</loc>
+    <lastmod>2021-01-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/fullstack/</loc>
+    <lastmod>2021-01-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/go/</loc>
+    <lastmod>2021-01-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/google-cloud-platform/</loc>
+    <lastmod>2021-01-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/network-protocol-design/</loc>
+    <lastmod>2021-01-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/react/</loc>
+    <lastmod>2021-01-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/notes/rpi-wpe-web-kiosk/</loc>
     <lastmod>2020-12-25T00:00:00+00:00</lastmod>
@@ -366,9 +393,6 @@
     <loc>http://www.rustyeddy.com/notes/design-graphics-with-canva/</loc>
     <lastmod>2017-10-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.rustyeddy.com/tags/c&#43;&#43;/</loc>
-    <lastmod>2017-04-21T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://www.rustyeddy.com/tags/cmake/</loc>
     <lastmod>2017-04-21T00:00:00+00:00</lastmod>
   </url><url>
@@ -400,5 +424,7 @@
     <loc>http://www.rustyeddy.com/tags/firmware/</loc>
   </url><url>
     <loc>http://www.rustyeddy.com/tags/single-page-app/</loc>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/tcp/ip/</loc>
   </url>
 </urlset>

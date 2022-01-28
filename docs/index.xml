@@ -136,12 +136,43 @@ For example, when a new release is cut, the following process may be in place:
     </item>
     
     <item>
+      <title>Sugo Music Dashboard</title>
+      <link>http://www.rustyeddy.com/resume/clients/sugo-music/</link>
+      <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rustyeddy.com/resume/clients/sugo-music/</guid>
+      <description>&lt;p&gt;Sugo Music is an online Music publishing platform for Artists by
+artists. It was my responsibility to manage the software process,
+build and test the backend and manage the front-end development in
+React.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;C/C++, Go &amp;amp; Python, embedded systems and microservices.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
       <title>University of Southern California ~ MSCS</title>
       <link>http://www.rustyeddy.com/resume/edu/usc/</link>
       <pubDate>Tue, 02 Jan 1996 00:00:00 +0000</pubDate>
       
       <guid>http://www.rustyeddy.com/resume/edu/usc/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Sahara Networks</title>
+      <link>http://www.rustyeddy.com/resume/clients/sahara-networks/</link>
+      <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rustyeddy.com/resume/clients/sahara-networks/</guid>
+      <description>&lt;p&gt;Sahara Networks is building something truley unique, connecting
+micro-controllers and IoT devics across the network allowing virtual
+circuits to be created. I help design, develop and lead the design and
+implementation of the network protocol that delivers high speed
+digital I/O signals across a &amp;ldquo;device network&amp;rdquo;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;C/C++, nodejs, Go &amp;amp; Python, embedded systems and microservices.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
     </item>
     
     <item>

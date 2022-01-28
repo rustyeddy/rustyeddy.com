@@ -6,7 +6,23 @@
     <description>Recent content in c&#43;&#43; on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Apr 2017 00:00:00 +0000</lastBuildDate><atom:link href="http://www.rustyeddy.com/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.rustyeddy.com/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sahara Networks</title>
+      <link>http://www.rustyeddy.com/resume/clients/sahara-networks/</link>
+      <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rustyeddy.com/resume/clients/sahara-networks/</guid>
+      <description>&lt;p&gt;Sahara Networks is building something truley unique, connecting
+micro-controllers and IoT devics across the network allowing virtual
+circuits to be created. I help design, develop and lead the design and
+implementation of the network protocol that delivers high speed
+digital I/O signals across a &amp;ldquo;device network&amp;rdquo;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;C/C++, nodejs, Go &amp;amp; Python, embedded systems and microservices.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
     <item>
       <title>Using CMake</title>
       <link>http://www.rustyeddy.com/notes/cmake/</link>

@@ -1,7 +1,7 @@
 ---
 title: Radian Laser
 start: 2019-07-01
-finish: present
+finish: 2020-09-01
 company: Radian Laser Systems, LLC
 weight: 110
 jobtitle: Software Engineer
