@@ -116,7 +116,7 @@ for temprature and humidity respectively.</p>
 <li>/ss/data/station2/humidity: 10.2</li>
 </ul>
 </blockquote>
-<h2 id="normalizing-the-message">Normalizing the Message</h2>
+<h2 id="message-data-model">Message Data Model</h2>
 <p>A simple light weight and efficient message is created from a
 combination of the <em>StationID</em> and <em>SensorID</em> elements of the MQTT
 topic. Combined with the <em>Value</em> and <em>Timestamp</em> we are able to
@@ -204,9 +204,26 @@ as a <em>REST</em> interface, <em>GraphQL</em> and <em>Web-sockets</em>.</p>
 protocols</p>
 </blockquote>
 <h2 id="web-server--webapp">Web Server / Webapp</h2>
+<p>The hub is also capable of serving up a nice modern UI written with
+the <em>React</em> or <em>Vue</em> JavaScript framework, which should I choose
+..?..</p>
 <h2 id="persistence">Persistence</h2>
+<p>We will save data for future use, the <em>nerdy</em> sounding term for this
+is <em>persitence</em> other people may say <em>store</em> or <em>save</em> data.</p>
+<p>The data is typically stored in memory, that memory or the live
+incoming data can be <em>persisted</em> <em>locally</em> or in the cloud.</p>
 <h3 id="local">Local</h3>
+<p>Write data from memory to file storage. For this we will use the
+JSON formatted files written to local disk, if we have one.</p>
 <h3 id="cloud">Cloud</h3>
+<p>Write data periodically to the Cloud for global accessl.</p>
+<h2 id="storage-strategy">Storage Strategy</h2>
+<ul>
+<li>How much / long to keep data in memory</li>
+<li>How much / long to keep data on disk</li>
+<li>How long to keep data in cloud</li>
+</ul>
+<p>Need to have a data persistence strategy.</p>
 
                 <img src="/img/ss-diagram.png" />
 	    </article>

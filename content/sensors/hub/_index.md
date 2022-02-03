@@ -61,7 +61,7 @@ You might see something like this:
 > - /ss/data/station2/humidity: 10.2
 >
 
-## Normalizing the Message
+## Message Data Model
 
 A simple light weight and efficient message is created from a
 combination of the _StationID_ and _SensorID_ elements of the MQTT
@@ -182,8 +182,31 @@ as a _REST_ interface, _GraphQL_ and _Web-sockets_.
 
 ## Web Server / Webapp
 
+The hub is also capable of serving up a nice modern UI written with
+the _React_ or _Vue_ JavaScript framework, which should I choose
+..?.. 
+
 ## Persistence 
+
+We will save data for future use, the _nerdy_ sounding term for this
+is _persitence_ other people may say _store_ or _save_ data. 
+
+The data is typically stored in memory, that memory or the live
+incoming data can be _persisted_ _locally_ or in the cloud.
 
 ### Local
 
+Write data from memory to file storage. For this we will use the
+JSON formatted files written to local disk, if we have one.
+
 ### Cloud
+
+Write data periodically to the Cloud for global accessl.
+
+## Storage Strategy
+
+- How much / long to keep data in memory
+- How much / long to keep data on disk
+- How long to keep data in cloud
+
+Need to have a data persistence strategy.
