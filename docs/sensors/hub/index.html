@@ -67,33 +67,24 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     </div>
 </div>
 <div id="main body">
-
 <div class="container">
-    <div class="row pt-4 mb-5 mt-5">
+
+    <div class="row mb-4">
 	<div class="col"></div>
 	<div class="col-8">
-	    <img class="img-fluid" src="" />
-	</div>
-	<div class="col"></div>
-    </div>
-</div>
-
-
-<div class="container">
-
-    <div class="row mt-4">
-	<div class="col"></div>
-	<div class="col-md-8 pl-4 pr-4">
-	    <article class="article">
+	    <article class="article text-big">
 		<h2 id="the-hub-a-sensor-data-collector">The Hub a Sensor Data Collector</h2>
 <p>The Sensor Data Aggregation Hub or just <em>Hub</em> gathers data from all
 sensors within it&rsquo;s <em>network</em>, makes that data available in
 <em>real-time</em> via <em>websockets</em> or historic data via the REST API.
-Additionally the HUB comes with a REST API and Web server.</p>
-<h2 id="mqtt-to-gather-data">MQTT to Gather Data</h2>
-<p>The Hub gather data via the well supported <a href="https://mqtt.org">MQTT</a>
-light weight IoT messaging protocol. The hub gathers data by
-<em>subscribing</em> to MQTT <em>channels</em> or <em>topics</em> such as:</p>
+Additionally the with a built in Web server capable of serving up a
+webapp for the Hub..</p>
+<h2 id="mqtt-gathers-data">MQTT Gathers Data</h2>
+<p>The Hub gathers data via the well known and supported
+<a href="https://mqtt.org">MQTT</a> light weight messaging protocol is an ideal
+fit for IoT applications.</p>
+<p>The hub gathers data by <em>subscribing</em> to MQTT <em>channels</em> or <em>topics</em>
+such as:</p>
 <ul>
 <li>/ss/data/{stationid}/tepmf</li>
 <li>/ss/data/{stationid}/humidity</li>
@@ -110,12 +101,86 @@ be sent.</li>
 <em>publishing</em> temprature data via MQTT on the following path. The rate
 the data is published is up to the application.  MQTT will just make
 sure the data is reliably delivered to <em>all subscribers</em>, including
-our IoT.</p>
+our IoTHub.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/ss/data/1.1.2.1/tempf
 </code></pre></div><p>The actual <em>data</em> transmitted via the MQTT channel is simply the
-temperature in <em>farenhiet</em>. If the IoT Station transmits data every 15
-minutes you might see a series about like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">73.3, 73.4, 74.1, 75.0 ...
+temperature in <em>farenhiet</em>. For example, if you have two stations
+<em>station1</em> and <em>station2</em> that published fahernheit and a percentage
+for temprature and humidity respectively.</p>
+<p>You might see something like this:</p>
+<blockquote>
+<ul>
+<li>/ss/data/station1/tempf: 75.5</li>
+<li>/ss/data/station1/humidity: 12.5</li>
+<li>/ss/data/station2/tempf: 87.7</li>
+<li>/ss/data/station2/humidity: 10.2</li>
+</ul>
+</blockquote>
+<h2 id="normalizing-the-message">Normalizing the Message</h2>
+<p>A simple light weight and efficient message is created from a
+combination of the <em>StationID</em> and <em>SensorID</em> elements of the MQTT
+topic. Combined with the <em>Value</em> and <em>Timestamp</em> we are able to
+construct the following <em>Message</em>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Msg</span> <span style="color:#66d9ef">struct</span> {
+    <span style="color:#a6e22e">Station</span> <span style="color:#66d9ef">string</span>
+    <span style="color:#a6e22e">Sensor</span>  <span style="color:#66d9ef">string</span>
+    <span style="color:#a6e22e">Value</span>   <span style="color:#66d9ef">float64</span>
+    <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Time</span>
+}
+</code></pre></div><p>This is a <em>normalized</em> and <em>complete</em> representation of a single data
+<em>value</em> at a specif <em>time</em> from the respective <em>station</em> and <em>sensor</em>.</p>
+<p>This format can be converted in any alternative format required quite
+easily and be transported through the system with little overhaed.</p>
+<h2 id="data-consumers-and-go-channels">Data Consumers and Go Channels</h2>
+<p>Every subscriber has a <em>list of Consumers</em> were <em>Consumers</em> actually
+consume the data the MQTT channels produce. The tricky part here is
+that we may have more than one consumer of the data.</p>
+<p>For example, we have the following consumers:</p>
+<ul>
+<li>Memory consumer saving new data into historic structures</li>
+<li>Web Socket real-time data publisher</li>
+</ul>
+<h3 id="consumer-requirements">Consumer Requirements</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Consumer</span> <span style="color:#66d9ef">interface</span> {
+    <span style="color:#a6e22e">GetID</span>()     <span style="color:#66d9ef">string</span>
+    <span style="color:#a6e22e">GetRecvQ</span>()  <span style="color:#66d9ef">chan</span> <span style="color:#a6e22e">Msg</span>
+    <span style="color:#a6e22e">Listen</span>()
+}
+</code></pre></div><p>Where <em>GetID()</em> helps identify exactly what consumer we
+have. <em>RecvQ()</em> will produce a <code>chan Msg</code> that will deliver data
+<em>Msgs'</em> to a loop in the <em>Listen()</em> function.</p>
+<h3 id="consumers-will-come-and-go">Consumers will come and Go</h3>
+<p>Because of the nature of <em>Web sockets</em> in that you need a client to
+transmit data, there are times where it is possibley no <em>consumer</em> for
+a particular channels data.  So the Hub was designed to quickly
+discard data if there is no consumer for the data.</p>
+<p>In practice, most likely the <em>memory</em> or <em>station</em> consumer will
+always be listening to incoming data, reformatting it to the indexed
+version of the data for easy station recovery.</p>
+<p>This will almost always ensure there is at least one <em>consumer</em> for
+the data.</p>
+<h3 id="websocket-clients">Websocket Clients</h3>
+<p>Websocket clients on the other hand will come and go. A new connection
+will establish a <em>websocket</em> connection via TCP/IP to recieve data for
+the duration of that conneciton.</p>
+<p>When the <em>websocket</em> connection is closed or dropped, the websocket
+<em>Consumer</em>  will be removed from the <em>Data Subscription</em>.</p>
+<h4 id="multiple-websocket-client">Multiple Websocket Client</h4>
+<p>It is quite possible for more than one connection to be established
+from different clients. We would like to permit at least <em>Read only</em>
+copies of the data over the websocket connection.</p>
+<h2 id="volatile-memory-storage">Volatile Memory Storage</h2>
+<p>The data as it is gathered is converted into different in memory
+structures index first on the Station and then by a Sensor, where each
+sensor has a <em>time series</em> (stream of values and successive times).</p>
+<p>At anytime an active hub will have an in memory representation of the
+timeseires data that abstractly looks like:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-txt" data-lang="txt">- station1
+  - tempf: {t1, v1}, {t2, v2} .. {tn, vn}
+  - humidity: {t1, v1}, {t2, v2} .. {tn, vn}
+- station2
+  - tempf: {t1, v1}, {t2, v2} .. {tn, vn}
+  - humidity: {t1, v1}, {t2, v2} .. {tn, vn} 
 </code></pre></div><h2 id="rest-api">REST API</h2>
 <p>IoT Hub provides a REST API allowing other programs to access datasets
 from the Hub for various applications. Some of the important REST API
@@ -129,17 +194,35 @@ from the Hub for various applications. Some of the important REST API
 <p>The first two gather and reply with <em>IoT Station</em> specific meta data,
 such as the station ID, sensors it hosts and other performance and
 health characteristics.</p>
+<h3 id="go-and-micro-services">Go and Micro Services</h3>
+<p>The great thing about Go is that it was built out of the box with
+great <em>micro-service</em> support. That is, it is very simple to create
+say an embedded web server capable of serving up <em>web-pages</em> as well
+as a <em>REST</em> interface, <em>GraphQL</em> and <em>Web-sockets</em>.</p>
+<blockquote>
+<p>TODO example of the go code registering callbacks, handling various
+protocols</p>
+</blockquote>
 <h2 id="web-server--webapp">Web Server / Webapp</h2>
 <h2 id="persistence">Persistence</h2>
 <h3 id="local">Local</h3>
 <h3 id="cloud">Cloud</h3>
 
+                <img src="/img/ss-diagram.png" />
 	    </article>
 	</div>
 	<div class="col"></div>
     </div>
+
 </div>
 
+<div class="container">
+
+    
+
+</div>
+
+</div>
 
 
 	</div><footer id="footer" class="container-fluid footer small-text pt-4 border-top">

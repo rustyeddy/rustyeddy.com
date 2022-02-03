@@ -7,44 +7,5 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 06 Sep 2020 10:32:26 -0700</lastBuildDate><atom:link href="http://www.rustyeddy.com/iot-project-sensor-station/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>IoT Project Hub</title>
-      <link>http://www.rustyeddy.com/sensors/hub/</link>
-      <pubDate>Thu, 13 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.rustyeddy.com/sensors/hub/</guid>
-      <description>The Hub a Sensor Data Collector The Sensor Data Aggregation Hub or just Hub gathers data from all sensors within it&amp;rsquo;s network, makes that data available in real-time via websockets or historic data via the REST API. Additionally the HUB comes with a REST API and Web server.
-MQTT to Gather Data The Hub gather data via the well supported MQTT light weight IoT messaging protocol. The hub gathers data by subscribing to MQTT channels or topics such as:</description>
-    </item>
-    
-    <item>
-      <title>IoT Real-time Dashboard</title>
-      <link>http://www.rustyeddy.com/sensors/webapp/</link>
-      <pubDate>Wed, 12 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.rustyeddy.com/sensors/webapp/</guid>
-      <description>Dashboard WebApp The dashboard is a WebUI built into the Hub providing a window into your environmental health. All sensor data is transmitted over a dedicated MQTT channel, the channel is comprised of a path that looks like a directory structure or URL path. Contained in the path are the identification of the device and the name of the sensor.
-With this design, any data publisher can contribute to the Sensor Station Application.</description>
-    </item>
-    
-    <item>
-      <title>IoT Project Cloud Automation</title>
-      <link>http://www.rustyeddy.com/sensors/cloud/</link>
-      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.rustyeddy.com/sensors/cloud/</guid>
-      <description>IoT Project Cloud Cloud support extends the reach of the data globally allowing access to both real-time and historical datas, it also expands the length data can be kept. Rather than a couple weeks to a month per hub, the data loaded in the cloud can be persisted for years at very low cost.
-Entire fleets of hubs can be managed from the cloud console making it easy to manage, monitor and update large deployments of not only sensor station but also the hubs.</description>
-    </item>
-    
-    <item>
-      <title>Open Source Software</title>
-      <link>http://www.rustyeddy.com/sensors/open-source/</link>
-      <pubDate>Mon, 10 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.rustyeddy.com/sensors/open-source/</guid>
-      <description>Open Source / Open Tech  Go backend ~ small, FAST and easy to deploy VueJS Dashboard ~ styled with Paper it does not get any sexier REST API ~ it was designed to be part of an automation Web Sockets ~ makes the real-time dashboard not only possible, but exciting! Ansible Deployment ~ It does not get any easy to deploy a complex environment with a nice clean ansible fired CI/CD pipeline Cloud Native ~ Our application(s) were designed to run as well in the cloud, a container or a baremetal host all the same!</description>
-    </item>
-    
   </channel>
 </rss>
