@@ -29,5 +29,5 @@ circuits to be created. I help design, develop and lead the design and
 implementation of the network protocol that delivers high speed
 digital I/O signals across a "device network".
 	
-> C/C++, nodejs, Go & Python, embedded systems and microservices.
+> Backend, C/C++, nodejs, TCP/IP and Raspberry Pi
 <!--more-->

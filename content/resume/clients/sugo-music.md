@@ -28,5 +28,5 @@ artists. It was my responsibility to manage the software process,
 build and test the backend and manage the front-end development in
 React. 
 	
-> C/C++, Go & Python, embedded systems and microservices.
+> Go, React, REST API, HTTP, HTML, JavaScript, Webapp, fullstack
 <!--more-->
