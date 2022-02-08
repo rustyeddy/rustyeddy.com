@@ -9,33 +9,44 @@ weight: 20
 repo: https://github.com/sensorstation/sensors
 ---
 
-## The Hub a Sensor Data Collector
+## About IoTHub
 
-The Sensor Data Aggregation Hub or just _Hub_ gathers data from all
-sensors within it's _network_, makes that data available in
-_real-time_ via _websockets_ or historic data via the REST API. 
-Additionally the with a built in Web server capable of serving up a
-webapp for the Hub..
+The _IoT Hub_ gathers data from a _network_ of sensors that publish
+data at regular intervals. The _hub_ aggregates and sorts the data for
+for access by clients. The hub will also push the data to the cloud if
+desired.
 
-## MQTT Gathers Data
+The _IoT Hub_ comes equipped with a builtin WebApp for easy access to
+real-time and historic station and sensor _time series_ data. 
+
+
+### MQTT Delivers the Data
 
 The Hub gathers data via the well known and supported
 [MQTT](https://mqtt.org) light weight messaging protocol is an ideal
 fit for IoT applications. 
 
 The hub gathers data by _subscribing_ to MQTT _channels_ or _topics_
-such as:
+that each have data periodically _published_ by connected data
+sources which typically are 
+[battery powered wireless sensors](sensors/wireless-sensors).
+
+The topics data sources _publish_ data to have the following format:
 
 - /ss/data/{stationid}/tepmf
 - /ss/data/{stationid}/humidity
-- /ss/data/{stationid}/soil
+- /ss/data/{stationid}/moisture
 
-Where the topic _path_ are composed of the following elements:
+As you can see, the channels or _topics_ have a specific structure
+allowing the _IoTHub_ to parse messages into an _internal_ structure
+called a <code>_Msg_</code> that contains these four pieces of
+information: 
 
-- /ss/data let's us know this message contains sensor data
-- {stationid} is the IP address of the IoT station that sends the data
-- tempf is an example of the type of data (temprature in this case) to
-  be sent.
+- Station ID probably in the form of an IP or MAC address
+- Sensor data name such as: temprature, humidiy, air-pressure, etc
+- Value: this will either be an integer or a float64
+
+### MQTT Example
 
 For example an IoT station with the ID _1.1.2.1_ will start
 _publishing_ temprature data via MQTT on the following path. The rate
@@ -61,7 +72,7 @@ You might see something like this:
 > - /ss/data/station2/humidity: 10.2
 >
 
-## Message Data Model
+## In Memory Data Model
 
 A simple light weight and efficient message is created from a
 combination of the _StationID_ and _SensorID_ elements of the MQTT
@@ -78,10 +89,26 @@ type Msg struct {
 ```
 
 This is a _normalized_ and _complete_ representation of a single data
-_value_ at a specif _time_ from the respective _station_ and _sensor_.
+_value_ at a specific _time_ indexed with the respective _station_ and
+_sensor_. 
 
 This format can be converted in any alternative format required quite
-easily and be transported through the system with little overhaed.
+easily and be transported through the system with little overhead. For
+example, most operations with 32bits of accuracy can be efficienty
+stored in a _small_ _fixed size_ datastructre.
+
+With an IP address of 32bits, most messages can be stored in two 64bit
+integers! The standard unix timestamp <code>time_t</code> is a 32bit
+int that has better than one second of accuracy.
+
+```go
+type Msg struct {
+    Station int32
+    Sensor  int32
+    Value   int32
+    Time    int32
+}
+```
 
 ## Data Consumers and Go Channels
 
@@ -146,7 +173,7 @@ sensor has a _time series_ (stream of values and successive times).
 At anytime an active hub will have an in memory representation of the
 timeseires data that abstractly looks like:
 
-```txt
+```yaml
 - station1
   - tempf: {t1, v1}, {t2, v2} .. {tn, vn}
   - humidity: {t1, v1}, {t2, v2} .. {tn, vn}
@@ -185,6 +212,11 @@ as a _REST_ interface, _GraphQL_ and _Web-sockets_.
 The hub is also capable of serving up a nice modern UI written with
 the _React_ or _Vue_ JavaScript framework, which should I choose
 ..?.. 
+
+> Todo: put a nice pic with a link to the webapp.
+
+Are you interested in creating a frontend to the web app, check out my first attempt
+here [Web app](/sensors/webapp)
 
 ## Persistence 
 

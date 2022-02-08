@@ -12,6 +12,10 @@ sessions, where all *users* and *owners* of the software will be
 interviewed for their expectations, needs and desires for the
 upcoming software project. 
 
+Don't just stop at the first answer, it will be too vague. Dig deeper
+and start peeling back the details. This great article on the
+[Five Why's](https://www.mindtools.com/pages/article/newTMC_5W.htm)
+
 ## User Stories
 
 The information gathered from these sessions are then articulated in a

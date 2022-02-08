@@ -30,7 +30,7 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 	    <nav class="navbar-nav w-100 justify-content-end">
 		<div class="nav w-100">
   		    <a class="nav-link" href="/iot-project-sensor-station">sensor station&nbsp</a>
-  	            <a class="nav-link" href="/resume">software &nbsp</a> 
+  	            <a class="nav-link" href="/software">software &nbsp</a> 
   	            <a class="nav-link" href="/resume">resume &nbsp</a> 
   	            <a class="nav-link" href="/about">about &nbsp</a> 
 		</div>
@@ -73,30 +73,37 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 	<div class="col"></div>
 	<div class="col-8">
 	    <article class="article text-big">
-		<h2 id="the-hub-a-sensor-data-collector">The Hub a Sensor Data Collector</h2>
-<p>The Sensor Data Aggregation Hub or just <em>Hub</em> gathers data from all
-sensors within it&rsquo;s <em>network</em>, makes that data available in
-<em>real-time</em> via <em>websockets</em> or historic data via the REST API.
-Additionally the with a built in Web server capable of serving up a
-webapp for the Hub..</p>
-<h2 id="mqtt-gathers-data">MQTT Gathers Data</h2>
+		<h2 id="about-iothub">About IoTHub</h2>
+<p>The <em>IoT Hub</em> gathers data from a <em>network</em> of sensors that publish
+data at regular intervals. The <em>hub</em> aggregates and sorts the data for
+for access by clients. The hub will also push the data to the cloud if
+desired.</p>
+<p>The <em>IoT Hub</em> comes equipped with a builtin WebApp for easy access to
+real-time and historic station and sensor <em>time series</em> data.</p>
+<h3 id="mqtt-delivers-the-data">MQTT Delivers the Data</h3>
 <p>The Hub gathers data via the well known and supported
 <a href="https://mqtt.org">MQTT</a> light weight messaging protocol is an ideal
 fit for IoT applications.</p>
 <p>The hub gathers data by <em>subscribing</em> to MQTT <em>channels</em> or <em>topics</em>
-such as:</p>
+that each have data periodically <em>published</em> by connected data
+sources which typically are
+<a href="sensors/wireless-sensors">battery powered wireless sensors</a>.</p>
+<p>The topics data sources <em>publish</em> data to have the following format:</p>
 <ul>
 <li>/ss/data/{stationid}/tepmf</li>
 <li>/ss/data/{stationid}/humidity</li>
-<li>/ss/data/{stationid}/soil</li>
+<li>/ss/data/{stationid}/moisture</li>
 </ul>
-<p>Where the topic <em>path</em> are composed of the following elements:</p>
+<p>As you can see, the channels or <em>topics</em> have a specific structure
+allowing the <em>IoTHub</em> to parse messages into an <em>internal</em> structure
+called a <!-- raw HTML omitted --><em>Msg</em><!-- raw HTML omitted --> that contains these four pieces of
+information:</p>
 <ul>
-<li>/ss/data let&rsquo;s us know this message contains sensor data</li>
-<li>{stationid} is the IP address of the IoT station that sends the data</li>
-<li>tempf is an example of the type of data (temprature in this case) to
-be sent.</li>
+<li>Station ID probably in the form of an IP or MAC address</li>
+<li>Sensor data name such as: temprature, humidiy, air-pressure, etc</li>
+<li>Value: this will either be an integer or a float64</li>
 </ul>
+<h3 id="mqtt-example">MQTT Example</h3>
 <p>For example an IoT station with the ID <em>1.1.2.1</em> will start
 <em>publishing</em> temprature data via MQTT on the following path. The rate
 the data is published is up to the application.  MQTT will just make
@@ -116,7 +123,7 @@ for temprature and humidity respectively.</p>
 <li>/ss/data/station2/humidity: 10.2</li>
 </ul>
 </blockquote>
-<h2 id="message-data-model">Message Data Model</h2>
+<h2 id="in-memory-data-model">In Memory Data Model</h2>
 <p>A simple light weight and efficient message is created from a
 combination of the <em>StationID</em> and <em>SensorID</em> elements of the MQTT
 topic. Combined with the <em>Value</em> and <em>Timestamp</em> we are able to
@@ -128,10 +135,22 @@ construct the following <em>Message</em>:</p>
     <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Time</span>
 }
 </code></pre></div><p>This is a <em>normalized</em> and <em>complete</em> representation of a single data
-<em>value</em> at a specif <em>time</em> from the respective <em>station</em> and <em>sensor</em>.</p>
+<em>value</em> at a specific <em>time</em> indexed with the respective <em>station</em> and
+<em>sensor</em>.</p>
 <p>This format can be converted in any alternative format required quite
-easily and be transported through the system with little overhaed.</p>
-<h2 id="data-consumers-and-go-channels">Data Consumers and Go Channels</h2>
+easily and be transported through the system with little overhead. For
+example, most operations with 32bits of accuracy can be efficienty
+stored in a <em>small</em> <em>fixed size</em> datastructre.</p>
+<p>With an IP address of 32bits, most messages can be stored in two 64bit
+integers! The standard unix timestamp <!-- raw HTML omitted -->time_t<!-- raw HTML omitted --> is a 32bit
+int that has better than one second of accuracy.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Msg</span> <span style="color:#66d9ef">struct</span> {
+    <span style="color:#a6e22e">Station</span> <span style="color:#66d9ef">int32</span>
+    <span style="color:#a6e22e">Sensor</span>  <span style="color:#66d9ef">int32</span>
+    <span style="color:#a6e22e">Value</span>   <span style="color:#66d9ef">int32</span>
+    <span style="color:#a6e22e">Time</span>    <span style="color:#66d9ef">int32</span>
+}
+</code></pre></div><h2 id="data-consumers-and-go-channels">Data Consumers and Go Channels</h2>
 <p>Every subscriber has a <em>list of Consumers</em> were <em>Consumers</em> actually
 consume the data the MQTT channels produce. The tricky part here is
 that we may have more than one consumer of the data.</p>
@@ -175,12 +194,12 @@ structures index first on the Station and then by a Sensor, where each
 sensor has a <em>time series</em> (stream of values and successive times).</p>
 <p>At anytime an active hub will have an in memory representation of the
 timeseires data that abstractly looks like:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-txt" data-lang="txt">- station1
-  - tempf: {t1, v1}, {t2, v2} .. {tn, vn}
-  - humidity: {t1, v1}, {t2, v2} .. {tn, vn}
-- station2
-  - tempf: {t1, v1}, {t2, v2} .. {tn, vn}
-  - humidity: {t1, v1}, {t2, v2} .. {tn, vn} 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">- <span style="color:#ae81ff">station1</span>
+  - <span style="color:#f92672">tempf</span>: {<span style="color:#ae81ff">t1, v1}, {t2, v2} .. {tn, vn}</span>
+  - <span style="color:#f92672">humidity</span>: {<span style="color:#ae81ff">t1, v1}, {t2, v2} .. {tn, vn}</span>
+- <span style="color:#ae81ff">station2</span>
+  - <span style="color:#f92672">tempf</span>: {<span style="color:#ae81ff">t1, v1}, {t2, v2} .. {tn, vn}</span>
+  - <span style="color:#f92672">humidity</span>: {<span style="color:#ae81ff">t1, v1}, {t2, v2} .. {tn, vn} </span>
 </code></pre></div><h2 id="rest-api">REST API</h2>
 <p>IoT Hub provides a REST API allowing other programs to access datasets
 from the Hub for various applications. Some of the important REST API
@@ -207,6 +226,11 @@ protocols</p>
 <p>The hub is also capable of serving up a nice modern UI written with
 the <em>React</em> or <em>Vue</em> JavaScript framework, which should I choose
 ..?..</p>
+<blockquote>
+<p>Todo: put a nice pic with a link to the webapp.</p>
+</blockquote>
+<p>Are you interested in creating a frontend to the web app, check out my first attempt
+here <a href="/sensors/webapp">Web app</a></p>
 <h2 id="persistence">Persistence</h2>
 <p>We will save data for future use, the <em>nerdy</em> sounding term for this
 is <em>persitence</em> other people may say <em>store</em> or <em>save</em> data.</p>

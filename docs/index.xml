@@ -25,8 +25,8 @@ Perhaps the worst problem with software projects are the diverging expectations 
       
       <guid>http://www.rustyeddy.com/software/customer-discovery-and-mvp/</guid>
       <description>Customer Discovery consists of one or more customer discovery sessions, where all users and owners of the software will be interviewed for their expectations, needs and desires for the upcoming software project.
-User Stories The information gathered from these sessions are then articulated in a series of non-technical descriptions of how the software is used by everybody.
-These descriptions of the software requirements are often referred to as User Stories. Basically, each story walks through one of the ways in which the planned software will be used.</description>
+Don&amp;rsquo;t just stop at the first answer, it will be too vague. Dig deeper and start peeling back the details. This great article on the Five Why&amp;rsquo;s
+User Stories The information gathered from these sessions are then articulated in a series of non-technical descriptions of how the software is used by everybody.</description>
     </item>
     
     <item>
@@ -304,6 +304,15 @@ of space and military projects.&lt;/p&gt;</description>
       <description>&lt;p&gt;I was hired to install and manage the departments first AT&amp;amp;T Unix
 Mini-computers, UUNET connection and write a bulletin board system for
 California State Educators.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Five Whys</title>
+      <link>http://www.rustyeddy.com/quotes/5-whys/</link>
+      <pubDate>Sat, 05 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rustyeddy.com/quotes/5-whys/</guid>
+      <description></description>
     </item>
     
     <item>
