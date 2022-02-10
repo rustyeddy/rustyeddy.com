@@ -29,9 +29,10 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 	    <nav class="navbar-nav w-100 justify-content-end">
 		<div class="nav w-100">
-  		    <a class="nav-link" href="/iot-project-sensor-station">sensor station&nbsp</a>
-  	            <a class="nav-link" href="/resume">resume</a> 
-  	            <a class="nav-link" href="/about">about</a> 
+  		    <a class="nav-link" href="/iot-project-sensor-station"> sensor station &nbsp </a>
+  	            <a class="nav-link" href="/software"> software &nbsp</a> 
+  	            <a class="nav-link" href="/resume"> resume &nbsp</a> 
+  	            <a class="nav-link" href="/about"> about &nbsp</a> 
 		</div>
  	    </nav>
 	</div>
@@ -43,7 +44,7 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 	<div class="col-md-8">
 	  <h1 class="header h2 text-center pb-1">Wireless Battery Powered IoT Sensors</h1>
 	    <p class="leadin align-right text-muted text-center mt-0">
-		This document specifies the requirements including an MVP for this IoT sensor hardware project. A small wireless device with sensors transmit data such as temperature, humidity, moisture and pressure. The sensors may be thrown around in areas without infra-structure or connected to the cloud when infrastructure is available.
+		We are going to build a Sensor Station capable of wirelessly broadcasting environmental data to any entity that will subscribe to the data. The stations are typically wireless and will often run with low power batteries.
 
 	    </p>
 	</div>
@@ -66,29 +67,19 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     </div>
 </div>
 <div id="main body">
-
 <div class="container">
-    <div class="row pt-4 mb-5 mt-5">
+
+    <div class="row mb-4">
 	<div class="col"></div>
 	<div class="col-8">
-	    <img class="img-fluid" src="" />
-	</div>
-	<div class="col"></div>
-    </div>
-</div>
-
-
-<div class="container">
-
-    <div class="row mt-4">
-	<div class="col"></div>
-	<div class="col-md-8 pl-4 pr-4">
-	    <article class="article">
+	    <article class="article text-big">
 		<h2 id="iot-sensors-data-published">IoT Sensors data Published</h2>
-<blockquote>
-<p>Todo provide schematic of esp32 with</p>
-</blockquote>
-<h3 id="type-of-sensors">Type of Sensors</h3>
+<p>The idea is pretty simple really: build a wireless, battery powered
+device that has sensors to collect temprature, moisture, light levels
+and any other desired environmental data and <em>publish</em> that data
+<em>wirelessly</em> to a <a href="/sensors/hub"><em>Hub</em></a> that acts as a <em>data
+agregator</em>.</p>
+<h3 id="type-of-data">Type of Data</h3>
 <p>Plan support for the following type of sensors. Now I must determine
 exactly what model(s) of these sensors are going to be good fits.</p>
 <ul>
@@ -98,40 +89,106 @@ exactly what model(s) of these sensors are going to be good fits.</p>
 <li>Light</li>
 <li>Pressure</li>
 </ul>
-<h3 id="data-sent-to-a-hub">Data sent to a Hub</h3>
-<p>The IoT Hub acts as both the <em>message broker</em> for IoT data sent from
-sensors. It is also a <em>subscriber</em> of said data with the explicit job
-of displaying data real-time and archiving historic data whether it is
-local or in the cloud.</p>
-<h3 id="tbd-control-inputs">TBD: Control inputs</h3>
-<p>The <em>IoT Station</em> does not have to be a publisher only. It is also
-possible that the <em>IoT Station</em> act as a subscriber to control things
-like relays or a potientiometer.</p>
-<h2 id="how-does-ss-work">How Does SS work?</h2>
-<h3 id="data-transmitted-via-mqtt">Data Transmitted Via MQTT</h3>
-<p>Data will be transmitted by the very popular, well understood and
-supported protocol MQTT.</p>
-<h3 id="a-tcp-connection-is-required">A TCP Connection is required</h3>
-<h3 id="mqtt-requires-a-broker">MQTT Requires a broker</h3>
-<h3 id="the-broker-is-the-sensor-hubsensorssensor-hub">The Broker is the <a href="/sensors/sensor-hub">Sensor Hub</a></h3>
-<h2 id="implementation-esp32">Implementation esp32</h2>
-<h2 id="batteries">Batteries</h2>
-<h3 id="sleep-modes">Sleep Modes</h3>
+<h3 id="publishing-done-via-mqtt">Publishing Done via MQTT</h3>
+<p>The station will <em>publish</em> it&rsquo;s collected data via the well known and
+supported <em>MQTT</em> lightweight messaging protocol. Consumers of that
+data, including the <a href="sensors/hub">IoT Hub</a> simply <em>subscribe</em> to the
+data channels it will be consuming.</p>
+<h4 id="mqtt-and-openess">MQTT and Openess</h4>
+<p>MQTT provides a distinct advantage in that it opens up integration
+from third party products and add ons. Any software capable of MQTT
+can become either a <em>producer</em> or <em>consumer</em> of the systems data.</p>
+<h2 id="data-storage">Data Storage</h2>
+<p>Due to the limited nature of the sensor station and it&rsquo;s chip,
+very little historic data will be maintained on the <em>station</em> itself.</p>
+<p>The expectation that published data by the station will have been
+consumed and aggregated by the Hub or similar device. Historic,
+real-time and <em>cloud persistence</em> of said data is the job of an
+aggregrator such as the Hub.</p>
+<h2 id="esp32-chip-of-choice">esp32 Chip of Choice</h2>
+<p>We are going to the
+<a href="https://www.espressif.com/en/products/socs/esp32">esp32</a> as our chip
+of choice for building an environmental collection and publishing
+platform.</p>
+<p>Some features that make this chip very attractive for developing an
+IoT Sensor station. In addition to it&rsquo;s availability and wonderfully
+mature DevKit, the esp32 has the following features we will be taking
+advantage of:</p>
+<ul>
+<li>Wireless support for Wifi &amp; BLE</li>
+<li>Sophisticated low power modes</li>
+<li>Support for batteries</li>
+<li>Non Volatile Memory</li>
+<li>Over The Air Updates</li>
+<li>Digital GPIO</li>
+<li>Analog GPIO</li>
+</ul>
+<p>We&rsquo;ll discuss all of these items and how they benefit the development
+of our sensor station hardware.</p>
+<h3 id="the-esp32-is-cheap">The esp32 is CHEAP</h3>
+<p>An esp32 and a handful of sensors can easily be assebled for less the
+$20 if you have a solering iron or breadboard on your kitchen
+table. Of course, from there one could go insanely crazy with
+complexity and features driving costs as high as you might want to go.</p>
+<p>This is no toy chip, it is an industrial stalwart!</p>
+<h3 id="network-connectivity">Network Connectivity</h3>
+<p>The most attractive part of the esp32, in my opinion is the built in
+networking you get. Bluetooth Lightweight Edition (BLE) and ubiquitos
+Wifi are built right on the esp32 itself.</p>
+<p>With an appropriate development kit, the chip will come with an
+adequate antenna that will be strong enough for local connections.
+However, longer distance connections can be had by adding a more power
+antenna.</p>
+<h4 id="mesh-networks">Mesh Networks</h4>
+<p>During the 2nd phase of development, the Sensor Station will be
+enhanced with <em>Mesh Network</em> capabilities. That is the ability for an
+esp32 to build a self forming network, eliminating the need to
+pre-configure devices.</p>
+<p>Mesh Networks also provides the capability of running a network where
+no previous <em>network</em> infrastructure exists or is accessible.</p>
+<h3 id="batteries-and-low-power-modes">Batteries and Low Power Modes</h3>
+<p>Battery options in stereo with <em>smart</em> programming of sleep and
+low power network protocols provide the potential of building sensors
+that can truely be &ldquo;_set it and forget it&rdquo; for years off a single
+battery.</p>
+<p>This will become a primary area of research and development for this
+project in the near future.</p>
 <h3 id="solar">Solar</h3>
-<h2 id="networking">Networking</h2>
-<h3 id="infrastructure-or-not">Infrastructure or Not?</h3>
-<h4 id="wired-power">Wired Power?</h4>
-<h4 id="wireless-internet-connectivity">Wireless Internet Connectivity?</h4>
-<h3 id="wifi-802x">Wifi 802.x</h3>
-<h3 id="mesh-network">Mesh Network</h3>
+<p>Options for solar power and rechargeble batteries give us the hope of
+building something that could last into perpituity.  In other words,
+the hardware should fail before one of these devices ever run out of
+power.</p>
 <h2 id="ota-updates">OTA Updates</h2>
+<p>The downside of little wireless, battery operated devices scattered
+about to and fro becomes very real when it is time to upgrade all
+these devices.</p>
+<p>That is where <em>Over-The-Air (OTA)</em> updates becomes a life saver! When
+new versions of software become available, they can be either <em>pushed</em>
+down to the devices, or <em>pulled</em> by the device from a <em>server</em>.</p>
+<p>The updates happen in a matter of seconds, reboot and the station will
+resume it&rsquo;s previous duties, most likely with out missing a single
+published datapoint.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>If this project sounds interesting to you at all, please drop me a
+line and say hello. Also consider signing up for the project email
+list, where you will get only good stuff about the project, no SPAM,
+never.</p>
 
+                <img src="/img/ss-diagram.png" />
 	    </article>
 	</div>
 	<div class="col"></div>
     </div>
+
 </div>
 
+<div class="container">
+
+    
+
+</div>
+
+</div>
 
 
 	</div><footer id="footer" class="container-fluid footer small-text pt-4 border-top">
