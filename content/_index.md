@@ -10,7 +10,7 @@ I started a journey to automate my home garden irrigation system, then
 I had problem with my boat almost flooding so I needed to solve the
 problem of NOT flooding the boat before watering the garden.
 
-The cool part is, both systems require about 90% of the same
+The cool part is that both systems require about 90% of the same
 technology, just a little bit of change to the _business logic_ to
 _re-purpose_ my _Boat Flooding Avoidance System (BFAS)_ to a _Organic
 Garden Irrigation System (OGIS)_.
