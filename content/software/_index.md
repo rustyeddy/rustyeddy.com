@@ -6,6 +6,7 @@ description: >
   establish software development best practices, with the explicit
   goal of making software development projects more predictable. 
 date: 2020-04-05
+draft: true
 ---
 
 ## The Process is Timeless the Tools are Free

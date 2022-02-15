@@ -15,32 +15,31 @@
 </div>
 
 <div class="container">
-
+  <div class="row">
     {{ range .Pages }}
-    <div class="row">
-        <div class="col"></div>
-        <div class="col-6">
-	    <div class="card mb-4">
-	        <div class="card-body">
 
-		    <h5 class="card-title">
-		        <a href="{{ .Permalink }}">{{ .Title }}</a>
-		    </h5>
+    <div class="col-6">
+      <div class="card mb-4">
+	<div class="card-body">
 
-		    <div class="card-text">
-		        {{ .Description }}
-		    </div>
+	  <h5 class="card-title">
+	    <a href="{{ .Permalink }}">{{ .Title }}</a>
+	  </h5>
 
-                    <div class="pt-2">
-		        <a href="{{ .Permalink }}">read more ...</a>
-                    </div>
+	  <div class="card-text">
+	    {{ .Description }}
+	  </div>
 
-	        </div>
-            </div>
+          <div class="pt-2">
+	    <a href="{{ .Permalink }}">read more ...</a>
+          </div>
+
 	</div>
-        <div class="col"></div>
-    </div> 
+      </div>
+    </div>
+
     {{ end }}
+  </div> 
 
 </div>
 
