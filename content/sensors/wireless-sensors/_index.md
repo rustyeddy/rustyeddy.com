@@ -3,25 +3,25 @@ title: Wireless Battery Powered IoT Sensors
 date: 2021-01-13
 description: >
     We are going to build a Sensor Station capable of wirelessly
-    broadcasting environmental data to any entity that will subscribe
-    to the data. The stations are typically wireless and will often
-    run with low power batteries.
+    broadcasting environmental data to any entity that subscribes
+    to the data. The stations are typically battery powered and 
+    run in areas with no electrical power.
 weight: 10
 git: https://github.com/sensorstation/ssesp
 ---
 
 ## IoT Sensors data Published
 
-The idea is pretty simple really: build a wireless, battery powered
-device that has sensors to collect temprature, moisture, light levels
-and any other desired environmental data and _publish_ that data
-_wirelessly_ to a [_Hub_](/sensors/hub) that acts as a _data
-agregator_.
+The idea is pretty simple really: build a network of wireless battery
+powered devices that gather environmental data such as temprature,
+moisture, light levels, etc. The collected data will then be
+_published_ via [MQTT](https://mqtt.org) _wirelessly_ for any
+subscriber such as [_IoTHub_](/sensors/hub).
 
-### Type of Data
+### TypeS of Data Published
 
-Plan support for the following type of sensors. Now I must determine
-exactly what model(s) of these sensors are going to be good fits.
+Planned support for the following type of sensors. To be determined
+are the exact model(s) of sensors will be a good fit.
 
 - Temprature
 - Humidity 
@@ -29,37 +29,29 @@ exactly what model(s) of these sensors are going to be good fits.
 - Light
 - Pressure 
 
-### Publishing Done via MQTT
-
-The station will _publish_ it's collected data via the well known and
-supported _MQTT_ lightweight messaging protocol. Consumers of that
-data, including the [IoT Hub](sensors/hub) simply _subscribe_ to the
-data channels it will be consuming.
-
-#### MQTT and Openess
-
-MQTT provides a distinct advantage in that it opens up integration
-from third party products and add ons. Any software capable of MQTT
-can become either a _producer_ or _consumer_ of the systems data.
+Data will be transmitted as either integer or floating point,
+depending on the sensor and how it collects the data.
 
 ## Data Storage
 
-Due to the limited nature of the sensor station and it's chip,
-very little historic data will be maintained on the _station_ itself. 
+Due to the limited nature of the sensor stations storage space,
+relatively little historic data will be saved on the _station_ itself.
 
-The expectation that published data by the station will have been
-consumed and aggregated by the Hub or similar device. Historic,
-real-time and _cloud persistence_ of said data is the job of an
-aggregrator such as the Hub.
+The expectation that data published by the station will have been
+consumed and aggregated by the Hub or a similar subscriber. 
+
+Historic, real-time and _cloud persistence_ of said data is the job of
+an aggregrator such as the Hub, or in the cloud based _Time Series
+Database (TSDB)_ 
 
 ## esp32 Chip of Choice
 
 We are going to the
-[esp32](https://www.espressif.com/en/products/socs/esp32) as our chip
-of choice for building an environmental collection and publishing
-platform. 
+[esp32](https://www.espressif.com/en/products/socs/esp32) as the _chip
+of choice_ to building the environmental collection and publishing
+platform (IoT Sensor Sation). 
 
-Some features that make this chip very attractive for developing an
+Some features that make this chip very attractive for developing the
 IoT Sensor station. In addition to it's availability and wonderfully
 mature DevKit, the esp32 has the following features we will be taking
 advantage of:
@@ -77,23 +69,21 @@ of our sensor station hardware.
 
 ### The esp32 is CHEAP
 
-An esp32 and a handful of sensors can easily be assebled for less the
-$20 if you have a solering iron or breadboard on your kitchen
-table. Of course, from there one could go insanely crazy with
-complexity and features driving costs as high as you might want to go.
+An esp32 and a handful of sensors can easily be assebled for less than
+$20 (if you have a solering iron or breadboard) on your kitchen
+table. 
 
-This is no toy chip, it is an industrial stalwart!
+This is chip is no toy, it is an industrial stalwart!
 
 ### Network Connectivity
 
 The most attractive part of the esp32, in my opinion is the built in
-networking you get. Bluetooth Lightweight Edition (BLE) and ubiquitos
+networking. Bluetooth Lightweight Edition (BLE) and ubiquitos
 Wifi are built right on the esp32 itself.
 
-With an appropriate development kit, the chip will come with an
-adequate antenna that will be strong enough for local connections.
-However, longer distance connections can be had by adding a more power
-antenna. 
+The chip will come with an adequate antenna that will be strong enough
+for local connections.  However, longer distance connections can be
+had by adding a better antenna.
 
 #### Mesh Networks
 
