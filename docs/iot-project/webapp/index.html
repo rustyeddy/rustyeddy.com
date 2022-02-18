@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html>
-  <head>
-	<meta name="generator" content="Hugo 0.92.2" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -10,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 
-<title>Rusty Eddy</title>
+<title>IoT Real-time Dashboard</title>
 
 <script>(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
 0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
@@ -19,8 +17,7 @@ MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn4.mxpnl.com/libs/mi
 mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</script>
 
 
-</head>
-  <body><header class="container bg-white">
+<body><header class="container bg-white">
     <nav class="navbar navbar-expand-lg navbar-light">
 
 	<a class="navbar-brand text-muted text-monospace" href="/"><span claa="h1">rusty eddy:</span></a>
@@ -44,9 +41,10 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="row">
 	<div class="col-md"></div>
 	<div class="col-md-8">
-	  <h1 class="header h2 text-center pb-1">Rusty Eddy</h1>
+	  <h1 class="header h2 text-center pb-1">IoT Real-time Dashboard</h1>
 	    <p class="leadin align-right text-muted text-center mt-0">
-		Building Software, Understanding IoT and Life with Sensors
+		The dashboard is a WebUI built into the Hub providing a window into your environmental health with real-time data and historic values.
+
 	    </p>
 	</div>
 	<div class="col-md"></div>
@@ -67,35 +65,69 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 	<div class="col"></div>
     </div>
 </div>
-<div id="main body container">
-      <div class="row">
-        <div class="col"></div>
-        <div class="col-6">
-          <h3 id="checkout-iot-project-sensor-station">Checkout IoT Project Sensor Station!</h3>
-<p>I started this journey to automate my home garden irrigation system,
-then I had problem with my boat almost flooding so I needed to solve the
-problem of NOT flooding the boat before watering the garden.</p>
-<p>The cool part is that both systems require about 90% of the same
-technology, just a little bit of change to the <em>business logic</em> to
-<em>re-purpose</em> my <em>Boat Flooding Avoidance System (BFAS)</em> to an <em>Organic
-Garden Irrigation System (OGIS)</em>.</p>
-<p>With that in mind I decided to give the underlying project a little
-more of a generic, if even boring new name of <em>IoT Sensor
-Station</em> (ISS). I put the IoT in hoping to get a little <em>search
-juice!</em></p>
-<p>New and novel applications are easily built with the core ISS,
-two examples are the projects above.</p>
-<p>Follow along with Sensor station, get involved if you like&hellip; Go
-<a href="/iot-project">IoT Project</a>!</p>
-<h3 id="resume">Resume</h3>
-<p>My work life summed up in a couple pages is here: <a href="/resume">resume</a>.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<div id="main body">
+<div class="container">
 
-        </div>
-        <div class="col"></div>
-      </div>
-    </div><footer id="footer" class="container-fluid footer small-text pt-4 border-top">
+  <div class="row mb-4">
+    <div class="col"></div>
+
+    <div class="col-6">
+      <img class="img-fluid" src="/img/ss-diagram.png" />      
+    </div>
+
+    <div class="col"></div>    
+  </div>
+
+  <div class="row mb-4">
+    <div class="col"></div>
+    <div class="col-8">
+      <article class="article text-big">
+	<h2 id="dashboard-webapp">Dashboard WebApp</h2>
+<p>The dashboard is a WebUI built into the Hub providing a window into
+your environmental health. All sensor data is transmitted over a
+dedicated <em>MQTT</em> <em>channel</em>, the channel is comprised of a <em>path</em> that
+looks like a <em>directory structure</em> or URL path. Contained in the path
+are the <em>identification</em> of the device and the name of the <em>sensor</em>.</p>
+<p>With this design, any <em>data publisher</em> can contribute to the <em>Sensor
+Station Application</em>.</p>
+<h3 id="mobile-first">Mobile First</h3>
+<p>I have no doubt or argument with the <em>Mobile First</em> discipline,
+personally I still do most of my <em>browsing</em> on a computer, not so much
+a mobile phone.</p>
+<p>Likewise, I don&rsquo;t normally build <em>mobile</em> apps or <em>web pages</em> until
+now.</p>
+<p>It is quite obvious that mobile is huge and a very important game
+changer.</p>
+<p>The reason I am biting the bullet and beginning the mobile development
+is because of <em>Google Search Console</em>, it had switched modes to mobile
+because it detected most of my website visitors are from mobile
+devices.</p>
+<p>OK, I get the hint. That is why the IOT Station <em>dashboard</em> will be
+designed for <em>Mobile First</em>.</p>
+<h3 id="written-with-vue">Written with Vue</h3>
+<h2 id="walkthrough">Walkthrough</h2>
+<h3 id="wireframes">Wireframes</h3>
+<h3 id="storyboards">Storyboards</h3>
+<h3 id="media-manifest">Media Manifest</h3>
+<h3 id="data-manifest">Data Manifest</h3>
+
+      </article>
+    </div>
+    <div class="col"></div>
+  </div>
+
+</div>
+
+<div class="container">
+  <div class="row">
+    
+  </div> 
+
+</div>
+
+
+
+	</div><footer id="footer" class="container-fluid footer small-text pt-4 border-top">
   <section class="row">
     <div class="col"></div>
     <div class="col text-right">
@@ -107,7 +139,7 @@ two examples are the projects above.</p>
         Last update ~
         
 	
-        Friday, Apr 10, 2020
+        Wednesday, Jan 12, 2022
 	
         
       </div>
@@ -142,5 +174,6 @@ two examples are the projects above.</p>
 
 
 
-</body>
+
+    </body>
 </html>

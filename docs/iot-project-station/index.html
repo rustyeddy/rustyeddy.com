@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html>
-  <head>
-	<meta name="generator" content="Hugo 0.92.2" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -10,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 
-<title>Rusty Eddy</title>
+<title>IOT Project Sensor Station</title>
 
 <script>(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
 0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
@@ -19,8 +17,7 @@ MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn4.mxpnl.com/libs/mi
 mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</script>
 
 
-</head>
-  <body><header class="container bg-white">
+<body><header class="container bg-white">
     <nav class="navbar navbar-expand-lg navbar-light">
 
 	<a class="navbar-brand text-muted text-monospace" href="/"><span claa="h1">rusty eddy:</span></a>
@@ -44,9 +41,10 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="row">
 	<div class="col-md"></div>
 	<div class="col-md-8">
-	  <h1 class="header h2 text-center pb-1">Rusty Eddy</h1>
+	  <h1 class="header h2 text-center pb-1">IOT Project Sensor Station</h1>
 	    <p class="leadin align-right text-muted text-center mt-0">
-		Building Software, Understanding IoT and Life with Sensors
+		IoT Project Station is a project to gather environmental data from inexpensive battery operated, wireless sensors. The data is  aggregated and accessible via a builtin Web Dashboard. The data collected  from the stations can be made globally accessible via a web account.
+
 	    </p>
 	</div>
 	<div class="col-md"></div>
@@ -67,35 +65,158 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 	<div class="col"></div>
     </div>
 </div>
-<div id="main body container">
-      <div class="row">
-        <div class="col"></div>
-        <div class="col-6">
-          <h3 id="checkout-iot-project-sensor-station">Checkout IoT Project Sensor Station!</h3>
-<p>I started this journey to automate my home garden irrigation system,
-then I had problem with my boat almost flooding so I needed to solve the
-problem of NOT flooding the boat before watering the garden.</p>
-<p>The cool part is that both systems require about 90% of the same
-technology, just a little bit of change to the <em>business logic</em> to
-<em>re-purpose</em> my <em>Boat Flooding Avoidance System (BFAS)</em> to an <em>Organic
-Garden Irrigation System (OGIS)</em>.</p>
-<p>With that in mind I decided to give the underlying project a little
-more of a generic, if even boring new name of <em>IoT Sensor
-Station</em> (ISS). I put the IoT in hoping to get a little <em>search
-juice!</em></p>
-<p>New and novel applications are easily built with the core ISS,
-two examples are the projects above.</p>
-<p>Follow along with Sensor station, get involved if you like&hellip; Go
-<a href="/iot-project">IoT Project</a>!</p>
-<h3 id="resume">Resume</h3>
-<p>My work life summed up in a couple pages is here: <a href="/resume">resume</a>.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<div id="main body">
+<div class="container">
 
-        </div>
-        <div class="col"></div>
-      </div>
-    </div><footer id="footer" class="container-fluid footer small-text pt-4 border-top">
+    <div class="row mt-5">
+	<div class="col"></div> 
+	<div class="col-8">
+	    <article class="article">
+		<h2 id="what-does-sensor-station-do">What does sensor station do?</h2>
+<p>Sensor Station is a <em>System</em> rather than single application: we have a
+set of battery powered, wireless sensors that transmit environmental
+data (temperature, humidity, moisture and light) to a hub that serves
+up this data on a real-time dashboard. Optionally, if and when an
+Internet connection is available, the hub will stash it&rsquo;s local data
+(<em>time-series</em> database) in <em>the cloud</em>.</p>
+<h2 id="iot-sensor-station-poc-to-mvp">IoT Sensor Station PoC to MVP</h2>
+<p>The first</p>
+
+	    </article>
+	</div>
+	<div class="col"></div> 
+    </div>
+
+    
+    <div class="row">
+	<div class="col"></div> 
+	<div class="col-8">
+	    <div class="title">
+		<a href="http://www.rustyeddy.com/iot-project/wireless-sensors/">Wireless Battery Powered IoT Sensors</a>
+	    </div>
+	</div> 
+	<div class="col"></div>
+    </div>
+
+    <div class="row mb-3">
+	<div class="col text-mute small text-right">
+	    <div class="date">
+		January 13, 2021
+	    </div>
+	</div> 
+	<div class="col-8">
+	    <div class="description">
+		We are going to build a Sensor Station capable of wirelessly broadcasting environmental data to any entity that subscribes to the data. The stations are typically battery powered and  run in areas with no electrical power.
+
+	    </div>
+	</div> 
+	<div class="col"></div>
+    </div>
+    
+    <div class="row">
+	<div class="col"></div> 
+	<div class="col-8">
+	    <div class="title">
+		<a href="http://www.rustyeddy.com/iot-project/hub/">IoT Project Hub</a>
+	    </div>
+	</div> 
+	<div class="col"></div>
+    </div>
+
+    <div class="row mb-3">
+	<div class="col text-mute small text-right">
+	    <div class="date">
+		January 13, 2022
+	    </div>
+	</div> 
+	<div class="col-8">
+	    <div class="description">
+		The Sensor Hub gathers data from all connected sensors, aggregates the data for real-time and historic display. The also gets your data to the cloud if you have the desire and an Internet connection.
+
+	    </div>
+	</div> 
+	<div class="col"></div>
+    </div>
+    
+    <div class="row">
+	<div class="col"></div> 
+	<div class="col-8">
+	    <div class="title">
+		<a href="http://www.rustyeddy.com/iot-project/webapp/">IoT Real-time Dashboard</a>
+	    </div>
+	</div> 
+	<div class="col"></div>
+    </div>
+
+    <div class="row mb-3">
+	<div class="col text-mute small text-right">
+	    <div class="date">
+		January 12, 2022
+	    </div>
+	</div> 
+	<div class="col-8">
+	    <div class="description">
+		The dashboard is a WebUI built into the Hub providing a window into your environmental health with real-time data and historic values.
+
+	    </div>
+	</div> 
+	<div class="col"></div>
+    </div>
+    
+    <div class="row">
+	<div class="col"></div> 
+	<div class="col-8">
+	    <div class="title">
+		<a href="http://www.rustyeddy.com/iot-project/cloud/">IoT Project Cloud Automation</a>
+	    </div>
+	</div> 
+	<div class="col"></div>
+    </div>
+
+    <div class="row mb-3">
+	<div class="col text-mute small text-right">
+	    <div class="date">
+		January 12, 2021
+	    </div>
+	</div> 
+	<div class="col-8">
+	    <div class="description">
+		Cloud support extends the reach of the data globally allowing access to both real-time and historical datas, it also expands the length data can be kept  
+
+	    </div>
+	</div> 
+	<div class="col"></div>
+    </div>
+    
+    <div class="row">
+	<div class="col"></div> 
+	<div class="col-8">
+	    <div class="title">
+		<a href="http://www.rustyeddy.com/iot-project/open-source/">Open Source Software</a>
+	    </div>
+	</div> 
+	<div class="col"></div>
+    </div>
+
+    <div class="row mb-3">
+	<div class="col text-mute small text-right">
+	    <div class="date">
+		January 10, 2022
+	    </div>
+	</div> 
+	<div class="col-8">
+	    <div class="description">
+		We like Open Source and Open Technology
+
+	    </div>
+	</div> 
+	<div class="col"></div>
+    </div>
+    
+</div>
+
+
+	</div><footer id="footer" class="container-fluid footer small-text pt-4 border-top">
   <section class="row">
     <div class="col"></div>
     <div class="col text-right">
@@ -107,7 +228,7 @@ two examples are the projects above.</p>
         Last update ~
         
 	
-        Friday, Apr 10, 2020
+        Sunday, Sep 6, 2020
 	
         
       </div>
@@ -142,5 +263,6 @@ two examples are the projects above.</p>
 
 
 
-</body>
+
+    </body>
 </html>

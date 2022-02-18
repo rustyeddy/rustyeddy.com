@@ -1,16 +1,25 @@
 {{ define "main" }}
 <div class="container">
 
-    <div class="row mb-4">
-	<div class="col"></div>
-	<div class="col-8">
-	    <article class="article text-big">
-		{{ .Content }}
-                <img src="/img/ss-diagram.png" />
-	    </article>
-	</div>
-	<div class="col"></div>
+  <div class="row mb-4">
+    <div class="col"></div>
+
+    <div class="col-6">
+      <img class="img-fluid" src="/img/ss-diagram.png" />      
     </div>
+
+    <div class="col"></div>    
+  </div>
+
+  <div class="row mb-4">
+    <div class="col"></div>
+    <div class="col-8">
+      <article class="article text-big">
+	{{ .Content }}
+      </article>
+    </div>
+    <div class="col"></div>
+  </div>
 
 </div>
 
@@ -43,5 +52,4 @@
 
 </div>
 
-</div>
 {{ end }}

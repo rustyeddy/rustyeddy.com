@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 
-<title>IOT Project Sensor Station</title>
+<title>Wireless Battery Powered IoT Sensors</title>
 
 <script>(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
 0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
@@ -41,9 +41,9 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="row">
 	<div class="col-md"></div>
 	<div class="col-md-8">
-	  <h1 class="header h2 text-center pb-1">IOT Project Sensor Station</h1>
+	  <h1 class="header h2 text-center pb-1">Wireless Battery Powered IoT Sensors</h1>
 	    <p class="leadin align-right text-muted text-center mt-0">
-		IoT Project Station is a project to gather environmental data from inexpensive battery operated, wireless sensors. The data is  aggregated and accessible via a builtin Web Dashboard. The data collected  from the stations can be made globally accessible via a web account.
+		We are going to build a Sensor Station capable of wirelessly broadcasting environmental data to any entity that subscribes to the data. The stations are typically battery powered and  run in areas with no electrical power.
 
 	    </p>
 	</div>
@@ -82,46 +82,98 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="col"></div>
     <div class="col-8">
       <article class="article text-big">
-	<h2 id="what-does-sensor-station-do">What does sensor station do?</h2>
-<p>Sensor Station is a <em>System</em> rather than single application: we have a
-set of battery powered, wireless sensors that transmit environmental
-data (temperature, humidity, moisture and light) to a hub that serves
-up this data on a real-time dashboard. Optionally, if and when an
-Internet connection is available, the hub will stash it&rsquo;s local data
-(<em>time-series</em> database) in <em>the cloud</em>.</p>
-<h2 id="iot-sensor-station-poc-to-mvp">IoT Sensor Station PoC to MVP</h2>
-<p>The first iteration of this <em>IoT Project</em> was to get three critical
-pieces of software to perform just enough of the core functionality to
-demonstrate the most basic functionality and purpose for this project.</p>
-<h4 id="proof-of-concept-poc">Proof Of Concept (PoC)</h4>
-<p>Following describes the very basic PoC I have created with the three
-primary components:</p>
-<h3 id="wireless-iot-collection-station-cs-publishes-temprature">Wireless IoT Collection Station (CS) publishes temprature</h3>
-<ol>
-<li>Build battery operated wireless <em>Collection Station (CS)</em></li>
-<li>CS uses DHT11 sensor to gather temprature and humidity periodically</li>
-<li>CS <em>publishes</em> data to the <em>MQTT Broker</em></li>
-</ol>
-<h3 id="iot-hub-aggregates-cs-data">IoT Hub Aggregates CS data</h3>
-<ol>
-<li>Hub subscribes to <em>MQTT Topics</em> data channels</li>
-<li>Hub Sends real-time data updates via web-socket to <em>dashboard</em></li>
-<li>Hub aggregates data in memory for REST queries</li>
-<li>Hub serves Dashboard to clients</li>
-</ol>
-<h3 id="iot-dashboard">IoT Dashboard</h3>
-<ol>
-<li>Modern Responsive Webapp Written in Vue</li>
-<li>Displays <em>Collection Stations</em> that have published data</li>
-<li>Display <em>Sensor Data</em> collected by CSs</li>
-<li>Display <em>real-time</em> data for any / all stations</li>
-</ol>
-<p>I have taken a less than $10 <a href="https://www.espressif.com/en/products/devkits"><em>esp32 devboard</em></a>
-attached a heat and humidity sensor. The <em>esp32</em> has built in Wifi
-allowing us to transmit data to the network.</p>
-<p>The Hub can be any <em>Linux</em> computer, however we are choosing the
-Raspberry Pi with a touch screen to serve up the Webapp act as a handy
-<em>IoT Kiosk</em>.</p>
+	<h2 id="iot-sensors-data-published">IoT Sensors data Published</h2>
+<p>The idea is pretty simple really: build a network of wireless battery
+powered devices that gather environmental data such as temprature,
+moisture, light levels, etc. The collected data will then be
+<em>published</em> via <a href="https://mqtt.org">MQTT</a> <em>wirelessly</em> for any
+subscriber such as <a href="/sensors/hub"><em>IoTHub</em></a>.</p>
+<h3 id="types-of-data-published">TypeS of Data Published</h3>
+<p>Planned support for the following type of sensors. To be determined
+are the exact model(s) of sensors will be a good fit.</p>
+<ul>
+<li>Temprature</li>
+<li>Humidity</li>
+<li>Moisture</li>
+<li>Light</li>
+<li>Pressure</li>
+</ul>
+<p>Data will be transmitted as either integer or floating point,
+depending on the sensor and how it collects the data.</p>
+<h2 id="data-storage">Data Storage</h2>
+<p>Due to the limited nature of the sensor stations storage space,
+relatively little historic data will be saved on the <em>station</em> itself.</p>
+<p>The expectation that data published by the station will have been
+consumed and aggregated by the Hub or a similar subscriber.</p>
+<p>Historic, real-time and <em>cloud persistence</em> of said data is the job of
+an aggregrator such as the Hub, or in the cloud based <em>Time Series
+Database (TSDB)</em></p>
+<h2 id="esp32-chip-of-choice">esp32 Chip of Choice</h2>
+<p>We are going to the
+<a href="https://www.espressif.com/en/products/socs/esp32">esp32</a> as the <em>chip
+of choice</em> to building the environmental collection and publishing
+platform (IoT Sensor Sation).</p>
+<p>Some features that make this chip very attractive for developing the
+IoT Sensor station. In addition to it&rsquo;s availability and wonderfully
+mature DevKit, the esp32 has the following features we will be taking
+advantage of:</p>
+<ul>
+<li>Wireless support for Wifi &amp; BLE</li>
+<li>Sophisticated low power modes</li>
+<li>Support for batteries</li>
+<li>Non Volatile Memory</li>
+<li>Over The Air Updates</li>
+<li>Digital GPIO</li>
+<li>Analog GPIO</li>
+</ul>
+<p>We&rsquo;ll discuss all of these items and how they benefit the development
+of our sensor station hardware.</p>
+<h3 id="the-esp32-is-cheap">The esp32 is CHEAP</h3>
+<p>An esp32 and a handful of sensors can easily be assebled for less than
+$20 (if you have a solering iron or breadboard) on your kitchen
+table.</p>
+<p>This is chip is no toy, it is an industrial stalwart!</p>
+<h3 id="network-connectivity">Network Connectivity</h3>
+<p>The most attractive part of the esp32, in my opinion is the built in
+networking. Bluetooth Lightweight Edition (BLE) and ubiquitos
+Wifi are built right on the esp32 itself.</p>
+<p>The chip will come with an adequate antenna that will be strong enough
+for local connections.  However, longer distance connections can be
+had by adding a better antenna.</p>
+<h4 id="mesh-networks">Mesh Networks</h4>
+<p>During the 2nd phase of development, the Sensor Station will be
+enhanced with <em>Mesh Network</em> capabilities. That is the ability for an
+esp32 to build a self forming network, eliminating the need to
+pre-configure devices.</p>
+<p>Mesh Networks also provides the capability of running a network where
+no previous <em>network</em> infrastructure exists or is accessible.</p>
+<h3 id="batteries-and-low-power-modes">Batteries and Low Power Modes</h3>
+<p>Battery options in stereo with <em>smart</em> programming of sleep and
+low power network protocols provide the potential of building sensors
+that can truely be &ldquo;_set it and forget it&rdquo; for years off a single
+battery.</p>
+<p>This will become a primary area of research and development for this
+project in the near future.</p>
+<h3 id="solar">Solar</h3>
+<p>Options for solar power and rechargeble batteries give us the hope of
+building something that could last into perpituity.  In other words,
+the hardware should fail before one of these devices ever run out of
+power.</p>
+<h2 id="ota-updates">OTA Updates</h2>
+<p>The downside of little wireless, battery operated devices scattered
+about to and fro becomes very real when it is time to upgrade all
+these devices.</p>
+<p>That is where <em>Over-The-Air (OTA)</em> updates becomes a life saver! When
+new versions of software become available, they can be either <em>pushed</em>
+down to the devices, or <em>pulled</em> by the device from a <em>server</em>.</p>
+<p>The updates happen in a matter of seconds, reboot and the station will
+resume it&rsquo;s previous duties, most likely with out missing a single
+published datapoint.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>If this project sounds interesting to you at all, please drop me a
+line and say hello. Also consider signing up for the project email
+list, where you will get only good stuff about the project, no SPAM,
+never.</p>
 
       </article>
     </div>
@@ -132,121 +184,6 @@ Raspberry Pi with a touch screen to serve up the Webapp act as a handy
 
 <div class="container">
   <div class="row">
-    
-
-    <div class="col-6">
-      <div class="card mb-4">
-	<div class="card-body">
-
-	  <h5 class="card-title">
-	    <a href="http://www.rustyeddy.com/iot-project/wireless-sensors/">Wireless Battery Powered IoT Sensors</a>
-	  </h5>
-
-	  <div class="card-text">
-	    We are going to build a Sensor Station capable of wirelessly broadcasting environmental data to any entity that subscribes to the data. The stations are typically battery powered and  run in areas with no electrical power.
-
-	  </div>
-
-          <div class="pt-2">
-	    <a href="http://www.rustyeddy.com/iot-project/wireless-sensors/">read more ...</a>
-          </div>
-
-	</div>
-      </div>
-    </div>
-
-    
-
-    <div class="col-6">
-      <div class="card mb-4">
-	<div class="card-body">
-
-	  <h5 class="card-title">
-	    <a href="http://www.rustyeddy.com/iot-project/hub/">IoT Project Hub</a>
-	  </h5>
-
-	  <div class="card-text">
-	    The Sensor Hub gathers data from all connected sensors, aggregates the data for real-time and historic display. The also gets your data to the cloud if you have the desire and an Internet connection.
-
-	  </div>
-
-          <div class="pt-2">
-	    <a href="http://www.rustyeddy.com/iot-project/hub/">read more ...</a>
-          </div>
-
-	</div>
-      </div>
-    </div>
-
-    
-
-    <div class="col-6">
-      <div class="card mb-4">
-	<div class="card-body">
-
-	  <h5 class="card-title">
-	    <a href="http://www.rustyeddy.com/iot-project/webapp/">IoT Real-time Dashboard</a>
-	  </h5>
-
-	  <div class="card-text">
-	    The dashboard is a WebUI built into the Hub providing a window into your environmental health with real-time data and historic values.
-
-	  </div>
-
-          <div class="pt-2">
-	    <a href="http://www.rustyeddy.com/iot-project/webapp/">read more ...</a>
-          </div>
-
-	</div>
-      </div>
-    </div>
-
-    
-
-    <div class="col-6">
-      <div class="card mb-4">
-	<div class="card-body">
-
-	  <h5 class="card-title">
-	    <a href="http://www.rustyeddy.com/iot-project/cloud/">IoT Project Cloud Automation</a>
-	  </h5>
-
-	  <div class="card-text">
-	    Cloud support extends the reach of the data globally allowing access to both real-time and historical datas, it also expands the length data can be kept  
-
-	  </div>
-
-          <div class="pt-2">
-	    <a href="http://www.rustyeddy.com/iot-project/cloud/">read more ...</a>
-          </div>
-
-	</div>
-      </div>
-    </div>
-
-    
-
-    <div class="col-6">
-      <div class="card mb-4">
-	<div class="card-body">
-
-	  <h5 class="card-title">
-	    <a href="http://www.rustyeddy.com/iot-project/open-source/">Open Source Software</a>
-	  </h5>
-
-	  <div class="card-text">
-	    We like Open Source and Open Technology
-
-	  </div>
-
-          <div class="pt-2">
-	    <a href="http://www.rustyeddy.com/iot-project/open-source/">read more ...</a>
-          </div>
-
-	</div>
-      </div>
-    </div>
-
     
   </div> 
 
@@ -266,7 +203,7 @@ Raspberry Pi with a touch screen to serve up the Webapp act as a handy
         Last update ~
         
 	
-        Sunday, Sep 6, 2020
+        Wednesday, Jan 13, 2021
 	
         
       </div>
