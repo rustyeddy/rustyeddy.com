@@ -43,7 +43,7 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 	<div class="col-md-8">
 	  <h1 class="header h2 text-center pb-1">Wireless Battery Powered IoT Sensors</h1>
 	    <p class="leadin align-right text-muted text-center mt-0">
-		We are going to build a Sensor Station capable of wirelessly broadcasting environmental data to any entity that subscribes to the data. The stations are typically battery powered and  run in areas with no electrical power.
+		We are going to build a Sensor Station capable of wirelessly publishing environmental data to any entity that subscribes to the data. The stations are typically battery powered and  run in areas with no electrical power.
 
 	    </p>
 	</div>
@@ -88,15 +88,21 @@ powered devices that gather environmental data such as temprature,
 moisture, light levels, etc. The collected data will then be
 <em>published</em> via <a href="https://mqtt.org">MQTT</a> <em>wirelessly</em> for any
 subscriber such as <a href="/sensors/hub"><em>IoTHub</em></a>.</p>
-<h3 id="types-of-data-published">TypeS of Data Published</h3>
-<p>Planned support for the following type of sensors. To be determined
-are the exact model(s) of sensors will be a good fit.</p>
+<h3 id="types-of-published-data">Types of Published Data</h3>
+<p>The planned data types to be published by the system are concerned
+with simple environmental data. However any <em>type</em> of data could be
+used, for example this system could be used to pub/sub data from
+hosts on a local network, turning it into a network monitoring
+platform for example.</p>
+<p>Cool, anyway, back to our application&hellip;</p>
+<p>We have planned support for the following type of sensors. To be
+determined are the exact model(s) of sensors will be a good fit.</p>
 <ul>
 <li>Temprature</li>
 <li>Humidity</li>
 <li>Moisture</li>
 <li>Light</li>
-<li>Pressure</li>
+<li>Barometric Pressure</li>
 </ul>
 <p>Data will be transmitted as either integer or floating point,
 depending on the sensor and how it collects the data.</p>
@@ -150,8 +156,8 @@ no previous <em>network</em> infrastructure exists or is accessible.</p>
 <h3 id="batteries-and-low-power-modes">Batteries and Low Power Modes</h3>
 <p>Battery options in stereo with <em>smart</em> programming of sleep and
 low power network protocols provide the potential of building sensors
-that can truely be &ldquo;_set it and forget it&rdquo; for years off a single
-battery.</p>
+that can truely be &ldquo;set it and forget it&rdquo; dutifuly running for years
+with a single watch battery.</p>
 <p>This will become a primary area of research and development for this
 project in the near future.</p>
 <h3 id="solar">Solar</h3>

@@ -3,7 +3,7 @@ title: Wireless Battery Powered IoT Sensors
 date: 2021-01-13
 description: >
     We are going to build a Sensor Station capable of wirelessly
-    broadcasting environmental data to any entity that subscribes
+    publishing environmental data to any entity that subscribes
     to the data. The stations are typically battery powered and 
     run in areas with no electrical power.
 weight: 10
@@ -18,16 +18,24 @@ moisture, light levels, etc. The collected data will then be
 _published_ via [MQTT](https://mqtt.org) _wirelessly_ for any
 subscriber such as [_IoTHub_](/sensors/hub).
 
-### TypeS of Data Published
+### Types of Published Data
 
-Planned support for the following type of sensors. To be determined
-are the exact model(s) of sensors will be a good fit.
+The planned data types to be published by the system are concerned
+with simple environmental data. However any _type_ of data could be
+used, for example this system could be used to pub/sub data from 
+hosts on a local network, turning it into a network monitoring
+platform for example.
+
+Cool, anyway, back to our application...
+
+We have planned support for the following type of sensors. To be
+determined are the exact model(s) of sensors will be a good fit.
 
 - Temprature
 - Humidity 
 - Moisture
 - Light
-- Pressure 
+- Barometric Pressure 
 
 Data will be transmitted as either integer or floating point,
 depending on the sensor and how it collects the data.
@@ -99,8 +107,8 @@ no previous _network_ infrastructure exists or is accessible.
 
 Battery options in stereo with _smart_ programming of sleep and
 low power network protocols provide the potential of building sensors
-that can truely be "_set it and forget it" for years off a single
-battery.
+that can truely be "set it and forget it" dutifuly running for years
+with a single watch battery.
 
 This will become a primary area of research and development for this
 project in the near future.

@@ -137,21 +137,21 @@ _Msgs'_ to a loop in the _Listen()_ function.
 
 ### Consumers will come and Go
 
-Because of the nature of _Web sockets_ in that you need a client to
-transmit data, there are times where it is possibley no _consumer_ for
-a particular channels data.  So the Hub was designed to quickly
-discard data if there is no consumer for the data.
+Due to the fact that _Web sockets_ are built on TCP/IP a client is
+required to transmit data. At times there may be _no consumers_, at
+other times there maybe two or more.
 
-In practice, most likely the _memory_ or _station_ consumer will
-always be listening to incoming data, reformatting it to the indexed
-version of the data for easy station recovery.
+In the event of no consumers for the data, the hub must be prepared to
+quickly discard the data. 
 
-This will almost always ensure there is at least one _consumer_ for
-the data.
+Most likely the _memory_ consumer will always be listening to incoming
+data, reformatting it to the indexed version of the data for easy
+station recovery. If so, the hub will most likely always have at least
+one consumer for the data.
 
-### Websocket Clients
+## Websocket Consumers
 
-Websocket clients on the other hand will come and go. A new connection
+Websocket consumers on the other hand will come and go. A new connection
 will establish a _websocket_ connection via TCP/IP to recieve data for
 the duration of that conneciton. 
 
@@ -182,43 +182,48 @@ timeseires data that abstractly looks like:
   - humidity: {t1, v1}, {t2, v2} .. {tn, vn} 
 ```
 
-## REST API
+## Global API
 
 IoT Hub provides a REST API allowing other programs to access datasets
 from the Hub for various applications. Some of the important REST API
 _endpoints_ are:
 
-- GET /stations
-- GET /station/{stationid}
-- GET /data/{stationid}/{sensor}/{start}/{end}
-- DELETE /data/{stationid}/{sensor}/{start}/{end}
+- GET       /stations
+- GET       /station/{stationid}
+- GET       /data?stationid={stid}&sensor={sens}&start={start}&end={end}
+- DELETE    /data?stationid={stid}&sensor={sens}&start={start}&end={end}
 
-The first two gather and reply with _IoT Station_ specific meta data,
-such as the station ID, sensors it hosts and other performance and
-health characteristics.
+The first two gather and reply with _IoT Collection Station_ meta
+data, such as the station ID, sensors hosted and performance
+and metrics.
+
+The ```/data ``` endpoint will return data ;-), filters can be used to
+limit the response to certain _stations_, _sensors_ and / timespans.
 
 ### Go and Micro Services
 
-The great thing about Go is that it was built out of the box with
-great _micro-service_ support. That is, it is very simple to create
-say an embedded web server capable of serving up _web-pages_ as well
-as a _REST_ interface, _GraphQL_ and _Web-sockets_.
+The programming language _Go_ was is a perfect fit for micro-services!
+Very fast, small syntax and lot's of built in system level support for
+protocols, marshaling, data structures and concurrant programming
+support allow us to build a nice compact little IoT server.
 
-> TODO example of the go code registering callbacks, handling various
-> protocols 
+We will get into the structure of the Micro-services and how Go helps
+us build robust, fast and stable system you expect from _"Industrial
+Strength"_ software written with C/C++ or Java.
+
+If you are not familiar with go and write backend services, system
+tools, distributed control systems or command utilities the _Hub_ is a
+great place to start!
 
 ## Web Server / Webapp
 
-The hub is also capable of serving up a nice modern UI written with
-the _React_ or _Vue_ JavaScript framework, which should I choose
-..?.. 
+The hub is also capable of serving up a webapp providing human
+consumption for gathered data. This modern _mobile first_ web app is
+discussed at length on this page [dashboard](/iot-project-sensor-station/dashboard)
 
 > Todo: put a nice pic with a link to the webapp.
 
-Are you interested in creating a frontend to the web app, check out my first attempt
-here [Web app](/sensors/webapp)
-
-## Persistence 
+## Persistence Local and Global
 
 We will save data for future use, the _nerdy_ sounding term for this
 is _persitence_ other people may say _store_ or _save_ data. 
@@ -226,19 +231,19 @@ is _persitence_ other people may say _store_ or _save_ data.
 The data is typically stored in memory, that memory or the live
 incoming data can be _persisted_ _locally_ or in the cloud.
 
-### Local
-
 Write data from memory to file storage. For this we will use the
 JSON formatted files written to local disk, if we have one.
 
-### Cloud
-
 Write data periodically to the Cloud for global accessl.
 
-## Storage Strategy
+### Storage Strategy
 
 - How much / long to keep data in memory
 - How much / long to keep data on disk
 - How long to keep data in cloud
 
 Need to have a data persistence strategy.
+
+## Next Steps
+
+Where to now? 

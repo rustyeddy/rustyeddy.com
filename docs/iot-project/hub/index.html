@@ -178,17 +178,17 @@ that we may have more than one consumer of the data.</p>
 have. <em>RecvQ()</em> will produce a <code>chan Msg</code> that will deliver data
 <em>Msgs'</em> to a loop in the <em>Listen()</em> function.</p>
 <h3 id="consumers-will-come-and-go">Consumers will come and Go</h3>
-<p>Because of the nature of <em>Web sockets</em> in that you need a client to
-transmit data, there are times where it is possibley no <em>consumer</em> for
-a particular channels data.  So the Hub was designed to quickly
-discard data if there is no consumer for the data.</p>
-<p>In practice, most likely the <em>memory</em> or <em>station</em> consumer will
-always be listening to incoming data, reformatting it to the indexed
-version of the data for easy station recovery.</p>
-<p>This will almost always ensure there is at least one <em>consumer</em> for
-the data.</p>
-<h3 id="websocket-clients">Websocket Clients</h3>
-<p>Websocket clients on the other hand will come and go. A new connection
+<p>Due to the fact that <em>Web sockets</em> are built on TCP/IP a client is
+required to transmit data. At times there may be <em>no consumers</em>, at
+other times there maybe two or more.</p>
+<p>In the event of no consumers for the data, the hub must be prepared to
+quickly discard the data.</p>
+<p>Most likely the <em>memory</em> consumer will always be listening to incoming
+data, reformatting it to the indexed version of the data for easy
+station recovery. If so, the hub will most likely always have at least
+one consumer for the data.</p>
+<h2 id="websocket-consumers">Websocket Consumers</h2>
+<p>Websocket consumers on the other hand will come and go. A new connection
 will establish a <em>websocket</em> connection via TCP/IP to recieve data for
 the duration of that conneciton.</p>
 <p>When the <em>websocket</em> connection is closed or dropped, the websocket
@@ -209,54 +209,56 @@ timeseires data that abstractly looks like:</p>
 - <span style="color:#ae81ff">station2</span>
   - <span style="color:#f92672">tempf</span>: {<span style="color:#ae81ff">t1, v1}, {t2, v2} .. {tn, vn}</span>
   - <span style="color:#f92672">humidity</span>: {<span style="color:#ae81ff">t1, v1}, {t2, v2} .. {tn, vn} </span>
-</code></pre></div><h2 id="rest-api">REST API</h2>
+</code></pre></div><h2 id="global-api">Global API</h2>
 <p>IoT Hub provides a REST API allowing other programs to access datasets
 from the Hub for various applications. Some of the important REST API
 <em>endpoints</em> are:</p>
 <ul>
-<li>GET /stations</li>
-<li>GET /station/{stationid}</li>
-<li>GET /data/{stationid}/{sensor}/{start}/{end}</li>
-<li>DELETE /data/{stationid}/{sensor}/{start}/{end}</li>
+<li>GET       /stations</li>
+<li>GET       /station/{stationid}</li>
+<li>GET       /data?stationid={stid}&amp;sensor={sens}&amp;start={start}&amp;end={end}</li>
+<li>DELETE    /data?stationid={stid}&amp;sensor={sens}&amp;start={start}&amp;end={end}</li>
 </ul>
-<p>The first two gather and reply with <em>IoT Station</em> specific meta data,
-such as the station ID, sensors it hosts and other performance and
-health characteristics.</p>
+<p>The first two gather and reply with <em>IoT Collection Station</em> meta
+data, such as the station ID, sensors hosted and performance
+and metrics.</p>
+<p>The <code>/data </code> endpoint will return data ;-), filters can be used to
+limit the response to certain <em>stations</em>, <em>sensors</em> and / timespans.</p>
 <h3 id="go-and-micro-services">Go and Micro Services</h3>
-<p>The great thing about Go is that it was built out of the box with
-great <em>micro-service</em> support. That is, it is very simple to create
-say an embedded web server capable of serving up <em>web-pages</em> as well
-as a <em>REST</em> interface, <em>GraphQL</em> and <em>Web-sockets</em>.</p>
-<blockquote>
-<p>TODO example of the go code registering callbacks, handling various
-protocols</p>
-</blockquote>
+<p>The programming language <em>Go</em> was is a perfect fit for micro-services!
+Very fast, small syntax and lot&rsquo;s of built in system level support for
+protocols, marshaling, data structures and concurrant programming
+support allow us to build a nice compact little IoT server.</p>
+<p>We will get into the structure of the Micro-services and how Go helps
+us build robust, fast and stable system you expect from <em>&ldquo;Industrial
+Strength&rdquo;</em> software written with C/C++ or Java.</p>
+<p>If you are not familiar with go and write backend services, system
+tools, distributed control systems or command utilities the <em>Hub</em> is a
+great place to start!</p>
 <h2 id="web-server--webapp">Web Server / Webapp</h2>
-<p>The hub is also capable of serving up a nice modern UI written with
-the <em>React</em> or <em>Vue</em> JavaScript framework, which should I choose
-..?..</p>
+<p>The hub is also capable of serving up a webapp providing human
+consumption for gathered data. This modern <em>mobile first</em> web app is
+discussed at length on this page <a href="/iot-project-sensor-station/dashboard">dashboard</a></p>
 <blockquote>
 <p>Todo: put a nice pic with a link to the webapp.</p>
 </blockquote>
-<p>Are you interested in creating a frontend to the web app, check out my first attempt
-here <a href="/sensors/webapp">Web app</a></p>
-<h2 id="persistence">Persistence</h2>
+<h2 id="persistence-local-and-global">Persistence Local and Global</h2>
 <p>We will save data for future use, the <em>nerdy</em> sounding term for this
 is <em>persitence</em> other people may say <em>store</em> or <em>save</em> data.</p>
 <p>The data is typically stored in memory, that memory or the live
 incoming data can be <em>persisted</em> <em>locally</em> or in the cloud.</p>
-<h3 id="local">Local</h3>
 <p>Write data from memory to file storage. For this we will use the
 JSON formatted files written to local disk, if we have one.</p>
-<h3 id="cloud">Cloud</h3>
 <p>Write data periodically to the Cloud for global accessl.</p>
-<h2 id="storage-strategy">Storage Strategy</h2>
+<h3 id="storage-strategy">Storage Strategy</h3>
 <ul>
 <li>How much / long to keep data in memory</li>
 <li>How much / long to keep data on disk</li>
 <li>How long to keep data in cloud</li>
 </ul>
 <p>Need to have a data persistence strategy.</p>
+<h2 id="next-steps">Next Steps</h2>
+<p>Where to now?</p>
 
       </article>
     </div>
