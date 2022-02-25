@@ -1,6 +1,7 @@
 ---
-title: Wireless Battery Powered IoT Sensors
+title: Collection Station
 date: 2021-01-13
+url: collection-station
 description: >
     We are going to build a Sensor Station capable of wirelessly
     publishing environmental data to any entity that subscribes

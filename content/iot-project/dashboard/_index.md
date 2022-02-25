@@ -5,9 +5,12 @@ weight: 30
 description: >
   The dashboard is a WebUI built into the Hub providing a window into
   your environmental health with real-time data and historic values.
+draft: true
 ---
 
 ## Dashboard WebApp
+
+![Example image](/img/dashboard.png)
 
 The dashboard is a WebUI built into the Hub providing a window into
 your environmental health. All sensor data is transmitted over a
@@ -21,7 +24,7 @@ Station Application_.
 ### Mobile First
 
 I have no doubt or argument with the _Mobile First_ discipline,
-personally I still do most of my _browsing_ on a computer, not so much
+personally I still do most of my _browsing_ on a computer, not so much 
 a mobile phone.
 
 Likewise, I don't normally build _mobile_ apps or _web pages_ until
@@ -40,14 +43,35 @@ designed for _Mobile First_.
 
 ### Written with Vue
 
-## Walkthrough
+React or Vue? That was the question, vue was the answer.
+
+Why Vue, what makes these modern frameworks so attractive, why not
+just write good ol JS.
+
+
+## User Story
+
+1. User visits website and sees the dashboard.
+
+2. User can select station view and get an 
+   enhanced view of just that station.
 
 ### Wireframes
 
+1. Stations List view Wireframe
+1. Station Detail view wireframe
+
 ### Storyboards
+
+See User Story
 
 ### Media Manifest
 
+1. Logo
+2. Icons for 
+   1. each of the sensors
+
 ### Data Manifest
 
+Local station.sensor time series values.
 
