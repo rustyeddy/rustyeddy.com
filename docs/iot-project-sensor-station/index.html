@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 
-<title>IOT Project Sensor Station</title>
+<title>IoT Software Development Process</title>
 
 <script>(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
 0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
@@ -41,10 +41,9 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="row">
 	<div class="col-md"></div>
 	<div class="col-md-8">
-	  <h1 class="header h2 text-center pb-1">IOT Project Sensor Station</h1>
+	  <h1 class="header h2 text-center pb-1">IoT Software Development Process</h1>
 	    <p class="leadin align-right text-muted text-center mt-0">
-		IoT Project Station is a project to gather environmental data from inexpensive battery operated, wireless sensors. The data is  aggregated and accessible via a builtin Web Dashboard. The data collected  from the stations can be made globally accessible via a web account.
-
+		IoT Software Project
 	    </p>
 	</div>
 	<div class="col-md"></div>
@@ -70,58 +69,109 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 
   <div class="row mb-4">
     <div class="col"></div>
-
-    <div class="col-6">
-      <img class="img-fluid" src="/img/ss-diagram.png" />      
-    </div>
-
-    <div class="col"></div>    
-  </div>
-
-  <div class="row mb-4">
-    <div class="col"></div>
     <div class="col-8">
       <article class="article text-big">
-	<h2 id="what-does-sensor-station-do">What does sensor station do?</h2>
-<p>Sensor Station is a <em>System</em> rather than single application: we have a
-set of battery powered, wireless sensors that transmit environmental
-data (temperature, humidity, moisture and light) to a hub that serves
-up this data on a real-time dashboard. Optionally, if and when an
-Internet connection is available, the hub will stash it&rsquo;s local data
-(<em>time-series</em> database) in <em>the cloud</em>.</p>
-<h2 id="iot-sensor-station-poc-to-mvp">IoT Sensor Station PoC to MVP</h2>
-<p>The first iteration of this <em>IoT Project</em> was to get three critical
-pieces of software to perform just enough of the core functionality to
-demonstrate the most basic functionality and purpose for this project.</p>
-<h4 id="proof-of-concept-poc">Proof Of Concept (PoC)</h4>
-<p>Following describes the very basic PoC I have created with the three
-primary components:</p>
-<h3 id="wireless-iot-collection-station-cs-publishes-temprature">Wireless IoT Collection Station (CS) publishes temprature</h3>
+	<p><img src="/img/iot-project-drawing.png" alt="High Level Sensor Station"></p>
+<h2 id="what-does-this-project-do">What Does this project do?</h2>
+<p>I started this project to help water our home garden. You see my wife
+is really into <em>succulents</em> and while these plants are <em>drought
+tolerent</em> they do not like to be over watered. Being in drought ridden
+Southern California smart water usage is very important.</p>
+<p>The way this <em>Irrigation System (IS)</em> works is pretty simple: build a
+<em>Collection Staiton (CS)</em> to gather temperature and soil moisture
+levels and publish that data to a <em>Hub</em> that runs application logic
+and determines based on moisure levels when to send messages to the
+<em>Control Stations (CS)</em> to turn water pumps on or off.</p>
+<p>We also have a <em>Web Application</em> that acts as a dashboard to monitor
+and control the irrigation system.</p>
+<p>And that is NOT ALL! We can also use the cloud for persistent storage
+of historical data, and allow control of the system from anywhere in
+the world with an Internet connection.</p>
 <ol>
-<li>Build battery operated wireless <em>Collection Station (CS)</em></li>
-<li>CS uses DHT11 sensor to gather temprature and humidity periodically</li>
-<li>CS <em>publishes</em> data to the <em>MQTT Broker</em></li>
+<li><em>CS</em> Collect and publish environmental data</li>
+<li><em>Hub</em> gather data and run <em>Application Logic (AL)</em></li>
+<li><em>CS</em> Control lights, sprinklers and heaters</li>
+<li><em>Dashboard</em> Human monitor and control</li>
+<li><em>Cloud</em> Perpetual Persistence and Global Access</li>
 </ol>
-<h3 id="iot-hub-aggregates-cs-data">IoT Hub Aggregates CS data</h3>
-<ol>
-<li>Hub subscribes to <em>MQTT Topics</em> data channels</li>
-<li>Hub Sends real-time data updates via web-socket to <em>dashboard</em></li>
-<li>Hub aggregates data in memory for REST queries</li>
-<li>Hub serves Dashboard to clients</li>
-</ol>
-<h3 id="iot-dashboard">IoT Dashboard</h3>
-<ol>
-<li>Modern Responsive Webapp Written in Vue</li>
-<li>Displays <em>Collection Stations</em> that have published data</li>
-<li>Display <em>Sensor Data</em> collected by CSs</li>
-<li>Display <em>real-time</em> data for any / all stations</li>
-</ol>
-<p>I have taken a less than $10 <a href="https://www.espressif.com/en/products/devkits"><em>esp32 devboard</em></a>
-attached a heat and humidity sensor. The <em>esp32</em> has built in Wifi
-allowing us to transmit data to the network.</p>
-<p>The Hub can be any <em>Linux</em> computer, however we are choosing the
-Raspberry Pi with a touch screen to serve up the Webapp act as a handy
-<em>IoT Kiosk</em>.</p>
+<p>Pretty simple, right?</p>
+<h3 id="process-and-protocol-over-technology">Process and Protocol Over Technology</h3>
+<p>I will not dive too deep into anyone of the technologies, but rather
+document this project from an <em>architectural</em>, <em>design</em> and
+<em>software development process</em> lens.</p>
+<p>We necessarily get into a few technical discussions, however we&rsquo;ll
+supply plenty of references to quality tutorials and deep dives as we
+breech various technologies.</p>
+<p>Every part of this system could be built with a different technology
+and process, that is not important, rather the importance is in the
+process management and how the craft people work together.</p>
+<h4 id="open-source">Open Source</h4>
+<p>This project uses <em>Open Source</em> software <em>Open Protocols</em> and all
+freely available development systems. Somebody could easily come along
+a build a <em>Microsoft C#</em> CS just as easily as I can build the esp32
+version.</p>
+<h3 id="proof-of-concept-poc">Proof Of Concept (PoC)</h3>
+<p>This is a complex system with a three or four distinct software
+components and some hardware. This also involves at least 3 if not
+four or five different languages and development environments, just
+like in the &ldquo;real world&rdquo;.</p>
+<p>We&rsquo;ll build this system one step at a time. The end goal is the
+<em>irrigation application</em>, however we can still get something useful
+from the software, before it is released if we build it wisely.</p>
+<p>For example, in this project we&rsquo;ll use our <em>real time</em> dashboard to
+act like an <em>Internet Clock</em> displaying real time temperature data
+making the application a bit more useful every day.</p>
+<h2 id="milestone-1---aggregation-hub">Milestone 1 - Aggregation Hub</h2>
+<p>The first step is to get the Hub to subscribe to MQTT data channels,
+then start recieving and <em>caching</em> that data in RAM.</p>
+<p>Now that the Hub has data stashed in memory, we will build a <em>REST
+API</em> to access the data. We&rsquo;ll also consider <em>GraphQL</em> as a possible
+architectural choice.</p>
+<p>The Hub is a <em>Micro Service</em> written in Go.</p>
+<h2 id="milestone-2---dashboard">Milestone 2 - Dashboard</h2>
+<p>Now that we have the Hub collecting data and that data is available
+via the <em>REST API</em> we&rsquo;ll build a Dashboard Web application to display
+the collected data.</p>
+<p>The <em>Dashboard</em> will query the historic data via
+the REST API and display that data in graph and table form.</p>
+<p>The <em>Dashboard</em> is a <em>Responsive Web Application</em> written with Vue.</p>
+<h2 id="milestone-3---real-time-datashboard">Milestone 3 - Real Time Datashboard</h2>
+<p>We are going to add <em>Websockets</em> to Hub and the Webapp allowing the
+former to send data to the later in <em>real time</em> allowing the dashboard
+to display data as it arrives immediately.</p>
+<p>The <em>Dashboard</em> and <em>Hub</em> need to be updated to support <em>Websockets</em>
+involve adding a <em>Websocket Library</em> for both  <em>JavaScript</em> and <em>Go</em>.</p>
+<h2 id="milestone-4---collection-station">Milestone 4 - Collection Station</h2>
+<p>The <em>third milestone</em> we are going to build the <em>Collection Station</em>
+to gather temperature and humidity. Eventually we&rsquo;ll add sensors for
+humidity and light levels.</p>
+<p>This component has physical hardware involved making this application
+particularly interesting for me. This is what officially makes it an
+<em>IoT Project</em> :)</p>
+<p>We&rsquo;ll build the <em>CS</em> from an <em>esp32 devkit</em> and a <em>DHT22</em> sensor. This
+is an <em>embedded</em> <em>real-time</em> application written in C++ using the
+<em>esp-idf</em> development kit and the Free Real Time Operating System
+(<em>FreeRTOS</em>).</p>
+<h2 id="milestone-5---time-series-database">Milestone 5 - Time Series Database</h2>
+<p>Data that has been collected over a long period of time can be saved
+locally or in the cloud. In our case, the data we have collected is
+known as a <em>time series</em>.</p>
+<p>The data can be saved in many different formats or databases. SQL or
+MongoDB are choices, however we will go with a <em>Time Series DB</em> built
+just for applications such as these.</p>
+<p>The two databases in consideration will be <em>prometheus</em> and
+<em>influxDB</em> both fast and purpose built specifically <em>time-series</em>
+databases.</p>
+<h2 id="milestone-6---fleet-management">Milestone 6 - Fleet Management</h2>
+<p>As time goes on and the application evolves according to operation
+experience and demand, features will be added and software will be
+changed. This often leads to disruptive or difficult software upgrade
+events.</p>
+<p>We are going to strive to managing all of our software update process
+with total automation using modern <em>CI/CD</em> techniques and
+<em>Over-The-Air</em> software updates. If we can hit this goal <em>and all goes
+well</em> we will be able to seamlessly roll out software with very little
+human interaction.</p>
 
       </article>
     </div>
@@ -139,7 +189,7 @@ Raspberry Pi with a touch screen to serve up the Webapp act as a handy
 	<div class="card-body">
 
 	  <h5 class="card-title">
-	    <a href="http://www.rustyeddy.com/iot-project/wireless-sensors/">Wireless Battery Powered IoT Sensors</a>
+	    <a href="http://www.rustyeddy.com/collection-station/">Collection Station</a>
 	  </h5>
 
 	  <div class="card-text">
@@ -148,7 +198,7 @@ Raspberry Pi with a touch screen to serve up the Webapp act as a handy
 	  </div>
 
           <div class="pt-2">
-	    <a href="http://www.rustyeddy.com/iot-project/wireless-sensors/">read more ...</a>
+	    <a href="http://www.rustyeddy.com/collection-station/">read more ...</a>
           </div>
 
 	</div>
