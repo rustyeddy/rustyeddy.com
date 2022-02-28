@@ -156,6 +156,22 @@ image: https://mobilerobot.sfo2.cdn.digitaloceanspaces.com/display-and-motors.jp
 resources:
   github: http://github.com/mobilerobot-io/rpid
 ---
+MQTT works with three components: data _publisher_, _subscriber_ and
+a _broker_. This model is commonly refered to as the _pub/sub_ model.
+
+The Collection Stations (CS) _publish_ data to the MQTT _broker_. The 
+broker then forwards the data to all of the subscribers, which
+includes the _IoT Hub_. 
+
+#### MQTT Topics
+
+MQTT uses topics are simply strings that have a syntax very similar to
+a _filesystem path_ used by a computers operating system. The elements
+that make up a topic are sepearated by the '/' characture. The words
+between the slashes give the topic structure and semantics.
+
+MQTT clients can use _wildcards_ when subscribing to topics allowing
+the subscriber to recieve data from multiple unknown publishers. 
 
 This application provides access and control to various Raspberry
 devices like the camera, GPIO pins, or a possible MotorShield if

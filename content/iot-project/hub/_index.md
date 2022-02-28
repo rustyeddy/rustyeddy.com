@@ -1,80 +1,86 @@
 ---
-title: IoT Project Hub
+title: IoT Project Data Aggregation Hub
 date: 2022-01-13
 description: >
-  The Sensor Hub gathers data from all connected sensors, aggregates
-  the data for real-time and historic display. The also gets your data
-  to the cloud if you have the desire and an Internet connection.
+  The IoT Hub gathers the environmental data published by our
+  Collection Stations then uses that data to determine when to turn on
+  and off a sprinkler systems and send data to the dashboard for human
+  consumption. 
 weight: 20
 repo: https://github.com/sensorstation/sensors
 ---
 
-## About IoTHub
+## What Does IoT Hub Do?
 
-The _IoT Hub_ gathers data from a _network_ of sensors that publish
-data at regular intervals. The _hub_ aggregates and sorts the data for
-for access by clients. The hub will also push the data to the cloud if
-desired.
+For the _1st Milestone_ The IoT Hub has been developed to collect
+temperature and humidity data from sensors connected to a wireless
+network. The _Hub_ will cache the data in memory and provide a REST
+API for access to the data it has stored.
 
-The _IoT Hub_ comes equipped with a builtin WebApp for easy access to
-real-time and historic station and sensor _time series_ data. 
+Since the Hub already supports HTTP for the REST API, it will be used
+to serve up the dashboard as a _Single Page App (SPA)_. The Dashboard
+will be used to observe realtime and historical data, as well as
+control the irrigation and lighting systems.
 
+In a later phase the _IoT Hub_ will be programmed to cache limited
+historic data in memory and persist data to a permenant resting
+place. We'll discuss data and storage in much greater detail a bit
+later in this adventure.
 
-### MQTT Delivers the Data
+### How Does IoT Hub Work?
 
-The Hub gathers data via the well known and supported
-[MQTT](https://mqtt.org) light weight messaging protocol is an ideal
-fit for IoT applications. 
+The IoT Hub uses the well known and supported [MQTT](https://mqtt.org)
+light weight messaging protocol to gather data published by a network of
+Collection Stations 
 
-The hub gathers data by _subscribing_ to MQTT _channels_ or _topics_
-that each have data periodically _published_ by connected data
-sources which typically are 
-[battery powered wireless sensors](sensors/wireless-sensors).
+The _MQTT topics_ have been structured such that the Hub can gather
+the Collection Station IP addresses, sensor type, sensor value and a
+timestamp for when the data was fetched.
 
-The topics data sources _publish_ data to have the following format:
+Here are a couple examples of example MQTT topics:
 
-- /ss/data/{stationid}/tepmf
-- /ss/data/{stationid}/humidity
-- /ss/data/{stationid}/moisture
+```
+- ss/data/10.13.2.2/tepmc
+- ss/data/10.13.2.2/humidity
+```
 
-As you can see, the channels or _topics_ have a specific structure
-allowing the _IoTHub_ to parse messages into an _internal_ structure
-called a <code>_Msg_</code> that contains these four pieces of
-information: 
+The structure of these _topics_ have a specific structure that will
+allow the _IoTHub_ to quickly parse the messages into an _efficient
+internal_ structure called a <code>_Msg_</code> that contains these
+four pieces of information:
 
 - Station ID probably in the form of an IP or MAC address
 - Sensor data name such as: temprature, humidiy, air-pressure, etc
-- Value: this will either be an integer or a float64
+- Value this will either be an integer or a float64
+- Timestamp when the data was sampled.
 
-### MQTT Example
+### An Example 
 
-For example an IoT station with the ID _1.1.2.1_ will start
-_publishing_ temprature data via MQTT on the following path. The rate
-the data is published is up to the application.  MQTT will just make
-sure the data is reliably delivered to _all subscribers_, including
-our IoTHub.
+For example an IoT station with the ID _10.11.2.19_ will start
+_publishing_ temprature data via MQTT on the following path
+```/ss/data/10.11.2.19/tempf```. The rate the data is published can be 
+changed via a configuration knob. The MQTT _broker_ will ensure that
+data gets to _all subscribers_ of that topic reliably.
 
-```bash
-/ss/data/1.1.2.1/tempf
-```
+The IoT hub is one of the subscribers to the CS data.
 
-The actual _data_ transmitted via the MQTT channel is simply the
-temperature in _farenhiet_. For example, if you have two stations
-_station1_ and _station2_ that published fahernheit and a percentage
+The first milestone includes temperature and humidy data channels
+(topics). For example, we might have two stations
+_s1_ and _s2_ that published fahernheit and a percentage
 for temprature and humidity respectively.
 
 You might see something like this:
 
 >
-> - /ss/data/station1/tempf: 75.5
-> - /ss/data/station1/humidity: 12.5
-> - /ss/data/station2/tempf: 87.7
-> - /ss/data/station2/humidity: 10.2
+> - /ss/data/s1/tempf: 75.5
+> - /ss/data/s1/humidity: 12.5
+> - /ss/data/s2/tempf: 87.7
+> - /ss/data/s2/humidity: 10.2
 >
 
 ## In Memory Data Model
 
-A simple light weight and efficient message is created from a
+A light weight and efficient message is created from a
 combination of the _StationID_ and _SensorID_ elements of the MQTT
 topic. Combined with the _Value_ and _Timestamp_ we are able to
 construct the following _Message_:

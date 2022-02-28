@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 
-<title>IoT Project Hub</title>
+<title>IoT Project Data Aggregation Hub</title>
 
 <script>(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
 0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
@@ -41,9 +41,9 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="row">
 	<div class="col-md"></div>
 	<div class="col-md-8">
-	  <h1 class="header h2 text-center pb-1">IoT Project Hub</h1>
+	  <h1 class="header h2 text-center pb-1">IoT Project Data Aggregation Hub</h1>
 	    <p class="leadin align-right text-muted text-center mt-0">
-		The Sensor Hub gathers data from all connected sensors, aggregates the data for real-time and historic display. The also gets your data to the cloud if you have the desire and an Internet connection.
+		The IoT Hub gathers the environmental data published by our Collection Stations then uses that data to determine when to turn on and off a sprinkler systems and send data to the dashboard for human consumption. 
 
 	    </p>
 	</div>
@@ -72,68 +72,71 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="col"></div>
     <div class="col-8">
       <article class="article text-big">
-	<h2 id="about-iothub">About IoTHub</h2>
-<p>The <em>IoT Hub</em> gathers data from a <em>network</em> of sensors that publish
-data at regular intervals. The <em>hub</em> aggregates and sorts the data for
-for access by clients. The hub will also push the data to the cloud if
-desired.</p>
-<p>The <em>IoT Hub</em> comes equipped with a builtin WebApp for easy access to
-real-time and historic station and sensor <em>time series</em> data.</p>
-<h3 id="mqtt-delivers-the-data">MQTT Delivers the Data</h3>
-<p>The Hub gathers data via the well known and supported
-<a href="https://mqtt.org">MQTT</a> light weight messaging protocol is an ideal
-fit for IoT applications.</p>
-<p>The hub gathers data by <em>subscribing</em> to MQTT <em>channels</em> or <em>topics</em>
-that each have data periodically <em>published</em> by connected data
-sources which typically are
-<a href="sensors/wireless-sensors">battery powered wireless sensors</a>.</p>
-<p>The topics data sources <em>publish</em> data to have the following format:</p>
-<ul>
-<li>/ss/data/{stationid}/tepmf</li>
-<li>/ss/data/{stationid}/humidity</li>
-<li>/ss/data/{stationid}/moisture</li>
-</ul>
-<p>As you can see, the channels or <em>topics</em> have a specific structure
-allowing the <em>IoTHub</em> to parse messages into an <em>internal</em> structure
-called a <!-- raw HTML omitted --><em>Msg</em><!-- raw HTML omitted --> that contains these four pieces of
-information:</p>
+	<h2 id="what-does-iot-hub-do">What Does IoT Hub Do?</h2>
+<p>For the <em>1st Milestone</em> The IoT Hub has been developed to collect
+temperature and humidity data from sensors connected to a wireless
+network. The <em>Hub</em> will cache the data in memory and provide a REST
+API for access to the data it has stored.</p>
+<p>Since the Hub already supports HTTP for the REST API, it will be used
+to serve up the dashboard as a <em>Single Page App (SPA)</em>. The Dashboard
+will be used to observe realtime and historical data, as well as
+control the irrigation and lighting systems.</p>
+<p>In a later phase the <em>IoT Hub</em> will be programmed to cache limited
+historic data in memory and persist data to a permenant resting
+place. We&rsquo;ll discuss data and storage in much greater detail a bit
+later in this adventure.</p>
+<h3 id="how-does-iot-hub-work">How Does IoT Hub Work?</h3>
+<p>The IoT Hub uses the well known and supported <a href="https://mqtt.org">MQTT</a>
+light weight messaging protocol to gather data published by a network of
+Collection Stations</p>
+<p>The <em>MQTT topics</em> have been structured such that the Hub can gather
+the Collection Station IP addresses, sensor type, sensor value and a
+timestamp for when the data was fetched.</p>
+<p>Here are a couple examples of example MQTT topics:</p>
+<pre tabindex="0"><code>- ss/data/10.13.2.2/tepmc
+- ss/data/10.13.2.2/humidity
+</code></pre><p>The structure of these <em>topics</em> have a specific structure that will
+allow the <em>IoTHub</em> to quickly parse the messages into an <em>efficient
+internal</em> structure called a <!-- raw HTML omitted --><em>Msg</em><!-- raw HTML omitted --> that contains these
+four pieces of information:</p>
 <ul>
 <li>Station ID probably in the form of an IP or MAC address</li>
 <li>Sensor data name such as: temprature, humidiy, air-pressure, etc</li>
-<li>Value: this will either be an integer or a float64</li>
+<li>Value this will either be an integer or a float64</li>
+<li>Timestamp when the data was sampled.</li>
 </ul>
-<h3 id="mqtt-example">MQTT Example</h3>
-<p>For example an IoT station with the ID <em>1.1.2.1</em> will start
-<em>publishing</em> temprature data via MQTT on the following path. The rate
-the data is published is up to the application.  MQTT will just make
-sure the data is reliably delivered to <em>all subscribers</em>, including
-our IoTHub.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/ss/data/1.1.2.1/tempf
-</code></pre></div><p>The actual <em>data</em> transmitted via the MQTT channel is simply the
-temperature in <em>farenhiet</em>. For example, if you have two stations
-<em>station1</em> and <em>station2</em> that published fahernheit and a percentage
+<h3 id="an-example">An Example</h3>
+<p>For example an IoT station with the ID <em>10.11.2.19</em> will start
+<em>publishing</em> temprature data via MQTT on the following path
+<code>/ss/data/10.11.2.19/tempf</code>. The rate the data is published can be
+changed via a configuration knob. The MQTT <em>broker</em> will ensure that
+data gets to <em>all subscribers</em> of that topic reliably.</p>
+<p>The IoT hub is one of the subscribers to the CS data.</p>
+<p>The first milestone includes temperature and humidy data channels
+(topics). For example, we might have two stations
+<em>s1</em> and <em>s2</em> that published fahernheit and a percentage
 for temprature and humidity respectively.</p>
 <p>You might see something like this:</p>
 <blockquote>
 <ul>
-<li>/ss/data/station1/tempf: 75.5</li>
-<li>/ss/data/station1/humidity: 12.5</li>
-<li>/ss/data/station2/tempf: 87.7</li>
-<li>/ss/data/station2/humidity: 10.2</li>
+<li>/ss/data/s1/tempf: 75.5</li>
+<li>/ss/data/s1/humidity: 12.5</li>
+<li>/ss/data/s2/tempf: 87.7</li>
+<li>/ss/data/s2/humidity: 10.2</li>
 </ul>
 </blockquote>
 <h2 id="in-memory-data-model">In Memory Data Model</h2>
-<p>A simple light weight and efficient message is created from a
+<p>A light weight and efficient message is created from a
 combination of the <em>StationID</em> and <em>SensorID</em> elements of the MQTT
 topic. Combined with the <em>Value</em> and <em>Timestamp</em> we are able to
 construct the following <em>Message</em>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Msg</span> <span style="color:#66d9ef">struct</span> {
-    <span style="color:#a6e22e">Station</span> <span style="color:#66d9ef">string</span>
-    <span style="color:#a6e22e">Sensor</span>  <span style="color:#66d9ef">string</span>
-    <span style="color:#a6e22e">Value</span>   <span style="color:#66d9ef">float64</span>
-    <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Time</span>
-}
-</code></pre></div><p>This is a <em>normalized</em> and <em>complete</em> representation of a single data
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Msg</span> <span style="color:#66d9ef">struct</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Station</span> <span style="color:#66d9ef">string</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Sensor</span>  <span style="color:#66d9ef">string</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Value</span>   <span style="color:#66d9ef">float64</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Time</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>This is a <em>normalized</em> and <em>complete</em> representation of a single data
 <em>value</em> at a specific <em>time</em> indexed with the respective <em>station</em> and
 <em>sensor</em>.</p>
 <p>This format can be converted in any alternative format required quite
@@ -143,13 +146,13 @@ stored in a <em>small</em> <em>fixed size</em> datastructre.</p>
 <p>With an IP address of 32bits, most messages can be stored in two 64bit
 integers! The standard unix timestamp <!-- raw HTML omitted -->time_t<!-- raw HTML omitted --> is a 32bit
 int that has better than one second of accuracy.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Msg</span> <span style="color:#66d9ef">struct</span> {
-    <span style="color:#a6e22e">Station</span> <span style="color:#66d9ef">int32</span>
-    <span style="color:#a6e22e">Sensor</span>  <span style="color:#66d9ef">int32</span>
-    <span style="color:#a6e22e">Value</span>   <span style="color:#66d9ef">int32</span>
-    <span style="color:#a6e22e">Time</span>    <span style="color:#66d9ef">int32</span>
-}
-</code></pre></div><h2 id="data-consumers-and-go-channels">Data Consumers and Go Channels</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Msg</span> <span style="color:#66d9ef">struct</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Station</span> <span style="color:#66d9ef">int32</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Sensor</span>  <span style="color:#66d9ef">int32</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Value</span>   <span style="color:#66d9ef">int32</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Time</span>    <span style="color:#66d9ef">int32</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="data-consumers-and-go-channels">Data Consumers and Go Channels</h2>
 <p>Every subscriber has a <em>list of Consumers</em> were <em>Consumers</em> actually
 consume the data the MQTT channels produce. The tricky part here is
 that we may have more than one consumer of the data.</p>
@@ -159,14 +162,14 @@ that we may have more than one consumer of the data.</p>
 <li>Web Socket real-time data publisher</li>
 </ul>
 <h3 id="consumer-requirements">Consumer Requirements</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Consumer</span> <span style="color:#66d9ef">interface</span> {
-    <span style="color:#a6e22e">GetID</span>()     <span style="color:#66d9ef">string</span>
-    <span style="color:#a6e22e">GetRecvQ</span>()  <span style="color:#66d9ef">chan</span> <span style="color:#a6e22e">Msg</span>
-    <span style="color:#a6e22e">Listen</span>()
-}
-</code></pre></div><p>Where <em>GetID()</em> helps identify exactly what consumer we
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Consumer</span> <span style="color:#66d9ef">interface</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">GetID</span>()     <span style="color:#66d9ef">string</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">GetRecvQ</span>()  <span style="color:#66d9ef">chan</span> <span style="color:#a6e22e">Msg</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Listen</span>()
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Where <em>GetID()</em> helps identify exactly what consumer we
 have. <em>RecvQ()</em> will produce a <code>chan Msg</code> that will deliver data
-<em>Msgs'</em> to a loop in the <em>Listen()</em> function.</p>
+<em>Msgs&rsquo;</em> to a loop in the <em>Listen()</em> function.</p>
 <h3 id="consumers-will-come-and-go">Consumers will come and Go</h3>
 <p>Due to the fact that <em>Web sockets</em> are built on TCP/IP a client is
 required to transmit data. At times there may be <em>no consumers</em>, at
@@ -193,13 +196,13 @@ structures index first on the Station and then by a Sensor, where each
 sensor has a <em>time series</em> (stream of values and successive times).</p>
 <p>At anytime an active hub will have an in memory representation of the
 timeseires data that abstractly looks like:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">- <span style="color:#ae81ff">station1</span>
-  - <span style="color:#f92672">tempf</span>: {<span style="color:#ae81ff">t1, v1}, {t2, v2} .. {tn, vn}</span>
-  - <span style="color:#f92672">humidity</span>: {<span style="color:#ae81ff">t1, v1}, {t2, v2} .. {tn, vn}</span>
-- <span style="color:#ae81ff">station2</span>
-  - <span style="color:#f92672">tempf</span>: {<span style="color:#ae81ff">t1, v1}, {t2, v2} .. {tn, vn}</span>
-  - <span style="color:#f92672">humidity</span>: {<span style="color:#ae81ff">t1, v1}, {t2, v2} .. {tn, vn} </span>
-</code></pre></div><h2 id="global-api">Global API</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>- <span style="color:#ae81ff">station1</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">tempf</span>: {<span style="color:#ae81ff">t1, v1}, {t2, v2} .. {tn, vn}</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">humidity</span>: {<span style="color:#ae81ff">t1, v1}, {t2, v2} .. {tn, vn}</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#ae81ff">station2</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">tempf</span>: {<span style="color:#ae81ff">t1, v1}, {t2, v2} .. {tn, vn}</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">humidity</span>: {<span style="color:#ae81ff">t1, v1}, {t2, v2} .. {tn, vn} </span>
+</span></span></code></pre></div><h2 id="global-api">Global API</h2>
 <p>IoT Hub provides a REST API allowing other programs to access datasets
 from the Hub for various applications. Some of the important REST API
 <em>endpoints</em> are:</p>
