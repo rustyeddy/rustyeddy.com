@@ -5,7 +5,6 @@ weight: 30
 description: >
   The dashboard is a WebUI built into the Hub providing a window into
   your environmental health with real-time data and historic values.
-draft: true
 ---
 
 ## Dashboard WebApp

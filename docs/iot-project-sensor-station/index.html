@@ -75,18 +75,32 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 <h2 id="what-does-this-project-do">What Does this project do?</h2>
 <p>I started this project to help water our home garden. You see my wife
 is really into <em>succulents</em> and while these plants are <em>drought
-tolerent</em> they do not like to be over watered. Being in drought ridden
-Southern California smart water usage is very important.</p>
-<p>The way this <em>Irrigation System (IS)</em> works is pretty simple: build a
-<em>Collection Staiton (CS)</em> to gather temperature and soil moisture
-levels and publish that data to a <em>Hub</em> that runs application logic
-and determines based on moisure levels when to send messages to the
-<em>Control Stations (CS)</em> to turn water pumps on or off.</p>
-<p>We also have a <em>Web Application</em> that acts as a dashboard to monitor
-and control the irrigation system.</p>
-<p>And that is NOT ALL! We can also use the cloud for persistent storage
-of historical data, and allow control of the system from anywhere in
-the world with an Internet connection.</p>
+tolerent</em> they do not like to be over watered. Second, being in
+drought ridden Southern California I want to be able to limit our
+water usage to only what is necessary.</p>
+<h3 id="1-collection-stations-cs">1. Collection Stations (CS)</h3>
+<p>The way this <em>Organic Gardner (OG)</em> works is pretty simple: build a
+<em>Collection Staiton (CS)</em> that gathers temperature and soil moisture
+levels from sensors stuck in the dirt then publish that data to the
+application running on the Hub.</p>
+<h3 id="2-iot-hub-and-applications">2. IoT Hub and Applications</h3>
+<p>The <em>application</em> on the the Hub determines if sprinklers need to be
+turned on or off. Likewise, luminence levels will cause the
+application to turn lighting systems on or off.</p>
+<h3 id="3-control-station-cs">3. Control Station (CS)</h3>
+<p>When the application needs to turn a pump or light on or off the
+application will send an MQTT message to the <em>Control Station (CS)</em>
+connected to a relay acting as a pump or light switch.</p>
+<h3 id="4-dashboard">4. Dashboard</h3>
+<p>The <em>Dashboard</em> was written as a <em>Web Application</em> for the <em>User
+Interface (UI)</em>. This gives humans easy access to historical and
+real-time sensor data.</p>
+<h3 id="5-cloud---persistance-and-global-control">5. Cloud - Persistance and Global Control</h3>
+<p>And that is NOT ALL! The cloud is used for storing historical data,
+global <em>access</em>, <em>control</em> and <em>management</em> of one or more <em>sensor
+networks</em>.</p>
+<h3 id="system-summary">System Summary</h3>
+<p>In summary the IoT project is made of these distinct components.</p>
 <ol>
 <li><em>CS</em> Collect and publish environmental data</li>
 <li><em>Hub</em> gather data and run <em>Application Logic (AL)</em></li>
@@ -95,83 +109,76 @@ the world with an Internet connection.</p>
 <li><em>Cloud</em> Perpetual Persistence and Global Access</li>
 </ol>
 <p>Pretty simple, right?</p>
-<h3 id="process-and-protocol-over-technology">Process and Protocol Over Technology</h3>
-<p>I will not dive too deep into anyone of the technologies, but rather
-document this project from an <em>architectural</em>, <em>design</em> and
-<em>software development process</em> lens.</p>
-<p>We necessarily get into a few technical discussions, however we&rsquo;ll
-supply plenty of references to quality tutorials and deep dives as we
-breech various technologies.</p>
-<p>Every part of this system could be built with a different technology
-and process, that is not important, rather the importance is in the
-process management and how the craft people work together.</p>
-<h4 id="open-source">Open Source</h4>
-<p>This project uses <em>Open Source</em> software <em>Open Protocols</em> and all
-freely available development systems. Somebody could easily come along
-a build a <em>Microsoft C#</em> CS just as easily as I can build the esp32
-version.</p>
-<h3 id="proof-of-concept-poc">Proof Of Concept (PoC)</h3>
+<h2 id="phase-1---the-minimum-viable-product">Phase 1 - The Minimum Viable Product</h2>
+<p>Now that we have a pretty good idea of what we want to build and how
+it is going to work we now need to plot our development plan.</p>
+<p>In the spirit of <em>Lean Startup</em> and <em>Agile</em> we are going to build this
+project in phases that each provide progressive levels of usefulness.</p>
+<h3 id="the-proof-of-concept-poc">The Proof Of Concept (PoC)</h3>
 <p>This is a complex system with a three or four distinct software
 components and some hardware. This also involves at least 3 if not
-four or five different languages and development environments, just
-like in the &ldquo;real world&rdquo;.</p>
-<p>We&rsquo;ll build this system one step at a time. The end goal is the
+four or five different programing languages and development
+environments, which is pretty much what we see in the &ldquo;real world&rdquo;.</p>
+<p>The objective is to build the software such that each new addition of
+software adds a specific verifiable benefit to the <em>user</em>.</p>
+<p>The idea is We&rsquo;ll build this system one step at a time. The end goal is the
 <em>irrigation application</em>, however we can still get something useful
-from the software, before it is released if we build it wisely.</p>
+from the software before the complete irrigation system can be built.</p>
 <p>For example, in this project we&rsquo;ll use our <em>real time</em> dashboard to
 act like an <em>Internet Clock</em> displaying real time temperature data
 making the application a bit more useful every day.</p>
-<h2 id="milestone-1---aggregation-hub">Milestone 1 - Aggregation Hub</h2>
+<h4 id="milestone-1---aggregation-hub">Milestone 1 - Aggregation Hub</h4>
 <p>The first step is to get the Hub to subscribe to MQTT data channels,
-then start recieving and <em>caching</em> that data in RAM.</p>
-<p>Now that the Hub has data stashed in memory, we will build a <em>REST
-API</em> to access the data. We&rsquo;ll also consider <em>GraphQL</em> as a possible
-architectural choice.</p>
-<p>The Hub is a <em>Micro Service</em> written in Go.</p>
-<h2 id="milestone-2---dashboard">Milestone 2 - Dashboard</h2>
-<p>Now that we have the Hub collecting data and that data is available
-via the <em>REST API</em> we&rsquo;ll build a Dashboard Web application to display
-the collected data.</p>
-<p>The <em>Dashboard</em> will query the historic data via
-the REST API and display that data in graph and table form.</p>
-<p>The <em>Dashboard</em> is a <em>Responsive Web Application</em> written with Vue.</p>
-<h2 id="milestone-3---real-time-datashboard">Milestone 3 - Real Time Datashboard</h2>
-<p>We are going to add <em>Websockets</em> to Hub and the Webapp allowing the
-former to send data to the later in <em>real time</em> allowing the dashboard
-to display data as it arrives immediately.</p>
-<p>The <em>Dashboard</em> and <em>Hub</em> need to be updated to support <em>Websockets</em>
-involve adding a <em>Websocket Library</em> for both  <em>JavaScript</em> and <em>Go</em>.</p>
-<h2 id="milestone-4---collection-station">Milestone 4 - Collection Station</h2>
-<p>The <em>third milestone</em> we are going to build the <em>Collection Station</em>
-to gather temperature and humidity. Eventually we&rsquo;ll add sensors for
-humidity and light levels.</p>
-<p>This component has physical hardware involved making this application
-particularly interesting for me. This is what officially makes it an
-<em>IoT Project</em> :)</p>
-<p>We&rsquo;ll build the <em>CS</em> from an <em>esp32 devkit</em> and a <em>DHT22</em> sensor. This
-is an <em>embedded</em> <em>real-time</em> application written in C++ using the
-<em>esp-idf</em> development kit and the Free Real Time Operating System
-(<em>FreeRTOS</em>).</p>
-<h2 id="milestone-5---time-series-database">Milestone 5 - Time Series Database</h2>
+then start recieving and <em>caching</em> the data in RAM.</p>
+<ul>
+<li>Read MQTT publications and cache in memory</li>
+<li>REST API provides access to cached data</li>
+</ul>
+<h4 id="milestone-2---dashboard">Milestone 2 - Dashboard</h4>
+<p>The Dashboard is a WebApp that uses the REST API of the Hub to fetch
+and display historic sensor data in graph and table forms.</p>
+<ol>
+<li>Responsive WebApp written</li>
+<li>REST API Client to fetch data</li>
+<li>Graph and table display of historic data</li>
+</ol>
+<h4 id="milestone-3---real-time-datashboard">Milestone 3 - Real Time Datashboard</h4>
+<p>We are going to add <em>Websockets</em> to the <em>Hub</em> and the <em>Dashboard</em>
+allowing the Hub to stream data to the Dashboard to display
+<em>real-time</em> data stream on the dashboard.</p>
+<ol>
+<li>Add websocket support to Hub</li>
+<li>Add websocket support to Dashboard</li>
+</ol>
+<h4 id="milestone-4---collection-station">Milestone 4 - Collection Station</h4>
+<p>The data in Milestones 1 - 3 was <em>mocked</em> by a MQTT publishing
+client. The Collection Station is an esp32 SoC with a DHT22 sensor
+that will collect <em>temperature</em> and <em>humidity</em>. The esp32 will publish
+that data over the appropriate MQTT data channel.</p>
+<ol>
+<li>esp32 Wifi</li>
+<li>DHT22 temperature and humidity sampling</li>
+<li>MQTT publication of data</li>
+</ol>
+<p>Now we are collecting, publishing and displaying real <em>environmental</em> data!</p>
+<h4 id="milestone-5---time-series-database">Milestone 5 - Time Series Database</h4>
 <p>Data that has been collected over a long period of time can be saved
 locally or in the cloud. In our case, the data we have collected is
 known as a <em>time series</em>.</p>
-<p>The data can be saved in many different formats or databases. SQL or
-MongoDB are choices, however we will go with a <em>Time Series DB</em> built
-just for applications such as these.</p>
-<p>The two databases in consideration will be <em>prometheus</em> and
-<em>influxDB</em> both fast and purpose built specifically <em>time-series</em>
-databases.</p>
-<h2 id="milestone-6---fleet-management">Milestone 6 - Fleet Management</h2>
+<ol>
+<li>Introduce Influx or Promethus to store data</li>
+</ol>
+<h4 id="milestone-6---fleet-management">Milestone 6 - Fleet Management</h4>
 <p>As time goes on and the application evolves according to operation
 experience and demand, features will be added and software will be
 changed. This often leads to disruptive or difficult software upgrade
 events.</p>
-<p>We are going to strive to managing all of our software update process
-with total automation using modern <em>CI/CD</em> techniques and
-<em>Over-The-Air</em> software updates. If we can hit this goal <em>and all goes
-well</em> we will be able to seamlessly roll out software with very little
-human interaction.</p>
+<ol>
+<li>Over The Air (OTA) Updates</li>
+<li>Remote monitoring</li>
+<li>Remote control</li>
+</ol>
+<h2 id="the-software-components">The Software Components</h2>
 
       </article>
     </div>
@@ -189,7 +196,8 @@ human interaction.</p>
 	<div class="card-body">
 
 	  <h5 class="card-title">
-	    <a href="http://www.rustyeddy.com/collection-station/">Collection Station</a>
+            <a href="/iot-project-sensor-station/coming-soon">Collection Station</a>
+	    
 	  </h5>
 
 	  <div class="card-text">
@@ -198,7 +206,8 @@ human interaction.</p>
 	  </div>
 
           <div class="pt-2">
-	    <a href="http://www.rustyeddy.com/collection-station/">read more ...</a>
+	    
+	    <a href="/iot-project-sensor-station/comming-soon">coming soon ...</a>
           </div>
 
 	</div>
@@ -212,7 +221,8 @@ human interaction.</p>
 	<div class="card-body">
 
 	  <h5 class="card-title">
-	    <a href="http://www.rustyeddy.com/iot-project/hub/">IoT Project Data Aggregation Hub</a>
+            <a href="/iot-project-sensor-station/coming-soon">IoT Project Data Aggregation Hub</a>
+	    
 	  </h5>
 
 	  <div class="card-text">
@@ -221,7 +231,8 @@ human interaction.</p>
 	  </div>
 
           <div class="pt-2">
-	    <a href="http://www.rustyeddy.com/iot-project/hub/">read more ...</a>
+	    
+	    <a href="/iot-project-sensor-station/comming-soon">coming soon ...</a>
           </div>
 
 	</div>
@@ -235,7 +246,33 @@ human interaction.</p>
 	<div class="card-body">
 
 	  <h5 class="card-title">
-	    <a href="http://www.rustyeddy.com/iot-project/cloud/">IoT Project Cloud Automation</a>
+            <a href="/iot-project-sensor-station/coming-soon">IoT Real-time Dashboard</a>
+	    
+	  </h5>
+
+	  <div class="card-text">
+	    The dashboard is a WebUI built into the Hub providing a window into your environmental health with real-time data and historic values.
+
+	  </div>
+
+          <div class="pt-2">
+	    
+	    <a href="/iot-project-sensor-station/comming-soon">coming soon ...</a>
+          </div>
+
+	</div>
+      </div>
+    </div>
+
+    
+
+    <div class="col-6">
+      <div class="card mb-4">
+	<div class="card-body">
+
+	  <h5 class="card-title">
+            <a href="/iot-project-sensor-station/coming-soon">IoT Project Cloud Automation</a>
+	    
 	  </h5>
 
 	  <div class="card-text">
@@ -244,7 +281,8 @@ human interaction.</p>
 	  </div>
 
           <div class="pt-2">
-	    <a href="http://www.rustyeddy.com/iot-project/cloud/">read more ...</a>
+	    
+	    <a href="/iot-project-sensor-station/comming-soon">coming soon ...</a>
           </div>
 
 	</div>
@@ -258,7 +296,8 @@ human interaction.</p>
 	<div class="card-body">
 
 	  <h5 class="card-title">
-	    <a href="http://www.rustyeddy.com/iot-project/open-source/">Open Source Software</a>
+            <a href="/iot-project-sensor-station/coming-soon">Open Source Software</a>
+	    
 	  </h5>
 
 	  <div class="card-text">
@@ -267,7 +306,32 @@ human interaction.</p>
 	  </div>
 
           <div class="pt-2">
-	    <a href="http://www.rustyeddy.com/iot-project/open-source/">read more ...</a>
+	    
+	    <a href="/iot-project-sensor-station/comming-soon">coming soon ...</a>
+          </div>
+
+	</div>
+      </div>
+    </div>
+
+    
+
+    <div class="col-6">
+      <div class="card mb-4">
+	<div class="card-body">
+
+	  <h5 class="card-title">
+            <a href="/iot-project-sensor-station/coming-soon">Coming Soon</a>
+	    
+	  </h5>
+
+	  <div class="card-text">
+	    
+	  </div>
+
+          <div class="pt-2">
+	    
+	    <a href="/iot-project-sensor-station/comming-soon">coming soon ...</a>
           </div>
 
 	</div>
