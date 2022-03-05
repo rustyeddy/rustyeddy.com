@@ -7,141 +7,80 @@ description: IoT Software Project
 
 ![High Level Sensor Station](/img/iot-project-drawing.png)
 
-## What Does this project do?
+## What is this project about?
 
-I started this project to help water our home garden. You see my wife
-is really into _succulents_ and while these plants are _drought
-tolerent_ they do not like to be over watered. Second, being in
-drought ridden Southern California I want to be able to limit our
-water usage to only what is necessary.
+This project code name _Organic Gardner (OG)_ is an automated
+irrigation system intended to help people with moderate sized
+gardens manage semi complex watering schedules.
 
-### 1. Collection Stations (CS)
+_On Demand Irrigation (ODI)_ is a feature that uses soil's
+moisture level to control the sprinkler system and hence watering
+schedules as an alternative to scheduling sprinkler based on time of
+day and length of time the water runs.
 
-The way this _Organic Gardner (OG)_ works is pretty simple: build a
-_Collection Staiton (CS)_ that gathers temperature and soil moisture
-levels from sensors stuck in the dirt then publish that data to the 
-application running on the Hub.
+_Organic Gardner (OG)_ is conceptually pretty simple. It consists
+four primary components described below. There is a fith _cloud_
+option wit an Internet connection.
 
-### 2. IoT Hub and Applications
+1. The _Collection Station (CS)_ gathers environmental data from
+   sensors then _publishes_ the data as _MQTT topics_.
 
-The _application_ on the the Hub determines if sprinklers need to be
-turned on or off. Likewise, luminence levels will cause the
-application to turn lighting systems on or off.
+2. The _Hub_ gathers this data by _subscribing_ to the same _MQTT
+   Topics_. As the hub gathers and stores the data, it also feeds the
+   data to the _sprinkler application_. 
 
-### 3. Control Station (CS)
+3. The _sprinkler application_ uses moisture levels to send commands
+   to The turn sprinkers on and off.
+   
+4. The _Control Station (CS)_ is connected to relays (switches)
+   connected to sprinklers and lights. The _Control Station_ will
+   switch the relays when it recieves commands from the _sprinkler
+   app_.
 
-When the application needs to turn a pump or light on or off the
-application will send an MQTT message to the _Control Station (CS)_
-connected to a relay acting as a pump or light switch.
-
-### 4. Dashboard
-
-The _Dashboard_ was written as a _Web Application_ for the _User
-Interface (UI)_. This gives humans easy access to historical and
-real-time sensor data.
-
-### 5. Cloud - Persistance and Global Control
-
-And that is NOT ALL! The cloud is used for storing historical data,
-global _access_, _control_ and _management_ of one or more _sensor
-networks_. 
-
-### System Summary
-
-In summary the IoT project is made of these distinct components. 
-
-1. _CS_ Collect and publish environmental data
-2. _Hub_ gather data and run _Application Logic (AL)_
-3. _CS_ Control lights, sprinklers and heaters
-4. _Dashboard_ Human monitor and control
-5. _Cloud_ Perpetual Persistence and Global Access
+5. The _Dashboard_ is used by Humans to control, program and monitor
+   the _irrigation application_. The dashboard will provide access to
+   historical and real time data streams, program lighting schedules
+   and more.
 
 Pretty simple, right?
 
+This project is reflects _"real world"_ projects that it involves
+different programming languages, protocols and technologies: _Go_,
+C++, _JavaScript_, _HTTP_, _MQTT_, _Websockets_ and other stuff.
 
-## Phase 1 - The Minimum Viable Product
+To avoid overwhelm and keep the project pointed forward and
+interesting we will build the project by incrementally adding cool
+features to our previous cool features.
 
-Now that we have a pretty good idea of what we want to build and how
-it is going to work we now need to plot our development plan.
+Let's steal a term from lean startup.
 
-In the spirit of _Lean Startup_ and _Agile_ we are going to build this
-project in phases that each provide progressive levels of usefulness.
+## The Minimum Viable Product
 
-### The Proof Of Concept (PoC)
+Now that we have a pretty good idea of what we want to build we now
+need to plot our development plan.  We are going to attempt to build
+this system according to _milestones_ that bring an interesting and
+useful feature to the project.
 
-This is a complex system with a three or four distinct software
-components and some hardware. This also involves at least 3 if not
-four or five different programing languages and development
-environments, which is pretty much what we see in the "real world".
+1. *Milestone 1 - Aggregation Hub* collect data published to MQTT
+   topics and cache data in memory with a REST API
+   
+2. *Milestone 2 - Dashboard* a modern Responsive Webapp displaying
+   historical sensor data from historical REST API.
 
-The objective is to build the software such that each new addition of
-software adds a specific verifiable benefit to the _user_.
+3. *Milestone 3 - Real Time Datashboard* webapp enhanced to display
+   _real-time_ datastream via Websockets.
 
-The idea is We'll build this system one step at a time. The end goal is the
-_irrigation application_, however we can still get something useful
-from the software before the complete irrigation system can be built.
+4. *Milestone 4 - Collection Station* esp32 microcontroller with a
+   DHT22 temperature and humidity sensor. The chips is capable of
+   publishing data via MQTT with a standard Wifi connection.
+   
+5. *Milestone 5 - Persistance* A Time Series Database will house the
+   data collected by the Hub. Introduce Influx or Promethus as the
+   data store
 
-For example, in this project we'll use our _real time_ dashboard to
-act like an _Internet Clock_ displaying real time temperature data
-making the application a bit more useful every day.
+6. *Milestone 6 - Fleet Management* As time goes on the application
+   will change and need to be upgraded and monitored. The FM component
+   makes sure all items are alive and running the latest software.
 
-#### Milestone 1 - Aggregation Hub
-
-The first step is to get the Hub to subscribe to MQTT data channels, 
-then start recieving and _caching_ the data in RAM.
-
-- Read MQTT publications and cache in memory
-- REST API provides access to cached data
-
-#### Milestone 2 - Dashboard
-
-The Dashboard is a WebApp that uses the REST API of the Hub to fetch
-and display historic sensor data in graph and table forms.
-
-1. Responsive WebApp written
-2. REST API Client to fetch data
-3. Graph and table display of historic data
-
-#### Milestone 3 - Real Time Datashboard
-
-We are going to add _Websockets_ to the _Hub_ and the _Dashboard_
-allowing the Hub to stream data to the Dashboard to display
-_real-time_ data stream on the dashboard.
-
-1. Add websocket support to Hub
-2. Add websocket support to Dashboard
-
-#### Milestone 4 - Collection Station
-
-The data in Milestones 1 - 3 was _mocked_ by a MQTT publishing
-client. The Collection Station is an esp32 SoC with a DHT22 sensor
-that will collect _temperature_ and _humidity_. The esp32 will publish
-that data over the appropriate MQTT data channel.
-
-1. esp32 Wifi
-2. DHT22 temperature and humidity sampling
-3. MQTT publication of data
-
-Now we are collecting, publishing and displaying real _environmental_ data!
-
-#### Milestone 5 - Time Series Database
-
-Data that has been collected over a long period of time can be saved
-locally or in the cloud. In our case, the data we have collected is
-known as a _time series_. 
-
-1. Introduce Influx or Promethus to store data
-
-#### Milestone 6 - Fleet Management
-
-As time goes on and the application evolves according to operation
-experience and demand, features will be added and software will be
-changed. This often leads to disruptive or difficult software upgrade
-events. 
-
-1. Over The Air (OTA) Updates
-2. Remote monitoring 
-3. Remote control
-
-## The Software Components
+## The Software Components In Depth
 
