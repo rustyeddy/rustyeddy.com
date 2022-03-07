@@ -9,40 +9,44 @@ description: IoT Software Project
 
 ## What is this project about?
 
-This project code name _Organic Gardner (OG)_ is an automated
-irrigation system intended to help people with moderate sized
-gardens manage semi complex watering schedules.
+This project code named _Organic Gardner (OG)_ is an automated
+irrigation system intended to help my wife water her rather extensive
+_succelent collection_ and our _edible garden_ which have some rather 
+complex and diverse watering requirements.
 
-_On Demand Irrigation (ODI)_ is a feature that uses soil's
-moisture level to control the sprinkler system and hence watering
-schedules as an alternative to scheduling sprinkler based on time of
-day and length of time the water runs.
+_On Demand Irrigation (ODI)_ is a feature that uses soil's moisture
+levels to control a network of pumps and sprinklers to ensure the 
+different plants are watered just right.
 
-_Organic Gardner (OG)_ is conceptually pretty simple. It consists
-four primary components described below. There is a fith _cloud_
-option wit an Internet connection.
+The _Organic Gardner (OG)_ is conceptually pretty simple. It consists
+of four primary components described below with a fith option if an
+Internet connection is available.
 
-1. The _Collection Station (CS)_ gathers environmental data from
-   sensors then _publishes_ the data as _MQTT topics_.
+1. The [_Collection Station (CS)_](/iot-sensor-station/collection-station)
+   gathers environmental data from local sensors then _publishes_ that
+   data as _MQTT topics_.
 
-2. The _Hub_ gathers this data by _subscribing_ to the same _MQTT
-   Topics_. As the hub gathers and stores the data, it also feeds the
-   data to the _sprinkler application_. 
+2. The [_Hub_](/iot-sensor-station/hub) gathers this data by
+   _subscribing_ _MQTT data topics_. As the hub gathers and stores
+   data it also feeds the data to the _sprinkler application_.
 
-3. The _sprinkler application_ uses moisture levels to send commands
-   to The turn sprinkers on and off.
-   
-4. The _Control Station (CS)_ is connected to relays (switches)
-   connected to sprinklers and lights. The _Control Station_ will
-   switch the relays when it recieves commands from the _sprinkler
-   app_.
+3. The _sprinkler application_ checks the moisture levels from the
+   sensors to determine if a sprinkler needs to be turned on or off. 
 
-5. The _Dashboard_ is used by Humans to control, program and monitor
-   the _irrigation application_. The dashboard will provide access to
-   historical and real time data streams, program lighting schedules
-   and more.
+   If the moisture levels are either too low or too high the
+   _sprinkler application_ _publishes_ a _control
+   command_ to turn the sprinkler on or off.
+
+4. The _Control Station (CS)_ responds to commands from the _control
+   channels_ by turning a relay (sprinkler) on or off according to the
+   command it received.
+
+5. The _Dashboard_ allows Humans to see the data collected by each
+   station, control specific sprinklers and define schedules.
 
 Pretty simple, right?
+
+### Real World Diversity
 
 This project is reflects _"real world"_ projects that it involves
 different programming languages, protocols and technologies: _Go_,
@@ -56,10 +60,12 @@ Let's steal a term from lean startup.
 
 ## The Minimum Viable Product
 
-Now that we have a pretty good idea of what we want to build we now
+Now that we have a pretty good idea of what we want to build we
 need to plot our development plan.  We are going to attempt to build
-this system according to _milestones_ that bring an interesting and
-useful feature to the project.
+this project in _milestones_ that each bring an interesting and
+useful new feature to the project.
+
+Here is the order in which we will out this project.
 
 1. *Milestone 1 - Aggregation Hub* collect data published to MQTT
    topics and cache data in memory with a REST API

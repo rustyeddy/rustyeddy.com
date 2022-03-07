@@ -37,7 +37,7 @@ The _MQTT topics_ have been structured such that the Hub can gather
 the Collection Station IP addresses, sensor type, sensor value and a
 timestamp for when the data was fetched.
 
-Here are a couple examples of example MQTT topics:
+Here are a couple examples of MQTT topics:
 
 ```
 - ss/data/10.13.2.2/tepmc
@@ -71,12 +71,12 @@ for temprature and humidity respectively.
 
 You might see something like this:
 
->
-> - /ss/data/s1/tempf: 75.5
-> - /ss/data/s1/humidity: 12.5
-> - /ss/data/s2/tempf: 87.7
-> - /ss/data/s2/humidity: 10.2
->
+```
+- /ss/data/s1/tempf: 75.5
+- /ss/data/s1/humidity: 12.5
+- /ss/data/s2/tempf: 87.7
+- /ss/data/s2/humidity: 10.2
+```
 
 ## In Memory Data Model
 
@@ -94,16 +94,16 @@ type Msg struct {
 }
 ```
 
-This is a _normalized_ and _complete_ representation of a single data
-_value_ at a specific _time_ indexed with the respective _station_ and
+This is a _normalized_ and _complete_ representation of a single _data
+point_ at a specific _time_ indexed by the respective _station_ and
 _sensor_. 
 
 This format can be converted in any alternative format required quite
 easily and be transported through the system with little overhead. For
-example, most operations with 32bits of accuracy can be efficienty
+example, most operations with 32bits of accuracy can be efficiently
 stored in a _small_ _fixed size_ datastructre.
 
-With an IP address of 32bits, most messages can be stored in two 64bit
+With an IP address of 32bits most messages can be stored in two 64bit
 integers! The standard unix timestamp <code>time_t</code> is a 32bit
 int that has better than one second of accuracy.
 
@@ -116,18 +116,25 @@ type Msg struct {
 }
 ```
 
-## Data Consumers and Go Channels
+## Data Consumers and Concurrency
 
-Every subscriber has a _list of Consumers_ were _Consumers_ actually
-consume the data the MQTT channels produce. The tricky part here is
-that we may have more than one consumer of the data.
+Every subscriber has a _list of Consumers_ where the _Consumer_
+actually reads the incoming data and applies some _applicaiton logic_
+to that data. For example, soil moisture level of 10% might cause the
+consumer to send _on_ command to the sprinkler responsible for
+watering that soil.
 
-For example, we have the following consumers:
+The tricky part is supporting more than one consumer of this data
+stream. For example, we almost always have the in memory cache
+running reading incoming data then giving it a time stamp and indexing
+for API reference.
 
-- Memory consumer saving new data into historic structures
-- Web Socket real-time data publisher
+Additionally, every dashboard user will require a copy of the current
+data in real-time over a websocket.  At any given time, there may be 0
+1 or more consumers.
 
-### Consumer Requirements
+### Consumer Interface
+
 
 ```go
 type Consumer interface {
