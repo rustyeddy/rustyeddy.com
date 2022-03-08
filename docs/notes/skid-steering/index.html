@@ -89,26 +89,26 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 the movements we desire can be accomplished with a single API call
 <code>skidder.set_throttle(left_throttle, right_throttle)</code>,
 does not get much simpler than this!</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">skidder <span style="color:#f92672">=</span> Skidder()
-
-<span style="color:#75715e"># Move forward at full speed</span>
-skidder<span style="color:#f92672">.</span>set_throttle(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>)
-
-<span style="color:#75715e"># Move in reverse at half throttle</span>
-skidder<span style="color:#f92672">.</span>set_throttle(<span style="color:#f92672">-</span><span style="color:#ae81ff">0.5</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">0.5</span>)
-
-<span style="color:#75715e"># Turn right arch at 60% </span>
-skidder<span style="color:#f92672">.</span>set_throttle(<span style="color:#f92672">.</span><span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">0</span>)
-
-<span style="color:#75715e"># Turn left on a dime (and fast) at 70%</span>
-skidder<span style="color:#f92672">.</span>set_throttle(<span style="color:#f92672">-</span><span style="color:#ae81ff">0.7</span>, <span style="color:#ae81ff">0.7</span>)
-
-<span style="color:#75715e"># Stop</span>
-skidder<span style="color:#f92672">.</span>set_throttle(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>)
-
-<span style="color:#75715e"># Coast </span>
-skidder<span style="color:#f92672">.</span>set_throttle(None, None)
-</code></pre></div><p>With this simple library we can control the most simple of Mobile
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>skidder <span style="color:#f92672">=</span> Skidder()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Move forward at full speed</span>
+</span></span><span style="display:flex;"><span>skidder<span style="color:#f92672">.</span>set_throttle(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Move in reverse at half throttle</span>
+</span></span><span style="display:flex;"><span>skidder<span style="color:#f92672">.</span>set_throttle(<span style="color:#f92672">-</span><span style="color:#ae81ff">0.5</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">0.5</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Turn right arch at 60% </span>
+</span></span><span style="display:flex;"><span>skidder<span style="color:#f92672">.</span>set_throttle(<span style="color:#ae81ff">.6</span>, <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Turn left on a dime (and fast) at 70%</span>
+</span></span><span style="display:flex;"><span>skidder<span style="color:#f92672">.</span>set_throttle(<span style="color:#f92672">-</span><span style="color:#ae81ff">0.7</span>, <span style="color:#ae81ff">0.7</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Stop</span>
+</span></span><span style="display:flex;"><span>skidder<span style="color:#f92672">.</span>set_throttle(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Coast </span>
+</span></span><span style="display:flex;"><span>skidder<span style="color:#f92672">.</span>set_throttle(<span style="color:#66d9ef">None</span>, <span style="color:#66d9ef">None</span>)
+</span></span></code></pre></div><p>With this simple library we can control the most simple of Mobile
 Robots (or maybe a forklift).</p>
 <h3 id="note-about-speed-and-accuracy">Note About Speed and Accuracy</h3>
 <p>This library is very simple, it only knows how to control the

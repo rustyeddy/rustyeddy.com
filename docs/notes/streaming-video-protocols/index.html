@@ -96,8 +96,8 @@ local area networks.</p>
 Camera, I used the following command retrieved from
 <a href="http://www.mybigideas.co.uk/RPi/RPiCamera/">here</a></p>
 <p><a href="https://gstconf.ubicast.tv/videos/latest-gstreamer-rtsp-server-features/">Video describing the use of gst-rtsp-server</a></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">% raspivid -o - -t <span style="color:#ae81ff">0</span> |cvlc -v stream:///dev/stdin --sout <span style="color:#e6db74">&#39;#rtp{sdp=rtsp://:8554/}&#39;</span> :demux<span style="color:#f92672">=</span>h264
-</code></pre></div><p>With this, I ran the <em>vlc</em> on a Macbook Pro, I ran the vlc client and
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>% raspivid -o - -t <span style="color:#ae81ff">0</span> |cvlc -v stream:///dev/stdin --sout <span style="color:#e6db74">&#39;#rtp{sdp=rtsp://:8554/}&#39;</span> :demux<span style="color:#f92672">=</span>h264
+</span></span></code></pre></div><p>With this, I ran the <em>vlc</em> on a Macbook Pro, I ran the vlc client and
 opened the following network connection:</p>
 <blockquote>
 <p>rtsp://10.24.2.10:8554/</p>

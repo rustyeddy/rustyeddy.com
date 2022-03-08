@@ -6,11 +6,7 @@
     <description>Recent content in spi on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 Mar 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://www.rustyeddy.com/tags/spi/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 25 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://www.rustyeddy.com/tags/spi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The NRF240L1 RF Transceiver</title>
       <link>http://www.rustyeddy.com/notes/nrf24l01/</link>

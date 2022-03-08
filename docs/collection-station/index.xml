@@ -6,10 +6,6 @@
     <description>Recent content in Collection Station on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 Jan 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://www.rustyeddy.com/collection-station/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 13 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.rustyeddy.com/collection-station/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
