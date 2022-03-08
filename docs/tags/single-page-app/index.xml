@@ -5,7 +5,11 @@
     <link>http://www.rustyeddy.com/tags/single-page-app/</link>
     <description>Recent content in single page app on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://www.rustyeddy.com/tags/single-page-app/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    
+	<atom:link href="http://www.rustyeddy.com/tags/single-page-app/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Radian Laser</title>
       <link>http://www.rustyeddy.com/resume/clients/radian-laser/</link>

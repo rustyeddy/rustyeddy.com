@@ -6,7 +6,11 @@
     <description>Recent content in Notes I&#39;ve kept along the way on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Apr 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://www.rustyeddy.com/notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.rustyeddy.com/notes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>How to build a private wifi network for your webapp</title>
       <link>http://www.rustyeddy.com/notes/private-wifi-network-webapp/</link>

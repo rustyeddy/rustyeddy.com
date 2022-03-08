@@ -93,11 +93,11 @@ Collection Stations</p>
 the Collection Station IP addresses, sensor type, sensor value and a
 timestamp for when the data was fetched.</p>
 <p>Here are a couple examples of MQTT topics:</p>
-<pre tabindex="0"><code>- ss/data/10.13.2.2/tepmc
+<pre><code>- ss/data/10.13.2.2/tepmc
 - ss/data/10.13.2.2/humidity
 </code></pre><p>The structure of these <em>topics</em> have a specific structure that will
 allow the <em>IoTHub</em> to quickly parse the messages into an <em>efficient
-internal</em> structure called a <!-- raw HTML omitted --><em>Msg</em><!-- raw HTML omitted --> that contains these
+internal</em> structure called a <!-- raw HTML omitted -->_Msg_<!-- raw HTML omitted --> that contains these
 four pieces of information:</p>
 <ul>
 <li>Station ID probably in the form of an IP or MAC address</li>
@@ -117,7 +117,7 @@ data gets to <em>all subscribers</em> of that topic reliably.</p>
 <em>s1</em> and <em>s2</em> that published fahernheit and a percentage
 for temprature and humidity respectively.</p>
 <p>You might see something like this:</p>
-<pre tabindex="0"><code>- /ss/data/s1/tempf: 75.5
+<pre><code>- /ss/data/s1/tempf: 75.5
 - /ss/data/s1/humidity: 12.5
 - /ss/data/s2/tempf: 87.7
 - /ss/data/s2/humidity: 10.2
@@ -126,13 +126,13 @@ for temprature and humidity respectively.</p>
 combination of the <em>StationID</em> and <em>SensorID</em> elements of the MQTT
 topic. Combined with the <em>Value</em> and <em>Timestamp</em> we are able to
 construct the following <em>Message</em>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Msg</span> <span style="color:#66d9ef">struct</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Station</span> <span style="color:#66d9ef">string</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Sensor</span>  <span style="color:#66d9ef">string</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Value</span>   <span style="color:#66d9ef">float64</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Time</span>
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>This is a <em>normalized</em> and <em>complete</em> representation of a single <em>data
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Msg</span> <span style="color:#66d9ef">struct</span> {
+    <span style="color:#a6e22e">Station</span> <span style="color:#66d9ef">string</span>
+    <span style="color:#a6e22e">Sensor</span>  <span style="color:#66d9ef">string</span>
+    <span style="color:#a6e22e">Value</span>   <span style="color:#66d9ef">float64</span>
+    <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Time</span>
+}
+</code></pre></div><p>This is a <em>normalized</em> and <em>complete</em> representation of a single <em>data
 point</em> at a specific <em>time</em> indexed by the respective <em>station</em> and
 <em>sensor</em>.</p>
 <p>This format can be converted in any alternative format required quite
@@ -142,13 +142,13 @@ stored in a <em>small</em> <em>fixed size</em> datastructre.</p>
 <p>With an IP address of 32bits most messages can be stored in two 64bit
 integers! The standard unix timestamp <!-- raw HTML omitted -->time_t<!-- raw HTML omitted --> is a 32bit
 int that has better than one second of accuracy.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Msg</span> <span style="color:#66d9ef">struct</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Station</span> <span style="color:#66d9ef">int32</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Sensor</span>  <span style="color:#66d9ef">int32</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Value</span>   <span style="color:#66d9ef">int32</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Time</span>    <span style="color:#66d9ef">int32</span>
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><h2 id="data-consumers-and-concurrency">Data Consumers and Concurrency</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Msg</span> <span style="color:#66d9ef">struct</span> {
+    <span style="color:#a6e22e">Station</span> <span style="color:#66d9ef">int32</span>
+    <span style="color:#a6e22e">Sensor</span>  <span style="color:#66d9ef">int32</span>
+    <span style="color:#a6e22e">Value</span>   <span style="color:#66d9ef">int32</span>
+    <span style="color:#a6e22e">Time</span>    <span style="color:#66d9ef">int32</span>
+}
+</code></pre></div><h2 id="data-consumers-and-concurrency">Data Consumers and Concurrency</h2>
 <p>Every subscriber has a <em>list of Consumers</em> where the <em>Consumer</em>
 actually reads the incoming data and applies some <em>applicaiton logic</em>
 to that data. For example, soil moisture level of 10% might cause the
@@ -162,12 +162,12 @@ for API reference.</p>
 data in real-time over a websocket.  At any given time, there may be 0
 1 or more consumers.</p>
 <h3 id="consumer-interface">Consumer Interface</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Consumer</span> <span style="color:#66d9ef">interface</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">GetID</span>()     <span style="color:#66d9ef">string</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">GetRecvQ</span>()  <span style="color:#66d9ef">chan</span> <span style="color:#a6e22e">Msg</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Listen</span>()
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>Where <em>GetID()</em> helps identify exactly what consumer we
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Consumer</span> <span style="color:#66d9ef">interface</span> {
+    <span style="color:#a6e22e">GetID</span>()     <span style="color:#66d9ef">string</span>
+    <span style="color:#a6e22e">GetRecvQ</span>()  <span style="color:#66d9ef">chan</span> <span style="color:#a6e22e">Msg</span>
+    <span style="color:#a6e22e">Listen</span>()
+}
+</code></pre></div><p>Where <em>GetID()</em> helps identify exactly what consumer we
 have. <em>RecvQ()</em> will produce a <code>chan Msg</code> that will deliver data
 <em>Msgs&rsquo;</em> to a loop in the <em>Listen()</em> function.</p>
 <h3 id="consumers-will-come-and-go">Consumers will come and Go</h3>
@@ -196,13 +196,13 @@ structures index first on the Station and then by a Sensor, where each
 sensor has a <em>time series</em> (stream of values and successive times).</p>
 <p>At anytime an active hub will have an in memory representation of the
 timeseires data that abstractly looks like:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>- <span style="color:#ae81ff">station1</span>
-</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">tempf</span>: {<span style="color:#ae81ff">t1, v1}, {t2, v2} .. {tn, vn}</span>
-</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">humidity</span>: {<span style="color:#ae81ff">t1, v1}, {t2, v2} .. {tn, vn}</span>
-</span></span><span style="display:flex;"><span>- <span style="color:#ae81ff">station2</span>
-</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">tempf</span>: {<span style="color:#ae81ff">t1, v1}, {t2, v2} .. {tn, vn}</span>
-</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">humidity</span>: {<span style="color:#ae81ff">t1, v1}, {t2, v2} .. {tn, vn} </span>
-</span></span></code></pre></div><h2 id="global-api">Global API</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">- station1
+  - <span style="color:#66d9ef">tempf</span>: {t1, v1}, {t2, v2} .. {tn, vn}
+  - <span style="color:#66d9ef">humidity</span>: {t1, v1}, {t2, v2} .. {tn, vn}
+- station2
+  - <span style="color:#66d9ef">tempf</span>: {t1, v1}, {t2, v2} .. {tn, vn}
+  - <span style="color:#66d9ef">humidity</span>: {t1, v1}, {t2, v2} .. {tn, vn} 
+</code></pre></div><h2 id="global-api">Global API</h2>
 <p>IoT Hub provides a REST API allowing other programs to access datasets
 from the Hub for various applications. Some of the important REST API
 <em>endpoints</em> are:</p>

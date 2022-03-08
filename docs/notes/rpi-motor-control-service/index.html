@@ -99,8 +99,8 @@ keyboard controller if you ssh into the vehicle.</p>
 respond to commands accordingly.  Skid channel is simple, expecting
 two floating point numbers, representing the load (voltage) supplied
 to the motors.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>% mosquitto_sub -t /control/skid 
-</span></span></code></pre></div><p>Messages to control our skid steer vehical over MQTT will basically be
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">% mosquitto_sub -t /control/skid 
+</code></pre></div><p>Messages to control our skid steer vehical over MQTT will basically be
 two floating point values between -1 and +1 inclusive.  The numbers
 represent the percentage of the load to let the motors have (throttle)
 and the +/- sign represents the direction the motor will turn.</p>
