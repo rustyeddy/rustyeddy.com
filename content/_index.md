@@ -1,6 +1,6 @@
 ---
 title: Rusty Eddy
-description: Building Software, Understanding IoT and Life with Sensors
+description: Principal Engineer, Softeware Architect and IoT Hacker.
 date: 2020-04-10
 ---
 
