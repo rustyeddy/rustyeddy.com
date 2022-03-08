@@ -3,14 +3,14 @@ title: IoT Software Development Process
 url: iot-project-sensor-station
 date: 2020-09-06T10:32:26-07:00
 description: >
-  An IoT project usually involves taking a well known physical systems.
-  Some simple examples include doorbells (Ring), Heating, Air
-  Conditioning (Nest) and an irrigation system. The IoT part is where
+  An IoT project usually involves taking a well known physical device.
+  For example a doorbell (Ring), Heating and Air
+  Conditioning (Nest) or an irrigation system. The IoT part is where
   we add software with an Internet connection to give these well known
   physical devices and whole new world of capabilities. This is
   incredibly liberating but introduces new complexities in software
-  design and development process we will address and discuss in this
-  set of articles.
+  design and development process we will discuss as I document this 
+  project. 
 ---
 
 ![High Level Sensor Station](/img/iot-project-drawing.png)
