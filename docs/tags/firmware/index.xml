@@ -5,7 +5,11 @@
     <link>http://www.rustyeddy.com/tags/firmware/</link>
     <description>Recent content in firmware on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://www.rustyeddy.com/tags/firmware/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    
+	<atom:link href="http://www.rustyeddy.com/tags/firmware/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Radian Laser</title>
       <link>http://www.rustyeddy.com/resume/clients/radian-laser/</link>

@@ -6,7 +6,11 @@
     <description>Recent content in computer video on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://www.rustyeddy.com/categories/computer-video/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.rustyeddy.com/categories/computer-video/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Raspbery Pi Camera Control Service</title>
       <link>http://www.rustyeddy.com/notes/rpi-camera-control-service/</link>

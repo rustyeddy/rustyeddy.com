@@ -6,7 +6,11 @@
     <description>Recent content in golang on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Apr 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://www.rustyeddy.com/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.rustyeddy.com/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>The Go Periph Library</title>
       <link>http://www.rustyeddy.com/notes/go-periph-library/</link>
