@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IoT Project Data Aggregation Hub on Rusty Eddy</title>
-    <link>http://www.rustyeddy.com/iot-project/hub/</link>
+    <link>http://www.rustyeddy.com/iot-project-sensor-station/hub/</link>
     <description>Recent content in IoT Project Data Aggregation Hub on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.rustyeddy.com/iot-project/hub/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.rustyeddy.com/iot-project-sensor-station/hub/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
