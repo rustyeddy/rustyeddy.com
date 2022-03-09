@@ -1,6 +1,6 @@
 ---
 title: IoT Software Development Process
-url: iot-project-sensor-station
+url: iot-project-organic-gardner
 date: 2020-09-06T10:32:26-07:00
 description: >
   An IoT project usually involves taking a well known physical device.
@@ -30,11 +30,11 @@ The _Organic Gardner (OG)_ is conceptually pretty simple. It consists
 of four primary components which are described below with a fifth option,if an
 Internet connection is available.
 
-1. The [_Collection Station (CS)_](/iot-project-sensor-station/collection-station)
+1. The [_Collection Station (CS)_](/iot-project-organic-gardner/collection-station)
    gathers environmental data from local sensors then _publishes_ that
    data as _MQTT topics_.
 
-2. The [_Hub_](/iot-sensor-station/hub) gathers this data by
+2. The [_Hub_](/iot-organic-gardner/hub) gathers this data by
    _subscribing_ _MQTT data topics_. As the hub gathers and stores
    data, it also feeds the data to the _sprinkler application_.
 

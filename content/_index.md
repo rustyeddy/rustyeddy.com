@@ -17,6 +17,6 @@ IoT products.
 If this sounds interesting or you would like to get an insiders view
 of what it is like to design, deliver and deploy a complete IoT
 software system, join me. 
-[IoT Project Sensor Station](/iot-project-sensor-station). 
+[IoT Project Sensor Station](/iot-project-organic-gardner). 
 
 > Here is my [resume](/resume).
