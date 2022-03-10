@@ -29,7 +29,7 @@ The _Organic Gardner (OG)_ is conceptually pretty simple. It consists
 of four primary components which are described below with a fifth
 option when an Internet connection is available.
 
-1. The [_Collection Station (CS)_](/iot-project-sensor-station/collection-station)
+1. The [_Collection Station (CS)_](/iot-project-organic-gardner/collection-station)
    gathers environmental data from local sensors then _publishes_ that
    data as _MQTT topics_.
 
