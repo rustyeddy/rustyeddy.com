@@ -3,15 +3,17 @@ title: IoT Real-time Dashboard
 date: 2022-01-12
 weight: 30
 description: >
-  The dashboard is a WebUI built into the Hub providing a window into
-  your environmental health with real-time data and historic values.
+  The dashboard is a responsive Web Application written with Vue to
+  display historic and real time application data. The dashboard
+  allows users to configure the application and switch connected
+  relays. Front end developers are welcome, got feedback?
 ---
 
 ## Dashboard WebApp
 
 ![Example image](/img/dashboard.png)
 
-The dashboard is a WebUI built into the Hub providing a window into
+he dashboard is a WebUI built into the Hub providing a window into
 your environmental health. All sensor data is transmitted over a
 dedicated _MQTT_ _channel_, the channel is comprised of a _path_ that
 looks like a _directory structure_ or URL path. Contained in the path

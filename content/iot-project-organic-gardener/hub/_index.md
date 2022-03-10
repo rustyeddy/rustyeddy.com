@@ -1,81 +1,81 @@
 ---
-title: Organic Gardener - Data Aggregation Hub
+title: Iot Data Aggregation Hub
 date: 2022-01-13
 description: >
-  The OG Hub gathers the environmental data published by our
-  Collection Stations then uses that data to determine when to turn on
-  and off a sprinkler systems. The OG sends data to the dashboard for human
-  consumption. 
+  The IoT Hub is the center piece of the OG system it aggregates
+  environmental measurements from MQTT data channels, provides an HTTP 
+  server for the REST API and serves up the responsive Dashboard
+  Webapp. The Hub is also responsible for running the application
+  logic and ensuring data is archived as required. This page we
+  discuss how the Hub is constructed as a MicroService.
 weight: 20
 ---
 
 ## What Does OG Hub Do?
 
-For the _1st Milestone_ The IoT Hub has been developed to collect
-temperature and humidity data from sensors connected to a wireless
-network. The _Hub_ will cache the data in memory and provide a REST
-API for access to the data it has stored.
+In a nutshell the _OG Hub_ gathers data from MQTT then makes that data
+available to programs and humans via a REST API and Dashboard
+served from a builtin HTTP server.  You can call this tiny, fast
+program a [_Micro-Service_](https://en.wikipedia.org/wiki/Microservices).
 
-Since the Hub already supports HTTP for the REST API, it will be used
-to serve up the dashboard as a _Single Page App (SPA)_. The Dashboard
-will be used to observe realtime and historical data, as well as
-control the irrigation and lighting systems.
+> As matter of fact, it is so small and fast, it is more than happy to
+> run on a _Raspberry Pi_!
 
-In a later phase the _IoT Hub_ will be programmed to cache limited
-historic data in memory and persist data to a permenant resting
-place. We'll discuss data and storage in much greater detail a bit
-later in this adventure.
+The _1st Milestone_ of the 
+[_Organic Gardener IoT Project_](/iot-project-organic-gardener)
+is complete. The list of supported features are:
 
-### How Does IoT Hub Work?
+1. Collect environmental Data via MQTT and save in RAM
+3. HTTP server to provide a REST API
+4. HTTP server to serve the [Dashboard](/iot-project-organic-gardener/dashboard) webapp
+4. HTTP server enhanced with Websockets to stream data live
 
-The IoT Hub uses the well known and supported [MQTT](https://mqtt.org)
+In a future phase of the project we will add the option of saving
+the data in a persistent Data Store (DS) such as a Time Series
+database. It will be a future task to select a database or databases
+the program will be able to use.
+
+### How Does The Hub Work?
+
+The Hub uses the well known and supported [MQTT](https://mqtt.org)
 light weight messaging protocol to gather data published by a network of
-Collection Stations 
+[Collection Stations](/iot-project-ogranic-gardener/collection-station)
 
-The _MQTT topics_ have been structured such that the Hub can gather
-the Collection Station IP addresses, sensor type, sensor value and a
-timestamp for when the data was fetched.
+> **TODO** Write MQTT briefing
 
-Here are a couple examples of MQTT topics:
+MQTT uses the [Pub/Sub](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern)
+Messaging Model. Publishers send data to _Topics_ while subscribers
+subscribe to the topic and subsequently recieve the corresponding data.
 
-```
-- ss/data/10.13.2.2/tepmc
-- ss/data/10.13.2.2/humidity
-```
-
-The structure of these _topics_ have a specific structure that will
-allow the _IoTHub_ to quickly parse the messages into an _efficient
-internal_ structure called a <code>_Msg_</code> that contains these
-four pieces of information:
-
-- Station ID probably in the form of an IP or MAC address
-- Sensor data name such as: temprature, humidiy, air-pressure, etc
-- Value this will either be an integer or a float64
-- Timestamp when the data was sampled.
-
-### An Example 
-
-For example an IoT station with the ID _10.11.2.19_ will start
-_publishing_ temprature data via MQTT on the following path
-```/ss/data/10.11.2.19/tempf```. The rate the data is published can be 
-changed via a configuration knob. The MQTT _broker_ will ensure that
-data gets to _all subscribers_ of that topic reliably.
-
-The IoT hub is one of the subscribers to the CS data.
-
-The first milestone includes temperature and humidy data channels
-(topics). For example, we might have two stations
-_s1_ and _s2_ that published fahernheit and a percentage
-for temprature and humidity respectively.
-
-You might see something like this:
+For example a _CS_ with the ID 10.11.11.22 will publish the current
+temperature in fahrenheit with this _topic_.
 
 ```
-- /ss/data/s1/tempf: 75.5
-- /ss/data/s1/humidity: 12.5
-- /ss/data/s2/tempf: 87.7
-- /ss/data/s2/humidity: 10.2
+ss/data/10.11.11.2/tempf
 ```
+
+_10.11.11.22_ is the StationID and and _tempf_ is the
+SensorID. 
+
+#### MQTT Wildcard Subscriptions
+
+MQTT supports wildcard subscriptions allowing the Hub to subscribe to
+_ALL_ _data channels_ even without knowing the stationID's or
+sensorIDs before hand.
+
+By subscribing to ```/ss/data/+/+``` the Hub will recieve data from
+every station and sensor on the network. 
+
+When data _periodically_ arrives, the Hub will quickly extract
+the following elements of the data point.
+
+- **Station ID** probably in the form of an IP or MAC address
+- **Sensor data** name such as: temprature, humidiy, air-pressure, etc
+- **Value** this will either be an integer or a float64
+- **Timestamp** when the data was sampled.
+
+The data is reformatted and stored efficiently in RAM. Let's have a
+look at what happens after data is accepted and parsed by the Hub.
 
 ## In Memory Data Model
 
@@ -97,23 +97,6 @@ This is a _normalized_ and _complete_ representation of a single _data
 point_ at a specific _time_ indexed by the respective _station_ and
 _sensor_. 
 
-This format can be converted in any alternative format required quite
-easily and be transported through the system with little overhead. For
-example, most operations with 32bits of accuracy can be efficiently
-stored in a _small_ _fixed size_ datastructre.
-
-With an IP address of 32bits most messages can be stored in two 64bit
-integers! The standard unix timestamp <code>time_t</code> is a 32bit
-int that has better than one second of accuracy.
-
-```go
-type Msg struct {
-    Station int32
-    Sensor  int32
-    Value   int32
-    Time    int32
-}
-```
 
 ## Data Consumers and Concurrency
 
@@ -196,7 +179,7 @@ timeseires data that abstractly looks like:
 
 ## Global API
 
-IoT Hub provides a REST API allowing other programs to access datasets
+The Hub provides a REST API allowing other programs to access datasets
 from the Hub for various applications. Some of the important REST API
 _endpoints_ are:
 

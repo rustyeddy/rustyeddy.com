@@ -3,10 +3,11 @@ title: Collection Station
 date: 2021-01-13
 url: collection-station
 description: >
-    We are going to build a Sensor Station capable of wirelessly
-    publishing environmental data to any entity that subscribes
-    to the data. The stations are typically battery powered and 
-    run in areas with no electrical power.
+    The Collection and Control Station (CS) is capable of gathering
+    data from attached sensors. It publishes the sensor data to the
+    Hub via MQTT data channels. The CS also subscribes to the MQTT
+    command channels to cause the CS to switch connected sprinkler
+    relays.. 
 weight: 10
 git: https://github.com/sensorstation/ssesp
 ---

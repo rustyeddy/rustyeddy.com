@@ -29,11 +29,11 @@ The _Organic Gardner (OG)_ is conceptually pretty simple. It consists
 of four primary components which are described below with a fifth
 option when an Internet connection is available.
 
-1. The [_Collection Station (CS)_](/iot-project-organic-gardner/collection-station)
+1. The [_Collection Station (CS)_](/iot-project-organic-gardener/collection-station)
    gathers environmental data from local sensors then _publishes_ that
    data as _MQTT topics_.
 
-2. The [_Hub_](/iot-sensor-station/iot-hub) gathers this data by
+2. The [_Hub_](/iot-project-organic-gardener/hub) gathers this data by
    _subscribing_ _MQTT data topics_. As the hub gathers and stores
    data, it also feeds the data to the _sprinkler application_.
 
@@ -44,13 +44,13 @@ option when an Internet connection is available.
    _sprinkler application_ _publishes_ a _control
    command_ to switch sprinkler on or off accordingly.
 
-4. The [_Control Station (CS)_](/iot-project-sensor-station/collection-station) responds to
+4. The [_Control Station (CS)_](/iot-project-organic-gardener/collection-station) responds to
    commands from the _control channels_ by turning a relay (sprinkler)
    on or off according to the command it received.
 
-5. The _Dashboard_ allows humans to see the data collected by each
-   station, control specific sprinklers and define light and water
-   schedules. 
+5. The [_Dashboard_](/iot-project-organic-gardener/dashboard) allows
+   humans to see the data collected by each  station, control specific
+   sprinklers and define light and water schedules. 
 
 Pretty simple, right?
 

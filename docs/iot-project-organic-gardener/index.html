@@ -86,12 +86,12 @@ of four primary components which are described below with a fifth
 option when an Internet connection is available.</p>
 <ol>
 <li>
-<p>The <a href="/iot-project-organic-gardner/collection-station"><em>Collection Station (CS)</em></a>
+<p>The <a href="/iot-project-organic-gardener/collection-station"><em>Collection Station (CS)</em></a>
 gathers environmental data from local sensors then <em>publishes</em> that
 data as <em>MQTT topics</em>.</p>
 </li>
 <li>
-<p>The <a href="/iot-sensor-station/iot-hub"><em>Hub</em></a> gathers this data by
+<p>The <a href="/iot-project-organic-gardener/hub"><em>Hub</em></a> gathers this data by
 <em>subscribing</em> <em>MQTT data topics</em>. As the hub gathers and stores
 data, it also feeds the data to the <em>sprinkler application</em>.</p>
 </li>
@@ -103,14 +103,14 @@ sensors to determine if a sprinkler needs to be turned on or off.</p>
 command</em> to switch sprinkler on or off accordingly.</p>
 </li>
 <li>
-<p>The <a href="/iot-project-sensor-station/collection-station"><em>Control Station (CS)</em></a> responds to
+<p>The <a href="/iot-project-organic-gardener/collection-station"><em>Control Station (CS)</em></a> responds to
 commands from the <em>control channels</em> by turning a relay (sprinkler)
 on or off according to the command it received.</p>
 </li>
 <li>
-<p>The <em>Dashboard</em> allows humans to see the data collected by each
-station, control specific sprinklers and define light and water
-schedules.</p>
+<p>The <a href="/iot-project-organic-gardener/dashboard"><em>Dashboard</em></a> allows
+humans to see the data collected by each  station, control specific
+sprinklers and define light and water schedules.</p>
 </li>
 </ol>
 <p>Pretty simple, right?</p>
@@ -180,7 +180,7 @@ makes sure all items are alive and running the latest software.</p>
 	  </h5>
 
 	  <div class="card-text">
-	    We are going to build a Sensor Station capable of wirelessly publishing environmental data to any entity that subscribes to the data. The stations are typically battery powered and  run in areas with no electrical power.
+	    The Collection and Control Station (CS) is capable of gathering data from attached sensors. It publishes the sensor data to the Hub via MQTT data channels. The CS also subscribes to the MQTT command channels to cause the CS to switch connected sprinkler relays.. 
 
 	  </div>
 
@@ -201,11 +201,11 @@ makes sure all items are alive and running the latest software.</p>
 
 	  <h5 class="card-title">
 	    
-            Organic Gardener - Data Aggregation Hub
+            Iot Data Aggregation Hub
 	  </h5>
 
 	  <div class="card-text">
-	    The OG Hub gathers the environmental data published by our Collection Stations then uses that data to determine when to turn on and off a sprinkler systems. The OG sends data to the dashboard for human consumption. 
+	    The IoT Hub is the center piece of the OG system it aggregates environmental measurements from MQTT data channels, provides an HTTP  server for the REST API and serves up the responsive Dashboard Webapp. The Hub is also responsible for running the application logic and ensuring data is archived as required. This page we discuss how the Hub is constructed as a MicroService.
 
 	  </div>
 
@@ -230,7 +230,7 @@ makes sure all items are alive and running the latest software.</p>
 	  </h5>
 
 	  <div class="card-text">
-	    The dashboard is a WebUI built into the Hub providing a window into your environmental health with real-time data and historic values.
+	    The dashboard is a responsive Web Application written with Vue to display historic and real time application data. The dashboard allows users to configure the application and switch connected relays. Front end developers are welcome, got feedback?
 
 	  </div>
 
