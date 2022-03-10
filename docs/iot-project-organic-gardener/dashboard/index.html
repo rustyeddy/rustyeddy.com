@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+
+<title>IoT Real-time Dashboard</title>
+
+<script>(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
+0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+for(h=0;h<l.length;h++)c(e,l[h]);var f="set set_once union unset remove delete".split(" ");e.get_group=function(){function a(c){b[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));e.push([d,call2])}}for(var b={},d=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<f.length;c++)a(f[c]);return b};a._i.push([b,d,g])};a.__SV=1.2;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js";d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d)}})(document,window.mixpanel||[]);
+mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</script>
+
+
+<body><header class="container bg-white">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <a class="navbar-brand text-muted text-monospace" href="/"><span claa="h1">rusty eddy:</span></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <nav class="navbar-nav w-100 justify-content-end">
+	<div class="nav w-100">
+  	  <a class="nav-link" href="/iot-project-organic-gardener/">IoT &nbsp</a>
+  	  <a class="nav-link" href="/resume"> resume &nbsp</a> 
+  	  <a class="nav-link" href="/about"> about &nbsp</a> 
+	</div>
+      </nav>
+    </div>
+  </nav>
+</header>
+<div class="jumbotron border-top border-bottom bg-white" >
+    <div class="row">
+	<div class="col-md"></div>
+	<div class="col-md-8">
+	  <h1 class="header h2 text-center pb-1">IoT Real-time Dashboard</h1>
+	    <p class="leadin align-right text-muted text-center mt-0">
+		The dashboard is a WebUI built into the Hub providing a window into your environmental health with real-time data and historic values.
+
+	    </p>
+	</div>
+	<div class="col-md"></div>
+    </div>
+    <div class="row text-center smaller-text">
+	<div class="col"></div>
+	<div class="col-8">
+	    <nav class="nav justify-content-center">
+                
+                
+                
+                
+                
+
+	    </nav>
+
+	</div>
+	<div class="col"></div>
+    </div>
+</div>
+<div id="main body">
+<div class="container">
+
+  <div class="row mb-4">
+    <div class="col"></div>
+    <div class="col-8">
+      <article class="article text-big">
+	<h2 id="dashboard-webapp">Dashboard WebApp</h2>
+<p><img src="/img/dashboard.png" alt="Example image"></p>
+<p>The dashboard is a WebUI built into the Hub providing a window into
+your environmental health. All sensor data is transmitted over a
+dedicated <em>MQTT</em> <em>channel</em>, the channel is comprised of a <em>path</em> that
+looks like a <em>directory structure</em> or URL path. Contained in the path
+are the <em>identification</em> of the device and the name of the <em>sensor</em>.</p>
+<p>With this design, any <em>data publisher</em> can contribute to the <em>Sensor
+Station Application</em>.</p>
+<h3 id="mobile-first">Mobile First</h3>
+<p>I have no doubt or argument with the <em>Mobile First</em> discipline,
+personally I still do most of my <em>browsing</em> on a computer, not so much
+a mobile phone.</p>
+<p>Likewise, I don&rsquo;t normally build <em>mobile</em> apps or <em>web pages</em> until
+now.</p>
+<p>It is quite obvious that mobile is huge and a very important game
+changer.</p>
+<p>The reason I am biting the bullet and beginning the mobile development
+is because of <em>Google Search Console</em>, it had switched modes to mobile
+because it detected most of my website visitors are from mobile
+devices.</p>
+<p>OK, I get the hint. That is why the IOT Station <em>dashboard</em> will be
+designed for <em>Mobile First</em>.</p>
+<h3 id="written-with-vue">Written with Vue</h3>
+<p>React or Vue? That was the question, vue was the answer.</p>
+<p>Why Vue, what makes these modern frameworks so attractive, why not
+just write good ol JS.</p>
+<h2 id="user-story">User Story</h2>
+<ol>
+<li>
+<p>User visits website and sees the dashboard.</p>
+</li>
+<li>
+<p>User can select station view and get an
+enhanced view of just that station.</p>
+</li>
+</ol>
+<h3 id="wireframes">Wireframes</h3>
+<ol>
+<li>Stations List view Wireframe</li>
+<li>Station Detail view wireframe</li>
+</ol>
+<h3 id="storyboards">Storyboards</h3>
+<p>See User Story</p>
+<h3 id="media-manifest">Media Manifest</h3>
+<ol>
+<li>Logo</li>
+<li>Icons for
+<ol>
+<li>each of the sensors</li>
+</ol>
+</li>
+</ol>
+<h3 id="data-manifest">Data Manifest</h3>
+<p>Local station.sensor time series values.</p>
+
+      </article>
+    </div>
+    <div class="col"></div>
+  </div>
+
+</div>
+
+<div class="container">
+  <div class="row">
+    
+  </div> 
+
+</div>
+
+
+
+	</div><footer id="footer" class="container-fluid footer small-text pt-4 border-top">
+  <section class="row">
+    <div class="col"></div>
+    <div class="col text-right">
+      <div class="address">419 Main St. #439</div>
+      <div class="city">Huntington Beach, CA. 92648</div>
+    </div>
+    <div class="col-3 text-center">
+      <div>
+        Last update ~
+        
+	
+        Wednesday, Jan 12, 2022
+	
+        
+      </div>
+      <div>site by <a href="/">Eddy Consulting, LLC.</a> ~ &#xA9; 2008 to 2020 </div>
+    </div>
+    <div class="col">
+      <div class="text-left">
+	<div class="phone">(714) 362-5402</div>
+	<a href="https://github.com/rustyeddy">github</a> .
+	<a href="https://twitter.com/rustyeddy">twitter</a> .
+	<a href="https://linkedin.com/rustyeddy">linkedin</a><br/>	    
+      </div>
+    </div>
+    <div class="col"></div>
+  </section>
+</footer>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19940083-13"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+
+ gtag('config', 'UA-19940083-13');
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+    </body>
+</html>

@@ -1,16 +1,15 @@
 ---
-title: IoT Project Data Aggregation Hub
+title: Organic Gardener - Data Aggregation Hub
 date: 2022-01-13
 description: >
-  The IoT Hub gathers the environmental data published by our
+  The OG Hub gathers the environmental data published by our
   Collection Stations then uses that data to determine when to turn on
-  and off a sprinkler systems and send data to the dashboard for human
+  and off a sprinkler systems. The OG sends data to the dashboard for human
   consumption. 
 weight: 20
-repo: https://github.com/sensorstation/sensors
 ---
 
-## What Does IoT Hub Do?
+## What Does OG Hub Do?
 
 For the _1st Milestone_ The IoT Hub has been developed to collect
 temperature and humidity data from sensors connected to a wireless
