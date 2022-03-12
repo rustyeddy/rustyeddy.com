@@ -94,21 +94,22 @@ is complete. The list of supported features are:</p>
 the data in a persistent Data Store (DS) such as a Time Series
 database. It will be a future task to select a database or databases
 the program will be able to use.</p>
-<h3 id="how-does-the-hub-work">How Does The Hub Work?</h3>
+<h3 id="how-does-hub-work">How Does Hub Work?</h3>
 <p>The Hub uses the well known and supported <a href="https://mqtt.org">MQTT</a>
 light weight messaging protocol to gather data published by a network of
-<a href="/iot-project-ogranic-gardener/collection-station">Collection Stations</a></p>
+<a href="/iot-project-ogranic-gardener/collection-station">Collection Stations</a>
+MQTT uses the <a href="https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern">Pub/Sub</a>
+Messaging Model.</p>
+<p>Publishers send data to <em>Topics</em> while subscribers subscribe to the
+topic and subsequently recieve the corresponding data.  For example a
+<em>CS</em> with the ID 10.11.11.22 will publish the current temperature in
+fahrenheit with this <em>topic</em>.</p>
+<pre tabindex="0"><code>ss/data/10.11.11.2/tempf
+</code></pre><p>In this <em>10.11.11.22</em> is the StationID and and <em>tempf</em> is the
+SensorID.</p>
 <blockquote>
 <p><strong>TODO</strong> Write MQTT briefing</p>
 </blockquote>
-<p>MQTT uses the <a href="https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern">Pub/Sub</a>
-Messaging Model. Publishers send data to <em>Topics</em> while subscribers
-subscribe to the topic and subsequently recieve the corresponding data.</p>
-<p>For example a <em>CS</em> with the ID 10.11.11.22 will publish the current
-temperature in fahrenheit with this <em>topic</em>.</p>
-<pre tabindex="0"><code>ss/data/10.11.11.2/tempf
-</code></pre><p><em>10.11.11.22</em> is the StationID and and <em>tempf</em> is the
-SensorID.</p>
 <h4 id="mqtt-wildcard-subscriptions">MQTT Wildcard Subscriptions</h4>
 <p>MQTT supports wildcard subscriptions allowing the Hub to subscribe to
 <em>ALL</em> <em>data channels</em> even without knowing the stationID&rsquo;s or

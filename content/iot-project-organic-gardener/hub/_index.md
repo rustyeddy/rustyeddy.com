@@ -35,27 +35,27 @@ the data in a persistent Data Store (DS) such as a Time Series
 database. It will be a future task to select a database or databases
 the program will be able to use.
 
-### How Does The Hub Work?
+### How Does Hub Work?
 
 The Hub uses the well known and supported [MQTT](https://mqtt.org)
 light weight messaging protocol to gather data published by a network of
 [Collection Stations](/iot-project-ogranic-gardener/collection-station)
-
-> **TODO** Write MQTT briefing
-
 MQTT uses the [Pub/Sub](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern)
-Messaging Model. Publishers send data to _Topics_ while subscribers
-subscribe to the topic and subsequently recieve the corresponding data.
+Messaging Model. 
 
-For example a _CS_ with the ID 10.11.11.22 will publish the current
-temperature in fahrenheit with this _topic_.
+Publishers send data to _Topics_ while subscribers subscribe to the
+topic and subsequently recieve the corresponding data.  For example a
+_CS_ with the ID 10.11.11.22 will publish the current temperature in
+fahrenheit with this _topic_.
 
 ```
 ss/data/10.11.11.2/tempf
 ```
 
-_10.11.11.22_ is the StationID and and _tempf_ is the
+In this _10.11.11.22_ is the StationID and and _tempf_ is the
 SensorID. 
+
+> **TODO** Write MQTT briefing
 
 #### MQTT Wildcard Subscriptions
 
@@ -97,7 +97,6 @@ This is a _normalized_ and _complete_ representation of a single _data
 point_ at a specific _time_ indexed by the respective _station_ and
 _sensor_. 
 
-
 ## Data Consumers and Concurrency
 
 Every subscriber has a _list of Consumers_ where the _Consumer_
@@ -116,7 +115,6 @@ data in real-time over a websocket.  At any given time, there may be 0
 1 or more consumers.
 
 ### Consumer Interface
-
 
 ```go
 type Consumer interface {
