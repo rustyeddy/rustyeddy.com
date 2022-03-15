@@ -6,73 +6,57 @@ description: >
   The dashboard is a responsive Web Application written with Vue to
   display historic and real time application data. The dashboard
   allows users to configure the application and switch connected
-  relays. Front end developers are welcome, got feedback?
+  relays. Front end developers advice is more than welcome!
 ---
-
-## Dashboard WebApp
 
 ![Example image](/img/dashboard.png)
 
-he dashboard is a WebUI built into the Hub providing a window into
-your environmental health. All sensor data is transmitted over a
-dedicated _MQTT_ _channel_, the channel is comprised of a _path_ that
-looks like a _directory structure_ or URL path. Contained in the path
-are the _identification_ of the device and the name of the _sensor_.
+## Dashboard WebApp
 
-With this design, any _data publisher_ can contribute to the _Sensor
-Station Application_.
+The snapshot of the _dashboard_ above is a WebUI served by the Hub
+displaying the real time values for _temperature_, _humidity_ and
+_uptime_. Actually three of the four stations in the screen shot above
+are mocked using _mosquitto_pub_. See the "Mocking" section of
+the [Hub](/iot-project/hub) section of the website.
+
+### Recieving Data
+
+The dashboard recieves all of it's data from the
+[Hub](/iot-project/hub) which in turn streams the data to the
+dashboard over Websockets in _real-time_.
+
+> **TODO** add historic graphs of data from the REST data API
+
+Historic data is available via the REST API, however as of this
+writing the dashboard does not yet have the capability to fetch
+and graph this data. This feature is coming..
 
 ### Mobile First
 
-I have no doubt or argument with the _Mobile First_ discipline,
-personally I still do most of my _browsing_ on a computer, not so much 
-a mobile phone.
+A great mobile experience is required to be relevant in the modern
+world. For this reason the mobile app will be _responsive_ striving to
+provide an excellent _mobile_ experience.
 
-Likewise, I don't normally build _mobile_ apps or _web pages_ until
-now. 
-
-It is quite obvious that mobile is huge and a very important game
-changer. 
-
-The reason I am biting the bullet and beginning the mobile development
-is because of _Google Search Console_, it had switched modes to mobile
-because it detected most of my website visitors are from mobile
-devices. 
-
-OK, I get the hint. That is why the IOT Station _dashboard_ will be
-designed for _Mobile First_.
+It is quite obvious that the number of _mobile users_ is huge. To stay
+relevant today mobile support is a requirement. Ideally, beginning
+this project as a 
+[_mobile first_](https://www.uxpin.com/studio/blog/a-hands-on-guide-to-mobile-first-design/)
+design is as modern as it gets!
 
 ### Written with Vue
 
-React or Vue? That was the question, vue was the answer.
+React or Vue? That was the question, and Vue was the answer. I wanted
+to use vuetify but as of this writting it still does not work with Vue
+3.0, so I am using Bootstrap 5 at the moment.
 
-Why Vue, what makes these modern frameworks so attractive, why not
-just write good ol JS.
+## Lot's To Do!
 
+There is a lot of work to do for the dashboard, including but not
+limited to the following tasks:
 
-## User Story
+1. Build the mobile version of the application
+2. REST API call to graph historical time-series data
+4. Single Page Station View
+3. Make it much sexier!
 
-1. User visits website and sees the dashboard.
-
-2. User can select station view and get an 
-   enhanced view of just that station.
-
-### Wireframes
-
-1. Stations List view Wireframe
-1. Station Detail view wireframe
-
-### Storyboards
-
-See User Story
-
-### Media Manifest
-
-1. Logo
-2. Icons for 
-   1. each of the sensors
-
-### Data Manifest
-
-Local station.sensor time series values.
-
+Want to get involved? Join the Newsletter and say Hi!
