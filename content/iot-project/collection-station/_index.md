@@ -12,26 +12,18 @@ weight: 10
 git: https://github.com/sensorstation/ssesp
 ---
 
-## IoT Sensors data Published
+## Publishing Sensor Data
 
 The idea is pretty simple really: build a network of wireless battery
-powered devices that gather environmental data such as temprature,
+powered devices to gather environmental data such as temprature,
 moisture, light levels, etc. The collected data will then be
-_published_ via [MQTT](https://mqtt.org) _wirelessly_ for any
-subscriber such as [_IoTHub_](/sensors/hub).
+_published_ via [MQTT](https://mqtt.org) _wirelessly_ to the 
+[_Hub_](/sensors/hub).
 
 ### Types of Published Data
 
 The planned data types to be published by the system are concerned
-with simple environmental data. However any _type_ of data could be
-used, for example this system could be used to pub/sub data from 
-hosts on a local network, turning it into a network monitoring
-platform for example.
-
-Cool, anyway, back to our application...
-
-We have planned support for the following type of sensors. To be
-determined are the exact model(s) of sensors will be a good fit.
+with the following types of sensors.
 
 - Temprature
 - Humidity 
@@ -39,32 +31,33 @@ determined are the exact model(s) of sensors will be a good fit.
 - Light
 - Barometric Pressure 
 
-Data will be transmitted as either integer or floating point,
+Technically any _type_ of data could be published and collected
+however we are focused on the type of data our OG application will
+use. Data will be transmitted as either integer or floating point,
 depending on the sensor and how it collects the data.
 
 ## Data Storage
 
 Due to the limited nature of the sensor stations storage space,
 relatively little historic data will be saved on the _station_ itself.
-
 The expectation that data published by the station will have been
-consumed and aggregated by the Hub or a similar subscriber. 
+consumed and aggregated by the Hub or a similar subscriber.
 
-Historic, real-time and _cloud persistence_ of said data is the job of
-an aggregrator such as the Hub, or in the cloud based _Time Series
-Database (TSDB)_ 
+Long term storage of the data is the job of the
+[Hub](/iot-project/hub) or other data aggregator. The CS is an
+embedded system expected to run with very little resources.
 
-## esp32 Chip of Choice
+## The esp32 Chip of Choice
 
 We are going to the
 [esp32](https://www.espressif.com/en/products/socs/esp32) as the _chip
-of choice_ to building the environmental collection and publishing
-platform (IoT Sensor Sation). 
+of choice_ for building the _Collection / Control Station_.
 
-Some features that make this chip very attractive for developing the
-IoT Sensor station. In addition to it's availability and wonderfully
-mature DevKit, the esp32 has the following features we will be taking
-advantage of:
+Some features that make this chip very attractive for building the
+_Collection / Control Station_. In addition to it's availability and
+the wonderfully mature [esp-idf](https://github.com/espressif/esp-idf)
+DevKit, the esp32 has the following features we will be taking
+advantage of: 
 
 - Wireless support for Wifi & BLE
 - Sophisticated low power modes
@@ -75,7 +68,7 @@ advantage of:
 - Analog GPIO
 
 We'll discuss all of these items and how they benefit the development
-of our sensor station hardware. 
+of our projects hardware.
 
 ### The esp32 is CHEAP
 
@@ -87,13 +80,9 @@ This is chip is no toy, it is an industrial stalwart!
 
 ### Network Connectivity
 
-The most attractive part of the esp32, in my opinion is the built in
-networking. Bluetooth Lightweight Edition (BLE) and ubiquitos
-Wifi are built right on the esp32 itself.
-
-The chip will come with an adequate antenna that will be strong enough
-for local connections.  However, longer distance connections can be
-had by adding a better antenna.
+The most attractive part of the esp32 in my opinion are the networking
+capabilities for wireless networking. Bluetooth Lightweight Edition
+(BLE) and ubiquitos Wifi are built right on the esp32 itself.
 
 #### Mesh Networks
 

@@ -7,16 +7,5 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 06 Sep 2020 10:32:26 -0700</lastBuildDate><atom:link href="http://www.rustyeddy.com/iot-project/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>MQTT Messaging</title>
-      <link>http://www.rustyeddy.com/iot-project/messaging/</link>
-      <pubDate>Sun, 13 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.rustyeddy.com/iot-project/messaging/</guid>
-      <description>The Hub gathers data with the well supported MQTT light weight messaging protocol. The data is collected the data is parsed, formatted and temporarily saved in RAM.
-Publishers send data to Topics while subscribers subscribe to the topic and subsequently recieve the corresponding data. For example a CS with the ID 10.11.11.22 will publish the current temperature in fahrenheit with this topic.
-ss/data/10.11.11.2/tempf In this 10.11.11.22 is the StationID and and tempf is the SensorID.</description>
-    </item>
-    
   </channel>
 </rss>

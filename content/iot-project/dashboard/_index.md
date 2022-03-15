@@ -59,4 +59,4 @@ limited to the following tasks:
 4. Single Page Station View
 3. Make it much sexier!
 
-Want to get involved? Join the Newsletter and say Hi!
+Want to get involved? Join the Newsletter and say Hi! 

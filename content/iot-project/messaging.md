@@ -1,6 +1,7 @@
 ---
 title: MQTT Messaging
 date: 2022-03-13
+draft: true
 ---
 The Hub gathers data with the well supported [MQTT](https://mqtt.org)
 light weight messaging protocol. The data is collected the data is
@@ -17,5 +18,4 @@ ss/data/10.11.11.2/tempf
 
 In this _10.11.11.22_ is the StationID and and _tempf_ is the
 SensorID. 
-
 
