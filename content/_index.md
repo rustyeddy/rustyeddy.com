@@ -18,7 +18,7 @@ If you are interested in the _Organic Gardner_ IoT project, or you are
 interested in the ins and outs of _IoT_ software development follow
 the link below and get involved!
 
-[IoT Project Sensor Station](/iot-project-organic-gardener). 
+[IoT Project Sensor Station](/iot-project). 
 
 > Here is my [resume](/resume) just incase that is what you are
 > looking for. 

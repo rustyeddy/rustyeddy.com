@@ -1,6 +1,6 @@
 ---
 title: The Organic Gardener - Building an IoT Project
-url: iot-project-organic-gardener
+url: iot-project
 date: 2020-09-06T10:32:26-07:00
 description: >
   An IoT project usually involves taking a well known functional
@@ -8,8 +8,8 @@ description: >
   "smart" software with an Internet connection to access a whole new
   world of capabilties. This project will take a common application:
   the sprinkler system and use soil moisture to drive watering
-  schedules. If you are interested in a DIY Irrigation System or
-  Developing IoT applications come along for the ride!
+  schedules. If you are interested in developing IoT software, this is
+  the place for you!
 ---
 
 ![High Level Sensor Station](/img/iot-project-drawing.png)
@@ -22,18 +22,18 @@ _succelent collection_ and our _edible garden_ which have some rather
 complex and diverse watering requirements.
 
 _On Demand Irrigation (ODI)_ is a feature that uses the soil's moisture
-levels to control a network of pumps and sprinklers that ensure the 
-different plants are watered just right.
+levels to control a network of sprinklers ensuring the various
+segments of the garden are watered just right.
 
-The _Organic Gardner (OG)_ is conceptually pretty simple. It consists
-of four primary components which are described below with a fifth
+OG is conceptually pretty simple. It consists of four primary
+components described below. A fifth component can be used is available
 option when an Internet connection is available.
 
-1. The [_Collection Station (CS)_](/iot-project-organic-gardener/collection-station)
+1. The [_Collection Station (CS)_](/iot-project/collection-station)
    gathers environmental data from local sensors then _publishes_ that
    data as _MQTT topics_.
 
-2. The [_Hub_](/iot-project-organic-gardener/hub) gathers this data by
+2. The [_Hub_](/iot-project/hub) gathers this data by
    _subscribing_ _MQTT data topics_. As the hub gathers and stores
    data, it also feeds the data to the _sprinkler application_.
 
