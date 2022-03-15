@@ -19,3 +19,10 @@ ss/data/10.11.11.2/tempf
 In this _10.11.11.22_ is the StationID and and _tempf_ is the
 SensorID. 
 
+
+ss/data/10.11.11.2/tempf
+```
+
+In this _10.11.11.22_ is the StationID and and _tempf_ is the
+SensorID. 
+

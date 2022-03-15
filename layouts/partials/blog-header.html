@@ -1,37 +1,37 @@
 <div class="jumbotron border-top border-bottom bg-white" >
-    <div class="row">
-	<div class="col-md"></div>
-	<div class="col-md-8">
-	  <h1 class="header h2 text-center pb-1">{{ .Title }}</h1>
-	    <p class="leadin align-right text-muted text-center mt-0">
-		{{ .Description }}
-	    </p>
-	</div>
-	<div class="col-md"></div>
+  <div class="row">
+    <div class="col-md"></div>
+    <div class="col-md-8">
+      <h1 class="header h2 text-center pb-1">{{ .Title }}</h1>
+      <p class="leadin align-right text-muted text-center mt-0">
+	{{ .Description }}
+      </p>
     </div>
-    <div class="row text-center smaller-text">
-	<div class="col"></div>
-	<div class="col-8">
-	    <nav class="nav justify-content-center">
-                {{ with .Params.github  }}
-                <a class="nav-link" href="{{ . }}">github</a>
-                {{ end }}
-                {{ with .Params.twitter  }}
-                <a class="nav-link" href="{{ . }}">twitter</a>
-                {{ end }}
-                {{ with .Params.site  }}
-                <a class="nav-link" href="{{ . }}">website</a>
-                {{ end }}
-                {{ with .Params.linkedin  }}
-                <a class="nav-link" href="{{ . }}">linkedin</a>
-                {{ end }}
-                {{ with .Params.phone  }}
-                <span class="nav-link">{{ . }}</span>
-                {{ end }}
+    <div class="col-md"></div>
+  </div>
+  <div class="row text-center smaller-text">
+    <div class="col"></div>
+    <div class="col-8">
+      <nav class="nav justify-content-center">
+        {{ with .Params.github  }}
+        <a class="nav-link" href="{{ . }}">github</a>
+        {{ end }}
+        {{ with .Params.twitter  }}
+        <a class="nav-link" href="{{ . }}">twitter</a>
+        {{ end }}
+        {{ with .Params.site  }}
+        <a class="nav-link" href="{{ . }}">website</a>
+        {{ end }}
+        {{ with .Params.linkedin  }}
+        <a class="nav-link" href="{{ . }}">linkedin</a>
+        {{ end }}
+        {{ with .Params.phone  }}
+        <span class="nav-link">{{ . }}</span>
+        {{ end }}
 
-	    </nav>
+      </nav>
 
-	</div>
-	<div class="col"></div>
     </div>
+    <div class="col"></div>
+  </div>
 </div>

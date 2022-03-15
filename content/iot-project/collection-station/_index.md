@@ -3,12 +3,12 @@ title: Collection Station
 date: 2021-01-13
 url: collection-station
 description: >
-    The Collection and Control Station (CS) is capable of gathering
-    data from attached sensors. It publishes the sensor data to the
-    Hub via MQTT data channels. The CS also subscribes to the MQTT
-    command channels to cause the CS to switch connected sprinkler
-    relays.. 
-weight: 10
+    The Collection and Control Stations are small wireless devices
+    outfitted with environmental sensors to collect then publish data 
+    via MQTT to the Hub running the application. The CS also control
+    relays to manage lighting. These little embedded devices usually
+    run on battery and can form self configured mesh networks.
+weight: 30
 git: https://github.com/sensorstation/ssesp
 ---
 

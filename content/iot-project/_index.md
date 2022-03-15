@@ -1,72 +1,64 @@
 ---
-title: The Organic Gardener - Building an IoT Project
+title: The Organic Gardener Anatomy of IoT Software
 url: iot-project
 date: 2020-09-06T10:32:26-07:00
 description: >
-  An IoT project usually involves taking a well known functional
-  device like a doorbell (Ring) or Heater (Nest) and adding some
-  "smart" software with an Internet connection to access a whole new
-  world of capabilties. This project will take a common application:
-  the sprinkler system and use soil moisture to drive watering
-  schedules. If you are interested in developing IoT software, this is
-  the place for you!
+  For this project I will design and develop the software for an 
+  automated garden irrigation system. We will use the soil moisture
+  levels to control the sprinklers and the Internet to provide global
+  access to our application. If you are interested how IoT software is
+  built, this site the place for you! 
 ---
 
 ![High Level Sensor Station](/img/iot-project-drawing.png)
 
+
 ## What is this project about?
 
-This project code named _Organic Gardner (OG)_ is an automated
-irrigation system intended to help my wife water her rather extensive
-_succelent collection_ and our _edible garden_ which have some rather 
-complex and diverse watering requirements.
+An IoT project usually involves taking a well known functional
+device like a doorbell (Ring) or Heater (Nest) and adding some
+"smart" software with an Internet connection to access a whole new
+world of capabilties. 
 
-_On Demand Irrigation (ODI)_ is a feature that uses the soil's moisture
-levels to control a network of sprinklers ensuring the various
-segments of the garden are watered just right.
+This project code named _Organic Gardner (OG)_ was created to be an
+automated irrigation system intended to help my wife water her rather
+extensive _succelent collection_. It will also be in charge of
+watering our _edible garden_ just right. This application has some
+some rather complex and diverse watering requirements. 
 
-OG is conceptually pretty simple. It consists of four primary
-components described below. A fifth component can be used is available
-option when an Internet connection is available.
+### On Demand Irrigation and Lighting Controls
 
-1. The [_Collection Station (CS)_](/iot-project/collection-station)
-   gathers environmental data from local sensors then _publishes_ that
-   data as _MQTT topics_.
+_On Demand Irrigation (ODI)_ is a feature that uses the soil's
+moisture levels to control a network of sprinklers ensuring various
+segments of the garden, aka micro-ecosystems are watered just right.
+_Lighting Controls_ can be scheduled either by lumesence levels more
+about that later.
 
-2. The [_Hub_](/iot-project/hub) gathers this data by
-   _subscribing_ _MQTT data topics_. As the hub gathers and stores
-   data, it also feeds the data to the _sprinkler application_.
-
-3. The _sprinkler application_ checks the moisture levels from the
-   sensors to determine if a sprinkler needs to be turned on or off. 
-
-   If the moisture levels are either too low or too high, the
-   _sprinkler application_ _publishes_ a _control
-   command_ to switch sprinkler on or off accordingly.
-
-4. The [_Control Station (CS)_](/iot-project-organic-gardener/collection-station) responds to
-   commands from the _control channels_ by turning a relay (sprinkler)
-   on or off according to the command it received.
-
-5. The [_Dashboard_](/iot-project-organic-gardener/dashboard) allows
-   humans to see the data collected by each  station, control specific
-   sprinklers and define light and water schedules. 
-
-Pretty simple, right?
-
-### Real World Diversity
+## Diverse Project Technologies 
 
 This project reflects _"real world"_ projects that involve
 different programming languages, protocols and technologies: _Go_,
 C++, _JavaScript_, _HTTP_, _MQTT_, _Websockets_ and other stuff.
 
+When working on larger projects it is quite common for a single
+programmer to work on a very small and focused piece of code. Smaller
+projects on the other hand often require programmers to switch
+langagues and development environments often, for example jumping back
+and forth between backend and front end typically involves a couple
+programming langauges, HTML, CSS and SQL are common.
+
+For this reason, we are going to use a variety of programming
+languages and communication protocols to build a complete non-trivial
+system.
+
+## The Minimum Viable Product
+
 To avoid being overwhelmed and keep the project pointed forward and
 interesting we will build the project by incrementally adding cool
 features to our previous cool features.
 
-Let's steal a term from lean startup.
-
-## The Minimum Viable Product
+Let's steal a term from the [Lean Startup](http://leanstartup.com)
+**MVP**. 
 
 Now that we have a pretty good idea of what we want to build we
 need to plot our development plan.  We are going to attempt to build
@@ -75,26 +67,58 @@ useful new feature to the project.
 
 Here is the order in which we will build out this project.
 
-1. *Milestone 1 - Aggregation Hub* collect data published to MQTT
-   topics and cache data in memory with a REST API.
+#### *Milestone 1 - Collect MQTT Data*
+
+The first Milestone we begin developing the _IoT Hub_ to listen to
+MQTT data messages and cache the data in RAM. To provide access to the
+cached data we are going to add a _REST API_ using Go's builting HTTP
+server. 
+
+1. Hub to subscribe to Websockets
+2. Hub provides a REST API
    
-2. *Milestone 2 - Dashboard* a modern Responsive Webapp displaying
-   historical sensor data from historical REST API.
+#### *Milestone 2 - Dashboard*
 
-3. *Milestone 3 - Real Time Datashboard* webapp enhanced to display
-   _real-time_ datastream via Websockets.
+The next milestone is our _Web App_ or _Dashboard_ written with Vue as
+a _Mobile First_ responsive web page. The _Dashboard_ will be able to
+display a list of _Collection Stations_ it has learned about, as well
+as a list of sensors and the respective data for each sensor connected
+to the _Collection / Control Station_.
 
-4. *Milestone 4 - Collection Station* esp32 microcontroller with a
-   DHT22 temperature and humidity sensor. The chip is capable of
-   publishing data via MQTT with a standard Wifi connection.
-   
-5. *Milestone 5 - Persistance* A Time Series Database will house the
-   data collected by the Hub. It will also introduce Influx or Promethus as the
-   data store.
+1. Build SPA with Vue for Dashboard
+2. Serve HTML pages from Hub with built in HTTP server
 
-6. *Milestone 6 - Fleet Management* As time goes on the application
-   will change and need to be upgraded and monitored. The FM component
-   makes sure all items are alive and running the latest software.
 
-## The Software Components In Depth
+#### *Milestone 3 - Real Time Datashboard*
 
+The third phase of the project we add _Websockets_ to the _Hub_ and
+_Dashboard_ allowing the Hub to stream real-time sensor data to the
+Dashboard. The Dashboard will display the latest data as it arrives.
+
+1. Websocket library for Hub in Go
+2. Websocket library for Vue in JavaScript
+
+#### *Milestone 4 - Collection Station*
+
+This is the most interesting part of the project for me. We are going
+to build and _embedded_ IoT device with the _esp32_ micro controller
+and connected sensors. This development is C++ and the FreeRTOS (Real
+Time Operating System) as provided by the 
+[esp-idf](https://github.com/espressif/esp-idf) development kit.
+
+1. esp-idf to collect sensor data C++
+2. esp-idf to connect to Wifi
+3. esp-idf transmits MQTT data to IoT broker.
+
+#### *Milestone 5 - The Cloud* 
+    
+The final milestone we have recorded here is introduced when an
+_Internet_ connection is available. The _Cloud_ gives the application
+a whole new set of capabilities, including but not limited to
+
+1. Global Access - Access the application from anywhere in the world
+2. Data storage and persistence
+3. Fleet management - monitor, update and control all the devices in
+   your sensor network .
+
+## OG Software Components
