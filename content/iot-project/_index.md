@@ -1,43 +1,104 @@
 ---
-title: The Organic Gardener Anatomy of IoT Software
+title: A Guide to Developing IoT Software
 url: iot-project
 date: 2020-09-06T10:32:26-07:00
 description: >
-  For this project I will design and develop the software for an 
-  automated garden irrigation system. We will use the soil moisture
-  levels to control the sprinklers and the Internet to provide global
-  access to our application. If you are interested how IoT software is
-  built, this site the place for you! 
+  This site documents the technical challenges and design decisions I
+  used while developing the Organic Gardner IoT product, a self
+  watering garden. If you are interested in developing IoT software or
+  adding software to one of your projects you are in the right
+  place. Join the NewsLetter below and say Hi!
 ---
 
 ![High Level Sensor Station](/img/iot-project-drawing.png)
 
-
 ## What is this project about?
 
-An IoT project usually involves taking a well known functional
-device like a doorbell (Ring) or Heater (Nest) and adding some
-"smart" software with an Internet connection to access a whole new
-world of capabilties. 
+Code named _Organic Gardner (OG)_ this automated irrigation system
+will use soil moisture levels from inexpensive sensors to control 
+sprinklers that water plants.  My wife will volunteer her rather
+extensive _succulent collection_ as a test bed for this project!
+She doesn't know this yet. 
 
-This project code named _Organic Gardner (OG)_ was created to be an
-automated irrigation system intended to help my wife water her rather
-extensive _succelent collection_. It will also be in charge of
-watering our _edible garden_ just right. This application has some
-some rather complex and diverse watering requirements. 
+An IoT project usually involves taking a well known functional device
+like a doorbell (Ring) or Heater (Nest) and adding some "smart"
+software with an Internet connection to develop a whole new world of
+features. This is also true of our project.
+
+While we are focusing on irrigation and gardens, the same framework
+built to support OG can be leveraged to develop many different type of
+IoT project. 
 
 ### On Demand Irrigation and Lighting Controls
 
-_On Demand Irrigation (ODI)_ is a feature that uses the soil's
-moisture levels to control a network of sprinklers ensuring various
-segments of the garden, aka micro-ecosystems are watered just right.
-_Lighting Controls_ can be scheduled either by lumesence levels more
-about that later.
+The main application is what i call _On Demand Irrigation (ODI)_ which
+is a feature that uses soil's moisture levels to control a network of
+sprinklers ensuring every micro-section of the garden is optimally
+watered. 
 
-## Diverse Project Technologies 
+Lighting can be controlled by light levels or programmed with a
+traditional time based scheduler, all according to application
+requirements. 
 
-This project reflects _"real world"_ projects that involve
-different programming languages, protocols and technologies: _Go_,
+## The Development Plan
+
+To avoid being overwhelmed with details and keep the project moving
+forward we will build it out incrementally, one interesting feature at
+a time, stacking cool feature on top of cool feature. Testing will be
+performed initially by _mocking_ MQTT publishers with the
+```mosquitto_pub``` command line tool. 
+
+Let's steal the term from [Lean Startup](http://leanstartup.com) and
+define our **MVP** by etching out the details of our developmental
+_milestones_. 
+
+### Milestones
+
+The milestones are structured such that completeing each milestone
+incrementally adds useful features to the application until we
+progressively iterate toward the completed gardening MVP. 
+
+{{< milestone 1 "Hub Subscribes to MQTT and Serves HTTP " >}}
+This first Milestone has three major components and requires two
+libraries all written in the Go programming langauge. The successful
+completion of this milestone has the hub subscribing to MQTT data,
+caching the data in RAM and providing a REST API to access that data.
+{{< /milestone >}}
+
+   
+{{< milestone 2 "Dashboard Displays Historic Data " >}} 
+The next milestone is our responsive Single Page App (SPA) written
+with the Vue JavaScript framework. The SPA will be served up by the
+Hub's HTTP server. The Dashboard will display historic data retrieved
+via the Hubs REST API.
+{{< /milestone >}}
+
+{{< milestone 3 "Dashboard Displays Real Time Data" >}}
+The third phase of the project we add Websockets to the Hub and
+Dashboard allowing the Hub to stream real-time sensor data to the
+Dashboard. The Dashboard will always display the latest data for every
+sensor it displays as soon as the data arrives.
+{{< /milestone >}}
+
+{{< milestone 4 "Collection Station Transmits Data" >}}
+This is the most interesting part of the project for me. We are going
+to write some real-time embedded software for the esp32
+micro-processor. It will use sensors, Wifi and MQTT to publish
+actual sensor data to the subscriber hub.
+{{< /milestone >}}
+
+{{< milestone 5  "Introducing the Cloud" >}} 
+The final frontier, at least for this set of milestones is global
+connectivity via the cloud. An Internet connection will allow us to
+provide global access, safe persistent storage and fleet management
+software.
+{{< /milestone >}}
+
+
+## The Software Components
+
+This project reflects _"real world"_ projects in that it involves a
+variety of programming languages, protocols and technologies: _Go_,
 C++, _JavaScript_, _HTTP_, _MQTT_, _Websockets_ and other stuff.
 
 When working on larger projects it is quite common for a single
@@ -48,77 +109,5 @@ and forth between backend and front end typically involves a couple
 programming langauges, HTML, CSS and SQL are common.
 
 For this reason, we are going to use a variety of programming
-languages and communication protocols to build a complete non-trivial
-system.
-
-## The Minimum Viable Product
-
-To avoid being overwhelmed and keep the project pointed forward and
-interesting we will build the project by incrementally adding cool
-features to our previous cool features.
-
-Let's steal a term from the [Lean Startup](http://leanstartup.com)
-**MVP**. 
-
-Now that we have a pretty good idea of what we want to build we
-need to plot our development plan.  We are going to attempt to build
-this project in _milestones_ that each bring an interesting and
-useful new feature to the project.
-
-Here is the order in which we will build out this project.
-
-#### *Milestone 1 - Collect MQTT Data*
-
-The first Milestone we begin developing the _IoT Hub_ to listen to
-MQTT data messages and cache the data in RAM. To provide access to the
-cached data we are going to add a _REST API_ using Go's builting HTTP
-server. 
-
-1. Hub to subscribe to Websockets
-2. Hub provides a REST API
-   
-#### *Milestone 2 - Dashboard*
-
-The next milestone is our _Web App_ or _Dashboard_ written with Vue as
-a _Mobile First_ responsive web page. The _Dashboard_ will be able to
-display a list of _Collection Stations_ it has learned about, as well
-as a list of sensors and the respective data for each sensor connected
-to the _Collection / Control Station_.
-
-1. Build SPA with Vue for Dashboard
-2. Serve HTML pages from Hub with built in HTTP server
-
-
-#### *Milestone 3 - Real Time Datashboard*
-
-The third phase of the project we add _Websockets_ to the _Hub_ and
-_Dashboard_ allowing the Hub to stream real-time sensor data to the
-Dashboard. The Dashboard will display the latest data as it arrives.
-
-1. Websocket library for Hub in Go
-2. Websocket library for Vue in JavaScript
-
-#### *Milestone 4 - Collection Station*
-
-This is the most interesting part of the project for me. We are going
-to build and _embedded_ IoT device with the _esp32_ micro controller
-and connected sensors. This development is C++ and the FreeRTOS (Real
-Time Operating System) as provided by the 
-[esp-idf](https://github.com/espressif/esp-idf) development kit.
-
-1. esp-idf to collect sensor data C++
-2. esp-idf to connect to Wifi
-3. esp-idf transmits MQTT data to IoT broker.
-
-#### *Milestone 5 - The Cloud* 
-    
-The final milestone we have recorded here is introduced when an
-_Internet_ connection is available. The _Cloud_ gives the application
-a whole new set of capabilities, including but not limited to
-
-1. Global Access - Access the application from anywhere in the world
-2. Data storage and persistence
-3. Fleet management - monitor, update and control all the devices in
-   your sensor network .
-
-## OG Software Components
+languages and communication protocols to complete this non-trivial
+IoT application.

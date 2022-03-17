@@ -1,7 +1,7 @@
 ---
 title: IoT Project Cloud Automation
 date: 2021-01-12
-weight: 40
+weight: 50
 description: >
   Cloud support extends the reach of the data globally allowing access
   to both real-time and historical datas, it also expands the length

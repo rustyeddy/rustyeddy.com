@@ -1,0 +1,18 @@
+
+
+<div class="card border-0 mb-3"> <!-- card -->
+  <div class="row g-0"> <!-- row -->
+    <div class="col-md-2">
+      <h1 class="display-1 p-5">{{ .Get 0 }}</h1>
+    </div>
+
+    <div class="col-md-10"> 
+      <div class="card-body"> 
+        <h5 class="card-title text-primary mb-3">{{ .Get 1 }}</h5>
+        <p class="card-text">
+          {{ .Inner }}
+        </p>
+      </div> <!-- card-body -->
+    </div> <!-- col -->
+  </div> <!-- row -->
+</div> <!-- card -->

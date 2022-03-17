@@ -1,7 +1,7 @@
 ---
 title: IoT Real-time Dashboard
 date: 2022-01-12
-weight: 30
+weight: 20
 description: >
   The dashboard is a responsive Web Application written with Vue to
   display historic and real time application data. The dashboard

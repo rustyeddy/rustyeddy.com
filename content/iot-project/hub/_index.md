@@ -8,7 +8,7 @@ description: >
   Webapp. The Hub is also responsible for running the application
   logic and ensuring data is archived as required. This page we
   discuss how the Hub is constructed as a MicroService.
-weight: 20
+weight: 10
 ---
 
 ![High Level Sensor Station](/img/iothub.png)

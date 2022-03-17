@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 
-<title>The Organic Gardener Anatomy of IoT Software</title>
+<title>A Guide to Developing IoT Software</title>
 
 <script>(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
 0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
@@ -41,9 +41,9 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
   <div class="row">
     <div class="col-md"></div>
     <div class="col-md-8">
-      <h1 class="header h2 text-center pb-1">The Organic Gardener Anatomy of IoT Software</h1>
+      <h1 class="header h2 text-center pb-1">A Guide to Developing IoT Software</h1>
       <p class="leadin align-right text-muted text-center mt-0">
-	For this project I will design and develop the software for an  automated garden irrigation system. We will use the soil moisture levels to control the sprinklers and the Internet to provide global access to our application. If you are interested how IoT software is built, this site the place for you! 
+	This site documents the technical challenges and design decisions I used while developing the Organic Gardner IoT product, a self watering garden. If you are interested in developing IoT software or adding software to one of your projects you are in the right place. Join the NewsLetter below and say Hi!
 
       </p>
     </div>
@@ -74,24 +74,162 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
       <article class="article text-big">
 	<p><img src="/img/iot-project-drawing.png" alt="High Level Sensor Station"></p>
 <h2 id="what-is-this-project-about">What is this project about?</h2>
-<p>An IoT project usually involves taking a well known functional
-device like a doorbell (Ring) or Heater (Nest) and adding some
-&ldquo;smart&rdquo; software with an Internet connection to access a whole new
-world of capabilties.</p>
-<p>This project code named <em>Organic Gardner (OG)</em> was created to be an
-automated irrigation system intended to help my wife water her rather
-extensive <em>succelent collection</em>. It will also be in charge of
-watering our <em>edible garden</em> just right. This application has some
-some rather complex and diverse watering requirements.</p>
+<p>Code named <em>Organic Gardner (OG)</em> this automated irrigation system
+will use soil moisture levels from inexpensive sensors to control
+sprinklers that water plants.  My wife will volunteer her rather
+extensive <em>succulent collection</em> as a test bed for this project!
+She doesn&rsquo;t know this yet.</p>
+<p>An IoT project usually involves taking a well known functional device
+like a doorbell (Ring) or Heater (Nest) and adding some &ldquo;smart&rdquo;
+software with an Internet connection to develop a whole new world of
+features. This is also true of our project.</p>
+<p>While we are focusing on irrigation and gardens, the same framework
+built to support OG can be leveraged to develop many different type of
+IoT project.</p>
 <h3 id="on-demand-irrigation-and-lighting-controls">On Demand Irrigation and Lighting Controls</h3>
-<p><em>On Demand Irrigation (ODI)</em> is a feature that uses the soil&rsquo;s
-moisture levels to control a network of sprinklers ensuring various
-segments of the garden, aka micro-ecosystems are watered just right.
-<em>Lighting Controls</em> can be scheduled either by lumesence levels more
-about that later.</p>
-<h2 id="diverse-project-technologies">Diverse Project Technologies</h2>
-<p>This project reflects <em>&ldquo;real world&rdquo;</em> projects that involve
-different programming languages, protocols and technologies: <em>Go</em>,
+<p>The main application is what i call <em>On Demand Irrigation (ODI)</em> which
+is a feature that uses soil&rsquo;s moisture levels to control a network of
+sprinklers ensuring every micro-section of the garden is optimally
+watered.</p>
+<p>Lighting can be controlled by light levels or programmed with a
+traditional time based scheduler, all according to application
+requirements.</p>
+<h2 id="the-development-plan">The Development Plan</h2>
+<p>To avoid being overwhelmed with details and keep the project moving
+forward we will build it out incrementally, one interesting feature at
+a time, stacking cool feature on top of cool feature. Testing will be
+performed initially by <em>mocking</em> MQTT publishers with the
+<code>mosquitto_pub</code> command line tool.</p>
+<p>Let&rsquo;s steal the term from <a href="http://leanstartup.com">Lean Startup</a> and
+define our <strong>MVP</strong> by etching out the details of our developmental
+<em>milestones</em>.</p>
+<h3 id="milestones">Milestones</h3>
+<p>The milestones are structured such that completeing each milestone
+incrementally adds useful features to the application until we
+progressively iterate toward the completed gardening MVP.</p>
+
+
+<div class="card border-0 mb-3"> 
+  <div class="row g-0"> 
+    <div class="col-md-2">
+      <h1 class="display-1 p-5">1</h1>
+    </div>
+
+    <div class="col-md-10"> 
+      <div class="card-body"> 
+        <h5 class="card-title text-primary mb-3">Hub Subscribes to MQTT and Serves HTTP </h5>
+        <p class="card-text">
+          
+This first Milestone has three major components and requires two
+libraries all written in the Go programming langauge. The successful
+completion of this milestone has the hub subscribing to MQTT data,
+caching the data in RAM and providing a REST API to access that data.
+
+        </p>
+      </div> 
+    </div> 
+  </div> 
+</div> 
+
+
+
+<div class="card border-0 mb-3"> 
+  <div class="row g-0"> 
+    <div class="col-md-2">
+      <h1 class="display-1 p-5">2</h1>
+    </div>
+
+    <div class="col-md-10"> 
+      <div class="card-body"> 
+        <h5 class="card-title text-primary mb-3">Dashboard Displays Historic Data </h5>
+        <p class="card-text">
+           
+The next milestone is our responsive Single Page App (SPA) written
+with the Vue JavaScript framework. The SPA will be served up by the
+Hub's HTTP server. The Dashboard will display historic data retrieved
+via the Hubs REST API.
+
+        </p>
+      </div> 
+    </div> 
+  </div> 
+</div> 
+
+
+
+<div class="card border-0 mb-3"> 
+  <div class="row g-0"> 
+    <div class="col-md-2">
+      <h1 class="display-1 p-5">3</h1>
+    </div>
+
+    <div class="col-md-10"> 
+      <div class="card-body"> 
+        <h5 class="card-title text-primary mb-3">Dashboard Displays Real Time Data</h5>
+        <p class="card-text">
+          
+The third phase of the project we add Websockets to the Hub and
+Dashboard allowing the Hub to stream real-time sensor data to the
+Dashboard. The Dashboard will always display the latest data for every
+sensor it displays as soon as the data arrives.
+
+        </p>
+      </div> 
+    </div> 
+  </div> 
+</div> 
+
+
+
+<div class="card border-0 mb-3"> 
+  <div class="row g-0"> 
+    <div class="col-md-2">
+      <h1 class="display-1 p-5">4</h1>
+    </div>
+
+    <div class="col-md-10"> 
+      <div class="card-body"> 
+        <h5 class="card-title text-primary mb-3">Collection Station Transmits Data</h5>
+        <p class="card-text">
+          
+This is the most interesting part of the project for me. We are going
+to write some real-time embedded software for the esp32
+micro-processor. It will use sensors, Wifi and MQTT to publish
+actual sensor data to the subscriber hub.
+
+        </p>
+      </div> 
+    </div> 
+  </div> 
+</div> 
+
+
+
+<div class="card border-0 mb-3"> 
+  <div class="row g-0"> 
+    <div class="col-md-2">
+      <h1 class="display-1 p-5">5</h1>
+    </div>
+
+    <div class="col-md-10"> 
+      <div class="card-body"> 
+        <h5 class="card-title text-primary mb-3">Introducing the Cloud</h5>
+        <p class="card-text">
+           
+The final frontier, at least for this set of milestones is global
+connectivity via the cloud. An Internet connection will allow us to
+provide global access, safe persistent storage and fleet management
+software.
+
+        </p>
+      </div> 
+    </div> 
+  </div> 
+</div> 
+
+<h2 id="the-software-components">The Software Components</h2>
+<p>This project reflects <em>&ldquo;real world&rdquo;</em> projects in that it involves a
+variety of programming languages, protocols and technologies: <em>Go</em>,
 C++, <em>JavaScript</em>, <em>HTTP</em>, <em>MQTT</em>, <em>Websockets</em> and other stuff.</p>
 <p>When working on larger projects it is quite common for a single
 programmer to work on a very small and focused piece of code. Smaller
@@ -100,68 +238,8 @@ langagues and development environments often, for example jumping back
 and forth between backend and front end typically involves a couple
 programming langauges, HTML, CSS and SQL are common.</p>
 <p>For this reason, we are going to use a variety of programming
-languages and communication protocols to build a complete non-trivial
-system.</p>
-<h2 id="the-minimum-viable-product">The Minimum Viable Product</h2>
-<p>To avoid being overwhelmed and keep the project pointed forward and
-interesting we will build the project by incrementally adding cool
-features to our previous cool features.</p>
-<p>Let&rsquo;s steal a term from the <a href="http://leanstartup.com">Lean Startup</a>
-<strong>MVP</strong>.</p>
-<p>Now that we have a pretty good idea of what we want to build we
-need to plot our development plan.  We are going to attempt to build
-this project in <em>milestones</em> that each bring an interesting and
-useful new feature to the project.</p>
-<p>Here is the order in which we will build out this project.</p>
-<h4 id="milestone-1---collect-mqtt-data"><em>Milestone 1 - Collect MQTT Data</em></h4>
-<p>The first Milestone we begin developing the <em>IoT Hub</em> to listen to
-MQTT data messages and cache the data in RAM. To provide access to the
-cached data we are going to add a <em>REST API</em> using Go&rsquo;s builting HTTP
-server.</p>
-<ol>
-<li>Hub to subscribe to Websockets</li>
-<li>Hub provides a REST API</li>
-</ol>
-<h4 id="milestone-2---dashboard"><em>Milestone 2 - Dashboard</em></h4>
-<p>The next milestone is our <em>Web App</em> or <em>Dashboard</em> written with Vue as
-a <em>Mobile First</em> responsive web page. The <em>Dashboard</em> will be able to
-display a list of <em>Collection Stations</em> it has learned about, as well
-as a list of sensors and the respective data for each sensor connected
-to the <em>Collection / Control Station</em>.</p>
-<ol>
-<li>Build SPA with Vue for Dashboard</li>
-<li>Serve HTML pages from Hub with built in HTTP server</li>
-</ol>
-<h4 id="milestone-3---real-time-datashboard"><em>Milestone 3 - Real Time Datashboard</em></h4>
-<p>The third phase of the project we add <em>Websockets</em> to the <em>Hub</em> and
-<em>Dashboard</em> allowing the Hub to stream real-time sensor data to the
-Dashboard. The Dashboard will display the latest data as it arrives.</p>
-<ol>
-<li>Websocket library for Hub in Go</li>
-<li>Websocket library for Vue in JavaScript</li>
-</ol>
-<h4 id="milestone-4---collection-station"><em>Milestone 4 - Collection Station</em></h4>
-<p>This is the most interesting part of the project for me. We are going
-to build and <em>embedded</em> IoT device with the <em>esp32</em> micro controller
-and connected sensors. This development is C++ and the FreeRTOS (Real
-Time Operating System) as provided by the
-<a href="https://github.com/espressif/esp-idf">esp-idf</a> development kit.</p>
-<ol>
-<li>esp-idf to collect sensor data C++</li>
-<li>esp-idf to connect to Wifi</li>
-<li>esp-idf transmits MQTT data to IoT broker.</li>
-</ol>
-<h4 id="milestone-5---the-cloud"><em>Milestone 5 - The Cloud</em></h4>
-<p>The final milestone we have recorded here is introduced when an
-<em>Internet</em> connection is available. The <em>Cloud</em> gives the application
-a whole new set of capabilities, including but not limited to</p>
-<ol>
-<li>Global Access - Access the application from anywhere in the world</li>
-<li>Data storage and persistence</li>
-<li>Fleet management - monitor, update and control all the devices in
-your sensor network .</li>
-</ol>
-<h2 id="og-software-components">OG Software Components</h2>
+languages and communication protocols to complete this non-trivial
+IoT application.</p>
 
       </article>
     </div>
@@ -170,103 +248,54 @@ your sensor network .</li>
 
 </div>
 
-<div class="container">
-  <div class="row">
+<div class="container mb-4">
+  <div class="row row-cols-1 row-cols-md-2">
     
-
-    <div class="col-6">
-      <div class="card mb-4">
-	<div class="card-body">
-
-	  <h5 class="card-title">
-	    <a href="http://www.rustyeddy.com/iot-project/hub/">Iot Data Aggregation Hub</a>
-	  </h5>
-
-	  <div class="card-text">
-	    The IoT Hub is the center piece of the OG system it aggregates environmental measurements from MQTT data channels, provides an HTTP  server for the REST API and serves up the responsive Dashboard Webapp. The Hub is also responsible for running the application logic and ensuring data is archived as required. This page we discuss how the Hub is constructed as a MicroService.
-
-	  </div>
-
-          <div class="pt-2">
-	    <a href="http://www.rustyeddy.com/iot-project/hub/">read more ...</a>
-          </div>
-
-	</div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">
+          <a href="http://www.rustyeddy.com/iot-project/hub/">Iot Data Aggregation Hub</a>
+        </h5>
+        <p class="card-text">The IoT Hub is the center piece of the OG system it aggregates environmental measurements from MQTT data channels, provides an HTTP  server for the REST API and serves up the responsive Dashboard Webapp. The Hub is also responsible for running the application logic and ensuring data is archived as required. This page we discuss how the Hub is constructed as a MicroService.
+</p>
+	<a href="http://www.rustyeddy.com/iot-project/hub/">read more ...</a>
       </div>
     </div>
-
     
-
-    <div class="col-6">
-      <div class="card mb-4">
-	<div class="card-body">
-
-	  <h5 class="card-title">
-	    <a href="http://www.rustyeddy.com/iot-project/dashboard/">IoT Real-time Dashboard</a>
-	  </h5>
-
-	  <div class="card-text">
-	    The dashboard is a responsive Web Application written with Vue to display historic and real time application data. The dashboard allows users to configure the application and switch connected relays. Front end developers advice is more than welcome!
-
-	  </div>
-
-          <div class="pt-2">
-	    <a href="http://www.rustyeddy.com/iot-project/dashboard/">read more ...</a>
-          </div>
-
-	</div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">
+          <a href="http://www.rustyeddy.com/iot-project/dashboard/">IoT Real-time Dashboard</a>
+        </h5>
+        <p class="card-text">The dashboard is a responsive Web Application written with Vue to display historic and real time application data. The dashboard allows users to configure the application and switch connected relays. Front end developers advice is more than welcome!
+</p>
+	<a href="http://www.rustyeddy.com/iot-project/dashboard/">read more ...</a>
       </div>
     </div>
-
     
-
-    <div class="col-6">
-      <div class="card mb-4">
-	<div class="card-body">
-
-	  <h5 class="card-title">
-	    <a href="http://www.rustyeddy.com/collection-station/">Collection Station</a>
-	  </h5>
-
-	  <div class="card-text">
-	    The Collection and Control Stations are small wireless devices outfitted with environmental sensors to collect then publish data  via MQTT to the Hub running the application. The CS also control relays to manage lighting. These little embedded devices usually run on battery and can form self configured mesh networks.
-
-	  </div>
-
-          <div class="pt-2">
-	    <a href="http://www.rustyeddy.com/collection-station/">read more ...</a>
-          </div>
-
-	</div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">
+          <a href="http://www.rustyeddy.com/collection-station/">Collection Station</a>
+        </h5>
+        <p class="card-text">The Collection and Control Stations are small wireless devices outfitted with environmental sensors to collect then publish data  via MQTT to the Hub running the application. The CS also control relays to manage lighting. These little embedded devices usually run on battery and can form self configured mesh networks.
+</p>
+	<a href="http://www.rustyeddy.com/collection-station/">read more ...</a>
       </div>
     </div>
-
     
-
-    <div class="col-6">
-      <div class="card mb-4">
-	<div class="card-body">
-
-	  <h5 class="card-title">
-	    <a href="http://www.rustyeddy.com/iot-project/cloud/">IoT Project Cloud Automation</a>
-	  </h5>
-
-	  <div class="card-text">
-	    Cloud support extends the reach of the data globally allowing access to both real-time and historical datas, it also expands the length data can be kept  
-
-	  </div>
-
-          <div class="pt-2">
-	    <a href="http://www.rustyeddy.com/iot-project/cloud/">read more ...</a>
-          </div>
-
-	</div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">
+          <a href="http://www.rustyeddy.com/iot-project/cloud/">IoT Project Cloud Automation</a>
+        </h5>
+        <p class="card-text">Cloud support extends the reach of the data globally allowing access to both real-time and historical datas, it also expands the length data can be kept  
+</p>
+	<a href="http://www.rustyeddy.com/iot-project/cloud/">read more ...</a>
       </div>
     </div>
-
     
   </div> 
-
 </div>
 
 <div class="d-flex justify-content-center">
