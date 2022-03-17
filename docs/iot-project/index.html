@@ -49,16 +49,18 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     </div>
     <div class="col-md"></div>
   </div>
+
   <div class="row text-center smaller-text">
     <div class="col"></div>
     <div class="col-8">
       <nav class="nav justify-content-center">
         
+        <a class="nav-link" href="https://github.com/iot-station/iothub">https://github.com/iot-station/iothub</a>
         
         
         
         
-
+        
       </nav>
 
     </div>
@@ -103,7 +105,7 @@ performed initially by <em>mocking</em> MQTT publishers with the
 <p>Let&rsquo;s steal the term from <a href="http://leanstartup.com">Lean Startup</a> and
 define our <strong>MVP</strong> by etching out the details of our developmental
 <em>milestones</em>.</p>
-<h3 id="milestones">Milestones</h3>
+<h3 id="mvp-milestones">MVP Milestones</h3>
 <p>The milestones are structured such that completeing each milestone
 incrementally adds useful features to the application until we
 progressively iterate toward the completed gardening MVP.</p>
@@ -240,6 +242,12 @@ programming langauges, HTML, CSS and SQL are common.</p>
 <p>For this reason, we are going to use a variety of programming
 languages and communication protocols to complete this non-trivial
 IoT application.</p>
+<h3 id="open-source-software">Open Source Software</h3>
+<p>Each of the software components below are operational, they are also
+Open Source each with a <a href="https://github.com/iot-station/">Github Repo
+</a>. Instructions to build and run each
+component can be found on the respective README.md file. If you are
+interested in getting involved, that is great! drop me a line.</p>
 
       </article>
     </div>
@@ -254,9 +262,9 @@ IoT application.</p>
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">
-          <a href="http://www.rustyeddy.com/iot-project/hub/">Iot Data Aggregation Hub</a>
+          <a href="http://www.rustyeddy.com/iot-project/hub/">Iot Hub</a>
         </h5>
-        <p class="card-text">The IoT Hub is the center piece of the OG system it aggregates environmental measurements from MQTT data channels, provides an HTTP  server for the REST API and serves up the responsive Dashboard Webapp. The Hub is also responsible for running the application logic and ensuring data is archived as required. This page we discuss how the Hub is constructed as a MicroService.
+        <p class="card-text">The IoT Hub is the center piece of the OG system it gathers all data, runs the application, provides an API for historic and streams data real-time as it arrives. This project is written in Go as a Micro-service. This is perfect for backend devs and full-stackers. 
 </p>
 	<a href="http://www.rustyeddy.com/iot-project/hub/">read more ...</a>
       </div>
@@ -265,9 +273,9 @@ IoT application.</p>
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">
-          <a href="http://www.rustyeddy.com/iot-project/dashboard/">IoT Real-time Dashboard</a>
+          <a href="http://www.rustyeddy.com/iot-project/dashboard/">Real-time Dashboard</a>
         </h5>
-        <p class="card-text">The dashboard is a responsive Web Application written with Vue to display historic and real time application data. The dashboard allows users to configure the application and switch connected relays. Front end developers advice is more than welcome!
+        <p class="card-text">The dashboard is a responsive Web Application written with Vue to display historic and real time application data. The dashboard allows users to configure the application and switch connected relays. This is going to be of interest to reactive frontend devs and designers.
 </p>
 	<a href="http://www.rustyeddy.com/iot-project/dashboard/">read more ...</a>
       </div>
@@ -276,20 +284,20 @@ IoT application.</p>
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">
-          <a href="http://www.rustyeddy.com/collection-station/">Collection Station</a>
+          <a href="http://www.rustyeddy.com/iot-project/collection-station/">Collection Station</a>
         </h5>
-        <p class="card-text">The Collection and Control Stations are small wireless devices outfitted with environmental sensors to collect then publish data  via MQTT to the Hub running the application. The CS also control relays to manage lighting. These little embedded devices usually run on battery and can form self configured mesh networks.
+        <p class="card-text">The Collection Stations are small battery powered wireless devices outfitted with environmental sensors. They collect and publish the data to the Hub for processing. This project is built with the esp32 micro-controller, C&#43;&#43; and embedded realtime operating system. 
 </p>
-	<a href="http://www.rustyeddy.com/collection-station/">read more ...</a>
+	<a href="http://www.rustyeddy.com/iot-project/collection-station/">read more ...</a>
       </div>
     </div>
     
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">
-          <a href="http://www.rustyeddy.com/iot-project/cloud/">IoT Project Cloud Automation</a>
+          <a href="http://www.rustyeddy.com/iot-project/cloud/">Cloud Automation</a>
         </h5>
-        <p class="card-text">Cloud support extends the reach of the data globally allowing access to both real-time and historical datas, it also expands the length data can be kept  
+        <p class="card-text">Cloud support extends the reach of the data globally allowing access to both real-time and historical datas from anywhere in the world. The cloud provides opertunities for global control and fleet management. This section is ideal for DevOps and SRE types.
 </p>
 	<a href="http://www.rustyeddy.com/iot-project/cloud/">read more ...</a>
       </div>
@@ -298,13 +306,13 @@ IoT application.</p>
   </div> 
 </div>
 
-<div class="d-flex justify-content-center">
+
+
+	</div><div class="d-flex justify-content-center">
   <script async data-uid="50dfcceaf3" src="https://skilled-producer-5787.ck.page/50dfcceaf3/index.js"></script>
 </div>
 
-
-
-	</div><footer id="footer" class="container-fluid footer small-text pt-4 border-top">
+<footer id="footer" class="container-fluid footer small-text pt-4 border-top">
   <section class="row">
     <div class="col"></div>
     <div class="col text-right">

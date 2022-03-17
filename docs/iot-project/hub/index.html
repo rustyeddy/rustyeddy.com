@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 
-<title>Iot Data Aggregation Hub</title>
+<title>Iot Hub</title>
 
 <script>(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
 0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
@@ -41,24 +41,26 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
   <div class="row">
     <div class="col-md"></div>
     <div class="col-md-8">
-      <h1 class="header h2 text-center pb-1">Iot Data Aggregation Hub</h1>
+      <h1 class="header h2 text-center pb-1">Iot Hub</h1>
       <p class="leadin align-right text-muted text-center mt-0">
-	The IoT Hub is the center piece of the OG system it aggregates environmental measurements from MQTT data channels, provides an HTTP  server for the REST API and serves up the responsive Dashboard Webapp. The Hub is also responsible for running the application logic and ensuring data is archived as required. This page we discuss how the Hub is constructed as a MicroService.
+	The IoT Hub is the center piece of the OG system it gathers all data, runs the application, provides an API for historic and streams data real-time as it arrives. This project is written in Go as a Micro-service. This is perfect for backend devs and full-stackers. 
 
       </p>
     </div>
     <div class="col-md"></div>
   </div>
+
   <div class="row text-center smaller-text">
     <div class="col"></div>
     <div class="col-8">
       <nav class="nav justify-content-center">
         
+        <a class="nav-link" href="https://github.com/iot-station/iothub">https://github.com/iot-station/iothub</a>
         
         
         
         
-
+        
       </nav>
 
     </div>
@@ -66,13 +68,24 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
   </div>
 </div>
 <div id="main body">
-<div class="container">
 
-  <div class="row mb-4">
-    <div class="col"></div>
-    <div class="col-8">
-      <article class="article text-big">
-	<p><img src="/img/iothub.png" alt="High Level Sensor Station"></p>
+<div class="container">
+    <div class="row pt-4 mb-5 mt-5">
+	<div class="col"></div>
+	<div class="col-8">
+	    <img class="img-fluid" src="" />
+	</div>
+	<div class="col"></div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row mt-4">
+	<div class="col"></div>
+	<div class="col-sm-8 pl-4 pr-4">
+	    <article class="article">
+		<p><img src="/img/iothub.png" alt="High Level Sensor Station"></p>
 <h2 id="what-does-og-hub-do">What Does OG Hub Do?</h2>
 <p>In a nutshell the <em>Hub</em> gathers environmental data from a network of
 <a href="iot-project/collection-station">Collection Stations</a> using the well
@@ -227,26 +240,19 @@ to update the Dashboard when new data arrives in <em>real-time</em>.</p>
 <p>We will talk alot more about this in the
 <a href="/iot-project/dashboard">Dashboard</a></p>
 
-      </article>
+	    </article>
+	</div>
+	<div class="col"></div>
     </div>
-    <div class="col"></div>
-  </div>
-
 </div>
 
-<div class="container mb-4">
-  <div class="row row-cols-1 row-cols-md-2">
-    
-  </div> 
-</div>
 
-<div class="d-flex justify-content-center">
+
+	</div><div class="d-flex justify-content-center">
   <script async data-uid="50dfcceaf3" src="https://skilled-producer-5787.ck.page/50dfcceaf3/index.js"></script>
 </div>
 
-
-
-	</div><footer id="footer" class="container-fluid footer small-text pt-4 border-top">
+<footer id="footer" class="container-fluid footer small-text pt-4 border-top">
   <section class="row">
     <div class="col"></div>
     <div class="col text-right">

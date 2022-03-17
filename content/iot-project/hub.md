@@ -1,13 +1,13 @@
 ---
-title: Iot Data Aggregation Hub
+title: Iot Hub
 date: 2022-01-13
 description: >
-  The IoT Hub is the center piece of the OG system it aggregates
-  environmental measurements from MQTT data channels, provides an HTTP 
-  server for the REST API and serves up the responsive Dashboard
-  Webapp. The Hub is also responsible for running the application
-  logic and ensuring data is archived as required. This page we
-  discuss how the Hub is constructed as a MicroService.
+  The IoT Hub is the center piece of the OG system it gathers all
+  data, runs the application, provides an API for historic and streams
+  data real-time as it arrives. This project is written in Go as a
+  Micro-service. This is perfect for backend devs and full-stackers. 
+url: iot-project/hub
+git: https://github.com/iot-station/iothub
 weight: 10
 ---
 

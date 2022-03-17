@@ -1,14 +1,17 @@
 ---
-title: IoT Project Cloud Automation
+title: Cloud Automation
 date: 2021-01-12
 weight: 50
 description: >
   Cloud support extends the reach of the data globally allowing access
-  to both real-time and historical datas, it also expands the length
-  data can be kept  
+  to both real-time and historical datas from anywhere in the
+  world. The cloud provides opertunities for global control and fleet
+  management. This section is ideal for DevOps and SRE types.
+weight: 50
+git: https://github.com/iot-station/iothub
 ---
 
-# IoT Project Cloud
+# Cloud Automation
 
 _Cloud_ support extends the reach of the data globally allowing access
 to both _real-time_ and _historical datas_, it also expands the length

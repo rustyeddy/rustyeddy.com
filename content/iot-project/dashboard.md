@@ -1,12 +1,14 @@
 ---
-title: IoT Real-time Dashboard
+title: Real-time Dashboard
 date: 2022-01-12
 weight: 20
 description: >
   The dashboard is a responsive Web Application written with Vue to
   display historic and real time application data. The dashboard
   allows users to configure the application and switch connected
-  relays. Front end developers advice is more than welcome!
+  relays. This is going to be of interest to reactive frontend devs
+  and designers.
+git: https://github.com/iot-station/dashboard
 ---
 
 ![Example image](/img/dashboard.png)

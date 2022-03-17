@@ -1,15 +1,15 @@
 ---
 title: Collection Station
 date: 2021-01-13
-url: collection-station
 description: >
-    The Collection and Control Stations are small wireless devices
-    outfitted with environmental sensors to collect then publish data 
-    via MQTT to the Hub running the application. The CS also control
-    relays to manage lighting. These little embedded devices usually
-    run on battery and can form self configured mesh networks.
+    The Collection Stations are small battery powered wireless devices
+    outfitted with environmental sensors. They collect and publish the
+    data to the Hub for processing. This project is built with the
+    esp32 micro-controller, C++ and embedded realtime operating
+    system. 
 weight: 30
-git: https://github.com/sensorstation/ssesp
+git: https://github.com/iot-station/iotesp
+url: /iot-project/collection-station
 ---
 
 ## Publishing Sensor Data

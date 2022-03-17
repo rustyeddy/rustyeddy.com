@@ -8,6 +8,7 @@ description: >
   watering garden. If you are interested in developing IoT software or
   adding software to one of your projects you are in the right
   place. Join the NewsLetter below and say Hi!
+git: https://github.com/iot-station/iothub
 ---
 
 ![High Level Sensor Station](/img/iot-project-drawing.png)
@@ -52,7 +53,7 @@ Let's steal the term from [Lean Startup](http://leanstartup.com) and
 define our **MVP** by etching out the details of our developmental
 _milestones_. 
 
-### Milestones
+### MVP Milestones
 
 The milestones are structured such that completeing each milestone
 incrementally adds useful features to the application until we
@@ -111,3 +112,11 @@ programming langauges, HTML, CSS and SQL are common.
 For this reason, we are going to use a variety of programming
 languages and communication protocols to complete this non-trivial
 IoT application.
+
+### Open Source Software 
+
+Each of the software components below are operational, they are also
+Open Source each with a [Github Repo
+](https://github.com/iot-station/). Instructions to build and run each
+component can be found on the respective README.md file. If you are
+interested in getting involved, that is great! drop me a line. 
