@@ -8,48 +8,6 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://www.rustyeddy.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Iot Hub</title>
-      <link>http://www.rustyeddy.com/iot-project/hub/</link>
-      <pubDate>Thu, 13 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.rustyeddy.com/iot-project/hub/</guid>
-      <description>What Does OG Hub Do? In a nutshell the Hub gathers environmental data from a network of Collection Stations using the well known MQTT Messaging protocol. The hub feeds the data to the Oraganic Gardner application, streams it real-time to dashboard users via Websockets and caches the data in RAM.
-How Does the Hub Work? The Hub is a small, fast server written in Go with the following dependencies:
- Go&amp;rsquo;s built-in HTTP Server to serve HTML Go&amp;rsquo;s built=in HTTP Server to serve REST API Websocket Library for real time data to dashboard MQTT Eclipse MQTT Library  The software running on the Hub can be called a Micro-service.</description>
-    </item>
-    
-    <item>
-      <title>Real-time Dashboard</title>
-      <link>http://www.rustyeddy.com/iot-project/dashboard/</link>
-      <pubDate>Wed, 12 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.rustyeddy.com/iot-project/dashboard/</guid>
-      <description>Dashboard WebApp The snapshot of the dashboard above is a WebUI served by the Hub displaying the real time values for temperature, humidity and uptime. Actually three of the four stations in the screen shot above are mocked using mosquitto_pub. See the &amp;ldquo;Mocking&amp;rdquo; section of the Hub section of the website.
-Recieving Data The dashboard recieves all of it&amp;rsquo;s data from the Hub which in turn streams the data to the dashboard over Websockets in real-time.</description>
-    </item>
-    
-    <item>
-      <title>Collection Station</title>
-      <link>http://www.rustyeddy.com/iot-project/collection-station/</link>
-      <pubDate>Wed, 13 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.rustyeddy.com/iot-project/collection-station/</guid>
-      <description>Publishing Sensor Data The idea is pretty simple really: build a network of wireless battery powered devices to gather environmental data such as temprature, moisture, light levels, etc. The collected data will then be published via MQTT wirelessly to the Hub.
-Types of Published Data The planned data types to be published by the system are concerned with the following types of sensors.
- Temprature Humidity Moisture Light Barometric Pressure  Technically any type of data could be published and collected however we are focused on the type of data our OG application will use.</description>
-    </item>
-    
-    <item>
-      <title>Cloud Automation</title>
-      <link>http://www.rustyeddy.com/iot-project/cloud/</link>
-      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.rustyeddy.com/iot-project/cloud/</guid>
-      <description>Cloud Automation Cloud support extends the reach of the data globally allowing access to both real-time and historical datas, it also expands the length data can be kept. Rather than a couple weeks to a month per hub, the data loaded in the cloud can be persisted for years at very low cost.
-Entire fleets of hubs can be managed from the cloud console making it easy to manage, monitor and update large deployments of not only sensor station but also the hubs.</description>
-    </item>
-    
-    <item>
       <title>Sugo Music Dashboard</title>
       <link>http://www.rustyeddy.com/resume/clients/sugo-music/</link>
       <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>

@@ -1,41 +1,55 @@
 ---
 title: A Guide to Developing IoT Software
+subtitle: How to build a self watering garden
 url: iot-project
 date: 2020-09-06T10:32:26-07:00
 description: >
-  This site documents the technical challenges and design decisions I
-  used while developing the Organic Gardner IoT product, a self
-  watering garden. If you are interested in developing IoT software or
-  adding software to one of your projects you are in the right
-  place. Join the NewsLetter below and say Hi!
-git: https://github.com/iot-station/iothub
+  Read this article if you have a thing or an idea for a physical
+  product that you want to enhance with software and attach to the
+  Internet. We will build a self watering garden as an example
+  project. 
+git: https://github.com/iot-station
 ---
+
+This site documents the technical challenges and design decisions I
+used while developing the Organic Gardner IoT product: a self
+watering garden. If you are interested in developing IoT software or
+adding software to one of your projects you are in the right
+place. Join the NewsLetter below and say Hi!
 
 ![High Level Sensor Station](/img/iot-project-drawing.png)
 
 ## What is this project about?
 
-Code named _Organic Gardner (OG)_ this automated irrigation system
-will use soil moisture levels from inexpensive sensors to control 
-sprinklers that water plants.  My wife will volunteer her rather
-extensive _succulent collection_ as a test bed for this project!
-She doesn't know this yet. 
+Code named _Organic Gardner (OG)_ is a project to build an automated
+irrigation system where it gathers soil moisture levels from
+inexpensive sensors, uses that data to determine when the sprinkler
+system should be switched on and off. 
+
+She does not exactly know it yet, but my wife will volunteer her
+garden for testing!
+
+### What Makes IoT Software Different?
 
 An IoT project usually involves taking a well known functional device
 like a doorbell (Ring) or Heater (Nest) and adding some "smart"
-software with an Internet connection to develop a whole new world of
-features. This is also true of our project.
+software and real time communication software, which may include an
+Internet connection.
 
-While we are focusing on irrigation and gardens, the same framework
-built to support OG can be leveraged to develop many different type of
-IoT project. 
+The communication software and Internet connection assume a whole new
+level of complexity depending on the type of data being communicated
+and how it is being interpreted and saved.
+
+IoT projects with many scattered pieces can be a challange, if not a
+complete night mare to manage. The topics of _Fleet
+Management_ and _cloud automation_ will be discussed at some depth.
 
 ### On Demand Irrigation and Lighting Controls
 
 The main application is what i call _On Demand Irrigation (ODI)_ which
 is a feature that uses soil's moisture levels to control a network of
 sprinklers ensuring every micro-section of the garden is optimally
-watered. 
+watered just right! 
 
 Lighting can be controlled by light levels or programmed with a
 traditional time based scheduler, all according to application
@@ -55,68 +69,86 @@ _milestones_.
 
 ### MVP Milestones
 
-The milestones are structured such that completeing each milestone
-incrementally adds useful features to the application until we
-progressively iterate toward the completed gardening MVP. 
+The milestones are defined such that upon the completion of each one
+we incrementally adds useful features to the application until we
+iterate toward the complete OG MVP. 
 
-{{< milestone 1 "Hub Subscribes to MQTT and Serves HTTP " >}}
-This first Milestone has three major components and requires two
-libraries all written in the Go programming langauge. The successful
-completion of this milestone has the hub subscribing to MQTT data,
-caching the data in RAM and providing a REST API to access that data.
+{{< milestone 1 "Hub Subscribes to MQTT data" >}}
+This first Milestone we import the <em>eclipse MQTT</em> library for go and
+get to collecting environmental data transmitted (mocked) using the
+<code>mosquitto_pub</code> publishing tool. The data collected is stored
+efficiently in RAM for quick retrieval
 {{< /milestone >}}
 
+{{< milestone 2 "Hub Provides REST API for Data " >}}
+Now that the Hub has data efficiently stored in RAM we need a way to
+access the data, for that we'll create a REST API. The REST API is
+dependendant on an HTTP server and router that can easily be provided
+introducing the go <code>net/http</code> built-in package.
+{{< /milestone >}}
    
-{{< milestone 2 "Dashboard Displays Historic Data " >}} 
+{{< milestone 3 "Dashboard Displays Historic Data " >}} 
 The next milestone is our responsive Single Page App (SPA) written
-with the Vue JavaScript framework. The SPA will be served up by the
-Hub's HTTP server. The Dashboard will display historic data retrieved
-via the Hubs REST API.
+with the Vue JavaScript framework. The SPA will also be served up by
+the Hub's HTTP server. The Dashboard will display historic data
+retrieved via the
+Hubs REST API.
 {{< /milestone >}}
 
-{{< milestone 3 "Dashboard Displays Real Time Data" >}}
-The third phase of the project we add Websockets to the Hub and
-Dashboard allowing the Hub to stream real-time sensor data to the
-Dashboard. The Dashboard will always display the latest data for every
-sensor it displays as soon as the data arrives.
+{{< milestone 4 "Dashboard Displays Real Time Data" >}}
+This phase of the project we add Websockets to the Hub and Dashboard
+allowing the Hub to stream real-time sensor data to the Dashboard. The
+Dashboard will always display the latest data for every sensor it
+displays as soon as the data arrives.
 {{< /milestone >}}
 
-{{< milestone 4 "Collection Station Transmits Data" >}}
-This is the most interesting part of the project for me. We are going
-to write some real-time embedded software for the esp32
-micro-processor. It will use sensors, Wifi and MQTT to publish
-actual sensor data to the subscriber hub.
+{{< milestone 5 "Collection Station Transmits Data" >}}
+This is the most interesting part of the project for me. This is were
+we prototype hardware using the <em>esp32 SoC</em> and write some
+<em>real time software</em>. When this is complete we can replace the
+mock MQTT data with real data from a real sensor!
 {{< /milestone >}}
 
-{{< milestone 5  "Introducing the Cloud" >}} 
+{{< milestone 6 "Introducing the Cloud" >}} 
 The final frontier, at least for this set of milestones is global
-connectivity via the cloud. An Internet connection will allow us to
+connectivity through the cloud. An Internet connection will allow us to
 provide global access, safe persistent storage and fleet management
-software.
+software preparing us for the next rounds of feature releases.
 {{< /milestone >}}
 
 
 ## The Software Components
 
-This project reflects _"real world"_ projects in that it involves a
-variety of programming languages, protocols and technologies: _Go_,
-C++, _JavaScript_, _HTTP_, _MQTT_, _Websockets_ and other stuff.
+This project reflects a _"real world"_ software project in that it
+involves a variety of programming languages, protocols and
+technologies: _Go_, C++, _JavaScript_, _HTTP_, _MQTT_, _Websockets_
+and other stuff.
 
-When working on larger projects it is quite common for a single
-programmer to work on a very small and focused piece of code. Smaller
-projects on the other hand often require programmers to switch
-langagues and development environments often, for example jumping back
-and forth between backend and front end typically involves a couple
-programming langauges, HTML, CSS and SQL are common.
+This set of articles takes more of a _systems view_ of software
+application architecture, rather than a deep dive into a single
+programming language or technology. Make no mistake though, this
+content will take on some tough technical challenges and work out some
+important programming problems in detail.
 
-For this reason, we are going to use a variety of programming
-languages and communication protocols to complete this non-trivial
-IoT application.
+### The Process of Softwware Development
 
-### Open Source Software 
+A heavy emphasis of this site will be on the software development
+processes, often referred to as the _Software Development
+Lifecycle_. We will cover topics like: _Agile_, _Kanban_, Test Driven
+Development, Version Control and the release processes (CI/CD).
 
-Each of the software components below are operational, they are also
-Open Source each with a [Github Repo
-](https://github.com/iot-station/). Instructions to build and run each
-component can be found on the respective README.md file. If you are
-interested in getting involved, that is great! drop me a line. 
+This information will be particularly important for product owners and
+managers responsible for building a team that will deliver software.
+
+#### Software Component Overview
+
+The project at this point consists of the following primary software
+components. Each of these components are operational and Open Source
+with a [Github Repo](https://github.com/iot-station/). 
+Instructions to build and run each component can be found on the
+respective README.md file. 
+
+If you are interested in getting involved in a specific software
+component and related technology, head to that software component to
+see what is going on and get involved!
+

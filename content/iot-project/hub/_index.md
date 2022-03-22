@@ -2,10 +2,11 @@
 title: Iot Hub
 date: 2022-01-13
 description: >
-  The IoT Hub is the center piece of the OG system it gathers all
-  data, runs the application, provides an API for historic and streams
-  data real-time as it arrives. This project is written in Go as a
-  Micro-service. This is perfect for backend devs and full-stackers. 
+  The IoT Hub is the center piece of the IoT project as gathers data,
+  runs application logic. Provides an HTTP Server to serve up a Web
+  App, REST API and Web sockets. This project is a Micro service
+  written in Go, and is perfect for systems hackers, backend devs and
+  full-stackers.
 url: iot-project/hub
 git: https://github.com/iot-station/iothub
 weight: 10
@@ -180,7 +181,6 @@ this when pretty printed.
         }
     }
 }
-
 ```
 
 #### Complete REST API
