@@ -1,7 +1,7 @@
 ---
 title: MQTT For Controllor Communication
 description: >
-  Publish/Subscribe is an popular solution to distributed system
+  MQTT is a messaging protocol commonly reffered to as Publish/Subscribe or is an popular solution to distributed system
   communications, where you do not want to directly couple the
   publisher and subscribers.  That is a fundamental design of this MBR
   project. 
