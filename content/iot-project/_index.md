@@ -1,66 +1,71 @@
 ---
-title: A Guide to Developing IoT Software
-subtitle: How to build a self watering garden
+title: How to Build a Self Watering Garden
+subtitle: A Guide to Developing IoT Software
 url: iot-project
 date: 2020-09-06T10:32:26-07:00
 description: >
-  Read this article if you have a thing or an idea for a physical
-  product that you want to enhance with software and attach to the
-  Internet. We will build a self watering garden as an example
-  project. 
+  A Guild to developing IoT software
 git: https://github.com/iot-station
 ---
-
-This site documents the technical challenges and design decisions I
-used while developing the Organic Gardner IoT product: a self
-watering garden. If you are interested in developing IoT software or
-adding software to one of your projects you are in the right
-place. Join the NewsLetter below and say Hi!
 
 ![High Level Sensor Station](/img/iot-project-drawing.png)
 
 ## What is this project about?
 
-Code named _Organic Gardner (OG)_ is a project to build an automated
-irrigation system where it gathers soil moisture levels from
-inexpensive sensors, uses that data to determine when the sprinkler
-system should be switched on and off. 
+_Organic Gardner (OG)_ is an automated irrigation system that gathers
+soil moisture levels from various sections of a garden then uses that
+data to activate the garden sprinkler system. Done right, this will
+eliminate both over and under watering. Likewise there will no longer
+be any need to program the watering schedule with confusing sprinkler
+menus. 
 
-She does not exactly know it yet, but my wife will volunteer her
-garden for testing!
+> Although she does not know it yet, my wife will volunteer her
+> succulent garden for testing!
+
+From this hopefully interesting and useful example project we will
+establish a set of _Best Practices_ and _software_ that will help
+reduce the complexity and time to market with your IoT software
+project. 
 
 ### What Makes IoT Software Different?
 
-An IoT project usually involves taking a well known functional device
-like a doorbell (Ring) or Heater (Nest) and adding some "smart"
-software and real time communication software, which may include an
-Internet connection.
+An IoT project usually involves taking a physical device (or
+functional system) like a doorbell (Ring) or Heater (Nest) and adding
+smart software with an Internet connection to open a whole new world
+of services.
 
-The communication software and Internet connection assume a whole new
-level of complexity depending on the type of data being communicated
-and how it is being interpreted and saved.
+The _Ring Doorbell_ is a popular example of an IoT enhanced product.
+It allows you to see and talk to somebody on your pourch when you are
+a thousand miles away or in your bathroom.
 
-IoT projects with many scattered pieces can be a challange, if not a
-complete night mare to manage. The topics of _Fleet
-Management_ and _cloud automation_ will be discussed at some depth.
+The _Nest_ thermometer learns exactly what temperature you want your
+house, it then keeps your home exactly the temperature you want. Even
+better, when your not home it will not waste any energy.
 
-### On Demand Irrigation and Lighting Controls
+> Just applying smarts to reduce energy consumed in widely used
+> applications alone is an worthy avenue to prusuit 
 
-The main application is what i call _On Demand Irrigation (ODI)_ which
-is a feature that uses soil's moisture levels to control a network of
-sprinklers ensuring every micro-section of the garden is optimally
-watered just right! 
+#### IoT Brings New Challenges
 
-Lighting can be controlled by light levels or programmed with a
-traditional time based scheduler, all according to application
-requirements. 
+With all the great new capabilities IoT software brings with it today,
+these same benefits also bring bring a heavy cost of complexity. The
+key to beating the complexity and efficiently building robust software
+is to embrace the right processes, a major goal of this website.
+
+
+#### Establishing Best Practices
+
+By establishing the right _Software Development Processes_ for your
+project based on _Best Practices_ gathered on this website we can work
+together to reduce complexity and build software that is more simple,
+robust and reusable.
 
 ## The Development Plan
 
 To avoid being overwhelmed with details and keep the project moving
 forward we will build it out incrementally, one interesting feature at
-a time, stacking cool feature on top of cool feature. Testing will be
-performed initially by _mocking_ MQTT publishers with the
+a time stacking cool feature on top of cool feature. Testing will be
+performed initially by _mocking_ the collection station with the
 ```mosquitto_pub``` command line tool. 
 
 Let's steal the term from [Lean Startup](http://leanstartup.com) and
