@@ -35,7 +35,7 @@ smart software with an Internet connection to open a whole new world
 of services.
 
 The _Ring Doorbell_ is a popular example of an IoT enhanced product.
-It allows you to see and talk to somebody on your pourch when you are
+It allows you to see and talk to somebody on your porch when you are
 a thousand miles away or in your bathroom.
 
 The _Nest_ thermometer learns exactly what temperature you want your
@@ -43,7 +43,7 @@ house, it then keeps your home exactly the temperature you want. Even
 better, when your not home it will not waste any energy.
 
 > Just applying smarts to reduce energy consumed in widely used
-> applications alone is an worthy avenue to prusuit 
+> applications alone is an worthy avenue to pursuit 
 
 #### IoT Brings New Challenges
 
@@ -65,8 +65,8 @@ robust and reusable.
 To avoid being overwhelmed with details and keep the project moving
 forward we will build it out incrementally, one interesting feature at
 a time stacking cool feature on top of cool feature. Testing will be
-performed initially by _mocking_ the collection station with the
-```mosquitto_pub``` command line tool. 
+performed initially by _mocking_ the collection station MQTT
+publishers with the ```mosquito_pub``` command line tool. 
 
 Let's steal the term from [Lean Startup](http://leanstartup.com) and
 define our **MVP** by etching out the details of our developmental
@@ -81,14 +81,14 @@ iterate toward the complete OG MVP.
 {{< milestone 1 "Hub Subscribes to MQTT data" >}}
 This first Milestone we import the <em>eclipse MQTT</em> library for go and
 get to collecting environmental data transmitted (mocked) using the
-<code>mosquitto_pub</code> publishing tool. The data collected is stored
+<code>mosquito_pub</code> publishing tool. The data collected is stored
 efficiently in RAM for quick retrieval
 {{< /milestone >}}
 
 {{< milestone 2 "Hub Provides REST API for Data " >}}
 Now that the Hub has data efficiently stored in RAM we need a way to
 access the data, for that we'll create a REST API. The REST API is
-dependendant on an HTTP server and router that can easily be provided
+dependent on an HTTP server and router that can easily be provided
 introducing the go <code>net/http</code> built-in package.
 {{< /milestone >}}
    
@@ -135,11 +135,11 @@ programming language or technology. Make no mistake though, this
 content will take on some tough technical challenges and work out some
 important programming problems in detail.
 
-### The Process of Softwware Development
+### The Process of Software Development
 
 A heavy emphasis of this site will be on the software development
 processes, often referred to as the _Software Development
-Lifecycle_. We will cover topics like: _Agile_, _Kanban_, Test Driven
+Life cycle_. We will cover topics like: _Agile_, _Kan ban_, Test Driven
 Development, Version Control and the release processes (CI/CD).
 
 This information will be particularly important for product owners and

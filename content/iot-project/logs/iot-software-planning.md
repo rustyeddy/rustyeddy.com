@@ -1,13 +1,12 @@
 ---
-title: IoT Gateway Collects MQTT Data
+title: Planning Our IoT Software Project
 date: 2021-12-01
 description: >
-  The IoT Gateway program is established with an MQTT library for
-  which it recieves data from the network and data channels.
+  This project like all IoT software projects 
 category: iot-gateway
-weight: 10
 tags: [ go, mqtt, iot ]
 draft: true
+weight: 20
 ---
 
 The IoT Gateway (iot-project/hub) is a small _micro-service_

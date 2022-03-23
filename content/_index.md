@@ -1,6 +1,6 @@
 ---
 title: Rusty Eddy
-description: Principal Engineer, Softeware Architect and IoT Hacker.
+description: Principal Engineer, Software Architect and IoT Hacker.
 date: 2020-04-10
 ---
 
@@ -25,5 +25,8 @@ that goes along with _Physical Computing_ and _IoT_ projects.
 
 [IoT Project Sensor Station](/iot-project). 
 
-> Here is my [resume](/resume) just incase that is what you are
+> Here is my [resume](/resume) just in case that is what you are
 > looking for. 
+
+<!--  LocalWords:  IoT
+ -->

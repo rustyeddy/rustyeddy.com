@@ -97,14 +97,14 @@ functional system) like a doorbell (Ring) or Heater (Nest) and adding
 smart software with an Internet connection to open a whole new world
 of services.</p>
 <p>The <em>Ring Doorbell</em> is a popular example of an IoT enhanced product.
-It allows you to see and talk to somebody on your pourch when you are
+It allows you to see and talk to somebody on your porch when you are
 a thousand miles away or in your bathroom.</p>
 <p>The <em>Nest</em> thermometer learns exactly what temperature you want your
 house, it then keeps your home exactly the temperature you want. Even
 better, when your not home it will not waste any energy.</p>
 <blockquote>
 <p>Just applying smarts to reduce energy consumed in widely used
-applications alone is an worthy avenue to prusuit</p>
+applications alone is an worthy avenue to pursuit</p>
 </blockquote>
 <h4 id="iot-brings-new-challenges">IoT Brings New Challenges</h4>
 <p>With all the great new capabilities IoT software brings with it today,
@@ -120,8 +120,8 @@ robust and reusable.</p>
 <p>To avoid being overwhelmed with details and keep the project moving
 forward we will build it out incrementally, one interesting feature at
 a time stacking cool feature on top of cool feature. Testing will be
-performed initially by <em>mocking</em> the collection station with the
-<code>mosquitto_pub</code> command line tool.</p>
+performed initially by <em>mocking</em> the collection station MQTT
+publishers with the <code>mosquito_pub</code> command line tool.</p>
 <p>Let&rsquo;s steal the term from <a href="http://leanstartup.com">Lean Startup</a> and
 define our <strong>MVP</strong> by etching out the details of our developmental
 <em>milestones</em>.</p>
@@ -144,7 +144,7 @@ iterate toward the complete OG MVP.</p>
           
 This first Milestone we import the <em>eclipse MQTT</em> library for go and
 get to collecting environmental data transmitted (mocked) using the
-<code>mosquitto_pub</code> publishing tool. The data collected is stored
+<code>mosquito_pub</code> publishing tool. The data collected is stored
 efficiently in RAM for quick retrieval
 
         </p>
@@ -168,7 +168,7 @@ efficiently in RAM for quick retrieval
           
 Now that the Hub has data efficiently stored in RAM we need a way to
 access the data, for that we'll create a REST API. The REST API is
-dependendant on an HTTP server and router that can easily be provided
+dependent on an HTTP server and router that can easily be provided
 introducing the go <code>net/http</code> built-in package.
 
         </p>
@@ -284,10 +284,10 @@ application architecture, rather than a deep dive into a single
 programming language or technology. Make no mistake though, this
 content will take on some tough technical challenges and work out some
 important programming problems in detail.</p>
-<h3 id="the-process-of-softwware-development">The Process of Softwware Development</h3>
+<h3 id="the-process-of-software-development">The Process of Software Development</h3>
 <p>A heavy emphasis of this site will be on the software development
 processes, often referred to as the <em>Software Development
-Lifecycle</em>. We will cover topics like: <em>Agile</em>, <em>Kanban</em>, Test Driven
+Life cycle</em>. We will cover topics like: <em>Agile</em>, <em>Kan ban</em>, Test Driven
 Development, Version Control and the release processes (CI/CD).</p>
 <p>This information will be particularly important for product owners and
 managers responsible for building a team that will deliver software.</p>
