@@ -120,6 +120,7 @@ every station and sensor on the network.
 
 ### Publishing Test Data 
 
+
 We are going to _mock_ a _Collector_ by publishing fake environmental
 data using the cool MQTT publishing utility _mosquito_pub_.
 
@@ -152,7 +153,8 @@ the following elements of the data point.
 - **Timestamp** when the data was sampled.
 
 The data is reformatted and stored as a _time-series_ in RAM. Let's
-have a look at the REST API that can be used to access this data.
+have a look at the REST API that can be used to access the
+environmental data.
 
 ### Using the REST API
 

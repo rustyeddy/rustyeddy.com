@@ -7832,4 +7832,9 @@ img.thehead {
 .cta-text {
   font-size: 1rem; }
 
+pre {
+    background-color: #aaaaaa;
+    padding: 1rem;
+}
+
 /*# sourceMappingURL=style.css.map */
