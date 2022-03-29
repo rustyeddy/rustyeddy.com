@@ -1,42 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>IoT Project Logs on Rusty Eddy</title>
+    <title>Iot-logs on Rusty Eddy</title>
     <link>http://www.rustyeddy.com/iot-logs/</link>
-    <description>Recent content in IoT Project Logs on Rusty Eddy</description>
+    <description>Recent content in Iot-logs on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.rustyeddy.com/iot-logs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.rustyeddy.com/iot-logs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
+      <title>Why Go?</title>
       <link>http://www.rustyeddy.com/iot-logs/why-go/</link>
       <pubDate>Mon, 28 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>http://www.rustyeddy.com/iot-logs/why-go/</guid>
       <description>The reasons I like Go so much will be documented as we progress through this document.
 I won&amp;rsquo;t get into various reasons why Go is better or worse than another programming languages for the IoT Project. Under the direction of a competent developer this project could have been written successfully any modern &amp;ldquo;well known&amp;rdquo; language including but not limited to: C++, Rust, Python, Node/JS, Java and it&amp;rsquo;s machine code variants, and so on.</description>
-    </item>
-    
-    <item>
-      <title>A Simple Go Configuration</title>
-      <link>http://www.rustyeddy.com/iot-logs/simple-go-configuration-structure/</link>
-      <pubDate>Sat, 26 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.rustyeddy.com/iot-logs/simple-go-configuration-structure/</guid>
-      <description>I use this same configuration structure and supporting functions in most every Go program I work on. It is pretty simple but makes it easy to keep global variables orgranized and configurable.
-Here is what I do:
-  Create a type config struct
-  Every configurable variable for the program becomes a Member field of the Configuration structure.
-  Register every field of the Configuration Structure with go&amp;rsquo;s builtin flags package such that the flags are parsed when the program starts we can use our configuration variable.</description>
-    </item>
-    
-    <item>
-      <title>IoT Gateway and Memory Management</title>
-      <link>http://www.rustyeddy.com/iot-logs/iot-gateway-memory-management/</link>
-      <pubDate>Fri, 11 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.rustyeddy.com/iot-logs/iot-gateway-memory-management/</guid>
-      <description></description>
     </item>
     
   </channel>

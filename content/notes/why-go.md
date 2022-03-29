@@ -1,5 +1,5 @@
 ---
-title: Why Go?
+titile: Why Go?
 description: >
   Some pragmatic reasons to choose Go as the programming language for your software
   project
