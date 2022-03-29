@@ -14,8 +14,7 @@
       
       <guid>http://www.rustyeddy.com/iot-logs/why-go/</guid>
       <description>The reasons I like Go so much will be documented as we progress through this document.
-I won&amp;rsquo;t get into various reasons why Go is better or worse than another programming language. Under the direction of a competent developer this project could have been written successfully any modern &amp;ldquo;well known&amp;rdquo; language including but not limited to: C++, Rust, Python, Node/JS, Java and it&amp;rsquo;s machine code variants, and so on.
-Go is a compiled and static typed compiled language vs.</description>
+I won&amp;rsquo;t get into various reasons why Go is better or worse than another programming languages for the IoT Project. Under the direction of a competent developer this project could have been written successfully any modern &amp;ldquo;well known&amp;rdquo; language including but not limited to: C++, Rust, Python, Node/JS, Java and it&amp;rsquo;s machine code variants, and so on.</description>
     </item>
     
     <item>
