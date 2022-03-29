@@ -13,17 +13,10 @@ draft: true
 
 ## Get Ready To _Go_
 
-The IoT Hub was written in the _Go_ programming language. I'll
-summarize and say that _Go_ is an excellent programming langauge for
-this project.
+The IoT Hub was written in the _Go_ programming language. In a nutshell, 
+_Go_ is an excellent programming langauge for this project. 
 
-I won't get into various reasons why Go is better or worse than any
-other language, suffice it to say that this project could have been
-written in most any modern language including but not limited to:
-C++, Rust, Python, Node/JS, Java and it's machine code variants, and
-so on. 
-
-A couple immediate advantages that _Go_ does bring with it include the
+A couple immediate features that I love about Go does bring with it include the
 fact that it is a _compiled_ language making the executable binaries:
 
 1. Self contained with no external libraries required. That means you
