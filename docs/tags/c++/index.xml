@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>c&#43;&#43; on Rusty Eddy</title>
+    <title>C&#43;&#43; on Rusty Eddy</title>
     <link>http://www.rustyeddy.com/tags/c&#43;&#43;/</link>
-    <description>Recent content in c&#43;&#43; on Rusty Eddy</description>
+    <description>Recent content in C&#43;&#43; on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 27 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.rustyeddy.com/tags/c++/index.xml" rel="self" type="application/rss+xml" />
@@ -21,16 +21,6 @@ digital I/O signals across a &amp;ldquo;device network&amp;rdquo;.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Backend, C/C++, nodejs, TCP/IP and Raspberry Pi&lt;/p&gt;
 &lt;/blockquote&gt;</description>
-    </item>
-    
-    <item>
-      <title>Using CMake</title>
-      <link>http://www.rustyeddy.com/notes/cmake/</link>
-      <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.rustyeddy.com/notes/cmake/</guid>
-      <description>The Unix build tool is a declarative dependency tracking build tool. Make was born in 1976, and is still how most C and C++ programs and libraries are built today, including the Linux operating system and GNU Compilers and half of all the worlds systems software.
-So Many Makes, So Little Time In that time, especially during the early years of commercial fragmentation and little benefit from Open Source software, the make tool and corresponding Makefile become splintered in implementation details.</description>
     </item>
     
   </channel>
