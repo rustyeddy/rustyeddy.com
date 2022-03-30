@@ -44,7 +44,7 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="col-md-8 text-center">
       <h1 class="header h2 pb-1">Adding MQTT to the IoT Gateway</h1>
       <p class="leadin align-right text-muted text-center mt-0">
-        The primary function of an IoT Gateway is moving data from one input source to another output with some data storage in between. Our first milestone building our IoT Hub is reading data from MQTT then caching it for the coming REST API we will be building in next Milestone 2.
+        The primary function of an IoT Gateway is moving data from one input source to another output destination with some data conversion and possible storage in between. Our first milestone building our IoT Hub is reading data from MQTT then caching it for the coming REST API we will be building in Milestone 2.
 
       </p>
     </div>
@@ -72,22 +72,23 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="col-md-8 hero-text">
 	<article class="article">
 	  <h2 id="get-ready-to-_go_">Get Ready To <em>Go</em></h2>
-<p>The Ion Hub was written in the <em>Go</em> programming language. I won&rsquo;t get
-into the reasons why <em>Go</em> is an excellent choice of programming
-language for this project, other than to point out two advantages this
+<p>The IoT Gateway was written in the <em>Go</em> programming language. I won&rsquo;t
+get into the reasons why <em>Go</em> is an excellent choice of programming
+language for this project other than to point out two advantages this
 project will benefit from right away:</p>
 <h3 id="go-is-compiled-and-easy-to-distribute">Go is Compiled and easy to distribute</h3>
 <p>First, Go is a <em>compiled</em> language making the resulting executable
 self contained with no external libraries or run time environment to
 rebuild, just copy a single binary, that is it.</p>
-<p>Unlike Node/JS, Python and other interpreted languages, the entire
-run time environment must be recreated everywhere the program is to be
-run. With Go, a single <em>binary</em> can be transferred and run with out any
-additional installation or external dependencies.</p>
+<p>Unlike Node/JS, Python and other interpreted languages the entire run
+time environment must be replicated or recreated everywhere the
+program is to be run. With Go a single <em>binary</em> can be transferred
+and run with out any additional installation steps, build process or
+external dependencies.</p>
 <h3 id="go-executable-are-small-and-fast">Go executable are small and fast</h3>
 <p>A second wonderful advantage Go produces very small and fast programs
 that works well on some of the <em>micro-controllers</em> we are going to be
-working on, for example the <em>Raspberry Pi</em>.</p>
+working on such as the <em>Raspberry Pi</em>.</p>
 <p>As the project moves forward we will discuss a number of other
 interesting aspects of the language that we will be taking advantage
 of as the needs of the project arise.</p>
@@ -126,7 +127,7 @@ receiving the data we want.</p>
 <h2 id="importing-eclipse-tahoe-mqtt">Importing Eclipse Tahoe MQTT</h2>
 <p>We are going to rely on the third party Eclipse Pogo MQTT package for
 Go, all we need to do is import the package directly from it&rsquo;s
-repository, nothing could be easier.</p>
+repository nothing could be easier!</p>
 <p>First the package needs to be fetched with</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>% go get github.com/eclipse/paho.mqtt.golang
 </span></span></code></pre></div><p>Second the package must be <em>imported</em> into the application during
@@ -143,37 +144,39 @@ Broker&rsquo;s address a <em>configuration variable</em>.</p>
 <p><code>Broker string</code> field to the
 <a href="/iot-logs/simple-go-configuration-structure">Config Struct</a> allowing
 us to set the Broker address via the command line. By default we
-assume the broker is running on Localhost, but we can&rsquo;t be sure, the
+assume the broker is running on Localhost but we can&rsquo;t be sure the
 application may call for an MQTT broker in the cloud.</p>
-<blockquote>
 <p>Note I typically install the Mosquito MQTT broker on my Linux
 hub. However an external, global and/or public broker like
-mqtt.mosquitto.org could also be used.</p>
-</blockquote>
+mqtt.eclipse.org could also be used.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>% ./iothub -broker mqtt.eclipse.org
+</span></span></code></pre></div><p>Will cause us to connect to the broker specified in the command line.</p>
 <p>Later we&rsquo;ll see how we can use this Configuration structure to easily
-store and retrieve our configuration to and from a JUNO formatted
+store and retrieve our configuration to and from a JSON formatted
 configuration file.</p>
+<p>Meanwhile back to receiving MQTT packets&hellip;</p>
 <h3 id="mqtt-topics-for-network-and-data-channels">MQTT Topics for Network and Data Channels</h3>
-<p>The Dot-Hub in it&rsquo;s first version will of course collect
+<p>The IoT-Gateway in it&rsquo;s first version will of course collect
 <em>environmental</em> data including <em>temperature</em>, <em>humidity</em>, <em>soil
 moisture</em> and <em>luminescence</em> from various sensors scattered about.</p>
 <p><em>MQTT topics</em> are a hiearchal structure very similar to a file path
 separated with a slash &lsquo;/&rsquo;. For example our environmental data will be
 published as <em>MQTT topics</em> structured like this:</p>
-<p><code>ss/data/{:stationid}/{:sensorid}</code> where the <code>:stationid</code> and
-<code>:sensorid</code> are variables to be replaced by the values extracted
-from the topics path name.</p>
+<pre tabindex="0"><code>ss/data/{:stationid}/{:sensorid}
+</code></pre><p>Where the <code>:stationid</code> and <code>:sensorid</code> are variables to be
+replaced by the values extracted from the topic path-like strings.</p>
 <p>For example a station with an ID <code>10.11.4.22</code> will publish the
 temperature in Fahrenheit with a sensor ID of <code>tempf</code> results in the
-data topic <code>ss/data/10.11.4.22/tempf</code>.</p>
-<h4 id="mqtt-and-wildcards">MQTT and Wildcards</h4>
-<p>Lucky for us MQTT topics can be subscribed using the &lsquo;+&rsquo; <em>wildcard
-symbol</em> allowing us to subscribe to all future messages sent with a
-<em>stationID</em> and/or <em>sensorID</em> that our program did not know about a
-priory (before hand).</p>
+data topic</p>
+<pre tabindex="0"><code>ss/data/10.11.4.22/tempf
+</code></pre><h4 id="mqtt-and-wildcards">MQTT and Wildcards</h4>
+<p>Lucky for us MQTT topics can be subscribed to using the &lsquo;+&rsquo; <em>wildcard
+symbol</em> to capture the <em>stationID</em> and <em>sensorID</em> even though the hub
+did not know about any of these stations or sensors before they were
+published by the <em>Collection Station</em>.</p>
 <p>By subscribing to a single <em>Topic</em> using wildcards we can be ensured
-of receiving data from all stations and sensors using the following
-string with wildcards representing the station and sensor:</p>
+of receiving data from all stations and sensors with the single
+call to hub.Subscribe() below:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>	<span style="color:#a6e22e">hub</span>.<span style="color:#a6e22e">Subscribe</span>(<span style="color:#e6db74">&#34;data&#34;</span>, <span style="color:#e6db74">&#34;ss/data/+/+&#34;</span>, <span style="color:#a6e22e">dataCB</span>)
 </span></span></code></pre></div><p>Where the above call gives our <em>subscription</em> the name &ldquo;data&rdquo;. The
 path <code>ss/data/+/+</code> contains two wildcards represented with the
@@ -235,13 +238,17 @@ invoked every time a value is <em>published</em> to one of the above topics.</p>
 <li>Extract the value delivered</li>
 <li>Save the timestamp for when the data was received</li>
 <li>Use the stationID and sensorID to index the RAM Cache</li>
-<li>Store the &lt;timestamp, value&gt; tuple in the RAM Cache</li>
+<li>Send the &lt;timestamp, value&gt; tuple to the RAM Cache consumer[1].</li>
 </ol>
+<p>[1] The Ram Cache consumer is a <em>Go routine</em> that receives the
+incoming <em>Msg</em> over a <em>channel</em>. We&rsquo;ll talk about these novel
+<em>Inter-Process Communication</em> (IPC) mechanisms supplied by Go when we
+add <em>Websockets</em> during the 4th milestone.</p>
 <p>Following this algorithm our memory usage is going to increase in
 direct proportion to the number of stations, sensors and frequency of
 data publications.</p>
 <blockquote>
-<p>Todo: in the future we&rsquo;ll add configurations that will allow us
+<p>Tod: in the future we&rsquo;ll add configurations that will allow us
 control over how much data to keep in RAM and how long to keep it.</p>
 </blockquote>
 <p>Controlling memory in sophisticated ways is an exercise for
@@ -380,21 +387,19 @@ Sensor which in turn is part of multiple sensors associated with a
 <p>With this model we can easily adjust the number of <em>timestamps</em>
 allowed per sensor to limit the amount of memory to be consumed.</p>
 <h2 id="testing-the-hub">Testing the Hub</h2>
-<p>We now have enough code that we can start compiling and testing our
+<p>We now have enough code that we can build and test our fledgling
 <em>IoT Gateway</em>. First we will of course write the obligatory <em>unit
 tests</em> we all should be writing as part of our Software Development
 Process (SDP) with <em>Test Driven Design (TDD)</em></p>
 <h3 id="go-and-unit-tests">Go and Unit Tests</h3>
-<p>Now that we have some code to test now is the time to start
-writing our unit tests. Fortunately <em>Go</em> comes out of the box
-with a simple, easy to use but very effective <code>testing</code> package.</p>
-<p>We won&rsquo;t go into any detail writing <em>Go unit tests</em> here because there
-are plenty of good documentation on testing Go beginning with the
-test package documentation itself:
-<a href="https://pkg.go.dev/testing">Go Testing package</a></p>
+<p>We won&rsquo;t go into any detail writing <em>Go unit tests</em> here as there
+are plenty of good documentation for writing tests and the best place
+to start is the
+<a href="https://pkg.go.dev/testing">Go Testing package</a>
+documentation itself.</p>
 <p>The <em>unit tests</em> above can be considered <em>white box</em> tests implying
-that the test rig has access to internal data and data structures and
-calls internal functions directly to test.</p>
+that the test rig has access to programs internal data structures and
+functions directly for testing.</p>
 <h3 id="system-tests-with-mqtt">System Tests with MQTT</h3>
 <p>System tests are considered <em>black box</em> and completely <em>outside</em> the
 Gateways external <em>public API</em>.</p>
@@ -402,7 +407,7 @@ Gateways external <em>public API</em>.</p>
 and HTTP they are inherently <em>mockable</em>. Additionally with MQTT we&rsquo;ll
 use the popular <code>mosquito_pub</code> MQTT publishing tool to <em>mock</em> our
 the Collection Stations (CS) that will eventually develop.</p>
-<p>To demonstrate a quick test of the hub we will add a <code>-debug</code> flag
+<p>To demonstrate a quick test of the hub we will add a <code>-verbose</code> flag
 to print data it is received. The data is then cached in RAM and made
 ready for the <em>REST API</em> coming in the next article (milestone).</p>
 <h4 id="mocking-collection-stations">Mocking Collection Stations</h4>
@@ -416,6 +421,7 @@ from the topic <code>ss/data/10.11.1.11/tempf</code>.</p>
 received it&rsquo;s first data point from MQTT. The lower screen shows the
 invocation of the <code>mosquitto_pub</code> command.</p>
 <p><img src="/img/screen-shot-hub-data.png" alt="High Level Sensor Station"></p>
+<h2 id="victory">Victory!</h2>
 <p>In the above screen shot <code>mosquitto_pub</code> published the temperature
 in Fahrenheit to the topic <code>ss/data/10.11.1.11/tempf</code> where the CS
 <em>station id</em> is represented by <code>10.11.1.11</code>. Likewise, the sensorID

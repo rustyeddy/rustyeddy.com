@@ -223,7 +223,7 @@ California State Educators.&lt;/p&gt;</description>
       <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>http://www.rustyeddy.com/notes/iot-gateway-mqtt/</guid>
-      <description>Get Ready To Go The Ion Hub was written in the Go programming language. I won&amp;rsquo;t get into the reasons why Go is an excellent choice of programming language for this project, other than to point out two advantages this project will benefit from right away:
+      <description>Get Ready To Go The IoT Gateway was written in the Go programming language. I won&amp;rsquo;t get into the reasons why Go is an excellent choice of programming language for this project other than to point out two advantages this project will benefit from right away:
 Go is Compiled and easy to distribute First, Go is a compiled language making the resulting executable self contained with no external libraries or run time environment to rebuild, just copy a single binary, that is it.</description>
     </item>
     
