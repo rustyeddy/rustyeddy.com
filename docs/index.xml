@@ -218,16 +218,13 @@ California State Educators.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>A Simple Go Configuration</title>
-      <link>http://www.rustyeddy.com/notes/simple-go-configuration-structure/</link>
-      <pubDate>Sat, 26 Mar 2022 00:00:00 +0000</pubDate>
+      <title>Adding MQTT to the IoT Gateway</title>
+      <link>http://www.rustyeddy.com/notes/iot-gateway-mqtt/</link>
+      <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://www.rustyeddy.com/notes/simple-go-configuration-structure/</guid>
-      <description>I use this same configuration structure and supporting functions in most every Go program I work on. It is pretty simple but makes it easy to keep global variables orgranized and configurable.
-Here is what I do:
-  Create a type config struct
-  Every configurable variable for the program becomes a Member field of the Configuration structure.
-  Register every field of the Configuration Structure with go&amp;rsquo;s builtin flags package such that the flags are parsed when the program starts we can use our configuration variable.</description>
+      <guid>http://www.rustyeddy.com/notes/iot-gateway-mqtt/</guid>
+      <description>Get Ready To Go The Ion Hub was written in the Go programming language. I won&amp;rsquo;t get into the reasons why Go is an excellent choice of programming language for this project, other than to point out two advantages this project will benefit from right away:
+Go is Compiled and easy to distribute First, Go is a compiled language making the resulting executable self contained with no external libraries or run time environment to rebuild, just copy a single binary, that is it.</description>
     </item>
     
     <item>
@@ -240,13 +237,16 @@ Here is what I do:
     </item>
     
     <item>
-      <title>Adding MQTT to the IoT Gateway</title>
-      <link>http://www.rustyeddy.com/notes/iot-gateway-mqtt/</link>
-      <pubDate>Thu, 04 Nov 2021 00:00:00 +0000</pubDate>
+      <title>A Simple Go Configuration</title>
+      <link>http://www.rustyeddy.com/notes/simple-go-configuration-structure/</link>
+      <pubDate>Fri, 26 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://www.rustyeddy.com/notes/iot-gateway-mqtt/</guid>
-      <description>Get Ready To Go The Ion Hub was written in the Go programming language. I won&amp;rsquo;t get into the reasons why Go is an excellent choice of programming language for this project, other than to point out two advantages this project will benefit from right away:
-Go is Compiled and easy to distribute First, Go is a compiled language making the resulting executable self contained with no external libraries or run time environment to rebuild, just copy a single binary, that is it.</description>
+      <guid>http://www.rustyeddy.com/notes/simple-go-configuration-structure/</guid>
+      <description>I use this same configuration structure and supporting functions in most every Go program I work on. It is pretty simple but makes it easy to keep global variables orgranized and configurable.
+Here is what I do:
+  Create a type config struct
+  Every configurable variable for the program becomes a Member field of the Configuration structure.
+  Register every field of the Configuration Structure with go&amp;rsquo;s builtin flags package such that the flags are parsed when the program starts we can use our configuration variable.</description>
     </item>
     
     <item>

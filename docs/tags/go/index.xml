@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Go on Rusty Eddy</title>
+    <title>go on Rusty Eddy</title>
     <link>http://www.rustyeddy.com/tags/go/</link>
-    <description>Recent content in Go on Rusty Eddy</description>
+    <description>Recent content in go on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.rustyeddy.com/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.rustyeddy.com/tags/go/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sugo Music Dashboard</title>
       <link>http://www.rustyeddy.com/resume/clients/sugo-music/</link>
@@ -20,6 +20,19 @@ React.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Go, React, REST API, HTTP, HTML, JavaScript, Webapp, fullstack&lt;/p&gt;
 &lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>A Simple Go Configuration</title>
+      <link>http://www.rustyeddy.com/notes/simple-go-configuration-structure/</link>
+      <pubDate>Fri, 26 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rustyeddy.com/notes/simple-go-configuration-structure/</guid>
+      <description>I use this same configuration structure and supporting functions in most every Go program I work on. It is pretty simple but makes it easy to keep global variables orgranized and configurable.
+Here is what I do:
+  Create a type config struct
+  Every configurable variable for the program becomes a Member field of the Configuration structure.
+  Register every field of the Configuration Structure with go&amp;rsquo;s builtin flags package such that the flags are parsed when the program starts we can use our configuration variable.</description>
     </item>
     
   </channel>

@@ -65,14 +65,20 @@
     <loc>http://www.rustyeddy.com/resume/jobs/csu-chancelor/</loc>
     <lastmod>1995-08-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.rustyeddy.com/notes/simple-go-configuration-structure/</loc>
-    <lastmod>2022-03-26T00:00:00+00:00</lastmod>
+    <loc>http://www.rustyeddy.com/notes/iot-gateway-mqtt/</loc>
+    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/quotes/5-whys/</loc>
     <lastmod>2022-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.rustyeddy.com/notes/iot-gateway-mqtt/</loc>
-    <lastmod>2021-11-04T00:00:00+00:00</lastmod>
+    <loc>http://www.rustyeddy.com/notes/simple-go-configuration-structure/</loc>
+    <lastmod>2021-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/go/</loc>
+    <lastmod>2021-03-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/</loc>
+    <lastmod>2021-03-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/tags/amazon-web-services-aws/</loc>
     <lastmod>2021-01-27T00:00:00+00:00</lastmod>
@@ -83,9 +89,6 @@
     <loc>http://www.rustyeddy.com/tags/fullstack/</loc>
     <lastmod>2021-01-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.rustyeddy.com/tags/go/</loc>
-    <lastmod>2021-01-27T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://www.rustyeddy.com/tags/google-cloud-platform/</loc>
     <lastmod>2021-01-27T00:00:00+00:00</lastmod>
   </url><url>
@@ -93,9 +96,6 @@
     <lastmod>2021-01-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/tags/react/</loc>
-    <lastmod>2021-01-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.rustyeddy.com/tags/</loc>
     <lastmod>2021-01-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/iot-project/</loc>
