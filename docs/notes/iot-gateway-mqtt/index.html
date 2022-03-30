@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+
+<title>Adding MQTT to the IoT Gateway</title>
+
+<script>(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
+0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+for(h=0;h<l.length;h++)c(e,l[h]);var f="set set_once union unset remove delete".split(" ");e.get_group=function(){function a(c){b[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));e.push([d,call2])}}for(var b={},d=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<f.length;c++)a(f[c]);return b};a._i.push([b,d,g])};a.__SV=1.2;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js";d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d)}})(document,window.mixpanel||[]);
+mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</script>
+
+
+<body><header class="container bg-white">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <a class="navbar-brand text-muted text-monospace" href="/"><span claa="h1">rusty eddy:</span></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <nav class="navbar-nav w-100 justify-content-end">
+	<div class="nav w-100">
+  	  <a class="nav-link" href="/iot-project">IoT &nbsp</a>
+  	  <a class="nav-link" href="/notes">notes &nbsp</a>
+  	  <a class="nav-link" href="/resume"> resume &nbsp</a> 
+  	  <a class="nav-link" href="/about"> about &nbsp</a> 
+	</div>
+      </nav>
+    </div>
+  </nav>
+</header>
+<div class="jumbotron border-top border-bottom bg-white" >
+  <div class="row">
+    <div class="col-md"></div>
+    <div class="col-md-8 text-center">
+      <h1 class="header h2 pb-1">Adding MQTT to the IoT Gateway</h1>
+      <p class="leadin align-right text-muted text-center mt-0">
+        The primary function of an IoT Gateway is moving data from one input source to another output with some data storage in between. Our first milestone building our IoT Hub is reading data from MQTT then caching it for the coming REST API we will be building in next Milestone 2.
+
+      </p>
+    </div>
+    <div class="col-md"></div>
+  </div>
+
+  <div class="row text-center smaller-text">
+    <div class="col"></div>
+    <div class="col-8">
+      <nav class="nav justify-content-center">
+        
+        
+        
+        
+        
+      </nav>
+
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
+<div id="main body">
+<div class="container"><div class="row">
+    <div class="col"></div>
+    <div class="col-md-8 hero-text">
+	<article class="article">
+	  <h2 id="get-ready-to-_go_">Get Ready To <em>Go</em></h2>
+<p>The Ion Hub was written in the <em>Go</em> programming language. I won&rsquo;t get
+into the reasons why <em>Go</em> is an excellent choice of programming
+language for this project, other than to point out two advantages this
+project will benefit from right away:</p>
+<h3 id="go-is-compiled-and-easy-to-distribute">Go is Compiled and easy to distribute</h3>
+<p>First, Go is a <em>compiled</em> language making the resulting executable
+self contained with no external libraries or run time environment to
+rebuild, just copy a single binary, that is it.</p>
+<p>Unlike Node/JS, Python and other interpreted languages, the entire
+run time environment must be recreated everywhere the program is to be
+run. With Go, a single <em>binary</em> can be transferred and run with out any
+additional installation or external dependencies.</p>
+<h3 id="go-executable-are-small-and-fast">Go executable are small and fast</h3>
+<p>A second wonderful advantage Go produces very small and fast programs
+that works well on some of the <em>micro-controllers</em> we are going to be
+working on, for example the <em>Raspberry Pi</em>.</p>
+<p>As the project moves forward we will discuss a number of other
+interesting aspects of the language that we will be taking advantage
+of as the needs of the project arise.</p>
+<h3 id="install-the-go-compiler">Install The Go Compiler</h3>
+<p>Go is very easy to setup. Either follow directions on the
+<a href="https://golang.org">Go Website</a> or if your on Ubuntu you can just run
+the command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>snap install go --classic
+</span></span></code></pre></div><p>Make sure you have go installed by running:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>% go version
+</span></span><span style="display:flex;"><span>go version go1.17.8 linux/amd64
+</span></span></code></pre></div><h2 id="the-main-function">The Main Function</h2>
+<p>Let&rsquo;s build a simple <code>Hello, world!</code> program to make sure our set
+up is ready and that we can actually write, compile and run a Go
+program. Go is built around packages, every executable must have a
+<code>package main</code> and <code>main()</code> function (similar to C), like
+so:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Hello, world!&#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Now run the little program to make sure everything is working as
+expected:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>% go mod init github.com/iot-project/iothub
+</span></span><span style="display:flex;"><span>% go mod tidy
+</span></span><span style="display:flex;"><span>% go run .
+</span></span><span style="display:flex;"><span>Hello, World!
+</span></span></code></pre></div><p>If all goes well (and why would it not?) we&rsquo;ll see <code>Hello, World!</code> printed on our screen. Fantastic!</p>
+<p>Now let&rsquo;s get to reading some MQTT data using the
+<a href="https://github.com/eclipse/paho.mqtt.golang">Paho MQTT Go library</a>.
+This nice little library is going to make it easy for us to start
+receiving the data we want.</p>
+<h2 id="importing-eclipse-tahoe-mqtt">Importing Eclipse Tahoe MQTT</h2>
+<p>We are going to rely on the third party Eclipse Pogo MQTT package for
+Go, all we need to do is import the package directly from it&rsquo;s
+repository, nothing could be easier.</p>
+<p>First the package needs to be fetched with</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>% go get github.com/eclipse/paho.mqtt.golang
+</span></span></code></pre></div><p>Second the package must be <em>imported</em> into the application during
+compile time with this single line of code.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#a6e22e">mqtt</span> <span style="color:#e6db74">&#34;github.com/eclipse/paho.mqtt.golang&#34;</span>)
+</span></span></code></pre></div><p>As matter of fact here is the entire snippet for importing the MQTT
+package and connecting to the MQTT with this code:</p>
+<script type="application/javascript" src="https://gist.github.com/rustyeddy/482556caef8010b1b0cc266007e9aec6.js"></script>
+
+<p>We can now connect to an MQTT Broker, knowing the MQTT Broker may
+change from installation to installation we will need to make the
+Broker&rsquo;s address a <em>configuration variable</em>.</p>
+<h3 id="the-configuration-struct">The Configuration Struct</h3>
+<p><code>Broker string</code> field to the
+<a href="/iot-logs/simple-go-configuration-structure">Config Struct</a> allowing
+us to set the Broker address via the command line. By default we
+assume the broker is running on Localhost, but we can&rsquo;t be sure, the
+application may call for an MQTT broker in the cloud.</p>
+<blockquote>
+<p>Note I typically install the Mosquito MQTT broker on my Linux
+hub. However an external, global and/or public broker like
+mqtt.mosquitto.org could also be used.</p>
+</blockquote>
+<p>Later we&rsquo;ll see how we can use this Configuration structure to easily
+store and retrieve our configuration to and from a JUNO formatted
+configuration file.</p>
+<h3 id="mqtt-topics-for-network-and-data-channels">MQTT Topics for Network and Data Channels</h3>
+<p>The Dot-Hub in it&rsquo;s first version will of course collect
+<em>environmental</em> data including <em>temperature</em>, <em>humidity</em>, <em>soil
+moisture</em> and <em>luminescence</em> from various sensors scattered about.</p>
+<p><em>MQTT topics</em> are a hiearchal structure very similar to a file path
+separated with a slash &lsquo;/&rsquo;. For example our environmental data will be
+published as <em>MQTT topics</em> structured like this:</p>
+<p><code>ss/data/{:stationid}/{:sensorid}</code> where the <code>:stationid</code> and
+<code>:sensorid</code> are variables to be replaced by the values extracted
+from the topics path name.</p>
+<p>For example a station with an ID <code>10.11.4.22</code> will publish the
+temperature in Fahrenheit with a sensor ID of <code>tempf</code> results in the
+data topic <code>ss/data/10.11.4.22/tempf</code>.</p>
+<h4 id="mqtt-and-wildcards">MQTT and Wildcards</h4>
+<p>Lucky for us MQTT topics can be subscribed using the &lsquo;+&rsquo; <em>wildcard
+symbol</em> allowing us to subscribe to all future messages sent with a
+<em>stationID</em> and/or <em>sensorID</em> that our program did not know about a
+priory (before hand).</p>
+<p>By subscribing to a single <em>Topic</em> using wildcards we can be ensured
+of receiving data from all stations and sensors using the following
+string with wildcards representing the station and sensor:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>	<span style="color:#a6e22e">hub</span>.<span style="color:#a6e22e">Subscribe</span>(<span style="color:#e6db74">&#34;data&#34;</span>, <span style="color:#e6db74">&#34;ss/data/+/+&#34;</span>, <span style="color:#a6e22e">dataCB</span>)
+</span></span></code></pre></div><p>Where the above call gives our <em>subscription</em> the name &ldquo;data&rdquo;. The
+path <code>ss/data/+/+</code> contains two wildcards represented with the
+<code>+</code> character. The third argument is the <em>callback</em> that will be
+invoked every time a value is <em>published</em> to one of the above topics.</p>
+<p>Here is the <code>Subscribe()</code> function from the IoT gateway:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">s</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Hub</span>) <span style="color:#a6e22e">Subscribe</span>(<span style="color:#a6e22e">id</span> <span style="color:#66d9ef">string</span>, <span style="color:#a6e22e">path</span> <span style="color:#66d9ef">string</span>, <span style="color:#a6e22e">f</span> <span style="color:#a6e22e">mqtt</span>.<span style="color:#a6e22e">MessageHandler</span>) {
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">sub</span> <span style="color:#f92672">:=</span> <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">Subscriber</span>{<span style="color:#a6e22e">id</span>, <span style="color:#a6e22e">path</span>, <span style="color:#a6e22e">f</span>, <span style="color:#66d9ef">nil</span>}
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">Subscribers</span>[<span style="color:#a6e22e">id</span>] = <span style="color:#a6e22e">sub</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">qos</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">token</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">mqttc</span>.<span style="color:#a6e22e">Subscribe</span>(<span style="color:#a6e22e">path</span>, byte(<span style="color:#a6e22e">qos</span>), <span style="color:#a6e22e">f</span>); <span style="color:#a6e22e">token</span>.<span style="color:#a6e22e">Wait</span>() <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">token</span>.<span style="color:#a6e22e">Error</span>() <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+</span></span><span style="display:flex;"><span>		panic(<span style="color:#a6e22e">token</span>.<span style="color:#a6e22e">Error</span>())
+</span></span><span style="display:flex;"><span>	} <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">config</span>.<span style="color:#a6e22e">Verbose</span> {
+</span></span><span style="display:flex;"><span>			<span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;subscribe token: %v&#34;</span>, <span style="color:#a6e22e">token</span>)
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">id</span>, <span style="color:#e6db74">&#34; subscribed to &#34;</span>, <span style="color:#a6e22e">path</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>and the callback function that is invoked every time new data arrives:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// TimeseriesCB call and parse callback data
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">dataCB</span>(<span style="color:#a6e22e">mc</span> <span style="color:#a6e22e">mqtt</span>.<span style="color:#a6e22e">Client</span>, <span style="color:#a6e22e">mqttmsg</span> <span style="color:#a6e22e">mqtt</span>.<span style="color:#a6e22e">Message</span>) {
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">topic</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">mqttmsg</span>.<span style="color:#a6e22e">Topic</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// extract the station from the topic
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">paths</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">strings</span>.<span style="color:#a6e22e">Split</span>(<span style="color:#a6e22e">topic</span>, <span style="color:#e6db74">&#34;/&#34;</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">category</span><span style="color:#f92672">:=</span> <span style="color:#a6e22e">paths</span>[<span style="color:#ae81ff">1</span>] 
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">station</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">paths</span>[<span style="color:#ae81ff">2</span>]
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">sensor</span>  <span style="color:#f92672">:=</span> <span style="color:#a6e22e">paths</span>[<span style="color:#ae81ff">3</span>]
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">payload</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">mqttmsg</span>.<span style="color:#a6e22e">Payload</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">consumers</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">hub</span>.<span style="color:#a6e22e">GetConsumers</span>(<span style="color:#a6e22e">category</span>) 
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">consumers</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">nil</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;DataCB no consumers for &#34;</span>, <span style="color:#a6e22e">topic</span>)
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span>					<span style="color:#75715e">// nobody is listening
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;MQTT Message topic %s - value %s\n&#34;</span>, <span style="color:#a6e22e">topic</span>, string(<span style="color:#a6e22e">payload</span>))
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">switch</span> (<span style="color:#a6e22e">category</span>) {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;data&#34;</span>:
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">msg</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">Msg</span>{}
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">msg</span>.<span style="color:#a6e22e">Station</span> = <span style="color:#a6e22e">station</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">msg</span>.<span style="color:#a6e22e">Sensor</span> = <span style="color:#a6e22e">sensor</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">msg</span>.<span style="color:#a6e22e">Data</span> = <span style="color:#a6e22e">payload</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">msg</span>.<span style="color:#a6e22e">Time</span> = <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Now</span>().<span style="color:#a6e22e">Unix</span>()
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">for</span> <span style="color:#a6e22e">_</span>, <span style="color:#a6e22e">consumer</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">consumers</span> {
+</span></span><span style="display:flex;"><span>			<span style="color:#a6e22e">consumer</span>.<span style="color:#a6e22e">GetRecvQ</span>() <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">msg</span>
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">default</span>:
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Warning: do not know how to handle&#34;</span>, <span style="color:#a6e22e">topic</span>)
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h4 id="mqtt-handling-incoming-data">MQTT Handling Incoming Data</h4>
+<p>The <em>callback</em> shown above is pretty simple:</p>
+<ol>
+<li>Extract the <em>stationID</em> and <em>sensorID</em> from the MQTT topic</li>
+<li>Extract the value delivered</li>
+<li>Save the timestamp for when the data was received</li>
+<li>Use the stationID and sensorID to index the RAM Cache</li>
+<li>Store the &lt;timestamp, value&gt; tuple in the RAM Cache</li>
+</ol>
+<p>Following this algorithm our memory usage is going to increase in
+direct proportion to the number of stations, sensors and frequency of
+data publications.</p>
+<blockquote>
+<p>Todo: in the future we&rsquo;ll add configurations that will allow us
+control over how much data to keep in RAM and how long to keep it.</p>
+</blockquote>
+<p>Controlling memory in sophisticated ways is an exercise for
+later. Until then we&rsquo;ll just put a limit on the number of data points
+that can be kept, like say 1,000 so we don&rsquo;t perpetually run out of
+memory before implementing more complex memory controls.</p>
+<h2 id="the-msg-data-structure">The Msg Data Structure</h2>
+<p>Data is reformatted into the following <code>Msg</code> struct by the
+<code>dataCB()</code> callback for every new <em>datapoint</em>. The structure is
+defined as</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Msg</span> <span style="color:#66d9ef">struct</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">StationID</span>   <span style="color:#66d9ef">string</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">SensorID</span>    <span style="color:#66d9ef">string</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Timestamp</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Value</span>       <span style="color:#66d9ef">interface</span>{}
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><p>The interface value allows for an arbitrary value type. For example
+Value can be an integer, floating point or a string formatted as
+JSON.</p>
+<p>The <code>Msg</code> structure is fine for handling the immediate incoming
+data and passing it along to a consumer, it is not efficient for
+storing in memory for a quick API response.</p>
+<h2 id="internal-data-model">Internal Data Model</h2>
+<p>Data will be <em>cached</em> in RAM with the following format built
+from Datapoint tuples &lt;timestamp, value&gt; as a series hanging from a
+Sensor which in turn is part of multiple sensors associated with a
+<em>Collection Station</em>.</p>
+<hr>
+
+
+
+<div class="goat svg-container ">
+  
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      font-family="Menlo,Lucida Console,monospace"
+      
+        viewBox="0 0 488 169"
+      >
+      <g transform='translate(8,16)'>
+<path d='M 24,0 L 112,0' fill='none' stroke='currentColor'></path>
+<path d='M 176,0 L 256,0' fill='none' stroke='currentColor'></path>
+<path d='M 120,16 L 136,16' fill='none' stroke='currentColor'></path>
+<path d='M 136,16 L 160,16' fill='none' stroke='currentColor'></path>
+<path d='M 272,16 L 288,16' fill='none' stroke='currentColor'></path>
+<path d='M 24,32 L 112,32' fill='none' stroke='currentColor'></path>
+<path d='M 176,32 L 256,32' fill='none' stroke='currentColor'></path>
+<path d='M 176,64 L 256,64' fill='none' stroke='currentColor'></path>
+<path d='M 136,80 L 160,80' fill='none' stroke='currentColor'></path>
+<path d='M 272,80 L 288,80' fill='none' stroke='currentColor'></path>
+<path d='M 176,96 L 256,96' fill='none' stroke='currentColor'></path>
+<path d='M 24,112 L 112,112' fill='none' stroke='currentColor'></path>
+<path d='M 120,128 L 136,128' fill='none' stroke='currentColor'></path>
+<path d='M 24,144 L 112,144' fill='none' stroke='currentColor'></path>
+<path d='M 24,0 L 24,32' fill='none' stroke='currentColor'></path>
+<path d='M 24,112 L 24,144' fill='none' stroke='currentColor'></path>
+<path d='M 80,48 L 80,64' fill='none' stroke='currentColor'></path>
+<path d='M 80,64 L 80,80' fill='none' stroke='currentColor'></path>
+<path d='M 80,80 L 80,96' fill='none' stroke='currentColor'></path>
+<path d='M 112,0 L 112,32' fill='none' stroke='currentColor'></path>
+<path d='M 112,112 L 112,144' fill='none' stroke='currentColor'></path>
+<path d='M 136,16 L 136,80' fill='none' stroke='currentColor'></path>
+<path d='M 176,0 L 176,32' fill='none' stroke='currentColor'></path>
+<path d='M 176,64 L 176,96' fill='none' stroke='currentColor'></path>
+<path d='M 256,0 L 256,32' fill='none' stroke='currentColor'></path>
+<path d='M 256,64 L 256,96' fill='none' stroke='currentColor'></path>
+<polygon points='144.000000,128.000000 132.000000,122.400002 132.000000,133.600006' fill='currentColor' transform='rotate(0.000000, 136.000000, 128.000000)'></polygon>
+<polygon points='168.000000,16.000000 156.000000,10.400000 156.000000,21.600000' fill='currentColor' transform='rotate(0.000000, 160.000000, 16.000000)'></polygon>
+<polygon points='168.000000,80.000000 156.000000,74.400002 156.000000,85.599998' fill='currentColor' transform='rotate(0.000000, 160.000000, 80.000000)'></polygon>
+<polygon points='296.000000,16.000000 284.000000,10.400000 284.000000,21.600000' fill='currentColor' transform='rotate(0.000000, 288.000000, 16.000000)'></polygon>
+<polygon points='296.000000,80.000000 284.000000,74.400002 284.000000,85.599998' fill='currentColor' transform='rotate(0.000000, 288.000000, 80.000000)'></polygon>
+<text text-anchor='middle' x='40' y='20' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='40' y='132' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='48' y='20' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='48' y='132' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='56' y='20' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='56' y='132' fill='currentColor' style='font-size:1em'>a</text>
+<text text-anchor='middle' x='64' y='20' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='64' y='132' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='72' y='20' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='72' y='132' fill='currentColor' style='font-size:1em'>i</text>
+<text text-anchor='middle' x='80' y='20' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='80' y='132' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='88' y='20' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='88' y='132' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='96' y='20' fill='currentColor' style='font-size:1em'>1</text>
+<text text-anchor='middle' x='96' y='132' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='192' y='20' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='192' y='84' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='200' y='20' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='200' y='84' fill='currentColor' style='font-size:1em'>e</text>
+<text text-anchor='middle' x='208' y='20' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='208' y='84' fill='currentColor' style='font-size:1em'>n</text>
+<text text-anchor='middle' x='216' y='20' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='216' y='84' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='224' y='20' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='224' y='84' fill='currentColor' style='font-size:1em'>o</text>
+<text text-anchor='middle' x='232' y='20' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='232' y='84' fill='currentColor' style='font-size:1em'>r</text>
+<text text-anchor='middle' x='240' y='20' fill='currentColor' style='font-size:1em'>1</text>
+<text text-anchor='middle' x='240' y='84' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='304' y='20' fill='currentColor' style='font-size:1em'>[</text>
+<text text-anchor='middle' x='304' y='84' fill='currentColor' style='font-size:1em'>[</text>
+<text text-anchor='middle' x='320' y='20' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='320' y='84' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='328' y='20' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='328' y='84' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='336' y='20' fill='currentColor' style='font-size:1em'>1</text>
+<text text-anchor='middle' x='336' y='84' fill='currentColor' style='font-size:1em'>1</text>
+<text text-anchor='middle' x='344' y='20' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='344' y='84' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='360' y='20' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='360' y='84' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='368' y='20' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='368' y='84' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='376' y='20' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='376' y='84' fill='currentColor' style='font-size:1em'>2</text>
+<text text-anchor='middle' x='384' y='20' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='384' y='84' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='400' y='20' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='400' y='84' fill='currentColor' style='font-size:1em'>t</text>
+<text text-anchor='middle' x='408' y='20' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='408' y='84' fill='currentColor' style='font-size:1em'>s</text>
+<text text-anchor='middle' x='416' y='20' fill='currentColor' style='font-size:1em'>3</text>
+<text text-anchor='middle' x='416' y='84' fill='currentColor' style='font-size:1em'>3</text>
+<text text-anchor='middle' x='424' y='20' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='424' y='84' fill='currentColor' style='font-size:1em'>,</text>
+<text text-anchor='middle' x='472' y='20' fill='currentColor' style='font-size:1em'>]</text>
+<text text-anchor='middle' x='472' y='84' fill='currentColor' style='font-size:1em'>]</text>
+</g>
+
+    </svg>
+  
+</div>
+<hr>
+<p>With this model we can easily adjust the number of <em>timestamps</em>
+allowed per sensor to limit the amount of memory to be consumed.</p>
+<h2 id="testing-the-hub">Testing the Hub</h2>
+<p>We now have enough code that we can start compiling and testing our
+<em>IoT Gateway</em>. First we will of course write the obligatory <em>unit
+tests</em> we all should be writing as part of our Software Development
+Process (SDP) with <em>Test Driven Design (TDD)</em></p>
+<h3 id="go-and-unit-tests">Go and Unit Tests</h3>
+<p>Now that we have some code to test now is the time to start
+writing our unit tests. Fortunately <em>Go</em> comes out of the box
+with a simple, easy to use but very effective <code>testing</code> package.</p>
+<p>We won&rsquo;t go into any detail writing <em>Go unit tests</em> here because there
+are plenty of good documentation on testing Go beginning with the
+test package documentation itself:
+<a href="https://pkg.go.dev/testing">Go Testing package</a></p>
+<p>The <em>unit tests</em> above can be considered <em>white box</em> tests implying
+that the test rig has access to internal data and data structures and
+calls internal functions directly to test.</p>
+<h3 id="system-tests-with-mqtt">System Tests with MQTT</h3>
+<p>System tests are considered <em>black box</em> and completely <em>outside</em> the
+Gateways external <em>public API</em>.</p>
+<p>This is one of the beautiful things about testing protocols like MQTT
+and HTTP they are inherently <em>mockable</em>. Additionally with MQTT we&rsquo;ll
+use the popular <code>mosquito_pub</code> MQTT publishing tool to <em>mock</em> our
+the Collection Stations (CS) that will eventually develop.</p>
+<p>To demonstrate a quick test of the hub we will add a <code>-debug</code> flag
+to print data it is received. The data is then cached in RAM and made
+ready for the <em>REST API</em> coming in the next article (milestone).</p>
+<h4 id="mocking-collection-stations">Mocking Collection Stations</h4>
+<p>Thankfully it is very easy to <em>mock</em> a <em>Collector</em> by publishing fake
+environmental data using the MQTT publishing utility <em>mosquito_pub</em>.</p>
+<p>For example, the following command</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>% mosquitto_pub -t ss/data/10.11.1.1/tempf -m 98.6
+</span></span></code></pre></div><p>will fake the data value <code>98.6</code> from sensor <code>tempf</code> extracted
+from the topic <code>ss/data/10.11.1.11/tempf</code>.</p>
+<p>The upper screenshot shows logs from the <em>IoT Hub</em> having just
+received it&rsquo;s first data point from MQTT. The lower screen shows the
+invocation of the <code>mosquitto_pub</code> command.</p>
+<p><img src="/img/screen-shot-hub-data.png" alt="High Level Sensor Station"></p>
+<p>In the above screen shot <code>mosquitto_pub</code> published the temperature
+in Fahrenheit to the topic <code>ss/data/10.11.1.11/tempf</code> where the CS
+<em>station id</em> is represented by <code>10.11.1.11</code>. Likewise, the sensorID
+is represented by the string <code>tempf</code>. The value passed in 98.6
+degrees Fahrenheit.</p>
+<p>We can see the Hub receiving the data and parsing the <em>stationID</em> and
+<em>sensorID</em> from the topic string. The data is parsed, formatted and
+temporarily saved in RAM.</p>
+<h2 id="http-rest-server-next-">HTTP REST Server Next &hellip;</h2>
+<p>The gateway now receives periodic data from one of more stations, each
+with one or more sensors. The data is reformatted and stored as a
+<em>time-series</em> in RAM.</p>
+<p>Now it is time build our REST API get the data out of the <em>MQTT
+Gateway</em>.</p>
+<p>In this next article we are going to import Go&rsquo;s builtin <em>net/http</em>
+package to setup our HTTP server that will in turn handle our <em>REST
+Endpoints</em>.  This same package will later allow us to serve up the IoT
+Gateway web app.</p>
+<p><a href="/iot-project/iot-qateway-rest">Next Adding the REST API</a></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+
+	</article>
+    </div>
+    <div class="col"></div>
+</div>
+</div>
+
+
+	</div><div class="d-flex justify-content-center">
+  <script async data-uid="50dfcceaf3" src="https://skilled-producer-5787.ck.page/50dfcceaf3/index.js"></script>
+</div>
+
+<footer id="footer" class="container-fluid footer small-text pt-4 border-top">
+  <section class="row">
+    <div class="col"></div>
+    <div class="col text-right">
+      <div class="address">419 Main St. #439</div>
+      <div class="city">Huntington Beach, CA. 92648</div>
+    </div>
+    <div class="col-3 text-center">
+      <div>
+        Last update ~
+        
+	
+        Thursday, Nov 4, 2021
+	
+        
+      </div>
+      <div>site by <a href="/">Eddy Consulting, LLC.</a> ~ &#xA9; 2008 to 2020 </div>
+    </div>
+    <div class="col">
+      <div class="text-left">
+	<div class="phone">(714) 362-5402</div>
+	<a href="https://github.com/rustyeddy">github</a> .
+	<a href="https://twitter.com/rustyeddy">twitter</a> .
+	<a href="https://linkedin.com/rustyeddy">linkedin</a><br/>	    
+      </div>
+    </div>
+    <div class="col"></div>
+  </section>
+</footer>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19940083-13"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+
+ gtag('config', 'UA-19940083-13');
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+    </body>
+</html>
