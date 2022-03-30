@@ -1,6 +1,6 @@
 ---
 title: Adding MQTT to the IoT Gateway
-date: 2021-11-04
+date: 2022-03-29
 description: >
   The primary function of an IoT Gateway is moving data from one input
   source to another output with some data storage in between. Our

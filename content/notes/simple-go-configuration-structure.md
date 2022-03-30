@@ -1,10 +1,12 @@
 ---
 title: A Simple Go Configuration
-date: 2022-03-26
+date: 2021-03-26
 description: >
   Configurations are part of most every program, configurations can be
   handled in a number of different ways. This is my simple method for
   handing configurations variables in Go. Check it out!
+category: util
+tags: go
 ---
 
 I use this same configuration structure and supporting functions in
