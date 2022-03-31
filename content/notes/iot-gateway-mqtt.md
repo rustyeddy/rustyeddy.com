@@ -10,6 +10,9 @@ description: >
 category: iot-gateway
 ---
 
+This is the beginning of the implementation of Milestone 1 of the
+_Organic Gardner (OG)_ [IoT-Project](/iot-project).
+
 ## Get Ready To _Go_
 
 The IoT Gateway was written in the _Go_ programming language. I won't
