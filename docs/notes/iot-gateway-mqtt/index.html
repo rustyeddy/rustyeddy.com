@@ -44,7 +44,7 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="col-md-8 text-center">
       <h1 class="header h2 pb-1">Adding MQTT to the IoT Gateway</h1>
       <p class="leadin align-right text-muted text-center mt-0">
-        The primary function of an IoT Gateway is moving data from one input source to another output destination with some data conversion and possible storage in between. Our first milestone building our IoT Hub is reading data from MQTT then caching it for the coming REST API we will be building in Milestone 2.
+        The primary function of an IoT Gateway is moving data from one input source to another output destination with some data conversion and storage in between. Our first milestone building the IoT Gateway is reading data from MQTT then holding it in RAM for the upcoming REST API we will build for Milestone 2.
 
       </p>
     </div>
@@ -55,6 +55,8 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="col"></div>
     <div class="col-8">
       <nav class="nav justify-content-center">
+        
+        <a class="nav-link" href="https://github.com/iot-station/iothub">https://github.com/iot-station/iothub</a>
         
         
         
@@ -71,99 +73,113 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="col"></div>
     <div class="col-md-8 hero-text">
 	<article class="article">
-	  <p>This is the beginning of the implementation of Milestone 1 of the
-<em>Organic Gardner (OG)</em> <a href="/iot-project">IoT-Project</a>.</p>
-<h2 id="get-ready-to-_go_">Get Ready To <em>Go</em></h2>
-<p>The IoT Gateway was written in the <em>Go</em> programming language. I won&rsquo;t
-get into the reasons why <em>Go</em> is an excellent choice of programming
-language for this project other than to point out two advantages this
-project will benefit from right away:</p>
-<h3 id="go-is-compiled-and-easy-to-distribute">Go is Compiled and easy to distribute</h3>
-<p>First, Go is a <em>compiled</em> language making the resulting executable
-self contained with no external libraries or run time environment to
-rebuild, just copy a single binary, that is it.</p>
-<p>Unlike Node/JS, Python and other interpreted languages the entire run
-time environment must be replicated or recreated everywhere the
-program is to be run. With Go a single <em>binary</em> can be transferred
-and run with out any additional installation steps, build process or
-external dependencies.</p>
-<h3 id="go-executable-are-small-and-fast">Go executable are small and fast</h3>
-<p>A second wonderful advantage Go produces very small and fast programs
-that works well on some of the <em>micro-controllers</em> we are going to be
-working on such as the <em>Raspberry Pi</em>.</p>
-<p>As the project moves forward we will discuss a number of other
-interesting aspects of the language that we will be taking advantage
-of as the needs of the project arise.</p>
-<h3 id="install-the-go-compiler">Install The Go Compiler</h3>
-<p>Go is very easy to setup. Either follow directions on the
-<a href="https://golang.org">Go Website</a> or if your on Ubuntu you can just run
-the command:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>snap install go --classic
-</span></span></code></pre></div><p>Make sure you have go installed by running:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>% go version
-</span></span><span style="display:flex;"><span>go version go1.17.8 linux/amd64
-</span></span></code></pre></div><h2 id="the-main-function">The Main Function</h2>
-<p>Let&rsquo;s build a simple <code>Hello, world!</code> program to make sure our set
-up is ready and that we can actually write, compile and run a Go
-program. Go is built around packages, every executable must have a
-<code>package main</code> and <code>main()</code> function (similar to C), like
-so:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Hello, world!&#34;</span>)
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>Now run the little program to make sure everything is working as
-expected:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>% go mod init github.com/iot-project/iothub
-</span></span><span style="display:flex;"><span>% go mod tidy
-</span></span><span style="display:flex;"><span>% go run .
-</span></span><span style="display:flex;"><span>Hello, World!
-</span></span></code></pre></div><p>If all goes well (and why would it not?) we&rsquo;ll see <code>Hello, World!</code> printed on our screen. Fantastic!</p>
-<p>Now let&rsquo;s get to reading some MQTT data using the
-<a href="https://github.com/eclipse/paho.mqtt.golang">Paho MQTT Go library</a>.
+	  <p>This page documents the beginning of the <em>Organic Gardner (OG)</em> <a href="/iot-project">IoT
+Project</a> begining with Milestone 1. If you want to
+program along, but have not yet worked with the <em>Go</em> programming
+language here in this <a href="/get-ready-to-go">Getting ready to Go</a>
+introduction.</p>
+<h2 id="briefly-about-mqtt">Briefly About MQTT</h2>
+<p><a href="https://mqtt.org">MQTT</a> is the <em>messaging</em> protocol that a
+<em>Collector</em> will use to periodically publish sensor data
+(e.g. temperature and humidity) to the <em>IoT Gateway</em>. <em>MQTT</em> will also
+be used to signal when the <em>Control Station</em> or <em>Controller</em> will
+respond to commands to turn a sprinkler pump on or off.</p>
+<h3 id="why-mqtt">Why MQTT</h3>
+<p>MQTT is a very easy to use from a programming and administrative
+perspective. It compiles into a small binary. MQTT is built atop of
+<em>TCP</em> the Internets workhorse protocol. By virtue of using TCP MQTT is
+fast and reliable.</p>
+<p>MQTT fits nicely into compact hardware and embedded systems where RAM
+and compute power are limited. Which is one reason why it is
+ubiquitous in the IoT applications.</p>
+<hr>
+<p><img src="/img/mqtt-overview.drawio.png" alt="MQTT Architecture"></p>
+<hr>
+<h3 id="mqtt-architecture">MQTT Architecture</h3>
+<p>MQTT has three primary components: a <em>broker</em>, <em>publishers</em> and
+<em>subscribers</em>. <em>Publishers</em> send messages to <em>Brokers</em>, <em>Brokers</em> then
+forward the message to <em>Subscribers</em>.</p>
+<p>Messages are segregated by <em>Topics</em> that ressemble the path hiearchy
+of a filesystem. For example the <em>Collector</em> sends the current
+temperature to the <em>topic</em> <code>data/temprature</code> and
+<code>data/soil-moisture</code> for moisture as examples..</p>
+<p>Likewise the pump for a sprinkler system would subscribed to the topic
+<code>ctl/sprinkler</code> listening for commands to turn a sprinkler on and
+off.</p>
+<p>That was just enough description of MQTT to get us started. As the
+project progresses we will dive into more detail of MQTT particulars
+as they effect our project.</p>
+<p>Now let&rsquo;s actually add MQTT to the IoT Gateway as required by
+<em>Milestone 1</em>.</p>
+<h2 id="import-the-paho-mqtt-library">Import the Paho MQTT Library</h2>
+<p>We are going to rely on the third party
+<a href="https://github.com/eclipse/paho.mqtt.golang">Paho MQTT Go</a> package.
 This nice little library is going to make it easy for us to start
 receiving the data we want.</p>
-<h2 id="importing-eclipse-tahoe-mqtt">Importing Eclipse Tahoe MQTT</h2>
-<p>We are going to rely on the third party Eclipse Pogo MQTT package for
-Go, all we need to do is import the package directly from it&rsquo;s
-repository nothing could be easier!</p>
-<p>First the package needs to be fetched with</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>% go get github.com/eclipse/paho.mqtt.golang
-</span></span></code></pre></div><p>Second the package must be <em>imported</em> into the application during
-compile time with this single line of code.</p>
+<p>First we need to do is import the package directly from it&rsquo;s repository
+nothing could be easier!</p>
+<pre tabindex="0"><code>% go get github.com/eclipse/paho.mqtt.golang
+</code></pre><p>Second the package must be <em>imported</em> into the application source code
+during compile time with the following line of code.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#a6e22e">mqtt</span> <span style="color:#e6db74">&#34;github.com/eclipse/paho.mqtt.golang&#34;</span>)
 </span></span></code></pre></div><p>As matter of fact here is the entire snippet for importing the MQTT
 package and connecting to the MQTT with this code:</p>
 <script type="application/javascript" src="https://gist.github.com/rustyeddy/482556caef8010b1b0cc266007e9aec6.js"></script>
 
-<p>We can now connect to an MQTT Broker, knowing the MQTT Broker may
-change from installation to installation we will need to make the
-Broker&rsquo;s address a <em>configuration variable</em>.</p>
+<p>We can now connect to a MQTT Broker, by default the broker will be
+located on the same host running our IoT-Gateway, but that will not
+always be the case.</p>
+<p>For this reason we are going to make the brokers <em>address</em>
+configurable. Which us to a brief introduction to the <em>Go</em> builtin
+<em>flag</em> package.</p>
 <h3 id="the-configuration-struct">The Configuration Struct</h3>
-<p><code>Broker string</code> field to the
-<a href="/iot-logs/simple-go-configuration-structure">Config Struct</a> allowing
-us to set the Broker address via the command line. By default we
-assume the broker is running on Localhost but we can&rsquo;t be sure the
-application may call for an MQTT broker in the cloud.</p>
-<p>Note I typically install the Mosquito MQTT broker on my Linux
-hub. However an external, global and/or public broker like
-mqtt.eclipse.org could also be used.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>% ./iothub -broker mqtt.eclipse.org
-</span></span></code></pre></div><p>Will cause us to connect to the broker specified in the command line.</p>
-<p>Later we&rsquo;ll see how we can use this Configuration structure to easily
-store and retrieve our configuration to and from a JSON formatted
-configuration file.</p>
-<p>Meanwhile back to receiving MQTT packets&hellip;</p>
-<h3 id="mqtt-topics-for-network-and-data-channels">MQTT Topics for Network and Data Channels</h3>
+<p>I typically create a struct called <code>Configuration</code> and a
+single global variable (singleton) called <code>config</code> to house all
+the programs configuration variables. Then</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">import</span> (
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;flags&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">typedef</span> <span style="color:#a6e22e">Configuration</span> <span style="color:#66d9ef">struct</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Broker</span> <span style="color:#66d9ef">string</span>           <span style="color:#e6db74">`json:&#34;broker&#34;`</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> (
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">config</span> <span style="color:#a6e22e">Configuration</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">init</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">flags</span>.<span style="color:#a6e22e">StringVar</span>(<span style="color:#f92672">&amp;</span><span style="color:#a6e22e">config</span>.<span style="color:#a6e22e">Broker</span>, <span style="color:#e6db74">&#34;broker&#34;</span>, <span style="color:#e6db74">&#34;localhost&#34;</span>, <span style="color:#e6db74">&#34;Set the MQTT Broker&#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">flags</span>.<span style="color:#a6e22e">Parse</span>()
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mqtt_init</span>(<span style="color:#a6e22e">config</span>.<span style="color:#a6e22e">Broker</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>If you would like to read more about the configuration struct as well
+saveing and reading from a file and a quick introduction to Gos twist
+on &ldquo;Object Oriented&rdquo; programming check out this article
+<a href="/notes/simple-go-configuration-structure">The Config Struct</a>.</p>
+<p>Now we have turned the <code>config.Broker</code> variable into a command
+line string that defaults to <code>localhost</code>. Meaning if we rung the
+command:</p>
+<pre tabindex="0"><code>% ./iot-gateway
+</code></pre><p>It will automatically connect to the MQTT broker running on
+<code>localhost</code>. Otherwise we can have our IoT Gateway connect to a
+public MQTT broker, for example:</p>
+<pre tabindex="0"><code>% ./iothub -broker mqtt.eclipse.org
+</code></pre><p>Now all of the data from the topics we subscribe to will be published
+from a Broker in the cloud, possibly even a <em>global</em> broker.</p>
+<h3 id="mqtt-topics-for-og">MQTT Topics for OG</h3>
 <p>The IoT-Gateway in it&rsquo;s first version will of course collect
 <em>environmental</em> data including <em>temperature</em>, <em>humidity</em>, <em>soil
 moisture</em> and <em>luminescence</em> from various sensors scattered about.</p>
-<p><em>MQTT topics</em> are a hiearchal structure very similar to a file path
-separated with a slash &lsquo;/&rsquo;. For example our environmental data will be
-published as <em>MQTT topics</em> structured like this:</p>
+<p>As mentioned earlier <em>MQTT topics</em> are strings with a hiearchal
+structure very similar to a files complete path representing the
+<em>directory structure</em>. We are going to take advantage of this fact and
+structure our topics such that we can extract the <em>StationID</em> and
+<em>SensorID</em> directly from the topic itself.</p>
 <pre tabindex="0"><code>ss/data/{:stationid}/{:sensorid}
 </code></pre><p>Where the <code>:stationid</code> and <code>:sensorid</code> are variables to be
 replaced by the values extracted from the topic path-like strings.</p>
@@ -240,9 +256,10 @@ invoked every time a value is <em>published</em> to one of the above topics.</p>
 <li>Extract the value delivered</li>
 <li>Save the timestamp for when the data was received</li>
 <li>Use the stationID and sensorID to index the RAM Cache</li>
-<li>Send the &lt;timestamp, value&gt; tuple to the RAM Cache consumer[1].</li>
+<li>Send the <code>{timestamp, value}</code> tuple to the RAM Cache
+consumer[1].</li>
 </ol>
-<p>[1] The Ram Cache consumer is a <em>Go routine</em> that receives the
+<p>The Ram Cache consumer is a <em>Go routine</em> that receives the
 incoming <em>Msg</em> over a <em>channel</em>. We&rsquo;ll talk about these novel
 <em>Inter-Process Communication</em> (IPC) mechanisms supplied by Go when we
 add <em>Websockets</em> during the 4th milestone.</p>
@@ -250,7 +267,7 @@ add <em>Websockets</em> during the 4th milestone.</p>
 direct proportion to the number of stations, sensors and frequency of
 data publications.</p>
 <blockquote>
-<p>Tod: in the future we&rsquo;ll add configurations that will allow us
+<p>Todo: in the future we&rsquo;ll add configurations that will allow us
 control over how much data to keep in RAM and how long to keep it.</p>
 </blockquote>
 <p>Controlling memory in sophisticated ways is an exercise for
@@ -274,8 +291,8 @@ JSON.</p>
 data and passing it along to a consumer, it is not efficient for
 storing in memory for a quick API response.</p>
 <h2 id="internal-data-model">Internal Data Model</h2>
-<p>Data will be <em>cached</em> in RAM with the following format built
-from Datapoint tuples &lt;timestamp, value&gt; as a series hanging from a
+<p>Data will be <em>cached</em> in RAM with the following format built from
+Datapoint tuples <code>{timestamp, value}</code> as a series hanging from a
 Sensor which in turn is part of multiple sensors associated with a
 <em>Collection Station</em>.</p>
 <hr>

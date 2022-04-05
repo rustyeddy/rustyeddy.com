@@ -4,111 +4,83 @@ date: 2022-03-29
 description: >
   The primary function of an IoT Gateway is moving data from one input
   source to another output destination with some data conversion and
-  possible storage in between. Our first milestone building our IoT
-  Hub is reading data from MQTT then caching it for the coming REST
-  API we will be building in Milestone 2.
+  storage in between. Our first milestone building the IoT
+  Gateway is reading data from MQTT then holding it in RAM for the
+  upcoming REST API we will build for Milestone 2.
 category: iot-gateway
+git: https://github.com/iot-station/iothub
 ---
 
-This is the beginning of the implementation of Milestone 1 of the
-_Organic Gardner (OG)_ [IoT-Project](/iot-project).
+This page documents the beginning of the _Organic Gardner (OG)_ [IoT
+Project](/iot-project) begining with Milestone 1. If you want to
+program along, but have not yet worked with the _Go_ programming
+language here in this [Getting ready to Go](/get-ready-to-go)
+introduction. 
 
-## Get Ready To _Go_
+## Briefly About MQTT
 
-The IoT Gateway was written in the _Go_ programming language. I won't
-get into the reasons why _Go_ is an excellent choice of programming
-language for this project other than to point out two advantages this
-project will benefit from right away:
+[MQTT](https://mqtt.org) is the _messaging_ protocol that a
+_Collector_ will use to periodically publish sensor data
+(e.g. temperature and humidity) to the _IoT Gateway_. _MQTT_ will also
+be used to signal when the _Control Station_ or _Controller_ will
+respond to commands to turn a sprinkler pump on or off.
 
-### Go is Compiled and easy to distribute
+### Why MQTT
 
-First, Go is a _compiled_ language making the resulting executable
-self contained with no external libraries or run time environment to
-rebuild, just copy a single binary, that is it.
+MQTT is a very easy to use from a programming and administrative
+perspective. It compiles into a small binary. MQTT is built atop of
+_TCP_ the Internets workhorse protocol. By virtue of using TCP MQTT is
+fast and reliable.
 
-Unlike Node/JS, Python and other interpreted languages the entire run
-time environment must be replicated or recreated everywhere the
-program is to be run. With Go a single _binary_ can be transferred
-and run with out any additional installation steps, build process or
-external dependencies. 
+MQTT fits nicely into compact hardware and embedded systems where RAM
+and compute power are limited. Which is one reason why it is
+ubiquitous in the IoT applications.
 
-### Go executable are small and fast
+---
 
-A second wonderful advantage Go produces very small and fast programs
-that works well on some of the _micro-controllers_ we are going to be
-working on such as the _Raspberry Pi_.
+![MQTT Architecture](/img/mqtt-overview.drawio.png)
 
-As the project moves forward we will discuss a number of other
-interesting aspects of the language that we will be taking advantage
-of as the needs of the project arise.
+---
 
-### Install The Go Compiler
+### MQTT Architecture 
 
-Go is very easy to setup. Either follow directions on the 
-[Go Website](https://golang.org) or if your on Ubuntu you can just run 
-the command:
+MQTT has three primary components: a _broker_, _publishers_ and
+_subscribers_. _Publishers_ send messages to _Brokers_, _Brokers_ then
+forward the message to _Subscribers_.
 
-```bash
-snap install go --classic
-```
+Messages are segregated by _Topics_ that ressemble the path hiearchy
+of a filesystem. For example the _Collector_ sends the current
+temperature to the _topic_ ```data/temprature``` and
+```data/soil-moisture``` for moisture as examples..
 
-Make sure you have go installed by running:
+Likewise the pump for a sprinkler system would subscribed to the topic
+```ctl/sprinkler``` listening for commands to turn a sprinkler on and
+off. 
 
-```bash
-% go version
-go version go1.17.8 linux/amd64
-```
+That was just enough description of MQTT to get us started. As the
+project progresses we will dive into more detail of MQTT particulars
+as they effect our project. 
 
-## The Main Function 
+Now let's actually add MQTT to the IoT Gateway as required by
+_Milestone 1_. 
 
-Let's build a simple ```Hello, world!``` program to make sure our set
-up is ready and that we can actually write, compile and run a Go
-program. Go is built around packages, every executable must have a
-```package main``` and ```main()``` function (similar to C), like
-so: 
+## Import the Paho MQTT Library
 
-```go
-package main
-
-import "fmt"
-
-func main() {
-    fmt.Println("Hello, world!")
-}
-```
-
-Now run the little program to make sure everything is working as
-expected:
-
-```sh
-% go mod init github.com/iot-project/iothub
-% go mod tidy
-% go run .
-Hello, World!
-```
-
-If all goes well (and why would it not?) we'll see ```Hello,
-World!``` printed on our screen. Fantastic! 
-
-Now let's get to reading some MQTT data using the 
-[Paho MQTT Go library](https://github.com/eclipse/paho.mqtt.golang).
+We are going to rely on the third party 
+[Paho MQTT Go](https://github.com/eclipse/paho.mqtt.golang) package. 
 This nice little library is going to make it easy for us to start
-receiving the data we want.
+receiving the data we want. 
 
-## Importing Eclipse Tahoe MQTT 
+First we need to do is import the package directly from it's repository
+nothing could be easier!
 
-We are going to rely on the third party Eclipse Pogo MQTT package for
-Go, all we need to do is import the package directly from it's
-repository nothing could be easier!
 
-First the package needs to be fetched with
-
-```sh
+```
 % go get github.com/eclipse/paho.mqtt.golang
 ``` 
 
-Second the package must be _imported_ into the application during
-compile time with this single line of code.
+Second the package must be _imported_ into the application source code
+during compile time with the following line of code.
 
 ```go
 import mqtt "github.com/eclipse/paho.mqtt.golang")
@@ -119,43 +91,79 @@ package and connecting to the MQTT with this code:
 
 {{< gist rustyeddy 482556caef8010b1b0cc266007e9aec6 >}}
 
-We can now connect to an MQTT Broker, knowing the MQTT Broker may
-change from installation to installation we will need to make the
-Broker's address a _configuration variable_.
+We can now connect to a MQTT Broker, by default the broker will be
+located on the same host running our IoT-Gateway, but that will not
+always be the case.
+
+For this reason we are going to make the brokers _address_
+configurable. Which us to a brief introduction to the _Go_ builtin
+_flag_ package.
 
 ### The Configuration Struct
 
-```Broker string``` field to the 
-[Config Struct](/iot-logs/simple-go-configuration-structure) allowing
-us to set the Broker address via the command line. By default we
-assume the broker is running on Localhost but we can't be sure the
-application may call for an MQTT broker in the cloud.
+I typically create a struct called ```Configuration``` and a
+single global variable (singleton) called ```config``` to house all
+the programs configuration variables. Then 
 
-Note I typically install the Mosquito MQTT broker on my Linux
-hub. However an external, global and/or public broker like
-mqtt.eclipse.org could also be used.
+```go
+import (
+    "flags"
+)
 
-```sh
+typedef Configuration struct {
+    Broker string           `json:"broker"`
+}
+
+var (
+    config Configuration
+)
+
+func init() {
+    flags.StringVar(&config.Broker, "broker", "localhost", "Set the MQTT Broker")
+}
+
+func main() {
+    flags.Parse()
+    
+    mqtt_init(config.Broker)
+}
+```
+
+If you would like to read more about the configuration struct as well
+saveing and reading from a file and a quick introduction to Gos twist
+on "Object Oriented" programming check out this article 
+[The Config Struct](/notes/simple-go-configuration-structure).
+
+Now we have turned the ```config.Broker``` variable into a command
+line string that defaults to ```localhost```. Meaning if we rung the
+command:
+
+```
+% ./iot-gateway
+```
+
+It will automatically connect to the MQTT broker running on
+```localhost```. Otherwise we can have our IoT Gateway connect to a
+public MQTT broker, for example:
+
+```
 % ./iothub -broker mqtt.eclipse.org
 ```
 
-Will cause us to connect to the broker specified in the command line. 
+Now all of the data from the topics we subscribe to will be published
+from a Broker in the cloud, possibly even a _global_ broker.
 
-Later we'll see how we can use this Configuration structure to easily
-store and retrieve our configuration to and from a JSON formatted
-configuration file. 
-
-Meanwhile back to receiving MQTT packets...
-
-### MQTT Topics for Network and Data Channels
+### MQTT Topics for OG
 
 The IoT-Gateway in it's first version will of course collect
 _environmental_ data including _temperature_, _humidity_, _soil
 moisture_ and _luminescence_ from various sensors scattered about. 
 
-_MQTT topics_ are a hiearchal structure very similar to a file path
-separated with a slash '/'. For example our environmental data will be
-published as _MQTT topics_ structured like this:
+As mentioned earlier _MQTT topics_ are strings with a hiearchal
+structure very similar to a files complete path representing the
+_directory structure_. We are going to take advantage of this fact and
+structure our topics such that we can extract the _StationID_ and
+_SensorID_ directly from the topic itself. 
 
 ```
 ss/data/{:stationid}/{:sensorid}
@@ -250,7 +258,6 @@ func dataCB(mc mqtt.Client, mqttmsg mqtt.Message) {
 }
 ```
 
-
 #### MQTT Handling Incoming Data
 
 The _callback_ shown above is pretty simple:
@@ -259,18 +266,19 @@ The _callback_ shown above is pretty simple:
 2. Extract the value delivered 
 3. Save the timestamp for when the data was received
 3. Use the stationID and sensorID to index the RAM Cache
-4. Send the <timestamp, value> tuple to the RAM Cache consumer[1].
+4. Send the ```{timestamp, value}``` tuple to the RAM Cache
+   consumer[1]. 
 
-[1] The Ram Cache consumer is a _Go routine_ that receives the
+The Ram Cache consumer is a _Go routine_ that receives the
 incoming _Msg_ over a _channel_. We'll talk about these novel
 _Inter-Process Communication_ (IPC) mechanisms supplied by Go when we
 add _Websockets_ during the 4th milestone.
-   
+
 Following this algorithm our memory usage is going to increase in
 direct proportion to the number of stations, sensors and frequency of
 data publications.
 
-> Tod: in the future we'll add configurations that will allow us
+> Todo: in the future we'll add configurations that will allow us
 > control over how much data to keep in RAM and how long to keep it.
 
 Controlling memory in sophisticated ways is an exercise for
@@ -305,10 +313,10 @@ storing in memory for a quick API response.
 
 ## Internal Data Model
 
-Data will be _cached_ in RAM with the following format built
-from Datapoint tuples <timestamp, value> as a series hanging from a 
+Data will be _cached_ in RAM with the following format built from
+Datapoint tuples ```{timestamp, value}``` as a series hanging from a
 Sensor which in turn is part of multiple sensors associated with a
-_Collection Station_. 
+_Collection Station_.
 
 ---
 
