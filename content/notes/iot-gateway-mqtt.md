@@ -152,14 +152,14 @@ command as:
 
 It will automatically connect to the MQTT broker running on
 ```localhost```. Otherwise we can have our IoT Gateway connect to a
-public MQTT broker, for example:
+public MQTT broker for example:
 
 ```
 % ./iothub -broker mqtt.eclipse.org
 ```
 
-Now all of the data from the topics we subscribe to will be published
-from a Broker in the cloud, possibly even a _global_ broker.
+Using the command above all of the data from the topics we subscribe
+to will be published from the global broker ```mqtt.eclipse.org```.
 
 ### MQTT Topics for OG
 
@@ -168,10 +168,9 @@ _environmental_ data including _temperature_, _humidity_, _soil
 moisture_ and _luminescence_ from various sensors scattered about. 
 
 As mentioned earlier _MQTT topics_ are strings with a hiearchal
-structure very similar to a files complete path representing the
-_directory structure_. We are going to take advantage of this fact and
-structure our topics such that we can extract the _StationID_ and
-_SensorID_ directly from the topic itself. 
+structure very similar to a file-path. We are going to take advantage
+of this fact and structure our topics such that we can extract the
+_StationID_ and _SensorID_ directly from the topic itself.
 
 ```
 ss/data/{:stationid}/{:sensorid}
@@ -282,6 +281,8 @@ incoming _Msg_ over a _channel_. We'll talk about these novel
 _Inter-Process Communication_ (IPC) mechanisms supplied by Go when we
 add _Websockets_ during the 4th milestone.
 
+##### Controlling Memory Usage
+
 Following this algorithm our memory usage is going to increase in
 direct proportion to the number of stations, sensors and frequency of
 data publications.
@@ -316,8 +317,8 @@ JSON.
 
 The ```Msg``` structure is fine for handling the immediate incoming
 data and passing it along to a consumer, it is not efficient for
-storing in memory for a quick API response.
-
+storing in memory for a quick API response. For this reason we need to
+define a structure more appropriate for indexed retrieval defined below.
 
 ## Internal Data Model
 
@@ -344,7 +345,8 @@ _Collection Station_.
 ---
 
 With this model we can easily adjust the number of _timestamps_
-allowed per sensor to limit the amount of memory to be consumed. 
+allowed per sensor to limit the amount of memory that will be
+consumed.
 
 ## Testing the Hub
 
@@ -356,33 +358,36 @@ Process (SDP) with _Test Driven Design (TDD)_
 ### Go and Unit Tests
 
 We won't go into any detail writing _Go unit tests_ here as there
-are plenty of good documentation for writing tests and the best place
-to start is the 
-[Go Testing package](https://pkg.go.dev/testing)
+are plenty of good resources on the net including the best place
+to start which is the 
+[Go testing package](https://pkg.go.dev/testing)
 documentation itself.
 
 The _unit tests_ above can be considered _white box_ tests implying
-that the test rig has access to programs internal data structures and 
+that the test code has access to programs internal data structures and 
 functions directly for testing.
 
 ### System Tests with MQTT
 
-System tests are considered _black box_ and completely _outside_ the
-Gateways external _public API_. 
+System tests, however are considered _black box_ test and operate
+completely _outside_ the Gateway by accessing the Gateway's external
+_public API_. 
 
 #### Mocking Collection Stations
 
-This is one of the beautiful things about testing protocols like MQTT
-and HTTP they are inherently _mockable_. Additionally with MQTT we'll
-use the popular ```mosquito_pub``` MQTT publishing tool to _mock_ our
-the Collection Stations (CS) that will eventually develop.
+Easy testing is one of the beautiful things about working with
+protocols like MQTT and HTTP they are inherently _mockable_. We'll use
+the popular ```mosquito_pub``` MQTT publishing tool to _mock_ the
+Collection Stations (CS) that have not yet been developed as of this
+writing.
 
-To demonstrate a quick test of the hub we will add a ```-verbose``` flag
-to print data it is received. The data is then cached in RAM and made
-ready for the _REST API_ coming in the next article (milestone).
+To demonstrate a quick test of the hub we will add a ```-verbose```
+flag to print data as it is received. The data is then cached in RAM
+and made ready for the _REST API_ coming in the next article
+(milestone).
 
-All we have to do _mock_ a _Collector_ publishing a the temperature
-for example is run the following command:
+To _mock_ a _Collector_ publishing temperature data all we have to do 
+is run the following command:
 
 ```
 % mosquitto_pub -t ss/data/10.11.1.1/tempf -m 98.6
@@ -392,9 +397,9 @@ Our IoT-Gateway will pick up the fake data value ```98.6``` from
 sensor ```tempf``` extracted from the topic
 ```ss/data/10.11.1.11/tempf```.
 
-The upper screenshot shows logs from the _IoT Hub_ having just
-received it's first data point from MQTT. The lower screen shows the
-invocation of the ```mosquitto_pub``` command.
+The upper screenshot shows logs from the _IoT Hub_ starting up then
+having just received it's first data point from MQTT. The lower screen
+shows the invocation of the ```mosquitto_pub``` command.
 
 ![High Level Sensor Station](/img/screen-shot-hub-data.png)
 
@@ -416,7 +421,7 @@ The gateway now receives periodic data from one of more stations, each
 with one or more sensors. The data is reformatted and stored as a
 _time-series_ in RAM. 
 
-Now it is time build our REST API get the data out of the _MQTT
+Now it is time build our REST API to get the data out of the _IoT
 Gateway_. 
 
 In this next article we are going to import Go's builtin

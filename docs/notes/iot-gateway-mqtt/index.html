@@ -75,7 +75,7 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
 	<article class="article">
 	  <p><img src="/img/iot-hub-mqtt.png" alt="MQTT Architecture"></p>
 <p>This page marks the beginning of the <em>Organic Gardner (OG)</em> <a href="/iot-project">IoT
-Project</a> Milestone 1 developmnt!  If you want to
+Project</a> Milestone 1 development!  If you want to
 program along but have not yet worked with the <em>Go</em> programming
 language check this intro: <a href="/get-ready-to-go">Getting ready to Go</a>.</p>
 <h2 id="a-brief-about-mqtt">A Brief About MQTT</h2>
@@ -85,13 +85,13 @@ language check this intro: <a href="/get-ready-to-go">Getting ready to Go</a>.</
 be used to signal when the <em>Control Station</em> or <em>Controller</em> will
 respond to commands to turn a sprinkler pump on or off.</p>
 <h3 id="why-mqtt">Why MQTT</h3>
-<p>MQTT is a very easy to use from a programming and administrative
-perspective. It compiles into a small binary. MQTT is built atop of
-<em>TCP</em> the Internets workhorse protocol. By virtue of using TCP MQTT is
-fast and reliable.</p>
 <p>MQTT fits nicely into compact hardware and embedded systems where RAM
 and compute power are limited. Which is one reason why it is
 ubiquitous in the IoT applications.</p>
+<p>MQTT is easy to use both programming and operations. It compiles into
+a small and fast binary. MQTT is built atop of <em>TCP</em> the Internets
+workhorse protocol which also means it is reliable and adapts well to
+busy or low bandwidth networks.</p>
 <hr>
 <p><img src="/img/mqtt-overview.drawio.png" alt="MQTT Architecture"></p>
 <hr>
@@ -99,25 +99,26 @@ ubiquitous in the IoT applications.</p>
 <p>MQTT has three primary components: a <em>broker</em>, <em>publishers</em> and
 <em>subscribers</em>. <em>Publishers</em> send messages to <em>Brokers</em>, <em>Brokers</em> then
 forward the message to <em>Subscribers</em>.</p>
-<p>Messages are segregated by <em>Topics</em> that ressemble the path hiearchy
-of a filesystem. For example the <em>Collector</em> sends the current
-temperature to the <em>topic</em> <code>data/temprature</code> and
-<code>data/soil-moisture</code> for moisture as examples..</p>
-<p>Likewise the pump for a sprinkler system would subscribed to the topic
-<code>ctl/sprinkler</code> listening for commands to turn a sprinkler on and
+<p>Messages are segregated by <em>Topics</em> that resemble the path hierarchy
+of a file-system. For example the <em>Collector</em> sends the current
+temperature to the <em>topic</em> <code>data/temperature</code> and the topic
+<code>data/soil-moisture</code> is used for moisture as examples..</p>
+<p>Similarly the pump for a sprinkler system would subscribed to the topic
+<code>ctl/sprinkler</code> waiting for commands to turn a sprinkler on and
 off.</p>
 <p>That was just enough description of MQTT to get us started. As the
 project progresses we will dive into more detail of MQTT particulars
-as they effect our project.</p>
-<p>Now let&rsquo;s actually add MQTT to the IoT Gateway as required by
-<em>Milestone 1</em>.</p>
+as they effect our project. Now let&rsquo;s actually add MQTT to the IoT
+Gateway as required by the first <em>Milestone</em>.</p>
 <h2 id="import-the-paho-mqtt-library">Import the Paho MQTT Library</h2>
-<p>We are going to rely on the third party
-<a href="https://github.com/eclipse/paho.mqtt.golang">Paho MQTT Go</a> package.
-This nice little library is going to make it easy for us to start
-receiving the data we want.</p>
+<p>The third party package
+<a href="https://github.com/eclipse/paho.mqtt.golang">Paho MQTT Go</a>
+is a nice little library that is going to make it easy for us to
+subscribe to the appropriate MQTT topics as well as enabling us to
+<em>publish</em> commands for the <em>sprinkler controller</em>.</p>
 <p>First we need to do is import the package directly from it&rsquo;s repository
-nothing could be easier!</p>
+and with Go nothing could be easier! Just run the following command
+from the command line.</p>
 <pre tabindex="0"><code>% go get github.com/eclipse/paho.mqtt.golang
 </code></pre><p>Second the package must be <em>imported</em> into the application source code
 during compile time with the following line of code.</p>
@@ -126,16 +127,19 @@ during compile time with the following line of code.</p>
 package and connecting to the MQTT with this code:</p>
 <script type="application/javascript" src="https://gist.github.com/rustyeddy/482556caef8010b1b0cc266007e9aec6.js"></script>
 
-<p>We can now connect to a MQTT Broker, by default the broker will be
-located on the same host running our IoT-Gateway, but that will not
-always be the case.</p>
+<p>We can now connect to a MQTT Broker, which by default will be located
+on the same host running our IoT-Gateway (i.e. localhost). However that
+may not always be the case, the gateway may need to connect to an
+external broker.</p>
 <p>For this reason we are going to make the brokers <em>address</em>
-configurable. Which us to a brief introduction to the <em>Go</em> builtin
-<em>flag</em> package.</p>
+configurable. This leads us to a brief introduction to the <em>Go</em>
+builtin <em>flag</em> package allowing us to easily create a command line
+argument that is capable of setting the <em>broker</em> configuration
+variable.</p>
 <h3 id="the-configuration-struct">The Configuration Struct</h3>
 <p>I typically create a struct called <code>Configuration</code> and a
 single global variable (singleton) called <code>config</code> to house all
-the programs configuration variables. Then</p>
+the programs configuration variables. Like so:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">import</span> (
 </span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;flags&#34;</span>
 </span></span><span style="display:flex;"><span>)
@@ -158,28 +162,28 @@ the programs configuration variables. Then</p>
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mqtt_init</span>(<span style="color:#a6e22e">config</span>.<span style="color:#a6e22e">Broker</span>)
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>If you would like to read more about the configuration struct as well
-saveing and reading from a file and a quick introduction to Gos twist
-on &ldquo;Object Oriented&rdquo; programming check out this article
-<a href="/notes/simple-go-configuration-structure">The Config Struct</a>.</p>
+as a discussion saving and reading the configuration structure from a
+file and a quick introduction to Go&rsquo;s twist on &ldquo;Object Oriented&rdquo;
+programming check out this article on the
+<a href="/notes/simple-go-configuration-structure">Go Config Struct</a>.</p>
 <p>Now we have turned the <code>config.Broker</code> variable into a command
-line string that defaults to <code>localhost</code>. Meaning if we rung the
-command:</p>
+line argument that defaults to <code>localhost</code>. Meaning if we run the
+command as:</p>
 <pre tabindex="0"><code>% ./iot-gateway
 </code></pre><p>It will automatically connect to the MQTT broker running on
 <code>localhost</code>. Otherwise we can have our IoT Gateway connect to a
-public MQTT broker, for example:</p>
+public MQTT broker for example:</p>
 <pre tabindex="0"><code>% ./iothub -broker mqtt.eclipse.org
-</code></pre><p>Now all of the data from the topics we subscribe to will be published
-from a Broker in the cloud, possibly even a <em>global</em> broker.</p>
+</code></pre><p>Using the command above all of the data from the topics we subscribe
+to will be published from the global broker <code>mqtt.eclipse.org</code>.</p>
 <h3 id="mqtt-topics-for-og">MQTT Topics for OG</h3>
 <p>The IoT-Gateway in it&rsquo;s first version will of course collect
 <em>environmental</em> data including <em>temperature</em>, <em>humidity</em>, <em>soil
 moisture</em> and <em>luminescence</em> from various sensors scattered about.</p>
 <p>As mentioned earlier <em>MQTT topics</em> are strings with a hiearchal
-structure very similar to a files complete path representing the
-<em>directory structure</em>. We are going to take advantage of this fact and
-structure our topics such that we can extract the <em>StationID</em> and
-<em>SensorID</em> directly from the topic itself.</p>
+structure very similar to a file-path. We are going to take advantage
+of this fact and structure our topics such that we can extract the
+<em>StationID</em> and <em>SensorID</em> directly from the topic itself.</p>
 <pre tabindex="0"><code>ss/data/{:stationid}/{:sensorid}
 </code></pre><p>Where the <code>:stationid</code> and <code>:sensorid</code> are variables to be
 replaced by the values extracted from the topic path-like strings.</p>
@@ -189,7 +193,7 @@ data topic</p>
 <pre tabindex="0"><code>ss/data/10.11.4.22/tempf
 </code></pre><h4 id="mqtt-and-wildcards">MQTT and Wildcards</h4>
 <p>Lucky for us MQTT topics can be subscribed to using the &lsquo;+&rsquo; <em>wildcard
-symbol</em> to capture the <em>stationID</em> and <em>sensorID</em> even though the hub
+symbol</em> to capture the <em>StationID</em> and <em>SensorID</em> even though the hub
 did not know about any of these stations or sensors before they were
 published by the <em>Collection Station</em>.</p>
 <p>By subscribing to a single <em>Topic</em> using wildcards we can be ensured
@@ -252,10 +256,10 @@ invoked every time a value is <em>published</em> to one of the above topics.</p>
 </span></span></code></pre></div><h4 id="mqtt-handling-incoming-data">MQTT Handling Incoming Data</h4>
 <p>The <em>callback</em> shown above is pretty simple:</p>
 <ol>
-<li>Extract the <em>stationID</em> and <em>sensorID</em> from the MQTT topic</li>
+<li>Extract the <em>StationID</em> and <em>SensorID</em> from the MQTT topic</li>
 <li>Extract the value delivered</li>
 <li>Save the timestamp for when the data was received</li>
-<li>Use the stationID and sensorID to index the RAM Cache</li>
+<li>Use the StationID and SensorID to index the RAM Cache</li>
 <li>Send the <code>{timestamp, value}</code> tuple to the RAM Cache
 consumer[1].</li>
 </ol>
@@ -263,6 +267,7 @@ consumer[1].</li>
 incoming <em>Msg</em> over a <em>channel</em>. We&rsquo;ll talk about these novel
 <em>Inter-Process Communication</em> (IPC) mechanisms supplied by Go when we
 add <em>Websockets</em> during the 4th milestone.</p>
+<h5 id="controlling-memory-usage">Controlling Memory Usage</h5>
 <p>Following this algorithm our memory usage is going to increase in
 direct proportion to the number of stations, sensors and frequency of
 data publications.</p>
@@ -289,7 +294,8 @@ Value can be an integer, floating point or a string formatted as
 JSON.</p>
 <p>The <code>Msg</code> structure is fine for handling the immediate incoming
 data and passing it along to a consumer, it is not efficient for
-storing in memory for a quick API response.</p>
+storing in memory for a quick API response. For this reason we need to
+define a structure more appropriate for indexed retrieval defined below.</p>
 <h2 id="internal-data-model">Internal Data Model</h2>
 <p>Data will be <em>cached</em> in RAM with the following format built from
 Datapoint tuples <code>{timestamp, value}</code> as a series hanging from a
@@ -404,7 +410,8 @@ Sensor which in turn is part of multiple sensors associated with a
 </div>
 <hr>
 <p>With this model we can easily adjust the number of <em>timestamps</em>
-allowed per sensor to limit the amount of memory to be consumed.</p>
+allowed per sensor to limit the amount of memory that will be
+consumed.</p>
 <h2 id="testing-the-hub">Testing the Hub</h2>
 <p>We now have enough code that we can build and test our fledgling
 <em>IoT Gateway</em>. First we will of course write the obligatory <em>unit
@@ -412,48 +419,51 @@ tests</em> we all should be writing as part of our Software Development
 Process (SDP) with <em>Test Driven Design (TDD)</em></p>
 <h3 id="go-and-unit-tests">Go and Unit Tests</h3>
 <p>We won&rsquo;t go into any detail writing <em>Go unit tests</em> here as there
-are plenty of good documentation for writing tests and the best place
-to start is the
-<a href="https://pkg.go.dev/testing">Go Testing package</a>
+are plenty of good resources on the net including the best place
+to start which is the
+<a href="https://pkg.go.dev/testing">Go testing package</a>
 documentation itself.</p>
 <p>The <em>unit tests</em> above can be considered <em>white box</em> tests implying
-that the test rig has access to programs internal data structures and
+that the test code has access to programs internal data structures and
 functions directly for testing.</p>
 <h3 id="system-tests-with-mqtt">System Tests with MQTT</h3>
-<p>System tests are considered <em>black box</em> and completely <em>outside</em> the
-Gateways external <em>public API</em>.</p>
+<p>System tests, however are considered <em>black box</em> test and operate
+completely <em>outside</em> the Gateway by accessing the Gateway&rsquo;s external
+<em>public API</em>.</p>
 <h4 id="mocking-collection-stations">Mocking Collection Stations</h4>
-<p>This is one of the beautiful things about testing protocols like MQTT
-and HTTP they are inherently <em>mockable</em>. Additionally with MQTT we&rsquo;ll
-use the popular <code>mosquito_pub</code> MQTT publishing tool to <em>mock</em> our
-the Collection Stations (CS) that will eventually develop.</p>
-<p>To demonstrate a quick test of the hub we will add a <code>-verbose</code> flag
-to print data it is received. The data is then cached in RAM and made
-ready for the <em>REST API</em> coming in the next article (milestone).</p>
-<p>All we have to do <em>mock</em> a <em>Collector</em> publishing a the temprature
-for example is run the following command:</p>
+<p>Easy testing is one of the beautiful things about working with
+protocols like MQTT and HTTP they are inherently <em>mockable</em>. We&rsquo;ll use
+the popular <code>mosquito_pub</code> MQTT publishing tool to <em>mock</em> the
+Collection Stations (CS) that have not yet been developed as of this
+writing.</p>
+<p>To demonstrate a quick test of the hub we will add a <code>-verbose</code>
+flag to print data as it is received. The data is then cached in RAM
+and made ready for the <em>REST API</em> coming in the next article
+(milestone).</p>
+<p>To <em>mock</em> a <em>Collector</em> publishing temperature data all we have to do
+is run the following command:</p>
 <pre tabindex="0"><code>% mosquitto_pub -t ss/data/10.11.1.1/tempf -m 98.6
 </code></pre><p>Our IoT-Gateway will pick up the fake data value <code>98.6</code> from
 sensor <code>tempf</code> extracted from the topic
 <code>ss/data/10.11.1.11/tempf</code>.</p>
-<p>The upper screenshot shows logs from the <em>IoT Hub</em> having just
-received it&rsquo;s first data point from MQTT. The lower screen shows the
-invocation of the <code>mosquitto_pub</code> command.</p>
+<p>The upper screenshot shows logs from the <em>IoT Hub</em> starting up then
+having just received it&rsquo;s first data point from MQTT. The lower screen
+shows the invocation of the <code>mosquitto_pub</code> command.</p>
 <p><img src="/img/screen-shot-hub-data.png" alt="High Level Sensor Station"></p>
 <h2 id="victory">Victory!</h2>
 <p>In the above screen shot <code>mosquitto_pub</code> published the temperature
 in Fahrenheit to the topic <code>ss/data/10.11.1.11/tempf</code> where the CS
-<em>station id</em> is represented by <code>10.11.1.11</code>. Likewise, the sensorID
+<em>station id</em> is represented by <code>10.11.1.11</code>. Likewise, the SensorID
 is represented by the string <code>tempf</code>. The value passed in 98.6
 degrees Fahrenheit.</p>
-<p>We can see the Hub receiving the data and parsing the <em>stationID</em> and
-<em>sensorID</em> from the topic string. The data is parsed, formatted and
+<p>We can see the Hub receiving the data and parsing the <em>StationID</em> and
+<em>SensorID</em> from the topic string. The data is parsed, formatted and
 temporarily saved in RAM.</p>
 <h2 id="http-rest-server-next-">HTTP REST Server Next &hellip;</h2>
 <p>The gateway now receives periodic data from one of more stations, each
 with one or more sensors. The data is reformatted and stored as a
 <em>time-series</em> in RAM.</p>
-<p>Now it is time build our REST API get the data out of the <em>MQTT
+<p>Now it is time build our REST API to get the data out of the <em>IoT
 Gateway</em>.</p>
 <p>In this next article we are going to import Go&rsquo;s builtin
 <code>net/http</code> package to setup our HTTP server that will in turn
