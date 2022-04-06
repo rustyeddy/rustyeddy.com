@@ -7833,8 +7833,8 @@ img.thehead {
   font-size: 1rem; }
 
 pre {
-    background-color: #aaaaaa;
-    padding: 1rem;
-}
+  background-color: #e1e1e1;
+  padding: 1rem;
+  color: #333333; }
 
 /*# sourceMappingURL=style.css.map */

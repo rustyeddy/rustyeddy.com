@@ -44,7 +44,7 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="col-md-8 text-center">
       <h1 class="header h2 pb-1">Adding MQTT to the IoT Gateway</h1>
       <p class="leadin align-right text-muted text-center mt-0">
-        The primary function of an IoT Gateway is moving data from one input source to another output destination with some data conversion and storage in between. Our first milestone building the IoT Gateway is reading data from MQTT then holding it in RAM for the upcoming REST API we will build for Milestone 2.
+        The primary function of an IoT Gateway is moving data from one input source (often sensor data) to another output destination (like a control algorithm) with some data conversion and storage in between. Our first milestone building the IoT Gateway is reading data from MQTT then holding it in RAM for the upcoming REST API we will build for Milestone 2. 
 
       </p>
     </div>
@@ -73,15 +73,15 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="col"></div>
     <div class="col-md-8 hero-text">
 	<article class="article">
-	  <p>This page documents the beginning of the <em>Organic Gardner (OG)</em> <a href="/iot-project">IoT
-Project</a> begining with Milestone 1. If you want to
-program along, but have not yet worked with the <em>Go</em> programming
-language here in this <a href="/get-ready-to-go">Getting ready to Go</a>
-introduction.</p>
-<h2 id="briefly-about-mqtt">Briefly About MQTT</h2>
+	  <p><img src="/img/iot-hub-mqtt.png" alt="MQTT Architecture"></p>
+<p>This page marks the beginning of the <em>Organic Gardner (OG)</em> <a href="/iot-project">IoT
+Project</a> Milestone 1 developmnt!  If you want to
+program along but have not yet worked with the <em>Go</em> programming
+language check this intro: <a href="/get-ready-to-go">Getting ready to Go</a>.</p>
+<h2 id="a-brief-about-mqtt">A Brief About MQTT</h2>
 <p><a href="https://mqtt.org">MQTT</a> is the <em>messaging</em> protocol that a
 <em>Collector</em> will use to periodically publish sensor data
-(e.g. temperature and humidity) to the <em>IoT Gateway</em>. <em>MQTT</em> will also
+(like temperature and humidity) to the <em>IoT Gateway</em>. <em>MQTT</em> will also
 be used to signal when the <em>Control Station</em> or <em>Controller</em> will
 respond to commands to turn a sprinkler pump on or off.</p>
 <h3 id="why-mqtt">Why MQTT</h3>
@@ -422,6 +422,7 @@ functions directly for testing.</p>
 <h3 id="system-tests-with-mqtt">System Tests with MQTT</h3>
 <p>System tests are considered <em>black box</em> and completely <em>outside</em> the
 Gateways external <em>public API</em>.</p>
+<h4 id="mocking-collection-stations">Mocking Collection Stations</h4>
 <p>This is one of the beautiful things about testing protocols like MQTT
 and HTTP they are inherently <em>mockable</em>. Additionally with MQTT we&rsquo;ll
 use the popular <code>mosquito_pub</code> MQTT publishing tool to <em>mock</em> our
@@ -429,13 +430,12 @@ the Collection Stations (CS) that will eventually develop.</p>
 <p>To demonstrate a quick test of the hub we will add a <code>-verbose</code> flag
 to print data it is received. The data is then cached in RAM and made
 ready for the <em>REST API</em> coming in the next article (milestone).</p>
-<h4 id="mocking-collection-stations">Mocking Collection Stations</h4>
-<p>Thankfully it is very easy to <em>mock</em> a <em>Collector</em> by publishing fake
-environmental data using the MQTT publishing utility <em>mosquito_pub</em>.</p>
-<p>For example, the following command</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>% mosquitto_pub -t ss/data/10.11.1.1/tempf -m 98.6
-</span></span></code></pre></div><p>will fake the data value <code>98.6</code> from sensor <code>tempf</code> extracted
-from the topic <code>ss/data/10.11.1.11/tempf</code>.</p>
+<p>All we have to do <em>mock</em> a <em>Collector</em> publishing a the temprature
+for example is run the following command:</p>
+<pre tabindex="0"><code>% mosquitto_pub -t ss/data/10.11.1.1/tempf -m 98.6
+</code></pre><p>Our IoT-Gateway will pick up the fake data value <code>98.6</code> from
+sensor <code>tempf</code> extracted from the topic
+<code>ss/data/10.11.1.11/tempf</code>.</p>
 <p>The upper screenshot shows logs from the <em>IoT Hub</em> having just
 received it&rsquo;s first data point from MQTT. The lower screen shows the
 invocation of the <code>mosquitto_pub</code> command.</p>
@@ -455,10 +455,10 @@ with one or more sensors. The data is reformatted and stored as a
 <em>time-series</em> in RAM.</p>
 <p>Now it is time build our REST API get the data out of the <em>MQTT
 Gateway</em>.</p>
-<p>In this next article we are going to import Go&rsquo;s builtin <em>net/http</em>
-package to setup our HTTP server that will in turn handle our <em>REST
-Endpoints</em>.  This same package will later allow us to serve up the IoT
-Gateway web app.</p>
+<p>In this next article we are going to import Go&rsquo;s builtin
+<code>net/http</code> package to setup our HTTP server that will in turn
+handle our <em>REST Endpoints</em>.  This same package will later allow us to
+serve up the IoT Gateway web app.</p>
 <p><a href="/iot-project/iot-qateway-rest">Next Adding the REST API</a></p>
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->

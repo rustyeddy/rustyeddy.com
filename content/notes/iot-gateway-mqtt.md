@@ -3,38 +3,43 @@ title: Adding MQTT to the IoT Gateway
 date: 2022-03-29
 description: >
   The primary function of an IoT Gateway is moving data from one input
-  source to another output destination with some data conversion and
-  storage in between. Our first milestone building the IoT
-  Gateway is reading data from MQTT then holding it in RAM for the
-  upcoming REST API we will build for Milestone 2.
-category: iot-gateway
+  source (often sensor data) to another output destination (like a
+  control algorithm) with some data conversion and storage in
+  between. Our first milestone building the IoT Gateway is reading
+  data from MQTT then holding it in RAM for the upcoming REST API we
+  will build for Milestone 2. 
+category: 
+  - iot-project
+  - iot-gateway
+tags: [ mqtt, go ]
 git: https://github.com/iot-station/iothub
 ---
 
-This page documents the beginning of the _Organic Gardner (OG)_ [IoT
-Project](/iot-project) begining with Milestone 1. If you want to
-program along, but have not yet worked with the _Go_ programming
-language here in this [Getting ready to Go](/get-ready-to-go)
-introduction. 
+![MQTT Architecture](/img/iot-hub-mqtt.png)
 
-## Briefly About MQTT
+This page marks the beginning of the _Organic Gardner (OG)_ [IoT
+Project](/iot-project) Milestone 1 development!  If you want to
+program along but have not yet worked with the _Go_ programming
+language check this intro: [Getting ready to Go](/get-ready-to-go).
+
+## A Brief About MQTT
 
 [MQTT](https://mqtt.org) is the _messaging_ protocol that a
 _Collector_ will use to periodically publish sensor data
-(e.g. temperature and humidity) to the _IoT Gateway_. _MQTT_ will also
+(like temperature and humidity) to the _IoT Gateway_. _MQTT_ will also
 be used to signal when the _Control Station_ or _Controller_ will
 respond to commands to turn a sprinkler pump on or off.
 
 ### Why MQTT
 
-MQTT is a very easy to use from a programming and administrative
-perspective. It compiles into a small binary. MQTT is built atop of
-_TCP_ the Internets workhorse protocol. By virtue of using TCP MQTT is
-fast and reliable.
-
 MQTT fits nicely into compact hardware and embedded systems where RAM
 and compute power are limited. Which is one reason why it is
 ubiquitous in the IoT applications.
+
+MQTT is easy to use both programming and operations. It compiles into
+a small and fast binary. MQTT is built atop of _TCP_ the Internets
+workhorse protocol which also means it is reliable and adapts well to
+busy or low bandwidth networks.
 
 ---
 
@@ -48,32 +53,31 @@ MQTT has three primary components: a _broker_, _publishers_ and
 _subscribers_. _Publishers_ send messages to _Brokers_, _Brokers_ then
 forward the message to _Subscribers_.
 
-Messages are segregated by _Topics_ that ressemble the path hiearchy
-of a filesystem. For example the _Collector_ sends the current
-temperature to the _topic_ ```data/temprature``` and
-```data/soil-moisture``` for moisture as examples..
+Messages are segregated by _Topics_ that resemble the path hierarchy
+of a file-system. For example the _Collector_ sends the current
+temperature to the _topic_ ```data/temperature``` and the topic
+```data/soil-moisture``` is used for moisture as examples.. 
 
-Likewise the pump for a sprinkler system would subscribed to the topic
-```ctl/sprinkler``` listening for commands to turn a sprinkler on and
+Similarly the pump for a sprinkler system would subscribed to the topic
+```ctl/sprinkler``` waiting for commands to turn a sprinkler on and
 off. 
 
 That was just enough description of MQTT to get us started. As the
 project progresses we will dive into more detail of MQTT particulars
-as they effect our project. 
-
-Now let's actually add MQTT to the IoT Gateway as required by
-_Milestone 1_. 
+as they effect our project. Now let's actually add MQTT to the IoT
+Gateway as required by the first _Milestone_. 
 
 ## Import the Paho MQTT Library
 
-We are going to rely on the third party 
-[Paho MQTT Go](https://github.com/eclipse/paho.mqtt.golang) package. 
-This nice little library is going to make it easy for us to start
-receiving the data we want. 
+The third party package 
+[Paho MQTT Go](https://github.com/eclipse/paho.mqtt.golang) 
+is a nice little library that is going to make it easy for us to
+subscribe to the appropriate MQTT topics as well as enabling us to
+_publish_ commands for the _sprinkler controller_.
 
 First we need to do is import the package directly from it's repository
-nothing could be easier!
-
+and with Go nothing could be easier! Just run the following command
+from the command line.
 
 ```
 % go get github.com/eclipse/paho.mqtt.golang
@@ -91,19 +95,22 @@ package and connecting to the MQTT with this code:
 
 {{< gist rustyeddy 482556caef8010b1b0cc266007e9aec6 >}}
 
-We can now connect to a MQTT Broker, by default the broker will be
-located on the same host running our IoT-Gateway, but that will not
-always be the case.
+We can now connect to a MQTT Broker, which by default will be located
+on the same host running our IoT-Gateway (i.e. localhost). However that
+may not always be the case, the gateway may need to connect to an
+external broker.
 
 For this reason we are going to make the brokers _address_
-configurable. Which us to a brief introduction to the _Go_ builtin
-_flag_ package.
+configurable. This leads us to a brief introduction to the _Go_
+builtin _flag_ package allowing us to easily create a command line
+argument that is capable of setting the _broker_ configuration
+variable. 
 
 ### The Configuration Struct
 
 I typically create a struct called ```Configuration``` and a
 single global variable (singleton) called ```config``` to house all
-the programs configuration variables. Then 
+the programs configuration variables. Like so:
 
 ```go
 import (
@@ -130,13 +137,14 @@ func main() {
 ```
 
 If you would like to read more about the configuration struct as well
-saveing and reading from a file and a quick introduction to Gos twist
-on "Object Oriented" programming check out this article 
-[The Config Struct](/notes/simple-go-configuration-structure).
+as a discussion saving and reading the configuration structure from a
+file and a quick introduction to Go's twist on "Object Oriented"
+programming check out this article on the
+[Go Config Struct](/notes/simple-go-configuration-structure).
 
 Now we have turned the ```config.Broker``` variable into a command
-line string that defaults to ```localhost```. Meaning if we rung the
-command:
+line argument that defaults to ```localhost```. Meaning if we run the
+command as:
 
 ```
 % ./iot-gateway
@@ -183,7 +191,7 @@ ss/data/10.11.4.22/tempf
 #### MQTT and Wildcards
 
 Lucky for us MQTT topics can be subscribed to using the '+' _wildcard
-symbol_ to capture the _stationID_ and _sensorID_ even though the hub
+symbol_ to capture the _StationID_ and _SensorID_ even though the hub
 did not know about any of these stations or sensors before they were
 published by the _Collection Station_.
 
@@ -262,10 +270,10 @@ func dataCB(mc mqtt.Client, mqttmsg mqtt.Message) {
 
 The _callback_ shown above is pretty simple:
 
-1. Extract the _stationID_ and _sensorID_ from the MQTT topic
+1. Extract the _StationID_ and _SensorID_ from the MQTT topic
 2. Extract the value delivered 
 3. Save the timestamp for when the data was received
-3. Use the stationID and sensorID to index the RAM Cache
+3. Use the StationID and SensorID to index the RAM Cache
 4. Send the ```{timestamp, value}``` tuple to the RAM Cache
    consumer[1]. 
 
@@ -362,6 +370,8 @@ functions directly for testing.
 System tests are considered _black box_ and completely _outside_ the
 Gateways external _public API_. 
 
+#### Mocking Collection Stations
+
 This is one of the beautiful things about testing protocols like MQTT
 and HTTP they are inherently _mockable_. Additionally with MQTT we'll
 use the popular ```mosquito_pub``` MQTT publishing tool to _mock_ our
@@ -371,20 +381,16 @@ To demonstrate a quick test of the hub we will add a ```-verbose``` flag
 to print data it is received. The data is then cached in RAM and made
 ready for the _REST API_ coming in the next article (milestone).
 
+All we have to do _mock_ a _Collector_ publishing a the temperature
+for example is run the following command:
 
-#### Mocking Collection Stations
-
-Thankfully it is very easy to _mock_ a _Collector_ by publishing fake
-environmental data using the MQTT publishing utility _mosquito_pub_.
-
-For example, the following command
-
-```bash
+```
 % mosquitto_pub -t ss/data/10.11.1.1/tempf -m 98.6
 ```
 
-will fake the data value ```98.6``` from sensor ```tempf``` extracted
-from the topic ```ss/data/10.11.1.11/tempf```. 
+Our IoT-Gateway will pick up the fake data value ```98.6``` from
+sensor ```tempf``` extracted from the topic
+```ss/data/10.11.1.11/tempf```.
 
 The upper screenshot shows logs from the _IoT Hub_ having just
 received it's first data point from MQTT. The lower screen shows the
@@ -396,12 +402,12 @@ invocation of the ```mosquitto_pub``` command.
 
 In the above screen shot ```mosquitto_pub``` published the temperature
 in Fahrenheit to the topic ```ss/data/10.11.1.11/tempf``` where the CS
-_station id_ is represented by ```10.11.1.11```. Likewise, the sensorID
+_station id_ is represented by ```10.11.1.11```. Likewise, the SensorID
 is represented by the string ```tempf```. The value passed in 98.6
 degrees Fahrenheit.
 
-We can see the Hub receiving the data and parsing the _stationID_ and
-_sensorID_ from the topic string. The data is parsed, formatted and
+We can see the Hub receiving the data and parsing the _StationID_ and
+_SensorID_ from the topic string. The data is parsed, formatted and
 temporarily saved in RAM. 
 
 ## HTTP REST Server Next ...
@@ -413,13 +419,12 @@ _time-series_ in RAM.
 Now it is time build our REST API get the data out of the _MQTT
 Gateway_. 
 
-In this next article we are going to import Go's builtin _net/http_
-package to setup our HTTP server that will in turn handle our _REST
-Endpoints_.  This same package will later allow us to serve up the IoT
-Gateway web app.
+In this next article we are going to import Go's builtin
+```net/http``` package to setup our HTTP server that will in turn
+handle our _REST Endpoints_.  This same package will later allow us to
+serve up the IoT Gateway web app.
 
 [Next Adding the REST API](/iot-project/iot-qateway-rest)
-
 
 <!--  LocalWords:  JSON IoT SDP mockable
  -->
