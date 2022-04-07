@@ -12,8 +12,8 @@ draft: true
 ---
 
 Previously we added 
-[MQTT to the IoT Gateway](/notes/iot-gateway-mqtt/) as part of the
-[IoT Project](/iot-project). This gave the _IoT Gateway_ the ability
+[MQTT to the IoT Gateway](/iot/iot-gateway-mqtt/) as part of the
+[IoT Project](/iot/iot-project). This gave the _IoT Gateway_ the ability
 to cache environmental data in the programs RAM.
 
 Now we want to access that data!
@@ -273,5 +273,5 @@ data in both tabular and graph forms?
 
 Sound good? 
 
-**Next** [IoT Dashboard in Vue](/notes/iot-dashboard-vue)
+**Next** [IoT Dashboard in Vue](/iot/iot-dashboard-vue)
 
