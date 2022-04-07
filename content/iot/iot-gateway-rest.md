@@ -18,7 +18,7 @@ to cache environmental data in the programs RAM.
 
 Now we want to access that data!
 
-## Getting data with REST
+## Geting data with REST
 
 The most popular and most appropriate style of API to provide access
 to the data cache is 

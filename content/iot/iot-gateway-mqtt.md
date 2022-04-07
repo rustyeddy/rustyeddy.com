@@ -18,9 +18,9 @@ git: https://github.com/iot-station/iothub
 ![MQTT Architecture](/img/iot-hub-mqtt.png)
 
 This page marks the beginning of the _Organic Gardner (OG)_ 
-[IoT Project](/iot/project) Milestone 1 development!  If you want to
+[IoT Project](/iot/iot-project) Milestone 1 development!  If you want to
 program along but have not yet worked with the _Go_ programming
-language check this intro: [Getting ready to Go](/get-ready-to-go).
+language check this intro: [Getting ready to Go](/notes/get-ready-to-go).
 
 ## A Brief About MQTT
 
@@ -429,7 +429,7 @@ In this next article we are going to import Go's builtin
 handle our _REST Endpoints_.  This same package will later allow us to
 serve up the IoT Gateway web app.
 
-[Next Adding the REST API](/iot-project/iot-qateway-rest)
+[Next Adding the REST API](/iot/iot-qateway-rest)
 
 <!--  LocalWords:  JSON IoT SDP mockable
  -->
