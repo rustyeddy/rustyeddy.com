@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IoT Project Log on Rusty Eddy</title>
+    <link>http://www.rustyeddy.com/iot/</link>
+    <description>Recent content in IoT Project Log on Rusty Eddy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://www.rustyeddy.com/iot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Build a Self Watering Garden</title>
+      <link>http://www.rustyeddy.com/iot-project/</link>
+      <pubDate>Sun, 06 Sep 2020 10:32:26 -0700</pubDate>
+      
+      <guid>http://www.rustyeddy.com/iot-project/</guid>
+      <description>What is this project about? Organic Gardner (OG) is an automated irrigation system that gathers soil moisture levels from various sections of a garden then uses that data to activate the garden sprinkler system. Done right, this will eliminate both over and under watering. Likewise there will no longer be any need to program the watering schedule with confusing sprinkler menus.
+ Although she does not know it yet, my wife will volunteer her succulent garden for testing!</description>
+    </item>
+    
+    <item>
+      <title>Adding MQTT to the IoT Gateway</title>
+      <link>http://www.rustyeddy.com/iot/iot-gateway-mqtt/</link>
+      <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rustyeddy.com/iot/iot-gateway-mqtt/</guid>
+      <description>This page marks the beginning of the Organic Gardner (OG) IoT Project Milestone 1 development! If you want to program along but have not yet worked with the Go programming language check this intro: Getting ready to Go.
+A Brief About MQTT MQTT is the messaging protocol that a Collector will use to periodically publish sensor data (like temperature and humidity) to the IoT Gateway. MQTT will also be used to signal when the Control Station or Controller will respond to commands to turn a sprinkler pump on or off.</description>
+    </item>
+    
+  </channel>
+</rss>
