@@ -8,16 +8,6 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://www.rustyeddy.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>How to Build a Self Watering Garden</title>
-      <link>http://www.rustyeddy.com/iot-project/</link>
-      <pubDate>Sun, 06 Sep 2020 10:32:26 -0700</pubDate>
-      
-      <guid>http://www.rustyeddy.com/iot-project/</guid>
-      <description>What is this project about? Organic Gardner (OG) is an automated irrigation system that gathers soil moisture levels from various sections of a garden then uses that data to activate the garden sprinkler system. Done right, this will eliminate both over and under watering. Likewise there will no longer be any need to program the watering schedule with confusing sprinkler menus.
- Although she does not know it yet, my wife will volunteer her succulent garden for testing!</description>
-    </item>
-    
-    <item>
       <title>Sugo Music Dashboard</title>
       <link>http://www.rustyeddy.com/resume/clients/sugo-music/</link>
       <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
@@ -257,6 +247,16 @@ Here is what I do:
   Create a type config struct
   Every configurable variable for the program becomes a Member field of the Configuration structure.
   Register every field of the Configuration Structure with go&amp;rsquo;s builtin flags package such that the flags are parsed when the program starts we can use our configuration variable.</description>
+    </item>
+    
+    <item>
+      <title>How to Build a Self Watering Garden</title>
+      <link>http://www.rustyeddy.com/iot-project/</link>
+      <pubDate>Sun, 06 Sep 2020 10:32:26 -0700</pubDate>
+      
+      <guid>http://www.rustyeddy.com/iot-project/</guid>
+      <description>What is this project about? Organic Gardner (OG) is an automated irrigation system that gathers soil moisture levels from various sections of a garden then uses that data to activate the garden sprinkler system. Done right, this will eliminate both over and under watering. Likewise there will no longer be any need to program the watering schedule with confusing sprinkler menus.
+ Although she does not know it yet, my wife will volunteer her succulent garden for testing!</description>
     </item>
     
     <item>

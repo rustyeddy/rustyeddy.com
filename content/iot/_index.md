@@ -1,7 +1,6 @@
 ---
-title: IoT Project Log
-date: 2020-02-02
+title: The IoT Project
 description: >
-  A log building the Organic Gardner watering station.
+  This log document the process of the IoT project Organic Gardener
+  development.  
 ---
-

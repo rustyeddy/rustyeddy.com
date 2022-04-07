@@ -9,7 +9,6 @@ description: >
   garden. We will use very inexpensive hardware and Open Source
   software getting started is very easy on the wallet!
 git: https://github.com/iot-station
-weight: 1
 ---
 
 ![High Level Sensor Station](/img/iot-project-drawing.png)
