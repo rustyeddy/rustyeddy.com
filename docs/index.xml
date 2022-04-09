@@ -218,6 +218,17 @@ California State Educators.&lt;/p&gt;</description>
     </item>
     
     <item>
+      <title>Adding the REST API to IoT Gateway</title>
+      <link>http://www.rustyeddy.com/iot/iot-gateway-rest/</link>
+      <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rustyeddy.com/iot/iot-gateway-rest/</guid>
+      <description>Previously we added MQTT to the IoT Gateway as part of the IoT Project. This gave the IoT Gateway the ability to cache environmental data in the programs RAM.
+Now we want to access that data!
+Geting data with REST The most popular and most appropriate style of API to provide access to the data cache is A REST API. For most people that have either written or consumed an API are familiar with REST, for those not familiar REST is a conventional way to use HTTP.</description>
+    </item>
+    
+    <item>
       <title>Adding MQTT to the IoT Gateway</title>
       <link>http://www.rustyeddy.com/iot/iot-gateway-mqtt/</link>
       <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate>

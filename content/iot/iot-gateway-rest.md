@@ -8,7 +8,6 @@ description: >
 category: iot-gateway
 tags: [ go, http, rest ]
 git: https://github.com/iot-station/iothub
-draft: true
 ---
 
 Previously we added 
@@ -180,7 +179,7 @@ This causes our Msg above to look like this:
             "sensor-id": "tempf",
             "time": "2020-02-02T23:32.12Z",
             "value": "76.32"
-        }
+        },
         {
             ...
         }
@@ -246,32 +245,63 @@ func (s *Stations) ServeHTTP(http.Request r, *http.Writer) {
 
 ```
 
-## Demo
+## MQTT to REST Demo
 
-4. run iot-gateway
-5. use curl to read about gateway, success!
-1. use curl to read data and stations, non yet
+OK now we have something interesting to start working with! The IoT 
+Gateway collects MQTT sensor data, stores it in RAM and a REST
+interface that can be used by an API client to fetch the cached data. 
 
-### Mock CS with mosquitto_pub
+### Mocking mosquitto_pub and curl
 
-1. run mosquitto_pub and send a datapoint
+To demonstrate (test) our IoT Gateway implementation to this point we
+are going to fake sensor data using ```mosquitto_pub``` then use
+```curl``` as an API client to fetch the fake sensor data.
 
-### Use curl to call the REST API 
+The first thing we need to do is start the ```iothub``` program which
+opens the REST API ```port 8011``` on ```localhost```. The gateway
+also subscribes to the _data topics_ ready to recieve MQTT data.
 
-1. Run curl and retrieve two data points.
+The top part of the screenshot below are the logs from our gateway
+after startup.
 
-Just for fun do it again with two stations and one and two data points
-for each station.
+![IoT Hub REST](/img/iothub-curl.png)
 
-## Conclusion
+The lower screen shows two commands, the first being mosquitto_pub to
+publish a fake temperature reading.
 
-Now we are getting somewhere! We can retrieve the data previously
-gathered by MQTT great!
+```
+% mosquitto_pub -t ss/data/station-01/tempf -m 72.3
+```
 
-Now what? Let's develop a Web app to access this data and display that
-data in both tabular and graph forms?
+Followed by a call to the REST API _data_ endpoint. This call returns
+all one data point we have collected.
 
-Sound good? 
+```
+% curl http://localhost:8011/api/data
+{"station-01":{"id":"station-01","sensors":{"tempf":{"values":[{"val":72.3,"time":1649525095}]}}}}
+```
+
+## What Now? UI or Sensors?
+
+Now we have a very simple but working IoT Gateway! We have more
+cool features to implement in the gateway, but before we do that let's
+start working on another component of the project.
+
+We are _mocking_ both the _Collector_ responsible for gathering and
+_publishing_ _sensor data_ as well as the API client that consumes the
+data.
+
+Either of those projects would be an obvious next step. While
+gathering real sensor data is really exciting, I think we should focus
+on the UI first.
+
+### Next Up the Web App UI
+
+The next thing we are going to work on is the User Interface, that
+will happen to be a _Responsive_ _Single Page Application (SPA)_
+written with the _Vue_ reactive framework.
+
+Ready for some GUI interfaces?
 
 **Next** [IoT Dashboard in Vue](/iot/iot-dashboard-vue)
 

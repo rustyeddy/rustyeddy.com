@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+
+<title>Adding the REST API to IoT Gateway</title>
+
+<script>(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
+0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+for(h=0;h<l.length;h++)c(e,l[h]);var f="set set_once union unset remove delete".split(" ");e.get_group=function(){function a(c){b[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));e.push([d,call2])}}for(var b={},d=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<f.length;c++)a(f[c]);return b};a._i.push([b,d,g])};a.__SV=1.2;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js";d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d)}})(document,window.mixpanel||[]);
+mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</script>
+
+
+<body><header class="container bg-white">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <a class="navbar-brand text-muted text-monospace" href="/"><span claa="h1">rusty eddy:</span></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <nav class="navbar-nav w-100 justify-content-end">
+	<div class="nav w-100">
+  	  <a class="nav-link" href="/iot/">iot &nbsp</a>
+  	  <a class="nav-link" href="/notes">notes &nbsp</a>
+  	  <a class="nav-link" href="/resume"> resume &nbsp</a> 
+  	  <a class="nav-link" href="/about"> about &nbsp</a> 
+	</div>
+      </nav>
+    </div>
+  </nav>
+</header>
+<div class="jumbotron border-top border-bottom bg-white" >
+  <div class="row">
+    <div class="col-md"></div>
+    <div class="col-md-8 text-center">
+      <h1 class="header h2 pb-1">Adding the REST API to IoT Gateway</h1>
+      <p class="leadin align-right text-muted text-center mt-0">
+        The IoT Gateway has cached environmental data it has collected from MQTT the HTTP package will be added to provide our REST API. The HTTP server will later be used to serve up our Webapp. 
+
+      </p>
+    </div>
+    <div class="col-md"></div>
+  </div>
+
+  <div class="row text-center smaller-text">
+    <div class="col"></div>
+    <div class="col-8">
+      <nav class="nav justify-content-center">
+        
+        <a class="nav-link" href="https://github.com/iot-station/iothub">https://github.com/iot-station/iothub</a>
+        
+        
+        
+        
+        
+      </nav>
+
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
+<div id="main body">
+<div class="container"><div class="row">
+    <div class="col"></div>
+    <div class="col-md-8 hero-text">
+	<article class="article">
+	  <p>Previously we added
+<a href="/iot/iot-gateway-mqtt/">MQTT to the IoT Gateway</a> as part of the
+<a href="/iot/iot-project">IoT Project</a>. This gave the <em>IoT Gateway</em> the ability
+to cache environmental data in the programs RAM.</p>
+<p>Now we want to access that data!</p>
+<h2 id="geting-data-with-rest">Geting data with REST</h2>
+<p>The most popular and most appropriate style of API to provide access
+to the data cache is
+<a href="https://www.redhat.com/en/topics/api/what-is-a-rest-api">A REST API</a>.
+For most people that have either written or consumed an API are
+familiar with REST, for those not familiar REST is a <em>conventional</em>
+way to use HTTP.</p>
+<h3 id="http-html-and-rest">HTTP, HTML and REST</h3>
+<p>HTTP used to serve up a traditional webpage basically takes a URL
+along with some optional arguments and returns an HTML to a <em>browser</em>
+capable of rendering HTML.</p>
+<p>HTTP used for automation can take the same style URL and optional
+arguments to produce a file of another format such as JSON which is
+typical of REST API&rsquo;s these days (XML, SOAP, binary, csv are also
+possible).</p>
+<p>Just like MQTT HTTP is also built on top of <em>TCP</em> which passes along
+all the goodness TCP provides in particular <em>reliability</em> efficient
+use of network bandwidth.</p>
+<h2 id="go-http-package">Go HTTP Package</h2>
+<p>Go has a small, robust and very efficient implementation of the <em>HTTP</em>
+protocol for both clients and servers. The IoT Gateway will import
+this package giving it an embedded web server allowing the gateway to
+serve up the sensor data and eventually the webapp without the
+overhead of an additional HTTP server like nginx or apache.</p>
+<p>The following code is a minimal but full working HTTP server that can
+handle a heavy load for a sustained period of time.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> (
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;time&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;net/http&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Msg holds each datapoint as it arrives 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Msg</span> <span style="color:#66d9ef">struct</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">StationID</span>   <span style="color:#66d9ef">int</span>         <span style="color:#e6db74">`json:&#34;station-id&#34;`</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">SensorID</span>    <span style="color:#66d9ef">int</span>         <span style="color:#e6db74">`json:&#34;sensor-id&#34;`</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Timestamp</span>   <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Time</span>   <span style="color:#e6db74">`json:&#34;time&#34;`</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Value</span>       <span style="color:#66d9ef">interface</span>{} <span style="color:#e6db74">`json:&#34;value&#34;`</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// DataCache is an array (queue) of Msg&#39;s that are pushed to
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// the rear of the message.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">DataCache</span> <span style="color:#66d9ef">struct</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Data</span>    []<span style="color:#a6e22e">Msg</span>           <span style="color:#e6db74">`json:&#34;data&#34;`</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">cache</span> <span style="color:#a6e22e">DataCache</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// ServeHTTP satifies the http.Server interface requirement hence 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// allows our global data cache structure to act as the *receiver*
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// function for the DataCache struct.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">d</span> <span style="color:#a6e22e">DataCache</span>) <span style="color:#a6e22e">ServeHTTP</span>(<span style="color:#a6e22e">w</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Writer</span>, <span style="color:#a6e22e">r</span> <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Request</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Only allow read requests
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">r</span>.<span style="color:#a6e22e">Method</span> <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;GET&#34;</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">w</span>.<span style="color:#a6e22e">WriteHeader</span>(<span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">StatusMethodNotAllowed</span>)
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">json</span>.<span style="color:#a6e22e">NewEncoder</span>(<span style="color:#a6e22e">w</span>).<span style="color:#a6e22e">Encode</span>(<span style="color:#a6e22e">d</span>)		
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">flags</span>.<span style="color:#a6e22e">Parse</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">RegisterFunc</span>(<span style="color:#e6db74">&#34;/api/v01/data&#34;</span>, <span style="color:#a6e22e">d</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Start listening on port 8080 on any interface
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">ListenAndServe</span>(<span style="color:#e6db74">&#34;:8080&#34;</span>, <span style="color:#66d9ef">nil</span>) 
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;HTTP Server has stopped &#34;</span>, <span style="color:#a6e22e">err</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>This example demonstrates a couple points. First it is very easy to
+add an embedded webserver into an application. The DataCache in the
+contrived example above is over simplified, however it captures some
+important points to be discussed &hellip;</p>
+<p>Embedding an HTTP server is a Go application is basically following
+these steps.</p>
+<ol>
+<li>Define the <em>endpoints</em> the application will support</li>
+<li>Write the <em>callbacks</em> that will handle incoming HTTP requests</li>
+<li>Start up the HTTP server and listen for incoming HTTP requests.</li>
+</ol>
+<p>Let&rsquo;s unravel these points a bit more.</p>
+<h4 id="adding-endpoints">Adding Endpoints</h4>
+<p>When discussing APIs the term <em>endpoint</em> simply means the <em>root</em> of
+the URL that demarcs are particular topic. In our example we have a
+single endpoint also known as a <em>URI</em>: <code>/api/v01/data</code>.</p>
+<p>Endpoints are appended to a <em>base URL</em> to result in a complete URL
+that a client would call. If our base URL is <code>https://example.com</code>
+the complete URL for this applications end point becomes:</p>
+<pre tabindex="0"><code>https://example.com/api/v01/data
+</code></pre><p>Our application will now allow any HTTP client to connect to our
+server and extract the data cached in RAM.</p>
+<blockquote>
+<p>NOTE: we have not implemented any security preventing &ldquo;unauthorized&rdquo;
+access. HTTP and API security will be addressed in a later writing</p>
+</blockquote>
+<p>We can use <code>curl</code> to test our endpoint!</p>
+<pre tabindex="0"><code>% curl http://example.com/api/v01/data
+...
+</code></pre><p>We are going to be using curl a lot for testing and debugging as this
+project progresses. We&rsquo;ll have to implement 3-4 endpoints with plenty
+of testing ahead!</p>
+<p>Refering to the line</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#a6e22e">r</span>.<span style="color:#a6e22e">Method</span> <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;GET&#34;</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">w</span>.<span style="color:#a6e22e">WriteHeader</span>(<span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">StatusMethodNotAllowed</span>)
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>From this code snippet we can see only the GET HTTP request
+type is supported. In other words we are allowing READ ONLY requests,
+no POSTS, PATCHES, or DELETEs (only -R&ndash; of CRUD).</p>
+<p>Do notice how easy it is to return a proper error to our mis-informed
+user.</p>
+<h3 id="auto-encoding-json-for-http-request">Auto encoding JSON for HTTP Request</h3>
+<p>This single line of code is pretty amazing. We simply pass the
+<em>DataCache</em> variable we want to return to the user to the <em>Encode()</em>
+function to be magically encoded into JSON.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>    <span style="color:#a6e22e">json</span>.<span style="color:#a6e22e">NewEncoder</span>(<span style="color:#a6e22e">w</span>).<span style="color:#a6e22e">Encode</span>(<span style="color:#a6e22e">d</span>)		
+</span></span></code></pre></div><p>This causes our Msg above to look like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;data&#34;</span><span style="color:#f92672">:</span> [
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;station-id&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;station-01&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;sensor-id&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;tempf&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;time&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;2020-02-02T23:32.12Z&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;value&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;76.32&#34;</span>
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            ...
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>One reason it is so easy for Go to encode a structure into JSON is due
+to reflection with the help of these <em>string literal tags</em> refering to
+the <code>`json:&quot;xxx&quot;`</code>.</p>
+<p>Check out the <a href="https://pkg.go.dev/encoding/json">encoding/json</a>
+package for more detail.</p>
+<h4 id="classes-vs-functions-as-callbacks">Classes vs. Functions as Callbacks</h4>
+<p>Talk about the difference between having a <em>function</em> as a <em>callback</em>
+vs. a type reciever, which gives the end point callback access to all
+the structures variables <em>and</em> additional methods!</p>
+<p>Another subtle difference vs more established frameworks, this design
+keeps the <em>model</em> and <em>control</em> logic in the same structure
+vs. dividing the structure into separate <em>model</em> vs. <em>controller</em>
+often reffered to as a <em>handler</em>.</p>
+<blockquote>
+<p>This architecutre lends itself directly to supporting plugins!
+Something we&rsquo;ll think about later in this project.</p>
+</blockquote>
+<p>Wow that sounds pretty powerful!</p>
+<h5 id="a-type-with-servehttp-method">A type with ServeHTTP method</h5>
+<p>Go does not have classes, rather go has <em>types</em> that in turn can have
+functions called methods. The instantiation of a <em>type</em> is known as a
+<em>reciever</em> when accessed through a method.</p>
+<p>For those familiar with OO terminology the <em>Type</em> is similar to a
+<em>Class</em> where a <em>reciever</em> is similar to an <em>Object</em> (or instantiation
+of the type).</p>
+<p>That was confusing, and not really the point we are here, a simple
+example will straighten things out.</p>
+<h4 id="the-data-type-and-data-endpoint-and-callback">The Data type and /data endpoint and callback</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Data</span> <span style="color:#66d9ef">struct</span> {}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">d</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Data</span>) <span style="color:#a6e22e">ServeHTTP</span>(<span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Request</span> <span style="color:#a6e22e">r</span>, <span style="color:#f92672">*</span><span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Writer</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// parse arguments, analyse request URL, reply to request
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><h4 id="the-network-type-net-endpoint-and-callback">The Network type /net endpoint and callback</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Stations</span> <span style="color:#66d9ef">struct</span> {}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">s</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Stations</span>) <span style="color:#a6e22e">ServeHTTP</span>(<span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Request</span> <span style="color:#a6e22e">r</span>, <span style="color:#f92672">*</span><span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Writer</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// parse arguments, analyse request URL, reply to request
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div><h2 id="mqtt-to-rest-demo">MQTT to REST Demo</h2>
+<p>OK now we have something interesting to start working with! The IoT
+Gateway collects MQTT sensor data, stores it in RAM and a REST
+interface that can be used by an API client to fetch the cached data.</p>
+<h3 id="mocking-mosquitto_pub-and-curl">Mocking mosquitto_pub and curl</h3>
+<p>To demonstrate (test) our IoT Gateway implementation to this point we
+are going to fake sensor data using <code>mosquitto_pub</code> then use
+<code>curl</code> as an API client to fetch the fake sensor data.</p>
+<p>The first thing we need to do is start the <code>iothub</code> program which
+opens the REST API <code>port 8011</code> on <code>localhost</code>. The gateway
+also subscribes to the <em>data topics</em> ready to recieve MQTT data.</p>
+<p>The top part of the screenshot below are the logs from our gateway
+after startup.</p>
+<p><img src="/img/iothub-curl.png" alt="IoT Hub REST"></p>
+<p>The lower screen shows two commands, the first being mosquitto_pub to
+publish a fake temperature reading.</p>
+<pre tabindex="0"><code>% mosquitto_pub -t ss/data/station-01/tempf -m 72.3
+</code></pre><p>Followed by a call to the REST API <em>data</em> endpoint. This call returns
+all one data point we have collected.</p>
+<pre tabindex="0"><code>% curl http://localhost:8011/api/data
+{&#34;station-01&#34;:{&#34;id&#34;:&#34;station-01&#34;,&#34;sensors&#34;:{&#34;tempf&#34;:{&#34;values&#34;:[{&#34;val&#34;:72.3,&#34;time&#34;:1649525095}]}}}}
+</code></pre><h2 id="what-now-ui-or-sensors">What Now? UI or Sensors?</h2>
+<p>Now we have a very simple but working IoT Gateway! We have more
+cool features to implement in the gateway, but before we do that let&rsquo;s
+start working on another component of the project.</p>
+<p>We are <em>mocking</em> both the <em>Collector</em> responsible for gathering and
+<em>publishing</em> <em>sensor data</em> as well as the API client that consumes the
+data.</p>
+<p>Either of those projects would be an obvious next step. While
+gathering real sensor data is really exciting, I think we should focus
+on the UI first.</p>
+<h3 id="next-up-the-web-app-ui">Next Up the Web App UI</h3>
+<p>The next thing we are going to work on is the User Interface, that
+will happen to be a <em>Responsive</em> <em>Single Page Application (SPA)</em>
+written with the <em>Vue</em> reactive framework.</p>
+<p>Ready for some GUI interfaces?</p>
+<p><strong>Next</strong> <a href="/iot/iot-dashboard-vue">IoT Dashboard in Vue</a></p>
+
+	</article>
+    </div>
+    <div class="col"></div>
+</div>
+</div>
+
+
+	</div><div class="d-flex justify-content-center">
+  <script async data-uid="50dfcceaf3" src="https://skilled-producer-5787.ck.page/50dfcceaf3/index.js"></script>
+</div>
+
+<footer id="footer" class="container-fluid footer small-text pt-4 border-top">
+  <section class="row">
+    <div class="col"></div>
+    <div class="col text-right">
+      <div class="address">419 Main St. #439</div>
+      <div class="city">Huntington Beach, CA. 92648</div>
+    </div>
+    <div class="col-3 text-center">
+      <div>
+        Last update ~
+        
+	
+        Wednesday, Mar 30, 2022
+	
+        
+      </div>
+      <div>site by <a href="/">Eddy Consulting, LLC.</a> ~ &#xA9; 2008 to 2020 </div>
+    </div>
+    <div class="col">
+      <div class="text-left">
+	<div class="phone">(714) 362-5402</div>
+	<a href="https://github.com/rustyeddy">github</a> .
+	<a href="https://twitter.com/rustyeddy">twitter</a> .
+	<a href="https://linkedin.com/rustyeddy">linkedin</a><br/>	    
+      </div>
+    </div>
+    <div class="col"></div>
+  </section>
+</footer>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19940083-13"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+
+ gtag('config', 'UA-19940083-13');
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+    </body>
+</html>
