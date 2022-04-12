@@ -13,9 +13,9 @@
       <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>http://www.rustyeddy.com/iot/iot-gateway-rest/</guid>
-      <description>Previously we added MQTT to the IoT Gateway as part of the IoT Project. This gave the IoT Gateway the ability to cache environmental data in the programs RAM.
-Now we want to access that data!
-Geting data with REST The most popular and most appropriate style of API to provide access to the data cache is A REST API. For most people that have either written or consumed an API are familiar with REST, for those not familiar REST is a conventional way to use HTTP.</description>
+      <description>Previously we have added MQTT to the IoT Gateway as part of the Organic Gardner Project. This gave the gateway the ability to collect and store a lot of environmental data from sensors all over the place.
+Now we need to provide a way for others programs, like the IoT Dashboard access that data via a REST API.
+Implementing a RESTful API The RESTful API convention is exteremely popular, well supported and is perfectly suited to providing access to the sensor data that has been collected.</description>
     </item>
     
   </channel>

@@ -44,7 +44,7 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="col-md-8 text-center">
       <h1 class="header h2 pb-1">Adding the REST API to IoT Gateway</h1>
       <p class="leadin align-right text-muted text-center mt-0">
-        The IoT Gateway has cached environmental data it has collected from MQTT the HTTP package will be added to provide our REST API. The HTTP server will later be used to serve up our Webapp. 
+        This is the second milestone of the Organic Gardner IoT project. The first milestones we implemented MQTT subscriptions to gather sensor data. This milestone we are going to add HTTP RESTful API to provide access to that data. The same HTTP library will later serve up our IoT dashboard.
 
       </p>
     </div>
@@ -73,28 +73,40 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="col"></div>
     <div class="col-md-8 hero-text">
 	<article class="article">
-	  <p>Previously we added
+	  <p>Previously we have added
 <a href="/iot/iot-gateway-mqtt/">MQTT to the IoT Gateway</a> as part of the
-<a href="/iot/iot-project">IoT Project</a>. This gave the <em>IoT Gateway</em> the ability
-to cache environmental data in the programs RAM.</p>
-<p>Now we want to access that data!</p>
-<h2 id="geting-data-with-rest">Geting data with REST</h2>
-<p>The most popular and most appropriate style of API to provide access
-to the data cache is
-<a href="https://www.redhat.com/en/topics/api/what-is-a-rest-api">A REST API</a>.
-For most people that have either written or consumed an API are
-familiar with REST, for those not familiar REST is a <em>conventional</em>
-way to use HTTP.</p>
+<a href="/iot/iot-project">Organic Gardner Project</a>. This gave the gateway the
+ability to collect and store a lot of environmental data from sensors
+all over the place.</p>
+<p>Now we need to provide a way for others programs, like the
+<a href="/iot/dashboard">IoT Dashboard</a> access that data via a REST API.</p>
+<h2 id="implementing-a-restful-api">Implementing a RESTful API</h2>
+<p><a href="https://www.redhat.com/en/topics/api/what-is-a-rest-api">The RESTful API</a>
+<em>convention</em> is exteremely popular, well supported and is perfectly
+suited to providing access to the sensor data that has been
+collected. REST is ubiquitous these days, most people
+involved in <em>frontend</em> or <em>backend</em> development most likely
+have quite a bit of experience with REST.</p>
+<p>For those not so familiar may find it interesting to know that REST is
+neither a protocol nor a standard but a rather brilliant
+conventional usage of the existing HTTP protocol aimed primarily at
+machine to machine communication.</p>
 <h3 id="http-html-and-rest">HTTP, HTML and REST</h3>
-<p>HTTP used to serve up a traditional webpage basically takes a URL
-along with some optional arguments and returns an HTML to a <em>browser</em>
-capable of rendering HTML.</p>
-<p>HTTP used for automation can take the same style URL and optional
-arguments to produce a file of another format such as JSON which is
-typical of REST API&rsquo;s these days (XML, SOAP, binary, csv are also
-possible).</p>
-<p>Just like MQTT HTTP is also built on top of <em>TCP</em> which passes along
-all the goodness TCP provides in particular <em>reliability</em> efficient
+<p>HTTP is used to serve up a traditional webpage by accepting a client
+<em>request</em> to a URL along with some optional arguments. The <em>response</em>
+returns a file with HTML to be displayed in a <em>browser</em> capable of
+rendering HTML for human consumption.</p>
+<p>HTTP when used for automation or machine to machine communication can
+take the same style URL and optional arguments to produce a file of
+another format typically JSON these days, making it easy for another
+program including a web application to easily access and use this
+data.</p>
+<blockquote>
+<p>JSON is the most widely used formay for RESTful APIs, however other
+formats like: XML, SOAP, binary or csv can also be used.</p>
+</blockquote>
+<p>Just like MQTT, HTTP is also built on top of <em>TCP</em> which passes along
+all the goodness TCP provides in particular <em>reliability</em> and efficient
 use of network bandwidth.</p>
 <h2 id="go-http-package">Go HTTP Package</h2>
 <p>Go has a small, robust and very efficient implementation of the <em>HTTP</em>
@@ -102,8 +114,8 @@ protocol for both clients and servers. The IoT Gateway will import
 this package giving it an embedded web server allowing the gateway to
 serve up the sensor data and eventually the webapp without the
 overhead of an additional HTTP server like nginx or apache.</p>
-<p>The following code is a minimal but full working HTTP server that can
-handle a heavy load for a sustained period of time.</p>
+<p>The following code is a minimal but full working HTTP server capable
+of handling heavy loads for a sustained period of time.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> (
 </span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;time&#34;</span>
@@ -147,38 +159,41 @@ handle a heavy load for a sustained period of time.</p>
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">ListenAndServe</span>(<span style="color:#e6db74">&#34;:8080&#34;</span>, <span style="color:#66d9ef">nil</span>) 
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;HTTP Server has stopped &#34;</span>, <span style="color:#a6e22e">err</span>)
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>This example demonstrates a couple points. First it is very easy to
-add an embedded webserver into an application. The DataCache in the
-contrived example above is over simplified, however it captures some
-important points to be discussed &hellip;</p>
-<p>Embedding an HTTP server is a Go application is basically following
-these steps.</p>
+</span></span></code></pre></div><p>This example demonstrates a couple points: first it is very easy to
+add an embedded webserver to an application by following these three
+basic steps:</p>
 <ol>
 <li>Define the <em>endpoints</em> the application will support</li>
 <li>Write the <em>callbacks</em> that will handle incoming HTTP requests</li>
 <li>Start up the HTTP server and listen for incoming HTTP requests.</li>
 </ol>
 <p>Let&rsquo;s unravel these points a bit more.</p>
-<h4 id="adding-endpoints">Adding Endpoints</h4>
+<h4 id="define-endpoints">Define Endpoints</h4>
 <p>When discussing APIs the term <em>endpoint</em> simply means the <em>root</em> of
-the URL that demarcs are particular topic. In our example we have a
-single endpoint also known as a <em>URI</em>: <code>/api/v01/data</code>.</p>
-<p>Endpoints are appended to a <em>base URL</em> to result in a complete URL
-that a client would call. If our base URL is <code>https://example.com</code>
-the complete URL for this applications end point becomes:</p>
+the URL that demarcs API calls effecting a particular group of
+data. In our example we have a single endpoint also known as a <em>URI</em>:
+<code>/api/v01/data</code>.</p>
+<p>Endpoints are appended to a <em>base URI</em> that results in the complete
+URL that will be used by a client to retrieve the specific data a
+client is interested in.</p>
+<p>For example: If the base URL is <code>https://example.com</code> the complete
+URL for this application end points becomes:</p>
 <pre tabindex="0"><code>https://example.com/api/v01/data
-</code></pre><p>Our application will now allow any HTTP client to connect to our
-server and extract the data cached in RAM.</p>
+</code></pre><p>The IoT Gateway is now able to allow any HTTP client to send a <em>GET
+Request</em> to the server and get a bundle of data back.</p>
 <blockquote>
-<p>NOTE: we have not implemented any security preventing &ldquo;unauthorized&rdquo;
-access. HTTP and API security will be addressed in a later writing</p>
+<p>NOTE: we have not implemented any security preventing anybody
+access to the data. HTTP and API security will be addressed in a
+later writing.</p>
 </blockquote>
-<p>We can use <code>curl</code> to test our endpoint!</p>
+<h4 id="testing-an-endpoint">Testing an Endpoint</h4>
+<p>We can use the incredible <code>curl</code> to test our endpoint
+with a single command.</p>
 <pre tabindex="0"><code>% curl http://example.com/api/v01/data
 ...
-</code></pre><p>We are going to be using curl a lot for testing and debugging as this
-project progresses. We&rsquo;ll have to implement 3-4 endpoints with plenty
-of testing ahead!</p>
+</code></pre><p>We are going to be using curl a lot for testing and debugging as the
+project progresses. With 4 endpoints to be implemented there will be
+plenty of testing ahead!</p>
 <p>Refering to the line</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#a6e22e">r</span>.<span style="color:#a6e22e">Method</span> <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;GET&#34;</span> {
 </span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">w</span>.<span style="color:#a6e22e">WriteHeader</span>(<span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">StatusMethodNotAllowed</span>)
@@ -214,75 +229,96 @@ the <code>`json:&quot;xxx&quot;`</code>.</p>
 <p>Check out the <a href="https://pkg.go.dev/encoding/json">encoding/json</a>
 package for more detail.</p>
 <h4 id="classes-vs-functions-as-callbacks">Classes vs. Functions as Callbacks</h4>
-<p>Talk about the difference between having a <em>function</em> as a <em>callback</em>
-vs. a type reciever, which gives the end point callback access to all
-the structures variables <em>and</em> additional methods!</p>
-<p>Another subtle difference vs more established frameworks, this design
-keeps the <em>model</em> and <em>control</em> logic in the same structure
-vs. dividing the structure into separate <em>model</em> vs. <em>controller</em>
-often reffered to as a <em>handler</em>.</p>
-<blockquote>
-<p>This architecutre lends itself directly to supporting plugins!
-Something we&rsquo;ll think about later in this project.</p>
-</blockquote>
-<p>Wow that sounds pretty powerful!</p>
+<p>Go has a very unique approach to <em>Object Oriented (OO)</em>
+programming. While it has <em>types</em> and <em>methods</em> it does not have a
+type hiearchy also known as <em>inheritance</em>. Rather Go approaches the
+solution by encouraging <em>composition</em>.  An interesting nuance that
+will be handled in another article.</p>
+<p>For those familiar with OO terminology the Go type <em>struct</em> is similar
+to a <em>Class</em> where a <em>reciever</em> is similar to an <em>Object</em> (or
+instantiation of the type).</p>
+<p>That brings us to an interesting twist on providing the typical
+<em>callback</em>. In most langauges a callback is expected to be a function,
+in some cases the callback can be a method of a class by using a
+little bit of pointer trickery to use a <em>method</em> of <em>object</em> allowing
+the callback access to the objects private variables and methods.</p>
+<p>Go can handle simple functions as callbacks by using the
+<code>http.RegisterFunc()</code> method. However, Go also allows one to add
+the <em>method</em> <code>ServeHTTP(w http.Responsewriter, r *http.Request)</code>
+to <em>any</em> type instantly making that type capable of accepting
+callbacks.</p>
 <h5 id="a-type-with-servehttp-method">A type with ServeHTTP method</h5>
-<p>Go does not have classes, rather go has <em>types</em> that in turn can have
-functions called methods. The instantiation of a <em>type</em> is known as a
-<em>reciever</em> when accessed through a method.</p>
-<p>For those familiar with OO terminology the <em>Type</em> is similar to a
-<em>Class</em> where a <em>reciever</em> is similar to an <em>Object</em> (or instantiation
-of the type).</p>
-<p>That was confusing, and not really the point we are here, a simple
-example will straighten things out.</p>
+<p>That was all a bit abstract and maybe confusing, a simple example will
+clarify things a bit.</p>
 <h4 id="the-data-type-and-data-endpoint-and-callback">The Data type and /data endpoint and callback</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Data</span> <span style="color:#66d9ef">struct</span> {}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Configuration</span> <span style="color:#66d9ef">struct</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Addr</span>        <span style="color:#66d9ef">string</span>      <span style="color:#e6db74">`json:&#34;addr&#34;`</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Broker</span>      <span style="color:#66d9ef">string</span>      <span style="color:#e6db74">`json:&#34;broker&#34;`</span>
+</span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">d</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Data</span>) <span style="color:#a6e22e">ServeHTTP</span>(<span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Request</span> <span style="color:#a6e22e">r</span>, <span style="color:#f92672">*</span><span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Writer</span>) {
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// parse arguments, analyse request URL, reply to request
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
-</span></span></code></pre></div><h4 id="the-network-type-net-endpoint-and-callback">The Network type /net endpoint and callback</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Stations</span> <span style="color:#66d9ef">struct</span> {}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">config</span> <span style="color:#a6e22e">Configuration</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">s</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">Stations</span>) <span style="color:#a6e22e">ServeHTTP</span>(<span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Request</span> <span style="color:#a6e22e">r</span>, <span style="color:#f92672">*</span><span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Writer</span>) {
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// parse arguments, analyse request URL, reply to request
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">c</span> <span style="color:#a6e22e">Configuration</span>) <span style="color:#a6e22e">ServeHTTP</span>(<span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Request</span> <span style="color:#a6e22e">r</span>, <span style="color:#f92672">*</span><span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Writer</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">json</span>.<span style="color:#a6e22e">NewEncoder</span>(<span style="color:#a6e22e">w</span>).<span style="color:#a6e22e">Encode</span>(<span style="color:#a6e22e">c</span>) <span style="color:#75715e">// encode config
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
-</span></span></code></pre></div><h2 id="mqtt-to-rest-demo">MQTT to REST Demo</h2>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Register</span>(<span style="color:#a6e22e">config</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>By adding the <code>ServeHTTP</code> function to the type reciever
+allows these Go instatiations with the ability to handle HTTP
+requests! I don&rsquo;t know about you, but I think that is pretty far out!</p>
+<h2 id="mqtt-to-rest-demo">MQTT to REST Demo</h2>
 <p>OK now we have something interesting to start working with! The IoT
 Gateway collects MQTT sensor data, stores it in RAM and a REST
 interface that can be used by an API client to fetch the cached data.</p>
-<h3 id="mocking-mosquitto_pub-and-curl">Mocking mosquitto_pub and curl</h3>
-<p>To demonstrate (test) our IoT Gateway implementation to this point we
-are going to fake sensor data using <code>mosquitto_pub</code> then use
-<code>curl</code> as an API client to fetch the fake sensor data.</p>
-<p>The first thing we need to do is start the <code>iothub</code> program which
-opens the REST API <code>port 8011</code> on <code>localhost</code>. The gateway
-also subscribes to the <em>data topics</em> ready to recieve MQTT data.</p>
-<p>The top part of the screenshot below are the logs from our gateway
-after startup.</p>
+<p>Let&rsquo;s get a demo going&hellip;</p>
+<h3 id="mocking-mqtt-publisher-and-a-rest-client">Mocking MQTT publisher and a REST client</h3>
+<p>To demonstrate (test) the development we have done for the IoT Gateway
+implementation to this point we&rsquo;ll need to fake sensor data using
+<code>mosquitto_pub</code> and likewise use <code>curl</code> to fetch the fake
+sensor data as an API client.</p>
+<h4 id="starting-the-demo">Starting the Demo</h4>
+<p>The <code>iothub</code> will subscribe to the <em>MQTT Topics</em> <code>ss/data/+/+</code>
+and <code>ss/net/announce</code> for the network of stations. The HTTP
+package opens a TCP socket on port 8011 (by default) and waits for
+incoming HTTP requests.</p>
+<p>The top part of the screen from the image below the top part of screen
+captured below show the output from <em>iothub</em> program.</p>
 <p><img src="/img/iothub-curl.png" alt="IoT Hub REST"></p>
-<p>The lower screen shows two commands, the first being mosquitto_pub to
-publish a fake temperature reading.</p>
+<p>The lower screen shows two commands: the first command is
+<code>mosquitto_pub</code> <em>mocking</em> a temperature value.</p>
 <pre tabindex="0"><code>% mosquitto_pub -t ss/data/station-01/tempf -m 72.3
-</code></pre><p>Followed by a call to the REST API <em>data</em> endpoint. This call returns
-all one data point we have collected.</p>
+</code></pre><p>Followed by a the <code>curl</code> command <em>mocking</em> a <em>REST</em> client much
+like the dashboard will access historical data sensor data.
+the to the REST API <em>data</em> endpoint.</p>
+<p>This example returns the single data point we have collected.</p>
 <pre tabindex="0"><code>% curl http://localhost:8011/api/data
 {&#34;station-01&#34;:{&#34;id&#34;:&#34;station-01&#34;,&#34;sensors&#34;:{&#34;tempf&#34;:{&#34;values&#34;:[{&#34;val&#34;:72.3,&#34;time&#34;:1649525095}]}}}}
-</code></pre><h2 id="what-now-ui-or-sensors">What Now? UI or Sensors?</h2>
-<p>Now we have a very simple but working IoT Gateway! We have more
-cool features to implement in the gateway, but before we do that let&rsquo;s
-start working on another component of the project.</p>
+</code></pre><p>If you are playing along at home, feel free to send a lot of data
+points and mix in new stations and sensors. That will demostrate how
+the IoTHub caches data. Put <code>mosquitto_pub</code> in a loop and let it
+run for a while!</p>
+<h2 id="what-next-web-app-or-real-sensors">What Next? Web App or Real Sensors?</h2>
+<p>Now we have a very simple but working IoT Gateway! There are more cool
+features to be added to the gateway, however that let&rsquo;s consider
+working on one of the other components of the project.</p>
 <p>We are <em>mocking</em> both the <em>Collector</em> responsible for gathering and
-<em>publishing</em> <em>sensor data</em> as well as the API client that consumes the
-data.</p>
-<p>Either of those projects would be an obvious next step. While
-gathering real sensor data is really exciting, I think we should focus
-on the UI first.</p>
+<em>publishing</em> <em>sensor data</em> as well as the <em>Dashboard</em> which is an API
+client that consumes the sensor data.</p>
+<p>Development can begin on either the <em>Collector</em> or <em>Dashboard</em> at
+anytime, actually development could have taken place while we started
+building the hub by also <em>mocking</em> the hub before it was ready.</p>
+<p>Gathering real data with real sensor hardware is exciting, I think it
+will become more meaningful to many people if we start developing the
+Webapp now since a visual representation of the data will resonate
+with most people vs. looking at raw data in JSON format.</p>
 <h3 id="next-up-the-web-app-ui">Next Up the Web App UI</h3>
-<p>The next thing we are going to work on is the User Interface, that
-will happen to be a <em>Responsive</em> <em>Single Page Application (SPA)</em>
-written with the <em>Vue</em> reactive framework.</p>
-<p>Ready for some GUI interfaces?</p>
+<p>On to the next milestone: building the dashboard to display historical
+data. The Dashboard is going to be what is known as a <em>Responsive</em>
+<em>Single Page Application (SPA)</em> written with the <em>Vue</em> reactive
+framework.</p>
+<p>Anyhow, get ready for GUI interfaces next!</p>
 <p><strong>Next</strong> <a href="/iot/iot-dashboard-vue">IoT Dashboard in Vue</a></p>
 
 	</article>
