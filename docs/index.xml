@@ -249,10 +249,10 @@ A Brief About MQTT MQTT is the messaging protocol that a Collector will use to p
     
     <item>
       <title>A Simple Go Configuration</title>
-      <link>http://www.rustyeddy.com/notes/simple-go-configuration-structure/</link>
+      <link>http://www.rustyeddy.com/notes/go-configuration/</link>
       <pubDate>Fri, 26 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://www.rustyeddy.com/notes/simple-go-configuration-structure/</guid>
+      <guid>http://www.rustyeddy.com/notes/go-configuration/</guid>
       <description>I use this same configuration structure and supporting functions in most every Go program I work on. It is pretty simple but makes it easy to keep global variables orgranized and configurable.
 Here is what I do:
   Create a type config struct
