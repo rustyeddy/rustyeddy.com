@@ -1,8 +1,8 @@
 ---
 title: Rusty Eddy
 description: >
-  Software Engineer, Developer and Architect interested in Physical
-  Computing (IoT) and Computer Communications.
+  Software Engineer and Architect interested in Physical
+  Computing (IoT), Computer Networks and Cloud Automation.
 date: 2020-04-10
 ---
 
