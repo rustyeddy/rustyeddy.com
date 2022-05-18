@@ -7,8 +7,3 @@ description: >
   cloud. IoTe also packs an embedded dashboard for easy control!
 ---
 
-## What is an IoT Gateway?
-
-An IoT
-
-### Filter Unecessary Data

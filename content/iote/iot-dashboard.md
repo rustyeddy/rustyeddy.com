@@ -8,7 +8,6 @@ description: >
   as the framework, lets get going..
 category: dashboard
 tags: [ javascript, vue ]
-draft: true
 ---
 
 This version of this dashboard is going to be a simple _one page_

@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 
 
-<title>Collection Station</title>
+<title>javascript</title>
 
 <script>(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
 0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
@@ -42,10 +42,9 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
   <div class="row">
     <div class="col-md"></div>
     <div class="col-md-8 text-center">
-      <h1 class="header h2 pb-1">Collection Station</h1>
+      <h1 class="header h2 pb-1">javascript</h1>
       <p class="leadin align-right text-muted text-center mt-0">
-        The Collection Stations are small battery powered wireless devices outfitted with environmental sensors. They collect and publish the data to the Hub for processing. This project is built with the esp32 micro-controller, C&#43;&#43; and embedded realtime operating system. 
-
+        
       </p>
     </div>
     <div class="col-md"></div>
@@ -55,8 +54,6 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
     <div class="col"></div>
     <div class="col-8">
       <nav class="nav justify-content-center">
-        
-        <a class="nav-link" href="https://github.com/iot-station/iotesp">https://github.com/iot-station/iotesp</a>
         
         
         
@@ -69,106 +66,46 @@ mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</scrip
   </div>
 </div>
 <div id="main body">
-<div class="container"><div class="row">
-    <div class="col"></div>
-    <div class="col-md-8 hero-text">
-	<article class="article">
-	  <h2 id="publishing-sensor-data">Publishing Sensor Data</h2>
-<p>The idea is pretty simple really: build a network of wireless battery
-powered devices to gather environmental data such as temprature,
-moisture, light levels, etc. The collected data will then be
-<em>published</em> via <a href="https://mqtt.org">MQTT</a> <em>wirelessly</em> to the
-<a href="/sensors/hub"><em>Hub</em></a>.</p>
-<h3 id="types-of-published-data">Types of Published Data</h3>
-<p>The planned data types to be published by the system are concerned
-with the following types of sensors.</p>
-<ul>
-<li>Temprature</li>
-<li>Humidity</li>
-<li>Moisture</li>
-<li>Light</li>
-<li>Barometric Pressure</li>
-</ul>
-<p>Technically any <em>type</em> of data could be published and collected
-however we are focused on the type of data our OG application will
-use. Data will be transmitted as either integer or floating point,
-depending on the sensor and how it collects the data.</p>
-<h2 id="data-storage">Data Storage</h2>
-<p>Due to the limited nature of the sensor stations storage space,
-relatively little historic data will be saved on the <em>station</em> itself.
-The expectation that data published by the station will have been
-consumed and aggregated by the Hub or a similar subscriber.</p>
-<p>Long term storage of the data is the job of the
-<a href="/iot-project/hub">Hub</a> or other data aggregator. The CS is an
-embedded system expected to run with very little resources.</p>
-<h2 id="the-esp32-chip-of-choice">The esp32 Chip of Choice</h2>
-<p>We are going to the
-<a href="https://www.espressif.com/en/products/socs/esp32">esp32</a> as the <em>chip
-of choice</em> for building the <em>Collection / Control Station</em>.</p>
-<p>Some features that make this chip very attractive for building the
-<em>Collection / Control Station</em>. In addition to it&rsquo;s availability and
-the wonderfully mature <a href="https://github.com/espressif/esp-idf">esp-idf</a>
-DevKit, the esp32 has the following features we will be taking
-advantage of:</p>
-<ul>
-<li>Wireless support for Wifi &amp; BLE</li>
-<li>Sophisticated low power modes</li>
-<li>Support for batteries</li>
-<li>Non Volatile Memory</li>
-<li>Over The Air Updates</li>
-<li>Digital GPIO</li>
-<li>Analog GPIO</li>
-</ul>
-<p>We&rsquo;ll discuss all of these items and how they benefit the development
-of our projects hardware.</p>
-<h3 id="the-esp32-is-cheap">The esp32 is CHEAP</h3>
-<p>An esp32 and a handful of sensors can easily be assebled for less than
-$20 (if you have a solering iron or breadboard) on your kitchen
-table.</p>
-<p>This is chip is no toy, it is an industrial stalwart!</p>
-<h3 id="network-connectivity">Network Connectivity</h3>
-<p>The most attractive part of the esp32 in my opinion are the networking
-capabilities for wireless networking. Bluetooth Lightweight Edition
-(BLE) and ubiquitos Wifi are built right on the esp32 itself.</p>
-<h4 id="mesh-networks">Mesh Networks</h4>
-<p>During the 2nd phase of development, the Sensor Station will be
-enhanced with <em>Mesh Network</em> capabilities. That is the ability for an
-esp32 to build a self forming network, eliminating the need to
-pre-configure devices.</p>
-<p>Mesh Networks also provides the capability of running a network where
-no previous <em>network</em> infrastructure exists or is accessible.</p>
-<h3 id="batteries-and-low-power-modes">Batteries and Low Power Modes</h3>
-<p>Battery options in stereo with <em>smart</em> programming of sleep and
-low power network protocols provide the potential of building sensors
-that can truely be &ldquo;set it and forget it&rdquo; dutifuly running for years
-with a single watch battery.</p>
-<p>This will become a primary area of research and development for this
-project in the near future.</p>
-<h3 id="solar">Solar</h3>
-<p>Options for solar power and rechargeble batteries give us the hope of
-building something that could last into perpituity.  In other words,
-the hardware should fail before one of these devices ever run out of
-power.</p>
-<h2 id="ota-updates">OTA Updates</h2>
-<p>The downside of little wireless, battery operated devices scattered
-about to and fro becomes very real when it is time to upgrade all
-these devices.</p>
-<p>That is where <em>Over-The-Air (OTA)</em> updates becomes a life saver! When
-new versions of software become available, they can be either <em>pushed</em>
-down to the devices, or <em>pulled</em> by the device from a <em>server</em>.</p>
-<p>The updates happen in a matter of seconds, reboot and the station will
-resume it&rsquo;s previous duties, most likely with out missing a single
-published datapoint.</p>
-<h2 id="conclusion">Conclusion</h2>
-<p>If this project sounds interesting to you at all, please drop me a
-line and say hello. Also consider signing up for the project email
-list, where you will get only good stuff about the project, no SPAM,
-never.</p>
+<div class="container mb-4">
 
-	</article>
+  <div class="row mt-5">
+    <div class="col"></div> 
+    <div class="col-8">
+      <article class="article">
+	
+      </article>
     </div>
+    <div class="col"></div> 
+  </div>
+
+  
+  <div class="row">
     <div class="col"></div>
-</div>
+    <div class="col-8">
+      <div class="title">
+	<a href="http://www.rustyeddy.com/iote/iot-dashboard/">An IoT Dashboard Written with Vue</a>
+      </div>
+    </div> 
+    <div class="col"></div>
+  </div>
+
+  <div class="row mb-4">
+    <div class="col text-mute fw-light text-right">
+      <div class="date">
+	April 1, 2022
+        <br/>
+        words 26
+      </div>
+    </div> 
+    <div class="col-8">
+      <div class="description text-mute smaller font-weight-light">
+	Our gateway is collecting data via MQTT and exposes that data via the REST API this part of the project we are going to build a user interface for the data we have collected. We are going to use VueJS as the framework, lets get going..
+
+      </div>
+    </div> 
+    <div class="col"></div>
+  </div>
+  
 </div>
 
 
@@ -187,8 +124,6 @@ never.</p>
       <div>
         Last update ~
         
-	
-        Wednesday, Jan 13, 2021
 	
         
       </div>

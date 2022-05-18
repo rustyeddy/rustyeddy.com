@@ -32,14 +32,14 @@ Distributed Systems.
 I left Rockwell to join a short lived startup called Retix Systems
 where I lead a Q&A lab for routing protocols. From there I was offered
 a position at _Information Sciences Institute_ at _USC_ where I engaged
-in Multicast Routing research and developed of the earliest versions
+in Multicast Routing research and developed one of the earliest versions
 of the _PIM_ multicast routing protocol.
 
 ## The Dotcom Craze and Cisco Systems
 
 That lead to a five year gig as a Technical Lead at _Cisco Systems_ on
 a brand new product called the _Core Routing System (CRS)_. At the time
-time the hardware was being whiteboarded and we wrote source code from
+the hardware was being whiteboarded and we wrote source code from
 scratch. 
 
 I had been involved in the original development of MSDP, PIM, IGMP,
@@ -52,21 +52,17 @@ From Cisco I started my own consulting company where I have had the
 chance to work with many diverse and interesting companies, projects
 and people on a wide range of technologies. 
 
-In the years that have passed I have worked on many interesting and
-challenging projects with some interesting companies and great people.
-
-However in all this time and array of problems I've been able to solve
-Computer Networks and Embedded Systems remain my favorite type of
-projects to work on.
+Even after all of the projects I've been able to work on, Computer
+Networks and Embedded Systems remain my favorites.
 
 ## What About Now?
 
 I still program almost everyday. Even though I have held titles such as
 "_Principal Engineer_", "_Technical Lead_" and "_Senior
-Systems Programmer_" among others I am most content when I am
+Systems Programmer_" among others, I am most content when I am
 programming or automating a cloud based project. 
 
-I feel the most comfortable and alive when I am working on new
+I feel the most comfortable and excited when I am working on new
 projects that may not be well defined. I thrive on turning complex
 concepts and good ideas into real world working software.
 

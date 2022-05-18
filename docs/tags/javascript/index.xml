@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>javascript on Rusty Eddy</title>
+    <link>http://www.rustyeddy.com/tags/javascript/</link>
+    <description>Recent content in javascript on Rusty Eddy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.rustyeddy.com/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>An IoT Dashboard Written with Vue</title>
+      <link>http://www.rustyeddy.com/iote/iot-dashboard/</link>
+      <pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rustyeddy.com/iote/iot-dashboard/</guid>
+      <description>This version of this dashboard is going to be a simple one page dashboard.
+Responsive means Mobile First Vue is Reactive Vue 3 Setup with Vite </description>
+    </item>
+    
+  </channel>
+</rss>
