@@ -1,4 +1,5 @@
-all:
+all: build
+
 build:
 	hugo
 
