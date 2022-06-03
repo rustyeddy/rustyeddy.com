@@ -89,7 +89,7 @@
     <loc>http://www.rustyeddy.com/tags/vue/</loc>
     <lastmod>2022-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.rustyeddy.com/iote/iot-gateway-rest/</loc>
+    <loc>http://www.rustyeddy.com/iot/iot-gateway-rest/</loc>
     <lastmod>2022-03-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/tags/go/</loc>
@@ -101,7 +101,7 @@
     <loc>http://www.rustyeddy.com/tags/rest/</loc>
     <lastmod>2022-03-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.rustyeddy.com/iote/iot-gateway-mqtt/</loc>
+    <loc>http://www.rustyeddy.com/iot/iot-gateway-mqtt/</loc>
     <lastmod>2022-03-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/tags/mqtt/</loc>
@@ -187,8 +187,6 @@
     <loc>http://www.rustyeddy.com/tags/c/c&#43;&#43;-perl-python-and-java/</loc>
   </url><url>
     <loc>http://www.rustyeddy.com/categories/</loc>
-  </url><url>
-    <loc>http://www.rustyeddy.com/contact/</loc>
   </url><url>
     <loc>http://www.rustyeddy.com/tags/embedded/</loc>
   </url><url>

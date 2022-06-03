@@ -11,32 +11,28 @@
     <div class="col"></div> <!-- col-2 -->
   </div>
 
-  {{ range .Pages }}
   <div class="row">
-    <div class="col"></div>
-    <div class="col-8">
+    {{ range .Pages }}
+    <div class="col-4">
+
       <div class="title">
 	<a href="{{ .Permalink }}">{{ .Title }}</a>
       </div>
-    </div> <!-- col -->
-    <div class="col"></div>
-  </div>
 
-  <div class="row mb-4">
-    <div class="col text-mute small text-right">
-      <div class="date">
-	{{ .Date.Format "January 2, 2006" }}
-        <br/>
-        words {{ .WordCount }}
-      </div>
-    </div> <!-- col-2 -->
-    <div class="col-8">
+      <div class="text-mute small text-right">
+        <div class="date">
+	  {{ .Date.Format "January 2, 2006" }}
+          <br/>
+          words {{ .WordCount }}
+        </div>
+      </div> <!-- col-2 -->
+
       <div class="description text-mute smaller font-weight-light">
 	{{ .Description }}
       </div>
+
     </div> <!-- col -->
-    <div class="col"></div>
-  </div>
-  {{ end }}
+    {{ end }}
+  </div> <!-- row -->
 </div>
 {{ end }}
