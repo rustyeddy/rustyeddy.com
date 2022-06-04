@@ -155,5 +155,7 @@ If you are interested in this project either as a user or a developer,
 I encourage you to follow along or better yet drop me a line and get
 involved! 
 
-## Components Information
+## About the Software Components
+
+
 

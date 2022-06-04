@@ -1,5 +1,5 @@
 ---
-title: Iot Hub
+title: Iot Edge Gateway
 date: 2022-01-13
 description: >
   The IoT Hub is the center piece of the IoT project as gathers data,
