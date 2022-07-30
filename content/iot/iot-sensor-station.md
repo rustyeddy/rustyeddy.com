@@ -1,6 +1,6 @@
 ---
 title: Collection Station
-date: 2021-01-13
+date: 2022-01-13
 description: >
     The Collection Stations are small battery powered wireless devices
     outfitted with environmental sensors. They collect and publish the

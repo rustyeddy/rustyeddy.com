@@ -2,13 +2,13 @@
 title: Golang timers to remove stale sensor stations
 draft: true
 description: >
-  TBD
+  A brief look at Go timers to clear out stale sensor stations.
 ---
 
 This articles introduces Go (Golang) Timers as the mechanism the the
 [IoTa gateway](https://github.com/rustyeddy/iota) uses to identify
 _stale_ IoT stations. Modifying the Station with with a new _Go
-timestamp_ field will allow IoTa to determine how long it has been
+timestamp_ field will allow IoTe to determine how long it has been
 since the last time it has heard from a given Station.
 
 If the last _refresh_ time for a particular station has been longer

@@ -4,7 +4,6 @@ description: >
   This quick cheatsheet will get you ready to start working on a go
   project like the IoT project.
 date: 2020-04-01
-draft: true
 ---
 
 
