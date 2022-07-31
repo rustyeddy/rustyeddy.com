@@ -23,7 +23,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
       with:
-          submodules: true  # Fetch Hugo themes
+          submodules: false  # Fetch Hugo themes
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
     # Step 2 - Sets up the latest version of Hugo
@@ -33,8 +33,8 @@ jobs:
           hugo-version: 'latest'
 
     # Step 3 - Clean and don't fail
-    # - name: Clean public directory
-    #  run: rm -rf docs
+    - name: Clean public directory
+      run: rm -rf docs
 
     # Step 4 - Builds the site using the latest version of Hugo
     # Also specifies the theme we want to use
