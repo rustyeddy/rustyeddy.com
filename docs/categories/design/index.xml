@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>design on Rusty Eddy</title>
+    <link>http://www.rustyeddy.com/categories/design/</link>
+    <description>Recent content in design on Rusty Eddy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://www.rustyeddy.com/categories/design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Web Developers Guide to Web Design</title>
+      <link>http://www.rustyeddy.com/software/website-design-process/</link>
+      <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.rustyeddy.com/software/website-design-process/</guid>
+      <description>Thankfully the Internet is full of great designers with kind soles that have distilled their years of training, experience and most of all personal direction into a set of general guidelines and formulas that make even no-talents like myself look like a pro!
+[TODO Give some credits and reference some of these folks].
+My Prespective on UI Design At the moment of this writing I am in the processes of building a startup.</description>
+    </item>
+    
+  </channel>
+</rss>

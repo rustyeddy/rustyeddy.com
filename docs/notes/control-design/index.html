@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+
+<title>Control System Design</title>
+
+<script>(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
+0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+for(h=0;h<l.length;h++)c(e,l[h]);var f="set set_once union unset remove delete".split(" ");e.get_group=function(){function a(c){b[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));e.push([d,call2])}}for(var b={},d=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<f.length;c++)a(f[c]);return b};a._i.push([b,d,g])};a.__SV=1.2;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js";d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d)}})(document,window.mixpanel||[]);
+mixpanel.init("bc05040913854909c46ba8408397cdb5", {batch_requests: true})</script>
+
+
+<body><header class="container bg-white">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <a class="navbar-brand text-muted text-monospace" href="/"><span claa="h1">rusty eddy:</span></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <nav class="navbar-nav w-100 justify-content-end">
+	<div class="nav w-100">
+  	  <a class="nav-link" href="/iot/"> iot &nbsp</a>
+  	  <a class="nav-link" href="/notes"> notes &nbsp</a>
+  	  <a class="nav-link" href="/resume"> resume &nbsp</a> 
+  	  <a class="nav-link" href="/about"> about &nbsp</a> 
+	</div>
+      </nav>
+    </div>
+  </nav>
+</header>
+<div class="jumbotron border-top border-bottom bg-white" >
+  <div class="row">
+    <div class="col-md"></div>
+    <div class="col-md-8 text-center">
+      <h1 class="header h2 pb-1">Control System Design</h1>
+      <p class="leadin align-right text-muted text-center mt-0">
+        Boy do I gotta lotta learn. This control systems is pretty serious stuff!  I&#39;ll have to learn some of this stuff to incorporate back into our driving algorithms. 
+
+      </p>
+    </div>
+    <div class="col-md"></div>
+  </div>
+
+  <div class="row text-center smaller-text">
+    <div class="col"></div>
+    <div class="col-8">
+      <nav class="nav justify-content-center">
+        
+        
+        
+        
+        
+      </nav>
+
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
+<div id="main body">
+<div class="container"><div class="row">
+    <div class="col"></div>
+    <div class="col-md-8 hero-text">
+	<article class="article">
+	  <p>Early in the process of building the first set of mobile robots I
+discovered that I was not going to settle on a single micro
+controller.</p>
+<p>The first two obvious choices being the Arduino or Raspberry Pi, for which
+I tried both with a modest level of success.  I quickly realized that
+I would not be providing my sole focus on either platform, neither was
+sufficient for my grand plans for a number of reasons.</p>
+<ul>
+<li>limited software tools and debuggers, etc on the Arduino</li>
+<li>RPi lacking realtime hardware features, and being large</li>
+<li>limited number of pins and functionality on either platform</li>
+<li>Arduino needs sheilds for many types of communication.</li>
+</ul>
+<p>And perhaps others. However, if I could combine them and use the best
+of both worlds while also increasing the number of pins available for
+mobile communications.</p>
+<h3 id="combining-controllers">Combining Controllers</h3>
+<p>If we could combine controllers that would be ideal, we would have a
+lot of flexibility in terms of what functions the RPi vs. Arduino
+would handle.</p>
+<p>In order to combine controllers we are going to need to define an
+&ldquo;internal/private&rdquo; communication link between the two devices.</p>
+<p>Which is solved right off the bat with the serial (UART) port. The serial
+port is already used to <em>flash</em> the Arduino, it can certainly be used
+to pass messages on the data control buses.</p>
+<h3 id="i2c-inter-circuit-communication">I2C Inter-circuit Communication</h3>
+<p>While the serial port gives us leverage to build a <em>distributed
+control system</em>, it does suffer a few disadvantages including the fact
+that it is Point-to-Point (P2P).</p>
+<p>That is two devices must be directly connected to communicate, ergo
+every controller must have a UART connection to every device it needs
+to talk to.  In other words,</p>
+<blockquote>
+<p>Serial communication does not scale well</p>
+</blockquote>
+<p>Fortunantely we have a few other options, we will consider on of these
+options here: I2C which introduces a message bus, only two wires,
+transmit and recieve (actually four if you count power wire), but only
+two wires are required to connect to the bus, allowing, in theory,
+over a hundred devices could all communicate.</p>
+<blockquote>
+<p>TODO: put a link in to my I2C article for an explantion</p>
+</blockquote>
+<p>I2C also happens to be supported in hardware on pretty much every
+microcontroller I have looked at thus far.</p>
+<blockquote>
+<p>Many other legit choices are available including: SPI, CAN,
+ethernet, etc.</p>
+</blockquote>
+<p>Wifi is also possible in some cases, but we are going to go with I2C
+because it is more robust, simpler and faster than standard serial
+comminication.</p>
+<p>It is very easy to wire up multiple I2C devices if and when we need
+to.</p>
+<h2 id="the-value-in-decoupling">The Value in Decoupling</h2>
+<p>By introducing a wired message bus for our controllers, first it
+allows us to pick and choose which controllers and how many we need,
+based on the demands of our application.</p>
+<h3 id="complexity-with-the-flexibility">Complexity with the Flexibility</h3>
+<p>An additional benefit  we can get from our decoupled hardware, is
+decoupled software.  That is we now have to think hard about our
+software as a <em>system</em>, and specifically identify what functionality
+or service is going to be applied by which device.</p>
+<p>If we do this correctly, we will end up with an incredibly flexible
+vehicle in which we will be able to mix and match hardware, software
+and expirement with algorightims, without having to recompile and
+reload software with complex configurations.</p>
+<h2 id="control-software-design">Control Software Design</h2>
+<p>In it&rsquo;s most simplest form, our <em>system</em> consists of:</p>
+<ul>
+<li>Data producers (sensors or any timeseries data or event)</li>
+<li>Control Translator ~ accepts data messages, and converts them to a
+controller object as <em>new state</em></li>
+<li>Control State Machine ~ computes <em>Control OUTPUTs</em> from <em>new state</em>
+against <em>current state</em></li>
+<li>Control Outputs ~ Control messages are created from controller
+object then written to message bus</li>
+<li>Output Controllor ~ Accepts messages from the bus, decode and
+santize them, convert them into specific control commands.</li>
+</ul>
+<h3 id="for-example">For example</h3>
+<ul>
+<li>
+<p>Keyboard connected to laptop: script accepts keystrokes from the
+keyboard, turns it into an INPUT message and then writes that
+message to the KBD channel.</p>
+<p>Say we hit &lsquo;r&rsquo; key to tell the robot to turn right.</p>
+</li>
+<li>
+<p>The Controller Translator subscribes to the KBD channel and accepts
+all messages, which contain keystrokes.  The translator parses the
+incoming message and provides the control software with <em>new
+state</em>.</p>
+</li>
+<li>
+<p>The Controller does its thing with the <em>new state</em>, in light of the
+<em>current state</em> against a stated <em>goal</em> to determine the next move
+toward stated <em>goal</em>, produces CONTROL OUTPUT, which is to turn
+right.</p>
+<p>This needs to be converted into a change in motor speed and
+direction for steering.  In our case, we are using skidsteering
+(most simple) which can effectively be controlled by grouping motors
+into <em>Left and Right</em> groups, the adjusting the speed of the groups
+of wheels.</p>
+</li>
+</ul>
+<p>In other words, if right and left wheels both turn at half speed the
+vehical will go striaght forward at half speed.  If we want to turn
+right, we could make the left wheel go at, say half speed, and have
+the right wheel go at 0.</p>
+<blockquote>
+<p>Or maybe have the right wheel go in reverse at half speed?</p>
+</blockquote>
+<h3 id="output-controller">OUTPUT Controller</h3>
+<p>At the end of the day, our <em>Skid Steer</em> motor controller only needs to
+know two things: how fast to spin the motor (or not), and what
+direction.</p>
+<p>When the four individual motors are combined into a system, that are
+confronted with a set of constraints.  Specifically that:</p>
+<ol>
+<li>Speed and steering are soley determined by the speed of the right
+and left motors.</li>
+<li>Turning is performed solely by altering the speed of either group
+of wheels.</li>
+<li>Wheel groups will always turn in the same direction at the same
+velocity.  Not doing so could cause damage and would likely produce
+no desired result. Only misery and suffering.</li>
+</ol>
+<h3 id="data-producers-and-consumers">Data Producers and Consumers</h3>
+<p>Data is produced in a number of ways, including sensors, camera
+inputs, etc.  The data produced is captured, often from a hardware
+pin, or a computer image, which is then written or <strong>published</strong> to
+it&rsquo;s specific data channel.</p>
+<p>For example, we could have a Keyboard, Joystick or Webapp control our
+remote vehicle.  Further more, at runtime, you may choose to have the
+vehicle drive itself using object detection and avoidance or computer
+vision, radar, and so on..</p>
+<h4 id="the-message-bus">The Message Bus</h4>
+
+	</article>
+    </div>
+    <div class="col"></div>
+</div>
+</div>
+
+
+	</div><footer id="footer" class="container-fluid footer small-text pt-4 border-top">
+  <section class="row">
+    <div class="col"></div>
+    <div class="col text-right">
+      <div class="address">419 Main St. #439</div>
+      <div class="city">Huntington Beach, CA. 92648</div>
+    </div>
+    <div class="col-3 text-center">
+      <div>
+        Last update ~
+        
+	
+        Saturday, May 5, 2018
+	
+        
+      </div>
+      <div>site by <a href="/">Eddy Consulting, LLC.</a> ~ &#xA9; 2008 to 2020 </div>
+    </div>
+    <div class="col">
+      <div class="text-left">
+	<div class="phone">(714) 362-5402</div>
+	<a href="https://github.com/rustyeddy">github</a> .
+	<a href="https://twitter.com/rustyeddy">twitter</a> .
+	<a href="https://linkedin.com/rustyeddy">linkedin</a><br/>	    
+      </div>
+    </div>
+    <div class="col"></div>
+  </section>
+</footer>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19940083-13"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+
+ gtag('config', 'UA-19940083-13');
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+    </body>
+</html>
