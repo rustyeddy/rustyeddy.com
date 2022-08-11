@@ -5,17 +5,30 @@
     <loc>http://www.rustyeddy.com/iot-project/hub/</loc>
     <lastmod>2022-01-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.rustyeddy.com/iote/dashboard/</loc>
-    <lastmod>2022-01-12T00:00:00+00:00</lastmod>
+    <loc>http://www.rustyeddy.com/software/software-is-hard/</loc>
+    <lastmod>2021-06-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/software/customer-discovery-and-mvp/</loc>
+  </url><url>
+    <loc>http://www.rustyeddy.com/notes/kanban/</loc>
   </url><url>
     <loc>http://www.rustyeddy.com/iot-project/collection-station/</loc>
     <lastmod>2022-01-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.rustyeddy.com/iot-project/collection-station/</loc>
-    <lastmod>2021-01-13T00:00:00+00:00</lastmod>
+    <loc>http://www.rustyeddy.com/software/vcs-tracking-progress/</loc>
+    <lastmod>2020-06-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.rustyeddy.com/iote/cloud/</loc>
-    <lastmod>2021-01-12T00:00:00+00:00</lastmod>
+    <loc>http://www.rustyeddy.com/software/testing/</loc>
+    <lastmod>2019-05-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/software/peer-review/</loc>
+    <lastmod>2020-02-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/software/commit-code-make-history/</loc>
+    <lastmod>2021-04-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/software/release-process/</loc>
+    <lastmod>2021-05-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/resume/clients/sugo-music/</loc>
     <lastmod>2021-01-27T00:00:00+00:00</lastmod>
@@ -68,6 +81,8 @@
     <loc>http://www.rustyeddy.com/resume/jobs/csu-chancelor/</loc>
     <lastmod>1995-08-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://www.rustyeddy.com/notes/iterative/</loc>
+  </url><url>
     <loc>http://www.rustyeddy.com/iot/</loc>
     <lastmod>2022-05-25T00:00:00+00:00</lastmod>
   </url><url>
@@ -79,18 +94,6 @@
   </url><url>
     <loc>http://www.rustyeddy.com/notes/go-timers-testing-mqtt/</loc>
     <lastmod>2022-05-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.rustyeddy.com/iote/iot-dashboard/</loc>
-    <lastmod>2022-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.rustyeddy.com/tags/javascript/</loc>
-    <lastmod>2022-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.rustyeddy.com/iote/</loc>
-    <lastmod>2022-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.rustyeddy.com/tags/vue/</loc>
-    <lastmod>2022-04-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/iot/iot-gateway-rest/</loc>
     <lastmod>2022-03-30T00:00:00+00:00</lastmod>
@@ -110,8 +113,11 @@
     <loc>http://www.rustyeddy.com/tags/mqtt/</loc>
     <lastmod>2022-03-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.rustyeddy.com/quotes/5-whys/</loc>
-    <lastmod>2022-02-05T00:00:00+00:00</lastmod>
+    <loc>http://www.rustyeddy.com/notes/private-wifi-network-webapp/</loc>
+    <lastmod>2021-07-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/software/</loc>
+    <lastmod>2021-06-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/notes/go-configuration/</loc>
     <lastmod>2021-03-26T00:00:00+00:00</lastmod>
@@ -134,8 +140,11 @@
     <loc>http://www.rustyeddy.com/tags/react/</loc>
     <lastmod>2021-01-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.rustyeddy.com/iot-project/</loc>
-    <lastmod>2020-09-06T10:32:26-07:00</lastmod>
+    <loc>http://www.rustyeddy.com/notes/rpi-wpe-web-kiosk/</loc>
+    <lastmod>2020-12-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/notes/poc-vs-production/</loc>
+    <lastmod>2020-04-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/</loc>
     <lastmod>2020-04-10T00:00:00+00:00</lastmod>
@@ -155,11 +164,14 @@
     <loc>http://www.rustyeddy.com/tags/markdown/</loc>
     <lastmod>2020-04-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.rustyeddy.com/quotes/</loc>
+    <loc>http://www.rustyeddy.com/notes/get-ready-to-go/</loc>
     <lastmod>2020-04-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/projects/redeye/</loc>
     <lastmod>2020-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/notes/paradise-aint-perfect/</loc>
+    <lastmod>2020-02-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/resume/summary/</loc>
     <lastmod>2020-01-02T00:00:00+00:00</lastmod>
@@ -167,14 +179,134 @@
     <loc>http://www.rustyeddy.com/resume/skills/</loc>
     <lastmod>2020-01-02T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://www.rustyeddy.com/categories/</loc>
+    <lastmod>2019-12-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/categories/design/</loc>
+    <lastmod>2019-12-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/categories/process/</loc>
+    <lastmod>2019-12-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/software/website-design-process/</loc>
+    <lastmod>2019-12-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/notes/vue-frontends/</loc>
+    <lastmod>2019-12-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/vue/</loc>
+    <lastmod>2019-12-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/notes/bootstrap/</loc>
+    <lastmod>2019-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/notes/redeye/</loc>
+    <lastmod>2019-05-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/categories/software/</loc>
+    <lastmod>2019-05-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/categories/video/</loc>
+    <lastmod>2019-05-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/gnc/</loc>
+    <lastmod>2019-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/categories/mechanics/</loc>
+    <lastmod>2019-05-15T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://www.rustyeddy.com/resume/</loc>
+    <lastmod>2019-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/notes/skid-steering/</loc>
+    <lastmod>2019-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/steering/</loc>
     <lastmod>2019-05-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/about/</loc>
     <lastmod>2019-05-14T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://www.rustyeddy.com/categories/motors/</loc>
+    <lastmod>2019-05-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/notes/rpi-motor-control-service/</loc>
+    <lastmod>2019-05-14T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://www.rustyeddy.com/projects/</loc>
     <lastmod>2019-05-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/categories/communications/</loc>
+    <lastmod>2019-05-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/mosquitto/</loc>
+    <lastmod>2019-05-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/notes/mqtt-comm/</loc>
+    <lastmod>2019-05-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/h264/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/notes/streaming-video/</loc>
+    <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/embedded/</loc>
+    <lastmod>2019-04-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/esp32/</loc>
+    <lastmod>2019-04-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/rtos/</loc>
+    <lastmod>2019-04-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/notes/esp32/</loc>
+    <lastmod>2019-04-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/ffmpeg/</loc>
+    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/gstreamer/</loc>
+    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/notes/streaming-video-tools/</loc>
+    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/vlc/</loc>
+    <lastmod>2019-04-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/notes/touch-screen-display/</loc>
+    <lastmod>2019-04-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/categories/hardware/</loc>
+    <lastmod>2019-04-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/tft-display/</loc>
+    <lastmod>2019-04-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/touch-screen/</loc>
+    <lastmod>2019-04-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/tlv/</loc>
+    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/notes/tlv-and-realitime-communication/</loc>
+    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/notes/sync-async/</loc>
+    <lastmod>2019-03-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/notes/streaming-video-local-network/</loc>
+    <lastmod>2018-12-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/software/software-dev-guide/</loc>
+    <lastmod>2018-10-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/notes/website-roles/</loc>
+    <lastmod>2018-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/develop-design/</loc>
+    <lastmod>2018-10-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/tags/computer-network-multicast/</loc>
     <lastmod>2018-09-21T00:00:00+00:00</lastmod>
@@ -182,21 +314,42 @@
     <loc>http://www.rustyeddy.com/resume/pubs/</loc>
     <lastmod>2018-09-21T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://www.rustyeddy.com/tags/adafruit/</loc>
+    <lastmod>2018-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/arduino/</loc>
+    <lastmod>2018-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/categories/electronics/</loc>
+    <lastmod>2018-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/notes/motor-controlor-notes/</loc>
+    <lastmod>2018-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/motorshield/</loc>
+    <lastmod>2018-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/raspberry-pi/</loc>
+    <lastmod>2018-08-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/notes/control-design/</loc>
+    <lastmod>2018-05-05T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://www.rustyeddy.com/notes/</loc>
     <lastmod>2001-02-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.rustyeddy.com/quotes/massively-connected/</loc>
-  </url><url>
     <loc>http://www.rustyeddy.com/tags/c/c&#43;&#43;-perl-python-and-java/</loc>
   </url><url>
-    <loc>http://www.rustyeddy.com/categories/</loc>
-  </url><url>
-    <loc>http://www.rustyeddy.com/tags/embedded/</loc>
-  </url><url>
     <loc>http://www.rustyeddy.com/tags/firmware/</loc>
+  </url><url>
+    <loc>http://www.rustyeddy.com/notes/go-timers/</loc>
   </url><url>
     <loc>http://www.rustyeddy.com/tags/single-page-app/</loc>
   </url><url>
     <loc>http://www.rustyeddy.com/tags/tcp/ip/</loc>
+  </url><url>
+    <loc>http://www.rustyeddy.com/notes/website/</loc>
+  </url><url>
+    <loc>http://www.rustyeddy.com/notes/why-choose-go/</loc>
   </url>
 </urlset>

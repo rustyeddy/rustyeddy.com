@@ -5,7 +5,6 @@ description: >
   Boy do I gotta lotta learn. This control systems is pretty serious
   stuff!  I'll have to learn some of this stuff to incorporate back
   into our driving algorithms. 
-draft: true
 ---
 
 Early in the process of building the first set of mobile robots I

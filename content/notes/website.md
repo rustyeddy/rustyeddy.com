@@ -1,6 +1,5 @@
 ---
 title: website
-draft: true
 ---
 
 # Websites

@@ -12,7 +12,6 @@ categories:
   - process
 tages:
   - style guide
-draft: true
 ---
 
 Thankfully the Internet is full of great designers with kind soles

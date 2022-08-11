@@ -1,8 +1,6 @@
 ---
 title: Proof of Concept vs. Production
 date: 2020-04-11
-weight: 200
-draft: true
 description: >
   New software often requires an exploration period that often results
   in a Proof of Concept (PoC) if you mistake a PoC with Production

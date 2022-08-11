@@ -1,6 +1,5 @@
 ---
 title: Why Choose the Go programming Language for your Project?
-draft: true
 description: >
   The programming language Go as taken the development world by storm
   over the last few years. This article will discuss reasons why Go

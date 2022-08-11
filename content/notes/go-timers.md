@@ -1,6 +1,5 @@
 ---
 title: Golang timers to remove stale sensor stations
-draft: true
 description: >
   A brief look at Go timers to clear out stale sensor stations.
 ---

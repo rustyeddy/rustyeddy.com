@@ -1,6 +1,5 @@
 ---
 title: Software Development Guide
-draft: true
 date: 2018-10-02
 description: >
   This document I briefly describe the primary elements of my software

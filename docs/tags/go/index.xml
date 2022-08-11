@@ -51,9 +51,9 @@ A Brief About MQTT MQTT is the messaging protocol that a Collector will use to p
       <guid>http://www.rustyeddy.com/notes/go-configuration/</guid>
       <description>I use this same configuration structure and supporting functions in most every Go program I work on. It is pretty simple but makes it easy to keep global variables orgranized and configurable.
 Here is what I do:
-  Create a type config struct
-  Every configurable variable for the program becomes a Member field of the Configuration structure.
-  Register every field of the Configuration Structure with go&amp;rsquo;s builtin flags package such that the flags are parsed when the program starts we can use our configuration variable.</description>
+Create a type config struct
+Every configurable variable for the program becomes a Member field of the Configuration structure.
+Register every field of the Configuration Structure with go&amp;rsquo;s builtin flags package such that the flags are parsed when the program starts we can use our configuration variable.</description>
     </item>
     
   </channel>

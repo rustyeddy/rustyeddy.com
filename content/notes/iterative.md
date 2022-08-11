@@ -1,7 +1,6 @@
 ---
 title: Software is Iterative
 weight: 876
-draft: true
 description: >
   Good software, even crappy software that is useful will live many
   lives (versions) and therefore should not be treated as a final
