@@ -18,4 +18,28 @@ ONVIF was designed to standardize how the management and control of standardized
 - Configuration
 - Security
 - Backups
+- Storage Configuration 
+- Event Handling
+- GEO Location
+- Orientation
+
+## Universal Device Discovery Interface (UDDI)
+
+- WS-Discovery
+- WSDL
+- SOAP
+- Types and Namespaces
+- Security and Authentiation
+- HTTP is a typical transport protocol
+- Access Controls
+
+## IP Configuration
+
+## Device Management
+
+### Capability Services
+
+## Event Handling
+
+
 
