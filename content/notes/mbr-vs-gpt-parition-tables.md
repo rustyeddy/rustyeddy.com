@@ -1,5 +1,6 @@
 ---
 title: MBR vs GPT Partition Tables
+draft: true
 date: 2023-06-22
 ---
 
