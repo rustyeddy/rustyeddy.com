@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
-    {{- partial "head-cheese.html" . -}}
-    <body>
-	{{- partial "header.html" . -}}
+  {{- partial "head-cheese.html" . -}}
+  <body>
+    {{- partial "header.html" . -}}
 
-	{{- partial "blog-header.html" . -}}
+    {{- partial "blog-header.html" . -}}
 
-	<div id="main body">
+    <div id="main body">
 
-	    {{- block "main" . -}}
-	    {{- partial "content.html" . -}}
-  	    {{ end }}
+      {{- block "main" . -}}
+      {{- partial "content.html" . -}}
+      {{ end }}
 
-	</div>
-	{{- block "footer" . -}}
-	{{- partial "footer.html" . -}}
-	{{ end }}
-    </body>
+    </div>
+    {{- block "footer" . -}}
+    {{- partial "footer.html" . -}}
+    {{ end }}
+  </body>
 </html>
