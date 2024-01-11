@@ -6,14 +6,18 @@
     <description>Recent content in vlc on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Apr 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://www.rustyeddy.com/tags/vlc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Apr 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://www.rustyeddy.com/tags/vlc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Streaming Video Tools</title>
       <link>http://www.rustyeddy.com/notes/streaming-video-tools/</link>
       <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/notes/streaming-video-tools/</guid>
-      <description>The grandparents of streaming video, and snapshots, read, writing and transcoding video and single frame images are ffmpeg, vlc and gstreamer.&#xA;Other platforms, such as the wildly cool and inexpensive Raspberry Pi and attached CSI Camera (Raspberry Pi Camera) have thier own set of utilities: like raspivid. Or the NVidia Nano with it&amp;rsquo;s gst-streamer plugins and nvgst-capture/nvgst-playback utilies.&#xA;This writting is as of March 2019&#xA;GStreamer Complex, Flexible, Future Proof GStreamer really complex pipelines but insanely flexible.</description>
+      <description>The grandparents of streaming video, and snapshots, read, writing and transcoding video and single frame images are ffmpeg, vlc and gstreamer.
+Other platforms, such as the wildly cool and inexpensive Raspberry Pi and attached CSI Camera (Raspberry Pi Camera) have thier own set of utilities: like raspivid. Or the NVidia Nano with it&amp;rsquo;s gst-streamer plugins and nvgst-capture/nvgst-playback utilies.
+This writting is as of March 2019
+GStreamer Complex, Flexible, Future Proof GStreamer really complex pipelines but insanely flexible.</description>
     </item>
+    
   </channel>
 </rss>

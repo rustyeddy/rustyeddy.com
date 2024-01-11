@@ -2,6 +2,7 @@
 title: Golang timers to remove stale sensor stations
 description: >
   A brief look at Go timers to clear out stale sensor stations.
+date: 2020-11-03
 ---
 
 This articles introduces Go (Golang) Timers as the mechanism the the

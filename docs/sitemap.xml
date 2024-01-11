@@ -10,8 +10,6 @@
   </url><url>
     <loc>http://www.rustyeddy.com/software/customer-discovery-and-mvp/</loc>
   </url><url>
-    <loc>http://www.rustyeddy.com/notes/kanban/</loc>
-  </url><url>
     <loc>http://www.rustyeddy.com/iot-project/collection-station/</loc>
     <lastmod>2022-01-13T00:00:00+00:00</lastmod>
   </url><url>
@@ -81,22 +79,11 @@
     <loc>http://www.rustyeddy.com/resume/jobs/csu-chancelor/</loc>
     <lastmod>1995-08-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.rustyeddy.com/notes/iterative/</loc>
-  </url><url>
-    <loc>http://www.rustyeddy.com/tags/onvif/</loc>
-    <lastmod>2023-01-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.rustyeddy.com/tags/</loc>
-    <lastmod>2023-01-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.rustyeddy.com/tags/video/</loc>
-    <lastmod>2023-01-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.rustyeddy.com/notes/video-control-with-onvif/</loc>
-    <lastmod>2023-01-31T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://www.rustyeddy.com/iot/</loc>
     <lastmod>2022-05-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/</loc>
+    <lastmod>2022-05-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/tags/timers-iote/</loc>
     <lastmod>2022-05-02T00:00:00+00:00</lastmod>
@@ -131,6 +118,9 @@
     <loc>http://www.rustyeddy.com/notes/go-configuration/</loc>
     <lastmod>2021-03-26T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://www.rustyeddy.com/notes/kanban/</loc>
+    <lastmod>2021-03-03T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://www.rustyeddy.com/tags/amazon-web-services-aws/</loc>
     <lastmod>2021-01-27T00:00:00+00:00</lastmod>
   </url><url>
@@ -151,6 +141,9 @@
   </url><url>
     <loc>http://www.rustyeddy.com/notes/rpi-wpe-web-kiosk/</loc>
     <lastmod>2020-12-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/notes/go-timers/</loc>
+    <lastmod>2020-11-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/notes/poc-vs-production/</loc>
     <lastmod>2020-04-11T00:00:00+00:00</lastmod>
@@ -208,6 +201,12 @@
   </url><url>
     <loc>http://www.rustyeddy.com/notes/bootstrap/</loc>
     <lastmod>2019-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/notes/sotware-is-iterative/</loc>
+    <lastmod>2019-10-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/notes/why-choose-go/</loc>
+    <lastmod>2019-09-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/notes/redeye/</loc>
     <lastmod>2019-05-24T00:00:00+00:00</lastmod>
@@ -303,10 +302,13 @@
     <lastmod>2019-04-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/notes/sync-async/</loc>
-    <lastmod>2019-03-03T00:00:00+00:00</lastmod>
+    <lastmod>2024-01-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/notes/streaming-video-local-network/</loc>
     <lastmod>2018-12-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/notes/website/</loc>
+    <lastmod>2018-12-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/software/software-dev-guide/</loc>
     <lastmod>2018-10-02T00:00:00+00:00</lastmod>
@@ -345,14 +347,8 @@
   </url><url>
     <loc>http://www.rustyeddy.com/tags/firmware/</loc>
   </url><url>
-    <loc>http://www.rustyeddy.com/notes/go-timers/</loc>
-  </url><url>
     <loc>http://www.rustyeddy.com/tags/single-page-app/</loc>
   </url><url>
     <loc>http://www.rustyeddy.com/tags/tcp/ip/</loc>
-  </url><url>
-    <loc>http://www.rustyeddy.com/notes/website/</loc>
-  </url><url>
-    <loc>http://www.rustyeddy.com/notes/why-choose-go/</loc>
   </url>
 </urlset>
