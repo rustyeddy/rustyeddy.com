@@ -3,13 +3,15 @@ title: Internet Of Things
 description: >
   Building DIY electronic projects is a lot of fun, you no longer need
   to be a rocket scientest nor a millionaire to build some really cool
-  IoT style of projects. This website will focus on the software side
-  of IoT project development taking our projects from cool stand alone
-  projects to more sophisticated integrated devices. Continue below to
-  find out more.
+  IoT style of projects. Here we will build some cool projects, but
+  unlike some of the other cools websites and youtube channels we will
+  focus on the software side of IoT development, taking our projects
+  sophistication to a whole new level by introducint communications
+  and cloud to make our project truely global. Continue reading below
+  to find out more.
+tags: [ iot, maker ]
 date: 2023-01-13
 ---
-
 
 ## Overview
 
@@ -25,11 +27,15 @@ software development.
 >IoT software projects are a combination of _Full Stack_ and
 >_Embedded_ software development.
 
+### Diversity of Technology
+
 We will look at some embedded software development by writting code
 that runs on tiny realtime systems (esp32, raspberry Pi pico) using
-C++, we will look at hubs and integration with a Raspberry Pi and the
-Go programming language. Web interfaces and Mobile Apps with
-JavaScript and React.
+_C++_ and _python_, we will look at hubs and integration with a
+Raspberry Pi and the _Go_ programming language. Web interfaces and
+Mobile Apps with _JavaScript_ and _React_.
+
+### Building Extensible Systems with APIs
 
 We will also be building public REST API's and PubSub messaging
 systems out a cloud based backend system giving us access to our
