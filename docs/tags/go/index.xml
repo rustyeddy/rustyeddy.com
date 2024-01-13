@@ -6,55 +6,35 @@
     <description>Recent content in go on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.rustyeddy.com/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 30 Mar 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.rustyeddy.com/tags/go/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sugo Music Dashboard</title>
       <link>http://www.rustyeddy.com/resume/clients/sugo-music/</link>
       <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
-      
       <guid>http://www.rustyeddy.com/resume/clients/sugo-music/</guid>
-      <description>&lt;p&gt;Sugo Music is an online Music publishing platform for Artists by
-artists. It was my responsibility to manage the software process,
-build and test the backend and manage the front-end development in
-React.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Go, React, REST API, HTTP, HTML, JavaScript, Webapp, fullstack&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+      <description>&lt;p&gt;Sugo Music is an online Music publishing platform for Artists by&#xA;artists. It was my responsibility to manage the software process,&#xA;build and test the backend and manage the front-end development in&#xA;React.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Go, React, REST API, HTTP, HTML, JavaScript, Webapp, fullstack&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
-    
     <item>
       <title>Adding the REST API to IoT Gateway</title>
       <link>http://www.rustyeddy.com/iot/iot-gateway-rest/</link>
       <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>http://www.rustyeddy.com/iot/iot-gateway-rest/</guid>
-      <description>Previously we have added MQTT to the IoT Gateway as part of the Organic Gardner Project. This gave the gateway the ability to collect and store a lot of environmental data from sensors all over the place.
-Now we need to provide a way for others programs, like the IoT Dashboard access that data via a REST API.
-Implementing a RESTful API The RESTful API convention is exteremely popular, well supported and is perfectly suited to providing access to the sensor data that has been collected.</description>
+      <description>Previously we have added MQTT to the IoT Gateway as part of the Organic Gardner Project. This gave the gateway the ability to collect and store a lot of environmental data from sensors all over the place.&#xA;Now we need to provide a way for others programs, like the IoT Dashboard access that data via a REST API.&#xA;Implementing a RESTful API The RESTful API convention is exteremely popular, well supported and is perfectly suited to providing access to the sensor data that has been collected.</description>
     </item>
-    
     <item>
       <title>Adding MQTT to the IoT Gateway</title>
       <link>http://www.rustyeddy.com/iot/iot-gateway-mqtt/</link>
       <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>http://www.rustyeddy.com/iot/iot-gateway-mqtt/</guid>
-      <description>This page marks the beginning of the Organic Gardner (OG) IoT Project Milestone 1 development! If you want to program along but have not yet worked with the Go programming language check this intro: Getting ready to Go.
-A Brief About MQTT MQTT is the messaging protocol that a Collector will use to periodically publish sensor data (like temperature and humidity) to the IoT Gateway. MQTT will also be used to signal when the Control Station or Controller will respond to commands to turn a sprinkler pump on or off.</description>
+      <description>This page marks the beginning of the Organic Gardner (OG) IoT Project Milestone 1 development! If you want to program along but have not yet worked with the Go programming language check this intro: Getting ready to Go.&#xA;A Brief About MQTT MQTT is the messaging protocol that a Collector will use to periodically publish sensor data (like temperature and humidity) to the IoT Gateway. MQTT will also be used to signal when the Control Station or Controller will respond to commands to turn a sprinkler pump on or off.</description>
     </item>
-    
     <item>
       <title>A Simple Go Configuration</title>
       <link>http://www.rustyeddy.com/notes/go-configuration/</link>
       <pubDate>Fri, 26 Mar 2021 00:00:00 +0000</pubDate>
-      
       <guid>http://www.rustyeddy.com/notes/go-configuration/</guid>
-      <description>I use this same configuration structure and supporting functions in most every Go program I work on. It is pretty simple but makes it easy to keep global variables orgranized and configurable.
-Here is what I do:
-Create a type config struct
-Every configurable variable for the program becomes a Member field of the Configuration structure.
-Register every field of the Configuration Structure with go&amp;rsquo;s builtin flags package such that the flags are parsed when the program starts we can use our configuration variable.</description>
+      <description>I use this same configuration structure and supporting functions in most every Go program I work on. It is pretty simple but makes it easy to keep global variables orgranized and configurable.&#xA;Here is what I do:&#xA;Create a type config struct&#xA;Every configurable variable for the program becomes a Member field of the Configuration structure.&#xA;Register every field of the Configuration Structure with go&amp;rsquo;s builtin flags package such that the flags are parsed when the program starts we can use our configuration variable.</description>
     </item>
-    
   </channel>
 </rss>

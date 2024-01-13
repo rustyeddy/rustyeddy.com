@@ -1,161 +1,73 @@
 ---
-title: How to Build a Self Watering Garden
-date: 2022-05-25
+title: Internet Of Things
 description: >
-  This article describes an automated irrigation 
-  system for home gardens and small farms. It uses soil moisture
-  levels and other telemetry data to drive watering schedules vs
-  traditional time based scheduals. This project is Open Source and
-  easy to program.
-category: iot
+  Building DIY electronic projects is a lot of fun, you no longer need
+  to be a rocket scientest nor a millionaire to build some really cool
+  IoT style of projects. This website will focus on the software side
+  of IoT project development taking our projects from cool stand alone
+  projects to more sophisticated integrated devices. Continue below to
+  find out more.
+date: 2023-01-13
 ---
 
-![Garden Diagram](/img/self-watering-garden.png)
 
------
+## Overview
 
-## Why Build this Thing
+The purpose of the project is two fold, first to build something cool
+that involves some a physical product aka IoT project. The second is
+to demostrate solid _Software Engineering Principals_ and the practice
+of employing a professional _Software Development Life Cycle (SDLC)_.
 
-The typical small irrigation systems today are based on time schedules,
-where sections of the garden (zones) are watered based on days of the
-week, a start time and a duration. In otherwords, your garden is
-watered according to a set schedule regardless of environmental
-changes. 
+Why IoT? Aside from the fact that I really enjoy IoT and have an IoT
+background. IoT employs a lot of interesting and diverse elements of
+software development.
 
-In reality, the amount of water should be increased during long hot dry
-days and decreased as the days shorten and get colder. For example,
-if it rains you probably need to turn your sprinklers completely off
-and remember to turn them on again when it stops raining.
+>IoT software projects are a combination of _Full Stack_ and
+>_Embedded_ software development.
 
-### Water Levels not Time
+We will look at some embedded software development by writting code
+that runs on tiny realtime systems (esp32, raspberry Pi pico) using
+C++, we will look at hubs and integration with a Raspberry Pi and the
+Go programming language. Web interfaces and Mobile Apps with
+JavaScript and React.
 
-The _Organic Gardner (OG)_ waters your garden when the the ground
-becomes too dry for plant and stops watering it when the ground has
-reached the right moisture level.
+We will also be building public REST API's and PubSub messaging
+systems out a cloud based backend system giving us access to our
+project from anywhere in the world that can access the Internet.
 
-### Plants Get the Perfect Amount of Water
+From a techinical perspetive all of these items are part of IoT and
+quite interesting in that they use a wide array of techical elements,
+require these disparate elements to be successfully integrated
+together and maintained like any complex software system.
 
-Different plants require a different amount of water, for example,
-roses require quite a bit of water to produce beautiful healthy
-flowers, but that same amount of water will destroy most varieties
-of succulents.
+Also, they require a significant co-ordinated effort among various
+players: users, developers, stake-holders, etc.  During this process
+I'll try to lean on and explain sound software development practices
+as the project unfolds.
 
-Plants that produce food also require specific amounts of
-water. Peppers and watermelon would not survive or flourish if they
-are each given the same amount of water.
+## Project Overview
 
-OG Control stations can be configured to start and stop watering
-according to the amount of water a given type of plant requires.
+The basic Idea of this project will be to develop software to observe
+and control a physical device from a remote UI, that is we will build
+a little weather station that collects temperature and humidity from a
+simple device and display it on a web interface viewable from
+anywhere, even a phone.
 
-### OG Conserve's Precious Water
+After that we will add a relay (switch) capable of turning lights on
+and off from our user interface. This basic project will lay the
+foundation for quite a few other IoT projects that can be built by
+extending our base framework.
 
-In many parts of the world, including the South Western US and
-Southern California where I live, are in a decade long drought with
-water levels at all-time lows.
+## The Architecture
 
-Saving water is a major goal of this project and one that
-will hopefully help others convserve this scarce and precious
-resource. 
+We will do this in a very open and inter-changeable manner. For
+example, though we may choose say a Raspberry Pi to collect
+temperature and humidity, also to control the relay we will build this
+project such that it is very easy to integrate a totaly different
+device using the same user interface and backend.
 
-## How Does Organic Gardner Work?
-
-The primary goal of _Organic Gardner_ is to build a smart irrigation
-system that will provide watering zones with _the_ perfect amount of
-water based on _the_ plant or crop being watered and not a drop extra.  
-
-### The Collection Station
-
-Soil Moisture and other telemetry (temperature, humidity, light
-levels) are collected by a collection station diagrammed below. The
-moisture sensor is placed in the soil near the plant(s) that need to
-be watered.
-
-![Collection Station](/img/collection-station.png)
-
-
-The [_collector_](https://github.com/rustyeddy/ogesp) gathers and
-publishes the soil moisture level periodically over a wireless network.
-The [_smart hub_](https://rustyeddy.com/iot/iote) will then process
-the data to determine when to send a _start water_ command to the
-_control station_ in the respective watering zone. 
-
-### The Smart Hub
-
-The _Smart Hub_ also known as the IoTe gateway, is the "brains" of the
-system. IoTe processes moisture data sent from _collection stations_
-to determine when to send _start watering_ and _stop watering_
-commands to the appropriate _control station_. 
-
-### The Control Station
-
-The control station is connected to a sprinkler or drip system that
-can be turned on or off as a result of receiving the corresponding
-message from IoTe.
-
-The _control station_ may optionally be connected to other accessories
-such as a lighting or heating systems.
-
-![Control Station](/img/control-station.png)
-
-As the plant is being watered, moisture levels are transmitted back to
-the Hub when the soil has hit the appropriate moisture level. The
-_Smart Hub_ will then send a control message back to the _controller_
-to stop the watering.
-
-### The Dashboard
-
-The Hub has a built in Dashboard that can be accessed from any browser
-(Chrome, Firefox, Safari, etc) with screens that allow a user to
-observe the telemetry data from the _collection stations_. The
-Dashboard also allows a user to manually activate sprinklers and
-configure moisture thresholds that determine when
-sprinklers are activated and de-activated.
-
-> Todo a Screenshot of the Dashboard
-
-Essentially the dashboard gives humans the ability to monitor,
-configure and control the irrigation system.
-
-### The Cloud
-
-No IoT project would be complete without adding the Cloud to the
-project (the 'I' in IoT). The IoTe (hub) can be connected to the
-Internet when available, providing users access to the
-Dashboard from anywhere in the world as long as they have an Internet
-Connection. 
-
-Your garden can be monitored, controlled and configured from your
-phone anywhere in the world!
-
-> Todo Picture of a Phone and Dashboard
-
-The history of data collected in the cloud as well as watering times
-can be plugged into a _Machine Learning (ML)_ or _Data Science_
-framework if desired.  We will talk a bit more about _ML_ in a future
-article.
-
-## The Project
-
-As I mentioned earlier this project is a Proof Of Concept (PoC) with a
-few distinct components that must all work together. These components
-include, but are not limited to: 
-
-- The _collection and control station_. These two components are
-  actually the same piece of software.
-  
-- The smart Hub or _IoTe Gateway_
-
-- The Dashboard, which is served up by the _IoTe_ gateway
-
-- The cloud component includes a version of the IoTe gateway and
-  a _timeseries_ database
-
-  
-If you are interested in this project either as a user or a developer,
-I encourage you to follow along or better yet drop me a line and get
-involved! 
-
-## About the Software Components
-
-
+That is we'll create API's and use messaging to create a _loosely
+coupled_ infrastructure so that somebody that wanted to add to this
+system say an Arduino or ESP32 could do so just by developing toward
+the same API's and messaging system.
 

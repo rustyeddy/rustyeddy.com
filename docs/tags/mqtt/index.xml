@@ -6,29 +6,21 @@
     <description>Recent content in mqtt on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.rustyeddy.com/tags/mqtt/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Mar 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.rustyeddy.com/tags/mqtt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Adding MQTT to the IoT Gateway</title>
       <link>http://www.rustyeddy.com/iot/iot-gateway-mqtt/</link>
       <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>http://www.rustyeddy.com/iot/iot-gateway-mqtt/</guid>
-      <description>This page marks the beginning of the Organic Gardner (OG) IoT Project Milestone 1 development! If you want to program along but have not yet worked with the Go programming language check this intro: Getting ready to Go.
-A Brief About MQTT MQTT is the messaging protocol that a Collector will use to periodically publish sensor data (like temperature and humidity) to the IoT Gateway. MQTT will also be used to signal when the Control Station or Controller will respond to commands to turn a sprinkler pump on or off.</description>
+      <description>This page marks the beginning of the Organic Gardner (OG) IoT Project Milestone 1 development! If you want to program along but have not yet worked with the Go programming language check this intro: Getting ready to Go.&#xA;A Brief About MQTT MQTT is the messaging protocol that a Collector will use to periodically publish sensor data (like temperature and humidity) to the IoT Gateway. MQTT will also be used to signal when the Control Station or Controller will respond to commands to turn a sprinkler pump on or off.</description>
     </item>
-    
     <item>
       <title>MQTT For Controllor Communication</title>
       <link>http://www.rustyeddy.com/notes/mqtt-comm/</link>
       <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://www.rustyeddy.com/notes/mqtt-comm/</guid>
-      <description>&lt;p&gt;The MQTT message bus is a simple but critical element of our MBR
-software design.  MQTT provides what is known as a &lt;em&gt;publish/suscribe&lt;/em&gt;
-or &lt;em&gt;pubsub&lt;/em&gt; communications model.  This model of machine to machine
-communication has some attractive benefits for realtime driving
-algorithms that we will discuss in this post.&lt;/p&gt;</description>
+      <description>&lt;p&gt;The MQTT message bus is a simple but critical element of our MBR&#xA;software design.  MQTT provides what is known as a &lt;em&gt;publish/suscribe&lt;/em&gt;&#xA;or &lt;em&gt;pubsub&lt;/em&gt; communications model.  This model of machine to machine&#xA;communication has some attractive benefits for realtime driving&#xA;algorithms that we will discuss in this post.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

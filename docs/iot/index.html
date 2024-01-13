@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="/css/style.css" />
 
   
-  <title>How to Build a Self Watering Garden</title>
+  <title>Internet Of Things</title>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-G7XZRHH62T"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -44,9 +44,9 @@
   <div class="row">
     <div class="col-md"></div>
     <div class="col-md-8 text-center">
-      <h1 class="header h2 pb-1">How to Build a Self Watering Garden</h1>
+      <h1 class="header h2 pb-1">Internet Of Things</h1>
       <p class="leadin align-right text-muted text-center mt-0">
-        This article describes an automated irrigation  system for home gardens and small farms. It uses soil moisture levels and other telemetry data to drive watering schedules vs traditional time based scheduals. This project is Open Source and easy to program.
+        Building DIY electronic projects is a lot of fun, you no longer need to be a rocket scientest nor a millionaire to build some really cool IoT style of projects. This website will focus on the software side of IoT project development taking our projects from cool stand alone projects to more sophisticated integrated devices. Continue below to find out more.
 
       </p>
     </div>
@@ -75,121 +75,54 @@
 	<div class="col"></div> 
 	<div class="col-8">
 	    <article class="article">
-		<p><img src="/img/self-watering-garden.png" alt="Garden Diagram"></p>
-<hr>
-<h2 id="why-build-this-thing">Why Build this Thing</h2>
-<p>The typical small irrigation systems today are based on time schedules,
-where sections of the garden (zones) are watered based on days of the
-week, a start time and a duration. In otherwords, your garden is
-watered according to a set schedule regardless of environmental
-changes.</p>
-<p>In reality, the amount of water should be increased during long hot dry
-days and decreased as the days shorten and get colder. For example,
-if it rains you probably need to turn your sprinklers completely off
-and remember to turn them on again when it stops raining.</p>
-<h3 id="water-levels-not-time">Water Levels not Time</h3>
-<p>The <em>Organic Gardner (OG)</em> waters your garden when the the ground
-becomes too dry for plant and stops watering it when the ground has
-reached the right moisture level.</p>
-<h3 id="plants-get-the-perfect-amount-of-water">Plants Get the Perfect Amount of Water</h3>
-<p>Different plants require a different amount of water, for example,
-roses require quite a bit of water to produce beautiful healthy
-flowers, but that same amount of water will destroy most varieties
-of succulents.</p>
-<p>Plants that produce food also require specific amounts of
-water. Peppers and watermelon would not survive or flourish if they
-are each given the same amount of water.</p>
-<p>OG Control stations can be configured to start and stop watering
-according to the amount of water a given type of plant requires.</p>
-<h3 id="og-conserves-precious-water">OG Conserve&rsquo;s Precious Water</h3>
-<p>In many parts of the world, including the South Western US and
-Southern California where I live, are in a decade long drought with
-water levels at all-time lows.</p>
-<p>Saving water is a major goal of this project and one that
-will hopefully help others convserve this scarce and precious
-resource.</p>
-<h2 id="how-does-organic-gardner-work">How Does Organic Gardner Work?</h2>
-<p>The primary goal of <em>Organic Gardner</em> is to build a smart irrigation
-system that will provide watering zones with <em>the</em> perfect amount of
-water based on <em>the</em> plant or crop being watered and not a drop extra.</p>
-<h3 id="the-collection-station">The Collection Station</h3>
-<p>Soil Moisture and other telemetry (temperature, humidity, light
-levels) are collected by a collection station diagrammed below. The
-moisture sensor is placed in the soil near the plant(s) that need to
-be watered.</p>
-<p><img src="/img/collection-station.png" alt="Collection Station"></p>
-<p>The <a href="https://github.com/rustyeddy/ogesp"><em>collector</em></a> gathers and
-publishes the soil moisture level periodically over a wireless network.
-The <a href="https://rustyeddy.com/iot/iote"><em>smart hub</em></a> will then process
-the data to determine when to send a <em>start water</em> command to the
-<em>control station</em> in the respective watering zone.</p>
-<h3 id="the-smart-hub">The Smart Hub</h3>
-<p>The <em>Smart Hub</em> also known as the IoTe gateway, is the &ldquo;brains&rdquo; of the
-system. IoTe processes moisture data sent from <em>collection stations</em>
-to determine when to send <em>start watering</em> and <em>stop watering</em>
-commands to the appropriate <em>control station</em>.</p>
-<h3 id="the-control-station">The Control Station</h3>
-<p>The control station is connected to a sprinkler or drip system that
-can be turned on or off as a result of receiving the corresponding
-message from IoTe.</p>
-<p>The <em>control station</em> may optionally be connected to other accessories
-such as a lighting or heating systems.</p>
-<p><img src="/img/control-station.png" alt="Control Station"></p>
-<p>As the plant is being watered, moisture levels are transmitted back to
-the Hub when the soil has hit the appropriate moisture level. The
-<em>Smart Hub</em> will then send a control message back to the <em>controller</em>
-to stop the watering.</p>
-<h3 id="the-dashboard">The Dashboard</h3>
-<p>The Hub has a built in Dashboard that can be accessed from any browser
-(Chrome, Firefox, Safari, etc) with screens that allow a user to
-observe the telemetry data from the <em>collection stations</em>. The
-Dashboard also allows a user to manually activate sprinklers and
-configure moisture thresholds that determine when
-sprinklers are activated and de-activated.</p>
+		<h2 id="overview">Overview</h2>
+<p>The purpose of the project is two fold, first to build something cool
+that involves some a physical product aka IoT project. The second is
+to demostrate solid <em>Software Engineering Principals</em> and the practice
+of employing a professional <em>Software Development Life Cycle (SDLC)</em>.</p>
+<p>Why IoT? Aside from the fact that I really enjoy IoT and have an IoT
+background. IoT employs a lot of interesting and diverse elements of
+software development.</p>
 <blockquote>
-<p>Todo a Screenshot of the Dashboard</p>
+<p>IoT software projects are a combination of <em>Full Stack</em> and
+<em>Embedded</em> software development.</p>
 </blockquote>
-<p>Essentially the dashboard gives humans the ability to monitor,
-configure and control the irrigation system.</p>
-<h3 id="the-cloud">The Cloud</h3>
-<p>No IoT project would be complete without adding the Cloud to the
-project (the &lsquo;I&rsquo; in IoT). The IoTe (hub) can be connected to the
-Internet when available, providing users access to the
-Dashboard from anywhere in the world as long as they have an Internet
-Connection.</p>
-<p>Your garden can be monitored, controlled and configured from your
-phone anywhere in the world!</p>
-<blockquote>
-<p>Todo Picture of a Phone and Dashboard</p>
-</blockquote>
-<p>The history of data collected in the cloud as well as watering times
-can be plugged into a <em>Machine Learning (ML)</em> or <em>Data Science</em>
-framework if desired.  We will talk a bit more about <em>ML</em> in a future
-article.</p>
-<h2 id="the-project">The Project</h2>
-<p>As I mentioned earlier this project is a Proof Of Concept (PoC) with a
-few distinct components that must all work together. These components
-include, but are not limited to:</p>
-<ul>
-<li>
-<p>The <em>collection and control station</em>. These two components are
-actually the same piece of software.</p>
-</li>
-<li>
-<p>The smart Hub or <em>IoTe Gateway</em></p>
-</li>
-<li>
-<p>The Dashboard, which is served up by the <em>IoTe</em> gateway</p>
-</li>
-<li>
-<p>The cloud component includes a version of the IoTe gateway and
-a <em>timeseries</em> database</p>
-</li>
-</ul>
-<p>If you are interested in this project either as a user or a developer,
-I encourage you to follow along or better yet drop me a line and get
-involved!</p>
-<h2 id="about-the-software-components">About the Software Components</h2>
+<p>We will look at some embedded software development by writting code
+that runs on tiny realtime systems (esp32, raspberry Pi pico) using
+C++, we will look at hubs and integration with a Raspberry Pi and the
+Go programming language. Web interfaces and Mobile Apps with
+JavaScript and React.</p>
+<p>We will also be building public REST API&rsquo;s and PubSub messaging
+systems out a cloud based backend system giving us access to our
+project from anywhere in the world that can access the Internet.</p>
+<p>From a techinical perspetive all of these items are part of IoT and
+quite interesting in that they use a wide array of techical elements,
+require these disparate elements to be successfully integrated
+together and maintained like any complex software system.</p>
+<p>Also, they require a significant co-ordinated effort among various
+players: users, developers, stake-holders, etc.  During this process
+I&rsquo;ll try to lean on and explain sound software development practices
+as the project unfolds.</p>
+<h2 id="project-overview">Project Overview</h2>
+<p>The basic Idea of this project will be to develop software to observe
+and control a physical device from a remote UI, that is we will build
+a little weather station that collects temperature and humidity from a
+simple device and display it on a web interface viewable from
+anywhere, even a phone.</p>
+<p>After that we will add a relay (switch) capable of turning lights on
+and off from our user interface. This basic project will lay the
+foundation for quite a few other IoT projects that can be built by
+extending our base framework.</p>
+<h2 id="the-architecture">The Architecture</h2>
+<p>We will do this in a very open and inter-changeable manner. For
+example, though we may choose say a Raspberry Pi to collect
+temperature and humidity, also to control the relay we will build this
+project such that it is very easy to integrate a totaly different
+device using the same user interface and backend.</p>
+<p>That is we&rsquo;ll create API&rsquo;s and use messaging to create a <em>loosely
+coupled</em> infrastructure so that somebody that wanted to add to this
+system say an Arduino or ESP32 could do so just by developing toward
+the same API&rsquo;s and messaging system.</p>
 
 	    </article>
 	</div>
@@ -202,7 +135,7 @@ involved!</p>
         <div class="card mb-4">
           <div class="card-body">
 	    <div class="card-title">
-	      <a href="http://www.rustyeddy.com/iot-project/hub/">Iot Edge Gateway</a>
+	      <a href="http://www.rustyeddy.com/iot/iot-edge-gateway/">Iot Edge Gateway</a>
 	    </div>
             <div class="card-text small">
               The IoT Hub is the center piece of the IoT project as gathers data, runs application logic. Provides an HTTP Server to serve up a Web App, REST API and Web sockets. This project is a Micro service written in Go, and is perfect for systems hackers, backend devs and full-stackers.
@@ -220,7 +153,7 @@ involved!</p>
         <div class="card mb-4">
           <div class="card-body">
 	    <div class="card-title">
-	      <a href="http://www.rustyeddy.com/iot-project/collection-station/">Collection Station</a>
+	      <a href="http://www.rustyeddy.com/iot/iot-sensor-station/">Collection Station</a>
 	    </div>
             <div class="card-text small">
               The Collection Stations are small battery powered wireless devices outfitted with environmental sensors. They collect and publish the data to the Hub for processing. This project is built with the esp32 micro-controller, C&#43;&#43; and embedded realtime operating system. 
@@ -229,6 +162,24 @@ involved!</p>
             <hr/>
 	    <div class="card-subtitle date small muted">
 	      January 13, 2022
+	    </div>
+          </div>
+        </div>
+      </div> 
+      
+      <div class="col-6">
+        <div class="card mb-4">
+          <div class="card-body">
+	    <div class="card-title">
+	      <a href="http://www.rustyeddy.com/iot/iot-garden/">How to Build a Self Watering Garden</a>
+	    </div>
+            <div class="card-text small">
+              This article describes an automated irrigation  system for home gardens and small farms. It uses soil moisture levels and other telemetry data to drive watering schedules vs traditional time based scheduals. This project is Open Source and easy to program.
+
+            </div>
+            <hr/>
+	    <div class="card-subtitle date small muted">
+	      May 25, 2022
 	    </div>
           </div>
         </div>
@@ -286,7 +237,7 @@ involved!</p>
         Last update ~
         
 	
-        Wednesday, May 25, 2022
+        Friday, Jan 13, 2023
 	
         
       </div>

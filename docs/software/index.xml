@@ -6,107 +6,70 @@
     <description>Recent content in Softwares on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://www.rustyeddy.com/software/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.rustyeddy.com/software/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Software is Hard</title>
       <link>http://www.rustyeddy.com/software/software-is-hard/</link>
       <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
-      
       <guid>http://www.rustyeddy.com/software/software-is-hard/</guid>
-      <description>Why Is Software So Difficult? Software development projects are one of the most notoriously mis-understood and incorrectly managed of all the common processes used throughout the business world.
-There are a number of reasons for software projects being classified as a disastor so often. Software often is solving a complex problem that unfortunately can&amp;rsquo;t be seen.
-Perhaps the worst problem with software projects are the diverging expectations between developers and users.</description>
+      <description>Why Is Software So Difficult? Software development projects are one of the most notoriously mis-understood and incorrectly managed of all the common processes used throughout the business world.&#xA;There are a number of reasons for software projects being classified as a disastor so often. Software often is solving a complex problem that unfortunately can&amp;rsquo;t be seen.&#xA;Perhaps the worst problem with software projects are the diverging expectations between developers and users.</description>
     </item>
-    
     <item>
       <title>Customer Discovery and MVP</title>
       <link>http://www.rustyeddy.com/software/customer-discovery-and-mvp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>http://www.rustyeddy.com/software/customer-discovery-and-mvp/</guid>
-      <description>Customer Discovery consists of one or more customer discovery sessions, where all users and owners of the software will be interviewed for their expectations, needs and desires for the upcoming software project.
-Don&amp;rsquo;t just stop at the first answer, it will be too vague. Dig deeper and start peeling back the details. This great article on the Five Why&amp;rsquo;s
-User Stories The information gathered from these sessions are then articulated in a series of non-technical descriptions of how the software is used by everybody.</description>
+      <description>Customer Discovery consists of one or more customer discovery sessions, where all users and owners of the software will be interviewed for their expectations, needs and desires for the upcoming software project.&#xA;Don&amp;rsquo;t just stop at the first answer, it will be too vague. Dig deeper and start peeling back the details. This great article on the Five Why&amp;rsquo;s&#xA;User Stories The information gathered from these sessions are then articulated in a series of non-technical descriptions of how the software is used by everybody.</description>
     </item>
-    
     <item>
       <title>Version Control and Tracking Progress</title>
       <link>http://www.rustyeddy.com/software/vcs-tracking-progress/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
-      
       <guid>http://www.rustyeddy.com/software/vcs-tracking-progress/</guid>
-      <description>It frightens me everytime I am introduced to a new software project where the &amp;ldquo;latest&amp;rdquo; source code is somebodies folder somewhere with copies being passed around on thumb drives.
-Such a lack process invites confusion from the beginning and inspires questions like:
-which copy of the file has your changes?
-If you are working like this STOP! It does not have to be this way. no, start using Version Control now!</description>
+      <description>It frightens me everytime I am introduced to a new software project where the &amp;ldquo;latest&amp;rdquo; source code is somebodies folder somewhere with copies being passed around on thumb drives.&#xA;Such a lack process invites confusion from the beginning and inspires questions like:&#xA;which copy of the file has your changes?&#xA;If you are working like this STOP! It does not have to be this way. no, start using Version Control now!</description>
     </item>
-    
     <item>
       <title>Improving Quality by Testing Software</title>
       <link>http://www.rustyeddy.com/software/testing/</link>
       <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://www.rustyeddy.com/software/testing/</guid>
-      <description>Testing Unit and Systems Before any developers new code can be integrated into the mainline production code base, it must be tested, vetted and peer reviewed.
-Software Testing has been written about extensively, so I won&amp;rsquo;t spend time here discussing testing directly, as there are as many ways to test software as there are technologies.
-Test Driven Development Test Driven Development (TDD) a principal for which I agree is necessary, but I don&amp;rsquo;t always adhere to in practice.</description>
+      <description>Testing Unit and Systems Before any developers new code can be integrated into the mainline production code base, it must be tested, vetted and peer reviewed.&#xA;Software Testing has been written about extensively, so I won&amp;rsquo;t spend time here discussing testing directly, as there are as many ways to test software as there are technologies.&#xA;Test Driven Development Test Driven Development (TDD) a principal for which I agree is necessary, but I don&amp;rsquo;t always adhere to in practice.</description>
     </item>
-    
     <item>
       <title>Peer Reviews - And Culture</title>
       <link>http://www.rustyeddy.com/software/peer-review/</link>
       <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
-      
       <guid>http://www.rustyeddy.com/software/peer-review/</guid>
-      <description>A Peer Review is the process of one or more peers knowledgable about your code who can examine and scrutinize every line. This is a painful process, but so necessary.
-Peer Reviews Are Painful but Worth IT! For the programmer, that means having your work criticized by other people. Maybe even people that think they are smarter than you, but are not.
-Reviewers, typically don&amp;rsquo;t like (or at least don&amp;rsquo;t love) reviewing other peoples code.</description>
+      <description>A Peer Review is the process of one or more peers knowledgable about your code who can examine and scrutinize every line. This is a painful process, but so necessary.&#xA;Peer Reviews Are Painful but Worth IT! For the programmer, that means having your work criticized by other people. Maybe even people that think they are smarter than you, but are not.&#xA;Reviewers, typically don&amp;rsquo;t like (or at least don&amp;rsquo;t love) reviewing other peoples code.</description>
     </item>
-    
     <item>
       <title>Commit Code and Make History</title>
       <link>http://www.rustyeddy.com/software/commit-code-make-history/</link>
       <pubDate>Sun, 04 Apr 2021 00:00:00 +0000</pubDate>
-      
       <guid>http://www.rustyeddy.com/software/commit-code-make-history/</guid>
-      <description>Github and making the Commitment Now it is time for the developer to commit the changes she has been working on, tested and pushed through the peer reviews. This step is pretty simple, however, we want to make sure we are doing it correctly.
-Todo example commit
-When the code is merged into the main or master repository, just like commitments, it will be accompanied by the log comments that go along with the log files.</description>
+      <description>Github and making the Commitment Now it is time for the developer to commit the changes she has been working on, tested and pushed through the peer reviews. This step is pretty simple, however, we want to make sure we are doing it correctly.&#xA;Todo example commit&#xA;When the code is merged into the main or master repository, just like commitments, it will be accompanied by the log comments that go along with the log files.</description>
     </item>
-    
     <item>
       <title>Release Process</title>
       <link>http://www.rustyeddy.com/software/release-process/</link>
       <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
-      
       <guid>http://www.rustyeddy.com/software/release-process/</guid>
-      <description>This is the point where software is ready to be passed along to the user/customer, an official release. We will want to formalize the process of releasing the softare.
-For example, when a new release is cut, the following process may be in place:
-Commit to main in Github repository New version number is generated Automated build is triggered Automated system tests are run New binary test images are copied to a distribution server or pushed to production servers The actual process will vary according to many factors of the application With every successful software project you will be doing releases regularly.</description>
+      <description>This is the point where software is ready to be passed along to the user/customer, an official release. We will want to formalize the process of releasing the softare.&#xA;For example, when a new release is cut, the following process may be in place:&#xA;Commit to main in Github repository New version number is generated Automated build is triggered Automated system tests are run New binary test images are copied to a distribution server or pushed to production servers The actual process will vary according to many factors of the application With every successful software project you will be doing releases regularly.</description>
     </item>
-    
     <item>
       <title>Web Developers Guide to Web Design</title>
       <link>http://www.rustyeddy.com/software/website-design-process/</link>
       <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://www.rustyeddy.com/software/website-design-process/</guid>
-      <description>Thankfully the Internet is full of great designers with kind soles that have distilled their years of training, experience and most of all personal direction into a set of general guidelines and formulas that make even no-talents like myself look like a pro!
-[TODO Give some credits and reference some of these folks].
-My Prespective on UI Design At the moment of this writing I am in the processes of building a startup.</description>
+      <description>Thankfully the Internet is full of great designers with kind soles that have distilled their years of training, experience and most of all personal direction into a set of general guidelines and formulas that make even no-talents like myself look like a pro!&#xA;[TODO Give some credits and reference some of these folks].&#xA;My Prespective on UI Design At the moment of this writing I am in the processes of building a startup.</description>
     </item>
-    
     <item>
       <title>Software Development Guide</title>
       <link>http://www.rustyeddy.com/software/software-dev-guide/</link>
       <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
-      
       <guid>http://www.rustyeddy.com/software/software-dev-guide/</guid>
-      <description>&lt;p&gt;[TODO Move this stuff to /software]&lt;/p&gt;
-&lt;p&gt;This guide is best suited for small to mid sized development projects,
-a good example are micro-services or embedded development for small
-manufactures, makers and IoT companies.&lt;/p&gt;</description>
+      <description>&lt;p&gt;[TODO Move this stuff to /software]&lt;/p&gt;&#xA;&lt;p&gt;This guide is best suited for small to mid sized development projects,&#xA;a good example are micro-services or embedded development for small&#xA;manufactures, makers and IoT companies.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -6,16 +6,14 @@
     <description>Recent content in timers, iote on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.rustyeddy.com/tags/timers-iote/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 May 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.rustyeddy.com/tags/timers-iote/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using Go timers for MQTT testing</title>
       <link>http://www.rustyeddy.com/notes/go-timers-testing-mqtt/</link>
       <pubDate>Mon, 02 May 2022 00:00:00 +0000</pubDate>
-      
       <guid>http://www.rustyeddy.com/notes/go-timers-testing-mqtt/</guid>
-      <description>This article uses a Go timer and the Go select statement to test our MQTT publish and subscribe in a single simple test statement. A quick note on the go testing package: it is much like the JUnit where tests using a particular naming convention TestXXX(t *testing.T) {} will be run automatically with easy to reports having been generated.
-The Problem The following code snippet is directly from the IoTe edge gateway project.</description>
+      <description>This article uses a Go timer and the Go select statement to test our MQTT publish and subscribe in a single simple test statement. A quick note on the go testing package: it is much like the JUnit where tests using a particular naming convention TestXXX(t *testing.T) {} will be run automatically with easy to reports having been generated.&#xA;The Problem The following code snippet is directly from the IoTe edge gateway project.</description>
     </item>
-    
   </channel>
 </rss>

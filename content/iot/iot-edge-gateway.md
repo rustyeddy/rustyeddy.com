@@ -7,8 +7,7 @@ description: >
   App, REST API and Web sockets. This project is a Micro service
   written in Go, and is perfect for systems hackers, backend devs and
   full-stackers.
-url: iot-project/hub
-git: https://github.com/iot-station/iothub
+git: https://github.com/sensorstation/otto
 weight: 10
 ---
 
@@ -17,10 +16,10 @@ weight: 10
 ## What Does OG Hub Do?
 
 In a nutshell the _Hub_ gathers environmental data from a network of
-[Collection Stations](iot-project/collection-station) using the well
+[Collection Stations](iot/collection-station) using the well
 known _MQTT Messaging_ protocol. The hub feeds the data to the
 _Oraganic Gardner_ application, streams it real-time to
-[_dashboard_](/iot-project/dashboard) users via
+[_dashboard_](/iot/dashboard) users via
 [Websockets](http://websockets.org) and caches the data in RAM.
 
 ## How Does the Hub Work?
@@ -65,13 +64,13 @@ described in a future article.
 ### Current Features (MVP)
 
 The _1st Milestone_ of the 
-[_Organic Gardener IoT Project_](/iot-project) has been completed. The
+[_Organic Gardener IoT Project_](/iot) has been completed. The
 list of supported features are:
 
 1. Collect environmental Data via MQTT
 2. Cache collected data in RAM.
 3. HTTP server to provide a REST API
-4. HTTP server to serve the [Dashboard](/iot-project-organic-gardener/dashboard) webapp
+4. HTTP server to serve the [Dashboard](/iot/dashboard) webapp
 4. HTTP server enhanced with Websockets to stream data live
 
 #### Coming Soon ...
@@ -213,4 +212,4 @@ site. The _Hub_ and _Dashboard_ support _Websockets_ allowing the Hub
 to update the Dashboard when new data arrives in _real-time_.
 
 We will talk alot more about this in the
-[Dashboard](/iot-project/dashboard) 
+[Dashboard](/iot/dashboard) 

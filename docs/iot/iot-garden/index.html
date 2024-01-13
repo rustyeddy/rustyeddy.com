@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+  
+  <title>How to Build a Self Watering Garden</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G7XZRHH62T"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-G7XZRHH62T');
+  </script>
+</head>
+<body><header class="container bg-white">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <a class="navbar-brand text-muted text-monospace" href="/"><span claa="h1">rusty eddy:</span></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <nav class="navbar-nav w-100 justify-content-end">
+	<div class="nav w-100">
+  	  <a class="nav-link" href="/iot/"> iot &nbsp</a>
+  	  <a class="nav-link" href="/notes"> notes &nbsp</a>
+  	  <a class="nav-link" href="/software"> software &nbsp</a> 
+  	  <a class="nav-link" href="/resume"> resume &nbsp</a> 
+  	  <a class="nav-link" href="/about"> about &nbsp</a> 
+	</div>
+      </nav>
+    </div>
+  </nav>
+</header>
+<div class="jumbotron border-top border-bottom bg-white" >
+  <div class="row">
+    <div class="col-md"></div>
+    <div class="col-md-8 text-center">
+      <h1 class="header h2 pb-1">How to Build a Self Watering Garden</h1>
+      <p class="leadin align-right text-muted text-center mt-0">
+        This article describes an automated irrigation  system for home gardens and small farms. It uses soil moisture levels and other telemetry data to drive watering schedules vs traditional time based scheduals. This project is Open Source and easy to program.
+
+      </p>
+    </div>
+    <div class="col-md"></div>
+  </div>
+
+  <div class="row text-center smaller-text">
+    <div class="col"></div>
+    <div class="col-8">
+      <nav class="nav justify-content-center">
+        
+        
+        
+        
+        
+      </nav>
+
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
+<div id="main body">
+<div class="container"><div class="row">
+    <div class="col"></div>
+    <div class="col-md-8 hero-text">
+	<article class="article">
+	  <p><img src="/img/self-watering-garden.png" alt="Garden Diagram"></p>
+<hr>
+<h2 id="why-build-this-thing">Why Build this Thing</h2>
+<p>The typical small irrigation systems today are based on time schedules,
+where sections of the garden (zones) are watered based on days of the
+week, a start time and a duration. In otherwords, your garden is
+watered according to a set schedule regardless of environmental
+changes.</p>
+<p>In reality, the amount of water should be increased during long hot dry
+days and decreased as the days shorten and get colder. For example,
+if it rains you probably need to turn your sprinklers completely off
+and remember to turn them on again when it stops raining.</p>
+<h3 id="water-levels-not-time">Water Levels not Time</h3>
+<p>The <em>Organic Gardner (OG)</em> waters your garden when the the ground
+becomes too dry for plant and stops watering it when the ground has
+reached the right moisture level.</p>
+<h3 id="plants-get-the-perfect-amount-of-water">Plants Get the Perfect Amount of Water</h3>
+<p>Different plants require a different amount of water, for example,
+roses require quite a bit of water to produce beautiful healthy
+flowers, but that same amount of water will destroy most varieties
+of succulents.</p>
+<p>Plants that produce food also require specific amounts of
+water. Peppers and watermelon would not survive or flourish if they
+are each given the same amount of water.</p>
+<p>OG Control stations can be configured to start and stop watering
+according to the amount of water a given type of plant requires.</p>
+<h3 id="og-conserves-precious-water">OG Conserve&rsquo;s Precious Water</h3>
+<p>In many parts of the world, including the South Western US and
+Southern California where I live, are in a decade long drought with
+water levels at all-time lows.</p>
+<p>Saving water is a major goal of this project and one that
+will hopefully help others convserve this scarce and precious
+resource.</p>
+<h2 id="how-does-organic-gardner-work">How Does Organic Gardner Work?</h2>
+<p>The primary goal of <em>Organic Gardner</em> is to build a smart irrigation
+system that will provide watering zones with <em>the</em> perfect amount of
+water based on <em>the</em> plant or crop being watered and not a drop extra.</p>
+<h3 id="the-collection-station">The Collection Station</h3>
+<p>Soil Moisture and other telemetry (temperature, humidity, light
+levels) are collected by a collection station diagrammed below. The
+moisture sensor is placed in the soil near the plant(s) that need to
+be watered.</p>
+<p><img src="/img/collection-station.png" alt="Collection Station"></p>
+<p>The <a href="https://github.com/rustyeddy/ogesp"><em>collector</em></a> gathers and
+publishes the soil moisture level periodically over a wireless network.
+The <a href="https://rustyeddy.com/iot/iote"><em>smart hub</em></a> will then process
+the data to determine when to send a <em>start water</em> command to the
+<em>control station</em> in the respective watering zone.</p>
+<h3 id="the-smart-hub">The Smart Hub</h3>
+<p>The <em>Smart Hub</em> also known as the IoTe gateway, is the &ldquo;brains&rdquo; of the
+system. IoTe processes moisture data sent from <em>collection stations</em>
+to determine when to send <em>start watering</em> and <em>stop watering</em>
+commands to the appropriate <em>control station</em>.</p>
+<h3 id="the-control-station">The Control Station</h3>
+<p>The control station is connected to a sprinkler or drip system that
+can be turned on or off as a result of receiving the corresponding
+message from IoTe.</p>
+<p>The <em>control station</em> may optionally be connected to other accessories
+such as a lighting or heating systems.</p>
+<p><img src="/img/control-station.png" alt="Control Station"></p>
+<p>As the plant is being watered, moisture levels are transmitted back to
+the Hub when the soil has hit the appropriate moisture level. The
+<em>Smart Hub</em> will then send a control message back to the <em>controller</em>
+to stop the watering.</p>
+<h3 id="the-dashboard">The Dashboard</h3>
+<p>The Hub has a built in Dashboard that can be accessed from any browser
+(Chrome, Firefox, Safari, etc) with screens that allow a user to
+observe the telemetry data from the <em>collection stations</em>. The
+Dashboard also allows a user to manually activate sprinklers and
+configure moisture thresholds that determine when
+sprinklers are activated and de-activated.</p>
+<blockquote>
+<p>Todo a Screenshot of the Dashboard</p>
+</blockquote>
+<p>Essentially the dashboard gives humans the ability to monitor,
+configure and control the irrigation system.</p>
+<h3 id="the-cloud">The Cloud</h3>
+<p>No IoT project would be complete without adding the Cloud to the
+project (the &lsquo;I&rsquo; in IoT). The IoTe (hub) can be connected to the
+Internet when available, providing users access to the
+Dashboard from anywhere in the world as long as they have an Internet
+Connection.</p>
+<p>Your garden can be monitored, controlled and configured from your
+phone anywhere in the world!</p>
+<blockquote>
+<p>Todo Picture of a Phone and Dashboard</p>
+</blockquote>
+<p>The history of data collected in the cloud as well as watering times
+can be plugged into a <em>Machine Learning (ML)</em> or <em>Data Science</em>
+framework if desired.  We will talk a bit more about <em>ML</em> in a future
+article.</p>
+<h2 id="the-project">The Project</h2>
+<p>As I mentioned earlier this project is a Proof Of Concept (PoC) with a
+few distinct components that must all work together. These components
+include, but are not limited to:</p>
+<ul>
+<li>
+<p>The <em>collection and control station</em>. These two components are
+actually the same piece of software.</p>
+</li>
+<li>
+<p>The smart Hub or <em>IoTe Gateway</em></p>
+</li>
+<li>
+<p>The Dashboard, which is served up by the <em>IoTe</em> gateway</p>
+</li>
+<li>
+<p>The cloud component includes a version of the IoTe gateway and
+a <em>timeseries</em> database</p>
+</li>
+</ul>
+<p>If you are interested in this project either as a user or a developer,
+I encourage you to follow along or better yet drop me a line and get
+involved!</p>
+<h2 id="about-the-software-components">About the Software Components</h2>
+
+	</article>
+    </div>
+    <div class="col"></div>
+</div>
+</div>
+
+
+    </div><footer id="footer" class="container-fluid footer small-text pt-4 border-top">
+  <section class="row">
+    <div class="col"></div>
+    <div class="col text-right">
+      <div class="address">419 Main St. #439</div>
+      <div class="city">Huntington Beach, CA. 92648</div>
+    </div>
+    <div class="col-3 text-center">
+      <div>
+        Last update ~
+        
+	
+        Wednesday, May 25, 2022
+	
+        
+      </div>
+      <div>site by <a href="/">Eddy Consulting, LLC.</a> ~ &#xA9; 2008 to 2024 </div>
+    </div>
+    <div class="col">
+      <div class="text-left">
+	<div class="phone">(714) 362-5402</div>
+	<a href="https://github.com/rustyeddy">github</a> .
+	<a href="https://twitter.com/rustyeddy">twitter</a> .
+	<a href="https://linkedin.com/rustyeddy">linkedin</a><br/>	    
+      </div>
+    </div>
+    <div class="col"></div>
+  </section>
+</footer>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19940083-13"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+  </body>
+</html>

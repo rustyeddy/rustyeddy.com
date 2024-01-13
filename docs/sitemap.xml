@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://www.rustyeddy.com/iot-project/hub/</loc>
+    <loc>http://www.rustyeddy.com/iot/iot-edge-gateway/</loc>
     <lastmod>2022-01-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/software/software-is-hard/</loc>
@@ -10,7 +10,7 @@
   </url><url>
     <loc>http://www.rustyeddy.com/software/customer-discovery-and-mvp/</loc>
   </url><url>
-    <loc>http://www.rustyeddy.com/iot-project/collection-station/</loc>
+    <loc>http://www.rustyeddy.com/iot/iot-sensor-station/</loc>
     <lastmod>2022-01-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/software/vcs-tracking-progress/</loc>
@@ -80,6 +80,9 @@
     <lastmod>1995-08-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/iot/</loc>
+    <lastmod>2023-01-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/iot/iot-garden/</loc>
     <lastmod>2022-05-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/tags/</loc>

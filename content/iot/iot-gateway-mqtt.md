@@ -8,9 +8,6 @@ description: >
   between. Our first milestone building the IoT Gateway is reading
   data from MQTT then holding it in RAM for the upcoming REST API we
   will build for Milestone 2. 
-category: 
-  - iot-project
-  - iot-gateway
 tags: [ mqtt, go ]
 git: https://github.com/iot-station/iothub
 ---
@@ -18,7 +15,7 @@ git: https://github.com/iot-station/iothub
 ![MQTT Architecture](/img/iot-hub-mqtt.png)
 
 This page marks the beginning of the _Organic Gardner (OG)_ 
-[IoT Project](/iot/iot-project) Milestone 1 development!  If you want to
+[IoT Project](/iot/iot-intro) Milestone 1 development!  If you want to
 program along but have not yet worked with the _Go_ programming
 language check this intro: [Getting ready to Go](/notes/get-ready-to-go).
 
