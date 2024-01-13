@@ -1,11 +1,11 @@
 ---
 title: Software is Iterative
-weight: 876
 description: >
   Good software, even crappy software that is useful will live many
   lives (versions) and therefore should not be treated as a final
   destination. It should be treated as a flawed, flowing and ever
   changing entity.
+date: 2019-10-23
 ---
 
 > Good Software is Continually Improved

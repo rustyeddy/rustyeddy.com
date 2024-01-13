@@ -6,287 +6,348 @@
     <description>Recent content in Tags on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 31 Jan 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://www.rustyeddy.com/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>onvif</title>
-      <link>http://www.rustyeddy.com/tags/onvif/</link>
-      <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/tags/onvif/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>video</title>
-      <link>http://www.rustyeddy.com/tags/video/</link>
-      <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/tags/video/</guid>
-      <description></description>
-    </item>
+    <lastBuildDate>Mon, 02 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://www.rustyeddy.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>timers, iote</title>
       <link>http://www.rustyeddy.com/tags/timers-iote/</link>
       <pubDate>Mon, 02 May 2022 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/timers-iote/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>go</title>
       <link>http://www.rustyeddy.com/tags/go/</link>
       <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/go/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>http</title>
       <link>http://www.rustyeddy.com/tags/http/</link>
       <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/http/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>rest</title>
       <link>http://www.rustyeddy.com/tags/rest/</link>
       <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/rest/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>mqtt</title>
       <link>http://www.rustyeddy.com/tags/mqtt/</link>
       <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/mqtt/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>Amazon Web Services (AWS)</title>
       <link>http://www.rustyeddy.com/tags/amazon-web-services-aws/</link>
       <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/amazon-web-services-aws/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>C&#43;&#43;</title>
       <link>http://www.rustyeddy.com/tags/c&#43;&#43;/</link>
       <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/c&#43;&#43;/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>fullstack</title>
       <link>http://www.rustyeddy.com/tags/fullstack/</link>
       <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/fullstack/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>Google Cloud Platform</title>
       <link>http://www.rustyeddy.com/tags/google-cloud-platform/</link>
       <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/google-cloud-platform/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>Network Protocol Design</title>
       <link>http://www.rustyeddy.com/tags/network-protocol-design/</link>
       <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/network-protocol-design/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>React</title>
       <link>http://www.rustyeddy.com/tags/react/</link>
       <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/react/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>bootstrap</title>
       <link>http://www.rustyeddy.com/tags/bootstrap/</link>
       <pubDate>Sat, 04 Apr 2020 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/bootstrap/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>html5</title>
       <link>http://www.rustyeddy.com/tags/html5/</link>
       <pubDate>Sat, 04 Apr 2020 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/html5/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>hugo</title>
       <link>http://www.rustyeddy.com/tags/hugo/</link>
       <pubDate>Sat, 04 Apr 2020 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/hugo/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>markdown</title>
       <link>http://www.rustyeddy.com/tags/markdown/</link>
       <pubDate>Sat, 04 Apr 2020 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/markdown/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>vue</title>
       <link>http://www.rustyeddy.com/tags/vue/</link>
       <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/vue/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>gnc</title>
       <link>http://www.rustyeddy.com/tags/gnc/</link>
       <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/gnc/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>steering</title>
       <link>http://www.rustyeddy.com/tags/steering/</link>
       <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/steering/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>mosquitto</title>
       <link>http://www.rustyeddy.com/tags/mosquitto/</link>
       <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/mosquitto/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>h264</title>
       <link>http://www.rustyeddy.com/tags/h264/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/h264/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>embedded</title>
       <link>http://www.rustyeddy.com/tags/embedded/</link>
       <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/embedded/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>esp32</title>
       <link>http://www.rustyeddy.com/tags/esp32/</link>
       <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/esp32/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>rtos</title>
       <link>http://www.rustyeddy.com/tags/rtos/</link>
       <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/rtos/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>ffmpeg</title>
       <link>http://www.rustyeddy.com/tags/ffmpeg/</link>
       <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/ffmpeg/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>gstreamer</title>
       <link>http://www.rustyeddy.com/tags/gstreamer/</link>
       <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/gstreamer/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>vlc</title>
       <link>http://www.rustyeddy.com/tags/vlc/</link>
       <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/vlc/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>tft display</title>
       <link>http://www.rustyeddy.com/tags/tft-display/</link>
       <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/tft-display/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>touch screen</title>
       <link>http://www.rustyeddy.com/tags/touch-screen/</link>
       <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/touch-screen/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>tlv</title>
       <link>http://www.rustyeddy.com/tags/tlv/</link>
       <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/tlv/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>Computer Network, Multicast</title>
       <link>http://www.rustyeddy.com/tags/computer-network-multicast/</link>
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/computer-network-multicast/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>adafruit</title>
       <link>http://www.rustyeddy.com/tags/adafruit/</link>
       <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/adafruit/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>arduino</title>
       <link>http://www.rustyeddy.com/tags/arduino/</link>
       <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/arduino/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>motorshield</title>
       <link>http://www.rustyeddy.com/tags/motorshield/</link>
       <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/motorshield/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>raspberry pi</title>
       <link>http://www.rustyeddy.com/tags/raspberry-pi/</link>
       <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/raspberry-pi/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>C/C&#43;&#43;, Perl, Python and Java</title>
       <link>http://www.rustyeddy.com/tags/c/c&#43;&#43;-perl-python-and-java/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/c/c&#43;&#43;-perl-python-and-java/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>firmware</title>
       <link>http://www.rustyeddy.com/tags/firmware/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/firmware/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>single page app</title>
       <link>http://www.rustyeddy.com/tags/single-page-app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/single-page-app/</guid>
       <description></description>
     </item>
+    
     <item>
       <title>TCP/IP</title>
       <link>http://www.rustyeddy.com/tags/tcp/ip/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>http://www.rustyeddy.com/tags/tcp/ip/</guid>
       <description></description>
     </item>
+    
   </channel>
 </rss>

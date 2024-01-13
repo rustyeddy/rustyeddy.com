@@ -1,8 +1,8 @@
 ---
-title: How to build a private wifi network for your webapp
+title: How to build a private WIFI network for your WebApp
 date: 2021-07-22
 description: >
-  Thier are times when a device loaded with software needs to be
+  There are times when a device loaded with software needs to be
   configured without a keyboard or monitor. A WebApp is a great way to
   do just that, but what if you can't or don't want to connect to an
   existing Wifi network. We will discuss these scenarios in this
@@ -46,7 +46,7 @@ used to monitor through a dashboard.
 _HostAPd_ is a very popular _Linux_ tool that will help us easily
 configure the _Device_ as an _AP_ advertising a specific SSID.
 
-_hostapd_ is available from _Debian_ distributions with the familar
+_hostapd_ is available from _Debian_ distributions with the familiar
 apt packaging.
 
 > apt-get install -y hostapd
@@ -59,7 +59,7 @@ running.
 
 ## Reasons for a Private Wifi 
 
-Ok. Why not just connect to an exiting network? In some cases we will
+OK. Why not just connect to an exiting network? In some cases we will
 connect to an existing network and hence take advantage of _Internet
 Services_ and on premise infrastructure.
 
@@ -82,7 +82,7 @@ Sometimes we are in the middle of almost nowhere, like the High
 Sierra's, there is no _Internet_ or Wifi Infrastructure. And good luck
 trying to get a cell phone signal (hey T-Mobile!) up there.
 
-However, a little wifi connectivity can still be had! Thank You _Solar
+However, a little WiFi connectivity can still be had! Thank You _Solar
 Power!_.
 
 ## Conclusion
@@ -91,5 +91,5 @@ This article is not finished, I ran out of time. I will finish it, but
 only if somebody asks me to.  Heck if nobody will read it, then should
 I spend the time?
 
-Is the sound of a singing bird beautiful if nobody hear's it?
+Is the sound of a singing bird beautiful if nobody hears it?
 

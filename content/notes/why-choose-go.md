@@ -5,6 +5,7 @@ description: >
   over the last few years. This article will discuss reasons why Go
   has become so popular and why you might choose it for your next
   project. 
+date: 2019-09-22
 ---
 
 ## Go is simple 

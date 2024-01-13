@@ -1,5 +1,12 @@
 ---
 title: website
+description: >
+  Websites are as common as magazines and shoes in today's
+  society. However the types and usage of websites vary from extremely
+  simple single pages to absurdly complex corporate sites that come
+  from different departments and a variety of authors, editors and
+  web-masters. 
+date: 2018-12-04
 ---
 
 # Websites

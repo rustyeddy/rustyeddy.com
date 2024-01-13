@@ -1,6 +1,12 @@
 ---
 title: Sync vs. Async, Blocking vs. Non-blocking
+description: >
+  At some point developing software of any real usefulness or
+  complexity one will need to write or debug programs that doing more
+  than one thing at a time. To do this well one must understand the
+  concepts of non-blocking and asynchronous programming.
 date: 2019-03-03
+lastmod: 2024-01-11
 ---
 
 ## Synchronous vs. Asynchronous

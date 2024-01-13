@@ -1,9 +1,10 @@
 ---
 title: Video Control with ONVIF
-date: 2023-01-31
+draft: true
 tags:
   - video
   - onvif
+date: 2023-01-31
 ---
 
 ## ONVIF is an OpenStandard
