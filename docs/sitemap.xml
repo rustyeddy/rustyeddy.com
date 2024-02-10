@@ -88,6 +88,9 @@
     <loc>http://www.rustyeddy.com/tags/maker/</loc>
     <lastmod>2023-01-13T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://www.rustyeddy.com/software/</loc>
+    <lastmod>2023-01-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://www.rustyeddy.com/tags/</loc>
     <lastmod>2023-01-13T00:00:00+00:00</lastmod>
   </url><url>
@@ -120,9 +123,6 @@
   </url><url>
     <loc>http://www.rustyeddy.com/notes/private-wifi-network-webapp/</loc>
     <lastmod>2021-07-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.rustyeddy.com/software/</loc>
-    <lastmod>2021-06-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/notes/go-configuration/</loc>
     <lastmod>2021-03-26T00:00:00+00:00</lastmod>
