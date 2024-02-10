@@ -25,7 +25,8 @@ expectations between developers and users.
 ## Software is Not Regulated
 
 Another reason software projects are capable of running so far amok is
-a lack of regulations.
+the fact that the software industry is not regulated (nor do I think
+it should be).
 
 > Please note, I am not in favor of external regulation, I am, however
 a _huge_ advocate of transparency, education, communication and
