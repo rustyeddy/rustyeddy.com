@@ -147,5 +147,5 @@ industry is, we can be sure
 
 > Communication is the foundation of predictability and success.
 
-So, where to start ...
+So, where to start ?
 
