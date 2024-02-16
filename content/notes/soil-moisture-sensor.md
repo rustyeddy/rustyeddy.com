@@ -44,7 +44,7 @@ shame!
 This is a really good video claiming 82% of them do not work
 correctly. It also goes on to describe how to tell which are better.
 
-https://www.youtube.com/watch?v=IGP38bz-K48
+{{< youtube IGP38bz-K48 >}}
 
 He makes a really smart plant pot!
 
@@ -123,6 +123,8 @@ have a bad reputation for being unreliable or unpredictable.
 Placing a 1M Ohm resistor between the ground and signal pins? 
 
 As described in this video at the 5:05 minute mark.
+
+{{< youtube >}}
 
 https://youtube.com/watch?v=QGCrtstreaming-video-tools/Xf8YSs 
 
