@@ -7,10 +7,9 @@ description: >
   research and quite a bit of practical experience here are my notes
   getting them to work, last and protecting fragile electronic
   components. 
-categories: electonic-components
+categories: electronic-components
 tags: soil moisture
 github: https://github.com/sensorstation/iotesp
-draft: true
 ---
 
 ## Overview

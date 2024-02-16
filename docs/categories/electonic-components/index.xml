@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>electonic-components on Rusty Eddy</title>
+    <link>http://www.rustyeddy.com/categories/electonic-components/</link>
+    <description>Recent content in electonic-components on Rusty Eddy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.rustyeddy.com/categories/electonic-components/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Soil Mosture Sensors</title>
+      <link>http://www.rustyeddy.com/notes/soil-moisture-sensor/</link>
+      <pubDate>Thu, 15 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://www.rustyeddy.com/notes/soil-moisture-sensor/</guid>
+      <description>Overview Seems like I&amp;rsquo;m not as uniquely clever as I once thought I was, the idea of creating a self watering garden is one of the most popular DIY maker projects on the Internet it seems.&#xA;Check out the Sensor Station Project&#xA;What makes my project different? Probably not alot, except that each of the watering stations can be observed and controlled by a hub and associated app. Check out the project, I&amp;rsquo;d love to hear what you think!</description>
+    </item>
+  </channel>
+</rss>
