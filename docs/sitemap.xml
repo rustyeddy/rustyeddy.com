@@ -25,6 +25,9 @@
     <loc>http://www.rustyeddy.com/software/commit-code-make-history/</loc>
     <lastmod>2021-04-04T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://www.rustyeddy.com/resume/jobs/panasonic/</loc>
+    <lastmod>2023-12-15T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://www.rustyeddy.com/software/release-process/</loc>
     <lastmod>2021-05-03T00:00:00+00:00</lastmod>
   </url><url>
@@ -79,6 +82,21 @@
     <loc>http://www.rustyeddy.com/resume/jobs/csu-chancelor/</loc>
     <lastmod>1995-08-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://www.rustyeddy.com/tags/development/</loc>
+    <lastmod>2024-02-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/pico/</loc>
+    <lastmod>2024-02-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/raspberry-pi/</loc>
+    <lastmod>2024-02-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/notes/raspberry-pi-pico-setup/</loc>
+    <lastmod>2024-02-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/</loc>
+    <lastmod>2024-02-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://www.rustyeddy.com/iot/</loc>
     <lastmod>2023-01-13T00:00:00+00:00</lastmod>
   </url><url>
@@ -89,9 +107,6 @@
     <lastmod>2023-01-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/software/</loc>
-    <lastmod>2023-01-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.rustyeddy.com/tags/</loc>
     <lastmod>2023-01-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/iot/iot-garden/</loc>
@@ -341,9 +356,6 @@
     <lastmod>2018-08-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/tags/motorshield/</loc>
-    <lastmod>2018-08-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.rustyeddy.com/tags/raspberry-pi/</loc>
     <lastmod>2018-08-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/notes/control-design/</loc>

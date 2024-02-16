@@ -6,7 +6,7 @@
     <description>Recent content on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Feb 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://www.rustyeddy.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Iot Edge Gateway</title>
@@ -63,6 +63,13 @@
       <pubDate>Sun, 04 Apr 2021 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/software/commit-code-make-history/</guid>
       <description>Github and making the Commitment Now it is time for the developer to commit the changes she has been working on, tested and pushed through the peer reviews. This step is pretty simple, however, we want to make sure we are doing it correctly.&#xA;Todo example commit&#xA;When the code is merged into the main or master repository, just like commitments, it will be accompanied by the log comments that go along with the log files.</description>
+    </item>
+    <item>
+      <title>Panasonic Avionics</title>
+      <link>http://www.rustyeddy.com/resume/jobs/panasonic/</link>
+      <pubDate>Fri, 15 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.rustyeddy.com/resume/jobs/panasonic/</guid>
+      <description></description>
     </item>
     <item>
       <title>Release Process</title>
@@ -175,6 +182,13 @@
       <pubDate>Tue, 01 Aug 1995 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/resume/jobs/csu-chancelor/</guid>
       <description>&lt;p&gt;I was hired to install and manage the departments first AT&amp;amp;T Unix&#xA;Mini-computers, UUNET connection and write a bulletin board system for&#xA;California State Educators.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Raspberry Pi Pico Setup</title>
+      <link>http://www.rustyeddy.com/notes/raspberry-pi-pico-setup/</link>
+      <pubDate>Tue, 13 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://www.rustyeddy.com/notes/raspberry-pi-pico-setup/</guid>
+      <description></description>
     </item>
     <item>
       <title>How to Build a Self Watering Garden</title>

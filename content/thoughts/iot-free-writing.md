@@ -27,3 +27,9 @@ including, but not limited to:
 7. Software development best practices
 
 Start with something simple and grow from there.
+
+I want to write about Iot but how can I approach this from an angle
+that is not already been written about or that I can know something
+about. 
+
+    Disconnected stuff

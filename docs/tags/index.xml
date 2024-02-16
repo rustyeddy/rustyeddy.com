@@ -6,8 +6,29 @@
     <description>Recent content in Tags on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Feb 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://www.rustyeddy.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>development</title>
+      <link>http://www.rustyeddy.com/tags/development/</link>
+      <pubDate>Tue, 13 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://www.rustyeddy.com/tags/development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>pico</title>
+      <link>http://www.rustyeddy.com/tags/pico/</link>
+      <pubDate>Tue, 13 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://www.rustyeddy.com/tags/pico/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>raspberry pi</title>
+      <link>http://www.rustyeddy.com/tags/raspberry-pi/</link>
+      <pubDate>Tue, 13 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://www.rustyeddy.com/tags/raspberry-pi/</guid>
+      <description></description>
+    </item>
     <item>
       <title>iot</title>
       <link>http://www.rustyeddy.com/tags/iot/</link>
@@ -251,13 +272,6 @@
       <link>http://www.rustyeddy.com/tags/motorshield/</link>
       <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/tags/motorshield/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>raspberry pi</title>
-      <link>http://www.rustyeddy.com/tags/raspberry-pi/</link>
-      <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/tags/raspberry-pi/</guid>
       <description></description>
     </item>
     <item>

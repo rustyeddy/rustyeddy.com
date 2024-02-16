@@ -5,7 +5,6 @@ description: >
   Raspberry Pi's have just become even cooler! Add an inexpensive
   touch panel and you can create insanely cool.
 reference:
-
   - https://github.com/WebPlatformForEmbedded/buildroot
   - https://medium.com/@decrocksam/building-web-applications-for-wpe-webkit-using-node-js-3347146013f3
 ---
