@@ -129,16 +129,33 @@ https://youtube.com/watch?v=QGCrtstreaming-video-tools/Xf8YSs
 I will try this and see if it creates a noticable difference in
 tracking the changes in moisture.
 
-## Environmental Concerns
+## Environmental Protective Actions (EPA)
+
+You thought I was going to involve the formidable government agency,
+naw. Just looking for a cheap accronym. Here I'll go over the
+method(s) I choose to follow. I'll try two of them:
 
 ### Protecting the Electronics
 
-1. Glue
-2. Nail Polish
-3. Shrink tubing
-4. Silicon
+This medium article on 
+[Protecting](https://medium.com/@d.robertson/protecting-capacitive-soil-moisture-sensors-e1ab81f1c4fb),
+Daniel Robertson does a great job collecting various methods he has
+found across the Internet and describing various options for 
+options .
 
-### Protecting the Sensor from Itself
+> I wonder why the manufacture did not take care of protecting these
+> devices. Hmm.
+
+Daniel goes into a great amount of detail in his article, I'm not
+going to repeat what he has to say, just choose a couple to try
+myself. I highly recommend reading the article, however.
+
+1. Sally Hansen Hard Nail Polish
+2. Urethane Coating 
+
+In both cases I'll also cover with a heat shrink tubing. 
+
+### Protecting the Sensor PCB
 
 After a relatively short period of time it seems the sensors suck up
 water causing them to destroy themselves.  Here are some protective
