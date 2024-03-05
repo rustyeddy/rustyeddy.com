@@ -18,7 +18,7 @@ Seems like I'm not as uniquely clever as I once thought I was, the
 idea of creating a self watering garden is one of the most popular DIY
 maker projects on the Internet it seems.
 
-Check out the [Sensor Station Project](/iot/self-watering-garden)
+Check out the [Self Watering Garden](/iot/self-watering-garden)
 
 What makes my project different?  Probably not alot, except that each
 of the watering stations can be observed and controlled by a hub and
@@ -124,7 +124,7 @@ Placing a 1M Ohm resistor between the ground and signal pins?
 
 As described in this video at the 5:05 minute mark.
 
-{{< youtube >}}
+{{< youtube QGCrtXf8YSs >}}
 
 https://youtube.com/watch?v=QGCrtstreaming-video-tools/Xf8YSs 
 
