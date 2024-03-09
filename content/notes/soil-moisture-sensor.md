@@ -3,10 +3,10 @@ title: Soil Mosture Sensors
 date: 2024-02-15
 description: >
   Plenty has been written about resistive vs. capacitive soil moisture
-  sensors and how laced with problems they are. After a lot of
-  research and quite a bit of practical experience here are my notes
-  getting them to work, last and protecting fragile electronic
-  components. 
+  sensors and how laced they are with problems. After a lot of
+  research and quite a bit of experimentation here are my notes
+  getting them to work (or not) as well as making them last by
+  protecting the fragile electronic components from the elements. 
 categories: electronic-components
 tags: soil moisture
 github: https://github.com/sensorstation/iotesp
@@ -14,47 +14,79 @@ github: https://github.com/sensorstation/iotesp
 
 ## Overview
 
-Seems like I'm not as uniquely clever as I once thought I was, the
-idea of creating a self watering garden is one of the most popular DIY
-maker projects on the Internet it seems.
+Seems like I'm not as uniquely clever as I once thought, the idea of
+creating a self watering garden is probably one of the more popular
+DIY maker projects on the Internet it seems.
 
-Check out the [Self Watering Garden](/iot/self-watering-garden)
+Check out my version of the [Self Watering Garden](/iot/self-watering-garden)
 
-What makes my project different?  Probably not alot, except that each
-of the watering stations can be observed and controlled by a hub and
-associated app. Check out the project, I'd love to hear what you
+What makes my project different?  Probably not alot, however in this
+project we treat each of the watering _stations_ as a part of a
+larger, complete _system_ of the watering stations that can be
+observed and controlled by a single hub and associated web
+application. Check out the project, I'd love to hear what you 
 think! 
+
+Anyway, the key element or sensor to this project is the _soil
+moisture sensor_. Unlink many of the other sensors used in this and
+other project, which "just work", these soil sensors are problematic.
+
+I'll explain.
 
 ## Capacitive over Resistive
 
-Choose capacitive over resistive.
+If you do a quick google search on "arduino soil moisture sensors" you
+will immediately see two types: _resistive_ and _capacitive_ sensors.
 
-> TODO place a picture
+> TBD place a pic of capacitive and resistive sensors here
+
+In short we choose the capacitive over resistive version of the
+sensor. Many others have done a great job explaining why the resistive
+sensor is NOT a good choice so I won't repeat them here, however, if
+you are interested this 
+[Adafruit product Description](https://www.adafruit.com/product/4026) 
+does a great job explaing why resistive suck and capacitive are the
+way to go.
+
+However, all is not necessarily rosey even with the Capacitive
+versions of these sensors. The remainder of this article I'll
+summarize the research I have done and my practical experience with
+these sensors.
 
 ## Capacitive have their problems
 
 ### What's up with the v1.2 or v2.0?
 
-Video below says that v2.0 is no different than v1.2, it is simply a
-marketing trick. GASP! The internet is taking advantage of us. For
+The video below says that v2.0 is no different than v1.2, it is simply a
+marketing trick. GASP! The internet is taking advantage of us, for
 shame! 
 
 ### Bad reputation for being unreliable
 
 This is a really good video claiming 82% of them do not work
-correctly. It also goes on to describe how to tell which are better.
+correctly. It also goes on to describe how to tell which sensors are
+better. 
 
 {{< youtube IGP38bz-K48 >}}
 
-He makes a really smart plant pot!
+He makes a really smart plant pot! Turns out the capacitive sensors I
+bought are the wrong ones, awww bummer. I bought 5 of those things,
+sigh (good thing they were only a couple bucks).
+
+Well, I'll still try to get them to work, which as you'll read later,
+was not a whole lot of fun.
 
 ### Missing Voltage Regulator
 
-In theory they could operate at 3.3v or 5v which is great, however he
-has found some of them are missing this regulator. Which can really
-become a problem if they are being powered by batteries.
+In theory they could operate at 3.3v or 5v which is great, however the
+autorh of the video found some productions of these sensors are
+missing this voltage regulator. Which can really become a problem if
+they are being powered by batteries that do not maintain a consistent
+regulated flow of power to the sensor. 
 
-Look for the 662K voltage regulator from the pics before you buy.
+Look for the 662K voltage regulator from the pics before you buy. And
+hopefully the ones you buy will be the ones you were looking at in the
+pic. 
 
 ### The wrong timer chip
 
@@ -68,20 +100,32 @@ Look at the label on the timer chip.
 The NE555 needs at least 4v and will not work if power comes in less
 than the 4v like can happen for certain batteries.
 
-### Missing Resistor Chip
+Turns out the sensors I bought have the NE555 chip. Sigh. That won't
+stop me!
 
-He said a large number of chips were missing the XXX resistory.
+### Missing Resistor
 
-This causes the responses to be slow. I was thinking that is not such
-a bad thing as the water does not need to take place immediately, heck
-we can wait for a few minutes or hours, who cares. 
+He said a large number of chips were missing the 1M resistor (Todo
+rewatch the video and make sure I have the correct value of the
+resistor). 
+
+This causes the sensors response to change to be very slow. I thought:
+"that's not so bad, I really only need to check every 15 minutes".
 
 Well, he points out why we should care in the video and why the
 readings may be garbage if your sampling does not allow the values to
 eventually settle down.
 
 Now that can be a big problem, especially if you are allowing your MCU
-to sleep and wake up!
+to sleep and wake up, measure and go immediately back to sleep!
+
+If I do end up using these sensors I'll wake up every 15 minutes or so
+then wait for a couple minutes for the readings to stabalize. Of
+course when the water is turned on, we should probably not sleep very
+long as we don't want to over water.  Or perhaps just expect to water
+for a specific limited period.
+
+We'll see..
 
 ## How they work
 
