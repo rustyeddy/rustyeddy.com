@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>iot on Rusty Eddy</title>
-    <link>http://www.rustyeddy.com/tags/iot/</link>
-    <description>Recent content in iot on Rusty Eddy</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Iot on Rusty Eddy</title>
+    <link>http://localhost:1313/tags/iot/</link>
+    <description>Recent content in Iot on Rusty Eddy</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 13 Jan 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://www.rustyeddy.com/tags/iot/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/iot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Internet Of Things</title>
-      <link>http://www.rustyeddy.com/iot/</link>
+      <link>http://localhost:1313/iot/</link>
       <pubDate>Fri, 13 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/iot/</guid>
+      <guid>http://localhost:1313/iot/</guid>
       <description>Overview The purpose of the project is two fold, first to build something cool that involves some a physical product aka IoT project. The second is to demostrate solid Software Engineering Principals and the practice of employing a professional Software Development Life Cycle (SDLC).&#xA;Why IoT? Aside from the fact that I really enjoy IoT and have an IoT background. IoT employs a lot of interesting and diverse elements of software development.</description>
     </item>
     <item>
       <title>Software Process</title>
-      <link>http://www.rustyeddy.com/software/</link>
+      <link>http://localhost:1313/software/</link>
       <pubDate>Fri, 13 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/software/</guid>
+      <guid>http://localhost:1313/software/</guid>
       <description>Enjoy the following series of articles, let me know what you think!</description>
     </item>
   </channel>

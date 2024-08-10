@@ -1,9 +1,10 @@
 ---
 title: Organizing Software Projects with Kanban
 description: >
-  Tracking tasks does not have to be Rocket Science! Absurdly simple, profoundly liberating and insane to ignore! 
-  
-  We are going to look into Kanban.
+  Tracking tasks does not have to be Rocket Science! Absurdly simple,
+  profoundly liberating and insane to ignore!  We are going to look
+  into Kanban. 
+weight: 20
 date: 2021-03-03
 ---
 

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>h264 on Rusty Eddy</title>
-    <link>http://www.rustyeddy.com/tags/h264/</link>
-    <description>Recent content in h264 on Rusty Eddy</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>H264 on Rusty Eddy</title>
+    <link>http://localhost:1313/tags/h264/</link>
+    <description>Recent content in H264 on Rusty Eddy</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 29 Apr 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://www.rustyeddy.com/tags/h264/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/h264/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Streaming Video is Complicated</title>
-      <link>http://www.rustyeddy.com/notes/streaming-video/</link>
+      <link>http://localhost:1313/notes/streaming-video/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/notes/streaming-video/</guid>
+      <guid>http://localhost:1313/notes/streaming-video/</guid>
       <description>I need to stream live video from a moving vehical with a connected camera and a possibly connected wifi.&#xA;Live High Resolution Video Video will stream from the vehicle to be picked up by video consumers and processed as required. Examples of consumers are Live Video Display on our (Webapp), OpenCV for vision algoritms.&#xA;High Demand For Low Resolution It turns out that computer vision alogrithms typically run quite a bit faster on lower resolution images, the additional information from these hi-res images can slow down the type of algorithms we are interested in by many factors.</description>
     </item>
   </channel>

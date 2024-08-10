@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>arduino on Rusty Eddy</title>
-    <link>http://www.rustyeddy.com/tags/arduino/</link>
-    <description>Recent content in arduino on Rusty Eddy</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Arduino on Rusty Eddy</title>
+    <link>http://localhost:1313/tags/arduino/</link>
+    <description>Recent content in Arduino on Rusty Eddy</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 22 Aug 2018 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://www.rustyeddy.com/tags/arduino/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/arduino/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Inexpensive Motor Controllers for Arduino and Raspberry Pi</title>
-      <link>http://www.rustyeddy.com/notes/motor-controlor-notes/</link>
+      <link>http://localhost:1313/notes/motor-controlor-notes/</link>
       <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/notes/motor-controlor-notes/</guid>
+      <guid>http://localhost:1313/notes/motor-controlor-notes/</guid>
       <description>&lt;p&gt;I prefer to use an Arduino with a Motor Controller over say a&#xA;Raspberry Pi with a motor-controller.  I believe the Arudino has&#xA;better support for dedicated Real-time software vs. the Raspberry Pi&#xA;and as a superior platform for general computing including running&#xA;Control Software.  This is how we do it on the West side &amp;hellip;&lt;/p&gt;</description>
     </item>
   </channel>
