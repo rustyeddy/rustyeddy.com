@@ -20,7 +20,7 @@
       <link>http://localhost:1313/notes/esp32/</link>
       <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/esp32/</guid>
-      <description>You need to push the RESET button to get them to write flash.&#xA;A power packed chip that I have just started playing with. Give some quick specs here: and compare with other well known options (arduino&amp;rsquo;s, stm32 or Raspberry Pi.&#xA;Standout Features Builtin Wifi &amp;amp; BT and others Dual Core Powerful esp-idf FreeRTOS (Arduino optional) Great Feature Set! Usage Interactive Console over UART This demonstrates using the serial port for an interactive console while ESP is running other things.</description>
+      <description>&lt;p&gt;You need to push the RESET button to get them to write flash.&lt;/p&gt;&#xA;&lt;p&gt;A power packed chip that I have just started playing with.  Give some quick&#xA;specs here: and compare with other well known options (arduino&amp;rsquo;s, stm32 or&#xA;Raspberry Pi.&lt;/p&gt;&#xA;&lt;h2 id=&#34;standout-features&#34;&gt;Standout Features&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Builtin Wifi &amp;amp; BT and others&lt;/li&gt;&#xA;&lt;li&gt;Dual Core&lt;/li&gt;&#xA;&lt;li&gt;Powerful esp-idf&lt;/li&gt;&#xA;&lt;li&gt;FreeRTOS (Arduino optional)&lt;/li&gt;&#xA;&lt;li&gt;Great Feature Set!&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;&#xA;&lt;h3 id=&#34;interactive-console-over-uart&#34;&gt;Interactive Console over UART&lt;/h3&gt;&#xA;&lt;p&gt;This demonstrates using the serial port for an interactive console&#xA;while ESP is running other things.  During this console session we can&#xA;do a number of things including:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
