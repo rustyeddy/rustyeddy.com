@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Electronics on Rusty Eddy</title>
-    <link>http://localhost:1313/categories/electronics/</link>
+    <link>http://www.rustyeddy.com/categories/electronics/</link>
     <description>Recent content in Electronics on Rusty Eddy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 22 Aug 2018 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/electronics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.rustyeddy.com/categories/electronics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Inexpensive Motor Controllers for Arduino and Raspberry Pi</title>
-      <link>http://localhost:1313/notes/motor-controlor-notes/</link>
+      <link>http://www.rustyeddy.com/notes/motor-controlor-notes/</link>
       <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/motor-controlor-notes/</guid>
+      <guid>http://www.rustyeddy.com/notes/motor-controlor-notes/</guid>
       <description>&lt;p&gt;I prefer to use an Arduino with a Motor Controller over say a&#xA;Raspberry Pi with a motor-controller.  I believe the Arudino has&#xA;better support for dedicated Real-time software vs. the Raspberry Pi&#xA;and as a superior platform for general computing including running&#xA;Control Software.  This is how we do it on the West side &amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Comparing the Arduino and Raspberry Pi</title>
-      <link>http://localhost:1313/notes/drafts/rpi-v-arduino/</link>
+      <link>http://www.rustyeddy.com/notes/drafts/rpi-v-arduino/</link>
       <pubDate>Wed, 14 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/drafts/rpi-v-arduino/</guid>
+      <guid>http://www.rustyeddy.com/notes/drafts/rpi-v-arduino/</guid>
       <description>&lt;h3 id=&#34;arduino-vs-raspberry-pi-in-control-systems&#34;&gt;Arduino vs. Raspberry Pi in Control Systems&lt;/h3&gt;&#xA;&lt;p&gt;I believe the Arudino has better hardware support, a real-time clock&#xA;and due to itself simplicity creates a better platform to interact&#xA;with external hardware in real-time.&lt;/p&gt;&#xA;&lt;p&gt;The Raspberry Pi, however has a much more powerful set of processors,&#xA;more memory and a general purpose operating system making it a more&#xA;suitable choice for general purpose, sophisticated software, such as&#xA;communicaitons and control software.&lt;/p&gt;</description>
     </item>
   </channel>

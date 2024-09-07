@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gnc on Rusty Eddy</title>
-    <link>http://localhost:1313/tags/gnc/</link>
+    <link>http://www.rustyeddy.com/tags/gnc/</link>
     <description>Recent content in Gnc on Rusty Eddy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 May 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/gnc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.rustyeddy.com/tags/gnc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Skid Steering</title>
-      <link>http://localhost:1313/notes/skid-steering/</link>
+      <link>http://www.rustyeddy.com/notes/skid-steering/</link>
       <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/skid-steering/</guid>
+      <guid>http://www.rustyeddy.com/notes/skid-steering/</guid>
       <description>&lt;p&gt;Skid steering basics&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Based on &lt;em&gt;fixed direction wheels[1] or tracks&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;There are two &lt;em&gt;groups&lt;/em&gt; or &lt;em&gt;sides&lt;/em&gt; of wheels: left and right&lt;/li&gt;&#xA;&lt;li&gt;All wheels in a group MUST always point in the same direction&lt;/li&gt;&#xA;&lt;li&gt;All wheels in a group MUST always rotate at the same rate&lt;/li&gt;&#xA;&lt;li&gt;Direction is determined by the speed of the two wheel groups&#xA;&lt;ul&gt;&#xA;&lt;li&gt;To move straight all motors rotate at the same rate&lt;/li&gt;&#xA;&lt;li&gt;Forward and Reverse are determined by positive and negative values&lt;/li&gt;&#xA;&lt;li&gt;Turning is achieved by varying the throttle on the right and left&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;example&#34;&gt;Example&lt;/h3&gt;&#xA;&lt;p&gt;The &lt;code&gt;Skidder&lt;/code&gt; class has the following API, as you can see all of&#xA;the movements we desire can be accomplished with a single API call&#xA;&lt;code&gt;skidder.set_throttle(left_throttle, right_throttle)&lt;/code&gt;,&#xA;does not get much simpler than this!&lt;/p&gt;</description>
     </item>
   </channel>
