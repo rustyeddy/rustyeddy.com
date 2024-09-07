@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>http on Rusty Eddy</title>
-    <link>http://www.rustyeddy.com/tags/http/</link>
-    <description>Recent content in http on Rusty Eddy</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Http on Rusty Eddy</title>
+    <link>http://localhost:1313/tags/http/</link>
+    <description>Recent content in Http on Rusty Eddy</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 30 Mar 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://www.rustyeddy.com/tags/http/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/http/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Adding the REST API to IoT Gateway</title>
-      <link>http://www.rustyeddy.com/iot/iot-gateway-rest/</link>
+      <link>http://localhost:1313/iot/iot-gateway-rest/</link>
       <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/iot/iot-gateway-rest/</guid>
+      <guid>http://localhost:1313/iot/iot-gateway-rest/</guid>
       <description>Previously we have added MQTT to the IoT Gateway as part of the Organic Gardner Project. This gave the gateway the ability to collect and store a lot of environmental data from sensors all over the place.&#xA;Now we need to provide a way for others programs, like the IoT Dashboard access that data via a REST API.&#xA;Implementing a RESTful API The RESTful API convention is exteremely popular, well supported and is perfectly suited to providing access to the sensor data that has been collected.</description>
     </item>
   </channel>
