@@ -63,9 +63,34 @@ This phase happens before any actual development happens.
 
 ### Use Cases 
 
+Use cases in short are the tasks the software will be required to
+perform. Uses cases are non-technical best stated in _story
+form_. They should be totally understandable by non-technical
+non-programmers as a way to communicate what is required of the
+software. 
+
+TODO: reference the Ivar Jacobson use case web page
+
+Use cases will result in the following artifacts of this software
+development process:
+
+1. Requirements
+2. Major components of the software system
+3. Acceptance tests can be derived from the requirements resulting
+   from the use case.
+
 #### Establish Requirements
 
 #### Acceptance Test Criteria
+
+The acceptance criteria will be the ultimate list of items the
+software needs to accomplish.  In otherwords it will be the set of
+requirements defined by what precisely needs to happen in order to
+consider that portion of a use case to have been successfully
+resolved. 
+
+Acceptance tests must be stated in very specific and measurable
+quantities. 
 
 #### UX / Sitemaps, Mockups and Storyboards
 
