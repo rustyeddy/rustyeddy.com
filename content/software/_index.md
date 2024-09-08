@@ -61,7 +61,18 @@ This phase happens before any actual development happens.
 
 ## Design
 
+The design phase happens before any coding begins and is primarily an
+interaction with the non-technical users and development team with
+discussions and activities on a non-technical level.
+
+The whole point of the design phase is to get the users and developers
+on the same page.
+
 ### Use Cases 
+
+The first step in the process is to establish the _use-cases_ to get
+the users to describe what the software needs to do and how they will
+go about using it.
 
 Use cases in short are the tasks the software will be required to
 perform. Uses cases are non-technical best stated in _story
@@ -80,6 +91,10 @@ development process:
    from the use case.
 
 #### Establish Requirements
+
+From the usecases we can start deriving the requirements. The
+requirements can then be turned into specific tasks with measurable
+goals. 
 
 #### Acceptance Test Criteria
 
@@ -107,6 +122,12 @@ accomplished.
 
 The Kanban board creates a nice visual into the state of the project. 
 
+Tasks ultimately should be broke down to increments that will take a
+day or two. Tasks that take a week or more can usually be broke down
+into multiple sub-tasks.
+
+We want to keep the tasks small-ish keeping with the agile philosophy. 
+
 ## Architecture
 
 This phase starts translating high level design, use cases and
@@ -121,31 +142,54 @@ The time has come to roll up our sleeves and get started writing code.
 
 #### Version Control System (VCS)
 
+TODO: change this up such that we describe more of what the version
+control system does.
+
 Version Control Systems (VCS) is the work hourse for the development
 team. The 800lb Gorilla of VCS is _git_ originally created by the
 author of Linux, Linus Torvalds for the development of the Linux
 kernel itself.
 
+These days all in one systems have been built around git, such as the
+ever popular github.com or gitlab.com. Not only do they incorporate
+the elements of _Version Control_ proper but also have bug/issue
+tracking, CI/CD pipelines and other tools to make these powerful
+systems to guide our software through the entire development and
+delivery process.
+
+We will get into much detail about these systems using Github.com and
+it's tools that are almost all mostly free.
+
+Before coding officially begins one or more repositories will be
+created for our development tasks.
+
 #### Test Driven Development (TDD)
+
+In an ideal world all development tasks will begin with a well defined
+test that will verify the requirements being developed pass as
+required. 
+
+We will get into the variety of different test types and what the
+objective of different tests. But suffice it to say, all great
+software projects are pretty thouroughly tested.
 
 #### Let the Coding Begin!
 
 This is where fun and frustration will begin as well as visible
 progress. 
 
-1. Pick a task from the Kanban board, typically a day or two to
-   develop.
-2. Checkout source code and create a branch
+1. Pick a task from the Kanban board
+2. Checkout source code and create a feature branch for the task
 2. Develop a test to validate the new feature
 3. Start coding, debug iteration until all tests pass
 4. Create a Merge Request (Pull Request)
 5. Peer review changes
 6. Merge code and tests into repository
 7. Add tests to CI/CD pipeline
+9. CI/CD pipeline must then pass
 
-### Deploy and Manage
+##### Select Task from Kanban
 
-### Fix Bugs and Add Features
-
+##### Checkout Source Code 
 
 

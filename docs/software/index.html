@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head>
+<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
@@ -111,7 +111,15 @@ users, if they are a different group of people and finally the
 developers that will be using the project.</p>
 <p>This phase happens before any actual development happens.</p>
 <h2 id="design">Design</h2>
+<p>The design phase happens before any coding begins and is primarily an
+interaction with the non-technical users and development team with
+discussions and activities on a non-technical level.</p>
+<p>The whole point of the design phase is to get the users and developers
+on the same page.</p>
 <h3 id="use-cases">Use Cases</h3>
+<p>The first step in the process is to establish the <em>use-cases</em> to get
+the users to describe what the software needs to do and how they will
+go about using it.</p>
 <p>Use cases in short are the tasks the software will be required to
 perform. Uses cases are non-technical best stated in <em>story
 form</em>. They should be totally understandable by non-technical
@@ -127,6 +135,9 @@ development process:</p>
 from the use case.</li>
 </ol>
 <h4 id="establish-requirements">Establish Requirements</h4>
+<p>From the usecases we can start deriving the requirements. The
+requirements can then be turned into specific tasks with measurable
+goals.</p>
 <h4 id="acceptance-test-criteria">Acceptance Test Criteria</h4>
 <p>The acceptance criteria will be the ultimate list of items the
 software needs to accomplish.  In otherwords it will be the set of
@@ -145,6 +156,10 @@ tasks should be recorded in a card to keep track of what needs to be
 done, what work is currently in process and finally what has been
 accomplished.</p>
 <p>The Kanban board creates a nice visual into the state of the project.</p>
+<p>Tasks ultimately should be broke down to increments that will take a
+day or two. Tasks that take a week or more can usually be broke down
+into multiple sub-tasks.</p>
+<p>We want to keep the tasks small-ish keeping with the agile philosophy.</p>
 <h2 id="architecture">Architecture</h2>
 <p>This phase starts translating high level design, use cases and
 requirements and transforming them into technical details.</p>
@@ -153,27 +168,45 @@ one another.</p>
 <h3 id="development-and-testing">Development and Testing</h3>
 <p>The time has come to roll up our sleeves and get started writing code.</p>
 <h4 id="version-control-system-vcs">Version Control System (VCS)</h4>
+<p>TODO: change this up such that we describe more of what the version
+control system does.</p>
 <p>Version Control Systems (VCS) is the work hourse for the development
 team. The 800lb Gorilla of VCS is <em>git</em> originally created by the
 author of Linux, Linus Torvalds for the development of the Linux
 kernel itself.</p>
+<p>These days all in one systems have been built around git, such as the
+ever popular github.com or gitlab.com. Not only do they incorporate
+the elements of <em>Version Control</em> proper but also have bug/issue
+tracking, CI/CD pipelines and other tools to make these powerful
+systems to guide our software through the entire development and
+delivery process.</p>
+<p>We will get into much detail about these systems using Github.com and
+it&rsquo;s tools that are almost all mostly free.</p>
+<p>Before coding officially begins one or more repositories will be
+created for our development tasks.</p>
 <h4 id="test-driven-development-tdd">Test Driven Development (TDD)</h4>
+<p>In an ideal world all development tasks will begin with a well defined
+test that will verify the requirements being developed pass as
+required.</p>
+<p>We will get into the variety of different test types and what the
+objective of different tests. But suffice it to say, all great
+software projects are pretty thouroughly tested.</p>
 <h4 id="let-the-coding-begin">Let the Coding Begin!</h4>
 <p>This is where fun and frustration will begin as well as visible
 progress.</p>
 <ol>
-<li>Pick a task from the Kanban board, typically a day or two to
-develop.</li>
-<li>Checkout source code and create a branch</li>
+<li>Pick a task from the Kanban board</li>
+<li>Checkout source code and create a feature branch for the task</li>
 <li>Develop a test to validate the new feature</li>
 <li>Start coding, debug iteration until all tests pass</li>
 <li>Create a Merge Request (Pull Request)</li>
 <li>Peer review changes</li>
 <li>Merge code and tests into repository</li>
 <li>Add tests to CI/CD pipeline</li>
+<li>CI/CD pipeline must then pass</li>
 </ol>
-<h3 id="deploy-and-manage">Deploy and Manage</h3>
-<h3 id="fix-bugs-and-add-features">Fix Bugs and Add Features</h3>
+<h5 id="select-task-from-kanban">Select Task from Kanban</h5>
+<h5 id="checkout-source-code">Checkout Source Code</h5>
 
 	</div>
 	<div class="col"></div>
@@ -187,7 +220,7 @@ develop.</li>
                 <div class="card">
                     <div class="card-text">
                         <div class="card-header">
-                            <a href="http://www.rustyeddy.com/software/software-is-hard/">Software is Hard</a>
+                            <a href="http://localhost:1313/software/software-is-hard/">Software is Hard</a>
                         </div>
                         <div class="card-body">
                             <div class="text-muted">
@@ -195,7 +228,7 @@ develop.</li>
 
                             </div>
                             <div class="small text-muted">
-                                <a href="http://www.rustyeddy.com/software/software-is-hard/">read more ...</a>
+                                <a href="http://localhost:1313/software/software-is-hard/">read more ...</a>
                             </div>
                         </div>
                     </div>
@@ -210,7 +243,7 @@ develop.</li>
                 <div class="card">
                     <div class="card-text">
                         <div class="card-header">
-                            <a href="http://www.rustyeddy.com/software/customer-discovery-and-mvp/">Customer Discovery and MVP</a>
+                            <a href="http://localhost:1313/software/customer-discovery-and-mvp/">Customer Discovery and MVP</a>
                         </div>
                         <div class="card-body">
                             <div class="text-muted">
@@ -218,7 +251,7 @@ develop.</li>
 
                             </div>
                             <div class="small text-muted">
-                                <a href="http://www.rustyeddy.com/software/customer-discovery-and-mvp/">read more ...</a>
+                                <a href="http://localhost:1313/software/customer-discovery-and-mvp/">read more ...</a>
                             </div>
                         </div>
                     </div>
@@ -233,7 +266,7 @@ develop.</li>
                 <div class="card">
                     <div class="card-text">
                         <div class="card-header">
-                            <a href="http://www.rustyeddy.com/software/kanban/">Organizing Software Projects with Kanban</a>
+                            <a href="http://localhost:1313/software/kanban/">Organizing Software Projects with Kanban</a>
                         </div>
                         <div class="card-body">
                             <div class="text-muted">
@@ -241,7 +274,7 @@ develop.</li>
 
                             </div>
                             <div class="small text-muted">
-                                <a href="http://www.rustyeddy.com/software/kanban/">read more ...</a>
+                                <a href="http://localhost:1313/software/kanban/">read more ...</a>
                             </div>
                         </div>
                     </div>
@@ -256,7 +289,7 @@ develop.</li>
                 <div class="card">
                     <div class="card-text">
                         <div class="card-header">
-                            <a href="http://www.rustyeddy.com/software/vcs-tracking-progress/">Version Control and Tracking Progress</a>
+                            <a href="http://localhost:1313/software/vcs-tracking-progress/">Version Control and Tracking Progress</a>
                         </div>
                         <div class="card-body">
                             <div class="text-muted">
@@ -264,7 +297,7 @@ develop.</li>
 
                             </div>
                             <div class="small text-muted">
-                                <a href="http://www.rustyeddy.com/software/vcs-tracking-progress/">read more ...</a>
+                                <a href="http://localhost:1313/software/vcs-tracking-progress/">read more ...</a>
                             </div>
                         </div>
                     </div>
@@ -279,7 +312,7 @@ develop.</li>
                 <div class="card">
                     <div class="card-text">
                         <div class="card-header">
-                            <a href="http://www.rustyeddy.com/software/testing/">Improving Quality by Testing Software</a>
+                            <a href="http://localhost:1313/software/testing/">Improving Quality by Testing Software</a>
                         </div>
                         <div class="card-body">
                             <div class="text-muted">
@@ -287,7 +320,7 @@ develop.</li>
 
                             </div>
                             <div class="small text-muted">
-                                <a href="http://www.rustyeddy.com/software/testing/">read more ...</a>
+                                <a href="http://localhost:1313/software/testing/">read more ...</a>
                             </div>
                         </div>
                     </div>
@@ -302,7 +335,7 @@ develop.</li>
                 <div class="card">
                     <div class="card-text">
                         <div class="card-header">
-                            <a href="http://www.rustyeddy.com/software/peer-review/">Peer Reviews - And Culture</a>
+                            <a href="http://localhost:1313/software/peer-review/">Peer Reviews - And Culture</a>
                         </div>
                         <div class="card-body">
                             <div class="text-muted">
@@ -310,7 +343,7 @@ develop.</li>
 
                             </div>
                             <div class="small text-muted">
-                                <a href="http://www.rustyeddy.com/software/peer-review/">read more ...</a>
+                                <a href="http://localhost:1313/software/peer-review/">read more ...</a>
                             </div>
                         </div>
                     </div>
@@ -325,7 +358,7 @@ develop.</li>
                 <div class="card">
                     <div class="card-text">
                         <div class="card-header">
-                            <a href="http://www.rustyeddy.com/software/commit-code-make-history/">Commit Code and Make History</a>
+                            <a href="http://localhost:1313/software/commit-code-make-history/">Commit Code and Make History</a>
                         </div>
                         <div class="card-body">
                             <div class="text-muted">
@@ -333,7 +366,7 @@ develop.</li>
 
                             </div>
                             <div class="small text-muted">
-                                <a href="http://www.rustyeddy.com/software/commit-code-make-history/">read more ...</a>
+                                <a href="http://localhost:1313/software/commit-code-make-history/">read more ...</a>
                             </div>
                         </div>
                     </div>
@@ -348,7 +381,7 @@ develop.</li>
                 <div class="card">
                     <div class="card-text">
                         <div class="card-header">
-                            <a href="http://www.rustyeddy.com/software/release-process/">Release Process</a>
+                            <a href="http://localhost:1313/software/release-process/">Release Process</a>
                         </div>
                         <div class="card-body">
                             <div class="text-muted">
@@ -356,7 +389,7 @@ develop.</li>
 
                             </div>
                             <div class="small text-muted">
-                                <a href="http://www.rustyeddy.com/software/release-process/">read more ...</a>
+                                <a href="http://localhost:1313/software/release-process/">read more ...</a>
                             </div>
                         </div>
                     </div>
@@ -371,7 +404,7 @@ develop.</li>
                 <div class="card">
                     <div class="card-text">
                         <div class="card-header">
-                            <a href="http://www.rustyeddy.com/software/website-design-process/">Web Developers Guide to Web Design</a>
+                            <a href="http://localhost:1313/software/website-design-process/">Web Developers Guide to Web Design</a>
                         </div>
                         <div class="card-body">
                             <div class="text-muted">
@@ -379,7 +412,7 @@ develop.</li>
 
                             </div>
                             <div class="small text-muted">
-                                <a href="http://www.rustyeddy.com/software/website-design-process/">read more ...</a>
+                                <a href="http://localhost:1313/software/website-design-process/">read more ...</a>
                             </div>
                         </div>
                     </div>
@@ -394,7 +427,7 @@ develop.</li>
                 <div class="card">
                     <div class="card-text">
                         <div class="card-header">
-                            <a href="http://www.rustyeddy.com/software/software-dev-guide/">Software Development Guide</a>
+                            <a href="http://localhost:1313/software/software-dev-guide/">Software Development Guide</a>
                         </div>
                         <div class="card-body">
                             <div class="text-muted">
@@ -402,7 +435,7 @@ develop.</li>
 
                             </div>
                             <div class="small text-muted">
-                                <a href="http://www.rustyeddy.com/software/software-dev-guide/">read more ...</a>
+                                <a href="http://localhost:1313/software/software-dev-guide/">read more ...</a>
                             </div>
                         </div>
                     </div>
