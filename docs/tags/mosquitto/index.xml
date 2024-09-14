@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mosquitto on Rusty Eddy</title>
-    <link>http://www.rustyeddy.com/tags/mosquitto/</link>
+    <link>http://localhost:1313/tags/mosquitto/</link>
     <description>Recent content in Mosquitto on Rusty Eddy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 03 May 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://www.rustyeddy.com/tags/mosquitto/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/mosquitto/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MQTT For Controllor Communication</title>
-      <link>http://www.rustyeddy.com/notes/mqtt-comm/</link>
+      <link>http://localhost:1313/notes/mqtt-comm/</link>
       <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/notes/mqtt-comm/</guid>
+      <guid>http://localhost:1313/notes/mqtt-comm/</guid>
       <description>&lt;p&gt;The MQTT message bus is a simple but critical element of our MBR&#xA;software design.  MQTT provides what is known as a &lt;em&gt;publish/suscribe&lt;/em&gt;&#xA;or &lt;em&gt;pubsub&lt;/em&gt; communications model.  This model of machine to machine&#xA;communication has some attractive benefits for realtime driving&#xA;algorithms that we will discuss in this post.&lt;/p&gt;</description>
     </item>
   </channel>

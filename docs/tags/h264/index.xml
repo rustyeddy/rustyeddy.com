@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>H264 on Rusty Eddy</title>
-    <link>http://www.rustyeddy.com/tags/h264/</link>
+    <link>http://localhost:1313/tags/h264/</link>
     <description>Recent content in H264 on Rusty Eddy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 29 Apr 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://www.rustyeddy.com/tags/h264/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/h264/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Streaming Video is Complicated</title>
-      <link>http://www.rustyeddy.com/notes/streaming-video/</link>
+      <link>http://localhost:1313/notes/streaming-video/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/notes/streaming-video/</guid>
+      <guid>http://localhost:1313/notes/streaming-video/</guid>
       <description>&lt;p&gt;I need to stream live video from a moving vehical with a connected&#xA;camera and a possibly connected wifi.&lt;/p&gt;&#xA;&lt;h2 id=&#34;live-high-resolution-video&#34;&gt;Live High Resolution Video&lt;/h2&gt;&#xA;&lt;p&gt;Video will stream from the vehicle to be picked up by &lt;em&gt;video&#xA;consumers&lt;/em&gt; and processed as required.  Examples of &lt;em&gt;consumers&lt;/em&gt; are&#xA;Live Video Display on our (Webapp), OpenCV for vision algoritms.&lt;/p&gt;&#xA;&lt;h2 id=&#34;high-demand-for-low-resolution&#34;&gt;High Demand For Low Resolution&lt;/h2&gt;&#xA;&lt;p&gt;It turns out that computer vision alogrithms typically run quite a bit&#xA;faster on lower resolution images, the additional information from&#xA;these &lt;em&gt;hi-res&lt;/em&gt; images can slow down the type of algorithms we are&#xA;interested in by many factors.&lt;/p&gt;</description>
     </item>
   </channel>

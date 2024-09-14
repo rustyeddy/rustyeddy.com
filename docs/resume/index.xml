@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>resume on Rusty Eddy</title>
-    <link>http://www.rustyeddy.com/resume/</link>
+    <link>http://localhost:1313/resume/</link>
     <description>Recent content in resume on Rusty Eddy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 02 Jan 2020 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://www.rustyeddy.com/resume/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/resume/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Career Summary</title>
-      <link>http://www.rustyeddy.com/resume/summary/</link>
+      <link>http://localhost:1313/resume/summary/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/resume/summary/</guid>
+      <guid>http://localhost:1313/resume/summary/</guid>
       <description>&lt;p&gt;I am a Software Engineer and Contract Programmer living in Huntington&#xA;Beach, CA with my family. I build micro-services and work on&#xA;micro-controllers, usually with Go, C/C++, Python and JavaScript&#xA;(among other techs).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Skills and Interests</title>
-      <link>http://www.rustyeddy.com/resume/skills/</link>
+      <link>http://localhost:1313/resume/skills/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/resume/skills/</guid>
+      <guid>http://localhost:1313/resume/skills/</guid>
       <description>&lt;ul&gt;&#xA;&lt;li&gt;Go, C/C++, Python and JavaScript (and many others..)&lt;/li&gt;&#xA;&lt;li&gt;Computer Networks, Multicast Video Distribution&lt;/li&gt;&#xA;&lt;li&gt;Distributed systems and realtime communications&lt;/li&gt;&#xA;&lt;li&gt;DevOps, cloud automation and continuous delivery&lt;/li&gt;&#xA;&lt;li&gt;Fullstack software development, reactive front-ends with VueJS&lt;/li&gt;&#xA;&lt;li&gt;MicroServices: REST APIs, Websockets, etc.&lt;/li&gt;&#xA;&lt;li&gt;Linux Systems and OpenSource Software&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Publications</title>
-      <link>http://www.rustyeddy.com/resume/pubs/</link>
+      <link>http://localhost:1313/resume/pubs/</link>
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/resume/pubs/</guid>
+      <guid>http://localhost:1313/resume/pubs/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Ramesh Govindan, et el.&lt;/strong&gt; &lt;em&gt;&amp;ldquo;An Architecture for Stable, Analyzable&#xA;Internet Routing&amp;rdquo;&lt;/em&gt;, IEEE Network Magazine, Jan-Feb 1999.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Rusty Eddy, Ramesh Govindan,&lt;/strong&gt; &lt;em&gt;&amp;ldquo;Testing Protocol Implementations&#xA;with pkt&amp;rdquo;&lt;/em&gt;, Networld+Interop 99 Engineers Conference Proceedings, June&#xA;1999&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Rusty Eddy&lt;/strong&gt;, &lt;em&gt;&amp;ldquo;Emulating Multicast Routing Protocols in a Software&#xA;Defined Networking (SDN) Controller&amp;rdquo;&lt;/em&gt;, AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Rusty Eddy&lt;/strong&gt;, &lt;em&gt;&amp;ldquo;Testing Multicast SDN Networks in a Container&amp;rdquo;&lt;/em&gt;,&#xA;AT&amp;amp;T 2016 Software Symposium&lt;/p&gt;</description>
     </item>
   </channel>

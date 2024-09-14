@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vue on Rusty Eddy</title>
-    <link>http://www.rustyeddy.com/tags/vue/</link>
+    <link>http://localhost:1313/tags/vue/</link>
     <description>Recent content in Vue on Rusty Eddy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 25 Dec 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://www.rustyeddy.com/tags/vue/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/vue/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using Vue to Develop Webapps</title>
-      <link>http://www.rustyeddy.com/notes/vue-frontends/</link>
+      <link>http://localhost:1313/notes/vue-frontends/</link>
       <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/notes/vue-frontends/</guid>
+      <guid>http://localhost:1313/notes/vue-frontends/</guid>
       <description>&lt;p&gt;Every piece of software that exists has to speak to the external world&#xA;in some manner. It might be programattically through messaging or an&#xA;API call. It could be a human clicking through an GUI on our laptop or&#xA;phone.&lt;/p&gt;&#xA;&lt;p&gt;I think it is clear that &lt;em&gt;web apps&lt;/em&gt; are taking over the world. It is a&#xA;powerful notion that they can pretty much run on any computing devices&#xA;that support a &lt;em&gt;browser&lt;/em&gt;, which is almost everything with a screen.&lt;/p&gt;</description>
     </item>
   </channel>
