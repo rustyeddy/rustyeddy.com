@@ -76,39 +76,42 @@
 	<div class="col-9">
 	    <h2 id="an-tale-of-software-development">An Tale of Software Development</h2>
 <p>Kelly got ahold of me wanting some software developed for a self
-watering garden tool that Mark had designed. The hardware is composed
+watering garden system that Mark had designed. The hardware is composed
 of a soil moisture and temperature sensor with a chip that has a wifi
-to communicate with an external <em>controllor</em>.</p>
+to communicate with an external <em>controllor</em>. It also has a pump that
+can be controlled by dry soil or manually from an app on a phone.</p>
 <p>The process went a little like this:</p>
 <h2 id="the-design-phase---getting-started">The Design Phase - Getting Started</h2>
-<p>I had Kelly tell me how the product was going to be used. She describe
-all the various ways the software was going to be used, case by case
-in high level (non-technical) detail. With that we were able to break
-out all the <em><strong>use cases</strong></em> into individual stories on how the product
-was going to be used.</p>
+<p>I had Kelly tell me how the product was meant to do. She describe all
+the various ways the software was going to be used, case by case in
+high level (non-technical) detail. These <em>user stories</em> Kelly told
+we were able to break out all the <em><strong>use cases</strong></em> into
+individual descriptions on the various ways the product was going to be
+used.</p>
 <h3 id="use-cases-and-requirements">Use Cases and Requirements</h3>
 <p>From the use-cases we were able to derive the initial set of
 <em>requirements</em> and the begin drafting the <em>Software Architecture
 Document</em>.</p>
 <h3 id="wire-frames-story-boards-and-the-user-experience">Wire Frames, Story Boards and the User Experience</h3>
-<p>Along with the use cases Mini, the <em>front-end</em> lead was able able
-to start sketching out the user interface in the form of <em>Wireframes</em>
+<p>Along with the use cases Mini, the <em>front-end</em> lead was able able to
+start sketching out the user interface in the form of <em>Wireframes</em>
 collected to together in <em>story boards</em> that walked Kelly through the
-<em>Use Cases</em> giving Kelly a solid understanding of what it would be
-like to use the software, not just by description but walking her
-through the usage visualy, providing the complete <em>User eXperience</em>.</p>
+<em>Use Cases</em> giving Kelly and the develop a mutaul, solid understanding
+of what it would be like to use the software, not just by description
+but walking her through the usage visualy, providing the complete
+<em>User eXperience</em>.</p>
 <h4 id="design-guide-manifest-and-sitemap">Design Guide, Manifest and Sitemap</h4>
 <p>Mini also created the <em>design guide</em> that included colors, fonts and
 spacing that defines the over-all aesthetic of the site. Finally a
 <em>site map</em> was created to identify the pages of the User Interface and
-the hiearchial relationship to one another. The <em>manifest</em> is a list
-of all assets that occupy the UI / Website such as images, pictures,
-PDF documents and so on.</p>
+the hiearchial relationship to one another. The <em>manifest</em> was also
+created as a list of all assets that occupy the UI / Website such as
+images, pictures, PDF documents and so on.</p>
 <h3 id="database-design---the-model">Database Design - The Model</h3>
 <p>Also from the Use Cases Melanie our Database Guru is able to start
-designing what the Database will contain and how the chunks of data
-are related to one another. This is referred to as the <em>Data Model</em>
-used through out the application.</p>
+drafting what the Database will contain and how the different chunks
+of data are going to relate to one another. This is referred to as the
+<em>Data Model</em> used through out the application.</p>
 <h3 id="test-cases">Test Cases</h3>
 <p>From the <em>Use Cases</em> we were able to derive:</p>
 <ul>
@@ -118,53 +121,58 @@ used through out the application.</p>
 <li>Preliminary Data Model</li>
 <li>Validation Criteria and Acceptance Tests</li>
 </ul>
-<p>The <em>requirements</em> in a way that tell us what needs to be done in a
-way that is concrete, measurable and can be <em>validated</em> by specific
+<p>The <em>requirements</em> in a way that tell us what tasks need to be done in
+a way that is concrete, measurable that can be <em>validated</em> by specific
 <em>acceptance tests</em>.</p>
 <p>The <em>Acceptance Tests</em> will be our guiding light, every feature or
-change we make to the software ought be driven by a specific
-validation test.</p>
+change we make to the software needs to be validated by a specific
+test or two.</p>
 <p>As the Use cases and hence requirements change due to user
-interaction, which they surely will, our tests will change
+interaction, <em>which they surely will</em>, our tests will also change
 accordingly.</p>
 <h3 id="the-kanban-board---the-mighty-driver">The Kanban Board - The mighty driver</h3>
 <p>From the <em>requirements</em> and <em>story boards</em> we were able to create a
 series of works items (or todo list) in the form of a <em>Kanban board</em>.</p>
 <p>The kanban board is a wonderful way to visually display what needs to
 get done, what is being worked on and what has been accomplished.</p>
+<p>OK. This has been a lot of work and we have made great progress
+<em>planning</em> the project. With out Kanban board in place, we need to
+setup one more thing, our Version Control System (VCS) before we get
+into the thick of actual development.</p>
 <h2 id="the-development-phase">The Development Phase</h2>
 <h3 id="getting-ready-to-go---version-control-system-vcs--">Getting Ready to go - Version Control System (VCS) -</h3>
 <p>In preparation to start developing the software the first important
 task is getting the <em>Version Control System (VCS)</em> ready to go. The
-VCS in our case will be <em>git</em> hosted by <em>github</em>.</p>
-<p>It will provide the <em>single source of truth</em> and keep a history of
-every single change, who made that change and when.</p>
+VCS in our case will be <em>git</em> hosted by <em>github</em>.  The VCS will
+provide the <em>single source of truth</em> and keep a history of every
+single change, who made that change and when.</p>
 <h3 id="pick-a-task-and-create-a-branch">Pick a Task and Create a Branch</h3>
 <p>Joan takes the first item from the Kanban board and moves it from the
 <em>Todo</em> column over to the <em>In Progress</em> column, letting everybody know
-what is currently being worked on.</p>
+what she is currently working on, I do the same.</p>
 <p>Joan checks out a fresh version of the (empty) software from the VCS
-system, creates a <em>feature branch</em> and starts by writing up some
-<em>tests</em> to validate the task she is going to start working on.</p>
-<p>Joan then proceeds to code up a set of <em>tests</em> that will be used to
-validate the code she develops, knowing full well they all fail at
-first.</p>
+system, creates a <em>feature branch</em> and starts writing up some
+<em>tests</em> to validate the task she is going to start working on before
+she starts writing code for the actual feature she is going to
+develop.</p>
 <h4 id="the-developers-loop">The Developers Loop</h4>
 <p>Joan then starts writing code with the goal of passing the tests, she
-then gets into a loop:</p>
+then gets into what I like to call the <em>dev-loop</em>:</p>
 <pre tabindex="0"><code> +-&gt; Edit -&gt; Compile -&gt; Test -&gt; Debug -+
  |                                     |
  +&lt;------------------------------------+
 </code></pre><h3 id="the-gui-down">The GUI Down</h3>
-<p>In the mean time the UI team headed up by Mini is cranking through the
+<p>In the mean time the UI team consisting of Mini is cranking through the
 user interface code with a mocked back end getting the whole UX flow
 together. Iterating through screen designs, tweaking the Style Guide
-all according to user feedback.</p>
-<h3 id="getting-the-gui-down">Getting the GUI Down</h3>
-<p>Back to Joan all tests finally pass!</p>
+all the while responding to the regular user feedback she is getting.</p>
+<h3 id="back-to-the-backend">Back to the Backend</h3>
+<p>Back to Joan: after a few iterations and expanded tests cases all
+tests finally pass!</p>
 <p>At this point Joan commits the code to her <em>feature branch</em> and
 <em>pushes</em> the branch to the server where she will create a
-<em>pull request</em> (also known as a <em>Merge Request</em> in gitlab).</p>
+<em>pull request</em> (also known as a <em>Merge Request</em> in gitlab) that will
+allow Joans new code to be scrutinized by peers.</p>
 <h3 id="pull-requests-and-peer-reviews">Pull Requests and Peer Reviews</h3>
 <p>The <em>Pull Request</em> sets off an automatic / automated series of systems
 tests that when they pass will grant the code the ability to be
@@ -178,8 +186,11 @@ making appropriate changes sending her back to the &ldquo;Edit -&gt; Debug&rdquo
 cycle above.</p>
 <h3 id="the-main-merge">The Main Merge</h3>
 <p>At long last, the peer review passes and the code is <em>Merged</em> into the
-<em>Main</em> branch.  Victory.</p>
-<p>Let&rsquo;s move that card over to the <em>Done</em> list on the Kanban board!</p>
+<em>Main</em> branch.  Victory. Let&rsquo;s move that card over to the <em>Done</em> list
+on the Kanban board!</p>
+<p>To note: the tests Joan had written to validate this new feature will
+become part of the automated tests from now forevermore ensuring this
+feature does not get damaged during future modifications.</p>
 <h2 id="lifecycle-phase-release---ship-it">Lifecycle Phase Release - Ship It</h2>
 <p>The code in the main branch is either released automatically via an
 automated CI/CD Pipeline or is acculmulated with other changes until
@@ -187,8 +198,8 @@ it has been completed and married up with the User Interface complete by
 Mini&rsquo;s team.</p>
 <p>We now have a real live application <em>Minimum Viable Product</em> or
 <em>Minimum Viable Feature (MVF)</em> is ready to hit the streets.</p>
-<p>The project is now in the hands of real users doing real work, or
-ready to be.</p>
+<p>The project is now in the hands of real users doing real work, or at
+lease it is ready to be&hellip;</p>
 <h3 id="feedback---features-requests-and-bugs-reports">Feedback - Features Requests and Bugs Reports</h3>
 <p>New features are being requested, tweaks to existing features and an
 occaisonal bug is found. All of this feedback is collected in a bug
@@ -199,13 +210,14 @@ process continues.</p>
 <p>This was a real quick overview of a software development project
 <em>inspired</em> by real events. Much detail and nuance were left out to
 keep the story flowing and not become a novel.</p>
-<p>However, if this is something you do on the daily, you are going to
-need to engage in or simply interested. I have created a lot more
-content diving into more detail on each one of these topics.</p>
+<p>However, if pratical application of software develop practices is
+something you are interested in, would like to start doing better. I
+have started creating and will continue to add a lot more content
+diving into more <em>practical detail</em> on each one of these topics.</p>
 <p>If so, continue on to my &ldquo;Phases of the Software Development
 Lifecycle&rdquo; and we will jump into each of these topics in more detail
 including some very explicit examples of each phase.</p>
-<p>&lt;&ndash;</p>
+<hr>
 <h2 id="the-delivery-phase---putting-the-creation-to-work">The Delivery Phase - Putting the creation to work!</h2>
 <h2 id="process-is-important">Process is Important</h2>
 <p>Software like building a house or designing a car is hard. Much like
@@ -340,7 +352,6 @@ progress.</p>
 </ol>
 <h5 id="select-task-from-kanban">Select Task from Kanban</h5>
 <h5 id="checkout-source-code">Checkout Source Code</h5>
-<p>&ndash;&gt;</p>
 
 	</div>
 	<div class="col"></div>
