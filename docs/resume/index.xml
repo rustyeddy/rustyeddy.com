@@ -4,7 +4,7 @@
     <title>resume on Rusty Eddy</title>
     <link>http://www.rustyeddy.com/resume/</link>
     <description>Recent content in resume on Rusty Eddy</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 02 Jan 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://www.rustyeddy.com/resume/index.xml" rel="self" type="application/rss+xml" />
@@ -13,14 +13,14 @@
       <link>http://www.rustyeddy.com/resume/summary/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/resume/summary/</guid>
-      <description>&lt;p&gt;I am a Software Engineer and Contract Programmer living in Huntington&#xA;Beach, CA with my family. I build micro-services and work on&#xA;micro-controllers, usually with Go, C/C++, Python and JavaScript&#xA;(among other techs).&lt;/p&gt;</description>
+      <description>I am a Software Engineer and Contract Programmer living in Huntington Beach, CA with my family. I build micro-services and work on micro-controllers, usually with Go, C/C++, Python and JavaScript (among other techs).</description>
     </item>
     <item>
       <title>Skills and Interests</title>
       <link>http://www.rustyeddy.com/resume/skills/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/resume/skills/</guid>
-      <description>&lt;ul&gt;&#xA;&lt;li&gt;Go, C/C++, Python and JavaScript (and many others..)&lt;/li&gt;&#xA;&lt;li&gt;Computer Networks, Multicast Video Distribution&lt;/li&gt;&#xA;&lt;li&gt;Distributed systems and realtime communications&lt;/li&gt;&#xA;&lt;li&gt;DevOps, cloud automation and continuous delivery&lt;/li&gt;&#xA;&lt;li&gt;Fullstack software development, reactive front-ends with VueJS&lt;/li&gt;&#xA;&lt;li&gt;MicroServices: REST APIs, Websockets, etc.&lt;/li&gt;&#xA;&lt;li&gt;Linux Systems and OpenSource Software&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description> Go, C/C++, Python and JavaScript (and many others..) Computer Networks, Multicast Video Distribution Distributed systems and realtime communications DevOps, cloud automation and continuous delivery Fullstack software development, reactive front-ends with VueJS MicroServices: REST APIs, Websockets, etc. Linux Systems and OpenSource Software </description>
     </item>
     <item>
       <title>Publications</title>

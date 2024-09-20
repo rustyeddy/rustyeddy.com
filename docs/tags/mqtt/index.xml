@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mqtt on Rusty Eddy</title>
+    <title>mqtt on Rusty Eddy</title>
     <link>http://www.rustyeddy.com/tags/mqtt/</link>
-    <description>Recent content in Mqtt on Rusty Eddy</description>
-    <generator>Hugo</generator>
+    <description>Recent content in mqtt on Rusty Eddy</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 29 Mar 2022 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://www.rustyeddy.com/tags/mqtt/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>http://www.rustyeddy.com/iot/iot-gateway-mqtt/</link>
       <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/iot/iot-gateway-mqtt/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://www.rustyeddy.com/img/iot-hub-mqtt.png&#34; alt=&#34;MQTT Architecture&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;This page marks the beginning of the &lt;em&gt;Organic Gardner (OG)&lt;/em&gt;&#xA;&lt;a href=&#34;http://www.rustyeddy.com/iot/iot-intro&#34;&gt;IoT Project&lt;/a&gt; Milestone 1 development!  If you want to&#xA;program along but have not yet worked with the &lt;em&gt;Go&lt;/em&gt; programming&#xA;language check this intro: &lt;a href=&#34;http://www.rustyeddy.com/notes/get-ready-to-go&#34;&gt;Getting ready to Go&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;a-brief-about-mqtt&#34;&gt;A Brief About MQTT&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://mqtt.org&#34;&gt;MQTT&lt;/a&gt; is the &lt;em&gt;messaging&lt;/em&gt; protocol that a&#xA;&lt;em&gt;Collector&lt;/em&gt; will use to periodically publish sensor data&#xA;(like temperature and humidity) to the &lt;em&gt;IoT Gateway&lt;/em&gt;. &lt;em&gt;MQTT&lt;/em&gt; will also&#xA;be used to signal when the &lt;em&gt;Control Station&lt;/em&gt; or &lt;em&gt;Controller&lt;/em&gt; will&#xA;respond to commands to turn a sprinkler pump on or off.&lt;/p&gt;</description>
+      <description>This page marks the beginning of the Organic Gardner (OG) IoT Project Milestone 1 development! If you want to program along but have not yet worked with the Go programming language check this intro: Getting ready to Go.&#xA;A Brief About MQTT MQTT is the messaging protocol that a Collector will use to periodically publish sensor data (like temperature and humidity) to the IoT Gateway. MQTT will also be used to signal when the Control Station or Controller will respond to commands to turn a sprinkler pump on or off.</description>
     </item>
     <item>
       <title>MQTT For Controllor Communication</title>

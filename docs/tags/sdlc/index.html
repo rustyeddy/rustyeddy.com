@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="/css/style.css" />
 
   
-  <title>Raspberry Pi Camera and Multiple Ports</title>
+  <title>sdlc</title>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-G7XZRHH62T"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -31,8 +31,8 @@
       <nav class="navbar-nav w-100 justify-content-end">
 	<div class="nav w-100">
   	  <a class="nav-link" href="/iot/"> iot &nbsp</a>
-  	  <a class="nav-link" href="/notes"> notes &nbsp</a>
   	  <a class="nav-link" href="/software"> software &nbsp</a> 
+  	  <a class="nav-link" href="/notes"> notes &nbsp</a>
   	  <a class="nav-link" href="/resume"> resume &nbsp</a> 
   	  <a class="nav-link" href="/about"> about &nbsp</a> 
 	</div>
@@ -44,10 +44,9 @@
   <div class="row">
     <div class="col-md"></div>
     <div class="col-md-8 text-center">
-      <h1 class="header h2 pb-1">Raspberry Pi Camera and Multiple Ports</h1>
+      <h1 class="header h2 pb-1">sdlc</h1>
       <p class="leadin align-right text-muted text-center mt-0">
-        I am using the Raspberry Pi Camera and the excellent PiCamera python library to simultaneously generate high and low definition streams from the same Raspberry Pi Camera.
-
+        
       </p>
     </div>
     <div class="col-md"></div>
@@ -69,54 +68,46 @@
   </div>
 </div>
 <div id="main body">
-<div class="container"><div class="row">
-    <div class="col"></div>
-    <div class="col-md-8 hero-text">
-	<article class="article">
-	  <p>As I started bumbling around trying to figure the best way to stream
-[live video from a moving vehicle], I found that the Raspberry Pi
-camera is capable of producing filtered versions of the images it is
-producing, through <em>video ports</em>.</p>
-<h3 id="raspberry-picamera-and-video">Raspberry PiCamera and Video</h3>
-<ul>
-<li>
-<p>The live video stream(s) will potentially be recieved by more than
-one consumer: including but not limited to:</p>
-<ul>
-<li>Live streaming High Def video watch while the rover is roaming about</li>
-<li>OpenCV module to run Computer Vision algorighms</li>
-<li>Cloud storage for future replay</li>
-<li>Snapshots can be produced or pulled from vide</li>
-</ul>
-</li>
-<li>
-<p>The Raspberry Pi Camera has multiple ports</p>
-<ul>
-<li>
-<p>Video Ports (defaults):</p>
-<ul>
-<li>Port 0 for high res, slow, mildly distruptive snapshots (capture)</li>
-<li>Port 1 standard for video High Def video recording (1024, 768,
-1240, 1080), etc</li>
-</ul>
-</li>
-<li>
-<p>Additional ports</p>
-<ul>
-<li>Port 2 lowdef low frames fed to OpenCV</li>
-<li>Port 3 lowres capture triggered by events</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>There are many standards and ways to do things</p>
-</li>
-</ul>
-	</article>
+<div class="container mb-4">
+
+  <div class="row mt-5">
+    <div class="col"></div> 
+    <div class="col-8">
+      <article class="article">
+	
+      </article>
     </div>
+    <div class="col"></div> 
+  </div>
+
+  
+  <div class="row">
     <div class="col"></div>
-</div>
+    <div class="col-8">
+      <div class="title">
+	<a href="http://www.rustyeddy.com/software/">Software Development Lifecycle Phases</a>
+      </div>
+    </div> 
+    <div class="col"></div>
+  </div>
+
+  <div class="row mb-4">
+    <div class="col text-mute fw-light text-right">
+      <div class="date">
+	January 13, 2023
+        <br/>
+        words 607
+      </div>
+    </div> 
+    <div class="col-8">
+      <div class="description text-mute smaller font-weight-light">
+	This series of articles breaks down the Software Development Lifecycle Phases which is basically a series of best practice processes used to efficiently build software in a cost effective and highly visible manner. By highly visible, I mean a manner in which non-software developers such as product owners, users and managers can understand and track the progress of a software project they have a vested interest in.
+
+      </div>
+    </div> 
+    <div class="col"></div>
+  </div>
+  
 </div>
 
     </div><footer id="footer" class="container-fluid footer small-text pt-4 border-top">
@@ -130,8 +121,6 @@ one consumer: including but not limited to:</p>
       <div>
         Last update ~
         
-	
-        Sunday, Apr 21, 2019
 	
         
       </div>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Soil Moisture on Rusty Eddy</title>
+    <title>soil moisture on Rusty Eddy</title>
     <link>http://www.rustyeddy.com/tags/soil-moisture/</link>
-    <description>Recent content in Soil Moisture on Rusty Eddy</description>
-    <generator>Hugo</generator>
+    <description>Recent content in soil moisture on Rusty Eddy</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 13 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://www.rustyeddy.com/tags/soil-moisture/index.xml" rel="self" type="application/rss+xml" />
@@ -13,14 +13,14 @@
       <link>http://www.rustyeddy.com/notes/soil-moisture-adafruit/</link>
       <pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/notes/soil-moisture-adafruit/</guid>
-      <description>&lt;h2 id=&#34;why-the-adafruit-version&#34;&gt;Why the Adafruit version?&lt;/h2&gt;&#xA;&lt;p&gt;Because I trust them.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-different&#34;&gt;What is different&lt;/h2&gt;&#xA;&lt;p&gt;Besides the obvious visual, It is green with a plant root, much cute-er&#xA;than the other more commonly found sensors.  It is also quite a bit&#xA;smaller than previous sensors.&lt;/p&gt;&#xA;&lt;h2 id=&#34;i2c-and-software&#34;&gt;I2C and Software&lt;/h2&gt;&#xA;&lt;p&gt;Technically, it also communicate via I2C which makes it more generally&#xA;usable by a whole slew of other Micro-controllers which is cool but it&#xA;also means we have to do a little more work reading values from the&#xA;devices.&lt;/p&gt;</description>
+      <description>Why the Adafruit version? &amp;laquo;&amp;laquo;&amp;laquo;&amp;lt; HEAD I have had a hard time with the general Capacitive Soil Moisture sensors that you find readily on the Internet as described in this article about soil moisture sensors. In a nutshell, the ones I bought had the wrong timer chip in them, not that was a total show stopper but I also had problems getting them to work with the esp32 ADC (Analog Digical Converter).</description>
     </item>
     <item>
       <title>Soil Mosture Sensors</title>
       <link>http://www.rustyeddy.com/notes/soil-moisture-sensor/</link>
       <pubDate>Thu, 15 Feb 2024 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/notes/soil-moisture-sensor/</guid>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Seems like I&amp;rsquo;m not as uniquely clever as I once thought, the idea of&#xA;creating a self watering garden is probably one of the more popular&#xA;DIY maker projects on the Internet it seems.&lt;/p&gt;&#xA;&lt;p&gt;Check out my version of the &lt;a href=&#34;http://www.rustyeddy.com/iot/self-watering-garden&#34;&gt;Self Watering Garden&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;What makes my project different?  Probably not alot, however in this&#xA;project we treat each of the watering &lt;em&gt;stations&lt;/em&gt; as a part of a&#xA;larger, complete &lt;em&gt;system&lt;/em&gt; of the watering stations that can be&#xA;observed and controlled by a single hub and associated web&#xA;application. Check out the project, I&amp;rsquo;d love to hear what you&#xA;think!&lt;/p&gt;</description>
+      <description>Overview Seems like I&amp;rsquo;m not as uniquely clever as I once thought, the idea of creating a self watering garden is probably one of the more popular DIY maker projects on the Internet it seems.&#xA;Check out my version of the Self Watering Garden&#xA;What makes my project different? Probably not alot, however in this project we treat each of the watering stations as a part of a larger, complete system of the watering stations that can be observed and controlled by a single hub and associated web application.</description>
     </item>
   </channel>
 </rss>

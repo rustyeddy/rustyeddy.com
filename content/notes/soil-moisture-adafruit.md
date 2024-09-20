@@ -14,6 +14,26 @@ github: https://github.com/sensorstation/iotesp
 
 ## Why the Adafruit version?
 
+<<<<<<< HEAD
+I have had a hard time with the general Capacitive Soil Moisture
+sensors that you find readily on the Internet as described in this
+article about 
+[soil moisture sensors](http://localhost:1313/notes/soil-moisture-sensor/).
+In a nutshell, the ones I bought had the wrong timer chip in them, not
+that was a total show stopper but I also had problems getting them to
+work with the esp32 ADC (Analog Digical Converter). 
+
+After spending way too much time trying to get them to work, I decided
+to just go with a much more reliable source: 
+[Adafruit STEMMA Soil Sensor](https://www.adafruit.com/product/4026?gad_source=1&gclid=EAIaIQobChMIlea3-Y-ihQMVNoHCCB0DLAylEAAYASAAEgJabvD_BwE).
+
+## What is different
+
+Right off the bat, they visually look different than the typical ones
+splattered all over the Internet.  Besides the obvious visual, It is
+green with a plant root, much cute-er than the other more commonly
+found sensors.  It is also quite a bit smaller than previous sensors.
+=======
 Because I trust them. 
 
 ## What is different
@@ -21,6 +41,7 @@ Because I trust them.
 Besides the obvious visual, It is green with a plant root, much cute-er
 than the other more commonly found sensors.  It is also quite a bit
 smaller than previous sensors.
+>>>>>>> master
 
 ## I2C and Software
 
