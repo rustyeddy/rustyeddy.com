@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Software Process on Rusty Eddy</title>
+    <title>Software Development Lifecycle Phases on Rusty Eddy</title>
     <link>http://www.rustyeddy.com/software/</link>
-    <description>Recent content in Software Process on Rusty Eddy</description>
+    <description>Recent content in Software Development Lifecycle Phases on Rusty Eddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 02 Jun 2021 00:00:00 +0000</lastBuildDate>
@@ -21,6 +21,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/software/customer-discovery-and-mvp/</guid>
       <description>Customer Discovery consists of one or more customer discovery sessions, where all users and owners of the software will be interviewed for their expectations, needs and desires for the upcoming software project.&#xA;Don&amp;rsquo;t just stop at the first answer, it will be too vague. Dig deeper and start peeling back the details. This great article on the Five Why&amp;rsquo;s&#xA;User Stories The information gathered from these sessions are then articulated in a series of non-technical descriptions of how the software is used by everybody.</description>
+    </item>
+    <item>
+      <title>Organizing Software Projects with Kanban</title>
+      <link>http://www.rustyeddy.com/software/kanban/</link>
+      <pubDate>Wed, 03 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>http://www.rustyeddy.com/software/kanban/</guid>
+      <description>Kanban is fantastically simple. We will create a board with 3 columns, Todo, Work In Progress and Complete.&#xA;Each column is populated with a single card for every task that must be done. The cards are prioritized and move through the system as the work progresses.&#xA;Good Kanban Reference My goal is NOT to describe Kanban itself. Instead, here is a good video if you are not already familiar with it.</description>
     </item>
     <item>
       <title>Version Control and Tracking Progress</title>

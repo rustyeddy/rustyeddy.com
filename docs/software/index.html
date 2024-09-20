@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="/css/style.css" />
 
   
-  <title>Software Process</title>
+  <title>Software Development Lifecycle Phases</title>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-G7XZRHH62T"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -31,8 +31,8 @@
       <nav class="navbar-nav w-100 justify-content-end">
 	<div class="nav w-100">
   	  <a class="nav-link" href="/iot/"> iot &nbsp</a>
-  	  <a class="nav-link" href="/notes"> notes &nbsp</a>
   	  <a class="nav-link" href="/software"> software &nbsp</a> 
+  	  <a class="nav-link" href="/notes"> notes &nbsp</a>
   	  <a class="nav-link" href="/resume"> resume &nbsp</a> 
   	  <a class="nav-link" href="/about"> about &nbsp</a> 
 	</div>
@@ -44,9 +44,9 @@
   <div class="row">
     <div class="col-md"></div>
     <div class="col-md-8 text-center">
-      <h1 class="header h2 pb-1">Software Process</h1>
+      <h1 class="header h2 pb-1">Software Development Lifecycle Phases</h1>
       <p class="leadin align-right text-muted text-center mt-0">
-        This section is all about the processes of developing software. Software like building a house or designing a car is hardwork. However if we make it a point of following well defined systems and process along with using the right tools we can turn software development into something much more manageable and within the grasp of non-software developers.
+        This series of articles breaks down the Software Development Lifecycle Phases which is basically a series of best practice processes used to efficiently build software in a cost effective and highly visible manner. By highly visible, I mean a manner in which non-software developers such as product owners, users and managers can understand and track the progress of a software project they have a vested interest in.
 
       </p>
     </div>
@@ -74,7 +74,85 @@
     <div class="row">
 	<div class="col"></div>
 	<div class="col-9">
-	    <p>Enjoy the following series of articles, let me know what you think!</p>
+	    <h2 id="process-is-important">Process is Important</h2>
+<p>Software like building a house or designing a car is hard. Much like
+the design and construction of a house or car, software development
+must be planned, organized and thought through to a great extent
+before the actual development or building can start.</p>
+<p>Once the construction or development starts a series of well defined
+steps must be adhered to in order to achieve the goal the project
+originally set out to accomplish. Yet the process needs to be flexible
+enough to adapt to changes discovered during the course of
+development, testing and feedback from users. The planning phase all
+the way through delivery will be best benefited if well defined
+processes are followed from the planning phase all the way through
+development.</p>
+<h3 id="well-defined-yet-flexible">Well defined yet flexible</h3>
+<p>Fortunately our industry has some well defined processes and
+Best Practices that are understood and practiced by many in the
+industry. However, unlike building a house, the nature of software
+allows a lot greater flexibility around on how each of the phases are
+applied providing a great degree of flexibility and customization
+according the project and the organizations needs.</p>
+<h3 id="software-is-an-iterative-process">Software is an Iterative process</h3>
+<p>Before we get into the distinct phases of the SDLC It must be noted
+that the phases of the Software Development Lifecyle documented below
+are iterative. That is unlike building plans from an architect pretty
+much set in stone how the dwelling will be constructed, unless
+expensive and time consuming approvals are made.</p>
+<h2 id="software-development-lifecycle-phases">Software Development Lifecycle Phases</h2>
+<p>The process and design phase of software development will establish
+the requirements and desires of the owners and users of the software,
+it will also give the software team a high level understanding of the
+major components of the software project.</p>
+<p>This phase starts getting everybody involved in the project on the
+same page, both the people running and paying for the project, the
+users, if they are a different group of people and finally the
+developers that will be using the project.</p>
+<p>This phase happens before any actual development happens.</p>
+<h2 id="design">Design</h2>
+<h3 id="use-cases">Use Cases</h3>
+<h4 id="establish-requirements">Establish Requirements</h4>
+<h4 id="acceptance-test-criteria">Acceptance Test Criteria</h4>
+<h4 id="ux--sitemaps-mockups-and-storyboards">UX / Sitemaps, Mockups and Storyboards</h4>
+<p>Provide the users and developers what the particular screens will look
+like making sure all information is captured and understood by both
+parties.</p>
+<h3 id="kanban-board">Kanban Board</h3>
+<p>The Kanban board will become the daily driver of the project. All
+tasks should be recorded in a card to keep track of what needs to be
+done, what work is currently in process and finally what has been
+accomplished.</p>
+<p>The Kanban board creates a nice visual into the state of the project.</p>
+<h2 id="architecture">Architecture</h2>
+<p>This phase starts translating high level design, use cases and
+requirements and transforming them into technical details.</p>
+<p>Start identifying the primary components and how they will relate to
+one another.</p>
+<h3 id="development-and-testing">Development and Testing</h3>
+<p>The time has come to roll up our sleeves and get started writing code.</p>
+<h4 id="version-control-system-vcs">Version Control System (VCS)</h4>
+<p>Version Control Systems (VCS) is the work hourse for the development
+team. The 800lb Gorilla of VCS is <em>git</em> originally created by the
+author of Linux, Linus Torvalds for the development of the Linux
+kernel itself.</p>
+<h4 id="test-driven-development-tdd">Test Driven Development (TDD)</h4>
+<h4 id="let-the-coding-begin">Let the Coding Begin!</h4>
+<p>This is where fun and frustration will begin as well as visible
+progress.</p>
+<ol>
+<li>Pick a task from the Kanban board, typically a day or two to
+develop.</li>
+<li>Checkout source code and create a branch</li>
+<li>Develop a test to validate the new feature</li>
+<li>Start coding, debug iteration until all tests pass</li>
+<li>Create a Merge Request (Pull Request)</li>
+<li>Peer review changes</li>
+<li>Merge code and tests into repository</li>
+<li>Add tests to CI/CD pipeline</li>
+</ol>
+<h3 id="deploy-and-manage">Deploy and Manage</h3>
+<h3 id="fix-bugs-and-add-features">Fix Bugs and Add Features</h3>
 
 	</div>
 	<div class="col"></div>
@@ -120,6 +198,29 @@
                             </div>
                             <div class="small text-muted">
                                 <a href="http://www.rustyeddy.com/software/customer-discovery-and-mvp/">read more ...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+	
+        <div class="row mb-4">
+            <div class="col"></div>
+	    <div class="col-8">
+                <div class="card">
+                    <div class="card-text">
+                        <div class="card-header">
+                            <a href="http://www.rustyeddy.com/software/kanban/">Organizing Software Projects with Kanban</a>
+                        </div>
+                        <div class="card-body">
+                            <div class="text-muted">
+                                Tracking tasks does not have to be Rocket Science! Absurdly simple, profoundly liberating and insane to ignore!  We are going to look into Kanban. 
+
+                            </div>
+                            <div class="small text-muted">
+                                <a href="http://www.rustyeddy.com/software/kanban/">read more ...</a>
                             </div>
                         </div>
                     </div>

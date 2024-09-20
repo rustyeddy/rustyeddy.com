@@ -15,12 +15,5 @@
       <guid>http://www.rustyeddy.com/iot/</guid>
       <description>Overview The purpose of the project is two fold, first to build something cool that involves some a physical product aka IoT project. The second is to demostrate solid Software Engineering Principals and the practice of employing a professional Software Development Life Cycle (SDLC).&#xA;Why IoT? Aside from the fact that I really enjoy IoT and have an IoT background. IoT employs a lot of interesting and diverse elements of software development.</description>
     </item>
-    <item>
-      <title>Software Process</title>
-      <link>http://www.rustyeddy.com/software/</link>
-      <pubDate>Fri, 13 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/software/</guid>
-      <description>Enjoy the following series of articles, let me know what you think!</description>
-    </item>
   </channel>
 </rss>

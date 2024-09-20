@@ -14,6 +14,7 @@ github: https://github.com/sensorstation/iotesp
 
 ## Why the Adafruit version?
 
+<<<<<<< HEAD
 I have had a hard time with the general Capacitive Soil Moisture
 sensors that you find readily on the Internet as described in this
 article about 
@@ -32,6 +33,15 @@ Right off the bat, they visually look different than the typical ones
 splattered all over the Internet.  Besides the obvious visual, It is
 green with a plant root, much cute-er than the other more commonly
 found sensors.  It is also quite a bit smaller than previous sensors.
+=======
+Because I trust them. 
+
+## What is different
+
+Besides the obvious visual, It is green with a plant root, much cute-er
+than the other more commonly found sensors.  It is also quite a bit
+smaller than previous sensors.
+>>>>>>> master
 
 ## I2C and Software
 

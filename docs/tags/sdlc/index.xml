@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sdlc on Rusty Eddy</title>
+    <link>http://www.rustyeddy.com/tags/sdlc/</link>
+    <description>Recent content in sdlc on Rusty Eddy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 13 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.rustyeddy.com/tags/sdlc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Software Development Lifecycle Phases</title>
+      <link>http://www.rustyeddy.com/software/</link>
+      <pubDate>Fri, 13 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.rustyeddy.com/software/</guid>
+      <description>Process is Important Software like building a house or designing a car is hard. Much like the design and construction of a house or car, software development must be planned, organized and thought through to a great extent before the actual development or building can start.&#xA;Once the construction or development starts a series of well defined steps must be adhered to in order to achieve the goal the project originally set out to accomplish.</description>
+    </item>
+  </channel>
+</rss>

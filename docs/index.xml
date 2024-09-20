@@ -30,6 +30,13 @@
       <description>Customer Discovery consists of one or more customer discovery sessions, where all users and owners of the software will be interviewed for their expectations, needs and desires for the upcoming software project.&#xA;Don&amp;rsquo;t just stop at the first answer, it will be too vague. Dig deeper and start peeling back the details. This great article on the Five Why&amp;rsquo;s&#xA;User Stories The information gathered from these sessions are then articulated in a series of non-technical descriptions of how the software is used by everybody.</description>
     </item>
     <item>
+      <title>Organizing Software Projects with Kanban</title>
+      <link>http://www.rustyeddy.com/software/kanban/</link>
+      <pubDate>Wed, 03 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>http://www.rustyeddy.com/software/kanban/</guid>
+      <description>Kanban is fantastically simple. We will create a board with 3 columns, Todo, Work In Progress and Complete.&#xA;Each column is populated with a single card for every task that must be done. The cards are prioritized and move through the system as the work progresses.&#xA;Good Kanban Reference My goal is NOT to describe Kanban itself. Instead, here is a good video if you are not already familiar with it.</description>
+    </item>
+    <item>
       <title>Collection Station</title>
       <link>http://www.rustyeddy.com/iot/iot-sensor-station/</link>
       <pubDate>Thu, 13 Jan 2022 00:00:00 +0000</pubDate>
@@ -188,7 +195,7 @@
       <link>http://www.rustyeddy.com/notes/soil-moisture-adafruit/</link>
       <pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/notes/soil-moisture-adafruit/</guid>
-      <description>Why the Adafruit version? I have had a hard time with the general Capacitive Soil Moisture sensors that you find readily on the Internet as described in this article about soil moisture sensors. In a nutshell, the ones I bought had the wrong timer chip in them, not that was a total show stopper but I also had problems getting them to work with the esp32 ADC (Analog Digical Converter).</description>
+      <description>Why the Adafruit version? &amp;laquo;&amp;laquo;&amp;laquo;&amp;lt; HEAD I have had a hard time with the general Capacitive Soil Moisture sensors that you find readily on the Internet as described in this article about soil moisture sensors. In a nutshell, the ones I bought had the wrong timer chip in them, not that was a total show stopper but I also had problems getting them to work with the esp32 ADC (Analog Digical Converter).</description>
     </item>
     <item>
       <title>Soil Mosture Sensors</title>
@@ -245,13 +252,6 @@
       <pubDate>Fri, 26 Mar 2021 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/notes/go-configuration/</guid>
       <description>I use this same configuration structure and supporting functions in most every Go program I work on. It is pretty simple but makes it easy to keep global variables orgranized and configurable.&#xA;Here is what I do:&#xA;Create a type config struct&#xA;Every configurable variable for the program becomes a Member field of the Configuration structure.&#xA;Register every field of the Configuration Structure with go&amp;rsquo;s builtin flags package such that the flags are parsed when the program starts we can use our configuration variable.</description>
-    </item>
-    <item>
-      <title>Organizing Software Projects with Kanban</title>
-      <link>http://www.rustyeddy.com/notes/kanban/</link>
-      <pubDate>Wed, 03 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/notes/kanban/</guid>
-      <description>Kanban is fantastically simple. We will create a board with 3 columns, Todo, Work In Progress and Complete.&#xA;Each column is populated with a single card for every task that must be done. The cards are prioritized and move through the system as the work progresses.&#xA;Good Kanban Reference My goal is NOT to describe Kanban itself. Instead, here is a good video if you are not already familiar with it.</description>
     </item>
     <item>
       <title>WPE an Excellerated Raspberry Pi Kiosk</title>
