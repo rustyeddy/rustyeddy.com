@@ -46,7 +46,7 @@
     <div class="col-md-8 text-center">
       <h1 class="header h2 pb-1">Soil Mosture Sensors</h1>
       <p class="leadin align-right text-muted text-center mt-0">
-        Plenty has been written about resistive vs. capacitive soil moisture sensors and how laced with problems they are. After a lot of research and quite a bit of practical experience here are my notes getting them to work, last and protecting fragile electronic components. 
+        Plenty has been written about resistive vs. capacitive soil moisture sensors and how laced they are with problems. After a lot of research and quite a bit of experimentation here are my notes getting them to work (or not) as well as making them last by protecting the fragile electronic components from the elements. 
 
       </p>
     </div>
@@ -74,38 +74,65 @@
     <div class="col-md-8 hero-text">
 	<article class="article">
 	  <h2 id="overview">Overview</h2>
-<p>Seems like I&rsquo;m not as uniquely clever as I once thought I was, the
-idea of creating a self watering garden is one of the most popular DIY
-maker projects on the Internet it seems.</p>
-<p>Check out the <a href="/iot/self-watering-garden">Sensor Station Project</a></p>
-<p>What makes my project different?  Probably not alot, except that each
-of the watering stations can be observed and controlled by a hub and
-associated app. Check out the project, I&rsquo;d love to hear what you
+<p>Seems like I&rsquo;m not as uniquely clever as I once thought, the idea of
+creating a self watering garden is probably one of the more popular
+DIY maker projects on the Internet it seems.</p>
+<p>Check out my version of the <a href="/iot/self-watering-garden">Self Watering Garden</a></p>
+<p>What makes my project different?  Probably not alot, however in this
+project we treat each of the watering <em>stations</em> as a part of a
+larger, complete <em>system</em> of the watering stations that can be
+observed and controlled by a single hub and associated web
+application. Check out the project, I&rsquo;d love to hear what you
 think!</p>
+<p>Anyway, the key element or sensor to this project is the <em>soil
+moisture sensor</em>. Unlink many of the other sensors used in this and
+other project, which &ldquo;just work&rdquo;, these soil sensors are problematic.</p>
+<p>I&rsquo;ll explain.</p>
 <h2 id="capacitive-over-resistive">Capacitive over Resistive</h2>
-<p>Choose capacitive over resistive.</p>
+<p>If you do a quick google search on &ldquo;arduino soil moisture sensors&rdquo; you
+will immediately see two types: <em>resistive</em> and <em>capacitive</em> sensors.</p>
 <blockquote>
-<p>TODO place a picture</p>
+<p>TBD place a pic of capacitive and resistive sensors here</p>
 </blockquote>
+<p>In short we choose the capacitive over resistive version of the
+sensor. Many others have done a great job explaining why the resistive
+sensor is NOT a good choice so I won&rsquo;t repeat them here, however, if
+you are interested this
+<a href="https://www.adafruit.com/product/4026">Adafruit product Description</a>
+does a great job explaing why resistive suck and capacitive are the
+way to go.</p>
+<p>However, all is not necessarily rosey even with the Capacitive
+versions of these sensors. The remainder of this article I&rsquo;ll
+summarize the research I have done and my practical experience with
+these sensors.</p>
 <h2 id="capacitive-have-their-problems">Capacitive have their problems</h2>
 <h3 id="whats-up-with-the-v12-or-v20">What&rsquo;s up with the v1.2 or v2.0?</h3>
-<p>Video below says that v2.0 is no different than v1.2, it is simply a
-marketing trick. GASP! The internet is taking advantage of us. For
+<p>The video below says that v2.0 is no different than v1.2, it is simply a
+marketing trick. GASP! The internet is taking advantage of us, for
 shame!</p>
 <h3 id="bad-reputation-for-being-unreliable">Bad reputation for being unreliable</h3>
 <p>This is a really good video claiming 82% of them do not work
-correctly. It also goes on to describe how to tell which are better.</p>
+correctly. It also goes on to describe how to tell which sensors are
+better.</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/IGP38bz-K48" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-<p>He makes a really smart plant pot!</p>
+<p>He makes a really smart plant pot! Turns out the capacitive sensors I
+bought are the wrong ones, awww bummer. I bought 5 of those things,
+sigh (good thing they were only a couple bucks).</p>
+<p>Well, I&rsquo;ll still try to get them to work, which as you&rsquo;ll read later,
+was not a whole lot of fun.</p>
 <h3 id="missing-voltage-regulator">Missing Voltage Regulator</h3>
-<p>In theory they could operate at 3.3v or 5v which is great, however he
-has found some of them are missing this regulator. Which can really
-become a problem if they are being powered by batteries.</p>
-<p>Look for the 662K voltage regulator from the pics before you buy.</p>
+<p>In theory they could operate at 3.3v or 5v which is great, however the
+autorh of the video found some productions of these sensors are
+missing this voltage regulator. Which can really become a problem if
+they are being powered by batteries that do not maintain a consistent
+regulated flow of power to the sensor.</p>
+<p>Look for the 662K voltage regulator from the pics before you buy. And
+hopefully the ones you buy will be the ones you were looking at in the
+pic.</p>
 <h3 id="the-wrong-timer-chip">The wrong timer chip</h3>
 <p>He also goes on to explain how the timer chip can cause a problem on
 sensor made without the appropriate 662 voltage regulator.</p>
@@ -115,16 +142,25 @@ sensor made without the appropriate 662 voltage regulator.</p>
 </blockquote>
 <p>The NE555 needs at least 4v and will not work if power comes in less
 than the 4v like can happen for certain batteries.</p>
-<h3 id="missing-resistor-chip">Missing Resistor Chip</h3>
-<p>He said a large number of chips were missing the XXX resistory.</p>
-<p>This causes the responses to be slow. I was thinking that is not such
-a bad thing as the water does not need to take place immediately, heck
-we can wait for a few minutes or hours, who cares.</p>
+<p>Turns out the sensors I bought have the NE555 chip. Sigh. That won&rsquo;t
+stop me!</p>
+<h3 id="missing-resistor">Missing Resistor</h3>
+<p>He said a large number of chips were missing the 1M resistor (Todo
+rewatch the video and make sure I have the correct value of the
+resistor).</p>
+<p>This causes the sensors response to change to be very slow. I thought:
+&ldquo;that&rsquo;s not so bad, I really only need to check every 15 minutes&rdquo;.</p>
 <p>Well, he points out why we should care in the video and why the
 readings may be garbage if your sampling does not allow the values to
 eventually settle down.</p>
 <p>Now that can be a big problem, especially if you are allowing your MCU
-to sleep and wake up!</p>
+to sleep and wake up, measure and go immediately back to sleep!</p>
+<p>If I do end up using these sensors I&rsquo;ll wake up every 15 minutes or so
+then wait for a couple minutes for the readings to stabalize. Of
+course when the water is turned on, we should probably not sleep very
+long as we don&rsquo;t want to over water.  Or perhaps just expect to water
+for a specific limited period.</p>
+<p>We&rsquo;ll see..</p>
 <h2 id="how-they-work">How they work</h2>
 <p>A single analog input along with either 3.3v or 5v power and of course
 ground.  A job easily handled by an Arduino, esp32 or Raspberry Pi
@@ -157,7 +193,7 @@ have a bad reputation for being unreliable or unpredictable.</p>
 <p>As described in this video at the 5:05 minute mark.</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="https://www.youtube.com/embed/QGCrtXf8YSs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
 <p><a href="https://youtube.com/watch?v=QGCrtstreaming-video-tools/Xf8YSs">https://youtube.com/watch?v=QGCrtstreaming-video-tools/Xf8YSs</a></p>
