@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Work History on Rusty Eddy</title>
-    <link>http://localhost:1313/resume/jobs/</link>
+    <link>http://www.rustyeddy.com/resume/jobs/</link>
     <description>Recent content in Work History on Rusty Eddy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 Dec 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/resume/jobs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.rustyeddy.com/resume/jobs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Panasonic Avionics</title>
-      <link>http://localhost:1313/resume/jobs/panasonic/</link>
+      <link>http://www.rustyeddy.com/resume/jobs/panasonic/</link>
       <pubDate>Fri, 15 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/resume/jobs/panasonic/</guid>
+      <guid>http://www.rustyeddy.com/resume/jobs/panasonic/</guid>
       <description></description>
     </item>
     <item>
       <title>Cisco Systems</title>
-      <link>http://localhost:1313/resume/jobs/cisco-systems/</link>
+      <link>http://www.rustyeddy.com/resume/jobs/cisco-systems/</link>
       <pubDate>Wed, 01 Feb 2006 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/resume/jobs/cisco-systems/</guid>
+      <guid>http://www.rustyeddy.com/resume/jobs/cisco-systems/</guid>
       <description>&lt;p&gt;Original member of the Multicast Routing team.  Team of 12 responsible&#xA;for the design, implementation and testing the complete suite of&#xA;Multicast Routing protocols for the Cisco Carrier Routing System&#xA;(CRS).  Worked this project from early design through product launch&#xA;into maintenance.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Computer Networks, Multicast Routing, C/C++, Real Time, Distributed&#xA;Systems&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>USC ~ ISI</title>
-      <link>http://localhost:1313/resume/jobs/usc-isi/</link>
+      <link>http://www.rustyeddy.com/resume/jobs/usc-isi/</link>
       <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/resume/jobs/usc-isi/</guid>
+      <guid>http://www.rustyeddy.com/resume/jobs/usc-isi/</guid>
       <description>&lt;p&gt;Led the effort to add IGMP/PIM and Multicast Routing Information&#xA;Base (MRIB) to the Open Source &lt;em&gt;GateD&lt;/em&gt; suite of routing protocols.&#xA;Mentored graduate students and others that would eventually become&#xA;prominent members of the computer networking community.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Retix</title>
-      <link>http://localhost:1313/resume/jobs/retix/</link>
+      <link>http://www.rustyeddy.com/resume/jobs/retix/</link>
       <pubDate>Tue, 01 Aug 1995 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/resume/jobs/retix/</guid>
+      <guid>http://www.rustyeddy.com/resume/jobs/retix/</guid>
       <description>&lt;p&gt;Promoted to lead the team of 6 engineers that developed and&#xA;automated test plans for L2 switches, OSPF, RIP and BGP&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Implemented an automated test framework and led junior engineers&#xA;in developing the automated test suites.  C; C++; Perl; TCL&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Provided 3rd level customer support, serious customer problems that&#xA;could not be resolved by customer support or field engineers became&#xA;my teams responsibility to diagnose and determine solutions and&#xA;workarounds was required.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Rockwell, Intl. Space Systems Division</title>
-      <link>http://localhost:1313/resume/jobs/rockwell/</link>
+      <link>http://www.rustyeddy.com/resume/jobs/rockwell/</link>
       <pubDate>Mon, 03 Jan 1994 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/resume/jobs/rockwell/</guid>
+      <guid>http://www.rustyeddy.com/resume/jobs/rockwell/</guid>
       <description>&lt;p&gt;Led a team of 5 Sysadmins responsible for the use and well being of&#xA;Engineering Departments 300+ UNIX workstations, servers (Sun, HP, DEC)&#xA;and network.&lt;/p&gt;&#xA;&lt;p&gt;On a team that Developed a Real Time OS that was embedded in a variety&#xA;of space and military projects.&lt;/p&gt;</description>
     </item>
     <item>
       <title>California State University ~ Chancelors Office</title>
-      <link>http://localhost:1313/resume/jobs/csu-chancelor/</link>
+      <link>http://www.rustyeddy.com/resume/jobs/csu-chancelor/</link>
       <pubDate>Tue, 01 Aug 1995 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/resume/jobs/csu-chancelor/</guid>
+      <guid>http://www.rustyeddy.com/resume/jobs/csu-chancelor/</guid>
       <description>&lt;p&gt;I was hired to install and manage the departments first AT&amp;amp;T Unix&#xA;Mini-computers, UUNET connection and write a bulletin board system for&#xA;California State Educators.&lt;/p&gt;</description>
     </item>
   </channel>

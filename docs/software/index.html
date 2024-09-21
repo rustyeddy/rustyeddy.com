@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html><head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
@@ -93,10 +93,10 @@ used.</p>
 <em>requirements</em> and the begin drafting the <em>Software Architecture
 Document</em>.</p>
 <h3 id="wire-frames-story-boards-and-the-user-experience">Wire Frames, Story Boards and the User Experience</h3>
-<p>Along with the use cases Mini, the <em>front-end</em> lead was able able to
-start sketching out the user interface in the form of <em>Wireframes</em>
-collected to together in <em>story boards</em> that walked Kelly through the
-<em>Use Cases</em> giving Kelly and the develop a mutaul, solid understanding
+<p>Along with the use cases Mini, the <em>front-end</em> lead was able to start
+sketching out the user interface in the form of <em>Wireframes</em> collected
+to together in <em>story boards</em> that walked Kelly through the <em>Use
+Cases</em> giving Kelly (and us developers) a mutual, solid understanding
 of what it would be like to use the software, not just by description
 but walking her through the usage visualy, providing the complete
 <em>User eXperience</em>.</p>
@@ -104,26 +104,31 @@ but walking her through the usage visualy, providing the complete
 <p>Mini also created the <em>design guide</em> that included colors, fonts and
 spacing that defines the over-all aesthetic of the site. Finally a
 <em>site map</em> was created to identify the pages of the User Interface and
-the hiearchial relationship to one another. The <em>manifest</em> was also
-created as a list of all assets that occupy the UI / Website such as
-images, pictures, PDF documents and so on.</p>
+the hiearchial relationship of the pages to one another. The
+<em>manifest</em> was also created as a list of all assets that occupy the UI
+/ Website such as images, pictures, PDF documents and so on.</p>
 <h3 id="database-design---the-model">Database Design - The Model</h3>
-<p>Also from the Use Cases Melanie our Database Guru is able to start
-drafting what the Database will contain and how the different chunks
-of data are going to relate to one another. This is referred to as the
-<em>Data Model</em> used through out the application.</p>
-<h3 id="test-cases">Test Cases</h3>
-<p>From the <em>Use Cases</em> we were able to derive:</p>
+<p>The Use Cases gives our Database Guru Melanie the ability to start
+drafting the <em>Data Model</em> which will describe the various data chunks
+the app will need, where the data is stored and the data chunks
+relationship to one another. We will constantly be referring to our
+<em>data model</em> throughout the development of this application.</p>
+<h2 id="what-do-we-have-so-far">What do we have so far?</h2>
+<p>From our <em>Use Cases</em> we were able to derive:</p>
 <ul>
-<li>Requirements</li>
-<li>Architecture Document</li>
+<li>The applications requirements</li>
+<li>An Architecture Document</li>
 <li>Wireframes, Storyboards and Design Guide</li>
-<li>Preliminary Data Model</li>
+<li>Our Data Model</li>
 <li>Validation Criteria and Acceptance Tests</li>
 </ul>
-<p>The <em>requirements</em> in a way that tell us what tasks need to be done in
-a way that is concrete, measurable that can be <em>validated</em> by specific
-<em>acceptance tests</em>.</p>
+<p>So we got a lotta stuff to work with now! Enough to get started doing
+the actual development.</p>
+<p>But how do we know we get it right once we start building?</p>
+<h3 id="test-cases">Test Cases</h3>
+<p>By stating the <em>requirements</em> in a way that tell us what tasks need to
+be <em>validated</em> in a way that is concrete, measurable and very
+specific. We are going to call the <em>acceptance tests</em>.</p>
 <p>The <em>Acceptance Tests</em> will be our guiding light, every feature or
 change we make to the software needs to be validated by a specific
 test or two.</p>
@@ -217,141 +222,6 @@ diving into more <em>practical detail</em> on each one of these topics.</p>
 <p>If so, continue on to my &ldquo;Phases of the Software Development
 Lifecycle&rdquo; and we will jump into each of these topics in more detail
 including some very explicit examples of each phase.</p>
-<hr>
-<h2 id="the-delivery-phase---putting-the-creation-to-work">The Delivery Phase - Putting the creation to work!</h2>
-<h2 id="process-is-important">Process is Important</h2>
-<p>Software like building a house or designing a car is hard. Much like
-the design and construction of a house or car, software development
-must be planned, organized and thought through to a great extent
-before the actual development or building can start.</p>
-<p>Once the construction or development starts a series of well defined
-steps must be adhered to in order to achieve the goal the project
-originally set out to accomplish. Yet the process needs to be flexible
-enough to adapt to changes discovered during the course of
-development, testing and feedback from users. The planning phase all
-the way through delivery will be best benefited if well defined
-processes are followed from the planning phase all the way through
-development.</p>
-<h3 id="well-defined-yet-flexible">Well defined yet flexible</h3>
-<p>Fortunately our industry has some well defined processes and
-Best Practices that are understood and practiced by many in the
-industry. However, unlike building a house, the nature of software
-allows a lot greater flexibility around on how each of the phases are
-applied providing a great degree of flexibility and customization
-according the project and the organizations needs.</p>
-<h3 id="software-is-an-iterative-process">Software is an Iterative process</h3>
-<p>Before we get into the distinct phases of the SDLC It must be noted
-that the phases of the Software Development Lifecyle documented below
-are iterative. That is unlike building plans from an architect pretty
-much set in stone how the dwelling will be constructed, unless
-expensive and time consuming approvals are made.</p>
-<h2 id="software-development-lifecycle-phases">Software Development Lifecycle Phases</h2>
-<p>The process and design phase of software development will establish
-the requirements and desires of the owners and users of the software,
-it will also give the software team a high level understanding of the
-major components of the software project.</p>
-<p>This phase starts getting everybody involved in the project on the
-same page, both the people running and paying for the project, the
-users, if they are a different group of people and finally the
-developers that will be using the project.</p>
-<p>This phase happens before any actual development happens.</p>
-<h2 id="design">Design</h2>
-<p>The design phase happens before any coding begins and is primarily an
-interaction with the non-technical users and development team with
-discussions and activities on a non-technical level.</p>
-<p>The whole point of the design phase is to get the users and developers
-on the same page.</p>
-<h3 id="use-cases">Use Cases</h3>
-<p>The first step in the process is to establish the <em>use-cases</em> to get
-the users to describe what the software needs to do and how they will
-go about using it.</p>
-<p>Use cases in short are the tasks the software will be required to
-perform. Uses cases are non-technical best stated in <em>story
-form</em>. They should be totally understandable by non-technical
-non-programmers as a way to communicate what is required of the
-software.</p>
-<p>TODO: reference the Ivar Jacobson use case web page</p>
-<p>Use cases will result in the following artifacts of this software
-development process:</p>
-<ol>
-<li>Requirements</li>
-<li>Major components of the software system</li>
-<li>Acceptance tests can be derived from the requirements resulting
-from the use case.</li>
-</ol>
-<h4 id="establish-requirements">Establish Requirements</h4>
-<p>From the usecases we can start deriving the requirements. The
-requirements can then be turned into specific tasks with measurable
-goals.</p>
-<h4 id="acceptance-test-criteria">Acceptance Test Criteria</h4>
-<p>The acceptance criteria will be the ultimate list of items the
-software needs to accomplish.  In otherwords it will be the set of
-requirements defined by what precisely needs to happen in order to
-consider that portion of a use case to have been successfully
-resolved.</p>
-<p>Acceptance tests must be stated in very specific and measurable
-quantities.</p>
-<h4 id="ux--sitemaps-mockups-and-storyboards">UX / Sitemaps, Mockups and Storyboards</h4>
-<p>Provide the users and developers what the particular screens will look
-like making sure all information is captured and understood by both
-parties.</p>
-<h3 id="kanban-board">Kanban Board</h3>
-<p>The Kanban board will become the daily driver of the project. All
-tasks should be recorded in a card to keep track of what needs to be
-done, what work is currently in process and finally what has been
-accomplished.</p>
-<p>The Kanban board creates a nice visual into the state of the project.</p>
-<p>Tasks ultimately should be broke down to increments that will take a
-day or two. Tasks that take a week or more can usually be broke down
-into multiple sub-tasks.</p>
-<p>We want to keep the tasks small-ish keeping with the agile philosophy.</p>
-<h2 id="architecture">Architecture</h2>
-<p>This phase starts translating high level design, use cases and
-requirements and transforming them into technical details.</p>
-<p>Start identifying the primary components and how they will relate to
-one another.</p>
-<h3 id="development-and-testing">Development and Testing</h3>
-<p>The time has come to roll up our sleeves and get started writing code.</p>
-<h4 id="version-control-system-vcs">Version Control System (VCS)</h4>
-<p>TODO: change this up such that we describe more of what the version
-control system does.</p>
-<p>Version Control Systems (VCS) is the work hourse for the development
-team. The 800lb Gorilla of VCS is <em>git</em> originally created by the
-author of Linux, Linus Torvalds for the development of the Linux
-kernel itself.</p>
-<p>These days all in one systems have been built around git, such as the
-ever popular github.com or gitlab.com. Not only do they incorporate
-the elements of <em>Version Control</em> proper but also have bug/issue
-tracking, CI/CD pipelines and other tools to make these powerful
-systems to guide our software through the entire development and
-delivery process.</p>
-<p>We will get into much detail about these systems using Github.com and
-it&rsquo;s tools that are almost all mostly free.</p>
-<p>Before coding officially begins one or more repositories will be
-created for our development tasks.</p>
-<h4 id="test-driven-development-tdd">Test Driven Development (TDD)</h4>
-<p>In an ideal world all development tasks will begin with a well defined
-test that will verify the requirements being developed pass as
-required.</p>
-<p>We will get into the variety of different test types and what the
-objective of different tests. But suffice it to say, all great
-software projects are pretty thouroughly tested.</p>
-<h4 id="let-the-coding-begin">Let the Coding Begin!</h4>
-<p>This is where fun and frustration will begin as well as visible
-progress.</p>
-<ol>
-<li>Pick a task from the Kanban board</li>
-<li>Checkout source code and create a feature branch for the task</li>
-<li>Develop a test to validate the new feature</li>
-<li>Start coding, debug iteration until all tests pass</li>
-<li>Create a Merge Request (Pull Request)</li>
-<li>Peer review changes</li>
-<li>Merge code and tests into repository</li>
-<li>Add tests to CI/CD pipeline</li>
-<li>CI/CD pipeline must then pass</li>
-</ol>
-<h5 id="select-task-from-kanban">Select Task from Kanban</h5>
-<h5 id="checkout-source-code">Checkout Source Code</h5>
 
 	</div>
 	<div class="col"></div>
@@ -365,7 +235,7 @@ progress.</p>
                 <div class="card">
                     <div class="card-text">
                         <div class="card-header">
-                            <a href="http://localhost:1313/software/software-is-hard/">Software is Hard</a>
+                            <a href="http://www.rustyeddy.com/software/software-is-hard/">Software is Hard</a>
                         </div>
                         <div class="card-body">
                             <div class="text-muted">
@@ -373,7 +243,7 @@ progress.</p>
 
                             </div>
                             <div class="small text-muted">
-                                <a href="http://localhost:1313/software/software-is-hard/">read more ...</a>
+                                <a href="http://www.rustyeddy.com/software/software-is-hard/">read more ...</a>
                             </div>
                         </div>
                     </div>
@@ -388,7 +258,7 @@ progress.</p>
                 <div class="card">
                     <div class="card-text">
                         <div class="card-header">
-                            <a href="http://localhost:1313/software/customer-discovery-and-mvp/">Customer Discovery and MVP</a>
+                            <a href="http://www.rustyeddy.com/software/customer-discovery-and-mvp/">Customer Discovery and MVP</a>
                         </div>
                         <div class="card-body">
                             <div class="text-muted">
@@ -396,7 +266,7 @@ progress.</p>
 
                             </div>
                             <div class="small text-muted">
-                                <a href="http://localhost:1313/software/customer-discovery-and-mvp/">read more ...</a>
+                                <a href="http://www.rustyeddy.com/software/customer-discovery-and-mvp/">read more ...</a>
                             </div>
                         </div>
                     </div>
@@ -411,7 +281,7 @@ progress.</p>
                 <div class="card">
                     <div class="card-text">
                         <div class="card-header">
-                            <a href="http://localhost:1313/software/kanban/">Organizing Software Projects with Kanban</a>
+                            <a href="http://www.rustyeddy.com/software/kanban/">Organizing Software Projects with Kanban</a>
                         </div>
                         <div class="card-body">
                             <div class="text-muted">
@@ -419,7 +289,7 @@ progress.</p>
 
                             </div>
                             <div class="small text-muted">
-                                <a href="http://localhost:1313/software/kanban/">read more ...</a>
+                                <a href="http://www.rustyeddy.com/software/kanban/">read more ...</a>
                             </div>
                         </div>
                     </div>
@@ -434,7 +304,7 @@ progress.</p>
                 <div class="card">
                     <div class="card-text">
                         <div class="card-header">
-                            <a href="http://localhost:1313/software/vcs-tracking-progress/">Version Control and Tracking Progress</a>
+                            <a href="http://www.rustyeddy.com/software/vcs-tracking-progress/">Version Control and Tracking Progress</a>
                         </div>
                         <div class="card-body">
                             <div class="text-muted">
@@ -442,7 +312,7 @@ progress.</p>
 
                             </div>
                             <div class="small text-muted">
-                                <a href="http://localhost:1313/software/vcs-tracking-progress/">read more ...</a>
+                                <a href="http://www.rustyeddy.com/software/vcs-tracking-progress/">read more ...</a>
                             </div>
                         </div>
                     </div>
@@ -457,7 +327,7 @@ progress.</p>
                 <div class="card">
                     <div class="card-text">
                         <div class="card-header">
-                            <a href="http://localhost:1313/software/testing/">Improving Quality by Testing Software</a>
+                            <a href="http://www.rustyeddy.com/software/testing/">Improving Quality by Testing Software</a>
                         </div>
                         <div class="card-body">
                             <div class="text-muted">
@@ -465,7 +335,7 @@ progress.</p>
 
                             </div>
                             <div class="small text-muted">
-                                <a href="http://localhost:1313/software/testing/">read more ...</a>
+                                <a href="http://www.rustyeddy.com/software/testing/">read more ...</a>
                             </div>
                         </div>
                     </div>
@@ -480,7 +350,7 @@ progress.</p>
                 <div class="card">
                     <div class="card-text">
                         <div class="card-header">
-                            <a href="http://localhost:1313/software/peer-review/">Peer Reviews - And Culture</a>
+                            <a href="http://www.rustyeddy.com/software/peer-review/">Peer Reviews - And Culture</a>
                         </div>
                         <div class="card-body">
                             <div class="text-muted">
@@ -488,7 +358,7 @@ progress.</p>
 
                             </div>
                             <div class="small text-muted">
-                                <a href="http://localhost:1313/software/peer-review/">read more ...</a>
+                                <a href="http://www.rustyeddy.com/software/peer-review/">read more ...</a>
                             </div>
                         </div>
                     </div>
@@ -503,7 +373,7 @@ progress.</p>
                 <div class="card">
                     <div class="card-text">
                         <div class="card-header">
-                            <a href="http://localhost:1313/software/commit-code-make-history/">Commit Code and Make History</a>
+                            <a href="http://www.rustyeddy.com/software/commit-code-make-history/">Commit Code and Make History</a>
                         </div>
                         <div class="card-body">
                             <div class="text-muted">
@@ -511,7 +381,7 @@ progress.</p>
 
                             </div>
                             <div class="small text-muted">
-                                <a href="http://localhost:1313/software/commit-code-make-history/">read more ...</a>
+                                <a href="http://www.rustyeddy.com/software/commit-code-make-history/">read more ...</a>
                             </div>
                         </div>
                     </div>
@@ -526,7 +396,7 @@ progress.</p>
                 <div class="card">
                     <div class="card-text">
                         <div class="card-header">
-                            <a href="http://localhost:1313/software/release-process/">Release Process</a>
+                            <a href="http://www.rustyeddy.com/software/release-process/">Release Process</a>
                         </div>
                         <div class="card-body">
                             <div class="text-muted">
@@ -534,7 +404,7 @@ progress.</p>
 
                             </div>
                             <div class="small text-muted">
-                                <a href="http://localhost:1313/software/release-process/">read more ...</a>
+                                <a href="http://www.rustyeddy.com/software/release-process/">read more ...</a>
                             </div>
                         </div>
                     </div>
@@ -549,7 +419,7 @@ progress.</p>
                 <div class="card">
                     <div class="card-text">
                         <div class="card-header">
-                            <a href="http://localhost:1313/software/website-design-process/">Web Developers Guide to Web Design</a>
+                            <a href="http://www.rustyeddy.com/software/website-design-process/">Web Developers Guide to Web Design</a>
                         </div>
                         <div class="card-body">
                             <div class="text-muted">
@@ -557,7 +427,7 @@ progress.</p>
 
                             </div>
                             <div class="small text-muted">
-                                <a href="http://localhost:1313/software/website-design-process/">read more ...</a>
+                                <a href="http://www.rustyeddy.com/software/website-design-process/">read more ...</a>
                             </div>
                         </div>
                     </div>
@@ -572,7 +442,7 @@ progress.</p>
                 <div class="card">
                     <div class="card-text">
                         <div class="card-header">
-                            <a href="http://localhost:1313/software/software-dev-guide/">Software Development Guide</a>
+                            <a href="http://www.rustyeddy.com/software/software-dev-guide/">Software Development Guide</a>
                         </div>
                         <div class="card-body">
                             <div class="text-muted">
@@ -580,7 +450,7 @@ progress.</p>
 
                             </div>
                             <div class="small text-muted">
-                                <a href="http://localhost:1313/software/software-dev-guide/">read more ...</a>
+                                <a href="http://www.rustyeddy.com/software/software-dev-guide/">read more ...</a>
                             </div>
                         </div>
                     </div>
