@@ -16,7 +16,7 @@ date: 2023-01-13
 
 Kelly got ahold of me wanting some software developed for a self
 watering garden system that Mark had designed. The hardware is composed
-of a soil moisture and temperature sensor with a chip that has a wifi
+of a soil moisture and temperature sensor with a chip that has wifi
 to communicate with an external _controllor_. It also has a pump that
 can be controlled by dry soil or manually from an app on a phone.
 
