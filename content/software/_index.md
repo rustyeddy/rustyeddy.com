@@ -14,28 +14,54 @@ date: 2023-01-13
 
 ## An Tale of Software Development
 
-Kelly got ahold of me wanting some software developed for a self
-watering garden system that Mark had designed. The hardware is composed
-of a soil moisture and temperature sensor with a chip that has wifi
-to communicate with an external _controllor_. It also has a pump that
-can be controlled by dry soil or manually from an app on a phone.
+I had a great idea to help my wife maintain her massive succulent
+collection by building a self watering garden. This project would
+consist of three primary components: 
 
-The process went a little like this:
+1. The _soil sensor_, a piece of hardware that she could place in dirt
+   to measure the soil moisture and a small pump to water the dry soil.
+
+2. The _controller_ that will collect moisture data from all the soil
+   moisture sensors and provide a user interface to track moisture
+   levels and manually control the pump.
+
+3. The _cloud_ element such that the data could be accessed and pump
+   controlled from anywhere.
+
+Turns out my brilliant idea is not all that unique, a quick search on
+google turns up a bunch of similar projects. Oh well, maybe not unique
+but useful still. 
+
+The thing that struck me about most of these projects is that they are
+built as a single, self contained watering station. I am a little more
+ambitious in that I want to control a whole yard full of watering
+stations and control them from anywhere.
+
+There is a little bit of hardware to be built and a whole lot of
+software to be written. So why not handle this like a real software
+project that I would do in my day job.
+
+The process goes a little like this:
 
 ## The Design Phase - Getting Started
 
-I had Kelly tell me how the product was meant to do. She describe all
-the various ways the software was going to be used, case by case in
-high level (non-technical) detail. These _user stories_ Kelly told
-we were able to break out all the ___use cases___ into
-individual descriptions on the various ways the product was going to be
-used. 
+I had Kelly describe to me in high level, non-technical detail the
+various ways she wanted to use the product. She described the various
+activities in a user story form.  For example:
+
+> As a gardner I need to set different watering levels for different
+> plants. The low soil moisture level turns the water pump on and the
+> high moisture level turns the water pump off.
+
+Todo: place a link to the various other user stories.
 
 ### Use Cases and Requirements
 
-From the use-cases we were able to derive the initial set of
-_requirements_ and the begin drafting the _Software Architecture
-Document_. 
+These user stories are typically refered to as _use cases_, these use
+cases are the foundation of the entire rest of the software
+development phases. These use cases will allow us to start pulling out
+the _requirements_ and start drafting up the _Software Architecture_
+document.
 
 ### Wire Frames, Story Boards and the User Experience
 
