@@ -13,7 +13,7 @@ categories:
 tages:
   - style guide
 ---
-
+{{<draft>}}
 Thankfully the Internet is full of great designers with kind soles
 that have distilled their years
 of _training_, _experience_ and most of all _personal direction_ into
@@ -120,3 +120,4 @@ of every page.
       to be created ready. 
    
 
+{{</draft>}}

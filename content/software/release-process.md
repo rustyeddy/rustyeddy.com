@@ -9,6 +9,7 @@ description: >
   best be ready for them!
 ---
 
+{{<draft>}}
 This is the point where software is ready to be passed along to the
 user/customer, an _official release_. We will want to formalize the
 process of releasing the softare.
@@ -37,3 +38,4 @@ for a LONG time.
 
 Make your software development process easy and predictable!
 
+{{</draft>}}
