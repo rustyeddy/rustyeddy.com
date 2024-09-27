@@ -160,6 +160,8 @@ These tools are going to be:
 2. Software Repository aka _Version Control System_
 3. Test rig
 
+OK, let's get our prep on!
+
 ---
 
 ## Preparing for Development
@@ -274,35 +276,60 @@ all the while responding to the regular user feedback she is getting.
 
 ### Back to the Backend
 
-Back to me: after a few iterations and expanded tests cases all
-tests finally pass! 
+Let's say our developer Joan, after a few iterations has completed the
+feature developement and all tests cases finally pass, yea! 
 
-At this point I will commit the code to my _feature branch_ and
-_pushe_ the branch to the server where I will then create a
-_pull request_ (also known as a _Merge Request_ in gitlab).
+At this point she will commit the code to the _feature branch_ and
+_push_ the branch to the server where she will then create a _Pull
+Request (PR)_.
 
-The _pull request_ become the opportunity to have all newly introduced
-code scrutinized by our annoying peers.
+> A Pull Request (PR) in github also known as a _Merge Request (MR)_
+> in gitlab 
 
-### Pull Requests and Peer Reviews
+The _Pull Request (PR)_ or _Merge Request (MR)_ is the next step to
+getting the code officially accepted or _merged_ into the _master_ or
+_main_ branch, which is typically the branch used to officially
+release software.
 
-The _Pull Request_ sets off an automatic / automated series of systems
-tests that when they pass will grant the code the ability to be
-merged into main, provided Joan's changes pass _peer review_. 
+### Pull Requests, Tests and Peer Reviews
 
-Joan's code will also need to be _Peer Reviewed_ by a couple colleges.
-Bob and Brenda also sharp developers will scrutinize Joans code, if
-they see things that do not adhere to coding standards, or create
+However before the new code can be officially _merged_ into main line
+and eventually released two important things must happen:
+
+1. A series of automated tests will be fire off and all tests must
+   pass ensuring the new code does not break old functionality
+   
+2. The code needs to be reviewed by other developers also known as
+   peer review ensuring the code adheres to agreed upon coding
+   standards. 
+
+#### Automated Tests
+
+Both the automated tests including the new tests must pass ensuring
+all new and old code run correctly and no _regression bugs_ have been
+introduced. These automated tests can also be a good place to add
+things like _static analysis_ and _code coverage_.
+
+#### Peer Reviews 
+
+Likewise the code will also be _Peer Reviewed_ by a colleague or two.
+Let's say we have two additional developers Bob and Brenda also
+experienced developers, we'll have Bob and Brenda look over Joans new
+code.
+
+If they see things that do not adhere to coding standards, or create
 potential future problems Bob and Brenda can make comments on the code
-and that Joan will have to address, either defending her given code or
-making appropriate changes sending her back to the "Edit -> Debug"
-cycle above.
+that Joan will have to address, either defending her given code or
+making appropriate changes sending her back to the "Edit -> Debug ->
+Test" cycle mentioned above.
 
 ### Merge on to Main
 
-At long last, the peer review passes and the code is _Merged_ into the
-_Main_ branch.  Victory. Let's move that card over to the _Done_ list
-on the Kanban board!
+At long last, the automated tests all pass and the peer review passes,
+pheeeww! Those peer reviews can be a bit stressful at times. But
+finally the code is _Merged_ into the _Main_ branch. Victory! 
+
+Let's move that card over to the _Done_ list on the Kanban board!
 
 To note: the tests Joan had written to validate this new feature will
 become part of the automated tests from now forevermore ensuring this
@@ -317,33 +344,96 @@ automated CI/CD Pipeline or is acculmulated with other changes until
 it has been completed and married up with the User Interface complete by
 Mini's team.
 
-We now have a real live application _Minimum Viable Product_ or
-_Minimum Viable Feature (MVF)_ is ready to hit the streets.
+We now have a real live application _Minimum Viable Product (MVP)_ or
+on a smaller scale a _Minimum Viable Feature (MVF)_ is ready to hit
+the streets. 
 
 The project is now in the hands of real users doing real work, or at
-lease it is ready to be...
+least it is ready to be...
+
+### Deployment
+
+How the software / new feature is deployed depends greatly on the type
+of software project.  If it is an online SaaS app the deployment
+procedure might be to constantly push incremental changes to a subset
+of servers or users during a short vetting period.
+
+If the software is an application that runs on a computer or cell
+phone there may be officially versioned release cycles with versioned
+(1.2, 1.3, 2.0, 2.1, etc) binaries built for different systems
+(Windows, Mac, Linux, Raspberry Pi)
+
+Or it may be an embedded system requiring a firmware upgrade. The
+SDLC is very similar leading up to this point. It is the _delivery_
+phase that really changes significantly depending on the application
+that has been built.
+
+We will cover these various types of delivery mechanisms in other
+articles that focus on the particulars.
 
 ### Feedback - Features Requests and Bugs Reports
 
-New features are being requested, tweaks to existing features and an
-occaisonal bug is found. All of this feedback is collected in a bug
-tracking system and added to back to the Kanban board where this whole
-process continues.
+Regardless of how and where the software is deployed, if it is used or
+at all successful you will receive feedback on the software. The
+feedback can be good, but it will mostly likely be a negative if not
+downright nasty.  That is because human nature we tend to be more
+vocal about things that make us mad.
 
-Did we say that software development is an _iterative process_.
+#### Bug Reports
 
-## Want More?
+The feedback we receive can be loosely catagorized as _bug reports_
+when features simply do not work correctly or some unwanted outcome.
 
-This was a real quick overview of a software development project
-_inspired_ by real events. Much detail and nuance were left out to
-keep the story flowing and not become a novel.
+#### Feature Requests
+
+On a more positive note the reports may comeback in the form of a
+_feature request_ where new functionality is being asked for.
+
+#### Bug / Feature Tracking
+
+In either case we need perhaps another tool to track bugs and feature
+requests. Often known as a _Bug Tracking_ tool, there are numerous
+varieties out there including but (definently) not limited to:
+
+_Github_ and _Gitlab_ both have _issues_ built right into the VCS with the
+ability to integrate software changes with specific changes to the
+software aka merges.  Issues are pretty simple but more than adequate
+to get the job done.
+
+Other for pay tools like _Jira_ are quite popular in corporate
+environments, much more sophisticated often to the point of being
+confusing. 
+
+There are numerous other options, but the key here is that we need a
+tool that can track bugs and requests, priortize development and guess
+what: place on our _Kanban_ board to be prioritized with other tasks
+right back into the _Design Phase_ of our _Software Development
+Lifecycle_. 
+
+Did I say that software development is an _iterative process_?
+
+## What is Next?
+
+This was a real quick or maybe not so quck overview of a software
+development project _inspired_ by real events. Much detail and nuance
+were left out to keep the story flowing and not become a novel.
 
 However, if pratical application of software develop practices is
-something you are interested in, would like to start doing better. I
-have started creating and will continue to add a lot more content
-diving into more _practical detail_ on each one of these topics.
+something you need to get started, improve upon or just interested in
+I have started creating articles for each of the topics above to dive
+into more _practical detail_, not theory but _real world examples_
+with usable advice.
 
-If so, continue on to my "Phases of the Software Development
-Lifecycle" and we will jump into each of these topics in more detail
-including some very explicit examples of each phase.
+If so you will see a series of articles below that will dive into real
+world practical discussions about each of these phases.
 
+> Warning the detailed articles are a work in progress! Not all of the
+> articles are complete and all will be updated regularly as this
+> rapidly changing world of software development evolvses.
+
+Finally, if you are interested Join my GAURANTEED NO SPAM email list
+if you are interested when more content drops and a short course on
+setting up a software development infrastructure for small businesses
+outsource developers.
+
+Thanks for sticking around and See Ya!
