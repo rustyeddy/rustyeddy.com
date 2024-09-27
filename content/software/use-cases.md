@@ -1,11 +1,53 @@
 ---
-title: Customer Discovery and MVP
+title: Use Cases
 description: >
   We are going to dig deep into our users needs and observe how they
   want to use the software, this will ultimately lead us to our
-  MVP. We will know exactly what to build!
-weight: 10
+  MVP. We will define this in terms of Use Cases.
+weight: 20
 ---
+
+{{< draft >}}
+## References Definition of Use Case
+
+### [Wrike](https://www.wrike.com/blog/what-is-a-use-case)
+
+> A use case is a concept used in software development, product
+> design, and other fields to describe how a system can be used to
+> achieve specific goals or tasks. It outlines the interactions between
+> users or actors and the system to achieve a specific outcome.  
+
+
+### [Ivar Jacobson](https://www.ivarjacobson.com/publications/articles/use-cases-ultimate-guide)
+
+
+
+
+## Outline
+
+### Wrike website above
+
+1. Defines the various ways users will use the software
+
+2. Can and should establish success and failure scenarios
+
+3. First article on Use Cases was established by Swedish computer
+   scientist Ivar Jacobson in 1987 originally used by
+   telecommunications company Ericsson to capture system
+   requirements. 
+   
+4. In 1992 Jacobson co-authored the book "Object-Oriented Software
+   Engineering - A Use Case Driven Approach" to help specifying
+   functional requirements in Software Development
+
+5. Use cases capture all of the uses of a software system which in
+   totality define the full set of requirements for the system.
+   
+6. Use cases define particular features that can be define in an
+   incremental fashion and developed using _agile_ methodologies.
+
+
+## Customer Discovery
 
 _Customer Discovery_ consists of one or more customer discovery
 sessions, where all *users* and *owners* of the software will be
@@ -93,7 +135,34 @@ If you want working software, provide a working set of goals.
 All these tasks have to add up to the MVP. Anything that does not
 directly and immediately get the software project closer to an MVP
 must be avoided.
+{{</draft>}}
 
 
+{{<draft>}}
 
 
+### Start A Specific and Measureable Goal
+
+It is surprising how many software project get underway without a
+clear direction to what they are building.
+
+> Do NOT build a house before you have approved architectural
+> drawings.
+
+The above statement should be self evident. The same applies to
+software.
+
+### Define Good Goals
+
+Good goals keep everybody focused and working toward the same
+endpoint. They must not be 
+
+1. Singular: have a single requirement. Do not confuse the issue with
+   second and third level concerns
+2. They are easy to understand to everybody is always on the same page
+3. Goals must be measurable, you have to be able to tell when they are
+   done, or how well they are working.
+4. Realistic: do not make people feel like the must continually be
+   superwoman.
+
+{{</draft>}}

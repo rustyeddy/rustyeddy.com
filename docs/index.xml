@@ -4,7 +4,7 @@
     <title>Rusty Eddy</title>
     <link>http://www.rustyeddy.com/</link>
     <description>Recent content on Rusty Eddy</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 13 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://www.rustyeddy.com/index.xml" rel="self" type="application/rss+xml" />
@@ -13,63 +13,77 @@
       <link>http://www.rustyeddy.com/iot/iot-edge-gateway/</link>
       <pubDate>Thu, 13 Jan 2022 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/iot/iot-edge-gateway/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://www.rustyeddy.com/img/iothub.png&#34; alt=&#34;High Level Sensor Station&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-does-og-hub-do&#34;&gt;What Does OG Hub Do?&lt;/h2&gt;&#xA;&lt;p&gt;In a nutshell the &lt;em&gt;Hub&lt;/em&gt; gathers environmental data from a network of&#xA;&lt;a href=&#34;iot/collection-station&#34;&gt;Collection Stations&lt;/a&gt; using the well&#xA;known &lt;em&gt;MQTT Messaging&lt;/em&gt; protocol. The hub feeds the data to the&#xA;&lt;em&gt;Oraganic Gardner&lt;/em&gt; application, streams it real-time to&#xA;&lt;a href=&#34;http://www.rustyeddy.com/iot/dashboard&#34;&gt;&lt;em&gt;dashboard&lt;/em&gt;&lt;/a&gt; users via&#xA;&lt;a href=&#34;http://websockets.org&#34;&gt;Websockets&lt;/a&gt; and caches the data in RAM.&lt;/p&gt;&#xA;&lt;h2 id=&#34;how-does-the-hub-work&#34;&gt;How Does the Hub Work?&lt;/h2&gt;&#xA;&lt;p&gt;The Hub is a small, fast server written in &lt;a href=&#34;http://golang.org&#34;&gt;&lt;em&gt;Go&lt;/em&gt;&lt;/a&gt;&#xA;with the following dependencies:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Go&amp;rsquo;s built-in HTTP Server to serve HTML&lt;/li&gt;&#xA;&lt;li&gt;Go&amp;rsquo;s built=in HTTP Server to serve REST API&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/nhooyr/websocket&#34;&gt;Websocket&lt;/a&gt; Library for real&#xA;time data to dashboard&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/eclipse/paho.mqtt.golang&#34;&gt;MQTT&lt;/a&gt; Eclipse MQTT&#xA;Library&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;The software running on the Hub can be called a &lt;em&gt;Micro-service&lt;/em&gt;.&#xA;&lt;em&gt;Go&amp;rsquo;s&lt;/em&gt; built in &lt;em&gt;HTTP server&lt;/em&gt; is small, robust and fast allowing us&#xA;to easily add a &lt;em&gt;REST API&lt;/em&gt; and serve up some HTML and JavaScript to&#xA;for our WebUI, which happens to be a&#xA;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Glossary/SPA&#34;&gt;&lt;em&gt;Single Page App&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;</description>
+      <description>What Does OG Hub Do? In a nutshell the Hub gathers environmental data from a network of Collection Stations using the well known MQTT Messaging protocol. The hub feeds the data to the Oraganic Gardner application, streams it real-time to dashboard users via Websockets and caches the data in RAM.&#xA;How Does the Hub Work? The Hub is a small, fast server written in Go with the following dependencies:</description>
     </item>
     <item>
       <title>Software is Hard</title>
       <link>http://www.rustyeddy.com/software/software-is-hard/</link>
       <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/software/software-is-hard/</guid>
-      <description>&lt;h2 id=&#34;why-is-software-so-difficult&#34;&gt;Why Is Software So Difficult?&lt;/h2&gt;&#xA;&lt;p&gt;Software development projects are one of the most notoriously&#xA;mis-understood and incorrectly managed of all the &lt;em&gt;common&lt;/em&gt; processes&#xA;used throughout the business world.&lt;/p&gt;&#xA;&lt;p&gt;There are a number of reasons for software projects being classified&#xA;as a disastor so often. Software often is solving a complex problem&#xA;that unfortunately can&amp;rsquo;t be seen.&lt;/p&gt;&#xA;&lt;p&gt;Perhaps the worst problem with software projects are the diverging&#xA;expectations between developers and users.&lt;/p&gt;</description>
+      <description>Why Is Software So Difficult? Software development projects are one of the most notoriously mis-understood and incorrectly managed of all the common processes used throughout the business world.&#xA;There are a number of reasons for software projects being classified as a disastor so often. Software often is solving a complex problem that unfortunately can&amp;rsquo;t be seen.&#xA;Perhaps the worst problem with software projects are the diverging expectations between developers and users.</description>
     </item>
     <item>
-      <title>Customer Discovery and MVP</title>
-      <link>http://www.rustyeddy.com/software/customer-discovery-and-mvp/</link>
+      <title>Agile Software Development</title>
+      <link>http://www.rustyeddy.com/software/agile-software-development/</link>
+      <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>http://www.rustyeddy.com/software/agile-software-development/</guid>
+      <description> Content Being Drafted </description>
+    </item>
+    <item>
+      <title>Use Cases</title>
+      <link>http://www.rustyeddy.com/software/use-cases/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/software/customer-discovery-and-mvp/</guid>
-      <description>&lt;p&gt;&lt;em&gt;Customer Discovery&lt;/em&gt; consists of one or more customer discovery&#xA;sessions, where all &lt;em&gt;users&lt;/em&gt; and &lt;em&gt;owners&lt;/em&gt; of the software will be&#xA;interviewed for their expectations, needs and desires for the&#xA;upcoming software project.&lt;/p&gt;&#xA;&lt;p&gt;Don&amp;rsquo;t just stop at the first answer, it will be too vague. Dig deeper&#xA;and start peeling back the details. This great article on the&#xA;&lt;a href=&#34;https://www.mindtools.com/pages/article/newTMC_5W.htm&#34;&gt;Five Why&amp;rsquo;s&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;user-stories&#34;&gt;User Stories&lt;/h2&gt;&#xA;&lt;p&gt;The information gathered from these sessions are then articulated in a&#xA;series of &lt;em&gt;non-technical&lt;/em&gt; descriptions of how the software is used by&#xA;everybody.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Organizing Software Projects with Kanban</title>
-      <link>http://www.rustyeddy.com/software/kanban/</link>
-      <pubDate>Wed, 03 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/software/kanban/</guid>
-      <description>&lt;p&gt;Kanban is fantastically simple. We will create a board with 3 columns,&#xA;&lt;em&gt;Todo&lt;/em&gt;, &lt;em&gt;Work In Progress&lt;/em&gt; and &lt;em&gt;Complete&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Each column is populated with a single card for every task that must be&#xA;done. The cards are prioritized and move through the system as the&#xA;work progresses.&lt;/p&gt;&#xA;&lt;h2 id=&#34;good-kanban-reference&#34;&gt;Good Kanban Reference&lt;/h2&gt;&#xA;&lt;p&gt;My goal is NOT to describe Kanban itself. Instead, here is a good video&#xA;if you are not already familiar with it.&lt;/p&gt;</description>
+      <guid>http://www.rustyeddy.com/software/use-cases/</guid>
+      <description> Content Being Drafted Content Being Drafted </description>
     </item>
     <item>
       <title>Collection Station</title>
       <link>http://www.rustyeddy.com/iot/iot-sensor-station/</link>
       <pubDate>Thu, 13 Jan 2022 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/iot/iot-sensor-station/</guid>
-      <description>&lt;h2 id=&#34;publishing-sensor-data&#34;&gt;Publishing Sensor Data&lt;/h2&gt;&#xA;&lt;p&gt;The idea is pretty simple really: build a network of wireless battery&#xA;powered devices to gather environmental data such as temprature,&#xA;moisture, light levels, etc. The collected data will then be&#xA;&lt;em&gt;published&lt;/em&gt; via &lt;a href=&#34;https://mqtt.org&#34;&gt;MQTT&lt;/a&gt; &lt;em&gt;wirelessly&lt;/em&gt; to the&#xA;&lt;a href=&#34;http://www.rustyeddy.com/sensors/hub&#34;&gt;&lt;em&gt;Hub&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h3 id=&#34;types-of-published-data&#34;&gt;Types of Published Data&lt;/h3&gt;&#xA;&lt;p&gt;The planned data types to be published by the system are concerned&#xA;with the following types of sensors.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Temprature&lt;/li&gt;&#xA;&lt;li&gt;Humidity&lt;/li&gt;&#xA;&lt;li&gt;Moisture&lt;/li&gt;&#xA;&lt;li&gt;Light&lt;/li&gt;&#xA;&lt;li&gt;Barometric Pressure&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Technically any &lt;em&gt;type&lt;/em&gt; of data could be published and collected&#xA;however we are focused on the type of data our OG application will&#xA;use. Data will be transmitted as either integer or floating point,&#xA;depending on the sensor and how it collects the data.&lt;/p&gt;</description>
+      <description>Publishing Sensor Data The idea is pretty simple really: build a network of wireless battery powered devices to gather environmental data such as temprature, moisture, light levels, etc. The collected data will then be published via MQTT wirelessly to the Hub.&#xA;Types of Published Data The planned data types to be published by the system are concerned with the following types of sensors.&#xA;Temprature Humidity Moisture Light Barometric Pressure Technically any type of data could be published and collected however we are focused on the type of data our OG application will use.</description>
     </item>
     <item>
-      <title>Version Control and Tracking Progress</title>
-      <link>http://www.rustyeddy.com/software/vcs-tracking-progress/</link>
+      <title>Organizing Software Projects with Kanban</title>
+      <link>http://www.rustyeddy.com/software/kanban/</link>
+      <pubDate>Wed, 03 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>http://www.rustyeddy.com/software/kanban/</guid>
+      <description>Kanban is fantastically simple. We will create a board with 3 columns, Todo, Work In Progress and Complete.&#xA;Each column is populated with a single card for every task that must be done. The cards are prioritized and move through the system as the work progresses.&#xA;Good Kanban Reference My goal is NOT to describe Kanban itself. Instead, here is a good video if you are not already familiar with it.</description>
+    </item>
+    <item>
+      <title>Version Control Systems</title>
+      <link>http://www.rustyeddy.com/software/version-control-systems/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/software/vcs-tracking-progress/</guid>
-      <description>&lt;p&gt;It frightens me everytime I am introduced to a new software project&#xA;where the &amp;ldquo;latest&amp;rdquo; source code is somebodies folder &lt;em&gt;somewhere&lt;/em&gt; with&#xA;copies being passed around on thumb drives.&lt;/p&gt;&#xA;&lt;p&gt;Such a lack process invites confusion from the beginning and inspires&#xA;questions like:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;which copy of the file has your changes?&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;If you are working like this STOP! It does not have to be this&#xA;way. no, start using Version Control now!&lt;/p&gt;</description>
+      <guid>http://www.rustyeddy.com/software/version-control-systems/</guid>
+      <description> Content Being Drafted Content Being Drafted </description>
     </item>
     <item>
-      <title>Improving Quality by Testing Software</title>
-      <link>http://www.rustyeddy.com/software/testing/</link>
-      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/software/testing/</guid>
-      <description>&lt;h2 id=&#34;testing-unit-and-systems&#34;&gt;Testing Unit and Systems&lt;/h2&gt;&#xA;&lt;p&gt;Before any developers new code can be integrated into the &lt;em&gt;mainline&lt;/em&gt;&#xA;production code base, it must be &lt;em&gt;tested&lt;/em&gt;, &lt;em&gt;vetted&lt;/em&gt; and &lt;em&gt;peer&#xA;reviewed&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Software Testing has been written about extensively, so I won&amp;rsquo;t spend&#xA;time here discussing testing directly, as there are as many ways to&#xA;test software as there are technologies.&lt;/p&gt;&#xA;&lt;h3 id=&#34;test-driven-development&#34;&gt;Test Driven Development&lt;/h3&gt;&#xA;&lt;p&gt;&lt;em&gt;Test Driven Development (TDD)&lt;/em&gt; a &lt;em&gt;principal&lt;/em&gt; for which I agree is necessary, but I don&amp;rsquo;t &lt;em&gt;always&lt;/em&gt; adhere to in practice. This is  usually out of&#xA;laziness, haste or carelessness (I know sad but I&amp;rsquo;m just being honest&#xA;here). However, it is worth paying attention to&amp;hellip;&lt;/p&gt;</description>
+      <title>Test Driven Software Development</title>
+      <link>http://www.rustyeddy.com/software/test-driven-software-development/</link>
+      <pubDate>Sun, 04 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>http://www.rustyeddy.com/software/test-driven-software-development/</guid>
+      <description> Content Being Drafted </description>
     </item>
     <item>
-      <title>Peer Reviews - And Culture</title>
+      <title>Peer Reviews</title>
       <link>http://www.rustyeddy.com/software/peer-review/</link>
       <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/software/peer-review/</guid>
-      <description>&lt;p&gt;A &lt;em&gt;Peer Review&lt;/em&gt; is the process of &lt;em&gt;one or more peers&lt;/em&gt; knowledgable&#xA;about your code who can examine and scrutinize every line.  This is a painful&#xA;process, but so necessary.&lt;/p&gt;&#xA;&lt;h2 id=&#34;peer-reviews-are-painful-but-worth-it&#34;&gt;Peer Reviews Are Painful but Worth IT!&lt;/h2&gt;&#xA;&lt;p&gt;For the programmer, that means having your work criticized by other&#xA;people. Maybe even people that &lt;em&gt;think&lt;/em&gt; they are smarter than you, but are&#xA;not.&lt;/p&gt;&#xA;&lt;p&gt;Reviewers, typically don&amp;rsquo;t like (or at least don&amp;rsquo;t &lt;em&gt;love&lt;/em&gt;) reviewing other peoples&#xA;code. It is a lot of extra work. It&amp;rsquo;s hard and takes time.&lt;/p&gt;</description>
+      <description> Content Being Drafted </description>
     </item>
     <item>
-      <title>Commit Code and Make History</title>
-      <link>http://www.rustyeddy.com/software/commit-code-make-history/</link>
-      <pubDate>Sun, 04 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/software/commit-code-make-history/</guid>
-      <description>&lt;h2 id=&#34;github-and-making-the-commitment&#34;&gt;Github and making the Commitment&lt;/h2&gt;&#xA;&lt;p&gt;Now it is time for the developer to &lt;em&gt;commit&lt;/em&gt; the changes she has been&#xA;working on, tested and pushed through the peer reviews. This step is&#xA;pretty simple, however, we want to make sure we are doing it&#xA;correctly.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Todo example commit&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;When the code is merged into the &lt;strong&gt;main&lt;/strong&gt; or &lt;strong&gt;master&lt;/strong&gt; repository,&#xA;just like commitments, it will be accompanied by the log comments&#xA;that go along with the log files.&lt;/p&gt;</description>
+      <title>Data Models</title>
+      <link>http://www.rustyeddy.com/software/data-models/</link>
+      <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>http://www.rustyeddy.com/software/data-models/</guid>
+      <description> Content Being Drafted </description>
+    </item>
+    <item>
+      <title>Wireframes and Storyboards</title>
+      <link>http://www.rustyeddy.com/software/wireframes-and-storyboards/</link>
+      <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>http://www.rustyeddy.com/software/wireframes-and-storyboards/</guid>
+      <description> Content Being Drafted </description>
     </item>
     <item>
       <title>Panasonic Avionics</title>
@@ -83,7 +97,7 @@
       <link>http://www.rustyeddy.com/software/release-process/</link>
       <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/software/release-process/</guid>
-      <description>&lt;p&gt;This is the point where software is ready to be passed along to the&#xA;user/customer, an &lt;em&gt;official release&lt;/em&gt;. We will want to formalize the&#xA;process of releasing the softare.&lt;/p&gt;&#xA;&lt;p&gt;For example, when a new release is cut, the following process may be in&#xA;place:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Commit to main in Github repository&lt;/li&gt;&#xA;&lt;li&gt;New &lt;em&gt;version number&lt;/em&gt; is generated&lt;/li&gt;&#xA;&lt;li&gt;Automated build is triggered&lt;/li&gt;&#xA;&lt;li&gt;Automated system tests are run&lt;/li&gt;&#xA;&lt;li&gt;New binary test images are copied to a distribution server or&#xA;pushed to production servers&lt;/li&gt;&#xA;&lt;li&gt;The actual process will vary according to many factors of the&#xA;application&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;With every successful software project you will be doing releases&#xA;regularly. It is best to make your release as easy and painless as&#xA;possible.&lt;/p&gt;</description>
+      <description> Content Being Drafted </description>
     </item>
     <item>
       <title>Sugo Music Dashboard</title>
@@ -174,7 +188,7 @@
       <link>http://www.rustyeddy.com/resume/jobs/retix/</link>
       <pubDate>Tue, 01 Aug 1995 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/resume/jobs/retix/</guid>
-      <description>&lt;p&gt;Promoted to lead the team of 6 engineers that developed and&#xA;automated test plans for L2 switches, OSPF, RIP and BGP&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Implemented an automated test framework and led junior engineers&#xA;in developing the automated test suites.  C; C++; Perl; TCL&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Provided 3rd level customer support, serious customer problems that&#xA;could not be resolved by customer support or field engineers became&#xA;my teams responsibility to diagnose and determine solutions and&#xA;workarounds was required.&lt;/p&gt;</description>
+      <description>Promoted to lead the team of 6 engineers that developed and automated test plans for L2 switches, OSPF, RIP and BGP&#xA;Implemented an automated test framework and led junior engineers in developing the automated test suites. C; C++; Perl; TCL&#xA;Provided 3rd level customer support, serious customer problems that could not be resolved by customer support or field engineers became my teams responsibility to diagnose and determine solutions and workarounds was required.</description>
     </item>
     <item>
       <title>Rockwell, Intl. Space Systems Division</title>
@@ -195,14 +209,14 @@
       <link>http://www.rustyeddy.com/notes/soil-moisture-adafruit/</link>
       <pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/notes/soil-moisture-adafruit/</guid>
-      <description>&lt;h2 id=&#34;why-the-adafruit-version&#34;&gt;Why the Adafruit version?&lt;/h2&gt;&#xA;&lt;p&gt;&amp;laquo;&amp;laquo;&amp;laquo;&amp;lt; HEAD&#xA;I have had a hard time with the general Capacitive Soil Moisture&#xA;sensors that you find readily on the Internet as described in this&#xA;article about&#xA;&lt;a href=&#34;http://localhost:1313/notes/soil-moisture-sensor/&#34;&gt;soil moisture sensors&lt;/a&gt;.&#xA;In a nutshell, the ones I bought had the wrong timer chip in them, not&#xA;that was a total show stopper but I also had problems getting them to&#xA;work with the esp32 ADC (Analog Digical Converter).&lt;/p&gt;</description>
+      <description>Why the Adafruit version? &amp;laquo;&amp;laquo;&amp;laquo;&amp;lt; HEAD I have had a hard time with the general Capacitive Soil Moisture sensors that you find readily on the Internet as described in this article about soil moisture sensors. In a nutshell, the ones I bought had the wrong timer chip in them, not that was a total show stopper but I also had problems getting them to work with the esp32 ADC (Analog Digical Converter).</description>
     </item>
     <item>
       <title>Soil Mosture Sensors</title>
       <link>http://www.rustyeddy.com/notes/soil-moisture-sensor/</link>
       <pubDate>Thu, 15 Feb 2024 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/notes/soil-moisture-sensor/</guid>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Seems like I&amp;rsquo;m not as uniquely clever as I once thought, the idea of&#xA;creating a self watering garden is probably one of the more popular&#xA;DIY maker projects on the Internet it seems.&lt;/p&gt;&#xA;&lt;p&gt;Check out my version of the &lt;a href=&#34;http://www.rustyeddy.com/iot/self-watering-garden&#34;&gt;Self Watering Garden&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;What makes my project different?  Probably not alot, however in this&#xA;project we treat each of the watering &lt;em&gt;stations&lt;/em&gt; as a part of a&#xA;larger, complete &lt;em&gt;system&lt;/em&gt; of the watering stations that can be&#xA;observed and controlled by a single hub and associated web&#xA;application. Check out the project, I&amp;rsquo;d love to hear what you&#xA;think!&lt;/p&gt;</description>
+      <description>Overview Seems like I&amp;rsquo;m not as uniquely clever as I once thought, the idea of creating a self watering garden is probably one of the more popular DIY maker projects on the Internet it seems.&#xA;Check out my version of the Self Watering Garden&#xA;What makes my project different? Probably not alot, however in this project we treat each of the watering stations as a part of a larger, complete system of the watering stations that can be observed and controlled by a single hub and associated web application.</description>
     </item>
     <item>
       <title>Raspberry Pi Pico Setup</title>
@@ -216,105 +230,105 @@
       <link>http://www.rustyeddy.com/iot/self-watering-garden/</link>
       <pubDate>Wed, 25 May 2022 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/iot/self-watering-garden/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://www.rustyeddy.com/img/self-watering-garden.png&#34; alt=&#34;Garden Diagram&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;why-build-this-thing&#34;&gt;Why Build this Thing&lt;/h2&gt;&#xA;&lt;p&gt;The typical small irrigation systems today are based on time schedules,&#xA;where sections of the garden (zones) are watered based on days of the&#xA;week, a start time and a duration. In otherwords, your garden is&#xA;watered according to a set schedule regardless of environmental&#xA;changes.&lt;/p&gt;&#xA;&lt;p&gt;In reality, the amount of water should be increased during long hot dry&#xA;days and decreased as the days shorten and get colder. For example,&#xA;if it rains you probably need to turn your sprinklers completely off&#xA;and remember to turn them on again when it stops raining.&lt;/p&gt;</description>
+      <description>Why Build this Thing The typical small irrigation systems today are based on time schedules, where sections of the garden (zones) are watered based on days of the week, a start time and a duration. In otherwords, your garden is watered according to a set schedule regardless of environmental changes.&#xA;In reality, the amount of water should be increased during long hot dry days and decreased as the days shorten and get colder.</description>
     </item>
     <item>
       <title>Using Go timers for MQTT testing</title>
       <link>http://www.rustyeddy.com/notes/go-timers-testing-mqtt/</link>
       <pubDate>Mon, 02 May 2022 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/notes/go-timers-testing-mqtt/</guid>
-      <description>&lt;p&gt;This article uses a Go timer and the Go select statement to test our&#xA;MQTT publish and subscribe in a single simple test statement. A quick&#xA;note on the &lt;code&gt;go testing&lt;/code&gt; package: it is much like the JUnit where&#xA;tests using a particular naming convention &lt;code&gt;TestXXX(t *testing.T) {}&lt;/code&gt; will be run automatically with easy to reports having been&#xA;generated.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;&#xA;&lt;p&gt;The following code snippet is directly from the&#xA;&lt;a href=&#34;http://rustyeddy.com/iote&#34;&gt;IoTe&lt;/a&gt; edge gateway project. One of the&#xA;primary features of IoTe is the ability to send and receive MQTT&#xA;messages.&lt;/p&gt;</description>
+      <description>This article uses a Go timer and the Go select statement to test our MQTT publish and subscribe in a single simple test statement. A quick note on the go testing package: it is much like the JUnit where tests using a particular naming convention TestXXX(t *testing.T) {} will be run automatically with easy to reports having been generated.&#xA;The Problem The following code snippet is directly from the IoTe edge gateway project.</description>
     </item>
     <item>
       <title>Adding the REST API to IoT Gateway</title>
       <link>http://www.rustyeddy.com/iot/iot-gateway-rest/</link>
       <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/iot/iot-gateway-rest/</guid>
-      <description>&lt;p&gt;Previously we have added&#xA;&lt;a href=&#34;http://www.rustyeddy.com/iot/iot-gateway-mqtt/&#34;&gt;MQTT to the IoT Gateway&lt;/a&gt; as part of the&#xA;&lt;a href=&#34;http://www.rustyeddy.com/iot/iot-project&#34;&gt;Organic Gardner Project&lt;/a&gt;. This gave the gateway the&#xA;ability to collect and store a lot of environmental data from sensors&#xA;all over the place.&lt;/p&gt;&#xA;&lt;p&gt;Now we need to provide a way for others programs, like the&#xA;&lt;a href=&#34;http://www.rustyeddy.com/iot/dashboard&#34;&gt;IoT Dashboard&lt;/a&gt; access that data via a REST API.&lt;/p&gt;&#xA;&lt;h2 id=&#34;implementing-a-restful-api&#34;&gt;Implementing a RESTful API&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.redhat.com/en/topics/api/what-is-a-rest-api&#34;&gt;The RESTful API&lt;/a&gt;&#xA;&lt;em&gt;convention&lt;/em&gt; is exteremely popular, well supported and is perfectly&#xA;suited to providing access to the sensor data that has been&#xA;collected. REST is ubiquitous these days, most people&#xA;involved in &lt;em&gt;frontend&lt;/em&gt; or &lt;em&gt;backend&lt;/em&gt; development most likely&#xA;have quite a bit of experience with REST.&lt;/p&gt;</description>
+      <description>Previously we have added MQTT to the IoT Gateway as part of the Organic Gardner Project. This gave the gateway the ability to collect and store a lot of environmental data from sensors all over the place.&#xA;Now we need to provide a way for others programs, like the IoT Dashboard access that data via a REST API.&#xA;Implementing a RESTful API The RESTful API convention is exteremely popular, well supported and is perfectly suited to providing access to the sensor data that has been collected.</description>
     </item>
     <item>
       <title>Adding MQTT to the IoT Gateway</title>
       <link>http://www.rustyeddy.com/iot/iot-gateway-mqtt/</link>
       <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/iot/iot-gateway-mqtt/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://www.rustyeddy.com/img/iot-hub-mqtt.png&#34; alt=&#34;MQTT Architecture&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;This page marks the beginning of the &lt;em&gt;Organic Gardner (OG)&lt;/em&gt;&#xA;&lt;a href=&#34;http://www.rustyeddy.com/iot/iot-intro&#34;&gt;IoT Project&lt;/a&gt; Milestone 1 development!  If you want to&#xA;program along but have not yet worked with the &lt;em&gt;Go&lt;/em&gt; programming&#xA;language check this intro: &lt;a href=&#34;http://www.rustyeddy.com/notes/get-ready-to-go&#34;&gt;Getting ready to Go&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;a-brief-about-mqtt&#34;&gt;A Brief About MQTT&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://mqtt.org&#34;&gt;MQTT&lt;/a&gt; is the &lt;em&gt;messaging&lt;/em&gt; protocol that a&#xA;&lt;em&gt;Collector&lt;/em&gt; will use to periodically publish sensor data&#xA;(like temperature and humidity) to the &lt;em&gt;IoT Gateway&lt;/em&gt;. &lt;em&gt;MQTT&lt;/em&gt; will also&#xA;be used to signal when the &lt;em&gt;Control Station&lt;/em&gt; or &lt;em&gt;Controller&lt;/em&gt; will&#xA;respond to commands to turn a sprinkler pump on or off.&lt;/p&gt;</description>
+      <description>This page marks the beginning of the Organic Gardner (OG) IoT Project Milestone 1 development! If you want to program along but have not yet worked with the Go programming language check this intro: Getting ready to Go.&#xA;A Brief About MQTT MQTT is the messaging protocol that a Collector will use to periodically publish sensor data (like temperature and humidity) to the IoT Gateway. MQTT will also be used to signal when the Control Station or Controller will respond to commands to turn a sprinkler pump on or off.</description>
     </item>
     <item>
       <title>How to build a private WIFI network for your WebApp</title>
       <link>http://www.rustyeddy.com/notes/private-wifi-network-webapp/</link>
       <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/notes/private-wifi-network-webapp/</guid>
-      <description>&lt;p&gt;I work with &lt;em&gt;physical computing&lt;/em&gt; or devices that have rather&#xA;sophisticated software that needs to be configured, monitored and&#xA;controlled.&lt;/p&gt;&#xA;&lt;h2 id=&#34;building-a-private-wifi&#34;&gt;Building a Private Wifi&lt;/h2&gt;&#xA;&lt;p&gt;Here is the situation, I just plugged a white box into the wall and it&#xA;has a steady green light. I can see two other lights, one of which is&#xA;red. The other two lights are off.&lt;/p&gt;&#xA;&lt;p&gt;This device is pretty cool, it will control the lights in my garage, I&#xA;have a well lit garage. But I need to configure this thing to set up&#xA;lighting schedules, basically synchronize with daylight.&lt;/p&gt;</description>
+      <description>I work with physical computing or devices that have rather sophisticated software that needs to be configured, monitored and controlled.&#xA;Building a Private Wifi Here is the situation, I just plugged a white box into the wall and it has a steady green light. I can see two other lights, one of which is red. The other two lights are off.&#xA;This device is pretty cool, it will control the lights in my garage, I have a well lit garage.</description>
     </item>
     <item>
       <title>A Simple Go Configuration</title>
       <link>http://www.rustyeddy.com/notes/go-configuration/</link>
       <pubDate>Fri, 26 Mar 2021 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/notes/go-configuration/</guid>
-      <description>&lt;p&gt;I use this same configuration structure and supporting functions in&#xA;most every Go program I work on. It is pretty simple but makes it easy&#xA;to keep global variables orgranized and configurable.&lt;/p&gt;&#xA;&lt;p&gt;Here is what I do:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Create a &lt;code&gt;type config struct&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Every configurable variable for the program becomes a Member field&#xA;of the Configuration structure.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Register every field of the Configuration Structure with go&amp;rsquo;s&#xA;builtin &lt;em&gt;flags&lt;/em&gt; package such that the flags are parsed when the&#xA;program starts we can use our configuration variable.&lt;/p&gt;</description>
+      <description>I use this same configuration structure and supporting functions in most every Go program I work on. It is pretty simple but makes it easy to keep global variables orgranized and configurable.&#xA;Here is what I do:&#xA;Create a type config struct&#xA;Every configurable variable for the program becomes a Member field of the Configuration structure.&#xA;Register every field of the Configuration Structure with go&amp;rsquo;s builtin flags package such that the flags are parsed when the program starts we can use our configuration variable.</description>
     </item>
     <item>
       <title>WPE an Excellerated Raspberry Pi Kiosk</title>
       <link>http://www.rustyeddy.com/notes/rpi-wpe-web-kiosk/</link>
       <pubDate>Fri, 25 Dec 2020 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/notes/rpi-wpe-web-kiosk/</guid>
-      <description>&lt;p&gt;The WPE project (TODO: place reference) allows you to create a&#xA;&lt;em&gt;hardware accelerated web viewing&lt;/em&gt;_ experience with an embedded system&#xA;and inexpenive display.&lt;/p&gt;&#xA;&lt;p&gt;For example a Raspberry Pi with an 7inch tftp touch screen has my&#xA;brain racing with ideas for applications.&lt;/p&gt;&#xA;&lt;h2 id=&#34;about-wpe&#34;&gt;About WPE&lt;/h2&gt;&#xA;&lt;p&gt;WPE creates a cool hardware accelerated kiosk, just point at a URL and&#xA;the app displays the application takes over the screen.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;It is awesome! But, it has one major drawback.!.&lt;/p&gt;</description>
+      <description>The WPE project (TODO: place reference) allows you to create a hardware accelerated web viewing_ experience with an embedded system and inexpenive display.&#xA;For example a Raspberry Pi with an 7inch tftp touch screen has my brain racing with ideas for applications.&#xA;About WPE WPE creates a cool hardware accelerated kiosk, just point at a URL and the app displays the application takes over the screen.&#xA;It is awesome! But, it has one major drawback.</description>
     </item>
     <item>
       <title>Golang timers to remove stale sensor stations</title>
       <link>http://www.rustyeddy.com/notes/go-timers/</link>
       <pubDate>Tue, 03 Nov 2020 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/notes/go-timers/</guid>
-      <description>&lt;p&gt;This articles introduces Go (Golang) Timers as the mechanism the the&#xA;&lt;a href=&#34;https://github.com/rustyeddy/iota&#34;&gt;IoTa gateway&lt;/a&gt; uses to identify&#xA;&lt;em&gt;stale&lt;/em&gt; IoT stations. Modifying the Station with with a new &lt;em&gt;Go&#xA;timestamp&lt;/em&gt; field will allow IoTe to determine how long it has been&#xA;since the last time it has heard from a given Station.&lt;/p&gt;&#xA;&lt;p&gt;If the last &lt;em&gt;refresh&lt;/em&gt; time for a particular station has been longer&#xA;than the &lt;em&gt;timeout&lt;/em&gt; period the Station will be marked as &lt;em&gt;stale&lt;/em&gt;.&lt;/p&gt;</description>
+      <description>This articles introduces Go (Golang) Timers as the mechanism the the IoTa gateway uses to identify stale IoT stations. Modifying the Station with with a new Go timestamp field will allow IoTe to determine how long it has been since the last time it has heard from a given Station.&#xA;If the last refresh time for a particular station has been longer than the timeout period the Station will be marked as stale.</description>
     </item>
     <item>
       <title>Proof of Concept vs. Production</title>
       <link>http://www.rustyeddy.com/notes/poc-vs-production/</link>
       <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/notes/poc-vs-production/</guid>
-      <description>&lt;p&gt;A POC is taking a conceptAnd demonstrating that it can actually be&#xA;done in hardware and/or software. And implementation is&#xA;takingApproving POC And turning it into something usable To somebody&#xA;other than the developer.&lt;/p&gt;&#xA;&lt;p&gt;Embrace this fact, And projecting software Development times and cost&#xA;Become much less mysterious.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;TODO Create an example PoC to Development&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Was it Rodney Brooks that Said Plan on Throwing away your first&#xA;version. Because you will anyway.&lt;/p&gt;</description>
+      <description>A POC is taking a conceptAnd demonstrating that it can actually be done in hardware and/or software. And implementation is takingApproving POC And turning it into something usable To somebody other than the developer.&#xA;Embrace this fact, And projecting software Development times and cost Become much less mysterious.&#xA;TODO Create an example PoC to Development&#xA;Was it Rodney Brooks that Said Plan on Throwing away your first version. Because you will anyway.</description>
     </item>
     <item>
       <title>Get Ready to Go</title>
       <link>http://www.rustyeddy.com/notes/get-ready-to-go/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/notes/get-ready-to-go/</guid>
-      <description>&lt;h2 id=&#34;get-ready-to-_go_&#34;&gt;Get Ready To &lt;em&gt;Go&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;The IoT Gateway was written in the &lt;em&gt;Go&lt;/em&gt; programming language. I won&amp;rsquo;t&#xA;get into the reasons why &lt;em&gt;Go&lt;/em&gt; is an excellent choice of programming&#xA;language for this project other than to point out two advantages this&#xA;project will benefit from right away:&lt;/p&gt;&#xA;&lt;h3 id=&#34;go-is-compiled-and-easy-to-distribute&#34;&gt;Go is Compiled and easy to distribute&lt;/h3&gt;&#xA;&lt;p&gt;First, Go is a &lt;em&gt;compiled&lt;/em&gt; language making the resulting executable&#xA;self contained with no external libraries or run time environment to&#xA;rebuild, just copy a single binary, that is it.&lt;/p&gt;</description>
+      <description>Get Ready To Go The IoT Gateway was written in the Go programming language. I won&amp;rsquo;t get into the reasons why Go is an excellent choice of programming language for this project other than to point out two advantages this project will benefit from right away:&#xA;Go is Compiled and easy to distribute First, Go is a compiled language making the resulting executable self contained with no external libraries or run time environment to rebuild, just copy a single binary, that is it.</description>
     </item>
     <item>
       <title>Paradise Aint Perfect</title>
       <link>http://www.rustyeddy.com/notes/paradise-aint-perfect/</link>
       <pubDate>Mon, 03 Feb 2020 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/notes/paradise-aint-perfect/</guid>
-      <description>&lt;h2 id=&#34;paradise-aint-perfect&#34;&gt;Paradise Ain&amp;rsquo;t Perfect&lt;/h2&gt;&#xA;&lt;p&gt;Or maybe there is so much conflict that Hawaii doesn&amp;rsquo;t look like it is&#xA;really &lt;strong&gt;everybodies&lt;/strong&gt; &lt;strong&gt;paradise&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;The point to all of this, a little bit of drilling down to all of the&#xA;passangers, the captiain and crew as well as the owner of the boat&#xA;would have all had better results.&lt;/p&gt;&#xA;&lt;p&gt;If it was discovered before hand, that &amp;ldquo;Going to Hawaii&amp;rdquo;, really&#xA;consisted of two groups: one going to Maui and one going to Kaui.&lt;/p&gt;</description>
+      <description>Paradise Ain&amp;rsquo;t Perfect Or maybe there is so much conflict that Hawaii doesn&amp;rsquo;t look like it is really everybodies paradise.&#xA;The point to all of this, a little bit of drilling down to all of the passangers, the captiain and crew as well as the owner of the boat would have all had better results.&#xA;If it was discovered before hand, that &amp;ldquo;Going to Hawaii&amp;rdquo;, really consisted of two groups: one going to Maui and one going to Kaui.</description>
     </item>
     <item>
       <title>Career Summary</title>
       <link>http://www.rustyeddy.com/resume/summary/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/resume/summary/</guid>
-      <description>&lt;p&gt;I am a Software Engineer and Contract Programmer living in Huntington&#xA;Beach, CA with my family. I build micro-services and work on&#xA;micro-controllers, usually with Go, C/C++, Python and JavaScript&#xA;(among other techs).&lt;/p&gt;</description>
+      <description>I am a Software Engineer and Contract Programmer living in Huntington Beach, CA with my family. I build micro-services and work on micro-controllers, usually with Go, C/C++, Python and JavaScript (among other techs).</description>
     </item>
     <item>
       <title>Skills and Interests</title>
       <link>http://www.rustyeddy.com/resume/skills/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/resume/skills/</guid>
-      <description>&lt;ul&gt;&#xA;&lt;li&gt;Go, C/C++, Python and JavaScript (and many others..)&lt;/li&gt;&#xA;&lt;li&gt;Computer Networks, Multicast Video Distribution&lt;/li&gt;&#xA;&lt;li&gt;Distributed systems and realtime communications&lt;/li&gt;&#xA;&lt;li&gt;DevOps, cloud automation and continuous delivery&lt;/li&gt;&#xA;&lt;li&gt;Fullstack software development, reactive front-ends with VueJS&lt;/li&gt;&#xA;&lt;li&gt;MicroServices: REST APIs, Websockets, etc.&lt;/li&gt;&#xA;&lt;li&gt;Linux Systems and OpenSource Software&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description> Go, C/C++, Python and JavaScript (and many others..) Computer Networks, Multicast Video Distribution Distributed systems and realtime communications DevOps, cloud automation and continuous delivery Fullstack software development, reactive front-ends with VueJS MicroServices: REST APIs, Websockets, etc. Linux Systems and OpenSource Software </description>
     </item>
     <item>
       <title>Web Developers Guide to Web Design</title>
       <link>http://www.rustyeddy.com/software/website-design-process/</link>
       <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/software/website-design-process/</guid>
-      <description>&lt;p&gt;Thankfully the Internet is full of great designers with kind soles&#xA;that have distilled their years&#xA;of &lt;em&gt;training&lt;/em&gt;, &lt;em&gt;experience&lt;/em&gt; and most of all &lt;em&gt;personal direction&lt;/em&gt; into&#xA;a set of general guidelines and formulas that make even no-talents&#xA;like myself look like a pro!&lt;/p&gt;&#xA;&lt;p&gt;[TODO Give some credits and reference some of these folks].&lt;/p&gt;&#xA;&lt;h2 id=&#34;my-prespective-on-ui-design&#34;&gt;My Prespective on UI Design&lt;/h2&gt;&#xA;&lt;p&gt;At the moment of this writing I am in the processes of building a&#xA;startup. I am in the &lt;em&gt;customer discovery&lt;/em&gt; phase.&lt;/p&gt;</description>
+      <description> Content Being Drafted </description>
     </item>
     <item>
       <title>Using Vue to Develop Webapps</title>
       <link>http://www.rustyeddy.com/notes/vue-frontends/</link>
       <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/notes/vue-frontends/</guid>
-      <description>&lt;p&gt;Every piece of software that exists has to speak to the external world&#xA;in some manner. It might be programattically through messaging or an&#xA;API call. It could be a human clicking through an GUI on our laptop or&#xA;phone.&lt;/p&gt;&#xA;&lt;p&gt;I think it is clear that &lt;em&gt;web apps&lt;/em&gt; are taking over the world. It is a&#xA;powerful notion that they can pretty much run on any computing devices&#xA;that support a &lt;em&gt;browser&lt;/em&gt;, which is almost everything with a screen.&lt;/p&gt;</description>
+      <description>Every piece of software that exists has to speak to the external world in some manner. It might be programattically through messaging or an API call. It could be a human clicking through an GUI on our laptop or phone.&#xA;I think it is clear that web apps are taking over the world. It is a powerful notion that they can pretty much run on any computing devices that support a browser, which is almost everything with a screen.</description>
     </item>
     <item>
       <title>Bootstrap makes WebUI look great!</title>
@@ -328,28 +342,28 @@
       <link>http://www.rustyeddy.com/notes/sotware-is-iterative/</link>
       <pubDate>Wed, 23 Oct 2019 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/notes/sotware-is-iterative/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Good Software is Continually Improved&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;The greater the success software Is directly proportionate to The&#xA;number of features that are requested As well as the number of bugs&#xA;that are found.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Bug reports means your softwar is getting used.!.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;That is obvious if people are happy using a software That they might&#xA;have some requests that would flow in from time to time.&lt;/p&gt;&#xA;&lt;p&gt;What might seem counterintuitive is the fact that, Even well done&#xA;successful software will have bugs. Period. Good teams understand and&#xA;embrace that&amp;hellip; The Bugs will be fixed And the customers will be even&#xA;happier&lt;/p&gt;</description>
+      <description>Good Software is Continually Improved&#xA;The greater the success software Is directly proportionate to The number of features that are requested As well as the number of bugs that are found.&#xA;Bug reports means your softwar is getting used.!.&#xA;That is obvious if people are happy using a software That they might have some requests that would flow in from time to time.&#xA;What might seem counterintuitive is the fact that, Even well done successful software will have bugs.</description>
     </item>
     <item>
       <title>Why Choose the Go programming Language for your Project?</title>
       <link>http://www.rustyeddy.com/notes/why-choose-go/</link>
       <pubDate>Sun, 22 Sep 2019 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/notes/why-choose-go/</guid>
-      <description>&lt;h2 id=&#34;go-is-simple&#34;&gt;Go is simple&lt;/h2&gt;&#xA;&lt;p&gt;Go is easy to learn to program with and it is free! Go is &lt;em&gt;much&lt;/em&gt;&#xA;easier to maintain and deploy than Java.&lt;/p&gt;&#xA;&lt;p&gt;Go does not have weird &lt;em&gt;virtual environments&lt;/em&gt; of Python or npm, gulp,&#xA;grunt, yarn, webpack (what&amp;rsquo;s next?) convuluted and complex build&#xA;environments.&lt;/p&gt;&#xA;&lt;h2 id=&#34;go-is-fast&#34;&gt;Go is Fast&lt;/h2&gt;&#xA;&lt;p&gt;It smokes most other languages, except the grand mother of Unix&#xA;programming &lt;em&gt;C&lt;/em&gt;.  The Go programming language is almost as fast&#xA;(performant geeky folks like to say) as C.&lt;/p&gt;</description>
+      <description>Go is simple Go is easy to learn to program with and it is free! Go is much easier to maintain and deploy than Java.&#xA;Go does not have weird virtual environments of Python or npm, gulp, grunt, yarn, webpack (what&amp;rsquo;s next?) convuluted and complex build environments.&#xA;Go is Fast It smokes most other languages, except the grand mother of Unix programming C. The Go programming language is almost as fast (performant geeky folks like to say) as C.</description>
     </item>
     <item>
       <title>Red Eye Video Server</title>
       <link>http://www.rustyeddy.com/notes/redeye/</link>
       <pubDate>Fri, 24 May 2019 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/notes/redeye/</guid>
-      <description>&lt;p&gt;The Red Eye project is a service definition rapper around inexpensive&#xA;cameras attached to inexpesive micro-controllers that take pretty good&#xA;video.&lt;/p&gt;&#xA;&lt;p&gt;The video streams are built using the GStreamer library. The camera&#xA;native capabilities are used to extract as high quailty, realtime&#xA;images possible.&lt;/p&gt;&#xA;&lt;p&gt;The video streams will be consumed by one or more sinks, including but&#xA;not limited to Files, cloud storage, High Def Display and Computer&#xA;Vision libraries.&lt;/p&gt;</description>
+      <description>The Red Eye project is a service definition rapper around inexpensive cameras attached to inexpesive micro-controllers that take pretty good video.&#xA;The video streams are built using the GStreamer library. The camera native capabilities are used to extract as high quailty, realtime images possible.&#xA;The video streams will be consumed by one or more sinks, including but not limited to Files, cloud storage, High Def Display and Computer Vision libraries.</description>
     </item>
     <item>
       <title>Skid Steering</title>
       <link>http://www.rustyeddy.com/notes/skid-steering/</link>
       <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/notes/skid-steering/</guid>
-      <description>&lt;p&gt;Skid steering basics&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Based on &lt;em&gt;fixed direction wheels[1] or tracks&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;There are two &lt;em&gt;groups&lt;/em&gt; or &lt;em&gt;sides&lt;/em&gt; of wheels: left and right&lt;/li&gt;&#xA;&lt;li&gt;All wheels in a group MUST always point in the same direction&lt;/li&gt;&#xA;&lt;li&gt;All wheels in a group MUST always rotate at the same rate&lt;/li&gt;&#xA;&lt;li&gt;Direction is determined by the speed of the two wheel groups&#xA;&lt;ul&gt;&#xA;&lt;li&gt;To move straight all motors rotate at the same rate&lt;/li&gt;&#xA;&lt;li&gt;Forward and Reverse are determined by positive and negative values&lt;/li&gt;&#xA;&lt;li&gt;Turning is achieved by varying the throttle on the right and left&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;example&#34;&gt;Example&lt;/h3&gt;&#xA;&lt;p&gt;The &lt;code&gt;Skidder&lt;/code&gt; class has the following API, as you can see all of&#xA;the movements we desire can be accomplished with a single API call&#xA;&lt;code&gt;skidder.set_throttle(left_throttle, right_throttle)&lt;/code&gt;,&#xA;does not get much simpler than this!&lt;/p&gt;</description>
+      <description>Skid steering basics&#xA;Based on fixed direction wheels[1] or tracks There are two groups or sides of wheels: left and right All wheels in a group MUST always point in the same direction All wheels in a group MUST always rotate at the same rate Direction is determined by the speed of the two wheel groups To move straight all motors rotate at the same rate Forward and Reverse are determined by positive and negative values Turning is achieved by varying the throttle on the right and left Example The Skidder class has the following API, as you can see all of the movements we desire can be accomplished with a single API call skidder.</description>
     </item>
     <item>
       <title>Raspberry Pi Motor Control Software</title>
@@ -370,21 +384,21 @@
       <link>http://www.rustyeddy.com/notes/streaming-video/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/notes/streaming-video/</guid>
-      <description>&lt;p&gt;I need to stream live video from a moving vehical with a connected&#xA;camera and a possibly connected wifi.&lt;/p&gt;&#xA;&lt;h2 id=&#34;live-high-resolution-video&#34;&gt;Live High Resolution Video&lt;/h2&gt;&#xA;&lt;p&gt;Video will stream from the vehicle to be picked up by &lt;em&gt;video&#xA;consumers&lt;/em&gt; and processed as required.  Examples of &lt;em&gt;consumers&lt;/em&gt; are&#xA;Live Video Display on our (Webapp), OpenCV for vision algoritms.&lt;/p&gt;&#xA;&lt;h2 id=&#34;high-demand-for-low-resolution&#34;&gt;High Demand For Low Resolution&lt;/h2&gt;&#xA;&lt;p&gt;It turns out that computer vision alogrithms typically run quite a bit&#xA;faster on lower resolution images, the additional information from&#xA;these &lt;em&gt;hi-res&lt;/em&gt; images can slow down the type of algorithms we are&#xA;interested in by many factors.&lt;/p&gt;</description>
+      <description>I need to stream live video from a moving vehical with a connected camera and a possibly connected wifi.&#xA;Live High Resolution Video Video will stream from the vehicle to be picked up by video consumers and processed as required. Examples of consumers are Live Video Display on our (Webapp), OpenCV for vision algoritms.&#xA;High Demand For Low Resolution It turns out that computer vision alogrithms typically run quite a bit faster on lower resolution images, the additional information from these hi-res images can slow down the type of algorithms we are interested in by many factors.</description>
     </item>
     <item>
       <title>The ESP32</title>
       <link>http://www.rustyeddy.com/notes/esp32/</link>
       <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/notes/esp32/</guid>
-      <description>&lt;p&gt;You need to push the RESET button to get them to write flash.&lt;/p&gt;&#xA;&lt;p&gt;A power packed chip that I have just started playing with.  Give some quick&#xA;specs here: and compare with other well known options (arduino&amp;rsquo;s, stm32 or&#xA;Raspberry Pi.&lt;/p&gt;&#xA;&lt;h2 id=&#34;standout-features&#34;&gt;Standout Features&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Builtin Wifi &amp;amp; BT and others&lt;/li&gt;&#xA;&lt;li&gt;Dual Core&lt;/li&gt;&#xA;&lt;li&gt;Powerful esp-idf&lt;/li&gt;&#xA;&lt;li&gt;FreeRTOS (Arduino optional)&lt;/li&gt;&#xA;&lt;li&gt;Great Feature Set!&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;&#xA;&lt;h3 id=&#34;interactive-console-over-uart&#34;&gt;Interactive Console over UART&lt;/h3&gt;&#xA;&lt;p&gt;This demonstrates using the serial port for an interactive console&#xA;while ESP is running other things.  During this console session we can&#xA;do a number of things including:&lt;/p&gt;</description>
+      <description>You need to push the RESET button to get them to write flash.&#xA;A power packed chip that I have just started playing with. Give some quick specs here: and compare with other well known options (arduino&amp;rsquo;s, stm32 or Raspberry Pi.&#xA;Standout Features Builtin Wifi &amp;amp; BT and others Dual Core Powerful esp-idf FreeRTOS (Arduino optional) Great Feature Set! Usage Interactive Console over UART This demonstrates using the serial port for an interactive console while ESP is running other things.</description>
     </item>
     <item>
       <title>Streaming Video Tools</title>
       <link>http://www.rustyeddy.com/notes/streaming-video-tools/</link>
       <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/notes/streaming-video-tools/</guid>
-      <description>&lt;p&gt;The grandparents of streaming video, and snapshots, read, writing&#xA;and transcoding video and single frame images are &lt;em&gt;ffmpeg&lt;/em&gt;, &lt;em&gt;vlc&lt;/em&gt; and&#xA;&lt;em&gt;gstreamer&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Other platforms, such as the wildly cool and inexpensive Raspberry Pi&#xA;and attached CSI Camera (Raspberry Pi Camera) have thier own set of&#xA;utilities: like raspivid.  Or the NVidia Nano with it&amp;rsquo;s gst-streamer&#xA;plugins and nvgst-capture/nvgst-playback utilies.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;This writting is as of March 2019&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h3 id=&#34;gstreamer-complex-flexible-future-proof&#34;&gt;GStreamer Complex, Flexible, Future Proof&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;GStreamer&lt;/strong&gt; really complex pipelines but insanely flexible.&lt;/p&gt;</description>
+      <description>The grandparents of streaming video, and snapshots, read, writing and transcoding video and single frame images are ffmpeg, vlc and gstreamer.&#xA;Other platforms, such as the wildly cool and inexpensive Raspberry Pi and attached CSI Camera (Raspberry Pi Camera) have thier own set of utilities: like raspivid. Or the NVidia Nano with it&amp;rsquo;s gst-streamer plugins and nvgst-capture/nvgst-playback utilies.&#xA;This writting is as of March 2019&#xA;GStreamer Complex, Flexible, Future Proof GStreamer really complex pipelines but insanely flexible.</description>
     </item>
     <item>
       <title>Control Station Display</title>
@@ -394,13 +408,6 @@
       <description>&lt;p&gt;We are going to build a simple control station that begins with a&#xA;Raspberry Pi and connected &lt;em&gt;7 inch touchscreen tablet&lt;/em&gt;.  I have it&#xA;setup in &amp;ldquo;kiosk mode&amp;rdquo;, which is basically full page chrome without the&#xA;tabs and tool bars etc.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Raspberry Pi Camera and Multiple Ports</title>
-      <link>http://www.rustyeddy.com/notes/drafts/raspberry-pi-camera-multiple-ports/</link>
-      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/notes/drafts/raspberry-pi-camera-multiple-ports/</guid>
-      <description>&lt;p&gt;As I started bumbling around trying to figure the best way to stream&#xA;[live video from a moving vehicle], I found that the Raspberry Pi&#xA;camera is capable of producing filtered versions of the images it is&#xA;producing, through &lt;em&gt;video ports&lt;/em&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>TLV the Type Length Vector Protocol</title>
       <link>http://www.rustyeddy.com/notes/tlv-and-realitime-communication/</link>
       <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
@@ -408,39 +415,25 @@
       <description>&lt;p&gt;TLV is a very simple communication protocol that can be used to send&#xA;messages around a complex, distributed system.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>The NRF240L1 RF Transceiver</title>
-      <link>http://www.rustyeddy.com/notes/drafts/nrf24l01/</link>
-      <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/notes/drafts/nrf24l01/</guid>
-      <description>&lt;p&gt;This RC reciever chip is very easy to use out of the box, yet provides&#xA;some very sophisticated capabilities.  The first project We&amp;rsquo;ll start&#xA;using this chip will be a remote control Joystick for our mobile&#xA;robot.&lt;/p&gt;&#xA;&lt;h2 id=&#34;todos&#34;&gt;Todos:&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;point to the datasheet&lt;/li&gt;&#xA;&lt;li&gt;load personal photos of my project with NRF20L&#xA;&lt;ul&gt;&#xA;&lt;li&gt;pull the image from evernote&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;fritz a diagram&lt;/li&gt;&#xA;&lt;li&gt;post code that I use and or wrote&lt;/li&gt;&#xA;&lt;li&gt;Try to do an eagle cad&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;source-voltage&#34;&gt;Source Voltage&lt;/h2&gt;&#xA;&lt;p&gt;According to &lt;a href=&#34;https://medium.com/@benjamindavidfraser/arduino-nrf24l01-communications-947e1acb33fb&#34;&gt;Benjamin David&#xA;Fraser&lt;/a&gt;&#xA;Plugging the NRF24L02 directly into the Arduino 3.3v power supply pin,&#xA;will produce unregulated power, which will eventually lead to flaky or&#xA;failed communications.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Sync vs. Async, Blocking vs. Non-blocking</title>
       <link>http://www.rustyeddy.com/notes/sync-async/</link>
       <pubDate>Sun, 03 Mar 2019 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/notes/sync-async/</guid>
-      <description>&lt;h2 id=&#34;synchronous-vs-asynchronous&#34;&gt;Synchronous vs. Asynchronous&lt;/h2&gt;&#xA;&lt;h3 id=&#34;blocking-and-non-blocking&#34;&gt;Blocking and Non-Blocking&lt;/h3&gt;&#xA;&lt;p&gt;A pratical example of asynchronous is a &amp;ldquo;blocking&amp;rdquo; call&#xA;vs. non-blocking call.  For example you are going to call a web&#xA;service to gather a lot of data, it will take a long time.  You can:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Make a blocking call (synchronous) that pauses (blocks) the program&#xA;from doing anything else until you receive a reply (or error).&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Make a non-blocking (asynchronous) call that requests the data from&#xA;the remote server, after sending the request the program continues to&#xA;run even though the response from the server has not yet been&#xA;returned.&lt;/p&gt;</description>
+      <description>Synchronous vs. Asynchronous Blocking and Non-Blocking A pratical example of asynchronous is a &amp;ldquo;blocking&amp;rdquo; call vs. non-blocking call. For example you are going to call a web service to gather a lot of data, it will take a long time. You can:&#xA;Make a blocking call (synchronous) that pauses (blocks) the program from doing anything else until you receive a reply (or error).&#xA;Make a non-blocking (asynchronous) call that requests the data from the remote server, after sending the request the program continues to run even though the response from the server has not yet been returned.</description>
     </item>
     <item>
       <title>Streaming Live Video on a Local Lan Vs. Internet</title>
       <link>http://www.rustyeddy.com/notes/streaming-video-local-network/</link>
       <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/notes/streaming-video-local-network/</guid>
-      <description>&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;differences in local vs. internet and streaming video&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;live stream vs. video on demand&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;what does real time mean?&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;what to do with late packets?&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;UDP vs. TCP in the local network&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;RTP and UDP&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;RTP and RTCP&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;RTP and RTSP&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;RTP and Multicast&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Tools used&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;TODO: workflowy outline&lt;/p&gt;&#xA;&lt;p&gt;RTSP is a good option for streaming video in a local setup up, where&#xA;minimal delay is the highest priority.  However, RTSP does not&#xA;typically do very well over the Internet due to the nature of&#xA;RTP/UDP.&lt;/p&gt;</description>
+      <description>differences in local vs. internet and streaming video&#xA;live stream vs. video on demand&#xA;what does real time mean?&#xA;what to do with late packets?&#xA;UDP vs. TCP in the local network&#xA;RTP and UDP&#xA;RTP and RTCP&#xA;RTP and RTSP&#xA;RTP and Multicast&#xA;Tools used&#xA;TODO: workflowy outline&#xA;RTSP is a good option for streaming video in a local setup up, where minimal delay is the highest priority. However, RTSP does not typically do very well over the Internet due to the nature of RTP/UDP.</description>
     </item>
     <item>
       <title>website</title>
       <link>http://www.rustyeddy.com/notes/website/</link>
       <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/notes/website/</guid>
-      <description>&lt;h1 id=&#34;websites&#34;&gt;Websites&lt;/h1&gt;&#xA;&lt;p&gt;According to the W3.org (official web people), modern websites may&#xA;consist of, i.e. modern browsers must support 3 things:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;HTML for basic website structure and other things&lt;/li&gt;&#xA;&lt;li&gt;CSS for style&lt;/li&gt;&#xA;&lt;li&gt;JavaScript for all things &lt;em&gt;dynamic&lt;/em&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The most basic of all websites is a single text file containing some&#xA;&lt;em&gt;content&lt;/em&gt; wrapped in some &lt;em&gt;HTML markup&lt;/em&gt;.  For example here is a&#xA;working, but incomplete example of HTML snippet attempting to display&#xA;a &lt;em&gt;level 1 header&lt;/em&gt; with the words &lt;em&gt;Hello, world!.&lt;/em&gt;:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Software Development Guide</title>
-      <link>http://www.rustyeddy.com/software/software-dev-guide/</link>
-      <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/software/software-dev-guide/</guid>
-      <description>&lt;p&gt;[TODO Move this stuff to /software]&lt;/p&gt;&#xA;&lt;p&gt;This guide is best suited for small to mid sized development projects,&#xA;a good example are micro-services or embedded development for small&#xA;manufactures, makers and IoT companies.&lt;/p&gt;</description>
+      <description>Websites According to the W3.org (official web people), modern websites may consist of, i.e. modern browsers must support 3 things:&#xA;HTML for basic website structure and other things CSS for style JavaScript for all things dynamic. The most basic of all websites is a single text file containing some content wrapped in some HTML markup. For example here is a working, but incomplete example of HTML snippet attempting to display a level 1 header with the words Hello, world!</description>
     </item>
     <item>
       <title>Publications</title>
@@ -461,21 +454,7 @@
       <link>http://www.rustyeddy.com/notes/control-design/</link>
       <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/notes/control-design/</guid>
-      <description>&lt;p&gt;Early in the process of building the first set of mobile robots I&#xA;discovered that I was not going to settle on a single micro&#xA;controller.&lt;/p&gt;&#xA;&lt;p&gt;The first two obvious choices being the Arduino or Raspberry Pi, for which&#xA;I tried both with a modest level of success.  I quickly realized that&#xA;I would not be providing my sole focus on either platform, neither was&#xA;sufficient for my grand plans for a number of reasons.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Comparing the Arduino and Raspberry Pi</title>
-      <link>http://www.rustyeddy.com/notes/drafts/rpi-v-arduino/</link>
-      <pubDate>Wed, 14 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/notes/drafts/rpi-v-arduino/</guid>
-      <description>&lt;h3 id=&#34;arduino-vs-raspberry-pi-in-control-systems&#34;&gt;Arduino vs. Raspberry Pi in Control Systems&lt;/h3&gt;&#xA;&lt;p&gt;I believe the Arudino has better hardware support, a real-time clock&#xA;and due to itself simplicity creates a better platform to interact&#xA;with external hardware in real-time.&lt;/p&gt;&#xA;&lt;p&gt;The Raspberry Pi, however has a much more powerful set of processors,&#xA;more memory and a general purpose operating system making it a more&#xA;suitable choice for general purpose, sophisticated software, such as&#xA;communicaitons and control software.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>IP Multicast the basics</title>
-      <link>http://www.rustyeddy.com/notes/drafts/ip-multicast/</link>
-      <pubDate>Sat, 03 Feb 2018 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/notes/drafts/ip-multicast/</guid>
-      <description>&lt;h2 id=&#34;ip-multicast-addresses&#34;&gt;IP Multicast addresses&lt;/h2&gt;&#xA;&lt;p&gt;The typical IP addresses used by computers networking today are known&#xA;as &lt;em&gt;unicast addresses&lt;/em&gt;, meaning that every unicast address as a single&#xA;(physical or logical) end point.&lt;/p&gt;&#xA;&lt;p&gt;Most all computer networking is &lt;em&gt;point to point&lt;/em&gt; between two specific&#xA;IP addresses, you name it: web browsing, email exchange, transfer&#xA;files and so much more.&lt;/p&gt;&#xA;&lt;p&gt;However, there are other more specific forms on communication&#xA;available and occasionally used: Broadcast and Multicast.&lt;/p&gt;</description>
+      <description>Early in the process of building the first set of mobile robots I discovered that I was not going to settle on a single micro controller.&#xA;The first two obvious choices being the Arduino or Raspberry Pi, for which I tried both with a modest level of success. I quickly realized that I would not be providing my sole focus on either platform, neither was sufficient for my grand plans for a number of reasons.</description>
     </item>
   </channel>
 </rss>

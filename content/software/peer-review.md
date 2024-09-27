@@ -1,15 +1,14 @@
 ---
-title: Peer Reviews - And Culture
+title: Peer Reviews
 date: 2020-02-02
-weight: 70
+weight: 60
 description: >
-  A necessary part of building a culture 
-  Making changes to code on one's own in isolation can be problematic
-  for a number of reasons, however, when you get a pair of scrutinizing
-  eyes on your code, all sorts of things are going to come up that you
-  probably had not considered.
+  A necessary part of building a culture of bullet proof software is
+  having our work scrutized by peers before letting hit the general
+  public or users.
 ---
 
+{{<draft>}}
 A _Peer Review_ is the process of _one or more peers_ knowledgable
 about your code who can examine and scrutinize every line.  This is a painful
 process, but so necessary.
@@ -54,3 +53,4 @@ Sometimes interesting fodder, but now it is time ...
 
 > To make a commitment!
 
+{{</draft>}}

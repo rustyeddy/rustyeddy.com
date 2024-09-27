@@ -4,7 +4,7 @@
     <title>Work History on Rusty Eddy</title>
     <link>http://www.rustyeddy.com/resume/jobs/</link>
     <description>Recent content in Work History on Rusty Eddy</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 Dec 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://www.rustyeddy.com/resume/jobs/index.xml" rel="self" type="application/rss+xml" />
@@ -34,7 +34,7 @@
       <link>http://www.rustyeddy.com/resume/jobs/retix/</link>
       <pubDate>Tue, 01 Aug 1995 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/resume/jobs/retix/</guid>
-      <description>&lt;p&gt;Promoted to lead the team of 6 engineers that developed and&#xA;automated test plans for L2 switches, OSPF, RIP and BGP&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Implemented an automated test framework and led junior engineers&#xA;in developing the automated test suites.  C; C++; Perl; TCL&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Provided 3rd level customer support, serious customer problems that&#xA;could not be resolved by customer support or field engineers became&#xA;my teams responsibility to diagnose and determine solutions and&#xA;workarounds was required.&lt;/p&gt;</description>
+      <description>Promoted to lead the team of 6 engineers that developed and automated test plans for L2 switches, OSPF, RIP and BGP&#xA;Implemented an automated test framework and led junior engineers in developing the automated test suites. C; C++; Perl; TCL&#xA;Provided 3rd level customer support, serious customer problems that could not be resolved by customer support or field engineers became my teams responsibility to diagnose and determine solutions and workarounds was required.</description>
     </item>
     <item>
       <title>Rockwell, Intl. Space Systems Division</title>

@@ -1,16 +1,15 @@
 ---
-title: Improving Quality by Testing Software
-date: 2019-05-04
-weight: 60
+title: Test Driven Software Development
+date: 2021-04-04
+weight: 40
 description: >
-  Developers when programming use VCS to create a temporary private
-  branch to work from to avoid negatively effecting others while
-  changing code. The developer and rest of the team rely on Software
-  Testing to ensure new and changed code does what is required of it,
-  and the new code MUST NOT break existing functionality. Getting
-  testing right has many profound positive effects on the project, let
-  me explain.
+  If we do not testi our software we will force our users to
+  be our testers, read this article to find out why that is a very bad
+  idea and how many advantages we will realize by planning our tests
+  from the beginning
 ---
+
+{{<draft>}}
 
 ## Testing Unit and Systems
 
@@ -162,3 +161,5 @@ we like to call them now.  For example, a database and inputs from a
 sensor are two _sub-systems_ that are frequently found in _embedded_
 and _IoT_ style software projects.
 
+
+{{</draft>}}

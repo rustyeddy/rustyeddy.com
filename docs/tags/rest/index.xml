@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rest on Rusty Eddy</title>
+    <title>rest on Rusty Eddy</title>
     <link>http://www.rustyeddy.com/tags/rest/</link>
-    <description>Recent content in Rest on Rusty Eddy</description>
-    <generator>Hugo</generator>
+    <description>Recent content in rest on Rusty Eddy</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 30 Mar 2022 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://www.rustyeddy.com/tags/rest/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>http://www.rustyeddy.com/iot/iot-gateway-rest/</link>
       <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/iot/iot-gateway-rest/</guid>
-      <description>&lt;p&gt;Previously we have added&#xA;&lt;a href=&#34;http://www.rustyeddy.com/iot/iot-gateway-mqtt/&#34;&gt;MQTT to the IoT Gateway&lt;/a&gt; as part of the&#xA;&lt;a href=&#34;http://www.rustyeddy.com/iot/iot-project&#34;&gt;Organic Gardner Project&lt;/a&gt;. This gave the gateway the&#xA;ability to collect and store a lot of environmental data from sensors&#xA;all over the place.&lt;/p&gt;&#xA;&lt;p&gt;Now we need to provide a way for others programs, like the&#xA;&lt;a href=&#34;http://www.rustyeddy.com/iot/dashboard&#34;&gt;IoT Dashboard&lt;/a&gt; access that data via a REST API.&lt;/p&gt;&#xA;&lt;h2 id=&#34;implementing-a-restful-api&#34;&gt;Implementing a RESTful API&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.redhat.com/en/topics/api/what-is-a-rest-api&#34;&gt;The RESTful API&lt;/a&gt;&#xA;&lt;em&gt;convention&lt;/em&gt; is exteremely popular, well supported and is perfectly&#xA;suited to providing access to the sensor data that has been&#xA;collected. REST is ubiquitous these days, most people&#xA;involved in &lt;em&gt;frontend&lt;/em&gt; or &lt;em&gt;backend&lt;/em&gt; development most likely&#xA;have quite a bit of experience with REST.&lt;/p&gt;</description>
+      <description>Previously we have added MQTT to the IoT Gateway as part of the Organic Gardner Project. This gave the gateway the ability to collect and store a lot of environmental data from sensors all over the place.&#xA;Now we need to provide a way for others programs, like the IoT Dashboard access that data via a REST API.&#xA;Implementing a RESTful API The RESTful API convention is exteremely popular, well supported and is perfectly suited to providing access to the sensor data that has been collected.</description>
     </item>
   </channel>
 </rss>
