@@ -8,25 +8,31 @@
     <loc>http://www.rustyeddy.com/software/software-is-hard/</loc>
     <lastmod>2021-06-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.rustyeddy.com/software/customer-discovery-and-mvp/</loc>
+    <loc>http://www.rustyeddy.com/software/agile-software-development/</loc>
+    <lastmod>2018-10-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.rustyeddy.com/software/kanban/</loc>
-    <lastmod>2021-03-03T00:00:00+00:00</lastmod>
+    <loc>http://www.rustyeddy.com/software/use-cases/</loc>
   </url><url>
     <loc>http://www.rustyeddy.com/iot/iot-sensor-station/</loc>
     <lastmod>2022-01-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.rustyeddy.com/software/vcs-tracking-progress/</loc>
+    <loc>http://www.rustyeddy.com/software/kanban/</loc>
+    <lastmod>2021-03-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/software/version-control-systems/</loc>
     <lastmod>2020-06-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.rustyeddy.com/software/testing/</loc>
-    <lastmod>2019-05-04T00:00:00+00:00</lastmod>
+    <loc>http://www.rustyeddy.com/software/test-driven-software-development/</loc>
+    <lastmod>2021-04-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/software/peer-review/</loc>
     <lastmod>2020-02-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.rustyeddy.com/software/commit-code-make-history/</loc>
-    <lastmod>2021-04-04T00:00:00+00:00</lastmod>
+    <loc>http://www.rustyeddy.com/software/data-models/</loc>
+    <lastmod>2020-02-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/software/wireframes-and-storyboards/</loc>
+    <lastmod>2018-10-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/resume/jobs/panasonic/</loc>
     <lastmod>2023-12-15T00:00:00+00:00</lastmod>
@@ -160,9 +166,6 @@
     <loc>http://www.rustyeddy.com/tags/mqtt/</loc>
     <lastmod>2022-03-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.rustyeddy.com/sailing/</loc>
-    <lastmod>2021-09-25T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://www.rustyeddy.com/notes/private-wifi-network-webapp/</loc>
     <lastmod>2021-07-22T00:00:00+00:00</lastmod>
   </url><url>
@@ -185,9 +188,6 @@
     <lastmod>2021-01-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/tags/react/</loc>
-    <lastmod>2021-01-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.rustyeddy.com/tags/tcp/ip/</loc>
     <lastmod>2021-01-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/notes/rpi-wpe-web-kiosk/</loc>
@@ -343,26 +343,11 @@
     <loc>http://www.rustyeddy.com/tags/touch-screen/</loc>
     <lastmod>2019-04-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.rustyeddy.com/tags/picamera/</loc>
-    <lastmod>2019-04-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.rustyeddy.com/notes/drafts/raspberry-pi-camera-multiple-ports/</loc>
-    <lastmod>2019-04-21T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://www.rustyeddy.com/tags/tlv/</loc>
     <lastmod>2019-04-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/notes/tlv-and-realitime-communication/</loc>
     <lastmod>2019-04-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.rustyeddy.com/tags/nrf240l1/</loc>
-    <lastmod>2019-03-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.rustyeddy.com/tags/spi/</loc>
-    <lastmod>2019-03-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.rustyeddy.com/notes/drafts/nrf24l01/</loc>
-    <lastmod>2019-03-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/notes/sync-async/</loc>
     <lastmod>2024-01-11T00:00:00+00:00</lastmod>
@@ -372,12 +357,6 @@
   </url><url>
     <loc>http://www.rustyeddy.com/notes/website/</loc>
     <lastmod>2018-12-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.rustyeddy.com/software/software-dev-guide/</loc>
-    <lastmod>2018-10-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.rustyeddy.com/tags/c/c&#43;&#43;-perl-python-and-java/</loc>
-    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://www.rustyeddy.com/tags/computer-network-multicast/</loc>
     <lastmod>2018-09-21T00:00:00+00:00</lastmod>
@@ -403,17 +382,15 @@
     <loc>http://www.rustyeddy.com/notes/control-design/</loc>
     <lastmod>2018-05-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.rustyeddy.com/notes/drafts/rpi-v-arduino/</loc>
-    <lastmod>2018-03-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://www.rustyeddy.com/notes/drafts/ip-multicast/</loc>
-    <lastmod>2018-02-03T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://www.rustyeddy.com/notes/</loc>
     <lastmod>2001-02-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/c/c&#43;&#43;-perl-python-and-java/</loc>
   </url><url>
     <loc>http://www.rustyeddy.com/tags/firmware/</loc>
   </url><url>
     <loc>http://www.rustyeddy.com/tags/single-page-app/</loc>
+  </url><url>
+    <loc>http://www.rustyeddy.com/tags/tcp/ip/</loc>
   </url>
 </urlset>

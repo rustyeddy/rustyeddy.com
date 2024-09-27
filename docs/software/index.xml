@@ -4,7 +4,7 @@
     <title>Software Development Lifecycle Phases on Rusty Eddy</title>
     <link>http://www.rustyeddy.com/software/</link>
     <description>Recent content in Software Development Lifecycle Phases on Rusty Eddy</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 02 Jun 2021 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://www.rustyeddy.com/software/index.xml" rel="self" type="application/rss+xml" />
@@ -13,70 +13,77 @@
       <link>http://www.rustyeddy.com/software/software-is-hard/</link>
       <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/software/software-is-hard/</guid>
-      <description>&lt;h2 id=&#34;why-is-software-so-difficult&#34;&gt;Why Is Software So Difficult?&lt;/h2&gt;&#xA;&lt;p&gt;Software development projects are one of the most notoriously&#xA;mis-understood and incorrectly managed of all the &lt;em&gt;common&lt;/em&gt; processes&#xA;used throughout the business world.&lt;/p&gt;&#xA;&lt;p&gt;There are a number of reasons for software projects being classified&#xA;as a disastor so often. Software often is solving a complex problem&#xA;that unfortunately can&amp;rsquo;t be seen.&lt;/p&gt;&#xA;&lt;p&gt;Perhaps the worst problem with software projects are the diverging&#xA;expectations between developers and users.&lt;/p&gt;</description>
+      <description>Why Is Software So Difficult? Software development projects are one of the most notoriously mis-understood and incorrectly managed of all the common processes used throughout the business world.&#xA;There are a number of reasons for software projects being classified as a disastor so often. Software often is solving a complex problem that unfortunately can&amp;rsquo;t be seen.&#xA;Perhaps the worst problem with software projects are the diverging expectations between developers and users.</description>
     </item>
     <item>
-      <title>Customer Discovery and MVP</title>
-      <link>http://www.rustyeddy.com/software/customer-discovery-and-mvp/</link>
+      <title>Agile Software Development</title>
+      <link>http://www.rustyeddy.com/software/agile-software-development/</link>
+      <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>http://www.rustyeddy.com/software/agile-software-development/</guid>
+      <description> Content Being Drafted </description>
+    </item>
+    <item>
+      <title>Use Cases</title>
+      <link>http://www.rustyeddy.com/software/use-cases/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/software/customer-discovery-and-mvp/</guid>
-      <description>&lt;p&gt;&lt;em&gt;Customer Discovery&lt;/em&gt; consists of one or more customer discovery&#xA;sessions, where all &lt;em&gt;users&lt;/em&gt; and &lt;em&gt;owners&lt;/em&gt; of the software will be&#xA;interviewed for their expectations, needs and desires for the&#xA;upcoming software project.&lt;/p&gt;&#xA;&lt;p&gt;Don&amp;rsquo;t just stop at the first answer, it will be too vague. Dig deeper&#xA;and start peeling back the details. This great article on the&#xA;&lt;a href=&#34;https://www.mindtools.com/pages/article/newTMC_5W.htm&#34;&gt;Five Why&amp;rsquo;s&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;user-stories&#34;&gt;User Stories&lt;/h2&gt;&#xA;&lt;p&gt;The information gathered from these sessions are then articulated in a&#xA;series of &lt;em&gt;non-technical&lt;/em&gt; descriptions of how the software is used by&#xA;everybody.&lt;/p&gt;</description>
+      <guid>http://www.rustyeddy.com/software/use-cases/</guid>
+      <description> Content Being Drafted Content Being Drafted </description>
     </item>
     <item>
       <title>Organizing Software Projects with Kanban</title>
       <link>http://www.rustyeddy.com/software/kanban/</link>
       <pubDate>Wed, 03 Mar 2021 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/software/kanban/</guid>
-      <description>&lt;p&gt;Kanban is fantastically simple. We will create a board with 3 columns,&#xA;&lt;em&gt;Todo&lt;/em&gt;, &lt;em&gt;Work In Progress&lt;/em&gt; and &lt;em&gt;Complete&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Each column is populated with a single card for every task that must be&#xA;done. The cards are prioritized and move through the system as the&#xA;work progresses.&lt;/p&gt;&#xA;&lt;h2 id=&#34;good-kanban-reference&#34;&gt;Good Kanban Reference&lt;/h2&gt;&#xA;&lt;p&gt;My goal is NOT to describe Kanban itself. Instead, here is a good video&#xA;if you are not already familiar with it.&lt;/p&gt;</description>
+      <description>Kanban is fantastically simple. We will create a board with 3 columns, Todo, Work In Progress and Complete.&#xA;Each column is populated with a single card for every task that must be done. The cards are prioritized and move through the system as the work progresses.&#xA;Good Kanban Reference My goal is NOT to describe Kanban itself. Instead, here is a good video if you are not already familiar with it.</description>
     </item>
     <item>
-      <title>Version Control and Tracking Progress</title>
-      <link>http://www.rustyeddy.com/software/vcs-tracking-progress/</link>
+      <title>Version Control Systems</title>
+      <link>http://www.rustyeddy.com/software/version-control-systems/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/software/vcs-tracking-progress/</guid>
-      <description>&lt;p&gt;It frightens me everytime I am introduced to a new software project&#xA;where the &amp;ldquo;latest&amp;rdquo; source code is somebodies folder &lt;em&gt;somewhere&lt;/em&gt; with&#xA;copies being passed around on thumb drives.&lt;/p&gt;&#xA;&lt;p&gt;Such a lack process invites confusion from the beginning and inspires&#xA;questions like:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;which copy of the file has your changes?&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;If you are working like this STOP! It does not have to be this&#xA;way. no, start using Version Control now!&lt;/p&gt;</description>
+      <guid>http://www.rustyeddy.com/software/version-control-systems/</guid>
+      <description> Content Being Drafted Content Being Drafted </description>
     </item>
     <item>
-      <title>Improving Quality by Testing Software</title>
-      <link>http://www.rustyeddy.com/software/testing/</link>
-      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/software/testing/</guid>
-      <description>&lt;h2 id=&#34;testing-unit-and-systems&#34;&gt;Testing Unit and Systems&lt;/h2&gt;&#xA;&lt;p&gt;Before any developers new code can be integrated into the &lt;em&gt;mainline&lt;/em&gt;&#xA;production code base, it must be &lt;em&gt;tested&lt;/em&gt;, &lt;em&gt;vetted&lt;/em&gt; and &lt;em&gt;peer&#xA;reviewed&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Software Testing has been written about extensively, so I won&amp;rsquo;t spend&#xA;time here discussing testing directly, as there are as many ways to&#xA;test software as there are technologies.&lt;/p&gt;&#xA;&lt;h3 id=&#34;test-driven-development&#34;&gt;Test Driven Development&lt;/h3&gt;&#xA;&lt;p&gt;&lt;em&gt;Test Driven Development (TDD)&lt;/em&gt; a &lt;em&gt;principal&lt;/em&gt; for which I agree is necessary, but I don&amp;rsquo;t &lt;em&gt;always&lt;/em&gt; adhere to in practice. This is  usually out of&#xA;laziness, haste or carelessness (I know sad but I&amp;rsquo;m just being honest&#xA;here). However, it is worth paying attention to&amp;hellip;&lt;/p&gt;</description>
+      <title>Test Driven Software Development</title>
+      <link>http://www.rustyeddy.com/software/test-driven-software-development/</link>
+      <pubDate>Sun, 04 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>http://www.rustyeddy.com/software/test-driven-software-development/</guid>
+      <description> Content Being Drafted </description>
     </item>
     <item>
-      <title>Peer Reviews - And Culture</title>
+      <title>Peer Reviews</title>
       <link>http://www.rustyeddy.com/software/peer-review/</link>
       <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/software/peer-review/</guid>
-      <description>&lt;p&gt;A &lt;em&gt;Peer Review&lt;/em&gt; is the process of &lt;em&gt;one or more peers&lt;/em&gt; knowledgable&#xA;about your code who can examine and scrutinize every line.  This is a painful&#xA;process, but so necessary.&lt;/p&gt;&#xA;&lt;h2 id=&#34;peer-reviews-are-painful-but-worth-it&#34;&gt;Peer Reviews Are Painful but Worth IT!&lt;/h2&gt;&#xA;&lt;p&gt;For the programmer, that means having your work criticized by other&#xA;people. Maybe even people that &lt;em&gt;think&lt;/em&gt; they are smarter than you, but are&#xA;not.&lt;/p&gt;&#xA;&lt;p&gt;Reviewers, typically don&amp;rsquo;t like (or at least don&amp;rsquo;t &lt;em&gt;love&lt;/em&gt;) reviewing other peoples&#xA;code. It is a lot of extra work. It&amp;rsquo;s hard and takes time.&lt;/p&gt;</description>
+      <description> Content Being Drafted </description>
     </item>
     <item>
-      <title>Commit Code and Make History</title>
-      <link>http://www.rustyeddy.com/software/commit-code-make-history/</link>
-      <pubDate>Sun, 04 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/software/commit-code-make-history/</guid>
-      <description>&lt;h2 id=&#34;github-and-making-the-commitment&#34;&gt;Github and making the Commitment&lt;/h2&gt;&#xA;&lt;p&gt;Now it is time for the developer to &lt;em&gt;commit&lt;/em&gt; the changes she has been&#xA;working on, tested and pushed through the peer reviews. This step is&#xA;pretty simple, however, we want to make sure we are doing it&#xA;correctly.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Todo example commit&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;When the code is merged into the &lt;strong&gt;main&lt;/strong&gt; or &lt;strong&gt;master&lt;/strong&gt; repository,&#xA;just like commitments, it will be accompanied by the log comments&#xA;that go along with the log files.&lt;/p&gt;</description>
+      <title>Data Models</title>
+      <link>http://www.rustyeddy.com/software/data-models/</link>
+      <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>http://www.rustyeddy.com/software/data-models/</guid>
+      <description> Content Being Drafted </description>
+    </item>
+    <item>
+      <title>Wireframes and Storyboards</title>
+      <link>http://www.rustyeddy.com/software/wireframes-and-storyboards/</link>
+      <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>http://www.rustyeddy.com/software/wireframes-and-storyboards/</guid>
+      <description> Content Being Drafted </description>
     </item>
     <item>
       <title>Release Process</title>
       <link>http://www.rustyeddy.com/software/release-process/</link>
       <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/software/release-process/</guid>
-      <description>&lt;p&gt;This is the point where software is ready to be passed along to the&#xA;user/customer, an &lt;em&gt;official release&lt;/em&gt;. We will want to formalize the&#xA;process of releasing the softare.&lt;/p&gt;&#xA;&lt;p&gt;For example, when a new release is cut, the following process may be in&#xA;place:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Commit to main in Github repository&lt;/li&gt;&#xA;&lt;li&gt;New &lt;em&gt;version number&lt;/em&gt; is generated&lt;/li&gt;&#xA;&lt;li&gt;Automated build is triggered&lt;/li&gt;&#xA;&lt;li&gt;Automated system tests are run&lt;/li&gt;&#xA;&lt;li&gt;New binary test images are copied to a distribution server or&#xA;pushed to production servers&lt;/li&gt;&#xA;&lt;li&gt;The actual process will vary according to many factors of the&#xA;application&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;With every successful software project you will be doing releases&#xA;regularly. It is best to make your release as easy and painless as&#xA;possible.&lt;/p&gt;</description>
+      <description> Content Being Drafted </description>
     </item>
     <item>
       <title>Web Developers Guide to Web Design</title>
       <link>http://www.rustyeddy.com/software/website-design-process/</link>
       <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/software/website-design-process/</guid>
-      <description>&lt;p&gt;Thankfully the Internet is full of great designers with kind soles&#xA;that have distilled their years&#xA;of &lt;em&gt;training&lt;/em&gt;, &lt;em&gt;experience&lt;/em&gt; and most of all &lt;em&gt;personal direction&lt;/em&gt; into&#xA;a set of general guidelines and formulas that make even no-talents&#xA;like myself look like a pro!&lt;/p&gt;&#xA;&lt;p&gt;[TODO Give some credits and reference some of these folks].&lt;/p&gt;&#xA;&lt;h2 id=&#34;my-prespective-on-ui-design&#34;&gt;My Prespective on UI Design&lt;/h2&gt;&#xA;&lt;p&gt;At the moment of this writing I am in the processes of building a&#xA;startup. I am in the &lt;em&gt;customer discovery&lt;/em&gt; phase.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Software Development Guide</title>
-      <link>http://www.rustyeddy.com/software/software-dev-guide/</link>
-      <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/software/software-dev-guide/</guid>
-      <description>&lt;p&gt;[TODO Move this stuff to /software]&lt;/p&gt;&#xA;&lt;p&gt;This guide is best suited for small to mid sized development projects,&#xA;a good example are micro-services or embedded development for small&#xA;manufactures, makers and IoT companies.&lt;/p&gt;</description>
+      <description> Content Being Drafted </description>
     </item>
   </channel>
 </rss>
