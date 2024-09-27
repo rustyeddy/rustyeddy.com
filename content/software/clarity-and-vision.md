@@ -1,7 +1,7 @@
 ---
-title: Agile is the Answer!
+title: Agile Software Development
 date: 2020-02-20
-weight: 5000
+weight: 10
 draft: true
 description: >
   Today agile is the solution to everything software, or at least it
@@ -22,6 +22,6 @@ critical elements, the foremost element is actually adapting the
 If we as leaders do not have a mountain top to point our troops to,
 then lead them along the way, ensuring that _shiney objects_, missed
 turns and **little side journey's** we will wonder around in the
-wilderness for 40 weeks before we all starve to death because the
+wilderness for 40 years before we all starve to death because the
 _manna_ quit falling from the heavens.
 
