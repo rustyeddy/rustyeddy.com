@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tft Display on Rusty Eddy</title>
+    <link>http://www.rustyeddy.com/tags/tft-display/</link>
+    <description>Recent content in Tft Display on Rusty Eddy</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.rustyeddy.com/tags/tft-display/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Control Station Display</title>
+      <link>http://www.rustyeddy.com/notes/touch-screen-display/</link>
+      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>http://www.rustyeddy.com/notes/touch-screen-display/</guid>
+      <description>&lt;p&gt;We are going to build a simple control station that begins with a&#xA;Raspberry Pi and connected &lt;em&gt;7 inch touchscreen tablet&lt;/em&gt;.  I have it&#xA;setup in &amp;ldquo;kiosk mode&amp;rdquo;, which is basically full page chrome without the&#xA;tabs and tool bars etc.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

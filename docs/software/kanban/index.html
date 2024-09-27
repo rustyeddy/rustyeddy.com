@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+  
+  <title>Organizing Software Projects with Kanban</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G7XZRHH62T"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-G7XZRHH62T');
+  </script>
+</head>
+<body><header class="container bg-white">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <a class="navbar-brand text-muted text-monospace" href="/"><span claa="h1">rusty eddy:</span></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <nav class="navbar-nav w-100 justify-content-end">
+	<div class="nav w-100">
+  	  <a class="nav-link" href="/iot/"> iot &nbsp</a>
+  	  <a class="nav-link" href="/software"> software &nbsp</a> 
+  	  <a class="nav-link" href="/notes"> notes &nbsp</a>
+  	  <a class="nav-link" href="/resume"> resume &nbsp</a> 
+  	  <a class="nav-link" href="/about"> about &nbsp</a> 
+	</div>
+      </nav>
+    </div>
+  </nav>
+</header>
+<div class="jumbotron border-top border-bottom bg-white" >
+  <div class="row">
+    <div class="col-md"></div>
+    <div class="col-md-8 text-center">
+      <h1 class="header h2 pb-1">Organizing Software Projects with Kanban</h1>
+      <p class="leadin align-right text-muted text-center mt-0">
+        Tracking tasks does not have to be Rocket Science! Absurdly simple, profoundly liberating and insane to ignore!  We are going to look into Kanban. 
+
+      </p>
+    </div>
+    <div class="col-md"></div>
+  </div>
+
+  <div class="row text-center smaller-text">
+    <div class="col"></div>
+    <div class="col-8">
+      <nav class="nav justify-content-center">
+        
+        
+        
+        
+        
+      </nav>
+
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
+<section id="main">
+
+<div class="container">
+    <div class="row pt-4 mb-5 mt-5">
+	<div class="col"></div>
+	<div class="col-8 text-center">
+	    <img class="img-fluid justify-content-center" src="" />
+	</div>
+	<div class="col"></div>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="row mt-4">
+	<div class="col"></div>
+	<div class="col-lg-8 pl-4 pr-4">
+	    <article class="article">
+		<p>Kanban is fantastically simple. We will create a board with 3 columns,
+<em>Todo</em>, <em>Work In Progress</em> and <em>Complete</em>.</p>
+<p>Each column is populated with a single card for every task that must be
+done. The cards are prioritized and move through the system as the
+work progresses.</p>
+<h2 id="good-kanban-reference">Good Kanban Reference</h2>
+<p>My goal is NOT to describe Kanban itself. Instead, here is a good video
+if you are not already familiar with it.</p>
+<blockquote>
+<p>TODO add a good reference video to how Kanban works</p>
+</blockquote>
+<p>The important things to take-a-way from the idea of Kanban is already acting as if:</p>
+<ul>
+<li>the tasks have been written in a 1-2 day granularity</li>
+<li>the <em>board</em> is being updated regulary</li>
+</ul>
+<p>Then <em>everybody</em> will know exactly what progress has been made since the
+last reference.</p>
+<h3 id="task-lists-evolve">Task Lists Evolve</h3>
+<p>We must embrace this fact: The tasks we began thinking about during
+the <em>Customer Disovery</em> session while defining the <em>MVP</em> was probably
+pretty accurate, but almost certainly <em>incomplete</em>.</p>
+<blockquote>
+<p>You can not know, what you do not yet know.</p>
+</blockquote>
+<p>This is the most difficult aspects of building <em>novel</em> software.</p>
+<p>The reality is that unforeseen issues will pop up that must be added
+to our <em>Todo</em> list at any given time. We&rsquo;ll also find that many of our
+original tasks were very high level and will necessarily need to be
+broken down into smaller tasks.</p>
+<h3 id="assigning-todo-items">Assigning Todo Items</h3>
+<p>As a person with a particular skill becomes available they are
+matched up with the next task on the to do list.</p>
+<p>The task or the kanban card is then assigned to that particular
+person and moved into the Work In Progress (WIP) list.</p>
+<h3 id="tests-define-the-exit-criteria">Tests Define the Exit Criteria</h3>
+<p>During this phase of the process, a deeper level of thought needs to
+be put into the <em>tests</em> that must be written to establish a successful
+completion of this task.</p>
+<p>These tests will become part of the software itself, continuing for
+evermore ensure to be run everytime a change is committed to the
+source base, the quality of software consistently gets better.</p>
+<h3 id="contstraints-on-the-wip">Contstraints on the WIP</h3>
+<p>A <em>prioritized Todo list</em> and a <em>WIP</em> that allows only a single (or
+two) item(s) per person, will help ensure that the progress of the project
+is visible to everybody that cares to look.</p>
+<h2 id="stacking-small-victories">Stacking Small Victories</h2>
+<p>Keep the tasks small. A developer should be able to complete a task in
+a day or two max. If tasks become three or four days they most likely
+can and should be broken into smaller tasks.</p>
+<p>This is important because the development team needs to see victories
+and needs to have successes. Likewise, management needs to see
+progress, and  customers need to experience new features and
+improvements.</p>
+<p>Eventually, the task is moved into the <em>Complete</em> column and the
+software is delivered to the customer. (More on the software release
+process later).</p>
+<h3 id="github-projects">Github Projects</h3>
+<p>Github provides a relatively new (2020) feature called projects,
+that allow one to easily create a Kanban board. Github projects allow
+users to create cards and track the github issues.</p>
+<p>Your development team has access to this wonderfully integrated tool,
+all for free right now.</p>
+<p>Subscribe below if you would like help getting your team started.</p>
+<blockquote>
+<p>TODO - Provide a screenshot</p>
+</blockquote>
+<h3 id="github-issues">Github Issues</h3>
+<p>Project cards represent a big picture/high level view of the project
+and how it progresses, whereas the <em>github issues</em> are the place to
+keep the details of the the change requests, actions to recreate bugs
+and support for new feature requests.</p>
+<p><em>Github Projects</em> allow a single click to convert a <em>Card</em> into a
+<em>Github Issue</em> which then keeps the <em>Project Cards</em> and <em>Issues</em> in
+sync.</p>
+<p>The integration of a Github Project board with the Github Issues is a
+perfect combination of the right balance between communicating with
+<em>non-technical</em> project stake holders and the more technical details
+developers need to program by.</p>
+<blockquote>
+<p>TODO - Screen shot github issues and project cards links.</p>
+</blockquote>
+
+	    </article>
+	</div>
+	<div class="col"></div>
+    </div>
+
+</div>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-8">
+            <script async data-uid="50dfcceaf3" src="https://skilled-producer-5787.ck.page/50dfcceaf3/index.js"></script>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
+
+	</section><footer id="footer" class="container-fluid footer small-text pt-4 border-top">
+  <section class="row">
+    <div class="col"></div>
+    <div class="col text-right">
+      <div class="address">419 Main St. #439</div>
+      <div class="city">Huntington Beach, CA. 92648</div>
+    </div>
+    <div class="col-3 text-center">
+      <div>
+        Last update ~
+        
+	
+        Wednesday, Mar 3, 2021
+	
+        
+      </div>
+      <div>site by <a href="/">Eddy Consulting, LLC.</a> ~ &#xA9; 2008 to 2024 </div>
+    </div>
+    <div class="col">
+      <div class="text-left">
+	<div class="phone">(714) 362-5402</div>
+	<a href="https://github.com/rustyeddy">github</a> .
+	<a href="https://twitter.com/rustyeddy">twitter</a> .
+	<a href="https://linkedin.com/rustyeddy">linkedin</a><br/>	    
+      </div>
+    </div>
+    <div class="col"></div>
+  </section>
+</footer>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19940083-13"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+    </body>
+</html>

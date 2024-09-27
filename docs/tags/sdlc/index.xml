@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sdlc on Rusty Eddy</title>
+    <link>http://www.rustyeddy.com/tags/sdlc/</link>
+    <description>Recent content in Sdlc on Rusty Eddy</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 13 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.rustyeddy.com/tags/sdlc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Software Development Lifecycle Phases</title>
+      <link>http://www.rustyeddy.com/software/</link>
+      <pubDate>Fri, 13 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://www.rustyeddy.com/software/</guid>
+      <description>&lt;h2 id=&#34;an-tale-of-software-development&#34;&gt;An Tale of Software Development&lt;/h2&gt;&#xA;&lt;p&gt;I had a great idea to help my wife maintain her massive succulent&#xA;collection by building a self watering garden. This project would&#xA;consist of three primary components:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;The &lt;em&gt;soil sensor&lt;/em&gt; is a piece of hardware that she could place in&#xA;dirt to measure the soil moisture and a small pump to water the dry&#xA;soil.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;The &lt;em&gt;controller&lt;/em&gt; that will collect moisture data from all the soil&#xA;moisture sensors and provide a user interface to track moisture&#xA;levels and manually control the pump.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

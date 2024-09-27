@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+  
+  <title>Improving Quality by Testing Software</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G7XZRHH62T"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-G7XZRHH62T');
+  </script>
+</head>
+<body><header class="container bg-white">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <a class="navbar-brand text-muted text-monospace" href="/"><span claa="h1">rusty eddy:</span></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <nav class="navbar-nav w-100 justify-content-end">
+	<div class="nav w-100">
+  	  <a class="nav-link" href="/iot/"> iot &nbsp</a>
+  	  <a class="nav-link" href="/software"> software &nbsp</a> 
+  	  <a class="nav-link" href="/notes"> notes &nbsp</a>
+  	  <a class="nav-link" href="/resume"> resume &nbsp</a> 
+  	  <a class="nav-link" href="/about"> about &nbsp</a> 
+	</div>
+      </nav>
+    </div>
+  </nav>
+</header>
+<div class="jumbotron border-top border-bottom bg-white" >
+  <div class="row">
+    <div class="col-md"></div>
+    <div class="col-md-8 text-center">
+      <h1 class="header h2 pb-1">Improving Quality by Testing Software</h1>
+      <p class="leadin align-right text-muted text-center mt-0">
+        Developers when programming use VCS to create a temporary private branch to work from to avoid negatively effecting others while changing code. The developer and rest of the team rely on Software Testing to ensure new and changed code does what is required of it, and the new code MUST NOT break existing functionality. Getting testing right has many profound positive effects on the project, let me explain.
+
+      </p>
+    </div>
+    <div class="col-md"></div>
+  </div>
+
+  <div class="row text-center smaller-text">
+    <div class="col"></div>
+    <div class="col-8">
+      <nav class="nav justify-content-center">
+        
+        
+        
+        
+        
+      </nav>
+
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
+<section id="main">
+
+<div class="container">
+    <div class="row pt-4 mb-5 mt-5">
+	<div class="col"></div>
+	<div class="col-8 text-center">
+	    <img class="img-fluid justify-content-center" src="" />
+	</div>
+	<div class="col"></div>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="row mt-4">
+	<div class="col"></div>
+	<div class="col-lg-8 pl-4 pr-4">
+	    <article class="article">
+		<h2 id="testing-unit-and-systems">Testing Unit and Systems</h2>
+<p>Before any developers new code can be integrated into the <em>mainline</em>
+production code base, it must be <em>tested</em>, <em>vetted</em> and <em>peer
+reviewed</em>.</p>
+<p>Software Testing has been written about extensively, so I won&rsquo;t spend
+time here discussing testing directly, as there are as many ways to
+test software as there are technologies.</p>
+<h3 id="test-driven-development">Test Driven Development</h3>
+<p><em>Test Driven Development (TDD)</em> a <em>principal</em> for which I agree is necessary, but I don&rsquo;t <em>always</em> adhere to in practice. This is  usually out of
+laziness, haste or carelessness (I know sad but I&rsquo;m just being honest
+here). However, it is worth paying attention to&hellip;</p>
+<p>Anyways, the basic rules are:</p>
+<ol>
+<li>Write your test <strong>before</strong> writing the code</li>
+<li>The test <strong>will fail</strong> initially</li>
+<li>It is the <em>programmers</em> job to write code such that the test will pass.</li>
+</ol>
+<p>Brilliant!</p>
+<p>That is hard to argue with. However, taking the upfront time to build
+the tests before just hammering out the code, is much harder to do than
+say.</p>
+<h2 id="tdd-is-hard-not-technically-but-emotionally">TDD is hard, not technically, but emotionally</h2>
+<p>The hard part about writing <em>tests</em> upfront is that it forces us to
+<em>really</em> define what we are building.  You have to <em>drill down</em> a
+level or two.</p>
+<blockquote>
+<p>When defining tests, ask the &ldquo;Five whys?&rdquo;</p>
+</blockquote>
+<p>Once you have done the hard brain work and exposed the applications,
+<strong>true requirements</strong> implementing the test becomes striaght forward.</p>
+<blockquote>
+<p>TODO Reference to TDD</p>
+</blockquote>
+<p>Testing movements can be taken too far, for example spending a lot of
+time writing tests that are effectively worthless just for the sake of
+writing a test.</p>
+<p>However, testing is critical and we <em>must</em> find a good
+balance. The following are some general points that a good set of tests
+provide:</p>
+<ul>
+<li>Tests must cover all features and bug code changes</li>
+<li>Tests must be 100% repeatable</li>
+<li>Tests should be automated 100%, if possible</li>
+<li>Tests should combine <em>white</em> and <em>black</em> box testing</li>
+<li>Tests should be easy to run selectively</li>
+<li>Tests should produce nice reports</li>
+</ul>
+<p>Faithfully writing tests along with new code contributes over time to
+a increasingly stable code base.</p>
+<h3 id="testing-builds-confidence">Testing Builds Confidence</h3>
+<p>As software projects evolve over time, developers and users gain
+benefits beyond just <em>stable software</em> including:</p>
+<ol>
+<li>
+<p>Confidence to the point of taking the software for granted. They then
+begin to rely on the software without even realizing it.</p>
+</li>
+<li>
+<p>Operational problems become rare because most issue are caught and
+fixed in a lab or a <em>controlled</em> system on the client site.</p>
+</li>
+<li>
+<p>When problems do occur they are typically resolved very
+quickly. Stable products tend to be well documented, as well as having meaningful
+logs and great support tools.</p>
+</li>
+<li>
+<p>Software Development Becomes Faster</p>
+</li>
+</ol>
+<p>The test environment creates a <em>factory</em> for producing well machined
+software.</p>
+<blockquote>
+<p>High quality code can be developed and released quickly, with little
+risk of new failures.</p>
+</blockquote>
+<p>A good test rig will allow the developer to easily run selective tests
+from the <em>developers development process (REPL)</em>. The result is a much
+higher rate of software delivery without an increase in error rates.</p>
+<h2 id="automated-vs-manual-tests">Automated vs. Manual Tests</h2>
+<p>Tests are far more effective when they are clearly written down. Even
+better, written down AND automated.</p>
+<p>It is inevitable that some tests, at least in certain industries, may
+have to be conducted manually. For example, making sure a robot hand does not
+break a glass bottle.  Ideally however, you will try
+automating tests as close to 100% as possible.</p>
+<h3 id="complete-test-runs-all-the-time">Complete Test Runs ALL the Time</h3>
+<p>With automated tests it is easy to run a complete suite of
+tests for every software change and addition of new code.</p>
+<p>Why not?</p>
+<p>Nothing will give a developer more confidence than comprehensive
+regression tests that are easy to run and easy to add new tests and
+modify existing ones.</p>
+<p>Automated tests will most likely provide the ability to run a subset
+of test or even pick a single specific one to run.</p>
+<p><em>The key is</em> a developer is free to run and re-run tests to her hearts
+content until she is convinced the code is ready for everybody else.</p>
+<h2 id="whitebox-vs-blackbox-testing">Whitebox vs. Blackbox Testing</h2>
+<h3 id="whitebox-testing">Whitebox Testing</h3>
+<p><em>White Box</em> testing means the <em>test function</em> has <em>internal</em> access to
+the the actual code being tested. In otherwords, the code can directly
+call any internal function or examine internal data structures.</p>
+<blockquote>
+<p><em>Unit Testing</em> is a standard form of <em>Whitebox Test</em>.</p>
+</blockquote>
+<p>Other <em>whitebox</em> tests may include performance and stress tests.</p>
+<h3 id="black-box-testing">Black Box Testing</h3>
+<p>Blackbox tests have <em>no access or knoweledge</em> of any <em>internal</em>
+functions or data structures, other than the applications &ldquo;Application
+Programming Interface&rdquo;.</p>
+<blockquote>
+<p><em>System Tests</em> are a standard form of <em>Blackbox Testing</em></p>
+</blockquote>
+<p>Other <em>blackbox</em> tests may also include performance and stress tests.</p>
+<h2 id="acceptance-tests--pass-without-fail">Acceptance Tests ~ Pass without Fail</h2>
+<p>Acceptance test is the term we will use for our <em>final system tests</em>.
+The tests that validate the <em>delivery agreement</em> between <em>development</em>
+and <em>client</em>.</p>
+<p>Before any <em>release</em> passes to a customer, the entire suite of
+<em>Acceptance Tests</em> must <strong>pass without fail</strong>.</p>
+<p>Acceptance tests are <em>System Tests</em> in that they will often involve
+co-ordination among two or more <em>sub-systems</em> or <em>micro-services</em>, as
+we like to call them now.  For example, a database and inputs from a
+sensor are two <em>sub-systems</em> that are frequently found in <em>embedded</em>
+and <em>IoT</em> style software projects.</p>
+
+	    </article>
+	</div>
+	<div class="col"></div>
+    </div>
+
+</div>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-8">
+            <script async data-uid="50dfcceaf3" src="https://skilled-producer-5787.ck.page/50dfcceaf3/index.js"></script>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
+
+	</section><footer id="footer" class="container-fluid footer small-text pt-4 border-top">
+  <section class="row">
+    <div class="col"></div>
+    <div class="col text-right">
+      <div class="address">419 Main St. #439</div>
+      <div class="city">Huntington Beach, CA. 92648</div>
+    </div>
+    <div class="col-3 text-center">
+      <div>
+        Last update ~
+        
+	
+        Saturday, May 4, 2019
+	
+        
+      </div>
+      <div>site by <a href="/">Eddy Consulting, LLC.</a> ~ &#xA9; 2008 to 2024 </div>
+    </div>
+    <div class="col">
+      <div class="text-left">
+	<div class="phone">(714) 362-5402</div>
+	<a href="https://github.com/rustyeddy">github</a> .
+	<a href="https://twitter.com/rustyeddy">twitter</a> .
+	<a href="https://linkedin.com/rustyeddy">linkedin</a><br/>	    
+      </div>
+    </div>
+    <div class="col"></div>
+  </section>
+</footer>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19940083-13"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+    </body>
+</html>

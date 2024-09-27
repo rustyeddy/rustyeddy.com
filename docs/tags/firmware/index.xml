@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Firmware on Rusty Eddy</title>
+    <link>http://www.rustyeddy.com/tags/firmware/</link>
+    <description>Recent content in Firmware on Rusty Eddy</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://www.rustyeddy.com/tags/firmware/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Radian Laser</title>
+      <link>http://www.rustyeddy.com/resume/clients/radian-laser/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://www.rustyeddy.com/resume/clients/radian-laser/</guid>
+      <description>&lt;p&gt;Radian is a small, fast moving startup that sells Laser Engravers and&#xA;Cutters. I manage five software projects, including two Web&#xA;Applications for the control and calibration of the Laser system. I&#xA;am also responsible for the successful delivery and maintanance of the&#xA;products Firmaware and Fleet Management system.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;C/C++, Go &amp;amp; Python, embedded systems and microservices.&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
+    </item>
+  </channel>
+</rss>
