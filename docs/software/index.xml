@@ -4,7 +4,7 @@
     <title>Software Development Lifecycle Phases on Rusty Eddy</title>
     <link>http://www.rustyeddy.com/software/</link>
     <description>Recent content in Software Development Lifecycle Phases on Rusty Eddy</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 02 Jun 2021 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://www.rustyeddy.com/software/index.xml" rel="self" type="application/rss+xml" />
@@ -13,77 +13,77 @@
       <link>http://www.rustyeddy.com/software/software-is-hard/</link>
       <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/software/software-is-hard/</guid>
-      <description>Why Is Software So Difficult? Software development projects are one of the most notoriously mis-understood and incorrectly managed of all the common processes used throughout the business world.&#xA;There are a number of reasons for software projects being classified as a disastor so often. Software often is solving a complex problem that unfortunately can&amp;rsquo;t be seen.&#xA;Perhaps the worst problem with software projects are the diverging expectations between developers and users.</description>
+      <description>&lt;h2 id=&#34;why-is-software-so-difficult&#34;&gt;Why Is Software So Difficult?&lt;/h2&gt;&#xA;&lt;p&gt;Software development projects are one of the most notoriously&#xA;mis-understood and incorrectly managed of all the &lt;em&gt;common&lt;/em&gt; processes&#xA;used throughout the business world.&lt;/p&gt;&#xA;&lt;p&gt;There are a number of reasons for software projects being classified&#xA;as a disastor so often. Software often is solving a complex problem&#xA;that unfortunately can&amp;rsquo;t be seen.&lt;/p&gt;&#xA;&lt;p&gt;Perhaps the worst problem with software projects are the diverging&#xA;expectations between developers and users.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Agile Software Development</title>
       <link>http://www.rustyeddy.com/software/agile-software-development/</link>
       <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/software/agile-software-development/</guid>
-      <description> Content Being Drafted </description>
+      <description>&lt;hr/&gt;&#xA;&lt;h2&gt;&lt;center&gt;Content Being Drafted&lt;/center&gt;&lt;/h2&gt;&#xA;&lt;hr/&gt;</description>
     </item>
     <item>
       <title>Use Cases</title>
       <link>http://www.rustyeddy.com/software/use-cases/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/software/use-cases/</guid>
-      <description> Content Being Drafted Content Being Drafted </description>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;This definition is from the&#xA;&lt;a href=&#34;https://www.wrike.com/blog/what-is-a-use-case&#34;&gt;Wrike&lt;/a&gt;&#xA;website:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;A use case is a concept used in software development, product&#xA;design, and other fields to describe how a system can be used to&#xA;achieve specific goals or tasks. It outlines the interactions between&#xA;users or actors and the system to achieve a specific outcome.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;history&#34;&gt;History&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;First article on Use Cases was established by Swedish computer&#xA;scientist Ivar Jacobson in 1987 originally used by&#xA;telecommunications company Ericsson to capture system requirements.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Organizing Software Projects with Kanban</title>
       <link>http://www.rustyeddy.com/software/kanban/</link>
       <pubDate>Wed, 03 Mar 2021 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/software/kanban/</guid>
-      <description>Kanban is fantastically simple. We will create a board with 3 columns, Todo, Work In Progress and Complete.&#xA;Each column is populated with a single card for every task that must be done. The cards are prioritized and move through the system as the work progresses.&#xA;Good Kanban Reference My goal is NOT to describe Kanban itself. Instead, here is a good video if you are not already familiar with it.</description>
+      <description>&lt;p&gt;Kanban is fantastically simple. We will create a board with 3 columns,&#xA;&lt;em&gt;Todo&lt;/em&gt;, &lt;em&gt;Work In Progress&lt;/em&gt; and &lt;em&gt;Complete&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Each column is populated with a single card for every task that must be&#xA;done. The cards are prioritized and move through the system as the&#xA;work progresses.&lt;/p&gt;&#xA;&lt;h2 id=&#34;good-kanban-reference&#34;&gt;Good Kanban Reference&lt;/h2&gt;&#xA;&lt;p&gt;My goal is NOT to describe Kanban itself. Instead, here is a good video&#xA;if you are not already familiar with it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Version Control Systems</title>
       <link>http://www.rustyeddy.com/software/version-control-systems/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/software/version-control-systems/</guid>
-      <description> Content Being Drafted Content Being Drafted </description>
+      <description>&lt;hr/&gt;&#xA;&lt;h2&gt;&lt;center&gt;Content Being Drafted&lt;/center&gt;&lt;/h2&gt;&#xA;&lt;hr/&gt;&#xA;&#xA;&#xA;&#xA;&lt;hr/&gt;&#xA;&lt;h2&gt;&lt;center&gt;Content Being Drafted&lt;/center&gt;&lt;/h2&gt;&#xA;&lt;hr/&gt;</description>
     </item>
     <item>
       <title>Test Driven Software Development</title>
       <link>http://www.rustyeddy.com/software/test-driven-software-development/</link>
       <pubDate>Sun, 04 Apr 2021 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/software/test-driven-software-development/</guid>
-      <description> Content Being Drafted </description>
+      <description>&lt;hr/&gt;&#xA;&lt;h2&gt;&lt;center&gt;Content Being Drafted&lt;/center&gt;&lt;/h2&gt;&#xA;&lt;hr/&gt;</description>
     </item>
     <item>
       <title>Peer Reviews</title>
       <link>http://www.rustyeddy.com/software/peer-review/</link>
       <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/software/peer-review/</guid>
-      <description> Content Being Drafted </description>
+      <description>&lt;hr/&gt;&#xA;&lt;h2&gt;&lt;center&gt;Content Being Drafted&lt;/center&gt;&lt;/h2&gt;&#xA;&lt;hr/&gt;</description>
     </item>
     <item>
       <title>Data Models</title>
       <link>http://www.rustyeddy.com/software/data-models/</link>
       <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/software/data-models/</guid>
-      <description> Content Being Drafted </description>
+      <description>&lt;hr/&gt;&#xA;&lt;h2&gt;&lt;center&gt;Content Being Drafted&lt;/center&gt;&lt;/h2&gt;&#xA;&lt;hr/&gt;</description>
     </item>
     <item>
       <title>Wireframes and Storyboards</title>
       <link>http://www.rustyeddy.com/software/wireframes-and-storyboards/</link>
       <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/software/wireframes-and-storyboards/</guid>
-      <description> Content Being Drafted </description>
+      <description>&lt;hr/&gt;&#xA;&lt;h2&gt;&lt;center&gt;Content Being Drafted&lt;/center&gt;&lt;/h2&gt;&#xA;&lt;hr/&gt;</description>
     </item>
     <item>
       <title>Release Process</title>
       <link>http://www.rustyeddy.com/software/release-process/</link>
       <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/software/release-process/</guid>
-      <description> Content Being Drafted </description>
+      <description>&lt;hr/&gt;&#xA;&lt;h2&gt;&lt;center&gt;Content Being Drafted&lt;/center&gt;&lt;/h2&gt;&#xA;&lt;hr/&gt;</description>
     </item>
     <item>
       <title>Web Developers Guide to Web Design</title>
       <link>http://www.rustyeddy.com/software/website-design-process/</link>
       <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/software/website-design-process/</guid>
-      <description> Content Being Drafted </description>
+      <description>&lt;hr/&gt;&#xA;&lt;h2&gt;&lt;center&gt;Content Being Drafted&lt;/center&gt;&lt;/h2&gt;&#xA;&lt;hr/&gt;</description>
     </item>
   </channel>
 </rss>

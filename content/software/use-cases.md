@@ -7,44 +7,96 @@ description: >
 weight: 20
 ---
 
-{{< draft >}}
-## References Definition of Use Case
+## Overview
 
-### [Wrike](https://www.wrike.com/blog/what-is-a-use-case)
+This definition is from the
+[Wrike](https://www.wrike.com/blog/what-is-a-use-case) 
+website:
 
 > A use case is a concept used in software development, product
 > design, and other fields to describe how a system can be used to
 > achieve specific goals or tasks. It outlines the interactions between
 > users or actors and the system to achieve a specific outcome.  
 
+## History 
 
-### [Ivar Jacobson](https://www.ivarjacobson.com/publications/articles/use-cases-ultimate-guide)
+- First article on Use Cases was established by Swedish computer
+  scientist Ivar Jacobson in 1987 originally used by
+  telecommunications company Ericsson to capture system requirements.
+   
+- In 1992 Jacobson co-authored the book "Object-Oriented Software
+  Engineering - A Use Case Driven Approach" to help specifying
+  functional requirements in Software Development
 
 
+## References Definition of Use Case
+
+- [Ivar Jacobson](https://www.ivarjacobson.com/publications/articles/use-cases-ultimate-guide)
+
+This document about use-cases is by the one and only Ivar Jacobson
+himself. This document claims to be uses cases 2.0, an improvement on
+the revolutionary process of extracting and defining requirements for
+software projects.
 
 
 ## Outline
 
-### Wrike website above
+### Overview
 
-1. Defines the various ways users will use the software
+- Defines the various ways users will use the system/software
 
-2. Can and should establish success and failure scenarios
+- Can and should establish success and failure scenarios
 
-3. First article on Use Cases was established by Swedish computer
-   scientist Ivar Jacobson in 1987 originally used by
-   telecommunications company Ericsson to capture system
-   requirements. 
+- Used to capture system requirements
    
-4. In 1992 Jacobson co-authored the book "Object-Oriented Software
-   Engineering - A Use Case Driven Approach" to help specifying
-   functional requirements in Software Development
+- Use cases should help capture success and failure scenarios
 
-5. Use cases capture all of the uses of a software system which in
-   totality define the full set of requirements for the system.
+- Use cases can help define functionality in an incremental aligned
+  with _agile_ methodologies. 
+  
+- Use cases do not tell you HOW you should plan, schedule, test or
+  develop the system, but do define a structure of that can be used to
+  engage these practices
+  
+### First Principals
+
+Acording to Jacobson these are the _first principals_:
+
+1. Keep it simple by telling stories
+   - Story telling is the easiest and most effective way to
+     pass knowlege from one person to another. Story telling is older
+     than the Bible! 
+
+   - Each story will tell of a single way to successfully achieve a
+     specific goal of the system, also how to handle problems that
+     will inevitably arise.
+     
+   - A single use case is a story focused on achieving a single goal
    
-6. Use cases define particular features that can be define in an
-   incremental fashion and developed using _agile_ methodologies.
+   - Do NOT attempt to describe the entire system in one long story
+     rather break the system down into a series of small very short
+     stories. 
+     
+   - The stories must be communicated and captured in a way that makes
+     them actionable and testable, i.e. they can be _measured_ in a
+     concrete way
+     
+   - The test cases are the most important part of the Use-case, as
+     they define what a successful outcome is.
+
+
+2. Understand the big picture
+3. Focus on value
+4. Build the system in slices
+5. Deliver the system in increments
+6. Adapt to meet the team's nees.
+
+
+
+
+---
+
+## Previous writings
 
 
 ## Customer Discovery
@@ -135,11 +187,6 @@ If you want working software, provide a working set of goals.
 All these tasks have to add up to the MVP. Anything that does not
 directly and immediately get the software project closer to an MVP
 must be avoided.
-{{</draft>}}
-
-
-{{<draft>}}
-
 
 ### Start A Specific and Measureable Goal
 
@@ -165,4 +212,4 @@ endpoint. They must not be
 4. Realistic: do not make people feel like the must continually be
    superwoman.
 
-{{</draft>}}
+

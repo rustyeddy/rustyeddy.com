@@ -40,7 +40,7 @@
     </div>
   </nav>
 </header>
-<div class="jumbotron border-top border-bottom bg-white" >
+<div id="jumbotron" class="jumbotron border-top border-bottom bg-white" >
   <div class="row">
     <div class="col-md"></div>
     <div class="col-md-8 text-center">
@@ -86,18 +86,202 @@
 	<div class="col"></div>
 	<div class="col-lg-8 pl-4 pr-4">
 	    <article class="article">
-		<hr/>
-<h2><center>Content Being Drafted</center></h2>
-<hr/>
-
-
-
-<hr/>
-<h2><center>Content Being Drafted</center></h2>
-<hr/>
-
-
-
+		<h2 id="overview">Overview</h2>
+<p>This definition is from the
+<a href="https://www.wrike.com/blog/what-is-a-use-case">Wrike</a>
+website:</p>
+<blockquote>
+<p>A use case is a concept used in software development, product
+design, and other fields to describe how a system can be used to
+achieve specific goals or tasks. It outlines the interactions between
+users or actors and the system to achieve a specific outcome.</p>
+</blockquote>
+<h2 id="history">History</h2>
+<ul>
+<li>
+<p>First article on Use Cases was established by Swedish computer
+scientist Ivar Jacobson in 1987 originally used by
+telecommunications company Ericsson to capture system requirements.</p>
+</li>
+<li>
+<p>In 1992 Jacobson co-authored the book &ldquo;Object-Oriented Software
+Engineering - A Use Case Driven Approach&rdquo; to help specifying
+functional requirements in Software Development</p>
+</li>
+</ul>
+<h2 id="references-definition-of-use-case">References Definition of Use Case</h2>
+<ul>
+<li><a href="https://www.ivarjacobson.com/publications/articles/use-cases-ultimate-guide">Ivar Jacobson</a></li>
+</ul>
+<p>This document about use-cases is by the one and only Ivar Jacobson
+himself. This document claims to be uses cases 2.0, an improvement on
+the revolutionary process of extracting and defining requirements for
+software projects.</p>
+<h2 id="outline">Outline</h2>
+<h3 id="overview-1">Overview</h3>
+<ul>
+<li>
+<p>Defines the various ways users will use the system/software</p>
+</li>
+<li>
+<p>Can and should establish success and failure scenarios</p>
+</li>
+<li>
+<p>Used to capture system requirements</p>
+</li>
+<li>
+<p>Use cases should help capture success and failure scenarios</p>
+</li>
+<li>
+<p>Use cases can help define functionality in an incremental aligned
+with <em>agile</em> methodologies.</p>
+</li>
+<li>
+<p>Use cases do not tell you HOW you should plan, schedule, test or
+develop the system, but do define a structure of that can be used to
+engage these practices</p>
+</li>
+</ul>
+<h3 id="first-principals">First Principals</h3>
+<p>Acording to Jacobson these are the <em>first principals</em>:</p>
+<ol>
+<li>
+<p>Keep it simple by telling stories</p>
+<ul>
+<li>
+<p>Story telling is the easiest and most effective way to
+pass knowlege from one person to another. Story telling is older
+than the Bible!</p>
+</li>
+<li>
+<p>Each story will tell of a single way to successfully achieve a
+specific goal of the system, also how to handle problems that
+will inevitably arise.</p>
+</li>
+<li>
+<p>A single use case is a story focused on achieving a single goal</p>
+</li>
+<li>
+<p>Do NOT attempt to describe the entire system in one long story
+rather break the system down into a series of small very short
+stories.</p>
+</li>
+<li>
+<p>The stories must be communicated and captured in a way that makes
+them actionable and testable, i.e. they can be <em>measured</em> in a
+concrete way</p>
+</li>
+<li>
+<p>The test cases are the most important part of the Use-case, as
+they define what a successful outcome is.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Understand the big picture</p>
+</li>
+<li>
+<p>Focus on value</p>
+</li>
+<li>
+<p>Build the system in slices</p>
+</li>
+<li>
+<p>Deliver the system in increments</p>
+</li>
+<li>
+<p>Adapt to meet the team&rsquo;s nees.</p>
+</li>
+</ol>
+<hr>
+<h2 id="previous-writings">Previous writings</h2>
+<h2 id="customer-discovery">Customer Discovery</h2>
+<p><em>Customer Discovery</em> consists of one or more customer discovery
+sessions, where all <em>users</em> and <em>owners</em> of the software will be
+interviewed for their expectations, needs and desires for the
+upcoming software project.</p>
+<p>Don&rsquo;t just stop at the first answer, it will be too vague. Dig deeper
+and start peeling back the details. This great article on the
+<a href="https://www.mindtools.com/pages/article/newTMC_5W.htm">Five Why&rsquo;s</a></p>
+<h2 id="user-stories">User Stories</h2>
+<p>The information gathered from these sessions are then articulated in a
+series of <em>non-technical</em> descriptions of how the software is used by
+everybody.</p>
+<p>These descriptions of the software requirements are often referred to
+as <em>User Stories</em>. Basically, each <em>story</em> walks through one of the
+ways in which the <em>planned</em> software will be used.</p>
+<h3 id="keep-language-plain">Keep Language Plain</h3>
+<p>The project can be discussed and understood best when the conversation
+is had in terms that the user is comfortable with.</p>
+<p>It is important to keep the language common and avoid tech talk such
+that <em>everybody</em> involved with the building and using the software can
+participate in the conversation.</p>
+<p>These user stories will later get broken down into specific tasks.</p>
+<p>The real value to user stories is to create them like they are
+recipes. Essentially software is about writing recipes with very
+specific rules.</p>
+<h2 id="the-good-ol-minimum-viable-product-mvp">The Good &lsquo;ol Minimum Viable Product (MVP)</h2>
+<p>An important result of the customer discovery session is a mutual
+agreement on what the minimum or useful (viable) piece of software is and
+which can be delivered as soon as possible.</p>
+<p>The primary purpose of the MVP is to get stuff out the door. We
+specifically want to avoid <em>disconnected development teams</em>.</p>
+<p>Software can be properly managed just like  construction project. That&rsquo;s only if the right processes and tools are established and enforced
+throughout the product lifecycle.</p>
+<blockquote>
+<p>Read The <a href="http://theleanstartup.com/">Lean Startup</a> to really understand how to get specific about building a product your target market will be crazy about.</p>
+</blockquote>
+<p>This is an involved and very important topic. I&rsquo;m not going to attempt to
+repeat or summarize them in this document, but we will assume that we
+have a pretty clear picture of the application we are developing, at
+least enough for now.</p>
+<h2 id="tasks-are-small-and-measurable">Tasks Are Small and Measurable</h2>
+<p>The tasks that we come up with must be completed within a day or
+two. Any task that requires three days or more should probably be
+broken down into smaller bite-size tasks.</p>
+<p>We do not want to create tasks so that they&rsquo;re too big, ambiguous or
+subject to misinterpretation. If your team is not making progress in a
+day or two you should be able to know that immediately.</p>
+<p>Keeping the granularity of tasks small allows the team to <em>start
+stacking victories quickly</em> and more important, gives everybody a
+chance to see when a software project is about to make a left turn.</p>
+<h3 id="goals-are-most-effective-when-">Goals are Most Effective When &hellip;</h3>
+<p>Goals do not have to be obnoxious, obtuse, vague or
+pendantic. Just be real and reasonable.</p>
+<p>If you want working software, provide a working set of goals.</p>
+<ul>
+<li>Few in number, very targeted</li>
+<li>Communicated in normal people language (user stories)</li>
+<li>Provide users quick and immediate value</li>
+<li>Prioritized to deliver <em>usable value</em> incrementally</li>
+<li>Measurable and easy to determine when they are complete</li>
+<li>Everybody understands and agrees with the Goals</li>
+<li>Tasks should be 1-3 days max if possible (there will always be exceptions)</li>
+</ul>
+<p>All these tasks have to add up to the MVP. Anything that does not
+directly and immediately get the software project closer to an MVP
+must be avoided.</p>
+<h3 id="start-a-specific-and-measureable-goal">Start A Specific and Measureable Goal</h3>
+<p>It is surprising how many software project get underway without a
+clear direction to what they are building.</p>
+<blockquote>
+<p>Do NOT build a house before you have approved architectural
+drawings.</p>
+</blockquote>
+<p>The above statement should be self evident. The same applies to
+software.</p>
+<h3 id="define-good-goals">Define Good Goals</h3>
+<p>Good goals keep everybody focused and working toward the same
+endpoint. They must not be</p>
+<ol>
+<li>Singular: have a single requirement. Do not confuse the issue with
+second and third level concerns</li>
+<li>They are easy to understand to everybody is always on the same page</li>
+<li>Goals must be measurable, you have to be able to tell when they are
+done, or how well they are working.</li>
+<li>Realistic: do not make people feel like the must continually be
+superwoman.</li>
+</ol>
 
 	    </article>
 	</div>

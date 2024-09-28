@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>design on Rusty Eddy</title>
+    <title>Design on Rusty Eddy</title>
     <link>http://www.rustyeddy.com/categories/design/</link>
-    <description>Recent content in design on Rusty Eddy</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Design on Rusty Eddy</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 30 Dec 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://www.rustyeddy.com/categories/design/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>http://www.rustyeddy.com/software/website-design-process/</link>
       <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/software/website-design-process/</guid>
-      <description> Content Being Drafted </description>
+      <description>&lt;hr/&gt;&#xA;&lt;h2&gt;&lt;center&gt;Content Being Drafted&lt;/center&gt;&lt;/h2&gt;&#xA;&lt;hr/&gt;</description>
     </item>
   </channel>
 </rss>

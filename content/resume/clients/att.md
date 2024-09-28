@@ -1,6 +1,6 @@
 ---
 title: DirecTV / AT&T
-date: Dec 2016
+date: 2016-12-01
 start: Nov 2014
 finish: Dec 2016
 company: DirecTV / AT&T

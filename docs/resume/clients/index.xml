@@ -4,7 +4,7 @@
     <title>Eddy Consulting, LLC on Rusty Eddy</title>
     <link>http://www.rustyeddy.com/resume/clients/</link>
     <description>Recent content in Eddy Consulting, LLC on Rusty Eddy</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 27 Jan 2021 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://www.rustyeddy.com/resume/clients/index.xml" rel="self" type="application/rss+xml" />
@@ -32,14 +32,14 @@
     <item>
       <title>Cloud Trek</title>
       <link>http://www.rustyeddy.com/resume/clients/alchemy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 01 Apr 2017 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/resume/clients/alchemy/</guid>
       <description>&lt;p&gt;Alchemy Networks is an indepently owned service provider. I automated&#xA;the provisioning of their Private Cloud Service offering. I was an&#xA;individual contributor on this project. I collaborated with another&#xA;developer.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Ansible, Linux, Python, Websockets, Networking&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>DirecTV / AT&amp;T</title>
       <link>http://www.rustyeddy.com/resume/clients/att/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 01 Dec 2016 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/resume/clients/att/</guid>
       <description>&lt;p&gt;I was hired by DirecTV (and subsequently AT&amp;amp;T) to help lead the new&#xA;Software Defined Networking (SDN) team. We were tasked with replacing&#xA;the companies aging production Video Distribution Network with a new&#xA;modernized design. Project goals included:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Replace aged network with modern SDN solution&lt;/li&gt;&#xA;&lt;li&gt;Solution to incrementally replace existing production network&lt;/li&gt;&#xA;&lt;li&gt;Development would build on industry standard OpenSource solutions&lt;/li&gt;&#xA;&lt;li&gt;Had to be Reliable and Scalable&lt;/li&gt;&#xA;&lt;li&gt;Linux, OpenFlow, Java and Python&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
