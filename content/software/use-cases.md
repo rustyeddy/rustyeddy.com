@@ -86,8 +86,50 @@ Acording to Jacobson these are the _first principals_:
 
 
 2. Understand the big picture
-3. Focus on value
+   - You need to understand the big picture in order to make
+     prioritized decisions on what should be added and what needs to
+     be left out.
+     
+   - He goes into creating use case diagrams
+   
+   - Use cases do not have to involve people, they can involve other
+     automated entities.
+     
+   - use cases can involve actions from many different users. You can
+     have end users, system administrators and support people for
+     example. 
+     
+   - The goal is to make the collection of Use case goals accessible
+     to everyone. Use case diagrams can help visualize the various use
+     cases. 
+
+3. Focus on Value
+   
+   - When trying to understand how a system is going to be used, it is
+     important to focus on the value it provides the users and other
+     stakeholders
+   
+   - The goal is to focus on the specific value the system will give a
+     specifig user, rather than long lists of functionality.
+     
+   - Start with the simplest possible way to achieve the goal
+   
+   - Provides an example
+
+   - The use cases can have optional cases or variations on the
+     standard simple case
+     
+   - Alternative flows / cases do NOT have to be captured at the same
+     time. These can be added later.
+     
+   - It is almost always more valuable to complete and deliver the
+     simple easy use case first, get feedback and incrementally
+     deliver alternative flows later.  Rather than wait for all
+     features to be perfect
+     
 4. Build the system in slices
+   - 
+
 5. Deliver the system in increments
 6. Adapt to meet the team's nees.
 
@@ -211,5 +253,6 @@ endpoint. They must not be
    done, or how well they are working.
 4. Realistic: do not make people feel like the must continually be
    superwoman.
+
 
 
