@@ -83,7 +83,7 @@ Todo: place a link to the various other user stories.
 ### Use Cases and Requirements
 
 These user stories are typically refered to as 
-[_usecases_](/software/use-cases/), which are will establish the
+[_use cases_](/software/use-cases/), which are will establish the
 direction of the entire rest of the software development
 project. These use cases allow us to start pulling out the
 _requirements_ and start drafting up the _Software Architecture_ 
