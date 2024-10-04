@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ffmpeg on Rusty Eddy</title>
-    <link>http://localhost:1313/tags/ffmpeg/</link>
+    <link>http://localhost:49725/tags/ffmpeg/</link>
     <description>Recent content in Ffmpeg on Rusty Eddy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 23 Apr 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/ffmpeg/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:49725/tags/ffmpeg/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Streaming Video Tools</title>
-      <link>http://localhost:1313/notes/streaming-video-tools/</link>
+      <link>http://localhost:49725/notes/streaming-video-tools/</link>
       <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/streaming-video-tools/</guid>
+      <guid>http://localhost:49725/notes/streaming-video-tools/</guid>
       <description>&lt;p&gt;The grandparents of streaming video, and snapshots, read, writing&#xA;and transcoding video and single frame images are &lt;em&gt;ffmpeg&lt;/em&gt;, &lt;em&gt;vlc&lt;/em&gt; and&#xA;&lt;em&gt;gstreamer&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Other platforms, such as the wildly cool and inexpensive Raspberry Pi&#xA;and attached CSI Camera (Raspberry Pi Camera) have thier own set of&#xA;utilities: like raspivid.  Or the NVidia Nano with it&amp;rsquo;s gst-streamer&#xA;plugins and nvgst-capture/nvgst-playback utilies.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;This writting is as of March 2019&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h3 id=&#34;gstreamer-complex-flexible-future-proof&#34;&gt;GStreamer Complex, Flexible, Future Proof&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;GStreamer&lt;/strong&gt; really complex pipelines but insanely flexible.&lt;/p&gt;</description>
     </item>
   </channel>

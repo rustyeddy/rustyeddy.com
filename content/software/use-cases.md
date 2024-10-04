@@ -7,6 +7,8 @@ description: >
 weight: 20
 ---
 
+## Why Use-Cases?
+
 This post is going to talk about how we will use normal conversations
 with the users of a software project we are about develop to lay the
 foundation for the entire software development project.
@@ -20,7 +22,94 @@ _Customer Discovery_ consists of one or more sessions with all the
 people (stakeholders) of the software (we'll call them users) and get
 them to tell us stories about how the are going use the software.
 
-From these stories we will start extracting the core requirements,
+Every story will be in plain, non-techy common language from the POV
+of the user.  We will unravel each of the user stories into a series
+of _use-cases_, much like unraveling a complex novel into a series of
+short stories each with a single plot and conclusion.
+
+The goal for each _use-case_ is break down the various ways the system
+will _provide value_ to the user into a singular activities with clear
+and measurable objectives.
+
+### Here's An Example
+
+My wife, Kelly is an active gardner, specifically she is really into
+_succulents_ which do well in the dry warm climate we live in costal
+Southern California. Succulents, like almost every other plant need
+water, however you have to be very careful NOT to over water them.
+
+They tend to be on the smaller to medium size plants where Kelly has a
+few hundred of these crazy looking plants all over the place making
+the process of caring for them a challenge, in particular keeping
+water schedules.
+
+#### Automated Watering System
+
+So I thought I'd help her out and devise an automated water system for
+her garden. This project is not just software but will also involve
+prototyping and building hardware as well.
+
+> Use-cases are not only valuable for software, but can be used while
+> designing hardware or system for matter, including even a business!
+
+Let's start with a hypothetical _Customer Discovery_ session that
+could happen in the real world. In reality I derived the use cases
+from years of watching and listening to her talk about this stuff, but
+you don't have years so I'll summarize it in a hypothetical conversion
+that could have really happend.
+
+#### The User Story
+
+Here is the hypothetical summary of the automated sprinkler system
+that Kelly ask me to build: 
+
+> I have a garden of a few hundred succulents consisting of a variety
+> of types, succulents are very resilient but are sensitive to over
+> watering and each variety can have different watering needs.
+>
+> I need an irrigation system that can automatically water my
+> succulents when the soil becomes too dry, yet be very careful not to
+> over water.
+>
+> I need to be able to adjust the soil moisture levels for different
+> types of plants, because not one size fits all.
+>
+> It will also be nice to be able to manually water by pressing a
+> button or even in some cases put watering on a schedule. Oh and
+> wouldn't also be cool to keep track of temprature and humidity?
+>
+> Ya know, now that I think about it, can we also control some lights
+> as well? Oh, one more thing, I'd like to observe and control my
+> gardens sprinklers from anywhere with my phone.
+
+Notice how no techy talk is involved in Kelly's description of what
+she wants out of this magic gardening system. Also notice how the pretty
+simple concept of automatically watering dry plants is starting to
+grow more complex with feature creep?
+
+```
+Use plain language in user speak
+```
+
+## User Story to Use Cases
+
+OK, now we are going to break down this quasi derived conversation
+into use-cases that we will then:
+
+1. Derive into a set of _testable requirements_
+2. Bust out a todo list with well defined work items
+3. Begin to design the _User eXperience_ with _wireframes_ and
+   _storyboards_
+4. Define our _Minimum Viable Product (MVP)_
+5. Get ready to start building
+   
+The concept is simple and easy to understand, even our small example
+this is a bit to unpack so let's get started.
+
+
+## Requirements and Acceptance Tests
+
+From each of these use-cases stories we can start extracting the core requirements,
 desired features and all their hopes and dreams. We will break these
 stories down into _use cases_.
 
@@ -28,30 +117,79 @@ Now let's get into what exactly these _use cases_ are going to look
 like as well as how we are going to break them down into
 _requirements_, _tests_ and prioritize them into specific work items. 
 
-### User Stories become Use-Cases
+### Breaking out the use-cases
 
-The information gathered from these sessions are then articulated in a
-series of _non-technical_ descriptions of how the software is used by
-everybody.
+The primary subject of the conversation is that Kelly can use help
+watering her hundreds of succulents most of which are sensitive to
+specific soil moisture levels.
 
-These descriptions of the software requirements are often referred to
-as _User Stories_. Basically, each _story_ walks through one of the
-ways in which the _planned_ software will be used.
+The story went on to bring up other wants from the system, some
+required, some nice to haves but we will break them all out
+individually focusing on the most important objective first, then
+working through the rest of the _wants_ and _needs_ until we are done. 
 
-### Keep Language Plain
+```
+Break out a single objective for each use case and focus on the
+specific value it provides the user
+```
 
-The project can be discussed and understood best when the conversation
-is had in terms that the user is comfortable with.
+#### Use-case 1: Water Plants when the soild is too dry
 
-It is important to keep the language common and avoid tech talk such
-that _everybody_ involved with the building and using the software can
-participate in the conversation.
+> Use-case 1: Peridoically measure the moisture level of soil and turn
+> on a water pump when the soil is dry, then turn it off when it gets
+> too wet.
 
-These user stories will later get broken down into specific tasks.
+##### Requirements for this use-case
 
-The real value to user stories is to create them like they are
-recipes. Essentially software is about writing recipes with very
-specific rules.   
+The first use-case can now be summarized into the following three
+requirements: 
+
+1. Periodically measure soil moisture levels
+2. If the moisture level drops below a certain level start watering
+3. Turn water off when the moisture hits a high point
+
+We will find as we move on even this basic requirements are going to
+be broke down into more detailed specifics as we start moving into
+development. 
+
+The key at this point is to still keep the words and conversation in
+the users terminology, as they are still a very important part of this
+process. 
+
+##### The Specific Value of this use-case
+
+The tangible value that Kelly gets out of this use-case is not having to
+manually track and water plant herself
+
+##### The acceptance test for this use-case
+
+The _acceptance test_ for this use-case will be observe a water pump
+get activated when the moisture level hits the low mark, and the water
+pump stop when it hits the high mark.
+
+##### The User eXperience - User Interface
+
+This use case does not actually have any user inputs or outputs other
+than her knowing her plants are being watered with out have to
+manually check and water herself.
+
+In future use-cases we will involve a specific user interface, for
+example: 
+
+1. An ability to change the high and low moisture level configurations
+2. Push a button, either physical or on an app to start or stop water
+4. Look at an app or screen to see historic moisture levels and
+   watering times
+
+We will eventually get to these above use-cases as well, to keep this
+page from growing out of control we will continue with this use-case
+for the remainder of this document.
+
+If you want to see all of these use-cases broken out, clink on over to
+the project. ```TODO: link to iot project```
+
+
+---
 
 ## The Good 'ol Minimum Viable Product (MVP)
 

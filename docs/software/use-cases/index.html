@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=49725&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
@@ -86,7 +86,8 @@
 	<div class="col"></div>
 	<div class="col-lg-8 pl-4 pr-4">
 	    <article class="article">
-		<p>This post is going to talk about how we will use normal conversations
+		<h2 id="why-use-cases">Why Use-Cases?</h2>
+<p>This post is going to talk about how we will use normal conversations
 with the users of a software project we are about develop to lay the
 foundation for the entire software development project.</p>
 <p>These conversations are going to be in story form and we&rsquo;ll call them
@@ -95,29 +96,134 @@ foundation for the entire software development project.</p>
 <p><em>Customer Discovery</em> consists of one or more sessions with all the
 people (stakeholders) of the software (we&rsquo;ll call them users) and get
 them to tell us stories about how the are going use the software.</p>
-<p>From these stories we will start extracting the core requirements,
+<p>Every story will be in plain, non-techy common language from the POV
+of the user.  We will unravel each of the user stories into a series
+of <em>use-cases</em>, much like unraveling a complex novel into a series of
+short stories each with a single plot and conclusion.</p>
+<p>The goal for each <em>use-case</em> is break down the various ways the system
+will <em>provide value</em> to the user into a singular activities with clear
+and measurable objectives.</p>
+<h3 id="heres-an-example">Here&rsquo;s An Example</h3>
+<p>My wife, Kelly is an active gardner, specifically she is really into
+<em>succulents</em> which do well in the dry warm climate we live in costal
+Southern California. Succulents, like almost every other plant need
+water, however you have to be very careful NOT to over water them.</p>
+<p>They tend to be on the smaller to medium size plants where Kelly has a
+few hundred of these crazy looking plants all over the place making
+the process of caring for them a challenge, in particular keeping
+water schedules.</p>
+<h4 id="automated-watering-system">Automated Watering System</h4>
+<p>So I thought I&rsquo;d help her out and devise an automated water system for
+her garden. This project is not just software but will also involve
+prototyping and building hardware as well.</p>
+<blockquote>
+<p>Use-cases are not only valuable for software, but can be used while
+designing hardware or system for matter, including even a business!</p>
+</blockquote>
+<p>Let&rsquo;s start with a hypothetical <em>Customer Discovery</em> session that
+could happen in the real world. In reality I derived the use cases
+from years of watching and listening to her talk about this stuff, but
+you don&rsquo;t have years so I&rsquo;ll summarize it in a hypothetical conversion
+that could have really happend.</p>
+<h4 id="the-user-story">The User Story</h4>
+<p>Here is the hypothetical summary of the automated sprinkler system
+that Kelly ask me to build:</p>
+<blockquote>
+<p>I have a garden of a few hundred succulents consisting of a variety
+of types, succulents are very resilient but are sensitive to over
+watering and each variety can have different watering needs.</p>
+<p>I need an irrigation system that can automatically water my
+succulents when the soil becomes too dry, yet be very careful not to
+over water.</p>
+<p>I need to be able to adjust the soil moisture levels for different
+types of plants, because not one size fits all.</p>
+<p>It will also be nice to be able to manually water by pressing a
+button or even in some cases put watering on a schedule. Oh and
+wouldn&rsquo;t also be cool to keep track of temprature and humidity?</p>
+<p>Ya know, now that I think about it, can we also control some lights
+as well? Oh, one more thing, I&rsquo;d like to observe and control my
+gardens sprinklers from anywhere with my phone.</p>
+</blockquote>
+<p>Notice how no techy talk is involved in Kelly&rsquo;s description of what
+she wants out of this magic gardening system. Also notice how the pretty
+simple concept of automatically watering dry plants is starting to
+grow more complex with feature creep?</p>
+<pre tabindex="0"><code>Use plain language in user speak
+</code></pre><h2 id="user-story-to-use-cases">User Story to Use Cases</h2>
+<p>OK, now we are going to break down this quasi derived conversation
+into use-cases that we will then:</p>
+<ol>
+<li>Derive into a set of <em>testable requirements</em></li>
+<li>Bust out a todo list with well defined work items</li>
+<li>Begin to design the <em>User eXperience</em> with <em>wireframes</em> and
+<em>storyboards</em></li>
+<li>Define our <em>Minimum Viable Product (MVP)</em></li>
+<li>Get ready to start building</li>
+</ol>
+<p>The concept is simple and easy to understand, even our small example
+this is a bit to unpack so let&rsquo;s get started.</p>
+<h2 id="requirements-and-acceptance-tests">Requirements and Acceptance Tests</h2>
+<p>From each of these use-cases stories we can start extracting the core requirements,
 desired features and all their hopes and dreams. We will break these
 stories down into <em>use cases</em>.</p>
 <p>Now let&rsquo;s get into what exactly these <em>use cases</em> are going to look
 like as well as how we are going to break them down into
 <em>requirements</em>, <em>tests</em> and prioritize them into specific work items.</p>
-<h3 id="user-stories-become-use-cases">User Stories become Use-Cases</h3>
-<p>The information gathered from these sessions are then articulated in a
-series of <em>non-technical</em> descriptions of how the software is used by
-everybody.</p>
-<p>These descriptions of the software requirements are often referred to
-as <em>User Stories</em>. Basically, each <em>story</em> walks through one of the
-ways in which the <em>planned</em> software will be used.</p>
-<h3 id="keep-language-plain">Keep Language Plain</h3>
-<p>The project can be discussed and understood best when the conversation
-is had in terms that the user is comfortable with.</p>
-<p>It is important to keep the language common and avoid tech talk such
-that <em>everybody</em> involved with the building and using the software can
-participate in the conversation.</p>
-<p>These user stories will later get broken down into specific tasks.</p>
-<p>The real value to user stories is to create them like they are
-recipes. Essentially software is about writing recipes with very
-specific rules.</p>
+<h3 id="breaking-out-the-use-cases">Breaking out the use-cases</h3>
+<p>The primary subject of the conversation is that Kelly can use help
+watering her hundreds of succulents most of which are sensitive to
+specific soil moisture levels.</p>
+<p>The story went on to bring up other wants from the system, some
+required, some nice to haves but we will break them all out
+individually focusing on the most important objective first, then
+working through the rest of the <em>wants</em> and <em>needs</em> until we are done.</p>
+<pre tabindex="0"><code>Break out a single objective for each use case and focus on the
+specific value it provides the user
+</code></pre><h4 id="use-case-1-water-plants-when-the-soild-is-too-dry">Use-case 1: Water Plants when the soild is too dry</h4>
+<blockquote>
+<p>Use-case 1: Peridoically measure the moisture level of soil and turn
+on a water pump when the soil is dry, then turn it off when it gets
+too wet.</p>
+</blockquote>
+<h5 id="requirements-for-this-use-case">Requirements for this use-case</h5>
+<p>The first use-case can now be summarized into the following three
+requirements:</p>
+<ol>
+<li>Periodically measure soil moisture levels</li>
+<li>If the moisture level drops below a certain level start watering</li>
+<li>Turn water off when the moisture hits a high point</li>
+</ol>
+<p>We will find as we move on even this basic requirements are going to
+be broke down into more detailed specifics as we start moving into
+development.</p>
+<p>The key at this point is to still keep the words and conversation in
+the users terminology, as they are still a very important part of this
+process.</p>
+<h5 id="the-specific-value-of-this-use-case">The Specific Value of this use-case</h5>
+<p>The tangible value that Kelly gets out of this use-case is not having to
+manually track and water plant herself</p>
+<h5 id="the-acceptance-test-for-this-use-case">The acceptance test for this use-case</h5>
+<p>The <em>acceptance test</em> for this use-case will be observe a water pump
+get activated when the moisture level hits the low mark, and the water
+pump stop when it hits the high mark.</p>
+<h5 id="the-user-experience---user-interface">The User eXperience - User Interface</h5>
+<p>This use case does not actually have any user inputs or outputs other
+than her knowing her plants are being watered with out have to
+manually check and water herself.</p>
+<p>In future use-cases we will involve a specific user interface, for
+example:</p>
+<ol>
+<li>An ability to change the high and low moisture level configurations</li>
+<li>Push a button, either physical or on an app to start or stop water</li>
+<li>Look at an app or screen to see historic moisture levels and
+watering times</li>
+</ol>
+<p>We will eventually get to these above use-cases as well, to keep this
+page from growing out of control we will continue with this use-case
+for the remainder of this document.</p>
+<p>If you want to see all of these use-cases broken out, clink on over to
+the project. <code>TODO: link to iot project</code></p>
+<hr>
 <h2 id="the-good-ol-minimum-viable-product-mvp">The Good &lsquo;ol Minimum Viable Product (MVP)</h2>
 <p>An important result of the customer discovery session is a mutual
 agreement on what the minimum or useful (viable) piece of software is and
