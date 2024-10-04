@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Eddy Consulting, LLC on Rusty Eddy</title>
-    <link>http://www.rustyeddy.com/resume/clients/</link>
+    <link>http://localhost:1313/resume/clients/</link>
     <description>Recent content in Eddy Consulting, LLC on Rusty Eddy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 27 Jan 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://www.rustyeddy.com/resume/clients/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/resume/clients/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sugo Music Dashboard</title>
-      <link>http://www.rustyeddy.com/resume/clients/sugo-music/</link>
+      <link>http://localhost:1313/resume/clients/sugo-music/</link>
       <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/resume/clients/sugo-music/</guid>
+      <guid>http://localhost:1313/resume/clients/sugo-music/</guid>
       <description>&lt;p&gt;Sugo Music is an online Music publishing platform for Artists by&#xA;artists. It was my responsibility to manage the software process,&#xA;build and test the backend and manage the front-end development in&#xA;React.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Go, React, REST API, HTTP, HTML, JavaScript, Webapp, fullstack&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>Sahara Networks</title>
-      <link>http://www.rustyeddy.com/resume/clients/sahara-networks/</link>
+      <link>http://localhost:1313/resume/clients/sahara-networks/</link>
       <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/resume/clients/sahara-networks/</guid>
+      <guid>http://localhost:1313/resume/clients/sahara-networks/</guid>
       <description>&lt;p&gt;Sahara Networks is building something truley unique, connecting&#xA;micro-controllers and IoT devics across the network allowing virtual&#xA;circuits to be created. I help design, develop and lead the design and&#xA;implementation of the network protocol that delivers high speed&#xA;digital I/O signals across a &amp;ldquo;device network&amp;rdquo;.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Backend, C/C++, nodejs, TCP/IP and Raspberry Pi&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>Radian Laser</title>
-      <link>http://www.rustyeddy.com/resume/clients/radian-laser/</link>
+      <link>http://localhost:1313/resume/clients/radian-laser/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/resume/clients/radian-laser/</guid>
+      <guid>http://localhost:1313/resume/clients/radian-laser/</guid>
       <description>&lt;p&gt;Radian is a small, fast moving startup that sells Laser Engravers and&#xA;Cutters. I manage five software projects, including two Web&#xA;Applications for the control and calibration of the Laser system. I&#xA;am also responsible for the successful delivery and maintanance of the&#xA;products Firmaware and Fleet Management system.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;C/C++, Go &amp;amp; Python, embedded systems and microservices.&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>Cloud Trek</title>
-      <link>http://www.rustyeddy.com/resume/clients/alchemy/</link>
+      <link>http://localhost:1313/resume/clients/alchemy/</link>
       <pubDate>Sat, 01 Apr 2017 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/resume/clients/alchemy/</guid>
+      <guid>http://localhost:1313/resume/clients/alchemy/</guid>
       <description>&lt;p&gt;Alchemy Networks is an indepently owned service provider. I automated&#xA;the provisioning of their Private Cloud Service offering. I was an&#xA;individual contributor on this project. I collaborated with another&#xA;developer.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Ansible, Linux, Python, Websockets, Networking&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>DirecTV / AT&amp;T</title>
-      <link>http://www.rustyeddy.com/resume/clients/att/</link>
+      <link>http://localhost:1313/resume/clients/att/</link>
       <pubDate>Thu, 01 Dec 2016 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/resume/clients/att/</guid>
+      <guid>http://localhost:1313/resume/clients/att/</guid>
       <description>&lt;p&gt;I was hired by DirecTV (and subsequently AT&amp;amp;T) to help lead the new&#xA;Software Defined Networking (SDN) team. We were tasked with replacing&#xA;the companies aging production Video Distribution Network with a new&#xA;modernized design. Project goals included:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Replace aged network with modern SDN solution&lt;/li&gt;&#xA;&lt;li&gt;Solution to incrementally replace existing production network&lt;/li&gt;&#xA;&lt;li&gt;Development would build on industry standard OpenSource solutions&lt;/li&gt;&#xA;&lt;li&gt;Had to be Reliable and Scalable&lt;/li&gt;&#xA;&lt;li&gt;Linux, OpenFlow, Java and Python&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Sierra Hydrographics</title>
-      <link>http://www.rustyeddy.com/resume/clients/sierra-hydrog/</link>
+      <link>http://localhost:1313/resume/clients/sierra-hydrog/</link>
       <pubDate>Sat, 02 Jan 2010 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/resume/clients/sierra-hydrog/</guid>
+      <guid>http://localhost:1313/resume/clients/sierra-hydrog/</guid>
       <description>&lt;p&gt;Led the design and development of automated data collection for&#xA;hydrological gauging stations.  Data is gathered by pulling data from&#xA;line of sight telemetry radios and NOAA/LRGS satellite ground&#xA;stations. Data is fed to timeseries server for hydrological&#xA;calculations and alert monitoring.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Timeseries database, C/C++, PHP, Python and Java.&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>Green Hills Software</title>
-      <link>http://www.rustyeddy.com/resume/clients/green-hills/</link>
+      <link>http://localhost:1313/resume/clients/green-hills/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/resume/clients/green-hills/</guid>
+      <guid>http://localhost:1313/resume/clients/green-hills/</guid>
       <description>&lt;p&gt;I worked on a small team that added multicast forwarding to the &lt;em&gt;Integrity&lt;/em&gt; RTOS&#xA;kernal.  Modified multicast routing daemon to run on same operating&#xA;system allowing the product to serve as the foundation for a military&#xA;grade network switch/router.  Added IPv6 Neighbor Discovery to the&#xA;suite of routing protocols.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;C/C++ and Network Routing Protocols; Real Time OS.&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>The IMS Company</title>
-      <link>http://www.rustyeddy.com/resume/clients/ims-company/</link>
+      <link>http://localhost:1313/resume/clients/ims-company/</link>
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/resume/clients/ims-company/</guid>
+      <guid>http://localhost:1313/resume/clients/ims-company/</guid>
       <description>&lt;p&gt;Led a project to replicate entertainment media (music, video and&#xA;games) from a single media source to hundreds of in­flight&#xA;entertainment units with minimal redundancy.  Contributed to the&#xA;design and development of an inflight entertainment server.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Perl, Python, C/C++ and Java&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
   </channel>

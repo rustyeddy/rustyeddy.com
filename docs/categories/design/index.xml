@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Design on Rusty Eddy</title>
-    <link>http://www.rustyeddy.com/categories/design/</link>
+    <link>http://localhost:1313/categories/design/</link>
     <description>Recent content in Design on Rusty Eddy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 30 Dec 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://www.rustyeddy.com/categories/design/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/design/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Web Developers Guide to Web Design</title>
-      <link>http://www.rustyeddy.com/software/website-design-process/</link>
+      <link>http://localhost:1313/software/website-design-process/</link>
       <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/software/website-design-process/</guid>
+      <guid>http://localhost:1313/software/website-design-process/</guid>
       <description>&lt;hr/&gt;&#xA;&lt;h2&gt;&lt;center&gt;Content Being Drafted&lt;/center&gt;&lt;/h2&gt;&#xA;&lt;hr/&gt;</description>
     </item>
   </channel>

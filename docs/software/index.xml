@@ -2,87 +2,87 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Software Development Lifecycle Phases on Rusty Eddy</title>
-    <link>http://www.rustyeddy.com/software/</link>
+    <link>http://localhost:1313/software/</link>
     <description>Recent content in Software Development Lifecycle Phases on Rusty Eddy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 02 Jun 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://www.rustyeddy.com/software/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/software/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Software is Hard</title>
-      <link>http://www.rustyeddy.com/software/software-is-hard/</link>
+      <link>http://localhost:1313/software/software-is-hard/</link>
       <pubDate>Wed, 02 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/software/software-is-hard/</guid>
+      <guid>http://localhost:1313/software/software-is-hard/</guid>
       <description>&lt;h2 id=&#34;why-is-software-so-difficult&#34;&gt;Why Is Software So Difficult?&lt;/h2&gt;&#xA;&lt;p&gt;Software development projects are one of the most notoriously&#xA;mis-understood and incorrectly managed of all the &lt;em&gt;common&lt;/em&gt; processes&#xA;used throughout the business world.&lt;/p&gt;&#xA;&lt;p&gt;There are a number of reasons for software projects being classified&#xA;as a disastor so often. Software often is solving a complex problem&#xA;that unfortunately can&amp;rsquo;t be seen.&lt;/p&gt;&#xA;&lt;p&gt;Perhaps the worst problem with software projects are the diverging&#xA;expectations between developers and users.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Agile Software Development</title>
-      <link>http://www.rustyeddy.com/software/agile-software-development/</link>
+      <link>http://localhost:1313/software/agile-software-development/</link>
       <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/software/agile-software-development/</guid>
+      <guid>http://localhost:1313/software/agile-software-development/</guid>
       <description>&lt;hr/&gt;&#xA;&lt;h2&gt;&lt;center&gt;Content Being Drafted&lt;/center&gt;&lt;/h2&gt;&#xA;&lt;hr/&gt;</description>
     </item>
     <item>
       <title>Use Cases</title>
-      <link>http://www.rustyeddy.com/software/use-cases/</link>
+      <link>http://localhost:1313/software/use-cases/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/software/use-cases/</guid>
-      <description>&lt;h2 id=&#34;customer-discovery&#34;&gt;Customer Discovery&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Customer Discovery&lt;/em&gt; consists of one or more customer discovery&#xA;sessions, where all &lt;em&gt;users&lt;/em&gt; and &lt;em&gt;owners&lt;/em&gt; of the software will be&#xA;interviewed for their expectations, needs and desires for the&#xA;upcoming software project.&lt;/p&gt;&#xA;&lt;h3 id=&#34;user-stories-become-use-cases&#34;&gt;User Stories become Use-Cases&lt;/h3&gt;&#xA;&lt;p&gt;The information gathered from these sessions are then articulated in a&#xA;series of &lt;em&gt;non-technical&lt;/em&gt; descriptions of how the software is used by&#xA;everybody.&lt;/p&gt;&#xA;&lt;p&gt;These descriptions of the software requirements are often referred to&#xA;as &lt;em&gt;User Stories&lt;/em&gt;. Basically, each &lt;em&gt;story&lt;/em&gt; walks through one of the&#xA;ways in which the &lt;em&gt;planned&lt;/em&gt; software will be used.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/software/use-cases/</guid>
+      <description>&lt;p&gt;This post is going to talk about how we will use normal conversations&#xA;with the users of a software project we are about develop to lay the&#xA;foundation for the entire software development project.&lt;/p&gt;&#xA;&lt;p&gt;These conversations are going to be in story form and we&amp;rsquo;ll call them&#xA;&lt;em&gt;use cases&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;customer-discovery&#34;&gt;Customer Discovery&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Customer Discovery&lt;/em&gt; consists of one or more sessions with all the&#xA;people (stakeholders) of the software (we&amp;rsquo;ll call them users) and get&#xA;them to tell us stories about how the are going use the software.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Organizing Software Projects with Kanban</title>
-      <link>http://www.rustyeddy.com/software/kanban/</link>
+      <link>http://localhost:1313/software/kanban/</link>
       <pubDate>Wed, 03 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/software/kanban/</guid>
+      <guid>http://localhost:1313/software/kanban/</guid>
       <description>&lt;p&gt;Kanban is fantastically simple. We will create a board with 3 columns,&#xA;&lt;em&gt;Todo&lt;/em&gt;, &lt;em&gt;Work In Progress&lt;/em&gt; and &lt;em&gt;Complete&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Each column is populated with a single card for every task that must be&#xA;done. The cards are prioritized and move through the system as the&#xA;work progresses.&lt;/p&gt;&#xA;&lt;h2 id=&#34;good-kanban-reference&#34;&gt;Good Kanban Reference&lt;/h2&gt;&#xA;&lt;p&gt;My goal is NOT to describe Kanban itself. Instead, here is a good video&#xA;if you are not already familiar with it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Version Control Systems</title>
-      <link>http://www.rustyeddy.com/software/version-control-systems/</link>
+      <link>http://localhost:1313/software/version-control-systems/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/software/version-control-systems/</guid>
+      <guid>http://localhost:1313/software/version-control-systems/</guid>
       <description>&lt;hr/&gt;&#xA;&lt;h2&gt;&lt;center&gt;Content Being Drafted&lt;/center&gt;&lt;/h2&gt;&#xA;&lt;hr/&gt;&#xA;&#xA;&#xA;&#xA;&lt;hr/&gt;&#xA;&lt;h2&gt;&lt;center&gt;Content Being Drafted&lt;/center&gt;&lt;/h2&gt;&#xA;&lt;hr/&gt;</description>
     </item>
     <item>
       <title>Test Driven Software Development</title>
-      <link>http://www.rustyeddy.com/software/test-driven-software-development/</link>
+      <link>http://localhost:1313/software/test-driven-software-development/</link>
       <pubDate>Sun, 04 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/software/test-driven-software-development/</guid>
+      <guid>http://localhost:1313/software/test-driven-software-development/</guid>
       <description>&lt;hr/&gt;&#xA;&lt;h2&gt;&lt;center&gt;Content Being Drafted&lt;/center&gt;&lt;/h2&gt;&#xA;&lt;hr/&gt;</description>
     </item>
     <item>
       <title>Peer Reviews</title>
-      <link>http://www.rustyeddy.com/software/peer-review/</link>
+      <link>http://localhost:1313/software/peer-review/</link>
       <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/software/peer-review/</guid>
+      <guid>http://localhost:1313/software/peer-review/</guid>
       <description>&lt;hr/&gt;&#xA;&lt;h2&gt;&lt;center&gt;Content Being Drafted&lt;/center&gt;&lt;/h2&gt;&#xA;&lt;hr/&gt;</description>
     </item>
     <item>
       <title>Data Models</title>
-      <link>http://www.rustyeddy.com/software/data-models/</link>
+      <link>http://localhost:1313/software/data-models/</link>
       <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/software/data-models/</guid>
+      <guid>http://localhost:1313/software/data-models/</guid>
       <description>&lt;hr/&gt;&#xA;&lt;h2&gt;&lt;center&gt;Content Being Drafted&lt;/center&gt;&lt;/h2&gt;&#xA;&lt;hr/&gt;</description>
     </item>
     <item>
       <title>Wireframes and Storyboards</title>
-      <link>http://www.rustyeddy.com/software/wireframes-and-storyboards/</link>
+      <link>http://localhost:1313/software/wireframes-and-storyboards/</link>
       <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/software/wireframes-and-storyboards/</guid>
+      <guid>http://localhost:1313/software/wireframes-and-storyboards/</guid>
       <description>&lt;hr/&gt;&#xA;&lt;h2&gt;&lt;center&gt;Content Being Drafted&lt;/center&gt;&lt;/h2&gt;&#xA;&lt;hr/&gt;</description>
     </item>
     <item>
       <title>Release Process</title>
-      <link>http://www.rustyeddy.com/software/release-process/</link>
+      <link>http://localhost:1313/software/release-process/</link>
       <pubDate>Mon, 03 May 2021 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/software/release-process/</guid>
+      <guid>http://localhost:1313/software/release-process/</guid>
       <description>&lt;hr/&gt;&#xA;&lt;h2&gt;&lt;center&gt;Content Being Drafted&lt;/center&gt;&lt;/h2&gt;&#xA;&lt;hr/&gt;</description>
     </item>
     <item>
       <title>Web Developers Guide to Web Design</title>
-      <link>http://www.rustyeddy.com/software/website-design-process/</link>
+      <link>http://localhost:1313/software/website-design-process/</link>
       <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/software/website-design-process/</guid>
+      <guid>http://localhost:1313/software/website-design-process/</guid>
       <description>&lt;hr/&gt;&#xA;&lt;h2&gt;&lt;center&gt;Content Being Drafted&lt;/center&gt;&lt;/h2&gt;&#xA;&lt;hr/&gt;</description>
     </item>
   </channel>

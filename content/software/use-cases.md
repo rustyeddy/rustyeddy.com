@@ -7,12 +7,26 @@ description: >
 weight: 20
 ---
 
+This post is going to talk about how we will use normal conversations
+with the users of a software project we are about develop to lay the
+foundation for the entire software development project.
+
+These conversations are going to be in story form and we'll call them
+_use cases_.
+
 ## Customer Discovery
 
-_Customer Discovery_ consists of one or more customer discovery
-sessions, where all *users* and *owners* of the software will be
-interviewed for their expectations, needs and desires for the
-upcoming software project. 
+_Customer Discovery_ consists of one or more sessions with all the
+people (stakeholders) of the software (we'll call them users) and get
+them to tell us stories about how the are going use the software.
+
+From these stories we will start extracting the core requirements,
+desired features and all their hopes and dreams. We will break these
+stories down into _use cases_.
+
+Now let's get into what exactly these _use cases_ are going to look
+like as well as how we are going to break them down into
+_requirements_, _tests_ and prioritize them into specific work items. 
 
 ### User Stories become Use-Cases
 
