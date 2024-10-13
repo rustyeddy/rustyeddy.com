@@ -106,7 +106,6 @@ into use-cases that we will then:
 The concept is simple and easy to understand, even our small example
 this is a bit to unpack so let's get started.
 
-
 ## Requirements and Acceptance Tests
 
 From each of these use-cases stories we can start extracting the core requirements,
@@ -144,13 +143,19 @@ specific value it provides the user
 The first use-case can now be summarized into the following three
 requirements: 
 
+---
+
 1. Periodically measure soil moisture levels
-2. If the moisture level drops below a certain level start watering
+
+3. If the moisture level drops below a certain level start watering
+
 3. Turn water off when the moisture hits a high point
 
-We will find as we move on even this basic requirements are going to
+---
+
+We will find as we move on even these basic requirements are going to
 be broke down into more detailed specifics as we start moving into
-development. 
+development.
 
 The key at this point is to still keep the words and conversation in
 the users terminology, as they are still a very important part of this
@@ -159,27 +164,95 @@ process.
 ##### The Specific Value of this use-case
 
 The tangible value that Kelly gets out of this use-case is not having to
-manually track and water plant herself
+manually track and water plant herself while having confidence that
+her plants are being adequately watered without being over watered.
 
-##### The acceptance test for this use-case
+### The acceptance test for this use-case
 
-The _acceptance test_ for this use-case will be observe a water pump
+The _acceptance tests_ for this use-case will be observe a water pump
 get activated when the moisture level hits the low mark, and the water
-pump stop when it hits the high mark.
+pump stops when it hits the high mark.
+
+The tests are:
+
+---
+
+1. Water pump is not active when moisture level is below threshold
+
+2. Water pump activates when moisture crosses the dry threshold
+
+3. Water pump de-activate when moisture crosses the damp threshold
+
+---
+
+In the process of writing up these _acceptance tests_ it occurs to me
+that the watering may not be instantaneous depending on how often the
+moisture level is checked.
+
+Also that maybe there should be a visual to indicate the soil moisture
+level and if the pump should be running. 
+
+These are good examples of how use-cases and necessarily the
+respective acceptance tests can evolve as we start diving into the
+details. 
+
+As Ivar Jacobson likes to put it we'll start adding these details as
+we _slice up_ the use cases and define the _official acceptance
+tests_. 
+
+That brings up another important point, where do we draw a line in the
+sand and call an iteration _"finished"_ at least to the point we get
+it in the users hand for feedback.?.
+
+## The Minimum Viable Product (MVP)
+
+We need to determine exactly what use-cases and specific features
+_must_ be included in a release vs. which features can be _back logged_ 
+for future development.
+
+> Esential read: The [Lean Startup](http://theleanstartup.com/) to
+> really understand how to get specific about building a product your
+> target market will be crazy about.  TODO: reference to the MVP
+
+By now we are all familiar with Eric Reis and his concept of the
+_Minimum Viable Product_ which poses the concept of getting your work
+in the hands of the user a soon as possible.
+
+An important result of the customer discovery session is a mutual
+agreement on what the minimum or useful (viable) piece of software is and 
+which can be delivered as soon as possible.
+
+The primary purpose of the MVP is to get stuff out the door. We
+specifically want to avoid _development teams_ that are _disconnected_
+from their _users_.
+
+That often means delivering a system that is lacking many features and
+even a bit janky or embarrasing.
+
+### Kelly's MVP
+
+In our case, I had Kelly single out a specific succulent that we can
+use as we prototype the hardware and start developing the software, we
+can hard code the mosture levels and visual observe the plants being
+watered. 
+
+The other features such as an LED, screen and app for visual feedback
+as well as configurable moisture levels will be part of future release
+iterations.
 
 ##### The User eXperience - User Interface
 
-This use case does not actually have any user inputs or outputs other
-than her knowing her plants are being watered with out have to
-manually check and water herself.
+This use-case does not appear to have any user inputs or outputs other
+than seeing water from the pump starting to flow knowing her plants
+are being watered with out having to manually check and water herself.
 
 In future use-cases we will involve a specific user interface, for
 example: 
 
 1. An ability to change the high and low moisture level configurations
 2. Push a button, either physical or on an app to start or stop water
-4. Look at an app or screen to see historic moisture levels and
-   watering times
+4. Led indicating the pump is on
+4. Physical screen or app see when the pump is on and watering
 
 We will eventually get to these above use-cases as well, to keep this
 page from growing out of control we will continue with this use-case
@@ -188,89 +261,17 @@ for the remainder of this document.
 If you want to see all of these use-cases broken out, clink on over to
 the project. ```TODO: link to iot project```
 
+## Slicing Up the Use-Cases
+
+Now we are at the point that we will start breaking the system into
+much more granular detail. At this point it is easy to start seeing
+details pop out of nowhere and _scope creep_ becomes a real thing.
+
+It is important that we stay disciplined and keep our tasks small and
+manageable as well as identify the appropriate release iteration for
+delivery. 
 
 ---
-
-## The Good 'ol Minimum Viable Product (MVP)
-
-An important result of the customer discovery session is a mutual
-agreement on what the minimum or useful (viable) piece of software is and 
-which can be delivered as soon as possible.
-
-The primary purpose of the MVP is to get stuff out the door. We
-specifically want to avoid _disconnected development teams_.
-
-Software can be properly managed just like  construction project. That's only if the right processes and tools are established and enforced
-throughout the product lifecycle.
-
-> Read The [Lean Startup](http://theleanstartup.com/) to really understand how to get specific about building a product your target market will be crazy about.
-
-This is an involved and very important topic. I'm not going to attempt to
-repeat or summarize them in this document, but we will assume that we
-have a pretty clear picture of the application we are developing, at
-least enough for now.
-
-## Tasks Are Small and Measurable 
-
-The tasks that we come up with must be completed within a day or
-two. Any task that requires three days or more should probably be
-broken down into smaller bite-size tasks.
-
-We do not want to create tasks so that they're too big, ambiguous or
-subject to misinterpretation. If your team is not making progress in a
-day or two you should be able to know that immediately.
-
-Keeping the granularity of tasks small allows the team to _start
-stacking victories quickly_ and more important, gives everybody a
-chance to see when a software project is about to make a left turn.
-
-
-### Goals are Most Effective When ...
-
-Goals do not have to be obnoxious, obtuse, vague or
-pendantic. Just be real and reasonable.
-
-If you want working software, provide a working set of goals.
-
-- Few in number, very targeted
-- Communicated in normal people language (user stories)
-- Provide users quick and immediate value
-- Prioritized to deliver _usable value_ incrementally
-- Measurable and easy to determine when they are complete
-- Everybody understands and agrees with the Goals
-- Tasks should be 1-3 days max if possible (there will always be exceptions)
-
-All these tasks have to add up to the MVP. Anything that does not
-directly and immediately get the software project closer to an MVP
-must be avoided.
-
-### Start A Specific and Measureable Goal
-
-It is surprising how many software project get underway without a
-clear direction to what they are building.
-
-> Do NOT build a house before you have approved architectural
-> drawings.
-
-The above statement should be self evident. The same applies to
-software.
-
-### Define Good Goals
-
-Good goals keep everybody focused and working toward the same
-endpoint. They must not be 
-
-1. Singular: have a single requirement. Do not confuse the issue with
-   second and third level concerns
-2. They are easy to understand to everybody is always on the same page
-3. Goals must be measurable, you have to be able to tell when they are
-   done, or how well they are working.
-4. Realistic: do not make people feel like the must continually be
-   superwoman.
-
-
-> A use case is the smallest unit of activity that provides a
-> meaningful result to the user
 
 ## History 
 

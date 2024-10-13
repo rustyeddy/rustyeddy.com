@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mqtt on Rusty Eddy</title>
-    <link>http://localhost:49725/tags/mqtt/</link>
+    <link>http://www.rustyeddy.com/tags/mqtt/</link>
     <description>Recent content in Mqtt on Rusty Eddy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 29 Mar 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:49725/tags/mqtt/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.rustyeddy.com/tags/mqtt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Adding MQTT to the IoT Gateway</title>
-      <link>http://localhost:49725/iot/iot-gateway-mqtt/</link>
+      <link>http://www.rustyeddy.com/iot/iot-gateway-mqtt/</link>
       <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:49725/iot/iot-gateway-mqtt/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:49725/img/iot-hub-mqtt.png&#34; alt=&#34;MQTT Architecture&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;This page marks the beginning of the &lt;em&gt;Organic Gardner (OG)&lt;/em&gt;&#xA;&lt;a href=&#34;http://localhost:49725/iot/iot-intro&#34;&gt;IoT Project&lt;/a&gt; Milestone 1 development!  If you want to&#xA;program along but have not yet worked with the &lt;em&gt;Go&lt;/em&gt; programming&#xA;language check this intro: &lt;a href=&#34;http://localhost:49725/notes/get-ready-to-go&#34;&gt;Getting ready to Go&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;a-brief-about-mqtt&#34;&gt;A Brief About MQTT&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://mqtt.org&#34;&gt;MQTT&lt;/a&gt; is the &lt;em&gt;messaging&lt;/em&gt; protocol that a&#xA;&lt;em&gt;Collector&lt;/em&gt; will use to periodically publish sensor data&#xA;(like temperature and humidity) to the &lt;em&gt;IoT Gateway&lt;/em&gt;. &lt;em&gt;MQTT&lt;/em&gt; will also&#xA;be used to signal when the &lt;em&gt;Control Station&lt;/em&gt; or &lt;em&gt;Controller&lt;/em&gt; will&#xA;respond to commands to turn a sprinkler pump on or off.&lt;/p&gt;</description>
+      <guid>http://www.rustyeddy.com/iot/iot-gateway-mqtt/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://www.rustyeddy.com/img/iot-hub-mqtt.png&#34; alt=&#34;MQTT Architecture&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;This page marks the beginning of the &lt;em&gt;Organic Gardner (OG)&lt;/em&gt;&#xA;&lt;a href=&#34;http://www.rustyeddy.com/iot/iot-intro&#34;&gt;IoT Project&lt;/a&gt; Milestone 1 development!  If you want to&#xA;program along but have not yet worked with the &lt;em&gt;Go&lt;/em&gt; programming&#xA;language check this intro: &lt;a href=&#34;http://www.rustyeddy.com/notes/get-ready-to-go&#34;&gt;Getting ready to Go&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;a-brief-about-mqtt&#34;&gt;A Brief About MQTT&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://mqtt.org&#34;&gt;MQTT&lt;/a&gt; is the &lt;em&gt;messaging&lt;/em&gt; protocol that a&#xA;&lt;em&gt;Collector&lt;/em&gt; will use to periodically publish sensor data&#xA;(like temperature and humidity) to the &lt;em&gt;IoT Gateway&lt;/em&gt;. &lt;em&gt;MQTT&lt;/em&gt; will also&#xA;be used to signal when the &lt;em&gt;Control Station&lt;/em&gt; or &lt;em&gt;Controller&lt;/em&gt; will&#xA;respond to commands to turn a sprinkler pump on or off.&lt;/p&gt;</description>
     </item>
     <item>
       <title>MQTT For Controllor Communication</title>
-      <link>http://localhost:49725/notes/mqtt-comm/</link>
+      <link>http://www.rustyeddy.com/notes/mqtt-comm/</link>
       <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:49725/notes/mqtt-comm/</guid>
+      <guid>http://www.rustyeddy.com/notes/mqtt-comm/</guid>
       <description>&lt;p&gt;The MQTT message bus is a simple but critical element of our MBR&#xA;software design.  MQTT provides what is known as a &lt;em&gt;publish/suscribe&lt;/em&gt;&#xA;or &lt;em&gt;pubsub&lt;/em&gt; communications model.  This model of machine to machine&#xA;communication has some attractive benefits for realtime driving&#xA;algorithms that we will discuss in this post.&lt;/p&gt;</description>
     </item>
   </channel>

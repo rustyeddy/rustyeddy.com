@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Spi on Rusty Eddy</title>
-    <link>http://localhost:49725/tags/spi/</link>
+    <link>http://www.rustyeddy.com/tags/spi/</link>
     <description>Recent content in Spi on Rusty Eddy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 25 Mar 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:49725/tags/spi/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.rustyeddy.com/tags/spi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The NRF240L1 RF Transceiver</title>
-      <link>http://localhost:49725/notes/drafts/nrf24l01/</link>
+      <link>http://www.rustyeddy.com/notes/drafts/nrf24l01/</link>
       <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:49725/notes/drafts/nrf24l01/</guid>
+      <guid>http://www.rustyeddy.com/notes/drafts/nrf24l01/</guid>
       <description>&lt;p&gt;This RC reciever chip is very easy to use out of the box, yet provides&#xA;some very sophisticated capabilities.  The first project We&amp;rsquo;ll start&#xA;using this chip will be a remote control Joystick for our mobile&#xA;robot.&lt;/p&gt;&#xA;&lt;h2 id=&#34;todos&#34;&gt;Todos:&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;point to the datasheet&lt;/li&gt;&#xA;&lt;li&gt;load personal photos of my project with NRF20L&#xA;&lt;ul&gt;&#xA;&lt;li&gt;pull the image from evernote&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;fritz a diagram&lt;/li&gt;&#xA;&lt;li&gt;post code that I use and or wrote&lt;/li&gt;&#xA;&lt;li&gt;Try to do an eagle cad&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;source-voltage&#34;&gt;Source Voltage&lt;/h2&gt;&#xA;&lt;p&gt;According to &lt;a href=&#34;https://medium.com/@benjamindavidfraser/arduino-nrf24l01-communications-947e1acb33fb&#34;&gt;Benjamin David&#xA;Fraser&lt;/a&gt;&#xA;Plugging the NRF24L02 directly into the Arduino 3.3v power supply pin,&#xA;will produce unregulated power, which will eventually lead to flaky or&#xA;failed communications.&lt;/p&gt;</description>
     </item>
   </channel>
