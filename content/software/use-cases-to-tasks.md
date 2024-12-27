@@ -1,5 +1,5 @@
 ---
-title: Use Cases into Tasks
+title: Use Cases to Tasks
 description: >
   A use case is all the ways of using a system to achieve a particular
   goal for a particular user that can be measured or observed in a
@@ -14,9 +14,23 @@ deriving _Kelly's Automatic Gardener_ into the first use-case
 
 ### Use Case
 
-> Use-case 1: Peridoically measure the moisture level of soil and turn
-> on a water pump when the soil is dry, then turn it off when it gets
-> too wet.
+> Use-case 1: As a gardener I want my sprinkler system to peridoically
+> measure the moisture level of soil and turn on a water pump when the
+> soil is dry, then turn it off when it gets too wet.
+
+This use-case can then be _sliced_ into a couple more use cases. The
+additional use-cases can also be broke out to include:
+
+> Use-case 1.1: As a gardner I want to be able to change the frequency
+> the soil moisture of my are checked.
+
+This is going introduce a configuration variable and a timer.
+
+> Use-case 1.2: As a gardener I want my sprinkler system to record the
+> historic sensor data.
+
+This is going to introduce a data model and some type of data storage
+such as a database.
 
 which we then broke down into an initial set of _requirements_:
 
@@ -30,6 +44,10 @@ which we then broke down into an initial set of _requirements_:
 
 3. Turn water off when the moisture hits a high point
 
+4. Configurable moisture levels
+
+5. Historic data storage 
+
 ---
 
 ### Acceptance Tests
@@ -39,11 +57,15 @@ tests:
 
 ---
 
-1. Water pump is not active when moisture level is below threshold
+1. Verify the water pump is not active when moisture level is below
+   threshold 
 
-2. Water pump activates when moisture crosses the dry threshold
+2. Verify water pump activates when moisture crosses the dry threshold 
 
-3. Water pump de-activate when moisture crosses the damp threshold
+3. Verify Water pump de-activate when moisture crosses the damp
+   threshold 
+
+4. Verify periodic 
 
 ---
 
@@ -108,7 +130,11 @@ ___TODO: create an article about data models___
 ### MQTT Data Broadcast
 
 We are going to _publish_ the _soil moisture data_ via MQTT and the
-channels. 
+channels, the moisture data will then subscribe to the published data
+to determine when to turn on and off the pump.
+
+A subscriber will also record the data levels in a time series data
+base of sorts.
 
 ___TODO: pointer to MQTT article___
 
@@ -122,11 +148,11 @@ We need configuration variables for the following tasks:
 4. Location to store local data
 5. MQTT channel to advertise data on
 
-
 ## Adding tasks to our Kanban Board
 
 We are now ready to add our tasks to our todo list. We will also add
 our _acceptance tests_ as part of our todo list.
 
-This bring us to our next major article about Kanban boards and todo
+This bring us to our next major article about
+[Kanban boards](/software/kanban) and todo
 lists. 

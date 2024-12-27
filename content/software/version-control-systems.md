@@ -11,7 +11,6 @@ description: >
   project. 
 ---
 
-{{<draft>}}
 It frightens me everytime I am introduced to a new software project
 where the "latest" source code is somebodies folder _somewhere_ with
 copies being passed around on thumb drives.
@@ -106,12 +105,6 @@ Communication should be:
 You will Lose all history and context. Debates and decisions Will be
 unnecessarily repeated.
 
-
-
-{{</draft>}}
-
-
-{{<draft>}}
 ## Github and making the Commitment
 
 Now it is time for the developer to _commit_ the changes she has been
@@ -173,4 +166,3 @@ upon every committment, running the images through automated tests and
 finally sending **only** the tested images to a file server for
 general access. 
 
-{{</draft>}}

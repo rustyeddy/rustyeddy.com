@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="/css/style.css" />
 
   
-  <title>Use Cases into Tasks</title>
+  <title>Use Cases to Tasks</title>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-G7XZRHH62T"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -44,7 +44,7 @@
   <div class="row">
     <div class="col-md"></div>
     <div class="col-md-8 text-center">
-      <h1 class="header h2 pb-1">Use Cases into Tasks</h1>
+      <h1 class="header h2 pb-1">Use Cases to Tasks</h1>
       <p class="leadin align-right text-muted text-center mt-0">
         A use case is all the ways of using a system to achieve a particular goal for a particular user that can be measured or observed in a specific way
 
@@ -91,10 +91,23 @@
 deriving <em>Kelly&rsquo;s Automatic Gardener</em> into the first use-case</p>
 <h3 id="use-case">Use Case</h3>
 <blockquote>
-<p>Use-case 1: Peridoically measure the moisture level of soil and turn
-on a water pump when the soil is dry, then turn it off when it gets
-too wet.</p>
+<p>Use-case 1: As a gardener I want my sprinkler system to peridoically
+measure the moisture level of soil and turn on a water pump when the
+soil is dry, then turn it off when it gets too wet.</p>
 </blockquote>
+<p>This use-case can then be <em>sliced</em> into a couple more use cases. The
+additional use-cases can also be broke out to include:</p>
+<blockquote>
+<p>Use-case 1.1: As a gardner I want to be able to change the frequency
+the soil moisture of my are checked.</p>
+</blockquote>
+<p>This is going introduce a configuration variable and a timer.</p>
+<blockquote>
+<p>Use-case 1.2: As a gardener I want my sprinkler system to record the
+historic sensor data.</p>
+</blockquote>
+<p>This is going to introduce a data model and some type of data storage
+such as a database.</p>
 <p>which we then broke down into an initial set of <em>requirements</em>:</p>
 <h3 id="requirements">Requirements</h3>
 <hr>
@@ -108,6 +121,12 @@ too wet.</p>
 <li>
 <p>Turn water off when the moisture hits a high point</p>
 </li>
+<li>
+<p>Configurable moisture levels</p>
+</li>
+<li>
+<p>Historic data storage</p>
+</li>
 </ol>
 <hr>
 <h3 id="acceptance-tests">Acceptance Tests</h3>
@@ -116,13 +135,18 @@ tests:</p>
 <hr>
 <ol>
 <li>
-<p>Water pump is not active when moisture level is below threshold</p>
+<p>Verify the water pump is not active when moisture level is below
+threshold</p>
 </li>
 <li>
-<p>Water pump activates when moisture crosses the dry threshold</p>
+<p>Verify water pump activates when moisture crosses the dry threshold</p>
 </li>
 <li>
-<p>Water pump de-activate when moisture crosses the damp threshold</p>
+<p>Verify Water pump de-activate when moisture crosses the damp
+threshold</p>
+</li>
+<li>
+<p>Verify periodic</p>
 </li>
 </ol>
 <hr>
@@ -162,7 +186,10 @@ driver.</p>
 <p><em><strong>TODO: create an article about data models</strong></em></p>
 <h3 id="mqtt-data-broadcast">MQTT Data Broadcast</h3>
 <p>We are going to <em>publish</em> the <em>soil moisture data</em> via MQTT and the
-channels.</p>
+channels, the moisture data will then subscribe to the published data
+to determine when to turn on and off the pump.</p>
+<p>A subscriber will also record the data levels in a time series data
+base of sorts.</p>
 <p><em><strong>TODO: pointer to MQTT article</strong></em></p>
 <h3 id="configuration-variables">Configuration variables</h3>
 <p>We need configuration variables for the following tasks:</p>
@@ -176,7 +203,8 @@ channels.</p>
 <h2 id="adding-tasks-to-our-kanban-board">Adding tasks to our Kanban Board</h2>
 <p>We are now ready to add our tasks to our todo list. We will also add
 our <em>acceptance tests</em> as part of our todo list.</p>
-<p>This bring us to our next major article about Kanban boards and todo
+<p>This bring us to our next major article about
+<a href="/software/kanban">Kanban boards</a> and todo
 lists.</p>
 
 	    </article>

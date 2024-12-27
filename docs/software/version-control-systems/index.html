@@ -86,18 +86,127 @@
 	<div class="col"></div>
 	<div class="col-lg-8 pl-4 pr-4">
 	    <article class="article">
-		<hr/>
-<h2><center>Content Being Drafted</center></h2>
-<hr/>
-
-
-
-<hr/>
-<h2><center>Content Being Drafted</center></h2>
-<hr/>
-
-
-
+		<p>It frightens me everytime I am introduced to a new software project
+where the &ldquo;latest&rdquo; source code is somebodies folder <em>somewhere</em> with
+copies being passed around on thumb drives.</p>
+<p>Such a lack process invites confusion from the beginning and inspires
+questions like:</p>
+<blockquote>
+<p>which copy of the file has your changes?</p>
+</blockquote>
+<p>If you are working like this STOP! It does not have to be this
+way. no, start using Version Control now!</p>
+<p>Done correctly, your VC will track <em>every change</em> to your source code
+with clear well written summaries (logs) of the problem that was
+solved.</p>
+<h2 id="git-and-version-control">Git and Version Control</h2>
+<p>Version Control Systmes (VCS) has been around since at least the
+1970&rsquo;s . These included RCS, CVS, SVN and lot&rsquo;s of clunky and lame pay
+versions.</p>
+<p>Now we have <em>GIT</em>.</p>
+<p>Git was development by the famous <em>Linus Torvalds</em> author of Linux to
+handle the distributed nature of the <strong>huge</strong> Open Source software
+<a href="http://kernel.org"><em>Linux Kernel</em></a>. Development and the thousands of
+software developers that continuously contribute to the code base.</p>
+<h3 id="github-is-git-as-a-service">Github is Git as a Service</h3>
+<p>We also have Github!</p>
+<p>Github revolutionized software development by taking the widely
+popular <em>Git</em> version control system and wrapping online services
+around them, such as an <em>Issue Tracker</em>, <em>Project Kanban Board</em> and a
+whole social infrastructure allowing developers to easily share Open
+Source software projects.</p>
+<h2 id="github-for-services-and-workflow">Github for Services and Workflow</h2>
+<p>To be clear, there are some other <em>great</em> services built around <em>git</em>,
+<a href="http://gitlab.org"><em>gitlab</em></a> and <a href="http://bitbucket.org"><em>bitbucket</em></a>
+are just two.</p>
+<p>Fortunantely for us, <em>github</em> provides quite a few services integrated
+around git itself giving us a rich set of tools to build a sophisticated
+development environment, and all for <em>free</em>.</p>
+<p>Github works on a <em>freemium</em> model where all Open Source projects get
+all features for free. However, private repositories will be required
+to pay a nominal fee to unlock all of githubs features.</p>
+<p>For our purposes, everything we need is free, so don&rsquo;t pull out your
+wallet!</p>
+<h2 id="enough-theory">Enough Theory?</h2>
+<p>OK, next we are going to roll up our sleeves and &ldquo;<em>git busy</em>&rdquo;.</p>
+<hr>
+<p>When a software developer or developers(s) leave a project without the
+use of process or version control, it is a crap shoot as to the
+quality of the code you will discover.</p>
+<p>The odds are the code will be <em>crap</em>. Most people that are skilled and
+care enough to write <em>clean code</em>, likewise are most likely following
+some <em>process</em> or <em>best practices</em> by using version control and
+documeneting the architecture.</p>
+<p>The person that walks into a project own all of the bad decisions and
+lies that have previously been told, the software person has nowhere
+else to turn. Using Version control to establish both accountability
+for decisions and trace modifications to their origin.</p>
+<p>Communication should be:</p>
+<ol>
+<li>
+<p>easy for everybody</p>
+</li>
+<li>
+<p>captured to context, history for example, to capture the rationale
+behind decisions that may have required a controversial
+trade-off. Invaluable for repeating the same convesation.</p>
+<p>Also can be used to determine when old practices can be
+obsoleted. Technology has a way obliterating completely rational
+decision that were made a mere two years ago..</p>
+</li>
+<li>
+<p>Do NOT allow project communications To be spread amongst email,
+Texts, Social media accounts and various Other arbitrary Cyber
+nooks and crannies.</p>
+</li>
+</ol>
+<p>You will Lose all history and context. Debates and decisions Will be
+unnecessarily repeated.</p>
+<h2 id="github-and-making-the-commitment">Github and making the Commitment</h2>
+<p>Now it is time for the developer to <em>commit</em> the changes she has been
+working on, tested and pushed through the peer reviews. This step is
+pretty simple, however, we want to make sure we are doing it
+correctly.</p>
+<blockquote>
+<p>Todo example commit</p>
+</blockquote>
+<p>When the code is merged into the <strong>main</strong> or <strong>master</strong> repository,
+just like commitments, it will be accompanied by the log comments
+that go along with the log files.</p>
+<p>Additionally, every <em>commit</em> will have a <em>unique identifier</em>, a big
+nasty looking hex-i-decimal string guaranteed to most likely be locally
+unique.</p>
+<h3 id="history-in-the-making">History in the Making</h3>
+<p>Well written comments, source diffs and a unique identifier come
+together to create a specific moment in the code life history.</p>
+<p>Stringing all commitments together, one forms a very accurate history
+of the source development. If the comments are well written, that
+history is accompanied by a wonderful narrative told by the developers
+as the software is being written.</p>
+<h2 id="the-beginning-of-visibility">The Beginning of Visibility</h2>
+<p>This can provide the viewer with literally a line by line replay of
+the entire history of a software development project. The commitments
+can also be directly related to the particular <strong>github issues</strong> that
+have spurred the updates to the code in the first place.</p>
+<p>This is a very powerful way for not only developers, but also users,
+management and marketing a deep insight into the process of software
+development.</p>
+<h2 id="tagging---releases">Tagging - Releases</h2>
+<p>Git also provides a feature called <em>tagging</em>, which is in fact very
+similar to <em>branching</em>. <em>Tags</em> however are meant to <em>label</em> a specific
+reference of the source at a specific point in time.</p>
+<p><em>Software releases</em> are a good reason to use <em>tags</em>. For example: a
+tag <strong>v1.0.2</strong> would be a typical tag that might be used to reference
+the version of code after <strong>v1.0.1</strong>.</p>
+<p>This practice allows the team, or anybody interested, the ability to
+<em>reference</em> and <em>re-create</em> a specific past version of the software.</p>
+<h2 id="automated-builds-and-testing">Automated Builds and Testing</h2>
+<p>Github provides a ton of goodies with it&rsquo;s well defined <em>API</em> and the
+plethora of <em>web-hooks</em> it provides.</p>
+<p>In the next section we&rsquo;ll get into <em>automatically</em> building new images
+upon every committment, running the images through automated tests and
+finally sending <strong>only</strong> the tested images to a file server for
+general access.</p>
 
 	    </article>
 	</div>
