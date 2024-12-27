@@ -7,7 +7,7 @@ tags:
   - adafruit
   - audio
   - arduino
-date: 2019-07-1
+date: 2019-07-01
 resources: https://learn.adafruit.com/adafruit-music-maker-shield-vs1053-mp3-wav-wave-ogg-vorbis-player/assembly
 draft: true
 ---

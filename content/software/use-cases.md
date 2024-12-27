@@ -1,168 +1,496 @@
 ---
 title: Use Cases
 description: >
-  We are going to dig deep into our users needs and observe how they
-  want to use the software, this will ultimately lead us to our
-  MVP. We will define this in terms of Use Cases.
+  A use case is all the ways of using a system to achieve a particular
+  goal for a particular user that can be measured or observed in a
+  specific way
 weight: 20
 ---
 
-{{< draft >}}
-## References Definition of Use Case
+## Why Use-Cases?
 
-### [Wrike](https://www.wrike.com/blog/what-is-a-use-case)
+This post is going to talk about how we will use normal conversations
+with the users of a software project we are about develop to lay the
+foundation for the entire software development project.
 
-> A use case is a concept used in software development, product
-> design, and other fields to describe how a system can be used to
-> achieve specific goals or tasks. It outlines the interactions between
-> users or actors and the system to achieve a specific outcome.  
-
-
-### [Ivar Jacobson](https://www.ivarjacobson.com/publications/articles/use-cases-ultimate-guide)
-
-
-
-
-## Outline
-
-### Wrike website above
-
-1. Defines the various ways users will use the software
-
-2. Can and should establish success and failure scenarios
-
-3. First article on Use Cases was established by Swedish computer
-   scientist Ivar Jacobson in 1987 originally used by
-   telecommunications company Ericsson to capture system
-   requirements. 
-   
-4. In 1992 Jacobson co-authored the book "Object-Oriented Software
-   Engineering - A Use Case Driven Approach" to help specifying
-   functional requirements in Software Development
-
-5. Use cases capture all of the uses of a software system which in
-   totality define the full set of requirements for the system.
-   
-6. Use cases define particular features that can be define in an
-   incremental fashion and developed using _agile_ methodologies.
-
+These conversations are going to be in story form and we'll call them
+_use cases_.
 
 ## Customer Discovery
 
-_Customer Discovery_ consists of one or more customer discovery
-sessions, where all *users* and *owners* of the software will be
-interviewed for their expectations, needs and desires for the
-upcoming software project. 
+_Customer Discovery_ consists of one or more sessions with all the
+people (stakeholders) of the software (we'll call them users) and get
+them to tell us stories about how the are going use the software.
 
-Don't just stop at the first answer, it will be too vague. Dig deeper
-and start peeling back the details. This great article on the
-[Five Why's](https://www.mindtools.com/pages/article/newTMC_5W.htm)
+Every story will be in plain, non-techy common language from the POV
+of the user.  We will unravel each of the user stories into a series
+of _use-cases_, much like unraveling a complex novel into a series of
+short stories each with a single plot and conclusion.
 
-## User Stories
+The goal for each _use-case_ is break down the various ways the system
+will _provide value_ to the user into a singular activities with clear
+and measurable objectives.
 
-The information gathered from these sessions are then articulated in a
-series of _non-technical_ descriptions of how the software is used by
-everybody.
+### Here's An Example
 
-These descriptions of the software requirements are often referred to
-as _User Stories_. Basically, each _story_ walks through one of the
-ways in which the _planned_ software will be used.
+My wife, Kelly is an active gardner, specifically she is really into
+_succulents_ which do well in the dry warm climate we live in costal
+Southern California. Succulents, like almost every other plant need
+water, however you have to be very careful NOT to over water them.
 
-### Keep Language Plain
+They tend to be on the smaller to medium size plants where Kelly has a
+few hundred of these crazy looking plants all over the place making
+the process of caring for them a challenge, in particular keeping
+water schedules.
 
-The project can be discussed and understood best when the conversation
-is had in terms that the user is comfortable with.
+#### Automated Watering System
 
-It is important to keep the language common and avoid tech talk such
-that _everybody_ involved with the building and using the software can
-participate in the conversation.
+So I thought I'd help her out and devise an automated water system for
+her garden. This project is not just software but will also involve
+prototyping and building hardware as well.
 
-These user stories will later get broken down into specific tasks.
+> Use-cases are not only valuable for software, but can be used while
+> designing hardware or system for matter, including even a business!
 
-The real value to user stories is to create them like they are
-recipes. Essentially software is about writing recipes with very
-specific rules.   
+Let's start with a hypothetical _Customer Discovery_ session that
+could happen in the real world. In reality I derived the use cases
+from years of watching and listening to her talk about this stuff, but
+you don't have years so I'll summarize it in a hypothetical conversion
+that could have really happend.
 
-## The Good 'ol Minimum Viable Product (MVP)
+#### The User Story
+
+Here is the hypothetical summary of the automated sprinkler system
+that Kelly ask me to build: 
+
+> I have a garden of a few hundred succulents consisting of a variety
+> of types, succulents are very resilient but are sensitive to over
+> watering and each variety can have different watering needs.
+>
+> I need an irrigation system that can automatically water my
+> succulents when the soil becomes too dry, yet be very careful not to
+> over water.
+>
+> I need to be able to adjust the soil moisture levels for different
+> types of plants, because not one size fits all.
+>
+> It will also be nice to be able to manually water by pressing a
+> button or even in some cases put watering on a schedule. Oh and
+> wouldn't also be cool to keep track of temprature and humidity?
+>
+> Ya know, now that I think about it, can we also control some lights
+> as well? Oh, one more thing, I'd like to observe and control my
+> gardens sprinklers from anywhere with my phone.
+
+Notice how no techy talk is involved in Kelly's description of what
+she wants out of this magic gardening system. Also notice how the pretty
+simple concept of automatically watering dry plants is starting to
+grow more complex with feature creep?
+
+```
+Use plain language in user speak
+```
+
+## User Story to Use Cases
+
+OK, now we are going to break down this quasi derived conversation
+into use-cases that we will then:
+
+1. Derive into a set of _testable requirements_
+2. Bust out a todo list with well defined work items
+3. Begin to design the _User eXperience_ with _wireframes_ and
+   _storyboards_
+4. Define our _Minimum Viable Product (MVP)_
+5. Get ready to start building
+   
+The concept is simple and easy to understand, even our small example
+this is a bit to unpack so let's get started.
+
+## Requirements and Acceptance Tests
+
+From each of these use-cases stories we can start extracting the core requirements,
+desired features and all their hopes and dreams. We will break these
+stories down into _use cases_.
+
+Now let's get into what exactly these _use cases_ are going to look
+like as well as how we are going to break them down into
+_requirements_, _tests_ and prioritize them into specific work items. 
+
+### Breaking out the use-cases
+
+The primary subject of the conversation is that Kelly can use help
+watering her hundreds of succulents most of which are sensitive to
+specific soil moisture levels.
+
+The story went on to bring up other wants from the system, some
+required, some nice to haves but we will break them all out
+individually focusing on the most important objective first, then
+working through the rest of the _wants_ and _needs_ until we are done. 
+
+```
+Break out a single objective for each use case and focus on the
+specific value it provides the user
+```
+
+#### Use-case 1: Water Plants when the soild is too dry
+
+> Use-case 1: Peridoically measure the moisture level of soil and turn
+> on a water pump when the soil is dry, then turn it off when it gets
+> too wet.
+
+##### Requirements for this use-case
+
+The first use-case can now be summarized into the following three
+requirements: 
+
+---
+
+1. Periodically measure soil moisture levels
+
+3. If the moisture level drops below a certain level start watering
+
+3. Turn water off when the moisture hits a high point
+
+---
+
+We will find as we move on even these basic requirements are going to
+be broke down into more detailed specifics as we start moving into
+development.
+
+The key at this point is to still keep the words and conversation in
+the users terminology, as they are still a very important part of this
+process. 
+
+##### The Specific Value of this use-case
+
+The tangible value that Kelly gets out of this use-case is not having to
+manually track and water plant herself while having confidence that
+her plants are being adequately watered without being over watered.
+
+### The acceptance test for this use-case
+
+The _acceptance tests_ for this use-case will be observe a water pump
+get activated when the moisture level hits the low mark, and the water
+pump stops when it hits the high mark.
+
+The tests are:
+
+---
+
+1. Water pump is not active when moisture level is below threshold
+
+2. Water pump activates when moisture crosses the dry threshold
+
+3. Water pump de-activate when moisture crosses the damp threshold
+
+---
+
+In the process of writing up these _acceptance tests_ it occurs to me
+that the watering may not be instantaneous depending on how often the
+moisture level is checked.
+
+Also that maybe there should be a visual to indicate the soil moisture
+level and if the pump should be running. 
+
+These are good examples of how use-cases and necessarily the
+respective acceptance tests can evolve as we start diving into the
+details. 
+
+As Ivar Jacobson likes to put it we'll start adding these details as
+we _slice up_ the use cases and define the _official acceptance
+tests_. 
+
+That brings up another important point, where do we draw a line in the
+sand and call an iteration _"finished"_ at least to the point we get
+it in the users hand for feedback.?.
+
+## The Minimum Viable Product (MVP)
+
+We need to determine exactly what use-cases and specific features
+_must_ be included in a release vs. which features can be _back logged_ 
+for future development.
+
+> Esential read: The [Lean Startup](http://theleanstartup.com/) to
+> really understand how to get specific about building a product your
+> target market will be crazy about.  TODO: reference to the MVP
+
+By now we are all familiar with Eric Reis and his concept of the
+_Minimum Viable Product_ which poses the concept of getting your work
+in the hands of the user a soon as possible.
 
 An important result of the customer discovery session is a mutual
 agreement on what the minimum or useful (viable) piece of software is and 
 which can be delivered as soon as possible.
 
 The primary purpose of the MVP is to get stuff out the door. We
-specifically want to avoid _disconnected development teams_.
+specifically want to avoid _development teams_ that are _disconnected_
+from their _users_.
 
-Software can be properly managed just like  construction project. That's only if the right processes and tools are established and enforced
-throughout the product lifecycle.
+That often means delivering a system that is lacking many features and
+even a bit janky or embarrasing.
 
-> Read The [Lean Startup](http://theleanstartup.com/) to really understand how to get specific about building a product your target market will be crazy about.
+### Kelly's MVP
 
-This is an involved and very important topic. I'm not going to attempt to
-repeat or summarize them in this document, but we will assume that we
-have a pretty clear picture of the application we are developing, at
-least enough for now.
+In our case, I had Kelly single out a specific succulent that we can
+use as we prototype the hardware and start developing the software, we
+can hard code the mosture levels and visual observe the plants being
+watered. 
 
-## Tasks Are Small and Measurable 
+The other features such as an LED, screen and app for visual feedback
+as well as configurable moisture levels will be part of future release
+iterations.
 
-The tasks that we come up with must be completed within a day or
-two. Any task that requires three days or more should probably be
-broken down into smaller bite-size tasks.
+##### The User eXperience - User Interface
 
-We do not want to create tasks so that they're too big, ambiguous or
-subject to misinterpretation. If your team is not making progress in a
-day or two you should be able to know that immediately.
+This use-case does not appear to have any user inputs or outputs other
+than seeing water from the pump starting to flow knowing her plants
+are being watered with out having to manually check and water herself.
 
-Keeping the granularity of tasks small allows the team to _start
-stacking victories quickly_ and more important, gives everybody a
-chance to see when a software project is about to make a left turn.
+In future use-cases we will involve a specific user interface, for
+example: 
+
+1. An ability to change the high and low moisture level configurations
+2. Push a button, either physical or on an app to start or stop water
+4. Led indicating the pump is on
+4. Physical screen or app see when the pump is on and watering
+
+We will eventually get to these above use-cases as well, to keep this
+page from growing out of control we will continue with this use-case
+for the remainder of this document.
+
+If you want to see all of these use-cases broken out, clink on over to
+the project. ```TODO: link to iot project```
+
+## Slicing Up the Use-Cases
+
+Now we are at the point that we will start breaking the system into
+much more granular detail. At this point it is easy to start seeing
+details pop out of nowhere and _scope creep_ becomes a real thing.
+
+It is important that we stay disciplined and keep our tasks small and
+manageable as well as identify the appropriate release iteration for
+delivery. 
+
+---
+
+## History 
+
+- First article on Use Cases was established by Swedish computer
+  scientist Ivar Jacobson in 1987 originally used by
+  telecommunications company Ericsson to capture system requirements.
+   
+- In 1992 Jacobson co-authored the book "Object-Oriented Software
+  Engineering - A Use Case Driven Approach" to help specifying
+  functional requirements in Software Development
 
 
-### Goals are Most Effective When ...
+## References Definition of Use Case
 
-Goals do not have to be obnoxious, obtuse, vague or
-pendantic. Just be real and reasonable.
+- [Ivar Jacobson](https://www.ivarjacobson.com/publications/articles/use-cases-ultimate-guide)
 
-If you want working software, provide a working set of goals.
-
-- Few in number, very targeted
-- Communicated in normal people language (user stories)
-- Provide users quick and immediate value
-- Prioritized to deliver _usable value_ incrementally
-- Measurable and easy to determine when they are complete
-- Everybody understands and agrees with the Goals
-- Tasks should be 1-3 days max if possible (there will always be exceptions)
-
-All these tasks have to add up to the MVP. Anything that does not
-directly and immediately get the software project closer to an MVP
-must be avoided.
-{{</draft>}}
+This document about use-cases is by the one and only Ivar Jacobson
+himself. This document claims to be uses cases 2.0, an improvement on
+the revolutionary process of extracting and defining requirements for
+software projects.
 
 
-{{<draft>}}
+## Outline
+
+### Overview
+
+- Defines the various ways users will use the system/software
+
+- Can and should establish success and failure scenarios
+
+- Used to capture system requirements
+   
+- Use cases should help capture success and failure scenarios
+
+- Use cases can help define functionality in an incremental aligned
+  with _agile_ methodologies. 
+  
+- Use cases do not tell you HOW you should plan, schedule, test or
+  develop the system, but do define a structure of that can be used to
+  engage these practices
+  
+### First Principals
+
+Acording to Jacobson these are the _first principals_:
+
+1. Keep it simple by telling stories
+   - Story telling is the easiest and most effective way to
+     pass knowlege from one person to another. Story telling is older
+     than the Bible! 
+
+   - Each story will tell of a single way to successfully achieve a
+     specific goal of the system, also how to handle problems that
+     will inevitably arise.
+     
+   - A single use case is a story focused on achieving a single goal
+   
+   - Do NOT attempt to describe the entire system in one long story
+     rather break the system down into a series of small very short
+     stories. 
+     
+   - The stories must be communicated and captured in a way that makes
+     them actionable and testable, i.e. they can be _measured_ in a
+     concrete way
+     
+   - The test cases are the most important part of the Use-case, as
+     they define what a successful outcome is.
 
 
-### Start A Specific and Measureable Goal
+2. Understand the big picture
+   - You need to understand the big picture in order to make
+     prioritized decisions on what should be added and what needs to
+     be left out.
+     
+   - He goes into creating use case diagrams
+   
+   - Use cases do not have to involve people, they can involve other
+     automated entities.
+     
+   - use cases can involve actions from many different users. You can
+     have end users, system administrators and support people for
+     example. 
+     
+   - The goal is to make the collection of Use case goals accessible
+     to everyone. Use case diagrams can help visualize the various use
+     cases. 
 
-It is surprising how many software project get underway without a
-clear direction to what they are building.
+3. Focus on Value
+   
+   - When trying to understand how a system is going to be used, it is
+     important to focus on the value it provides the users and other
+     stakeholders
+   
+   - The goal is to focus on the specific value the system will give a
+     specifig user, rather than long lists of functionality.
+     
+   - Start with the simplest possible way to achieve the goal
+   
+   - Provides an example
 
-> Do NOT build a house before you have approved architectural
-> drawings.
+   - The use cases can have optional cases or variations on the
+     standard simple case
+     
+   - Alternative flows / cases do NOT have to be captured at the same
+     time. These can be added later.
+     
+   - It is almost always more valuable to complete and deliver the
+     simple easy use case first, get feedback and incrementally
+     deliver alternative flows later.  Rather than wait for all
+     features to be perfect
+     
+4. Build the system in slices
 
-The above statement should be self evident. The same applies to
-software.
+    - Complex systems should not be attempted to build in one go,
+      rather they should be built in _slices_
+      
+    - Each slice should be delivered providing clear incremental value
+      to it's users
+      
+    - The receipe is to focuse on the most useful thing the system has
+      to do and focus on that feature. Then take that one useful
+      feature and slice it into thinner slices
+      
+    - Determine the test cases that will validate that particular
+      slice and implement the test cases followed by the slice itself 
+      
+    - Put any slices aside for questions that can not yet be answered
+    
+    - You can make _estimates_ for the time and effort required to
+      implement that slice but _estimates_ are just that
+      
+    - Test cases are the most important part of the use case narrative
+      because they make the story real.
+      
+    - To find the _central_ theme you will need to shed all the lesser
+      important features and focus on the most useful thing the system
+      does 
+      
+    - Once enough use-cases have been implemented the user will have a
+      system that is useful, though still lacking features, but those
+      will eventually be implemented
+      
+    - The slice should be a complete implementation, not just the code
+      that fulfills the requirements but tests, user experience,
+      architecture, documentation, test framework, integration and
+      delivery (CI/CD)
+      
+    - A use-case is probably too much to be implemented in one
+      two-week period however a slice of a use-case should be able to
+      be implemented in one two week sprint
+      
+5. Deliver the system in increments
 
-### Define Good Goals
+    - This seems like it is repeating use-case slices.
+    
+    - Software evolves in generations vary rarely, even for the
+      smallest project are they developed and forever complete in one
+      go. 
+      
+    - Software typically evolves over release after release building
+      on what came before it
+      
+    - Use-cases are a great tool for release planning. Releases can be
+      based on a particular group of slices being implemented even
+      before the complete use-case itself has been developed.
+      
+    - Use-case diagrams can be useful
 
-Good goals keep everybody focused and working toward the same
-endpoint. They must not be 
+6. Adapt to meet the team's needs
 
-1. Singular: have a single requirement. Do not confuse the issue with
-   second and third level concerns
-2. They are easy to understand to everybody is always on the same page
-3. Goals must be measurable, you have to be able to tell when they are
-   done, or how well they are working.
-4. Realistic: do not make people feel like the must continually be
-   superwoman.
+    - Not all teams or software projects are the same, the system of
+      use-cases needs to be adaptable to the team and project needs
+      
+    - Projects that have close interaction with _stake-holders_ and
+      most specifically the users will be the most efficient and
+      flexible (agile)
+      
+    - Projects that lake user input due to whatever reason will need a
+      lot more detail in the requirements up from and be much more
+      heavy weight
+      
+    - Use-case can be made extremely light.
+    
+    - The tools used can be as simple as use cases written on index
+      cards or more official captured in electronic tools, for example
 
-{{</draft>}}
+### What are stakeholders
+
+Everybody that has an interest in the software
+
+- User that use the software on the daily
+- Administrator that has to configure and maintain the software
+- The person paying for the software
+- The developers and devops folks running and fixing the software
+
+### What is the System
+
+- It is typically a software system, it can be SaaS, an embedded
+  system with software and hardware or even a new business
+  
+### More about use-cases
+
+- They are iterable, the first telling of a user story may not be the
+  final version
+  
+- Fullfill the simplest story first (slice)
+
+### Priorities, Slices and Estimates
+
+Once all use-cases have been captured they can then be sorted
+according to priorities, the highest priority use-cases can then
+be have implementation estimates.
+
+### Creating the Backlog from Use-case slices
+
+From use-cases to the Kanban board
+
+
+---
+
+## Previous writings
+
+

@@ -1,6 +1,6 @@
 ---
 title: Cloud Trek
-date: July 2017
+date: 2017-04-01
 start: January 2017
 finish: June 2017
 company: Alchemy Networks

@@ -40,7 +40,7 @@
     </div>
   </nav>
 </header>
-<div class="jumbotron border-top border-bottom bg-white" >
+<div id="jumbotron" class="jumbotron border-top border-bottom bg-white" >
   <div class="row">
     <div class="col-md"></div>
     <div class="col-md-8 text-center">
@@ -86,12 +86,131 @@
 	<div class="col"></div>
 	<div class="col-lg-8 pl-4 pr-4">
 	    <article class="article">
-		<hr/>
-<h2><center>Content Being Drafted</center></h2>
-<hr/>
-
-
-
+		<h2 id="testing-unit-and-systems">Testing Unit and Systems</h2>
+<p>Before any developers new code can be integrated into the <em>mainline</em>
+production code base, it must be <em>tested</em>, <em>vetted</em> and <em>peer
+reviewed</em>.</p>
+<p>Software Testing has been written about extensively, so I won&rsquo;t spend
+time here discussing testing directly, as there are as many ways to
+test software as there are technologies.</p>
+<h3 id="test-driven-development">Test Driven Development</h3>
+<p><em>Test Driven Development (TDD)</em> a <em>principal</em> for which I agree is necessary, but I don&rsquo;t <em>always</em> adhere to in practice. This is  usually out of
+laziness, haste or carelessness (I know sad but I&rsquo;m just being honest
+here). However, it is worth paying attention to&hellip;</p>
+<p>Anyways, the basic rules are:</p>
+<ol>
+<li>Write your test <strong>before</strong> writing the code</li>
+<li>The test <strong>will fail</strong> initially</li>
+<li>It is the <em>programmers</em> job to write code such that the test will pass.</li>
+</ol>
+<p>Brilliant!</p>
+<p>That is hard to argue with. However, taking the upfront time to build
+the tests before just hammering out the code, is much harder to do than
+say.</p>
+<h2 id="tdd-is-hard-not-technically-but-emotionally">TDD is hard, not technically, but emotionally</h2>
+<p>The hard part about writing <em>tests</em> upfront is that it forces us to
+<em>really</em> define what we are building.  You have to <em>drill down</em> a
+level or two.</p>
+<blockquote>
+<p>When defining tests, ask the &ldquo;Five whys?&rdquo;</p>
+</blockquote>
+<p>Once you have done the hard brain work and exposed the applications,
+<strong>true requirements</strong> implementing the test becomes striaght forward.</p>
+<blockquote>
+<p>TODO Reference to TDD</p>
+</blockquote>
+<p>Testing movements can be taken too far, for example spending a lot of
+time writing tests that are effectively worthless just for the sake of
+writing a test.</p>
+<p>However, testing is critical and we <em>must</em> find a good
+balance. The following are some general points that a good set of tests
+provide:</p>
+<ul>
+<li>Tests must cover all features and bug code changes</li>
+<li>Tests must be 100% repeatable</li>
+<li>Tests should be automated 100%, if possible</li>
+<li>Tests should combine <em>white</em> and <em>black</em> box testing</li>
+<li>Tests should be easy to run selectively</li>
+<li>Tests should produce nice reports</li>
+</ul>
+<p>Faithfully writing tests along with new code contributes over time to
+a increasingly stable code base.</p>
+<h3 id="testing-builds-confidence">Testing Builds Confidence</h3>
+<p>As software projects evolve over time, developers and users gain
+benefits beyond just <em>stable software</em> including:</p>
+<ol>
+<li>
+<p>Confidence to the point of taking the software for granted. They then
+begin to rely on the software without even realizing it.</p>
+</li>
+<li>
+<p>Operational problems become rare because most issue are caught and
+fixed in a lab or a <em>controlled</em> system on the client site.</p>
+</li>
+<li>
+<p>When problems do occur they are typically resolved very
+quickly. Stable products tend to be well documented, as well as having meaningful
+logs and great support tools.</p>
+</li>
+<li>
+<p>Software Development Becomes Faster</p>
+</li>
+</ol>
+<p>The test environment creates a <em>factory</em> for producing well machined
+software.</p>
+<blockquote>
+<p>High quality code can be developed and released quickly, with little
+risk of new failures.</p>
+</blockquote>
+<p>A good test rig will allow the developer to easily run selective tests
+from the <em>developers development process (REPL)</em>. The result is a much
+higher rate of software delivery without an increase in error rates.</p>
+<h2 id="automated-vs-manual-tests">Automated vs. Manual Tests</h2>
+<p>Tests are far more effective when they are clearly written down. Even
+better, written down AND automated.</p>
+<p>It is inevitable that some tests, at least in certain industries, may
+have to be conducted manually. For example, making sure a robot hand does not
+break a glass bottle.  Ideally however, you will try
+automating tests as close to 100% as possible.</p>
+<h3 id="complete-test-runs-all-the-time">Complete Test Runs ALL the Time</h3>
+<p>With automated tests it is easy to run a complete suite of
+tests for every software change and addition of new code.</p>
+<p>Why not?</p>
+<p>Nothing will give a developer more confidence than comprehensive
+regression tests that are easy to run and easy to add new tests and
+modify existing ones.</p>
+<p>Automated tests will most likely provide the ability to run a subset
+of test or even pick a single specific one to run.</p>
+<p><em>The key is</em> a developer is free to run and re-run tests to her hearts
+content until she is convinced the code is ready for everybody else.</p>
+<h2 id="whitebox-vs-blackbox-testing">Whitebox vs. Blackbox Testing</h2>
+<h3 id="whitebox-testing">Whitebox Testing</h3>
+<p><em>White Box</em> testing means the <em>test function</em> has <em>internal</em> access to
+the the actual code being tested. In otherwords, the code can directly
+call any internal function or examine internal data structures.</p>
+<blockquote>
+<p><em>Unit Testing</em> is a standard form of <em>Whitebox Test</em>.</p>
+</blockquote>
+<p>Other <em>whitebox</em> tests may include performance and stress tests.</p>
+<h3 id="black-box-testing">Black Box Testing</h3>
+<p>Blackbox tests have <em>no access or knoweledge</em> of any <em>internal</em>
+functions or data structures, other than the applications &ldquo;Application
+Programming Interface&rdquo;.</p>
+<blockquote>
+<p><em>System Tests</em> are a standard form of <em>Blackbox Testing</em></p>
+</blockquote>
+<p>Other <em>blackbox</em> tests may also include performance and stress tests.</p>
+<h2 id="acceptance-tests--pass-without-fail">Acceptance Tests ~ Pass without Fail</h2>
+<p>Acceptance test is the term we will use for our <em>final system tests</em>.
+The tests that validate the <em>delivery agreement</em> between <em>development</em>
+and <em>client</em>.</p>
+<p>Before any <em>release</em> passes to a customer, the entire suite of
+<em>Acceptance Tests</em> must <strong>pass without fail</strong>.</p>
+<p>Acceptance tests are <em>System Tests</em> in that they will often involve
+co-ordination among two or more <em>sub-systems</em> or <em>micro-services</em>, as
+we like to call them now.  For example, a database and inputs from a
+sensor are two <em>sub-systems</em> that are frequently found in <em>embedded</em>
+and <em>IoT</em> style software projects.</p>
 
 	    </article>
 	</div>

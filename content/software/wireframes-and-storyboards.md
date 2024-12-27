@@ -6,9 +6,6 @@ description: >
 weight: 80
 ---
 
-{{<draft>}}
-[TODO Move this stuff to /software]
-
 This guide is best suited for small to mid sized development projects,
 a good example are micro-services or embedded development for small
 manufactures, makers and IoT companies.
@@ -62,4 +59,3 @@ down the _wireframes_ for the application.  Wireframes are going to:
 - Typography
 - Templates are page layouts (from wireframes)
 
-{{</draft>}}

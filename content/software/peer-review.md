@@ -8,7 +8,6 @@ description: >
   public or users.
 ---
 
-{{<draft>}}
 A _Peer Review_ is the process of _one or more peers_ knowledgable
 about your code who can examine and scrutinize every line.  This is a painful
 process, but so necessary.
@@ -53,4 +52,3 @@ Sometimes interesting fodder, but now it is time ...
 
 > To make a commitment!
 
-{{</draft>}}

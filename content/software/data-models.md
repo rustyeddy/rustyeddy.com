@@ -10,4 +10,9 @@ description: >
 
 {{<draft>}}
 
+We are going to need to store time-series data as well as good 'ol
+relational data.
+
+In short we are going to choose postgreSQL
+
 {{</draft>}}

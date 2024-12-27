@@ -8,6 +8,16 @@ weight: 30
 date: 2021-03-03
 ---
 
+1. Kanban boards are used to keep track of tasks or todo items that
+   need to be done, are a work in progress as well as tasks that have
+   been completed
+   
+2. There are many choices for Kanban boards, we will use the freebie
+   that comes with github. Though many other choices are available
+   including popular versions from gitlab, Trello and Jira.
+
+
+
 Kanban is fantastically simple. We will create a board with 3 columns,
 _Todo_, _Work In Progress_ and _Complete_.
 

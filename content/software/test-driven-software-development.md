@@ -9,8 +9,6 @@ description: >
   from the beginning
 ---
 
-{{<draft>}}
-
 ## Testing Unit and Systems
 
 Before any developers new code can be integrated into the _mainline_ 
@@ -161,5 +159,3 @@ we like to call them now.  For example, a database and inputs from a
 sensor are two _sub-systems_ that are frequently found in _embedded_
 and _IoT_ style software projects.
 
-
-{{</draft>}}
