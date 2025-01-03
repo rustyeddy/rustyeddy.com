@@ -2,3 +2,5 @@ baseURL: http://www.rustyeddy.com/
 languageCode: en-us
 title: Rusty Eddy
 publishDir: docs
+ignoreLogs: ['warning-goldmark-raw-html']
+

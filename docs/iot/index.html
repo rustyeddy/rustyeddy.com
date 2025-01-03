@@ -46,7 +46,7 @@
     <div class="col-md-8 text-center">
       <h1 class="header h2 pb-1">Internet Of Things</h1>
       <p class="leadin align-right text-muted text-center mt-0">
-        Building DIY electronic projects is a lot of fun, you no longer need to be a rocket scientest nor a millionaire to build some really cool IoT style of projects. Here we will build some cool projects, but unlike some of the other cools websites and youtube channels we will focus on the software side of IoT development, taking our projects sophistication to a whole new level by introducint communications and cloud to make our project truely global. Continue reading below to find out more.
+        Building DIY electronic projects is a lot of fun. You no longer need to be a rocket scientest nor a millionaire to build some really cool IoT style of projects. Here we will build some cool projects, but unlike some other cool projects we find on websites and Youtube channels we will focus mostly on the software side of IoT development, by way of a tool called OttO that allows use to take our projects sophistication to a whole new level with communication, cloud technology and intuitive user interfaces to make our projects really cool. Continue reading below to find out more.
 
       </p>
     </div>
@@ -76,10 +76,10 @@
 	<div class="col-8">
 	    <article class="article">
 		<h2 id="overview">Overview</h2>
-<p>The purpose of the project is two fold, first to build something cool
-that involves some a physical product aka IoT project. The second is
-to demostrate solid <em>Software Engineering Principals</em> and the practice
-of employing a professional <em>Software Development Life Cycle (SDLC)</em>.</p>
+<p>The purpose of the project is two fold, first to build a cool IoT
+project or two, second to demostrate solid <em>Software Engineering
+Principals</em> and the practice of employing a professional <em><a href="../software">Software
+Development Life Cycle (SDLC)</a></em>.</p>
 <p>Why IoT? Aside from the fact that I really enjoy IoT and have an IoT
 background. IoT employs a lot of interesting and diverse elements of
 software development.</p>
@@ -94,17 +94,21 @@ that runs on tiny realtime systems (esp32, raspberry Pi pico) using
 Raspberry Pi and the <em>Go</em> programming language. Web interfaces and
 Mobile Apps with <em>JavaScript</em> and <em>React</em>.</p>
 <h3 id="building-extensible-systems-with-apis">Building Extensible Systems with APIs</h3>
-<p>We will also be building public REST API&rsquo;s and PubSub messaging
-systems out a cloud based backend system giving us access to our
-project from anywhere in the world that can access the Internet.</p>
+<p>We will also be building public REST API&rsquo;s and use MQTT for a
+Publish/Subscribe (Pub/Sub) messaging system. We will also look at the
+aspects of out a cloud based backend giving us access to our project
+from anywhere in the world that can access the Internet.</p>
 <p>From a techinical perspetive all of these items are part of IoT and
 quite interesting in that they use a wide array of techical elements,
 require these disparate elements to be successfully integrated
 together and maintained like any complex software system.</p>
 <p>Also, they require a significant co-ordinated effort among various
-players: users, developers, stake-holders, etc.  During this process
-I&rsquo;ll try to lean on and explain sound software development practices
-as the project unfolds.</p>
+players: users, software developers, electrical engineers, mechanical
+designs, all sorts of technitions and various other stake-holders.</p>
+<p>During this process I&rsquo;ll focus on the software that I am most familiar
+with and and explain sound software development practices as the
+project unfolds. At the same time I&rsquo;ll be learning quite a bit about
+hardware as well as improving my software skills.</p>
 <h2 id="project-overview">Project Overview</h2>
 <p>The basic Idea of this project will be to develop software to observe
 and control a physical device from a remote UI, that is we will build
@@ -113,8 +117,7 @@ simple device and display it on a web interface viewable from
 anywhere, even a phone.</p>
 <p>After that we will add a relay (switch) capable of turning lights on
 and off from our user interface. This basic project will lay the
-foundation for quite a few other IoT projects that can be built by
-extending our base framework.</p>
+foundation to build other IoT projects should we want to.</p>
 <h2 id="the-architecture">The Architecture</h2>
 <p>We will do this in a very open and inter-changeable manner. For
 example, though we may choose say a Raspberry Pi to collect
@@ -122,9 +125,12 @@ temperature and humidity, also to control the relay we will build this
 project such that it is very easy to integrate a totaly different
 device using the same user interface and backend.</p>
 <p>That is we&rsquo;ll create API&rsquo;s and use messaging to create a <em>loosely
-coupled</em> infrastructure so that somebody that wanted to add to this
-system say an Arduino or ESP32 could do so just by developing toward
-the same API&rsquo;s and messaging system.</p>
+coupled</em> infrastructure such that anybody that wanted to could add to
+this system say an Arduino or ESP32, could do so just by developing
+toward the same API&rsquo;s and messaging system.</p>
+<h2 id="next">Next</h2>
+<p>Below are links to various articles that describe the project in quite
+a bit more detail.</p>
 
 	    </article>
 	</div>
@@ -137,7 +143,7 @@ the same API&rsquo;s and messaging system.</p>
         <div class="card mb-4">
           <div class="card-body">
 	    <div class="card-title">
-	      <a href="http://www.rustyeddy.com/iot/iot-edge-gateway/">Iot Edge Gateway</a>
+	      <a href="http://www.rustyeddy.com/iot/iot-edge-gateway/">OttO the Iot Gateway</a>
 	    </div>
             <div class="card-text small">
               The IoT Hub is the center piece of the IoT project as gathers data, runs application logic. Provides an HTTP Server to serve up a Web App, REST API and Web sockets. This project is a Micro service written in Go, and is perfect for systems hackers, backend devs and full-stackers.
