@@ -5,7 +5,7 @@
 
   
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="https://www.rustyeddy.com/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
 
   
   <title>Adding the REST API to IoT Gateway</title>
@@ -22,7 +22,7 @@
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
 
-      <a class="navbar-brand" href="https://www.rustyeddy.com/"><span claa="h1">rusty eddy:</span></a>
+      <a class="navbar-brand" href="/"><span claa="h1">rusty eddy:</span></a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -31,19 +31,19 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <nav class="navbar-nav me-auto mb-2 mb-lg-0">
 	  <div class="nav-item">
-  	    <a class="nav-link" href="https://www.rustyeddy.com/iot/"> iot &nbsp</a>
+  	    <a class="nav-link" href="/iot/"> iot &nbsp</a>
           </div>
           <div class="nav-item">
-  	    <a class="nav-link" href="https://www.rustyeddy.com/software"> software &nbsp</a>
+  	    <a class="nav-link" href="/software"> software &nbsp</a>
           </div>
           <div class="nav-item">
-  	    <a class="nav-link" href="https://www.rustyeddy.com/notes"> notes &nbsp</a>
+  	    <a class="nav-link" href="/notes"> notes &nbsp</a>
           </div>
           <div class="nav-item">
-  	    <a class="nav-link" href="https://www.rustyeddy.com/resume"> resume &nbsp</a>
+  	    <a class="nav-link" href="/resume"> resume &nbsp</a>
           </div>
           <div class="nav-item">
-  	    <a class="nav-link" href="https://www.rustyeddy.com/about"> about &nbsp</a>
+  	    <a class="nav-link" href="/about"> about &nbsp</a>
           </div>
         </nav>
       </div>
@@ -86,12 +86,12 @@
     <div class="col-md-8 hero-text">
 	<article class="article">
 	  <p>Previously we have added
-<a href="https://www.rustyeddy.com/iot/iot-gateway-mqtt/">MQTT to the IoT Gateway</a> as part of the
-<a href="https://www.rustyeddy.com/iot/iot-project">Organic Gardner Project</a>. This gave the gateway the
+<a href="/iot/iot-gateway-mqtt/">MQTT to the IoT Gateway</a> as part of the
+<a href="/iot/iot-project">Organic Gardner Project</a>. This gave the gateway the
 ability to collect and store a lot of environmental data from sensors
 all over the place.</p>
 <p>Now we need to provide a way for others programs, like the
-<a href="https://www.rustyeddy.com/iot/dashboard">IoT Dashboard</a> access that data via a REST API.</p>
+<a href="/iot/dashboard">IoT Dashboard</a> access that data via a REST API.</p>
 <h2 id="implementing-a-restful-api">Implementing a RESTful API</h2>
 <p><a href="https://www.redhat.com/en/topics/api/what-is-a-rest-api">The RESTful API</a>
 <em>convention</em> is exteremely popular, well supported and is perfectly
@@ -295,7 +295,7 @@ package opens a TCP socket on port 8011 (by default) and waits for
 incoming HTTP requests.</p>
 <p>The top part of the screen from the image below the top part of screen
 captured below show the output from <em>iothub</em> program.</p>
-<p><img src="https://www.rustyeddy.com/img/iothub-curl.png" alt="IoT Hub REST"></p>
+<p><img src="/img/iothub-curl.png" alt="IoT Hub REST"></p>
 <p>The lower screen shows two commands: the first command is
 <code>mosquitto_pub</code> <em>mocking</em> a temperature value.</p>
 <pre tabindex="0"><code>% mosquitto_pub -t ss/data/station-01/tempf -m 72.3
@@ -329,7 +329,7 @@ data. The Dashboard is going to be what is known as a <em>Responsive</em>
 <em>Single Page Application (SPA)</em> written with the <em>Vue</em> reactive
 framework.</p>
 <p>Anyhow, get ready for GUI interfaces next!</p>
-<p><strong>Next</strong> <a href="https://www.rustyeddy.com/iot/iot-dashboard-vue">IoT Dashboard in Vue</a></p>
+<p><strong>Next</strong> <a href="/iot/iot-dashboard-vue">IoT Dashboard in Vue</a></p>
 
 	</article>
     </div>
@@ -353,7 +353,7 @@ framework.</p>
 	
         
       </div>
-      <div>site by <a href="https://www.rustyeddy.com/">Eddy Consulting, LLC.</a> ~ &#xA9; 2008 to 2024 </div>
+      <div>site by <a href="/">Eddy Consulting, LLC.</a> ~ &#xA9; 2008 to 2024 </div>
     </div>
     <div class="col">
       <div class="text-left">

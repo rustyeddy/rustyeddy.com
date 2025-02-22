@@ -5,7 +5,7 @@
 
   
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="https://www.rustyeddy.com/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
 
   
   <title>OttO the Iot Gateway</title>
@@ -22,7 +22,7 @@
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
 
-      <a class="navbar-brand" href="https://www.rustyeddy.com/"><span claa="h1">rusty eddy:</span></a>
+      <a class="navbar-brand" href="/"><span claa="h1">rusty eddy:</span></a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -31,19 +31,19 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <nav class="navbar-nav me-auto mb-2 mb-lg-0">
 	  <div class="nav-item">
-  	    <a class="nav-link" href="https://www.rustyeddy.com/iot/"> iot &nbsp</a>
+  	    <a class="nav-link" href="/iot/"> iot &nbsp</a>
           </div>
           <div class="nav-item">
-  	    <a class="nav-link" href="https://www.rustyeddy.com/software"> software &nbsp</a>
+  	    <a class="nav-link" href="/software"> software &nbsp</a>
           </div>
           <div class="nav-item">
-  	    <a class="nav-link" href="https://www.rustyeddy.com/notes"> notes &nbsp</a>
+  	    <a class="nav-link" href="/notes"> notes &nbsp</a>
           </div>
           <div class="nav-item">
-  	    <a class="nav-link" href="https://www.rustyeddy.com/resume"> resume &nbsp</a>
+  	    <a class="nav-link" href="/resume"> resume &nbsp</a>
           </div>
           <div class="nav-item">
-  	    <a class="nav-link" href="https://www.rustyeddy.com/about"> about &nbsp</a>
+  	    <a class="nav-link" href="/about"> about &nbsp</a>
           </div>
         </nav>
       </div>
@@ -85,13 +85,13 @@
     <div class="col"></div>
     <div class="col-md-8 hero-text">
 	<article class="article">
-	  <p><img src="https://www.rustyeddy.com/img/iothub.png" alt="High Level Sensor Station"></p>
+	  <p><img src="/img/iothub.png" alt="High Level Sensor Station"></p>
 <h2 id="what-does-og-hub-do">What Does OG Hub Do?</h2>
 <p>In a nutshell the <em>Hub</em> gathers environmental data from a network of
 <a href="iot/collection-station">Collection Stations</a> using the well
 known <em>MQTT Messaging</em> protocol. The hub feeds the data to the
 <em>Oraganic Gardner</em> application, streams it real-time to
-<a href="https://www.rustyeddy.com/iot/dashboard"><em>dashboard</em></a> users via
+<a href="/iot/dashboard"><em>dashboard</em></a> users via
 <a href="http://websockets.org">Websockets</a> and caches the data in RAM.</p>
 <h2 id="how-does-the-hub-work">How Does the Hub Work?</h2>
 <p>The Hub is a small, fast server written in <a href="http://golang.org"><em>Go</em></a>
@@ -115,7 +115,7 @@ sophisticated application and also keep it <em>small, robust fast</em>. YEA!</p>
 <blockquote>
 <p>As matter of fact, it is so small and fast, it is more than happy to
 run on a <em>Raspberry Pi</em>!</p></blockquote>
-<p><img src="https://www.rustyeddy.com/img/rpi.jpg" alt="High Level Sensor Station"></p>
+<p><img src="/img/rpi.jpg" alt="High Level Sensor Station"></p>
 <h3 id="readers-writers-and-concurrency">Readers, Writers and Concurrency</h3>
 <p>The Hub is really a  moderately sophisticed data multiplexer made up
 of multiple <em>concurrent</em> <em>readers</em> and <em>writers</em>. The cuncurrency is
@@ -127,13 +127,13 @@ described in a future article.</p>
 <p>Todo write article on how hub uses channels and go functions</p></blockquote>
 <h3 id="current-features-mvp">Current Features (MVP)</h3>
 <p>The <em>1st Milestone</em> of the
-<a href="https://www.rustyeddy.com/iot"><em>Organic Gardener IoT Project</em></a> has been completed. The
+<a href="/iot"><em>Organic Gardener IoT Project</em></a> has been completed. The
 list of supported features are:</p>
 <ol>
 <li>Collect environmental Data via MQTT</li>
 <li>Cache collected data in RAM.</li>
 <li>HTTP server to provide a REST API</li>
-<li>HTTP server to serve the <a href="https://www.rustyeddy.com/iot/dashboard">Dashboard</a> webapp</li>
+<li>HTTP server to serve the <a href="/iot/dashboard">Dashboard</a> webapp</li>
 <li>HTTP server enhanced with Websockets to stream data live</li>
 </ol>
 <h4 id="coming-soon-">Coming Soon &hellip;</h4>
@@ -147,7 +147,7 @@ the Hub has collected. To pull this off we are going to <em>Mock</em> a
 <em>Collection</em> or two by sending &ldquo;fake&rdquo; data using the <em>mosquitto_pub</em>
 client.</p>
 <h3 id="fire-up-the-hub">Fire Up The Hub</h3>
-<p><img src="https://www.rustyeddy.com/img/screen-shot-hub-start.png" alt="High Level Sensor Station"></p>
+<p><img src="/img/screen-shot-hub-start.png" alt="High Level Sensor Station"></p>
 <p>Above is a screenshot of the logs displayed when the <em>Hub</em> has
 started. If we read logs beging with the first we will find that the
 hub has:</p>
@@ -176,7 +176,7 @@ data using the cool MQTT publishing utility <em>mosquito_pub</em>.</p>
 </span></span></code></pre></div><p>We will fake data from sensor <code>tempf</code> to topic
 <code>ss/data/10.11.1.11/tempf</code> the value of <code>98.6</code> using the
 following command:</p>
-<p><img src="https://www.rustyeddy.com/img/screen-shot-hub-data.png" alt="High Level Sensor Station"></p>
+<p><img src="/img/screen-shot-hub-data.png" alt="High Level Sensor Station"></p>
 <p>In the above screen shot <code>mosquitto_pub</code> published the temperature
 in farenhiet to the topic <code>ss/data/10.11.1.11/tempf</code> where the CS
 <em>station id</em> is represented by <code>10.11.1.11</code>. Likewise, the sensorID
@@ -199,7 +199,7 @@ environmental data.</p>
 <h3 id="using-the-rest-api">Using the REST API</h3>
 <p>Another screenshot is in order. This time I&rsquo;ll use curl to call the
 data REST API to retrieve the one piece of data we have collected:</p>
-<p><img src="https://www.rustyeddy.com/img/screen-shot-hub-curl.png" alt="Hub REST API"></p>
+<p><img src="/img/screen-shot-hub-curl.png" alt="Hub REST API"></p>
 <p>Notice the <code>curl</code> command in the bottom screen, the data has been
 returned in full JSON format. This single data point looks like
 this when pretty printed.</p>
@@ -237,7 +237,7 @@ Page App (SPA)</em> discussed on it&rsquo;s own section of this project
 site. The <em>Hub</em> and <em>Dashboard</em> support <em>Websockets</em> allowing the Hub
 to update the Dashboard when new data arrives in <em>real-time</em>.</p>
 <p>We will talk alot more about this in the
-<a href="https://www.rustyeddy.com/iot/dashboard">Dashboard</a></p>
+<a href="/iot/dashboard">Dashboard</a></p>
 
 	</article>
     </div>
@@ -261,7 +261,7 @@ to update the Dashboard when new data arrives in <em>real-time</em>.</p>
 	
         
       </div>
-      <div>site by <a href="https://www.rustyeddy.com/">Eddy Consulting, LLC.</a> ~ &#xA9; 2008 to 2024 </div>
+      <div>site by <a href="/">Eddy Consulting, LLC.</a> ~ &#xA9; 2008 to 2024 </div>
     </div>
     <div class="col">
       <div class="text-left">
