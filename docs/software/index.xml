@@ -34,7 +34,7 @@
       <link>http://www.rustyeddy.com/software/use-cases-to-tasks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/software/use-cases-to-tasks/</guid>
-      <description>&lt;h2 id=&#34;recap-from-use-cases&#34;&gt;Recap from Use-Cases&lt;/h2&gt;&#xA;&lt;p&gt;In our previous article &lt;a href=&#34;http://www.rustyeddy.com/software/use-cases&#34;&gt;use-cases&lt;/a&gt; we started&#xA;deriving &lt;em&gt;Kelly&amp;rsquo;s Automatic Gardener&lt;/em&gt; into the first use-case&lt;/p&gt;&#xA;&lt;h3 id=&#34;use-case&#34;&gt;Use Case&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Use-case 1: As a gardener I want my sprinkler system to peridoically&#xA;measure the moisture level of soil and turn on a water pump when the&#xA;soil is dry, then turn it off when it gets too wet.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;This use-case can then be &lt;em&gt;sliced&lt;/em&gt; into a couple more use cases. The&#xA;additional use-cases can also be broke out to include:&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;recap-from-use-cases&#34;&gt;Recap from Use-Cases&lt;/h2&gt;&#xA;&lt;p&gt;In our previous article &lt;a href=&#34;http://www.rustyeddy.com/software/use-cases&#34;&gt;use-cases&lt;/a&gt; we started&#xA;deriving &lt;em&gt;Kelly&amp;rsquo;s Automatic Gardener&lt;/em&gt; into the first use-case&lt;/p&gt;&#xA;&lt;h3 id=&#34;use-case&#34;&gt;Use Case&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Use-case 1: As a gardener I want my sprinkler system to peridoically&#xA;measure the moisture level of soil and turn on a water pump when the&#xA;soil is dry, then turn it off when it gets too wet.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;This use-case can then be &lt;em&gt;sliced&lt;/em&gt; into a couple more use cases. The&#xA;additional use-cases can also be broke out to include:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Organizing Software Projects with Kanban</title>
@@ -48,7 +48,7 @@
       <link>http://www.rustyeddy.com/software/version-control-systems/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/software/version-control-systems/</guid>
-      <description>&lt;p&gt;It frightens me everytime I am introduced to a new software project&#xA;where the &amp;ldquo;latest&amp;rdquo; source code is somebodies folder &lt;em&gt;somewhere&lt;/em&gt; with&#xA;copies being passed around on thumb drives.&lt;/p&gt;&#xA;&lt;p&gt;Such a lack process invites confusion from the beginning and inspires&#xA;questions like:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;which copy of the file has your changes?&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;If you are working like this STOP! It does not have to be this&#xA;way. no, start using Version Control now!&lt;/p&gt;</description>
+      <description>&lt;p&gt;It frightens me everytime I am introduced to a new software project&#xA;where the &amp;ldquo;latest&amp;rdquo; source code is somebodies folder &lt;em&gt;somewhere&lt;/em&gt; with&#xA;copies being passed around on thumb drives.&lt;/p&gt;&#xA;&lt;p&gt;Such a lack process invites confusion from the beginning and inspires&#xA;questions like:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;which copy of the file has your changes?&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;If you are working like this STOP! It does not have to be this&#xA;way. no, start using Version Control now!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Test Driven Software Development</title>

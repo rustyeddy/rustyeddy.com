@@ -5,7 +5,7 @@
 
   
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="http://www.rustyeddy.com/css/style.css" />
 
   
   <title>How to Build a Self Watering Garden</title>
@@ -20,23 +20,33 @@
 </head>
 <body><header class="container bg-white">
   <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
 
-    <a class="navbar-brand text-muted text-monospace" href="/"><span claa="h1">rusty eddy:</span></a>
+      <a class="navbar-brand" href="http://www.rustyeddy.com/"><span claa="h1">rusty eddy:</span></a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <nav class="navbar-nav w-100 justify-content-end">
-	<div class="nav w-100">
-  	  <a class="nav-link" href="/iot/"> iot &nbsp</a>
-  	  <a class="nav-link" href="/software"> software &nbsp</a> 
-  	  <a class="nav-link" href="/notes"> notes &nbsp</a>
-  	  <a class="nav-link" href="/resume"> resume &nbsp</a> 
-  	  <a class="nav-link" href="/about"> about &nbsp</a> 
-	</div>
-      </nav>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <nav class="navbar-nav me-auto mb-2 mb-lg-0">
+	  <div class="nav-item">
+  	    <a class="nav-link" href="http://www.rustyeddy.com/iot/"> iot &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="http://www.rustyeddy.com/software"> software &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="http://www.rustyeddy.com/notes"> notes &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="http://www.rustyeddy.com/resume"> resume &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="http://www.rustyeddy.com/about"> about &nbsp</a>
+          </div>
+        </nav>
+      </div>
     </div>
   </nav>
 </header>
@@ -73,7 +83,7 @@
     <div class="col"></div>
     <div class="col-md-8 hero-text">
 	<article class="article">
-	  <p><img src="/img/self-watering-garden.png" alt="Garden Diagram"></p>
+	  <p><img src="http://www.rustyeddy.com/img/self-watering-garden.png" alt="Garden Diagram"></p>
 <hr>
 <h2 id="why-build-this-thing">Why Build this Thing</h2>
 <p>The typical small irrigation systems today are based on time schedules,
@@ -115,7 +125,7 @@ water based on <em>the</em> plant or crop being watered and not a drop extra.</p
 levels) are collected by a collection station diagrammed below. The
 moisture sensor is placed in the soil near the plant(s) that need to
 be watered.</p>
-<p><img src="/img/collection-station.png" alt="Collection Station"></p>
+<p><img src="http://www.rustyeddy.com/img/collection-station.png" alt="Collection Station"></p>
 <p>The <a href="https://github.com/rustyeddy/ogesp"><em>collector</em></a> gathers and
 publishes the soil moisture level periodically over a wireless network.
 The <a href="https://rustyeddy.com/iot/iote"><em>smart hub</em></a> will then process
@@ -132,7 +142,7 @@ can be turned on or off as a result of receiving the corresponding
 message from IoTe.</p>
 <p>The <em>control station</em> may optionally be connected to other accessories
 such as a lighting or heating systems.</p>
-<p><img src="/img/control-station.png" alt="Control Station"></p>
+<p><img src="http://www.rustyeddy.com/img/control-station.png" alt="Control Station"></p>
 <p>As the plant is being watered, moisture levels are transmitted back to
 the Hub when the soil has hit the appropriate moisture level. The
 <em>Smart Hub</em> will then send a control message back to the <em>controller</em>
@@ -145,8 +155,7 @@ Dashboard also allows a user to manually activate sprinklers and
 configure moisture thresholds that determine when
 sprinklers are activated and de-activated.</p>
 <blockquote>
-<p>Todo a Screenshot of the Dashboard</p>
-</blockquote>
+<p>Todo a Screenshot of the Dashboard</p></blockquote>
 <p>Essentially the dashboard gives humans the ability to monitor,
 configure and control the irrigation system.</p>
 <h3 id="the-cloud">The Cloud</h3>
@@ -158,8 +167,7 @@ Connection.</p>
 <p>Your garden can be monitored, controlled and configured from your
 phone anywhere in the world!</p>
 <blockquote>
-<p>Todo Picture of a Phone and Dashboard</p>
-</blockquote>
+<p>Todo Picture of a Phone and Dashboard</p></blockquote>
 <p>The history of data collected in the cloud as well as watering times
 can be plugged into a <em>Machine Learning (ML)</em> or <em>Data Science</em>
 framework if desired.  We will talk a bit more about <em>ML</em> in a future
@@ -211,7 +219,7 @@ involved!</p>
 	
         
       </div>
-      <div>site by <a href="/">Eddy Consulting, LLC.</a> ~ &#xA9; 2008 to 2024 </div>
+      <div>site by <a href="http://www.rustyeddy.com/">Eddy Consulting, LLC.</a> ~ &#xA9; 2008 to 2024 </div>
     </div>
     <div class="col">
       <div class="text-left">
@@ -230,13 +238,10 @@ involved!</p>
 <script>
  window.dataLayer = window.dataLayer || [];
  function gtag(){dataLayer.push(arguments);}
-
+</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
   </body>
 </html>

@@ -16,15 +16,22 @@ date: 2023-01-13
 
 I had a great idea to help my wife maintain her massive succulent
 collection by building a self watering garden. This project would
-consist of three primary components: 
+consist of these primary components: 
 
-1. The _soil sensor_ is a piece of hardware that she could place in
-   dirt to measure the soil moisture and a small pump to water the dry
-   soil.
+1. The _soil sensor_ that can be burried in some dirt to measure the
+   moisture level of the respective soil and _publish_ the moisture
+   level to some controlling software.
+   
+2. A small pump or drip system that will turn on when the moisture
+   level gets too low, likewise turn off when the soil gets we enough. 
 
-2. The _controller_ that will collect moisture data from all the soil
-   moisture sensors and provide a user interface to track moisture
-   levels and manually control the pump.
+2. The _controller_ is a piece of software running on a computer
+   _somewhere_ that collects the moisture data from the various
+   moisture sensors that determines the dry and wet levels the water
+   pump will be turned on and off respectively.
+   
+3. A user interface / app allow the gardner to control and observe how
+   the system is functioning.
 
 3. The _cloud_ element such that the data could be accessed and pump
    controlled from anywhere.
@@ -33,14 +40,17 @@ Turns out my brilliant idea is not all that unique, a quick search on
 google turns up a bunch of similar projects. Oh well, maybe not unique
 but useful still. 
 
-The thing that struck me about most of these projects is that they are
-built as a single, self contained watering station. I am a little more
-ambitious in that I want to control a whole yard full of watering
-stations and be able to control them from anywhere in the world!
+### Not just one but many
 
-There is a little bit of hardware to be built and a whole lot of
-software to be written. I am not a hardware guy so I'm going to hack
-together a prototype or two to get this project rolling.
+The thing that struck me about most of the automated watering systems
+I found on the internet are built as a single, self contained watering
+station. I am a little more ambitious in that I want to control a
+whole yard full of watering stations with an app, also to be able to
+control and observe them from anywhere in the world!
+
+There is some hardware to be built and some software to be written. I
+am not a hardware guy so I'm going to hack together a prototype or two
+to get this project rolling.
 
 However, I am a software professional (don't laugh it's true!), so why
 not handle this like a real software project that I would do in my day
@@ -57,18 +67,46 @@ software development project into three primary phases:
 2. Development 
 3. Delivery
 
-These three phases are certainly linear but I want to make it really
+These three phases are can certainly be linear but I want to make it really
 clear, there are iterative cycles within each of these phases and
-amoung the phases collectively. 
+amoung the phases collectively. As matter of fact, in many cases of
+the project is never completely _finished_. 
 
-As matter of fact that the iterative nature of this development
-process is at the heart of true _Agile Software Development_.
+However we can manage the project such that we define our _milestones_
+such that we incrementally provide useful new features to our users
+with each delivery.
 
-Let's jump into each of these phases just a little deeper.
+As matter of fact that the iterative nature of this type development
+process is at the _spirit_ of true _Agile Software Development_.
 
 ---
 
 ## The Design Phase - Getting Started
+
+The first step in this process is articulating the first set of
+requirements, desires, objectives, needs or what ever phrase you
+like. In our case, we are going to use the funtionality listed at the
+top of this page.
+
+Then we now need to determine which of these are _must haves_
+vs. _nice to have_ then draw a line at the specific level of
+functionality we are going to deliver first.
+
+### The Minimum Viable Product
+
+The first major milesstone will be determining the _Minimum Viable
+Product (MVP)_. 
+
+> For those of you that have not already read Eric Reiss book "_The
+> Lean Startup_" I highly recommend you put it on your reading list.
+
+Determining the MVP can be quite challenging, the first challenge is
+clearly articulating the _required_ functionality. The second and
+perhaps even more challenging aspect is deciding where to draw the
+line between adding features and shipping something useful.
+
+We will define our MVP in the next couple paragraphs, so let's jump
+into each of these phases just a little deeper. 
 
 I had Kelly describe to me in high level, non-technical detail the
 various ways she wanted to use the product. She described the various

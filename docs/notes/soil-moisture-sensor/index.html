@@ -5,7 +5,7 @@
 
   
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="http://www.rustyeddy.com/css/style.css" />
 
   
   <title>Soil Mosture Sensors</title>
@@ -20,23 +20,33 @@
 </head>
 <body><header class="container bg-white">
   <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
 
-    <a class="navbar-brand text-muted text-monospace" href="/"><span claa="h1">rusty eddy:</span></a>
+      <a class="navbar-brand" href="http://www.rustyeddy.com/"><span claa="h1">rusty eddy:</span></a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <nav class="navbar-nav w-100 justify-content-end">
-	<div class="nav w-100">
-  	  <a class="nav-link" href="/iot/"> iot &nbsp</a>
-  	  <a class="nav-link" href="/software"> software &nbsp</a> 
-  	  <a class="nav-link" href="/notes"> notes &nbsp</a>
-  	  <a class="nav-link" href="/resume"> resume &nbsp</a> 
-  	  <a class="nav-link" href="/about"> about &nbsp</a> 
-	</div>
-      </nav>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <nav class="navbar-nav me-auto mb-2 mb-lg-0">
+	  <div class="nav-item">
+  	    <a class="nav-link" href="http://www.rustyeddy.com/iot/"> iot &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="http://www.rustyeddy.com/software"> software &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="http://www.rustyeddy.com/notes"> notes &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="http://www.rustyeddy.com/resume"> resume &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="http://www.rustyeddy.com/about"> about &nbsp</a>
+          </div>
+        </nav>
+      </div>
     </div>
   </nav>
 </header>
@@ -77,7 +87,7 @@
 <p>Seems like I&rsquo;m not as uniquely clever as I once thought, the idea of
 creating a self watering garden is probably one of the more popular
 DIY maker projects on the Internet it seems.</p>
-<p>Check out my version of the <a href="/iot/self-watering-garden">Self Watering Garden</a></p>
+<p>Check out my version of the <a href="http://www.rustyeddy.com/iot/self-watering-garden">Self Watering Garden</a></p>
 <p>What makes my project different?  Probably not alot, however in this
 project we treat each of the watering <em>stations</em> as a part of a
 larger, complete <em>system</em> of the watering stations that can be
@@ -92,8 +102,7 @@ other project, which &ldquo;just work&rdquo;, these soil sensors are problematic
 <p>If you do a quick google search on &ldquo;arduino soil moisture sensors&rdquo; you
 will immediately see two types: <em>resistive</em> and <em>capacitive</em> sensors.</p>
 <blockquote>
-<p>TBD place a pic of capacitive and resistive sensors here</p>
-</blockquote>
+<p>TBD place a pic of capacitive and resistive sensors here</p></blockquote>
 <p>In short we choose the capacitive over resistive version of the
 sensor. Many others have done a great job explaining why the resistive
 sensor is NOT a good choice so I won&rsquo;t repeat them here, however, if
@@ -114,8 +123,7 @@ shame!</p>
 <p>This is a really good video claiming 82% of them do not work
 correctly. It also goes on to describe how to tell which sensors are
 better.</p>
-
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
       <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/IGP38bz-K48?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
     </div>
 
@@ -138,8 +146,7 @@ pic.</p>
 sensor made without the appropriate 662 voltage regulator.</p>
 <p>Look at the label on the timer chip.</p>
 <blockquote>
-<p>TLC555 good.  NE555 chip bad.</p>
-</blockquote>
+<p>TLC555 good.  NE555 chip bad.</p></blockquote>
 <p>The NE555 needs at least 4v and will not work if power comes in less
 than the 4v like can happen for certain batteries.</p>
 <p>Turns out the sensors I bought have the NE555 chip. Sigh. That won&rsquo;t
@@ -179,8 +186,7 @@ seconds to instantaneously.</p>
 <p>I have two different styles, they both work but have different scales
 and speeds to detect the changes.</p>
 <blockquote>
-<p>Todo place a pic of the two version I have here.</p>
-</blockquote>
+<p>Todo place a pic of the two version I have here.</p></blockquote>
 <h2 id="they-are-not-all-the-same">They are not all the same!</h2>
 <p>Differences amoung the choices out there are amazingly broad. They
 have a bad reputation for being unreliable or unpredictable.</p>
@@ -191,8 +197,7 @@ have a bad reputation for being unreliable or unpredictable.</p>
 <h2 id="response-times">Response Times</h2>
 <p>Placing a 1M Ohm resistor between the ground and signal pins?</p>
 <p>As described in this video at the 5:05 minute mark.</p>
-
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
       <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/QGCrtXf8YSs?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
     </div>
 
@@ -211,8 +216,7 @@ found across the Internet and describing various options for
 options .</p>
 <blockquote>
 <p>I wonder why the manufacture did not take care of protecting these
-devices. Hmm.</p>
-</blockquote>
+devices. Hmm.</p></blockquote>
 <p>Daniel goes into a great amount of detail in his article, I&rsquo;m not
 going to repeat what he has to say, just choose a couple to try
 myself. I highly recommend reading the article, however.</p>
@@ -248,7 +252,7 @@ methods to make them more reliable and last longer.</p>
 	
         
       </div>
-      <div>site by <a href="/">Eddy Consulting, LLC.</a> ~ &#xA9; 2008 to 2024 </div>
+      <div>site by <a href="http://www.rustyeddy.com/">Eddy Consulting, LLC.</a> ~ &#xA9; 2008 to 2024 </div>
     </div>
     <div class="col">
       <div class="text-left">
@@ -267,13 +271,10 @@ methods to make them more reliable and last longer.</p>
 <script>
  window.dataLayer = window.dataLayer || [];
  function gtag(){dataLayer.push(arguments);}
-
+</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
   </body>
 </html>

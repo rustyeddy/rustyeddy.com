@@ -27,7 +27,7 @@
       <link>http://www.rustyeddy.com/notes/rpi-motor-control-service/</link>
       <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/notes/rpi-motor-control-service/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;TODO ~ replace image with one of the Raspberry Pi Controller&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;This software adds a Skid Steer motor control software to the&#xA;&lt;a href=&#34;http://github.com/mobilerobot-io/rpid&#34;&gt;Raspberry Pi Device Server&lt;/a&gt;&#xA;device server.  RPID adds motor controls accessible via both MQTT and&#xA;REST APIs, as well as directly with the Skidder python library.&lt;/p&gt;</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;TODO ~ replace image with one of the Raspberry Pi Controller&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;This software adds a Skid Steer motor control software to the&#xA;&lt;a href=&#34;http://github.com/mobilerobot-io/rpid&#34;&gt;Raspberry Pi Device Server&lt;/a&gt;&#xA;device server.  RPID adds motor controls accessible via both MQTT and&#xA;REST APIs, as well as directly with the Skidder python library.&lt;/p&gt;</description>
     </item>
     <item>
       <title>MQTT For Controllor Communication</title>

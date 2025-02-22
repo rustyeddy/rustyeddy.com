@@ -41,7 +41,7 @@
       <link>http://www.rustyeddy.com/software/use-cases-to-tasks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/software/use-cases-to-tasks/</guid>
-      <description>&lt;h2 id=&#34;recap-from-use-cases&#34;&gt;Recap from Use-Cases&lt;/h2&gt;&#xA;&lt;p&gt;In our previous article &lt;a href=&#34;http://www.rustyeddy.com/software/use-cases&#34;&gt;use-cases&lt;/a&gt; we started&#xA;deriving &lt;em&gt;Kelly&amp;rsquo;s Automatic Gardener&lt;/em&gt; into the first use-case&lt;/p&gt;&#xA;&lt;h3 id=&#34;use-case&#34;&gt;Use Case&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Use-case 1: As a gardener I want my sprinkler system to peridoically&#xA;measure the moisture level of soil and turn on a water pump when the&#xA;soil is dry, then turn it off when it gets too wet.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;This use-case can then be &lt;em&gt;sliced&lt;/em&gt; into a couple more use cases. The&#xA;additional use-cases can also be broke out to include:&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;recap-from-use-cases&#34;&gt;Recap from Use-Cases&lt;/h2&gt;&#xA;&lt;p&gt;In our previous article &lt;a href=&#34;http://www.rustyeddy.com/software/use-cases&#34;&gt;use-cases&lt;/a&gt; we started&#xA;deriving &lt;em&gt;Kelly&amp;rsquo;s Automatic Gardener&lt;/em&gt; into the first use-case&lt;/p&gt;&#xA;&lt;h3 id=&#34;use-case&#34;&gt;Use Case&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Use-case 1: As a gardener I want my sprinkler system to peridoically&#xA;measure the moisture level of soil and turn on a water pump when the&#xA;soil is dry, then turn it off when it gets too wet.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;This use-case can then be &lt;em&gt;sliced&lt;/em&gt; into a couple more use cases. The&#xA;additional use-cases can also be broke out to include:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Collection Station</title>
@@ -62,7 +62,7 @@
       <link>http://www.rustyeddy.com/software/version-control-systems/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/software/version-control-systems/</guid>
-      <description>&lt;p&gt;It frightens me everytime I am introduced to a new software project&#xA;where the &amp;ldquo;latest&amp;rdquo; source code is somebodies folder &lt;em&gt;somewhere&lt;/em&gt; with&#xA;copies being passed around on thumb drives.&lt;/p&gt;&#xA;&lt;p&gt;Such a lack process invites confusion from the beginning and inspires&#xA;questions like:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;which copy of the file has your changes?&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;If you are working like this STOP! It does not have to be this&#xA;way. no, start using Version Control now!&lt;/p&gt;</description>
+      <description>&lt;p&gt;It frightens me everytime I am introduced to a new software project&#xA;where the &amp;ldquo;latest&amp;rdquo; source code is somebodies folder &lt;em&gt;somewhere&lt;/em&gt; with&#xA;copies being passed around on thumb drives.&lt;/p&gt;&#xA;&lt;p&gt;Such a lack process invites confusion from the beginning and inspires&#xA;questions like:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;which copy of the file has your changes?&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;If you are working like this STOP! It does not have to be this&#xA;way. no, start using Version Control now!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Test Driven Software Development</title>
@@ -111,7 +111,7 @@
       <link>http://www.rustyeddy.com/resume/clients/sugo-music/</link>
       <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/resume/clients/sugo-music/</guid>
-      <description>&lt;p&gt;Sugo Music is an online Music publishing platform for Artists by&#xA;artists. It was my responsibility to manage the software process,&#xA;build and test the backend and manage the front-end development in&#xA;React.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Go, React, REST API, HTTP, HTML, JavaScript, Webapp, fullstack&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
+      <description>&lt;p&gt;Sugo Music is an online Music publishing platform for Artists by&#xA;artists. It was my responsibility to manage the software process,&#xA;build and test the backend and manage the front-end development in&#xA;React.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Go, React, REST API, HTTP, HTML, JavaScript, Webapp, fullstack&lt;/p&gt;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>University of Southern California ~ MSCS</title>
@@ -125,21 +125,21 @@
       <link>http://www.rustyeddy.com/resume/clients/sahara-networks/</link>
       <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/resume/clients/sahara-networks/</guid>
-      <description>&lt;p&gt;Sahara Networks is building something truley unique, connecting&#xA;micro-controllers and IoT devics across the network allowing virtual&#xA;circuits to be created. I help design, develop and lead the design and&#xA;implementation of the network protocol that delivers high speed&#xA;digital I/O signals across a &amp;ldquo;device network&amp;rdquo;.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Backend, C/C++, nodejs, TCP/IP and Raspberry Pi&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
+      <description>&lt;p&gt;Sahara Networks is building something truley unique, connecting&#xA;micro-controllers and IoT devics across the network allowing virtual&#xA;circuits to be created. I help design, develop and lead the design and&#xA;implementation of the network protocol that delivers high speed&#xA;digital I/O signals across a &amp;ldquo;device network&amp;rdquo;.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Backend, C/C++, nodejs, TCP/IP and Raspberry Pi&lt;/p&gt;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>Radian Laser</title>
       <link>http://www.rustyeddy.com/resume/clients/radian-laser/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/resume/clients/radian-laser/</guid>
-      <description>&lt;p&gt;Radian is a small, fast moving startup that sells Laser Engravers and&#xA;Cutters. I manage five software projects, including two Web&#xA;Applications for the control and calibration of the Laser system. I&#xA;am also responsible for the successful delivery and maintanance of the&#xA;products Firmaware and Fleet Management system.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;C/C++, Go &amp;amp; Python, embedded systems and microservices.&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
+      <description>&lt;p&gt;Radian is a small, fast moving startup that sells Laser Engravers and&#xA;Cutters. I manage five software projects, including two Web&#xA;Applications for the control and calibration of the Laser system. I&#xA;am also responsible for the successful delivery and maintanance of the&#xA;products Firmaware and Fleet Management system.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;C/C++, Go &amp;amp; Python, embedded systems and microservices.&lt;/p&gt;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>Cloud Trek</title>
       <link>http://www.rustyeddy.com/resume/clients/alchemy/</link>
       <pubDate>Sat, 01 Apr 2017 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/resume/clients/alchemy/</guid>
-      <description>&lt;p&gt;Alchemy Networks is an indepently owned service provider. I automated&#xA;the provisioning of their Private Cloud Service offering. I was an&#xA;individual contributor on this project. I collaborated with another&#xA;developer.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Ansible, Linux, Python, Websockets, Networking&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
+      <description>&lt;p&gt;Alchemy Networks is an indepently owned service provider. I automated&#xA;the provisioning of their Private Cloud Service offering. I was an&#xA;individual contributor on this project. I collaborated with another&#xA;developer.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Ansible, Linux, Python, Websockets, Networking&lt;/p&gt;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>DirecTV / AT&amp;T</title>
@@ -153,28 +153,28 @@
       <link>http://www.rustyeddy.com/resume/clients/sierra-hydrog/</link>
       <pubDate>Sat, 02 Jan 2010 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/resume/clients/sierra-hydrog/</guid>
-      <description>&lt;p&gt;Led the design and development of automated data collection for&#xA;hydrological gauging stations.  Data is gathered by pulling data from&#xA;line of sight telemetry radios and NOAA/LRGS satellite ground&#xA;stations. Data is fed to timeseries server for hydrological&#xA;calculations and alert monitoring.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Timeseries database, C/C++, PHP, Python and Java.&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
+      <description>&lt;p&gt;Led the design and development of automated data collection for&#xA;hydrological gauging stations.  Data is gathered by pulling data from&#xA;line of sight telemetry radios and NOAA/LRGS satellite ground&#xA;stations. Data is fed to timeseries server for hydrological&#xA;calculations and alert monitoring.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Timeseries database, C/C++, PHP, Python and Java.&lt;/p&gt;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>Green Hills Software</title>
       <link>http://www.rustyeddy.com/resume/clients/green-hills/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/resume/clients/green-hills/</guid>
-      <description>&lt;p&gt;I worked on a small team that added multicast forwarding to the &lt;em&gt;Integrity&lt;/em&gt; RTOS&#xA;kernal.  Modified multicast routing daemon to run on same operating&#xA;system allowing the product to serve as the foundation for a military&#xA;grade network switch/router.  Added IPv6 Neighbor Discovery to the&#xA;suite of routing protocols.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;C/C++ and Network Routing Protocols; Real Time OS.&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
+      <description>&lt;p&gt;I worked on a small team that added multicast forwarding to the &lt;em&gt;Integrity&lt;/em&gt; RTOS&#xA;kernal.  Modified multicast routing daemon to run on same operating&#xA;system allowing the product to serve as the foundation for a military&#xA;grade network switch/router.  Added IPv6 Neighbor Discovery to the&#xA;suite of routing protocols.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;C/C++ and Network Routing Protocols; Real Time OS.&lt;/p&gt;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>The IMS Company</title>
       <link>http://www.rustyeddy.com/resume/clients/ims-company/</link>
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/resume/clients/ims-company/</guid>
-      <description>&lt;p&gt;Led a project to replicate entertainment media (music, video and&#xA;games) from a single media source to hundreds of in­flight&#xA;entertainment units with minimal redundancy.  Contributed to the&#xA;design and development of an inflight entertainment server.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Perl, Python, C/C++ and Java&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
+      <description>&lt;p&gt;Led a project to replicate entertainment media (music, video and&#xA;games) from a single media source to hundreds of in­flight&#xA;entertainment units with minimal redundancy.  Contributed to the&#xA;design and development of an inflight entertainment server.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Perl, Python, C/C++ and Java&lt;/p&gt;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>Cisco Systems</title>
       <link>http://www.rustyeddy.com/resume/jobs/cisco-systems/</link>
       <pubDate>Wed, 01 Feb 2006 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/resume/jobs/cisco-systems/</guid>
-      <description>&lt;p&gt;Original member of the Multicast Routing team.  Team of 12 responsible&#xA;for the design, implementation and testing the complete suite of&#xA;Multicast Routing protocols for the Cisco Carrier Routing System&#xA;(CRS).  Worked this project from early design through product launch&#xA;into maintenance.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Computer Networks, Multicast Routing, C/C++, Real Time, Distributed&#xA;Systems&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
+      <description>&lt;p&gt;Original member of the Multicast Routing team.  Team of 12 responsible&#xA;for the design, implementation and testing the complete suite of&#xA;Multicast Routing protocols for the Cisco Carrier Routing System&#xA;(CRS).  Worked this project from early design through product launch&#xA;into maintenance.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Computer Networks, Multicast Routing, C/C++, Real Time, Distributed&#xA;Systems&lt;/p&gt;&lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>California State University, Long Beach</title>
@@ -293,14 +293,14 @@
       <link>http://www.rustyeddy.com/notes/poc-vs-production/</link>
       <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/notes/poc-vs-production/</guid>
-      <description>&lt;p&gt;A POC is taking a conceptAnd demonstrating that it can actually be&#xA;done in hardware and/or software. And implementation is&#xA;takingApproving POC And turning it into something usable To somebody&#xA;other than the developer.&lt;/p&gt;&#xA;&lt;p&gt;Embrace this fact, And projecting software Development times and cost&#xA;Become much less mysterious.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;TODO Create an example PoC to Development&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Was it Rodney Brooks that Said Plan on Throwing away your first&#xA;version. Because you will anyway.&lt;/p&gt;</description>
+      <description>&lt;p&gt;A POC is taking a conceptAnd demonstrating that it can actually be&#xA;done in hardware and/or software. And implementation is&#xA;takingApproving POC And turning it into something usable To somebody&#xA;other than the developer.&lt;/p&gt;&#xA;&lt;p&gt;Embrace this fact, And projecting software Development times and cost&#xA;Become much less mysterious.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;TODO Create an example PoC to Development&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Was it Rodney Brooks that Said Plan on Throwing away your first&#xA;version. Because you will anyway.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Get Ready to Go</title>
       <link>http://www.rustyeddy.com/notes/get-ready-to-go/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/notes/get-ready-to-go/</guid>
-      <description>&lt;h2 id=&#34;get-ready-to-_go_&#34;&gt;Get Ready To &lt;em&gt;Go&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;The IoT Gateway was written in the &lt;em&gt;Go&lt;/em&gt; programming language. I won&amp;rsquo;t&#xA;get into the reasons why &lt;em&gt;Go&lt;/em&gt; is an excellent choice of programming&#xA;language for this project other than to point out two advantages this&#xA;project will benefit from right away:&lt;/p&gt;&#xA;&lt;h3 id=&#34;go-is-compiled-and-easy-to-distribute&#34;&gt;Go is Compiled and easy to distribute&lt;/h3&gt;&#xA;&lt;p&gt;First, Go is a &lt;em&gt;compiled&lt;/em&gt; language making the resulting executable&#xA;self contained with no external libraries or run time environment to&#xA;rebuild, just copy a single binary, that is it.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;get-ready-to-go&#34;&gt;Get Ready To &lt;em&gt;Go&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;The IoT Gateway was written in the &lt;em&gt;Go&lt;/em&gt; programming language. I won&amp;rsquo;t&#xA;get into the reasons why &lt;em&gt;Go&lt;/em&gt; is an excellent choice of programming&#xA;language for this project other than to point out two advantages this&#xA;project will benefit from right away:&lt;/p&gt;&#xA;&lt;h3 id=&#34;go-is-compiled-and-easy-to-distribute&#34;&gt;Go is Compiled and easy to distribute&lt;/h3&gt;&#xA;&lt;p&gt;First, Go is a &lt;em&gt;compiled&lt;/em&gt; language making the resulting executable&#xA;self contained with no external libraries or run time environment to&#xA;rebuild, just copy a single binary, that is it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Paradise Aint Perfect</title>
@@ -349,7 +349,7 @@
       <link>http://www.rustyeddy.com/notes/sotware-is-iterative/</link>
       <pubDate>Wed, 23 Oct 2019 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/notes/sotware-is-iterative/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Good Software is Continually Improved&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;The greater the success software Is directly proportionate to The&#xA;number of features that are requested As well as the number of bugs&#xA;that are found.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Bug reports means your softwar is getting used.!.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;That is obvious if people are happy using a software That they might&#xA;have some requests that would flow in from time to time.&lt;/p&gt;&#xA;&lt;p&gt;What might seem counterintuitive is the fact that, Even well done&#xA;successful software will have bugs. Period. Good teams understand and&#xA;embrace that&amp;hellip; The Bugs will be fixed And the customers will be even&#xA;happier&lt;/p&gt;</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Good Software is Continually Improved&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;The greater the success software Is directly proportionate to The&#xA;number of features that are requested As well as the number of bugs&#xA;that are found.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Bug reports means your softwar is getting used.!.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;That is obvious if people are happy using a software That they might&#xA;have some requests that would flow in from time to time.&lt;/p&gt;&#xA;&lt;p&gt;What might seem counterintuitive is the fact that, Even well done&#xA;successful software will have bugs. Period. Good teams understand and&#xA;embrace that&amp;hellip; The Bugs will be fixed And the customers will be even&#xA;happier&lt;/p&gt;</description>
     </item>
     <item>
       <title>Why Choose the Go programming Language for your Project?</title>
@@ -377,7 +377,7 @@
       <link>http://www.rustyeddy.com/notes/rpi-motor-control-service/</link>
       <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/notes/rpi-motor-control-service/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;TODO ~ replace image with one of the Raspberry Pi Controller&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;This software adds a Skid Steer motor control software to the&#xA;&lt;a href=&#34;http://github.com/mobilerobot-io/rpid&#34;&gt;Raspberry Pi Device Server&lt;/a&gt;&#xA;device server.  RPID adds motor controls accessible via both MQTT and&#xA;REST APIs, as well as directly with the Skidder python library.&lt;/p&gt;</description>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;TODO ~ replace image with one of the Raspberry Pi Controller&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;This software adds a Skid Steer motor control software to the&#xA;&lt;a href=&#34;http://github.com/mobilerobot-io/rpid&#34;&gt;Raspberry Pi Device Server&lt;/a&gt;&#xA;device server.  RPID adds motor controls accessible via both MQTT and&#xA;REST APIs, as well as directly with the Skidder python library.&lt;/p&gt;</description>
     </item>
     <item>
       <title>MQTT For Controllor Communication</title>
@@ -405,7 +405,7 @@
       <link>http://www.rustyeddy.com/notes/streaming-video-tools/</link>
       <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
       <guid>http://www.rustyeddy.com/notes/streaming-video-tools/</guid>
-      <description>&lt;p&gt;The grandparents of streaming video, and snapshots, read, writing&#xA;and transcoding video and single frame images are &lt;em&gt;ffmpeg&lt;/em&gt;, &lt;em&gt;vlc&lt;/em&gt; and&#xA;&lt;em&gt;gstreamer&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Other platforms, such as the wildly cool and inexpensive Raspberry Pi&#xA;and attached CSI Camera (Raspberry Pi Camera) have thier own set of&#xA;utilities: like raspivid.  Or the NVidia Nano with it&amp;rsquo;s gst-streamer&#xA;plugins and nvgst-capture/nvgst-playback utilies.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;This writting is as of March 2019&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h3 id=&#34;gstreamer-complex-flexible-future-proof&#34;&gt;GStreamer Complex, Flexible, Future Proof&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;GStreamer&lt;/strong&gt; really complex pipelines but insanely flexible.&lt;/p&gt;</description>
+      <description>&lt;p&gt;The grandparents of streaming video, and snapshots, read, writing&#xA;and transcoding video and single frame images are &lt;em&gt;ffmpeg&lt;/em&gt;, &lt;em&gt;vlc&lt;/em&gt; and&#xA;&lt;em&gt;gstreamer&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Other platforms, such as the wildly cool and inexpensive Raspberry Pi&#xA;and attached CSI Camera (Raspberry Pi Camera) have thier own set of&#xA;utilities: like raspivid.  Or the NVidia Nano with it&amp;rsquo;s gst-streamer&#xA;plugins and nvgst-capture/nvgst-playback utilies.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;This writting is as of March 2019&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h3 id=&#34;gstreamer-complex-flexible-future-proof&#34;&gt;GStreamer Complex, Flexible, Future Proof&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;GStreamer&lt;/strong&gt; really complex pipelines but insanely flexible.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Control Station Display</title>

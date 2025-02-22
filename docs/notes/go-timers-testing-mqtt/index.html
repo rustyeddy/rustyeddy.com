@@ -5,7 +5,7 @@
 
   
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="http://www.rustyeddy.com/css/style.css" />
 
   
   <title>Using Go timers for MQTT testing</title>
@@ -20,23 +20,33 @@
 </head>
 <body><header class="container bg-white">
   <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
 
-    <a class="navbar-brand text-muted text-monospace" href="/"><span claa="h1">rusty eddy:</span></a>
+      <a class="navbar-brand" href="http://www.rustyeddy.com/"><span claa="h1">rusty eddy:</span></a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <nav class="navbar-nav w-100 justify-content-end">
-	<div class="nav w-100">
-  	  <a class="nav-link" href="/iot/"> iot &nbsp</a>
-  	  <a class="nav-link" href="/software"> software &nbsp</a> 
-  	  <a class="nav-link" href="/notes"> notes &nbsp</a>
-  	  <a class="nav-link" href="/resume"> resume &nbsp</a> 
-  	  <a class="nav-link" href="/about"> about &nbsp</a> 
-	</div>
-      </nav>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <nav class="navbar-nav me-auto mb-2 mb-lg-0">
+	  <div class="nav-item">
+  	    <a class="nav-link" href="http://www.rustyeddy.com/iot/"> iot &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="http://www.rustyeddy.com/software"> software &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="http://www.rustyeddy.com/notes"> notes &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="http://www.rustyeddy.com/resume"> resume &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="http://www.rustyeddy.com/about"> about &nbsp</a>
+          </div>
+        </nav>
+      </div>
     </div>
   </nav>
 </header>
@@ -106,33 +116,33 @@ failed.</p>
 <p>The follow test taken directly from the iote test cases <a href="https://github.com/rustyeddy/iote/blob/main/mqtt_test.go">see
 mqtt_test.go</a>
 as a reference. Let&rsquo;s check out the code.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// TestMQTT ensures that we can a) subscribe to a specific channel
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// b) publish data to a specific channel and c) recieve the data before
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// a timeout.  In this test we 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">TestMQTT</span>(<span style="color:#a6e22e">t</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">testing</span>.<span style="color:#a6e22e">T</span>) {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// TestMQTT ensures that we can a) subscribe to a specific channel</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// b) publish data to a specific channel and c) recieve the data before</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// a timeout.  In this test we </span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">TestMQTT</span>(<span style="color:#a6e22e">t</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">testing</span>.<span style="color:#a6e22e">T</span>) {
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Messanger is basically a wrapper around the MQTT client, we
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#75715e">// will use it to subscribe to the test channel and subsequently
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// publish a message to the channel
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">msg</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">GetMessanger</span>()
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Messanger is basically a wrapper around the MQTT client, we</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// will use it to subscribe to the test channel and subsequently</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// publish a message to the channel</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">msg</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">GetMessanger</span>()
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">msg</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">nil</span> {
 </span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">t</span>.<span style="color:#a6e22e">Error</span>(<span style="color:#e6db74">&#34;Expected a messanger but got nil&#34;</span>)
 </span></span><span style="display:flex;"><span>	}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// set up some variables for the test
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">topic</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">&#34;iote/test&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// set up some variables for the test</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">topic</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">&#34;iote/test&#34;</span>
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">message</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">&#34;Hello, World!&#34;</span>
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// this is the channel used by the callback to communicate to the 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// select statement that an MQTT message
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">heard</span> <span style="color:#f92672">:=</span> make(<span style="color:#66d9ef">chan</span> <span style="color:#66d9ef">bool</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// this is the channel used by the callback to communicate to the </span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// select statement that an MQTT message</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">heard</span> <span style="color:#f92672">:=</span> make(<span style="color:#66d9ef">chan</span> <span style="color:#66d9ef">bool</span>)
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Subscribe to the test topic and provide the anonymous call back
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">msg</span>.<span style="color:#a6e22e">Subscribe</span>(<span style="color:#e6db74">&#34;test&#34;</span>, <span style="color:#a6e22e">topic</span>, <span style="color:#66d9ef">func</span>(<span style="color:#a6e22e">c</span> <span style="color:#a6e22e">mqtt</span>.<span style="color:#a6e22e">Client</span>, <span style="color:#a6e22e">m</span> <span style="color:#a6e22e">mqtt</span>.<span style="color:#a6e22e">Message</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Subscribe to the test topic and provide the anonymous call back</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">msg</span>.<span style="color:#a6e22e">Subscribe</span>(<span style="color:#e6db74">&#34;test&#34;</span>, <span style="color:#a6e22e">topic</span>, <span style="color:#66d9ef">func</span>(<span style="color:#a6e22e">c</span> <span style="color:#a6e22e">mqtt</span>.<span style="color:#a6e22e">Client</span>, <span style="color:#a6e22e">m</span> <span style="color:#a6e22e">mqtt</span>.<span style="color:#a6e22e">Message</span>) {
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>		<span style="color:#75715e">// This anonymous function is the callback for all messages sent
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>		<span style="color:#75715e">// to the MQTT &#39;iot/test&#39; topic
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>		<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">topic</span> <span style="color:#f92672">!=</span> <span style="color:#a6e22e">m</span>.<span style="color:#a6e22e">Topic</span>() {
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e">// This anonymous function is the callback for all messages sent</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e">// to the MQTT &#39;iot/test&#39; topic</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">topic</span> <span style="color:#f92672">!=</span> <span style="color:#a6e22e">m</span>.<span style="color:#a6e22e">Topic</span>() {
 </span></span><span style="display:flex;"><span>			<span style="color:#a6e22e">t</span>.<span style="color:#a6e22e">Errorf</span>(<span style="color:#e6db74">&#34;Expected topic (%s) got (%s)&#34;</span>, <span style="color:#a6e22e">topic</span>, <span style="color:#a6e22e">m</span>.<span style="color:#a6e22e">Topic</span>())
 </span></span><span style="display:flex;"><span>		}
 </span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">message</span> <span style="color:#f92672">!=</span> string(<span style="color:#a6e22e">m</span>.<span style="color:#a6e22e">Payload</span>()) {
@@ -141,15 +151,15 @@ as a reference. Let&rsquo;s check out the code.</p>
 </span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">heard</span> <span style="color:#f92672">&lt;-</span> <span style="color:#66d9ef">true</span>		
 </span></span><span style="display:flex;"><span>	})
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Now publish the message
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">msg</span>.<span style="color:#a6e22e">Publish</span>(<span style="color:#e6db74">&#34;iote/test&#34;</span>, <span style="color:#ae81ff">0</span>, <span style="color:#66d9ef">false</span>, <span style="color:#a6e22e">message</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Now publish the message</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">msg</span>.<span style="color:#a6e22e">Publish</span>(<span style="color:#e6db74">&#34;iote/test&#34;</span>, <span style="color:#ae81ff">0</span>, <span style="color:#66d9ef">false</span>, <span style="color:#a6e22e">message</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// wait for either a message on the &#39;heard&#39; channel (pass!) or a
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#75715e">// timeout (fail). 
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">select</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// wait for either a message on the &#39;heard&#39; channel (pass!) or a</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// timeout (fail). </span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">select</span> {
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">case</span> <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">heard</span>:
-</span></span><span style="display:flex;"><span>		<span style="color:#75715e">// Our message has been recieved. Yeah the test passed! Say nothing.
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e">// Our message has been recieved. Yeah the test passed! Say nothing.</span>
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">case</span> <span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">After</span>(<span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Second</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">5</span>):
 </span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">t</span>.<span style="color:#a6e22e">Error</span>(<span style="color:#e6db74">&#34;Expected a message from client got nothing&#34;</span>)
 </span></span><span style="display:flex;"><span>	}
@@ -203,7 +213,7 @@ recieved.</p>
 	
         
       </div>
-      <div>site by <a href="/">Eddy Consulting, LLC.</a> ~ &#xA9; 2008 to 2024 </div>
+      <div>site by <a href="http://www.rustyeddy.com/">Eddy Consulting, LLC.</a> ~ &#xA9; 2008 to 2024 </div>
     </div>
     <div class="col">
       <div class="text-left">
@@ -222,13 +232,10 @@ recieved.</p>
 <script>
  window.dataLayer = window.dataLayer || [];
  function gtag(){dataLayer.push(arguments);}
-
+</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
   </body>
 </html>
