@@ -5,7 +5,7 @@
 
   
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="http://www.rustyeddy.com/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="https://www.rustyeddy.com/css/style.css" />
 
   
   <title>Adding MQTT to the IoT Gateway</title>
@@ -22,7 +22,7 @@
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
 
-      <a class="navbar-brand" href="http://www.rustyeddy.com/"><span claa="h1">rusty eddy:</span></a>
+      <a class="navbar-brand" href="https://www.rustyeddy.com/"><span claa="h1">rusty eddy:</span></a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -31,19 +31,19 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <nav class="navbar-nav me-auto mb-2 mb-lg-0">
 	  <div class="nav-item">
-  	    <a class="nav-link" href="http://www.rustyeddy.com/iot/"> iot &nbsp</a>
+  	    <a class="nav-link" href="https://www.rustyeddy.com/iot/"> iot &nbsp</a>
           </div>
           <div class="nav-item">
-  	    <a class="nav-link" href="http://www.rustyeddy.com/software"> software &nbsp</a>
+  	    <a class="nav-link" href="https://www.rustyeddy.com/software"> software &nbsp</a>
           </div>
           <div class="nav-item">
-  	    <a class="nav-link" href="http://www.rustyeddy.com/notes"> notes &nbsp</a>
+  	    <a class="nav-link" href="https://www.rustyeddy.com/notes"> notes &nbsp</a>
           </div>
           <div class="nav-item">
-  	    <a class="nav-link" href="http://www.rustyeddy.com/resume"> resume &nbsp</a>
+  	    <a class="nav-link" href="https://www.rustyeddy.com/resume"> resume &nbsp</a>
           </div>
           <div class="nav-item">
-  	    <a class="nav-link" href="http://www.rustyeddy.com/about"> about &nbsp</a>
+  	    <a class="nav-link" href="https://www.rustyeddy.com/about"> about &nbsp</a>
           </div>
         </nav>
       </div>
@@ -85,11 +85,11 @@
     <div class="col"></div>
     <div class="col-md-8 hero-text">
 	<article class="article">
-	  <p><img src="http://www.rustyeddy.com/img/iot-hub-mqtt.png" alt="MQTT Architecture"></p>
+	  <p><img src="https://www.rustyeddy.com/img/iot-hub-mqtt.png" alt="MQTT Architecture"></p>
 <p>This page marks the beginning of the <em>Organic Gardner (OG)</em>
-<a href="http://www.rustyeddy.com/iot/iot-intro">IoT Project</a> Milestone 1 development!  If you want to
+<a href="https://www.rustyeddy.com/iot/iot-intro">IoT Project</a> Milestone 1 development!  If you want to
 program along but have not yet worked with the <em>Go</em> programming
-language check this intro: <a href="http://www.rustyeddy.com/notes/get-ready-to-go">Getting ready to Go</a>.</p>
+language check this intro: <a href="https://www.rustyeddy.com/notes/get-ready-to-go">Getting ready to Go</a>.</p>
 <h2 id="a-brief-about-mqtt">A Brief About MQTT</h2>
 <p><a href="https://mqtt.org">MQTT</a> is the <em>messaging</em> protocol that a
 <em>Collector</em> will use to periodically publish sensor data
@@ -105,7 +105,7 @@ a small and fast binary. MQTT is built atop of <em>TCP</em> the Internets
 workhorse protocol which also means it is reliable and adapts well to
 busy or low bandwidth networks.</p>
 <hr>
-<p><img src="http://www.rustyeddy.com/img/mqtt-overview.drawio.png" alt="MQTT Architecture"></p>
+<p><img src="https://www.rustyeddy.com/img/mqtt-overview.drawio.png" alt="MQTT Architecture"></p>
 <hr>
 <h3 id="mqtt-architecture">MQTT Architecture</h3>
 <p>MQTT has three primary components: a <em>broker</em>, <em>publishers</em> and
@@ -177,7 +177,7 @@ the programs configuration variables. Like so:</p>
 as a discussion saving and reading the configuration structure from a
 file and a quick introduction to Go&rsquo;s twist on &ldquo;Object Oriented&rdquo;
 programming check out this article on the
-<a href="http://www.rustyeddy.com/notes/simple-go-configuration-structure">Go Config Struct</a>.</p>
+<a href="https://www.rustyeddy.com/notes/simple-go-configuration-structure">Go Config Struct</a>.</p>
 <p>Now we have turned the <code>config.Broker</code> variable into a command
 line argument that defaults to <code>localhost</code>. Meaning if we run the
 command as:</p>
@@ -460,7 +460,7 @@ sensor <code>tempf</code> extracted from the topic
 <p>The upper screenshot shows logs from the <em>IoT Hub</em> starting up then
 having just received it&rsquo;s first data point from MQTT. The lower screen
 shows the invocation of the <code>mosquitto_pub</code> command.</p>
-<p><img src="http://www.rustyeddy.com/img/screen-shot-hub-data.png" alt="High Level Sensor Station"></p>
+<p><img src="https://www.rustyeddy.com/img/screen-shot-hub-data.png" alt="High Level Sensor Station"></p>
 <h2 id="victory">Victory!</h2>
 <p>In the above screen shot <code>mosquitto_pub</code> published the temperature
 in Fahrenheit to the topic <code>ss/data/10.11.1.11/tempf</code> where the CS
@@ -480,7 +480,7 @@ Gateway</em>.</p>
 <code>net/http</code> package to setup our HTTP server that will in turn
 handle our <em>REST Endpoints</em>.  This same package will later allow us to
 serve up the IoT Gateway web app.</p>
-<p><a href="http://www.rustyeddy.com/iot/iot-qateway-rest">Next Adding the REST API</a></p>
+<p><a href="https://www.rustyeddy.com/iot/iot-qateway-rest">Next Adding the REST API</a></p>
 
 	</article>
     </div>
@@ -504,7 +504,7 @@ serve up the IoT Gateway web app.</p>
 	
         
       </div>
-      <div>site by <a href="http://www.rustyeddy.com/">Eddy Consulting, LLC.</a> ~ &#xA9; 2008 to 2024 </div>
+      <div>site by <a href="https://www.rustyeddy.com/">Eddy Consulting, LLC.</a> ~ &#xA9; 2008 to 2024 </div>
     </div>
     <div class="col">
       <div class="text-left">

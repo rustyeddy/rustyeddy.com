@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>RedEye Camera on Rusty Eddy</title>
-    <link>http://www.rustyeddy.com/projects/redeye/</link>
+    <link>https://www.rustyeddy.com/projects/redeye/</link>
     <description>Recent content in RedEye Camera on Rusty Eddy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://www.rustyeddy.com/projects/redeye/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.rustyeddy.com/projects/redeye/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

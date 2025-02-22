@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Video on Rusty Eddy</title>
-    <link>http://www.rustyeddy.com/categories/video/</link>
+    <link>https://www.rustyeddy.com/categories/video/</link>
     <description>Recent content in Video on Rusty Eddy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 24 May 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://www.rustyeddy.com/categories/video/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.rustyeddy.com/categories/video/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Red Eye Video Server</title>
-      <link>http://www.rustyeddy.com/notes/redeye/</link>
+      <link>https://www.rustyeddy.com/notes/redeye/</link>
       <pubDate>Fri, 24 May 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/notes/redeye/</guid>
+      <guid>https://www.rustyeddy.com/notes/redeye/</guid>
       <description>&lt;p&gt;The Red Eye project is a service definition rapper around inexpensive&#xA;cameras attached to inexpesive micro-controllers that take pretty good&#xA;video.&lt;/p&gt;&#xA;&lt;p&gt;The video streams are built using the GStreamer library. The camera&#xA;native capabilities are used to extract as high quailty, realtime&#xA;images possible.&lt;/p&gt;&#xA;&lt;p&gt;The video streams will be consumed by one or more sinks, including but&#xA;not limited to Files, cloud storage, High Def Display and Computer&#xA;Vision libraries.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Raspberry Pi Camera and Multiple Ports</title>
-      <link>http://www.rustyeddy.com/notes/drafts/raspberry-pi-camera-multiple-ports/</link>
+      <link>https://www.rustyeddy.com/notes/drafts/raspberry-pi-camera-multiple-ports/</link>
       <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/notes/drafts/raspberry-pi-camera-multiple-ports/</guid>
+      <guid>https://www.rustyeddy.com/notes/drafts/raspberry-pi-camera-multiple-ports/</guid>
       <description>&lt;p&gt;As I started bumbling around trying to figure the best way to stream&#xA;[live video from a moving vehicle], I found that the Raspberry Pi&#xA;camera is capable of producing filtered versions of the images it is&#xA;producing, through &lt;em&gt;video ports&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Raspberry Pi on Rusty Eddy</title>
-    <link>http://www.rustyeddy.com/tags/raspberry-pi/</link>
+    <link>https://www.rustyeddy.com/tags/raspberry-pi/</link>
     <description>Recent content in Raspberry Pi on Rusty Eddy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 13 Feb 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://www.rustyeddy.com/tags/raspberry-pi/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.rustyeddy.com/tags/raspberry-pi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Raspberry Pi Pico Setup</title>
-      <link>http://www.rustyeddy.com/notes/raspberry-pi-pico-setup/</link>
+      <link>https://www.rustyeddy.com/notes/raspberry-pi-pico-setup/</link>
       <pubDate>Tue, 13 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/notes/raspberry-pi-pico-setup/</guid>
+      <guid>https://www.rustyeddy.com/notes/raspberry-pi-pico-setup/</guid>
       <description></description>
     </item>
     <item>
       <title>Raspberry Pi Camera and Multiple Ports</title>
-      <link>http://www.rustyeddy.com/notes/drafts/raspberry-pi-camera-multiple-ports/</link>
+      <link>https://www.rustyeddy.com/notes/drafts/raspberry-pi-camera-multiple-ports/</link>
       <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/notes/drafts/raspberry-pi-camera-multiple-ports/</guid>
+      <guid>https://www.rustyeddy.com/notes/drafts/raspberry-pi-camera-multiple-ports/</guid>
       <description>&lt;p&gt;As I started bumbling around trying to figure the best way to stream&#xA;[live video from a moving vehicle], I found that the Raspberry Pi&#xA;camera is capable of producing filtered versions of the images it is&#xA;producing, through &lt;em&gt;video ports&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Inexpensive Motor Controllers for Arduino and Raspberry Pi</title>
-      <link>http://www.rustyeddy.com/notes/motor-controlor-notes/</link>
+      <link>https://www.rustyeddy.com/notes/motor-controlor-notes/</link>
       <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
-      <guid>http://www.rustyeddy.com/notes/motor-controlor-notes/</guid>
+      <guid>https://www.rustyeddy.com/notes/motor-controlor-notes/</guid>
       <description>&lt;p&gt;I prefer to use an Arduino with a Motor Controller over say a&#xA;Raspberry Pi with a motor-controller.  I believe the Arudino has&#xA;better support for dedicated Real-time software vs. the Raspberry Pi&#xA;and as a superior platform for general computing including running&#xA;Control Software.  This is how we do it on the West side &amp;hellip;&lt;/p&gt;</description>
     </item>
   </channel>
