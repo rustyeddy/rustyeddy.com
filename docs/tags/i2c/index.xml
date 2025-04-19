@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>I2c on Rusty Eddy</title>
+    <link>https://www.rustyeddy.com/tags/i2c/</link>
+    <description>Recent content in I2c on Rusty Eddy</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 19 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.rustyeddy.com/tags/i2c/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Debugging i2c</title>
+      <link>https://www.rustyeddy.com/notes/i2c-debugging/</link>
+      <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.rustyeddy.com/notes/i2c-debugging/</guid>
+      <description>&lt;p&gt;A helpful PDF &lt;a href=&#34;https://www.ti.com/lit/an/scpa063/scpa063.pdf&#34;&gt;guide from TI&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

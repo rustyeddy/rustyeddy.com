@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Transistor on Rusty Eddy</title>
+    <link>https://www.rustyeddy.com/tags/transistor/</link>
+    <description>Recent content in Transistor on Rusty Eddy</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 17 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.rustyeddy.com/tags/transistor/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Controlling a Water Pump with a Transistor</title>
+      <link>https://www.rustyeddy.com/notes/controlling-pump-transistor/</link>
+      <pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.rustyeddy.com/notes/controlling-pump-transistor/</guid>
+      <description>&lt;p&gt;The project was created to use a &lt;em&gt;Soil Moisture Sensor&lt;/em&gt; to drive a&#xA;water pump to keep our plants watered.&lt;/p&gt;&#xA;&lt;h2 id=&#34;bill-of-materials&#34;&gt;Bill Of Materials&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;1 - Inexpensive 5v submersible pump&lt;/li&gt;&#xA;&lt;li&gt;1 - 1K Ohm Resistor&lt;/li&gt;&#xA;&lt;li&gt;1 - mps2222a Transistor&lt;/li&gt;&#xA;&lt;li&gt;1 - 1N4001 Diode&lt;/li&gt;&#xA;&lt;li&gt;1 - Raspberry Pi (model of your choosing, zero&amp;rsquo;s work great)&lt;/li&gt;&#xA;&lt;li&gt;1 - External 5v Battery Supply (don&amp;rsquo;t want to power the pump with&#xA;the PI)&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://www.rustyeddy.com/img/pump-switch.svg&#34; alt=&#34;Transistor circuit to control pump motor&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

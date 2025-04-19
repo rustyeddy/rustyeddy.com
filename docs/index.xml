@@ -6,7 +6,7 @@
     <description>Recent content on Rusty Eddy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 19 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.rustyeddy.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OttO the Iot Gateway</title>
@@ -212,11 +212,25 @@
       <description>&lt;p&gt;I was hired to install and manage the departments first AT&amp;amp;T Unix&#xA;Mini-computers, UUNET connection and write a bulletin board system for&#xA;California State Educators.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Debugging i2c</title>
+      <link>https://www.rustyeddy.com/notes/i2c-debugging/</link>
+      <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.rustyeddy.com/notes/i2c-debugging/</guid>
+      <description>&lt;p&gt;A helpful PDF &lt;a href=&#34;https://www.ti.com/lit/an/scpa063/scpa063.pdf&#34;&gt;guide from TI&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Controlling a Water Pump with a Transistor</title>
+      <link>https://www.rustyeddy.com/notes/controlling-pump-transistor/</link>
+      <pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.rustyeddy.com/notes/controlling-pump-transistor/</guid>
+      <description>&lt;p&gt;The project was created to use a &lt;em&gt;Soil Moisture Sensor&lt;/em&gt; to drive a&#xA;water pump to keep our plants watered.&lt;/p&gt;&#xA;&lt;h2 id=&#34;bill-of-materials&#34;&gt;Bill Of Materials&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;1 - Inexpensive 5v submersible pump&lt;/li&gt;&#xA;&lt;li&gt;1 - 1K Ohm Resistor&lt;/li&gt;&#xA;&lt;li&gt;1 - mps2222a Transistor&lt;/li&gt;&#xA;&lt;li&gt;1 - 1N4001 Diode&lt;/li&gt;&#xA;&lt;li&gt;1 - Raspberry Pi (model of your choosing, zero&amp;rsquo;s work great)&lt;/li&gt;&#xA;&lt;li&gt;1 - External 5v Battery Supply (don&amp;rsquo;t want to power the pump with&#xA;the PI)&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://www.rustyeddy.com/img/pump-switch.svg&#34; alt=&#34;Transistor circuit to control pump motor&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Soil Mosture Sensors Adafruit</title>
       <link>https://www.rustyeddy.com/notes/soil-moisture-adafruit/</link>
       <pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://www.rustyeddy.com/notes/soil-moisture-adafruit/</guid>
-      <description>&lt;h2 id=&#34;why-the-adafruit-version&#34;&gt;Why the Adafruit version?&lt;/h2&gt;&#xA;&lt;p&gt;&amp;laquo;&amp;laquo;&amp;laquo;&amp;lt; HEAD&#xA;I have had a hard time with the general Capacitive Soil Moisture&#xA;sensors that you find readily on the Internet as described in this&#xA;article about&#xA;&lt;a href=&#34;http://localhost:1313/notes/soil-moisture-sensor/&#34;&gt;soil moisture sensors&lt;/a&gt;.&#xA;In a nutshell, the ones I bought had the wrong timer chip in them, not&#xA;that was a total show stopper but I also had problems getting them to&#xA;work with the esp32 ADC (Analog Digical Converter).&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;why-the-adafruit-version&#34;&gt;Why the Adafruit version?&lt;/h2&gt;&#xA;&lt;p&gt;I have had a hard time with the general Capacitive Soil Moisture&#xA;sensors that you find readily on the Internet as described in this&#xA;article about&#xA;&lt;a href=&#34;http://localhost:1313/notes/soil-moisture-sensor/&#34;&gt;soil moisture sensors&lt;/a&gt;.&#xA;In a nutshell, the ones I bought had the wrong timer chip in them, not&#xA;that was a total show stopper but I also had problems getting them to&#xA;work with the esp32 ADC (Analog Digical Converter).&lt;/p&gt;&#xA;&lt;p&gt;After spending way too much time trying to get them to work, I decided&#xA;to just go with a much more reliable source:&#xA;&lt;a href=&#34;https://www.adafruit.com/product/4026?gad_source=1&amp;amp;gclid=EAIaIQobChMIlea3-Y-ihQMVNoHCCB0DLAylEAAYASAAEgJabvD_BwE&#34;&gt;Adafruit STEMMA Soil Sensor&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Soil Mosture Sensors</title>

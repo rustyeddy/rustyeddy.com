@@ -95,8 +95,32 @@
     <loc>https://www.rustyeddy.com/resume/jobs/csu-chancelor/</loc>
     <lastmod>1995-08-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://www.rustyeddy.com/notes/i2c-debugging/</loc>
+    <lastmod>2025-04-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.rustyeddy.com/tags/i2c/</loc>
+    <lastmod>2025-04-19T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.rustyeddy.com/</loc>
-    <lastmod>2025-02-22T00:00:00+00:00</lastmod>
+    <lastmod>2025-04-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.rustyeddy.com/tags/</loc>
+    <lastmod>2025-04-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.rustyeddy.com/notes/controlling-pump-transistor/</loc>
+    <lastmod>2025-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.rustyeddy.com/tags/diode/</loc>
+    <lastmod>2025-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.rustyeddy.com/tags/pump/</loc>
+    <lastmod>2025-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.rustyeddy.com/tags/raspberry-pi/</loc>
+    <lastmod>2025-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.rustyeddy.com/tags/transistor/</loc>
+    <lastmod>2025-03-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.rustyeddy.com/categories/</loc>
     <lastmod>2024-03-13T00:00:00+00:00</lastmod>
@@ -110,9 +134,6 @@
     <loc>https://www.rustyeddy.com/notes/soil-moisture-adafruit/</loc>
     <lastmod>2024-03-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.rustyeddy.com/tags/</loc>
-    <lastmod>2024-03-13T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://www.rustyeddy.com/notes/soil-moisture-sensor/</loc>
     <lastmod>2024-02-15T00:00:00+00:00</lastmod>
   </url><url>
@@ -120,9 +141,6 @@
     <lastmod>2024-02-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.rustyeddy.com/tags/pico/</loc>
-    <lastmod>2024-02-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.rustyeddy.com/tags/raspberry-pi/</loc>
     <lastmod>2024-02-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.rustyeddy.com/notes/raspberry-pi-pico-setup/</loc>
@@ -140,10 +158,10 @@
     <loc>https://www.rustyeddy.com/tags/sdlc/</loc>
     <lastmod>2023-01-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.rustyeddy.com/tags/software-development-lifecycle-phases/</loc>
+    <loc>https://www.rustyeddy.com/software/</loc>
     <lastmod>2023-01-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.rustyeddy.com/software/</loc>
+    <loc>https://www.rustyeddy.com/tags/software-development-lifecycle-phases/</loc>
     <lastmod>2023-01-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.rustyeddy.com/iot/self-watering-garden/</loc>

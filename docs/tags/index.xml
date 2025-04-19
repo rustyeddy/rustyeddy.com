@@ -6,8 +6,43 @@
     <description>Recent content in Tags on Rusty Eddy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 19 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.rustyeddy.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I2c</title>
+      <link>https://www.rustyeddy.com/tags/i2c/</link>
+      <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.rustyeddy.com/tags/i2c/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Diode</title>
+      <link>https://www.rustyeddy.com/tags/diode/</link>
+      <pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.rustyeddy.com/tags/diode/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pump</title>
+      <link>https://www.rustyeddy.com/tags/pump/</link>
+      <pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.rustyeddy.com/tags/pump/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Raspberry Pi</title>
+      <link>https://www.rustyeddy.com/tags/raspberry-pi/</link>
+      <pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.rustyeddy.com/tags/raspberry-pi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Transistor</title>
+      <link>https://www.rustyeddy.com/tags/transistor/</link>
+      <pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.rustyeddy.com/tags/transistor/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Soil Moisture</title>
       <link>https://www.rustyeddy.com/tags/soil-moisture/</link>
@@ -27,13 +62,6 @@
       <link>https://www.rustyeddy.com/tags/pico/</link>
       <pubDate>Tue, 13 Feb 2024 00:00:00 +0000</pubDate>
       <guid>https://www.rustyeddy.com/tags/pico/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Raspberry Pi</title>
-      <link>https://www.rustyeddy.com/tags/raspberry-pi/</link>
-      <pubDate>Tue, 13 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/raspberry-pi/</guid>
       <description></description>
     </item>
     <item>
