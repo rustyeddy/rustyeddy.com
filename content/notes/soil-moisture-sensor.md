@@ -9,7 +9,7 @@ description: >
   protecting the fragile electronic components from the elements. 
 categories: electronic-components
 tags: soil moisture
-github: https://github.com/sensorstation/iotesp
+github: https://github.com/rustyeddy/iotesp
 ---
 
 ## Overview

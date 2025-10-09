@@ -9,7 +9,7 @@ description: >
   about my experience with those little guys.
 categories: electronic-components
 tags: soil moisture
-github: https://github.com/sensorstation/iotesp
+github: https://github.com/rustyeddy/iotesp
 ---
 
 ## Why the Adafruit version?
