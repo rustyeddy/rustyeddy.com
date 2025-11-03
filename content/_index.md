@@ -1,9 +1,9 @@
 ---
 title: Rusty Eddy
 description: >
-  Software Engineer and Architect interested in Physical
-  Computing (IoT), Computer Networks and Cloud Automation.
-  date: 2020-04-10
+  I build and teach practical IoT, Linux, and Go automation systems.
+  My real Job is a Member of the Technical Staff at Panasonic Avionics.
+date: 2025-11-01
 --- 
 
 I have always been fascinated with the idea that computers could
