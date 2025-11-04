@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head>
+<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
@@ -84,7 +84,8 @@
     <div class="col-md-8 hero-text">
 	<article class="article">
 	  <blockquote>
-<p>TODO ~ replace image with one of the Raspberry Pi Controller</p></blockquote>
+<p>TODO ~ replace image with one of the Raspberry Pi Controller</p>
+</blockquote>
 <p>This software adds a Skid Steer motor control software to the
 <a href="http://github.com/mobilerobot-io/rpid">Raspberry Pi Device Server</a>
 device server.  RPID adds motor controls accessible via both MQTT and
@@ -103,7 +104,8 @@ allowing the motors to be controlled directly by the Skidder API, or
 via MQTT messages and/or HTTP REST requests. Oh, there is also a
 keyboard controller if you ssh into the vehicle.</p>
 <blockquote>
-<p>TODO Place image 5-17 img-1 here</p></blockquote>
+<p>TODO Place image 5-17 img-1 here</p>
+</blockquote>
 <h3 id="mqtt-skid-channel">MQTT Skid Channel</h3>
 <p>The RPID MQTT server will subscribe to the <em>/control/skid</em> channel and
 respond to commands accordingly.  Skid channel is simple, expecting
@@ -115,11 +117,13 @@ two floating point values between -1 and +1 inclusive.  The numbers
 represent the percentage of the load to let the motors have (throttle)
 and the +/- sign represents the direction the motor will turn.</p>
 <blockquote>
-<p>/control/skid:l/r</p></blockquote>
+<p>/control/skid:l/r</p>
+</blockquote>
 <h3 id="rest-skid-endpoint">REST Skid Endpoint</h3>
 <blockquote>
 <p>GET /skid/
-PUT /skid/l/r</p></blockquote>
+PUT /skid/l/r</p>
+</blockquote>
 <p>Get or Set the left and right throttles.  The throttles values are
 represented by floating point numbers between -1 and 1 inclusive,
 representing the percentage of load, and direction that will be

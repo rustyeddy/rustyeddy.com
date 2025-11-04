@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head>
+<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
@@ -116,19 +116,22 @@ that it is Point-to-Point (P2P).</p>
 every controller must have a UART connection to every device it needs
 to talk to.  In other words,</p>
 <blockquote>
-<p>Serial communication does not scale well</p></blockquote>
+<p>Serial communication does not scale well</p>
+</blockquote>
 <p>Fortunantely we have a few other options, we will consider on of these
 options here: I2C which introduces a message bus, only two wires,
 transmit and recieve (actually four if you count power wire), but only
 two wires are required to connect to the bus, allowing, in theory,
 over a hundred devices could all communicate.</p>
 <blockquote>
-<p>TODO: put a link in to my I2C article for an explantion</p></blockquote>
+<p>TODO: put a link in to my I2C article for an explantion</p>
+</blockquote>
 <p>I2C also happens to be supported in hardware on pretty much every
 microcontroller I have looked at thus far.</p>
 <blockquote>
 <p>Many other legit choices are available including: SPI, CAN,
-ethernet, etc.</p></blockquote>
+ethernet, etc.</p>
+</blockquote>
 <p>Wifi is also possible in some cases, but we are going to go with I2C
 because it is more robust, simpler and faster than standard serial
 comminication.</p>
@@ -191,7 +194,8 @@ vehical will go striaght forward at half speed.  If we want to turn
 right, we could make the left wheel go at, say half speed, and have
 the right wheel go at 0.</p>
 <blockquote>
-<p>Or maybe have the right wheel go in reverse at half speed?</p></blockquote>
+<p>Or maybe have the right wheel go in reverse at half speed?</p>
+</blockquote>
 <h3 id="output-controller">OUTPUT Controller</h3>
 <p>At the end of the day, our <em>Skid Steer</em> motor controller only needs to
 know two things: how fast to spin the motor (or not), and what

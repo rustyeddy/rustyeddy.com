@@ -2,213 +2,213 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Notes On Software on Rusty Eddy</title>
-    <link>https://www.rustyeddy.com/notes/</link>
+    <link>http://localhost:1313/notes/</link>
     <description>Recent content in Notes On Software on Rusty Eddy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 13 Mar 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.rustyeddy.com/notes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Soil Mosture Sensors Adafruit</title>
-      <link>https://www.rustyeddy.com/notes/soil-moisture-adafruit/</link>
+      <link>http://localhost:1313/notes/soil-moisture-adafruit/</link>
       <pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/notes/soil-moisture-adafruit/</guid>
+      <guid>http://localhost:1313/notes/soil-moisture-adafruit/</guid>
       <description>&lt;h2 id=&#34;why-the-adafruit-version&#34;&gt;Why the Adafruit version?&lt;/h2&gt;&#xA;&lt;p&gt;&amp;laquo;&amp;laquo;&amp;laquo;&amp;lt; HEAD&#xA;I have had a hard time with the general Capacitive Soil Moisture&#xA;sensors that you find readily on the Internet as described in this&#xA;article about&#xA;&lt;a href=&#34;http://localhost:1313/notes/soil-moisture-sensor/&#34;&gt;soil moisture sensors&lt;/a&gt;.&#xA;In a nutshell, the ones I bought had the wrong timer chip in them, not&#xA;that was a total show stopper but I also had problems getting them to&#xA;work with the esp32 ADC (Analog Digical Converter).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Soil Mosture Sensors</title>
-      <link>https://www.rustyeddy.com/notes/soil-moisture-sensor/</link>
+      <link>http://localhost:1313/notes/soil-moisture-sensor/</link>
       <pubDate>Thu, 15 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/notes/soil-moisture-sensor/</guid>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Seems like I&amp;rsquo;m not as uniquely clever as I once thought, the idea of&#xA;creating a self watering garden is probably one of the more popular&#xA;DIY maker projects on the Internet it seems.&lt;/p&gt;&#xA;&lt;p&gt;Check out my version of the &lt;a href=&#34;https://www.rustyeddy.com/iot/self-watering-garden&#34;&gt;Self Watering Garden&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;What makes my project different?  Probably not alot, however in this&#xA;project we treat each of the watering &lt;em&gt;stations&lt;/em&gt; as a part of a&#xA;larger, complete &lt;em&gt;system&lt;/em&gt; of the watering stations that can be&#xA;observed and controlled by a single hub and associated web&#xA;application. Check out the project, I&amp;rsquo;d love to hear what you&#xA;think!&lt;/p&gt;</description>
+      <guid>http://localhost:1313/notes/soil-moisture-sensor/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Seems like I&amp;rsquo;m not as uniquely clever as I once thought, the idea of&#xA;creating a self watering garden is probably one of the more popular&#xA;DIY maker projects on the Internet it seems.&lt;/p&gt;&#xA;&lt;p&gt;Check out my version of the &lt;a href=&#34;http://localhost:1313/iot/self-watering-garden&#34;&gt;Self Watering Garden&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;What makes my project different?  Probably not alot, however in this&#xA;project we treat each of the watering &lt;em&gt;stations&lt;/em&gt; as a part of a&#xA;larger, complete &lt;em&gt;system&lt;/em&gt; of the watering stations that can be&#xA;observed and controlled by a single hub and associated web&#xA;application. Check out the project, I&amp;rsquo;d love to hear what you&#xA;think!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Raspberry Pi Pico Setup</title>
-      <link>https://www.rustyeddy.com/notes/raspberry-pi-pico-setup/</link>
+      <link>http://localhost:1313/notes/raspberry-pi-pico-setup/</link>
       <pubDate>Tue, 13 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/notes/raspberry-pi-pico-setup/</guid>
+      <guid>http://localhost:1313/notes/raspberry-pi-pico-setup/</guid>
       <description></description>
     </item>
     <item>
       <title>Using Go timers for MQTT testing</title>
-      <link>https://www.rustyeddy.com/notes/go-timers-testing-mqtt/</link>
+      <link>http://localhost:1313/notes/go-timers-testing-mqtt/</link>
       <pubDate>Mon, 02 May 2022 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/notes/go-timers-testing-mqtt/</guid>
+      <guid>http://localhost:1313/notes/go-timers-testing-mqtt/</guid>
       <description>&lt;p&gt;This article uses a Go timer and the Go select statement to test our&#xA;MQTT publish and subscribe in a single simple test statement. A quick&#xA;note on the &lt;code&gt;go testing&lt;/code&gt; package: it is much like the JUnit where&#xA;tests using a particular naming convention &lt;code&gt;TestXXX(t *testing.T) {}&lt;/code&gt; will be run automatically with easy to reports having been&#xA;generated.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;&#xA;&lt;p&gt;The following code snippet is directly from the&#xA;&lt;a href=&#34;http://rustyeddy.com/iote&#34;&gt;IoTe&lt;/a&gt; edge gateway project. One of the&#xA;primary features of IoTe is the ability to send and receive MQTT&#xA;messages.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to build a private WIFI network for your WebApp</title>
-      <link>https://www.rustyeddy.com/notes/private-wifi-network-webapp/</link>
+      <link>http://localhost:1313/notes/private-wifi-network-webapp/</link>
       <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/notes/private-wifi-network-webapp/</guid>
+      <guid>http://localhost:1313/notes/private-wifi-network-webapp/</guid>
       <description>&lt;p&gt;I work with &lt;em&gt;physical computing&lt;/em&gt; or devices that have rather&#xA;sophisticated software that needs to be configured, monitored and&#xA;controlled.&lt;/p&gt;&#xA;&lt;h2 id=&#34;building-a-private-wifi&#34;&gt;Building a Private Wifi&lt;/h2&gt;&#xA;&lt;p&gt;Here is the situation, I just plugged a white box into the wall and it&#xA;has a steady green light. I can see two other lights, one of which is&#xA;red. The other two lights are off.&lt;/p&gt;&#xA;&lt;p&gt;This device is pretty cool, it will control the lights in my garage, I&#xA;have a well lit garage. But I need to configure this thing to set up&#xA;lighting schedules, basically synchronize with daylight.&lt;/p&gt;</description>
     </item>
     <item>
       <title>A Simple Go Configuration</title>
-      <link>https://www.rustyeddy.com/notes/go-configuration/</link>
+      <link>http://localhost:1313/notes/go-configuration/</link>
       <pubDate>Fri, 26 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/notes/go-configuration/</guid>
+      <guid>http://localhost:1313/notes/go-configuration/</guid>
       <description>&lt;p&gt;I use this same configuration structure and supporting functions in&#xA;most every Go program I work on. It is pretty simple but makes it easy&#xA;to keep global variables orgranized and configurable.&lt;/p&gt;&#xA;&lt;p&gt;Here is what I do:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Create a &lt;code&gt;type config struct&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Every configurable variable for the program becomes a Member field&#xA;of the Configuration structure.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Register every field of the Configuration Structure with go&amp;rsquo;s&#xA;builtin &lt;em&gt;flags&lt;/em&gt; package such that the flags are parsed when the&#xA;program starts we can use our configuration variable.&lt;/p&gt;</description>
     </item>
     <item>
       <title>WPE an Excellerated Raspberry Pi Kiosk</title>
-      <link>https://www.rustyeddy.com/notes/rpi-wpe-web-kiosk/</link>
+      <link>http://localhost:1313/notes/rpi-wpe-web-kiosk/</link>
       <pubDate>Fri, 25 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/notes/rpi-wpe-web-kiosk/</guid>
+      <guid>http://localhost:1313/notes/rpi-wpe-web-kiosk/</guid>
       <description>&lt;p&gt;The WPE project (TODO: place reference) allows you to create a&#xA;&lt;em&gt;hardware accelerated web viewing&lt;/em&gt;_ experience with an embedded system&#xA;and inexpenive display.&lt;/p&gt;&#xA;&lt;p&gt;For example a Raspberry Pi with an 7inch tftp touch screen has my&#xA;brain racing with ideas for applications.&lt;/p&gt;&#xA;&lt;h2 id=&#34;about-wpe&#34;&gt;About WPE&lt;/h2&gt;&#xA;&lt;p&gt;WPE creates a cool hardware accelerated kiosk, just point at a URL and&#xA;the app displays the application takes over the screen.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;It is awesome! But, it has one major drawback.!.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Golang timers to remove stale sensor stations</title>
-      <link>https://www.rustyeddy.com/notes/go-timers/</link>
+      <link>http://localhost:1313/notes/go-timers/</link>
       <pubDate>Tue, 03 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/notes/go-timers/</guid>
+      <guid>http://localhost:1313/notes/go-timers/</guid>
       <description>&lt;p&gt;This articles introduces Go (Golang) Timers as the mechanism the the&#xA;&lt;a href=&#34;https://github.com/rustyeddy/iota&#34;&gt;IoTa gateway&lt;/a&gt; uses to identify&#xA;&lt;em&gt;stale&lt;/em&gt; IoT stations. Modifying the Station with with a new &lt;em&gt;Go&#xA;timestamp&lt;/em&gt; field will allow IoTe to determine how long it has been&#xA;since the last time it has heard from a given Station.&lt;/p&gt;&#xA;&lt;p&gt;If the last &lt;em&gt;refresh&lt;/em&gt; time for a particular station has been longer&#xA;than the &lt;em&gt;timeout&lt;/em&gt; period the Station will be marked as &lt;em&gt;stale&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Proof of Concept vs. Production</title>
-      <link>https://www.rustyeddy.com/notes/poc-vs-production/</link>
+      <link>http://localhost:1313/notes/poc-vs-production/</link>
       <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/notes/poc-vs-production/</guid>
-      <description>&lt;p&gt;A POC is taking a conceptAnd demonstrating that it can actually be&#xA;done in hardware and/or software. And implementation is&#xA;takingApproving POC And turning it into something usable To somebody&#xA;other than the developer.&lt;/p&gt;&#xA;&lt;p&gt;Embrace this fact, And projecting software Development times and cost&#xA;Become much less mysterious.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;TODO Create an example PoC to Development&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Was it Rodney Brooks that Said Plan on Throwing away your first&#xA;version. Because you will anyway.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/notes/poc-vs-production/</guid>
+      <description>&lt;p&gt;A POC is taking a conceptAnd demonstrating that it can actually be&#xA;done in hardware and/or software. And implementation is&#xA;takingApproving POC And turning it into something usable To somebody&#xA;other than the developer.&lt;/p&gt;&#xA;&lt;p&gt;Embrace this fact, And projecting software Development times and cost&#xA;Become much less mysterious.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;TODO Create an example PoC to Development&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Was it Rodney Brooks that Said Plan on Throwing away your first&#xA;version. Because you will anyway.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Get Ready to Go</title>
-      <link>https://www.rustyeddy.com/notes/get-ready-to-go/</link>
+      <link>http://localhost:1313/notes/get-ready-to-go/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/notes/get-ready-to-go/</guid>
+      <guid>http://localhost:1313/notes/get-ready-to-go/</guid>
       <description>&lt;h2 id=&#34;get-ready-to-go&#34;&gt;Get Ready To &lt;em&gt;Go&lt;/em&gt;&lt;/h2&gt;&#xA;&lt;p&gt;The IoT Gateway was written in the &lt;em&gt;Go&lt;/em&gt; programming language. I won&amp;rsquo;t&#xA;get into the reasons why &lt;em&gt;Go&lt;/em&gt; is an excellent choice of programming&#xA;language for this project other than to point out two advantages this&#xA;project will benefit from right away:&lt;/p&gt;&#xA;&lt;h3 id=&#34;go-is-compiled-and-easy-to-distribute&#34;&gt;Go is Compiled and easy to distribute&lt;/h3&gt;&#xA;&lt;p&gt;First, Go is a &lt;em&gt;compiled&lt;/em&gt; language making the resulting executable&#xA;self contained with no external libraries or run time environment to&#xA;rebuild, just copy a single binary, that is it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Paradise Aint Perfect</title>
-      <link>https://www.rustyeddy.com/notes/paradise-aint-perfect/</link>
+      <link>http://localhost:1313/notes/paradise-aint-perfect/</link>
       <pubDate>Mon, 03 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/notes/paradise-aint-perfect/</guid>
+      <guid>http://localhost:1313/notes/paradise-aint-perfect/</guid>
       <description>&lt;h2 id=&#34;paradise-aint-perfect&#34;&gt;Paradise Ain&amp;rsquo;t Perfect&lt;/h2&gt;&#xA;&lt;p&gt;Or maybe there is so much conflict that Hawaii doesn&amp;rsquo;t look like it is&#xA;really &lt;strong&gt;everybodies&lt;/strong&gt; &lt;strong&gt;paradise&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;The point to all of this, a little bit of drilling down to all of the&#xA;passangers, the captiain and crew as well as the owner of the boat&#xA;would have all had better results.&lt;/p&gt;&#xA;&lt;p&gt;If it was discovered before hand, that &amp;ldquo;Going to Hawaii&amp;rdquo;, really&#xA;consisted of two groups: one going to Maui and one going to Kaui.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Using Vue to Develop Webapps</title>
-      <link>https://www.rustyeddy.com/notes/vue-frontends/</link>
+      <link>http://localhost:1313/notes/vue-frontends/</link>
       <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/notes/vue-frontends/</guid>
+      <guid>http://localhost:1313/notes/vue-frontends/</guid>
       <description>&lt;p&gt;Every piece of software that exists has to speak to the external world&#xA;in some manner. It might be programattically through messaging or an&#xA;API call. It could be a human clicking through an GUI on our laptop or&#xA;phone.&lt;/p&gt;&#xA;&lt;p&gt;I think it is clear that &lt;em&gt;web apps&lt;/em&gt; are taking over the world. It is a&#xA;powerful notion that they can pretty much run on any computing devices&#xA;that support a &lt;em&gt;browser&lt;/em&gt;, which is almost everything with a screen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Bootstrap makes WebUI look great!</title>
-      <link>https://www.rustyeddy.com/notes/bootstrap/</link>
+      <link>http://localhost:1313/notes/bootstrap/</link>
       <pubDate>Fri, 20 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/notes/bootstrap/</guid>
+      <guid>http://localhost:1313/notes/bootstrap/</guid>
       <description>&lt;p&gt;Bootstrap is a great way to get your ugly little fledgling website&#xA;into something respectable in no time. Do not waste time futzing with&#xA;silly formating directives, focuse on the site itself!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Software is Iterative</title>
-      <link>https://www.rustyeddy.com/notes/sotware-is-iterative/</link>
+      <link>http://localhost:1313/notes/sotware-is-iterative/</link>
       <pubDate>Wed, 23 Oct 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/notes/sotware-is-iterative/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Good Software is Continually Improved&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;The greater the success software Is directly proportionate to The&#xA;number of features that are requested As well as the number of bugs&#xA;that are found.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Bug reports means your softwar is getting used.!.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;That is obvious if people are happy using a software That they might&#xA;have some requests that would flow in from time to time.&lt;/p&gt;&#xA;&lt;p&gt;What might seem counterintuitive is the fact that, Even well done&#xA;successful software will have bugs. Period. Good teams understand and&#xA;embrace that&amp;hellip; The Bugs will be fixed And the customers will be even&#xA;happier&lt;/p&gt;</description>
+      <guid>http://localhost:1313/notes/sotware-is-iterative/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;Good Software is Continually Improved&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;The greater the success software Is directly proportionate to The&#xA;number of features that are requested As well as the number of bugs&#xA;that are found.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Bug reports means your softwar is getting used.!.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;That is obvious if people are happy using a software That they might&#xA;have some requests that would flow in from time to time.&lt;/p&gt;&#xA;&lt;p&gt;What might seem counterintuitive is the fact that, Even well done&#xA;successful software will have bugs. Period. Good teams understand and&#xA;embrace that&amp;hellip; The Bugs will be fixed And the customers will be even&#xA;happier&lt;/p&gt;</description>
     </item>
     <item>
       <title>Why Choose the Go programming Language for your Project?</title>
-      <link>https://www.rustyeddy.com/notes/why-choose-go/</link>
+      <link>http://localhost:1313/notes/why-choose-go/</link>
       <pubDate>Sun, 22 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/notes/why-choose-go/</guid>
+      <guid>http://localhost:1313/notes/why-choose-go/</guid>
       <description>&lt;h2 id=&#34;go-is-simple&#34;&gt;Go is simple&lt;/h2&gt;&#xA;&lt;p&gt;Go is easy to learn to program with and it is free! Go is &lt;em&gt;much&lt;/em&gt;&#xA;easier to maintain and deploy than Java.&lt;/p&gt;&#xA;&lt;p&gt;Go does not have weird &lt;em&gt;virtual environments&lt;/em&gt; of Python or npm, gulp,&#xA;grunt, yarn, webpack (what&amp;rsquo;s next?) convuluted and complex build&#xA;environments.&lt;/p&gt;&#xA;&lt;h2 id=&#34;go-is-fast&#34;&gt;Go is Fast&lt;/h2&gt;&#xA;&lt;p&gt;It smokes most other languages, except the grand mother of Unix&#xA;programming &lt;em&gt;C&lt;/em&gt;.  The Go programming language is almost as fast&#xA;(performant geeky folks like to say) as C.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Red Eye Video Server</title>
-      <link>https://www.rustyeddy.com/notes/redeye/</link>
+      <link>http://localhost:1313/notes/redeye/</link>
       <pubDate>Fri, 24 May 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/notes/redeye/</guid>
+      <guid>http://localhost:1313/notes/redeye/</guid>
       <description>&lt;p&gt;The Red Eye project is a service definition rapper around inexpensive&#xA;cameras attached to inexpesive micro-controllers that take pretty good&#xA;video.&lt;/p&gt;&#xA;&lt;p&gt;The video streams are built using the GStreamer library. The camera&#xA;native capabilities are used to extract as high quailty, realtime&#xA;images possible.&lt;/p&gt;&#xA;&lt;p&gt;The video streams will be consumed by one or more sinks, including but&#xA;not limited to Files, cloud storage, High Def Display and Computer&#xA;Vision libraries.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Skid Steering</title>
-      <link>https://www.rustyeddy.com/notes/skid-steering/</link>
+      <link>http://localhost:1313/notes/skid-steering/</link>
       <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/notes/skid-steering/</guid>
+      <guid>http://localhost:1313/notes/skid-steering/</guid>
       <description>&lt;p&gt;Skid steering basics&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Based on &lt;em&gt;fixed direction wheels[1] or tracks&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;There are two &lt;em&gt;groups&lt;/em&gt; or &lt;em&gt;sides&lt;/em&gt; of wheels: left and right&lt;/li&gt;&#xA;&lt;li&gt;All wheels in a group MUST always point in the same direction&lt;/li&gt;&#xA;&lt;li&gt;All wheels in a group MUST always rotate at the same rate&lt;/li&gt;&#xA;&lt;li&gt;Direction is determined by the speed of the two wheel groups&#xA;&lt;ul&gt;&#xA;&lt;li&gt;To move straight all motors rotate at the same rate&lt;/li&gt;&#xA;&lt;li&gt;Forward and Reverse are determined by positive and negative values&lt;/li&gt;&#xA;&lt;li&gt;Turning is achieved by varying the throttle on the right and left&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;example&#34;&gt;Example&lt;/h3&gt;&#xA;&lt;p&gt;The &lt;code&gt;Skidder&lt;/code&gt; class has the following API, as you can see all of&#xA;the movements we desire can be accomplished with a single API call&#xA;&lt;code&gt;skidder.set_throttle(left_throttle, right_throttle)&lt;/code&gt;,&#xA;does not get much simpler than this!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Raspberry Pi Motor Control Software</title>
-      <link>https://www.rustyeddy.com/notes/rpi-motor-control-service/</link>
+      <link>http://localhost:1313/notes/rpi-motor-control-service/</link>
       <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/notes/rpi-motor-control-service/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;TODO ~ replace image with one of the Raspberry Pi Controller&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;This software adds a Skid Steer motor control software to the&#xA;&lt;a href=&#34;http://github.com/mobilerobot-io/rpid&#34;&gt;Raspberry Pi Device Server&lt;/a&gt;&#xA;device server.  RPID adds motor controls accessible via both MQTT and&#xA;REST APIs, as well as directly with the Skidder python library.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/notes/rpi-motor-control-service/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;TODO ~ replace image with one of the Raspberry Pi Controller&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;This software adds a Skid Steer motor control software to the&#xA;&lt;a href=&#34;http://github.com/mobilerobot-io/rpid&#34;&gt;Raspberry Pi Device Server&lt;/a&gt;&#xA;device server.  RPID adds motor controls accessible via both MQTT and&#xA;REST APIs, as well as directly with the Skidder python library.&lt;/p&gt;</description>
     </item>
     <item>
       <title>MQTT For Controllor Communication</title>
-      <link>https://www.rustyeddy.com/notes/mqtt-comm/</link>
+      <link>http://localhost:1313/notes/mqtt-comm/</link>
       <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/notes/mqtt-comm/</guid>
+      <guid>http://localhost:1313/notes/mqtt-comm/</guid>
       <description>&lt;p&gt;The MQTT message bus is a simple but critical element of our MBR&#xA;software design.  MQTT provides what is known as a &lt;em&gt;publish/suscribe&lt;/em&gt;&#xA;or &lt;em&gt;pubsub&lt;/em&gt; communications model.  This model of machine to machine&#xA;communication has some attractive benefits for realtime driving&#xA;algorithms that we will discuss in this post.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Streaming Video is Complicated</title>
-      <link>https://www.rustyeddy.com/notes/streaming-video/</link>
+      <link>http://localhost:1313/notes/streaming-video/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/notes/streaming-video/</guid>
+      <guid>http://localhost:1313/notes/streaming-video/</guid>
       <description>&lt;p&gt;I need to stream live video from a moving vehical with a connected&#xA;camera and a possibly connected wifi.&lt;/p&gt;&#xA;&lt;h2 id=&#34;live-high-resolution-video&#34;&gt;Live High Resolution Video&lt;/h2&gt;&#xA;&lt;p&gt;Video will stream from the vehicle to be picked up by &lt;em&gt;video&#xA;consumers&lt;/em&gt; and processed as required.  Examples of &lt;em&gt;consumers&lt;/em&gt; are&#xA;Live Video Display on our (Webapp), OpenCV for vision algoritms.&lt;/p&gt;&#xA;&lt;h2 id=&#34;high-demand-for-low-resolution&#34;&gt;High Demand For Low Resolution&lt;/h2&gt;&#xA;&lt;p&gt;It turns out that computer vision alogrithms typically run quite a bit&#xA;faster on lower resolution images, the additional information from&#xA;these &lt;em&gt;hi-res&lt;/em&gt; images can slow down the type of algorithms we are&#xA;interested in by many factors.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The ESP32</title>
-      <link>https://www.rustyeddy.com/notes/esp32/</link>
+      <link>http://localhost:1313/notes/esp32/</link>
       <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/notes/esp32/</guid>
+      <guid>http://localhost:1313/notes/esp32/</guid>
       <description>&lt;p&gt;You need to push the RESET button to get them to write flash.&lt;/p&gt;&#xA;&lt;p&gt;A power packed chip that I have just started playing with.  Give some quick&#xA;specs here: and compare with other well known options (arduino&amp;rsquo;s, stm32 or&#xA;Raspberry Pi.&lt;/p&gt;&#xA;&lt;h2 id=&#34;standout-features&#34;&gt;Standout Features&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Builtin Wifi &amp;amp; BT and others&lt;/li&gt;&#xA;&lt;li&gt;Dual Core&lt;/li&gt;&#xA;&lt;li&gt;Powerful esp-idf&lt;/li&gt;&#xA;&lt;li&gt;FreeRTOS (Arduino optional)&lt;/li&gt;&#xA;&lt;li&gt;Great Feature Set!&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;&#xA;&lt;h3 id=&#34;interactive-console-over-uart&#34;&gt;Interactive Console over UART&lt;/h3&gt;&#xA;&lt;p&gt;This demonstrates using the serial port for an interactive console&#xA;while ESP is running other things.  During this console session we can&#xA;do a number of things including:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Streaming Video Tools</title>
-      <link>https://www.rustyeddy.com/notes/streaming-video-tools/</link>
+      <link>http://localhost:1313/notes/streaming-video-tools/</link>
       <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/notes/streaming-video-tools/</guid>
-      <description>&lt;p&gt;The grandparents of streaming video, and snapshots, read, writing&#xA;and transcoding video and single frame images are &lt;em&gt;ffmpeg&lt;/em&gt;, &lt;em&gt;vlc&lt;/em&gt; and&#xA;&lt;em&gt;gstreamer&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Other platforms, such as the wildly cool and inexpensive Raspberry Pi&#xA;and attached CSI Camera (Raspberry Pi Camera) have thier own set of&#xA;utilities: like raspivid.  Or the NVidia Nano with it&amp;rsquo;s gst-streamer&#xA;plugins and nvgst-capture/nvgst-playback utilies.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;This writting is as of March 2019&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h3 id=&#34;gstreamer-complex-flexible-future-proof&#34;&gt;GStreamer Complex, Flexible, Future Proof&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;GStreamer&lt;/strong&gt; really complex pipelines but insanely flexible.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/notes/streaming-video-tools/</guid>
+      <description>&lt;p&gt;The grandparents of streaming video, and snapshots, read, writing&#xA;and transcoding video and single frame images are &lt;em&gt;ffmpeg&lt;/em&gt;, &lt;em&gt;vlc&lt;/em&gt; and&#xA;&lt;em&gt;gstreamer&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Other platforms, such as the wildly cool and inexpensive Raspberry Pi&#xA;and attached CSI Camera (Raspberry Pi Camera) have thier own set of&#xA;utilities: like raspivid.  Or the NVidia Nano with it&amp;rsquo;s gst-streamer&#xA;plugins and nvgst-capture/nvgst-playback utilies.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;This writting is as of March 2019&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h3 id=&#34;gstreamer-complex-flexible-future-proof&#34;&gt;GStreamer Complex, Flexible, Future Proof&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;GStreamer&lt;/strong&gt; really complex pipelines but insanely flexible.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Control Station Display</title>
-      <link>https://www.rustyeddy.com/notes/touch-screen-display/</link>
+      <link>http://localhost:1313/notes/touch-screen-display/</link>
       <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/notes/touch-screen-display/</guid>
+      <guid>http://localhost:1313/notes/touch-screen-display/</guid>
       <description>&lt;p&gt;We are going to build a simple control station that begins with a&#xA;Raspberry Pi and connected &lt;em&gt;7 inch touchscreen tablet&lt;/em&gt;.  I have it&#xA;setup in &amp;ldquo;kiosk mode&amp;rdquo;, which is basically full page chrome without the&#xA;tabs and tool bars etc.&lt;/p&gt;</description>
     </item>
     <item>
       <title>TLV the Type Length Vector Protocol</title>
-      <link>https://www.rustyeddy.com/notes/tlv-and-realitime-communication/</link>
+      <link>http://localhost:1313/notes/tlv-and-realitime-communication/</link>
       <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/notes/tlv-and-realitime-communication/</guid>
+      <guid>http://localhost:1313/notes/tlv-and-realitime-communication/</guid>
       <description>&lt;p&gt;TLV is a very simple communication protocol that can be used to send&#xA;messages around a complex, distributed system.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sync vs. Async, Blocking vs. Non-blocking</title>
-      <link>https://www.rustyeddy.com/notes/sync-async/</link>
+      <link>http://localhost:1313/notes/sync-async/</link>
       <pubDate>Sun, 03 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/notes/sync-async/</guid>
+      <guid>http://localhost:1313/notes/sync-async/</guid>
       <description>&lt;h2 id=&#34;synchronous-vs-asynchronous&#34;&gt;Synchronous vs. Asynchronous&lt;/h2&gt;&#xA;&lt;h3 id=&#34;blocking-and-non-blocking&#34;&gt;Blocking and Non-Blocking&lt;/h3&gt;&#xA;&lt;p&gt;A pratical example of asynchronous is a &amp;ldquo;blocking&amp;rdquo; call&#xA;vs. non-blocking call.  For example you are going to call a web&#xA;service to gather a lot of data, it will take a long time.  You can:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Make a blocking call (synchronous) that pauses (blocks) the program&#xA;from doing anything else until you receive a reply (or error).&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Make a non-blocking (asynchronous) call that requests the data from&#xA;the remote server, after sending the request the program continues to&#xA;run even though the response from the server has not yet been&#xA;returned.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Streaming Live Video on a Local Lan Vs. Internet</title>
-      <link>https://www.rustyeddy.com/notes/streaming-video-local-network/</link>
+      <link>http://localhost:1313/notes/streaming-video-local-network/</link>
       <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/notes/streaming-video-local-network/</guid>
+      <guid>http://localhost:1313/notes/streaming-video-local-network/</guid>
       <description>&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;differences in local vs. internet and streaming video&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;live stream vs. video on demand&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;what does real time mean?&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;what to do with late packets?&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;UDP vs. TCP in the local network&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;RTP and UDP&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;RTP and RTCP&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;RTP and RTSP&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;RTP and Multicast&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Tools used&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;TODO: workflowy outline&lt;/p&gt;&#xA;&lt;p&gt;RTSP is a good option for streaming video in a local setup up, where&#xA;minimal delay is the highest priority.  However, RTSP does not&#xA;typically do very well over the Internet due to the nature of&#xA;RTP/UDP.&lt;/p&gt;</description>
     </item>
     <item>
       <title>website</title>
-      <link>https://www.rustyeddy.com/notes/website/</link>
+      <link>http://localhost:1313/notes/website/</link>
       <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/notes/website/</guid>
+      <guid>http://localhost:1313/notes/website/</guid>
       <description>&lt;h1 id=&#34;websites&#34;&gt;Websites&lt;/h1&gt;&#xA;&lt;p&gt;According to the W3.org (official web people), modern websites may&#xA;consist of, i.e. modern browsers must support 3 things:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;HTML for basic website structure and other things&lt;/li&gt;&#xA;&lt;li&gt;CSS for style&lt;/li&gt;&#xA;&lt;li&gt;JavaScript for all things &lt;em&gt;dynamic&lt;/em&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The most basic of all websites is a single text file containing some&#xA;&lt;em&gt;content&lt;/em&gt; wrapped in some &lt;em&gt;HTML markup&lt;/em&gt;.  For example here is a&#xA;working, but incomplete example of HTML snippet attempting to display&#xA;a &lt;em&gt;level 1 header&lt;/em&gt; with the words &lt;em&gt;Hello, world!.&lt;/em&gt;:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Inexpensive Motor Controllers for Arduino and Raspberry Pi</title>
-      <link>https://www.rustyeddy.com/notes/motor-controlor-notes/</link>
+      <link>http://localhost:1313/notes/motor-controlor-notes/</link>
       <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/notes/motor-controlor-notes/</guid>
+      <guid>http://localhost:1313/notes/motor-controlor-notes/</guid>
       <description>&lt;p&gt;I prefer to use an Arduino with a Motor Controller over say a&#xA;Raspberry Pi with a motor-controller.  I believe the Arudino has&#xA;better support for dedicated Real-time software vs. the Raspberry Pi&#xA;and as a superior platform for general computing including running&#xA;Control Software.  This is how we do it on the West side &amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Control System Design</title>
-      <link>https://www.rustyeddy.com/notes/control-design/</link>
+      <link>http://localhost:1313/notes/control-design/</link>
       <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/notes/control-design/</guid>
+      <guid>http://localhost:1313/notes/control-design/</guid>
       <description>&lt;p&gt;Early in the process of building the first set of mobile robots I&#xA;discovered that I was not going to settle on a single micro&#xA;controller.&lt;/p&gt;&#xA;&lt;p&gt;The first two obvious choices being the Arduino or Raspberry Pi, for which&#xA;I tried both with a modest level of success.  I quickly realized that&#xA;I would not be providing my sole focus on either platform, neither was&#xA;sufficient for my grand plans for a number of reasons.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Google Cloud Platform on Rusty Eddy</title>
-    <link>https://www.rustyeddy.com/tags/google-cloud-platform/</link>
+    <link>http://localhost:1313/tags/google-cloud-platform/</link>
     <description>Recent content in Google Cloud Platform on Rusty Eddy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 27 Jan 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.rustyeddy.com/tags/google-cloud-platform/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/google-cloud-platform/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sugo Music Dashboard</title>
-      <link>https://www.rustyeddy.com/resume/clients/sugo-music/</link>
+      <link>http://localhost:1313/resume/clients/sugo-music/</link>
       <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/resume/clients/sugo-music/</guid>
-      <description>&lt;p&gt;Sugo Music is an online Music publishing platform for Artists by&#xA;artists. It was my responsibility to manage the software process,&#xA;build and test the backend and manage the front-end development in&#xA;React.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Go, React, REST API, HTTP, HTML, JavaScript, Webapp, fullstack&lt;/p&gt;&lt;/blockquote&gt;</description>
+      <guid>http://localhost:1313/resume/clients/sugo-music/</guid>
+      <description>&lt;p&gt;Sugo Music is an online Music publishing platform for Artists by&#xA;artists. It was my responsibility to manage the software process,&#xA;build and test the backend and manage the front-end development in&#xA;React.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Go, React, REST API, HTTP, HTML, JavaScript, Webapp, fullstack&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
   </channel>
 </rss>
