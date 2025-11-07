@@ -84,10 +84,9 @@ func (b *Button) Set(v bool) error {
 
 ```
 
-You can see the full Button driver implementation here →
-https://github.com/rustyeddy/devices/blob/main/button/button.go
+You can see the full [Button driver implementation here](https://github.com/rustyeddy/devices/blob/main/button/button.go)
 
-Example 2: Environment Sensor https://github.com/rustyeddy/devices/blob/main/bme280/bme280.go
+Example 2: [Environment Sensor](https://github.com/rustyeddy/devices/blob/main/bme280/bme280.go)
 
 ```go
 type Env struct {
@@ -110,10 +109,11 @@ func (e *EnvSensor) Set(v Env) error {
 
 [Full source code on GitHub](https://github.com/rustyeddy/devices)
 
-These examples run natively on Linux or via mock data — but could just
-as easily talk to GPIO or Modbus hardware.
+These examples run natively on a Raspberry Pi and GPIO or via mock data on 
+just about any Linux distribution. It would be fairly easy to port over to
+other SoC style boards like the BeagleBone or Nvidia Jetson.
 
-Building the Device Manager (from otto repo)
+## Building the Device Manager (from otto repo)
 
 In the OttO project, the DeviceManager is the components that keeps track
 of all devices.
