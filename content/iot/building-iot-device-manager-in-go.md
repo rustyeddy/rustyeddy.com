@@ -11,27 +11,32 @@ tags: [ go, IoT devices, generics ]
 
 Managing IoT devices becomes exponentially more complex as your
 network grows. You end up juggling a mix of sensors, actuators, and
-communication buses — each with its own quirks.
+communication buses each with its own quirks and challenges.
 
 In the [OttO Project](https://github.com/rustyeddy/otto) and companion
-[Devices library](https://github.com/rustyeddy/devices), I set out to
-to focus more on the application layer and create a device abstraction
-layer that would simplify developing managed IoT applications without
-necessarily getting into the weeds of device drivers.  The goal: a
-_lightweight_, _generic_, _type-safe_ device system that can manage
-many kinds of _things_, from buttons, meters, motors to full networks
-of sensors.
+[Devices library](https://github.com/rustyeddy/devices), I attempted
+to develop a mini framework that would have a clear _seperation of
+concerns_ between the hardware layer (GPIO, I2C, serial, ADC, PWN,
+UART, etc.) and the application layer (messaging, control logic,
+logging, deployment, etc).
+
+By having a clean seperation between the HW and application layers we
+can focus more on the application layer that would simplify developing
+managed IoT applications without necessarily getting into the weeds of
+device drivers.  The goal: a _lightweight_, _generic_, _type-safe_
+device system that can manage many kinds of _things_, from buttons,
+meters, motors to full networks of sensors.
 
 ### Separation of Concerns
 
 This article walks through the design of OttO's _device manager layer_
 which sits above the particular devices and their underlying drivers.
-The device interface is powered by 
-[Go's Generics](https://go.dev/doc/tutorial/generics) allowing me to
-write a single generic interface that supports underlying concrete
-implementations that either return or produce virtually any data
-type including primatives (int, bool, float64, strings, etc) or structures 
-composed of multiple values along with examples.
+The device interface is powered by [Go's
+Generics](https://go.dev/doc/tutorial/generics) allowing me to write a
+single generic interface that supports underlying concrete
+implementations that either return or produce virtually any data type
+including primatives (int, bool, float64, strings, etc) as well as
+structures composed of multiple values along with examples.
 
 > NOTE: The introduction of generics to Go has been controversial as
 > interfaces or other methods could have worked as well, but I wanted
