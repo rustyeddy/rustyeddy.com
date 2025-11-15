@@ -230,45 +230,55 @@ In OttO, you can create and register devices dynamically:
 ```go
 dm := manager.NewDeviceManager()
 
-dm.Register("button1", &devices.Button{})
-dm.Register("env1", &devices.EnvSensor{})
+dm.Register("on", button.New("On", 5))
+dm.Register("off", button.New("Off", 6))
+dm.Register("env", bme280.New("env", "/dev/i2c", 0x76))
 
 // Read the environment sensor
-if d, ok := dm.Get("env1"); ok {
-    env, _ := d.(devices.Device[devices.Env]).Get()
-    fmt.Printf("Temp: %.2f°C, Humidity: %.2f%%\n", env.Temp, env.Humidity)
+if d, ok := dm.Get("env"); ok {
+    env, err := env.Get()
+	if err != nil {
+		return err
+	}
+    fmt.Printf("Temp: %.2f°C, Humidity: %.2f%%\n", env.Temp, env.Humidity, env.Pressure)
 }
 ```
 
-👉 Example in OttO repo → examples/manager_test.go
-
-Concurrency and Polling Devices
+## Concurrency and Polling Devices
 
 In practice, OttO uses goroutines to read data from many devices at
 once — ideal for real-time dashboards or edge gateways.
 
 ```go
-for name, dev := range dm.List() {
-    go func(n string, d any) {
-        for {
-            switch v := d.(type) {
-            case devices.Device[float64]:
-                val, _ := v.Get()
-                fmt.Printf("%s: %.2f\n", n, val)
-            case devices.Device[int]:
-                val, _ := v.Get()
-                fmt.Printf("%s: %d\n", n, val)
-            }
-            time.Sleep(time.Second)
-        }
-    }(name, dev)
+// genericTimerLoop provides a standard timer loop for any device
+func (md *ManagedDevice) GenericTimerLoop(duration time.Duration, done chan any) {
+	ticker := time.NewTicker(duration)
+	defer ticker.Stop()
+
+	for {
+		select {
+		case <-ticker.C:
+			md.ReadPub()
+		case <-done:
+			slog.Debug("Timer loop stopped", "device", md.Name)
+			return
+		}
+	}
+}
+
+func pollEnv() {
+	env := bme280.New("env", "/dev/i2c", 0x76)
+	d := dm.Register("env", env)
+
+	done := make(chan done any)
+	d.StartTimerLoop(15 * time.Second, done, d.GenericTimerLoop)
 }
 ```
 
 This pattern is already integrated into OttO’s runtime polling layer,
 which uses Go’s channels for non-blocking updates.
 
-Testing with Mocks
+## Testing with Mocks
 
 From the devices/mocks package:
 
@@ -283,7 +293,7 @@ func (m *MockMeter) Get() (int, error) { return m.val, nil }
 func (m *MockMeter) Set(v int) error   { m.val = v; return nil }
 ```
 
-Unit test using testify:
+## Unit test using testify:
 
 ```go
 func TestMockMeter(t *testing.T) {
