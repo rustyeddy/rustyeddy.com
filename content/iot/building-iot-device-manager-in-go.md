@@ -21,13 +21,17 @@ UART, etc.) and the application layer (messaging, control logic,
 logging, deployment, etc).
 
 By having a clean seperation between the HW and application layers we
-can focus more on the application layer that would simplify developing
+can focus more on the application layer that simplifies developing
 managed IoT applications without necessarily getting into the weeds of
 device drivers.  The goal: a _lightweight_, _generic_, _type-safe_
 device system that can manage many kinds of _things_, from buttons,
 meters, motors to full networks of sensors.
 
-### Separation of Concerns
+The software shall be able to run on top of _real hardware_ e.g. a
+_Raspberry Pi_ without modifications as easily as it runs atop
+_mocked_ devices.
+
+### The Device Interface
 
 This article walks through the design of OttO's _device manager layer_
 which sits above the particular devices and their underlying drivers.
@@ -36,11 +40,16 @@ Generics](https://go.dev/doc/tutorial/generics) allowing me to write a
 single generic interface that supports underlying concrete
 implementations that either return or produce virtually any data type
 including primatives (int, bool, float64, strings, etc) as well as
-structures composed of multiple values along with examples.
+complex _go structs_ composed of multiple different values.
 
-> NOTE: The introduction of generics to Go has been controversial as
-> interfaces or other methods could have worked as well, but I wanted
-> to get some experience with Go's generics.
+There are 
+[examples of many implementations](http://github.com/rustyeddy/devices/examples)
+of the generic Go Device interface in the repository 
+
+> NOTE: The introduction of [generics to Go](https://go.dev/doc/tutorial/generics) 
+> has been controversial as interfaces or other methods could have
+> worked as well, but I wanted to get some experience with Go's
+> generics.
 
 ### Mocking Hardware
 
@@ -65,47 +74,8 @@ _drivers_, _devices_ and an _application framework_. The first two
 layers can be found in the repository https://github.com/rustyeddy/devices
 the second can be found in https://github.com/rustyeddy/otto.
 
-### The Drivers
 
-The driver layer is agnostic to the actual sensor or actuator and sits
-the closest to the hardware, for example drivers consist of 
-
-- Serial Ports
-- GPIO - Digital and Analog
-- i2c
-- SPI 
-- 1-wire, etc
-- Pulse Width Modulation (PWM)
-
-### The Devices
-
-The devices consist of hardware that uses the underlying drivers, for example
-Buttons and LED use a single GPIO pin, GPS device uses serial port, soil sensor
-(meter) uses an Analog to Digital Converter (ADC), etc.
-
-In this layer I have leveraged a lot of good work by others that have
-done a lot of great and the complex coding that has gone into them.
-
-### The Application Framework
-
-The heart of the _Application Framework_ is OttO that provides a
-variety of _packages_ for _pub/sub_ messaging, REST API, Websockets, 
-HTTP for standard HTML user interfaces, etc.
-
-### The Application
-
-There is also a reference application, the 
-[The Garden Station](https://github.com/rustyeddy/garden-station) that 
-implements an automatic watering system based on a soil moisture sensor, 
-water pump and other devices like LEDs, Buttons and an OLED display.
-
----
-
-TODO : Insert architectural drawing here
-
----
-
-## The Device layer with Go Generics
+### The Device layer with Go Generics
 
 Device Interface (from devices repo) In devices/device.go:
 
@@ -135,6 +105,10 @@ Each device can now expose its own data type, for example:
 
 ###  Implementing Concrete Devices
 
+The first example is a simple _button_ device which provides a
+```Get()``` method that returns a single _boolean_ type, on/off, true
+or false. It does not get much simpler than this.
+
 You can see the full [Button driver implementation here](https://github.com/rustyeddy/devices/blob/main/button/button.go)
 
 ```go
@@ -158,6 +132,8 @@ func (b *Button) Set(v bool) error {
 }
 
 ```
+
+#### More complex example
 
 Example two implements a complext type struct consisting of
 temperature, humidity and pressure.
@@ -189,9 +165,53 @@ These examples run natively on a Raspberry Pi and GPIO or via mock data on
 just about any Linux distribution. It would be fairly easy to port over to
 other SoC style boards like the BeagleBone or Nvidia Jetson.
 
-## Building the Device Manager
+### The Drivers
 
-In the OttO project, the DeviceManager is the components that keeps track
+The driver layer is agnostic to the actual sensor or actuator and sits
+the closest to the hardware, for example drivers consist of 
+
+- Serial Ports
+- GPIO - Digital and Analog
+- i2c
+- SPI 
+- 1-wire, etc
+- Pulse Width Modulation (PWM)
+
+### The Devices
+
+The devices consist of hardware that uses the underlying drivers, for example
+Buttons and LED use a single GPIO pin, GPS device uses serial port, soil sensor
+(meter) uses an Analog to Digital Converter (ADC), etc.
+
+In this layer I have leveraged a lot of good code to utilize these
+various drivers by others that have done a lot of complex coding. That
+was always another significant goal was to have some amount of freedom
+compiling work frome various sources rather than getting stuck
+existance and quality of work limited to a single package or framework.
+
+
+### The Application Framework
+
+The heart of the _Application Framework_ is OttO which provides a
+variety of _packages_ for _pub/sub_ messaging, REST API, Websockets, 
+HTTP for standard HTML user interfaces, etc.
+
+### The Application
+
+There is also a reference application, the 
+[The Garden Station](https://github.com/rustyeddy/garden-station) that 
+implements an automatic watering system based on a soil moisture sensor, 
+water pump and other devices like LEDs, Buttons and an OLED display.
+
+---
+
+TODO : Insert architectural drawing here
+
+---
+
+## Managing Application Devices
+
+In the OttO project, the _DeviceManager_ is the components that keeps track
 of all devices.
 
 A simplified version looks like this:
