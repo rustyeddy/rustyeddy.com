@@ -20,43 +20,47 @@ concerns_ between the hardware layer (GPIO, I2C, serial, ADC, PWN,
 UART, etc.) and the application layer (messaging, control logic,
 logging, deployment, etc).
 
-By having a clean seperation between the HW and application layers we
-can focus more on the application layer that simplifies developing
-managed IoT applications without necessarily getting into the weeds of
-device drivers.  The goal: a _lightweight_, _generic_, _type-safe_
-device system that can manage many kinds of _things_, from buttons,
-meters, motors to full networks of sensors.
+By creating a clean seperation between the HW and application layers
+we can focus more on the application layer and simplify the
+development of managed IoT applications without necessarily getting
+into the weeds of device drivers.  The goal is: a _lightweight_,
+_generic_, _type-safe_ device system that can manage all kinds of
+_things_, from buttons, meters, motors to full robots.
 
-The software shall be able to run on top of _real hardware_ e.g. a
-_Raspberry Pi_ without modifications as easily as it runs atop
-_mocked_ devices.
+The software is able to run on top of _real hardware_ e.g. a
+_Raspberry Pi_ without modifications as easily as it can run on a laptop
+with _mocked_ devices.
 
 ### The Device Interface
 
-This article walks through the design of OttO's _device manager layer_
+Here we'll walk through the design of OttO's _device manager layer_
 which sits above the particular devices and their underlying drivers.
 The device interface is powered by [Go's
 Generics](https://go.dev/doc/tutorial/generics) allowing me to write a
-single generic interface that supports underlying concrete
-implementations that either return or produce virtually any data type
-including primatives (int, bool, float64, strings, etc) as well as
-complex _go structs_ composed of multiple different values.
+single generic interface that supports a multitude of underlying
+concrete implementations that either produce or consume virtually any
+type of data as well as perform real world activies. 
 
-There are 
-[examples of many implementations](http://github.com/rustyeddy/devices/examples)
-of the generic Go Device interface in the repository 
 
-> NOTE: The introduction of [generics to Go](https://go.dev/doc/tutorial/generics) 
-> has been controversial as interfaces or other methods could have
-> worked as well, but I wanted to get some experience with Go's
-> generics.
+There are The type of data the device interface supports includes
+primatives (int, bool, float64, strings, etc) as well as coplex Go
+data structs. A few example implementations [can be found
+here](http://github.com/rustyeddy/devices/tree/main/examples).
+
+> NOTE: The introduction of [generics to
+> Go](https://go.dev/doc/tutorial/generics) has been controversial as
+> interfaces or other methods could have worked as well. I choose
+> generics for this task partially because I wanted to get some
+> experience with Go's generics.
 
 ### Mocking Hardware
 
 This design creates a clear seperation between the device and
 application layers. As we will see later it also allows application
 developers to focus on building the application on a powerful Linux
-workstation without any actual hardware via mocking or faking the underlying hardware.
+workstation without any actual hardware via mocking or faking the
+underlying hardware, and avoid the inconviniences of working on embedded 
+systems for much of the application logic.
 
 Running the same application on _real_ hardware, for example a
 _Raspberry Pi_ is as simple as compiling for the target architecture
@@ -71,9 +75,14 @@ memory.
 
 In practice we have two repositories that represent three layers:
 _drivers_, _devices_ and an _application framework_. The first two
-layers can be found in the repository https://github.com/rustyeddy/devices
-the second can be found in https://github.com/rustyeddy/otto.
+layers can be found in these two repositories
+[devices](https://github.com/rustyeddy/devices)
+the second can be found in 
+[otto](https://github.com/rustyeddy/otto.)
 
+One key reason for separating the OttO and Device repositories allows
+OttO to be run as an IoT broker only, while other things can be built
+to provide that will utilize the underlying hardware.
 
 ### The Device layer with Go Generics
 
@@ -98,10 +107,11 @@ That’s it — the entire abstraction layer.
 
 Each device can now expose its own data type, for example:
 
-* Button bool -> true/false 
-* Meter	int   -> 0–100 
-* Voltage float64 -> 12.6V 
-* Environment struct{Temp, Humidity, Pressure float64} -> multi-sensor readings 
+* A Button produces a boolean: true/false 
+* A Meter can provide a range of integers: 0–100 
+* Voltage can produce a floatping point value: 12.6V 
+* Environment can produce a multi-valued structure: 
+  `{Temp, Humidity, Pressure float64}`
 
 ###  Implementing Concrete Devices
 
@@ -133,9 +143,9 @@ func (b *Button) Set(v bool) error {
 
 ```
 
-#### More complex example
+#### A More complex example
 
-Example two implements a complext type struct consisting of
+Example two implements a complex type struct consisting of
 temperature, humidity and pressure.
 
 [Environmental Sensor](https://github.com/rustyeddy/devices/blob/main/bme280/bme280.go)
@@ -161,47 +171,68 @@ func (e *EnvSensor) Set(v Env) error {
 
 [Full source code on GitHub](https://github.com/rustyeddy/devices)
 
-These examples run natively on a Raspberry Pi and GPIO or via mock data on 
-just about any Linux distribution. It would be fairly easy to port over to
-other SoC style boards like the BeagleBone or Nvidia Jetson.
+These examples run natively on a Raspberry Pi with GPIO pins, or via
+mock data on just about any Linux distribution, or MAC and maybe even
+Windows. It would be fairly easy to port over to other SoC style
+boards like the BeagleBone or Nvidia Jetson.
 
 ### The Drivers
 
-The driver layer is agnostic to the actual sensor or actuator and sits
-the closest to the hardware, for example drivers consist of 
+The driver layer and sits the closest to the hardware and is agnostic
+to the how the data is used by the sensor or actuator that comsumes or
+produces let alone what the application is doing with the data.
+
+This is the list of drivers currently supported
 
 - Serial Ports
-- GPIO - Digital and Analog
+- Digital GPIO
+- Analog GPIO via the ads1112 i2c chip (on the Raspberry Pi)
 - i2c
+
+This is the list of drivers that will likely be supported sometime in
+the near future:
+
 - SPI 
 - 1-wire, etc
 - Pulse Width Modulation (PWM)
 
 ### The Devices
 
-The devices consist of hardware that uses the underlying drivers, for example
-Buttons and LED use a single GPIO pin, GPS device uses serial port, soil sensor
-(meter) uses an Analog to Digital Converter (ADC), etc.
+The devices consist of hardware that uses the underlying drivers, for
+example Buttons and LEDs use a single Digital GPIO pin, the GPS device
+uses a serial port, while the soil sensor (meter) uses an Analog to
+Digital Converter (ADC) made possible by the 
+[i2c ads1112](https://www.ti.com/lit/gpn/ADS1112)
+chip.
 
-In this layer I have leveraged a lot of good code to utilize these
-various drivers by others that have done a lot of complex coding. That
-was always another significant goal was to have some amount of freedom
-compiling work frome various sources rather than getting stuck
-existance and quality of work limited to a single package or framework.
+A major goal of the device layer is to leverage as much good, hard
+work from smart people. After all, I don't have the chops or the time
+to do all that stuff myself!
 
+> Seperation concerns: device drivers from the framework
+
+In this layer we have been able to leverage a lot of good, hard work
+from some really smart people. This was always a primay goal of this
+project: was to have the freedom to employ great code from a variety
+of great sources. 
 
 ### The Application Framework
 
-The heart of the _Application Framework_ is OttO which provides a
-variety of _packages_ for _pub/sub_ messaging, REST API, Websockets, 
+The heart of the _Application Framework_ is OttO which basically
+provides a variety of _packages_ required to manage a fleet of IoT
+things, or just a single thing for that matter.
+
+for _pub/sub_ messaging, REST API, Websockets, 
 HTTP for standard HTML user interfaces, etc.
 
 ### The Application
 
-There is also a reference application, the 
-[The Garden Station](https://github.com/rustyeddy/garden-station) that 
-implements an automatic watering system based on a soil moisture sensor, 
-water pump and other devices like LEDs, Buttons and an OLED display.
+There is a reference application known as the [The
+Gardener](https://github.com/rustyeddy/gardener) an automated
+watering station that uses a soil moisture sensor to determine when to
+turn a water pump on, as well as light up an LED and update the text
+on an OLED display.
+
 
 ---
 
@@ -211,8 +242,9 @@ TODO : Insert architectural drawing here
 
 ## Managing Application Devices
 
-In the OttO project, the _DeviceManager_ is the components that keeps track
-of all devices.
+The _DeviceManager_ keeps track of the devices that make up
+a _thing_. It is a registery that organizes a variety devices allowing 
+the _things_ application to do it's _thang_.
 
 A simplified version looks like this:
 
@@ -272,7 +304,7 @@ if d, ok := dm.Get("env"); ok {
 ## Concurrency and Polling Devices
 
 In practice, OttO uses goroutines to read data from many devices at
-once — ideal for real-time dashboards or edge gateways.
+once — ideal for edge gateways and real-time dashboards.
 
 ```go
 // genericTimerLoop provides a standard timer loop for any device
@@ -300,12 +332,14 @@ func pollEnv() {
 }
 ```
 
-This pattern is already integrated into OttO’s runtime polling layer,
-which uses Go’s channels for non-blocking updates.
+This pattern is already integrated into OttO’s runtime timer based
+polling layer using Go’s channels for non-blocking updates.
 
 ## Testing with Mocks
 
-From the devices/mocks package:
+The devices and oTTo packages have been designed with mocked
+development in mind, allowing focus on application logic and avoiding
+the tedium that comes with test full bench setups and prototypes.
 
 ```go
 package mocks
@@ -318,7 +352,8 @@ func (m *MockMeter) Get() (int, error) { return m.val, nil }
 func (m *MockMeter) Set(v int) error   { m.val = v; return nil }
 ```
 
-## Unit test using testify:
+Mocking lets OttO simulate an entire IoT environment on your laptop —
+no physical hardware required.
 
 ```go
 func TestMockMeter(t *testing.T) {
@@ -327,24 +362,8 @@ func TestMockMeter(t *testing.T) {
     require.Equal(t, 42, got)
 }
 ```
-
-Mocking lets OttO simulate an entire IoT environment on your laptop —
-no physical hardware required.
-
-## Extending the System
-
-Once you have your device manager in place, you can extend OttO with:
-
-**Persistence**: Save device state via SQLite or BoltDB
-
-**Networking**: Expose devices over REST or MQTT
-
-**Plugins**: Dynamically load Go modules for new device types
-
-**Dashboards**: Visualize data with a web UI or CLI
-
-_Example_: OttO’s HTTP layer exposes /api/devices endpoints built
-directly on the manager.
+Using OttO's REST API we can query the configured devicess controlled by the
+_DeviceManager_: provided by the `/api/devices` API endpoint.
 
 ```go
 http.HandleFunc("/api/devices", func(w http.ResponseWriter, r *http.Request) {
@@ -352,6 +371,20 @@ http.HandleFunc("/api/devices", func(w http.ResponseWriter, r *http.Request) {
     json.NewEncoder(w).Encode(devices)
 })
 ```
+
+I started using the [testify
+package](https://github.com/stretchr/testify) to do test
+with, it does make things quite a bit more compact and expressive.
+
+## Extending the System
+
+With the device manager in place we can now focus on other powerful
+features provided by OttO.
+
+- **Persistence**: Save device state via SQLite or BoltDB
+- **Networking**: Expose devices over REST or MQTT
+- **Plugins**: Dynamically load Go modules for new device types
+- **Dashboards**: Visualize data with a web UI or CLI
 
 ## Performance and Deployment
 
@@ -375,13 +408,11 @@ You can deploy OttO to:
 By combining Go’s generics, interfaces, and goroutines, we’ve built a
 foundation that scales from one sensor to an entire IoT network.
 
-The RustyEddy ecosystem now includes:
+The ecosystem now includes:
 
-_Devices_: Reusable drivers and interfaces
-
-_OttO_: The orchestrator and runtime manager
-
-Future modules: NavGo, OttoEdge, GardenStation, and beyond
+- _Devices_: Reusable drivers and interfaces
+- _OttO_: The orchestrator and runtime manager
+- _Gardner_: The watering application.
 
 If you’re looking for a clean, composable way to manage embedded
 systems or smart devices — Go gives you type safety, concurrency, and
@@ -391,6 +422,7 @@ simplicity out of the box.
 
 [OttO GitHub Repository](https://github.com/rustyeddy/otto)
 [Devices GitHub Repository](https://github.com/rustyeddy/devices)
+[Gardener](https://github.com/rustyeddy/gardener)
 [RustyEddy.com](https://RustyEddy.com)
 
 > Rusty Eddy builds open software for embedded systems and IoT. Follow

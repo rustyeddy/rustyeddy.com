@@ -121,21 +121,21 @@ will go stale then market as such.</p>
 </span></span><span style="display:flex;"><span>)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Station</span> <span style="color:#66d9ef">type</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ... </span>
-</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ... 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">State</span>       <span style="color:#66d9ef">int</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">LastTime</span>    <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Time</span>  <span style="color:#75715e">// Last time we heard from this Station</span>
-</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">LastTime</span>    <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Time</span>  <span style="color:#75715e">// Last time we heard from this Station
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">StationTimeout</span>() {
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">ticker</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">NewTicker</span>(<span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Minute</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">5</span>)
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">defer</span> <span style="color:#a6e22e">ticker</span>.<span style="color:#a6e22e">Stop</span>()
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">defer</span> <span style="color:#66d9ef">go</span> <span style="color:#a6e22e">cleanupStations</span>() <span style="color:#75715e">// will this work?</span>
-</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">defer</span> <span style="color:#66d9ef">go</span> <span style="color:#a6e22e">cleanupStations</span>() <span style="color:#75715e">// will this work?
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> {
 </span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">case</span> <span style="color:#a6e22e">t</span> <span style="color:#f92672">:=</span> <span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">ticker</span>.<span style="color:#a6e22e">C</span>:
-</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// Walk all stations and look for timeouts</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">_</span>, <span style="color:#a6e22e">station</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">Stations</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// Walk all stations and look for timeouts
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#66d9ef">for</span> <span style="color:#a6e22e">_</span>, <span style="color:#a6e22e">station</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">Stations</span> {
 </span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">expiration</span> <span style="color:#f92672">:=</span>  <span style="color:#a6e22e">station</span>.<span style="color:#a6e22e">LastTime</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">conf</span>.<span style="color:#a6e22e">StationTimeout</span>
 </span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">station</span>.<span style="color:#a6e22e">LastTime</span>.<span style="color:#a6e22e">After</span>(<span style="color:#a6e22e">expiration</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">3</span>) { 
 </span></span><span style="display:flex;"><span>                   <span style="color:#a6e22e">station</span>.<span style="color:#a6e22e">State</span> = <span style="color:#a6e22e">StateExpired</span>
@@ -150,12 +150,12 @@ will go stale then market as such.</p>
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">cleanupStations</span>() {
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// walk expired stations and perform cleanup</span>
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// write cached Data to the filesystem before croaking</span>
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Announce to dashboard the station is being cleaned up</span>
-</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// walk expired stations and perform cleanup
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// write cached Data to the filesystem before croaking
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Announce to dashboard the station is being cleaned up
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
 </span></span></code></pre></div><p>I will briefly summarize what the above code is doing.</p>
 <ol>
 <li>Add <code>LastTime time.Time</code> to the Station type</li>

@@ -6,8 +6,22 @@
     <description>Recent content in Categories on Rusty Eddy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Edge Computing</title>
+      <link>http://localhost:1313/categories/edge-computing/</link>
+      <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/edge-computing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IoT Systems</title>
+      <link>http://localhost:1313/categories/iot-systems/</link>
+      <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/iot-systems/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Electronic-Components</title>
       <link>http://localhost:1313/categories/electronic-components/</link>
