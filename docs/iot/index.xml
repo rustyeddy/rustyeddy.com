@@ -6,7 +6,7 @@
     <description>Recent content in Internet Of Things on Rusty Eddy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/iot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OttO the Iot Gateway</title>
@@ -23,11 +23,18 @@
       <description>&lt;h2 id=&#34;publishing-sensor-data&#34;&gt;Publishing Sensor Data&lt;/h2&gt;&#xA;&lt;p&gt;The idea is pretty simple really: build a network of wireless battery&#xA;powered devices to gather environmental data such as temprature,&#xA;moisture, light levels, etc. The collected data will then be&#xA;&lt;em&gt;published&lt;/em&gt; via &lt;a href=&#34;https://mqtt.org&#34;&gt;MQTT&lt;/a&gt; &lt;em&gt;wirelessly&lt;/em&gt; to the&#xA;&lt;a href=&#34;http://localhost:1313/sensors/hub&#34;&gt;&lt;em&gt;Hub&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h3 id=&#34;types-of-published-data&#34;&gt;Types of Published Data&lt;/h3&gt;&#xA;&lt;p&gt;The planned data types to be published by the system are concerned&#xA;with the following types of sensors.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Temprature&lt;/li&gt;&#xA;&lt;li&gt;Humidity&lt;/li&gt;&#xA;&lt;li&gt;Moisture&lt;/li&gt;&#xA;&lt;li&gt;Light&lt;/li&gt;&#xA;&lt;li&gt;Barometric Pressure&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Technically any &lt;em&gt;type&lt;/em&gt; of data could be published and collected&#xA;however we are focused on the type of data our OG application will&#xA;use. Data will be transmitted as either integer or floating point,&#xA;depending on the sensor and how it collects the data.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>IoT System Architecture Explained: The 5 Essential Layers (and How Otto Supports Them)</title>
+      <link>http://localhost:1313/iot/iot-system-architecture-explained/</link>
+      <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/iot/iot-system-architecture-explained/</guid>
+      <description>A complete, SEO-optimized guide to IoT system architecture. Discover what every IoT product needs—from sensors and protocols to gateways, cloud control planes, and applications—and how Otto ties it all together.</description>
+    </item>
+    <item>
       <title>Building an IoT Device Manager in Go</title>
       <link>http://localhost:1313/iot/building-iot-device-manager-in-go/</link>
       <pubDate>Sun, 02 Nov 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/iot/building-iot-device-manager-in-go/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Managing IoT devices becomes exponentially more complex as your&#xA;network grows. You end up juggling a mix of sensors, actuators, and&#xA;communication buses — each with its own quirks.&lt;/p&gt;&#xA;&lt;p&gt;In the &lt;a href=&#34;https://github.com/rustyeddy/otto&#34;&gt;OttO Project&lt;/a&gt; and companion&#xA;&lt;a href=&#34;https://github.com/rustyeddy/devices&#34;&gt;Devices library&lt;/a&gt;, I set out to&lt;/p&gt;&#xA;&lt;p&gt;simplify this chaos with Go.  The goal: a &lt;em&gt;lightweight&lt;/em&gt;, &lt;em&gt;type-safe&lt;/em&gt;&#xA;system that can manage many kinds of devices, from buttons and meters&#xA;to full environmental sensors.&lt;/p&gt;&#xA;&lt;p&gt;This article walks through how I built a Device Manager in Go, powered&#xA;by generics and interfaces, with examples from these open&#xA;repositories.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Managing IoT devices becomes exponentially more complex as your&#xA;network grows. You end up juggling a mix of sensors, actuators, and&#xA;communication buses each with its own quirks and challenges.&lt;/p&gt;&#xA;&lt;p&gt;In the &lt;a href=&#34;https://github.com/rustyeddy/otto&#34;&gt;OttO Project&lt;/a&gt; and companion&#xA;&lt;a href=&#34;https://github.com/rustyeddy/devices&#34;&gt;Devices library&lt;/a&gt;, I attempted&#xA;to develop a mini framework that would have a clear &lt;em&gt;seperation of&#xA;concerns&lt;/em&gt; between the hardware layer (GPIO, I2C, serial, ADC, PWN,&#xA;UART, etc.) and the application layer (messaging, control logic,&#xA;logging, deployment, etc).&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to Build a Self Watering Garden</title>

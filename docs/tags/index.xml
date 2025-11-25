@@ -6,8 +6,50 @@
     <description>Recent content in Tags on Rusty Eddy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Device Management</title>
+      <link>http://localhost:1313/tags/device-management/</link>
+      <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/device-management/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Edge Computing</title>
+      <link>http://localhost:1313/tags/edge-computing/</link>
+      <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/edge-computing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IoT Architecture</title>
+      <link>http://localhost:1313/tags/iot-architecture/</link>
+      <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/iot-architecture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IoT System Design</title>
+      <link>http://localhost:1313/tags/iot-system-design/</link>
+      <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/iot-system-design/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Otto</title>
+      <link>http://localhost:1313/tags/otto/</link>
+      <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/otto/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rusty Eddy</title>
+      <link>http://localhost:1313/tags/rusty-eddy/</link>
+      <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/rusty-eddy/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Generics</title>
       <link>http://localhost:1313/tags/generics/</link>

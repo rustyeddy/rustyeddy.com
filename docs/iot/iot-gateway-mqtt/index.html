@@ -232,12 +232,12 @@ invoked every time a value is <em>published</em> to one of the above topics.</p>
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">id</span>, <span style="color:#e6db74">&#34; subscribed to &#34;</span>, <span style="color:#a6e22e">path</span>)
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>and the callback function that is invoked every time new data arrives:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// TimeseriesCB call and parse callback data</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">dataCB</span>(<span style="color:#a6e22e">mc</span> <span style="color:#a6e22e">mqtt</span>.<span style="color:#a6e22e">Client</span>, <span style="color:#a6e22e">mqttmsg</span> <span style="color:#a6e22e">mqtt</span>.<span style="color:#a6e22e">Message</span>) {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// TimeseriesCB call and parse callback data
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">dataCB</span>(<span style="color:#a6e22e">mc</span> <span style="color:#a6e22e">mqtt</span>.<span style="color:#a6e22e">Client</span>, <span style="color:#a6e22e">mqttmsg</span> <span style="color:#a6e22e">mqtt</span>.<span style="color:#a6e22e">Message</span>) {
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">topic</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">mqttmsg</span>.<span style="color:#a6e22e">Topic</span>()
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// extract the station from the topic</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">paths</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">strings</span>.<span style="color:#a6e22e">Split</span>(<span style="color:#a6e22e">topic</span>, <span style="color:#e6db74">&#34;/&#34;</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// extract the station from the topic
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">paths</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">strings</span>.<span style="color:#a6e22e">Split</span>(<span style="color:#a6e22e">topic</span>, <span style="color:#e6db74">&#34;/&#34;</span>)
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">category</span><span style="color:#f92672">:=</span> <span style="color:#a6e22e">paths</span>[<span style="color:#ae81ff">1</span>] 
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">station</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">paths</span>[<span style="color:#ae81ff">2</span>]
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">sensor</span>  <span style="color:#f92672">:=</span> <span style="color:#a6e22e">paths</span>[<span style="color:#ae81ff">3</span>]
@@ -246,8 +246,8 @@ invoked every time a value is <em>published</em> to one of the above topics.</p>
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">consumers</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">hub</span>.<span style="color:#a6e22e">GetConsumers</span>(<span style="color:#a6e22e">category</span>) 
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">consumers</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">nil</span> {
 </span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;DataCB no consumers for &#34;</span>, <span style="color:#a6e22e">topic</span>)
-</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span>					<span style="color:#75715e">// nobody is listening</span>
-</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span>					<span style="color:#75715e">// nobody is listening
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;MQTT Message topic %s - value %s\n&#34;</span>, <span style="color:#a6e22e">topic</span>, string(<span style="color:#a6e22e">payload</span>))
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">switch</span> (<span style="color:#a6e22e">category</span>) {
@@ -482,6 +482,8 @@ Gateway</em>.</p>
 handle our <em>REST Endpoints</em>.  This same package will later allow us to
 serve up the IoT Gateway web app.</p>
 <p><a href="/iot/iot-qateway-rest">Next Adding the REST API</a></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 
 	</article>
     </div>
