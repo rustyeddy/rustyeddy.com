@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Electronic-Components on Rusty Eddy</title>
-    <link>https://www.rustyeddy.com/categories/electronic-components/</link>
+    <link>http://localhost:1313/categories/electronic-components/</link>
     <description>Recent content in Electronic-Components on Rusty Eddy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 13 Mar 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.rustyeddy.com/categories/electronic-components/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/electronic-components/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Soil Mosture Sensors Adafruit</title>
-      <link>https://www.rustyeddy.com/notes/soil-moisture-adafruit/</link>
+      <link>http://localhost:1313/notes/soil-moisture-adafruit/</link>
       <pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/notes/soil-moisture-adafruit/</guid>
+      <guid>http://localhost:1313/notes/soil-moisture-adafruit/</guid>
       <description>&lt;h2 id=&#34;why-the-adafruit-version&#34;&gt;Why the Adafruit version?&lt;/h2&gt;&#xA;&lt;p&gt;&amp;laquo;&amp;laquo;&amp;laquo;&amp;lt; HEAD&#xA;I have had a hard time with the general Capacitive Soil Moisture&#xA;sensors that you find readily on the Internet as described in this&#xA;article about&#xA;&lt;a href=&#34;http://localhost:1313/notes/soil-moisture-sensor/&#34;&gt;soil moisture sensors&lt;/a&gt;.&#xA;In a nutshell, the ones I bought had the wrong timer chip in them, not&#xA;that was a total show stopper but I also had problems getting them to&#xA;work with the esp32 ADC (Analog Digical Converter).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Soil Mosture Sensors</title>
-      <link>https://www.rustyeddy.com/notes/soil-moisture-sensor/</link>
+      <link>http://localhost:1313/notes/soil-moisture-sensor/</link>
       <pubDate>Thu, 15 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/notes/soil-moisture-sensor/</guid>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Seems like I&amp;rsquo;m not as uniquely clever as I once thought, the idea of&#xA;creating a self watering garden is probably one of the more popular&#xA;DIY maker projects on the Internet it seems.&lt;/p&gt;&#xA;&lt;p&gt;Check out my version of the &lt;a href=&#34;https://www.rustyeddy.com/iot/self-watering-garden&#34;&gt;Self Watering Garden&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;What makes my project different?  Probably not alot, however in this&#xA;project we treat each of the watering &lt;em&gt;stations&lt;/em&gt; as a part of a&#xA;larger, complete &lt;em&gt;system&lt;/em&gt; of the watering stations that can be&#xA;observed and controlled by a single hub and associated web&#xA;application. Check out the project, I&amp;rsquo;d love to hear what you&#xA;think!&lt;/p&gt;</description>
+      <guid>http://localhost:1313/notes/soil-moisture-sensor/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Seems like I&amp;rsquo;m not as uniquely clever as I once thought, the idea of&#xA;creating a self watering garden is probably one of the more popular&#xA;DIY maker projects on the Internet it seems.&lt;/p&gt;&#xA;&lt;p&gt;Check out my version of the &lt;a href=&#34;http://localhost:1313/iot/self-watering-garden&#34;&gt;Self Watering Garden&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;What makes my project different?  Probably not alot, however in this&#xA;project we treat each of the watering &lt;em&gt;stations&lt;/em&gt; as a part of a&#xA;larger, complete &lt;em&gt;system&lt;/em&gt; of the watering stations that can be&#xA;observed and controlled by a single hub and associated web&#xA;application. Check out the project, I&amp;rsquo;d love to hear what you&#xA;think!&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

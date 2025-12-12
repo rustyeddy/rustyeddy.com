@@ -2,402 +2,402 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Rusty Eddy</title>
-    <link>https://www.rustyeddy.com/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Rusty Eddy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 15 Nov 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.rustyeddy.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Device Management</title>
-      <link>https://www.rustyeddy.com/tags/device-management/</link>
+      <link>http://localhost:1313/tags/device-management/</link>
       <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/device-management/</guid>
+      <guid>http://localhost:1313/tags/device-management/</guid>
       <description></description>
     </item>
     <item>
       <title>Edge Computing</title>
-      <link>https://www.rustyeddy.com/tags/edge-computing/</link>
+      <link>http://localhost:1313/tags/edge-computing/</link>
       <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/edge-computing/</guid>
+      <guid>http://localhost:1313/tags/edge-computing/</guid>
       <description></description>
     </item>
     <item>
       <title>IoT Architecture</title>
-      <link>https://www.rustyeddy.com/tags/iot-architecture/</link>
+      <link>http://localhost:1313/tags/iot-architecture/</link>
       <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/iot-architecture/</guid>
+      <guid>http://localhost:1313/tags/iot-architecture/</guid>
       <description></description>
     </item>
     <item>
       <title>IoT System Design</title>
-      <link>https://www.rustyeddy.com/tags/iot-system-design/</link>
+      <link>http://localhost:1313/tags/iot-system-design/</link>
       <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/iot-system-design/</guid>
+      <guid>http://localhost:1313/tags/iot-system-design/</guid>
       <description></description>
     </item>
     <item>
       <title>Otto</title>
-      <link>https://www.rustyeddy.com/tags/otto/</link>
+      <link>http://localhost:1313/tags/otto/</link>
       <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/otto/</guid>
+      <guid>http://localhost:1313/tags/otto/</guid>
       <description></description>
     </item>
     <item>
       <title>Rusty Eddy</title>
-      <link>https://www.rustyeddy.com/tags/rusty-eddy/</link>
+      <link>http://localhost:1313/tags/rusty-eddy/</link>
       <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/rusty-eddy/</guid>
+      <guid>http://localhost:1313/tags/rusty-eddy/</guid>
       <description></description>
     </item>
     <item>
       <title>Generics</title>
-      <link>https://www.rustyeddy.com/tags/generics/</link>
+      <link>http://localhost:1313/tags/generics/</link>
       <pubDate>Sun, 02 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/generics/</guid>
+      <guid>http://localhost:1313/tags/generics/</guid>
       <description></description>
     </item>
     <item>
       <title>Go</title>
-      <link>https://www.rustyeddy.com/tags/go/</link>
+      <link>http://localhost:1313/tags/go/</link>
       <pubDate>Sun, 02 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/go/</guid>
+      <guid>http://localhost:1313/tags/go/</guid>
       <description></description>
     </item>
     <item>
       <title>IoT Devices</title>
-      <link>https://www.rustyeddy.com/tags/iot-devices/</link>
+      <link>http://localhost:1313/tags/iot-devices/</link>
       <pubDate>Sun, 02 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/iot-devices/</guid>
+      <guid>http://localhost:1313/tags/iot-devices/</guid>
       <description></description>
     </item>
     <item>
       <title>Soil Moisture</title>
-      <link>https://www.rustyeddy.com/tags/soil-moisture/</link>
+      <link>http://localhost:1313/tags/soil-moisture/</link>
       <pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/soil-moisture/</guid>
+      <guid>http://localhost:1313/tags/soil-moisture/</guid>
       <description></description>
     </item>
     <item>
       <title>Development</title>
-      <link>https://www.rustyeddy.com/tags/development/</link>
+      <link>http://localhost:1313/tags/development/</link>
       <pubDate>Tue, 13 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/development/</guid>
+      <guid>http://localhost:1313/tags/development/</guid>
       <description></description>
     </item>
     <item>
       <title>Pico</title>
-      <link>https://www.rustyeddy.com/tags/pico/</link>
+      <link>http://localhost:1313/tags/pico/</link>
       <pubDate>Tue, 13 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/pico/</guid>
+      <guid>http://localhost:1313/tags/pico/</guid>
       <description></description>
     </item>
     <item>
       <title>Raspberry Pi</title>
-      <link>https://www.rustyeddy.com/tags/raspberry-pi/</link>
+      <link>http://localhost:1313/tags/raspberry-pi/</link>
       <pubDate>Tue, 13 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/raspberry-pi/</guid>
+      <guid>http://localhost:1313/tags/raspberry-pi/</guid>
       <description></description>
     </item>
     <item>
       <title>Iot</title>
-      <link>https://www.rustyeddy.com/tags/iot/</link>
+      <link>http://localhost:1313/tags/iot/</link>
       <pubDate>Fri, 13 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/iot/</guid>
+      <guid>http://localhost:1313/tags/iot/</guid>
       <description></description>
     </item>
     <item>
       <title>Maker</title>
-      <link>https://www.rustyeddy.com/tags/maker/</link>
+      <link>http://localhost:1313/tags/maker/</link>
       <pubDate>Fri, 13 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/maker/</guid>
+      <guid>http://localhost:1313/tags/maker/</guid>
       <description></description>
     </item>
     <item>
       <title>Sdlc</title>
-      <link>https://www.rustyeddy.com/tags/sdlc/</link>
+      <link>http://localhost:1313/tags/sdlc/</link>
       <pubDate>Fri, 13 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/sdlc/</guid>
+      <guid>http://localhost:1313/tags/sdlc/</guid>
       <description></description>
     </item>
     <item>
       <title>Software Development Lifecycle Phases</title>
-      <link>https://www.rustyeddy.com/tags/software-development-lifecycle-phases/</link>
+      <link>http://localhost:1313/tags/software-development-lifecycle-phases/</link>
       <pubDate>Fri, 13 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/software-development-lifecycle-phases/</guid>
+      <guid>http://localhost:1313/tags/software-development-lifecycle-phases/</guid>
       <description></description>
     </item>
     <item>
       <title>Timers, Iote</title>
-      <link>https://www.rustyeddy.com/tags/timers-iote/</link>
+      <link>http://localhost:1313/tags/timers-iote/</link>
       <pubDate>Mon, 02 May 2022 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/timers-iote/</guid>
+      <guid>http://localhost:1313/tags/timers-iote/</guid>
       <description></description>
     </item>
     <item>
       <title>Http</title>
-      <link>https://www.rustyeddy.com/tags/http/</link>
+      <link>http://localhost:1313/tags/http/</link>
       <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/http/</guid>
+      <guid>http://localhost:1313/tags/http/</guid>
       <description></description>
     </item>
     <item>
       <title>Rest</title>
-      <link>https://www.rustyeddy.com/tags/rest/</link>
+      <link>http://localhost:1313/tags/rest/</link>
       <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/rest/</guid>
+      <guid>http://localhost:1313/tags/rest/</guid>
       <description></description>
     </item>
     <item>
       <title>Mqtt</title>
-      <link>https://www.rustyeddy.com/tags/mqtt/</link>
+      <link>http://localhost:1313/tags/mqtt/</link>
       <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/mqtt/</guid>
+      <guid>http://localhost:1313/tags/mqtt/</guid>
       <description></description>
     </item>
     <item>
       <title>Amazon Web Services (AWS)</title>
-      <link>https://www.rustyeddy.com/tags/amazon-web-services-aws/</link>
+      <link>http://localhost:1313/tags/amazon-web-services-aws/</link>
       <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/amazon-web-services-aws/</guid>
+      <guid>http://localhost:1313/tags/amazon-web-services-aws/</guid>
       <description></description>
     </item>
     <item>
       <title>C&#43;&#43;</title>
-      <link>https://www.rustyeddy.com/tags/c&#43;&#43;/</link>
+      <link>http://localhost:1313/tags/c&#43;&#43;/</link>
       <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/c&#43;&#43;/</guid>
+      <guid>http://localhost:1313/tags/c&#43;&#43;/</guid>
       <description></description>
     </item>
     <item>
       <title>Fullstack</title>
-      <link>https://www.rustyeddy.com/tags/fullstack/</link>
+      <link>http://localhost:1313/tags/fullstack/</link>
       <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/fullstack/</guid>
+      <guid>http://localhost:1313/tags/fullstack/</guid>
       <description></description>
     </item>
     <item>
       <title>Google Cloud Platform</title>
-      <link>https://www.rustyeddy.com/tags/google-cloud-platform/</link>
+      <link>http://localhost:1313/tags/google-cloud-platform/</link>
       <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/google-cloud-platform/</guid>
+      <guid>http://localhost:1313/tags/google-cloud-platform/</guid>
       <description></description>
     </item>
     <item>
       <title>Network Protocol Design</title>
-      <link>https://www.rustyeddy.com/tags/network-protocol-design/</link>
+      <link>http://localhost:1313/tags/network-protocol-design/</link>
       <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/network-protocol-design/</guid>
+      <guid>http://localhost:1313/tags/network-protocol-design/</guid>
       <description></description>
     </item>
     <item>
       <title>React</title>
-      <link>https://www.rustyeddy.com/tags/react/</link>
+      <link>http://localhost:1313/tags/react/</link>
       <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/react/</guid>
+      <guid>http://localhost:1313/tags/react/</guid>
       <description></description>
     </item>
     <item>
       <title>TCP/IP</title>
-      <link>https://www.rustyeddy.com/tags/tcp/ip/</link>
+      <link>http://localhost:1313/tags/tcp/ip/</link>
       <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/tcp/ip/</guid>
+      <guid>http://localhost:1313/tags/tcp/ip/</guid>
       <description></description>
     </item>
     <item>
       <title>Bootstrap</title>
-      <link>https://www.rustyeddy.com/tags/bootstrap/</link>
+      <link>http://localhost:1313/tags/bootstrap/</link>
       <pubDate>Sat, 04 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/bootstrap/</guid>
+      <guid>http://localhost:1313/tags/bootstrap/</guid>
       <description></description>
     </item>
     <item>
       <title>Html5</title>
-      <link>https://www.rustyeddy.com/tags/html5/</link>
+      <link>http://localhost:1313/tags/html5/</link>
       <pubDate>Sat, 04 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/html5/</guid>
+      <guid>http://localhost:1313/tags/html5/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo</title>
-      <link>https://www.rustyeddy.com/tags/hugo/</link>
+      <link>http://localhost:1313/tags/hugo/</link>
       <pubDate>Sat, 04 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/hugo/</guid>
+      <guid>http://localhost:1313/tags/hugo/</guid>
       <description></description>
     </item>
     <item>
       <title>Markdown</title>
-      <link>https://www.rustyeddy.com/tags/markdown/</link>
+      <link>http://localhost:1313/tags/markdown/</link>
       <pubDate>Sat, 04 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/markdown/</guid>
+      <guid>http://localhost:1313/tags/markdown/</guid>
       <description></description>
     </item>
     <item>
       <title>Vue</title>
-      <link>https://www.rustyeddy.com/tags/vue/</link>
+      <link>http://localhost:1313/tags/vue/</link>
       <pubDate>Wed, 25 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/vue/</guid>
+      <guid>http://localhost:1313/tags/vue/</guid>
       <description></description>
     </item>
     <item>
       <title>Gnc</title>
-      <link>https://www.rustyeddy.com/tags/gnc/</link>
+      <link>http://localhost:1313/tags/gnc/</link>
       <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/gnc/</guid>
+      <guid>http://localhost:1313/tags/gnc/</guid>
       <description></description>
     </item>
     <item>
       <title>Steering</title>
-      <link>https://www.rustyeddy.com/tags/steering/</link>
+      <link>http://localhost:1313/tags/steering/</link>
       <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/steering/</guid>
+      <guid>http://localhost:1313/tags/steering/</guid>
       <description></description>
     </item>
     <item>
       <title>Mosquitto</title>
-      <link>https://www.rustyeddy.com/tags/mosquitto/</link>
+      <link>http://localhost:1313/tags/mosquitto/</link>
       <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/mosquitto/</guid>
+      <guid>http://localhost:1313/tags/mosquitto/</guid>
       <description></description>
     </item>
     <item>
       <title>H264</title>
-      <link>https://www.rustyeddy.com/tags/h264/</link>
+      <link>http://localhost:1313/tags/h264/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/h264/</guid>
+      <guid>http://localhost:1313/tags/h264/</guid>
       <description></description>
     </item>
     <item>
       <title>Embedded</title>
-      <link>https://www.rustyeddy.com/tags/embedded/</link>
+      <link>http://localhost:1313/tags/embedded/</link>
       <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/embedded/</guid>
+      <guid>http://localhost:1313/tags/embedded/</guid>
       <description></description>
     </item>
     <item>
       <title>Esp32</title>
-      <link>https://www.rustyeddy.com/tags/esp32/</link>
+      <link>http://localhost:1313/tags/esp32/</link>
       <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/esp32/</guid>
+      <guid>http://localhost:1313/tags/esp32/</guid>
       <description></description>
     </item>
     <item>
       <title>Rtos</title>
-      <link>https://www.rustyeddy.com/tags/rtos/</link>
+      <link>http://localhost:1313/tags/rtos/</link>
       <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/rtos/</guid>
+      <guid>http://localhost:1313/tags/rtos/</guid>
       <description></description>
     </item>
     <item>
       <title>Ffmpeg</title>
-      <link>https://www.rustyeddy.com/tags/ffmpeg/</link>
+      <link>http://localhost:1313/tags/ffmpeg/</link>
       <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/ffmpeg/</guid>
+      <guid>http://localhost:1313/tags/ffmpeg/</guid>
       <description></description>
     </item>
     <item>
       <title>Gstreamer</title>
-      <link>https://www.rustyeddy.com/tags/gstreamer/</link>
+      <link>http://localhost:1313/tags/gstreamer/</link>
       <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/gstreamer/</guid>
+      <guid>http://localhost:1313/tags/gstreamer/</guid>
       <description></description>
     </item>
     <item>
       <title>Vlc</title>
-      <link>https://www.rustyeddy.com/tags/vlc/</link>
+      <link>http://localhost:1313/tags/vlc/</link>
       <pubDate>Tue, 23 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/vlc/</guid>
+      <guid>http://localhost:1313/tags/vlc/</guid>
       <description></description>
     </item>
     <item>
       <title>Tft Display</title>
-      <link>https://www.rustyeddy.com/tags/tft-display/</link>
+      <link>http://localhost:1313/tags/tft-display/</link>
       <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/tft-display/</guid>
+      <guid>http://localhost:1313/tags/tft-display/</guid>
       <description></description>
     </item>
     <item>
       <title>Touch Screen</title>
-      <link>https://www.rustyeddy.com/tags/touch-screen/</link>
+      <link>http://localhost:1313/tags/touch-screen/</link>
       <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/touch-screen/</guid>
+      <guid>http://localhost:1313/tags/touch-screen/</guid>
       <description></description>
     </item>
     <item>
       <title>Picamera</title>
-      <link>https://www.rustyeddy.com/tags/picamera/</link>
+      <link>http://localhost:1313/tags/picamera/</link>
       <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/picamera/</guid>
+      <guid>http://localhost:1313/tags/picamera/</guid>
       <description></description>
     </item>
     <item>
       <title>Tlv</title>
-      <link>https://www.rustyeddy.com/tags/tlv/</link>
+      <link>http://localhost:1313/tags/tlv/</link>
       <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/tlv/</guid>
+      <guid>http://localhost:1313/tags/tlv/</guid>
       <description></description>
     </item>
     <item>
       <title>NRF240l1</title>
-      <link>https://www.rustyeddy.com/tags/nrf240l1/</link>
+      <link>http://localhost:1313/tags/nrf240l1/</link>
       <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/nrf240l1/</guid>
+      <guid>http://localhost:1313/tags/nrf240l1/</guid>
       <description></description>
     </item>
     <item>
       <title>Spi</title>
-      <link>https://www.rustyeddy.com/tags/spi/</link>
+      <link>http://localhost:1313/tags/spi/</link>
       <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/spi/</guid>
+      <guid>http://localhost:1313/tags/spi/</guid>
       <description></description>
     </item>
     <item>
       <title>C/C&#43;&#43;, Perl, Python and Java</title>
-      <link>https://www.rustyeddy.com/tags/c/c&#43;&#43;-perl-python-and-java/</link>
+      <link>http://localhost:1313/tags/c/c&#43;&#43;-perl-python-and-java/</link>
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/c/c&#43;&#43;-perl-python-and-java/</guid>
+      <guid>http://localhost:1313/tags/c/c&#43;&#43;-perl-python-and-java/</guid>
       <description></description>
     </item>
     <item>
       <title>Computer Network, Multicast</title>
-      <link>https://www.rustyeddy.com/tags/computer-network-multicast/</link>
+      <link>http://localhost:1313/tags/computer-network-multicast/</link>
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/computer-network-multicast/</guid>
+      <guid>http://localhost:1313/tags/computer-network-multicast/</guid>
       <description></description>
     </item>
     <item>
       <title>Adafruit</title>
-      <link>https://www.rustyeddy.com/tags/adafruit/</link>
+      <link>http://localhost:1313/tags/adafruit/</link>
       <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/adafruit/</guid>
+      <guid>http://localhost:1313/tags/adafruit/</guid>
       <description></description>
     </item>
     <item>
       <title>Arduino</title>
-      <link>https://www.rustyeddy.com/tags/arduino/</link>
+      <link>http://localhost:1313/tags/arduino/</link>
       <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/arduino/</guid>
+      <guid>http://localhost:1313/tags/arduino/</guid>
       <description></description>
     </item>
     <item>
       <title>Motorshield</title>
-      <link>https://www.rustyeddy.com/tags/motorshield/</link>
+      <link>http://localhost:1313/tags/motorshield/</link>
       <pubDate>Wed, 22 Aug 2018 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/motorshield/</guid>
+      <guid>http://localhost:1313/tags/motorshield/</guid>
       <description></description>
     </item>
     <item>
       <title>Firmware</title>
-      <link>https://www.rustyeddy.com/tags/firmware/</link>
+      <link>http://localhost:1313/tags/firmware/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/firmware/</guid>
+      <guid>http://localhost:1313/tags/firmware/</guid>
       <description></description>
     </item>
     <item>
       <title>Single Page App</title>
-      <link>https://www.rustyeddy.com/tags/single-page-app/</link>
+      <link>http://localhost:1313/tags/single-page-app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/tags/single-page-app/</guid>
+      <guid>http://localhost:1313/tags/single-page-app/</guid>
       <description></description>
     </item>
   </channel>

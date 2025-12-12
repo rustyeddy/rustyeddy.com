@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Edge Computing on Rusty Eddy</title>
-    <link>https://www.rustyeddy.com/categories/edge-computing/</link>
+    <link>http://localhost:1313/categories/edge-computing/</link>
     <description>Recent content in Edge Computing on Rusty Eddy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 15 Nov 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.rustyeddy.com/categories/edge-computing/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/edge-computing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>IoT System Architecture Explained: The 5 Essential Layers (and How Otto Supports Them)</title>
-      <link>https://www.rustyeddy.com/iot/iot-system-architecture-explained/</link>
+      <link>http://localhost:1313/iot/iot-system-architecture-explained/</link>
       <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/iot/iot-system-architecture-explained/</guid>
+      <guid>http://localhost:1313/iot/iot-system-architecture-explained/</guid>
       <description>A complete, SEO-optimized guide to IoT system architecture. Discover what every IoT product needs—from sensors and protocols to gateways, cloud control planes, and applications—and how Otto ties it all together.</description>
     </item>
   </channel>

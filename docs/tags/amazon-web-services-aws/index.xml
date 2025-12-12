@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Amazon Web Services (AWS) on Rusty Eddy</title>
-    <link>https://www.rustyeddy.com/tags/amazon-web-services-aws/</link>
+    <link>http://localhost:1313/tags/amazon-web-services-aws/</link>
     <description>Recent content in Amazon Web Services (AWS) on Rusty Eddy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 27 Jan 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.rustyeddy.com/tags/amazon-web-services-aws/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/amazon-web-services-aws/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sahara Networks</title>
-      <link>https://www.rustyeddy.com/resume/clients/sahara-networks/</link>
+      <link>http://localhost:1313/resume/clients/sahara-networks/</link>
       <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://www.rustyeddy.com/resume/clients/sahara-networks/</guid>
+      <guid>http://localhost:1313/resume/clients/sahara-networks/</guid>
       <description>&lt;p&gt;Sahara Networks is building something truley unique, connecting&#xA;micro-controllers and IoT devics across the network allowing virtual&#xA;circuits to be created. I help design, develop and lead the design and&#xA;implementation of the network protocol that delivers high speed&#xA;digital I/O signals across a &amp;ldquo;device network&amp;rdquo;.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Backend, C/C++, nodejs, TCP/IP and Raspberry Pi&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
   </channel>
