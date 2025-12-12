@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+  
+  <title>How to build a private WIFI network for your WebApp</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G7XZRHH62T"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-G7XZRHH62T');
+  </script>
+</head>
+<body><header class="container bg-white">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="/"><span claa="h1">rusty eddy:</span></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <nav class="navbar-nav me-auto mb-2 mb-lg-0">
+	  <div class="nav-item">
+  	    <a class="nav-link" href="/iot/"> iot &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="/software"> software &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="/notes"> notes &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="/resume"> resume &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="/about"> about &nbsp</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </nav>
+</header>
+<div id="jumbotron" class="jumbotron border-top border-bottom bg-white" >
+  <div class="row">
+    <div class="col-md"></div>
+    <div class="col-md-8 text-center">
+      <h1 class="header h2 pb-1">How to build a private WIFI network for your WebApp</h1>
+      <p class="leadin align-right text-muted text-center mt-0">
+        There are times when a device loaded with software needs to be configured without a keyboard or monitor. A WebApp is a great way to do just that, but what if you can&#39;t or don&#39;t want to connect to an existing Wifi network. We will discuss these scenarios in this document. 
+
+      </p>
+    </div>
+    <div class="col-md"></div>
+  </div>
+
+  <div class="row text-center smaller-text">
+    <div class="col"></div>
+    <div class="col-8">
+      <nav class="nav justify-content-center">
+        
+        
+        
+        
+        
+      </nav>
+
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
+<div id="main body">
+<div class="container"><div class="row">
+    <div class="col"></div>
+    <div class="col-md-10 hero-text">
+	<article class="article">
+	  <p>I work with <em>physical computing</em> or devices that have rather
+sophisticated software that needs to be configured, monitored and
+controlled.</p>
+<h2 id="building-a-private-wifi">Building a Private Wifi</h2>
+<p>Here is the situation, I just plugged a white box into the wall and it
+has a steady green light. I can see two other lights, one of which is
+red. The other two lights are off.</p>
+<p>This device is pretty cool, it will control the lights in my garage, I
+have a well lit garage. But I need to configure this thing to set up
+lighting schedules, basically synchronize with daylight.</p>
+<h3 id="making-a-wireless-connection">Making a Wireless Connection</h3>
+<p>I can&rsquo;t stick a monitor or a keyboard cable into this thing. However,
+since my device is running good old <em>Linux</em> with a nice Wifi chip, we
+are going to turn it into an Access Point (AP).</p>
+<p>To make this connection happen we are going to do the following:</p>
+<ol>
+<li>Install and configure <em>Device</em> as an AP with a specific SSID</li>
+<li>Device with a browser like Firefox connects with wireless SSID</li>
+<li>Browser (firefox) connects to device URL</li>
+<li>Device sends configuration pages to Browser</li>
+<li>User configures the device then saves and exits</li>
+</ol>
+<p>At this point the device operates on it&rsquo;s own, not needing anymore
+interaction. However, this same method of configuring the device can
+used to monitor through a dashboard.</p>
+<h3 id="configuring-the-ap">Configuring the AP</h3>
+<p><em>HostAPd</em> is a very popular <em>Linux</em> tool that will help us easily
+configure the <em>Device</em> as an <em>AP</em> advertising a specific SSID.</p>
+<p><em>hostapd</em> is available from <em>Debian</em> distributions with the familiar
+apt packaging.</p>
+<blockquote>
+<p>apt-get install -y hostapd</p>
+</blockquote>
+<p>This needs to be configured, here is what I do to help configure every
+device with a <em>unique</em> but <em>recognizable</em> <em>SSID</em>. The WebApp user
+should have a simple time connecting with the private network and
+subsequently the browser connects to the server and bang, off and
+running.</p>
+<h2 id="reasons-for-a-private-wifi">Reasons for a Private Wifi</h2>
+<p>OK. Why not just connect to an exiting network? In some cases we will
+connect to an existing network and hence take advantage of <em>Internet
+Services</em> and on premise infrastructure.</p>
+<h3 id="no-access-allowed">No Access Allowed</h3>
+<p>There are many cases, like a top secret skunk works projects or an
+industrial production facility where they want to isolate unnecessary
+external devices from internal infra structure.</p>
+<h3 id="reduce-security-vulnerabilities">Reduce Security Vulnerabilities</h3>
+<p>Creating private networks allows control of who and how that network
+can be accessed. By limiting access to external networks from my
+lighting system and am reducing the surface of my security
+vulnerabilities.</p>
+<h3 id="no-access-at-all">No Access At All</h3>
+<p>Sometimes we are in the middle of almost nowhere, like the High
+Sierra&rsquo;s, there is no <em>Internet</em> or Wifi Infrastructure. And good luck
+trying to get a cell phone signal (hey T-Mobile!) up there.</p>
+<p>However, a little WiFi connectivity can still be had! Thank You <em>Solar
+Power!</em>.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>This article is not finished, I ran out of time. I will finish it, but
+only if somebody asks me to.  Heck if nobody will read it, then should
+I spend the time?</p>
+<p>Is the sound of a singing bird beautiful if nobody hears it?</p>
+
+	</article>
+    </div>
+    <div class="col"></div>
+</div>
+</div>
+
+    </div><footer id="footer" class="container-fluid footer small-text pt-4 border-top">
+  <section class="row">
+    <div class="col"></div>
+    <div class="col text-right">
+      <div class="address">419 Main St. #439</div>
+      <div class="city">Huntington Beach, CA. 92648</div>
+    </div>
+    <div class="col-3 text-center">
+      <div>
+        Last update ~
+        
+	
+        Thursday, Jul 22, 2021
+	
+        
+      </div>
+      <div>site by <a href="/">Eddy Consulting, LLC.</a> ~ &#xA9; 2008 to 2024 </div>
+    </div>
+    <div class="col">
+      <div class="text-left">
+	<div class="phone">(714) 362-5402</div>
+	<a href="https://github.com/rustyeddy">github</a> .
+	<a href="https://twitter.com/rustyeddy">twitter</a> .
+	<a href="https://linkedin.com/rustyeddy">linkedin</a><br/>	    
+      </div>
+    </div>
+    <div class="col"></div>
+  </section>
+</footer>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19940083-13"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

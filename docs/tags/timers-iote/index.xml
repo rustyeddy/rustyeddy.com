@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Timers, Iote on Rusty Eddy</title>
+    <link>https://www.rustyeddy.com/tags/timers-iote/</link>
+    <description>Recent content in Timers, Iote on Rusty Eddy</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 May 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.rustyeddy.com/tags/timers-iote/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using Go timers for MQTT testing</title>
+      <link>https://www.rustyeddy.com/notes/go-timers-testing-mqtt/</link>
+      <pubDate>Mon, 02 May 2022 00:00:00 +0000</pubDate>
+      <guid>https://www.rustyeddy.com/notes/go-timers-testing-mqtt/</guid>
+      <description>&lt;p&gt;This article uses a Go timer and the Go select statement to test our&#xA;MQTT publish and subscribe in a single simple test statement. A quick&#xA;note on the &lt;code&gt;go testing&lt;/code&gt; package: it is much like the JUnit where&#xA;tests using a particular naming convention &lt;code&gt;TestXXX(t *testing.T) {}&lt;/code&gt; will be run automatically with easy to reports having been&#xA;generated.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;&#xA;&lt;p&gt;The following code snippet is directly from the&#xA;&lt;a href=&#34;http://rustyeddy.com/iote&#34;&gt;IoTe&lt;/a&gt; edge gateway project. One of the&#xA;primary features of IoTe is the ability to send and receive MQTT&#xA;messages.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

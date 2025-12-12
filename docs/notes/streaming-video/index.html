@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+  
+  <title>Streaming Video is Complicated</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G7XZRHH62T"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-G7XZRHH62T');
+  </script>
+</head>
+<body><header class="container bg-white">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="/"><span claa="h1">rusty eddy:</span></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <nav class="navbar-nav me-auto mb-2 mb-lg-0">
+	  <div class="nav-item">
+  	    <a class="nav-link" href="/iot/"> iot &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="/software"> software &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="/notes"> notes &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="/resume"> resume &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="/about"> about &nbsp</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </nav>
+</header>
+<div id="jumbotron" class="jumbotron border-top border-bottom bg-white" >
+  <div class="row">
+    <div class="col-md"></div>
+    <div class="col-md-8 text-center">
+      <h1 class="header h2 pb-1">Streaming Video is Complicated</h1>
+      <p class="leadin align-right text-muted text-center mt-0">
+        One of the primary requirements of my Mobile Robot project is the ability to stream live or _realtime_ video while the vehicle roams about.  This turned out to be more complicated than I expected
+
+      </p>
+    </div>
+    <div class="col-md"></div>
+  </div>
+
+  <div class="row text-center smaller-text">
+    <div class="col"></div>
+    <div class="col-8">
+      <nav class="nav justify-content-center">
+        
+        
+        
+        
+        
+      </nav>
+
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
+<div id="main body">
+<div class="container"><div class="row">
+    <div class="col"></div>
+    <div class="col-md-10 hero-text">
+	<article class="article">
+	  <p>I need to stream live video from a moving vehical with a connected
+camera and a possibly connected wifi.</p>
+<h2 id="live-high-resolution-video">Live High Resolution Video</h2>
+<p>Video will stream from the vehicle to be picked up by <em>video
+consumers</em> and processed as required.  Examples of <em>consumers</em> are
+Live Video Display on our (Webapp), OpenCV for vision algoritms.</p>
+<h2 id="high-demand-for-low-resolution">High Demand For Low Resolution</h2>
+<p>It turns out that computer vision alogrithms typically run quite a bit
+faster on lower resolution images, the additional information from
+these <em>hi-res</em> images can slow down the type of algorithms we are
+interested in by many factors.</p>
+<h3 id="snapshots-anyone">Snapshots Anyone?</h3>
+<p>Snapshots, as it turns out have a role in some important use cases,
+for now, we will assume that snapshots are a requirement.  Snapshots
+are available from a number of options: High resolution Photog quality
+images, there are quick images that are extracted from video as
+milestones, or artifacts.</p>
+<p>As it turns out, our Raspberry Pi Camera can help us with this quite
+bit.</p>
+<h2 id="video-consumers">Video Consumers</h2>
+<p>Video <em>Consumers</em> are what I am calling the software modules that
+recieve the video for further processing of some kind.  In some use
+cases we will have more than one <em>consumer</em> for a given Video group.</p>
+<h3 id="ip-multicast-video">IP Multicast Video</h3>
+<p>My end goal is to multicast the different video streams to different
+IP multicast video streams.  In this case each consumer simply joins
+that multicast video stream, and uses it as needed.</p>
+<p>For example:</p>
+<ul>
+<li>Hires snap  group 225.1.1.4 hires snapshot</li>
+<li>Hidef video group 225.1.1.1 streaming at 1024, 768</li>
+<li>Lodef video group 225.1.1.2 streaming at 640, 480</li>
+<li>lores snap  group 225.1.1.3 lores snapshot</li>
+</ul>
+<p>This allows both our Webapp with the live display and the Storage
+module to consume the live video stream and play it in real time for
+human consumption.  The <em>Storage</em> module will, on the other hand store
+the video stream for future access.</p>
+<h3 id="live-video-and-opencv">Live Video and OpenCV</h3>
+<p>The <em>lores</em> video, will be consumed by the OpenCV module to run
+through one or more computer vision algoritms.  The specific use case
+in play will determine which <em>computer vision algorithms</em> will be run.</p>
+<p>Examples that may run at a given time:</p>
+<ul>
+<li>Object Dection for real time navigation</li>
+<li>Perception for navigation</li>
+<li>Facial recognition for security and survelience</li>
+<li>Scene change detection for property management and theft</li>
+</ul>
+<h2 id="raspberry-picamera-and-video-ports">Raspberry PiCamera and Video Ports</h2>
+<p>The Raspberry Pi camera, price wise is very cheap ($25 usd) is a cheap
+camera, yet is capable of producing high quality images.  Even better,
+it is very <em>programmable</em> and is capable of producing filtered
+versions of the video it is producing.</p>
+
+	</article>
+    </div>
+    <div class="col"></div>
+</div>
+</div>
+
+    </div><footer id="footer" class="container-fluid footer small-text pt-4 border-top">
+  <section class="row">
+    <div class="col"></div>
+    <div class="col text-right">
+      <div class="address">419 Main St. #439</div>
+      <div class="city">Huntington Beach, CA. 92648</div>
+    </div>
+    <div class="col-3 text-center">
+      <div>
+        Last update ~
+        
+	
+        Monday, Apr 29, 2019
+	
+        
+      </div>
+      <div>site by <a href="/">Eddy Consulting, LLC.</a> ~ &#xA9; 2008 to 2024 </div>
+    </div>
+    <div class="col">
+      <div class="text-left">
+	<div class="phone">(714) 362-5402</div>
+	<a href="https://github.com/rustyeddy">github</a> .
+	<a href="https://twitter.com/rustyeddy">twitter</a> .
+	<a href="https://linkedin.com/rustyeddy">linkedin</a><br/>	    
+      </div>
+    </div>
+    <div class="col"></div>
+  </section>
+</footer>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19940083-13"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

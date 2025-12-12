@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+  
+  <title>WPE an Excellerated Raspberry Pi Kiosk</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G7XZRHH62T"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-G7XZRHH62T');
+  </script>
+</head>
+<body><header class="container bg-white">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="/"><span claa="h1">rusty eddy:</span></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <nav class="navbar-nav me-auto mb-2 mb-lg-0">
+	  <div class="nav-item">
+  	    <a class="nav-link" href="/iot/"> iot &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="/software"> software &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="/notes"> notes &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="/resume"> resume &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="/about"> about &nbsp</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </nav>
+</header>
+<div id="jumbotron" class="jumbotron border-top border-bottom bg-white" >
+  <div class="row">
+    <div class="col-md"></div>
+    <div class="col-md-8 text-center">
+      <h1 class="header h2 pb-1">WPE an Excellerated Raspberry Pi Kiosk</h1>
+      <p class="leadin align-right text-muted text-center mt-0">
+        Raspberry Pi&#39;s have just become even cooler! Add an inexpensive touch panel and you can create insanely cool.
+
+      </p>
+    </div>
+    <div class="col-md"></div>
+  </div>
+
+  <div class="row text-center smaller-text">
+    <div class="col"></div>
+    <div class="col-8">
+      <nav class="nav justify-content-center">
+        
+        
+        
+        
+        
+      </nav>
+
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
+<div id="main body">
+<div class="container"><div class="row">
+    <div class="col"></div>
+    <div class="col-md-10 hero-text">
+	<article class="article">
+	  <p>The WPE project (TODO: place reference) allows you to create a
+<em>hardware accelerated web viewing</em>_ experience with an embedded system
+and inexpenive display.</p>
+<p>For example a Raspberry Pi with an 7inch tftp touch screen has my
+brain racing with ideas for applications.</p>
+<h2 id="about-wpe">About WPE</h2>
+<p>WPE creates a cool hardware accelerated kiosk, just point at a URL and
+the app displays the application takes over the screen.</p>
+<blockquote>
+<p>It is awesome! But, it has one major drawback.!.</p>
+</blockquote>
+<h3 id="building-wpe">Building WPE</h3>
+<p>But is also a pain to get going, no binary package at this point, and
+as far as I can tell, you need to start with <em>buildroot</em>, get all the
+configs correct, build and burn an SD image.</p>
+<p>Phew. Not that I am not up for learning to use buildroot and getting a
+system going, but I could not find a straight forward recipe, very
+nicely written example suffered the nefarious outdated screen shots.</p>
+<blockquote>
+<p>I did the best, first pass I could at cloning and configuring WPE
+for RPI3, but alas &hellip;</p>
+</blockquote>
+<p>My first pass or two at configuring and compiling WPE failed, and had
+to move on to other things &hellip;, to be written about shortly.</p>
+<p>Lacking an easy build requires me to spend time learning buildroot,
+WPE and a bit about the giagantic complexity that is <em>webkit</em>. Sounds
+interesting but I (like almost everybody in the universe) don&rsquo;t have
+time for it.</p>
+<h2 id="balena-and-next-steps">Balena and Next Steps</h2>
+<p>Balena has created a working WPE image, unfortunantly when I add the
+WPE container to my Balena application, only 3 of the 4 required
+containers run.</p>
+<p>Bummer!</p>
+<blockquote>
+<p>Todo: look at how balena does it, maybe without so many containers.</p>
+</blockquote>
+
+	</article>
+    </div>
+    <div class="col"></div>
+</div>
+</div>
+
+    </div><footer id="footer" class="container-fluid footer small-text pt-4 border-top">
+  <section class="row">
+    <div class="col"></div>
+    <div class="col text-right">
+      <div class="address">419 Main St. #439</div>
+      <div class="city">Huntington Beach, CA. 92648</div>
+    </div>
+    <div class="col-3 text-center">
+      <div>
+        Last update ~
+        
+	
+        Friday, Dec 25, 2020
+	
+        
+      </div>
+      <div>site by <a href="/">Eddy Consulting, LLC.</a> ~ &#xA9; 2008 to 2024 </div>
+    </div>
+    <div class="col">
+      <div class="text-left">
+	<div class="phone">(714) 362-5402</div>
+	<a href="https://github.com/rustyeddy">github</a> .
+	<a href="https://twitter.com/rustyeddy">twitter</a> .
+	<a href="https://linkedin.com/rustyeddy">linkedin</a><br/>	    
+      </div>
+    </div>
+    <div class="col"></div>
+  </section>
+</footer>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19940083-13"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

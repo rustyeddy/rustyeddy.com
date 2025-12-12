@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+  
+  <title>Internet Of Things</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G7XZRHH62T"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-G7XZRHH62T');
+  </script>
+</head>
+<body><header class="container bg-white">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="/"><span claa="h1">rusty eddy:</span></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <nav class="navbar-nav me-auto mb-2 mb-lg-0">
+	  <div class="nav-item">
+  	    <a class="nav-link" href="/iot/"> iot &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="/software"> software &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="/notes"> notes &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="/resume"> resume &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="/about"> about &nbsp</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </nav>
+</header>
+<div id="jumbotron" class="jumbotron border-top border-bottom bg-white" >
+  <div class="row">
+    <div class="col-md"></div>
+    <div class="col-md-8 text-center">
+      <h1 class="header h2 pb-1">Internet Of Things</h1>
+      <p class="leadin align-right text-muted text-center mt-0">
+        Building DIY electronic projects is a lot of fun. You no longer need to be a rocket scientest nor a millionaire to build some really cool IoT style of projects. Here we will build some cool projects, but unlike some other cool projects we find on websites and Youtube channels we will focus mostly on the software side of IoT development, by way of a tool called OttO that allows use to take our projects sophistication to a whole new level with communication, cloud technology and intuitive user interfaces to make our projects really cool. Continue reading below to find out more.
+
+      </p>
+    </div>
+    <div class="col-md"></div>
+  </div>
+
+  <div class="row text-center smaller-text">
+    <div class="col"></div>
+    <div class="col-8">
+      <nav class="nav justify-content-center">
+        
+        
+        
+        
+        
+      </nav>
+
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
+<div id="main body">
+<div class="container">
+
+    <div class="row mt-5">
+	<div class="col"></div> 
+	<div class="col-10">
+	    <article class="article">
+		<h2 id="overview">Overview</h2>
+<p>The purpose of the project is two fold, first to build a cool IoT
+project or two, second to demostrate solid <em>Software Engineering
+Principals</em> and the practice of employing a professional <em><a href="../software">Software
+Development Life Cycle (SDLC)</a></em>.</p>
+<p>Why IoT? Aside from the fact that I really enjoy IoT and have an IoT
+background. IoT employs a lot of interesting and diverse elements of
+software development.</p>
+<blockquote>
+<p>IoT software projects are a combination of <em>Full Stack</em> and
+<em>Embedded</em> software development.</p>
+</blockquote>
+<h3 id="diversity-of-technology">Diversity of Technology</h3>
+<p>We will look at some embedded software development by writting code
+that runs on tiny realtime systems (esp32, raspberry Pi pico) using
+<em>C++</em> and <em>python</em>, we will look at hubs and integration with a
+Raspberry Pi and the <em>Go</em> programming language. Web interfaces and
+Mobile Apps with <em>JavaScript</em> and <em>React</em>.</p>
+<h3 id="building-extensible-systems-with-apis">Building Extensible Systems with APIs</h3>
+<p>We will also be building public REST API&rsquo;s and use MQTT for a
+Publish/Subscribe (Pub/Sub) messaging system. We will also look at the
+aspects of out a cloud based backend giving us access to our project
+from anywhere in the world that can access the Internet.</p>
+<p>From a techinical perspetive all of these items are part of IoT and
+quite interesting in that they use a wide array of techical elements,
+require these disparate elements to be successfully integrated
+together and maintained like any complex software system.</p>
+<p>Also, they require a significant co-ordinated effort among various
+players: users, software developers, electrical engineers, mechanical
+designs, all sorts of technitions and various other stake-holders.</p>
+<p>During this process I&rsquo;ll focus on the software that I am most familiar
+with and and explain sound software development practices as the
+project unfolds. At the same time I&rsquo;ll be learning quite a bit about
+hardware as well as improving my software skills.</p>
+<h2 id="project-overview">Project Overview</h2>
+<p>The basic Idea of this project will be to develop software to observe
+and control a physical device from a remote UI, that is we will build
+a little weather station that collects temperature and humidity from a
+simple device and display it on a web interface viewable from
+anywhere, even a phone.</p>
+<p>After that we will add a relay (switch) capable of turning lights on
+and off from our user interface. This basic project will lay the
+foundation to build other IoT projects should we want to.</p>
+<h2 id="the-architecture">The Architecture</h2>
+<p>We will do this in a very open and inter-changeable manner. For
+example, though we may choose say a Raspberry Pi to collect
+temperature and humidity, also to control the relay we will build this
+project such that it is very easy to integrate a totaly different
+device using the same user interface and backend.</p>
+<p>That is we&rsquo;ll create API&rsquo;s and use messaging to create a <em>loosely
+coupled</em> infrastructure such that anybody that wanted to could add to
+this system say an Arduino or ESP32, could do so just by developing
+toward the same API&rsquo;s and messaging system.</p>
+<h2 id="next">Next</h2>
+<p>Below are links to various articles that describe the project in quite
+a bit more detail.</p>
+
+	    </article>
+	</div>
+	<div class="col"></div> 
+    </div>
+
+    <div class="row mt-5">
+      
+      <div class="col-6">
+        <div class="card mb-4">
+          <div class="card-body">
+	    <div class="card-title">
+	      <a href="https://www.rustyeddy.com/iot/iot-edge-gateway/">OttO the Iot Gateway</a>
+	    </div>
+            <div class="card-text small">
+              The IoT Hub is the center piece of the IoT project as gathers data, runs application logic. Provides an HTTP Server to serve up a Web App, REST API and Web sockets. This project is a Micro service written in Go, and is perfect for systems hackers, backend devs and full-stackers.
+
+            </div>
+            <hr/>
+	    <div class="card-subtitle date small muted">
+	      January 13, 2022
+	    </div>
+          </div>
+        </div>
+      </div> 
+      
+      <div class="col-6">
+        <div class="card mb-4">
+          <div class="card-body">
+	    <div class="card-title">
+	      <a href="https://www.rustyeddy.com/iot/iot-sensor-station/">Collection Station</a>
+	    </div>
+            <div class="card-text small">
+              The Collection Stations are small battery powered wireless devices outfitted with environmental sensors. They collect and publish the data to the Hub for processing. This project is built with the esp32 micro-controller, C&#43;&#43; and embedded realtime operating system. 
+
+            </div>
+            <hr/>
+	    <div class="card-subtitle date small muted">
+	      January 13, 2022
+	    </div>
+          </div>
+        </div>
+      </div> 
+      
+      <div class="col-6">
+        <div class="card mb-4">
+          <div class="card-body">
+	    <div class="card-title">
+	      <a href="https://www.rustyeddy.com/iot/iot-system-architecture-explained/">IoT System Architecture Explained: The 5 Essential Layers (and How Otto Supports Them)</a>
+	    </div>
+            <div class="card-text small">
+              Learn the 5 essential layers of modern IoT system architecture and how Otto provides a powerful edge runtime for device management, connectivity, and cloud integration.
+            </div>
+            <hr/>
+	    <div class="card-subtitle date small muted">
+	      November 15, 2025
+	    </div>
+          </div>
+        </div>
+      </div> 
+      
+      <div class="col-6">
+        <div class="card mb-4">
+          <div class="card-body">
+	    <div class="card-title">
+	      <a href="https://www.rustyeddy.com/iot/building-iot-device-manager-in-go/">Building an IoT Device Manager in Go - Generics, Interfaces and Concurrency</a>
+	    </div>
+            <div class="card-text small">
+              In this article you’ll learn how to build a framework that lets you handle buttons, meters, motors and even full robots from a single Go codebase — real hardware or mocked.
+
+            </div>
+            <hr/>
+	    <div class="card-subtitle date small muted">
+	      November 2, 2025
+	    </div>
+          </div>
+        </div>
+      </div> 
+      
+      <div class="col-6">
+        <div class="card mb-4">
+          <div class="card-body">
+	    <div class="card-title">
+	      <a href="https://www.rustyeddy.com/iot/self-watering-garden/">How to Build a Self Watering Garden</a>
+	    </div>
+            <div class="card-text small">
+              This article describes an automated irrigation  system for home gardens and small farms. It uses soil moisture levels and other telemetry data to drive watering schedules vs traditional time based scheduals. This project is Open Source and easy to program.
+
+            </div>
+            <hr/>
+	    <div class="card-subtitle date small muted">
+	      May 25, 2022
+	    </div>
+          </div>
+        </div>
+      </div> 
+      
+      <div class="col-6">
+        <div class="card mb-4">
+          <div class="card-body">
+	    <div class="card-title">
+	      <a href="https://www.rustyeddy.com/iot/iot-gateway-rest/">Adding the REST API to IoT Gateway</a>
+	    </div>
+            <div class="card-text small">
+              This is the second milestone of the Organic Gardner IoT project. The first milestones we implemented MQTT subscriptions to gather sensor data. This milestone we are going to add HTTP RESTful API to provide access to that data. The same HTTP library will later serve up our IoT dashboard.
+
+            </div>
+            <hr/>
+	    <div class="card-subtitle date small muted">
+	      March 30, 2022
+	    </div>
+          </div>
+        </div>
+      </div> 
+      
+      <div class="col-6">
+        <div class="card mb-4">
+          <div class="card-body">
+	    <div class="card-title">
+	      <a href="https://www.rustyeddy.com/iot/iot-gateway-mqtt/">Adding MQTT to the IoT Gateway</a>
+	    </div>
+            <div class="card-text small">
+              The primary function of an IoT Gateway is moving data from one input source (often sensor data) to another output destination (like a control algorithm) with some data conversion and storage in between. Our first milestone building the IoT Gateway is reading data from MQTT then holding it in RAM for the upcoming REST API we will build for Milestone 2. 
+
+            </div>
+            <hr/>
+	    <div class="card-subtitle date small muted">
+	      March 29, 2022
+	    </div>
+          </div>
+        </div>
+      </div> 
+      
+    </div>
+</div>
+
+    </div><footer id="footer" class="container-fluid footer small-text pt-4 border-top">
+  <section class="row">
+    <div class="col"></div>
+    <div class="col text-right">
+      <div class="address">419 Main St. #439</div>
+      <div class="city">Huntington Beach, CA. 92648</div>
+    </div>
+    <div class="col-3 text-center">
+      <div>
+        Last update ~
+        
+	
+        Friday, Jan 13, 2023
+	
+        
+      </div>
+      <div>site by <a href="/">Eddy Consulting, LLC.</a> ~ &#xA9; 2008 to 2024 </div>
+    </div>
+    <div class="col">
+      <div class="text-left">
+	<div class="phone">(714) 362-5402</div>
+	<a href="https://github.com/rustyeddy">github</a> .
+	<a href="https://twitter.com/rustyeddy">twitter</a> .
+	<a href="https://linkedin.com/rustyeddy">linkedin</a><br/>	    
+      </div>
+    </div>
+    <div class="col"></div>
+  </section>
+</footer>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19940083-13"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

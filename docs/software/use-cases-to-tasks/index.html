@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+  
+  <title>Use Cases to Tasks</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G7XZRHH62T"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-G7XZRHH62T');
+  </script>
+</head>
+<body><header class="container bg-white">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="/"><span claa="h1">rusty eddy:</span></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <nav class="navbar-nav me-auto mb-2 mb-lg-0">
+	  <div class="nav-item">
+  	    <a class="nav-link" href="/iot/"> iot &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="/software"> software &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="/notes"> notes &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="/resume"> resume &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="/about"> about &nbsp</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </nav>
+</header>
+<div id="jumbotron" class="jumbotron border-top border-bottom bg-white" >
+  <div class="row">
+    <div class="col-md"></div>
+    <div class="col-md-8 text-center">
+      <h1 class="header h2 pb-1">Use Cases to Tasks</h1>
+      <p class="leadin align-right text-muted text-center mt-0">
+        A use case is all the ways of using a system to achieve a particular goal for a particular user that can be measured or observed in a specific way
+
+      </p>
+    </div>
+    <div class="col-md"></div>
+  </div>
+
+  <div class="row text-center smaller-text">
+    <div class="col"></div>
+    <div class="col-8">
+      <nav class="nav justify-content-center">
+        
+        
+        
+        
+        
+      </nav>
+
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
+<section id="main">
+
+<div class="container">
+    <div class="row pt-4 mb-5 mt-5">
+	<div class="col"></div>
+	<div class="col-8 text-center">
+	    <img class="img-fluid justify-content-center" src="" />
+	</div>
+	<div class="col"></div>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="row mt-4">
+	<div class="col"></div>
+	<div class="col-lg-8 pl-4 pr-4">
+	    <article class="article">
+		<h2 id="recap-from-use-cases">Recap from Use-Cases</h2>
+<p>In our previous article <a href="/software/use-cases">use-cases</a> we started
+deriving <em>Kelly&rsquo;s Automatic Gardener</em> into the first use-case</p>
+<h3 id="use-case">Use Case</h3>
+<blockquote>
+<p>Use-case 1: As a gardener I want my sprinkler system to peridoically
+measure the moisture level of soil and turn on a water pump when the
+soil is dry, then turn it off when it gets too wet.</p>
+</blockquote>
+<p>This use-case can then be <em>sliced</em> into a couple more use cases. The
+additional use-cases can also be broke out to include:</p>
+<blockquote>
+<p>Use-case 1.1: As a gardner I want to be able to change the frequency
+the soil moisture of my are checked.</p>
+</blockquote>
+<p>This is going introduce a configuration variable and a timer.</p>
+<blockquote>
+<p>Use-case 1.2: As a gardener I want my sprinkler system to record the
+historic sensor data.</p>
+</blockquote>
+<p>This is going to introduce a data model and some type of data storage
+such as a database.</p>
+<p>which we then broke down into an initial set of <em>requirements</em>:</p>
+<h3 id="requirements">Requirements</h3>
+<hr>
+<ol>
+<li>
+<p>Periodically measure soil moisture levels</p>
+</li>
+<li>
+<p>If the moisture level drops below a certain level start watering</p>
+</li>
+<li>
+<p>Turn water off when the moisture hits a high point</p>
+</li>
+<li>
+<p>Configurable moisture levels</p>
+</li>
+<li>
+<p>Historic data storage</p>
+</li>
+</ol>
+<hr>
+<h3 id="acceptance-tests">Acceptance Tests</h3>
+<p>This set of requirements can now be validated by with these acceptance
+tests:</p>
+<hr>
+<ol>
+<li>
+<p>Verify the water pump is not active when moisture level is below
+threshold</p>
+</li>
+<li>
+<p>Verify water pump activates when moisture crosses the dry threshold</p>
+</li>
+<li>
+<p>Verify Water pump de-activate when moisture crosses the damp
+threshold</p>
+</li>
+<li>
+<p>Verify periodic</p>
+</li>
+</ol>
+<hr>
+<h2 id="busting-out-the-tasks">Busting out the Tasks</h2>
+<p>This is the point that we start moving from the user POV to the
+development side of the project. We are going to start breaking out
+the above requirements and acceptance test into high level tasks that
+I will need to develop.</p>
+<p>We will still use high level language and not yet get into actual
+programming languages, libraries or software systems. As matter of
+fact this level of breaking out tasks could applied to just about any
+hardware, language or sub-systems.</p>
+<h3 id="find-a-soil-moisture-sensor">Find a Soil Moisture Sensor</h3>
+<!-- raw HTML omitted -->
+<p><em><strong>TODO: point to article about soil moisture sensors</strong></em></p>
+<p>We are going to need some type of sensor that we stick in soil to read
+the level of moisture in the soil. The <em>soil moisture sensor</em> we
+choose comes from the wonderful
+<a href="https://www.adafruit.com/product/4026?gad_source=1&amp;gclid=EAIaIQobChMI-s7HkoWKiQMVIwqtBh29dBKFEAQYASABEgLzl_D_BwE">Adafruit&rsquo;s I2C Capacitive Moisture Sensor</a></p>
+<!-- raw HTML omitted -->
+<h3 id="find-a-pump-to-send-water">Find a Pump to send water</h3>
+<p><em><strong>TODO show the pump we picked</strong></em> and how to wire it up</p>
+<h3 id="turn-pump-on-and-off">Turn Pump on and Off</h3>
+<p><em><strong>TODO GPIO library to control pump</strong></em></p>
+<h3 id="read-data-from-soil-moisture-sensor">Read Data from Soil Moisture Sensor</h3>
+<p>For this particular sensor we are going to read data from it using
+and I2C data bus.  You can read about I2C here and look at the I2C
+Adafruit driver we wrote HERE:</p>
+<p><em><strong>TODO: pointer to I2C article</strong></em></p>
+<p><em><strong>TODO: pointer to our Adafruit SeeSaw library driver</strong></em>.</p>
+<h3 id="timer-to-periodically-read-data">Timer to periodically read data</h3>
+<p>We are going to need a driver to periodically read data from the I2C
+driver.</p>
+<p><em><strong>TODO: pointer to our article with Go timers</strong></em></p>
+<h3 id="local-storage">Local Storage</h3>
+<p>We are going to cache this data locally for the Soil Moisture data.</p>
+<p><em><strong>TODO: create an article about data models</strong></em></p>
+<h3 id="mqtt-data-broadcast">MQTT Data Broadcast</h3>
+<p>We are going to <em>publish</em> the <em>soil moisture data</em> via MQTT and the
+channels, the moisture data will then subscribe to the published data
+to determine when to turn on and off the pump.</p>
+<p>A subscriber will also record the data levels in a time series data
+base of sorts.</p>
+<p><em><strong>TODO: pointer to MQTT article</strong></em></p>
+<h3 id="configuration-variables">Configuration variables</h3>
+<p>We need configuration variables for the following tasks:</p>
+<ol>
+<li>Frequency to read soil moisture data</li>
+<li>The dry water mark</li>
+<li>The damp water mark</li>
+<li>Location to store local data</li>
+<li>MQTT channel to advertise data on</li>
+</ol>
+<h2 id="adding-tasks-to-our-kanban-board">Adding tasks to our Kanban Board</h2>
+<p>We are now ready to add our tasks to our todo list. We will also add
+our <em>acceptance tests</em> as part of our todo list.</p>
+<p>This bring us to our next major article about
+<a href="/software/kanban">Kanban boards</a> and todo
+lists.</p>
+
+	    </article>
+	</div>
+	<div class="col"></div>
+    </div>
+
+</div>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-8">
+            <script async data-uid="50dfcceaf3" src="https://skilled-producer-5787.ck.page/50dfcceaf3/index.js"></script>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
+
+	</section><footer id="footer" class="container-fluid footer small-text pt-4 border-top">
+  <section class="row">
+    <div class="col"></div>
+    <div class="col text-right">
+      <div class="address">419 Main St. #439</div>
+      <div class="city">Huntington Beach, CA. 92648</div>
+    </div>
+    <div class="col-3 text-center">
+      <div>
+        Last update ~
+        
+	
+        
+      </div>
+      <div>site by <a href="/">Eddy Consulting, LLC.</a> ~ &#xA9; 2008 to 2024 </div>
+    </div>
+    <div class="col">
+      <div class="text-left">
+	<div class="phone">(714) 362-5402</div>
+	<a href="https://github.com/rustyeddy">github</a> .
+	<a href="https://twitter.com/rustyeddy">twitter</a> .
+	<a href="https://linkedin.com/rustyeddy">linkedin</a><br/>	    
+      </div>
+    </div>
+    <div class="col"></div>
+  </section>
+</footer>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19940083-13"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    </body>
+</html>

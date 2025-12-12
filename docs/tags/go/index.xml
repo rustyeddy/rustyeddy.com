@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Go on Rusty Eddy</title>
+    <link>https://www.rustyeddy.com/tags/go/</link>
+    <description>Recent content in Go on Rusty Eddy</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.rustyeddy.com/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sugo Music Dashboard</title>
+      <link>https://www.rustyeddy.com/resume/clients/sugo-music/</link>
+      <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://www.rustyeddy.com/resume/clients/sugo-music/</guid>
+      <description>&lt;p&gt;Sugo Music is an online Music publishing platform for Artists by&#xA;artists. It was my responsibility to manage the software process,&#xA;build and test the backend and manage the front-end development in&#xA;React.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Go, React, REST API, HTTP, HTML, JavaScript, Webapp, fullstack&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
+    </item>
+    <item>
+      <title>Building an IoT Device Manager in Go - Generics, Interfaces and Concurrency</title>
+      <link>https://www.rustyeddy.com/iot/building-iot-device-manager-in-go/</link>
+      <pubDate>Sun, 02 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.rustyeddy.com/iot/building-iot-device-manager-in-go/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Managing IoT devices becomes exponentially more complex as your&#xA;network grows. You end up juggling a mix of sensors, actuators, and&#xA;communication buses each with its own quirks and challenges.&lt;/p&gt;&#xA;&lt;p&gt;In the &lt;a href=&#34;https://github.com/rustyeddy/otto&#34;&gt;OttO Project&lt;/a&gt; and companion&#xA;&lt;a href=&#34;https://github.com/rustyeddy/devices&#34;&gt;Devices library&lt;/a&gt;, I attempted&#xA;to develop a mini framework that would have a clear &lt;em&gt;separation of&#xA;concerns&lt;/em&gt; between the hardware layer (GPIO, I2C, serial, ADC, PWN,&#xA;UART, etc.) and the application layer (messaging, control logic,&#xA;logging, deployment, etc).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Adding the REST API to IoT Gateway</title>
+      <link>https://www.rustyeddy.com/iot/iot-gateway-rest/</link>
+      <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>https://www.rustyeddy.com/iot/iot-gateway-rest/</guid>
+      <description>&lt;p&gt;Previously we have added&#xA;&lt;a href=&#34;https://www.rustyeddy.com/iot/iot-gateway-mqtt/&#34;&gt;MQTT to the IoT Gateway&lt;/a&gt; as part of the&#xA;&lt;a href=&#34;https://www.rustyeddy.com/iot/iot-project&#34;&gt;Organic Gardner Project&lt;/a&gt;. This gave the gateway the&#xA;ability to collect and store a lot of environmental data from sensors&#xA;all over the place.&lt;/p&gt;&#xA;&lt;p&gt;Now we need to provide a way for others programs, like the&#xA;&lt;a href=&#34;https://www.rustyeddy.com/iot/dashboard&#34;&gt;IoT Dashboard&lt;/a&gt; access that data via a REST API.&lt;/p&gt;&#xA;&lt;h2 id=&#34;implementing-a-restful-api&#34;&gt;Implementing a RESTful API&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.redhat.com/en/topics/api/what-is-a-rest-api&#34;&gt;The RESTful API&lt;/a&gt;&#xA;&lt;em&gt;convention&lt;/em&gt; is exteremely popular, well supported and is perfectly&#xA;suited to providing access to the sensor data that has been&#xA;collected. REST is ubiquitous these days, most people&#xA;involved in &lt;em&gt;frontend&lt;/em&gt; or &lt;em&gt;backend&lt;/em&gt; development most likely&#xA;have quite a bit of experience with REST.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Adding MQTT to the IoT Gateway</title>
+      <link>https://www.rustyeddy.com/iot/iot-gateway-mqtt/</link>
+      <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>https://www.rustyeddy.com/iot/iot-gateway-mqtt/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://www.rustyeddy.com/img/iot-hub-mqtt.png&#34; alt=&#34;MQTT Architecture&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;This page marks the beginning of the &lt;em&gt;Organic Gardner (OG)&lt;/em&gt;&#xA;&lt;a href=&#34;https://www.rustyeddy.com/iot/iot-intro&#34;&gt;IoT Project&lt;/a&gt; Milestone 1 development!  If you want to&#xA;program along but have not yet worked with the &lt;em&gt;Go&lt;/em&gt; programming&#xA;language check this intro: &lt;a href=&#34;https://www.rustyeddy.com/notes/get-ready-to-go&#34;&gt;Getting ready to Go&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;a-brief-about-mqtt&#34;&gt;A Brief About MQTT&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://mqtt.org&#34;&gt;MQTT&lt;/a&gt; is the &lt;em&gt;messaging&lt;/em&gt; protocol that a&#xA;&lt;em&gt;Collector&lt;/em&gt; will use to periodically publish sensor data&#xA;(like temperature and humidity) to the &lt;em&gt;IoT Gateway&lt;/em&gt;. &lt;em&gt;MQTT&lt;/em&gt; will also&#xA;be used to signal when the &lt;em&gt;Control Station&lt;/em&gt; or &lt;em&gt;Controller&lt;/em&gt; will&#xA;respond to commands to turn a sprinkler pump on or off.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A Simple Go Configuration</title>
+      <link>https://www.rustyeddy.com/notes/go-configuration/</link>
+      <pubDate>Fri, 26 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://www.rustyeddy.com/notes/go-configuration/</guid>
+      <description>&lt;p&gt;I use this same configuration structure and supporting functions in&#xA;most every Go program I work on. It is pretty simple but makes it easy&#xA;to keep global variables orgranized and configurable.&lt;/p&gt;&#xA;&lt;p&gt;Here is what I do:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Create a &lt;code&gt;type config struct&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Every configurable variable for the program becomes a Member field&#xA;of the Configuration structure.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Register every field of the Configuration Structure with go&amp;rsquo;s&#xA;builtin &lt;em&gt;flags&lt;/em&gt; package such that the flags are parsed when the&#xA;program starts we can use our configuration variable.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
