@@ -219,11 +219,11 @@
       <description>A complete, SEO-optimized guide to IoT system architecture. Discover what every IoT product needs—from sensors and protocols to gateways, cloud control planes, and applications—and how Otto ties it all together.</description>
     </item>
     <item>
-      <title>Building an IoT Device Manager in Go</title>
+      <title>Building an IoT Device Manager in Go - Generics, Interfaces and Concurrency</title>
       <link>http://localhost:1313/iot/building-iot-device-manager-in-go/</link>
       <pubDate>Sun, 02 Nov 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/iot/building-iot-device-manager-in-go/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Managing IoT devices becomes exponentially more complex as your&#xA;network grows. You end up juggling a mix of sensors, actuators, and&#xA;communication buses each with its own quirks and challenges.&lt;/p&gt;&#xA;&lt;p&gt;In the &lt;a href=&#34;https://github.com/rustyeddy/otto&#34;&gt;OttO Project&lt;/a&gt; and companion&#xA;&lt;a href=&#34;https://github.com/rustyeddy/devices&#34;&gt;Devices library&lt;/a&gt;, I attempted&#xA;to develop a mini framework that would have a clear &lt;em&gt;seperation of&#xA;concerns&lt;/em&gt; between the hardware layer (GPIO, I2C, serial, ADC, PWN,&#xA;UART, etc.) and the application layer (messaging, control logic,&#xA;logging, deployment, etc).&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Managing IoT devices becomes exponentially more complex as your&#xA;network grows. You end up juggling a mix of sensors, actuators, and&#xA;communication buses each with its own quirks and challenges.&lt;/p&gt;&#xA;&lt;p&gt;In the &lt;a href=&#34;https://github.com/rustyeddy/otto&#34;&gt;OttO Project&lt;/a&gt; and companion&#xA;&lt;a href=&#34;https://github.com/rustyeddy/devices&#34;&gt;Devices library&lt;/a&gt;, I attempted&#xA;to develop a mini framework that would have a clear &lt;em&gt;separation of&#xA;concerns&lt;/em&gt; between the hardware layer (GPIO, I2C, serial, ADC, PWN,&#xA;UART, etc.) and the application layer (messaging, control logic,&#xA;logging, deployment, etc).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Soil Mosture Sensors Adafruit</title>
