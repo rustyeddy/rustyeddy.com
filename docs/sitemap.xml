@@ -101,10 +101,10 @@
     <loc>http://localhost:1313/tags/device-management/</loc>
     <lastmod>2025-11-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/edge-computing/</loc>
+    <loc>http://localhost:1313/categories/edge-computing/</loc>
     <lastmod>2025-11-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/edge-computing/</loc>
+    <loc>http://localhost:1313/tags/edge-computing/</loc>
     <lastmod>2025-11-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/iot-architecture/</loc>
@@ -179,10 +179,10 @@
     <loc>http://localhost:1313/tags/sdlc/</loc>
     <lastmod>2023-01-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/software-development-lifecycle-phases/</loc>
+    <loc>http://localhost:1313/software/</loc>
     <lastmod>2023-01-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/software/</loc>
+    <loc>http://localhost:1313/tags/software-development-lifecycle-phases/</loc>
     <lastmod>2023-01-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/iot/self-watering-garden/</loc>
