@@ -2,7 +2,10 @@
 title: "IoT System Architecture Explained: The 5 Essential Layers (and How Otto Supports Them)"
 subtitle: "The 5 Essential Layers (and How Otto Supports Them)"
 date: 2025-11-15
-description: "Learn the 5 essential layers of modern IoT system architecture and how Otto provides a powerful edge runtime for device management, connectivity, and cloud integration."
+description: >
+  Learn the 5 essential layers of modern IoT system
+  architecture and how Otto provides a powerful edge runtime for device
+  management, connectivity, and cloud integration. 
 tags: ["IoT Architecture", "IoT System Design", "Edge Computing", "Otto", "Device Management", "Rusty Eddy"]
 categories: ["IoT Systems", "Edge Computing"]
 author: "Rusty Eddy"

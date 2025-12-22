@@ -97,6 +97,9 @@ demos.</p>
 an emphasis on <strong>software architecture</strong>, <strong>system integration</strong>, and
 sound <strong>engineering practices</strong>. The goal is not just to make devices
 work, but to build systems that scale, evolve, and remain maintainable.</p>
+<p>If you’re looking for step-by-step wiring guides, this probably isn’t
+the right place. If you care about system boundaries, APIs, messaging,
+and long-term maintainability, you’re in the right spot.</p>
 <h2 id="why-iot">Why IoT?</h2>
 <p>IoT projects sit at the intersection of multiple disciplines:</p>
 <blockquote>
@@ -109,75 +112,106 @@ messaging, and user-facing applications.</p>
 <li>Unreliable networks</li>
 <li>Distributed systems</li>
 <li>Real-time data</li>
-<li>Long-lived software in the field</li>
+<li>Long-lived software deployed in the field</li>
 </ul>
-<p>That makes IoT an excellent proving ground for professional software
-engineering principles.</p>
+<p>That combination makes IoT an excellent proving ground for applying
+professional software engineering principles in environments that are
+far less forgiving than typical web applications.</p>
 <h2 id="diversity-of-technology">Diversity of Technology</h2>
 <p>These projects intentionally span a wide range of technologies:</p>
 <ul>
 <li>
 <p><strong>Embedded devices</strong><br>
 Code running on small, real-time systems such as ESP32s and Raspberry
-Pi Pico devices, using C++, Python and my favorite Go.</p>
+Pi Pico devices, using C++ and Python.</p>
 </li>
 <li>
 <p><strong>Edge and hub systems</strong><br>
-Device aggregation and integration using Raspberry Pi and Go.</p>
+Device aggregation, protocol translation, and orchestration using
+Raspberry Pi-class hardware and Go.</p>
 </li>
 <li>
 <p><strong>User interfaces</strong><br>
-Web and mobile interfaces built with JavaScript and React.</p>
+Web-based and mobile-friendly interfaces built with JavaScript and
+React.</p>
 </li>
 </ul>
-<p>The emphasis is not on mastering every tool, but on understanding how
-these pieces fit together into a coherent system.</p>
+<p>The point is not to master every tool, but to understand how these
+pieces fit together into a coherent system with clear responsibilities
+and boundaries.</p>
 <h2 id="building-extensible-systems-with-apis">Building Extensible Systems with APIs</h2>
 <p>A recurring theme throughout these projects is <strong>extensibility</strong>.</p>
-<p>We build:</p>
+<p>Rather than tightly coupling devices to specific implementations, we
+design around:</p>
 <ul>
 <li>Public REST APIs</li>
 <li>MQTT-based publish/subscribe messaging</li>
 <li>Cloud-backed services accessible from anywhere</li>
 </ul>
+<p>This allows devices to be added, replaced, or simulated without
+rewriting the entire system.</p>
+<p>If you’re interested in this approach, see:</p>
+<ul>
+<li><a href="/iot/iot-device-management/">IoT Device Management</a></li>
+<li><a href="/iot/building-iot-device-manager-in-go/">Building an IoT Device Manager in Go</a></li>
+</ul>
 <p>From a technical perspective, IoT systems are interesting precisely
 because they require many disparate components to work together
-reliably over time.</p>
-<p>They also demand coordination between:</p>
-<ul>
-<li>Users</li>
-<li>Software developers</li>
-<li>Electrical and mechanical designers</li>
-<li>Operators and maintainers</li>
-</ul>
-<p>This is not accidental complexity—it’s the nature of real IoT systems.</p>
+reliably over time—often under less-than-ideal conditions.</p>
 <h2 id="project-overview">Project Overview</h2>
-<p>The initial project focuses on a simple but representative system:</p>
+<p>The initial project documented here focuses on a simple but
+representative system:</p>
 <ul>
 <li>A physical device that collects temperature and humidity data</li>
-<li>A backend service that processes and stores that data</li>
-<li>A web interface that displays live readings from anywhere</li>
+<li>A backend service that ingests and stores telemetry</li>
+<li>A web interface that displays live and historical readings</li>
 <li>A relay-controlled switch to remotely control a physical device</li>
 </ul>
-<p>This foundation is intentionally generic so it can be extended into
-other IoT projects without rewriting the system from scratch.</p>
+<p>While modest in scope, this project lays the foundation for building
+more complex IoT systems without changing the underlying architecture.</p>
 <h2 id="architecture">Architecture</h2>
 <p>The system is designed to be <strong>loosely coupled</strong> and interchangeable.</p>
 <p>While an initial implementation might use a Raspberry Pi or ESP32, the
 architecture allows entirely different devices to be integrated by
 conforming to the same APIs and messaging contracts.</p>
-<p>This approach:</p>
+<p>This approach is explored in more detail here:</p>
+<ul>
+<li><a href="/iot/edge-device-architecture/">Edge Device Architecture</a></li>
+</ul>
+<p>Designing for loose coupling:</p>
 <ul>
 <li>Reduces vendor lock-in</li>
 <li>Encourages experimentation</li>
-<li>Makes systems easier to extend and maintain</li>
+<li>Makes systems easier to test and extend</li>
+<li>Lowers the cost of change over time</li>
 </ul>
 <p>The goal is not just to build <em>a</em> device, but to build a platform that
-can grow.</p>
-<h2 id="what-comes-next">What Comes Next</h2>
-<p>Below you’ll find articles that dive deeper into specific parts of the
-system—architecture decisions, messaging patterns, device abstractions,
-and operational considerations.</p>
+can grow as requirements change.</p>
+<h2 id="common-pitfalls-in-iot-projects">Common Pitfalls in IoT Projects</h2>
+<p>Many IoT projects fail—not because the hardware is difficult—but
+because the software architecture is an afterthought.</p>
+<p>Common mistakes include:</p>
+<ul>
+<li>Hard-coding device assumptions into backend services</li>
+<li>Treating MQTT topics as an API contract without versioning</li>
+<li>Ignoring updates, failures, and observability</li>
+<li>Building one-off solutions that can’t be extended</li>
+</ul>
+<p>These are architectural problems, not hardware ones.</p>
+<h2 id="iot-articles-and-deep-dives">IoT Articles and Deep Dives</h2>
+<p>The articles below expand on specific aspects of the system and are
+intended to be read independently or as part of a larger whole.</p>
+<h3 id="architecture--system-design">Architecture &amp; System Design</h3>
+<ul>
+<li><a href="/iot/edge-device-architecture/">Edge Device Architecture</a></li>
+<li><a href="/iot/iot-device-management/">IoT Device Management</a></li>
+<li><a href="/iot/building-iot-device-manager-in-go/">Building an IoT Device Manager in Go</a></li>
+</ul>
+<h3 id="software-engineering-foundations">Software Engineering Foundations</h3>
+<ul>
+<li><a href="/software/system-design-principles/">System Design Principles</a></li>
+<li><a href="/software/sdlc-for-small-teams/">SDLC for Small Teams</a></li>
+</ul>
 <p>Each article focuses on <em>why</em> a design choice was made, not just <em>how</em>
 it was implemented.</p>
 
@@ -231,7 +265,8 @@ it was implemented.</p>
 	      <a href="http://localhost:1313/iot/iot-system-architecture-explained/">IoT System Architecture Explained: The 5 Essential Layers (and How Otto Supports Them)</a>
 	    </div>
             <div class="card-text small">
-              Learn the 5 essential layers of modern IoT system architecture and how Otto provides a powerful edge runtime for device management, connectivity, and cloud integration.
+              Learn the 5 essential layers of modern IoT system architecture and how Otto provides a powerful edge runtime for device management, connectivity, and cloud integration. 
+
             </div>
             <hr/>
 	    <div class="card-subtitle date small muted">
@@ -254,6 +289,24 @@ it was implemented.</p>
             <hr/>
 	    <div class="card-subtitle date small muted">
 	      November 2, 2025
+	    </div>
+          </div>
+        </div>
+      </div> 
+      
+      <div class="col-6">
+        <div class="card mb-4">
+          <div class="card-body">
+	    <div class="card-title">
+	      <a href="http://localhost:1313/iot/iot-system-architecture-device-to-cloud/">IoT System Architecture (Device to Cloud)</a>
+	    </div>
+            <div class="card-text small">
+              A diagram-first overview of a practical IoT system architecture, covering devices, edge hubs, messaging, APIs, and user interfaces.
+
+            </div>
+            <hr/>
+	    <div class="card-subtitle date small muted">
+	      January 13, 2023
 	    </div>
           </div>
         </div>

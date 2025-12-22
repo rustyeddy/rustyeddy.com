@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+  
+  <title>IoT System Architecture (Device to Cloud)</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G7XZRHH62T"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-G7XZRHH62T');
+  </script>
+</head>
+<body><header class="container bg-white">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="/"><span claa="h1">rusty eddy:</span></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <nav class="navbar-nav me-auto mb-2 mb-lg-0">
+	  <div class="nav-item">
+  	    <a class="nav-link" href="/iot/"> iot &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="/software"> software &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="/notes"> notes &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="/resume"> resume &nbsp</a>
+          </div>
+          <div class="nav-item">
+  	    <a class="nav-link" href="/about"> about &nbsp</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </nav>
+</header>
+<div id="jumbotron" class="jumbotron border-top border-bottom bg-white" >
+  <div class="row">
+    <div class="col-md"></div>
+    <div class="col-md-8 text-center">
+      <h1 class="header h2 pb-1">IoT System Architecture (Device to Cloud)</h1>
+      <p class="leadin align-right text-muted text-center mt-0">
+        A diagram-first overview of a practical IoT system architecture, covering devices, edge hubs, messaging, APIs, and user interfaces.
+
+      </p>
+    </div>
+    <div class="col-md"></div>
+  </div>
+
+  <div class="row text-center smaller-text">
+    <div class="col"></div>
+    <div class="col-8">
+      <nav class="nav justify-content-center">
+        
+        
+        
+        
+        
+      </nav>
+
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
+<div id="main body">
+<div class="container"><div class="row">
+    <div class="col"></div>
+    <div class="col-md-10 hero-text">
+	<article class="article">
+	  <h1 id="iot-system-architecture-device-to-cloud">IoT System Architecture (Device to Cloud)</h1>
+<p>This page provides a <strong>diagram-first overview</strong> of the IoT architecture
+used throughout the projects on this site.</p>
+<p>The goal is not to present a single “correct” design, but to show a
+<strong>reasonable baseline architecture</strong> that scales beyond demos and
+remains flexible as requirements change.</p>
+<p>If you want implementation details, those are covered in linked
+articles. This page focuses on <em>structure</em>, <em>boundaries</em>, and <em>tradeoffs</em>.</p>
+<hr>
+<h2 id="high-level-system-overview">High-Level System Overview</h2>
+<p>At a high level, the system looks like this:</p>
+<p><img src="/diagrams/iot-architecture.svg" alt="High-level IoT system overview: device ↔ edge ↔ backend → UI"></p>
+<p>This separation is intentional.</p>
+<p>Each layer has a clear responsibility and communicates with the next
+layer through well-defined interfaces.</p>
+<hr>
+<h2 id="devices-sensors-and-actuators">Devices: Sensors and Actuators</h2>
+<pre><code>+----------------------+
+|   IoT Device         |
+|----------------------|
+| - Sensor readings    |
+| - Actuator control   |
+| - Local logic        |
+| - Network client     |
++----------------------+
+</code></pre>
+<p>Devices are responsible for:</p>
+<ul>
+<li>Interacting with the physical world</li>
+<li>Collecting data</li>
+<li>Executing commands</li>
+<li>Communicating with the edge or backend</li>
+</ul>
+<p>They are <strong>not</strong> responsible for:</p>
+<ul>
+<li>Business logic</li>
+<li>Data persistence</li>
+<li>User interfaces</li>
+</ul>
+<p>Keeping devices simple improves reliability and makes replacement
+easier when hardware inevitably changes.</p>
+<hr>
+<h2 id="edge-hub-aggregation-and-control">Edge Hub: Aggregation and Control</h2>
+<pre><code>+--------------------------------+
+|          Edge Hub              |
+|--------------------------------|
+| - Device registry              |
+| - Protocol translation         |
+| - Message routing              |
+| - Local automation (optional)  |
++--------------------------------+
+</code></pre>
+<p>The edge hub sits between devices and the cloud.</p>
+<p>Typical responsibilities include:</p>
+<ul>
+<li>Aggregating multiple devices</li>
+<li>Translating protocols (GPIO, I2C, MQTT, HTTP)</li>
+<li>Acting as a control plane for local devices</li>
+<li>Handling intermittent connectivity</li>
+</ul>
+<p>This layer is explored further in<br>
+<a href="/iot/edge-device-architecture/">Edge Device Architecture</a>.</p>
+<p>Not every system needs an edge hub—but when you do, adding it later is
+far more painful than designing for it early.</p>
+<hr>
+<h2 id="messaging-and-apis">Messaging and APIs</h2>
+<pre><code>    Telemetry            Commands
+Devices --------&gt; MQTT &lt;-------- Backend
+                    |
+                    v
+                 Edge Hub
+</code></pre>
+<p>Two communication patterns dominate practical IoT systems:</p>
+<h3 id="mqtt-publish--subscribe">MQTT (Publish / Subscribe)</h3>
+<ul>
+<li>Efficient for telemetry</li>
+<li>Decouples producers and consumers</li>
+<li>Tolerates intermittent connections</li>
+</ul>
+<h3 id="rest-apis">REST APIs</h3>
+<ul>
+<li>Better for configuration and control</li>
+<li>Explicit request/response semantics</li>
+<li>Easier to version and document</li>
+</ul>
+<p>Treat messaging topics and APIs as <strong>contracts</strong>, not implementation
+details. This is where many IoT systems quietly accumulate technical
+debt.</p>
+<p>Related reading:</p>
+<ul>
+<li><a href="/iot/iot-device-management/">IoT Device Management</a></li>
+<li><a href="/iot/building-iot-device-manager-in-go/">Building an IoT Device Manager in Go</a></li>
+</ul>
+<hr>
+<h2 id="backend-services">Backend Services</h2>
+<pre><code>+----------------------------------+
+|          Backend Services        |
+|----------------------------------|
+| - Device registry                |
+| - Telemetry ingestion            |
+| - Command dispatch               |
+| - Persistence                    |
+| - Auth / access control          |
++----------------------------------+
+</code></pre>
+<p>The backend provides:</p>
+<ul>
+<li>A system of record</li>
+<li>Long-term data storage</li>
+<li>User and device authorization</li>
+<li>Integration points for other systems</li>
+</ul>
+<p>Crucially, backend services should <strong>not assume specific hardware</strong>.
+They interact with devices only through APIs and messages.</p>
+<p>This is what enables simulation, testing, and gradual hardware
+migration.</p>
+<hr>
+<h2 id="user-interfaces">User Interfaces</h2>
+<pre><code>+----------------------------+
+|      Web / Mobile UI       |
+|----------------------------|
+| - Dashboards               |
+| - Live telemetry           |
+| - Device control           |
+| - Configuration            |
++----------------------------+
+</code></pre>
+<p>User interfaces sit at the edge of the system, not the center.</p>
+<p>They:</p>
+<ul>
+<li>Consume backend APIs</li>
+<li>Visualize system state</li>
+<li>Trigger commands</li>
+</ul>
+<p>They do <strong>not</strong> talk directly to devices.</p>
+<p>This separation keeps the system secure and makes UI changes cheap
+relative to hardware changes.</p>
+<hr>
+<h2 id="why-this-architecture-matters">Why This Architecture Matters</h2>
+<p>This structure:</p>
+<ul>
+<li>Encourages loose coupling</li>
+<li>Makes testing possible without hardware</li>
+<li>Allows devices to be replaced independently</li>
+<li>Supports incremental growth</li>
+</ul>
+<p>Most failed IoT projects fail here—not due to sensors or radios, but
+because architecture was treated as an afterthought.</p>
+<hr>
+<h2 id="common-architectural-pitfalls">Common Architectural Pitfalls</h2>
+<pre><code>[ Device ] ---&gt; [ Database ]
+</code></pre>
+<p>Yes, people really do this.</p>
+<p>Common mistakes include:</p>
+<ul>
+<li>Hard-coding device behavior into backend logic</li>
+<li>Treating MQTT topics as unversioned APIs</li>
+<li>Letting UI assumptions leak into device firmware</li>
+<li>Designing for one device instead of a system</li>
+</ul>
+<p>These shortcuts feel productive early on and become expensive later.</p>
+<hr>
+<h2 id="where-to-go-next">Where to Go Next</h2>
+<p>If this architecture resonates, the following pages dive deeper:</p>
+<ul>
+<li><a href="/iot/edge-device-architecture/">Edge Device Architecture</a></li>
+<li><a href="/iot/iot-device-management/">IoT Device Management</a></li>
+<li><a href="/iot/building-iot-device-manager-in-go/">Building an IoT Device Manager in Go</a></li>
+<li><a href="/software/system-design-principles/">System Design Principles</a></li>
+</ul>
+<p>Each builds on this diagrammatic foundation and explores the tradeoffs
+in more detail.</p>
+
+	</article>
+    </div>
+    <div class="col"></div>
+</div>
+</div>
+
+    </div><footer id="footer" class="container-fluid footer small-text pt-4 border-top">
+  <section class="row">
+    <div class="col"></div>
+    <div class="col text-right">
+      <div class="address">419 Main St. #439</div>
+      <div class="city">Huntington Beach, CA. 92648</div>
+    </div>
+    <div class="col-3 text-center">
+      <div>
+        Last update ~
+        
+	
+        Friday, Jan 13, 2023
+	
+        
+      </div>
+      <div>site by <a href="/">Eddy Consulting, LLC.</a> ~ &#xA9; 2008 to 2024 </div>
+    </div>
+    <div class="col">
+      <div class="text-left">
+	<div class="phone">(714) 362-5402</div>
+	<a href="https://github.com/rustyeddy">github</a> .
+	<a href="https://twitter.com/rustyeddy">twitter</a> .
+	<a href="https://linkedin.com/rustyeddy">linkedin</a><br/>	    
+      </div>
+    </div>
+    <div class="col"></div>
+  </section>
+</footer>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19940083-13"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>

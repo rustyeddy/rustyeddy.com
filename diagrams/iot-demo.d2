@@ -1,0 +1,24 @@
+direction: right
+
+Devices: "Devices\n(Sensors/Actuators)"
+EdgeHub: "Edge Hub\nAggregation/Translation"
+Backend: "Backend / API\nAuth + Control Plane"
+UI: "Web / Mobile UI"
+
+Devices -> EdgeHub: telemetry
+EdgeHub -> Backend: publish/forward
+Backend -> UI: APIs
+
+Backend: {
+  direction: down
+  DB: "Database\nTelemetry + State"
+  Obs: "Observability\nLogs/Metrics/Traces"
+  Admin: "Admin / Ops\nProvisioning"
+}
+
+Backend -> Backend.DB: store
+Backend -> Backend.Obs: emit
+Backend.Admin -> Backend: manage
+
+Backend -> EdgeHub: commands
+EdgeHub -> Devices: actuate

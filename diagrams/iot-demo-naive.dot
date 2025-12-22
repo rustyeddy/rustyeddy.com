@@ -1,0 +1,38 @@
+digraph IoTDemoConstrained {
+  rankdir=LR;
+  graph [fontname="Inter", fontsize=10, bgcolor="transparent", nodesep=0.35, ranksep=0.5];
+  node  [shape=box, style="rounded,filled", fillcolor="#ffffff", color="#111827", fontname="Inter", fontsize=11];
+  edge  [color="#374151", fontname="Inter", fontsize=10];
+
+  Devices [label="Devices\n(Sensors/Actuators)"];
+  EdgeHub [label="Edge Hub\nAggregation/Translation"];
+  Backend [label="Backend / API\nAuth + Control Plane"];
+  UI [label="Web / Mobile UI"];
+
+  DB [label="Database\nTelemetry + State"];
+  Obs [label="Observability\nLogs/Metrics/Traces"];
+  Admin [label="Admin / Ops\nProvisioning"];
+
+  // Primary flow
+  Devices -> EdgeHub [label="telemetry"];
+  EdgeHub -> Backend [label="publish/forward"];
+  Backend -> UI [label="APIs"];
+
+  // Secondary nodes: try to keep them "under" Backend by putting them in the same rank column
+  // This is where Graphviz starts needing coercion.
+
+  { rank=same; Backend; DB; Obs; Admin; }
+
+  // Invisible edges to encourage stacking near Backend (coercion)
+  Backend -> DB [label="store"];
+  Backend -> Obs [label="emit"];
+  Admin  -> Backend [label="manage"];
+
+  Backend -> DB  [style=invis, weight=10];
+  DB      -> Obs [style=invis, weight=10];
+  Obs     -> Admin [style=invis, weight=10];
+
+  // Control path
+  Backend -> EdgeHub [label="commands"];
+  EdgeHub -> Devices [label="actuate"];
+}

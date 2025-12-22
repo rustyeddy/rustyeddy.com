@@ -1,0 +1,19 @@
+digraph IoTArchitecture {
+  rankdir=TB;
+  graph [fontname="Inter", fontsize=10];
+  node  [shape=box, style="rounded", fontname="Inter"];
+  edge  [fontname="Inter"];
+
+  Devices [ label="Devices\n(Sensors & Actuators)" ];
+  EdgeHub [ label="Edge Hub\nAggregation / Translation" ];
+  Backend [ label="Backend / API\nIngest · Store · Auth" ];
+  UI [ label="Web / Mobile UI\nDashboards & Control" ];
+
+  Devices -> EdgeHub [label="telemetry"];
+  EdgeHub -> Backend [label="publish / forward"];
+
+  Backend -> EdgeHub [label="commands"];
+  EdgeHub -> Devices [label="actuation"];
+
+  Backend -> UI [label="APIs"];
+}

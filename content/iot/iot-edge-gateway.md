@@ -7,7 +7,7 @@ description: >
   App, REST API and Web sockets. This project is a Micro service
   written in Go, and is perfect for systems hackers, backend devs and
   full-stackers.
-git: https://github.com/sensorstation/otto
+git: https://github.com/rustyeddy/otto
 weight: 10
 ---
 

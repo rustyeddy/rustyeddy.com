@@ -1,4 +1,7 @@
-all: build
+DOTS := $(wildcard diagrams/*.dot)
+SVGS := $(patsubst diagrams/%.dot,static/diagrams/%.svg,$(DOTS))
+
+all: build $(SVGS)
 
 build:
 	hugo
@@ -15,3 +18,5 @@ prod: assets/scss/style.scss
 scss static/css/style.css: assets/scss/style.scss
 	scss assets/scss/style.scss:static/css/style.css
 
+static/diagrams/%.svg: diagrams/%.dot
+	dot -Tsvg $< -o $@

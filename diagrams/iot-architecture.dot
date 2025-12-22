@@ -1,0 +1,32 @@
+digraph IoTArchitecture {
+
+  rankdir=LR;
+
+  graph [fontname="Inter", fontsize=10];
+  node  [shape=box, style="rounded", fontname="Inter"];
+  edge  [fontname="Inter"];
+
+  Devices [
+    label="Devices"
+  ];
+
+  EdgeHub [
+    label="Edge Hub"
+  ];
+
+  Backend [
+    label="Backend"
+  ];
+
+  UI [
+    label="Web / Mobile UI"
+  ];
+
+  Devices -> EdgeHub [label="telemetry"];
+  EdgeHub -> Backend [label="publish / forward"];
+
+  Backend -> EdgeHub [label="commands"];
+  EdgeHub -> Devices [label="actuation"];
+
+  Backend -> UI [label="APIs"];
+}

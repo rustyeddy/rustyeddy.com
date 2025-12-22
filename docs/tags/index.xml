@@ -100,6 +100,13 @@
       <description></description>
     </item>
     <item>
+      <title>Architecture</title>
+      <link>http://localhost:1313/tags/architecture/</link>
+      <pubDate>Fri, 13 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/architecture/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Iot</title>
       <link>http://localhost:1313/tags/iot/</link>
       <pubDate>Fri, 13 Jan 2023 00:00:00 +0000</pubDate>
@@ -125,6 +132,13 @@
       <link>http://localhost:1313/tags/software-development-lifecycle-phases/</link>
       <pubDate>Fri, 13 Jan 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/software-development-lifecycle-phases/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Software-Architecture</title>
+      <link>http://localhost:1313/tags/software-architecture/</link>
+      <pubDate>Fri, 13 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/software-architecture/</guid>
       <description></description>
     </item>
     <item>

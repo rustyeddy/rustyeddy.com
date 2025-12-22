@@ -247,6 +247,13 @@
       <description></description>
     </item>
     <item>
+      <title>IoT System Architecture (Device to Cloud)</title>
+      <link>http://localhost:1313/iot/iot-system-architecture-device-to-cloud/</link>
+      <pubDate>Fri, 13 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/iot/iot-system-architecture-device-to-cloud/</guid>
+      <description>&lt;h1 id=&#34;iot-system-architecture-device-to-cloud&#34;&gt;IoT System Architecture (Device to Cloud)&lt;/h1&gt;&#xA;&lt;p&gt;This page provides a &lt;strong&gt;diagram-first overview&lt;/strong&gt; of the IoT architecture&#xA;used throughout the projects on this site.&lt;/p&gt;&#xA;&lt;p&gt;The goal is not to present a single “correct” design, but to show a&#xA;&lt;strong&gt;reasonable baseline architecture&lt;/strong&gt; that scales beyond demos and&#xA;remains flexible as requirements change.&lt;/p&gt;&#xA;&lt;p&gt;If you want implementation details, those are covered in linked&#xA;articles. This page focuses on &lt;em&gt;structure&lt;/em&gt;, &lt;em&gt;boundaries&lt;/em&gt;, and &lt;em&gt;tradeoffs&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;high-level-system-overview&#34;&gt;High-Level System Overview&lt;/h2&gt;&#xA;&lt;p&gt;At a high level, the system looks like this:&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>How to Build a Self Watering Garden</title>
       <link>http://localhost:1313/iot/self-watering-garden/</link>
       <pubDate>Wed, 25 May 2022 00:00:00 +0000</pubDate>

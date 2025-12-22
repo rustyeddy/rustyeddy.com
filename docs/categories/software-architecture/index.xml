@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Edge Computing on Rusty Eddy</title>
-    <link>http://localhost:1313/tags/edge-computing/</link>
-    <description>Recent content in Edge Computing on Rusty Eddy</description>
+    <title>Software Architecture on Rusty Eddy</title>
+    <link>http://localhost:1313/categories/software-architecture/</link>
+    <description>Recent content in Software Architecture on Rusty Eddy</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Nov 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/edge-computing/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>IoT System Architecture Explained: The 5 Essential Layers (and How Otto Supports Them)</title>
-      <link>http://localhost:1313/iot/iot-system-architecture-explained/</link>
-      <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/iot/iot-system-architecture-explained/</guid>
-      <description>A complete, SEO-optimized guide to IoT system architecture. Discover what every IoT product needs—from sensors and protocols to gateways, cloud control planes, and applications—and how Otto ties it all together.</description>
-    </item>
+    <lastBuildDate>Fri, 13 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/software-architecture/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>IoT System Architecture (Device to Cloud)</title>
       <link>http://localhost:1313/iot/iot-system-architecture-device-to-cloud/</link>

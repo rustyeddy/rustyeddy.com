@@ -167,10 +167,19 @@
     <loc>http://localhost:1313/notes/raspberry-pi-pico-setup/</loc>
     <lastmod>2024-02-13T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/architecture/</loc>
+    <lastmod>2023-01-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/iot/</loc>
     <lastmod>2023-01-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/iot/</loc>
+    <lastmod>2023-01-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/iot/</loc>
+    <lastmod>2023-01-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/iot/iot-system-architecture-device-to-cloud/</loc>
     <lastmod>2023-01-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/maker/</loc>
@@ -179,10 +188,16 @@
     <loc>http://localhost:1313/tags/sdlc/</loc>
     <lastmod>2023-01-13T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/categories/software-architecture/</loc>
+    <lastmod>2023-01-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/software/</loc>
     <lastmod>2023-01-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/software-development-lifecycle-phases/</loc>
+    <lastmod>2023-01-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/software-architecture/</loc>
     <lastmod>2023-01-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/iot/self-watering-garden/</loc>
