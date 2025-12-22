@@ -267,7 +267,7 @@ GOOS=linux GOARCH=arm64 go build -o otto-arm64
 scp otto-arm64 pi@raspberrypi.local:/usr/local/bin/
 ```
 
-You can deploy OttO to:
+OttO can be deployed with any of these options:
 
 - Raspberry Pi or BeagleBone
 - Linux gateways and routers
@@ -279,25 +279,20 @@ You can deploy OttO to:
 By combining Go’s generics, interfaces, and goroutines, we’ve built a
 foundation that scales from one sensor to an entire IoT network.
 
-The RustyEddy ecosystem now includes:
+The ecosystem now includes:
 
 _Devices_: Reusable drivers and interfaces
-
 _OttO_: The orchestrator and runtime manager
-
-Future modules: NavGo, OttoEdge, GardenStation, and beyond
+_GardenStation_: The automated watering station.
 
 If you’re looking for a clean, composable way to manage embedded
 systems or smart devices — Go gives you type safety, concurrency, and
 simplicity out of the box.
 
-🔗 References
+## References
 
-[OttO GitHub Repository](https://github.com/rustyeddy/otto)
-[Devices GitHub Repository](https://github.com/rustyeddy/devices)
-[RustyEddy.com](https://RustyEddy.com)
-
-> Rusty Eddy builds open software for embedded systems and IoT. Follow
-> along at RustyEddy.com or on GitHub @rustyeddy .
+- [OttO GitHub Repository](https://github.com/rustyeddy/otto)
+- [Devices GitHub Repository](https://github.com/rustyeddy/devices)
+- [RustyEddy.com](https://RustyEddy.com)
 
 
