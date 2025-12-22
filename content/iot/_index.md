@@ -1,89 +1,119 @@
 ---
-title: Internet Of Things
+title: Internet of Things (IoT)
 description: >
-  Building DIY electronic projects is a lot of fun. You no longer need
-  to be a rocket scientest nor a millionaire to build some really cool
-  IoT style of projects. Here we will build some cool projects, but
-  unlike some other cool projects we find on websites and Youtube
-  channels we will focus mostly on the software side of IoT
-  development, by way of a tool called OttO that allows use to take
-  our projects sophistication to a whole new level with communication,
-  cloud technology and intuitive user interfaces to make our projects
-  really cool. Continue reading below to find out more.
-tags: [ iot, maker ]
+  A software-first approach to building IoT systems. This site focuses on
+  real-world architecture, APIs, messaging, and embedded-to-cloud
+  integration—not just hardware hacks.
+tags: [iot, maker, software-architecture]
 date: 2023-01-13
 ---
 
 ## Overview
 
-The purpose of the project is two fold, first to build a cool IoT
-project or two, second to demostrate solid _Software Engineering
-Principals_ and the practice of employing a professional _[Software
-Development Life Cycle (SDLC)](../software)_.
+Building DIY electronic projects is fun—and more accessible than ever.
+You no longer need to be a rocket scientist or a millionaire to build
+useful IoT systems.
 
-Why IoT? Aside from the fact that I really enjoy IoT and have an IoT
-background. IoT employs a lot of interesting and diverse elements of
-software development.
+What *is* still rare is content that treats IoT as a **serious software
+engineering problem** rather than a collection of disconnected hardware
+demos.
 
->IoT software projects are a combination of _Full Stack_ and
->_Embedded_ software development.
+That’s the focus here.
 
-### Diversity of Technology
+This site documents the design and implementation of IoT projects with
+an emphasis on **software architecture**, **system integration**, and
+sound **engineering practices**. The goal is not just to make devices
+work, but to build systems that scale, evolve, and remain maintainable.
 
-We will look at some embedded software development by writting code
-that runs on tiny realtime systems (esp32, raspberry Pi pico) using
-_C++_ and _python_, we will look at hubs and integration with a
-Raspberry Pi and the _Go_ programming language. Web interfaces and
-Mobile Apps with _JavaScript_ and _React_.
+## Why IoT?
 
-### Building Extensible Systems with APIs
+IoT projects sit at the intersection of multiple disciplines:
 
-We will also be building public REST API's and use MQTT for a
-Publish/Subscribe (Pub/Sub) messaging system. We will also look at the
-aspects of out a cloud based backend giving us access to our project
-from anywhere in the world that can access the Internet.
+> IoT software combines embedded systems, backend services, APIs,
+> messaging, and user-facing applications.
 
-From a techinical perspetive all of these items are part of IoT and
-quite interesting in that they use a wide array of techical elements,
-require these disparate elements to be successfully integrated
-together and maintained like any complex software system.
+Few domains force you to think simultaneously about:
+- Resource-constrained devices
+- Unreliable networks
+- Distributed systems
+- Real-time data
+- Long-lived software in the field
 
-Also, they require a significant co-ordinated effort among various
-players: users, software developers, electrical engineers, mechanical
-designs, all sorts of technitions and various other stake-holders. 
+That makes IoT an excellent proving ground for professional software
+engineering principles.
 
-During this process I'll focus on the software that I am most familiar
-with and and explain sound software development practices as the
-project unfolds. At the same time I'll be learning quite a bit about
-hardware as well as improving my software skills.
+## Diversity of Technology
+
+These projects intentionally span a wide range of technologies:
+
+- **Embedded devices**  
+  Code running on small, real-time systems such as ESP32s and Raspberry
+  Pi Pico devices, using C++, Python and my favorite Go.
+
+- **Edge and hub systems**  
+  Device aggregation and integration using Raspberry Pi and Go.
+
+- **User interfaces**  
+  Web and mobile interfaces built with JavaScript and React.
+
+The emphasis is not on mastering every tool, but on understanding how
+these pieces fit together into a coherent system.
+
+## Building Extensible Systems with APIs
+
+A recurring theme throughout these projects is **extensibility**.
+
+We build:
+- Public REST APIs
+- MQTT-based publish/subscribe messaging
+- Cloud-backed services accessible from anywhere
+
+From a technical perspective, IoT systems are interesting precisely
+because they require many disparate components to work together
+reliably over time.
+
+They also demand coordination between:
+- Users
+- Software developers
+- Electrical and mechanical designers
+- Operators and maintainers
+
+This is not accidental complexity—it’s the nature of real IoT systems.
 
 ## Project Overview
 
-The basic Idea of this project will be to develop software to observe
-and control a physical device from a remote UI, that is we will build
-a little weather station that collects temperature and humidity from a
-simple device and display it on a web interface viewable from
-anywhere, even a phone.
+The initial project focuses on a simple but representative system:
 
-After that we will add a relay (switch) capable of turning lights on
-and off from our user interface. This basic project will lay the
-foundation to build other IoT projects should we want to.
+- A physical device that collects temperature and humidity data
+- A backend service that processes and stores that data
+- A web interface that displays live readings from anywhere
+- A relay-controlled switch to remotely control a physical device
 
-## The Architecture
+This foundation is intentionally generic so it can be extended into
+other IoT projects without rewriting the system from scratch.
 
-We will do this in a very open and inter-changeable manner. For
-example, though we may choose say a Raspberry Pi to collect
-temperature and humidity, also to control the relay we will build this
-project such that it is very easy to integrate a totaly different
-device using the same user interface and backend.
+## Architecture
 
-That is we'll create API's and use messaging to create a _loosely
-coupled_ infrastructure such that anybody that wanted to could add to
-this system say an Arduino or ESP32, could do so just by developing
-toward the same API's and messaging system.
+The system is designed to be **loosely coupled** and interchangeable.
 
-## Next 
+While an initial implementation might use a Raspberry Pi or ESP32, the
+architecture allows entirely different devices to be integrated by
+conforming to the same APIs and messaging contracts.
 
-Below are links to various articles that describe the project in quite
-a bit more detail.
+This approach:
+- Reduces vendor lock-in
+- Encourages experimentation
+- Makes systems easier to extend and maintain
+
+The goal is not just to build *a* device, but to build a platform that
+can grow.
+
+## What Comes Next
+
+Below you’ll find articles that dive deeper into specific parts of the
+system—architecture decisions, messaging patterns, device abstractions,
+and operational considerations.
+
+Each article focuses on *why* a design choice was made, not just *how*
+it was implemented.
 
