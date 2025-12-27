@@ -1,4 +1,11 @@
 ---
 tech:
   networking:
-    - [Ethernet Wiring](https://www.practicalnetworking.net/stand-alone/ethernet-wiring)
+    - url: [Ethernet Wiring](https://www.practicalnetworking.net/stand-alone/ethernet-wiring)
+      comment: Concise guide on network wiring
+  go:
+    - url: [The Go Programming Language](http://golang.org)
+      comment: The original Go site
+    - url: [Learn Go through tests](https://quii.gitbook.io/learn-go-with-tests)
+      comment: An excellent gitbook that not only teaches Go but using Test Driven Design (TDD)
+      
