@@ -1,39 +1,51 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    {{- partial "head-cheese.html" . -}}
-  </head>
-  <body>
-    {{- partial "header.html" . -}}
-
-    {{- partial "blog-header.html" . -}}
-
-    <div id="main body container">
-      <div class="row">
-        <div class="col-6">
-	  <div class="text-center mt-5">
-	    <a href="iot">IoT</a>
-	  </div>
-        </div>
-	<div class="col-6">
-	  <div class="text-center mt-5">
-	    <a href="software">Software</a>
-	  </div>
-	</div>
-	<div class="col-6">
-	  <div class="text-center mt-5">
-	    <a href="garden-station">Garden Station</a>
-	  </div>
-	</div>
-	<div class="col-6">
-	  <div class="text-center mt-5">
-	    <a href="redeye">Redeye</a>
-	  </div>
-	</div>
-	
+{{ define "main" }}
+<div class="container py-4">
+  <div class="row">
+    <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 lead">
+      {{ .Content }}
     </div>
+  </div>
+</div>
 
-    {{- partial "footer.html" . -}}
+<div class="container py-4">
+  <div class="row gx-4 gy-3">
+    <div class="col-md-4">
+      <a href="/projects/" class="card h-100 p-4 text-decoration-none text-dark text-center">
+        <h2 class="h4 mb-2">Projects</h2>
+        <p class="text-muted mb-0">OttO, RedEye, and the systems I build.</p>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="/iot/" class="card h-100 p-4 text-decoration-none text-dark text-center">
+        <h2 class="h4 mb-2">Writing</h2>
+        <p class="text-muted mb-0">Essays on IoT architecture and software engineering.</p>
+      </a>
+    </div>
+    <div class="col-md-4">
+      <a href="/resume/" class="card h-100 p-4 text-decoration-none text-dark text-center">
+        <h2 class="h4 mb-2">About &amp; Resume</h2>
+        <p class="text-muted mb-0">Background, work history, and how to reach me.</p>
+      </a>
+    </div>
+  </div>
+</div>
 
-  </body>
-</html>
+<div class="container py-4">
+  <div class="row">
+    <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+      <h2 class="h4 mb-3">Recent writing</h2>
+      <ul class="list-unstyled">
+        {{ $sections := slice "iot" "software" "notes" }}
+        {{ $recent := where site.RegularPages "Section" "in" $sections }}
+        {{ range first 6 (sort $recent "Date" "desc") }}
+          <li class="mb-2 d-flex flex-wrap align-items-baseline">
+            <a href="{{ .RelPermalink }}" class="me-2">{{ .Title }}</a>
+            <span class="text-muted small me-2">/{{ .Section }}/</span>
+            <span class="text-muted small">{{ .Date.Format "2006-01-02" }}</span>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</div>
+{{ end }}
