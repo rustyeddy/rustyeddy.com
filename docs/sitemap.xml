@@ -8,12 +8,11 @@
     <loc>http://localhost:1313/software/software-is-hard/</loc>
     <lastmod>2021-06-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/software/agile-software-development/</loc>
-    <lastmod>2018-10-02T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/software/use-cases/</loc>
+    <lastmod>2024-09-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/software/use-cases-to-tasks/</loc>
+    <lastmod>2024-12-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/iot/iot-sensor-station/</loc>
     <lastmod>2022-01-13T00:00:00+00:00</lastmod>
@@ -28,9 +27,6 @@
     <lastmod>2021-04-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/software/peer-review/</loc>
-    <lastmod>2020-02-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/software/data-models/</loc>
     <lastmod>2020-02-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/software/wireframes-and-storyboards/</loc>
@@ -224,9 +220,6 @@
     <loc>http://localhost:1313/tags/mqtt/</loc>
     <lastmod>2022-03-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sailing/</loc>
-    <lastmod>2021-09-25T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/notes/private-wifi-network-webapp/</loc>
     <lastmod>2021-07-22T00:00:00+00:00</lastmod>
   </url><url>
@@ -404,26 +397,11 @@
     <loc>http://localhost:1313/tags/touch-screen/</loc>
     <lastmod>2019-04-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/picamera/</loc>
-    <lastmod>2019-04-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/notes/drafts/raspberry-pi-camera-multiple-ports/</loc>
-    <lastmod>2019-04-21T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/tlv/</loc>
     <lastmod>2019-04-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/tlv-and-realitime-communication/</loc>
     <lastmod>2019-04-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/nrf240l1/</loc>
-    <lastmod>2019-03-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/spi/</loc>
-    <lastmod>2019-03-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/notes/drafts/nrf24l01/</loc>
-    <lastmod>2019-03-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/sync-async/</loc>
     <lastmod>2024-01-11T00:00:00+00:00</lastmod>
@@ -461,10 +439,10 @@
     <loc>http://localhost:1313/notes/control-design/</loc>
     <lastmod>2018-05-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/drafts/rpi-v-arduino/</loc>
+    <loc>http://localhost:1313/notes/rpi-v-arduino/</loc>
     <lastmod>2018-03-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/notes/drafts/ip-multicast/</loc>
+    <loc>http://localhost:1313/notes/ip-multicast/</loc>
     <lastmod>2018-02-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/notes/</loc>

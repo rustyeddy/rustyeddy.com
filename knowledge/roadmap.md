@@ -1,24 +1,60 @@
 # RustyEddy.com Content Roadmap
 
-Tracks the intended site structure, what exists today, and what still
-needs to be written. Replaces the older `sitemap.yml`, which described
-a structure that didn't match the actual content tree.
-
-Audience: engineering peers and hiring managers. Voice and structure
-follow `knowledge/styleguide.md`.
+Tracks intended site structure, what exists today, and what still
+needs to be written. Audience: engineering peers and hiring managers.
+Voice and structure follow `knowledge/styleguide.md`.
 
 ---
 
-## Home
+## Current focus (in order)
 
-- [x] `content/_index.md` — short hero copy exists but is **not currently
-      rendered** by `layouts/index.html`. The homepage layout is a
-      hardcoded 4-cell grid and needs to be rewritten to surface the
-      hero, recent posts, and flagship projects.
+1. **`/software` section** — content refresh and gap-fill across the
+   existing software pillars. Scope to be defined when work starts;
+   likely a mix of voice/consistency editing on the existing 12
+   articles, filling the SDLC gap, and tightening
+   `software/_index.md`.
+2. **Trader** ([github.com/rustyeddy/trader](https://github.com/rustyeddy/trader))
+   — write up the trader project for the site. Structure (a single
+   `/projects/trader/` showcase, supporting essays in `/software/`,
+   or both) to be decided when we start.
+3. **OttO flagship project page** — `/projects/otto/`, sourced from
+   `content/iot/iot-system-architecture-otto.md`,
+   `content/iot/self-watering-garden.md`, and
+   `content/iot/building-iot-device-manager-in-go.md`.
 
-## /iot — IoT Pillar
+## Working rule for formatting / systematic issues
+
+When a systematic formatting or consistency issue surfaces during
+focused work above, it gets a decision in the moment:
+
+- **Fix now** if it's small, mechanical, and won't derail the current
+  focus, **or**
+- **Add to the TODO list below** for a later dedicated pass.
+
+This keeps focused work from sprawling, but also keeps issues from
+being lost.
+
+## TODO (deferred items)
+
+- [ ] Unified tag/category scheme across articles. Front-matter is
+      currently inconsistent — most articles only have
+      `title`/`date`/`description` even though
+      `knowledge/front-matter-templ.md` prescribes `tags`,
+      `categories`, and `slug`. Resolve when we have a clear taxonomy.
+
+---
+
+## Site sections — current state
+
+### Home
+
+- [x] Hero copy in `content/_index.md`
+- [x] `layouts/index.html` rewritten: hero + three cards + recent posts
+
+### `/iot` — IoT Pillar
 
 Existing pillar essays:
+
 - [x] Building an IoT Device Manager in Go
 - [x] IoT System Architecture: OttO
 - [x] IoT System Architecture: Device to Cloud
@@ -28,17 +64,16 @@ Existing pillar essays:
 - [x] IoT Sensor Station
 - [x] Self-Watering Garden
 
-Originally planned but not written (from the old sitemap):
-- [ ] OttO the IoT Edge Device — narrative-led overview of the full
-      OttO system. Likely belongs under `/projects/otto/` rather than
-      `/iot/`. See "Projects" below.
+Originally planned but not written:
+
 - [ ] IoT Station — Embedded Thing
 - [ ] IoT GUI — Modern Web Technologies
 - [ ] IoT Cloud — Secure Global Access
 
-## /software — Software Engineering Pillar
+### `/software` — Software Engineering Pillar
 
 Existing pillar essays:
+
 - [x] Kanban
 - [x] Version Control Systems
 - [x] Test-Driven Software Development
@@ -53,38 +88,25 @@ Existing pillar essays:
 - [x] Wireframes and Storyboards
 
 Planned but not written:
+
 - [ ] The Software Development Lifecycle (SDLC) — currently absorbed
       into `software/_index.md`; could split into a dedicated pillar.
 
-## /projects — Showcase
-
-Audience choice (engineering peers / hiring managers) calls for the
-projects page to act as a portfolio. Flagship lineup:
+### `/projects` — Showcase
 
 - [x] RedEye — `content/projects/redeye/`
 - [x] This Website — `content/projects/this-website/`
-- [ ] **OttO** — flagship, not yet created. Sources to draw from:
-      `content/iot/iot-system-architecture-otto.md`,
-      `content/iot/self-watering-garden.md`,
-      `content/iot/building-iot-device-manager-in-go.md`.
+- [ ] **Trader** — see Current Focus #2
+- [ ] **OttO** — see Current Focus #3
 
-## /resume + /about
+### `/resume` + `/about`
 
-- [x] Resume detail (`content/resume/`) — populated with jobs, clients,
-      education, skills, summary, publications.
-- [x] About bio (`content/about/_index.md`).
+- [x] Resume detail (`content/resume/`)
+- [x] About bio (`content/about/_index.md`)
 
-Pending polish:
-- [ ] Soften `content/_index.md` description that calls the resume
-      "reasonably outdated".
+### Site chrome / infrastructure
 
-## Site Chrome / Infrastructure
-
-- [ ] Rewrite `layouts/index.html` to render the home hero and offer a
-      clear "hire me / read my work" split.
-- [ ] Fix footer copyright (`© 2008 to 2024` → current year).
-- [ ] Fix `claa="h1"` typo in `layouts/partials/header.html`.
-- [ ] Drop the duplicate/legacy UA Google Analytics tag in
-      `layouts/partials/footer.html`; keep only the GA4 tag.
-- [ ] Decide on a tag/category scheme and front-matter consistency
-      pass (currently inconsistent across articles).
+- [x] Homepage rewritten
+- [x] Footer copyright now dynamic (`{{ now.Year }}`)
+- [x] Header `claa="h1"` typo fixed
+- [x] Legacy UA Google Analytics tag removed; GA4 only

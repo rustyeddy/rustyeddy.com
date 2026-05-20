@@ -23,23 +23,16 @@
       <description>&lt;h2 id=&#34;why-is-software-so-difficult&#34;&gt;Why Is Software So Difficult?&lt;/h2&gt;&#xA;&lt;p&gt;Software development projects are one of the most notoriously&#xA;mis-understood and incorrectly managed of all the &lt;em&gt;common&lt;/em&gt; processes&#xA;used throughout the business world.&lt;/p&gt;&#xA;&lt;p&gt;There are a number of reasons for software projects being classified&#xA;as a disastor so often. Software often is solving a complex problem&#xA;that unfortunately can&amp;rsquo;t be seen.&lt;/p&gt;&#xA;&lt;p&gt;Perhaps the worst problem with software projects are the diverging&#xA;expectations between developers and users.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Agile Software Development</title>
-      <link>http://localhost:1313/software/agile-software-development/</link>
-      <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/software/agile-software-development/</guid>
-      <description>&lt;hr/&gt;&#xA;&lt;h2&gt;&lt;center&gt;Content Being Drafted&lt;/center&gt;&lt;/h2&gt;&#xA;&lt;hr/&gt;</description>
-    </item>
-    <item>
       <title>Use Cases</title>
       <link>http://localhost:1313/software/use-cases/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 27 Sep 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/software/use-cases/</guid>
       <description>&lt;h2 id=&#34;why-use-cases&#34;&gt;Why Use-Cases?&lt;/h2&gt;&#xA;&lt;p&gt;This post is going to talk about how we will use normal conversations&#xA;with the users of a software project we are about develop to lay the&#xA;foundation for the entire software development project.&lt;/p&gt;&#xA;&lt;p&gt;These conversations are going to be in story form and we&amp;rsquo;ll call them&#xA;&lt;em&gt;use cases&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;customer-discovery&#34;&gt;Customer Discovery&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Customer Discovery&lt;/em&gt; consists of one or more sessions with all the&#xA;people (stakeholders) of the software (we&amp;rsquo;ll call them users) and get&#xA;them to tell us stories about how the are going use the software.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Use Cases to Tasks</title>
       <link>http://localhost:1313/software/use-cases-to-tasks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/software/use-cases-to-tasks/</guid>
       <description>&lt;h2 id=&#34;recap-from-use-cases&#34;&gt;Recap from Use-Cases&lt;/h2&gt;&#xA;&lt;p&gt;In our previous article &lt;a href=&#34;http://localhost:1313/software/use-cases&#34;&gt;use-cases&lt;/a&gt; we started&#xA;deriving &lt;em&gt;Kelly&amp;rsquo;s Automatic Gardener&lt;/em&gt; into the first use-case&lt;/p&gt;&#xA;&lt;h3 id=&#34;use-case&#34;&gt;Use Case&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Use-case 1: As a gardener I want my sprinkler system to peridoically&#xA;measure the moisture level of soil and turn on a water pump when the&#xA;soil is dry, then turn it off when it gets too wet.&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;This use-case can then be &lt;em&gt;sliced&lt;/em&gt; into a couple more use cases. The&#xA;additional use-cases can also be broke out to include:&lt;/p&gt;</description>
     </item>
@@ -77,13 +70,6 @@
       <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/software/peer-review/</guid>
       <description>&lt;p&gt;A &lt;em&gt;Peer Review&lt;/em&gt; is the process of &lt;em&gt;one or more peers&lt;/em&gt; knowledgable&#xA;about your code who can examine and scrutinize every line.  This is a painful&#xA;process, but so necessary.&lt;/p&gt;&#xA;&lt;h2 id=&#34;peer-reviews-are-painful-but-worth-it&#34;&gt;Peer Reviews Are Painful but Worth IT!&lt;/h2&gt;&#xA;&lt;p&gt;For the programmer, that means having your work criticized by other&#xA;people. Maybe even people that &lt;em&gt;think&lt;/em&gt; they are smarter than you, but are&#xA;not.&lt;/p&gt;&#xA;&lt;p&gt;Reviewers, typically don&amp;rsquo;t like (or at least don&amp;rsquo;t &lt;em&gt;love&lt;/em&gt;) reviewing other peoples&#xA;code. It is a lot of extra work. It&amp;rsquo;s hard and takes time.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Data Models</title>
-      <link>http://localhost:1313/software/data-models/</link>
-      <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/software/data-models/</guid>
-      <description>&lt;hr/&gt;&#xA;&lt;h2&gt;&lt;center&gt;Content Being Drafted&lt;/center&gt;&lt;/h2&gt;&#xA;&lt;hr/&gt;</description>
     </item>
     <item>
       <title>Wireframes and Storyboards</title>
@@ -436,25 +422,11 @@
       <description>&lt;p&gt;We are going to build a simple control station that begins with a&#xA;Raspberry Pi and connected &lt;em&gt;7 inch touchscreen tablet&lt;/em&gt;.  I have it&#xA;setup in &amp;ldquo;kiosk mode&amp;rdquo;, which is basically full page chrome without the&#xA;tabs and tool bars etc.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Raspberry Pi Camera and Multiple Ports</title>
-      <link>http://localhost:1313/notes/drafts/raspberry-pi-camera-multiple-ports/</link>
-      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/drafts/raspberry-pi-camera-multiple-ports/</guid>
-      <description>&lt;p&gt;As I started bumbling around trying to figure the best way to stream&#xA;[live video from a moving vehicle], I found that the Raspberry Pi&#xA;camera is capable of producing filtered versions of the images it is&#xA;producing, through &lt;em&gt;video ports&lt;/em&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>TLV the Type Length Vector Protocol</title>
       <link>http://localhost:1313/notes/tlv-and-realitime-communication/</link>
       <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/notes/tlv-and-realitime-communication/</guid>
       <description>&lt;p&gt;TLV is a very simple communication protocol that can be used to send&#xA;messages around a complex, distributed system.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The NRF240L1 RF Transceiver</title>
-      <link>http://localhost:1313/notes/drafts/nrf24l01/</link>
-      <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/drafts/nrf24l01/</guid>
-      <description>&lt;p&gt;This RC reciever chip is very easy to use out of the box, yet provides&#xA;some very sophisticated capabilities.  The first project We&amp;rsquo;ll start&#xA;using this chip will be a remote control Joystick for our mobile&#xA;robot.&lt;/p&gt;&#xA;&lt;h2 id=&#34;todos&#34;&gt;Todos:&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;point to the datasheet&lt;/li&gt;&#xA;&lt;li&gt;load personal photos of my project with NRF20L&#xA;&lt;ul&gt;&#xA;&lt;li&gt;pull the image from evernote&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;fritz a diagram&lt;/li&gt;&#xA;&lt;li&gt;post code that I use and or wrote&lt;/li&gt;&#xA;&lt;li&gt;Try to do an eagle cad&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;source-voltage&#34;&gt;Source Voltage&lt;/h2&gt;&#xA;&lt;p&gt;According to &lt;a href=&#34;https://medium.com/@benjamindavidfraser/arduino-nrf24l01-communications-947e1acb33fb&#34;&gt;Benjamin David&#xA;Fraser&lt;/a&gt;&#xA;Plugging the NRF24L02 directly into the Arduino 3.3v power supply pin,&#xA;will produce unregulated power, which will eventually lead to flaky or&#xA;failed communications.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sync vs. Async, Blocking vs. Non-blocking</title>
@@ -500,16 +472,16 @@
     </item>
     <item>
       <title>Comparing the Arduino and Raspberry Pi</title>
-      <link>http://localhost:1313/notes/drafts/rpi-v-arduino/</link>
+      <link>http://localhost:1313/notes/rpi-v-arduino/</link>
       <pubDate>Wed, 14 Mar 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/drafts/rpi-v-arduino/</guid>
+      <guid>http://localhost:1313/notes/rpi-v-arduino/</guid>
       <description>&lt;h3 id=&#34;arduino-vs-raspberry-pi-in-control-systems&#34;&gt;Arduino vs. Raspberry Pi in Control Systems&lt;/h3&gt;&#xA;&lt;p&gt;I believe the Arudino has better hardware support, a real-time clock&#xA;and due to itself simplicity creates a better platform to interact&#xA;with external hardware in real-time.&lt;/p&gt;&#xA;&lt;p&gt;The Raspberry Pi, however has a much more powerful set of processors,&#xA;more memory and a general purpose operating system making it a more&#xA;suitable choice for general purpose, sophisticated software, such as&#xA;communicaitons and control software.&lt;/p&gt;</description>
     </item>
     <item>
       <title>IP Multicast the basics</title>
-      <link>http://localhost:1313/notes/drafts/ip-multicast/</link>
+      <link>http://localhost:1313/notes/ip-multicast/</link>
       <pubDate>Sat, 03 Feb 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/notes/drafts/ip-multicast/</guid>
+      <guid>http://localhost:1313/notes/ip-multicast/</guid>
       <description>&lt;h2 id=&#34;ip-multicast-addresses&#34;&gt;IP Multicast addresses&lt;/h2&gt;&#xA;&lt;p&gt;The typical IP addresses used by computers networking today are known&#xA;as &lt;em&gt;unicast addresses&lt;/em&gt;, meaning that every unicast address as a single&#xA;(physical or logical) end point.&lt;/p&gt;&#xA;&lt;p&gt;Most all computer networking is &lt;em&gt;point to point&lt;/em&gt; between two specific&#xA;IP addresses, you name it: web browsing, email exchange, transfer&#xA;files and so much more.&lt;/p&gt;&#xA;&lt;p&gt;However, there are other more specific forms on communication&#xA;available and occasionally used: Broadcast and Multicast.&lt;/p&gt;</description>
     </item>
   </channel>
