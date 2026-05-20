@@ -1,5 +1,6 @@
 ---
 title: Use Cases
+date: 2024-09-27
 description: >
   A use case is all the ways of using a system to achieve a particular
   goal for a particular user that can be measured or observed in a

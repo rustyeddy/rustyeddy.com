@@ -80,9 +80,8 @@ design around:
 This allows devices to be added, replaced, or simulated without
 rewriting the entire system.
 
-If you’re interested in this approach, see:
-- [IoT Device Management](/iot/iot-device-management/)
-- [Building an IoT Device Manager in Go](/iot/building-iot-device-manager-in-go/)
+If you’re interested in this approach, see
+[Building an IoT Device Manager in Go](/iot/building-iot-device-manager-in-go/).
 
 From a technical perspective, IoT systems are interesting precisely
 because they require many disparate components to work together
@@ -108,9 +107,6 @@ The system is designed to be **loosely coupled** and interchangeable.
 While an initial implementation might use a Raspberry Pi or ESP32, the
 architecture allows entirely different devices to be integrated by
 conforming to the same APIs and messaging contracts.
-
-This approach is explored in more detail here:
-- [Edge Device Architecture](/iot/edge-device-architecture/)
 
 Designing for loose coupling:
 - Reduces vendor lock-in
@@ -140,13 +136,16 @@ The articles below expand on specific aspects of the system and are
 intended to be read independently or as part of a larger whole.
 
 ### Architecture & System Design
-- [Edge Device Architecture](/iot/edge-device-architecture/)
-- [IoT Device Management](/iot/iot-device-management/)
 - [Building an IoT Device Manager in Go](/iot/building-iot-device-manager-in-go/)
+- [IoT System Architecture: OttO](/iot/iot-system-architecture-otto/)
+- [IoT System Architecture: Device to Cloud](/iot/iot-system-architecture-device-to-cloud/)
+- [IoT Edge Gateway](/iot/iot-edge-gateway/)
 
-### Software Engineering Foundations
-- [System Design Principles](/software/system-design-principles/)
-- [SDLC for Small Teams](/software/sdlc-for-small-teams/)
+### Implementation Notes
+- [IoT Gateway: MQTT](/iot/iot-gateway-mqtt/)
+- [IoT Gateway: REST](/iot/iot-gateway-rest/)
+- [IoT Sensor Station](/iot/iot-sensor-station/)
+- [Self-Watering Garden](/iot/self-watering-garden/)
 
 Each article focuses on *why* a design choice was made, not just *how*
 it was implemented.
