@@ -4,35 +4,23 @@ Working notes for Claude (and humans) on rustyeddy.com.
 
 ## What this is
 
-Hugo static site → published to `docs/` → served by GitHub Pages with
-the `rustyeddy.com` CNAME. Bootstrap 5 (via CDN) plus custom SCSS in
-`assets/scss/`. Diagrams are Graphviz `.dot` files in `diagrams/`
-compiled to SVGs under `static/diagrams/` by the Makefile.
+Hugo static site. GitHub Actions builds and deploys to GitHub Pages
+on every push to `master`. The `rustyeddy.com` CNAME is in
+`static/CNAME` (Hugo copies it to the build output automatically).
+Bootstrap 5 (via CDN) plus custom SCSS in `assets/scss/`. Diagrams
+are Graphviz `.dot` files in `diagrams/` compiled to SVGs under
+`static/diagrams/` by the Makefile.
 
 ## Build & dev
 
-- `make` — full production build into `docs/`, plus regenerates SVGs
-  from the `.dot` files
 - `make serve` — `hugo serve` on `0.0.0.0:1313`, no cache, watch
 - `make drafts` — same but also renders pages with `draft: true`
-- `make prod` — `hugo serve` with `--renderToDisk`
+- `make` — local build into `docs/` (gitignored). Use to preview a
+  production build; don't commit `docs/`.
 
-The `docs/` directory is the publish target (`publishDir: docs` in
-`config.yml`). Don't hand-edit it.
-
-### Commit hygiene with docs/
-
-`docs/` is tracked in git (GitHub Pages serves directly from it). It
-can fall out of sync with source between Hugo builds, so:
-
-- **Don't** use `git add -A` for source-only commits. Stage source
-  paths explicitly (`git add content/ layouts/ knowledge/` etc.) so
-  stale docs/ deltas aren't accidentally captured.
-- After a batch of source changes, run `make` and commit the
-  regenerated docs/ as a **separate** "Rebuild docs/" commit. This
-  keeps source intent and build output reviewable independently.
-- Don't commit `docs/` and source changes that don't match —
-  partial syncs produce a non-deployable site.
+Deployment is fully automated: push source to `master` → Actions
+runs `.github/workflows/hugo.yml` → Pages deploys. You never need
+to build or commit `docs/` manually.
 
 ## Audience and voice
 
