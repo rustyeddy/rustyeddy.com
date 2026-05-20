@@ -41,6 +41,11 @@ being lost.
       `title`/`date`/`description` even though
       `knowledge/front-matter-templ.md` prescribes `tags`,
       `categories`, and `slug`. Resolve when we have a clear taxonomy.
+- [ ] Replace the deprecated `gist` shortcode (deprecated in Hugo
+      v0.143.0). Used in `iot/iot-gateway-mqtt.md`,
+      `notes/go-configuration.md`, and `projects/redeye/_index.md`.
+      See [Hugo docs](https://gohugo.io/shortcodes/gist) for the
+      replacement pattern.
 
 ---
 
