@@ -20,6 +20,20 @@ compiled to SVGs under `static/diagrams/` by the Makefile.
 The `docs/` directory is the publish target (`publishDir: docs` in
 `config.yml`). Don't hand-edit it.
 
+### Commit hygiene with docs/
+
+`docs/` is tracked in git (GitHub Pages serves directly from it). It
+can fall out of sync with source between Hugo builds, so:
+
+- **Don't** use `git add -A` for source-only commits. Stage source
+  paths explicitly (`git add content/ layouts/ knowledge/` etc.) so
+  stale docs/ deltas aren't accidentally captured.
+- After a batch of source changes, run `make` and commit the
+  regenerated docs/ as a **separate** "Rebuild docs/" commit. This
+  keeps source intent and build output reviewable independently.
+- Don't commit `docs/` and source changes that don't match —
+  partial syncs produce a non-deployable site.
+
 ## Audience and voice
 
 The site is written for **engineering peers and hiring managers**.
