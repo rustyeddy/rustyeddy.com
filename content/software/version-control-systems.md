@@ -67,11 +67,7 @@ to pay a nominal fee to unlock all of githubs features.
 For our purposes, everything we need is free, so don't pull out your
 wallet! 
 
-## Enough Theory?
-
-OK, next we are going to roll up our sleeves and "_git busy_".
-
----
+## Beyond the Basics
 
 When a software developer or developers(s) leave a project without the
 use of process or version control, it is a crap shoot as to the
@@ -111,8 +107,6 @@ Now it is time for the developer to _commit_ the changes she has been
 working on, tested and pushed through the peer reviews. This step is
 pretty simple, however, we want to make sure we are doing it
 correctly.
-
-> Todo example commit
 
 When the code is merged into the **main** or **master** repository,
 just like commitments, it will be accompanied by the log comments

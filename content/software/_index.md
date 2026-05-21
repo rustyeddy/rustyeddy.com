@@ -470,11 +470,4 @@ world practical discussions about each of these phases.
 > articles are complete and all will be updated regularly as this
 > rapidly changing world of software development evolvses.
 
-Finally, if you are interested Join my GAURANTEED NO SPAM email list
-if you are interested when more content drops and a short course on
-setting up a software development infrastructure for small businesses
-outsource developers.
-
-Thanks for sticking around and See Ya!
-
 ---

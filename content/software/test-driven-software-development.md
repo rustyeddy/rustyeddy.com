@@ -3,7 +3,7 @@ title: Test Driven Software Development
 date: 2021-04-04
 weight: 40
 description: >
-  If we do not testi our software we will force our users to
+  If we do not test our software we will force our users to
   be our testers, read this article to find out why that is a very bad
   idea and how many advantages we will realize by planning our tests
   from the beginning
@@ -47,8 +47,6 @@ level or two.
 
 Once you have done the hard brain work and exposed the applications,
 **true requirements** implementing the test becomes striaght forward.
-
-> TODO Reference to TDD
 
 Testing movements can be taken too far, for example spending a lot of
 time writing tests that are effectively worthless just for the sake of

@@ -142,11 +142,15 @@ software project increase significantly.
 
 ## Best Practices
 
-Let start this journey and figure out how to _manage predictable
-software projects_. Whatever the application, technology and
-industry is, we can be sure
+Whatever the application, technology, or industry, one thing holds:
 
 > Communication is the foundation of predictability and success.
 
-So, where to start ?
+The practices covered in this section — use cases, version control,
+kanban, test-driven development, peer review, and release process —
+are all, at their core, communication tools. They create shared
+understanding, make progress visible, and catch divergence before it
+becomes expensive.
+
+That is where we start.
 

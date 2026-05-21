@@ -27,12 +27,8 @@ work progresses.
 
 ## Good Kanban Reference
 
-My goal is NOT to describe Kanban itself. Instead, here is a good video
-if you are not already familiar with it.
-
-> TODO add a good reference video to how Kanban works
-
-The important things to take-a-way from the idea of Kanban is already acting as if:
+My goal is NOT to describe Kanban itself — there are good references
+online if you are not already familiar with it. The important things to take-a-way from the idea of Kanban is already acting as if:
 
 - the tasks have been written in a 1-2 day granularity
 - the _board_ is being updated regulary
@@ -102,10 +98,6 @@ users to create cards and track the github issues.
 
 Your development team has access to this wonderfully integrated tool,
 all for free right now.
-
-Subscribe below if you would like help getting your team started.
-
-> TODO - Provide a screenshot
 
 ### Github Issues
 

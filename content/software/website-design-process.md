@@ -10,7 +10,7 @@ description: >
 categories: 
   - design
   - process
-tages:
+tags:
   - style guide
 ---
 
