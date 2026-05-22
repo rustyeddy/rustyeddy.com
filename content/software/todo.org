@@ -1,0 +1,175 @@
+#+TITLE: Software Section Content TODO
+#+DATE: 2026-05-21
+#+DESCRIPTION: Article-by-article review and priority list for the /software section refresh.
+
+* Priority Order
+
+Articles ranked by how broken or incomplete they are — top items block
+readers from getting value; bottom items are polish.
+
+| # | File                       | Status            |
+|---+----------------------------+-------------------|
+| 1 | use-cases-to-tasks.md      | Unfinished draft  |
+| 2 | wireframes-and-storyboards | Skeleton          |
+| 3 | peer-review.md             | Too short, broken |
+| 4 | release-process.md         | Too thin          |
+| 5 | use-cases.md               | Cleanup needed    |
+| 6 | _index.md                  | Sprawling, dup    |
+| 7 | kanban.md                  | Incomplete        |
+| 8 | version-control-systems.md | Dated             |
+| 9 | software-is-hard.md        | Polish pass       |
+|10 | test-driven-development.md | Polish pass       |
+|11 | software-is-a-team-sport   | Decision needed   |
+|12 | extra/ files               | Decision needed   |
+
+* Articles
+
+** TODO [#A] use-cases-to-tasks.md
+Conceptually important bridge article — takes use cases into actual
+dev tasks — but is clearly unfinished with seven =___TODO:___= markers
+and a ={{%/* requirement */%}}= shortcode that may not be defined. Needs
+completion before it is useful.
+
+- [ ] Verify ={{%/* requirement */%}}= shortcode exists and renders
+- [ ] Resolve all seven inline TODO markers (sensors, pump, GPIO,
+      I2C, timers, data models, MQTT)
+- [ ] Write the sections currently marked as stubs into full prose
+- [ ] Check links to notes/ articles (soil-moisture, go-timers, mqtt-comm)
+
+** TODO [#A] wireframes-and-storyboards.md
+Description reads "This document is about storyboards and wireframes"
+— the worst description on the site. The article itself is a skeleton:
+the Style Guide section is a list of three author names with no
+explanation. Needs a full rewrite.
+
+- [ ] Rewrite description
+- [ ] Expand storyboard section with concrete guidance
+- [ ] Expand wireframe section: what goes in one, why it matters
+- [ ] Replace the Style Guide name-drop list with actual explanations
+      or cut it entirely
+
+** TODO [#A] peer-review.md
+Very short and ends abruptly with "To make a commitment!" with no
+clear connection to what came before. The mechanics of running a good
+review are completely missing. Tone ("people that /think/ they are
+smarter than you, but are not") is too snarky for engineering peers.
+
+- [ ] Fix typo in description: "scrutized" → "scrutinized"
+- [ ] Rewrite opening — drop the snarky framing
+- [ ] Add substance: what reviewers look for, how to give useful feedback,
+      how to receive it without getting defensive
+- [ ] Clarify or rewrite the "To make a commitment!" ending
+- [ ] Expand the Pull Request / GitHub section
+
+** TODO [#A] release-process.md
+Essentially a numbered list with a few encouraging sentences; no
+CI/CD, no versioning strategy, no rollback discussion. The description
+promises more than the article delivers.
+
+- [ ] Expand from a list into actual prose
+- [ ] Add semantic versioning (v1.2.3 convention)
+- [ ] Add CI/CD pipeline overview
+- [ ] Add deployment strategies (canary, blue-green, embedded firmware)
+- [ ] Add rollback and what to do when a release goes wrong
+
+** TODO [#B] use-cases.md
+The best article in the section, but has undigested research notes
+appended at the bottom. The "## History", "## References", and
+"## Outline" sections are raw notes never converted to prose. Two
+inline TODO links were never resolved.
+
+- [ ] Resolve TODO: reference to MVP
+- [ ] Resolve TODO: link to iot project
+- [ ] Integrate or cut the ## History section (Jacobson origin is
+      worth one paragraph, not a section header)
+- [ ] Convert the ## Outline section into prose or delete it entirely —
+      it currently reads as draft notes ("Provides an example",
+      "He goes into creating use case diagrams")
+- [ ] Clean up the ## References section and wire it into the text
+- [ ] Remove "## Previous writings" empty section at the bottom
+
+** TODO [#B] _index.md
+Tries to cover the full SDLC in one page using the Kelly garden story,
+but that story is also in use-cases.md and use-cases-to-tasks.md,
+creating redundancy throughout the section. Contains an inline
+=Todo:= note, multiple typos, and an "Excited right? I know, me too!!"
+that breaks the engineering-peer voice.
+
+- [ ] Decide role: tight section index that points to pillars, or
+      standalone SDLC overview (currently trying to be both)
+- [ ] Cut or summarize the Kelly garden intro — the story is told in
+      full in use-cases.md
+- [ ] Remove inline =Todo:= marker
+- [ ] Remove "Excited right? I know, me too!!" and other over-enthusiastic asides
+- [ ] Remove the end-of-article warning that articles are a WIP
+- [ ] Typo pass: "thrououghly", "thouroughly", "amoung", "convinient",
+      "ultimatel", "wether", "Continuos Delilvery"
+
+** TODO [#B] kanban.md
+Opens as a raw numbered list (draft residue) and ends with an
+unfulfilled TODO for GitHub screenshots. The core advice on task
+sizing and WIP limits is solid but underwritten for a pillar article.
+
+- [ ] Replace the numbered-list opening with a proper intro paragraph
+- [ ] Remove or resolve the trailing TODO screenshot note
+- [ ] Expand the GitHub Projects / Issues section with more practical
+      guidance
+- [ ] Consider broadening tool discussion (not everyone uses GitHub)
+
+** TODO [#B] version-control-systems.md
+Solid but dated (2020): the claim that private repos require payment is
+no longer accurate for GitHub. Missing branching strategies and commit
+message conventions. Voice is slightly too casual in spots.
+
+- [ ] Fix the private-repo pricing claim — GitHub free tier now
+      includes unlimited private repos
+- [ ] Add a branching strategy section (feature branches, trunk-based)
+- [ ] Add commit message conventions (what makes a good log entry)
+- [ ] Tone pass: "don't pull out your wallet!", "crap shoot"
+
+** TODO [#C] software-is-hard.md
+Good concept with a concrete example (the "database of shoes"); the
+final Best Practices paragraph is the strongest section. Needs a typo
+pass and the casual language dialed back.
+
+- [ ] Typo pass: "disastor" (×2), "succuss", "otherhand"
+- [ ] Soften "crap shoot" and "odds are the code will be crap"
+- [ ] Consider moving Best Practices paragraph to the top as a
+      thesis statement — it earns the piece
+
+** TODO [#C] test-driven-software-development.md
+Solid structure covering TDD principles, whitebox/blackbox, and
+acceptance tests. Opens by admitting to skipping TDD out of "laziness"
+— undersells the author and the advice. A few typos to fix.
+
+- [ ] Rewrite the opening self-deprecating paragraph — the insight
+      that TDD is emotionally hard is worth keeping, but "laziness,
+      haste or carelessness (I know sad but I'm just being honest)"
+      is not the right frame for engineering peers
+- [ ] Typo pass: "striaght", "otherwords", "knoweledge"
+
+** TODO [#C] software-is-a-team-sport.md
+Still =draft: true=, contains garbled text ("HerA", "Cingular") and
+typos ("Quaterback"). The concept is sound but the file looks
+like an abandoned dictation transcript.
+
+- [ ] Decide: finish and publish, or delete
+- [ ] If keeping: full rewrite — too many garbled fragments to patch
+- [ ] Fix or remove draft: true
+
+* Deferred / Needs Decision
+
+** extra/extra.md
+=draft: true= overflow from _index.md, sitting at the ugly URL
+=/software/extra/extra/=. Content is largely redundant with _index.md.
+
+- [ ] Either merge useful paragraphs into _index.md and delete, or move
+      to a proper path if it has standalone value
+
+** extra/goals.md
+=draft: true= with usable content about defining measurable goals. The
+path =/software/extra/goals/= is ugly. Could fold into use-cases.md as
+a sidebar on MVP scope discipline.
+
+- [ ] Decide: merge into use-cases.md or promote to its own article
+      at a clean URL

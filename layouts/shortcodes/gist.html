@@ -1,0 +1,8 @@
+{{- $user := index .Params 0 -}}
+{{- $id   := index .Params 1 -}}
+{{- $file := index .Params 2 -}}
+{{- if and $user $id -}}
+  {{- $src := printf "https://gist.github.com/%s/%s.js" $user $id -}}
+  {{- if $file }}{{- $src = printf "%s?file=%s" $src $file -}}{{ end -}}
+  <script type="application/javascript" src="{{ $src }}"></script>
+{{- end -}}

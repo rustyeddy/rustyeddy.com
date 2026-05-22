@@ -129,5 +129,3 @@ All APIs can be accessed in one or more of the following ways:
 If you have any questions, find a bug or would like to use this
 software, please drop me a line, or fill out an issue.
 
-{{< gist >}}
-
