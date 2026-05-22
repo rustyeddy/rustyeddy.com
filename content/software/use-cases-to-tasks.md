@@ -2,158 +2,125 @@
 title: Use Cases to Tasks
 date: 2024-12-26
 description: >
-  A use case is all the ways of using a system to achieve a particular
-  goal for a particular user that can be measured or observed in a
-  specific way
+  Taking use cases and slicing them into concrete development tasks,
+  acceptance tests, and Kanban backlog items ready for the dev team.
 weight: 21
 ---
 
-## Recap from Use-Cases
+In [Use Cases](/software/use-cases/) we broke Kelly's watering system story
+into a first use case and derived an initial set of requirements and
+acceptance tests. Now we turn those into actual development work items.
 
-In our previous article [use-cases](/software/use-cases) we started
-deriving _Kelly's Automatic Gardener_ into the first use-case
+## Slicing Use Cases
 
-### Use Case
+A single use case is often too large to implement in one sprint. We slice
+it into thinner, independently deliverable use cases.
 
-> Use-case 1: As a gardener I want my sprinkler system to peridoically
-> measure the moisture level of soil and turn on a water pump when the
-> soil is dry, then turn it off when it gets too wet.
+Starting from Use Case 1:
 
-This use-case can then be _sliced_ into a couple more use cases. The
-additional use-cases can also be broke out to include:
+> Use Case 1: As a gardener, I want my system to periodically measure soil
+> moisture and turn on a water pump when the soil is dry, then turn it off
+> when it gets wet enough.
 
-> Use-case 1.1: As a gardner I want to be able to change the frequency
-> the soil moisture of my are checked.
+Two natural slices emerge:
 
-This is going introduce a configuration variable and a timer.
+> Use Case 1.1: As a gardener, I want to configure how frequently soil
+> moisture is checked.
 
-> Use-case 1.2: As a gardener I want my sprinkler system to record the
-> historic sensor data.
+This introduces a configuration variable and a timer.
 
-This is going to introduce a data model and some type of data storage
-such as a database.
+> Use Case 1.2: As a gardener, I want my system to record historic soil
+> moisture data.
 
-which we then broke down into an initial set of _requirements_:
+This introduces a data model and storage.
 
-### Requirements
+## Requirements
 
----
+From Use Case 1 and its slices:
 
 1. Periodically measure soil moisture levels
+2. Activate the water pump when moisture drops below the dry threshold
+3. Deactivate the pump when moisture reaches the damp threshold
+4. Configurable measurement frequency and thresholds
+5. Historic data storage
 
-3. If the moisture level drops below a certain level start watering
+## Acceptance Tests
 
-3. Turn water off when the moisture hits a high point
+| # | Test |
+|---|------|
+| 1 | Pump is inactive when moisture is above the dry threshold |
+| 2 | Pump activates when moisture crosses the dry threshold |
+| 3 | Pump deactivates when moisture crosses the damp threshold |
+| 4 | Measurement interval is configurable at runtime |
 
-4. Configurable moisture levels
+## Busting Out the Tasks
 
-5. Historic data storage 
+Here we shift from user language to developer language. We are now asking:
+*what do we actually need to build?*
 
----
+We stay technology-neutral at this level — no specific libraries or languages
+yet. These tasks apply equally to a Go service, a Python script, or C++
+firmware.
 
-### Acceptance Tests
+### Soil Moisture Sensor
 
-This set of requirements can now be validated by with these acceptance
-tests: 
-
----
-
-1. Verify the water pump is not active when moisture level is below
-   threshold 
-
-2. Verify water pump activates when moisture crosses the dry threshold 
-
-3. Verify Water pump de-activate when moisture crosses the damp
-   threshold 
-
-4. Verify periodic 
-
----
-
-## Busting out the Tasks
-
-This is the point that we start moving from the user POV to the
-development side of the project. We are going to start breaking out
-the above requirements and acceptance test into high level tasks that
-I will need to develop.
-
-We will still use high level language and not yet get into actual
-programming languages, libraries or software systems. As matter of
-fact this level of breaking out tasks could applied to just about any
-hardware, language or sub-systems.
-
-
-### Find a Soil Moisture Sensor
-
-{{% requirement "Soil Moisture Levels" %}}
-
-___TODO: point to article about soil moisture sensors___
-
-We are going to need some type of sensor that we stick in soil to read
-the level of moisture in the soil. The _soil moisture sensor_ we
-choose comes from the wonderful 
-[Adafruit's I2C Capacitive Moisture Sensor](https://www.adafruit.com/product/4026?gad_source=1&gclid=EAIaIQobChMI-s7HkoWKiQMVIwqtBh29dBKFEAQYASABEgLzl_D_BwE)
-
+{{% requirement "Periodically measure soil moisture levels" %}}
+We need a sensor to stick in the soil that reports moisture to the
+controller. For this project we use Adafruit's I2C Capacitive Moisture
+Sensor. Wiring and driver details are in the
+[Soil Moisture Sensor](/notes/soil-moisture-adafruit/) note.
 {{% /requirement %}}
 
-### Find a Pump to send water
+### Water Pump Control
 
-___TODO show the pump we picked___ and how to wire it up
+{{% requirement "Activate and deactivate the pump" %}}
+The pump is switched via a GPIO pin on the controller board. The controller
+needs a module that accepts a simple on/off command and drives the pin
+accordingly.
+{{% /requirement %}}
 
-### Turn Pump on and Off
+### Periodic Measurement Timer
 
-___TODO GPIO library to control pump___
+{{% requirement "Configurable measurement frequency" %}}
+A timer fires at a configurable interval and triggers a moisture read. See
+[Go Timers](/notes/go-timers/) for the implementation approach.
+{{% /requirement %}}
 
-### Read Data from Soil Moisture Sensor
+### Data Broadcast via MQTT
 
-For this particular sensor we are going to read data from it using
-and I2C data bus.  You can read about I2C here and look at the I2C
-Adafruit driver we wrote HERE:
+{{% requirement "Publish sensor readings" %}}
+Readings are published over MQTT so any subscriber — the pump controller,
+a logger, a future UI — can consume them independently. See
+[MQTT Communication](/notes/mqtt-comm/) for broker setup and channel
+conventions.
+{{% /requirement %}}
 
-___TODO: pointer to I2C article___
+### Local Data Storage
 
-___TODO: pointer to our Adafruit SeeSaw library driver___. 
+{{% requirement "Historic data storage" %}}
+Readings are cached locally in a time-series store so the system functions
+without network access and the UI can display history. Minimum fields:
+timestamp, station ID, moisture level, pump state.
+{{% /requirement %}}
 
-### Timer to periodically read data
+### Configuration Variables
 
-We are going to need a driver to periodically read data from the I2C
-driver. 
+{{% requirement "Configurable thresholds and intervals" %}}
+The following values must be configurable at runtime, not hard-coded:
 
-___TODO: pointer to our article with Go timers___
+1. Measurement interval (seconds)
+2. Dry threshold — moisture level that triggers pump on
+3. Damp threshold — moisture level that triggers pump off
+4. Local data storage path
+5. MQTT channel name
+{{% /requirement %}}
 
-### Local Storage
+## Adding Tasks to the Kanban Board
 
-We are going to cache this data locally for the Soil Moisture data. 
+With requirements, acceptance tests, and implementation tasks defined, we
+are ready to populate the Kanban board. Each task above becomes a card.
+Each acceptance test becomes the exit criterion for its card.
 
-___TODO: create an article about data models___
-
-
-### MQTT Data Broadcast
-
-We are going to _publish_ the _soil moisture data_ via MQTT and the
-channels, the moisture data will then subscribe to the published data
-to determine when to turn on and off the pump.
-
-A subscriber will also record the data levels in a time series data
-base of sorts.
-
-___TODO: pointer to MQTT article___
-
-### Configuration variables
-
-We need configuration variables for the following tasks:
-
-1. Frequency to read soil moisture data
-2. The dry water mark
-3. The damp water mark 
-4. Location to store local data
-5. MQTT channel to advertise data on
-
-## Adding tasks to our Kanban Board
-
-We are now ready to add our tasks to our todo list. We will also add
-our _acceptance tests_ as part of our todo list.
-
-This bring us to our next major article about
-[Kanban boards](/software/kanban) and todo
-lists. 
+That is the bridge from design to development. The mechanics of running the
+board — WIP limits, task sizing, moving cards through columns — are covered
+in [Kanban](/software/kanban/).
