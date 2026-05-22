@@ -1,6 +1,6 @@
 ---
 title: Software is Hard
-date: 2021-06-02
+date: 2026-05-22
 weight: 10
 description: >
   Software development projects have a nasty reputation for getting
@@ -16,7 +16,7 @@ mis-understood and incorrectly managed of all the _common_ processes
 used throughout the business world.
 
 There are a number of reasons for software projects being classified
-as a disastor so often. Software often is solving a complex problem
+as a disaster so often. Software often is solving a complex problem
 that unfortunately can't be seen.
 
 Perhaps the worst problem with software projects are the diverging
@@ -45,7 +45,7 @@ As developers, managers and users, we all want:
 
 > To Develop the Correct Software, Correctly.
 
-### There Are Many ways to Skin a Cat
+### No Single Right Way, Many Wrong Ones
 
 While it is true that there is no single _correct_ way to do software, it is
 also true there are _many ways_ to do software _incorrectly_.
@@ -88,7 +88,7 @@ _filters_ to present only the shoe data they need.
 
 ### What the Developer Thinks
 
-The _developer_ on the otherhand may be interpreting the task more
+The _developer_ on the other hand may be interpreting the task more
 literally.
 
 She may be thinking: I'll give the _user_ a _JSON_ file with a
@@ -121,13 +121,13 @@ stop a software project that is about to take a left turn before it actually doe
 
 ### Death Signs of a Software Project
 
-Here are three of the biggest signs a _Software Project_ is headed for
-disastor:
+Here are three of the biggest signs a project is headed for
+disaster:
 
-1. Developers Hording Code - not letting users see it
-2. Users not committed to the succuss of the project - developers get
-no feedback from actually running code.
-3. Feature creep - Users don't engage and developers don't expose
+1. Developers hoarding code — not letting users see it
+2. Users not committed to the success of the project — developers get
+   no feedback from actually running code
+3. Feature creep — users avoid engaging, developers avoid exposing
 
 _Feature creep_ is really a combination of 1&2 above. Users avoid the
 work of actually using the software. Developers avoid the work of

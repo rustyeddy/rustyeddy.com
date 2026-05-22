@@ -1,162 +1,118 @@
 ---
 title: Version Control Systems
-date: 2020-06-12
+date: 2026-05-22
 weight: 30
 description: >
-  After all the planning time has come to change code. What happens
-  now?  Clear evidence of a rookie team is the lack of a Version
-  Control System (VCS) tool and associated processes built around your
-  VCS will provide all the visibility you need to track progress of
-  your software project. Your VCS becomes the source of truth for your
-  project. 
+  Git, branching strategies, and commit discipline — how a version control
+  system becomes the single source of truth and the permanent record of
+  every decision made during a project's life.
 ---
 
-It frightens me everytime I am introduced to a new software project
-where the "latest" source code is somebodies folder _somewhere_ with
-copies being passed around on thumb drives.
+The first sign of an undisciplined software project is source code managed
+as a folder of files, with copies passed around by email or shared drives.
+The inevitable question — *which copy has your changes?* — is a symptom of
+a deeper problem: there is no authoritative record of what the software is,
+what changed, or why.
 
-Such a lack process invites confusion from the beginning and inspires
-questions like:
+A version control system solves this. Every change is recorded with who made
+it, when, and a description of why. The full history of the project lives in
+the repository, reproducible at any point in time.
 
-> which copy of the file has your changes?
+## Git
 
-If you are working like this STOP! It does not have to be this
-way. no, start using Version Control now! 
+Git is the de facto standard for version control. It was created by Linus
+Torvalds to manage the Linux kernel — a project with thousands of
+contributors making changes simultaneously — and its distributed architecture
+scales equally well to a solo project.
 
-Done correctly, your VC will track _every change_ to your source code
-with clear well written summaries (logs) of the problem that was
-solved.
+The core concepts are simple:
 
-## Git and Version Control
+- **Repository** — the database of all changes, stored in the project directory
+- **Commit** — a snapshot of the codebase at a point in time, with a message
+  describing the change
+- **Branch** — a parallel line of development that diverges from the main history
+- **Merge** — integrating one branch back into another
 
-Version Control Systmes (VCS) has been around since at least the
-1970's . These included RCS, CVS, SVN and lot's of clunky and lame pay
-versions.
+## Hosting Services
 
-Now we have _GIT_.
+A remote hosting service adds collaboration, backup, and CI/CD integration
+on top of git.
 
-Git was development by the famous _Linus Torvalds_ author of Linux to
-handle the distributed nature of the **huge** Open Source software
-[_Linux Kernel_](http://kernel.org). Development and the thousands of
-software developers that continuously contribute to the code base. 
+**GitHub** and **GitLab** are the dominant options. Both offer issue
+tracking, pull/merge requests, CI/CD pipelines, and project boards. GitHub
+has a larger open source community; GitLab's CI/CD is more fully integrated
+out of the box. Both offer free tiers that include unlimited private
+repositories.
 
-### Github is Git as a Service
+**Bitbucket** is a solid alternative, particularly for teams already using
+Atlassian tools (Jira, Confluence).
 
-We also have Github!
+## Commits
 
-Github revolutionized software development by taking the widely
-popular _Git_ version control system and wrapping online services
-around them, such as an _Issue Tracker_, _Project Kanban Board_ and a
-whole social infrastructure allowing developers to easily share Open
-Source software projects.
+A commit is the atomic unit of change. Every commit should represent one
+logical change — a bug fix, a feature addition, a refactor — not a dump of
+a week's work.
 
-## Github for Services and Workflow
+Commit message discipline matters more than most teams acknowledge. The
+subject line should complete the sentence *"If applied, this commit will..."*
+A good message is:
 
-To be clear, there are some other _great_ services built around _git_,
-[_gitlab_](http://gitlab.org) and [_bitbucket_](http://bitbucket.org)
-are just two. 
+```
+Add soil moisture threshold configuration
 
-Fortunantely for us, _github_ provides quite a few services integrated
-around git itself giving us a rich set of tools to build a sophisticated
-development environment, and all for _free_.
+Previously the dry and damp thresholds were hard-coded constants.
+This commit reads them from the config file at startup, allowing
+per-station tuning without a recompile.
+```
 
-Github works on a _freemium_ model where all Open Source projects get
-all features for free. However, private repositories will be required
-to pay a nominal fee to unlock all of githubs features.
+The first line is the summary — keep it under 72 characters. The body
+explains *why* the change was made, not *what* it does (the diff shows
+what). Six months later, when someone needs to understand why the code works
+a certain way, that explanation is what matters.
 
-For our purposes, everything we need is free, so don't pull out your
-wallet! 
+A repository with well-written commit messages is a project diary. A
+repository full of "fix", "wip", and "update stuff" is archaeology.
 
-## Beyond the Basics
+## Branching
 
-When a software developer or developers(s) leave a project without the
-use of process or version control, it is a crap shoot as to the
-quality of the code you will discover.
+The main branch (typically `main` or `master`) should always be in a
+releasable state. Work happens on branches.
 
-The odds are the code will be _crap_. Most people that are skilled and
-care enough to write _clean code_, likewise are most likely following
-some _process_ or _best practices_ by using version control and
-documeneting the architecture.
+**Feature branches** are the standard pattern: create a branch for each
+task, develop on it, open a pull request when done, merge after review and
+CI passes. The branch name should reflect the work: `add-moisture-threshold-config`
+is more useful than `feature-1`.
 
-The person that walks into a project own all of the bad decisions and
-lies that have previously been told, the software person has nowhere
-else to turn. Using Version control to establish both accountability
-for decisions and trace modifications to their origin.
-    
-Communication should be:
+**Trunk-based development** is an alternative where developers integrate to
+main frequently — daily or more — using short-lived branches or feature
+flags to keep unfinished work inert. It requires strong CI discipline but
+reduces the integration pain that accumulates on long-running branches.
 
-1. easy for everybody
-2. captured to context, history for example, to capture the rationale
-   behind decisions that may have required a controversial
-   trade-off. Invaluable for repeating the same convesation. 
+For small teams, feature branches with short lifetimes (one to three days)
+capture most of the benefit of both approaches.
 
-   Also can be used to determine when old practices can be
-   obsoleted. Technology has a way obliterating completely rational
-   decision that were made a mere two years ago..
+## Tags
 
-3. Do NOT allow project communications To be spread amongst email,
-   Texts, Social media accounts and various Other arbitrary Cyber
-   nooks and crannies.
+A tag marks a specific commit as significant — typically a release. Unlike
+a branch, a tag does not move.
 
-You will Lose all history and context. Debates and decisions Will be
-unnecessarily repeated.
+```
+git tag v1.2.0
+git push origin v1.2.0
+```
 
-## Github and making the Commitment
+Tagging every release means any past version can be checked out and
+reproduced exactly. It also provides a clean anchor for changelogs and
+release notes. Skipping tags is a habit that feels harmless until you need
+to reproduce a build from eight months ago.
 
-Now it is time for the developer to _commit_ the changes she has been
-working on, tested and pushed through the peer reviews. This step is
-pretty simple, however, we want to make sure we are doing it
-correctly.
+## The Commit History as Documentation
 
-When the code is merged into the **main** or **master** repository,
-just like commitments, it will be accompanied by the log comments
-that go along with the log files.
+Used well, the commit history is the most accurate documentation a project
+has — more current than any wiki, more honest than any architecture document.
+When you need to understand why a piece of code exists, `git log` and
+`git blame` are the first tools to reach for.
 
-Additionally, every _commit_ will have a _unique identifier_, a big
-nasty looking hex-i-decimal string guaranteed to most likely be locally
-unique. 
-
-### History in the Making
-
-Well written comments, source diffs and a unique identifier come
-together to create a specific moment in the code life history.
-
-Stringing all commitments together, one forms a very accurate history
-of the source development. If the comments are well written, that
-history is accompanied by a wonderful narrative told by the developers
-as the software is being written. 
-
-## The Beginning of Visibility
-
-This can provide the viewer with literally a line by line replay of
-the entire history of a software development project. The commitments
-can also be directly related to the particular **github issues** that
-have spurred the updates to the code in the first place.
-
-This is a very powerful way for not only developers, but also users,
-management and marketing a deep insight into the process of software
-development. 
-
-## Tagging - Releases
-
-Git also provides a feature called _tagging_, which is in fact very
-similar to _branching_. _Tags_ however are meant to _label_ a specific
-reference of the source at a specific point in time.
-
-_Software releases_ are a good reason to use _tags_. For example: a
-tag **v1.0.2** would be a typical tag that might be used to reference
-the version of code after **v1.0.1**.
-
-This practice allows the team, or anybody interested, the ability to
-_reference_ and _re-create_ a specific past version of the software.
-
-## Automated Builds and Testing
-
-Github provides a ton of goodies with it's well defined _API_ and the
-plethora of _web-hooks_ it provides.
-
-In the next section we'll get into _automatically_ building new images
-upon every committment, running the images through automated tests and
-finally sending **only** the tested images to a file server for
-general access. 
-
+This only holds if commits are small, frequent, and well-described. A
+disciplined commit history is a communication tool for everyone who will
+ever work on the project — including yourself, six months from now.

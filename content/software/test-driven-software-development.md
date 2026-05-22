@@ -1,6 +1,6 @@
 ---
 title: Test Driven Software Development
-date: 2021-04-04
+date: 2026-05-22
 weight: 40
 description: >
   If we do not test our software we will force our users to
@@ -21,11 +21,13 @@ test software as there are technologies.
 
 ### Test Driven Development
 
-_Test Driven Development (TDD)_ a _principal_ for which I agree is necessary, but I don't _always_ adhere to in practice. This is  usually out of
-laziness, haste or carelessness (I know sad but I'm just being honest
-here). However, it is worth paying attention to...
+_Test Driven Development (TDD)_ is a _principle_ that earns nearly
+universal agreement in theory and frequent compromise in practice. The
+discipline of writing tests first is harder than it sounds — not technically,
+but because it forces you to define precisely what you are building before
+you start. That clarity is exactly why it is worth the effort.
 
-Anyways, the basic rules are:
+The basic rules are:
 
 1. Write your test **before** writing the code
 2. The test **will fail** initially
@@ -45,8 +47,8 @@ level or two.
 
 > When defining tests, ask the "Five whys?"
 
-Once you have done the hard brain work and exposed the applications,
-**true requirements** implementing the test becomes striaght forward.
+Once you have done the hard brain work and exposed the application's
+**true requirements**, implementing the test becomes straightforward.
 
 Testing movements can be taken too far, for example spending a lot of
 time writing tests that are effectively worthless just for the sake of
@@ -125,7 +127,7 @@ content until she is convinced the code is ready for everybody else.
 ### Whitebox Testing
 
 _White Box_ testing means the _test function_ has _internal_ access to
-the the actual code being tested. In otherwords, the code can directly
+the actual code being tested. In other words, the code can directly
 call any internal function or examine internal data structures.
 
 > _Unit Testing_ is a standard form of _Whitebox Test_.
@@ -134,7 +136,7 @@ Other _whitebox_ tests may include performance and stress tests.
 
 ### Black Box Testing
 
-Blackbox tests have _no access or knoweledge_ of any _internal_
+Blackbox tests have _no access or knowledge_ of any _internal_
 functions or data structures, other than the applications "Application
 Programming Interface".
 
