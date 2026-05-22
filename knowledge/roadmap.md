@@ -8,19 +8,10 @@ Voice and structure follow `knowledge/styleguide.md`.
 
 ## Current focus (in order)
 
-1. **`/software` section** — content refresh and gap-fill across the
-   existing software pillars. Scope to be defined when work starts;
-   likely a mix of voice/consistency editing on the existing 12
-   articles, filling the SDLC gap, and tightening
-   `software/_index.md`.
-2. **Trader** ([github.com/rustyeddy/trader](https://github.com/rustyeddy/trader))
+1. **Trader** ([github.com/rustyeddy/trader](https://github.com/rustyeddy/trader))
    — write up the trader project for the site. Structure (a single
    `/projects/trader/` showcase, supporting essays in `/software/`,
    or both) to be decided when we start.
-3. **OttO flagship project page** — `/projects/otto/`, sourced from
-   `content/iot/iot-system-architecture-otto.md`,
-   `content/iot/self-watering-garden.md`, and
-   `content/iot/building-iot-device-manager-in-go.md`.
 
 ## Working rule for formatting / systematic issues
 
@@ -84,7 +75,6 @@ Existing pillar essays:
 - [x] Test-Driven Software Development
 - [x] Peer Review (Pull Requests & Code Reviews)
 - [x] Release Process (CI/CD)
-- [x] Software is a Team Sport
 - [x] Software is Hard
 - [x] Use Cases
 - [x] Use Cases to Tasks
@@ -101,8 +91,8 @@ Planned but not written:
 
 - [x] RedEye — `content/projects/redeye/`
 - [x] This Website — `content/projects/this-website/`
-- [ ] **Trader** — see Current Focus #2
-- [ ] **OttO** — see Current Focus #3
+- [ ] **Trader** — see Current Focus #1
+- [x] **OttO** — `content/projects/otto/` (2026-05-22)
 
 ### `/resume` + `/about`
 
