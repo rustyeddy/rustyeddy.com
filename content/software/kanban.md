@@ -1,118 +1,104 @@
 ---
 title: Organizing Software Projects with Kanban
 description: >
-  Tracking tasks does not have to be Rocket Science! Absurdly simple,
-  profoundly liberating and insane to ignore!  We are going to look
-  into Kanban. 
+  How Kanban boards make work visible, keep tasks small, and give everyone
+  on the project — developers, managers, and customers — a shared view of
+  progress without meetings or status reports.
 weight: 30
-date: 2021-03-03
+date: 2026-05-22
 ---
 
-1. Kanban boards are used to keep track of tasks or todo items that
-   need to be done, are a work in progress as well as tasks that have
-   been completed
-   
-2. There are many choices for Kanban boards, we will use the freebie
-   that comes with github. Though many other choices are available
-   including popular versions from gitlab, Trello and Jira.
+Kanban is a visual task management system built around one principle: make
+the work visible. When every task has a card and every card has a status,
+anyone who looks at the board knows exactly where the project stands.
 
+The mechanics are intentionally minimal. A board has three columns — _Todo_,
+_In Progress_, and _Done_. Cards representing tasks move left to right as
+work advances. That is the entire system. Its power comes from discipline in
+how tasks are written and how the board is maintained, not from the tool
+itself.
 
+## Task Sizing
 
-Kanban is fantastically simple. We will create a board with 3 columns,
-_Todo_, _Work In Progress_ and _Complete_.
+The most important practice in Kanban is keeping tasks small. A task should
+be completable by one person in one to two days. If a task is running to
+three or four days it almost certainly can — and should — be broken into
+smaller pieces.
 
-Each column is populated with a single card for every task that must be
-done. The cards are prioritized and move through the system as the
-work progresses.
+Small tasks matter for several reasons. They keep the board accurate: a
+two-day task that slips is visible immediately, whereas a two-week task can
+look fine right up until the deadline. They let the team stack small
+victories, which matters for morale over the course of a long project.
+And they force a level of specificity that surfaces hidden complexity early,
+when it is still cheap to address.
 
-## Good Kanban Reference
+Tasks that arrive from [use cases](/software/use-cases-to-tasks/) are often
+too coarse at first. Breaking them down is part of the work, not a sign
+something was planned badly.
 
-My goal is NOT to describe Kanban itself — there are good references
-online if you are not already familiar with it. The important things to take-a-way from the idea of Kanban is already acting as if:
+## WIP Limits
 
-- the tasks have been written in a 1-2 day granularity
-- the _board_ is being updated regulary
+_Work In Progress_ (WIP) limits constrain how many tasks a person can have
+in the _In Progress_ column at once — typically one, occasionally two.
 
-Then _everybody_ will know exactly what progress has been made since the
-last reference.
+The instinct to start multiple things simultaneously is counterproductive.
+Partially completed work delivers no value. Context switching has a real
+cost. And a board full of in-progress cards obscures whether the project is
+actually moving.
 
-### Task Lists Evolve 
+A strict WIP limit forces a simple discipline: finish what you started
+before picking up something new. Teams that apply it consistently find that
+throughput goes up, not down.
 
-We must embrace this fact: The tasks we began thinking about during
-the _Customer Disovery_ session while defining the _MVP_ was probably
-pretty accurate, but almost certainly _incomplete_.
+## The Backlog Evolves
 
-> You can not know, what you do not yet know.
+The task list at the start of a project is an estimate, not a contract.
+Unforeseen complexity will surface during development. Requirements will
+clarify as users see working software. New tasks will be added; original
+tasks will be split or reprioritized.
 
-This is the most difficult aspects of building _novel_ software.
+> You cannot know what you do not yet know.
 
-The reality is that unforeseen issues will pop up that must be added
-to our _Todo_ list at any given time. We'll also find that many of our
-original tasks were very high level and will necessarily need to be
-broken down into smaller tasks.
+Embrace this rather than resist it. The board is a live document. The
+discipline is in keeping it current — adding new cards as work surfaces,
+updating estimates, and not letting stale tasks linger in _In Progress_ past
+their actual state.
 
-### Assigning Todo Items
+## Exit Criteria
 
-As a person with a particular skill becomes available they are
-matched up with the next task on the to do list.
+Every task card should include a clear definition of done: what test must
+pass, what behavior must be demonstrated, what acceptance criterion must be
+met before the card moves to _Done_.
 
-The task or the kanban card is then assigned to that particular
-person and moved into the Work In Progress (WIP) list. 
+This is the connection between Kanban and [test-driven
+development](/software/test-driven-software-development/). Writing the exit
+criterion when the card is created forces the developer to understand
+precisely what is being built before starting, and gives the reviewer
+something concrete to verify.
 
-### Tests Define the Exit Criteria
+## Tool Options
 
-During this phase of the process, a deeper level of thought needs to
-be put into the _tests_ that must be written to establish a successful
-completion of this task.
+Any tool that shows cards moving through columns works. The right choice
+depends on team size, existing tooling, and how tightly you want the board
+integrated with code changes.
 
-These tests will become part of the software itself, continuing for
-evermore ensure to be run everytime a change is committed to the
-source base, the quality of software consistently gets better.
+**GitHub Projects** — integrated directly with the repository. Cards link to
+issues and pull requests; closing a PR can automatically move a card to
+_Done_. Good default choice for teams already on GitHub.
 
-### Contstraints on the WIP
+**GitLab Boards** — equivalent to GitHub Projects for teams on GitLab, with
+similar issue integration.
 
-A _prioritized Todo list_ and a _WIP_ that allows only a single (or
-two) item(s) per person, will help ensure that the progress of the project
-is visible to everybody that cares to look.
+**Linear** — purpose-built issue tracker with strong keyboard navigation and
+good GitHub/GitLab integration. Popular with engineering-focused teams.
 
-## Stacking Small Victories
+**Trello** — flexible and simple, works well for teams with mixed technical
+and non-technical members. No native code integration.
 
-Keep the tasks small. A developer should be able to complete a task in
-a day or two max. If tasks become three or four days they most likely
-can and should be broken into smaller tasks.
+**Jira** — feature-rich and widely used in larger organizations. Can become
+process overhead for small teams; use it if the organization already has it,
+not as a first choice for a small project.
 
-This is important because the development team needs to see victories
-and needs to have successes. Likewise, management needs to see
-progress, and  customers need to experience new features and
-improvements. 
-
-Eventually, the task is moved into the *Complete* column and the
-software is delivered to the customer. (More on the software release
-process later).
-
-### Github Projects
-
-Github provides a relatively new (2020) feature called projects,
-that allow one to easily create a Kanban board. Github projects allow
-users to create cards and track the github issues.
-
-Your development team has access to this wonderfully integrated tool,
-all for free right now.
-
-### Github Issues
-
-Project cards represent a big picture/high level view of the project
-and how it progresses, whereas the _github issues_ are the place to
-keep the details of the the change requests, actions to recreate bugs
-and support for new feature requests.
-
-_Github Projects_ allow a single click to convert a _Card_ into a
-_Github Issue_ which then keeps the _Project Cards_ and _Issues_ in
-sync. 
-
-The integration of a Github Project board with the Github Issues is a
-perfect combination of the right balance between communicating with
-_non-technical_ project stake holders and the more technical details
-developers need to program by.
-
-> TODO - Screen shot github issues and project cards links.
+The tool matters less than the discipline. A well-maintained board in any of
+these is more useful than a poorly maintained one in the theoretically
+perfect tool.
