@@ -6,6 +6,7 @@ description: >
   integration—not just hardware hacks.
 tags: [iot, maker, software-architecture]
 date: 2023-01-13
+show_articles: false
 ---
 
 ## Overview
@@ -137,7 +138,7 @@ intended to be read independently or as part of a larger whole.
 
 ### Architecture & System Design
 - [Building an IoT Device Manager in Go](/iot/building-iot-device-manager-in-go/)
-- [IoT System Architecture: OttO](/iot/iot-system-architecture-otto/)
+- [IoT System Architecture: OttO](/iot/iot-system-architecture-explained/)
 - [IoT System Architecture: Device to Cloud](/iot/iot-system-architecture-device-to-cloud/)
 - [IoT Edge Gateway](/iot/iot-edge-gateway/)
 

@@ -4,7 +4,7 @@ SVGS := $(patsubst diagrams/%.dot,static/diagrams/%.svg,$(DOTS))
 all: build $(SVGS)
 
 build: check-metadata
-	hugo
+	hugo --gc --cleanDestinationDir
 
 drafts: assets/scss/style.scss
 	hugo serve --buildDrafts --ignoreCache --noHTTPCache --bind "0.0.0.0" --watch 
@@ -18,7 +18,13 @@ prod: assets/scss/style.scss
 scss static/css/style.css: assets/scss/style.scss
 	scss assets/scss/style.scss:static/css/style.css
 
-check: check-metadata build
+check: check-metadata build check-links check-discovery
+
+check-links:
+	scripts/check-links
+
+check-discovery:
+	scripts/check-discovery
 
 check-metadata:
 	scripts/check-metadata

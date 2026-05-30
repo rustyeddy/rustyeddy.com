@@ -15,12 +15,12 @@ git: https://github.com/iot-station/iothub
 
 Previously we have added 
 [MQTT to the IoT Gateway](/iot/iot-gateway-mqtt/) as part of the
-[Organic Gardner Project](/iot/iot-project). This gave the gateway the
+[Organic Gardner Project](/iot/). This gave the gateway the
 ability to collect and store a lot of environmental data from sensors
 all over the place. 
 
 Now we need to provide a way for others programs, like the 
-[IoT Dashboard](/iot/dashboard) access that data via a REST API. 
+IoT Dashboard access that data via a REST API. 
 
 ## Implementing a RESTful API
 
@@ -343,5 +343,5 @@ framework.
 
 Anyhow, get ready for GUI interfaces next!
 
-**Next** [IoT Dashboard in Vue](/iot/iot-dashboard-vue)
+**Next** [Vue frontends](/notes/vue-frontends/)
 

@@ -1,0 +1,112 @@
+#!/usr/bin/env python3
+"""Check generated Hugo output for broken internal links and stale placeholders."""
+
+from html.parser import HTMLParser
+from pathlib import Path
+from urllib.parse import urlparse, unquote
+import re
+import sys
+
+ROOT = Path(__file__).resolve().parents[1]
+DOCS = ROOT / "docs"
+SOURCE_DIRS = (ROOT / "content", ROOT / "layouts")
+BASE_HOST = "rustyeddy.com"
+PLACEHOLDER_PATTERNS = (
+    re.compile(r"https?://(?:www\.)?todo(?:/|\b)", re.I),
+    re.compile(r"/todo(?:/|\b)", re.I),
+)
+
+
+class LinkParser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.links = []
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        for attr in ("href", "src"):
+            value = attrs.get(attr)
+            if value:
+                self.links.append((tag, attr, value))
+
+
+def source_files():
+    for directory in SOURCE_DIRS:
+        for path in directory.rglob("*"):
+            if path.is_file() and path.suffix in {".html", ".md"}:
+                yield path
+
+
+def generated_html_files():
+    return sorted(DOCS.rglob("*.html"))
+
+
+def docs_target_exists(url_path):
+    path = unquote(url_path.split("?", 1)[0].split("#", 1)[0])
+    if not path or path == "/":
+        return (DOCS / "index.html").exists()
+
+    path = path.lstrip("/")
+    candidates = [DOCS / path]
+    if not Path(path).suffix:
+        candidates.append(DOCS / path / "index.html")
+        candidates.append(DOCS / f"{path}.html")
+    return any(candidate.exists() for candidate in candidates)
+
+
+def should_skip(url):
+    lower = url.lower()
+    return (
+        not url
+        or lower.startswith(("#", "mailto:", "tel:", "javascript:", "data:"))
+        or "{{" in url
+    )
+
+
+def main():
+    errors = []
+
+    if not DOCS.exists():
+        errors.append("docs/: generated site output is missing; run hugo first")
+        print("\n".join(errors), file=sys.stderr)
+        return 1
+
+    for path in source_files():
+        text = path.read_text(encoding="utf-8", errors="ignore")
+        rel = path.relative_to(ROOT)
+        for pattern in PLACEHOLDER_PATTERNS:
+            for match in pattern.finditer(text):
+                errors.append(f"{rel}: placeholder link/text found near {match.group(0)!r}")
+
+    for path in generated_html_files():
+        parser = LinkParser()
+        parser.feed(path.read_text(encoding="utf-8", errors="ignore"))
+        rel = path.relative_to(ROOT)
+        for _tag, attr, url in parser.links:
+            if should_skip(url):
+                continue
+
+            parsed = urlparse(url)
+            if parsed.scheme in {"http", "https"}:
+                if parsed.netloc.lower() not in {BASE_HOST, f"www.{BASE_HOST}"}:
+                    continue
+                target_path = parsed.path or "/"
+            elif url.startswith("/"):
+                target_path = parsed.path
+            else:
+                current_dir = path.relative_to(DOCS).parent
+                target_path = "/" + str((current_dir / parsed.path).as_posix())
+
+            if not docs_target_exists(target_path):
+                errors.append(f"{rel}: broken {attr} {url!r}")
+
+    if errors:
+        print("\n".join(errors), file=sys.stderr)
+        return 1
+
+    print("links ok")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

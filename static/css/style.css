@@ -7788,6 +7788,40 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
+.site-brand {
+  font-family: Quicksand;
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.2; }
+
+.site-nav {
+  gap: .25rem; }
+
+.site-nav .nav-link {
+  padding-left: .65rem;
+  padding-right: .65rem;
+  border-radius: .25rem;
+  font-family: Quicksand;
+  font-size: .95rem;
+  font-weight: 600; }
+
+.site-nav .nav-link.active {
+  color: #0074d9;
+  background-color: rgba(0, 116, 217, 0.08); }
+
+.site-nav .nav-link:hover,
+.site-nav .nav-link:focus {
+  color: #005aaa; }
+
+@media (max-width: 991.98px) {
+  .site-nav {
+    gap: 0;
+    padding-top: .5rem; }
+
+  .site-nav .nav-link {
+    padding-left: 0;
+    padding-right: 0; } }
+
 h1, h2, h4, h3, h5, h6 {
   margin-top: 2rem;
   font-weight: bold; }

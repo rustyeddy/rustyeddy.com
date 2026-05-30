@@ -76,7 +76,7 @@ be watered.
 
 The [_collector_](https://github.com/rustyeddy/ogesp) gathers and
 publishes the soil moisture level periodically over a wireless network.
-The [_smart hub_](https://rustyeddy.com/iot/iote) will then process
+The [_smart hub_](/iot/iot-edge-gateway/) will then process
 the data to determine when to send a _start water_ command to the
 _control station_ in the respective watering zone. 
 

@@ -83,7 +83,7 @@ Typical responsibilities include:
 - Handling intermittent connectivity
 
 This layer is explored further in  
-[Edge Device Architecture](/iot/edge-device-architecture/).
+[IoT System Architecture Explained](/iot/iot-system-architecture-explained/).
 
 Not every system needs an edge hub—but when you do, adding it later is
 far more painful than designing for it early.
@@ -117,7 +117,6 @@ details. This is where many IoT systems quietly accumulate technical
 debt.
 
 Related reading:
-- [IoT Device Management](/iot/iot-device-management/)
 - [Building an IoT Device Manager in Go](/iot/building-iot-device-manager-in-go/)
 
 ---
@@ -206,10 +205,9 @@ These shortcuts feel productive early on and become expensive later.
 
 If this architecture resonates, the following pages dive deeper:
 
-- [Edge Device Architecture](/iot/edge-device-architecture/)
-- [IoT Device Management](/iot/iot-device-management/)
+- [IoT System Architecture Explained](/iot/iot-system-architecture-explained/)
 - [Building an IoT Device Manager in Go](/iot/building-iot-device-manager-in-go/)
-- [System Design Principles](/software/system-design-principles/)
+- [Software Development](/software/)
 
 Each builds on this diagrammatic foundation and explores the tradeoffs
 in more detail.

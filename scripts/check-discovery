@@ -1,0 +1,121 @@
+#!/usr/bin/env python3
+"""Verify generated RSS, sitemap, robots, and discovery metadata."""
+
+from html.parser import HTMLParser
+from pathlib import Path
+import sys
+import xml.etree.ElementTree as ET
+
+ROOT = Path(__file__).resolve().parents[1]
+DOCS = ROOT / "docs"
+REQUIRED_PAGES = (
+    "index.html",
+    "iot/index.html",
+    "iot/iot-gateway-rest/index.html",
+    "projects/index.html",
+)
+REQUIRED_META = (
+    'property="og:title"',
+    'property="og:description"',
+    'property="og:url"',
+    'property="og:image"',
+    'name="twitter:card"',
+    'rel="canonical"',
+    'type="application/rss+xml"',
+    'type="application/ld+json"',
+)
+
+
+class LinkParser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.alternates = []
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if tag == "link" and attrs.get("rel") == "alternate":
+            self.alternates.append(attrs)
+
+
+def rss_items(path):
+    root = ET.parse(path).getroot()
+    if root.tag != "rss":
+        raise ValueError(f"{path}: expected rss root, got {root.tag}")
+    return root.findall("./channel/item")
+
+
+def sitemap_urls(path):
+    root = ET.parse(path).getroot()
+    ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+    return root.findall("sm:url", ns)
+
+
+def main():
+    errors = []
+
+    feeds = {
+        "index.xml": 1,
+        "iot/index.xml": 1,
+        "software/index.xml": 1,
+        "notes/index.xml": 1,
+    }
+    for rel, minimum in feeds.items():
+        path = DOCS / rel
+        if not path.exists():
+            errors.append(f"{rel}: missing RSS feed")
+            continue
+        try:
+            count = len(rss_items(path))
+            if count < minimum:
+                errors.append(f"{rel}: expected at least {minimum} RSS items, found {count}")
+        except Exception as exc:
+            errors.append(str(exc))
+
+    sitemap = DOCS / "sitemap.xml"
+    if not sitemap.exists():
+        errors.append("sitemap.xml: missing")
+    else:
+        try:
+            if not sitemap.read_text(encoding="utf-8").startswith("<?xml"):
+                errors.append("sitemap.xml: XML declaration must be first byte")
+            if len(sitemap_urls(sitemap)) == 0:
+                errors.append("sitemap.xml: no URLs found")
+        except Exception as exc:
+            errors.append(str(exc))
+
+    robots = DOCS / "robots.txt"
+    if not robots.exists():
+        errors.append("robots.txt: missing")
+    else:
+        text = robots.read_text(encoding="utf-8")
+        if "Sitemap: https://rustyeddy.com/sitemap.xml" not in text:
+            errors.append("robots.txt: missing sitemap directive")
+
+    for rel in REQUIRED_PAGES:
+        path = DOCS / rel
+        if not path.exists():
+            errors.append(f"{rel}: missing generated page")
+            continue
+        html = path.read_text(encoding="utf-8")
+        for needle in REQUIRED_META:
+            if needle not in html:
+                errors.append(f"{rel}: missing {needle}")
+
+        parser = LinkParser()
+        parser.feed(html)
+        for attrs in parser.alternates:
+            if attrs.get("type") == "application/rss+xml":
+                href = attrs.get("href", "")
+                if href.endswith("/projects/index.xml"):
+                    errors.append(f"{rel}: advertises empty projects RSS feed")
+
+    if errors:
+        print("\n".join(errors), file=sys.stderr)
+        return 1
+
+    print("discovery ok")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

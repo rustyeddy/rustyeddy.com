@@ -43,7 +43,7 @@ me to produce pretty good looking websites out of the gate.
 
 ## Hosted by Github Pages
 
-[_Github Pages_](github.com/pages) is a very quick and easy way to
+[GitHub Pages](https://pages.github.com/) is a very quick and easy way to
 integrate the content of this website into the corresponding public
 HTML5 site you can see.
 

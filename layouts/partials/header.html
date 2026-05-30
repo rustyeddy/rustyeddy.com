@@ -2,33 +2,28 @@
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
 
-      <a class="navbar-brand" href="/"><span class="h1">rusty eddy:</span></a>
+      <a class="navbar-brand site-brand" href="/">rusty eddy:</a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <nav class="navbar-nav mr-auto mb-2 mb-lg-0">
-	  <div class="nav-item">
-  	    <a class="nav-link" href="/iot/"> iot &nbsp;</a>
-          </div>
-          <div class="nav-item">
-  	    <a class="nav-link" href="/software/"> software &nbsp;</a>
-          </div>
-          <div class="nav-item">
-  	    <a class="nav-link" href="/projects/"> projects &nbsp;</a>
-          </div>
-          <div class="nav-item">
-  	    <a class="nav-link" href="/notes/"> notes &nbsp;</a>
-          </div>
-          <div class="nav-item">
-  	    <a class="nav-link" href="/resume/"> resume &nbsp;</a>
-          </div>
-          <div class="nav-item">
-  	    <a class="nav-link" href="/about/"> about &nbsp;</a>
-          </div>
-        </nav>
+        <div class="navbar-nav site-nav mr-auto mb-2 mb-lg-0">
+          {{ $current := .Section }}
+          {{ $navItems := slice
+            (dict "label" "iot" "url" "/iot/" "section" "iot")
+            (dict "label" "software" "url" "/software/" "section" "software")
+            (dict "label" "projects" "url" "/projects/" "section" "projects")
+            (dict "label" "notes" "url" "/notes/" "section" "notes")
+            (dict "label" "resume" "url" "/resume/" "section" "resume")
+            (dict "label" "about" "url" "/about/" "section" "about")
+          }}
+          {{ range $navItems }}
+            {{ $active := eq $current .section }}
+            <a class="nav-item nav-link{{ if $active }} active{{ end }}" href="{{ .url }}"{{ if $active }} aria-current="page"{{ end }}>{{ .label }}</a>
+          {{ end }}
+        </div>
       </div>
     </div>
   </nav>

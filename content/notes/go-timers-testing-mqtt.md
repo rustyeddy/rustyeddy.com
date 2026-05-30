@@ -23,7 +23,7 @@ generated.
 ## The Problem
 
 The following code snippet is directly from the
-[IoTe](http://rustyeddy.com/iote) edge gateway project. One of the
+[IoTe](/iot/iot-edge-gateway/) edge gateway project. One of the
 primary features of IoTe is the ability to send and receive MQTT
 messages. 
 

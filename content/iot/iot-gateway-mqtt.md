@@ -15,7 +15,7 @@ git: https://github.com/iot-station/iothub
 ![IoT Gateway MQTT architecture showing sensor data flowing from collectors through MQTT into the hub](/img/iot-hub-mqtt.png)
 
 This page marks the beginning of the _Organic Gardner (OG)_ 
-[IoT Project](/iot/iot-intro) Milestone 1 development!  If you want to
+[IoT Project](/iot/) Milestone 1 development!  If you want to
 program along but have not yet worked with the _Go_ programming
 language check this intro: [Getting ready to Go](/notes/get-ready-to-go).
 
@@ -137,7 +137,7 @@ If you would like to read more about the configuration struct as well
 as a discussion saving and reading the configuration structure from a
 file and a quick introduction to Go's twist on "Object Oriented"
 programming check out this article on the
-[Go Config Struct](/notes/simple-go-configuration-structure).
+[Go configuration](/notes/go-configuration/).
 
 Now we have turned the ```config.Broker``` variable into a command
 line argument that defaults to ```localhost```. Meaning if we run the
@@ -426,7 +426,7 @@ In this next article we are going to import Go's builtin
 handle our _REST Endpoints_.  This same package will later allow us to
 serve up the IoT Gateway web app.
 
-[Next Adding the REST API](/iot/iot-qateway-rest)
+[Next Adding the REST API](/iot/iot-gateway-rest/)
 
 <!--  LocalWords:  JSON IoT SDP mockable
  -->

@@ -30,7 +30,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  <link rel="canonical" href="{{ .Permalink }}" />
   <link rel="alternate" type="application/rss+xml" href="{{ "index.xml" | absURL }}" title="{{ site.Title }} RSS Feed" />
+  {{ if and (in (slice "section" "taxonomy" "term") .Kind) (gt (len .RegularPages) 0) }}
+  <link rel="alternate" type="application/rss+xml" href="{{ printf "%sindex.xml" .Permalink }}" title="{{ .Title }} RSS Feed" />
+  {{ end }}
 
   <!-- Title appropriate for the page being displayed -->
   <title>{{ block "title" . }}{{- .Title -}}{{ end }}</title>

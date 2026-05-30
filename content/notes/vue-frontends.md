@@ -49,7 +49,7 @@ well known way to develop IoT dashboards.
 
 Of all the JavaScript frame works [_VUE_](http://vuejs.org) just seems
 to be the best fit for what I'm trying to do. I plan to use the
-[_SPAClock_](http://rustyeddy.com/projects/spaclock) project to create
+_SPAClock_ project to create
 a great VUE interface.
 
 ## CDN and Training Wheels

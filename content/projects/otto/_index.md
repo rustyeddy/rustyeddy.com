@@ -118,7 +118,7 @@ same architecture — sensor → edge runtime → actuator + dashboard — appli
 to any IoT control system, not just irrigation.
 
 For the five-layer IoT architecture that OttO maps to, see
-[IoT System Architecture](/iot/iot-system-architecture-otto/).
+[IoT System Architecture](/iot/iot-system-architecture-explained/).
 
 ## Repositories
 

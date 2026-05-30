@@ -16,10 +16,10 @@ weight: 10
 ## What Does OG Hub Do?
 
 In a nutshell the _Hub_ gathers environmental data from a network of
-[Collection Stations](iot/collection-station) using the well
+[Collection Stations](/iot/iot-sensor-station/) using the well
 known _MQTT Messaging_ protocol. The hub feeds the data to the
 _Oraganic Gardner_ application, streams it real-time to
-[_dashboard_](/iot/dashboard) users via
+_dashboard_ users via
 [Websockets](http://websockets.org) and caches the data in RAM.
 
 ## How Does the Hub Work?
@@ -70,7 +70,7 @@ list of supported features are:
 1. Collect environmental Data via MQTT
 2. Cache collected data in RAM.
 3. HTTP server to provide a REST API
-4. HTTP server to serve the [Dashboard](/iot/dashboard) webapp
+4. HTTP server to serve the Dashboard webapp
 4. HTTP server enhanced with Websockets to stream data live
 
 #### Coming Soon ...
@@ -212,4 +212,4 @@ site. The _Hub_ and _Dashboard_ support _Websockets_ allowing the Hub
 to update the Dashboard when new data arrives in _real-time_.
 
 We will talk alot more about this in the
-[Dashboard](/iot/dashboard) 
+Dashboard 

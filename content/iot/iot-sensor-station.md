@@ -17,7 +17,7 @@ The idea is pretty simple really: build a network of wireless battery
 powered devices to gather environmental data such as temprature,
 moisture, light levels, etc. The collected data will then be
 _published_ via [MQTT](https://mqtt.org) _wirelessly_ to the 
-[_Hub_](/sensors/hub).
+[_Hub_](/iot/iot-edge-gateway/).
 
 ### Types of Published Data
 
@@ -43,7 +43,7 @@ The expectation that data published by the station will have been
 consumed and aggregated by the Hub or a similar subscriber.
 
 Long term storage of the data is the job of the
-[Hub](/iot/otto) or other data aggregator. The CS is an
+[Hub](/projects/otto/) or other data aggregator. The CS is an
 embedded system expected to run with very little resources.
 
 ## The esp32 Chip of Choice

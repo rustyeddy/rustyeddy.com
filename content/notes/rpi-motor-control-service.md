@@ -31,7 +31,7 @@ control decision as well as executing the control commands.
 ## Controlling The Motors
 
 This software is a component that plugs into the
-[Raspberry Pi Device Server (RPID)](/projects/rpid) 
+[Raspberry Pi Device Server (RPID)](http://github.com/mobilerobot-io/rpid) 
 allowing the motors to be controlled directly by the Skidder API, or
 via MQTT messages and/or HTTP REST requests. Oh, there is also a
 keyboard controller if you ssh into the vehicle.
@@ -72,7 +72,7 @@ DC/Stepper motor controller. This is the
 _one_ robot that we directly drive a motor controller from the
 Raspberry Pi.  That aspect of this project differs than our other
 robots that are built with 
-[distributed controllers](/notes/distributed-controllers) used by the
+distributed controllers used by the
 other robots I have built.  
 
 ### RPi Macro Controler and Micro Controller
@@ -100,7 +100,7 @@ In this case the RPi with minimal sensors, low speed motors and maybe
 a camera should be easily at home in a single multi-core RPi.  This
 being the case, we could optimize communications by removing the
 messaging and translation layers from the 
-[MBR Architecture](/mobile-robot-architecture).  
+MBR Architecture.  
 
 However, for the sake of a single architecture and minimized set of
 software tools and configurations, we will leave the communicaiton

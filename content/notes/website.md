@@ -86,7 +86,7 @@ the _content_, _markup_, _stylesheet_ and some _javascript_.
 ### Webserver 
 
 Now we are going to need to find a computer somewhere to _server up_
-the web page, we handle this topic in the [webservers](webservers)
+the web page, we handle this topic in the webservers
 article. 
 
 Before we go finding servers and evertyhing that comes along with

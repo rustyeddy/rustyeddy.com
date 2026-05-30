@@ -41,6 +41,48 @@ $headings-font-family:	$font-family-sans-serif;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+.site-brand {
+    font-family: $font-family-sans-serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.site-nav {
+    gap: .25rem;
+}
+
+.site-nav .nav-link {
+    padding-left: .65rem;
+    padding-right: .65rem;
+    border-radius: .25rem;
+    font-family: $font-family-sans-serif;
+    font-size: .95rem;
+    font-weight: 600;
+}
+
+.site-nav .nav-link.active {
+    color: $primary;
+    background-color: rgba($primary, .08);
+}
+
+.site-nav .nav-link:hover,
+.site-nav .nav-link:focus {
+    color: darken($primary, 8%);
+}
+
+@media (max-width: 991.98px) {
+    .site-nav {
+        gap: 0;
+        padding-top: .5rem;
+    }
+
+    .site-nav .nav-link {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
 h1, h2, h4, h3, h5, h6 {
     margin-top: 2rem;
     font-weight: bold;

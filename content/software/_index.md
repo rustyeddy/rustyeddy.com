@@ -5,6 +5,7 @@ description: >
   from capturing requirements through shipping and iterating.
 tags: [ sdlc, software development ]
 date: 2026-05-22
+show_articles: false
 ---
 
 Software projects have a well-earned reputation for running late, costing
