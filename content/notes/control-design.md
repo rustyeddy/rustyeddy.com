@@ -56,7 +56,6 @@ transmit and recieve (actually four if you count power wire), but only
 two wires are required to connect to the bus, allowing, in theory,
 over a hundred devices could all communicate.
 
-> TODO: put a link in to my I2C article for an explantion
 
 I2C also happens to be supported in hardware on pretty much every
 microcontroller I have looked at thus far.  

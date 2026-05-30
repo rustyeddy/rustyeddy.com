@@ -16,5 +16,3 @@ communications to help improve this world. I am particularly
 interested in environmental cleanup and industrial automation
 projects.
 
-<!--  LocalWords:  IoT
- -->

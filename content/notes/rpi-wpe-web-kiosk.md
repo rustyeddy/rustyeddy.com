@@ -9,7 +9,7 @@ reference:
   - https://medium.com/@decrocksam/building-web-applications-for-wpe-webkit-using-node-js-3347146013f3
 ---
 
-The WPE project (TODO: place reference) allows you to create a
+The WPE project allows you to create a
 _hardware accelerated web viewing__ experience with an embedded system
 and inexpenive display. 
 
@@ -52,5 +52,4 @@ containers run.
 
 Bummer!
 
-> Todo: look at how balena does it, maybe without so many containers.
 

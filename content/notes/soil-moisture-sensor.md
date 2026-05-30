@@ -38,7 +38,6 @@ I'll explain.
 If you do a quick google search on "arduino soil moisture sensors" you
 will immediately see two types: _resistive_ and _capacitive_ sensors.
 
-> TBD place a pic of capacitive and resistive sensors here
 
 In short we choose the capacitive over resistive version of the
 sensor. Many others have done a great job explaining why the resistive
@@ -105,9 +104,7 @@ stop me!
 
 ### Missing Resistor
 
-He said a large number of chips were missing the 1M resistor (Todo
-rewatch the video and make sure I have the correct value of the
-resistor). 
+He said a large number of chips were missing the 1M resistor. 
 
 This causes the sensors response to change to be very slow. I thought:
 "that's not so bad, I really only need to check every 15 minutes".
@@ -152,7 +149,6 @@ seconds to instantaneously.
 I have two different styles, they both work but have different scales
 and speeds to detect the changes.
 
-> Todo place a pic of the two version I have here.
 
 ## They are not all the same!
 

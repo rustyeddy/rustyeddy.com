@@ -30,15 +30,69 @@
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  <link rel="alternate" type="application/rss+xml" href="{{ "index.xml" | absURL }}" title="{{ site.Title }} RSS Feed" />
 
   <!-- Title appropriate for the page being displayed -->
   <title>{{ block "title" . }}{{- .Title -}}{{ end }}</title>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G7XZRHH62T"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-G7XZRHH62T');
+    window.gtag = window.gtag || function(){dataLayer.push(arguments);};
+
+    (function() {
+      var measurementId = 'G-G7XZRHH62T';
+      var consentKey = 'analytics-consent';
+
+      function storedConsent() {
+        try { return localStorage.getItem(consentKey); } catch (e) { return null; }
+      }
+
+      function saveConsent(value) {
+        try { localStorage.setItem(consentKey, value); } catch (e) {}
+      }
+
+      function hideBanner() {
+        var banner = document.getElementById('cookie-consent');
+        if (banner) { banner.style.display = 'none'; }
+      }
+
+      function loadAnalytics() {
+        if (window.googleAnalyticsLoaded) { return; }
+        window.googleAnalyticsLoaded = true;
+
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=' + measurementId;
+        document.head.appendChild(script);
+
+        gtag('js', new Date());
+        gtag('config', measurementId, { anonymize_ip: true });
+      }
+
+      window.acceptAnalyticsCookies = function() {
+        saveConsent('accepted');
+        loadAnalytics();
+        hideBanner();
+      };
+
+      window.declineAnalyticsCookies = function() {
+        saveConsent('declined');
+        hideBanner();
+      };
+
+      window.showCookieConsentBanner = function() {
+        var consent = storedConsent();
+        if (consent === 'accepted') {
+          loadAnalytics();
+          return;
+        }
+
+        if (consent === 'declined') { return; }
+
+        var banner = document.getElementById('cookie-consent');
+        if (banner) { banner.style.display = 'block'; }
+      };
+
+      if (storedConsent() === 'accepted') { loadAnalytics(); }
+    })();
   </script>
 </head>

@@ -10,7 +10,7 @@ description: >
 category: iot
 ---
 
-![Garden Diagram](/img/self-watering-garden.png)
+![Self-watering garden system diagram showing collection stations, smart hub, control station, dashboard, and cloud components](/img/self-watering-garden.png)
 
 -----
 
@@ -70,7 +70,7 @@ levels) are collected by a collection station diagrammed below. The
 moisture sensor is placed in the soil near the plant(s) that need to
 be watered.
 
-![Collection Station](/img/collection-station.png)
+![Collection station diagram showing soil moisture and telemetry sensors sending data over Wi-Fi](/img/collection-station.png)
 
 
 The [_collector_](https://github.com/rustyeddy/ogesp) gathers and
@@ -95,7 +95,7 @@ message from IoTe.
 The _control station_ may optionally be connected to other accessories
 such as a lighting or heating systems.
 
-![Control Station](/img/control-station.png)
+![Control station diagram showing an IoT controller connected to watering equipment](/img/control-station.png)
 
 As the plant is being watered, moisture levels are transmitted back to
 the Hub when the soil has hit the appropriate moisture level. The

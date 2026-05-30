@@ -9,12 +9,8 @@ image: https://mobilerobot.sfo2.cdn.digitaloceanspaces.com/display-and-motors.jp
 categories:
   - software
   - motors
-todo: 
-  - image
-  - proof read
 ---
 
-> TODO ~ replace image with one of the Raspberry Pi Controller
 
 This software adds a Skid Steer motor control software to the
 [Raspberry Pi Device Server](http://github.com/mobilerobot-io/rpid)
@@ -40,7 +36,6 @@ allowing the motors to be controlled directly by the Skidder API, or
 via MQTT messages and/or HTTP REST requests. Oh, there is also a
 keyboard controller if you ssh into the vehicle.
 
-> TODO Place image 5-17 img-1 here 
 
 ### MQTT Skid Channel
 
@@ -72,8 +67,8 @@ applied to the right and left throttles.
 
 ## Adafruit RPi Motor Controller
 
-For this Robot, we are using the wonderful [Adafruit Raspberry Pi
-DC/Stepper motor controller](http://adafruit.com/todo). This is the
+For this Robot, we are using the wonderful Adafruit Raspberry Pi
+DC/Stepper motor controller. This is the
 _one_ robot that we directly drive a motor controller from the
 Raspberry Pi.  That aspect of this project differs than our other
 robots that are built with 
@@ -92,8 +87,8 @@ embedded _Arduino like device_, possibly an esp8266, esp32 or stm32.
 In this software we will keep the same message based communication
 system, as well as REST support architecture as used on the other
 robots.  In this case we will implement the Micro-controller
-requirements as part of the [RPi DeviceService](/todo) used by the
-[Raspberry Pi Camera server](/todo).
+requirements as part of the RPi DeviceService used by the
+Raspberry Pi Camera server.
 
 That means we will be able to control the voltage sent to (throttle)
 the motors and hence control speed and direction the vehicle moves.

@@ -15,7 +15,6 @@ other than the developer.
 Embrace this fact, And projecting software Development times and cost
 Become much less mysterious. 
 
-> TODO Create an example PoC to Development
 
 Was it Rodney Brooks that Said Plan on Throwing away your first
 version. Because you will anyway.

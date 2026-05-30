@@ -41,4 +41,3 @@ do a number of things including:
 - Join a wifi group
 - 
 
-> Todo: screen capture turning on and off the light

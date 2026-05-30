@@ -54,8 +54,6 @@ setup blessed by the powers above.
 
 ## IP Multicast In the Real World
 
-> TODO: provide real world examles for this article.
 
-> TODO refer to my multicast work  CRS and pimd
 
 

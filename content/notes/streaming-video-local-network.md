@@ -27,7 +27,6 @@ description: >
 
 - Tools used 
 
-TODO: workflowy outline
 
 
 RTSP is a good option for streaming video in a local setup up, where

@@ -66,7 +66,18 @@ In a later example we will use JavaScript to replace our Hello, World
 message with the current time and date:
 
 ```html
-TODO: Put full-code here
+<!doctype html>
+<html>
+<head>
+  <title>Hello clock</title>
+</head>
+<body>
+  <h1 id="clock">Hello, World!</h1>
+  <script>
+    document.getElementById("clock").textContent = new Date().toLocaleString();
+  </script>
+</body>
+</html>
 ```
 
 The above example is a very simple, yet complete web page including
@@ -115,7 +126,12 @@ as possibleWith his little code is the following lines will get our
 clock ticking clock on our webpage:
 
 ```javascript
-// Todo: fill in java script for webpage clock
+function updateClock() {
+  document.getElementById("clock").textContent = new Date().toLocaleString();
+}
+
+updateClock();
+setInterval(updateClock, 1000);
 ```
 
 Now When we load at this webpageWe'll see the current time in that

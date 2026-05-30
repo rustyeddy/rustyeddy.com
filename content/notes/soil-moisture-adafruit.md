@@ -63,6 +63,5 @@ level shifter that can operate with 5v systems.
 - Addresses can be incremented by one by pulling one or two other
   specific pins low. Specifically the soil moisture sensor can change
   addresses by shorting a couple pads 
-> TODO Show a picture
 
 

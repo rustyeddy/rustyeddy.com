@@ -289,7 +289,7 @@ incoming HTTP requests.
 The top part of the screen from the image below the top part of screen
 captured below show the output from _iothub_ program.
 
-![IoT Hub REST](/img/iothub-curl.png)
+![Terminal screenshot showing iothub logs, mosquitto_pub test data, and curl fetching REST API JSON](/img/iothub-curl.png)
 
 The lower screen shows two commands: the first command is
 ```mosquitto_pub``` _mocking_ a temperature value.

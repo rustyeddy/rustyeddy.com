@@ -4,8 +4,6 @@ date: 2019-12-20
 description: >
   Bootstrap can be used to quickly get a web project up and running
   without having to futz much at all with css.
-todo:
-  - images of some bootstrap examples
 ---
 
 Bootstrap is a great way to get your ugly little fledgling website

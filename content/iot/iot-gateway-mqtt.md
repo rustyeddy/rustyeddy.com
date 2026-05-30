@@ -12,7 +12,7 @@ tags: [ mqtt, go ]
 git: https://github.com/iot-station/iothub
 ---
 
-![MQTT Architecture](/img/iot-hub-mqtt.png)
+![IoT Gateway MQTT architecture showing sensor data flowing from collectors through MQTT into the hub](/img/iot-hub-mqtt.png)
 
 This page marks the beginning of the _Organic Gardner (OG)_ 
 [IoT Project](/iot/iot-intro) Milestone 1 development!  If you want to
@@ -40,7 +40,7 @@ busy or low bandwidth networks.
 
 ---
 
-![MQTT Architecture](/img/mqtt-overview.drawio.png)
+![MQTT publish-subscribe architecture showing publishers, broker, topics, and subscribers](/img/mqtt-overview.drawio.png)
 
 ---
 
@@ -398,7 +398,7 @@ The upper screenshot shows logs from the _IoT Hub_ starting up then
 having just received it's first data point from MQTT. The lower screen
 shows the invocation of the ```mosquitto_pub``` command.
 
-![High Level Sensor Station](/img/screen-shot-hub-data.png)
+![Terminal logs showing mosquitto_pub publishing sensor data and the IoT Hub receiving and parsing it](/img/screen-shot-hub-data.png)
 
 ## Victory! 
 

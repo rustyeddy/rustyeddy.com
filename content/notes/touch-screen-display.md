@@ -12,10 +12,6 @@ tags:
   - tft display
   - touch screen
 image: https://mobilerobot.sfo2.cdn.digitaloceanspaces.com/display-and-motors.jpg
-status: wip
-todo:
-  - provide pics for article
-  - complete article and proof read
 ---
 
 We are going to build a simple control station that begins with a
@@ -49,7 +45,6 @@ webapps: HTML, CSS and JavaScript through a web server.
 
 This will allow us the most bang for our buck.
 
-TODO: add a pic of the control station.
 
 ## Chromium Kiosk Mode
 
@@ -57,7 +52,6 @@ Our user interface will be local server software that will provider
 our controller with everyting it needs to do to control our mobile
 robots and assocociated components.
 
-> TODO ~ locate the chromium kiosk mode and how to start in that
 > mode. 
 
 
@@ -77,4 +71,3 @@ serving up some cool stuff!
 The adapter board attached to the screen has a couple additional pins
 that allow stuff.
 
-TODO: check out the pins on this display

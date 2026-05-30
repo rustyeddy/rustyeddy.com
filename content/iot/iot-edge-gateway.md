@@ -11,7 +11,7 @@ git: https://github.com/rustyeddy/otto
 weight: 10
 ---
 
-![High Level Sensor Station](/img/iothub.png)
+![IoT Hub service architecture showing MQTT input, REST API, WebSocket dashboard, and in-memory data cache](/img/iothub.png)
 
 ## What Does OG Hub Do?
 
@@ -47,7 +47,7 @@ sophisticated application and also keep it _small, robust fast_. YEA!
 > As matter of fact, it is so small and fast, it is more than happy to
 > run on a _Raspberry Pi_!
 
-![High Level Sensor Station](/img/rpi.jpg)
+![Raspberry Pi single-board computer suitable for running the IoT Hub](/img/rpi.jpg)
 
 ### Readers, Writers and Concurrency
 
@@ -89,7 +89,7 @@ client.
 
 ### Fire Up The Hub
 
-![High Level Sensor Station](/img/screen-shot-hub-start.png)
+![Terminal logs showing the IoT Hub starting, subscribing to MQTT topics, and opening the HTTP server](/img/screen-shot-hub-start.png)
 
 Above is a screenshot of the logs displayed when the _Hub_ has
 started. If we read logs beging with the first we will find that the
@@ -131,7 +131,7 @@ We will fake data from sensor ```tempf``` to topic
 ```ss/data/10.11.1.11/tempf``` the value of ```98.6``` using the 
 following command:
 
-![High Level Sensor Station](/img/screen-shot-hub-data.png)
+![Terminal logs showing mosquitto_pub publishing sensor data and the IoT Hub receiving and parsing it](/img/screen-shot-hub-data.png)
 
 In the above screen shot ```mosquitto_pub``` published the temperature
 in farenhiet to the topic ```ss/data/10.11.1.11/tempf``` where the CS
@@ -160,7 +160,7 @@ environmental data.
 Another screenshot is in order. This time I'll use curl to call the
 data REST API to retrieve the one piece of data we have collected:
 
-![Hub REST API](/img/screen-shot-hub-curl.png)
+![Terminal output showing curl retrieving JSON sensor data from the IoT Hub REST API](/img/screen-shot-hub-curl.png)
 
 Notice the ```curl``` command in the bottom screen, the data has been
 returned in full JSON format. This single data point looks like

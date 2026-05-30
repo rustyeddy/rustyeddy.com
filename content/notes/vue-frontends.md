@@ -7,9 +7,6 @@ description: >
   VueJS is a JavaScript framework that has become immensly popular in
   recent years for good reason in my humble opinion.  I am specifically
   interested in using vue to develop kiosk style dashboards.
-todo:
-  - place links to vue resources
-  - list what I have accomplished with vue so far
 resources:
   - http://vuejs.org
 ---

@@ -108,9 +108,7 @@ with a left and right throttles to effectively control the vehicle.
 Here are some diagrams and a video demonstrating _skid steering_ in
 real life:
 
-> Todo create skid steer video
 
-> Todo create skid steer diagrams
 
 ## Disclaimer ~ Semantics of the term Wheel
 

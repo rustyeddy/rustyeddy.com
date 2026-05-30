@@ -131,7 +131,6 @@ _train tracked_ vehical.
 In all cases each of these vehicle employ _skid steering_ on account a
 one wheel (wheels or tread) will be skidding along when your turnin. 
 
-[TODO ~ Create a skid steering page](/todo/skid-steering)
 
 Of course, you can get real fancy and spin the thing on axis by
 employing equal forces of forward and reverse on opposing sides of the
@@ -145,14 +144,15 @@ We need to power the following motors (at minimum):
 - 4 DC Motors
 - 2 Servos
 
-Cut to the chase, the Adafruit XXXXX Arduino motor controller, and the
-sister Adafruit YYYY stepper motor controller for the Raspberry Pi are
+Cut to the chase, the Adafruit Arduino motor controller, and the
+sister Adafruit stepper motor controller for the Raspberry Pi are
 two such controllers that suite our purposes perfectly well.
 
 ### Which MicroController (MicroComputer)?
 
-Todo has a discussion of using a Raspberry Pi + MotorController or
-Arduino + Motor Controller.
+Choosing between a Raspberry Pi plus MotorController and an
+Arduino plus Motor Controller depends on the control-loop timing and
+system integration requirements.
 
 ### Alternative Shields
 
