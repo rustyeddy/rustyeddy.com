@@ -7,7 +7,8 @@ description: >
   levels and other telemetry data to drive watering schedules vs
   traditional time based scheduals. This project is Open Source and
   easy to program.
-category: iot
+categories:
+  - iot
 ---
 
 ![Self-watering garden system diagram showing collection stations, smart hub, control station, dashboard, and cloud components](/img/self-watering-garden.png)

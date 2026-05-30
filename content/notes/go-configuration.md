@@ -5,8 +5,10 @@ description: >
   Configurations are part of most every program, configurations can be
   handled in a number of different ways. This is my simple method for
   handing configurations variables in Go. Check it out!
-category: util
-tags: go
+categories:
+  - util
+tags:
+  - go
 ---
 
 I use this same configuration structure and supporting functions in

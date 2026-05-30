@@ -7,8 +7,10 @@ description: >
   another alternatvie from Adafruit, this neat little sensor communicates 
   with I2C, it is a bit smaller than previous sensors, this document talks 
   about my experience with those little guys.
-categories: electronic-components
-tags: soil moisture
+categories:
+  - electronic-components
+tags:
+  - soil moisture
 github: https://github.com/sensorstation/iotesp
 ---
 

@@ -6,8 +6,11 @@ description: >
   read and write side of communication protocols. In this article you
   will learn to combine a Go timer along with a select statement to
   test both sides with a single test case.
-category: go
-tags: timers, iote
+categories:
+  - go
+tags:
+  - timers
+  - iote
 ---
 
 This article uses a Go timer and the Go select statement to test our

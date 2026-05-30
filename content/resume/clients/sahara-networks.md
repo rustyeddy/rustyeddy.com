@@ -8,7 +8,8 @@ date: 2021-01-27
 company: Sahara Networks
 weight: 105
 jobtitle: Software Manager and Engineer
-category: software
+categories:
+  - software
 tags: 
   - C++
   - Network Protocol Design

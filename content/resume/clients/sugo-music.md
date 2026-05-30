@@ -8,7 +8,8 @@ date: 2021-01-27
 company: Sugo Music. tm
 weight: 100
 jobtitle: Software Manager and Engineer
-category: software
+categories:
+  - software
 tags: 
   - Go 
   - fullstack

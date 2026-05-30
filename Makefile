@@ -3,7 +3,7 @@ SVGS := $(patsubst diagrams/%.dot,static/diagrams/%.svg,$(DOTS))
 
 all: build $(SVGS)
 
-build:
+build: check-metadata
 	hugo
 
 drafts: assets/scss/style.scss
@@ -17,6 +17,11 @@ prod: assets/scss/style.scss
 
 scss static/css/style.css: assets/scss/style.scss
 	scss assets/scss/style.scss:static/css/style.css
+
+check: check-metadata build
+
+check-metadata:
+	scripts/check-metadata
 
 static/diagrams/%.svg: diagrams/%.dot
 	dot -Tsvg $< -o $@

@@ -5,7 +5,8 @@ description: >
   is mind boggling, these are notes I started gathering as I worked
   through the redeye project.
 date: 2019-04-23
-category: video
+categories:
+  - video
 tags:
   - gstreamer
   - vlc

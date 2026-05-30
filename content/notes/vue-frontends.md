@@ -1,8 +1,10 @@
 ---
 title: Using Vue to Develop Webapps
 date: 2019-12-25
-category: frontend
-tags: vue
+categories:
+  - frontend
+tags:
+  - vue
 description: >
   VueJS is a JavaScript framework that has become immensly popular in
   recent years for good reason in my humble opinion.  I am specifically

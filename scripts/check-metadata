@@ -1,0 +1,124 @@
+#!/usr/bin/env python3
+"""Check published Hugo content for consistent useful front matter."""
+
+from pathlib import Path
+import re
+import sys
+
+ROOT = Path(__file__).resolve().parents[1]
+CONTENT = ROOT / "content"
+REQUIRED = ("title", "date", "description")
+INTERNAL_ONLY = ("todo", "status")
+TAXONOMIES = ("tags", "categories")
+
+
+def front_matter(path):
+    text = path.read_text(encoding="utf-8")
+    if not text.startswith("---\n"):
+        return None, "missing YAML front matter"
+    end = text.find("\n---\n", 4)
+    if end == -1:
+        return None, "malformed YAML front matter"
+    return text[4:end].splitlines(), None
+
+
+def clean_scalar(value):
+    return value.strip().strip("\"'")
+
+
+def parse_front_matter(lines):
+    data = {}
+    current = None
+    for line in lines:
+        if not line.strip() or line.lstrip().startswith("#"):
+            continue
+        if line.startswith((" ", "\t")):
+            if current and line.strip().startswith("-"):
+                data.setdefault(current, [])
+                if isinstance(data[current], list):
+                    data[current].append(clean_scalar(line.strip()[1:]))
+            continue
+        if ":" not in line:
+            continue
+        key, value = line.split(":", 1)
+        key = key.strip()
+        value = value.strip()
+        current = key
+        if value in ("", ">", "|", ">-", "|-"):
+            data[key] = [] if value == "" else value
+        elif value.startswith("[") and value.endswith("]"):
+            inner = value[1:-1].strip()
+            data[key] = [] if not inner else [clean_scalar(item) for item in inner.split(",")]
+        elif value.lower() == "true":
+            data[key] = True
+        elif value.lower() == "false":
+            data[key] = False
+        else:
+            data[key] = clean_scalar(value)
+    return data
+
+
+def has_value(lines, key):
+    pattern = re.compile(rf"^{re.escape(key)}:\s*(.*)$")
+    for index, line in enumerate(lines):
+        match = pattern.match(line)
+        if not match:
+            continue
+        value = match.group(1).strip()
+        if value and value not in (">", "|", ">-", "|-"):
+            return True
+        for following in lines[index + 1:]:
+            if following and not following.startswith((" ", "\t")):
+                return False
+            if following.strip() and not following.strip().startswith("#"):
+                return True
+        return False
+    return False
+
+
+def main():
+    errors = []
+    for path in sorted(CONTENT.rglob("*.md")):
+        rel = path.relative_to(ROOT)
+        lines, error = front_matter(path)
+        if error:
+            errors.append(f"{rel}: {error}")
+            continue
+        data = parse_front_matter(lines)
+        if data.get("draft") is True:
+            continue
+
+        for key in REQUIRED:
+            if not has_value(lines, key):
+                errors.append(f"{rel}: missing required {key}")
+
+        if "category" in data:
+            errors.append(f"{rel}: use categories list instead of category")
+
+        for key in TAXONOMIES:
+            if key in data:
+                value = data[key]
+                if not isinstance(value, list):
+                    errors.append(f"{rel}: {key} must be a YAML list")
+                elif any(not str(item).strip() for item in value):
+                    errors.append(f"{rel}: {key} contains an empty value")
+
+        for key in INTERNAL_ONLY:
+            if key in data:
+                errors.append(f"{rel}: remove internal-only {key} metadata")
+
+        image = data.get("image")
+        if isinstance(image, str) and image.startswith("/"):
+            local_image = ROOT / "static" / image[1:]
+            if not local_image.exists():
+                errors.append(f"{rel}: image does not exist at static{image}")
+
+    if errors:
+        print("\n".join(errors), file=sys.stderr)
+        return 1
+    print("metadata ok")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

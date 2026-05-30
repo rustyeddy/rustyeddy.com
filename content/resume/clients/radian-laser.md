@@ -2,12 +2,14 @@
 title: Radian Laser
 description: >
   Radian Laser software work on embedded firmware, laser control apps, calibration tools, kiosks, and fleet automation.
+date: 2019-07-01
 start: 2019-07-01
 finish: 2020-09-01
 company: Radian Laser Systems, LLC
 weight: 110
 jobtitle: Software Engineer
-category: software
+categories:
+  - software
 tags: 
   - embedded
   - firmware

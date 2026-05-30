@@ -1,0 +1,45 @@
+{{ if .IsPage }}
+{{ $page := . }}
+{{ $related := site.RegularPages.Related $page | first 5 }}
+{{ if eq (len $related) 0 }}
+  {{ $related = where (where site.RegularPages "Section" $page.Section) "Permalink" "ne" $page.Permalink | first 5 }}
+{{ end }}
+{{ $categories := $page.GetTerms "categories" }}
+{{ $tags := $page.GetTerms "tags" }}
+{{ if or $related $categories $tags }}
+<section class="mt-5 pt-4 border-top" aria-labelledby="content-relationships">
+  <h2 id="content-relationships" class="h4 mb-3">Related reading</h2>
+
+  <div class="mb-3">
+    {{ with $page.CurrentSection }}
+    <a href="{{ .RelPermalink }}">More in {{ .Title }}</a>
+    {{ end }}
+  </div>
+
+  {{ with $categories }}
+  <div class="mb-3">
+    <span class="text-muted small mr-2">Categories</span>
+    {{ range . }}<a class="badge badge-light mr-1" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}
+  </div>
+  {{ end }}
+
+  {{ with $tags }}
+  <div class="mb-3">
+    <span class="text-muted small mr-2">Tags</span>
+    {{ range . }}<a class="badge badge-light mr-1" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}
+  </div>
+  {{ end }}
+
+  {{ with $related }}
+  <ul class="list-unstyled mb-0">
+    {{ range . }}
+    <li class="mb-2">
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{ with .Description }}<span class="d-block text-muted small">{{ . | plainify | truncate 140 }}</span>{{ end }}
+    </li>
+    {{ end }}
+  </ul>
+  {{ end }}
+</section>
+{{ end }}
+{{ end }}

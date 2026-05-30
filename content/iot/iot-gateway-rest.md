@@ -7,7 +7,8 @@ description: >
   data. This milestone we are going to add HTTP RESTful API to provide
   access to that data. The same HTTP library will later serve up our
   IoT dashboard.
-category: iot-gateway
+categories:
+  - iot-gateway
 tags: [ go, http, rest ]
 git: https://github.com/iot-station/iothub
 ---

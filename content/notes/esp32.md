@@ -6,7 +6,7 @@ description: >
   to the Arduino, however with much powerful comes much challenge! 
   Let us tame this beast and enjoy a long relationship of mutual respect.
 date: 2019-04-25
-category:
+categories:
   - rtos
 tags:
   - esp32

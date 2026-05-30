@@ -5,7 +5,8 @@ description: >
   ability to stream live or _realtime_ video while the vehicle roams
   about.  This turned out to be more complicated than I expected
 date: 2019-04-29
-category: communication
+categories:
+  - communication
 tags: 
   - h264
 ---
