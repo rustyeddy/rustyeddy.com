@@ -8,7 +8,7 @@
 </div>
 
 <div class="container py-4">
-  <div class="row gx-4 gy-3">
+  <div class="row">
     <div class="col-md-4">
       <a href="/projects/" class="card h-100 p-4 text-decoration-none text-dark text-center">
         <h2 class="h4 mb-2">Projects</h2>
@@ -39,8 +39,8 @@
         {{ $recent := where site.RegularPages "Section" "in" $sections }}
         {{ range first 6 (sort $recent "Date" "desc") }}
           <li class="mb-2 d-flex flex-wrap align-items-baseline">
-            <a href="{{ .RelPermalink }}" class="me-2">{{ .Title }}</a>
-            <span class="text-muted small me-2">/{{ .Section }}/</span>
+            <a href="{{ .RelPermalink }}" class="mr-2">{{ .Title }}</a>
+            <span class="text-muted small mr-2">/{{ .Section }}/</span>
             <span class="text-muted small">{{ .Date.Format "2006-01-02" }}</span>
           </li>
         {{ end }}

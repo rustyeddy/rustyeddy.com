@@ -21,7 +21,7 @@ and attached CSI Camera (Raspberry Pi Camera) have thier own set of
 utilities: like raspivid.  Or the NVidia Nano with it's gst-streamer
 plugins and nvgst-capture/nvgst-playback utilies. 
 
-> This writting is as of March 2019
+> These notes were originally written in March 2019
 
 ### GStreamer Complex, Flexible, Future Proof
 
