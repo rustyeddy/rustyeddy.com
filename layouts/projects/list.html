@@ -20,8 +20,11 @@
 	<div class="col-md-4">
 	    <div class="card">
 		<div class="card-body">
-
-		    <img height="315px" class="card-img" src="{{ .Params.logo }}" />
+                    {{ $project := . }}
+                    {{ $image := .Params.logo | default .Params.image }}
+                    {{ with $image }}
+                    <img height="315px" class="card-img" src="{{ . }}" alt="{{ $project.Title }} project image" />
+                    {{ end }}
 
 		    <h5 class="card-title">
 			<a href="{{ .Permalink }}">{{ .Title }}</a>
