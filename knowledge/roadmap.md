@@ -81,6 +81,7 @@ Existing pillar essays:
 - [x] Website Design Process
 - [x] Website Development Process
 - [x] Wireframes and Storyboards
+- [x] Style Guide
 
 Planned but not written:
 

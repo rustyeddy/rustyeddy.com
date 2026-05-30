@@ -33,6 +33,8 @@ Before writing code, establish what the software needs to do and why.
   into testable requirements and Kanban backlog items
 - [Wireframes and Storyboards](/software/wireframes-and-storyboards/) —
   visualizing the user experience before any code is written
+- [Style Guide](/software/style-guide/) — defining reusable visual and
+  interaction rules before implementation
 
 ## Development
 
