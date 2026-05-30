@@ -2,5 +2,12 @@ baseURL: https://rustyeddy.com/
 languageCode: en-us
 title: Rusty Eddy
 publishDir: docs
+enableGitInfo: true
+frontmatter:
+  lastmod:
+    - lastmod
+    - :git
+    - date
+    - publishDate
 ignoreLogs: ['warning-goldmark-raw-html']
 

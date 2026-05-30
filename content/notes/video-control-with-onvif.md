@@ -1,5 +1,7 @@
 ---
 title: Video Control with ONVIF
+description: >
+  Notes on ONVIF camera control, device discovery, SOAP and WSDL services, capability profiles, and IP camera management.
 draft: true
 tags:
   - video

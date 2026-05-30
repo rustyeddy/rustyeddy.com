@@ -1,5 +1,7 @@
 ---
 title: Cloud Trek
+description: >
+  Alchemy Networks consulting work automating private cloud provisioning with CloudStack, Xen, Ansible, Python, and Linux.
 date: 2017-04-01
 start: January 2017
 finish: June 2017

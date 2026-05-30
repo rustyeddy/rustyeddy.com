@@ -1,27 +1,16 @@
-<footer id="footer" class="container-fluid footer small-text pt-4 border-top">
-  <section class="row">
-    <div class="col"></div>
-    <div class="col-md-6 text-center">
-      <div>
-        Last update ~
-        {{ with .Params }}
-	{{ with .lastmod }}
-        {{ dateFormat "Monday, Jan 2, 2006" . }}
-	{{ end }}
-        {{ else }}
-	{{ .Date }}
-        {{ end }}
-      </div>
-      <div>site by <a href="/">Eddy Consulting, LLC.</a> ~ &#xA9; 2008&ndash;{{ now.Year }}</div>
+<footer id="footer" class="container footer small-text pt-4 border-top">
+  <section class="row align-items-center">
+    <div class="col-md-4 text-left text-nowrap">
+      Last update ~ {{ .Lastmod.Format "Monday, Jan 2, 2006" }}
     </div>
-    <div class="col">
-      <div class="text-left">
-	<a href="https://github.com/rustyeddy">github</a> .
-	<a href="https://twitter.com/rustyeddy">twitter</a> .
-	<a href="https://linkedin.com/rustyeddy">linkedin</a><br/>	    
-      </div>
+    <div class="col-md-4 text-center text-nowrap">
+      site by <a href="/">Eddy Consulting, LLC.</a> ~ &#xA9; 2008&ndash;{{ now.Year }}
     </div>
-    <div class="col"></div>
+    <div class="col-md-4 text-right text-nowrap">
+      <a href="https://github.com/rustyeddy">github</a> .
+      <a href="https://x.com/rustyeddy">x</a> .
+      <a href="https://www.linkedin.com/in/rustyeddy/">linkedin</a>
+    </div>
   </section>
 </footer>
 

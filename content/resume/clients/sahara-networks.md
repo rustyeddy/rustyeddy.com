@@ -1,5 +1,7 @@
 ---
 title: Sahara Networks
+description: >
+  Sahara Networks protocol and software work connecting microcontrollers and IoT devices across high-speed device networks.
 start: 2020-10-01
 finish: present
 date: 2021-01-27

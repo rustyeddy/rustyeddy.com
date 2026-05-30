@@ -1,5 +1,7 @@
 ---
 title: Sierra Hydrographics
+description: >
+  Sierra Hydrographics consulting work building automated hydrological data collection from telemetry radios and satellite feeds.
 date: 2010-01-02
 start: Nov 2014
 finish: Dec 2016

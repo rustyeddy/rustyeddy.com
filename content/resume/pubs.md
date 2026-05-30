@@ -1,5 +1,7 @@
 ---
 title: Publications
+description: >
+  Published papers and conference talks on routing architecture, protocol implementation testing, multicast, and SDN networks.
 date: 2018-09-21
 ---
 

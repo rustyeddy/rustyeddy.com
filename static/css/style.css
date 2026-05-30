@@ -7803,6 +7803,9 @@ blockquote {
 footer {
   margin: 40px 0; }
 
+footer.small-text {
+  font-size: 13px; }
+
 .row-header {
   margin-top: 4rem; }
 

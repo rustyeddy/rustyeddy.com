@@ -1,5 +1,7 @@
 ---
 title: MBR vs GPT Partition Tables
+description: >
+  Notes comparing MBR and GPT partition tables, including partition limits, UEFI support, recovery, and disk integrity.
 draft: true
 date: 2023-06-22
 ---

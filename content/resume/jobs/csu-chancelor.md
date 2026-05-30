@@ -1,5 +1,7 @@
 ---
 title: California State University ~ Chancelors Office
+description: >
+  CSU Chancellor Office work installing Unix systems, managing UUNET connectivity, and building a bulletin board system.
 date: 1995-08-01
 weight: 600
 start: Jan 1994

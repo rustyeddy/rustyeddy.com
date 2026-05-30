@@ -1,5 +1,7 @@
 ---
 title: Retix 
+description: >
+  Retix Systems work leading automated protocol test development for switches and routing protocols including OSPF, RIP, and BGP.
 date: 1995-08-01
 weight: 400
 start: Jan 1994

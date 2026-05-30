@@ -1,9 +1,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  {{ with .Description }}
+  {{ $description := . | plainify | replaceRE "\\s+" " " | replaceRE "^\\s+|\\s+$" "" }}
+  <meta name="description" content="{{ $description }}" />
+  {{ else }}{{ with .Summary }}
+  {{ $description := . | plainify | replaceRE "\\s+" " " | replaceRE "^\\s+|\\s+$" "" | truncate 160 }}
+  <meta name="description" content="{{ $description }}" />
+  {{ end }}{{ end }}
 
   <!-- get bootstrap and some google fonts from net -->
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="stylesheet" type="text/css" href="/css/style.css" />
 
   <!-- Title appropriate for the page being displayed -->

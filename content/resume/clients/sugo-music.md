@@ -1,5 +1,7 @@
 ---
 title: Sugo Music Dashboard
+description: >
+  Sugo Music dashboard work managing the software process and building Go backend services for a React artist dashboard.
 start: 2020-10-01
 finish: present
 date: 2021-01-27

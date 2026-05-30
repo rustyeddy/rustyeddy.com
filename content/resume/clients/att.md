@@ -1,5 +1,7 @@
 ---
 title: DirecTV / AT&T
+description: >
+  DirecTV and AT&T consulting work on SDN, OpenFlow, multicast networking, ONOS, and zero-touch provisioning.
 date: 2016-12-01
 start: Nov 2014
 finish: Dec 2016
