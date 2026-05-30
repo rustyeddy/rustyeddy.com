@@ -1,27 +1,14 @@
-/* $theme-colors: map-merge(
-   (
-     "primary":    $primary,
-     "secondary":  $secondary,
-     "success":    $success,
-     "info":       $info,
-     "warning":    $warning,
-     "danger":     $danger,
-     "light":      $light,
-     "dark":       $dark
-   ),
-   $theme-colors
- );
-*/
 $theme-colors: (
   "primary": #0074d9,
   "danger": #ff4136
 );
 
-// $body-bg: white;
-// $body-color: #1a1a1a;
-
 // ----------------------------- Spacing -------------------------------
 $paragraph-margin-bottom:   2rem;
+
+$font-size-small-text: 14px;
+$font-size-smaller-text: 11px;
+$font-size-footer-text: 13px;
 
 $font-family-sans-serif: Quicksand;
 $font-family-serif: Lora;
@@ -103,27 +90,25 @@ footer {
     margin: 40px 0;
 }
 
-footer.small-text {
-    font-size: 13px;
+.footer-text {
+    font-size: $font-size-footer-text;
 }
 
-.row {
-}
 
 .row-header {
     margin-top: 4rem;
 }
 
 .small-text {
-    font-size: 11px;
+    font-size: $font-size-small-text;
 }
 
 .smaller-text {
-    font-size: 14px;
+    font-size: $font-size-smaller-text;
 }
 
 .client {
-    font-size: 14px;
+    font-size: $font-size-small-text;
     font-style: italic;
 }
 
@@ -147,7 +132,7 @@ img.thehead {
 
     .job {
 	.duration {
-	    font-size: 11px;
+	    font-size: $font-size-smaller-text;
 	}
 
     }
