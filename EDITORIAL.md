@@ -162,18 +162,6 @@ Work in this order:
 
 ### Priority 3: Finish the Software Section Refresh
 
-#### Numeric Types in Financial Software
-
-- **Path:** `content/software/numeric-types-financial-software.md`
-- **Disposition:** Promote as strong standalone technical content.
-
-Tasks:
-
-- [ ] Add `Common pitfalls`.
-- [ ] Add one more example showing boundary conversion from API JSON/string input.
-- [ ] Link to Strategy Pattern and Trader project.
-- [ ] Add SEO metadata around fixed-point arithmetic in Go.
-
 #### Strategy Pattern in a Backtesting Engine
 
 - **Path:** `content/software/strategy-pattern-backtesting.md`
