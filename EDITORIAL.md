@@ -134,7 +134,6 @@ Work in this order:
 
 ### Sprint 1: Publication Trust and Main Flow
 
-- [ ] Rewrite `content/software/use-cases-to-tasks.md`.
 - [ ] Expand or draft `content/notes/raspberry-pi-pico-setup.md`.
 - [ ] Remove remaining TODOs from `content/iot/self-watering-garden.md`.
 
@@ -177,21 +176,6 @@ Tasks:
 - [ ] Link to related embedded/Linux/IoT content.
 
 Suggested title: `Raspberry Pi Pico C++ Debugging Setup from a Raspberry Pi 5`
-
-#### Use Cases to Tasks
-
-- **Path:** `content/software/use-cases-to-tasks.md`
-- **Disposition:** Rewrite.
-- **Why it matters:** Part of the main `/software/` flow and linked from the polished `Use Cases` article.
-
-Tasks:
-
-- [ ] Remove visible TODOs.
-- [ ] Bring voice in line with the refreshed software section.
-- [ ] Replace incomplete acceptance test with a complete example.
-- [ ] Convert brainstorming into a requirements -> acceptance tests -> task cards flow.
-- [ ] Add a concrete Kanban card example.
-- [ ] Link to Kanban and Test Driven Development.
 
 ### Priority 1: Strengthen Cornerstone IoT Content
 

@@ -2,125 +2,235 @@
 title: Use Cases to Tasks
 date: 2024-12-26
 description: >
-  Taking use cases and slicing them into concrete development tasks,
-  acceptance tests, and Kanban backlog items ready for the dev team.
+  How to turn use cases into requirements, acceptance tests, and small Kanban
+  cards that are ready for implementation.
 weight: 21
 ---
 
-In [Use Cases](/software/use-cases/) we broke Kelly's watering system story
-into a first use case and derived an initial set of requirements and
-acceptance tests. Now we turn those into actual development work items.
+A use case describes value from the user's point of view. A task describes a
+piece of work a developer can finish. Confusing those two is one of the
+fastest ways to turn a software plan into a vague backlog.
 
-## Slicing Use Cases
+In [Use Cases](/software/use-cases/) we turned Kelly's watering-system story
+into a focused use case:
 
-A single use case is often too large to implement in one sprint. We slice
-it into thinner, independently deliverable use cases.
+> As a gardener, I want my system to periodically measure soil moisture and
+> turn on a water pump when the soil is dry, then turn it off when it gets
+> wet enough.
 
-Starting from Use Case 1:
+That is a good use case, but it is not a development task. It contains sensor
+work, pump control, timing, thresholds, and testable behavior. The next step
+is to slice it into requirements, acceptance tests, and small cards that can
+move across a [Kanban board](/software/kanban/).
 
-> Use Case 1: As a gardener, I want my system to periodically measure soil
-> moisture and turn on a water pump when the soil is dry, then turn it off
-> when it gets wet enough.
+## Why Use Cases Are Not Tasks
 
-Two natural slices emerge:
+A use case answers a product question: what does the user need the system to
+do?
 
-> Use Case 1.1: As a gardener, I want to configure how frequently soil
-> moisture is checked.
+A task answers an implementation question: what small piece of work should a
+developer complete next?
 
-This introduces a configuration variable and a timer.
+The translation matters because each artifact has a different audience:
 
-> Use Case 1.2: As a gardener, I want my system to record historic soil
-> moisture data.
+| Artifact | Audience | Purpose |
+| --- | --- | --- |
+| Use case | User, product owner, team | Describe user value |
+| Requirement | Team | State required behavior |
+| Acceptance test | User, reviewer, team | Define observable success |
+| Task card | Developer | Describe a small implementation step |
 
-This introduces a data model and storage.
+If a Kanban card is just a copied use case, it is usually too large. If a use
+case is written as a technical task, it loses the user's intent.
 
-## Requirements
+## Extract Requirements from One Use Case
 
-From Use Case 1 and its slices:
+Start by pulling out the system behaviors implied by the use case. Stay close
+to the user's language, but make each behavior specific enough to test.
 
-1. Periodically measure soil moisture levels
-2. Activate the water pump when moisture drops below the dry threshold
-3. Deactivate the pump when moisture reaches the damp threshold
-4. Configurable measurement frequency and thresholds
-5. Historic data storage
+From the watering use case, the first requirements are:
 
-## Acceptance Tests
+1. The system periodically measures soil moisture.
+2. The system turns the pump on when moisture is below the dry threshold.
+3. The system turns the pump off when moisture reaches the damp threshold.
+4. The measurement interval can be configured.
+5. The dry and damp thresholds can be configured.
+6. Each measurement is recorded with time, station, moisture level, and pump
+   state.
 
-| # | Test |
-|---|------|
-| 1 | Pump is inactive when moisture is above the dry threshold |
-| 2 | Pump activates when moisture crosses the dry threshold |
-| 3 | Pump deactivates when moisture crosses the damp threshold |
-| 4 | Measurement interval is configurable at runtime |
+These are not yet tasks. They are behavioral commitments. They describe what
+must be true when the system is working.
 
-## Busting Out the Tasks
+## Write Acceptance Tests Before Tasks
 
-Here we shift from user language to developer language. We are now asking:
-*what do we actually need to build?*
+Acceptance tests define done from the outside. They should be understandable
+without reading the code.
 
-We stay technology-neutral at this level — no specific libraries or languages
-yet. These tasks apply equally to a Go service, a Python script, or C++
-firmware.
+For the first slice, we can write these tests:
 
-### Soil Moisture Sensor
+| # | Given | When | Then |
+| --- | --- | --- | --- |
+| 1 | Soil moisture is above the dry threshold | The station takes a reading | The pump remains off |
+| 2 | Soil moisture falls below the dry threshold | The station takes a reading | The pump turns on |
+| 3 | The pump is on | Soil moisture reaches the damp threshold | The pump turns off |
+| 4 | The interval is set to 60 seconds | The station starts | A reading is attempted every 60 seconds |
+| 5 | A reading is taken | The reading is accepted | The timestamp, station ID, moisture value, and pump state are recorded |
 
-{{% requirement "Periodically measure soil moisture levels" %}}
-We need a sensor to stick in the soil that reports moisture to the
-controller. For this project we use Adafruit's I2C Capacitive Moisture
-Sensor. Wiring and driver details are in the
-[Soil Moisture Sensor](/notes/soil-moisture-adafruit/) note.
+These tests give the developer and reviewer a shared target. They also make
+it obvious when a requirement is too vague. For example, "record historic
+moisture data" is not testable until we name the minimum fields that must be
+recorded.
+
+## Slice the Work into Task Cards
+
+Now shift from user behavior to implementation work. Each task should be small
+enough to finish in one to two days and specific enough to review.
+
+### Soil Moisture Reading
+
+{{% requirement "Measure soil moisture" %}}
+Build a sensor reader that returns a normalized soil moisture value and an
+error when the sensor cannot be read. For the garden project, the hardware
+notes are in [Adafruit Soil Moisture Sensor Notes for IoT Projects](/notes/soil-moisture-adafruit/).
 {{% /requirement %}}
 
-### Water Pump Control
+Good task card:
 
-{{% requirement "Activate and deactivate the pump" %}}
-The pump is switched via a GPIO pin on the controller board. The controller
-needs a module that accepts a simple on/off command and drives the pin
-accordingly.
+> Implement soil moisture reader interface for the collection station.
+>
+> Done when a fake reader can return dry, damp, and read-error states in unit
+> tests.
+
+### Pump Control
+
+{{% requirement "Turn the pump on and off" %}}
+Build a pump controller that accepts explicit `on` and `off` commands without
+knowing why the command was issued. That keeps the control logic separate from
+the hardware driver.
 {{% /requirement %}}
 
-### Periodic Measurement Timer
+Good task card:
 
-{{% requirement "Configurable measurement frequency" %}}
-A timer fires at a configurable interval and triggers a moisture read. See
-[Go Timers](/notes/go-timers/) for the implementation approach.
+> Implement pump controller interface with GPIO-backed and fake implementations.
+>
+> Done when tests prove `On` and `Off` call the expected driver behavior.
+
+### Moisture Decision Logic
+
+{{% requirement "Apply dry and damp thresholds" %}}
+Build the rule that compares the latest moisture reading against configured
+thresholds and decides whether the pump should be on or off.
 {{% /requirement %}}
 
-### Data Broadcast via MQTT
+Good task card:
 
-{{% requirement "Publish sensor readings" %}}
-Readings are published over MQTT so any subscriber — the pump controller,
-a logger, a future UI — can consume them independently. See
-[MQTT Communication](/notes/mqtt-comm/) for broker setup and channel
-conventions.
+> Implement moisture threshold decision function.
+>
+> Done when table-driven tests cover above dry threshold, below dry threshold,
+> and damp threshold shutoff behavior.
+
+### Periodic Measurement
+
+{{% requirement "Measure on a configurable interval" %}}
+A timer triggers moisture measurement at a configurable interval. The
+implementation should keep timing separate from the sensor and pump logic so
+it can be tested without waiting on real time. See [Go Timers](/notes/go-timers/)
+for related implementation notes.
 {{% /requirement %}}
 
-### Local Data Storage
+Good task card:
 
-{{% requirement "Historic data storage" %}}
-Readings are cached locally in a time-series store so the system functions
-without network access and the UI can display history. Minimum fields:
-timestamp, station ID, moisture level, pump state.
+> Add periodic measurement loop using configurable interval.
+>
+> Done when a fake ticker can trigger two readings without sleeping in the
+> test.
+
+### Measurement Record
+
+{{% requirement "Record each measurement" %}}
+Each accepted reading needs a durable record with timestamp, station ID,
+moisture level, and pump state. Storage can start simple, but the data shape
+should be stable.
 {{% /requirement %}}
 
-### Configuration Variables
+Good task card:
 
-{{% requirement "Configurable thresholds and intervals" %}}
-The following values must be configurable at runtime, not hard-coded:
+> Define measurement record type and local storage writer.
+>
+> Done when a reading can be written and read back with timestamp, station ID,
+> moisture value, and pump state intact.
 
-1. Measurement interval (seconds)
-2. Dry threshold — moisture level that triggers pump on
-3. Damp threshold — moisture level that triggers pump off
-4. Local data storage path
-5. MQTT channel name
+### MQTT Publication
+
+{{% requirement "Publish readings for other components" %}}
+The station publishes readings over MQTT so the gateway, logger, and future UI
+can consume telemetry without being coupled to the sensor code. See
+[MQTT Communication](/notes/mqtt-comm/) for the broader message-bus model.
 {{% /requirement %}}
 
-## Adding Tasks to the Kanban Board
+Good task card:
 
-With requirements, acceptance tests, and implementation tasks defined, we
-are ready to populate the Kanban board. Each task above becomes a card.
-Each acceptance test becomes the exit criterion for its card.
+> Publish accepted measurement records to the station MQTT topic.
+>
+> Done when a test subscriber receives the expected JSON payload for one
+> reading.
 
-That is the bridge from design to development. The mechanics of running the
-board — WIP limits, task sizing, moving cards through columns — are covered
-in [Kanban](/software/kanban/).
+## Example Kanban Card
+
+A finished card should make the work and exit criteria obvious. Here is one
+card that is small enough to pull into `In Progress`:
+
+```text
+Title: Implement moisture threshold decision function
+
+Requirement:
+The system turns the pump on when moisture is below the dry threshold and
+turns it off when moisture reaches the damp threshold.
+
+Implementation notes:
+- Inputs: current moisture, dry threshold, damp threshold, current pump state
+- Output: desired pump state
+- No hardware calls in this function
+
+Acceptance criteria:
+- Above dry threshold keeps pump off
+- Below dry threshold turns pump on
+- Damp threshold turns pump off when pump is already running
+- Invalid threshold configuration returns an error
+
+Links:
+- Use case: Water plants when soil is too dry
+- Tests: table-driven unit tests for threshold decisions
+```
+
+That card is not the whole watering system. It is one piece of the watering
+system. When it is done, the board moves forward and the next card can build
+on a tested decision boundary.
+
+## Common Pitfalls
+
+- Turning one use case into one giant task. The result is a card that sits in
+  progress for days with no useful signal.
+- Writing tasks before acceptance tests. Without exit criteria, the team
+  argues about done after the work is already in motion.
+- Mixing hardware drivers with decision logic. That makes the code harder to
+  test and harder to replace.
+- Hiding configuration inside code. Thresholds and intervals are part of the
+  system behavior and need explicit tests.
+- Creating cards that name technologies but not outcomes, such as "add MQTT"
+  without saying what message must be published and how it will be verified.
+
+## Ready for the Backlog
+
+A task is ready for the Kanban board when it has:
+
+- One clear behavior or implementation boundary.
+- A direct link back to a requirement or use case.
+- Acceptance criteria that can be tested or demonstrated.
+- Enough detail for a developer to start without rediscovering the whole
+  design.
+- A size small enough for one person to complete in one or two days.
+
+This is the bridge from design to development: use cases explain value,
+requirements define behavior, acceptance tests define done, and task cards
+make the work visible.
