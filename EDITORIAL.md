@@ -162,19 +162,6 @@ Work in this order:
 
 ### Priority 3: Finish the Software Section Refresh
 
-#### Wireframes and Storyboards
-
-- **Path:** `content/software/wireframes-and-storyboards.md`
-- **Disposition:** Rewrite or merge.
-
-Tasks:
-
-- [ ] Turn rough bullets into a decision-oriented article.
-- [ ] Explain when engineers should use storyboards vs wireframes.
-- [ ] Tie the article back to use cases.
-- [ ] Add examples from the self-watering garden dashboard.
-- [ ] Remove vague reference list or make it actionable.
-
 #### Software is Hard
 
 - **Path:** `content/software/software-is-hard.md`
