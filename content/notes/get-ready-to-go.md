@@ -1,5 +1,6 @@
 ---
 title: Get Ready to Go
+draft: true
 description: >
   This quick cheatsheet will get you ready to start working on a go
   project like the IoT project.

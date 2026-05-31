@@ -1,5 +1,6 @@
 ---
 title: Sync vs. Async, Blocking vs. Non-blocking
+draft: true
 description: >
   At some point developing software of any real usefulness or
   complexity one will need to write or debug programs that doing more

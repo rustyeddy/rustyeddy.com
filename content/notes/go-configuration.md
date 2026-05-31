@@ -1,5 +1,6 @@
 ---
 title: A Simple Go Configuration
+draft: true
 date: 2021-03-26
 description: >
   Configurations are part of most every program, configurations can be

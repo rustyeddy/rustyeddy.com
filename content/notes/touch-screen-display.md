@@ -1,5 +1,6 @@
 ---
 title: Control Station Display
+draft: true
 description: >
   The control station is where the robot will come to refuel and
   reload applications, it also manages off vehical cloud controls,

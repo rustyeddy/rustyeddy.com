@@ -1,5 +1,6 @@
 ---
 title: Bootstrap makes WebUI look great!
+draft: true
 date: 2019-12-20
 description: >
   Bootstrap can be used to quickly get a web project up and running

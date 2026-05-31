@@ -1,5 +1,6 @@
 ---
 title: Proof of Concept vs. Production
+draft: true
 date: 2020-04-11
 description: >
   New software often requires an exploration period that often results

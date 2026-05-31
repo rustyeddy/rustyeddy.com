@@ -1,5 +1,6 @@
 ---
 title: The ESP32
+draft: true
 description: >
   What a cool, inexpensive and powerful alternative to the Arduino,
   with Wifi, BT, etc all built in makes it an attractive alternative

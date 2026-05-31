@@ -1,5 +1,6 @@
 ---
 title: WPE an Excellerated Raspberry Pi Kiosk
+draft: true
 date: 2020-12-25
 description: >
   Raspberry Pi's have just become even cooler! Add an inexpensive
