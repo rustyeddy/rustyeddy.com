@@ -17,7 +17,7 @@ than the _timeout_ period the Station will be marked as _stale_.
 ## Designing Our Timer Usage
 
 A new _Timeout_ field will be added to IoTa's 
-[_simple go configuration_](http://rustyeddy.com/notes/go-configuration) 
+_simple go configuration_
 to indicate how long in (seconds, minutes or hours) a station will
 remain _active_ as long as it has been _refreshed_ within the
 _config.StationTimeout_ interval.
