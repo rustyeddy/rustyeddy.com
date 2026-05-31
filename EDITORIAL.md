@@ -134,12 +134,10 @@ Work in this order:
 
 ### Sprint 1: Publication Trust and Main Flow
 
-- [ ] Expand or draft `content/notes/raspberry-pi-pico-setup.md`.
 - [ ] Remove remaining TODOs from `content/iot/self-watering-garden.md`.
 
 ### Sprint 2: IoT Cornerstone Content
 
-- [ ] Polish `content/iot/building-iot-device-manager-in-go.md`.
 - [ ] Fix duplicate H1 and sharpen `content/iot/iot-system-architecture-device-to-cloud.md`.
 - [ ] Decide whether to merge or reposition `content/iot/iot-system-architecture-otto.md`.
 - [ ] Rewrite `content/iot/iot-edge-gateway.md` as an architecture article.
@@ -162,41 +160,7 @@ Work in this order:
 
 ### Priority 0: Fix or Demote Raw Public Notes
 
-#### Raspberry Pi Pico Setup
-
-- **Path:** `content/notes/raspberry-pi-pico-setup.md`
-- **Disposition:** Draft/hide until expanded, or rewrite as a short setup note.
-- **Why it matters:** Public note with almost no body content.
-
-Tasks:
-
-- [ ] Add actual setup steps or mark as draft.
-- [ ] Clarify the intended setup: Raspberry Pi 5 host, Pico target, C++, debugging.
-- [ ] Include toolchain assumptions.
-- [ ] Link to related embedded/Linux/IoT content.
-
-Suggested title: `Raspberry Pi Pico C++ Debugging Setup from a Raspberry Pi 5`
-
 ### Priority 1: Strengthen Cornerstone IoT Content
-
-#### Building an IoT Device Manager in Go
-
-- **Path:** `content/iot/building-iot-device-manager-in-go.md`
-- **Disposition:** Promote after focused polish.
-- **Why it matters:** Strong topic intersection: Go, generics, device abstraction, mocks, edge systems, and OttO.
-
-Tasks:
-
-- [ ] Remove visible TODO for architecture drawing.
-- [ ] Fix typos and rough phrasing.
-- [ ] Verify code snippets against current repos.
-- [ ] Add a simple architecture diagram.
-- [ ] Add `Why this matters`.
-- [ ] Add `Common pitfalls`.
-- [ ] Clarify whether snippets are complete, simplified, or illustrative.
-- [ ] Consider splitting long material into two posts if it feels overloaded.
-
-Suggested title: `Building an IoT Device Abstraction Layer in Go`
 
 #### IoT System Architecture: Device to Cloud
 

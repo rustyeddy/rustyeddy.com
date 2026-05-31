@@ -1,6 +1,8 @@
 ---
 title: Adafruit Soil Moisture Sensor Notes for IoT Projects
 date: 2024-03-13
+lastmod: 2026-05-31
+canonical: "https://rustyeddy.com/notes/soil-moisture-adafruit/"
 description: >
   Notes on using the Adafruit STEMMA soil moisture sensor after unreliable
   results from cheap capacitive sensors in an ESP32 garden project.
@@ -10,7 +12,6 @@ tags:
   - soil moisture
 github: https://github.com/rustyeddy/iotesp
 ---
-
 
 # Adafruit Soil Moisture Sensor Notes for IoT Projects
 
