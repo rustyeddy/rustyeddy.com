@@ -162,18 +162,6 @@ Work in this order:
 
 ### Priority 3: Finish the Software Section Refresh
 
-#### Software is Hard
-
-- **Path:** `content/software/software-is-hard.md`
-- **Disposition:** Polish; keep as section opener.
-
-Tasks:
-
-- [ ] Tighten opening claim and remove rough phrasing.
-- [ ] Add `Why this matters` around divergence between user expectations and developer assumptions.
-- [ ] Add a short checklist for predictable projects.
-- [ ] Link intentionally to Use Cases, Kanban, TDD, Peer Review, and Release Process.
-
 #### Version Control Systems
 
 - **Path:** `content/software/version-control-systems.md`

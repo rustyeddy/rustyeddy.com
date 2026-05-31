@@ -1,156 +1,147 @@
 ---
-title: Software is Hard
+title: "Software is Hard"
 date: 2026-05-22
 weight: 10
 description: >
-  Software development projects have a nasty reputation for getting
-  out of control and being difficult to manage and complete. Let's
-  explore ways to make managing software development projects more
-  predictable 
+  Why software projects become unpredictable when user expectations and
+  developer assumptions diverge, and how lightweight engineering practices
+  make projects easier to steer.
+tags: ["Software Engineering", "Project Management", "Use Cases", "Process"]
+categories: ["Software Engineering"]
+summary: "A section opener explaining why software projects drift and how use cases, Kanban, testing, review, and release discipline make them predictable."
 ---
 
-## Why Is Software So Difficult?
+Software is hard because it turns vague human expectations into precise
+machine behavior. The difficult part is not only writing code. The difficult
+part is keeping users, developers, managers, and reviewers aligned on what
+the code is supposed to do.
 
-Software development projects are one of the most notoriously
-mis-understood and incorrectly managed of all the _common_ processes
-used throughout the business world.
+When that alignment breaks, projects become unpredictable. Users think they
+asked for one thing. Developers build something technically reasonable but
+not quite what the user meant. Everyone can be acting in good faith, and the
+project can still drift.
 
-There are a number of reasons for software projects being classified
-as a disaster so often. Software often is solving a complex problem
-that unfortunately can't be seen.
+## Why This Matters
 
-Perhaps the worst problem with software projects are the diverging
-expectations between developers and users.
+Most software failures start as communication failures.
 
-## Software is Not Regulated
+A user asks for a dashboard, report, workflow, database, mobile app, or
+integration. The request sounds clear because the user has a mental picture
+of the finished result. The developer hears the same words through a different
+lens: data models, APIs, file formats, queues, screens, permissions, and edge
+cases.
 
-Another reason software projects are capable of running so far amok is
-the fact that the software industry is not regulated (nor do I think
-it should be).
+Both interpretations may be reasonable. That is the problem.
 
-> Please note, I am not in favor of external regulation, I am, however
-a _huge_ advocate of transparency, education, communication and
-following industry _Best Practices_.
+Predictable projects make those assumptions visible early. They turn vague
+requests into use cases, use cases into requirements, requirements into
+acceptance tests, and implementation work into small reviewed changes that
+can be released safely.
 
-For people that do not really understand how _software_ works, it can
-be a nightmare trying to figure out what needs to be, who the best
-people for the job are, etc.
+## The Database of Shoes Problem
 
-After all, who can you trust?
+Imagine a user asks for a "database of shoes."
 
-There are **no laws or regulations** that will ensure that the outcome
-of your software project will be what you wanted.
+The user may expect a complete application:
 
-As developers, managers and users, we all want:
+- A form for adding shoes.
+- Search and filters.
+- Photos.
+- Categories.
+- Reports.
+- User accounts.
+- Export tools.
 
-> To Develop the Correct Software, Correctly.
+A developer may interpret the request literally:
 
-### No Single Right Way, Many Wrong Ones
+- A schema.
+- A table.
+- A JSON file.
+- A seed dataset.
+- A basic API endpoint.
 
-While it is true that there is no single _correct_ way to do software, it is
-also true there are _many ways_ to do software _incorrectly_.
+Neither interpretation is absurd. They are just different levels of the same
+idea. If the team does not uncover the difference, the project will look busy
+while moving away from what the user actually wanted.
 
-Software development is largely a collection of _Best Practices_ which
-are heavily influenced by the application you are building, the "tech
-stack(s)" being used and the specific culture of your organization.
+## Predictability Comes from Feedback
 
-We are here, to identify the _good practices_ and renounce the _bad
-practices_.
+A predictable project is not one where every detail is known up front. That
+is rarely realistic. A predictable project is one where divergence is found
+quickly and corrected while it is still cheap.
 
-The lessons and processes captured here are meant to be timeless and
-translate well across industries, development styles and "tech stacks".
+That requires frequent feedback:
 
-Bottom line: we want to employ _Just Enough Process_ to learn to run
-stress free, successful software development projects. Software
-projects that I like to call 
+- Users see working software early.
+- Developers show small increments instead of hiding large batches of work.
+- Requirements are written in observable language.
+- Tests describe expected behavior.
+- Reviewers inspect changes before they become permanent.
+- Releases are small enough to verify and roll back.
 
-> Predictable.
+The longer the gap between assumption and feedback, the more expensive the
+correction becomes.
 
-The lack of predictability can be quickly identified with a disconnect
-between the _expectations of the user_ and the activities of the
-development team.  The worst enemy of predictability is a ...
+## Just Enough Process
 
-## Communication Breakdown
+Software does not need heavyweight ceremony to become predictable. It needs
+just enough process to keep everyone looking at the same target.
 
-Most of these problems are rooted in mis-understanding,
-mis-communications or just missed assumptions.
+The useful practices are communication tools:
 
-For example, let's say a _user_ asks a developer for a "Database of
-Shoes". Many conflicting ideas of what _exactly_ does _a Database_
-mean anyway?
+- [Use Cases](/software/use-cases/) capture what users need in plain language.
+- [Use Cases to Tasks](/software/use-cases-to-tasks/) turns user value into
+  requirements, acceptance tests, and implementation cards.
+- [Kanban](/software/kanban/) makes work visible and limits hidden queues.
+- [Test Driven Software Development](/software/test-driven-software-development/)
+  makes expected behavior repeatable.
+- [Peer Reviews](/software/peer-review/) catches mistakes and spreads context.
+- [Release Process](/software/release-process/) turns finished work into
+  versioned, verified user value.
 
-### What the User Thinks
+None of these practices exists to satisfy a process checklist. They exist to
+reduce surprise.
 
-The _user_ likely think they are going to get an entire usable
-Database with typical functionality like entering data with _forms_,
-being able to perform complex _searches_ and apply sophisticated
-_filters_ to present only the shoe data they need.
+## Warning Signs
 
-### What the Developer Thinks
+A project is becoming unpredictable when:
 
-The _developer_ on the other hand may be interpreting the task more
-literally.
+- Users cannot see working software for long stretches of time.
+- Developers are building from assumptions instead of confirmed use cases.
+- Tasks are large, vague, or impossible to test.
+- Nobody can explain what must be true before a feature is done.
+- Reviews focus on style because behavior is unclear.
+- Releases are rare, stressful, or hard to roll back.
+- Bugs reveal misunderstood requirements rather than isolated mistakes.
 
-She may be thinking: I'll give the _user_ a _JSON_ file with a
-bunch of shoes for the database.  We can add things like _entry forms_
-and _search filters_ in the future.
+These signs do not mean the project is doomed. They mean the feedback loop is
+too slow or too vague.
 
-### Who is Right?
+## Checklist for Predictable Projects
 
-In reality, both of these parties have a legitimate definition of a
-_Database_ depending on the context and the community you are talking
-to.
+A predictable project should be able to answer these questions:
 
-There lie's the rub, we have two communities: users and developers, who have 
-two different mindsets (I want ...) and (I can just ...) which start to diverge and
-the conflict begins.
+- What user goal does this work support?
+- What observable behavior proves the goal was met?
+- What acceptance tests define done?
+- What is the smallest useful task we can complete next?
+- Who needs to review the change?
+- How will the change be tested automatically?
+- How will users see and respond to the change?
+- How will the release be verified?
+- How can the change be rolled back if needed?
 
-## When does resolution come?
+If the team cannot answer those questions, writing more code is unlikely to
+make the project clearer.
 
-Projects that start to _diverge_ can be put back on path as soon as
-the divergence has been identified. When there is _regular,
-meaningful_ communication between all parties divergences are small
-and resetting is quick.
+## The Real Goal
 
-If there are large gaps in communication between interested parties,
-then the divergence between what _is developed_ vs. what _was wanted_
-can grow large, even beyond the point of recovery.
+The goal is not to make software easy. Software will still involve ambiguity,
+tradeoffs, bugs, changing requirements, and technical constraints.
 
-Agile software development, in it's truest form provides the means to detect and
-stop a software project that is about to take a left turn before it actually does.
+The goal is to make software steerable.
 
-### Death Signs of a Software Project
-
-Here are three of the biggest signs a project is headed for
-disaster:
-
-1. Developers hoarding code — not letting users see it
-2. Users not committed to the success of the project — developers get
-   no feedback from actually running code
-3. Feature creep — users avoid engaging, developers avoid exposing
-
-_Feature creep_ is really a combination of 1&2 above. Users avoid the
-work of actually using the software. Developers avoid the work of
-making it regularly available for use, testing and scrutiny.
-
-_Developers_ must be ready _release_ software changes frequently an
-rapidly to a _user_ base that will provide prompt and useful feedback
-about the new software being release.
-
-If these two things happen, chances of a successful and predictable
-software project increase significantly.
-
-## Best Practices
-
-Whatever the application, technology, or industry, one thing holds:
-
-> Communication is the foundation of predictability and success.
-
-The practices covered in this section — use cases, version control,
-kanban, test-driven development, peer review, and release process —
-are all, at their core, communication tools. They create shared
-understanding, make progress visible, and catch divergence before it
-becomes expensive.
-
-That is where we start.
-
+A steerable project can absorb new information without chaos. It can change
+direction because the work is visible, the behavior is tested, the code is
+reviewed, and releases are routine. That is what lightweight engineering
+practice is for.
