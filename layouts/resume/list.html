@@ -1,4 +1,7 @@
 {{ define "main" }}
+<div class="container resume-actions text-right">
+    <a class="btn btn-outline-secondary btn-sm" href="/resume/?download=pdf">Download PDF</a>
+</div>
 <div class="resume">
     {{- partial "resume/summary.html" . }}
 
@@ -10,5 +13,13 @@
 
     {{- partial "resume/pubs.html" . -}}
 </div>
+<script>
+  (function () {
+    var params = new URLSearchParams(window.location.search);
+    if (params.get('download') !== 'pdf') { return; }
+    window.addEventListener('load', function () {
+      window.print();
+    });
+  })();
+</script>
 {{ end }}
-
