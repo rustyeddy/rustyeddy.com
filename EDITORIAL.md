@@ -160,20 +160,6 @@ Work in this order:
 
 ### Priority 2: Modernize Older IoT Implementation Posts
 
-#### Soil Moisture Sensors
-
-- **Path:** `content/notes/soil-moisture-sensor.md`
-- **Disposition:** Merge or improve.
-
-Tasks:
-
-- [ ] Fix title typo.
-- [ ] Replace unfinished image placeholders.
-- [ ] Verify external video/link references.
-- [ ] Separate researched facts from personal experiment notes.
-- [ ] Conclude with a clear recommendation.
-- [ ] Link to Adafruit sensor note and self-watering garden.
-
 ### Priority 3: Finish the Software Section Refresh
 
 #### Test Driven Software Development
