@@ -162,19 +162,6 @@ Work in this order:
 
 ### Priority 3: Finish the Software Section Refresh
 
-#### Peer Reviews
-
-- **Path:** `content/software/peer-review.md`
-- **Disposition:** Rewrite.
-
-Tasks:
-
-- [ ] Replace rough prose with practical guidance.
-- [ ] Add structure: purpose, reviewer responsibilities, author responsibilities, PR checklist.
-- [ ] Remove unnecessary emotional framing or make it sharper and shorter.
-- [ ] Add `Common pitfalls`: review as gatekeeping, giant PRs, style bikeshedding, vague comments.
-- [ ] Link to Version Control and Release Process.
-
 #### Release Process
 
 - **Path:** `content/software/release-process.md`

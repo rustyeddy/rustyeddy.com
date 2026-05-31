@@ -1,112 +1,186 @@
 ---
-title: Peer Reviews
+title: "Peer Reviews"
 date: 2026-05-21
 weight: 60
 description: >
   How peer review catches bugs before users do, spreads knowledge across
-  the team, and enforces standards — and how to run reviews that improve
-  code without damaging the people who wrote it.
+  the team, and keeps code maintainable through clear author and reviewer
+  responsibilities.
+tags: ["Peer Review", "Pull Requests", "Software Engineering", "Code Review"]
+categories: ["Software Engineering"]
+summary: "A practical guide to code review: what authors should prepare, what reviewers should check, and how pull requests fit into release quality."
 ---
 
-A peer review is the process of having one or more knowledgeable colleagues
-examine your code before it merges into the main branch. It is one of the
-highest-leverage practices in software development: bugs found in review cost
-a fraction of what they cost after shipping.
+Peer review is the practice of having another engineer inspect a change
+before it merges into the main branch. It is one of the highest-leverage
+quality controls in software development because it catches mistakes while
+they are still cheap to fix.
 
-Beyond bug catching, review serves two other purposes that are easy to
-overlook. It spreads knowledge — the reviewer learns what changed and why,
-reducing the bus-factor on any given piece of the codebase. And it enforces
-consistency, keeping the code readable to everyone on the team, not just the
-person who wrote it.
+A good review does more than find bugs. It spreads knowledge, keeps the
+codebase consistent, and makes sure the change fits the system the team is
+actually maintaining.
+
+## Purpose
+
+Peer review should answer a few concrete questions:
+
+- Does the change solve the stated problem?
+- Is the behavior covered by the right tests?
+- Does it fit the existing architecture and style?
+- Does it change public contracts, data, configuration, or operations?
+- Can another engineer maintain this code later?
+
+Review is not a ceremony and it is not a personality test. It is a shared
+engineering checkpoint before code becomes part of the permanent system.
 
 ## Pull Requests
 
-The standard mechanism for peer review is a _Pull Request_ (PR) — called a
-_Merge Request_ in GitLab. When a developer finishes a feature branch, she
-opens a PR against the main branch. The PR presents the exact diff, a
-description of the change, and a thread where reviewers can comment on
+The common review mechanism is a pull request. A pull request gives the
+reviewer a diff, a description, test results, and a place to discuss
 specific lines.
 
-A good PR description gives reviewers the context they need:
-- What does this change do?
-- Why was this approach chosen over alternatives?
-- Are there any areas of particular concern or uncertainty?
-- How can a reviewer test or verify it locally?
+A good pull request description explains:
 
-The description is not for the reviewers alone — it becomes part of the
-project's permanent history. A well-written PR is worth more than a
-well-written commit message because it captures the decision, not just the
-outcome.
+- What changed.
+- Why the change was made.
+- What alternatives were considered, if relevant.
+- How the change was tested.
+- Any risky areas the reviewer should inspect closely.
 
-## What Reviewers Look For
+The description matters because it becomes part of the project history.
+Six months later, the pull request often explains the decision better than
+the final code alone.
 
-A reviewer's job is not to find something wrong. It is to verify that the
-change is correct, maintainable, and consistent with the rest of the system.
-In practice that means checking:
+## Author Responsibilities
 
-- **Correctness** — Does the code do what the PR claims? Are there edge cases
-  the author may not have considered? Do the tests cover the meaningful paths?
-- **Readability** — Will the next person to touch this code understand it?
-  Are names clear? Is the logic straightforward or is it trying to be too clever?
-- **Consistency** — Does this follow the conventions already established in
-  the codebase? A consistent codebase is easier to navigate than a correct
-  one with ten different styles.
-- **Test coverage** — New behavior should come with tests. If the tests are
-  there, do they actually validate the behavior, or just exercise it?
-- **Side effects** — Does this change anything it should not? Database schema,
-  API contracts, shared config, performance-sensitive paths?
+The author is responsible for making the review possible.
 
-Not every review needs to check all of these with equal depth. A small bug
-fix warrants less scrutiny than a refactor touching shared infrastructure.
-Use judgment.
+Before requesting review, the author should:
 
-## Giving Feedback
+- Keep the pull request focused on one coherent change.
+- Rebase or merge the target branch if the diff is stale.
+- Run the relevant tests and checks locally.
+- Explain the problem and the chosen solution.
+- Call out tradeoffs, skipped work, or known limitations.
+- Add tests for new behavior or explain why tests are not appropriate.
+- Remove debugging output, temporary comments, and unrelated formatting
+  churn.
 
-How feedback is framed determines whether review improves the code or just
-creates friction. A few principles that hold:
+A reviewer should not have to reverse-engineer the intent from the diff.
+Context is part of the author's job.
 
-**Comment on the code, not the person.** "This loop will panic on an empty
-slice" is useful. "You didn't handle the empty case" creates defensiveness
-for no benefit.
+## Reviewer Responsibilities
 
-**Be specific.** Vague feedback like "this seems off" leaves the author
-guessing. Point to the exact line and explain the concern.
+The reviewer is responsible for judging the change, not rewriting it from
+scratch.
 
-**Distinguish blocking issues from suggestions.** Make clear whether a
-comment is a required change, a question, or an optional improvement. Mixing
-them forces the author to treat everything as blocking or guess which is which.
+A reviewer should check:
 
-**Explain the why.** "Use a map here" is less useful than "use a map here
-because the current approach is O(n) per lookup and this is called in a
-tight loop." The author may have information that changes the recommendation,
-and the explanation gives them something to reason against.
+- **Correctness**: does the code do what the pull request claims?
+- **Behavior**: are edge cases, errors, and user-visible outcomes handled?
+- **Tests**: do the tests prove the important behavior?
+- **Design**: does the change fit the existing architecture?
+- **Maintainability**: will the next engineer understand this code?
+- **Contracts**: does it alter APIs, schemas, config, files, or commands?
+- **Operations**: does it affect deployment, performance, logging, or
+  rollback?
 
-**Acknowledge good work.** Review does not have to be a list of problems. If
-an approach is clever or a tricky edge case was handled well, say so. It
-reinforces good practice and makes the process less adversarial.
+The reviewer should separate blocking issues from questions and optional
+suggestions. A small naming suggestion should not carry the same weight as
+a data-loss bug.
 
-## Receiving Feedback
+## Giving Useful Feedback
 
-The goal of a review is to make the code better. That is easier to hold onto
-when the feedback is well-framed, harder when it is not — but the goal
-does not change either way.
+Good review feedback is specific and actionable.
 
-Respond to every comment, even if only to acknowledge it. If you agree and
-fixed it, say so. If you disagree, explain your reasoning. A reviewer may
-have missed context; a short explanation often resolves the disagreement
-without any code change. If you are not sure, ask.
+Prefer this:
 
-Do not take review comments personally. The reviewer is looking at the code,
-not evaluating your worth as a developer. The most experienced engineers on
-any team still get significant review feedback — that is how it should work.
+> This handler returns `200` even when validation fails. Should this return
+> `400` so clients can distinguish bad input from success?
 
-## Merging
+Over this:
 
-Once all blocking comments are addressed and reviewers have approved, the PR
-can be merged. At that point the new tests become part of the permanent test
-suite, running on every future change, protecting the feature from regression
-indefinitely.
+> This seems wrong.
 
-The review thread stays attached to the commit history. Six months later,
-when someone wonders why the code works a certain way, that discussion is
-still there.
+Useful comments usually include the concern, the impact, and the requested
+change or question. If the issue is blocking, say so clearly. If it is a
+minor suggestion, label it that way.
+
+Feedback should focus on the code and the system. The goal is to improve the
+change, not to score points in the review thread.
+
+## Responding to Review
+
+The author should respond to every review comment. That response can be a
+code change, a clarification, or a reasoned disagreement.
+
+Good responses are short and explicit:
+
+- `Fixed in the latest push.`
+- `Added a regression test for this path.`
+- `Good catch, this should return 400.`
+- `I left this as-is because the caller already normalizes the value here.`
+
+If a disagreement reveals a larger design question, move the discussion out
+of line comments and resolve the decision directly. Review threads are good
+for focused comments, but they are a poor place for open-ended design debate.
+
+## Pull Request Checklist
+
+Before merge, a practical checklist should be boring:
+
+- The pull request has a clear description.
+- The change is scoped to one problem.
+- Required tests pass.
+- New behavior has tests or documented manual verification.
+- Public API, schema, configuration, or command changes are called out.
+- Documentation or examples are updated when behavior changes.
+- The release or rollback impact is understood.
+- Blocking review comments are resolved.
+- At least one reviewer has approved.
+
+The checklist is not a substitute for judgment. It is a guardrail against
+forgetting common failure modes.
+
+## Common Pitfalls
+
+### Review as Gatekeeping
+
+Review should protect the codebase, not establish dominance. If every review
+feels adversarial, authors will hide risk and reviewers will focus on winning
+arguments instead of improving the software.
+
+### Giant Pull Requests
+
+Large pull requests are slow to review and easy to misunderstand. They also
+encourage shallow approval because reviewing them properly is exhausting.
+Slice work into smaller changes whenever possible.
+
+### Style Bikeshedding
+
+Style consistency matters, but style debates should be automated or settled
+in a project convention. Review time is better spent on correctness,
+behavior, design, and risk.
+
+### Vague Comments
+
+Comments like `clean this up` or `this feels weird` do not give the author a
+clear path forward. Explain the specific concern and what would resolve it.
+
+### Approving Without Running or Reading
+
+Approval means the reviewer has done enough work to stand behind the change.
+For risky code, that may include pulling the branch, running tests, or trying
+the workflow manually.
+
+## Where This Fits
+
+Peer review sits between implementation and release. It depends on good
+version-control habits and feeds into the release process.
+
+- [Version Control Systems](/software/version-control-systems/) explains the
+  branch and history practices that make review possible.
+- [Test Driven Software Development](/software/test-driven-software-development/)
+  explains how tests give reviewers something concrete to verify.
+- [Release Process](/software/release-process/) explains how reviewed and
+  tested changes become a shipped artifact.
