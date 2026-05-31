@@ -138,7 +138,6 @@ Work in this order:
 
 ### Sprint 2: IoT Cornerstone Content
 
-- [ ] Fix duplicate H1 and sharpen `content/iot/iot-system-architecture-device-to-cloud.md`.
 - [ ] Decide whether to merge or reposition `content/iot/iot-system-architecture-otto.md`.
 - [ ] Rewrite `content/iot/iot-edge-gateway.md` as an architecture article.
 
@@ -161,19 +160,6 @@ Work in this order:
 ### Priority 0: Fix or Demote Raw Public Notes
 
 ### Priority 1: Strengthen Cornerstone IoT Content
-
-#### IoT System Architecture: Device to Cloud
-
-- **Path:** `content/iot/iot-system-architecture-device-to-cloud.md`
-- **Disposition:** Keep and polish as an architecture reference.
-
-Tasks:
-
-- [ ] Remove duplicate H1.
-- [ ] Resolve any broken related links.
-- [ ] Ensure diagram image alt text and placement are clean.
-- [ ] Add a short decision table: when to include edge hub, cloud backend, dashboard, etc.
-- [ ] Link early to OttO and the device manager article.
 
 #### IoT System Architecture Explained: The 5 Essential Layers
 
