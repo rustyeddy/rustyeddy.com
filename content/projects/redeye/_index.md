@@ -72,10 +72,10 @@ to the following:
 4. Save video and images on a Remote (Cloud) Filesystem
 
 The location(s) of video and images can be setup before hand. Dropbox,
-AWS, Flicker, Unsplash or Youtube. If you have a favorite respository
+AWS, Flickr, Unsplash or YouTube. If you have a favorite repository
 for your photos or video configure the storage box ahead of time with
-appropriate access keys and what not, from that point on your can be
-safe knowing your images and videos are safely stored where ever you
+appropriate access keys and what not, from that point on you can be
+safe knowing your images and videos are safely stored wherever you
 want them.
 
 ## About the Camera Software
@@ -128,4 +128,3 @@ All APIs can be accessed in one or more of the following ways:
 
 If you have any questions, find a bug or would like to use this
 software, please drop me a line, or fill out an issue.
-

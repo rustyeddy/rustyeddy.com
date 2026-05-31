@@ -34,11 +34,11 @@ minimal delay is the highest priority.  However, RTSP does not
 typically do very well over the Internet due to the nature of
 RTP/UDP. 
 
-Which brings up another question: will there be more than once
-transmitter/reciever per office (which RTSP could serve well).
+Which brings up another question: will there be more than one
+transmitter/receiver per office (which RTSP could serve well).
 
 In recent years people would use RTMP to stream video over the
-Internet, by adding a plguin to NGINX, each camera would
+Internet, by adding a plugin to NGINX, each camera would
 stream to NGINX, NGINX then create the endpoints for the video,
 waiting for client connections to start recieving the video.
 
@@ -69,5 +69,4 @@ is being drivin by human or algorithm.
 
 Delay is inevetible. You are crossing unknown links and firewalls.
 Must wrap it all up under HTTP to make things the easiest.
-
 

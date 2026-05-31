@@ -32,10 +32,10 @@ screen to the RPI for configuring and monitoring the robot / system.
 The standard power taken from Mains should be fed with a 2Amp power
 supply connected to the **Display Adapter Card**.
 
-You can optionally attach and additional 2am power supply to the
+You can optionally attach an additional 2am power supply to the
 RaspiBerry Pi thus driving power to the display and adapter card, in
 addition to the power supplied to the display, thus powering the Pi
-and Display seperately. 
+and Display separately. 
 
 ## Graphics
 
@@ -70,4 +70,3 @@ serving up some cool stuff!
 
 The adapter board attached to the screen has a couple additional pins
 that allow stuff.
-

@@ -41,7 +41,7 @@ bit.
 ## Video Consumers
 
 Video _Consumers_ are what I am calling the software modules that
-recieve the video for further processing of some kind.  In some use
+receive the video for further processing of some kind.  In some use
 cases we will have more than one _consumer_ for a given Video group. 
 
 ### IP Multicast Video
@@ -81,5 +81,4 @@ The Raspberry Pi camera, price wise is very cheap ($25 usd) is a cheap
 camera, yet is capable of producing high quality images.  Even better,
 it is very _programmable_ and is capable of producing filtered
 versions of the video it is producing.
-
 

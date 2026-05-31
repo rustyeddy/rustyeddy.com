@@ -33,11 +33,11 @@ available and occasionally used: Broadcast and Multicast.
 - efficient transfer of redundant info
 - resource discovery
 
-### IP Multicast and IP mutlicast addresses
+### IP Multicast and IP multicast addresses
 
 - IP also has multicast address (class D) 224.0.0.0/32 to
   239.255.255.255/32
-- one sender many recievers
+- one sender many receivers
  
 ## IP Multicast Routing
 
@@ -53,7 +53,6 @@ are generally not available unless you have a specific application and
 setup blessed by the powers above.
 
 ## IP Multicast In the Real World
-
 
 
 
