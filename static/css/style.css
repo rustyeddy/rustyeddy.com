@@ -7860,4 +7860,14 @@ pre {
   padding: 1rem;
   color: #333333; }
 
+.gist .blob-code,
+.gist .blob-code-inner,
+.gist .blob-num {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+  font-size: .82rem !important;
+  line-height: 1.45 !important; }
+
+.gist .blob-wrapper {
+  overflow-x: auto; }
+
 /*# sourceMappingURL=style.css.map */

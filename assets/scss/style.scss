@@ -147,3 +147,15 @@ pre {
     padding: 1rem;
     color: #333333;
 }
+
+.gist .blob-code,
+.gist .blob-code-inner,
+.gist .blob-num {
+    font-family: $font-family-monospace !important;
+    font-size: .82rem !important;
+    line-height: 1.45 !important;
+}
+
+.gist .blob-wrapper {
+    overflow-x: auto;
+}
