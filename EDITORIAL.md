@@ -160,21 +160,6 @@ Work in this order:
 
 ### Priority 2: Modernize Older IoT Implementation Posts
 
-#### Adding the REST API to IoT Gateway
-
-- **Path:** `content/iot/iot-gateway-rest.md`
-- **Disposition:** Keep, update as supporting implementation content.
-
-Tasks:
-
-- [ ] Validate code snippets for correctness.
-- [ ] Fix typos.
-- [ ] Add `Why this matters`: REST as control/configuration boundary, not just "serve JSON."
-- [ ] Add `Common pitfalls`: unversioned endpoints, no auth, unstable response shapes, leaking internal structs.
-- [ ] Link to MQTT gateway and device-to-cloud architecture.
-
-Suggested title: `REST APIs for IoT Gateways: Control, Configuration, and Telemetry Access`
-
 #### Collection Station
 
 - **Path:** `content/iot/iot-sensor-station.md`
