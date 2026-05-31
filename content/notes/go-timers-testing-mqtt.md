@@ -48,7 +48,7 @@ called.
 The subscribe (reader) will be waiting for an unspecified period of
 time for the publisher (writer) to send a message. We need to
 determine when too much time has passed for the test packet to be
-recieved and the associtated message passed back to the parent
+received and the associated message passed back to the parent
 function indicating a successful message.
 
 We will wait for half a second before we determine the test has
@@ -61,7 +61,7 @@ as a reference. Let's check out the code.
 
 ```go
 // TestMQTT ensures that we can a) subscribe to a specific channel
-// b) publish data to a specific channel and c) recieve the data before
+// b) publish data to a specific channel and c) receive the data before
 // a timeout.  In this test we 
 func TestMQTT(t *testing.T) {
     
@@ -102,7 +102,7 @@ func TestMQTT(t *testing.T) {
 	// timeout (fail). 
 	select {
 	case <- heard:
-		// Our message has been recieved. Yeah the test passed! Say nothing.
+		// Our message has been received. Yeah the test passed! Say nothing.
 
 	case <-time.After(time.Second * 5):
 		t.Error("Expected a message from client got nothing")
@@ -112,7 +112,7 @@ func TestMQTT(t *testing.T) {
 
 ### Explaining the Test
 
-Since this is a _unit test_ I wanted to be keep the test self
+Since this is a _unit test_ I wanted to keep the test self
 contained in a single test case (function). with _Go_ this can be
 easily accomplished without threads. 
 
@@ -129,6 +129,6 @@ the following:
    been passed to the _callback_ function.
 
 4. Finally the _Go select_ statement will be used to select the first
-   event between either a MQTT message being recieved by the
+   event between either a MQTT message being received by the
    _callback_ or a _timeout_ indicating no MQTT message was ever
-   recieved. 
+   received. 

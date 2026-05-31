@@ -50,11 +50,11 @@ to talk to.  In other words,
 
 > Serial communication does not scale well
 
-Fortunantely we have a few other options, we will consider on of these
+Fortunately we have a few other options, we will consider one of these
 options here: I2C which introduces a message bus, only two wires,
-transmit and recieve (actually four if you count power wire), but only
+transmit and receive (actually four if you count power wire), but only
 two wires are required to connect to the bus, allowing, in theory,
-over a hundred devices could all communicate.
+over a hundred devices to communicate.
 
 
 I2C also happens to be supported in hardware on pretty much every
@@ -164,4 +164,3 @@ vehicle drive itself using object detection and avoidance or computer
 vision, radar, and so on..
 
 #### The Message Bus
-
