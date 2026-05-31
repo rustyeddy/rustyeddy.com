@@ -7852,6 +7852,19 @@ img.thehead {
 .resume .job .duration {
   font-size: 11px; }
 
+.resume-actions {
+  margin-top: 1rem; }
+
+@media print {
+  header,
+  #jumbotron,
+  #footer,
+  #cookie-consent,
+  .resume-actions {
+    display: none !important; }
+  #main-body {
+    margin-top: 0; } }
+
 .cta-text {
   font-size: 1rem; }
 
