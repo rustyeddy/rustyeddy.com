@@ -162,19 +162,6 @@ Work in this order:
 
 ### Priority 3: Finish the Software Section Refresh
 
-#### Release Process
-
-- **Path:** `content/software/release-process.md`
-- **Disposition:** Rewrite.
-
-Tasks:
-
-- [ ] Expand beyond a short note.
-- [ ] Add release checklist.
-- [ ] Add versioning, CI, artifacts, rollback, smoke tests, and changelog sections.
-- [ ] Link to Version Control, TDD, and Peer Review.
-- [ ] Add `Common pitfalls`.
-
 #### Wireframes and Storyboards
 
 - **Path:** `content/software/wireframes-and-storyboards.md`
