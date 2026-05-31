@@ -1,5 +1,6 @@
 ---
 title: Using Vue to Develop Webapps
+draft: true
 date: 2019-12-25
 categories:
   - frontend

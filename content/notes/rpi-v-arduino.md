@@ -1,5 +1,6 @@
 ---
 title: Comparing the Arduino and Raspberry Pi
+draft: true
 date: 2018-03-14
 description: >
   A quick discussion of the differences between the Arduino and
