@@ -160,21 +160,6 @@ Work in this order:
 
 ### Priority 2: Modernize Older IoT Implementation Posts
 
-#### Collection Station
-
-- **Path:** `content/iot/iot-sensor-station.md`
-- **Disposition:** Improve as a device-side architecture note.
-
-Tasks:
-
-- [ ] Fix typos: temperature, assembled, soldering, ubiquitous, truly, rechargeable, perpetuity.
-- [ ] Clarify ESP32 role in the broader architecture.
-- [ ] Add a power-budget / sleep-mode discussion if available.
-- [ ] Add common pitfalls: noisy sensors, Wi-Fi power cost, OTA failure modes, local buffering.
-- [ ] Link to Self-Watering Garden and MQTT Gateway.
-
-Suggested title: `ESP32 Collection Station Architecture for IoT Sensor Networks`
-
 #### Soil Moisture Sensors
 
 - **Path:** `content/notes/soil-moisture-sensor.md`

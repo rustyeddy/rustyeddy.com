@@ -1,132 +1,222 @@
 ---
-title: Collection Station
+title: "ESP32 Collection Station Architecture for IoT Sensor Networks"
 date: 2022-01-13
 description: >
-    The Collection Stations are small battery powered wireless devices
-    outfitted with environmental sensors. They collect and publish the
-    data to the Hub for processing. This project is built with the
-    esp32 micro-controller, C++ and embedded realtime operating
-    system. 
+  How an ESP32-based collection station fits into an IoT system: sensor
+  sampling, MQTT publishing, local buffering, sleep modes, OTA updates,
+  and the boundary between device firmware and the edge gateway.
 weight: 30
 git: https://github.com/rustyeddy/ogesp
+tags: ["ESP32", "IoT Architecture", "MQTT", "Sensor Networks", "Embedded Systems"]
+categories: ["IoT Systems", "Embedded Systems"]
+summary: "A device-side architecture note for ESP32 collection stations in the Organic Gardener IoT system."
 ---
 
-## Publishing Sensor Data
+A collection station is the device-side telemetry node in the Organic
+Gardener system. Its job is to sense the physical environment and
+publish readings to the gateway.
 
-The idea is pretty simple really: build a network of wireless battery
-powered devices to gather environmental data such as temprature,
-moisture, light levels, etc. The collected data will then be
-_published_ via [MQTT](https://mqtt.org) _wirelessly_ to the 
-[_Hub_](/iot/iot-edge-gateway/).
+That job should stay small and explicit. The collection station should
+not own dashboard behavior, long-term storage, irrigation policy, or
+fleet-wide decisions. It should collect data, identify itself, publish
+readings, tolerate temporary network problems, and conserve power.
 
-### Types of Published Data
+## Where the Collection Station Fits
 
-The planned data types to be published by the system are concerned
-with the following types of sensors.
+In the larger architecture, the collection station sits at the edge of
+the physical world:
 
-- Temprature
-- Humidity 
-- Moisture
-- Light
-- Barometric Pressure 
+1. Sensors measure soil moisture, temperature, humidity, light, or other
+   environmental conditions.
+2. The ESP32 firmware samples those sensors.
+3. The station publishes telemetry over MQTT.
+4. The OttO gateway receives the reading and updates local system state.
+5. Applications and dashboards query the gateway instead of talking
+   directly to the device.
 
-Technically any _type_ of data could be published and collected
-however we are focused on the type of data our OG application will
-use. Data will be transmitted as either integer or floating point,
-depending on the sensor and how it collects the data.
+This boundary keeps the device firmware focused. The ESP32 does not
+need to know how the dashboard is rendered or where long-term telemetry
+is stored. It only needs to publish a clear message to a stable topic.
 
-## Data Storage
+See [Adding MQTT to the IoT Gateway](/iot/iot-gateway-mqtt/) for the
+message boundary and [Self-Watering Garden: An IoT Architecture Case Study](/iot/self-watering-garden/)
+for the end-to-end system.
 
-Due to the limited nature of the sensor stations storage space,
-relatively little historic data will be saved on the _station_ itself.
-The expectation that data published by the station will have been
-consumed and aggregated by the Hub or a similar subscriber.
+## Why ESP32
 
-Long term storage of the data is the job of the
-[Hub](/projects/otto/) or other data aggregator. The CS is an
-embedded system expected to run with very little resources.
+The ESP32 is a practical choice for a garden collection station because
+it combines wireless networking, GPIO, ADC inputs, low-power modes, and
+a mature development ecosystem in an inexpensive package.
 
-## The esp32 Chip of Choice
+Useful ESP32 capabilities include:
 
-We are going to the
-[esp32](https://www.espressif.com/en/products/socs/esp32) as the _chip
-of choice_ for building the _Collection / Control Station_.
+- Wi-Fi for local network connectivity.
+- Bluetooth Low Energy for provisioning or short-range communication.
+- Digital GPIO for simple sensors and control lines.
+- Analog inputs for voltage-based sensors.
+- I2C and SPI for digital sensor modules.
+- Deep sleep and light sleep modes.
+- Non-volatile storage for configuration.
+- Over-the-air firmware update support.
 
-Some features that make this chip very attractive for building the
-_Collection / Control Station_. In addition to it's availability and
-the wonderfully mature [esp-idf](https://github.com/espressif/esp-idf)
-DevKit, the esp32 has the following features we will be taking
-advantage of: 
+An ESP32 board and a few sensors can be assembled cheaply with a
+breadboard or soldering iron, but the important design point is not the
+price. The ESP32 is capable enough to run real firmware while still
+forcing the software to respect embedded constraints.
 
-- Wireless support for Wifi & BLE
-- Sophisticated low power modes
-- Support for batteries
-- Non Volatile Memory
-- Over The Air Updates
-- Digital GPIO
-- Analog GPIO
+## Published Data
 
-We'll discuss all of these items and how they benefit the development
-of our projects hardware.
+A collection station can publish many kinds of environmental readings:
 
-### The esp32 is CHEAP
+- Temperature.
+- Humidity.
+- Soil moisture.
+- Light level.
+- Barometric pressure.
+- Battery voltage.
+- Device health or signal quality.
 
-An esp32 and a handful of sensors can easily be assebled for less than
-$20 (if you have a solering iron or breadboard) on your kitchen
-table. 
+The station should include enough identity in the message contract for
+the gateway to route and store the reading. In the current MQTT topic
+model, station and sensor identifiers are part of the topic:
 
-This is chip is no toy, it is an industrial stalwart!
+```text
+ss/data/{stationid}/{sensorid}
+```
 
-### Network Connectivity
+For example:
 
-The most attractive part of the esp32 in my opinion are the networking
-capabilities for wireless networking. Bluetooth Lightweight Edition
-(BLE) and ubiquitos Wifi are built right on the esp32 itself.
+```text
+ss/data/station-01/soil-moisture
+```
 
-#### Mesh Networks
+The payload can start as a simple numeric value, but richer systems
+should make units, calibration, and schema version explicit.
 
-During the 2nd phase of development, the Sensor Station will be
-enhanced with _Mesh Network_ capabilities. That is the ability for an
-esp32 to build a self forming network, eliminating the need to
-pre-configure devices.
+## Firmware Responsibilities
 
-Mesh Networks also provides the capability of running a network where
-no previous _network_ infrastructure exists or is accessible.
+The firmware should own the device-local work:
 
-### Batteries and Low Power Modes
+- Initialize sensors and communication buses.
+- Load station identity and configuration.
+- Sample sensors at configured intervals.
+- Validate or smooth readings when necessary.
+- Publish telemetry to MQTT.
+- Buffer a small number of readings during network outages.
+- Report battery, firmware, and connection health.
+- Enter sleep modes when idle.
+- Support safe firmware updates.
 
-Battery options in stereo with _smart_ programming of sleep and
-low power network protocols provide the potential of building sensors
-that can truely be "set it and forget it" dutifuly running for years
-with a single watch battery.
+The firmware should avoid system-wide decisions. For example, it should
+not decide the full watering policy for a zone. That belongs in the
+gateway or application layer, where it can be observed, tested, and
+changed without reflashing every sensor node.
 
-This will become a primary area of research and development for this
-project in the near future.
+## Power Budget and Sleep Modes
 
-### Solar
+Battery-powered collection stations are power-budget problems first and
+software problems second.
 
-Options for solar power and rechargeble batteries give us the hope of
-building something that could last into perpituity.  In other words,
-the hardware should fail before one of these devices ever run out of
-power. 
+Wi-Fi is usually one of the most expensive operations. A station that
+stays awake and connected all day will drain a small battery quickly. A
+better pattern is often:
+
+1. Wake from deep sleep.
+2. Power or initialize the sensor.
+3. Wait for the reading to settle if the sensor requires it.
+4. Sample the sensor.
+5. Connect to Wi-Fi.
+6. Publish the reading.
+7. Optionally wait for an acknowledgement or command.
+8. Return to sleep.
+
+The right interval depends on the physical process. Soil moisture does
+not usually need second-by-second readings. A slower sample interval can
+save significant power without reducing the value of the data.
+
+Solar charging and rechargeable batteries can extend lifetime, but they
+do not remove the need for a power budget. Measure current draw during
+sleep, sensor warm-up, Wi-Fi connection, publish, and failure retries.
+Those numbers tell you whether the device can run for days, months, or
+longer.
+
+## Local Buffering
+
+A collection station should expect the network to fail. Wi-Fi may be
+out of range, the broker may restart, or the gateway may be offline.
+
+The device does not need to become a database, but it should have a
+small, explicit buffering policy:
+
+- Keep the latest reading if only current state matters.
+- Keep the last `N` readings if short outages should be filled in.
+- Drop old readings when storage is full.
+- Publish a health signal when readings are dropped.
+
+The key is to make the behavior intentional. Silent data loss is hard to
+debug, and unbounded buffering is not realistic on a small device.
 
 ## OTA Updates
 
-The downside of little wireless, battery operated devices scattered
-about to and fro becomes very real when it is time to upgrade all
-these devices.
+Over-the-air updates matter because collection stations may be deployed
+in inconvenient places. Reflashing every device over USB is fine on a
+bench and painful in a garden.
 
-That is where _Over-The-Air (OTA)_ updates becomes a life saver! When
-new versions of software become available, they can be either _pushed_
-down to the devices, or _pulled_ by the device from a _server_.
+OTA support should be treated as a reliability feature, not just a
+convenience. A safe update path needs:
 
-The updates happen in a matter of seconds, reboot and the station will
-resume it's previous duties, most likely with out missing a single
-published datapoint.
+- A known firmware version.
+- A way to verify the update payload.
+- A rollback strategy if the new image fails to boot.
+- Enough battery or external power to complete the update.
+- A clear maintenance window if the device controls anything physical.
 
-## Conclusion
+Even if OTA is not implemented in the first prototype, the firmware
+layout should leave room for it.
 
-If this project sounds interesting to you at all, please drop me a
-line and say hello. Also consider signing up for the project email
-list, where you will get only good stuff about the project, no SPAM,
-never.
+## Common Pitfalls
+
+### Noisy Sensors
+
+Soil moisture and other analog sensors can be noisy. Readings may drift
+with temperature, supply voltage, corrosion, cable length, or soil
+composition. The station should either smooth readings locally or report
+enough raw data for the gateway to handle filtering.
+
+### Wi-Fi Power Cost
+
+A reliable Wi-Fi connection is convenient, but it is expensive for
+battery devices. Reconnection loops, weak signal, and long retry windows
+can dominate the power budget.
+
+### OTA Failure Modes
+
+An OTA system that can leave a device unbootable is worse than no OTA at
+all. Updates need verification and rollback, especially when devices are
+not easy to reach.
+
+### Unbounded Local Storage
+
+A station cannot buffer forever. Decide how many readings to keep, what
+to drop, and how to report that data was lost.
+
+### Too Much Policy on the Device
+
+If every station contains its own irrigation rules, the system becomes
+hard to inspect and update. Keep station firmware focused on sensing and
+reporting; keep coordination in the gateway.
+
+## Where This Fits
+
+The collection station is one part of the larger IoT system:
+
+- [Self-Watering Garden: An IoT Architecture Case Study](/iot/self-watering-garden/)
+  shows the station in the full irrigation workflow.
+- [Adding MQTT to the IoT Gateway](/iot/iot-gateway-mqtt/) explains the
+  publish/subscribe boundary.
+- [OttO: A Go-Based IoT Edge Gateway Architecture](/iot/iot-edge-gateway/)
+  describes the gateway that receives collection station data.
+- [Soil Moisture Sensors](/notes/soil-moisture-sensor/) covers sensor
+  selection problems.
+- [Adafruit Soil Moisture Sensor Notes for IoT Projects](/notes/soil-moisture-adafruit/)
+  discusses a more reliable digital soil sensor option.
