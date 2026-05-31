@@ -1,432 +1,342 @@
 ---
-title: Adding MQTT to the IoT Gateway
+title: "Adding MQTT to the IoT Gateway"
 date: 2022-03-29
 description: >
-  The primary function of an IoT Gateway is moving data from one input
-  source (often sensor data) to another output destination (like a
-  control algorithm) with some data conversion and storage in
-  between. Our first milestone building the IoT Gateway is reading
-  data from MQTT then holding it in RAM for the upcoming REST API we
-  will build for Milestone 2. 
-tags: [ mqtt, go ]
-git: https://github.com/iot-station/iothub
+  How the OttO IoT gateway uses MQTT to receive telemetry from device
+  stations, parse topic-based sensor identifiers, pass readings through
+  Go channels, and protect the gateway from unbounded in-memory growth.
+tags: ["MQTT", "Go", "IoT Gateway", "Edge Computing"]
+categories: ["IoT Systems", "Edge Computing"]
+git: https://github.com/rustyeddy/otto
+summary: "A practical MQTT implementation note for the OttO IoT gateway, covering topic design, subscriptions, callbacks, testing, and memory boundaries."
 ---
+
+MQTT is the device-facing message boundary for the OttO IoT gateway.
+Collection stations publish sensor readings. Control stations subscribe
+to command topics. OttO sits in the middle, receives telemetry, updates
+its local state, and makes that state available to REST and WebSocket
+clients.
 
 ![IoT Gateway MQTT architecture showing sensor data flowing from collectors through MQTT into the hub](/img/iot-hub-mqtt.png)
 
-This page marks the beginning of the _Organic Gardner (OG)_ 
-[IoT Project](/iot/) Milestone 1 development!  If you want to
-program along but have not yet worked with the _Go_ programming
-language check this intro: [Getting ready to Go](/notes/get-ready-to-go).
+This article focuses on the MQTT side of the gateway. For the broader
+architecture, see [OttO: A Go-Based IoT Edge Gateway Architecture](/iot/iot-edge-gateway/).
 
-## A Brief About MQTT
+## Why MQTT Fits the Device Boundary
 
-[MQTT](https://mqtt.org) is the _messaging_ protocol that a
-_Collector_ will use to periodically publish sensor data
-(like temperature and humidity) to the _IoT Gateway_. _MQTT_ will also
-be used to signal when the _Control Station_ or _Controller_ will
-respond to commands to turn a sprinkler pump on or off.
+MQTT works well for small device networks because it is simple,
+lightweight, and based on publish/subscribe messaging. A collection
+station does not need to know which dashboard, database, or application
+will consume a reading. It only needs to publish a message to a known
+topic.
 
-### Why MQTT
+That separation is useful in an IoT system:
 
-MQTT fits nicely into compact hardware and embedded systems where RAM
-and compute power are limited. Which is one reason why it is
-ubiquitous in the IoT applications.
+- Devices can publish readings without knowing about HTTP clients.
+- The gateway can subscribe to many stations with a small number of
+  topic filters.
+- Control stations can listen for command messages without exposing an
+  HTTP server.
+- Test tools can publish fake sensor readings without running real
+  hardware.
 
-MQTT is easy to use both programming and operations. It compiles into
-a small and fast binary. MQTT is built atop of _TCP_ the Internets
-workhorse protocol which also means it is reliable and adapts well to
-busy or low bandwidth networks.
-
----
+MQTT does not replace the gateway. It gives devices a compact messaging
+protocol, while OttO provides the application boundary around that
+message stream.
 
 ![MQTT publish-subscribe architecture showing publishers, broker, topics, and subscribers](/img/mqtt-overview.drawio.png)
 
----
+## MQTT Architecture
 
-### MQTT Architecture 
+MQTT has three primary roles:
 
-MQTT has three primary components: a _broker_, _publishers_ and
-_subscribers_. _Publishers_ send messages to _Brokers_, _Brokers_ then
-forward the message to _Subscribers_.
+- **Publisher**: a client that sends a message to a topic.
+- **Broker**: the server that receives messages and routes them.
+- **Subscriber**: a client that receives messages matching a topic
+  filter.
 
-Messages are segregated by _Topics_ that resemble the path hierarchy
-of a file-system. For example the _Collector_ sends the current
-temperature to the _topic_ ```data/temperature``` and the topic
-```data/soil-moisture``` is used for moisture as examples.. 
+In the garden project, a collection station is a publisher, the MQTT
+broker routes the message, and OttO is a subscriber. For command flows,
+OttO can publish commands and a control station can subscribe to them.
 
-Similarly the pump for a sprinkler system would subscribed to the topic
-```ctl/sprinkler``` waiting for commands to turn a sprinkler on and
-off. 
+That pattern keeps each component small. Devices do not call the REST
+API. The dashboard does not subscribe directly to raw device topics.
+The gateway translates between device messages and application-facing
+interfaces.
 
-That was just enough description of MQTT to get us started. As the
-project progresses we will dive into more detail of MQTT particulars
-as they effect our project. Now let's actually add MQTT to the IoT
-Gateway as required by the first _Milestone_. 
+## Topic Design Is API Design
 
-## Import the Paho MQTT Library
+MQTT topics look informal because they are just strings, but they become
+an API as soon as more than one component depends on them. Treat them
+with the same care as REST paths or event names.
 
-The third party package 
-[Paho MQTT Go](https://github.com/eclipse/paho.mqtt.golang) 
-is a nice little library that is going to make it easy for us to
-subscribe to the appropriate MQTT topics as well as enabling us to
-_publish_ commands for the _sprinkler controller_.
+A simple telemetry topic shape for this project is:
 
-First we need to do is import the package directly from it's repository
-and with Go nothing could be easier! Just run the following command
-from the command line.
-
-```
-% go get github.com/eclipse/paho.mqtt.golang
-``` 
-
-Second the package must be _imported_ into the application source code
-during compile time with the following line of code.
-
-```go
-import mqtt "github.com/eclipse/paho.mqtt.golang")
+```text
+ss/data/{stationid}/{sensorid}
 ```
 
-As matter of fact here is the entire snippet for importing the MQTT
-package and connecting to the MQTT with this code:
+For example, a station with ID `10.11.4.22` publishing a Fahrenheit
+temperature reading can use:
 
-{{< gist rustyeddy 482556caef8010b1b0cc266007e9aec6 >}}
-
-We can now connect to a MQTT Broker, which by default will be located
-on the same host running our IoT-Gateway (i.e. localhost). However that
-may not always be the case, the gateway may need to connect to an
-external broker.
-
-For this reason we are going to make the brokers _address_
-configurable. This leads us to a brief introduction to the _Go_
-builtin _flag_ package allowing us to easily create a command line
-argument that is capable of setting the _broker_ configuration
-variable. 
-
-### The Configuration Struct
-
-I typically create a struct called ```Configuration``` and a
-single global variable (singleton) called ```config``` to house all
-the programs configuration variables. Like so:
-
-```go
-import (
-    "flags"
-)
-
-typedef Configuration struct {
-    Broker string           `json:"broker"`
-}
-
-var (
-    config Configuration
-)
-
-func init() {
-    flags.StringVar(&config.Broker, "broker", "localhost", "Set the MQTT Broker")
-}
-
-func main() {
-    flags.Parse()
-    
-    mqtt_init(config.Broker)
-}
-```
-
-If you would like to read more about the configuration struct as well
-as a discussion saving and reading the configuration structure from a
-file and a quick introduction to Go's twist on "Object Oriented"
-programming check out this article on the
-[Go configuration](/notes/go-configuration/).
-
-Now we have turned the ```config.Broker``` variable into a command
-line argument that defaults to ```localhost```. Meaning if we run the
-command as:
-
-```
-% ./iot-gateway
-```
-
-It will automatically connect to the MQTT broker running on
-```localhost```. Otherwise we can have our IoT Gateway connect to a
-public MQTT broker for example:
-
-```
-% ./iothub -broker mqtt.eclipse.org
-```
-
-Using the command above all of the data from the topics we subscribe
-to will be published from the global broker ```mqtt.eclipse.org```.
-
-### MQTT Topics for OG
-
-The IoT-Gateway in it's first version will of course collect
-_environmental_ data including _temperature_, _humidity_, _soil
-moisture_ and _luminescence_ from various sensors scattered about. 
-
-As mentioned earlier _MQTT topics_ are strings with a hiearchal
-structure very similar to a file-path. We are going to take advantage
-of this fact and structure our topics such that we can extract the
-_StationID_ and _SensorID_ directly from the topic itself.
-
-```
-ss/data/{:stationid}/{:sensorid}
-``` 
-
-Where the ```:stationid``` and ```:sensorid``` are variables to be
-replaced by the values extracted from the topic path-like strings.
-
-For example a station with an ID ``10.11.4.22`` will publish the
-temperature in Fahrenheit with a sensor ID of ```tempf``` results in the
-data topic 
-
-```
+```text
 ss/data/10.11.4.22/tempf
 ```
 
-#### MQTT and Wildcards
+This topic tells OttO three things:
 
-Lucky for us MQTT topics can be subscribed to using the '+' _wildcard
-symbol_ to capture the _StationID_ and _SensorID_ even though the hub
-did not know about any of these stations or sensors before they were
-published by the _Collection Station_.
+- `ss` identifies the sensor-station namespace.
+- `data` identifies this as telemetry.
+- `10.11.4.22` identifies the station.
+- `tempf` identifies the sensor.
 
-By subscribing to a single _Topic_ using wildcards we can be ensured
-of receiving data from all stations and sensors with the single
-call to hub.Subscribe() below:
+The topic should carry routing and identity information. The payload
+should carry the reading. Avoid hiding too much meaning in positional
+segments, and document the topic scheme before adding more devices.
 
+Good topic contracts answer these questions:
 
-```go
-	hub.Subscribe("data", "ss/data/+/+", dataCB)
+- Which component owns this topic namespace?
+- Which topic segments are stable identifiers?
+- What payload format is expected?
+- How are new versions introduced?
+- What should happen when an unknown topic is received?
+
+The broader device-to-cloud article covers this boundary in more depth:
+[IoT System Architecture: Device to Cloud](/iot/iot-system-architecture-device-to-cloud/).
+
+## Connecting from Go
+
+OttO uses the Eclipse Paho MQTT client for Go:
+
+```bash
+go get github.com/eclipse/paho.mqtt.golang
 ```
 
-Where the above call gives our _subscription_ the name "data". The
-path ```ss/data/+/+``` contains two wildcards represented with the
-```+``` character. The third argument is the _callback_ that will be
-invoked every time a value is _published_ to one of the above topics.
-
-Here is the ```Subscribe()``` function from the IoT gateway:
+A small gateway should make the broker address configurable. During
+local development it might be `localhost`; in a deployed environment it
+may be a broker running elsewhere on the network.
 
 ```go
-func (s *Hub) Subscribe(id string, path string, f mqtt.MessageHandler) {
-	sub := &Subscriber{id, path, f, nil}
-	s.Subscribers[id] = sub
+package main
 
-	qos := 0
-	if token := mqttc.Subscribe(path, byte(qos), f); token.Wait() && token.Error() != nil {
-		panic(token.Error())
-	} else {
-		if config.Verbose {
-			log.Printf("subscribe token: %v", token)
-		}
-	}
-	log.Println(id, " subscribed to ", path)
+import (
+    "flag"
+    "log"
+
+    mqtt "github.com/eclipse/paho.mqtt.golang"
+)
+
+type Config struct {
+    Broker string
+    ClientID string
+}
+
+var config = Config{}
+
+func init() {
+    flag.StringVar(&config.Broker, "broker", "tcp://localhost:1883", "MQTT broker URL")
+    flag.StringVar(&config.ClientID, "client-id", "otto-gateway", "MQTT client ID")
+}
+
+func connectMQTT() mqtt.Client {
+    opts := mqtt.NewClientOptions()
+    opts.AddBroker(config.Broker)
+    opts.SetClientID(config.ClientID)
+
+    client := mqtt.NewClient(opts)
+    token := client.Connect()
+    token.Wait()
+    if err := token.Error(); err != nil {
+        log.Fatal(err)
+    }
+
+    return client
 }
 ```
 
-and the callback function that is invoked every time new data arrives:
+The important design point is not the exact flag package usage. The
+important point is that broker configuration belongs outside the device
+message handler so the gateway can move between development, lab, and
+field deployments.
+
+## Subscribing to Sensor Data
+
+MQTT supports wildcards in subscription filters. The `+` wildcard
+matches exactly one topic segment, so OttO can subscribe to telemetry
+from every station and sensor with one filter:
+
+```text
+ss/data/+/+
+```
+
+A subscription can bind that filter to a callback:
 
 ```go
-// TimeseriesCB call and parse callback data
-func dataCB(mc mqtt.Client, mqttmsg mqtt.Message) {
-	topic := mqttmsg.Topic()
-
-	// extract the station from the topic
-	paths := strings.Split(topic, "/")
-	category:= paths[1] 
-	station := paths[2]
-	sensor  := paths[3]
-	payload := mqttmsg.Payload()
-
-	consumers := hub.GetConsumers(category) 
-	if consumers == nil {
-		log.Println("DataCB no consumers for ", topic)
-		return					// nobody is listening
-	}
-
-	log.Printf("MQTT Message topic %s - value %s\n", topic, string(payload))
-	switch (category) {
-	case "data":
-		msg := Msg{}
-		msg.Station = station
-		msg.Sensor = sensor
-		msg.Data = payload
-		msg.Time = time.Now().Unix()
-		for _, consumer := range consumers {
-			consumer.GetRecvQ() <- msg
-		}
-
-	default:
-		log.Println("Warning: do not know how to handle", topic)
-	}
+func subscribeData(client mqtt.Client, handler mqtt.MessageHandler) error {
+    token := client.Subscribe("ss/data/+/+", 0, handler)
+    token.Wait()
+    return token.Error()
 }
 ```
 
-#### MQTT Handling Incoming Data
-
-The _callback_ shown above is pretty simple:
-
-1. Extract the _StationID_ and _SensorID_ from the MQTT topic
-2. Extract the value delivered 
-3. Save the timestamp for when the data was received
-3. Use the StationID and SensorID to index the RAM Cache
-4. Send the ```{timestamp, value}``` tuple to the RAM Cache
-   consumer[1]. 
-
-The Ram Cache consumer is a _Go routine_ that receives the
-incoming _Msg_ over a _channel_. We'll talk about these novel
-_Inter-Process Communication_ (IPC) mechanisms supplied by Go when we
-add _Websockets_ during the 4th milestone.
-
-##### Controlling Memory Usage
-
-Following this algorithm our memory usage is going to increase in
-direct proportion to the number of stations, sensors and frequency of
-data publications.
-
-> Todo: in the future we'll add configurations that will allow us
-> control over how much data to keep in RAM and how long to keep it.
-
-Controlling memory in sophisticated ways is an exercise for
-later. Until then we'll just put a limit on the number of data points
-that can be kept, like say 1,000 so we don't perpetually run out of
-memory before implementing more complex memory controls.
-
-## The Msg Data Structure
-
-Data is reformatted into the following ```Msg``` struct by the
-```dataCB()``` callback for every new _datapoint_. The structure is
-defined as
+That callback receives every matching message. It is responsible for
+validating the topic, extracting identifiers, and handing the reading to
+the rest of the gateway.
 
 ```go
-type Msg struct {
-    StationID   string
-    SensorID    string
-    time.Timestamp
-    Value       interface{}
-};
+type Reading struct {
+    StationID string
+    SensorID  string
+    Payload   []byte
+    Received  time.Time
+}
 
+func dataHandler(readings chan<- Reading) mqtt.MessageHandler {
+    return func(client mqtt.Client, msg mqtt.Message) {
+        parts := strings.Split(msg.Topic(), "/")
+        if len(parts) != 4 || parts[0] != "ss" || parts[1] != "data" {
+            log.Printf("ignoring unexpected topic %q", msg.Topic())
+            return
+        }
+
+        reading := Reading{
+            StationID: parts[2],
+            SensorID:  parts[3],
+            Payload:   append([]byte(nil), msg.Payload()...),
+            Received:  time.Now(),
+        }
+
+        readings <- reading
+    }
+}
 ```
 
-The interface value allows for an arbitrary value type. For example
-Value can be an integer, floating point or a string formatted as
-JSON. 
+The callback should stay small. It should validate and enqueue the
+message quickly, then return control to the MQTT client. Parsing,
+storage, API updates, and control decisions can happen in gateway code
+that consumes from the channel.
 
-The ```Msg``` structure is fine for handling the immediate incoming
-data and passing it along to a consumer, it is not efficient for
-storing in memory for a quick API response. For this reason we need to
-define a structure more appropriate for indexed retrieval defined below.
+## Passing Readings Through the Gateway
+
+A Go channel is a useful boundary between the MQTT callback and the rest
+of the gateway. The callback writes readings into the channel; a gateway
+worker reads from the channel and updates state.
+
+```go
+func runCache(readings <-chan Reading, cache *Cache) {
+    for reading := range readings {
+        cache.Add(reading)
+    }
+}
+```
+
+That division keeps protocol handling separate from state management.
+It also makes the system easier to test: test code can publish MQTT
+messages through a broker, or it can send `Reading` values directly into
+the cache worker.
 
 ## Internal Data Model
 
-Data will be _cached_ in RAM with the following format built from
-Datapoint tuples ```{timestamp, value}``` as a series hanging from a
-Sensor which in turn is part of multiple sensors associated with a
-_Collection Station_.
-
----
+The gateway stores recent data by station and sensor. Conceptually, the
+shape looks like this:
 
 ```goat
    +----------+       +---------+
-   | station1 |--+--> | sensor1 | --> [ ts1, ts2, ts3, ... ]
+   | station1 |--+--> | sensor1 | --> [ reading1, reading2, ... ]
    +----------+  |    +---------+
-          .      |
-          .      |    +---------+
-          .      +--> | sensor2 | --> [ ts1, ts2, ts3, ... ]
-          .           +---------+
+                 |
+                 |    +---------+
+                 +--> | sensor2 | --> [ reading1, reading2, ... ]
+                      +---------+
+
    +----------+
-   | station2 |-->
+   | station2 | --> ...
    +----------+
 ```
 
----
+That structure makes lookup straightforward for the REST API: clients
+can ask for one station, one sensor, or a bounded range of readings.
+The companion REST article covers that client-facing boundary:
+[Adding the REST API to IoT Gateway](/iot/iot-gateway-rest/).
 
-With this model we can easily adjust the number of _timestamps_
-allowed per sensor to limit the amount of memory that will be
-consumed.
+## Memory and Backpressure
 
-## Testing the Hub
+An MQTT gateway must be explicit about memory. If every reading is kept
+forever, memory grows with the number of stations, the number of
+sensors, and the publish rate.
 
-We now have enough code that we can build and test our fledgling
-_IoT Gateway_. First we will of course write the obligatory _unit
-tests_ we all should be writing as part of our Software Development
-Process (SDP) with _Test Driven Design (TDD)_ 
+A proof-of-concept gateway can use an in-memory cache, but it still
+needs limits:
 
-### Go and Unit Tests
+- Keep only the most recent `N` readings per sensor.
+- Drop or overwrite old readings when a sensor reaches its limit.
+- Use buffered channels intentionally, not as an accidental infinite
+  queue.
+- Measure dropped messages, queue depth, and cache size.
+- Move durable history to a database when historical analysis becomes a
+  product requirement.
 
-We won't go into any detail writing _Go unit tests_ here as there
-are plenty of good resources on the net including the best place
-to start which is the 
-[Go testing package](https://pkg.go.dev/testing)
-documentation itself.
+A bounded per-sensor ring buffer is often enough for live dashboards and
+short local queries. Durable storage is a separate backend concern. The
+edge gateway should keep enough state to operate locally, but it should
+not become an unbounded time-series database by accident.
 
-The _unit tests_ above can be considered _white box_ tests implying
-that the test code has access to programs internal data structures and 
-functions directly for testing.
+Backpressure deserves the same attention. If the cache worker cannot
+keep up with the MQTT callback, the system needs a policy: block, drop,
+sample, or fail visibly. Silent queue growth is the worst option because
+it hides the problem until the gateway runs out of memory.
 
-### System Tests with MQTT
+## Testing with MQTT Tools
 
-System tests, however are considered _black box_ test and operate
-completely _outside_ the Gateway by accessing the Gateway's external
-_public API_. 
+MQTT is easy to test because tools can stand in for device stations.
+The `mosquitto_pub` command can publish a fake reading into the same
+topic path used by a real collection station:
 
-#### Mocking Collection Stations
-
-Easy testing is one of the beautiful things about working with
-protocols like MQTT and HTTP they are inherently _mockable_. We'll use
-the popular ```mosquito_pub``` MQTT publishing tool to _mock_ the
-Collection Stations (CS) that have not yet been developed as of this
-writing.
-
-To demonstrate a quick test of the hub we will add a ```-verbose```
-flag to print data as it is received. The data is then cached in RAM
-and made ready for the _REST API_ coming in the next article
-(milestone).
-
-To _mock_ a _Collector_ publishing temperature data all we have to do 
-is run the following command:
-
-```
-% mosquitto_pub -t ss/data/10.11.1.1/tempf -m 98.6
+```bash
+mosquitto_pub -t ss/data/10.11.1.11/tempf -m 98.6
 ```
 
-Our IoT-Gateway will pick up the fake data value ```98.6``` from
-sensor ```tempf``` extracted from the topic
-```ss/data/10.11.1.11/tempf```.
-
-The upper screenshot shows logs from the _IoT Hub_ starting up then
-having just received it's first data point from MQTT. The lower screen
-shows the invocation of the ```mosquitto_pub``` command.
+OttO should receive the message, parse `10.11.1.11` as the station ID,
+parse `tempf` as the sensor ID, and store `98.6` as the reading payload.
 
 ![Terminal logs showing mosquitto_pub publishing sensor data and the IoT Hub receiving and parsing it](/img/screen-shot-hub-data.png)
 
-## Victory! 
+This kind of system test is valuable because it exercises the external
+contract. The test does not need to know about gateway internals. It
+only needs a broker, a topic, a payload, and an observable result from
+the gateway.
 
-In the above screen shot ```mosquitto_pub``` published the temperature
-in Fahrenheit to the topic ```ss/data/10.11.1.11/tempf``` where the CS
-_station id_ is represented by ```10.11.1.11```. Likewise, the SensorID
-is represented by the string ```tempf```. The value passed in 98.6
-degrees Fahrenheit.
+## Common Pitfalls
 
-We can see the Hub receiving the data and parsing the _StationID_ and
-_SensorID_ from the topic string. The data is parsed, formatted and
-temporarily saved in RAM. 
+### Topic Paths Without Ownership
 
-## HTTP REST Server Next ...
+If every device invents its own topic path, the gateway becomes a pile
+of special cases. Define the namespace and keep it stable.
 
-The gateway now receives periodic data from one of more stations, each
-with one or more sensors. The data is reformatted and stored as a
-_time-series_ in RAM. 
+### Payloads Without Versioning
 
-Now it is time build our REST API to get the data out of the _IoT
-Gateway_. 
+Plain numeric payloads are fine for early tests, but richer payloads
+need a versioned shape. A JSON payload with explicit fields is easier to
+extend than a positional string format.
 
-In this next article we are going to import Go's builtin
-```net/http``` package to setup our HTTP server that will in turn
-handle our _REST Endpoints_.  This same package will later allow us to
-serve up the IoT Gateway web app.
+### Blocking Inside the Callback
 
-[Next Adding the REST API](/iot/iot-gateway-rest/)
+The MQTT callback should not do expensive work. Validate the message,
+copy the payload if needed, enqueue it, and return.
 
-<!--  LocalWords:  JSON IoT SDP mockable
- -->
+### Unbounded Local State
+
+A live dashboard cache is not the same thing as durable storage. Put a
+limit on in-memory readings and add a real storage layer when the system
+needs history.
+
+## Where This Fits
+
+MQTT is one boundary in the larger system. The related articles show the
+rest of the path:
+
+- [OttO: A Go-Based IoT Edge Gateway Architecture](/iot/iot-edge-gateway/)
+- [IoT System Architecture: Device to Cloud](/iot/iot-system-architecture-device-to-cloud/)
+- [Adding the REST API to IoT Gateway](/iot/iot-gateway-rest/)
+- [Self-Watering Garden: An IoT Architecture Case Study](/iot/self-watering-garden/)

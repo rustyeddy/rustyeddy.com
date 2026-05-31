@@ -160,20 +160,6 @@ Work in this order:
 
 ### Priority 2: Modernize Older IoT Implementation Posts
 
-#### Adding MQTT to the IoT Gateway
-
-- **Path:** `content/iot/iot-gateway-mqtt.md`
-- **Disposition:** Keep, update as supporting implementation content.
-
-Tasks:
-
-- [ ] Remove or reframe visible TODOs.
-- [ ] Fix outdated naming and repo references.
-- [ ] Correct typos and grammar.
-- [ ] Add a short section on MQTT topic design as API design.
-- [ ] Add a memory/backpressure section instead of leaving it as a future TODO.
-- [ ] Link to device-to-cloud architecture and OttO gateway.
-
 #### Adding the REST API to IoT Gateway
 
 - **Path:** `content/iot/iot-gateway-rest.md`
