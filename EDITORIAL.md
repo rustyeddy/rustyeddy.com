@@ -162,17 +162,6 @@ Work in this order:
 
 ### Priority 3: Finish the Software Section Refresh
 
-#### Version Control Systems
-
-- **Path:** `content/software/version-control-systems.md`
-- **Disposition:** Minor polish.
-
-Tasks:
-
-- [ ] Add `Common pitfalls`: huge commits, long-lived branches, no tags, commit messages without intent.
-- [ ] Add a tiny branch/PR workflow checklist.
-- [ ] Link to Peer Review and Release Process.
-
 #### Kanban
 
 - **Path:** `content/software/kanban.md`
