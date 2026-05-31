@@ -162,17 +162,6 @@ Work in this order:
 
 ### Priority 3: Finish the Software Section Refresh
 
-#### Kanban
-
-- **Path:** `content/software/kanban.md`
-- **Disposition:** Minor polish.
-
-Tasks:
-
-- [ ] Add an example card from the garden project.
-- [ ] Add a short "bad task vs good task" comparison.
-- [ ] Link explicitly to Use Cases to Tasks and TDD.
-
 #### Numeric Types in Financial Software
 
 - **Path:** `content/software/numeric-types-financial-software.md`

@@ -1,104 +1,213 @@
 ---
-title: Organizing Software Projects with Kanban
+title: "Organizing Software Projects with Kanban"
 description: >
-  How Kanban boards make work visible, keep tasks small, and give everyone
-  on the project — developers, managers, and customers — a shared view of
-  progress without meetings or status reports.
+  How Kanban boards make work visible, keep tasks small, and give developers,
+  managers, and customers a shared view of project progress.
 weight: 30
 date: 2026-05-22
+tags: ["Kanban", "Project Management", "Software Engineering", "Tasks"]
+categories: ["Software Engineering"]
+summary: "A practical guide to using Kanban cards, WIP limits, task sizing, and exit criteria to keep software projects visible and predictable."
 ---
 
 Kanban is a visual task management system built around one principle: make
 the work visible. When every task has a card and every card has a status,
-anyone who looks at the board knows exactly where the project stands.
+anyone looking at the board can see where the project stands.
 
-The mechanics are intentionally minimal. A board has three columns — _Todo_,
-_In Progress_, and _Done_. Cards representing tasks move left to right as
-work advances. That is the entire system. Its power comes from discipline in
-how tasks are written and how the board is maintained, not from the tool
-itself.
+The mechanics are intentionally small. A basic board has three columns:
+`Todo`, `In Progress`, and `Done`. Cards move left to right as work advances.
+The value comes from how clearly the cards are written and how honestly the
+board reflects reality.
+
+## Why This Matters
+
+Software work becomes hard to manage when it is invisible. A developer may
+be busy for days, but if the work is hidden inside a vague task, nobody can
+see whether the project is moving, blocked, or drifting away from the user
+need.
+
+Kanban turns hidden work into explicit cards. It helps the team see:
+
+- What work is waiting.
+- What work is active.
+- What is blocked.
+- What is finished.
+- Which tasks are too large or too vague.
+
+A useful board is not a status-reporting tool. It is a shared operating view
+of the project.
+
+## From Use Cases to Cards
+
+Kanban cards should come from real user value. A use case explains what the
+user needs. A card describes a small piece of implementation work that moves
+that use case forward.
+
+This translation is covered in [Use Cases to Tasks](/software/use-cases-to-tasks/).
+The important distinction is simple:
+
+- A use case describes a user goal.
+- A card describes a small piece of work a developer can finish.
+
+If a card is just a copied use case, it is probably too large.
+
+## Bad Task vs. Good Task
+
+A vague card hides risk:
+
+```text
+Build watering dashboard
+```
+
+That card is too large. It could include layout, API integration, charts,
+manual controls, thresholds, error states, and tests.
+
+A better card is smaller and testable:
+
+```text
+Show current soil moisture for one watering zone
+
+Given a zone has a latest soil moisture reading,
+when the dashboard loads,
+then it displays the zone name, moisture value, unit, and reading time.
+```
+
+The better card has a clear boundary and a clear exit condition. It can be
+implemented, reviewed, and tested without pretending the whole dashboard is
+finished.
+
+## Example Card from the Garden Project
+
+For the self-watering garden, a useful Kanban card might be:
+
+```text
+Stop pump when soil reaches damp threshold
+
+Context:
+The gateway receives soil moisture readings from a collection station and
+knows whether the pump is currently running.
+
+Acceptance criteria:
+- Given the pump is running
+- And the latest moisture reading is at or above the damp threshold
+- When the reading is processed
+- Then the gateway publishes a stop command to the control station
+- And records the pump state change
+
+Verification:
+- Unit test threshold decision logic
+- Integration test reading-to-command path
+- Manual test with a simulated MQTT reading
+```
+
+That card connects user value, implementation scope, and test expectations.
+It also gives a reviewer something concrete to verify.
 
 ## Task Sizing
 
-The most important practice in Kanban is keeping tasks small. A task should
-be completable by one person in one to two days. If a task is running to
-three or four days it almost certainly can — and should — be broken into
-smaller pieces.
+A Kanban task should usually be small enough for one person to finish in one
+or two days. If a task takes longer, it may need to be split.
 
-Small tasks matter for several reasons. They keep the board accurate: a
-two-day task that slips is visible immediately, whereas a two-week task can
-look fine right up until the deadline. They let the team stack small
-victories, which matters for morale over the course of a long project.
-And they force a level of specificity that surfaces hidden complexity early,
-when it is still cheap to address.
+Small tasks matter because they:
 
-Tasks that arrive from [use cases](/software/use-cases-to-tasks/) are often
-too coarse at first. Breaking them down is part of the work, not a sign
-something was planned badly.
+- Keep progress visible.
+- Surface blockers quickly.
+- Make review easier.
+- Reduce merge conflicts.
+- Create clearer test boundaries.
+- Let users see working increments sooner.
+
+Splitting tasks is not a sign that planning failed. It is part of turning an
+idea into deliverable work.
 
 ## WIP Limits
 
-_Work In Progress_ (WIP) limits constrain how many tasks a person can have
-in the _In Progress_ column at once — typically one, occasionally two.
+Work in progress limits constrain how many cards can sit in `In Progress` at
+once. For an individual developer, the limit is usually one or two.
 
-The instinct to start multiple things simultaneously is counterproductive.
-Partially completed work delivers no value. Context switching has a real
-cost. And a board full of in-progress cards obscures whether the project is
-actually moving.
+This feels restrictive, but it improves flow. Half-finished work does not
+help users. Context switching is expensive. A board full of active cards
+makes it hard to tell what is actually moving.
 
-A strict WIP limit forces a simple discipline: finish what you started
-before picking up something new. Teams that apply it consistently find that
-throughput goes up, not down.
+A WIP limit creates a simple rule: finish or unblock the current card before
+starting another one.
 
 ## The Backlog Evolves
 
-The task list at the start of a project is an estimate, not a contract.
-Unforeseen complexity will surface during development. Requirements will
-clarify as users see working software. New tasks will be added; original
-tasks will be split or reprioritized.
+The backlog is an estimate, not a contract. As users see working software,
+requirements clarify. As developers implement, hidden complexity appears.
+Cards will be split, rewritten, added, removed, and reprioritized.
 
-> You cannot know what you do not yet know.
+That is normal. The board should reflect what the team knows now.
 
-Embrace this rather than resist it. The board is a live document. The
-discipline is in keeping it current — adding new cards as work surfaces,
-updating estimates, and not letting stale tasks linger in _In Progress_ past
-their actual state.
+A stale board is worse than no board because it gives false confidence. Keep
+cards current, move blocked work visibly, and delete cards that no longer
+represent real work.
 
 ## Exit Criteria
 
-Every task card should include a clear definition of done: what test must
-pass, what behavior must be demonstrated, what acceptance criterion must be
-met before the card moves to _Done_.
+Every card needs a definition of done. That definition should describe what
+must be true before the card moves to `Done`.
 
-This is the connection between Kanban and [test-driven
-development](/software/test-driven-software-development/). Writing the exit
-criterion when the card is created forces the developer to understand
-precisely what is being built before starting, and gives the reviewer
-something concrete to verify.
+Good exit criteria may include:
+
+- A user-visible behavior works.
+- A unit test covers the core logic.
+- An integration test covers a boundary.
+- A manual hardware check was completed.
+- Documentation or examples were updated.
+- A reviewer approved the pull request.
+
+This is the connection between Kanban and
+[Test Driven Software Development](/software/test-driven-software-development/).
+Writing the exit criteria when the card is created forces the team to define
+observable behavior before implementation starts.
 
 ## Tool Options
 
-Any tool that shows cards moving through columns works. The right choice
-depends on team size, existing tooling, and how tightly you want the board
-integrated with code changes.
+Any tool that shows cards moving through columns can work. The right choice
+depends on team size, existing tooling, and how tightly the board should
+connect to code changes.
 
-**GitHub Projects** — integrated directly with the repository. Cards link to
-issues and pull requests; closing a PR can automatically move a card to
-_Done_. Good default choice for teams already on GitHub.
+- **GitHub Projects**: a good default for teams already using GitHub.
+- **GitLab Boards**: similar integration for GitLab repositories.
+- **Linear**: fast issue tracking for engineering-focused teams.
+- **Trello**: simple and flexible for mixed technical and non-technical teams.
+- **Jira**: powerful in larger organizations, but often heavy for small teams.
 
-**GitLab Boards** — equivalent to GitHub Projects for teams on GitLab, with
-similar issue integration.
+The tool matters less than the discipline. A maintained board in a simple
+tool is better than an abandoned board in a powerful one.
 
-**Linear** — purpose-built issue tracker with strong keyboard navigation and
-good GitHub/GitLab integration. Popular with engineering-focused teams.
+## Common Pitfalls
 
-**Trello** — flexible and simple, works well for teams with mixed technical
-and non-technical members. No native code integration.
+### Cards That Are Too Large
 
-**Jira** — feature-rich and widely used in larger organizations. Can become
-process overhead for small teams; use it if the organization already has it,
-not as a first choice for a small project.
+Large cards hide risk and delay feedback. Split them until each card has a
+clear outcome.
 
-The tool matters less than the discipline. A well-maintained board in any of
-these is more useful than a poorly maintained one in the theoretically
-perfect tool.
+### No Exit Criteria
+
+A card without exit criteria invites disagreement about whether it is done.
+Define done before starting.
+
+### Too Much Work in Progress
+
+Many active cards can make a team look busy while slowing delivery. Limit
+active work and finish smaller pieces.
+
+### Treating the Board as Reporting Theater
+
+A board should reflect reality. If people move cards only before a meeting,
+the board is not helping the project.
+
+## Where This Fits
+
+Kanban sits between planning and implementation:
+
+- [Use Cases](/software/use-cases/) define user goals.
+- [Use Cases to Tasks](/software/use-cases-to-tasks/) turns those goals into
+  requirements, acceptance tests, and cards.
+- [Test Driven Software Development](/software/test-driven-software-development/)
+  turns card exit criteria into repeatable checks.
+- [Peer Reviews](/software/peer-review/) verifies completed cards before they
+  merge.
