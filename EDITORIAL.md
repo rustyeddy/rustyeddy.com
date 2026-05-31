@@ -134,8 +134,6 @@ Work in this order:
 
 ### Sprint 1: Publication Trust and Main Flow
 
-- [ ] Remove remaining TODOs from `content/iot/self-watering-garden.md`.
-
 ### Sprint 2: IoT Cornerstone Content
 
 - [ ] Rewrite `content/iot/iot-edge-gateway.md` as an architecture article.
@@ -159,21 +157,6 @@ Work in this order:
 ### Priority 0: Fix or Demote Raw Public Notes
 
 ### Priority 1: Strengthen Cornerstone IoT Content
-
-#### Self-Watering Garden
-
-- **Path:** `content/iot/self-watering-garden.md`
-- **Disposition:** Improve as a case study.
-
-Tasks:
-
-- [ ] Remove visible TODOs for dashboard and phone images.
-- [ ] Add an explicit architecture diagram if the current image is not enough.
-- [ ] Clarify whether the project is proof-of-concept, active product, or historical project.
-- [ ] Replace broad "cloud / ML later" language with concrete system boundaries.
-- [ ] Link to soil moisture sensor notes, MQTT gateway, REST gateway, and device manager.
-
-Suggested title: `Self-Watering Garden: An IoT Architecture Case Study`
 
 ### Priority 2: Modernize Older IoT Implementation Posts
 
