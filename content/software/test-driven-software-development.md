@@ -1,161 +1,236 @@
 ---
-title: Test Driven Software Development
+title: "Test Driven Software Development"
 date: 2026-05-22
 weight: 40
 description: >
-  If we do not test our software we will force our users to
-  be our testers, read this article to find out why that is a very bad
-  idea and how many advantages we will realize by planning our tests
-  from the beginning
+  How test-driven development turns use cases into repeatable checks,
+  clarifies unit, integration, system, and acceptance tests, and gives
+  teams confidence to change and release software.
+tags: ["Testing", "TDD", "Software Engineering", "Acceptance Tests"]
+categories: ["Software Engineering"]
+summary: "A practical guide to test-driven development and the role of unit, integration, system, and acceptance tests in a reliable release process."
 ---
 
-## Testing Unit and Systems
+Testing is how a team proves that software still does what it promised
+to do. Without tests, every release pushes that responsibility onto the
+user.
 
-Before any developers new code can be integrated into the _mainline_ 
-production code base, it must be _tested_, _vetted_ and _peer
-reviewed_. 
+Test-driven development makes that proof part of the design process. It
+asks the team to describe the expected behavior before writing the code
+that implements it. That discipline is useful because it forces vague
+requirements to become observable checks.
 
-Software Testing has been written about extensively, so I won't spend
-time here discussing testing directly, as there are as many ways to
-test software as there are technologies.
+## Why This Matters
 
-### Test Driven Development
+Software gets harder to change when nobody trusts it. A small edit feels
+risky because the team cannot tell whether it broke something in another
+part of the system. Releases slow down, bugs reach users, and developers
+start protecting fragile code instead of improving it.
 
-_Test Driven Development (TDD)_ is a _principle_ that earns nearly
-universal agreement in theory and frequent compromise in practice. The
-discipline of writing tests first is harder than it sounds — not technically,
-but because it forces you to define precisely what you are building before
-you start. That clarity is exactly why it is worth the effort.
+A good test suite changes that dynamic. It gives developers a fast signal
+while they work, reviewers a concrete way to check behavior, and the
+release process a repeatable gate before software reaches users.
 
-The basic rules are:
+The goal is not tests for their own sake. The goal is confidence:
+confidence that a requirement is understood, that a change behaves as
+intended, and that existing behavior still works.
 
-1. Write your test **before** writing the code
-2. The test **will fail** initially
-3. It is the _programmers_ job to write code such that the test will pass.
+## The TDD Loop
 
-Brilliant!
+The classic TDD loop is short:
 
-That is hard to argue with. However, taking the upfront time to build
-the tests before just hammering out the code, is much harder to do than
-say.
+1. Write a failing test for the behavior you want.
+2. Write the smallest code that makes the test pass.
+3. Refactor the code while keeping the test passing.
 
-## TDD is hard, not technically, but emotionally
+That first step is the important one. A failing test proves that the
+behavior is not already present and that the test can detect the missing
+behavior. If the test passes before the implementation exists, the test
+is not proving what you think it is proving.
 
-The hard part about writing _tests_ upfront is that it forces us to
-_really_ define what we are building.  You have to _drill down_ a
-level or two.
+TDD is difficult less because of syntax and more because it requires
+decision making up front. You have to define the behavior clearly enough
+to test it.
 
-> When defining tests, ask the "Five whys?"
+## From Use Cases to Tests
 
-Once you have done the hard brain work and exposed the application's
-**true requirements**, implementing the test becomes straightforward.
+Tests should connect back to user value. The path usually looks like
+this:
 
-Testing movements can be taken too far, for example spending a lot of
-time writing tests that are effectively worthless just for the sake of
-writing a test.
+| Artifact | Question it answers |
+| --- | --- |
+| Use case | What does the user need to accomplish? |
+| Requirement | What behavior must the system provide? |
+| Acceptance test | How will we know the behavior works? |
+| Task | What implementation step should a developer complete? |
+| Unit/integration tests | What lower-level checks protect the implementation? |
 
-However, testing is critical and we *must* find a good
-balance. The following are some general points that a good set of tests
-provide: 
+For example, the garden use case might say:
 
-- Tests must cover all features and bug code changes
-- Tests must be 100% repeatable
-- Tests should be automated 100%, if possible
-- Tests should combine _white_ and _black_ box testing
-- Tests should be easy to run selectively
-- Tests should produce nice reports
+> As a gardener, I want the system to water a zone when the soil is too
+> dry and stop when the soil reaches the target moisture range.
 
-Faithfully writing tests along with new code contributes over time to
-a increasingly stable code base.  
+That should become acceptance tests before it becomes a pile of tasks.
+The acceptance tests define the observable behavior:
 
-### Testing Builds Confidence
+| Given | When | Then |
+| --- | --- | --- |
+| Soil moisture is above the dry threshold | A reading is processed | The pump remains off |
+| Soil moisture falls below the dry threshold | A reading is processed | The pump turns on |
+| The pump is on | Soil moisture reaches the damp threshold | The pump turns off |
 
-As software projects evolve over time, developers and users gain
-benefits beyond just _stable software_ including:
+Those tests create a contract for the implementation. Unit and
+integration tests then support that contract at smaller boundaries.
 
-1. Confidence to the point of taking the software for granted. They then
-begin to rely on the software without even realizing it.
+See [Use Cases](/software/use-cases/) and
+[Use Cases to Tasks](/software/use-cases-to-tasks/) for the planning
+side of this workflow.
 
-2. Operational problems become rare because most issue are caught and
-fixed in a lab or a _controlled_ system on the client site.
+## Types of Tests
 
-3. When problems do occur they are typically resolved very
-quickly. Stable products tend to be well documented, as well as having meaningful
-logs and great support tools.
+Different tests answer different questions. A healthy test strategy does
+not treat every check as the same kind of thing.
 
-4. Software Development Becomes Faster
+### Unit Tests
 
-The test environment creates a _factory_ for producing well machined
-software.
+Unit tests check a small piece of behavior in isolation: a function,
+method, parser, validator, calculation, or policy object.
 
-> High quality code can be developed and released quickly, with little
-  risk of new failures.
+They should be fast, focused, and easy to run while developing. A unit
+test should usually make it obvious what broke when it fails.
 
-A good test rig will allow the developer to easily run selective tests
-from the _developers development process (REPL)_. The result is a much
-higher rate of software delivery without an increase in error rates.
+Good unit test targets include:
 
-## Automated vs. Manual Tests
+- Threshold calculations.
+- Input validation.
+- Topic parsing.
+- Configuration defaults.
+- State transitions.
+- Error handling branches.
 
-Tests are far more effective when they are clearly written down. Even
-better, written down AND automated. 
+### Integration Tests
 
-It is inevitable that some tests, at least in certain industries, may
-have to be conducted manually. For example, making sure a robot hand does not
-break a glass bottle.  Ideally however, you will try
-automating tests as close to 100% as possible.
+Integration tests check that two or more components work together. They
+are useful where bugs often appear at boundaries: database access, HTTP
+handlers, MQTT clients, file formats, queues, and external APIs.
 
-### Complete Test Runs ALL the Time
+An integration test might verify that an MQTT message is converted into
+a gateway reading or that a REST handler returns the expected JSON shape
+from a cache.
 
-With automated tests it is easy to run a complete suite of
-tests for every software change and addition of new code.
+These tests are usually slower than unit tests, but they catch failures
+unit tests cannot see.
 
-Why not?
+### System Tests
 
-Nothing will give a developer more confidence than comprehensive
-regression tests that are easy to run and easy to add new tests and
-modify existing ones.
+System tests exercise the application from the outside. They treat the
+software as a running system and interact through public interfaces.
 
-Automated tests will most likely provide the ability to run a subset
-of test or even pick a single specific one to run.
+For an IoT gateway, a system test might publish a fake sensor reading
+with `mosquitto_pub`, call the REST API with `curl`, and verify that the
+reading appears in the response.
 
-_The key is_ a developer is free to run and re-run tests to her hearts
-content until she is convinced the code is ready for everybody else.
+System tests are valuable because they check real wiring: processes,
+configuration, protocols, and runtime behavior.
 
-## Whitebox vs. Blackbox Testing
+### Acceptance Tests
 
-### Whitebox Testing
+Acceptance tests define whether the work satisfies the user-facing
+requirement. They are written from the outside, in language that a user,
+product owner, reviewer, and developer can all understand.
 
-_White Box_ testing means the _test function_ has _internal_ access to
-the actual code being tested. In other words, the code can directly
-call any internal function or examine internal data structures.
+Acceptance tests are the bridge between use cases and release readiness.
+Before a feature ships, its acceptance tests should pass without special
+manual interpretation.
 
-> _Unit Testing_ is a standard form of _Whitebox Test_.
+## Automated and Manual Tests
 
-Other _whitebox_ tests may include performance and stress tests.
+Automated tests should do as much of the repeatable work as possible.
+They are fast, consistent, and can run on every change.
 
-### Black Box Testing
+Manual tests still have a place when the behavior involves physical
+systems, unusual hardware, visual judgment, or safety checks. The key is
+to make manual tests explicit instead of relying on memory.
 
-Blackbox tests have _no access or knowledge_ of any _internal_
-functions or data structures, other than the applications "Application
-Programming Interface".
+A useful rule is:
 
-> _System Tests_ are a standard form of _Blackbox Testing_
+- Automate checks that are deterministic and repeated often.
+- Document manual checks that cannot yet be automated.
+- Keep reducing the manual portion as the system matures.
 
-Other _blackbox_ tests may also include performance and stress tests.
+## What a Good Test Suite Provides
 
-## Acceptance Tests ~ Pass without Fail
+A good test suite should be:
 
-Acceptance test is the term we will use for our _final system tests_. 
-The tests that validate the _delivery agreement_ between _development_
-and _client_.
+- **Repeatable**: the same input produces the same result.
+- **Fast enough**: developers can run the relevant tests frequently.
+- **Selective**: one package, component, or scenario can be run alone.
+- **Layered**: unit, integration, system, and acceptance tests each have
+  a clear purpose.
+- **Visible**: failures produce actionable output in local development
+  and CI.
+- **Connected to requirements**: acceptance tests trace back to use
+  cases and release criteria.
 
-Before any _release_ passes to a customer, the entire suite of
-_Acceptance Tests_ must **pass without fail**.
+Tests should make change easier. If tests are slow, brittle, vague, or
+unrelated to real behavior, they become another maintenance burden.
 
-Acceptance tests are _System Tests_ in that they will often involve
-co-ordination among two or more _sub-systems_ or _micro-services_, as
-we like to call them now.  For example, a database and inputs from a
-sensor are two _sub-systems_ that are frequently found in _embedded_
-and _IoT_ style software projects.
+## Common Pitfalls
 
+### Testing Implementation Instead of Behavior
+
+Tests that know too much about private implementation details fail every
+time the code is refactored. Prefer testing observable behavior at the
+right boundary.
+
+### Writing Tests After the Code and Calling It TDD
+
+Tests written afterward can still be valuable, but they do not provide
+the same design pressure. TDD means the test shapes the implementation.
+
+### Mocking Everything
+
+Mocks are useful, but excessive mocking can create tests that only prove
+that mocks were called. Use mocks at true external boundaries and keep
+important behavior covered by real unit or integration tests.
+
+### No Acceptance Tests
+
+A project can have many unit tests and still fail the user. Acceptance
+tests keep the team honest about the actual promise made by the use
+case.
+
+### Tests That Are Hard to Run
+
+If tests require hidden setup, special machines, or tribal knowledge,
+developers will run them less often. Make the common path boring:
+`make test`, `go test ./...`, or the closest equivalent for the project.
+
+## TDD and Release Confidence
+
+Testing is part of the release process, not a separate ritual. A release
+pipeline should run the checks that prove the build is ready: unit tests,
+integration tests, static checks, and acceptance tests appropriate to the
+system.
+
+When those checks are reliable, releases become less dramatic. The team
+can ship smaller changes more often because each change passes through
+the same evidence-producing path.
+
+See [Release Process](/software/release-process/) for how tests fit into
+versioning, CI/CD, deployment, and rollback planning.
+
+## Practical Checklist
+
+Before implementing a feature, ask:
+
+- What use case does this support?
+- What observable behavior proves the requirement works?
+- What acceptance test should pass before this ships?
+- Which unit tests protect the core logic?
+- Which integration tests protect the important boundaries?
+- Which system test proves the pieces work together?
+- Where will these tests run in CI before release?
+
+A good answer to those questions turns testing from an afterthought into
+an engineering control system.

@@ -162,20 +162,6 @@ Work in this order:
 
 ### Priority 3: Finish the Software Section Refresh
 
-#### Test Driven Software Development
-
-- **Path:** `content/software/test-driven-software-development.md`
-- **Disposition:** Rewrite or strong polish.
-
-Tasks:
-
-- [ ] Tighten old conversational prose.
-- [ ] Clarify unit, integration, system, and acceptance tests.
-- [ ] Add `Why this matters`.
-- [ ] Add `Common pitfalls`.
-- [ ] Tie acceptance tests back to use cases.
-- [ ] Link to Use Cases, Use Cases to Tasks, and Release Process.
-
 #### Peer Reviews
 
 - **Path:** `content/software/peer-review.md`
