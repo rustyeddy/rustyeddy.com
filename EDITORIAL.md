@@ -138,7 +138,6 @@ Work in this order:
 
 ### Sprint 2: IoT Cornerstone Content
 
-- [ ] Decide whether to merge or reposition `content/iot/iot-system-architecture-otto.md`.
 - [ ] Rewrite `content/iot/iot-edge-gateway.md` as an architecture article.
 
 ### Sprint 3: Software Section Finish
@@ -160,35 +159,6 @@ Work in this order:
 ### Priority 0: Fix or Demote Raw Public Notes
 
 ### Priority 1: Strengthen Cornerstone IoT Content
-
-#### IoT System Architecture Explained: The 5 Essential Layers
-
-- **Path:** `content/iot/iot-system-architecture-otto.md`
-- **Disposition:** Rewrite tone and decide merge/repositioning.
-
-Tasks:
-
-- [ ] Reduce marketing phrasing.
-- [ ] Replace second-person product copy with direct author voice.
-- [ ] Distinguish current OttO capabilities from design goals.
-- [ ] Add grounded examples from existing projects.
-- [ ] Decide whether this overlaps too much with `Device to Cloud`.
-
-#### OttO / IoT Edge Gateway
-
-- **Path:** `content/iot/iot-edge-gateway.md`
-- **Disposition:** Rewrite as a project architecture article.
-
-Tasks:
-
-- [ ] Update naming consistency: OttO, IoTe, IoT Hub, Organic Gardener.
-- [ ] Remove old roadmap language or mark it historical.
-- [ ] Add clear current-state description.
-- [ ] Add `Why this matters` around gateway responsibilities.
-- [ ] Add `Common pitfalls`: gateway doing too much, unbounded in-memory caches, MQTT topics as accidental APIs, lack of observability.
-- [ ] Link to MQTT, REST, device manager, and self-watering garden.
-
-Suggested title: `OttO: A Go-Based IoT Edge Gateway Architecture`
 
 #### Self-Watering Garden
 

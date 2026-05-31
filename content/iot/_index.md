@@ -138,9 +138,9 @@ intended to be read independently or as part of a larger whole.
 
 ### Architecture & System Design
 - [Building an IoT Device Manager in Go](/iot/building-iot-device-manager-in-go/)
-- [IoT System Architecture: OttO](/iot/iot-system-architecture-explained/)
+- [Five Layers of a Practical IoT System](/iot/iot-system-architecture-explained/)
 - [IoT System Architecture: Device to Cloud](/iot/iot-system-architecture-device-to-cloud/)
-- [IoT Edge Gateway](/iot/iot-edge-gateway/)
+- [OttO Edge Gateway Architecture](/iot/iot-edge-gateway/)
 
 ### Implementation Notes
 - [IoT Gateway: MQTT](/iot/iot-gateway-mqtt/)

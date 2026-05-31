@@ -1,215 +1,249 @@
 ---
-title: OttO the Iot Gateway
+title: "OttO: A Go-Based IoT Edge Gateway Architecture"
 date: 2022-01-13
 description: >
-  The IoT Hub is the center piece of the IoT project as gathers data,
-  runs application logic. Provides an HTTP Server to serve up a Web
-  App, REST API and Web sockets. This project is a Micro service
-  written in Go, and is perfect for systems hackers, backend devs and
-  full-stackers.
+  OttO is a Go-based IoT edge gateway that connects sensor stations,
+  MQTT messages, REST APIs, WebSocket dashboards, and application logic
+  at the boundary between devices and backend systems.
 git: https://github.com/rustyeddy/otto
 weight: 10
+tags: ["IoT Architecture", "IoT Gateway", "Go", "MQTT", "REST"]
+categories: ["IoT Systems", "Edge Computing"]
+summary: "A practical architecture overview of OttO, the Go-based IoT edge gateway used by the Organic Gardener project."
 ---
+
+OttO is the edge gateway for the Organic Gardener IoT project. It sits
+between small device stations and the higher-level software that needs
+their data: dashboards, REST clients, control logic, and eventually
+backend services.
+
+Older versions of this project used a few names interchangeably:
+_IoT Hub_, _IoTe gateway_, _smart hub_, and _OttO_. In this article I
+use **OttO** for the gateway implementation, **IoT Hub** for the role it
+plays in the system, and **Organic Gardener** for the irrigation
+application that uses it.
 
 ![IoT Hub service architecture showing MQTT input, REST API, WebSocket dashboard, and in-memory data cache](/img/iothub.png)
 
-## What Does OG Hub Do?
+## What OttO Does
 
-In a nutshell the _Hub_ gathers environmental data from a network of
-[Collection Stations](/iot/iot-sensor-station/) using the well
-known _MQTT Messaging_ protocol. The hub feeds the data to the
-_Oraganic Gardner_ application, streams it real-time to
-_dashboard_ users via
-[Websockets](http://websockets.org) and caches the data in RAM.
+An IoT gateway has one main job: make a messy physical environment look
+like a coherent software system.
 
-## How Does the Hub Work?
+Collection stations publish telemetry such as soil moisture,
+temperature, and humidity. Control stations wait for commands that turn
+physical equipment on or off. Applications need a stable way to read
+state, inspect recent data, and issue control decisions without knowing
+every device detail.
 
-The Hub is a small, fast server written in [_Go_](http://golang.org)
-with the following dependencies:
+OttO provides that boundary. It:
 
-1. Go's built-in HTTP Server to serve HTML
-2. Go's built=in HTTP Server to serve REST API
-3. [Websocket](https://github.com/nhooyr/websocket) Library for real
-   time data to dashboard 
-4. [MQTT](https://github.com/eclipse/paho.mqtt.golang) Eclipse MQTT
-   Library
+- Subscribes to MQTT telemetry from collection stations.
+- Parses station and sensor identifiers from message topics.
+- Holds recent readings in an in-memory cache.
+- Serves a REST API for clients that need current or historical values.
+- Streams updates to browser dashboards with WebSockets.
+- Provides a place for application logic that coordinates sensors and
+  actuators.
 
-The software running on the Hub can be called a _Micro-service_.
-_Go's_ built in _HTTP server_ is small, robust and fast allowing us
-to easily add a _REST API_ and serve up some HTML and JavaScript to
-for our WebUI, which happens to be a 
-[_Single Page App_](https://developer.mozilla.org/en-US/docs/Glossary/SPA) 
+That makes the gateway more than a protocol adapter. It is the edge
+runtime where device data becomes useful application state.
 
-The MQTT and Websockets libraries, like Go's built in HTTP library,
-are also robust, fast and small allowing us to build this
-sophisticated application and also keep it _small, robust fast_. YEA!
+## Why This Matters
 
-> As matter of fact, it is so small and fast, it is more than happy to
-> run on a _Raspberry Pi_!
+Small IoT projects often start with one sensor, one script, and one
+hard-coded destination. That works until the system needs a second
+sensor type, a dashboard, a command path, a test harness, or a different
+network layout.
+
+A gateway gives the system a stable middle layer. Devices can stay
+small. Applications can talk to a clean API. The project can change its
+hardware, dashboard, storage, or backend without rewriting every other
+piece at the same time.
+
+For Organic Gardener, this matters because irrigation control should not
+be buried inside a sensor node. The gateway can compare recent moisture
+readings, apply zone rules, publish commands, and expose the result to a
+human operator. The collection station remains responsible for sensing;
+the control station remains responsible for switching equipment; OttO
+coordinates the two.
+
+## Runtime Architecture
+
+OttO is written in Go and uses a small set of standard building blocks:
+
+- Go's built-in HTTP server for the REST API and dashboard assets.
+- MQTT subscriptions for telemetry and command channels.
+- WebSockets for live dashboard updates.
+- Go routines and channels for concurrent readers and writers.
+- In-memory data structures for recent telemetry.
+
+The gateway is intentionally light enough to run on Raspberry Pi-class
+hardware while still using the same patterns that work in larger backend
+systems.
 
 ![Raspberry Pi single-board computer suitable for running the IoT Hub](/img/rpi.jpg)
 
-### Readers, Writers and Concurrency
+A typical flow looks like this:
 
-The Hub is really a  moderately sophisticed data multiplexer made up
-of multiple _concurrent_ _readers_ and _writers_. The cuncurrency is
-perhaps the most interesting design challenge of this software.
+1. A collection station samples a sensor.
+2. The station publishes the reading to an MQTT topic.
+3. OttO receives the message and extracts the station and sensor IDs.
+4. OttO stores the reading in its local cache.
+5. REST clients can request the current state.
+6. Dashboard clients receive live updates over WebSockets.
+7. Application logic can publish control messages when action is needed.
 
-The Hub handles concurrency with features built into the _Go_
-programming language: _Go Functions_ and _channels_ which will be
-described in a future article.
+This keeps message ingestion, state access, and user-facing updates in
+one edge process while preserving clear protocol boundaries.
 
-> Todo write article on how hub uses channels and go functions
+## MQTT as the Device Boundary
 
-### Current Features (MVP)
+MQTT is the device-facing side of the gateway. Collection stations can
+publish readings without needing to know about dashboards, REST routes,
+or storage implementation details.
 
-The _1st Milestone_ of the 
-[_Organic Gardener IoT Project_](/iot) has been completed. The
-list of supported features are:
+The early project used topic paths shaped like this:
 
-1. Collect environmental Data via MQTT
-2. Cache collected data in RAM.
-3. HTTP server to provide a REST API
-4. HTTP server to serve the Dashboard webapp
-4. HTTP server enhanced with Websockets to stream data live
-
-#### Coming Soon ...
-
-In a future phase of the project we will add an option to save
-data in a persistent Database. We will discuss various choices between
-SQL variants (MySQL, Postgres), Mongo and application specific
-databases like InfluxDB and Prometheus.
-
-## Demo of the Hub
-
-This section will demonstrate using the REST API to retrieve data from
-the Hub has collected. To pull this off we are going to _Mock_ a
-_Collection_ or two by sending "fake" data using the _mosquitto_pub_
-client. 
-
-### Fire Up The Hub
-
-![Terminal logs showing the IoT Hub starting, subscribing to MQTT topics, and opening the HTTP server](/img/screen-shot-hub-start.png)
-
-Above is a screenshot of the logs displayed when the _Hub_ has
-started. If we read logs beging with the first we will find that the
-hub has:
-
-1. Subscribed to the MQTT mesh network channel
-2. Subscribed to the MQTT data channel
-3. Connects to the MQTT broker on localhost
-4. HTTP Server starts up listen on port 8011
-
-Notice the MQTT subriptions using the '+' wildcard character allows
-the subscriber to gather data from many sources with a single
-subscription. 
-
-The topic path form is ```ss/data/{stationid}/{sensorid}``` where the
-```{stationid}``` and ```{sensorid}``` are variables that match the
-sub-strings in segments 3 and 4 of the _topic_
-
-#### MQTT Wildcard Subscriptions
-
-MQTT supports wildcard subscriptions allowing the Hub to subscribe to
-_ALL_ _data channels_ even without knowing the stationID's or
-sensorIDs before hand.
-
-By subscribing to ```/ss/data/+/+``` the Hub will recieve data from
-every station and sensor on the network. 
-
-### Publishing Test Data 
-
-
-We are going to _mock_ a _Collector_ by publishing fake environmental
-data using the cool MQTT publishing utility _mosquito_pub_.
-
-```bash
-% mosquitto_pub -t ss/data/10.11.1.1/tempf -m 98.6
+```text
+ss/data/{stationid}/{sensorid}
 ```
 
-We will fake data from sensor ```tempf``` to topic
-```ss/data/10.11.1.11/tempf``` the value of ```98.6``` using the 
-following command:
+A subscription such as this lets the gateway receive readings from many
+stations and sensors:
 
-![Terminal logs showing mosquitto_pub publishing sensor data and the IoT Hub receiving and parsing it](/img/screen-shot-hub-data.png)
-
-In the above screen shot ```mosquitto_pub``` published the temperature
-in farenhiet to the topic ```ss/data/10.11.1.11/tempf``` where the CS
-_station id_ is represented by ```10.11.1.11```. Likewise, the sensorID
-is represented by the string ```tempf```. The value passed in 98.6
-degrees farenhiet.
-
-We can see the Hub recieving the data and parsing the _stationID_ and
-_sensorID_ from the topic string. The data is parsed, formatted and
-temporarily saved in RAM. 
-
-When data _periodically_ arrives, the Hub will quickly extract
-the following elements of the data point.
-
-- **Station ID** probably in the form of an IP or MAC address
-- **Sensor data** name such as: temprature, humidiy, air-pressure, etc
-- **Value** this will either be an integer or a float64
-- **Timestamp** when the data was sampled.
-
-The data is reformatted and stored as a _time-series_ in RAM. Let's
-have a look at the REST API that can be used to access the
-environmental data.
-
-### Using the REST API
-
-Another screenshot is in order. This time I'll use curl to call the
-data REST API to retrieve the one piece of data we have collected:
-
-![Terminal output showing curl retrieving JSON sensor data from the IoT Hub REST API](/img/screen-shot-hub-curl.png)
-
-Notice the ```curl``` command in the bottom screen, the data has been
-returned in full JSON format. This single data point looks like
-this when pretty printed.
-
-```JavaScript
-{
-    "10.11.1.11": {
-        "id":"10.11.1.11",
-        "sensors": {
-            "tempf": { 
-                "values": [
-                    {
-                        "val":98.6,
-                        "time":1647301689
-                    }
-                ]
-            }
-        }
-    }
-}
+```text
+ss/data/+/+
 ```
 
-#### Complete REST API
+That wildcard is convenient, but it should be treated carefully. MQTT
+topics become an API whether or not they are documented as one. A topic
+scheme needs naming rules, versioning rules, and clear ownership before
+other devices and services depend on it.
 
-The Hub provides a REST API allowing other programs to access datasets
-from the Hub for various applications. Some of the important REST API
-_endpoints_ are:
+For the implementation details, see
+[Adding MQTT to the IoT Gateway](/iot/iot-gateway-mqtt/).
 
+## REST as the Application Boundary
+
+REST is the client-facing control and query boundary. Dashboards,
+experiments, tests, and backend services should not need direct access
+to the gateway's internal Go structs. They need a stable API.
+
+The gateway can expose routes such as:
+
+```text
+GET    /stations
+GET    /station/{stationid}
+GET    /data?stationid={stationid}&sensor={sensorid}&start={start}&end={end}
+DELETE /data?stationid={stationid}&sensor={sensorid}&start={start}&end={end}
 ```
-- GET       /stations
-- GET       /station/{stationid}
-- GET       /data?stationid={stid}&sensor={sens}&start={start}&end={end}
-- DELETE    /data?stationid={stid}&sensor={sens}&start={start}&end={end}
-```
 
-The first two gather and reply with _IoT Collection Station_ meta
-data, such as the station ID, sensors hosted and performance
-and metrics.
+These routes make the data visible without forcing every consumer to
+subscribe to MQTT. They also create a natural place to add validation,
+authentication, filtering, and response versioning as the project grows.
 
-The ```/data ``` endpoint will return data ;-), filters can be used to
-limit the response to certain _stations_, _sensors_ and / timespans.
+For the implementation details, see
+[Adding the REST API to IoT Gateway](/iot/iot-gateway-rest/).
 
-### Dashboard and Websockets
+## WebSockets for Live Dashboards
 
-Built into the Hub is a Web server capable of serving up a _Single
-Page App (SPA)_ discussed on it's own section of this project
-site. The _Hub_ and _Dashboard_ support _Websockets_ allowing the Hub
-to update the Dashboard when new data arrives in _real-time_.
+REST works well for request and response workflows. Dashboards often
+need something different: live updates as new readings arrive.
 
-We will talk alot more about this in the
-Dashboard 
+OttO uses WebSockets to push new telemetry to connected browser clients.
+That lets the dashboard update without polling the REST API repeatedly.
+It also keeps the dashboard separate from the MQTT broker. Browser code
+connects to the gateway, and the gateway remains responsible for the
+messaging system behind it.
+
+In Organic Gardener, this gives a user a live view of moisture readings,
+zone state, and control behavior while the gateway continues to process
+MQTT traffic in the background.
+
+## Current State and Boundaries
+
+The current OttO architecture is best understood as an edge gateway and
+reference runtime, not as a complete cloud platform.
+
+It is responsible for:
+
+- Receiving telemetry from device stations.
+- Keeping recent state close to the devices.
+- Exposing that state through HTTP and WebSockets.
+- Coordinating simple application behavior at the edge.
+- Providing a practical foundation for the Organic Gardener system.
+
+It is not trying to be every layer of an IoT product. Long-term storage,
+fleet management, user accounts, alerting, analytics, and remote update
+infrastructure belong in surrounding services once the project needs
+them.
+
+That separation matters. A gateway should be strong enough to run the
+local system, but bounded enough that it does not become a monolith at
+the edge.
+
+## Common Pitfalls
+
+### The Gateway Does Too Much
+
+It is tempting to put every new feature in the gateway because the
+gateway sees every message. That turns a useful edge runtime into a
+large, fragile application.
+
+A better rule is to keep the gateway focused on ingestion, local state,
+protocol translation, and edge decisions that must happen near the
+devices. Reporting, account management, large analytics jobs, and
+business workflows usually belong elsewhere.
+
+### Unbounded In-Memory Caches
+
+The early gateway keeps readings in RAM. That is a reasonable starting
+point for live dashboards and short experiments, but it needs limits.
+
+Without retention limits, backpressure, or persistence boundaries, a
+healthy sensor network can eventually exhaust memory. Production systems
+need explicit cache windows, durable storage, or both.
+
+### MQTT Topics Become Accidental APIs
+
+An MQTT topic is easy to change when only one script publishes to it. It
+is much harder to change after sensors, dashboards, tests, and control
+logic all rely on the same shape.
+
+Topic naming should be treated as interface design. Document the topic
+scheme, version it when needed, and avoid encoding too much hidden
+meaning into positional path segments.
+
+### Missing Observability
+
+A gateway is difficult to debug when it only fails silently. It should
+make message rates, subscription status, parse failures, queue depth,
+cache size, connected clients, and command outcomes visible.
+
+Logs are useful, but they are not enough by themselves. Metrics and
+health endpoints become important once the gateway runs unattended.
+
+## Where OttO Fits in the Larger System
+
+OttO is the edge layer in the broader Organic Gardener architecture:
+
+| Layer | Responsibility | OttO's role |
+| --- | --- | --- |
+| Device stations | Sense and actuate | Publish telemetry and receive commands |
+| MQTT broker | Route device messages | Carries telemetry and command topics |
+| OttO gateway | Coordinate edge state | Ingests, caches, exposes APIs, streams updates |
+| Application | Decide what should happen | Organic Gardener uses gateway state and commands |
+| Backend services | Store, analyze, manage | Optional services beyond the edge runtime |
+
+This is the same layered model described in
+[The Five Layers of a Practical IoT System](/iot/iot-system-architecture-explained/),
+with OttO occupying the edge runtime layer.
+
+## Related Articles
+
+- [Building an IoT Device Manager in Go](/iot/building-iot-device-manager-in-go/)
+- [Adding MQTT to the IoT Gateway](/iot/iot-gateway-mqtt/)
+- [Adding the REST API to IoT Gateway](/iot/iot-gateway-rest/)
+- [Self-Watering Garden](/iot/self-watering-garden/)
+- [IoT System Architecture: Device to Cloud](/iot/iot-system-architecture-device-to-cloud/)
