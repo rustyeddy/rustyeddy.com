@@ -163,7 +163,7 @@ Acceptance:
 - Active section highlighting still works.
 - Mobile navbar still expands/collapses correctly.
 
-[ ] P0.4 Add a "Start here" section to the homepage.
+[x] P0.4 Add a "Start here" section to the homepage.
 Files:
 - content/_index.md
 - layouts/index.html if needed
