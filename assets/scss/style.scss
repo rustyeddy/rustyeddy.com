@@ -28,10 +28,22 @@ $headings-font-family:	$font-family-sans-serif;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+.site-brand-block {
+    line-height: 1.1;
+}
+
 .site-brand {
+    display: block;
+    margin-right: 0;
+    padding-bottom: .1rem;
     font-family: $font-family-sans-serif;
     font-size: 1.35rem;
     font-weight: 600;
+    line-height: 1.2;
+}
+
+.site-tagline {
+    font-family: $font-family-sans-serif;
     line-height: 1.2;
 }
 

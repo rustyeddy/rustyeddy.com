@@ -11,5 +11,5 @@ frontmatter:
     - publishDate
 ignoreLogs: ['warning-goldmark-raw-html']
 params:
-  tagline: "IoT, edge systems, Go, Linux, and practical software architecture."
+  tagline: "practical software development"
 

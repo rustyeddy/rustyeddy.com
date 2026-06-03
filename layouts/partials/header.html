@@ -2,10 +2,12 @@
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
 
-      <a class="navbar-brand site-brand" href="/">rusty eddy:</a>
-      {{ with site.Params.tagline }}
-        <span class="site-tagline d-none d-lg-inline text-muted small mr-3">{{ . }}</span>
-      {{ end }}
+      <div class="site-brand-block mr-3">
+        <a class="navbar-brand site-brand" href="/">rusty eddy:</a>
+        {{ with site.Params.tagline }}
+          <span class="site-tagline d-block text-muted small">{{ . }}</span>
+        {{ end }}
+      </div>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
