@@ -1,18 +1,16 @@
 ---
-title: Rusty Eddy
+title: Practical Engineering Notes
 description: >
-  I build and teach practical IoT, Linux, and Go automation systems.
-  Member of the Technical Staff at Panasonic Avionics.
+  Practical notes on building IoT, edge, Linux, and Go systems that
+  survive real hardware, unreliable networks, and changing requirements.
 date: 2025-11-01
 ---
 
-I have always been fascinated with the idea that computers could
-_"talk"_ to one another (computer networking), and now I am even more
-interested in the idea that little tiny computers can observe and
-alter the real, _physical_ world — and also talk to each other.
+For engineers who care about system boundaries, device
+abstractions, architecture tradeoffs, and software delivery once the demo is
+over. The happy path is where demos live. Production lives everywhere else.
 
-It is my goal to apply my experience in software and electronic
-communications to help improve this world. I am particularly
-interested in environmental cleanup and industrial automation
-projects.
+I am currently a Member of the Technical Staff at Panasonic Avionics. Most of
+the writing here comes from building connected systems, automation tools, and
+small pieces of infrastructure that other people eventually depend on.
 

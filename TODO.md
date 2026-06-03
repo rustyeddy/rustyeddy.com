@@ -1,12 +1,12 @@
 # RustyEddy.com Site Cleanup TODO
 
-Goal: 
+## Goal: 
 
 Clean up RustyEddy.com as a whole with primary focus on
 site-wide message, tone, navigation, information architecture, and
 general user experience.
 
-Context:
+## Context:
 
 The site is a Hugo static site. The repo contains content/, layouts/,
 assets/, data/, scripts/, static/, config.yml, STYLEGUIDE.md,
@@ -18,7 +18,7 @@ Recent writing. The strongest site direction is practical engineering
 content around IoT, edge systems, Go, Linux, architecture, and
 software delivery.
 
-Working rules:
+## Working rules:
 
 - Preserve the author's direct, practical, mildly opinionated
   technical voice.
@@ -39,10 +39,39 @@ Suggested validation commands:
 - ./scripts/check-discovery
 - grep -RIn "TODO\\|FIXME\\|localhost\\|draft note\\|merge conflict\\|<<<<<<<\\|>>>>>>>" content layouts assets static || true
 
+## Humor
+
+Humor is welcome when it makes the writing feel human, but it should never
+compete with the technical point.
+
+Preferred humor:
+- Dry, understated, and engineering-specific
+- Used to acknowledge real-world messiness
+- Short enough that it does not derail the paragraph
+- Mildly self-aware, not performative
+
+Good examples:
+- "Hardware has a way of turning clean abstractions into field reports."
+- "The happy path is where demos live. Production lives everywhere else."
+- "MQTT is simple until the network disappears, which it will, usually during lunch."
+- "A small script becomes infrastructure the moment someone else depends on it."
+- "If the device needs a reboot ritual, the architecture is already leaving clues."
+
+Avoid:
+- Meme-heavy writing
+- Sarcasm aimed at beginners or specific communities
+- Jokes in titles, meta descriptions, or technical claims
+- Forced punchlines
+- Anything that makes the article less credible when skimmed by a technical lead
+
+Rule of thumb:
+One small wink per section is plenty. The reader came for useful engineering
+judgment, not a stand-up set with YAML front matter.
+
 P0 — Site-wide message and first impression
 -------------------------------------------
 
-[ ] P0.1 Rewrite the homepage hero into a clearer positioning statement.
+[x] P0.1 Rewrite the homepage hero into a clearer positioning statement.
 Files:
 - content/_index.md
 - layouts/index.html if homepage layout controls hero/cards
@@ -236,6 +265,22 @@ Acceptance:
 
 P1 — Tone and content consistency
 ---------------------------------
+[ ] P1.x Add restrained humor guidance to the writing style guide.
+Files:
+- STYLEGUIDE.md
+
+Implement:
+- Add a "Humor" section after "Voice & Tone".
+- Define the desired humor as dry, understated, engineering-specific, and sparse.
+- Include examples that match RustyEddy.com topics: IoT, hardware,
+  networking, Go, Linux, automation, and small-team software delivery.
+- Explicitly warn against memes, forced jokes, sarcasm toward
+  beginners, and humor that weakens technical credibility.
+
+Acceptance:
+- The guide allows personality without changing the core voice.
+- Humor supports clarity and trust.
+- Technical pages still feel useful to engineers, technical leads, and founders.
 
 [ ] P1.1 Tighten /about/ so it supports the site mission.
 Files:
