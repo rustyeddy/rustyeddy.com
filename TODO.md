@@ -99,7 +99,7 @@ Acceptance:
 - No hype words such as "revolutionary", "robust", "enterprise-grade", or "game-changing".
 - Recent writing remains visible but is not the only path into the site.
 
-[ ] P0.2 Add a short site-wide tagline/subtitle near the brand or homepage.
+[x] P0.2 Add a short site-wide tagline/subtitle near the brand or homepage.
 Files:
 - layouts/partials/header.html
 - content/_index.md
