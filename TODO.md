@@ -127,7 +127,7 @@ Acceptance:
 P0 — Navigation and information architecture
 --------------------------------------------
 
-[ ] P0.3 Rework top navigation labels for clearer user intent.
+[x] P0.3 Rework top navigation labels for clearer user intent.
 Files:
 - layouts/partials/header.html
 

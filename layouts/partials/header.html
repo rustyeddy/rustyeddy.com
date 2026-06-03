@@ -17,12 +17,11 @@
         <div class="navbar-nav site-nav ml-auto mb-2 mb-lg-0">
           {{ $current := .Section }}
           {{ $navItems := slice
-            (dict "label" "iot" "url" "/iot/" "section" "iot")
-            (dict "label" "software" "url" "/software/" "section" "software")
-            (dict "label" "projects" "url" "/projects/" "section" "projects")
-            (dict "label" "notes" "url" "/notes/" "section" "notes")
-            (dict "label" "resume" "url" "/resume/" "section" "resume")
-            (dict "label" "about" "url" "/about/" "section" "about")
+            (dict "label" "IoT" "url" "/iot/" "section" "iot")
+            (dict "label" "Software" "url" "/software/" "section" "software")
+            (dict "label" "Projects" "url" "/projects/" "section" "projects")
+            (dict "label" "Notes" "url" "/notes/" "section" "notes")
+            (dict "label" "About" "url" "/about/" "section" "about")
           }}
           {{ range $navItems }}
             {{ $active := eq $current .section }}

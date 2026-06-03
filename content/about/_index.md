@@ -73,7 +73,8 @@ throughout this site.
 ## What I'm Doing Now
  
 I am currently a Member of the Technical Staff at *Panasonic Avionics*,
-working on connected systems at scale.
+working on connected systems at scale. A more formal work history is available
+on my [resume](/resume/).
  
 I still program almost every day. I've held titles like *Principal
 Engineer*, *Technical Lead*, and *Senior Systems Programmer*, but I am most
