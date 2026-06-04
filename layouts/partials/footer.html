@@ -11,7 +11,7 @@
       <a href="/resume/">Resume</a> .
       <a href="https://github.com/rustyeddy">GitHub</a> .
       <a href="https://www.linkedin.com/in/rustyeddy/">LinkedIn</a> .
-      <a href="/index.xml">RSS</a> .
+      {{ with site.Home.OutputFormats.Get "RSS" }}<a href="{{ .RelPermalink }}">RSS</a> .{{ end }}
       <a href="/privacy/">Privacy</a>
     </div>
   </section>

@@ -1,6 +1,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  {{ $baseURL := strings.TrimSuffix "/" site.BaseURL }}
+  {{ $pageURL := printf "%s%s" $baseURL .RelPermalink }}
   {{ $description := "" }}
   {{ with .Description }}
   {{ $description = . | plainify | replaceRE "\\s+" " " | replaceRE "^\\s+|\\s+$" "" }}
@@ -12,12 +14,12 @@
   {{ with $description }}<meta name="description" content="{{ . }}" />{{ end }}
   {{ $title := cond .IsHome site.Title (printf "%s | %s" .Title site.Title) }}
   {{ $image := .Params.image | default site.Params.image | default "/img/rusty.png" }}
-  {{ $imageURL := $image | absURL }}
+  {{ $imageURL := cond (hasPrefix $image "http") $image (printf "%s/%s" $baseURL (strings.TrimPrefix "/" $image)) }}
   {{ $pageType := cond .IsPage "article" "website" }}
   <meta property="og:title" content="{{ $title }}" />
   {{ with $description }}<meta property="og:description" content="{{ . }}" />{{ end }}
   <meta property="og:type" content="{{ $pageType }}" />
-  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:url" content="{{ $pageURL }}" />
   <meta property="og:site_name" content="{{ site.Title }}" />
   <meta property="og:image" content="{{ $imageURL }}" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -32,10 +34,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="stylesheet" type="text/css" href="/css/style.css" />
-  <link rel="canonical" href="{{ .Permalink }}" />
-  <link rel="alternate" type="application/rss+xml" href="{{ "index.xml" | absURL }}" title="{{ site.Title }} RSS Feed" />
-  {{ if and (in (slice "section" "taxonomy" "term") .Kind) (gt (len .RegularPages) 0) }}
-  <link rel="alternate" type="application/rss+xml" href="{{ printf "%sindex.xml" .Permalink }}" title="{{ .Title }} RSS Feed" />
+  <link rel="canonical" href="{{ $pageURL }}" />
+  {{ with site.Home.OutputFormats.Get "RSS" }}
+  <link rel="alternate" type="application/rss+xml" href="{{ printf "%s%s" $baseURL .RelPermalink }}" title="{{ site.Title }} RSS Feed" />
+  {{ end }}
+  {{ if in (slice "section" "taxonomy" "term") .Kind }}
+  {{ with .OutputFormats.Get "RSS" }}
+  <link rel="alternate" type="application/rss+xml" href="{{ printf "%s%s" $baseURL .RelPermalink }}" title="{{ $.Title }} RSS Feed" />
+  {{ end }}
   {{ end }}
 
   <!-- Title appropriate for the page being displayed -->

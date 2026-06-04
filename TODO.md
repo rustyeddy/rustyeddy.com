@@ -503,7 +503,7 @@ Acceptance:
 - Pages with custom descriptions keep them.
 - No duplicate/conflicting description tags.
 
-[ ] P1.10 Add or verify RSS and sitemap discoverability.
+[x] P1.10 Add or verify RSS and sitemap discoverability.
 Files:
 - config.yml
 - layouts/sitemap.xml
