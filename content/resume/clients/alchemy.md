@@ -20,7 +20,7 @@ projects:
   - Zero Touch Private Cloud Provisioning 
 ---
 
-Alchemy Networks is an indepently owned service provider. I automated
+Alchemy Networks is an independently owned service provider. I automated
 the provisioning of their Private Cloud Service offering. I was an
 individual contributor on this project. I collaborated with another
 developer.

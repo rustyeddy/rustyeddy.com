@@ -1,3 +1,7 @@
+{{ $jobs := .Site.GetPage "/resume/jobs" }}
+{{ $currentJobs := where $jobs.Pages "Params.finish" "Present" }}
+{{ $pastJobs := where $jobs.Pages "Params.finish" "ne" "Present" }}
+
 <section id="jobs" class="container">
     <div class="row">
 	<div class="col text-center">
@@ -5,19 +9,23 @@
 	</div>
     </div>
 
+    {{ range $currentJobs.ByWeight }}
+    {{ partial "resume/job.html" . }}
+    {{ end }}
+
     {{ with .GetPage "/resume/clients/_index.md" }}
 
-    <div class="row job">
+    <div class="row job mt-4">
 	<div class="col-3 text-right">
 	    <h5 class="jobtitle">Eddy Consulting, LLC</h5>
 	    <div class="duration">
-		Jan 2006 to present
+		Jan 2006 to Present
 	    </div>
 	</div>
 	<div class="col-7">
 	    {{ .Content }}
 	</div>
-	<div col="col"></div>
+	<div class="col"></div>
 
     </div> <!-- Eddy Consulting -->
 
@@ -42,28 +50,7 @@
     {{ end }}
     {{ end }}
 
-    {{ $jobs := .Site.GetPage "/resume/jobs" }}
-    {{ range $jobs.Pages }}
-
-    <div class="row job mt-4">
-	<div class="col-3 text-right">
-	    <h6 class="jobtitle">{{ .Params.company }}</h6>
-	    <div class="duration">
-		{{ .Params.start }} to {{ .Params.finish }}
-	    </div>
-	</div>
-	<div class="col-7">
-	    <h6 class="company">{{ .Params.jobtitle }}</h6>
-	    <div class="small-text">
-		{{ .Summary }}
-	    </div>
-	</div>
-
-	<div col="col"></div>
-
-    </div> <!-- row -->
-
+    {{ range $pastJobs.ByWeight }}
+    {{ partial "resume/job.html" . }}
     {{ end }}
-    </div>
 </section>
-

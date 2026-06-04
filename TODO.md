@@ -305,7 +305,7 @@ Acceptance:
 - Resume is linked from About.
 - Page does not feel like a disconnected biography.
 
-[ ] P1.2 Modernize /resume/ or reduce its public prominence.
+[x] P1.2 Modernize /resume/ or reduce its public prominence.
 Files:
 - content/resume/*
 - layouts/resume/*
