@@ -1,5 +1,5 @@
 {{ $description := "" }}
-{{ with .Description }}{{ $description = . | plainify | replaceRE "\\s+" " " | replaceRE "^\\s+|\\s+$" "" }}{{ else }}{{ with .Summary }}{{ $description = . | plainify | replaceRE "\\s+" " " | replaceRE "^\\s+|\\s+$" "" | truncate 160 }}{{ end }}{{ end }}
+{{ with .Description }}{{ $description = . | plainify | replaceRE "\\s+" " " | replaceRE "^\\s+|\\s+$" "" }}{{ else }}{{ with .Summary }}{{ $description = . | plainify | replaceRE "\\s+" " " | replaceRE "^\\s+|\\s+$" "" | truncate 160 }}{{ else }}{{ with site.Params.description }}{{ $description = . | plainify | replaceRE "\\s+" " " | replaceRE "^\\s+|\\s+$" "" }}{{ end }}{{ end }}{{ end }}
 {{ $crumbs := slice (dict "name" site.Title "url" site.BaseURL) }}
 {{ if and (not .IsHome) .Section }}
   {{ with site.GetPage (printf "/%s" .Section) }}{{ $crumbs = $crumbs | append (dict "name" .Title "url" .Permalink) }}{{ end }}

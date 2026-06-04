@@ -4,11 +4,12 @@
   {{ $description := "" }}
   {{ with .Description }}
   {{ $description = . | plainify | replaceRE "\\s+" " " | replaceRE "^\\s+|\\s+$" "" }}
-  <meta name="description" content="{{ $description }}" />
   {{ else }}{{ with .Summary }}
   {{ $description = . | plainify | replaceRE "\\s+" " " | replaceRE "^\\s+|\\s+$" "" | truncate 160 }}
-  <meta name="description" content="{{ $description }}" />
-  {{ end }}{{ end }}
+  {{ else }}{{ with site.Params.description }}
+  {{ $description = . | plainify | replaceRE "\\s+" " " | replaceRE "^\\s+|\\s+$" "" }}
+  {{ end }}{{ end }}{{ end }}
+  {{ with $description }}<meta name="description" content="{{ . }}" />{{ end }}
   {{ $title := cond .IsHome site.Title (printf "%s | %s" .Title site.Title) }}
   {{ $image := .Params.image | default site.Params.image | default "/img/rusty.png" }}
   {{ $imageURL := $image | absURL }}
@@ -25,6 +26,7 @@
   <meta name="twitter:image" content="{{ $imageURL }}" />
   <meta name="twitter:site" content="@rustyeddy" />
   <meta name="twitter:creator" content="@rustyeddy" />
+  {{ with site.Params.author }}<meta name="author" content="{{ . }}" />{{ end }}
 
   <!-- get bootstrap and some google fonts from net -->
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
@@ -37,7 +39,7 @@
   {{ end }}
 
   <!-- Title appropriate for the page being displayed -->
-  <title>{{ block "title" . }}{{- .Title -}}{{ end }}</title>
+  <title>{{ $title }}</title>
   {{- partial "structured-data.html" . -}}
   <script>
     window.dataLayer = window.dataLayer || [];

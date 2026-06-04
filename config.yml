@@ -11,5 +11,8 @@ frontmatter:
     - publishDate
 ignoreLogs: ['warning-goldmark-raw-html']
 params:
-  tagline: "practical software development"
+  description: "Practical engineering notes on IoT, edge systems, Go, Linux, and software architecture."
+  tagline: "IoT, edge systems, Go, Linux, and practical software architecture."
+  author: "Rusty Eddy"
+  image: "/img/rusty.png"
 

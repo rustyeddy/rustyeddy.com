@@ -472,7 +472,7 @@ Acceptance:
 - No important public page relies only on auto-summary for meta description.
 - Descriptions are specific and useful in search results.
 
-[ ] P1.9 Improve site title and default metadata.
+[x] P1.9 Improve site title and default metadata.
 Files:
 - config.yml
 - layouts/partials/head-cheese.html
