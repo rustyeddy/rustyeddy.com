@@ -1,8 +1,8 @@
 ---
-title: resume
+title: Resume
 date: 2019-05-15
 description: >
-  Software Engineer, Network Architect and IoT Hacker
+  Software engineer focused on networking, embedded systems, IoT, Go, and distributed systems.
 email: rusty@rustyeddy.com
 linkedin: http://linkedin.com/in/rustyeddy
 github: http://github.com/rustyeddy

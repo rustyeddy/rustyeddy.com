@@ -31,8 +31,8 @@ tech:
 Radian is a small, fast moving startup that sells Laser Engravers and
 Cutters. I manage five software projects, including two Web
 Applications for the control and calibration of the Laser system. I
-am also responsible for the successful delivery and maintanance of the
-products Firmaware and Fleet Management system.
+am also responsible for the successful delivery and maintenance of the
+products Firmware and Fleet Management system.
 	
 > C/C++, Go & Python, embedded systems and microservices.
 <!--more-->

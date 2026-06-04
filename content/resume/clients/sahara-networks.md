@@ -26,8 +26,8 @@ tech:
   - TCP/IP
 ---
 
-Sahara Networks is building something truley unique, connecting
-micro-controllers and IoT devics across the network allowing virtual
+Sahara Networks is building something truly unique, connecting
+microcontrollers and IoT devices across the network allowing virtual
 circuits to be created. I help design, develop and lead the design and
 implementation of the network protocol that delivers high speed
 digital I/O signals across a "device network".

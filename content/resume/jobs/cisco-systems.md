@@ -1,7 +1,7 @@
 ---
 title: Cisco Systems
 date: 2006-02-01
-description: Team member and eventually a lead of the Mutlicast Development Team.
+description: Team member and eventually a lead of the Multicast Development Team.
 weight: 200
 start: Feb 2000
 finish: Feb 2006
