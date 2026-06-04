@@ -1,0 +1,26 @@
+{{ if .IsPage }}
+{{ $cluster := index hugo.Data.clusters .Section }}
+{{ if $cluster }}
+<section class="mt-5 pt-4 border-top" aria-labelledby="cluster-navigation">
+  <h2 id="cluster-navigation" class="h4 mb-3">{{ default "Where this fits" $cluster.heading }}</h2>
+  {{ with $cluster.description }}<p class="text-muted">{{ . }}</p>{{ end }}
+  <ol class="list-unstyled mb-0">
+    {{ range $cluster.items }}
+    {{ $target := site.GetPage .page }}
+    {{ $isCurrent := and $target (eq $target.RelPermalink $.RelPermalink) }}
+    <li class="mb-3">
+      {{ if and $target (not $isCurrent) }}
+      <a href="{{ $target.RelPermalink }}">{{ .title }}</a>
+      {{ else if $isCurrent }}
+      <span class="font-weight-bold">{{ .title }}</span>
+      <span class="text-muted small">(current page)</span>
+      {{ else }}
+      <span class="font-weight-bold">{{ .title }}</span>
+      {{ end }}
+      {{ with .description }}<span class="d-block text-muted small">{{ . }}</span>{{ end }}
+    </li>
+    {{ end }}
+  </ol>
+</section>
+{{ end }}
+{{ end }}

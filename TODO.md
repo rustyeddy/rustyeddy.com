@@ -184,7 +184,7 @@ Acceptance:
 - Links use descriptive anchor text, not "click here".
 - Homepage still has recent writing, but the content hubs are more prominent.
 
-[ ] P0.5 Add section intro/navigation blocks to article pages.
+[x] P0.5 Add section intro/navigation blocks to article pages.
 Files:
 - layouts/_default/single.html or section-specific single templates
 - layouts/partials/related-content.html
