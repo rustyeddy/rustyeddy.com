@@ -11,24 +11,14 @@
 
     {{ if ne .Params.show_articles false }}
     <div class="row">
-      {{ range .Pages }}
-      <div class="col-4 mb-4">
+      {{ range .Pages.ByWeight }}
+      <div class="col-md-6 mb-4">
         <div class="card">
-          <div class="card-text">
-            <div class="card-header">
-              <a href="{{ .Permalink }}">{{ .Title }}</a>
-            </div>
-            <div class="card-body">
-              <div class="text-muted">
-                {{ .Description }}
-              </div>
-              <div class="small text-muted">
-                <a href="{{ .Permalink }}">read more ...</a>
-              </div>
-            </div> <!-- card body -->
-          </div> <!-- card text -->
+          <div class="card-body">
+            {{ partial "page-summary.html" (dict "page" . "dateMode" "hide" "termsMode" "show") }}
+          </div> <!-- card body -->
         </div> <!-- card -->
-      </div> <!-- col-4 -->
+      </div> <!-- col-md-6 -->
       {{ end }}
     </div> <!-- row -->
     {{ end }}

@@ -426,7 +426,7 @@ Acceptance:
 - Breadcrumb links are valid.
 - Structured data remains valid.
 
-[ ] P1.7 Improve article list cards/snippets.
+[x] P1.7 Improve article list cards/snippets.
 Files:
 - layouts/_default/list.html
 - section-specific list templates

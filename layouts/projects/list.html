@@ -16,7 +16,7 @@
 <div class="container">
 
     <div class="row">
-	{{ range .Pages }}
+	{{ range .Pages.ByWeight }}
 	<div class="col-md-4">
 	    <div class="card">
 		<div class="card-body">
@@ -26,20 +26,13 @@
                     <img height="315px" class="card-img" src="{{ . }}" alt="{{ $project.Title }} project image" />
                     {{ end }}
 
-		    <h5 class="card-title">
-			<a href="{{ .Permalink }}">{{ .Title }}</a>
-		    </h5>
-
-		    <div class="card-text">
-			{{ .Description }}
-			<span><a href="{{ .Permalink }}">read more ...</a></span>
-		    </div>
+		    {{ partial "page-summary.html" (dict "page" . "dateMode" "hide" "termsMode" "show") }}
 
 		</div>
 	    </div>
 	</div>
 	{{ end }}
-    </div> 
+    </div>
 
 </div>
 

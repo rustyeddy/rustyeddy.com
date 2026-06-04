@@ -11,29 +11,11 @@
     <div class="col"></div> <!-- col-2 -->
   </div>
 
-  {{ range .Pages }}
-  <div class="row">
-    <div class="col"></div>
-    <div class="col-lg-8">
-      <div class="title">
-	<a href="{{ .Permalink }}">{{ .Title }}</a>
-      </div>
-    </div> <!-- col -->
-    <div class="col"></div>
-  </div>
-
+  {{ range .Pages.ByDate.Reverse }}
   <div class="row mb-4">
-    <div class="col text-mute fw-light text-right">
-      <div class="date">
-	{{ .Date.Format "January 2, 2006" }}
-        <br/>
-        words {{ .WordCount }}
-      </div>
-    </div> <!-- col-2 -->
+    <div class="col"></div>
     <div class="col-lg-8">
-      <div class="description text-mute smaller font-weight-light">
-	{{ .Description }}
-      </div>
+      {{ partial "page-summary.html" (dict "page" . "dateMode" "show" "termsMode" "hide") }}
     </div> <!-- col -->
     <div class="col"></div>
   </div>

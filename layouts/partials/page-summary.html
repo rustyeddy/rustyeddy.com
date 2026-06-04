@@ -1,0 +1,31 @@
+{{- $page := .page -}}
+{{- $showDate := eq .dateMode "show" -}}
+{{- $showTerms := ne .termsMode "hide" -}}
+{{- $description := $page.Description | default ($page.Summary | plainify | truncate 180) -}}
+<div class="page-summary">
+  <h2 class="h5 mb-1">
+    <a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
+  </h2>
+  {{- if $showDate }}
+  <div class="small text-muted mb-2">{{ $page.Date.Format "January 2, 2006" }}</div>
+  {{- end }}
+  {{- with $description }}
+  <p class="text-muted mb-2">{{ . }}</p>
+  {{- end }}
+  {{- if $showTerms }}
+  {{- $terms := slice }}
+  {{- range $page.GetTerms "categories" }}
+    {{- $terms = $terms | append . }}
+  {{- end }}
+  {{- range $page.GetTerms "tags" }}
+    {{- $terms = $terms | append . }}
+  {{- end }}
+  {{- with first 5 $terms }}
+  <div class="small">
+    {{- range . }}
+    <a class="badge badge-light border mr-1" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+    {{- end }}
+  </div>
+  {{- end }}
+  {{- end }}
+</div>

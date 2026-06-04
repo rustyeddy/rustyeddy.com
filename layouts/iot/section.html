@@ -13,20 +13,11 @@
 
     {{ if ne .Params.show_articles false }}
     <div class="row mt-5">
-      {{ range .Pages }}
-      <div class="col-6">
+      {{ range .Pages.ByWeight }}
+      <div class="col-md-6">
         <div class="card mb-4">
           <div class="card-body">
-	    <div class="card-title">
-	      <a href="{{ .Permalink }}">{{ .Title }}</a>
-	    </div>
-            <div class="card-text small">
-              {{ .Description }}
-            </div>
-            <hr/>
-	    <div class="card-subtitle date small muted">
-	      {{ .PublishDate.Format "January 2, 2006" }}
-	    </div>
+            {{ partial "page-summary.html" (dict "page" . "dateMode" "hide" "termsMode" "show") }}
           </div>
         </div>
       </div> <!-- col -->

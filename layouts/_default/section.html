@@ -11,27 +11,13 @@
 	<div class="col"></div> <!-- col-2 -->
     </div>
 
-    {{ range .Pages }}
-    <div class="row">
+    {{ $isNotes := eq .Section "notes" }}
+    {{ $pages := cond $isNotes .Pages.ByDate.Reverse .Pages.ByWeight }}
+    {{ range $pages }}
+    <div class="row mb-4">
 	<div class="col"></div> <!-- col-2 -->
 	<div class="col-lg-8">
-	    <div class="title">
-		<a href="{{ .Permalink }}">{{ .Title }}</a>
-	    </div>
-	</div> <!-- col -->
-	<div class="col"></div>
-    </div>
-
-    <div class="row mb-3">
-	<div class="col text-mute small text-right">
-	    <div class="date">
-		{{ .PublishDate.Format "January 2, 2006" }}
-	    </div>
-	</div> <!-- col-2 -->
-	<div class="col-lg-8">
-	    <div class="description small font-italic">
-		{{ .Description }}
-	    </div>
+	    {{ partial "page-summary.html" (dict "page" . "dateMode" (cond $isNotes "show" "hide") "termsMode" (cond $isNotes "hide" "show")) }}
 	</div> <!-- col -->
 	<div class="col"></div>
     </div>
