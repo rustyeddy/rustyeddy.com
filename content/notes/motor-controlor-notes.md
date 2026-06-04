@@ -18,6 +18,8 @@ github: http://github.com/mobilerobot-io/arduino
 date: 2018-08-22
 ---
 
+> Older project note. Kept for historical context; some implementation details may no longer reflect my current recommendations.
+
 I prefer to use an Arduino with a Motor Controller over say a
 Raspberry Pi with a motor-controller.  I believe the Arudino has
 better support for dedicated Real-time software vs. the Raspberry Pi
@@ -39,7 +41,7 @@ robust development environment, which Is great for getting started
 programming embedded devices, but hardly sufficient for Somebody that
 makes a living programming.
 
-## Niether one will Cut it
+## Neither One Will Cut It
 
 The Raspberry Pi hardware and Linux OS are not well suited for an
 "embedded real time" system.  But does offer an endless choice of
@@ -71,7 +73,7 @@ We will consider the following 3 things:
 
 ## TLDR - Summary
 
-I have settled on the Adafruit MotorSheilds for Arudino and Raspberry
+I have settled on the Adafruit MotorShields for Arudino and Raspberry
 Pi as general purpose options.  At the moment, my ideal setup involves
 a RPi as the controller with an I2C or SPI connection to an Arduino
 with a MotorController.
@@ -124,9 +126,9 @@ back in the day.
 
 ### Skid Steering
 
-My primary vehical is a 4wd, that is 4 DC motors directy spinning two
-rubber tires.  I also have available two, two wheeled vehicals and a
-_train tracked_ vehical.
+My primary vehicle is a 4wd, that is 4 DC motors directy spinning two
+rubber tires.  I also have available two, two wheeled vehicles and a
+_train tracked_ vehicle.
 
 In all cases each of these vehicle employ _skid steering_ on account a
 one wheel (wheels or tread) will be skidding along when your turnin. 
@@ -156,7 +158,7 @@ system integration requirements.
 
 ### Alternative Shields
 
-### Adafruit Sheild v1 & v2
+### Adafruit Shield v1 & v2
 
 Adafruit essentially has two versions of their MotorShield v1 and now
 v2. ...
@@ -167,7 +169,7 @@ Version 2 of the AFMS runs over the I2C bus.
 
 ### OSEPP Shields v1 & v2
 
-The OSEPP MotorSheilds effectively duplicate the functionality of the
+The OSEPP MotorShields effectively duplicate the functionality of the
 Adafruite MotorShields.
 
 The documentation is hard to find and must be pieced together through

@@ -1,12 +1,14 @@
 ---
-title: Why Choose the Go programming Language for your Project?
+title: Why Choose Go for Your Project?
 description: >
-  The programming language Go as taken the development world by storm
+  The programming language Go has taken the development world by storm
   over the last few years. This article will discuss reasons why Go
   has become so popular and why you might choose it for your next
   project. 
 date: 2019-09-22
 ---
+
+> Older project note. Kept for historical context; some implementation details may no longer reflect my current recommendations.
 
 ## Go is simple 
 
@@ -14,7 +16,7 @@ Go is easy to learn to program with and it is free! Go is _much_
 easier to maintain and deploy than Java. 
 
 Go does not have weird _virtual environments_ of Python or npm, gulp,
-grunt, yarn, webpack (what's next?) convuluted and complex build
+grunt, yarn, webpack (what's next?) convoluted and complex build
 environments. 
 
 ## Go is Fast
@@ -23,7 +25,7 @@ It smokes most other languages, except the grand mother of Unix
 programming _C_.  The Go programming language is almost as fast
 (performant geeky folks like to say) as C.
 
-Since Go is NOT interperted at runtime like Python and NodeJS is
+Since Go is NOT interpreted at runtime like Python and NodeJS is
 applications written in Go will Smoke similar app written in these
 other languages.
 
@@ -69,7 +71,7 @@ be implemented.
 
 ## Other Great Reasons
 
-- Built in HTTP server for embedded web static or dynamic we pages, a
+- Built in HTTP server for embedded web static or dynamic web pages, a
   REST server can be written in about 10 lines of code. Of course it
   won't do much, but the lines that exceed 10 will be implementing
   your application.

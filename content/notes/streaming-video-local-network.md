@@ -1,11 +1,13 @@
 ---
-title: Streaming Live Video on a Local Lan Vs. Internet
+title: Streaming Live Video on a Local LAN vs. the Internet
 date: 2018-12-23
 description: >
   Streaming video over a local area network can take on a
   significantly different look than trying to live stream video over
   the Internet.
 ---
+
+> Older project note. Kept for historical context; some implementation details may no longer reflect my current recommendations.
 
 - differences in local vs. internet and streaming video
 
@@ -40,11 +42,11 @@ transmitter/receiver per office (which RTSP could serve well).
 In recent years people would use RTMP to stream video over the
 Internet, by adding a plugin to NGINX, each camera would
 stream to NGINX, NGINX then create the endpoints for the video,
-waiting for client connections to start recieving the video.
+waiting for client connections to start receiving the video.
 
 Nowadays MPEG-DASH over HTTP is building popularity, MPEG-DASH (taking
 over popularity from MJPEG) is an Open Protocol supported by most
-browswers including Chrome, but may be lagging with Safari.
+browsers including Chrome, but may be lagging with Safari.
 
 I am happy to set up a PoC with both RTSP and HTTP serving MPEG-DASH
 from Raspberry Pis.  For generating video, I'll be using gstreamer
@@ -54,7 +56,7 @@ Video on a LAN required for Real Time control decisions, whether it is
 OpenCV churning through images while spitting out data used by _magoo_
 the guidance module. 
 
-Low latency is and a non-glitchy video stream are imparative to
+Low latency is and a non-glitchy video stream are imperative to
 driving a high speed vehicle correctly. This is true even when the
 vehicle is being controlled by a human with a joystick.
 
@@ -63,10 +65,10 @@ in where the vehicle is vs. where it appears to be, or if the we have
 a .5 second drop in video, we will have "jump" that 43.5 feet.
 
 This makes safe navigation of a high speed vehicle unsafe, whether it
-is being drivin by human or algorithm.
+is being driven by human or algorithm.
 
 ## Video Over the Internet
 
-Delay is inevetible. You are crossing unknown links and firewalls.
+Delay is inevitable. You are crossing unknown links and firewalls.
 Must wrap it all up under HTTP to make things the easiest.
 

@@ -15,8 +15,8 @@ resources:
 ---
 
 Every piece of software that exists has to speak to the external world
-in some manner. It might be programattically through messaging or an
-API call. It could be a human clicking through an GUI on our laptop or
+in some manner. It might be programmatically through messaging or an
+API call. It could be a human clicking through a GUI on our laptop or
 phone.
 
 I think it is clear that _web apps_ are taking over the world. It is a

@@ -1,5 +1,5 @@
 ---
-title: TLV the Type Length Vector Protocol
+title: "TLV: The Type-Length-Value Protocol"
 description: >
   A very simple byte oriented protocol used to swap unformatted
   messages over a variety of communication channels (i2c, SPI, UDP,
@@ -13,13 +13,15 @@ tags:
 image: https://mobilerobot.sfo2.cdn.digitaloceanspaces.com/display-and-motors.jpg
 ---
 
+> Older project note. Kept for historical context; some implementation details may no longer reflect my current recommendations.
+
 TLV is a very simple communication protocol that can be used to send
 messages around a complex, distributed system.  
 <!--more-->
 
 The TLV protocol provides only message formatting by definition.  How
 the application handles said messages is up to the application, that
-is NO assumptions or gaurauntees about losing message, parts of
+is NO assumptions or guarantees about losing message, parts of
 messages, ordering or retransmission.
 
 If any of these more advanced capabilities are to be provided, they
@@ -29,8 +31,8 @@ must be done so at the application layer (so to speak).
 
 The underlying physical and mac layers will have a huge effect on the
 possibility of packet loss, ordering, delay and possible bandwidth.
-Each of the communicaiton mediums we use, we will post a comparison of
-characteristics, bandwidth, delay and reliability amoung other
+Each of the communication mediums we use, we will post a comparison of
+characteristics, bandwidth, delay and reliability among other
 things. 
 
 ## TLV and TLString
@@ -47,7 +49,7 @@ size).
 ```
 
 The first byte is the type of message, the second byte is the length
-of the message, inclusive, that is the 2 bytes of the Tyte and Length
+of the message, inclusive, that is the 2 bytes of the Type and Length
 field are INCLUDED in the Length of the message.
 
 ### Compact Messages

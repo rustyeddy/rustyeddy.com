@@ -1,11 +1,12 @@
 ---
-title: How to build a private WIFI network for your WebApp
+title: How to build a private Wi-Fi network for your web app
 date: 2021-07-22
+draft: true
 description: >
   There are times when a device loaded with software needs to be
   configured without a keyboard or monitor. A WebApp is a great way to
   do just that, but what if you can't or don't want to connect to an
-  existing Wifi network. We will discuss these scenarios in this
+  existing Wi-Fi network. We will discuss these scenarios in this
   document. 
 ---
 
@@ -13,7 +14,7 @@ I work with _physical computing_ or devices that have rather
 sophisticated software that needs to be configured, monitored and
 controlled.
 
-## Building a Private Wifi
+## Building a Private Wi-Fi Network
 
 Here is the situation, I just plugged a white box into the wall and it
 has a steady green light. I can see two other lights, one of which is
@@ -26,7 +27,7 @@ lighting schedules, basically synchronize with daylight.
 ### Making a Wireless Connection
 
 I can't stick a monitor or a keyboard cable into this thing. However,
-since my device is running good old _Linux_ with a nice Wifi chip, we
+since my device is running good old _Linux_ with a nice Wi-Fi chip, we
 are going to turn it into an Access Point (AP).
 
 To make this connection happen we are going to do the following:
@@ -57,7 +58,7 @@ should have a simple time connecting with the private network and
 subsequently the browser connects to the server and bang, off and
 running. 
 
-## Reasons for a Private Wifi 
+## Reasons for a Private Wi-Fi 
 
 OK. Why not just connect to an exiting network? In some cases we will
 connect to an existing network and hence take advantage of _Internet
@@ -79,10 +80,10 @@ vulnerabilities.
 ### No Access At All
 
 Sometimes we are in the middle of almost nowhere, like the High
-Sierra's, there is no _Internet_ or Wifi Infrastructure. And good luck
+Sierra's, there is no _Internet_ or Wi-Fi infrastructure. And good luck
 trying to get a cell phone signal (hey T-Mobile!) up there.
 
-However, a little WiFi connectivity can still be had! Thank You _Solar
+However, a little Wi-Fi connectivity can still be had! Thank You _Solar
 Power!_.
 
 ## Conclusion

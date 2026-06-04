@@ -156,6 +156,10 @@ Work in this order:
 
 ### Priority 0: Fix or Demote Raw Public Notes
 
+- [x] Draft notes that explicitly say they are unfinished.
+- [x] Add historical context framing to older public project notes.
+- [x] Update `/notes/` copy so notes are positioned as working references, not canonical architecture articles.
+
 ### Priority 1: Strengthen Cornerstone IoT Content
 
 ### Priority 2: Modernize Older IoT Implementation Posts

@@ -13,6 +13,8 @@ tags:
   - gnc
 ---
 
+> Older project note. Kept for historical context; some implementation details may no longer reflect my current recommendations.
+
 Skid steering basics
 
 - Based on _fixed direction wheels[1] or tracks_
@@ -88,7 +90,7 @@ to DATA INPUTS, from a joystick or keyboard possibly.
 #### Computer Controls Require External Feedback
 
 For the reasons stated above, Skid steering requires external feedback
-to be accurately used with computer automated controlers, like [otto's
+to be accurately used with computer automated controllers, like [otto's
 magoo](http://github.com/mobilerobot-io/otto). 
 
 The possibilities for external controls are many! Including distance

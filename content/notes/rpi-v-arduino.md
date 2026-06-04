@@ -18,7 +18,7 @@ with external hardware in real-time.
 The Raspberry Pi, however has a much more powerful set of processors,
 more memory and a general purpose operating system making it a more
 suitable choice for general purpose, sophisticated software, such as
-communicaitons and control software. 
+communications and control software. 
 
 #### Assume a Distributed System
 

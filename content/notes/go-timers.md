@@ -1,11 +1,13 @@
 ---
-title: Golang timers to remove stale sensor stations
+title: Go timers to remove stale sensor stations
 description: >
   A brief look at Go timers to clear out stale sensor stations.
 date: 2020-11-03
 ---
 
-This articles introduces Go (Golang) Timers as the mechanism the the
+> Older project note. Kept for historical context; some implementation details may no longer reflect my current recommendations.
+
+This article introduces Go timers as the mechanism the
 [IoTa gateway](https://github.com/rustyeddy/iota) uses to identify
 _stale_ IoT stations. Modifying the Station with with a new _Go
 timestamp_ field will allow IoTe to determine how long it has been
@@ -160,7 +162,7 @@ changes. Here are a couple design options:
    IoT.  CavePerson approach.
 
 2. Dashboard has it's own timer to timeout stations, hmmm. No. Not
-   truley synchronized. We would be _hoping_ the dashboard and
+   truly synchronized. We would be _hoping_ the dashboard and
    frontend where in sync most of the time
 
 3. Websockets with HTTP/1 - realtime two way mechanism

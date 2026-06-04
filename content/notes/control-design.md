@@ -7,6 +7,8 @@ description: >
   into our driving algorithms. 
 ---
 
+> Older project note. Kept for historical context; some implementation details may no longer reflect my current recommendations.
+
 Early in the process of building the first set of mobile robots I
 discovered that I was not going to settle on a single micro
 controller. 
@@ -63,7 +65,7 @@ microcontroller I have looked at thus far.
 > Many other legit choices are available including: SPI, CAN,
 > ethernet, etc.
 
-Wifi is also possible in some cases, but we are going to go with I2C
+Wi-Fi is also possible in some cases, but we are going to go with I2C
 because it is more robust, simpler and faster than standard serial
 comminication. 
 
@@ -99,7 +101,7 @@ In it's most simplest form, our _system_ consists of:
   against _current state_
 - Control Outputs ~ Control messages are created from controller
   object then written to message bus
-- Output Controllor ~ Accepts messages from the bus, decode and
+- Output Controller ~ Accepts messages from the bus, decode and
   santize them, convert them into specific control commands. 
   
 ### For example 
@@ -127,7 +129,7 @@ In it's most simplest form, our _system_ consists of:
   of wheels.
   
 In other words, if right and left wheels both turn at half speed the
-vehical will go striaght forward at half speed.  If we want to turn
+vehicle will go striaght forward at half speed.  If we want to turn
 right, we could make the left wheel go at, say half speed, and have
 the right wheel go at 0.  
 

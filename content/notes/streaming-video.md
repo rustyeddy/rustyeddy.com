@@ -11,14 +11,16 @@ tags:
   - h264
 ---
 
-I need to stream live video from a moving vehical with a connected
+> Older project note. Kept for historical context; some implementation details may no longer reflect my current recommendations.
+
+I need to stream live video from a moving vehicle with a connected
 camera and a possibly connected wifi.
 
 ## Live High Resolution Video
 
 Video will stream from the vehicle to be picked up by _video
 consumers_ and processed as required.  Examples of _consumers_ are
-Live Video Display on our (Webapp), OpenCV for vision algoritms.
+Live Video Display on our (Webapp), OpenCV for vision algorithms.
 
 ## High Demand For Low Resolution
 
@@ -65,7 +67,7 @@ the video stream for future access.
 ### Live Video and OpenCV
 
 The _lores_ video, will be consumed by the OpenCV module to run
-through one or more computer vision algoritms.  The specific use case
+through one or more computer vision algorithms.  The specific use case
 in play will determine which _computer vision algorithms_ will be run.
 
 Examples that may run at a given time:

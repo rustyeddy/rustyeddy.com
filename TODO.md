@@ -219,7 +219,7 @@ Acceptance:
 P0 — Remove visible unfinished or low-confidence content
 -------------------------------------------------------
 
-[ ] P0.6 Hide or fix visible TODO placeholders.
+[x] P0.6 Hide or fix visible TODO placeholders.
 Files:
 - content/projects/this-website/*
 - search all content files
@@ -237,7 +237,7 @@ Acceptance:
 - The "How I Made This Web Site" page no longer contains a visible TODO.
 - If the page is not worth updating now, set draft: true or remove it from project listings.
 
-[ ] P0.7 Review /notes/ for broken, typo-heavy, or outdated entries and demote weak pages.
+[x] P0.7 Review /notes/ for broken, typo-heavy, or outdated entries and demote weak pages.
 Files:
 - content/notes/*
 - content/notes/_index.md

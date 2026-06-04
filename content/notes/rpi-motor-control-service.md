@@ -11,6 +11,8 @@ categories:
   - motors
 ---
 
+> Older project note. Kept for historical context; some implementation details may no longer reflect my current recommendations.
+
 
 This software adds a Skid Steer motor control software to the
 [Raspberry Pi Device Server](http://github.com/mobilerobot-io/rpid)
@@ -18,7 +20,7 @@ device server.  RPID adds motor controls accessible via both MQTT and
 REST APIs, as well as directly with the Skidder python library.
 <!--more-->
 
-This project was to build a simple automous driving vehical using a
+This project was to build a simple automous driving vehicle using a
 single Raspberry Pi and a simple DC motor controller.  The RPi acts
 as the macro controller making control decisions and managing
 communications. 
@@ -48,7 +50,7 @@ to the motors.
 % mosquitto_sub -t /control/skid 
 ```
 
-Messages to control our skid steer vehical over MQTT will basically be
+Messages to control our skid steer vehicle over MQTT will basically be
 two floating point values between -1 and +1 inclusive.  The numbers
 represent the percentage of the load to let the motors have (throttle)
 and the +/- sign represents the direction the motor will turn.
@@ -94,7 +96,7 @@ That means we will be able to control the voltage sent to (throttle)
 the motors and hence control speed and direction the vehicle moves.
 
 
-## A Note about Performance and Communicaiton Overhead
+## A Note about Performance and Communication Overhead
 
 In this case the RPi with minimal sensors, low speed motors and maybe
 a camera should be easily at home in a single multi-core RPi.  This
@@ -103,7 +105,7 @@ messaging and translation layers from the
 MBR Architecture.  
 
 However, for the sake of a single architecture and minimized set of
-software tools and configurations, we will leave the communicaiton
+software tools and configurations, we will leave the communication
 layers in place.
 
 Consistency and maintainance are extreemly important when it comes to
@@ -111,11 +113,11 @@ real-world production systems. But would we choose this over
 performance in a production system?
 
 The answer depends on the demands of the application, in this case, I
-suspect the level of communicaiton overhead will be minimal, or
+suspect the level of communication overhead will be minimal, or
 trivial when compared to the Bandwidth and other resources available.
-That I believe removing the communicaitons layer would provide no
+That I believe removing the communications layer would provide no
 noticible, production quality performance improvements.  And at the
-cost of maintanance and complexity. 
+cost of maintenance and complexity. 
 
 Of course speculation takes a deep backseat to real world numbers and
 careful testing.  So, I reserve the _right to be wrong_!

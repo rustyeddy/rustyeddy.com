@@ -13,6 +13,8 @@ tags:
   - ffmpeg
 ---
 
+> Older project note. Kept for historical context; some implementation details may no longer reflect my current recommendations.
+
 The grandparents of streaming video, and snapshots, read, writing
 and transcoding video and single frame images are _ffmpeg_, _vlc_ and
 _gstreamer_. 

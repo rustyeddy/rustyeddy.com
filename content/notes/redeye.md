@@ -11,6 +11,8 @@ github: https://github.com/mobilerobot-io/redeye
 featured: https://docs.google.com/drawings/d/e/2PACX-1vQHtO4hTGzQKan-x5UKmwDieGndeGtNsTXT2iorDvcSuwiPBY1kkutZ1DH0D-Rd1VAtCzXzf3b3Zj4C/pub?w=960&amp;h=540
 ---
 
+> Older project note. Kept for historical context; some implementation details may no longer reflect my current recommendations.
+
 The Red Eye project is a service definition rapper around inexpensive
 cameras attached to inexpesive micro-controllers that take pretty good
 video.
@@ -68,13 +70,13 @@ streams.
 The video streams produced by the video will need a little turning
 them into video streams of some sort.  Our scheme is such that:
 
-1. Video streams may be recieved by more than one consumer 
+1. Video streams may be received by more than one consumer 
 
-2. We do not want Video producer to have to know _who_ is recieving
+2. We do not want Video producer to have to know _who_ is receiving
    and when..  Multicast will just be sent as long as there is any
    consumer. 
 
-We will need to piece together the series of filters to recieve the
+We will need to piece together the series of filters to receive the
 video from Rasberry Pi, to gstreamer that will turn the video into
 UDP, RTP, RTSP multicast streams.
 
@@ -96,7 +98,7 @@ can operate under.  We are wrapping the configuration options, as well
 as control time commands like starting and stoping streams.
 
 Additional commands may be set to start time lapse snapshots and quick
-auto-sequence shots.  The control commands can be set off throught the
+auto-sequence shots.  The control commands can be set off through the
 following API channels:
 
 - REST

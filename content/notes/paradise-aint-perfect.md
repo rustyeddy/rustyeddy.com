@@ -4,7 +4,7 @@ draft: true
 date: 2020-02-03
 description: >
   Perfection is an illusion. We are not striving for perfection, we
-  are striving for correctness. It is imparative we do NOT get
+  are striving for correctness. It is imperative we do NOT get
   distracted fixing every little anticipated problem when the Hoard is
   at the gate.
 ---

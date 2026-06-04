@@ -1,11 +1,13 @@
 ---
-title: IP Multicast the basics
+title: IP Multicast Basics
 description: >
   IP Multicast is a seldom used but very useful mechanism for groups
   of machines to communicate.  I will cover the basics of IP multicast
   in this document.
 date: 2018-02-03
 ---
+
+> Older project note. Kept for historical context; some implementation details may no longer reflect my current recommendations.
 
 ## IP Multicast addresses
 
