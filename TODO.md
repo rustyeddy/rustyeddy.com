@@ -333,7 +333,7 @@ Acceptance:
 - Obvious typos are fixed.
 - Public contact details are intentional.
 
-[ ] P1.3 Normalize section index pages.
+[x] P1.3 Normalize section index pages.
 Files:
 - content/iot/_index.md
 - content/software/_index.md

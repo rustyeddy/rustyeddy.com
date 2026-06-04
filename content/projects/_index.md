@@ -6,24 +6,30 @@ description: >
   trading tools, and the website infrastructure behind rustyeddy.com.
 ---
 
-These are the larger projects that collect the ideas, experiments, and
-systems described across this site. Some are active codebases, some are
-portfolio projects, and some are reference implementations for writing about
-IoT, Linux, Go, automation, video, and software architecture.
+This section is for readers who want to see the ideas from the articles applied
+to real systems.
 
-The common thread is practical systems work: software that talks to hardware,
-services that expose clear APIs, and tools that can be run, tested, and
-extended without hiding the implementation details.
+Projects here are not all equally current. Some are active or current reference
+implementations. Others are historical systems kept because the architecture,
+tradeoffs, or implementation lessons are still useful.
 
-## Major Projects
+## Reference Implementations
 
-- **OttO** is an IoT edge runtime in Go for managing sensors and actuators on
-  embedded Linux hardware.
-- **RedEye** is an API-driven camera and video system with computer vision and
-  robotics integration.
-- **Trader** is a Go engine for backtesting and paper-trading Forex strategies.
-- **This Website** documents how the site itself is built with Hugo,
-  Markdown, Bootstrap, and GitHub Pages.
+Start here when you want current project context:
 
-Each project page includes more background, architecture notes, and links to
-source code where available.
+- [OttO](/projects/otto/) is a Go-based IoT edge runtime for coordinating sensors, actuators, APIs, and gateway behavior.
+- [Trader](/projects/trader/) is a Go backtesting and trading engine used to discuss strategy boundaries, numeric correctness, and testable trading logic.
+
+## Historical Case Studies
+
+These projects are older, but still useful as engineering examples:
+
+- [RedEye](/projects/redeye/) is an API-driven camera and robotics system with video, control, and computer-vision concerns.
+- [How I Made This Web Site](/projects/this-website/) documents the site stack: Hugo, Markdown, Bootstrap, GitHub Pages, and the publishing workflow.
+
+## How Projects Fit the Site
+
+Projects are case studies and reference implementations. The [IoT](/iot/) and
+[Software](/software/) sections contain the more canonical architecture and
+delivery guidance. [Notes](/notes/) contain smaller working references and older
+implementation details.

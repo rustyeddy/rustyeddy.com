@@ -1,55 +1,42 @@
 ---
 title: Software Development
 description: >
-  Practical engineering practices for building software predictably —
-  from capturing requirements through shipping and iterating.
-tags: [ sdlc, software development ]
+  Practical engineering practices for building software predictably, from use cases and task slicing through testing, review, and release.
+tags: [sdlc, software development]
 date: 2026-05-22
 show_articles: false
 ---
 
-Software projects have a well-earned reputation for running late, costing
-more than expected, and delivering the wrong thing. The root cause is almost
-always the same: a breakdown in communication between the people who need
-the software and the people building it.
+This section is for people who need software projects to become more
+predictable without burying the team in process.
 
-The practices in this section exist to prevent that breakdown. They are not
-bureaucratic overhead — each one is a communication tool that creates shared
-understanding, makes progress visible, and catches divergence before it
-becomes expensive to fix. Applied together, they make a software project
-_predictable_.
+The core idea is simple: software goes wrong when users, developers, reviewers,
+and operators stop sharing the same picture of what is being built. These
+practices keep that picture visible from first conversation through release.
 
-The work falls into three phases that repeat iteratively throughout a
-project's life.
+## Start With the Workflow
 
-## Design
+Read these in order if you want the main software delivery path:
 
-Before writing code, establish what the software needs to do and why.
+- [Software is Hard](/software/software-is-hard/) explains why projects drift and why feedback loops matter.
+- [Use Cases](/software/use-cases/) captures user goals in plain language.
+- [Use Cases to Tasks](/software/use-cases-to-tasks/) turns user value into testable implementation work.
+- [Organizing Software Projects with Kanban](/software/kanban/) keeps work visible and limited.
+- [Test Driven Software Development](/software/test-driven-software-development/) makes expected behavior repeatable.
+- [Peer Reviews](/software/peer-review/) catches design and behavior problems before they ship.
+- [Release Process](/software/release-process/) turns finished work into versioned, recoverable user value.
 
-- [Software is Hard](/software/software-is-hard/) — why software projects
-  go wrong and what separates the ones that don't
-- [Use Cases](/software/use-cases/) — capturing requirements through
-  customer discovery and user stories
-- [Use Cases to Tasks](/software/use-cases-to-tasks/) — slicing use cases
-  into testable requirements and Kanban backlog items
-- [Wireframes and Storyboards](/software/wireframes-and-storyboards/) —
-  visualizing the user experience before any code is written
+## Supporting Practices
 
-## Development
+These articles support the workflow without being the main sequence:
 
-Build incrementally, with visibility and quality checks at every step.
+- [Version Control Systems](/software/version-control-systems/) treats history, branches, reviews, and tags as project infrastructure.
+- [Wireframes and Storyboards](/software/wireframes-and-storyboards/) helps teams reason about user flows before implementation.
+- [Fixed-Point Numeric Types in Go Financial Software](/software/numeric-types-financial-software/) shows domain modeling and correctness in a narrow technical area.
+- [The Strategy Pattern in a Backtesting Engine](/software/strategy-pattern-backtesting/) shows how interface design keeps simulation and production logic aligned.
 
-- [Version Control Systems](/software/version-control-systems/) — git,
-  branching, and the commit history as the project's source of truth
-- [Kanban](/software/kanban/) — keeping work visible and tasks small
-- [Test Driven Development](/software/test-driven-software-development/) —
-  writing tests first to force clear requirements and build confidence
-- [Peer Review](/software/peer-review/) — catching bugs before users do
-  and spreading knowledge across the team
+## How to Use This Section
 
-## Delivery
-
-Ship working software to users, get feedback, and iterate.
-
-- [Release Process](/software/release-process/) — versioning, CI/CD
-  pipelines, deployment strategies, and rollback
+The software articles are the canonical guidance for delivery practices. Project
+pages show those ideas inside larger systems. Notes are smaller observations or
+historical references that may not be as polished as these articles.

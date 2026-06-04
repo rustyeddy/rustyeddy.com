@@ -1,152 +1,43 @@
 ---
 title: Internet of Things (IoT)
 description: >
-  A software-first approach to building IoT systems. This site focuses on
-  real-world architecture, APIs, messaging, and embedded-to-cloud
-  integration—not just hardware hacks.
+  A software-first guide to IoT systems: device boundaries, edge gateways,
+  APIs, messaging, and maintainable embedded-to-cloud architecture.
 tags: [iot, maker, software-architecture]
 date: 2023-01-13
 show_articles: false
 ---
 
-## Overview
+This section is for engineers who want IoT systems to behave like software
+systems, not one-off hardware demos.
 
-Building DIY electronic projects is fun—and more accessible than ever.
-You no longer need to be a rocket scientist or a millionaire to build
-useful IoT systems.
+If you care about device boundaries, gateway responsibilities, APIs, messaging,
+observability, and long-term maintainability, start here. Wiring details and
+board bring-up matter, but the main focus is how the pieces fit together after
+the prototype works.
 
-What *is* still rare is content that treats IoT as a **serious software
-engineering problem** rather than a collection of disconnected hardware
-demos.
+## Start With the Architecture
 
-That’s the focus here.
+These are the pillar articles for the IoT section:
 
-This site documents the design and implementation of IoT projects with
-an emphasis on **software architecture**, **system integration**, and
-sound **engineering practices**. The goal is not just to make devices
-work, but to build systems that scale, evolve, and remain maintainable.
+- [IoT System Architecture: Device to Cloud](/iot/iot-system-architecture-device-to-cloud/) explains the device, gateway, API, and cloud boundaries.
+- [Five Layers of a Practical IoT System](/iot/iot-system-architecture-otto/) gives a compact model for organizing real IoT systems.
+- [Building an IoT Device Abstraction Layer in Go](/iot/building-iot-device-manager-in-go/) shows how to keep application logic separate from hardware details.
+- [OttO Edge Gateway Architecture](/iot/iot-edge-gateway/) describes the Go-based edge runtime behind the reference implementation.
 
-If you’re looking for step-by-step wiring guides, this probably isn’t
-the right place. If you care about system boundaries, APIs, messaging,
-and long-term maintainability, you’re in the right spot.
+## Implementation Notes
 
-## Why IoT?
+Use these when you want a narrower design or implementation detail:
 
-IoT projects sit at the intersection of multiple disciplines:
+- [Adding MQTT to the IoT Gateway](/iot/iot-gateway-mqtt/) covers telemetry and publish/subscribe boundaries.
+- [REST APIs for IoT Gateways](/iot/iot-gateway-rest/) covers control, configuration, and telemetry access over HTTP.
+- [ESP32 Collection Station Architecture](/iot/iot-sensor-station/) describes the device-side responsibilities in a sensor network.
+- [Self-Watering Garden](/iot/self-watering-garden/) ties the pieces together as a small end-to-end case study.
 
-> IoT software combines embedded systems, backend services, APIs,
-> messaging, and user-facing applications.
+## Related Project Work
 
-Few domains force you to think simultaneously about:
-- Resource-constrained devices
-- Unreliable networks
-- Distributed systems
-- Real-time data
-- Long-lived software deployed in the field
-
-That combination makes IoT an excellent proving ground for applying
-professional software engineering principles in environments that are
-far less forgiving than typical web applications.
-
-## Diversity of Technology
-
-These projects intentionally span a wide range of technologies:
-
-- **Embedded devices**  
-  Code running on small, real-time systems such as ESP32s and Raspberry
-  Pi Pico devices, using C++ and Python.
-
-- **Edge and hub systems**  
-  Device aggregation, protocol translation, and orchestration using
-  Raspberry Pi-class hardware and Go.
-
-- **User interfaces**  
-  Web-based and mobile-friendly interfaces built with JavaScript and
-  React.
-
-The point is not to master every tool, but to understand how these
-pieces fit together into a coherent system with clear responsibilities
-and boundaries.
-
-## Building Extensible Systems with APIs
-
-A recurring theme throughout these projects is **extensibility**.
-
-Rather than tightly coupling devices to specific implementations, we
-design around:
-- Public REST APIs
-- MQTT-based publish/subscribe messaging
-- Cloud-backed services accessible from anywhere
-
-This allows devices to be added, replaced, or simulated without
-rewriting the entire system.
-
-If you’re interested in this approach, see
-[Building an IoT Device Manager in Go](/iot/building-iot-device-manager-in-go/).
-
-From a technical perspective, IoT systems are interesting precisely
-because they require many disparate components to work together
-reliably over time—often under less-than-ideal conditions.
-
-## Project Overview
-
-The initial project documented here focuses on a simple but
-representative system:
-
-- A physical device that collects temperature and humidity data
-- A backend service that ingests and stores telemetry
-- A web interface that displays live and historical readings
-- A relay-controlled switch to remotely control a physical device
-
-While modest in scope, this project lays the foundation for building
-more complex IoT systems without changing the underlying architecture.
-
-## Architecture
-
-The system is designed to be **loosely coupled** and interchangeable.
-
-While an initial implementation might use a Raspberry Pi or ESP32, the
-architecture allows entirely different devices to be integrated by
-conforming to the same APIs and messaging contracts.
-
-Designing for loose coupling:
-- Reduces vendor lock-in
-- Encourages experimentation
-- Makes systems easier to test and extend
-- Lowers the cost of change over time
-
-The goal is not just to build *a* device, but to build a platform that
-can grow as requirements change.
-
-## Common Pitfalls in IoT Projects
-
-Many IoT projects fail—not because the hardware is difficult—but
-because the software architecture is an afterthought.
-
-Common mistakes include:
-- Hard-coding device assumptions into backend services
-- Treating MQTT topics as an API contract without versioning
-- Ignoring updates, failures, and observability
-- Building one-off solutions that can’t be extended
-
-These are architectural problems, not hardware ones.
-
-## IoT Articles and Deep Dives
-
-The articles below expand on specific aspects of the system and are
-intended to be read independently or as part of a larger whole.
-
-### Architecture & System Design
-- [Building an IoT Device Manager in Go](/iot/building-iot-device-manager-in-go/)
-- [Five Layers of a Practical IoT System](/iot/iot-system-architecture-explained/)
-- [IoT System Architecture: Device to Cloud](/iot/iot-system-architecture-device-to-cloud/)
-- [OttO Edge Gateway Architecture](/iot/iot-edge-gateway/)
-
-### Implementation Notes
-- [IoT Gateway: MQTT](/iot/iot-gateway-mqtt/)
-- [IoT Gateway: REST](/iot/iot-gateway-rest/)
-- [IoT Sensor Station](/iot/iot-sensor-station/)
-- [Self-Watering Garden](/iot/self-watering-garden/)
-
-Each article focuses on *why* a design choice was made, not just *how*
-it was implemented.
+The IoT articles connect most directly to [OttO](/projects/otto/), the edge
+runtime, and to older robotics/video work such as [RedEye](/projects/redeye/).
+Project pages are case studies and reference implementations. Notes are smaller
+working references. The articles in this section are the canonical architecture
+path.
