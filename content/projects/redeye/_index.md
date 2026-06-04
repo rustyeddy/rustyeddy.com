@@ -8,6 +8,7 @@ description: >
   complete control over the camera and accessories.  
 site: http://rustyeddy.com/projects/redeye
 github: https://github.com/redeyelab/redeye
+project_status: Historical
 tags: ["Video", "Networking", "Embedded Linux", "Camera Systems"]
 categories: ["Projects", "Networking"]
 image: /img/redeye-cmdline-snapshot.png
@@ -17,6 +18,10 @@ logo: /img/redeye-right.png
 A _RedEye camera_ is a _Video Streamer_ software that can be controlled
 via an _API_, save video images and snapshots locally or in the
 cloud.
+
+## Project Status
+
+**Historical.** RedEye is kept as an older camera, networking, and robotics case study, not as a current project recommendation.
 
 ## Why This Matters
 

@@ -6,6 +6,7 @@ description: >
   across embedded Linux hardware with a type-safe device abstraction layer,
   offline-first behavior, and a mock-friendly design for laptop development.
 github: https://github.com/rustyeddy/otto
+project_status: Reference implementation
 tags: ["Go", "IoT", "Edge Computing", "Device Management"]
 categories: ["Projects", "IoT Systems"]
 image: /img/iot-project-drawing.png
@@ -17,6 +18,10 @@ industrial gateways, ARM SBCs — with the same codebase that runs cleanly
 on a developer's laptop. It is the reference implementation for the
 [device-to-cloud IoT architecture](/iot/iot-system-architecture-device-to-cloud/) and the
 [device abstraction layer](/iot/building-iot-device-manager-in-go/).
+
+## Project Status
+
+**Reference implementation.** OttO is the current reference runtime for the site's IoT architecture and device-management articles.
 
 ## Why This Matters
 

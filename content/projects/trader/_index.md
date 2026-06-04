@@ -6,6 +6,7 @@ description: >
   OANDA, with a REST/WebSocket API, embedded UI, and Claude MCP tool
   integration for querying accounts and running backtests from an AI assistant.
 github: https://github.com/rustyeddy/trader
+project_status: Active
 tags: ["Go", "Trading Systems", "Backtesting", "Financial Software"]
 categories: ["Projects", "Financial Software"]
 ---
@@ -16,6 +17,10 @@ that data, and — using the same strategy interface — executes those same
 strategies live against an OANDA practice or live account. A REST and
 WebSocket API, an embedded web UI, and a Claude MCP server round out the
 system.
+
+## Project Status
+
+**Active.** Trader is a current Go project and an active case study for trading-system architecture, testing, and exact numeric types.
 
 ## Why This Matters
 

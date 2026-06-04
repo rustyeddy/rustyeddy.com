@@ -17,15 +17,15 @@ tradeoffs, or implementation lessons are still useful.
 
 Start here when you want current project context:
 
-- [OttO](/projects/otto/) is a Go-based IoT edge runtime for coordinating sensors, actuators, APIs, and gateway behavior.
-- [Trader](/projects/trader/) is a Go backtesting and trading engine used to discuss strategy boundaries, numeric correctness, and testable trading logic.
+- **Reference implementation**: [OttO](/projects/otto/) is a Go-based IoT edge runtime for coordinating sensors, actuators, APIs, and gateway behavior.
+- **Active**: [Trader](/projects/trader/) is a Go backtesting and trading engine used to discuss strategy boundaries, numeric correctness, and testable trading logic.
 
 ## Historical Case Studies
 
 These projects are older, but still useful as engineering examples:
 
-- [RedEye](/projects/redeye/) is an API-driven camera and robotics system with video, control, and computer-vision concerns.
-- [How I Made This Web Site](/projects/this-website/) documents the site stack: Hugo, Markdown, Bootstrap, GitHub Pages, and the publishing workflow.
+- **Historical**: [RedEye](/projects/redeye/) is an API-driven camera and robotics system with video, control, and computer-vision concerns.
+- **Historical**: [How I Made This Web Site](/projects/this-website/) documents the site stack: Hugo, Markdown, Bootstrap, GitHub Pages, and the publishing workflow.
 
 ## How Projects Fit the Site
 

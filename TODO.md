@@ -563,7 +563,7 @@ Acceptance:
 - A reader can follow the software delivery sequence without relying on browser back.
 - Links are contextual, not dumped at the end only.
 
-[ ] P2.3 Clarify project statuses.
+[x] P2.3 Clarify project statuses.
 Files:
 - content/projects/_index.md
 - content/projects/*

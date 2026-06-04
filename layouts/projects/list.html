@@ -26,6 +26,10 @@
                     <img height="315px" class="card-img" src="{{ . }}" alt="{{ $project.Title }} project image" />
                     {{ end }}
 
+                    {{ with .Params.project_status }}
+                    <div class="mb-2"><span class="badge badge-secondary">{{ . }}</span></div>
+                    {{ end }}
+
 		    {{ partial "page-summary.html" (dict "page" . "dateMode" "hide" "termsMode" "show") }}
 
 		</div>
