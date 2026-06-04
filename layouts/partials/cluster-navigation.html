@@ -1,5 +1,5 @@
 {{ if .IsPage }}
-{{ $clusterData := site.Data.clusters }}
+{{ $clusterData := hugo.Data.clusters }}
 {{ with $clusterData }}
   {{ $cluster := index . $.Section }}
   {{ with $cluster }}

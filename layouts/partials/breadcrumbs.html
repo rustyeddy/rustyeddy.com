@@ -1,0 +1,13 @@
+{{ if and .IsPage (not .IsHome) }}
+{{ $section := "" }}
+{{ if .Section }}{{ with site.GetPage (printf "/%s" .Section) }}{{ $section = . }}{{ end }}{{ end }}
+<nav class="small mb-2" aria-label="Breadcrumb">
+  <ol class="breadcrumb bg-white justify-content-center p-0 mb-0">
+    <li class="breadcrumb-item"><a href="{{ site.Home.RelPermalink }}">Home</a></li>
+    {{ with $section }}
+    <li class="breadcrumb-item"><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{ end }}
+    <li class="breadcrumb-item active text-muted" aria-current="page">{{ .Title }}</li>
+  </ol>
+</nav>
+{{ end }}

@@ -405,7 +405,7 @@ Acceptance:
 - No footer link points to a missing page.
 - Cookie banner remains accessible.
 
-[ ] P1.6 Add breadcrumbs or visible section context if not already rendered.
+[x] P1.6 Add breadcrumbs or visible section context if not already rendered.
 Files:
 - layouts/_default/single.html
 - layouts/partials/structured-data.html
