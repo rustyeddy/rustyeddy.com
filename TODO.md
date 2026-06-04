@@ -381,7 +381,7 @@ Acceptance:
 P1 — UX polish and readability
 ------------------------------
 
-[ ] P1.5 Improve footer utility and reduce visual clutter.
+[x] P1.5 Improve footer utility and reduce visual clutter.
 Files:
 - layouts/partials/footer.html
 
@@ -713,7 +713,7 @@ Acceptance:
 - Only add if homepage is getting crowded.
 - Do not create another thin page.
 
-[ ] P3.2 Add a minimal /privacy/ page for analytics/cookies.
+[x] P3.2 Add a minimal /privacy/ page for analytics/cookies.
 Files:
 - content/privacy/_index.md
 - footer.html

@@ -1,26 +1,28 @@
 <footer id="footer" class="container footer footer-text pt-4 border-top">
   <section class="row align-items-center">
-    <div class="col-md-4 text-left text-nowrap">
+    <div class="col-md-4 text-left">
       {{ if not .Lastmod.IsZero }}Last update ~ {{ .Lastmod.Format "Monday, Jan 2, 2006" }}{{ end }}
     </div>
-    <div class="col-md-4 text-center text-nowrap">
+    <div class="col-md-4 text-center">
       site by <a href="/">Eddy Consulting, LLC.</a> ~ &#xA9; 2008&ndash;{{ now.Year }}
     </div>
-    <div class="col-md-4 text-right text-nowrap">
+    <div class="col-md-4 text-md-right">
       <a href="/about/">About</a> .
       <a href="/resume/">Resume</a> .
-      <a href="https://github.com/rustyeddy">github</a> .
-      <a href="https://x.com/rustyeddy">x</a> .
-      <a href="https://www.linkedin.com/in/rustyeddy/">linkedin</a>
+      <a href="https://github.com/rustyeddy">GitHub</a> .
+      <a href="https://www.linkedin.com/in/rustyeddy/">LinkedIn</a> .
+      <a href="/index.xml">RSS</a> .
+      <a href="/privacy/">Privacy</a>
     </div>
   </section>
 </footer>
 
-<div id="cookie-consent" class="container fixed-bottom mb-3" style="display: none; z-index: 1080;">
-  <div class="alert alert-light border shadow-sm mb-0" role="dialog" aria-live="polite" aria-label="Cookie consent">
+<div id="cookie-consent" class="container fixed-bottom mb-2" style="display: none; z-index: 1080;">
+  <div class="alert alert-light border mb-0 py-2 small" role="dialog" aria-live="polite" aria-label="Cookie consent">
     <div class="row align-items-center">
       <div class="col-md mb-2 mb-md-0">
-        This site uses Google Analytics cookies to understand traffic.
+        This site uses optional Google Analytics cookies to understand traffic.
+        <a href="/privacy/">Privacy</a>
       </div>
       <div class="col-md-auto text-md-right">
         <button type="button" class="btn btn-outline-secondary btn-sm mr-2" onclick="declineAnalyticsCookies()">Decline</button>
