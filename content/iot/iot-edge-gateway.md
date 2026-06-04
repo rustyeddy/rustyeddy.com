@@ -12,10 +12,11 @@ categories: ["IoT Systems", "Edge Computing"]
 summary: "A practical architecture overview of OttO, the Go-based IoT edge gateway used by the Organic Gardener project."
 ---
 
-OttO is the edge gateway for the Organic Gardener IoT project. It sits
+[OttO](/projects/otto/) is the edge gateway for the Organic Gardener IoT project. It sits
 between small device stations and the higher-level software that needs
 their data: dashboards, REST clients, control logic, and eventually
-backend services.
+backend services. It is the edge-runtime implementation behind the broader
+[IoT System Architecture](/iot/iot-system-architecture-device-to-cloud/).
 
 Older versions of this project used a few names interchangeably:
 _IoT Hub_, _IoTe gateway_, _smart hub_, and _OttO_. In this article I

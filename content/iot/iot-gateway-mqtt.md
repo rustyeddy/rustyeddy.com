@@ -11,11 +11,12 @@ git: https://github.com/rustyeddy/otto
 summary: "A practical MQTT implementation note for the OttO IoT gateway, covering topic design, subscriptions, callbacks, testing, and memory boundaries."
 ---
 
-MQTT is the device-facing message boundary for the OttO IoT gateway.
+MQTT is the device-facing message boundary for the [OttO IoT gateway](/projects/otto/).
 Collection stations publish sensor readings. Control stations subscribe
 to command topics. OttO sits in the middle, receives telemetry, updates
 its local state, and makes that state available to REST and WebSocket
-clients.
+clients. The broader [IoT System Architecture](/iot/iot-system-architecture-device-to-cloud/)
+article shows where this message boundary fits in the device-to-cloud path.
 
 ## Why This Matters
 

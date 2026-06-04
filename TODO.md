@@ -524,7 +524,7 @@ Acceptance:
 P2 — Internal linking and cluster cleanup
 -----------------------------------------
 
-[ ] P2.1 Apply internal link map to IoT cluster.
+[x] P2.1 Apply internal link map to IoT cluster.
 Files:
 - content/iot/*.md
 - content/projects/otto/*

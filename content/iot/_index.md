@@ -21,7 +21,7 @@ the prototype works.
 These are the pillar articles for the IoT section:
 
 - [IoT System Architecture: Device to Cloud](/iot/iot-system-architecture-device-to-cloud/) explains the device, gateway, API, and cloud boundaries.
-- [Five Layers of a Practical IoT System](/iot/iot-system-architecture-otto/) gives a compact model for organizing real IoT systems.
+- [Five Layers of a Practical IoT System](/iot/iot-system-architecture-explained/) gives a compact model for organizing real IoT systems.
 - [Building an IoT Device Abstraction Layer in Go](/iot/building-iot-device-manager-in-go/) shows how to keep application logic separate from hardware details.
 - [OttO Edge Gateway Architecture](/iot/iot-edge-gateway/) describes the Go-based edge runtime behind the reference implementation.
 

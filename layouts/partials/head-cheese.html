@@ -38,7 +38,7 @@
   {{ with site.Home.OutputFormats.Get "RSS" }}
   <link rel="alternate" type="application/rss+xml" href="{{ printf "%s%s" $baseURL .RelPermalink }}" title="{{ site.Title }} RSS Feed" />
   {{ end }}
-  {{ if in (slice "section" "taxonomy" "term") .Kind }}
+  {{ if and (in (slice "section" "taxonomy" "term") .Kind) (gt (len .RegularPages) 0) }}
   {{ with .OutputFormats.Get "RSS" }}
   <link rel="alternate" type="application/rss+xml" href="{{ printf "%s%s" $baseURL .RelPermalink }}" title="{{ $.Title }} RSS Feed" />
   {{ end }}

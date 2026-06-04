@@ -14,7 +14,8 @@ summary: "A device-side architecture note for ESP32 collection stations in the O
 
 A collection station is the device-side telemetry node in the Organic
 Gardener system. Its job is to sense the physical environment and
-publish readings to the gateway.
+publish readings to the gateway. In the larger [IoT System Architecture](/iot/iot-system-architecture-device-to-cloud/),
+this is the device layer that feeds the [OttO edge runtime](/projects/otto/).
 
 ## Why This Matters
 

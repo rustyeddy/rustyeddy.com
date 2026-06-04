@@ -13,7 +13,9 @@ summary: "A practical case study showing how a self-watering garden can be desig
 
 The self-watering garden is a proof-of-concept IoT system for small
 gardens and irrigation zones. The goal is simple: water plants based on
-soil conditions instead of a fixed timer.
+soil conditions instead of a fixed timer. It is the case study behind the
+[IoT System Architecture](/iot/iot-system-architecture-device-to-cloud/) and the
+[OttO edge runtime](/projects/otto/).
 
 ## Why This Matters
 

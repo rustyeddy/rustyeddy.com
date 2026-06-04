@@ -12,10 +12,11 @@ git: https://github.com/rustyeddy/otto
 summary: "A practical REST API design note for IoT gateways, covering Go handlers, JSON responses, endpoint boundaries, testing, and common API pitfalls."
 ---
 
-MQTT is a good device boundary for the OttO gateway, but it is not the
+MQTT is a good device boundary for the [OttO edge runtime](/projects/otto/), but it is not the
 right interface for every client. Dashboards, admin tools, tests, and
 backend services usually need a request/response API with stable JSON
-responses.
+responses. If you want the larger system shape first, start with the
+[device-to-cloud architecture](/iot/iot-system-architecture-device-to-cloud/).
 
 That is the role of the REST API. It turns recent gateway state into an
 HTTP interface that other software can query without knowing how the

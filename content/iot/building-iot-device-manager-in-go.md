@@ -19,8 +19,9 @@ stay below it, application logic stays above it, and the two communicate
 through small interfaces.
 
 This article explains the design behind the device layer used by
-[OttO](https://github.com/rustyeddy/otto), the Go-based IoT edge runtime, and
-its companion [devices](https://github.com/rustyeddy/devices) library.
+[OttO](/projects/otto/), the Go-based IoT edge runtime, and its companion
+[devices](https://github.com/rustyeddy/devices) library. Read it as the implementation detail beneath the
+[device-to-cloud architecture](/iot/iot-system-architecture-device-to-cloud/).
 
 ## The Architecture Boundary
 
