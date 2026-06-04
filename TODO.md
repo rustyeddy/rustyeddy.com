@@ -549,7 +549,7 @@ Acceptance:
 - Supporting posts link back to pillar pages.
 - No paragraph is overloaded with links.
 
-[ ] P2.2 Apply internal link map to Software cluster.
+[x] P2.2 Apply internal link map to Software cluster.
 Files:
 - content/software/*.md
 

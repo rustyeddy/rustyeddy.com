@@ -11,8 +11,10 @@ summary: "A practical guide to using Kanban cards, WIP limits, task sizing, and 
 ---
 
 Kanban is a visual task management system built around one principle: make
-the work visible. When every task has a card and every card has a status,
-anyone looking at the board can see where the project stands.
+the work visible. After [use cases become task cards](/software/use-cases-to-tasks/),
+the board is where the team tracks those cards through implementation. When
+every task has a card and every card has a status, anyone looking at the board
+can see where the project stands.
 
 The mechanics are intentionally small. A basic board has three columns:
 `Todo`, `In Progress`, and `Done`. Cards move left to right as work advances.

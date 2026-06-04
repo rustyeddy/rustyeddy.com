@@ -12,9 +12,10 @@ categories: ["Software Engineering"]
 
 ## Why This Matters
 
-Before writing a single line of code, we need to understand what we are
-building — and more importantly, *why* someone would use it. Use cases give
-us that foundation.
+Use cases are the first concrete step after recognizing that
+[software is hard](/software/software-is-hard/). Before writing a single line
+of code, we need to understand what we are building — and more importantly,
+*why* someone would use it. Use cases give us that foundation.
 
 A use case is a single, focused story that describes one way a user achieves
 a specific goal with the system. Keep them in plain language, from the user's

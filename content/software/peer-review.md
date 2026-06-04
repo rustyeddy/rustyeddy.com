@@ -12,9 +12,11 @@ summary: "A practical guide to code review: what authors should prepare, what re
 ---
 
 Peer review is the practice of having another engineer inspect a change
-before it merges into the main branch. It is one of the highest-leverage
-quality controls in software development because it catches mistakes while
-they are still cheap to fix.
+before it merges into the main branch. It comes after a focused task has been
+implemented and [tested](/software/test-driven-software-development/), but
+before the change becomes part of the release path. It is one of the
+highest-leverage quality controls in software development because it catches
+mistakes while they are still cheap to fix.
 
 ## Why This Matters
 

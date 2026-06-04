@@ -12,9 +12,11 @@ summary: "A practical release process for turning reviewed and tested code into 
 ---
 
 A release is the moment development work becomes user value. Everything
-before it, including use cases, tests, and peer review, is preparation.
-The release process determines whether that preparation becomes a calm
-handoff or a production incident.
+before it, including [use cases](/software/use-cases/),
+[tests](/software/test-driven-software-development/), and
+[peer review](/software/peer-review/), is preparation. The release process
+determines whether that preparation becomes a calm handoff or a production
+incident.
 
 The goal is to make releases routine. A release should be a repeatable
 sequence of checks, artifacts, deployment steps, verification, and

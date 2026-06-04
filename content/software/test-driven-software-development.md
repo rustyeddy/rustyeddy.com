@@ -12,8 +12,9 @@ summary: "A practical guide to test-driven development and the role of unit, int
 ---
 
 Testing is how a team proves that software still does what it promised
-to do. Without tests, every release pushes that responsibility onto the
-user.
+to do. Once a [Kanban card](/software/kanban/) has clear exit criteria, tests
+turn that promise into repeatable evidence. Without tests, every release pushes
+that responsibility onto the user.
 
 Test-driven development makes that proof part of the design process. It
 asks the team to describe the expected behavior before writing the code
