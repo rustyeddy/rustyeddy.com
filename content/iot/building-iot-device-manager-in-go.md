@@ -4,7 +4,8 @@ description: >
   How Go interfaces, generics, mocks, and a device manager separate hardware
   drivers from IoT application logic in an edge runtime.
 date: 2025-11-02
-tags: [ go, IoT devices, generics ]
+tags: ["Go", "IoT Devices", "Device Abstraction", "Generics", "Edge Computing"]
+categories: ["IoT Systems", "Edge Computing"]
 ---
 
 IoT applications get hard to maintain when hardware code and application

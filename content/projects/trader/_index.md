@@ -6,6 +6,8 @@ description: >
   OANDA, with a REST/WebSocket API, embedded UI, and Claude MCP tool
   integration for querying accounts and running backtests from an AI assistant.
 github: https://github.com/rustyeddy/trader
+tags: ["Go", "Trading Systems", "Backtesting", "Financial Software"]
+categories: ["Projects", "Financial Software"]
 ---
 
 Trader is a Forex backtesting and live paper-trading engine written in Go.

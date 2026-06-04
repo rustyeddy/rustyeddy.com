@@ -5,6 +5,8 @@ description: >
   of machines to communicate.  I will cover the basics of IP multicast
   in this document.
 date: 2018-02-03
+categories: ["Networking"]
+tags: ["IP Multicast", "Networking", "Routing"]
 ---
 
 > Older project note. Kept for historical context; some implementation details may no longer reflect my current recommendations.

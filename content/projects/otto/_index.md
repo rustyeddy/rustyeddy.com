@@ -6,6 +6,8 @@ description: >
   across embedded Linux hardware with a type-safe device abstraction layer,
   offline-first behavior, and a mock-friendly design for laptop development.
 github: https://github.com/rustyeddy/otto
+tags: ["Go", "IoT", "Edge Computing", "Device Management"]
+categories: ["Projects", "IoT Systems"]
 image: /img/iot-project-drawing.png
 ---
 

@@ -8,6 +8,8 @@ description: >
   complete control over the camera and accessories.  
 site: http://rustyeddy.com/projects/redeye
 github: https://github.com/redeyelab/redeye
+tags: ["Video", "Networking", "Embedded Linux", "Camera Systems"]
+categories: ["Projects", "Networking"]
 image: /img/redeye-cmdline-snapshot.png
 logo: /img/redeye-right.png
 ---

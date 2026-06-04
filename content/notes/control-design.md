@@ -5,6 +5,8 @@ description: >
   Boy do I gotta lotta learn. This control systems is pretty serious
   stuff!  I'll have to learn some of this stuff to incorporate back
   into our driving algorithms. 
+categories: ["Control Systems", "Robotics"]
+tags: ["Control Systems", "Robotics", "Raspberry Pi", "Arduino"]
 ---
 
 > Older project note. Kept for historical context; some implementation details may no longer reflect my current recommendations.

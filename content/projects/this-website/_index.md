@@ -47,4 +47,3 @@ me to produce pretty good looking websites out of the gate.
 integrate the content of this website into the corresponding public
 HTML5 site you can see.
 
-> TODO - put a screen shot here... 

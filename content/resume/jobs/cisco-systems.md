@@ -1,7 +1,8 @@
 ---
 title: Cisco Systems
 date: 2006-02-01
-description: Team member and eventually a lead of the Multicast Development Team.
+description: >
+  Technical lead on Cisco multicast routing software for carrier routing systems, including protocol development, QNX work, and field support.
 weight: 200
 start: Feb 2000
 finish: Feb 2006

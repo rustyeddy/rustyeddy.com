@@ -5,6 +5,8 @@ description: >
   Streaming video over a local area network can take on a
   significantly different look than trying to live stream video over
   the Internet.
+categories: ["Video", "Networking"]
+tags: ["Streaming Video", "LAN", "Networking", "Latency"]
 ---
 
 > Older project note. Kept for historical context; some implementation details may no longer reflect my current recommendations.

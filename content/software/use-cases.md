@@ -6,6 +6,8 @@ description: >
   their stories into concrete, testable use cases that drive the entire
   development project.
 weight: 20
+tags: ["Use Cases", "Customer Discovery", "Requirements", "Software Engineering"]
+categories: ["Software Engineering"]
 ---
 
 ## Why This Matters

@@ -1,7 +1,8 @@
 ---
 title: USC ~ ISI
 date: 2018-09-20
-description: University Of Southern California ~ Information Sciences Institute 
+description: >
+  Senior systems programming at USC ISI on multicast routing, GateD, routing test tools, and open networking software in C, Perl, Tcl, Linux, and BSD.
 weight: 300
 start: Aug 1995
 finish: Feb 2000

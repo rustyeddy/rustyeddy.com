@@ -1,8 +1,10 @@
 ---
 title: Go timers to remove stale sensor stations
 description: >
-  A brief look at Go timers to clear out stale sensor stations.
+  Older IoT gateway note showing how Go timers can track stale sensor stations, expire inactive devices, and keep gateway state from drifting.
 date: 2020-11-03
+categories: ["Go", "IoT Systems"]
+tags: ["Go", "Timers", "IoT Gateway", "Device State"]
 ---
 
 > Older project note. Kept for historical context; some implementation details may no longer reflect my current recommendations.

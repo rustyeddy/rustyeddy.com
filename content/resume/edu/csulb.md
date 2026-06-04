@@ -1,7 +1,8 @@
 ---
 title: California State University, Long Beach
 date: 1996-01-02
-description: BS Computer Science, CSULB
+description: >
+  Bachelor of Science in Computer Science from California State University, Long Beach, completed before early systems and networking work.
 weight: 200
 school: California State University, Long Beach
 graduate: January 1989

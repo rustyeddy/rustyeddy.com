@@ -5,6 +5,8 @@ description: >
   How to implement an MCP server in Go that exposes application functions
   as typed tools for Claude Code and Claude Desktop — with a working example
   from the Trader FX engine.
+categories: ["Go", "Developer Tools"]
+tags: ["Go", "MCP", "Claude", "Tooling", "API Design"]
 ---
 
 The Model Context Protocol (MCP) lets Claude call external tools defined by

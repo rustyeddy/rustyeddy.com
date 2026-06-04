@@ -6,6 +6,8 @@ description: >
   has become so popular and why you might choose it for your next
   project. 
 date: 2019-09-22
+categories: ["Go", "Software Engineering"]
+tags: ["Go", "Software Architecture", "Concurrency", "Tooling"]
 ---
 
 > Older project note. Kept for historical context; some implementation details may no longer reflect my current recommendations.

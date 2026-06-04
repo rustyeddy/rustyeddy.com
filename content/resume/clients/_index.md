@@ -1,7 +1,8 @@
 ---
 title: Eddy Consulting, LLC
 date: 2018-09-21
-description: Software Development
+description: >
+  Consulting work through Eddy Consulting, LLC, covering software architecture, embedded systems, networking, automation, and production support.
 weight: 100
 start: Feb 2006
 finish: present

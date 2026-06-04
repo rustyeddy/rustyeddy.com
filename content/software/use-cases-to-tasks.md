@@ -5,6 +5,8 @@ description: >
   How to turn use cases into requirements, acceptance tests, and small Kanban
   cards that are ready for implementation.
 weight: 21
+tags: ["Use Cases", "Tasks", "Acceptance Tests", "Kanban", "Software Engineering"]
+categories: ["Software Engineering"]
 ---
 
 A use case describes value from the user's point of view. A task describes a

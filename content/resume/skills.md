@@ -1,8 +1,8 @@
 ---
 title: Skills and Interests
 date: 2020-01-02
-description: > 
-  I am a Software Engineer and I am interested in Physical Computing. 
+description: >
+  Skills and interests across Go, C/C++, Python, networking, embedded systems, Linux, automation, cloud delivery, and full-stack software development.
 ---
 
 - Go, C/C++, Python and JavaScript (and many others..)

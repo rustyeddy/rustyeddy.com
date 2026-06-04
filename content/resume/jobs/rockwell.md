@@ -1,7 +1,8 @@
 ---
 title: Rockwell, Intl. Space Systems Division
 date: 1994-01-03
-description: Rocket Science and Computer Hacking
+description: >
+  Early systems work at Rockwell Space Systems, including UNIX workstation operations, embedded real-time software, and engineering information systems.
 weight: 500
 start: May 1989
 finish: Jan 1994

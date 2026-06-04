@@ -452,7 +452,7 @@ Acceptance:
 P1 — Metadata, SEO, and discovery
 ---------------------------------
 
-[ ] P1.8 Complete front matter descriptions for all public pages.
+[x] P1.8 Complete front matter descriptions for all public pages.
 Files:
 - content/**/*.md
 - scripts/check-metadata if needed
