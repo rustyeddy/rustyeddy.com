@@ -265,7 +265,7 @@ Acceptance:
 
 P1 — Tone and content consistency
 ---------------------------------
-[ ] P1.x Add restrained humor guidance to the writing style guide.
+[x] P1.x Add restrained humor guidance to the writing style guide.
 Files:
 - STYLEGUIDE.md
 
@@ -282,7 +282,7 @@ Acceptance:
 - Humor supports clarity and trust.
 - Technical pages still feel useful to engineers, technical leads, and founders.
 
-[ ] P1.1 Tighten /about/ so it supports the site mission.
+[x] P1.1 Tighten /about/ so it supports the site mission.
 Files:
 - content/about/_index.md or equivalent
 
