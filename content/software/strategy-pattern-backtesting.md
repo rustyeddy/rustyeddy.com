@@ -15,6 +15,12 @@ given market data, decide what to do, then do it. The data source changes
 (history versus a live feed), the broker changes (a simulator versus a real
 exchange), but the decision logic — the strategy — should not change at all.
 
+## Why This Matters
+
+Backtesting is useful only when the strategy being tested is the strategy that
+can run live. A small strategy interface keeps trading logic separate from data
+loading, broker execution, reporting, and simulation details.
+
 This is not obvious when you first build one of these systems. The natural
 instinct is to write the strategy and the execution engine together, letting
 the strategy reach directly into the data feed or the broker. That works for
@@ -201,6 +207,13 @@ does not make a bad simulator trustworthy.
 What it does give you is a clean seam in the architecture: a place where
 decision logic can be tested, compared, and reused without being tangled up in
 broker code.
+
+## Common Pitfalls
+
+Strategy boundaries fail when the strategy calls the broker directly, reads live-only
+state during a backtest, hides mutable state between runs, or depends on engine
+details that make isolated tests impossible. Keep the strategy contract small
+and make runtime dependencies explicit.
 
 ## Where This Fits
 

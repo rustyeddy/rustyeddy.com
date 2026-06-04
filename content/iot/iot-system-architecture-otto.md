@@ -21,6 +21,13 @@ coordinates it. Devices sense and actuate. Protocols move data. Edge runtimes
 coordinate local behavior. Backend services provide durable state. Applications
 turn the system into something people can inspect and control.
 
+## Why This Matters
+
+Layering keeps IoT systems from collapsing into one large device-specific
+program. Clear layers make it easier to replace hardware, test behavior on a
+laptop, add user interfaces, and keep local automation working when the network
+is unreliable.
+
 This article uses a five-layer model to explain those responsibilities. It is
 a companion to the diagram-first [device-to-cloud architecture overview](/iot/iot-system-architecture-device-to-cloud/).
 That page shows the full shape of the system. This page explains the layers
@@ -204,3 +211,10 @@ runtime and device boundary that make the rest of the platform easier to build.
 - [Building an IoT Device Abstraction Layer in Go](/iot/building-iot-device-manager-in-go/)
 - [Adding MQTT to the IoT Gateway](/iot/iot-gateway-mqtt/)
 - [Adding the REST API to IoT Gateway](/iot/iot-gateway-rest/)
+
+## Where This Fits
+
+This page is the compact model for the IoT architecture used across the site.
+For the diagram-first version, read [IoT System Architecture: Device to Cloud](/iot/iot-system-architecture-device-to-cloud/).
+For implementation details, continue to [Building an IoT Device Abstraction Layer in Go](/iot/building-iot-device-manager-in-go/)
+and [OttO Edge Gateway Architecture](/iot/iot-edge-gateway/).

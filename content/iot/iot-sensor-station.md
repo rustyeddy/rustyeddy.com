@@ -16,6 +16,12 @@ A collection station is the device-side telemetry node in the Organic
 Gardener system. Its job is to sense the physical environment and
 publish readings to the gateway.
 
+## Why This Matters
+
+Collection stations are where software meets the physical world. Keeping their
+responsibilities small makes the rest of the IoT system easier to test, replace,
+and operate when networks fail or hardware changes.
+
 That job should stay small and explicit. The collection station should
 not own dashboard behavior, long-term storage, irrigation policy, or
 fleet-wide decisions. It should collect data, identify itself, publish

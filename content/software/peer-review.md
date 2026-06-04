@@ -16,6 +16,12 @@ before it merges into the main branch. It is one of the highest-leverage
 quality controls in software development because it catches mistakes while
 they are still cheap to fix.
 
+## Why This Matters
+
+Peer review is one of the cheapest places to catch design, behavior, and
+maintainability problems. It also spreads context so the codebase does not depend
+on one person's memory.
+
 A good review does more than find bugs. It spreads knowledge, keeps the
 codebase consistent, and makes sure the change fits the system the team is
 actually maintaining.

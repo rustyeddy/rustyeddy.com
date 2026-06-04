@@ -15,6 +15,13 @@ strategies live against an OANDA practice or live account. A REST and
 WebSocket API, an embedded web UI, and a Claude MCP server round out the
 system.
 
+## Why This Matters
+
+Trader is a software architecture case study in a domain where small mistakes
+matter. It connects interface design, exact numeric types, repeatable tests, and
+release discipline to a system that must behave consistently in simulation and
+live execution.
+
 ## The Problem
 
 Building a trading strategy is straightforward. Knowing whether it works
@@ -138,3 +145,16 @@ cleanly separated.
 ## GitHub
 
 [rustyeddy/trader](https://github.com/rustyeddy/trader)
+
+## Common Pitfalls
+
+Trading engines become unreliable when backtest and live code diverge, when
+strategies depend on broker-specific behavior, when floating-point arithmetic
+crosses domain boundaries, or when reports cannot be reproduced from a known
+configuration and data set.
+
+## Where This Fits
+
+Trader connects most directly to [The Strategy Pattern in a Backtesting Engine](/software/strategy-pattern-backtesting/)
+and [Fixed-Point Numeric Types in Go Financial Software](/software/numeric-types-financial-software/).
+Use the project page as the case study and those articles for the focused design lessons.

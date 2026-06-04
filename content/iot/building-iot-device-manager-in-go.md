@@ -328,3 +328,11 @@ The ecosystem around this design has three roles:
 The same architecture is useful beyond irrigation. Any edge system that reads
 sensors, controls actuators, and needs to run without constant cloud access
 benefits from the same boundary.
+
+## Where This Fits
+
+The device abstraction layer sits between hardware drivers and the edge runtime.
+Read it after [IoT System Architecture](/iot/iot-system-architecture-device-to-cloud/)
+when you want to understand how device boundaries become Go interfaces, and
+before [OttO Edge Gateway Architecture](/iot/iot-edge-gateway/) when you want to
+see the runtime that uses those abstractions.

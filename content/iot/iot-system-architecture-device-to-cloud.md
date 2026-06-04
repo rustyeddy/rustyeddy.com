@@ -180,7 +180,7 @@ They should not talk directly to physical devices. UI-to-device shortcuts are
 usually convenient during a demo and expensive later. Keeping the UI behind
 APIs makes interface changes cheaper than hardware changes.
 
-## Why This Architecture Matters
+## Why This Matters
 
 This structure keeps system responsibilities clear:
 
@@ -195,7 +195,7 @@ read. They fail because architecture was treated as an afterthought: device
 behavior leaks into the backend, UI assumptions leak into firmware, MQTT
 topics become accidental APIs, and everything becomes hard to replace.
 
-## Common Architectural Pitfalls
+## Common Pitfalls
 
 ```text
 [ Device ] ---> [ Database ]
@@ -214,7 +214,7 @@ Common mistakes include:
 
 These shortcuts feel productive early on and become expensive later.
 
-## Where to Go Next
+## Where This Fits
 
 The following pages dive into specific parts of this architecture:
 

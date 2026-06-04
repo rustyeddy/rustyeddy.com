@@ -14,6 +14,12 @@ a fleet of sensors and actuators on embedded Linux hardware — Raspberry Pi,
 industrial gateways, ARM SBCs — with the same codebase that runs cleanly
 on a developer's laptop.
 
+## Why This Matters
+
+OttO is the reference implementation for the site's IoT architecture. It shows
+how device abstractions, local persistence, MQTT, REST APIs, and dashboard
+behavior fit together in an edge runtime instead of remaining separate examples.
+
 The project spans three repositories following a strict layered architecture:
 a hardware abstraction library, an edge runtime framework, and a reference
 application that exercises the full stack.
@@ -119,6 +125,19 @@ to any IoT control system, not just irrigation.
 
 For the five-layer IoT architecture that OttO maps to, see
 [IoT System Architecture](/iot/iot-system-architecture-explained/).
+
+## Common Pitfalls
+
+An edge runtime becomes hard to maintain when hardware drivers leak into
+application logic, when every device has a bespoke code path, when cloud access
+is assumed, or when tests require physical hardware for ordinary behavior. OttO
+is structured to push those problems to explicit boundaries.
+
+## Where This Fits
+
+Read OttO alongside [IoT System Architecture](/iot/iot-system-architecture-device-to-cloud/)
+and [Building an IoT Device Abstraction Layer in Go](/iot/building-iot-device-manager-in-go/).
+The articles explain the architecture; this project shows the reference runtime.
 
 ## Repositories
 

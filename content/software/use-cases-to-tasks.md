@@ -11,6 +11,12 @@ A use case describes value from the user's point of view. A task describes a
 piece of work a developer can finish. Confusing those two is one of the
 fastest ways to turn a software plan into a vague backlog.
 
+## Why This Matters
+
+Use cases are useful only if they turn into work the team can plan, build, and
+verify. Translating them into small tasks keeps the connection between user
+value and implementation visible.
+
 In [Use Cases](/software/use-cases/) we turned Kelly's watering-system story
 into a focused use case:
 
@@ -234,3 +240,9 @@ A task is ready for the Kanban board when it has:
 This is the bridge from design to development: use cases explain value,
 requirements define behavior, acceptance tests define done, and task cards
 make the work visible.
+
+## Where This Fits
+
+This page sits between [Use Cases](/software/use-cases/) and [Kanban](/software/kanban/).
+Use cases define the user goal; task slicing turns that goal into work small
+enough to track, test, review, and release.

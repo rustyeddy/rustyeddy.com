@@ -15,6 +15,13 @@ The self-watering garden is a proof-of-concept IoT system for small
 gardens and irrigation zones. The goal is simple: water plants based on
 soil conditions instead of a fixed timer.
 
+## Why This Matters
+
+A small garden system is large enough to expose real IoT architecture problems:
+noisy sensors, local control, manual overrides, telemetry, and unreliable
+networks. That makes it a useful case study without requiring industrial-scale
+hardware.
+
 That makes it a useful architecture example. A garden project sounds
 small, but it has the same moving parts as many larger IoT systems:
 sensors, actuators, wireless communication, an edge gateway, APIs, a

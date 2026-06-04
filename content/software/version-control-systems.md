@@ -17,6 +17,12 @@ The inevitable question, "which copy has your changes?", points to a deeper
 problem: there is no authoritative record of what the software is, what
 changed, or why.
 
+## Why This Matters
+
+Version control is the permanent record of a software project. It explains what
+changed, why it changed, who reviewed it, and which version shipped. Without
+that history, testing, review, release, and rollback all get weaker.
+
 A version control system solves that. Every meaningful change is recorded
 with who made it, when it happened, and why it happened. The repository
 becomes the permanent history of the project.
@@ -194,3 +200,10 @@ When you need to understand why a piece of code exists, `git log` and
 That only works if the history is readable. Small commits, clear messages,
 short-lived branches, pull requests, and release tags turn version control
 into a communication system for everyone who will work on the project later.
+
+## Where This Fits
+
+Version control supports the whole delivery workflow. It gives [Kanban](/software/kanban/)
+work a durable history, gives [Peer Reviews](/software/peer-review/) something
+specific to inspect, and gives the [Release Process](/software/release-process/)
+a reproducible source of truth.

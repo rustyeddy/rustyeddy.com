@@ -145,3 +145,17 @@ A steerable project can absorb new information without chaos. It can change
 direction because the work is visible, the behavior is tested, the code is
 reviewed, and releases are routine. That is what lightweight engineering
 practice is for.
+
+## Common Pitfalls
+
+Projects become hard to steer when teams let ambiguity stay hidden. Watch for
+requirements that cannot be observed, tasks too large to review, tests that do
+not match user behavior, reviews that only check style, and releases that bundle
+so much change nobody can explain the risk.
+
+## Where This Fits
+
+This is the entry point for the software delivery sequence. Continue with
+[Use Cases](/software/use-cases/) to turn unclear requests into user goals, then
+[Use Cases to Tasks](/software/use-cases-to-tasks/) and [Kanban](/software/kanban/)
+to make the work visible and small.

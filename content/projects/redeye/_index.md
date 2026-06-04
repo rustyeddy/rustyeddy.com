@@ -16,6 +16,12 @@ A _RedEye camera_ is a _Video Streamer_ software that can be controlled
 via an _API_, save video images and snapshots locally or in the
 cloud.
 
+## Why This Matters
+
+RedEye is an older project, but it captures a useful systems problem: video,
+control, networking, and robotics all competing for clear boundaries. It remains
+useful as a historical case study in keeping real-time-ish systems inspectable.
+
 ## What Makes RedEye so Smart
 
 ### Computer Vision with OpenCV
@@ -128,3 +134,17 @@ All APIs can be accessed in one or more of the following ways:
 
 If you have any questions, find a bug or would like to use this
 software, please drop me a line, or fill out an issue.
+
+## Common Pitfalls
+
+Camera and robotics systems get messy when video transport, control commands,
+computer vision, and UI behavior are coupled together. Latency assumptions,
+network limits, and hardware-specific control paths need to be visible design
+constraints, not surprises discovered at the end.
+
+## Where This Fits
+
+RedEye is a historical project case study. For current architecture guidance,
+start with [IoT](/iot/) and [Projects](/projects/). For supporting background,
+see the older [streaming video notes](/notes/streaming-video/) and
+[IP multicast notes](/notes/ip-multicast/).

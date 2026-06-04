@@ -234,3 +234,10 @@ Before implementing a feature, ask:
 
 A good answer to those questions turns testing from an afterthought into
 an engineering control system.
+
+## Where This Fits
+
+TDD depends on clear requirements from [Use Cases](/software/use-cases/) and
+small slices from [Use Cases to Tasks](/software/use-cases-to-tasks/). It feeds
+[Peer Reviews](/software/peer-review/) and the [Release Process](/software/release-process/)
+by making expected behavior repeatable.

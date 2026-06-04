@@ -13,6 +13,12 @@ summary: "A practical guide to fixed-point arithmetic in Go for prices, money, p
 Financial software has one rule about numeric types that is not negotiable:
 never use floating-point values for prices or money inside the system.
 
+## Why This Matters
+
+Financial software fails when numeric meaning is implicit. Prices, money,
+quantities, and pips need exact representation and clear domain boundaries so
+rounding errors and unit mistakes do not become production defects.
+
 This is not a performance concern or a style preference. It is a correctness
 requirement. Floating-point values introduce small representation errors, and
 financial systems turn small numeric errors into real discrepancies: balances

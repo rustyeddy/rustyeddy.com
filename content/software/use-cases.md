@@ -8,7 +8,7 @@ description: >
 weight: 20
 ---
 
-## Why Use Cases?
+## Why This Matters
 
 Before writing a single line of code, we need to understand what we are
 building — and more importantly, *why* someone would use it. Use cases give
@@ -111,7 +111,14 @@ hard-coded, no app, no cloud. Just a pump that turns on when the soil is dry
 and turns off when it is wet. Every other feature — configuration, scheduling,
 remote access — is backlogged for future iterations.
 
-## What Comes Next
+## Common Pitfalls
+
+Use cases stop helping when they become implementation notes instead of user
+stories. Common mistakes include combining several goals into one use case,
+writing from the developer's point of view, skipping the observable success
+condition, and treating the first user story as the full product scope.
+
+## Where This Fits
 
 With use cases in hand, you have the inputs to everything else in the project:
 

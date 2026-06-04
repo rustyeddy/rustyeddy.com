@@ -17,6 +17,13 @@ to command topics. OttO sits in the middle, receives telemetry, updates
 its local state, and makes that state available to REST and WebSocket
 clients.
 
+## Why This Matters
+
+MQTT is the boundary that keeps devices, gateways, dashboards, and storage from
+needing to know too much about each other. A good topic model lets telemetry
+flow through the system without turning every component into a direct dependency
+of every other component.
+
 ![IoT Gateway MQTT architecture showing sensor data flowing from collectors through MQTT into the hub](/img/iot-hub-mqtt.png)
 
 This article focuses on the MQTT side of the gateway. For the broader

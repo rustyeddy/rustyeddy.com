@@ -358,7 +358,7 @@ Acceptance:
 - Section pages are not just chronological archives.
 - Link groups use descriptive anchors.
 
-[ ] P1.4 Add consistent "Why this matters" and "Common pitfalls" checks to pillar pages.
+[x] P1.4 Add consistent "Why this matters" and "Common pitfalls" checks to pillar pages.
 Files:
 - content/iot/*.md
 - content/software/*.md
