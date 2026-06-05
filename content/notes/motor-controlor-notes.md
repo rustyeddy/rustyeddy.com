@@ -18,7 +18,7 @@ github: http://github.com/mobilerobot-io/arduino
 date: 2018-08-22
 ---
 
-> Older project note. Kept for historical context; some implementation details may no longer reflect my current recommendations.
+{{< older-note >}}
 
 I prefer to use an Arduino with a Motor Controller over say a
 Raspberry Pi with a motor-controller.  I believe the Arudino has
@@ -188,4 +188,3 @@ Connect the motor controller to the MQTT control channel.  NOTE: on
 vehicle may use the motor control channel when availble, however, must
 always be able to regain control (or shutdown completely) if the
 control channel has been lost. 
-

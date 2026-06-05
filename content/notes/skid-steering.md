@@ -13,7 +13,7 @@ tags:
   - gnc
 ---
 
-> Older project note. Kept for historical context; some implementation details may no longer reflect my current recommendations.
+{{< older-note >}}
 
 Skid steering basics
 
@@ -122,4 +122,3 @@ of elements that rotate to move the vehicle.
 As distinguished from _legs_ or other types of _mobility enablers_.
 
 ## References
-

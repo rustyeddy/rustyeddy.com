@@ -10,7 +10,7 @@ categories: ["Go", "Software Engineering"]
 tags: ["Go", "Software Architecture", "Concurrency", "Tooling"]
 ---
 
-> Older project note. Kept for historical context; some implementation details may no longer reflect my current recommendations.
+{{< older-note >}}
 
 ## Go is simple 
 

@@ -9,7 +9,7 @@ categories: ["Control Systems", "Robotics"]
 tags: ["Control Systems", "Robotics", "Raspberry Pi", "Arduino"]
 ---
 
-> Older project note. Kept for historical context; some implementation details may no longer reflect my current recommendations.
+{{< older-note >}}
 
 Early in the process of building the first set of mobile robots I
 discovered that I was not going to settle on a single micro

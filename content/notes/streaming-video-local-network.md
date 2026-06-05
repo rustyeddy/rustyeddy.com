@@ -9,7 +9,7 @@ categories: ["Video", "Networking"]
 tags: ["Streaming Video", "LAN", "Networking", "Latency"]
 ---
 
-> Older project note. Kept for historical context; some implementation details may no longer reflect my current recommendations.
+{{< older-note >}}
 
 - differences in local vs. internet and streaming video
 
@@ -73,4 +73,3 @@ is being driven by human or algorithm.
 
 Delay is inevitable. You are crossing unknown links and firewalls.
 Must wrap it all up under HTTP to make things the easiest.
-

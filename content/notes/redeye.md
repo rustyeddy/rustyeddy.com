@@ -11,7 +11,7 @@ github: https://github.com/mobilerobot-io/redeye
 featured: https://docs.google.com/drawings/d/e/2PACX-1vQHtO4hTGzQKan-x5UKmwDieGndeGtNsTXT2iorDvcSuwiPBY1kkutZ1DH0D-Rd1VAtCzXzf3b3Zj4C/pub?w=960&amp;h=540
 ---
 
-> Older project note. Kept for historical context; some implementation details may no longer reflect my current recommendations.
+{{< older-note >}}
 
 The Red Eye project is a service definition rapper around inexpensive
 cameras attached to inexpesive micro-controllers that take pretty good
