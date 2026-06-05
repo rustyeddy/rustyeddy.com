@@ -1,0 +1,8 @@
+# Ignore this checker's own implementation details.
+^scripts/check-content-tone:
+^scripts/check-content-tone\.allowlist:
+
+# Existing technical use of "robust" in published content.
+^content/notes/mbr-vs-gpt-partition-tables\.md:24:
+^content/notes/motor-controlor-notes\.md:40:
+^content/notes/control-design\.md:71:

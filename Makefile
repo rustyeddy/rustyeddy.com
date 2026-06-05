@@ -23,6 +23,9 @@ check: check-metadata build check-links check-discovery
 check-site:
 	./scripts/check-site
 
+check-content-tone:
+	./scripts/check-content-tone
+
 check-links:
 	scripts/check-links
 
