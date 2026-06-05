@@ -1,0 +1,394 @@
+/*
+ * custom.css — rustyeddy.com
+ * Drop into: static/css/custom.css
+ * Load AFTER Bootstrap in your base template <head>
+ *
+ * Strategy: override only, never replace. Bootstrap stays intact.
+ * All changes are additive via specificity or load order.
+ */
+
+/* ============================================================
+   1. GOOGLE FONTS
+   Import Inter (body) + JetBrains Mono (code)
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+
+/* ============================================================
+   2. ROOT VARIABLES
+   Central place to tweak colors, spacing, fonts
+   ============================================================ */
+:root {
+  --re-font-body:    'Inter', system-ui, -apple-system, sans-serif;
+  --re-font-mono:    'JetBrains Mono', 'Fira Code', monospace;
+
+  --re-text:         #1a1a2e;
+  --re-text-muted:   #6b7280;
+  --re-text-faint:   #9ca3af;
+  --re-accent:       #185fa5;
+  --re-accent-light: #e6f1fb;
+  --re-border:       #e5e7eb;
+  --re-code-bg:      #0f1117;
+  --re-code-fg:      #e2e8f0;
+
+  --re-max-prose:    720px;
+  --re-line-height:  1.78;
+}
+
+
+/* ============================================================
+   3. BASE TYPOGRAPHY
+   ============================================================ */
+body {
+  font-family: var(--re-font-body);
+  font-size: 19px;
+  line-height: var(--re-line-height);
+  color: var(--re-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--re-font-body);
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--re-text);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+h1 { font-size: 2rem;   letter-spacing: -0.02em; }
+h2 { font-size: 1.4rem; letter-spacing: -0.01em; }
+h3 { font-size: 1.15rem; }
+h4 { font-size: 1rem; font-weight: 500; }
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+a {
+  color: var(--re-accent);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+
+/* ============================================================
+   4. PROSE WIDTH CONSTRAINT
+   Keeps article body readable (~65 chars/line)
+   ============================================================ */
+article,
+.content,
+.post-content,
+.page-content,
+main > .container > .row > [class*="col"] {
+  max-width: var(--re-max-prose);
+}
+
+/* Tables and code blocks may need to break out */
+article pre,
+article table,
+.content pre,
+.content table {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+
+/* ============================================================
+   5. CODE BLOCKS
+   Dark background, mono font — the most-read element on a
+   technical site. Applies to fenced blocks and inline code.
+   ============================================================ */
+pre {
+  background: var(--re-code-bg) !important;
+  color: var(--re-code-fg) !important;
+  border: none !important;
+  border-radius: 8px !important;
+  padding: 1.25rem 1.5rem !important;
+  font-family: var(--re-font-mono) !important;
+  font-size: 13.5px !important;
+  line-height: 1.65 !important;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+pre code {
+  font-family: var(--re-font-mono) !important;
+  font-size: inherit !important;
+  color: inherit !important;
+  background: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+/* Inline code */
+code {
+  font-family: var(--re-font-mono);
+  font-size: 0.875em;
+  background: #f3f4f6;
+  color: #be185d;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+}
+
+/* Hugo syntax highlighting wrapper */
+.highlight {
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  overflow: hidden;
+}
+
+.highlight pre {
+  margin: 0 !important;
+  border-radius: 0 !important;
+}
+
+
+/* ============================================================
+   6. NAVIGATION
+   ============================================================ */
+.navbar,
+nav.navbar {
+  border-bottom: 1px solid var(--re-border);
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: -0.01em;
+  color: var(--re-text) !important;
+}
+
+.navbar-brand span,
+.navbar-brand small {
+  color: var(--re-text-muted);
+  font-weight: 400;
+  font-size: 0.85em;
+}
+
+.navbar-nav .nav-link {
+  font-size: 0.9rem;
+  color: var(--re-text-muted) !important;
+  font-weight: 500;
+  padding-left: 0.85rem  !important;
+  padding-right: 0.85rem !important;
+  transition: color 0.15s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--re-text) !important;
+}
+
+
+/* ============================================================
+   7. PAGE HEADER / ARTICLE META
+   ============================================================ */
+.page-header,
+.post-header,
+article > header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--re-border);
+}
+
+/* Article title */
+article > header h1,
+.post-title,
+h1.title {
+  margin-top: 0;
+  font-size: 2.1rem;
+  letter-spacing: -0.025em;
+}
+
+/* Lead / description paragraph that follows h1 */
+article > header p,
+.page-description,
+.lead {
+  color: var(--re-text-muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+/* Meta line: date, read time, last update */
+.post-meta,
+.page-meta,
+.article-meta {
+  font-size: 0.82rem;
+  color: var(--re-text-faint);
+  margin-top: 0.5rem;
+}
+
+
+/* ============================================================
+   8. TABLES
+   ============================================================ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  margin: 1.5rem 0;
+}
+
+thead {
+  background: #f9fafb;
+  border-bottom: 2px solid var(--re-border);
+}
+
+th {
+  padding: 0.6rem 0.85rem;
+  font-weight: 600;
+  text-align: left;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--re-text-muted);
+}
+
+td {
+  padding: 0.6rem 0.85rem;
+  border-bottom: 1px solid var(--re-border);
+  vertical-align: top;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr:hover {
+  background: #f9fafb;
+}
+
+
+/* ============================================================
+   9. BLOCKQUOTES
+   ============================================================ */
+blockquote {
+  border-left: 3px solid var(--re-accent);
+  margin: 1.5rem 0;
+  padding: 0.75rem 1.25rem;
+  background: var(--re-accent-light);
+  border-radius: 0 6px 6px 0;
+  color: var(--re-text);
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ============================================================
+   10. LISTS
+   ============================================================ */
+ul, ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+li {
+  margin-bottom: 0.35rem;
+  line-height: var(--re-line-height);
+}
+
+/* Nested lists */
+li > ul,
+li > ol {
+  margin-top: 0.35rem;
+  margin-bottom: 0.35rem;
+}
+
+
+/* ============================================================
+   11. FOOTER
+   ============================================================ */
+footer,
+.site-footer {
+  border-top: 1px solid var(--re-border);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-top: 4rem;
+  font-size: 0.82rem;
+  color: var(--re-text-faint);
+}
+
+footer a,
+.site-footer a {
+  color: var(--re-text-muted);
+}
+
+footer a:hover,
+.site-footer a:hover {
+  color: var(--re-text);
+  text-decoration: none;
+}
+
+
+/* ============================================================
+   12. SECTION / ARTICLE CARDS (list pages)
+   ============================================================ */
+.card,
+.post-card,
+.article-card {
+  border: 1px solid var(--re-border) !important;
+  border-radius: 8px !important;
+  transition: box-shadow 0.15s, border-color 0.15s;
+}
+
+.card:hover,
+.post-card:hover,
+.article-card:hover {
+  border-color: #d1d5db !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.card-title,
+.post-card-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+
+/* ============================================================
+   13. UTILITY: last-update line
+   Targets the "Last update ~" footer text on articles
+   ============================================================ */
+p:has(+ [class*="footer"]),
+.last-update,
+time {
+  color: var(--re-text-faint);
+  font-size: 0.8rem;
+}
+
+
+/* ============================================================
+   14. RESPONSIVE ADJUSTMENTS
+   ============================================================ */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.25rem; }
+
+  pre {
+    padding: 1rem !important;
+    font-size: 12.5px !important;
+    border-radius: 6px !important;
+  }
+
+  article,
+  .content,
+  .post-content {
+    max-width: 100%;
+  }
+}

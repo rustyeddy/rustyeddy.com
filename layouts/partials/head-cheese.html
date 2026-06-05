@@ -43,6 +43,7 @@
   <link rel="alternate" type="application/rss+xml" href="{{ printf "%s%s" $baseURL .RelPermalink }}" title="{{ $.Title }} RSS Feed" />
   {{ end }}
   {{ end }}
+  <link rel="stylesheet" href="{{ "/css/custom.css" | relURL }}">
 
   <!-- Title appropriate for the page being displayed -->
   <title>{{ $title }}</title>
