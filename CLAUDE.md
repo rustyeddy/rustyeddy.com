@@ -17,6 +17,8 @@ are Graphviz `.dot` files in `diagrams/` compiled to SVGs under
 - `make drafts` — same but also renders pages with `draft: true`
 - `make` — local build into `docs/` (gitignored). Use to preview a
   production build; don't commit `docs/`.
+- `make check-site` — full site audit (`hugo --minify`, links,
+  metadata, discovery, visible marker scan, optional markdown lint)
 
 Deployment is fully automated: push source to `master` → Actions
 runs `.github/workflows/hugo.yml` → Pages deploys. You never need

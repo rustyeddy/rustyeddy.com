@@ -20,6 +20,9 @@ scss static/css/style.css: assets/scss/style.scss
 
 check: check-metadata build check-links check-discovery
 
+check-site:
+	./scripts/check-site
+
 check-links:
 	scripts/check-links
 
