@@ -12,4 +12,5 @@ address: 1707 Main St.
 city: Huntington Beach, CA
 websites: 
   - http://rustyeddy.com
+draft: true
 ---

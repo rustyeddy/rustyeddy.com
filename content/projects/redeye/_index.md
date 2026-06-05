@@ -5,7 +5,7 @@ description: >
   RedEye is API driven camera server with built in capabilities of
   running video streams through Computer Vision algorithms and
   controlling Robots with GPIO and other IO methods. The API provides
-  complete control over the camera and accessories.  
+  complete control over the camera and accessories.
 site: http://rustyeddy.com/projects/redeye
 github: https://github.com/redeyelab/redeye
 project_status: Historical
@@ -16,132 +16,113 @@ image_alt: "RedEye command-line camera control interface showing API command opt
 logo: /img/redeye-right.png
 ---
 
-A _RedEye camera_ is a _Video Streamer_ software that can be controlled
-via an _API_, save video images and snapshots locally or in the
-cloud.
+RedEye is an API-driven camera server that streams video, runs frames through
+computer vision pipelines, and controls robotics hardware over GPIO. Every
+capability the camera exposes is reachable through one API, so the same
+functions are available from a built-in web app, REST, MQTT, or WebSockets.
+
+Source: <https://github.com/redeyelab/redeye>
 
 ## Project Status
 
-**Historical.** RedEye is kept as an older camera, networking, and robotics case study, not as a current project recommendation.
+**Historical.** RedEye is kept as a case study in camera, networking, and
+robotics architecture, not as a current project recommendation. The code
+reflects an earlier era of single-board computer vision and video streaming.
+What still holds up is the system-design problem it captures, not the specific
+implementation.
 
-## Why This Matters
+## What RedEye Explored
 
-RedEye is an older project, but it captures a useful systems problem: video,
-control, networking, and robotics all competing for clear boundaries. It remains
-useful as a historical case study in keeping real-time-ish systems inspectable.
+RedEye sits at the intersection of four concerns that each pull a system in a
+different direction: video transport, near-real-time control, computer vision,
+and robotics I/O. The interesting problem was keeping those boundaries explicit
+instead of letting them collapse into one tangled program. It remains a useful
+reference for keeping real-time-ish systems inspectable.
 
-## What Makes RedEye so Smart
+## Architecture: API First
 
-### Computer Vision with OpenCV
+RedEye is closer to a service-oriented architecture than a single application.
+Every capability — play, pause, snapshot, filter selection, storage — is exposed
+through the same library the camera itself runs on. The built-in web app is just
+one client of that API. REST, MQTT, and WebSocket clients are equally
+first-class.
 
-Also, _Redeye_ can run video streams or single images through
-_Computer Vision AI filters_ written the _OpenCV_(http://opencv.org).
+Designing API-first meant the camera had no privileged "main" interface. Any
+functionality available to the web app was, by construction, available to an
+external integration. That is what gave RedEye its flexibility: you could drop a
+camera into an application without going through a UI layer that secretly held
+capabilities the API did not.
 
-Computer Vision algorithms, however complex can be written as a plugin
-and dynamically switched at runtime.
+## Core Capabilities
 
-### Robotics with GPIO
+### Video streaming
 
-If that ain't enough RedEye also has access to it's hosts _GPIO_
-library, if available. For example, RedEye loves to control motors and
-robot arms when running on a Rasberry Pi or NVidia Jetson Nano. !
+RedEye uses OpenCV to abstract over the messy details of opening and
+initializing the many camera types a host might present, exposing them through a
+single interface. Video streams over IP and can be consumed by any client.
 
-### IIoT with API
+### Computer vision pipelines
 
-RedEye was built with MQTT support at it's core, along with it's RPC
-style API RedEye camera's can be integrated into one heck of a diverse
-range of applications! 
+Video streams and single frames can be run through OpenCV-based computer vision
+filters. Pipelines are built as plugins and can be switched at runtime, so new
+CV work can be added without touching the camera-control code. Example pipelines
+include:
 
-> It will be nice to show some here.
+- Face detection
+- Motion detection
+- Object tracking
 
-## Streaming Video
+### Robotics and GPIO
 
-RedEye uses OpenCV to handle all the crazy details of opening and
-initialization the computers variety of camera types in a single
-intuitive interface. We will stick with that, no need to mess it up. 
+On hardware that exposes it — a Raspberry Pi or NVIDIA Jetson Nano, for example —
+RedEye can drive GPIO directly to control motors and robot arms alongside the
+video pipeline.
 
-## Camera Commands (API)
+### Messaging
 
-The Camera Server API supports the following commands:
+MQTT support was built in from the start. Combined with the RPC-style API, that
+let RedEye cameras integrate into a wide range of applications rather than living
+as a standalone device.
 
-1. Config: get and set configurations
-2. Play: start streaming video (open)
-3. Pause: stop streaming video
-4. Snap: save a snapshot to storage
-5. Record: save a video stream to storage
-6. Filter: get and change the CV filter(s)
-7. Store: get and set storage location(s) and creds
-8. MQTT: broker and credentials
+## Camera API
 
-## Run
+The API covers three areas: camera control, configuration, and storage.
 
-## Where Can be done with Images and Video?
+| Command | Purpose                                      |
+| ------- | -------------------------------------------- |
+| Config  | Get and set configuration                    |
+| Play    | Start streaming video                        |
+| Pause   | Stop streaming video                         |
+| Snap    | Save a snapshot to storage                   |
+| Record  | Save a video stream to storage               |
+| Filter  | Get and change the active CV filter(s)       |
+| Store   | Get and set storage locations and credentials |
+| MQTT    | Broker and credentials                       |
 
-Images and videos can go a lot of places! Including, but not limited
-to the following:
+Control covers play, pause, and snap. Configuration covers resolution, frame
+rate, color, and more. Storage covers where and how clips and snapshots are
+written.
 
-1. Display on local screen
-2. Serve video and images up over HTTP/HTML5
-3. Save video and images on the Local Filesystem
-4. Save video and images on a Remote (Cloud) Filesystem
+All commands are reachable through any of the supported transports:
 
-The location(s) of video and images can be setup before hand. Dropbox,
-AWS, Flickr, Unsplash or YouTube. If you have a favorite repository
-for your photos or video configure the storage box ahead of time with
-appropriate access keys and what not, from that point on you can be
-safe knowing your images and videos are safely stored wherever you
-want them.
-
-## About the Camera Software
-
-_RedEye_ is really more of a _Service_ _Oriented_ _Architecture (SOA)_
-than an application really.
-
-The _RedEye Camera_ software streams video over _IP_ through
-configurable _Computer Vision Pipelines_ with example
-pipelines that include:
-
-- Face Detection
-- Motion Detection
-- Object Tracking
-
-Pipelines can be built as plugins and added directly to the camera
-with runtime configuration. This allows you to add your own _Computer
-Vision_ application(s) without worrying **too much** about the
-software that controls the camera.
-
-## Camera APIs
-
-The Camera provides APIs for  _camera control_, _configuration_ and
-_storage_. These APIs give you complete control over the
-cameras functionality. Most of this functionality can be had through
-the built in webapp, or any other communication mechanism you choose.
-
-The camera design is **API first** which means that all of the cameras
-functionality is exposed through the same libraries the camera
-operates from, giving you a tremendous amount of flexibility to
-integrate cameras into your application.
-
-### Control, Configuration and Storage
-
-The APIs collectively provide control over the cameras _play_, _pause_
-and _snap_ controls, a myriad of configurations including
-_resolution_, _Frames Per Second_, _Color_ and a ton more.
-
-The _storage_ interface provides very flexible options when it comes
-to where and how to store video clips and snapshots..
-
-### Supported Protocols
-
-All APIs can be accessed in one or more of the following ways: 
-
-- Built Reactive Webapp
+- Built-in reactive web app
 - REST API
-- MQTT Messaging
-- Websockets
+- MQTT messaging
+- WebSockets
 
-If you have any questions, find a bug or would like to use this
-software, please drop me a line, or fill out an issue.
+## Storage Destinations
+
+Capture targets are configured ahead of time, so a running camera can write to
+local or remote storage without further intervention:
+
+- Display on a local screen
+- Serve video and images over HTTP / HTML5
+- Save to the local filesystem
+- Save to a remote or cloud filesystem — Dropbox, AWS, Flickr, Unsplash,
+  YouTube, and similar
+
+Configure the destination with the appropriate credentials once, and captures
+land there from then on.
 
 ## Common Pitfalls
 
@@ -153,6 +134,7 @@ constraints, not surprises discovered at the end.
 ## Where This Fits
 
 RedEye is a historical project case study. For current architecture guidance,
-start with [IoT](/iot/) and [Projects](/projects/). For supporting background,
-see the older [streaming video notes](/notes/streaming-video/) and
-[IP multicast notes](/notes/ip-multicast/).
+start with [IoT](https://rustyeddy.com/iot/) and
+[Projects](https://rustyeddy.com/projects/). For supporting background, see the
+older [streaming video notes](https://rustyeddy.com/notes/streaming-video/) and
+[IP multicast notes](https://rustyeddy.com/notes/ip-multicast/).
