@@ -1,0 +1,61 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "${ROOT_DIR}"
+
+ALLOWLIST_FILE="${CONTENT_TONE_ALLOWLIST:-${ROOT_DIR}/scripts/check-content-tone.allowlist}"
+
+matches_file="$(mktemp)"
+filtered_file="$(mktemp)"
+allowlist_patterns_file="$(mktemp)"
+trap 'rm -f "${matches_file}" "${filtered_file}" "${allowlist_patterns_file}"' EXIT
+
+if [[ -f "${ALLOWLIST_FILE}" ]]; then
+	sed -E '/^[[:space:]]*#/d;/^[[:space:]]*$/d' "${ALLOWLIST_FILE}" > "${allowlist_patterns_file}"
+fi
+
+check_phrase() {
+	local description="$1"
+	local pattern="$2"
+	local ignore_case="${3:-true}"
+	local grep_opts=(-RInE --binary-files=without-match)
+	if [[ "${ignore_case}" == "true" ]]; then
+		grep_opts+=(-i)
+	fi
+
+	if ! grep "${grep_opts[@]}" "${pattern}" content layouts > "${matches_file}"; then
+		return
+	fi
+
+	if [[ -s "${allowlist_patterns_file}" ]]; then
+		if ! grep -Evf "${allowlist_patterns_file}" "${matches_file}" > "${filtered_file}"; then
+			: > "${filtered_file}"
+		fi
+	else
+		cp "${matches_file}" "${filtered_file}"
+	fi
+
+	if [[ -s "${filtered_file}" ]]; then
+		echo "forbidden tone phrase found: ${description}" >&2
+		cat "${filtered_file}" >&2
+		echo >&2
+		return 1
+	fi
+}
+
+errors=0
+check_phrase "This article will explore" "\\bthis article will explore\\b" || errors=1
+check_phrase "robust" "\\brobust\\b" || errors=1
+check_phrase "enterprise-grade" "\\benterprise[- ]grade\\b" || errors=1
+check_phrase "game-changing" "\\bgame[- ]changing\\b" || errors=1
+check_phrase "revolutionary" "\\brevolutionary\\b" || errors=1
+check_phrase "click here" "\\bclick here\\b" || errors=1
+check_phrase "visible TODO" "\\bTODO\\b" false || errors=1
+
+if [[ "${errors}" -ne 0 ]]; then
+	echo "content tone checks failed" >&2
+	exit 1
+fi
+
+echo "content tone ok"

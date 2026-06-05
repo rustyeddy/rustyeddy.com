@@ -16,6 +16,9 @@ echo "==> ./scripts/check-metadata"
 echo "==> ./scripts/check-discovery"
 ./scripts/check-discovery
 
+echo "==> ./scripts/check-content-tone"
+./scripts/check-content-tone
+
 echo "==> checking for visible TODO/FIXME/merge markers"
 if grep -RInE --binary-files=without-match '\b(TODO|FIXME)\b|<<<<<<<|>>>>>>>' content layouts; then
 	echo "Found forbidden visible markers in public content." >&2
