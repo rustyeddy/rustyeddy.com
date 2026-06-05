@@ -39,6 +39,5 @@ while ESP is running other things.  During this console session we can
 do a number of things including:
 
 - List resources: memory and tasks
-- Join a wifi group
+- Join a Wi-Fi group
 - 
-

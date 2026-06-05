@@ -14,7 +14,7 @@ tags:
 {{< older-note >}}
 
 I need to stream live video from a moving vehicle with a connected
-camera and a possibly connected wifi.
+camera and a possibly connected Wi-Fi network.
 
 ## Live High Resolution Video
 
