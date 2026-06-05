@@ -3,7 +3,7 @@ title: "TLV: The Type-Length-Value Protocol"
 description: >
   A very simple byte oriented protocol used to swap unformatted
   messages over a variety of communication channels (i2c, SPI, UDP,
-  TCP, RF, BLT, etc).
+  TCP, RF, BT, etc).
 date: 2019-04-17
 categories:
   - software

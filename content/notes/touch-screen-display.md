@@ -34,7 +34,7 @@ The standard power taken from Mains should be fed with a 2Amp power
 supply connected to the **Display Adapter Card**.
 
 You can optionally attach an additional 2am power supply to the
-RaspiBerry Pi thus driving power to the display and adapter card, in
+Raspberry Pi thus driving power to the display and adapter card, in
 addition to the power supplied to the display, thus powering the Pi
 and Display separately. 
 

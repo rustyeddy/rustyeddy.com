@@ -21,7 +21,7 @@ date: 2018-08-22
 {{< older-note >}}
 
 I prefer to use an Arduino with a Motor Controller over say a
-Raspberry Pi with a motor-controller.  I believe the Arudino has
+Raspberry Pi with a motor-controller.  I believe the Arduino has
 better support for dedicated Real-time software vs. the Raspberry Pi
 and as a superior platform for general computing including running
 Control Software.  This is how we do it on the West side ...
@@ -73,7 +73,7 @@ We will consider the following 3 things:
 
 ## TLDR - Summary
 
-I have settled on the Adafruit MotorShields for Arudino and Raspberry
+I have settled on the Adafruit MotorShields for Arduino and Raspberry
 Pi as general purpose options.  At the moment, my ideal setup involves
 a RPi as the controller with an I2C or SPI connection to an Arduino
 with a MotorController.
@@ -98,7 +98,7 @@ uninformed like I was in early 2018..
 The purpose of this project is to select the motors and the
 corresponding _motor controller_ we need to control our vehicle.  The
 motorshield will come as an attachment to a micro controller of some
-sort, which happens to be either an Arduino or Raspiberry Pi, in my
+sort, which happens to be either an Arduino or Raspberry Pi, in my
 case.  
 
 ### Brushed Motors Move Wheels

@@ -1,5 +1,5 @@
 ---
-title: website
+title: Website
 draft: true
 description: >
   Websites are as common as magazines and shoes in today's

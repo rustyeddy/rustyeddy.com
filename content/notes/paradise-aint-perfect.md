@@ -1,5 +1,5 @@
 ---
-title: Paradise Aint Perfect
+title: "Paradise Ain't Perfect"
 draft: true
 date: 2020-02-03
 description: >
@@ -23,4 +23,3 @@ consisted of two groups: one going to Maui and one going to Kaui.
 
 The two groups just a shared come commonalities.  However the final
 destinations are very different.
-

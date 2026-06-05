@@ -1,5 +1,5 @@
 ---
-title: WPE an Excellerated Raspberry Pi Kiosk
+title: "WPE: An Accelerated Raspberry Pi Kiosk"
 draft: true
 date: 2020-12-25
 description: >
@@ -52,5 +52,4 @@ WPE container to my Balena application, only 3 of the 4 required
 containers run.  
 
 Bummer!
-
 
