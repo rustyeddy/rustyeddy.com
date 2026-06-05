@@ -12,7 +12,7 @@ frontmatter:
 ignoreLogs: ['warning-goldmark-raw-html']
 params:
   description: "Practical Software Engineering"
-  tagline: "IoT, edge systems, Go, Linux, and practical software architecture."
+  tagline: "practical software engineering"
   author: "Rusty Eddy"
   image: "/img/rusty.png"
 
