@@ -11,7 +11,7 @@ tags:
   - h264
 ---
 
-> Older project note. Kept for historical context; some implementation details may no longer reflect my current recommendations.
+{{< older-note >}}
 
 I need to stream live video from a moving vehicle with a connected
 camera and a possibly connected wifi.
@@ -83,4 +83,3 @@ The Raspberry Pi camera, price wise is very cheap ($25 usd) is a cheap
 camera, yet is capable of producing high quality images.  Even better,
 it is very _programmable_ and is capable of producing filtered
 versions of the video it is producing.
-

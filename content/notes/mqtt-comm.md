@@ -15,7 +15,7 @@ tags:
   - mosquitto
 ---
 
-> Older project note. Kept for historical context; some implementation details may no longer reflect my current recommendations.
+{{< older-note >}}
 
 The MQTT message bus is a simple but critical element of our MBR
 software design.  MQTT provides what is known as a _publish/subscribe_

@@ -13,7 +13,7 @@ tags:
 image: https://mobilerobot.sfo2.cdn.digitaloceanspaces.com/display-and-motors.jpg
 ---
 
-> Older project note. Kept for historical context; some implementation details may no longer reflect my current recommendations.
+{{< older-note >}}
 
 TLV is a very simple communication protocol that can be used to send
 messages around a complex, distributed system.  

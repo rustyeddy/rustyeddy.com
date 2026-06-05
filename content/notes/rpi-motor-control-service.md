@@ -11,7 +11,7 @@ categories:
   - motors
 ---
 
-> Older project note. Kept for historical context; some implementation details may no longer reflect my current recommendations.
+{{< older-note >}}
 
 
 This software adds a Skid Steer motor control software to the
@@ -169,4 +169,3 @@ just to handle the motor controls.
 - 2 brushed DC motors
 - 2 wheeled cheap balancing disk for body 
 - Application specific sensors
-

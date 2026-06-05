@@ -7,7 +7,7 @@ categories: ["Go", "IoT Systems"]
 tags: ["Go", "Timers", "IoT Gateway", "Device State"]
 ---
 
-> Older project note. Kept for historical context; some implementation details may no longer reflect my current recommendations.
+{{< older-note >}}
 
 This article introduces Go timers as the mechanism the
 [IoTa gateway](https://github.com/rustyeddy/iota) uses to identify

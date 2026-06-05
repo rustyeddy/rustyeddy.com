@@ -9,7 +9,7 @@ categories: ["Networking"]
 tags: ["IP Multicast", "Networking", "Routing"]
 ---
 
-> Older project note. Kept for historical context; some implementation details may no longer reflect my current recommendations.
+{{< older-note >}}
 
 ## IP Multicast addresses
 
@@ -57,6 +57,5 @@ are generally not available unless you have a specific application and
 setup blessed by the powers above.
 
 ## IP Multicast In the Real World
-
 
 
