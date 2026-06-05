@@ -10,6 +10,7 @@ project_status: Reference implementation
 tags: ["Go", "IoT", "Edge Computing", "Device Management"]
 categories: ["Projects", "IoT Systems"]
 image: /img/iot-project-drawing.png
+image_alt: "System illustration of the OttO IoT edge runtime connecting sensors, control nodes, and gateway services."
 ---
 
 OttO is an open-source IoT edge runtime written in Go, designed to manage

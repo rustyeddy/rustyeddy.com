@@ -22,8 +22,9 @@
 		<div class="card-body">
                     {{ $project := . }}
                     {{ $image := .Params.logo | default .Params.image }}
+                    {{ $imageAlt := $project.Params.logo_alt | default $project.Params.logoAlt | default $project.Params.image_alt | default $project.Params.imageAlt | default (printf "Preview image for %s" $project.Title) }}
                     {{ with $image }}
-                    <img height="315px" class="card-img" src="{{ . }}" alt="{{ $project.Title }} project image" />
+                    <img height="315px" class="card-img" src="{{ . }}" alt="{{ $imageAlt }}" />
                     {{ end }}
 
                     {{ with .Params.project_status }}

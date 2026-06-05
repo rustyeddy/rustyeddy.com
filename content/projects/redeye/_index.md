@@ -12,6 +12,7 @@ project_status: Historical
 tags: ["Video", "Networking", "Embedded Linux", "Camera Systems"]
 categories: ["Projects", "Networking"]
 image: /img/redeye-cmdline-snapshot.png
+image_alt: "RedEye command-line camera control interface showing API command options."
 logo: /img/redeye-right.png
 ---
 
