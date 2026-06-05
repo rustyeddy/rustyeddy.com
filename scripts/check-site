@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "${ROOT_DIR}"
+
+echo "==> hugo --minify"
+hugo --minify
+
+echo "==> ./scripts/check-links"
+./scripts/check-links
+
+echo "==> ./scripts/check-metadata"
+./scripts/check-metadata
+
+echo "==> ./scripts/check-discovery"
+./scripts/check-discovery
+
+echo "==> checking for visible TODO/FIXME/merge markers"
+if grep -RInE --binary-files=without-match '\b(TODO|FIXME)\b|<<<<<<<|>>>>>>>' content layouts; then
+	echo "Found forbidden visible markers in public content." >&2
+	exit 1
+fi
+
+if command -v markdownlint >/dev/null 2>&1; then
+	echo "==> markdownlint (optional)"
+	find content -type f -name "*.md" -print0 | xargs -0 markdownlint
+elif command -v markdownlint-cli2 >/dev/null 2>&1; then
+	echo "==> markdownlint-cli2 (optional)"
+	markdownlint-cli2 "content/**/*.md"
+elif command -v mdl >/dev/null 2>&1; then
+	echo "==> mdl (optional)"
+	find content -type f -name "*.md" -print0 | xargs -0 mdl
+else
+	echo "==> markdown lint skipped (no supported linter found)"
+fi
+
+echo "site audit ok"
