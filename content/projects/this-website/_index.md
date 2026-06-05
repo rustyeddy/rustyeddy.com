@@ -12,6 +12,7 @@ resources:
   website: http://rustyeddy.com/
   resume: http://rustyeddy.com/resume
 image: /img/rusty-background.jpg
+image_alt: "Portrait of Rusty Eddy used as the cover image for the website project page."
 logo: /img/rusty-background.jpg
 tags:
   - bootstrap
@@ -51,4 +52,3 @@ me to produce pretty good looking websites out of the gate.
 [GitHub Pages](https://pages.github.com/) is a very quick and easy way to
 integrate the content of this website into the corresponding public
 HTML5 site you can see.
-

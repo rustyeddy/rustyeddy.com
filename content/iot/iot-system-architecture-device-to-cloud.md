@@ -29,6 +29,10 @@ At a high level, the system looks like this:
 
 ![High-level IoT system overview showing devices connected to an edge hub, backend services, and user interfaces](/diagrams/iot-architecture.svg)
 
+The diagram reads left to right: physical devices connect to an edge hub, the
+hub bridges messaging and APIs, backend services keep durable system state, and
+user interfaces consume those stable backend boundaries.
+
 Each layer has a clear responsibility and communicates with the next layer
 through explicit interfaces. That separation is what lets a system replace
 hardware, add dashboards, test logic without devices, and survive intermittent

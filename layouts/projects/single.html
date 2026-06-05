@@ -4,7 +4,8 @@
     <div class="row pt-4 mb-5 mt-5">
 	<div class="col"></div>
 	<div class="col-8">
-	    <img class="img-fluid" src="{{ .Params.Image }}" />
+	    {{ $imageAlt := .Params.image_alt | default .Params.imageAlt | default (printf "Cover image for %s" .Title) }}
+	    <img class="img-fluid" src="{{ .Params.Image }}" alt="{{ $imageAlt }}" />
 	</div>
 	<div class="col"></div>
     </div>
