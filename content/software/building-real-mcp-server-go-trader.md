@@ -313,10 +313,10 @@ Likely follow-up capabilities:
 This article is tied to the real Trader codebase, not a toy demo:
 
 - Trader repository: [github.com/rustyeddy/trader](https://github.com/rustyeddy/trader)
-- Strategy Protocol boundary: [`protocol/`](https://github.com/rustyeddy/trader/tree/master/protocol)
-- Runtime/backtest internals: [`internal/backtest/`](https://github.com/rustyeddy/trader/tree/master/internal/backtest)
-- Market data and manifests: [`marketdata/`](https://github.com/rustyeddy/trader/tree/master/marketdata)
-- CLI entrypoint: [`cmd/trader/`](https://github.com/rustyeddy/trader/tree/master/cmd/trader)
+- Strategy Protocol boundary: [`protocol/`](https://github.com/rustyeddy/trader/tree/8cb2a46524c756a1e7204af9fc101db8a54f516f/protocol)
+- Runtime/backtest internals: [`internal/backtest/`](https://github.com/rustyeddy/trader/tree/8cb2a46524c756a1e7204af9fc101db8a54f516f/internal/backtest)
+- Market data and manifests: [`marketdata/`](https://github.com/rustyeddy/trader/tree/8cb2a46524c756a1e7204af9fc101db8a54f516f/marketdata)
+- CLI entrypoint: [`cmd/trader/`](https://github.com/rustyeddy/trader/tree/8cb2a46524c756a1e7204af9fc101db8a54f516f/cmd/trader)
 
 Tracking issue for this article and implementation alignment:
 [rustyeddy/rustyeddy.com#90](https://github.com/rustyeddy/rustyeddy.com/issues/90)
