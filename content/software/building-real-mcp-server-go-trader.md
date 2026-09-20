@@ -318,8 +318,8 @@ This article is tied to the real Trader codebase, not a toy demo:
 - Market data and manifests: [`marketdata/`](https://github.com/rustyeddy/trader/tree/master/marketdata)
 - CLI entrypoint: [`cmd/trader/`](https://github.com/rustyeddy/trader/tree/master/cmd/trader)
 
-`trader-mcp` implementation links and PR references should be added here as that
-work lands.
+Tracking issue for this article and implementation alignment:
+[rustyeddy/rustyeddy.com#90](https://github.com/rustyeddy/rustyeddy.com/issues/90)
 
 ## Closing
 
