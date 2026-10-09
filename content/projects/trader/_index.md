@@ -20,7 +20,8 @@ system.
 
 ## Project Status
 
-**Active.** Trader is a current Go project and an active case study for trading-system architecture, testing, and exact numeric types.
+**Active.** Trader is a current Go project and an active case study
+for trading-system architecture, testing, and exact numeric types.
 
 ## Why This Matters
 

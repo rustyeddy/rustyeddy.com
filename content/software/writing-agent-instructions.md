@@ -4,7 +4,6 @@ date: 2026-08-01
 description: >
   An outline for creating concise, verifiable repository instructions that work
   across Claude, GitHub Copilot, and ChatGPT without duplicating project policy.
-draft: true
 tags: ["AI Agents", "Claude", "GitHub Copilot", "ChatGPT", "Software Engineering"]
 categories: ["Software Engineering"]
 ---
