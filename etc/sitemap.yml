@@ -1,43 +1,302 @@
----
-RustyEddy.Com:
-  home:
+title: Rusty Eddy
+url: https://rustyeddy.com/
+content:
+  _index.md:
+    title: Practical Engineering Notes
     url: /
-    descr: >-
-      The home page, not sure exactly what this should say
   about:
-    url: /about
-  resume:
-    url: /resume
-    sections:
-      - Contact
-      - Overview
-      - Work Experience
-      - Education
-      - Publications
-  portfolio:
-    url: /portfolio
-    items:
-      - Laser Calibration and Control (Radian)
-      - SDN Controller (DirecTV)
-      - Zero Touch Provisioning (AT&T)
-      - Automated Private Cloud Provision Software (Alchemy Networks)
-      - Core Routing Systems (Cisco)
-      - Water Flow Measurement System/TSDB (Sierra Hydrographics)
-      - Gated (ISI, Greenhills)
-      - pimd (USC/ISI)
-      - Policy driven traceroute program (ISI)
-      - pkt Network test tool (ISI, IMS, Retix)
-      - Diagnostic network utilities and test automation (Retix)
-      - Embedded OS (Rockwell)
+    _index.md:
+      title: About Rusty Eddy
+      url: /about/
+  iot:
+    _index.md:
+      title: Internet of Things (IoT)
+      url: /iot/
+    building-iot-device-manager-in-go.md:
+      title: Building an IoT Device Abstraction Layer in Go
+      url: /iot/building-iot-device-manager-in-go/
+    iot-edge-gateway.md:
+      title: 'OttO: A Go-Based IoT Edge Gateway Architecture'
+      url: /iot/iot-edge-gateway/
+    iot-gateway-mqtt.md:
+      title: Adding MQTT to the IoT Gateway
+      url: /iot/iot-gateway-mqtt/
+    iot-gateway-rest.md:
+      title: 'REST APIs for IoT Gateways: Control, Configuration, and Telemetry Access'
+      url: /iot/iot-gateway-rest/
+    iot-sensor-station.md:
+      title: ESP32 Collection Station Architecture for IoT Sensor Networks
+      url: /iot/iot-sensor-station/
+    iot-system-architecture-device-to-cloud.md:
+      title: IoT System Architecture (Device to Cloud)
+      url: /iot/iot-system-architecture-device-to-cloud/
+    iot-system-architecture-otto.md:
+      title: The Five Layers of a Practical IoT System
+      url: /iot/iot-system-architecture-explained/
+    self-watering-garden.md:
+      title: 'Self-Watering Garden: An IoT Architecture Case Study'
+      url: /iot/self-watering-garden/
   notes:
-    url: /notes
-    descr: >-
-      This is a section with content written on a variety of
-      topics. The articles will share a common template resulting in a
-      consistent look and feel.
-    articles:
-      - A Website Development Process
-      - A Process to Develop Webapps
-      - The Importance of Version Control, featuring **git**
-    
-    
+    _index.md:
+      title: Notes
+      url: /notes/
+    bootstrap.md:
+      title: Bootstrap makes WebUI look great!
+      url: /notes/bootstrap/
+      draft: true
+    control-design.md:
+      title: Control System Design
+      url: /notes/control-design/
+    esp32.md:
+      title: The ESP32
+      url: /notes/esp32/
+      draft: true
+    get-ready-to-go.md:
+      title: Get Ready to Go
+      url: /notes/get-ready-to-go/
+      draft: true
+    go-configuration.md:
+      title: A Simple Go Configuration
+      url: /notes/go-configuration/
+      draft: true
+    go-timers-testing-mqtt.md:
+      title: Using Go timers for MQTT testing
+      url: /notes/go-timers-testing-mqtt/
+    go-timers.md:
+      title: Go timers to remove stale sensor stations
+      url: /notes/go-timers/
+    ip-multicast.md:
+      title: IP Multicast Basics
+      url: /notes/ip-multicast/
+    mbr-vs-gpt-partition-tables.md:
+      title: MBR vs GPT Partition Tables
+      url: /notes/mbr-vs-gpt-partition-tables/
+      draft: true
+    mcp-claude-tools.md:
+      title: Exposing a Go App as Claude MCP Tools
+      url: /notes/mcp-claude-tools/
+    motor-controlor-notes.md:
+      title: Inexpensive Motor Controllers for Arduino and Raspberry Pi
+      url: /notes/motor-controlor-notes/
+    mqtt-comm.md:
+      title: MQTT for Controller Communication
+      url: /notes/mqtt-comm/
+    paradise-aint-perfect.md:
+      title: Paradise Ain't Perfect
+      url: /notes/paradise-aint-perfect/
+      draft: true
+    poc-vs-production.md:
+      title: Proof of Concept vs. Production
+      url: /notes/poc-vs-production/
+      draft: true
+    private-wifi-network-webapp.md:
+      title: How to build a private Wi-Fi network for your web app
+      url: /notes/private-wifi-network-webapp/
+      draft: true
+    raspberry-pi-pico-setup.md:
+      title: Raspberry Pi Pico Setup
+      url: /notes/raspberry-pi-pico-setup/
+      draft: true
+    redeye.md:
+      title: Red Eye Video Server
+      url: /notes/redeye/
+    rpi-motor-control-service.md:
+      title: Raspberry Pi Motor Control Software
+      url: /notes/rpi-motor-control-service/
+    rpi-v-arduino.md:
+      title: Comparing the Arduino and Raspberry Pi
+      url: /notes/rpi-v-arduino/
+      draft: true
+    rpi-wpe-web-kiosk.md:
+      title: 'WPE: An Accelerated Raspberry Pi Kiosk'
+      url: /notes/rpi-wpe-web-kiosk/
+      draft: true
+    skid-steering.md:
+      title: Skid Steering
+      url: /notes/skid-steering/
+    software-is-iterative.md:
+      title: Software is Iterative
+      url: /notes/software-is-iterative/
+      draft: true
+    soil-moisture-adafruit.md:
+      title: Adafruit Soil Moisture Sensor Notes for IoT Projects
+      url: /notes/soil-moisture-adafruit/
+    soil-moisture-sensor.md:
+      title: Soil Moisture Sensors for IoT Garden Projects
+      url: /notes/soil-moisture-sensor/
+    streaming-video-local-network.md:
+      title: Streaming Live Video on a Local LAN vs. the Internet
+      url: /notes/streaming-video-local-network/
+    streaming-video-tools.md:
+      title: Streaming Video Tools
+      url: /notes/streaming-video-tools/
+    streaming-video.md:
+      title: Streaming Video is Complicated
+      url: /notes/streaming-video/
+    sync-async.md:
+      title: Sync vs. Async, Blocking vs. Non-blocking
+      url: /notes/sync-async/
+      draft: true
+    tlv-and-realitime-communication.md:
+      title: 'TLV: The Type-Length-Value Protocol'
+      url: /notes/tlv-and-realitime-communication/
+    touch-screen-display.md:
+      title: Control Station Display
+      url: /notes/touch-screen-display/
+      draft: true
+    video-control-with-onvif.md:
+      title: Video Control with ONVIF
+      url: /notes/video-control-with-onvif/
+      draft: true
+    vue-frontends.md:
+      title: Using Vue to Develop Webapps
+      url: /notes/vue-frontends/
+      draft: true
+    website.md:
+      title: Website
+      url: /notes/website/
+      draft: true
+    why-choose-go.md:
+      title: Why Choose Go for Your Project?
+      url: /notes/why-choose-go/
+  privacy:
+    _index.md:
+      title: Privacy
+      url: /privacy/
+  projects:
+    _index.md:
+      title: Projects
+      url: /projects/
+    otto:
+      _index.md:
+        title: OttO — IoT Edge Runtime
+        url: /projects/otto/
+    redeye:
+      _index.md:
+        title: RedEye Camera
+        url: /projects/redeye/
+    this-website:
+      _index.md:
+        title: How I Made This Web Site
+        url: /projects/this-website/
+    trader:
+      _index.md:
+        title: Trader — FX Backtesting and Live Trading Engine
+        url: /projects/trader/
+      account-risk-management.md:
+        title: Account Risk Management for Traders
+        url: /projects/trader/account-risk-management/
+  resume:
+    _index.md:
+      title: Resume
+      url: /resume/
+      draft: true
+    clients:
+      _index.md:
+        title: Eddy Consulting, LLC
+        url: /resume/clients/
+      alchemy.md:
+        title: Cloud Trek
+        url: /resume/clients/alchemy/
+      att.md:
+        title: DirecTV / AT&T
+        url: /resume/clients/att/
+      green-hills.md:
+        title: Green Hills Software
+        url: /resume/clients/green-hills/
+      ims-company.md:
+        title: The IMS Company
+        url: /resume/clients/ims-company/
+      radian-laser.md:
+        title: Radian Laser
+        url: /resume/clients/radian-laser/
+      sahara-networks.md:
+        title: Sahara Networks
+        url: /resume/clients/sahara-networks/
+      sierra-hydrog.md:
+        title: Sierra Hydrographics
+        url: /resume/clients/sierra-hydrog/
+      sugo-music.md:
+        title: Sugo Music Dashboard
+        url: /resume/clients/sugo-music/
+    edu:
+      _index.md:
+        title: Education
+        url: /resume/edu/
+      csulb.md:
+        title: California State University, Long Beach
+        url: /resume/edu/csulb/
+      usc.md:
+        title: University of Southern California ~ MSCS
+        url: /resume/edu/usc/
+    jobs:
+      _index.md:
+        title: Work History
+        url: /resume/jobs/
+      cisco-systems.md:
+        title: Cisco Systems
+        url: /resume/jobs/cisco-systems/
+      csu-chancelor.md:
+        title: California State University ~ Chancelors Office
+        url: /resume/jobs/csu-chancelor/
+      panasonic.md:
+        title: Panasonic Avionics
+        url: /resume/jobs/panasonic/
+      retix.md:
+        title: Retix
+        url: /resume/jobs/retix/
+      rockwell.md:
+        title: Rockwell, Intl. Space Systems Division
+        url: /resume/jobs/rockwell/
+      usc-isi.md:
+        title: USC ~ ISI
+        url: /resume/jobs/usc-isi/
+    pubs.md:
+      title: Publications
+      url: /resume/pubs/
+    skills.md:
+      title: Skills and Interests
+      url: /resume/skills/
+    summary.md:
+      title: Career Summary
+      url: /resume/summary/
+  software:
+    _index.md:
+      title: Software Development
+      url: /software/
+    kanban.md:
+      title: Organizing Software Projects with Kanban
+      url: /software/kanban/
+    numeric-types-financial-software.md:
+      title: Fixed-Point Numeric Types in Go Financial Software
+      url: /software/numeric-types-financial-software/
+    peer-review.md:
+      title: Peer Reviews
+      url: /software/peer-review/
+    release-process.md:
+      title: Release Process
+      url: /software/release-process/
+    software-is-hard.md:
+      title: Software is Hard
+      url: /software/software-is-hard/
+    strategy-pattern-backtesting.md:
+      title: The Strategy Pattern in a Backtesting Engine
+      url: /software/strategy-pattern-backtesting/
+    test-driven-software-development.md:
+      title: Test Driven Software Development
+      url: /software/test-driven-software-development/
+    use-cases-to-tasks.md:
+      title: Use Cases to Tasks
+      url: /software/use-cases-to-tasks/
+    use-cases.md:
+      title: Use Cases
+      url: /software/use-cases/
+    version-control-systems.md:
+      title: Version Control Systems
+      url: /software/version-control-systems/
+    wireframes-and-storyboards.md:
+      title: Wireframes and Storyboards
+      url: /software/wireframes-and-storyboards/
+    writing-agent-instructions.md:
+      title: Writing Agent Instructions for a New Software Project
+      url: /software/writing-agent-instructions/
