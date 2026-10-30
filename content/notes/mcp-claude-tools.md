@@ -1,10 +1,10 @@
 ---
-title: Exposing a Go App as Claude MCP Tools
+title: "Build an MCP Server in Go: Expose Your App to Claude"
 date: 2026-05-22
 description: >
-  How to implement an MCP server in Go that exposes application functions
-  as typed tools for Claude Code and Claude Desktop — with a working example
-  from the Trader FX engine.
+  Build an MCP server in Go that exposes your app as typed tools for
+  Claude Code and Claude Desktop, with a working example wired to an
+  OANDA trading account.
 categories: ["Go", "Developer Tools"]
 tags: ["Go", "MCP", "Claude", "Tooling", "API Design"]
 ---

@@ -1,11 +1,11 @@
 ---
-title: "Release Process"
+title: "Software Release Process: A Checklist for Small Teams"
 date: 2026-05-21
 weight: 100
 description: >
-  How to ship software with versioning, CI/CD, release artifacts,
-  changelogs, smoke tests, rollback planning, and a repeatable release
-  checklist.
+  A repeatable release process for small teams: versioning, CI/CD,
+  release artifacts, smoke tests, rollback planning, and a checklist
+  that makes shipping routine.
 tags: ["Release Process", "CI/CD", "Software Engineering", "Deployment"]
 categories: ["Software Engineering"]
 summary: "A practical release process for turning reviewed and tested code into versioned, recoverable software artifacts."
