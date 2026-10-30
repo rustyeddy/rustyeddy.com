@@ -6,7 +6,9 @@ The backlog below is intentionally limited to content that already exists on the
 
 ## Editorial Direction
 
-RustyEddy.com should read like a practical engineering notebook that has been cleaned up for other engineers.
+Audience, thesis, and pillars are defined in `POSITIONING.md`; read it first.
+
+RustyEddy.com should read like a principal engineer's practical notes for the people accountable for delivering software: engineering managers, tech leads, technical founders, and small-company CTOs. Deep technical notes remain as the engineering notebook layer for individual engineers.
 
 The voice should be:
 
@@ -14,6 +16,7 @@ The voice should be:
 - Architecture-first: show boundaries, responsibilities, and tradeoffs.
 - Decision-oriented: help the reader choose a design, pattern, tool, or next step.
 - Project-grounded: use OttO, Trader, RedEye, and the garden system as concrete examples.
+- Delivery-aware: say what a decision means for schedule, risk, quality, or team process, not only for the code.
 - Plainspoken: avoid marketing phrasing, vague claims, and generic introductions.
 
 Avoid:

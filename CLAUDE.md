@@ -27,9 +27,14 @@ to build or commit `docs/` manually.
 
 ## Audience and voice
 
-The site is written for **engineering peers and hiring managers**.
-It's both a portfolio (credibility for technical readers and people
-evaluating Rusty) and a long-form technical writing destination.
+**Read `POSITIONING.md` first.** It defines the audience, thesis,
+pillars, and content tests, and it overrides anything here.
+
+Short version: the primary reader is the person accountable for
+delivering software at a small company: engineering managers, tech
+leads, technical founders, small-company CTOs. Individual engineers
+and hiring managers are the secondary audience, served by the
+engineering notebook (`notes/`, implementation-level `software/`).
 
 Voice and structure rules live in `knowledge/styleguide.md`. The
 short version: architecture-first, decision-oriented, tradeoffs over

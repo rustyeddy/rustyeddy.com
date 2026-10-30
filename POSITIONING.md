@@ -63,7 +63,7 @@ material, not the front of the site.
    woven throughout).
 
 Single primary call to action across the site: **join the email
-list.** Consulting and resume links are secondary.
+list.** Resume links are secondary; consulting is unadvertised (see below).
 
 ## Pillars
 
@@ -92,10 +92,21 @@ Before publishing or keeping a page, it should pass at least one:
 
 A page that passes none is a candidate for merge, noindex, or removal.
 
+## Consulting (decided 2026-10-29)
+
+Consulting is a later goal and is **not advertised**: no services
+page, no pricing, no hire-me buttons or banners, and no consulting
+CTA in articles. The email list remains the primary call to action.
+
+Interested readers should still be able to reach out. One quiet line
+on the About page is allowed, framed as limited advisory work, not
+development. For example: "I occasionally take on a small amount of
+advisory work: architecture reviews and AI-assisted delivery process
+for small teams. If that's what you need, email me." Do not add
+consulting language anywhere else without checking with Rusty.
+
 ## Open decisions
 
-- Consulting: actively taking clients now, or "later"? Do not add a
-  services page or hire-me CTA until decided.
 - Course audience: currently designed for mid-career engineers; check
   fit against tech leads / new managers before the email sequence is
   finalized.
