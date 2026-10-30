@@ -58,6 +58,22 @@ def parse_front_matter(lines):
     return data
 
 
+def unquoted_colon_keys(lines):
+    """Top-level plain scalars containing ': ' are invalid YAML and break
+    the Hugo build (even for drafts). Quote the value instead."""
+    bad = []
+    for line in lines:
+        if line.startswith((" ", "\t", "#")) or ":" not in line:
+            continue
+        key, value = line.split(":", 1)
+        value = value.strip()
+        if not value or value[0] in "\"'[{>|&*!":
+            continue
+        if ": " in value or value.endswith(":"):
+            bad.append(key.strip())
+    return bad
+
+
 def has_value(lines, key):
     pattern = re.compile(rf"^{re.escape(key)}:\s*(.*)$")
     for index, line in enumerate(lines):
@@ -84,6 +100,9 @@ def main():
         if error:
             errors.append(f"{rel}: {error}")
             continue
+        for key in unquoted_colon_keys(lines):
+            errors.append(f"{rel}: unquoted colon in {key}; wrap the value in double quotes")
+
         data = parse_front_matter(lines)
         if data.get("draft") is True:
             continue
