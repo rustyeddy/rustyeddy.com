@@ -1,5 +1,5 @@
 ---
-title: Building a Real MCP Server in Go: Giving an AI Access to an Algorithmic Trading Platform
+title: Building a Real MCP Server in Go - Giving an AI Access to an Algorithmic Trading Platform
 date: 2026-09-20
 draft: true
 description: >
