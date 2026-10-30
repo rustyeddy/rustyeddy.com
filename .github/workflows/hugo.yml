@@ -1,6 +1,6 @@
 # Build and deploy Hugo site to GitHub Pages.
 #
-# On PRs: build only (validates the site builds cleanly).
+# On PRs: build + site checks (validates the site before merge).
 # On push to master: build + upload artifact + deploy to Pages.
 
 name: Deploy Hugo site to Pages
@@ -51,6 +51,14 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: hugo --gc --minify
+
+      # Same checks as `make check-site`: broken links, front matter
+      # (incl. unquoted colons), Open Graph tags, content tone, and
+      # visible TODO/merge markers. Fails the PR before anything ships.
+      - name: Run site checks
+        env:
+          SKIP_MDLINT: "1"
+        run: ./scripts/check-site
 
       # Only upload the artifact when deploying (master push or manual run).
       # PRs skip this step — they just verify the build succeeds.

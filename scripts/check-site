@@ -25,7 +25,9 @@ if grep -RInE --binary-files=without-match '\b(TODO|FIXME)\b|<<<<<<<|>>>>>>>' co
 	exit 1
 fi
 
-if command -v markdownlint >/dev/null 2>&1; then
+if [ -n "${SKIP_MDLINT:-}" ]; then
+	echo "==> markdown lint skipped (SKIP_MDLINT set)"
+elif command -v markdownlint >/dev/null 2>&1; then
 	echo "==> markdownlint (optional)"
 	find content -type f -name "*.md" -print0 | xargs -0 markdownlint
 elif command -v markdownlint-cli2 >/dev/null 2>&1; then
