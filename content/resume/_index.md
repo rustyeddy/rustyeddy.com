@@ -8,8 +8,6 @@ linkedin: http://linkedin.com/in/rustyeddy
 github: http://github.com/rustyeddy
 twitter: http://twitter.com/rustyeddy
 name: Rusty Eddy
-address: 1707 Main St.
-city: Huntington Beach, CA
 websites: 
   - http://rustyeddy.com
 draft: true

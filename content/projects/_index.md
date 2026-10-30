@@ -25,7 +25,6 @@ Start here when you want current project context:
 These projects are older, but still useful as engineering examples:
 
 - **Historical**: [RedEye](/projects/redeye/) is an API-driven camera and robotics system with video, control, and computer-vision concerns.
-- **Historical**: [How I Made This Web Site](/projects/this-website/) documents the site stack: Hugo, Markdown, Bootstrap, GitHub Pages, and the publishing workflow.
 
 ## How Projects Fit the Site
 
