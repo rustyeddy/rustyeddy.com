@@ -15,29 +15,38 @@ experience, architecture decisions, source code, tests, and practical tradeoffs.
 
 ## Editorial positioning
 
-**Architecture. AI-assisted software delivery. Real systems.**
+Audience, thesis, pillars, and content tests are owned by
+[`POSITIONING.md`](../POSITIONING.md). This guide covers process: how
+to research, brief, review, and measure content. If the two disagree,
+`POSITIONING.md` wins.
 
-Three overlapping topic pillars:
+In short, the pillars are:
 
-1. **Software architecture:** Go domain models, interfaces, service boundaries, design decisions,
-   maintainability, testing, reproducibility. Trader and OttO supply case studies.
-2. **AI-assisted software delivery:** Requirements → issues → agent delegation → PRs → independent
+1. **Delivering software with AI:** Requirements → issues → agent delegation → PRs → independent
    review → CI → release. Explain where human architectural oversight is essential.
-3. **Applied systems:** Go, Linux, IoT/edge, MQTT, embedded hardware, networking and financial
-   software. Present working examples, not generic keyword-driven introductions.
+2. **Systems architecture for the real world:** Go domain models, interfaces, service boundaries,
+   failure modes, testing, reproducibility.
+3. **Building AI systems:** MCP servers, agents, tool design.
 
-Keep proven IoT/MQTT/Raspberry Pi and networking visibility even as new architecture and
-AI-agent topics are developed. Trader is an *engineering case study*, not a trading-tips pivot.
+Trader, OttO/Gardener, and RedEye are *proof*, not pillars: case studies that support the
+pillars. Trader is an engineering case study, not a trading-tips pivot.
+
+Keep IoT, robotics, and networking content that demonstrably earns clicks or serves as proof
+for a pillar (e.g. the Raspberry Pi motor-controller notes). Generic textbook topics ranking
+below page 3 (e.g. "what is a multicast IP address", "5 layers of IoT") are merge or noindex
+candidates; the content tracker records each decision.
 
 ## Reader personas (working hypotheses)
 
-**Alex — experienced systems engineer.** Wants real architecture, working code, failure modes,
-testability, and tradeoffs; already knows programming fundamentals. Example question:
-"How should I separate a strategy, data pipeline, and execution service in Go?"
-
-**Morgan — AI-enabled technical lead.** Wants a controlled, repeatable way to work with
-AI coding agents without compromising architecture, tests, review, or accountability.
+**Morgan — AI-enabled technical lead (primary).** Engineering manager, tech lead, technical
+founder, or small-company CTO. Owns delivery outcomes. Wants a controlled, repeatable way to work
+with AI coding agents without compromising architecture, tests, review, or accountability.
 Example question: "How do I use GitHub issues and independent AI review to deliver reliable code?"
+
+**Alex — experienced systems engineer (secondary).** Wants real architecture, working code,
+failure modes, testability, and tradeoffs; already knows programming fundamentals. Served mainly
+by the engineering notebook (`notes/`, implementation-level `software/`). Example question:
+"How should I separate a strategy, data pipeline, and execution service in Go?"
 
 Validate these personas against actual reader and search data. Articles can serve both, but name
 one primary persona in the brief.
@@ -129,23 +138,44 @@ credentials, employment roles, or quotations. Attribute claims to actual evidenc
 Avoid forced links and overclaiming "PageRank flow." Hub structure should primarily help
 humans understand where to go next.
 
+## Tracking: content tracker vs. GitHub issues
+
+- **Content tracker (Google Sheet):** the triage view. One row per page with Search Console
+  baseline, verdict (Keep / Update / Merge / Noindex / Delete / Publish / Review), priority,
+  status, a link to the page's issue, and a Review tier (High = full review below).
+- **GitHub issues:** work units for multi-step or multi-agent tasks. Each content page has a
+  "Content cleanup" issue with the checklist: keyword research, edit content, import images.
+- Deleting a stale draft or a one-line metadata change does not need its own issue workflow;
+  mention the issue in the commit if one exists.
+- PRs that do part of an issue's checklist say `Refs #N`. The PR that completes the checklist
+  says `Closes #N`.
+
 ## Review and publishing workflow
 
 **Planning → documented brief → technical draft → independent factual/technical review →
 editorial/SEO review → assets/UX → Hugo/CI validation → human approval → publish → measurement.**
 
 For typo fixes or minor metadata adjustments, use a lightweight PR. For new flagship
-technical articles, use all stages. An AI writer must not self-certify technical correctness.
+technical articles and High-tier reviews, use all stages. An AI writer must not self-certify
+technical correctness.
+
+In a multi-agent review, roles stay separate:
+
+1. **Drafter** (any agent): keyword research from page-filtered Search Console queries, the
+   edit, image/diagram proposals. Opens the PR.
+2. **Independent reviewer** (a different model or a fresh agent without the drafter's context):
+   checks facts, code, claims, and fit against `POSITIONING.md` and this guide. Comments on the PR.
+3. **Rusty:** approves and merges. Nothing auto-merges.
 
 ## Current research backlog (not evergreen requirements)
 
 The October 2026 external review proposed these *candidates*; verify the current site,
 search intent, and measurements before opening implementation PRs:
 
-- Review metadata on financial numeric types, Raspberry Pi motor notes, MCP tools,
-  and soil-sensor pages.
-- Investigate the apparent typo in `/notes/motor-controlor-notes/` and a possible
-  redirect to `/notes/motor-controller-notes/` (verify paths and inbound links).
+- Review metadata on soil-sensor pages. (Numeric types, Raspberry Pi motor notes, MCP tools,
+  and release process were retitled in #195.)
+- `/notes/motor-controlor-notes/` keeps its misspelled URL: it is the site's top page, and
+  GitHub Pages cannot issue true 301 redirects (Hugo aliases are meta-refresh pages).
 - Audit HTTP/HTTPS canonicalization; reported duplicate schemes are a hypothesis to check.
 - Explore Trader articles about strategy interfaces, numerical correctness, order state
   machines, reproducible backtests, and coordination of AI coding agents.
