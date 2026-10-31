@@ -1,10 +1,9 @@
 ---
-title: Inexpensive Motor Controllers for Arduino and Raspberry Pi
+title: "Raspberry Pi and Arduino Motor Controllers for Robots"
 description: >
-  The first Robot I build, like many others used an Arduino Motor
-  Controller, our first robots used Arduino Motor Controllers.  We use
-  them as dedicated output devices used to control voltage sent to
-  motors, where as controls run on a Master Controller.
+  Choosing a motor controller for a Raspberry Pi or Arduino robot, and
+  why splitting real-time motor control from higher-level control works
+  better.
 categories:
   - electronics
   - motors
