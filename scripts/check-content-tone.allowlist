@@ -3,6 +3,8 @@
 ^scripts/check-content-tone\.allowlist:
 
 # Existing technical use of "robust" in published content.
-^content/notes/mbr-vs-gpt-partition-tables\.md:24:
-^content/notes/motor-controlor-notes\.md:40:
-^content/notes/control-design\.md:71:
+# Match on file + text, not line number, so front-matter edits above
+# the line don't silently break the allowlist (that broke master once).
+^content/notes/mbr-vs-gpt-partition-tables\.md:[0-9]+:.*more robust and easier to recover
+^content/notes/motor-controlor-notes\.md:[0-9]+:robust development environment
+^content/notes/control-design\.md:[0-9]+:.*more robust, simpler and faster
