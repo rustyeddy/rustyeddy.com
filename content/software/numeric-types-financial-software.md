@@ -1,10 +1,10 @@
 ---
-title: "Fixed-Point Numeric Types in Go Financial Software"
+title: "Money in Go: Fixed-Point Types for Financial Software"
 date: 2026-05-22
 description: >
-  Why floating-point numbers are wrong for prices and money, and how
-  fixed-point integer types in Go eliminate rounding errors in financial
-  calculations.
+  Why float64 is wrong for prices and money in Go, and how fixed-point
+  integer types keep trading and financial calculations exact. Patterns
+  from a real FX engine.
 tags: ["Go", "Financial Software", "Fixed-Point Arithmetic", "Numeric Types", "Trading Systems"]
 categories: ["Software Engineering", "Financial Software"]
 summary: "A practical guide to fixed-point arithmetic in Go for prices, money, pips, API boundaries, and trading-system correctness."
