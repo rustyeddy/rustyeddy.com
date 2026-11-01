@@ -24,9 +24,9 @@ compiled and run against that code.
 A numeric representation is a design decision, and money is where a vague
 one costs real dollars. When prices, balances, quantities, and rates all share
 `float64`, nothing in the type system says which is which, rounding happens
-wherever arithmetic happens, and two runs of the same backtest can disagree in
-the last digit. Those are not style problems. They are reconciliation bugs,
-and they show up in production rather than in review.
+wherever arithmetic happens, and results can vary in the last digit when the
+order of operations changes. Those are not style problems. They are
+reconciliation bugs, and they show up in production rather than in review.
 
 ## Why Floats Fail
 
@@ -46,7 +46,8 @@ fills, fees, spreads, margin, and P/L, it becomes balances that do not
 reconcile and results that change with the order of operations.
 
 IEEE 754 is the right tool for science and graphics, where small relative
-error is acceptable. Accounting and trading need exact decimal behavior.
+error is acceptable. Accounting and trading need explicit precision limits and
+rounding rules.
 
 ## Four Types, One Scale
 
@@ -67,8 +68,9 @@ One common scale was a deliberate choice. An earlier version of this article
 described a different scale per type (prices at five decimal places, money at
 six). That works for spot FX and breaks down as soon as the system needs
 equities, crypto, or fractional quantities. A common scale also means
-`Price × Quantity → Money` multiplies two values in the same representation,
-with no rescaling step to get wrong.
+`Price × Quantity → Money` uses the same fixed-point scale for both operands
+and the result. `Price.MulQuantity` still restores the 1e8 scale after
+multiplying and rounds half-even.
 
 ADR-004 is explicit that the scale is an *internal representation detail*.
 It is not a tick size, a display precision, or a wire format. Tick size and
@@ -202,10 +204,11 @@ allows that through exactly one exit,
 `Price.Float64()`. It is a direct numeric conversion, never a
 format-then-reparse round trip.
 
-There is no constructor from `float64` back to `Price`. When an analytical
-result needs to become authoritative again, such as a computed stop level, it
-goes through the normal path: round to the instrument's tick, then construct
-with checked parsing.
+There is no constructor from `float64` back to `Price` in `num`. If an
+analytical result needs to become authoritative again, such as a computed stop
+level, the caller must define how to quantize it to the instrument's tick and
+represent it as decimal text before checked parsing. That conversion policy
+belongs to the caller; `num` supplies no float-to-`Price` conversion.
 
 ## Enforced, Not Just Documented
 
