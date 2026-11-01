@@ -1,0 +1,31 @@
+digraph boundary {
+  rankdir=LR;
+  bgcolor="transparent";
+  node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#555555", fillcolor="#f4f4f4"];
+  edge [fontname="Helvetica", fontsize=10, color="#555555"];
+
+  subgraph cluster_in {
+    label="Boundary: text in"; fontname="Helvetica"; fontsize=11; color="#bbbbbb"; style="dashed";
+    json [label="JSON / broker API\n\"1.08457\""];
+    cfg  [label="Config / CLI flags"];
+  }
+
+  subgraph cluster_core {
+    label="Exact core (int64 × 1e8)"; fontname="Helvetica"; fontsize=11; color="#2b6cb0"; style="rounded";
+    types [label="Price · Quantity · Rate\nMoney + Currency", fillcolor="#e3eefb", color="#2b6cb0"];
+    ops   [label="Checked arithmetic\nexplicit rounding", fillcolor="#e3eefb", color="#2b6cb0"];
+    types -> ops [dir=both];
+  }
+
+  subgraph cluster_out {
+    label="Boundary: out"; fontname="Helvetica"; fontsize=11; color="#bbbbbb"; style="dashed";
+    text  [label="Canonical text / JSON\n\"1.08457\""];
+    ana   [label="Analytics (indicators)\nfloat64", fillcolor="#fdf1e3", color="#c05621"];
+  }
+
+  json -> types [label="Parse\n(reject, never round)"];
+  cfg  -> types;
+  ops  -> text  [label="String / MarshalJSON"];
+  ops  -> ana   [label="Price.Float64()\none-way"];
+  ana  -> types [label="quantize + Parse\n(checked)", style=dashed, color="#c05621", fontcolor="#c05621"];
+}
