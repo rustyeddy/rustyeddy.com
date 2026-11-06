@@ -12,7 +12,7 @@
   {{ $description = . | plainify | replaceRE "\\s+" " " | replaceRE "^\\s+|\\s+$" "" }}
   {{ end }}{{ end }}{{ end }}
   {{ with $description }}<meta name="description" content="{{ . }}" />{{ end }}
-  {{ if .Params.noindex }}<meta name="robots" content="noindex, follow" />{{ end }}
+  {{ if or .Params.noindex (in (slice "taxonomy" "term") .Kind) }}<meta name="robots" content="noindex, follow" />{{ end }}
   {{ $title := cond .IsHome site.Title (printf "%s | %s" .Title site.Title) }}
   {{ $image := .Params.image | default site.Params.image | default "/img/rusty.png" }}
   {{ $imageURL := cond (hasPrefix $image "http") $image (printf "%s/%s" $baseURL (strings.TrimPrefix "/" $image)) }}
