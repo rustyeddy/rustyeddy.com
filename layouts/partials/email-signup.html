@@ -1,0 +1,14 @@
+{{- /*
+  Email list signup (Buttondown). Renders nothing until
+  `params.buttondown` is set in config.yml to the Buttondown username.
+  Buttondown requires a plain HTML form POST (not fetch).
+*/ -}}
+{{ if site.Params.buttondown }}
+<div class="container py-3">
+  <div class="row">
+    <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+      {{ partial "email-signup-card.html" . }}
+    </div>
+  </div>
+</div>
+{{ end }}
