@@ -8,6 +8,7 @@ start: Dec 2023
 finish: Present
 company: Panasonic Avionics
 jobtitle: Member of Technical Staff
+noindex: true
 ---
 
 Member of Technical Staff working on connected systems at aviation scale. The

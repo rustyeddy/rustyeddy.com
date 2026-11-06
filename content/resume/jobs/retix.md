@@ -8,6 +8,7 @@ start: Jan 1994
 finish: Aug 1995
 company: Retix Systems
 jobtitle: Senior Software Engineer
+noindex: true
 ---
 
 Promoted to lead the team of 6 engineers that developed and

@@ -2,6 +2,7 @@
 title: Career Summary
 date: 2020-01-02
 description: Software engineer focused on networking, embedded systems, IoT, Go, and distributed systems.
+noindex: true
 ---
 
 I am a software engineer focused on networking, embedded systems, IoT, Go, and

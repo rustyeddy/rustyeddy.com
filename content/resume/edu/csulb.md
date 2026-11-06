@@ -7,5 +7,6 @@ weight: 200
 school: California State University, Long Beach
 graduate: January 1989
 degree: BS Computer Science
+noindex: true
 ---
 

@@ -24,6 +24,7 @@ tech:
   - Nodejs
   - Network Protocols
   - TCP/IP
+noindex: true
 ---
 
 Sahara Networks is building something truly unique, connecting

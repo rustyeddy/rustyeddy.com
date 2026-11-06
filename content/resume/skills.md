@@ -3,6 +3,7 @@ title: Skills and Interests
 date: 2020-01-02
 description: >
   Skills and interests across Go, C/C++, Python, networking, embedded systems, Linux, automation, cloud delivery, and full-stack software development.
+noindex: true
 ---
 
 - Go, C/C++, Python and JavaScript (and many others..)
