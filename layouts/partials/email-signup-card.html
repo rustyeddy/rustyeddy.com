@@ -1,0 +1,13 @@
+{{- /* Signup card only, for use inside an article column (see email-signup.html). */ -}}
+{{ with site.Params.buttondown }}
+<section class="card p-4 email-signup">
+  <h2 class="h5 mb-2">Get the next article by email</h2>
+  <p class="text-muted mb-3">Practical notes on delivering production software with AI: architecture, review, testing, and release. No hype, no spam, unsubscribe any time.</p>
+  <form action="https://buttondown.com/api/emails/embed-subscribe/{{ . }}" method="post" class="embeddable-buttondown-form form-inline">
+    <label for="bd-email" class="sr-only">Email address</label>
+    <input type="email" name="email" id="bd-email" class="form-control mr-sm-2 mb-2" placeholder="you@example.com" required />
+    <input type="hidden" value="1" name="embed" />
+    <button type="submit" class="btn btn-dark mb-2">Subscribe</button>
+  </form>
+</section>
+{{ end }}

@@ -11,8 +11,12 @@ frontmatter:
     - publishDate
 ignoreLogs: ['warning-goldmark-raw-html']
 params:
-  description: "Practical Software Engineering"
-  tagline: "practical software engineering"
+  description: "Delivering production software with AI"
+  tagline: "AI makes code cheap. Delivery is still hard."
   author: "Rusty Eddy"
   image: "/img/rusty.png"
+  # Buttondown username for the email signup form. Leave empty to hide
+  # the form; set it (e.g. "rustyeddy") to show it on the homepage and
+  # About page.
+  buttondown: ""
 

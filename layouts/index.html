@@ -7,6 +7,8 @@
   </div>
 </div>
 
+{{ partial "email-signup.html" . }}
+
 <div class="container py-4">
   <div class="row mb-3">
     <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
@@ -16,34 +18,34 @@
   <div class="row">
     <div class="col-md-4 mb-3 mb-md-0">
       <section class="card h-100 p-4">
-        <h3 class="h5 mb-2">Build IoT systems like software systems</h3>
-        <p class="text-muted">Start with architecture boundaries for devices, gateways, messaging, and edge runtimes.</p>
-        <a href="/iot/" class="font-weight-bold">Read the IoT and edge systems guide</a>
+        <h3 class="h5 mb-2">Deliver software with AI</h3>
+        <p class="text-muted">Agent instructions, verification, independent review, and release gates that keep AI-generated work shippable.</p>
+        <a href="/software/" class="font-weight-bold">Read the software delivery guide</a>
         <ul class="list-unstyled small mt-3 mb-0">
-          <li><a href="/iot/iot-system-architecture-device-to-cloud/">Trace the device-to-cloud architecture</a></li>
-          <li><a href="/iot/building-iot-device-manager-in-go/">Build a device abstraction layer in Go</a></li>
+          <li><a href="/software/writing-agent-instructions/">Write agent instructions for a new project</a></li>
+          <li><a href="/software/release-process/">Make releases routine</a></li>
         </ul>
       </section>
     </div>
     <div class="col-md-4 mb-3 mb-md-0">
       <section class="card h-100 p-4">
-        <h3 class="h5 mb-2">Make software projects predictable</h3>
-        <p class="text-muted">Use cases, task slicing, testing, review, and release habits keep work from drifting.</p>
-        <a href="/software/" class="font-weight-bold">Read the software development guide</a>
+        <h3 class="h5 mb-2">Architecture for the real world</h3>
+        <p class="text-muted">Boundaries, failure modes, and decisions written down, so the next engineer (or model) can follow them.</p>
+        <a href="/projects/" class="font-weight-bold">See the reference projects</a>
         <ul class="list-unstyled small mt-3 mb-0">
-          <li><a href="/software/use-cases/">Start with use cases</a></li>
-          <li><a href="/software/kanban/">Organize the work with Kanban</a></li>
+          <li><a href="/software/numeric-types-financial-software/">Keep money exact in Go</a></li>
+          <li><a href="/software/strategy-pattern-backtesting/">Separate strategy from execution</a></li>
         </ul>
       </section>
     </div>
     <div class="col-md-4">
       <section class="card h-100 p-4">
-        <h3 class="h5 mb-2">See the reference implementations</h3>
-        <p class="text-muted">Look at working systems where the architecture has to answer to code and hardware.</p>
-        <a href="/projects/" class="font-weight-bold">Browse the project index</a>
+        <h3 class="h5 mb-2">Build AI systems</h3>
+        <p class="text-muted">MCP servers and agent tools that give a model narrow, safe access to a real system.</p>
+        <a href="/notes/mcp-claude-tools/" class="font-weight-bold">Build an MCP server in Go</a>
         <ul class="list-unstyled small mt-3 mb-0">
-          <li><a href="/projects/otto/">Study the OttO edge runtime</a></li>
-          <li><a href="/projects/trader/">Review the Trader engine</a></li>
+          <li><a href="/projects/trader/">Trader: the engine behind the examples</a></li>
+          <li><a href="/projects/otto/">OttO: an IoT edge runtime in Go</a></li>
         </ul>
       </section>
     </div>
