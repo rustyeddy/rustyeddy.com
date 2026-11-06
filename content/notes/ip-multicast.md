@@ -7,6 +7,7 @@ description: >
 date: 2018-02-03
 categories: ["Networking"]
 tags: ["IP Multicast", "Networking", "Routing"]
+noindex: true
 ---
 
 {{< older-note >}}

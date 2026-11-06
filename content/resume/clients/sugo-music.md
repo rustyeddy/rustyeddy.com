@@ -24,6 +24,7 @@ tech:
   - React Dashboard
   - MySQL Database
   - Google Cloud Platform 
+noindex: true
 ---
 
 Sugo Music is an online Music publishing platform for Artists by

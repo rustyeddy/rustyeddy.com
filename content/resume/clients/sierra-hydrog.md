@@ -9,6 +9,7 @@ company: Sierra Hydrographics
 weight: 175
 jobtitle: Software Engineer
 consulting: true
+noindex: true
 ---
 
 Led the design and development of automated data collection for

@@ -8,6 +8,7 @@ start: Feb 2006
 finish: present
 jobtitle: Principal Engineer
 company: Eddy Consulting, LLC
+noindex: true
 ---
 
 For more than 20 years I have worked with many clients on a variety of

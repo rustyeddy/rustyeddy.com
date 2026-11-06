@@ -19,6 +19,7 @@ projects:
   - Multicast Delivery Network
   - Zero Touch Provisioning 
   - ONOS SDN Controller
+noindex: true
 ---
 
 I was hired by DirecTV (and subsequently AT&T) to help lead the new

@@ -8,6 +8,7 @@ start: May 1989
 finish: Jan 1994
 company: Rockwell Intl.
 division: Space Systems Division
+noindex: true
 ---
 
 Led a team of 5 Sysadmins responsible for the use and well being of

@@ -13,6 +13,7 @@ consulting: true
 tags:
   - Computer Network, Multicast
   - C/C++, Perl, Python and Java
+noindex: true
 ---
 
 Led a project to replicate entertainment media (music, video and

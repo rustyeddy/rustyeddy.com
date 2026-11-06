@@ -7,6 +7,7 @@ description: >
   Real Time Operating System, and other network related enhancements.
 company: Green Hills Software
 consulting: true
+noindex: true
 ---
 
 I worked on a small team that added multicast forwarding to the _Integrity_ RTOS

@@ -8,6 +8,7 @@ start: Aug 1995
 finish: Feb 2000
 company: USC / ISI
 jobtitle: Senior Systems Programmer
+noindex: true
 ---
 
 Led the effort to add IGMP/PIM and Multicast Routing Information

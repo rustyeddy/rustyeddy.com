@@ -8,6 +8,7 @@ start: Feb 2000
 finish: Feb 2006
 company: Cisco Systems
 jobtitle: Technical Lead
+noindex: true
 ---
 
 Original member of the Multicast Routing team.  Team of 12 responsible

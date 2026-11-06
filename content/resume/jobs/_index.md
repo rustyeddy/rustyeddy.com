@@ -5,4 +5,5 @@ description: >
   Software Programmer, Network Engineer and Site Manager.  Principal
   Engineer, Eddy Consulting, LLC. 
 weight: 300
+noindex: true
 ---

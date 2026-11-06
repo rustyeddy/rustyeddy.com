@@ -9,5 +9,6 @@ school: University of Southern California
 degreeAbrev: MSCS
 schoolAbrev: USC
 graduate: January 1996
+noindex: true
 ---
 

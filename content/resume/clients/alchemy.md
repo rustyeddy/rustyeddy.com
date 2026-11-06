@@ -18,6 +18,7 @@ tech:
   - Linux admin
 projects:
   - Zero Touch Private Cloud Provisioning 
+noindex: true
 ---
 
 Alchemy Networks is an independently owned service provider. I automated

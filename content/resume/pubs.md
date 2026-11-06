@@ -3,6 +3,7 @@ title: Publications
 description: >
   Published papers and conference talks on routing architecture, protocol implementation testing, multicast, and SDN networks.
 date: 2018-09-21
+noindex: true
 ---
 
 __Ramesh Govindan, et el.__ _"An Architecture for Stable, Analyzable

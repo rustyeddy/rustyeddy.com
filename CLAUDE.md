@@ -65,6 +65,12 @@ content/
 
 ### Drafts workflow
 
+To keep a published page out of search results, add `noindex: true`
+to its front matter. The page still renders and its links are still
+followed; it gets a `robots` noindex meta tag and is left out of
+`sitemap.xml`. Tag and category pages are always treated this way:
+they help navigation but are too thin to rank.
+
 Use `draft: true` in the front matter. **Do not** create a
 sub-folder named `drafts/` — we explicitly dissolved that pattern
 because it generated confusing URLs and accumulated abandoned work.

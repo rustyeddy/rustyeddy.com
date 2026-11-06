@@ -26,6 +26,7 @@ tech:
   - Over The Air (OTA) with Ansible and Cloud
   - Platforms: Raspberry Pi, esp32, Linux and FreeRTOS
   - Ansible for Cloud Automation
+noindex: true
 ---
 
 Radian is a small, fast moving startup that sells Laser Engravers and

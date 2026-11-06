@@ -8,6 +8,7 @@ start: Jan 1994
 finish: Aug 1995
 company: Cal State University
 jobtitle: Senior Software Engineer
+noindex: true
 ---
 
 I was hired to install and manage the departments first AT&T Unix

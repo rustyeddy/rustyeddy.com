@@ -10,5 +10,4 @@ twitter: http://twitter.com/rustyeddy
 name: Rusty Eddy
 websites: 
   - http://rustyeddy.com
-draft: true
 ---
