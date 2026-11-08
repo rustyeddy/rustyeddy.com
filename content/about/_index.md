@@ -2,32 +2,42 @@
 title: About Rusty Eddy
 date: 2019-05-14
 description: >
-  Practical engineering notes from Rusty Eddy on IoT, edge systems, Go, Linux, networking, and small-team software delivery.
+  Rusty Eddy is a systems engineer (Rockwell, USC/ISI, Cisco, Panasonic
+  Avionics) writing about delivering production software with AI:
+  architecture, verification, review, and release.
 ---
 
-I design, build, and deliver practical software systems. My background spans
-networking, aerospace, embedded systems, distributed systems, consulting, and
-connected products at scale.
+I'm a systems engineer. For most of my career I've worked on software that
+had to keep working: space systems, multicast routing protocols, core
+routers, and connected systems at aviation scale.
 
-This site is where I write down the engineering lessons that keep showing up
-in real projects: how small computers talk to each other, how software reaches
-into the physical world, and how teams can keep systems understandable after
-the first prototype works.
+Now I'm focused on a newer problem. AI tools make code cheap and fast to
+produce. They don't make it correct, maintainable, or safe to ship. The
+discipline that kept those earlier systems reliable (clear architecture,
+honest testing, independent review, careful releases) matters more when a
+team can generate ten times the code, not less.
 
-## What This Site Is For
+## Who This Site Is For
 
-RustyEddy.com is a working notebook for practical engineering:
+I write for the people accountable for delivering software at small
+companies: engineering managers, tech leads, technical founders, and CTOs.
+Your team is adopting AI tools faster than your process is adapting, and you
+need software that survives production, not just demos.
 
-- [IoT and edge architecture](/iot/) for systems that connect devices,
-  gateways, APIs, and dashboards.
-- [Software delivery notes](/software/) for use cases, Kanban, testing,
-  reviews, releases, and keeping projects steerable.
-- [Project writeups](/projects/) for reference implementations and older
-  systems with useful design lessons.
-- [Resume and work history](/resume/) for a more formal view of my background.
+What you'll find here:
 
-The common thread is pragmatic software architecture: Go, Linux, networking,
-embedded systems, automation, and small-team delivery.
+- [Software delivery with AI](/software/): agent instructions,
+  verification, review, and release practices that keep AI-assisted work
+  shippable.
+- [Reference projects](/projects/): working systems where the architecture
+  has to answer to real code. [Trader](/projects/trader/), an FX backtesting
+  and trading engine, is the main one, along with [OttO](/projects/otto/),
+  an IoT edge runtime.
+- [Engineering notes](/notes/): deeper, implementation-level write-ups for
+  engineers who want the details.
+- My [resume](/resume/), for a more formal view of my background.
+
+{{< email-signup >}}
 
 ## Background
 
@@ -50,36 +60,26 @@ started, so the project required close attention to architecture, protocol
 behavior, forwarding paths, and production reliability from the beginning.
 
 After Cisco I started Eddy Consulting, working with companies across networking,
-embedded systems, web systems, automation, and product development. That mix is
-why the site keeps returning to the same practical question: how do we build
-systems that are useful, understandable, and maintainable after they leave the
-bench?
-
-## IoT, Go, and the Physical World
-
-Networking taught me how machines talk to each other. Embedded systems taught
-me how software meets the physical world. IoT sits directly between those two
-interests.
-
-These days I build and teach practical IoT, Linux, and Go automation systems:
-small computers that observe, control, and coordinate with the real world. I
-treat IoT as a software engineering problem first: clear boundaries, stable
-APIs, reliable messaging, useful tests, and architecture that can evolve.
-
-Projects like OttO, a Go-based IoT edge gateway, and RedEye, an older video and
-robotics system, grew out of that approach. The articles and notes on this site
-are the written version of that same work.
+embedded systems, web systems, automation, and product development.
 
 ## Current Work
 
-I am currently a Member of the Technical Staff at Panasonic Avionics, working
-on connected systems at scale. A more formal work history is available on my
-[resume](/resume/).
+I'm a Member of the Technical Staff at Panasonic Avionics, working on
+connected systems at scale.
 
-I still program almost every day. I have held titles like Principal Engineer,
-Technical Lead, and Senior Systems Programmer, but I am most useful when I am
-turning unclear problems into working software, automation, and architecture
-that other people can reason about.
+On my own time I build [Trader](/projects/trader/) with AI coding agents, as a
+deliberate test of the practices I write about here: written architecture
+decisions, agent instructions, independent review, and CI gates that don't
+care who (or what) wrote the code.
+
+I still program almost every day. I've held titles like Principal Engineer,
+Technical Lead, and Senior Systems Programmer, but I'm most useful when I'm
+turning unclear problems into working software and architecture that other
+people can reason about.
+
+I occasionally take on a small amount of advisory work: architecture reviews
+and AI-assisted delivery process for small teams. If that's what you need,
+[email me](mailto:rusty@rustyeddy.com).
 
 ## About This Website
 

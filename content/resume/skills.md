@@ -2,14 +2,16 @@
 title: Skills and Interests
 date: 2020-01-02
 description: >
-  Skills and interests across Go, C/C++, Python, networking, embedded systems, Linux, automation, cloud delivery, and full-stack software development.
+  Skills across AI-assisted software delivery, systems architecture,
+  networking, Go, C/C++, Python, Linux, and CI/CD.
 noindex: true
 ---
 
-- Go, C/C++, Python and JavaScript (and many others..)
-- Computer Networks, Multicast Video Distribution
-- Distributed systems and realtime communications
-- DevOps, cloud automation and continuous delivery
-- Fullstack software development, reactive front-ends with VueJS
-- MicroServices: REST APIs, Websockets, etc.
-- Linux Systems and OpenSource Software
+- **AI-assisted delivery:** agent instructions, independent AI review,
+  CI gates, Claude Code, GitHub Copilot, MCP servers in Go
+- **Architecture:** distributed and real-time systems, architecture
+  decision records, domain modeling, exact numeric and financial systems
+- **Networking:** multicast routing (PIM), routing protocols, core routing
+  systems, TCP/IP
+- **Languages:** Go, C/C++, Python, JavaScript
+- **Platforms:** Linux, embedded and IoT systems, cloud automation, CI/CD
