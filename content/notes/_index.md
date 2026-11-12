@@ -27,7 +27,6 @@ These are useful historical references, but they should not be read as current
 recommendations without checking the surrounding context:
 
 - [MQTT for Controller Communication](/notes/mqtt-comm/) covers an older message-bus design for control software.
-- [Raspberry Pi Motor Control Software](/notes/rpi-motor-control-service/) documents older robot-control implementation notes.
 - [Streaming Video Tools](/notes/streaming-video-tools/) and [Streaming Video is Complicated](/notes/streaming-video/) collect older video-system tradeoffs.
 - [IP Multicast Basics](/notes/ip-multicast/) preserves networking background that connects to later multicast work.
 
