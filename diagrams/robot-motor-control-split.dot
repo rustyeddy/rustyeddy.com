@@ -1,0 +1,30 @@
+digraph motorsplit {
+  rankdir=LR;
+  bgcolor="transparent";
+  node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, color="#555555", fillcolor="#f4f4f4"];
+  edge [fontname="Helvetica", fontsize=10, color="#555555"];
+
+  subgraph cluster_macro {
+    label="Decisions (Raspberry Pi, Linux)"; fontname="Helvetica"; fontsize=11; color="#2b6cb0"; style="rounded";
+    ctrl [label="Control software\nnavigation, camera", fillcolor="#e3eefb", color="#2b6cb0"];
+    mqtt [label="MQTT broker\ncontrol channel", fillcolor="#e3eefb", color="#2b6cb0"];
+    ctrl -> mqtt [dir=both];
+  }
+
+  subgraph cluster_micro {
+    label="Real-time motor control (Arduino)"; fontname="Helvetica"; fontsize=11; color="#2f855a"; style="rounded";
+    mcu [label="Motor loop\nleft/right throttle", fillcolor="#e6f4ea", color="#2f855a"];
+    shield [label="Adafruit\nMotor Shield", fillcolor="#e6f4ea", color="#2f855a"];
+    mcu -> shield [label="I2C"];
+  }
+
+  motors [label="4 brushed DC motors\n(skid steering)"];
+  servos [label="2 servos\n(camera pan/tilt)"];
+  batt   [label="Motor battery pack\n(separate from the Pi)", fillcolor="#fdf1e3", color="#c05621"];
+
+  mqtt -> mcu [label="throttle commands\nI2C / SPI / MQTT"];
+  shield -> motors;
+  shield -> servos;
+  batt -> shield [color="#c05621"];
+  mcu -> mcu [label="link lost: stop", color="#c05621", fontcolor="#c05621"];
+}

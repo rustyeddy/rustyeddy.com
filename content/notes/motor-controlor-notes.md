@@ -2,8 +2,8 @@
 title: "Raspberry Pi and Arduino Motor Controllers for Robots"
 description: >
   Choosing a motor controller for a Raspberry Pi or Arduino robot, and
-  why splitting real-time motor control from higher-level control works
-  better.
+  why splitting real-time motor control from decision-making works
+  better. Notes from my 2018-2019 robot builds.
 categories:
   - electronics
   - motors
@@ -13,177 +13,164 @@ tags:
   - raspberry pi
   - adafruit
   - motorshield
+  - architecture
 github: http://github.com/mobilerobot-io/arduino
 date: 2018-08-22
+aliases:
+  - /notes/rpi-motor-control-service/
 ---
 
 {{< older-note >}}
 
-I prefer to use an Arduino with a Motor Controller over say a
-Raspberry Pi with a motor-controller.  I believe the Arduino has
-better support for dedicated Real-time software vs. the Raspberry Pi
-and as a superior platform for general computing including running
-Control Software.  This is how we do it on the West side ...
+These are notes from the small mobile robots I built in 2018 and 2019. The
+hardware is from that time: Adafruit Motor Shields, Arduinos, and a
+Raspberry Pi 3. I haven't re-evaluated it against today's boards, so read
+the parts list as *what I used*, not a current buying guide.
+
+The part that hasn't aged is the architecture. **Don't make one board do
+everything.** Let a microcontroller handle real-time motor control, let a
+Linux computer make decisions, connect them with a message channel, and
+decide up front what happens when that channel goes quiet.
 <!--more-->
 
-Whenever started to build a mobile robot and first started this
-project I set out to pick up motor controller and a platform to
-buildMy Tom's vehicle around. The two most on his choices at least to
-me were a Raspberry Pie or an Arduino.  As I found out selecting
-either platform I choose it would have been a bad idea, and here is
-why. 
+## Raspberry Pi or Arduino? Neither, On Its Own
 
+When I started building a mobile robot, the obvious first question was which
+board to build it around: a Raspberry Pi or an Arduino. I eventually
+realized that committing to either one alone would have been a mistake.
 
-I eventually realized that neither platform, the Raspberry Pie nor the
-Arduino had everything I really wanted.  The Arduino certainly lacks a
-robust development environment, which Is great for getting started
-programming embedded devices, but hardly sufficient for Somebody that
-makes a living programming.
+- **The Arduino** is good at dedicated, real-time work like driving motors.
+  Its development environment is great for getting started with embedded
+  programming, but limited for building larger control software.
+- **The Raspberry Pi** runs Linux, with an endless choice of languages,
+  tools, and libraries. But Linux is not a real-time operating system, so
+  the Pi is a poor fit for tight, timing-sensitive motor control.
 
-## Neither One Will Cut It
+Combining them gets the advantages of both.
 
-The Raspberry Pi hardware and Linux OS are not well suited for an
-"embedded real time" system.  But does offer an endless choice of
-development environments.
+## The Split
 
-### Leave our Options Open
+![A Raspberry Pi running control software and an MQTT broker sends throttle commands to an Arduino, which drives an Adafruit Motor Shield powering four DC motors and two servos from a separate battery, and stops the motors if the link is lost](/diagrams/robot-motor-control-split.svg)
 
-It became clear, that neither platgorm would be ideal for my general
-development plans.  Neither of them were ideal to solely commit to.
+My preferred setup was a Raspberry Pi as the controller, connected over I2C
+or SPI to an Arduino with a motor shield:
 
-However, if I could combine them, I could get quite a bit further, by
-having access to the advantages that both worlds?Add
+- **The Pi makes decisions.** It runs the control software, the camera, and
+  an MQTT broker, and turns goals into left and right throttle commands.
+- **The Arduino executes them.** It owns the motor loop and the motor shield,
+  and does nothing else.
+- **A message channel connects them.** Commands are small and simple: a
+  throttle and direction for each side of the vehicle.
 
-Before I get into any detail on these "hobby" controllers is
+On larger setups the "decisions" side doesn't have to be a Pi at all. It can
+be a laptop or a Jetson Nano, and the microcontroller can be an ESP8266,
+ESP32, or STM32. The split stays the same.
 
+### Design for losing the channel
 
+The rule I wrote down for the motor control channel still matters most: the
+vehicle may take commands from the channel while it's available, but **it
+must always be able to regain control, or shut down completely, if the
+control channel is lost.**
 
-What are the first things to consider when developing a mobile robot
-Is how you're going to make it move, and that is typically using
-motors.  The cool thing is that inexpensive electrical motors are
-plentiful, however putting them to good use is a bit complex, Here we
-will conquer some of that complexity. 
+Splitting the system makes that rule easy to enforce. The microcontroller
+can treat silence as a command to stop, no matter what the software on the
+Pi is doing. When one board does everything, a hung process can leave the
+motors running at whatever speed they were last given.
 
-We will consider the following 3 things:
+## Motors
 
-1. What _type_ of motor(s) do we need?
-2. How are we going to _power_ them?
-3. How are we going to _control_ them?
+I was strictly working with cheap DC motors, the kind that cost less than
+$10 and often less than $1, or come out of scrapped electronics. Three types
+come up right away: brushed DC motors, hobby servos, and stepper motors.
 
-## TLDR - Summary
+**Brushed DC motors move the wheels.** They're simple to control with two
+wires: vary the power to change speed, and reverse the current to change
+direction. They're also cheap and everywhere. The ones on my single-Pi robot accepted
+6 to 12 volts.
 
-I have settled on the Adafruit MotorShields for Arduino and Raspberry
-Pi as general purpose options.  At the moment, my ideal setup involves
-a RPi as the controller with an I2C or SPI connection to an Arduino
-with a MotorController.
+**Servos aim the camera.** Two inexpensive servos handled the camera's pan
+and tilt.
 
-But not for every circumstance.  It always depends on the application,
-having said that, let me explain what I have found (very little) so
-far with inexpensive electric motors...
+For my primary vehicle that meant **four DC motors and two servos.**
 
-## Project Requirements
+## Steering: Skid Steering
 
-First let me frame this discussion, I am strictly talking about cheap
-DC motors (not AC that plug into the wall like a washing machine) that
-can be had for less than $10USD, often less than $1 or found in scrap
-electronics.
+Moving the vehicle is one thing; steering it is another. All of my vehicles
+used **skid steering**: a 4WD with four motors directly driving the wheels,
+two 2-wheel vehicles, and a tracked vehicle. To turn, you drive the left and
+right sides at different speeds, and one side skids.
 
-The first three motor types I discovered are the ubiquitous: DC
-_brushed motor_, _toy servos_ and _stepper motors_.  Incase you are
-uninformed like I was in early 2018.. 
+Drive the two sides in opposite directions at equal power and the vehicle
+spins in place, which is very useful in tight spaces like corridors and
+warehouses. See [Skid Steering](/notes/skid-steering/) for more.
 
-### Select Motors and Motor Controller
+## Power the Motors Separately
 
-The purpose of this project is to select the motors and the
-corresponding _motor controller_ we need to control our vehicle.  The
-motorshield will come as an attachment to a micro controller of some
-sort, which happens to be either an Arduino or Raspberry Pi, in my
-case.  
+The Raspberry Pi can't supply nearly enough power for the motors, especially
+under heavy load, so the motor controller needs its own battery pack. If you
+want to chase your tail on weird problems, work with underpowered
+electronics for a while.
 
-### Brushed Motors Move Wheels
+## Motor Controllers I Used
 
-In a nutshell, the brushed motors we'll use to turn the wheels of the
-vehicle, they have the advantages of being easily controlled (speed
-up, slow down, stop) with just two wires (+ and -), the direction
-of the motor can be changed simply by reversing the current to the
-motor. 
+I settled on Adafruit's motor shields as general-purpose options: the
+Adafruit Motor Shield for Arduino, and its sister DC and stepper motor
+controller for the Raspberry Pi. Together they covered four DC motors and
+two servos.
 
-They are also really cheap and can be found every where, including
-scrap electronic toys and utilties.
+- **Adafruit Motor Shield v1 and v2.** Version 2 talks to the
+  microcontroller over I2C.
+- **OSEPP motor shields** largely duplicate the Adafruit shields'
+  functionality. The hardware is sturdy, but the documentation is hard to
+  find and has to be pieced together from their kit documentation. For real
+  prototyping I found Adafruit's support more thorough.
 
-### Servos to Pan and Tilt Camera
+## When One Board Does Both: The Single-Pi Robot
 
-We will include two inexpensive _servos_ onto the vehicle to handle
-the _pan and tilt_ camera functions.
+One robot broke my own rule on purpose. It was a simple autonomous vehicle
+built on a single Raspberry Pi 3 with Adafruit's Raspberry Pi DC and stepper
+motor controller, two brushed DC motors, a separate battery pack for the
+motors, and a cheap two-wheeled body. On that robot the Pi was both the
+decision-maker and the motor controller.
 
-## Drive Train
+I wrote a skid-steering library called Skidder and added it to my
+[Raspberry Pi Device Server (RPID)](https://github.com/mobilerobot-io/rpid),
+which let me drive the motors three ways:
 
-Moving the vehicle is one thing, steering it is a whole nother
-thang. Fortunantely for us, we are going to adopt the fine art of
-**skid steering**, the age old method of how the caveman commutted
-back in the day.
+- **MQTT:** the server subscribes to `/control/skid` and expects two numbers
+  between -1 and +1, the left and right throttles. The magnitude is the
+  share of power the motor gets, and the sign is its direction.
+- **REST:** `GET /skid/` reads the current throttles, and `PUT /skid/l/r`
+  sets them.
+- **A keyboard controller,** for driving it over SSH.
 
-### Skid Steering
+### Keeping the message layer anyway
 
-My primary vehicle is a 4wd, that is 4 DC motors directy spinning two
-rubber tires.  I also have available two, two wheeled vehicles and a
-_train tracked_ vehicle.
+With minimal sensors, slow motors, and maybe a camera, a single multi-core
+Pi had more than enough capacity, so I could have removed the messaging
+layer and called the motor code directly. I kept it. Every other robot used
+the same message-based architecture, and one architecture with one set of
+tools and configurations was worth more than the overhead I'd save.
 
-In all cases each of these vehicle employ _skid steering_ on account a
-one wheel (wheels or tread) will be skidding along when your turnin. 
+I expected the overhead to be trivial compared to the resources available,
+but expectation isn't measurement. That's the general lesson: consistency
+and maintainability are worth a small cost in production systems, and the
+only way to know whether the cost really is small is to measure it.
 
+## Parts List (Single-Pi Robot)
 
-Of course, you can get real fancy and spin the thing on axis by
-employing equal forces of forward and reverse on opposing sides of the
-vehicle.  Which does have significant advantages in tight areas such
-as those found in long corridors, warehouses and such.
+- Raspberry Pi 3
+- Adafruit Raspberry Pi DC and stepper motor controller
+- Separate battery pack for the motors
+- 2 brushed DC motors
+- Two-wheeled chassis
+- Application-specific sensors
 
-## Required Motors and Controller
+## Where This Fits
 
-We need to power the following motors (at minimum):
-
-- 4 DC Motors
-- 2 Servos
-
-Cut to the chase, the Adafruit Arduino motor controller, and the
-sister Adafruit stepper motor controller for the Raspberry Pi are
-two such controllers that suite our purposes perfectly well.
-
-### Which MicroController (MicroComputer)?
-
-Choosing between a Raspberry Pi plus MotorController and an
-Arduino plus Motor Controller depends on the control-loop timing and
-system integration requirements.
-
-### Alternative Shields
-
-### Adafruit Shield v1 & v2
-
-Adafruit essentially has two versions of their MotorShield v1 and now
-v2. ...
-
-#### Version 2 I2C
-
-Version 2 of the AFMS runs over the I2C bus.
-
-### OSEPP Shields v1 & v2
-
-The OSEPP MotorShields effectively duplicate the functionality of the
-Adafruite MotorShields.
-
-The documentation is hard to find and must be pieced together through
-the documentation of their hardware kits.  I do find the hardware to
-be of a sturdy make.  The use connectors to help in learning, the
-Adafruit are more through for real prototyping.
-
-
-## Motor Software
-
-Adafruit software for Arduino MC and Raspberry Pi MC.
-
-### MQTT and Motor Control Channel
-
-Connect the motor controller to the MQTT control channel.  NOTE: on
-vehicle may use the motor control channel when availble, however, must
-always be able to regain control (or shutdown completely) if the
-control channel has been lost. 
+- [Skid Steering](/notes/skid-steering/) covers the drive model in more
+  detail.
+- [Control System Design](/notes/control-design/) covers the control
+  software side.
+- [OttO](/projects/otto/) is my current IoT edge runtime in Go.
