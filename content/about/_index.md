@@ -2,14 +2,16 @@
 title: About Rusty Eddy
 date: 2019-05-14
 description: >
-  Rusty Eddy is a systems engineer (Rockwell, USC/ISI, Cisco, Panasonic
-  Avionics) writing about delivering production software with AI:
-  architecture, verification, review, and release.
+  Rusty Eddy is a systems engineer and software developer (Rockwell, 
+  USC/ISI, Cisco, Panasonic Avionics) writing about delivering 
+  production software with AI: architecture, verification, review, 
+  and release.
 ---
 
-I'm a systems engineer. For most of my career I've worked on software that
-had to keep working: space systems, multicast routing protocols, core
-routers, and connected systems at aviation scale.
+I'm a systems engineer and software developer. For most of my career
+I've worked on software that had to keep working: space systems,
+multicast routing protocols, core routers, and connected systems at
+aviation scale.
 
 Now I'm focused on a newer problem. AI tools make code cheap and fast to
 produce. They don't make it correct, maintainable, or safe to ship. The
@@ -54,18 +56,22 @@ I later joined Retix Systems, where I led a routing-protocol QA lab, then moved
 to USC's Information Sciences Institute. At ISI I worked on multicast routing
 research and helped develop an early implementation of PIM multicast routing.
 
-That work led to five years as a Technical Lead at Cisco Systems on the Core
-Routing System. The hardware was still being designed when the software work
-started, so the project required close attention to architecture, protocol
-behavior, forwarding paths, and production reliability from the beginning.
+That work led to five years as a Technical Lead at Cisco Systems on
+the Core Routing System that formed the backbone of the Nasdaq,
+DirecTV video delivery and major phone and internet cariers. The
+hardware was still being designed when the software work started, so
+the project required close attention to architecture, protocol
+behavior, forwarding paths, and production reliability from the
+beginning.
 
-After Cisco I started Eddy Consulting, working with companies across networking,
-embedded systems, web systems, automation, and product development.
+After Cisco I started Eddy Consulting, working with companies across
+networking, embedded systems, web systems, automation, and product
+development.
 
 ## Current Work
 
 I'm a Member of the Technical Staff at Panasonic Avionics, working on
-connected systems at scale.
+device verification software for preflight equipment installation.
 
 On my own time I build [Trader](/projects/trader/) with AI coding agents, as a
 deliberate test of the practices I write about here: written architecture
@@ -87,3 +93,8 @@ This site is written in [Markdown](https://daringfireball.net/projects/markdown/
 and built into static HTML with [Hugo](https://gohugo.io/). It is hosted on
 [GitHub Pages](https://pages.github.com/), and the source is available in
 [this GitHub repo](https://github.com/rustyeddy/rustyeddy.com).
+
+### AI and This content
+
+I use AI to help me edit my content, but I do the authoring and final
+edits myself using my trusty old [emacs](https://emacs.org) editor.

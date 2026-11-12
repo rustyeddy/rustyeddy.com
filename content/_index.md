@@ -12,10 +12,11 @@ quarter. What hasn't changed is everything that decides whether that code
 survives production: architecture, boundaries, tests, review, and release
 discipline.
 
-I'm Rusty Eddy. I've spent my career shipping software that had to keep
-working: space systems at Rockwell, PIM multicast routing at USC/ISI, Cisco's
-Core Routing System, and now connected systems at Panasonic Avionics. Here I
-write about applying that discipline to teams that build with LLMs and agents.
+I'm Rusty Eddy. I've spent my career shipping software that had to
+keep working: space systems at Rockwell, PIM multicast routing at
+USC/ISI, Cisco's Core Routing System, and now device verification
+systems at *Panasonic Avionics*. Here I write about applying that
+discipline to teams that build with LLMs and agents.
 
 This site is for engineering managers, tech leads, technical founders, and
 small-company CTOs: the people who own the outcome.

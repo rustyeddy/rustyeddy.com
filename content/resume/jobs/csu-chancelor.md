@@ -7,7 +7,7 @@ weight: 600
 start: Jan 1994
 finish: Aug 1995
 company: Cal State University
-jobtitle: Senior Software Engineer
+jobtitle: Software Developer
 noindex: true
 ---
 
