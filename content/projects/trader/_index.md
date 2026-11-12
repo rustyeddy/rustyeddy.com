@@ -120,24 +120,27 @@ strategy is a documented starting point.
 
 ## MCP Integration
 
-`trader mcp` starts an MCP server over stdio, exposing Trader as typed tools
-for Claude Code and Claude Desktop:
+`trader-mcp` is an MCP server over stdio, built on the official Go SDK, that
+exposes Trader's research capabilities as typed tools for Claude Code and
+Claude Desktop:
 
 | Tool | Description |
 |---|---|
-| `get_account_summary` | Balance, NAV, margin, unrealized P/L |
-| `list_open_trades` | All open OANDA positions |
-| `run_backtest` | Run a YAML config, return summary |
-| `place_order` | Risk-sized market order (write-gated) |
-| `close_trade` | Full or partial close by trade ID (write-gated) |
-| `update_stop` | Move stop-loss or take-profit (write-gated) |
+| `trader_version` | Build identity of the running server |
+| `trader_instruments` | Resolve symbols to instruments for a data provider |
+| `trader_marketdata_coverage` | Canonical data coverage, partitions, and gaps |
+| `trader_run_backtest` | Run a backtest and return its run ID and summary |
+| `trader_backtest_result` | Full stored report for a run ID |
+| `trader_marketdata_update` | Download and build market data (write-gated) |
+| `trader_marketdata_canonicalize` | Build canonical data from raw data (write-gated) |
 
-Read tools are always available. Write tools require `--enable-write` at
-startup. This means you can query your account, review open trades, and run
-backtests from an AI assistant without ever accidentally placing an order.
+Read tools are always available. Tools that change data refuse unless the
+server is started with `--allow-writes`, so an AI assistant can explore data
+and run backtests without changing anything by accident. The server does not
+place orders.
 
-See [Exposing a Go App as Claude MCP Tools](/notes/mcp-claude-tools/) for
-the implementation approach.
+See [Build an MCP Server in Go](/notes/mcp-claude-tools/) for how it is built
+and the patterns behind it.
 
 ## Data Sources
 

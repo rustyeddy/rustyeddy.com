@@ -16,7 +16,7 @@ want the polished architecture and delivery paths.
 
 These are the strongest current notes:
 
-- [Exposing a Go App as Claude MCP Tools](/notes/mcp-claude-tools/) covers a typed tool boundary around a Go application.
+- [Build an MCP Server in Go](/notes/mcp-claude-tools/) builds a typed, write-gated MCP server with the official Go SDK and connects it to Claude Code.
 - [Soil Moisture Sensors for IoT Garden Projects](/notes/soil-moisture-sensor/) covers sensor reliability, calibration, and integration concerns.
 - [Adafruit Soil Moisture Sensor Notes](/notes/soil-moisture-adafruit/) follows up with a more specific I2C sensor option.
 - [Using Go timers for MQTT testing](/notes/go-timers-testing-mqtt/) captures a focused Go/MQTT testing pattern.
