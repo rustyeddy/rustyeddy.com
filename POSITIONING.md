@@ -5,7 +5,7 @@ is trying to do. Every human or AI contributor (Claude, GPT, Gemini,
 Codex) should read this before writing, editing, retitling, or pruning
 content. `CLAUDE.md`, `AGENTS.md`, and `EDITORIAL.md` defer to it.
 
-Last revised: 2026-10-29
+Last revised: 2026-11-20
 
 ## Thesis
 
@@ -80,6 +80,20 @@ reference implementations that support the pillars.
 **Engineering notebook:** `/notes/` and implementation-level
 `/software/` articles (e.g. Go iterators in Trader, fixed-point money
 types). Keep them; link them up to a pillar or project page.
+
+**Reference how-tos:** thorough implementation guides a lead can hand
+to their team as the standard for how something is done (e.g. agent
+instruction files, release gates). They serve the primary audience
+indirectly: the lead decides what to require and points developers at
+the page for the how. Keep them at full practitioner depth, ground
+every claim in a real repo or run, and link them up to a pillar.
+
+- Don't reframe a reference how-to for managers. Add a short "For
+  leads" summary at the top instead: what to require, and why.
+- Write a separate lead-level page only when there is substantially
+  different material (rollout, ownership, cost, policy), not a
+  shortened copy of the how-to. Two pages for one search intent
+  compete with each other.
 
 ## Content tests
 
