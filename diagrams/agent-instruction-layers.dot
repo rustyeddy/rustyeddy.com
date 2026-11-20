@@ -1,0 +1,22 @@
+// Original diagram for rustyeddy.com, issue #185.
+digraph layers {
+  rankdir=TB;
+  // Cap intrinsic width at 288 CSS pixels for narrow article columns.
+  size="3,5";
+  bgcolor="transparent";
+  pad=0.15;
+  nodesep=0.25;
+  ranksep=0.35;
+  node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=16,
+        color="#555555", fillcolor="#f4f4f4", margin="0.18,0.12"];
+  edge [fontname="Helvetica", fontsize=12, color="#555555"];
+
+  positioning [label="POSITIONING.md\nwhether the work belongs", fillcolor="#e3eefb", color="#2b6cb0"];
+  agents [label="AGENTS.md\nshared rules for every agent", fillcolor="#e3eefb", color="#2b6cb0"];
+  adapters [label="CLAUDE.md, Copilot file\ntool-specific adapters"];
+  task [label="Issue or task\ngoal, scope, acceptance"];
+
+  positioning -> agents [label="overrides"];
+  agents -> adapters [label="imported or\nreferenced"];
+  adapters -> task [label="applied to"];
+}
