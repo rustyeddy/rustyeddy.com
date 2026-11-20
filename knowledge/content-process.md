@@ -7,15 +7,15 @@
 
 ## Where everything lives
 
-| What | Where | Owns |
-|---|---|---|
-| Audience, thesis, pillars, content tests | `POSITIONING.md` | *Whether* a page belongs |
-| Research method, briefs, SEO checklists | `knowledge/seo-guide.md` | *How* to research and review |
-| Voice and quality checklist | `EDITORIAL.md`, `STYLEGUIDE.md` | *How it reads* |
-| Repo mechanics (build, drafts, `noindex`, front matter) | `CLAUDE.md`, `AGENTS.md` | *How it ships* |
-| **Content tracker** (Google Sheet) | [rustyeddy.com Content Tracker](https://docs.google.com/spreadsheets/d/1rIq_gzmZfugromdaUXW0gczdhPnEdIWhwGqPRhaJ3is/edit) | Per-page state: data, verdict, priority, status |
-| Work units | GitHub issues, one "Content cleanup" issue per page | Multi-step or multi-agent tasks |
-| Ground truth for search | Google Search Console, property `sc-domain:rustyeddy.com` | Impressions, clicks, position, queries |
+| What                                                    | Where                                                                                                                     | Owns                                            |
+|---------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|
+| Audience, thesis, pillars, content tests                | `POSITIONING.md`                                                                                                          | *Whether* a page belongs                        |
+| Research method, briefs, SEO checklists                 | `knowledge/seo-guide.md`                                                                                                  | *How* to research and review                    |
+| Voice and quality checklist                             | `EDITORIAL.md`, `STYLEGUIDE.md`                                                                                           | *How it reads*                                  |
+| Repo mechanics (build, drafts, `noindex`, front matter) | `CLAUDE.md`, `AGENTS.md`                                                                                                  | *How it ships*                                  |
+| **Content tracker** (Google Sheet)                      | [rustyeddy.com Content Tracker](https://docs.google.com/spreadsheets/d/1rIq_gzmZfugromdaUXW0gczdhPnEdIWhwGqPRhaJ3is/edit) | Per-page state: data, verdict, priority, status |
+| Work units                                              | GitHub issues, one "Content cleanup" issue per page                                                                       | Multi-step or multi-agent tasks                 |
+| Ground truth for search                                 | Google Search Console, property `sc-domain:rustyeddy.com`                                                                 | Impressions, clicks, position, queries          |
 
 The tracker is the single source of truth for page state. Do not keep a
 second per-page backlog in a Markdown file; it will drift.
@@ -27,20 +27,20 @@ second per-page backlog in a Markdown file; it will drift.
 One row per file under `content/` (89 rows at the October 2026 baseline).
 The header row is frozen, so the rows can be sorted freely.
 
-| Column | Meaning |
-|---|---|
-| File path | Path in the repo, e.g. `content/software/kanban.md` |
-| URL | Live URL |
-| Title | Title at baseline (not updated after rewrites; see Notes) |
-| Draft | `yes` if `draft: true` at baseline |
-| Impressions (3 mo), Clicks, Avg position | Search Console baseline, 3 months ending 2026-10-11. **Never overwrite**: this is the "before" for measurement |
-| Verdict | See below |
-| Merge into | Surviving page, for `Merge` rows only |
-| Priority | P1 / P2 / P3, see below |
-| Status | `To do`, `In progress`, `In PR`, `Done - recheck` (yellow row), `Done` (grey row). Dropdown plus conditional formatting |
-| Notes | Why the verdict, then a running log: PR number, merge date, the commit code was verified against, re-check reasons |
-| Issue | The page's GitHub "Content cleanup" issue |
-| Review | `High` means a full review (below). Blank means lightweight |
+| Column                                   | Meaning                                                                                                                 |
+|------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
+| File path                                | Path in the repo, e.g. `content/software/kanban.md`                                                                     |
+| URL                                      | Live URL                                                                                                                |
+| Title                                    | Title at baseline (not updated after rewrites; see Notes)                                                               |
+| Draft                                    | `yes` if `draft: true` at baseline                                                                                      |
+| Impressions (3 mo), Clicks, Avg position | Search Console baseline, 3 months ending 2026-10-11. **Never overwrite**: this is the "before" for measurement          |
+| Verdict                                  | See below                                                                                                               |
+| Merge into                               | Surviving page, for `Merge` rows only                                                                                   |
+| Priority                                 | P1 / P2 / P3, see below                                                                                                 |
+| Status                                   | `To do`, `In progress`, `In PR`, `Done - recheck` (yellow row), `Done` (grey row). Dropdown plus conditional formatting |
+| Notes                                    | Why the verdict, then a running log: PR number, merge date, the commit code was verified against, re-check reasons      |
+| Issue                                    | The page's GitHub "Content cleanup" issue                                                                               |
+| Review                                   | `High` means a full review (below). Blank means lightweight                                                             |
 
 **Verdicts**
 
