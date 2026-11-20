@@ -1,3 +1,5 @@
+@AGENTS.md
+
 # CLAUDE.md
 
 Working notes for Claude (and humans) on rustyeddy.com.
