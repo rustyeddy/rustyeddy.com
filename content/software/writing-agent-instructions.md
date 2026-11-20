@@ -6,6 +6,8 @@ description: >
   across Claude, GitHub Copilot, and ChatGPT without duplicating project policy.
 tags: ["AI Agents", "Claude", "GitHub Copilot", "ChatGPT", "Software Engineering"]
 categories: ["Software Engineering"]
+image: "/img/agents.jpeg"
+image_alt: "Three robots reviewing project plans beneath the title Writing Agent Instructions for a New Software Project."
 ---
 
 ## Working Thesis
