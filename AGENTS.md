@@ -18,3 +18,6 @@ Instructions for any AI coding or writing agent working in this repo
    (e.g. `title: "Money in Go: Fixed-Point Types"`). An unquoted
    colon is invalid YAML and breaks the Hugo build, even in a draft.
    `scripts/check-metadata` (run by `make check-site`) catches this.
+7. Content overhaul work (triage, rewrites, merges, noindex, measurement)
+   follows `knowledge/content-process.md`. Page state lives in the
+   content tracker sheet linked there, not in Markdown backlogs.
