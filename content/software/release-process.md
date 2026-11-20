@@ -9,18 +9,21 @@ description: >
 tags: ["Release Process", "CI/CD", "Software Engineering", "AI Agents", "ADR"]
 categories: ["Software Engineering"]
 summary: "A practical release process for small teams, a real versioning decision that changed and why, and how release gates have to change when AI agents write much of the code."
+image: "/img/release-process.jpeg"
 ---
 
-A release is the moment development work becomes user value. Everything
-before it, including [use cases](/software/use-cases/),
-[tests](/software/test-driven-software-development/), and
+A software release is the moment development work becomes user
+value. Everything before it, including 
+[use cases](/software/use-cases/),
+[tests](/software/test-driven-software-development/), and 
 [peer review](/software/peer-review/), is preparation. The release process
-decides whether that preparation becomes a calm handoff or a production
-incident.
+decides whether that preparation becomes a calm handoff or a
+production nightmare.
 
 The goal is to make releases routine: a repeatable sequence of gates,
-artifacts, deployment, verification, and rollback. If a release depends on
-memory and luck, it is not yet a process.
+artifacts, deployment, verification, and rollback. If a release
+depends on memory and luck, guess what will happen... it for sure is
+not yet a process.
 
 This article covers the essentials, then two things most checklists leave
 out: how a real project changed its mind about versioning, and what has to
@@ -51,11 +54,13 @@ than a checklist in someone's head.
 
 ### Versioning
 
-Every release needs a version. Semantic versioning (`MAJOR.MINOR.PATCH`)
-is the common convention: a patch is a backward-compatible fix, a minor
-release adds backward-compatible features, and a major release breaks
-something. The exact convention matters less than consistency, but semver
-is useful because it communicates intent.
+Every release needs a version. Semantic versioning
+(`MAJOR.MINOR.PATCH`) is the common convention: a patch is a
+backward-compatible fix, a minor release adds backward-compatible
+features, like adding a new function but leaving old functions
+unaltered, and a major release breaks something. The exact convention
+matters less than consistency, but Semantic Versioning (semver) is
+useful because it communicates intent.
 
 Git tags anchor versions to exact commits:
 
@@ -73,7 +78,7 @@ static site, firmware image, or app bundle. It should be:
 
 - built by the pipeline, never by hand on a developer's machine;
 - identified by version and commit;
-- stored somewhere durable;
+- stored somewhere durable, that can be retrieved over time;
 - **built once and promoted** between environments, with
   environment-specific values in configuration.
 
@@ -104,7 +109,7 @@ Here is a real example of how even a "simple" release decision can turn
 out to be wrong, and why writing the decision down made fixing it cheap.
 
 [Trader](/projects/trader/), my FX backtesting engine, records its
-architecture decisions as numbered ADRs.
+architecture decisions as numbered Architectural Design Records (ADR).
 
 **The first decision (ADR-046):** the version would live in a single Go
 constant, bumped by hand in its own commit right before each release tag.
@@ -232,8 +237,9 @@ to confuse. The pipeline builds the thing that ships.
 **Approving a moving target.** Re-review after new commits, especially
 when an agent is pushing fixes.
 
-**Gates that differ between laptop and CI.** If the local check and the CI
-check aren't the same command, they will drift.
+**Gates that differ between laptop and CI.** If the local check and
+the CI check aren't the same command, like a bad marriage they will
+grow apart as time wears on.
 
 **Untested rollbacks.** A rollback plan that has never been exercised is
 only a theory.
