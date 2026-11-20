@@ -1,5 +1,5 @@
 ---
-title: "Software Delivery for Small Teams"
+title: "Software Delivery for Small Teams: Using AI with Guardrails"
 description: "Practical software delivery for small teams using AI: define the work, keep changes reviewable, test behavior, and release with a clear recovery plan."
 tags: [sdlc, software development]
 date: 2026-05-22
@@ -7,10 +7,10 @@ lastmod: 2026-11-20
 show_articles: false
 ---
 
-Writing code is one part of delivering software. Someone still has to decide
-what users need, protect the system's boundaries, verify behavior, and own
-what happens after release. AI can help with the work; the team still owns
-the outcome.
+Writing code is one part of delivering software. Someone still has to
+decide what users need, protect the system's boundaries, verify
+behavior, and deal with what happens after release. AI can help
+with the work; but the team still owns the outcome.
 
 This section is for engineering managers, tech leads, and technical founders
 who need a software delivery process their small team can actually use.
@@ -28,6 +28,28 @@ review feed corrections back into implementation; production behavior and
 user feedback inform the next piece of work.
 
 ![Delivery loop: define a user goal and acceptance criteria, implement and test a small change, review it independently, then release and observe. Review can return the change for correction; production and user feedback inform the next goal.](/diagrams/software-delivery-loop.svg)
+
+## Where AI helps, and where it needs gates
+
+AI can speed up several stages of the loop. It can draft acceptance
+criteria from a user goal, implement a bounded task, and write tests for
+behavior you have already described. Each of those outputs still needs a
+person to check it against what the team actually intends.
+
+Give an agent a bounded task, acceptance criteria, and a way to run the
+project's checks. Have someone other than the author review the resulting
+change. Keep a person accountable for the merge and release decision.
+
+The [release gates for AI-written code](/software/release-process/#release-gates-when-ai-writes-the-code)
+show how this works: run the same checks locally and in CI, review the exact
+commit being merged, and keep changes small enough to inspect. A passing
+suite is evidence about tested behavior; it doesn't decide whether you built
+the right thing. For a worked example of giving an AI tool a defined,
+testable interface, see
+[Build an MCP Server in Go](/notes/mcp-claude-tools/).
+
+Most of the articles below predate this AI guidance and describe the
+practices themselves, not how to apply them with an agent.
 
 ## Choose a starting point
 
@@ -59,18 +81,6 @@ user feedback inform the next piece of work.
 - [Software Release Process](/software/release-process/) connects automated
   checks, independent review, versioned artifacts, smoke tests, and rollback.
   Start here if finished code keeps getting stuck before production.
-
-## When AI writes the code
-
-Give an agent a bounded task, acceptance criteria, and a way to run the
-project's checks. Have someone other than the author review the resulting
-change. Keep a person accountable for the merge and release decision.
-
-The [release gates for AI-written code](/software/release-process/#release-gates-when-ai-writes-the-code)
-show how this works: run the same checks locally and in CI, review the exact
-commit being merged, and keep changes small enough to inspect. A passing
-suite is evidence about tested behavior; it doesn't decide whether you built
-the right thing.
 
 ## Architecture behind the workflow
 
