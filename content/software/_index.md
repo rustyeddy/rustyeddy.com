@@ -5,6 +5,8 @@ tags: [sdlc, software development]
 date: 2026-05-22
 lastmod: 2026-11-20
 show_articles: false
+image: "/img/small-teams.jpeg"
+image_alt: "Illustrated software delivery path for a small team using AI, with review gates, behavior tests, and a recovery plan."
 ---
 
 Writing code is one part of delivering software. Someone still has to
