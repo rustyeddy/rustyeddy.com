@@ -145,13 +145,19 @@ directory or above it, in version 2.1.277 or later. When you do keep a
 `@AGENTS.md` line, or symlinking one file to the other. Prefer the import
 when you also have Claude-specific content or when anyone works on Windows:
 the documentation notes that Claude's edit tools refuse to write through a
-symlink, and that Git checks symlinks out as plain text unless
-`core.symlinks` is enabled.
+symlink, that creating one on Windows needs Administrator privileges or
+Developer Mode, and that Git checks a committed symlink out as plain text
+unless `core.symlinks` is enabled.
 
-**Copilot's surfaces differ.** The documentation says path-specific files
-work for the cloud agent and code review. It doesn't say they work in every
-client, and I didn't verify chat. If you rely on a Copilot surface, check the
-support matrix GitHub links from that page.
+**Having both files changes the default.** With an `AGENTS.md` and a
+`CLAUDE.md` in the working directory or above it, the documentation says
+Claude reads "your `CLAUDE.md` files only". Once you add a `CLAUDE.md`, even
+for one Claude-specific rule, it has to import `AGENTS.md` or the shared
+rules stop loading. This site got that wrong, as described below.
+
+**Copilot's surfaces differ.** Path-specific files are documented for the
+cloud agent and code review. Support in other clients may differ, so if you rely on a particular Copilot surface, check the support
+matrix GitHub links from that page.
 
 A minimal Claude adapter, when you have a few Claude-only rules, looks like
 this:
@@ -163,15 +169,24 @@ this:
 - Use plan mode for changes that touch more than one package.
 ```
 
-### What this repo does
+### What this repo does, and the bug it had
 
-Here, `AGENTS.md` is the shared entry point and points to `POSITIONING.md`,
+`AGENTS.md` is the shared entry point and points to `POSITIONING.md`,
 `EDITORIAL.md` and `STYLEGUIDE.md`. `CLAUDE.md` holds the repo mechanics
 (build, layout, drafts, front matter), and `AGENTS.md` item 3 says those
-"apply to every agent, not only Claude." There is no Copilot-specific file,
-because Copilot reads `AGENTS.md`. That is the thin-adapter idea taken to its
-end: add a tool-specific file only when the tool needs different discovery,
-scoping or workflow instructions.
+"apply to every agent, not only Claude." There is no Copilot-specific file.
+
+That was the design. It didn't work as designed for Claude Code, because `CLAUDE.md` never imported `AGENTS.md`. With both files present,
+Claude reads only `CLAUDE.md`, so Claude sessions here never loaded the seven
+`AGENTS.md` rules, including "never push to `master`" and "quote `title:`".
+Review of the pull request for this page caught it. The fix was one line,
+`@AGENTS.md`, at the top of `CLAUDE.md`
+([pull request 215](https://github.com/rustyeddy/rustyeddy.com/pull/215)).
+
+The general lesson: the structure of your files says nothing about what each
+tool loads. Add a tool-specific file only when the tool needs different
+discovery, scoping or workflow instructions, and when you do, check that it
+connects to the shared one.
 
 ## Running several agents on one repository
 
@@ -190,6 +205,13 @@ down. Here it is `POSITIONING.md`, then `AGENTS.md`, then `CLAUDE.md`:
 item 1 requires reading it before touching content. A task description sits
 below all of them. If a task asks for something a shared rule forbids, the
 agent should stop and say so.
+
+**Expect Copilot to read both files.** Copilot reads `AGENTS.md` files and
+also a single root `CLAUDE.md` or `GEMINI.md`. In a repo like this one, with
+both, Copilot gets the mechanics in `CLAUDE.md` plus `AGENTS.md`, and its
+documentation doesn't say which wins if they conflict. That is one more reason
+to keep tool-specific content out of a root `CLAUDE.md` and let it carry
+shared policy only through the import.
 
 **One writer per branch.** Two agents editing the same branch produce
 conflicts and, worse, silent overwrites. Give each task its own branch and one
@@ -251,15 +273,19 @@ Before merging an instruction change:
    the architecture and the acceptance criteria before it writes code.
 5. **Review the resulting diff** for scope, tests, documentation and safety.
 
-The Trader pull request shows why step 1 matters. Its draft pointed to
-`CONTRIBUTING.org`, `docs/arch/package-boundaries.org` and detailed workflow
+Step 3 would have caught the bug above. Ask a Claude Code session on this
+repo to list the rules, and it would likely not have mentioned the push or
+front-matter rules, which live in `AGENTS.md`. The fix and the test are
+cheap; skipping the test is what let it sit.
+
+The Trader pull request shows why step 1 matters. In that draft, the
+instructions pointed to `CONTRIBUTING.org`, `docs/arch/package-boundaries.org` and detailed workflow
 files before those files existed, and said workflows were updated without
 adding one. Copilot's review caught the broken references. These look like
 documentation defects. To an agent they are missing dependencies.
 
-Commands need the same care. In that draft, `make check` ran formatting,
-vetting and tests but not the separate race target. Describe the command that
-exists, and change the Makefile and the prose together when the gate changes.
+Commands need the same care. Describe the command that exists, and change
+the Makefile and the prose together when the gate changes.
 
 For this site the single gate is `make check-site`: a production Hugo build,
 link checks, front-matter checks, content-tone checks and a marker scan. It
@@ -339,4 +365,5 @@ Add a tool-specific adapter only when that tool needs something different.
 - A new engineer would find it accurate and useful too.
 
 The repository examples above reflect
-[this repository at a pinned commit](https://github.com/rustyeddy/rustyeddy.com/tree/e0c862767387e0458735a965c5483174ddb79753).
+[this repository at a pinned commit](https://github.com/rustyeddy/rustyeddy.com/tree/e0c862767387e0458735a965c5483174ddb79753),
+which predates the `@AGENTS.md` fix.
