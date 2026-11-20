@@ -135,6 +135,12 @@ Work in this order:
 
 ## Current Editorial Sprints
 
+> **Superseded for page state.** The content tracker sheet (see
+> `knowledge/content-process.md`) is the source of truth for what each page
+> needs and where it stands. Some items below are already done or deleted
+> (MCP tools, numeric types, release process, `go-configuration.md`). Use
+> the per-page task lists as input to the page's GitHub issue, not as status.
+
 ### Sprint 1: Publication Trust and Main Flow
 
 ### Sprint 2: IoT Cornerstone Content
@@ -156,6 +162,12 @@ Work in this order:
 - [ ] Improve `content/notes/go-timers-testing-mqtt.md`.
 
 ## Existing Content Backlog
+
+> **Superseded for page state.** The content tracker sheet (see
+> `knowledge/content-process.md`) is the source of truth for what each page
+> needs and where it stands. Some items below are already done or deleted
+> (MCP tools, numeric types, release process, `go-configuration.md`). Use
+> the per-page task lists as input to the page's GitHub issue, not as status.
 
 ### Priority 0: Fix or Demote Raw Public Notes
 

@@ -140,15 +140,10 @@ humans understand where to go next.
 
 ## Tracking: content tracker vs. GitHub issues
 
-- **Content tracker (Google Sheet):** the triage view. One row per page with Search Console
-  baseline, verdict (Keep / Update / Merge / Noindex / Delete / Publish / Review), priority,
-  status, a link to the page's issue, and a Review tier (High = full review below).
-- **GitHub issues:** work units for multi-step or multi-agent tasks. Each content page has a
-  "Content cleanup" issue with the checklist: keyword research, edit content, import images.
-- Deleting a stale draft or a one-line metadata change does not need its own issue workflow;
-  mention the issue in the commit if one exists.
-- PRs that do part of an issue's checklist say `Refs #N`. The PR that completes the checklist
-  says `Closes #N`.
+The tracker sheet, its columns, verdicts and statuses, and the per-page
+loop are documented in [content-process.md](content-process.md). In short:
+the sheet holds the state of every page, and GitHub issues are the work units
+for multi-step or multi-agent tasks.
 
 ## Review and publishing workflow
 
