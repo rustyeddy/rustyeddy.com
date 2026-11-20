@@ -1,0 +1,22 @@
+// Original diagram for rustyeddy.com, issue #172.
+digraph delivery {
+  rankdir=TB;
+  // Cap intrinsic width at 288 CSS pixels for narrow article columns.
+  size="3,4.5";
+  bgcolor="transparent";
+  pad=0.15;
+  nodesep=0.25;
+  ranksep=0.4;
+  node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=16,
+        color="#555555", fillcolor="#f4f4f4", margin="0.18,0.12"];
+  edge [fontname="Helvetica", fontsize=12, color="#555555"];
+
+  define [label="Define the user goal\nand acceptance criteria"];
+  implement [label="Implement and test\na small change"];
+  review [label="Review independently", fillcolor="#e3eefb", color="#2b6cb0"];
+  release [label="Release and observe"];
+
+  define -> implement -> review -> release;
+  review -> implement [label="correct", constraint=false];
+  release -> define [label="learn", constraint=false];
+}
