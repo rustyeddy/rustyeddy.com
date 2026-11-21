@@ -39,8 +39,11 @@ behavior you have already described. Each of those outputs still needs a
 person to check it against what the team actually intends.
 
 Give an agent a bounded task, acceptance criteria, and a way to run the
-project's checks. Have someone other than the author review the resulting
-change. Keep a person accountable for the merge and release decision.
+project's checks. Put the rules every agent must follow in one instruction
+file and test it like code; see
+[AGENTS.md and CLAUDE.md for Teams](/software/writing-agent-instructions/).
+Have someone other than the author review the resulting change. Keep a
+person accountable for the merge and release decision.
 
 The [release gates for AI-written code](/software/release-process/#release-gates-when-ai-writes-the-code)
 show how this works: run the same checks locally and in CI, review the exact
