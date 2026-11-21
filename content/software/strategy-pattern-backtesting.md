@@ -1,10 +1,7 @@
 ---
-title: The Strategy Pattern in a Backtesting Engine
+title: "Strategy Pattern in Go: Same Code for Backtests and Live Trading"
 date: 2026-05-22
-description: >
-  How to design a strategy interface that runs identically in simulation
-  and live trading — separating business logic from execution so strategies
-  can be developed, tested, and deployed without modification.
+description: "A Go strategy interface that runs unchanged in backtests and live trading: strategies return plans instead of calling brokers, so they test in isolation."
 tags: ["Go", "Trading Systems", "Strategy Pattern", "Backtesting", "System Design"]
 categories: ["Software Engineering", "Financial Software"]
 summary: "A practical design for keeping trading strategy logic portable across backtests and live execution by returning plans instead of touching brokers directly."
