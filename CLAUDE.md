@@ -85,6 +85,13 @@ article needs: `title`, `date`, `description`. Tags/categories are
 currently inconsistent across the site; a unified taxonomy pass is on
 the roadmap but not yet done.
 
+Cover images go in `assets/img/`, with front matter still written as
+`image: "/img/name.jpeg"` plus an `image_alt:`. Hugo resizes them to
+responsive WebP via `layouts/partials/responsive-image.html`, and the
+original file is never published. Keep originals around 2400px wide
+and under 1 MB. Hugo shrinks what it serves, not what's committed to
+git. `static/img/` is only for files that must be served unchanged.
+
 ## Templates
 
 - `layouts/_default/baseof.html` — shell used by most pages
