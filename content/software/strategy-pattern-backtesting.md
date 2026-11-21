@@ -1,224 +1,134 @@
 ---
-title: "Strategy Pattern in Go: Same Code for Backtests and Live Trading"
+title: "The Strategy Pattern in a Go Backtesting Engine"
 date: 2026-05-22
-description: "A Go strategy interface that runs unchanged in backtests and live trading: strategies return plans instead of calling brokers, so they test in isolation."
+lastmod: 2026-11-23
+description: "Design a Go backtesting strategy interface that separates decisions from simulated fills, handles bar availability, and makes order timing testable."
 tags: ["Go", "Trading Systems", "Strategy Pattern", "Backtesting", "System Design"]
 categories: ["Software Engineering", "Financial Software"]
-summary: "A practical design for keeping trading strategy logic portable across backtests and live execution by returning plans instead of touching brokers directly."
+summary: "How Trader separates strategy decisions from simulated execution, and how to test the timing and state at that boundary."
 ---
 
-A backtesting engine and a live trading engine solve the same core problem:
-given market data, decide what to do, then do it. The data source changes
-(history versus a live feed), the broker changes (a simulator versus a real
-exchange), but the decision logic — the strategy — should not change at all.
+A strategy can decide to buy after reading a bar's close. The simulator
+still has to decide when that order could have filled. If the strategy
+also books the fill, a test can pass while quietly using a price from
+before the decision was possible.
 
-## Why This Matters
+The strategy pattern gives those two decisions different owners. In
+[Trader](/projects/trader/), the strategy returns the orders it wants.
+The runner submits them and the simulated broker decides what fills.
+That split lets you test a trading rule with a few bars and test the
+execution model separately.
 
-Backtesting is useful only when the strategy being tested is the strategy that
-can run live. A small strategy interface keeps trading logic separate from data
-loading, broker execution, reporting, and simulation details.
+## Why this matters
 
-This is not obvious when you first build one of these systems. The natural
-instinct is to write the strategy and the execution engine together, letting
-the strategy reach directly into the data feed or the broker. That works for
-a prototype. It makes testing hard, live deployment risky, and strategy
-comparison unreliable because each strategy is tested against a slightly
-different engine.
+The boundary lets a reviewer ask two questions independently: did the
+strategy request the expected order, and could the broker have filled it
+at that price and time? When both answers come from one component, a
+change to signal logic can also change the assumptions behind its results.
 
-The [Trader](https://github.com/rustyeddy/trader) project separates these
-concerns with a four-method interface that is the only contract between
-strategy logic and the execution engine. That small boundary is what makes the
-same strategy reusable in both backtests and live trading.
+Trader provides the worked example. The source links below are pinned
+to the same revision. That revision supports backtesting with a simulated
+broker. Its [README](https://github.com/rustyeddy/trader/blob/a2d1475bd656d47d0a6dbe135b69bba7d8d22099/README.md)
+lists paper trading as planned and real-money execution as unavailable.
 
-## The Strategy Interface
+## The strategy interface
+
+Trader's [strategy contract](https://github.com/rustyeddy/trader/blob/a2d1475bd656d47d0a6dbe135b69bba7d8d22099/strategy.go)
+is internal to the Go package. This is the interface declaration from
+the source:
 
 ```go
-type Strategy interface {
-    Name() string
-    Reset()
-    Ready() bool
-    Update(ctx context.Context, candle *CandleTime, bt *Backtest) *StrategyPlan
+type strategy interface {
+    name() string
+    init() error
+    onBars(ctx context.Context, bars []marketdata.Bar) ([]*order, error)
 }
 ```
 
-**`Name()`** — returns a string identifier used in reports and logs.
+`init` gives a strategy a place to validate its inputs and initialize
+state. A call to `onBars` receives the bars that became available at one
+instant, in instrument order. A single-instrument call uses the same
+interface with one bar. A symbol without a new bar at that instant is
+absent from the group. The slice is valid only for that call.
 
-**`Reset()`** — clears all internal state. Called between backtest runs so a
-strategy can be reused across multiple date ranges or parameter sets without
-instantiating a new object.
+The return value distinguishes three outcomes: orders to submit, no orders,
+or an error that stops the run before any returned order is submitted.
+Returning an order expresses a request. The account changes only as a
+result of execution.
 
-**`Ready()`** — returns true when the strategy has accumulated enough data
-to generate a signal. An EMA crossover strategy needs at least `slow_period`
-candles before it can produce a meaningful signal. During that warm-up period,
-`Update()` still receives candles so the strategy can build indicator state,
-but the engine ignores any action until `Ready()` becomes true.
+## Process the bars before submitting new orders
 
-**`Update(ctx, candle, bt)`** — the core method. Receives the current candle
-and the backtest state, returns a `StrategyPlan` describing what to do: open
-a position, close one, adjust a stop, or hold. If there is nothing to do,
-it returns nil.
+![Trader groups newly available bars, lets the simulated broker process that frame, then calls the strategy and submits any returned orders. Those orders are eligible for execution on later bars.](/diagrams/backtest-strategy-boundary.svg)
 
-That is the entire interface. A strategy has no access to the broker, no
-knowledge of how orders are filled, and no awareness of whether it is running
-in a simulation or against a live account.
+Trader's [runner](https://github.com/rustyeddy/trader/blob/a2d1475bd656d47d0a6dbe135b69bba7d8d22099/trader.go)
+advances the simulated broker through the frame before calling the strategy.
+The strategy sees the entire group before any of its new orders is submitted.
+The runner submits orders in the returned order. That order matters when
+two requests compete for margin: the second is sized after the first has
+reserved margin.
+In the [market-order test](https://github.com/rustyeddy/trader/blob/a2d1475bd656d47d0a6dbe135b69bba7d8d22099/broker_test.go),
+the order fills at the next bar's open. The decision bar has already been
+processed.
 
-## The Backtest Pipeline
+Availability matters when several instruments are involved. Group by when
+each bar can be observed. Grouping by candle open time can hand a strategy
+a completed candle before its close was knowable. The same rule makes a
+single-symbol replay easier to audit: you can trace which data was visible
+at each decision and which bar the broker used for execution.
 
-The engine feeds candles one at a time through a linear pipeline:
+## Make warm-up and state explicit
 
-```
-Config (YAML) → DataManager → Backtest → Strategy → Broker → Account → Journal
-```
+Some strategies need history before they can make a decision. Trader
+handles that with a separate optional `warmer` interface. The backtest
+passes pre-start bars to strategies that support warm-up and keeps those
+bars away from the broker. That gives an indicator history without also
+giving the account a position before the run begins.
 
-At each bar, the engine calls `strategy.Update()`, lets the strategy maintain
-its internal state, and only routes an actionable plan once the strategy is
-ready. The broker applies slippage, checks spread filters, and records the
-fill. The account updates its positions and margin.
+Keep indicator state, signal state, and account state distinct. The EMA
+crossover implementation, for example, records the last entry signal it
+consumed. That field can differ from the actual position after a simulated
+stop. A test of the signal and a test of the account should therefore
+assert different things. Trader also supports optional broker feedback
+before the next strategy decision for strategies that need execution events.
+That feedback is an explicit input, separate from submitting an order.
 
-```go
-// Simplified inner loop
-for _, candle := range candles {
-    plan := strategy.Update(ctx, candle, bt)
-    if !strategy.Ready() || plan == nil {
-        continue
-    }
-    broker.Execute(plan, candle, account)
-}
-```
+## Test the boundary at two levels
 
-The strategy never calls `broker.Execute` directly. It returns a plan and
-the engine routes it. This is the dependency inversion that makes the
-interface portable.
+1. Feed an initialized strategy known bars and assert on the orders it
+   returns. Cover insufficient history, the first actionable input, and
+   repeated runs with fresh state.
+2. Run the strategy through the backtest runner and assert on submissions
+   and fills. Cover warm-up bars that never trade, simultaneous bars
+   delivered in one call, and a market order filling on the next bar.
 
-That distinction matters. A strategy is responsible for deciding; the engine
-is responsible for execution details such as fills, spread checks, slippage,
-position bookkeeping, and journal entries.
+Trader has [strategy tests](https://github.com/rustyeddy/trader/blob/a2d1475bd656d47d0a6dbe135b69bba7d8d22099/strategy_test.go),
+[backtest warm-up tests](https://github.com/rustyeddy/trader/blob/a2d1475bd656d47d0a6dbe135b69bba7d8d22099/backtest_test.go),
+and a [frame-ordering test](https://github.com/rustyeddy/trader/blob/a2d1475bd656d47d0a6dbe135b69bba7d8d22099/twosymbol_test.go)
+for those cases. A fixture with just a few bars can expose an ordering
+change that a comparison of aggregate returns would miss.
 
-## Live Trading
+## Common pitfalls
 
-For live trading, the same loop runs against a real-time candle feed. The
-broker implementation changes — instead of simulating a fill, it calls the
-OANDA API:
+- **Letting the strategy call a broker.** A decision test now needs an
+  execution environment and can accidentally depend on a broker's behavior.
+- **Giving replay and live code different decision inputs.** If a future
+  live adapter supplies account or time data the replay cannot reproduce,
+  sharing the strategy code won't make the decisions comparable. Define
+  those inputs explicitly and test equivalent event sequences.
+- **Hiding run state.** A shared indicator or an implicit clock makes the
+  next run depend on the previous one. Control their lifetimes and inputs
+  in tests.
+- **Treating a request as a fill.** Rejections, delays and fill prices
+  belong to execution. A strategy test that asserts only its request tells
+  you nothing about the account after that request.
 
-```go
-// Backtest broker: simulates fill with slippage
-type SimBroker struct { SlippagePips Pips }
+## Where this fits
 
-// Live broker: calls OANDA REST API
-type OANDABroker struct { Client *oanda.Client }
-```
+A narrow strategy interface makes hypothetical live execution easier to
+reason about. It cannot establish how another broker will handle latency,
+gaps, rejections, or partial fills. Those are separate contracts with
+their own tests.
 
-Both implement the same `Broker` interface. The strategy is constructed
-once and handed to whichever engine is running. No code in the strategy
-changes.
-
-This matters practically: a strategy that has been verified in backtest
-is exactly the strategy that runs live. There is no translation layer, no
-"live version" of the logic that might diverge from the tested version.
-
-It also makes it easier to reason about failures. If live behavior diverges
-from a backtest, you can usually localize the problem to the data feed,
-broker, or environment instead of asking whether the strategy itself changed.
-
-## Context-Injected Runtime State
-
-The `ctx` parameter carries runtime information the strategy may need without
-coupling it to the engine:
-
-```go
-// Retrieved inside Update() via helper functions:
-instrument := StrategyInstrument(ctx)  // "EUR_USD"
-barIndex   := StrategyBarIndex(ctx)    // current bar number
-account    := StrategyAccount(ctx)     // read-only account snapshot
-```
-
-The strategy reads this via accessor functions rather than directly from the
-engine, keeping the coupling one-directional. The strategy reads from context;
-it never writes to it.
-
-This keeps the interface narrow without forcing every runtime detail into the
-method signature. You can expose bar index, instrument, or account snapshots
-without turning the strategy into an engine-aware object.
-
-## Testing Strategies in Isolation
-
-Because a strategy can be exercised with candles and backtest state alone, it
-can be tested without a real data feed or broker. The `fake` and `noop`
-strategies are examples of this:
-
-- `noop` does nothing — it establishes the baseline cost of spread and
-  slippage without any trading logic, providing a benchmark for comparison.
-- `fake` executes a scripted sequence of actions for deterministic tests —
-  useful for verifying that the accounting, P/L calculation, and journal
-  logic work correctly independent of any real strategy behavior.
-
-Any strategy can be tested by constructing it, feeding it synthetic candles,
-and asserting on the returned `StrategyPlan`:
-
-```go
-s := emacross.New(Config{Fast: 9, Slow: 21})
-for _, c := range testCandles {
-    plan := s.Update(ctx, c, bt)
-}
-// assert on the trade record
-```
-
-No broker, no OANDA credentials, no live data required.
-
-This is the same reason the strategy pattern is useful outside trading:
-decoupling decision logic from side effects makes the important behavior cheap
-to test.
-
-## Regression Testing
-
-`trader backtest regress` runs every YAML config in a directory and writes
-JSON and org-mode reports. A strategy that behaves differently after a code
-change will show up immediately in the regression output — before it touches
-a live account.
-
-This is the same principle as a test suite for application code: changes
-should be validated against known-good baselines. For trading strategies, the
-baseline is a specific set of inputs (historical data, config) that should
-produce a specific set of outputs (trade count, net P/L, win rate).
-
-## Why This Interface Holds Up
-
-This design stays useful because each part of the system owns one kind of
-change:
-
-- Strategy code changes when the trading idea changes.
-- Broker code changes when execution rules or APIs change.
-- Data ingestion changes when the source or format changes.
-- Reporting changes when you want different output.
-
-Those concerns move at different speeds. Keeping them separated means you can
-change one without having to rewrite the others.
-
-## Limits of the Pattern
-
-The strategy pattern does not remove all complexity. Execution quality still
-depends on realistic slippage models, accurate historical data, correct
-position accounting, and sensible risk controls. A clean strategy interface
-does not make a bad simulator trustworthy.
-
-What it does give you is a clean seam in the architecture: a place where
-decision logic can be tested, compared, and reused without being tangled up in
-broker code.
-
-## Common Pitfalls
-
-Strategy boundaries fail when the strategy calls the broker directly, reads live-only
-state during a backtest, hides mutable state between runs, or depends on engine
-details that make isolated tests impossible. Keep the strategy contract small
-and make runtime dependencies explicit.
-
-## Where This Fits
-
-This pattern works best alongside other engineering guardrails:
-
-- [Fixed-Point Numeric Types in Go Financial Software](/software/numeric-types-financial-software/)
-  explains why prices, money, and pips should stay out of floating-point math.
-- [Test Driven Software Development](/software/test-driven-software-development/)
-  explains how to turn expected behavior into repeatable checks.
-- [Peer Reviews](/software/peer-review/) explains how to inspect strategy and
-  engine changes before they become part of the system.
+For the rest of the system, see the [Trader project](/projects/trader/).
+The same boundary discipline applies to [fixed-point money types in Go](/software/numeric-types-financial-software/)
+and to [testing expected behavior](/software/test-driven-software-development/).

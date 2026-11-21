@@ -1,0 +1,18 @@
+// Original diagram for rustyeddy.com, issue #179.
+digraph backtest {
+  rankdir=TB;
+  size="3,5";
+  bgcolor="transparent";
+  pad=0.12;
+  node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=15,
+        color="#555555", fillcolor="#f4f4f4", margin="0.16,0.10"];
+  edge [color="#555555"];
+
+  bars [label="Group newly available bars"];
+  broker [label="Broker processes the frame"];
+  strategy [label="Strategy returns orders", fillcolor="#e3eefb", color="#2b6cb0"];
+  submit [label="Runner submits orders"];
+  later [label="Broker evaluates orders\non later bars"];
+
+  bars -> broker -> strategy -> submit -> later;
+}
