@@ -380,5 +380,4 @@ Add a tool-specific adapter only when that tool needs something different.
 - A new engineer would find it accurate and useful too.
 
 The repository examples above reflect
-[this repository at a pinned commit](https://github.com/rustyeddy/rustyeddy.com/tree/e0c862767387e0458735a965c5483174ddb79753),
-which predates the `@AGENTS.md` fix.
+[this repository at a pinned commit](https://github.com/rustyeddy/rustyeddy.com/tree/fa95b8235afaac2ae27466aa014651fdd1d87e55).
