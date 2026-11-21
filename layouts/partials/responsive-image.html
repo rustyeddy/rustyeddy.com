@@ -14,9 +14,10 @@
   If the image lives in assets/ (e.g. assets/img/foo.jpeg for src
   "/img/foo.jpeg"), Hugo generates WebP versions at several widths and
   the browser picks the smallest one that fits. The original file is
-  never published. Anything else (files still in static/, remote URLs,
-  SVGs) renders as a plain <img>, exactly as before, so images can move
-  to assets/ one at a time.
+  never published. Other files in assets/ (SVG, GIF) are published as-is
+  through their resource URL. Anything not in assets/ (files still in
+  static/, remote URLs) renders as a plain <img>, exactly as before, so
+  images can move to assets/ one at a time.
 */ -}}
 {{- $src := .src -}}
 {{- $alt := .alt | default "" -}}
@@ -29,16 +30,21 @@
   {{- with resources.Get (strings.TrimPrefix "/" $src) -}}
     {{- if in (slice "jpeg" "png" "webp") .MediaType.SubType -}}
       {{- $res = . -}}
+    {{- else -}}
+      {{- /* Not resizable (SVG, GIF): publish it unchanged via its resource URL. */ -}}
+      {{- $src = .RelPermalink -}}
     {{- end -}}
   {{- end -}}
 {{- end -}}
 {{- with $res -}}
+  {{- /* Steps smaller than the original, then the largest size: the
+         original width, capped at 1600px. Never upscales, never
+         duplicates (a 1600px original gives 480/800/1200/1600). */ -}}
   {{- $widths := slice -}}
-  {{- range slice 480 800 1200 1600 -}}
+  {{- range slice 480 800 1200 -}}
     {{- if lt . $res.Width -}}{{- $widths = $widths | append . -}}{{- end -}}
   {{- end -}}
-  {{- /* Include the original width only when it's below the largest step. */ -}}
-  {{- if lt $res.Width 1600 -}}{{- $widths = $widths | append $res.Width -}}{{- end -}}
+  {{- $widths = $widths | append (cond (lt $res.Width 1600) $res.Width 1600) -}}
   {{- $srcset := slice -}}
   {{- $largest := "" -}}
   {{- range $widths -}}
