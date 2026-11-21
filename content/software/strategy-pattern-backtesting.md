@@ -53,8 +53,8 @@ absent from the group. The slice is valid only for that call.
 
 The return value distinguishes three outcomes: orders to submit, no orders,
 or an error that stops the run before any returned order is submitted.
-Returning an order expresses a request. The account changes only as a
-result of execution.
+Returning an order expresses a request. An order can reserve margin when submitted. It opens or closes a
+position only if it fills.
 
 ## Process the bars before submitting new orders
 
@@ -80,8 +80,8 @@ at each decision and which bar the broker used for execution.
 
 Some strategies need history before they can make a decision. Trader
 handles that with a separate optional `warmer` interface. The backtest
-passes pre-start bars to strategies that support warm-up and keeps those
-bars away from the broker. That gives an indicator history without also
+passes bars whose opening time precedes the trading start to strategies
+that support warm-up and keeps those bars away from the broker. That gives an indicator history without also
 giving the account a position before the run begins.
 
 Keep indicator state, signal state, and account state distinct. The EMA
