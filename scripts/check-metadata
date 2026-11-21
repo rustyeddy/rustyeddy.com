@@ -128,9 +128,11 @@ def main():
 
         image = data.get("image")
         if isinstance(image, str) and image.startswith("/"):
-            local_image = ROOT / "static" / image[1:]
-            if not local_image.exists():
-                errors.append(f"{rel}: image does not exist at static{image}")
+            # Images in assets/ are resized by layouts/partials/responsive-image.html;
+            # images in static/ are served as-is. Either location is valid.
+            candidates = [ROOT / "assets" / image[1:], ROOT / "static" / image[1:]]
+            if not any(p.exists() for p in candidates):
+                errors.append(f"{rel}: image does not exist at assets{image} or static{image}")
 
     if errors:
         print("\n".join(errors), file=sys.stderr)

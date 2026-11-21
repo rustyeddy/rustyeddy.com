@@ -46,6 +46,16 @@ jobs:
             https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
 
+      # Resized images are regenerated from assets/ on every build; caching
+      # them keeps deploys fast. The key changes whenever an image or the
+      # resizing partials change, so stale sizes are never reused.
+      - name: Cache processed images
+        uses: actions/cache@v4
+        with:
+          path: resources/_gen
+          key: hugo-resources-${{ hashFiles('assets/img/**', 'layouts/partials/responsive-image.html', 'layouts/partials/social-image-url.html') }}
+          restore-keys: hugo-resources-
+
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production

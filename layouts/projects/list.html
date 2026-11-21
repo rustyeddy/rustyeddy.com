@@ -24,7 +24,7 @@
                     {{ $image := .Params.logo | default .Params.image }}
                     {{ $imageAlt := $project.Params.logo_alt | default $project.Params.logoAlt | default $project.Params.image_alt | default $project.Params.imageAlt | default (printf "Preview image for %s" $project.Title) }}
                     {{ with $image }}
-                    <img height="315px" class="card-img" src="{{ . }}" alt="{{ $imageAlt }}" />
+                    {{ partial "responsive-image.html" (dict "src" . "alt" $imageAlt "class" "card-img" "style" "height: 315px" "sizes" "(min-width: 768px) 33vw, 100vw") }}
                     {{ end }}
 
                     {{ with .Params.project_status }}

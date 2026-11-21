@@ -1,0 +1,60 @@
+{{- /*
+  Responsive <img> for front-matter images (cover images, project cards).
+
+  Usage:
+    {{ partial "responsive-image.html" (dict
+         "src"   .Params.image                  // "/img/foo.jpeg" or a full URL
+         "alt"   "Description of the image"
+         "class" "img-fluid"                    // optional
+         "sizes" "(min-width: 992px) 730px, 100vw" // optional
+         "eager" true                           // optional: above-the-fold cover
+         "style" "height: 315px"                // optional inline style
+    ) }}
+
+  If the image lives in assets/ (e.g. assets/img/foo.jpeg for src
+  "/img/foo.jpeg"), Hugo generates WebP versions at several widths and
+  the browser picks the smallest one that fits. The original file is
+  never published. Other files in assets/ (SVG, GIF) are published as-is
+  through their resource URL. Anything not in assets/ (files still in
+  static/, remote URLs) renders as a plain <img>, exactly as before, so
+  images can move to assets/ one at a time.
+*/ -}}
+{{- $src := .src -}}
+{{- $alt := .alt | default "" -}}
+{{- $class := .class | default "img-fluid" -}}
+{{- $sizes := .sizes | default "(min-width: 992px) 730px, 100vw" -}}
+{{- $eager := .eager | default false -}}
+{{- $style := .style | default "" -}}
+{{- $res := "" -}}
+{{- if and $src (not (hasPrefix $src "http")) -}}
+  {{- with resources.Get (strings.TrimPrefix "/" $src) -}}
+    {{- if in (slice "jpeg" "png" "webp") .MediaType.SubType -}}
+      {{- $res = . -}}
+    {{- else -}}
+      {{- /* Not resizable (SVG, GIF): publish it unchanged via its resource URL. */ -}}
+      {{- $src = .RelPermalink -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- with $res -}}
+  {{- /* Steps smaller than the original, then the largest size: the
+         original width, capped at 1600px. Never upscales, never
+         duplicates (a 1600px original gives 480/800/1200/1600). */ -}}
+  {{- $widths := slice -}}
+  {{- range slice 480 800 1200 -}}
+    {{- if lt . $res.Width -}}{{- $widths = $widths | append . -}}{{- end -}}
+  {{- end -}}
+  {{- $widths = $widths | append (cond (lt $res.Width 1600) $res.Width 1600) -}}
+  {{- $srcset := slice -}}
+  {{- $largest := "" -}}
+  {{- range $widths -}}
+    {{- $img := $res.Resize (printf "%dx webp q80" .) -}}
+    {{- $srcset = $srcset | append (printf "%s %dw" $img.RelPermalink $img.Width) -}}
+    {{- $largest = $img -}}
+  {{- end -}}
+  <img class="{{ $class }}" src="{{ $largest.RelPermalink }}" srcset="{{ delimit $srcset ", " }}" sizes="{{ $sizes }}" width="{{ $largest.Width }}" height="{{ $largest.Height }}" {{ with $style }}style="{{ . | safeCSS }}" {{ end }}alt="{{ $alt }}" {{ if $eager }}fetchpriority="high"{{ else }}loading="lazy"{{ end }} decoding="async" />
+{{- else -}}
+  {{- with $src -}}
+  <img class="{{ $class }}" src="{{ . }}" {{ with $style }}style="{{ . | safeCSS }}" {{ end }}alt="{{ $alt }}" {{ if not $eager }}loading="lazy" {{ end }}/>
+  {{- end -}}
+{{- end -}}

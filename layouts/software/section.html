@@ -6,7 +6,7 @@
 	<div class="col-lg-8">
 	    {{ with .Params.image }}
 	    {{ $imageAlt := $.Params.image_alt | default $.Params.imageAlt | default (printf "Cover image for %s" $.Title) }}
-	    <img class="img-fluid mb-4" src="{{ . }}" alt="{{ $imageAlt }}" />
+	    {{ partial "responsive-image.html" (dict "src" . "alt" $imageAlt "class" "img-fluid mb-4" "sizes" "(min-width: 1200px) 760px, (min-width: 992px) 640px, 100vw" "eager" true) }}
 	    {{ end }}
 	    {{ .Content }}
 	</div>
