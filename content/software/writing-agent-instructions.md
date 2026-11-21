@@ -128,7 +128,7 @@ so check the linked page before you rely on a row.
 | --- | --- | --- |
 | Claude Code | `CLAUDE.md`, `.claude/CLAUDE.md`, `CLAUDE.local.md`; `AGENTS.md` when no `CLAUDE.md` exists | Files above the working directory load at launch; subdirectory files load on demand. `@path` imports, up to four hops deep. |
 | Codex | `AGENTS.md` (or `AGENTS.override.md`), one file per directory, from the project root down | Global file in the Codex home loads first. Closer files appear later and override earlier guidance. 32 KiB default cap. |
-| GitHub Copilot | `.github/copilot-instructions.md`; path-specific `.github/instructions/*.instructions.md`; `AGENTS.md` anywhere in the repo; or a root `CLAUDE.md` or `GEMINI.md` | Path-specific files need an `applyTo` glob and are supported for the cloud agent and code review. The nearest `AGENTS.md` takes precedence. |
+| GitHub Copilot | `.github/copilot-instructions.md`; path-specific `.github/instructions/*.instructions.md`; agent files (`AGENTS.md`, and a root `CLAUDE.md` or `GEMINI.md`) on some surfaces | Varies by surface; see the support matrix below. Path-specific files need an `applyTo` glob. The nearest `AGENTS.md` takes precedence. |
 
 Sources: [Claude Code memory](https://code.claude.com/docs/en/memory),
 [Codex AGENTS.md](https://developers.openai.com/codex/guides/agents-md),
@@ -150,14 +150,21 @@ Developer Mode, and that Git checks a committed symlink out as plain text
 unless `core.symlinks` is enabled.
 
 **Having both files changes the default.** With an `AGENTS.md` and a
-`CLAUDE.md` in the working directory or above it, the documentation says
-Claude reads "your `CLAUDE.md` files only". Once you add a `CLAUDE.md`, even
-for one Claude-specific rule, it has to import `AGENTS.md` or the shared
-rules stop loading. This site got that wrong, as described below.
+`CLAUDE.md` in the working directory or above it, the default behavior is
+that Claude reads "Your `CLAUDE.md` files only". A **Project instructions**
+setting in `/config` can change that, for example to load both files, but a
+teammate's settings aren't something the repo controls. So the portable
+approach is the import: once you add a `CLAUDE.md`, even for one
+Claude-specific rule, have it import `AGENTS.md`. This site missed that, as
+described below.
 
-**Copilot's surfaces differ.** Path-specific files are documented for the
-cloud agent and code review. Support in other clients may differ, so if you rely on a particular Copilot surface, check the support
-matrix GitHub links from that page.
+**Copilot's surfaces differ.** GitHub's
+[support matrix](https://docs.github.com/en/copilot/reference/custom-instructions-support)
+lists different files per surface. As of the same date, it lists
+`.github/copilot-instructions.md` everywhere but none of the agent files for
+GitHub.com Copilot Chat; `AGENTS.md` but not `CLAUDE.md` for VS Code Chat; and
+`AGENTS.md`, `CLAUDE.md` and `GEMINI.md` for the GitHub.com cloud agent and
+code review. Check the surface your team actually uses.
 
 A minimal Claude adapter, when you have a few Claude-only rules, looks like
 this:
@@ -176,9 +183,11 @@ this:
 (build, layout, drafts, front matter), and `AGENTS.md` item 3 says those
 "apply to every agent, not only Claude." There is no Copilot-specific file.
 
-That was the design. It didn't work as designed for Claude Code, because `CLAUDE.md` never imported `AGENTS.md`. With both files present,
-Claude reads only `CLAUDE.md`, so Claude sessions here never loaded the seven
-`AGENTS.md` rules, including "never push to `master`" and "quote `title:`".
+That was the design. It didn't work as designed for Claude Code, because
+`CLAUDE.md` never imported `AGENTS.md`. With both files present and default
+settings, Claude reads only `CLAUDE.md`, so a default Claude session here
+didn't load the seven `AGENTS.md` rules, including "never push to `master`"
+and "quote `title:`".
 Review of the pull request for this page caught it. The fix was one line,
 `@AGENTS.md`, at the top of `CLAUDE.md`
 ([pull request 215](https://github.com/rustyeddy/rustyeddy.com/pull/215)).
@@ -202,16 +211,22 @@ finds rather than overriding, and its documentation warns that when
 instructions conflict, Claude may pick one arbitrarily. So write the order
 down. Here it is `POSITIONING.md`, then `AGENTS.md`, then `CLAUDE.md`:
 `CLAUDE.md` says `POSITIONING.md` "overrides anything here," and `AGENTS.md`
-item 1 requires reading it before touching content. A task description sits
-below all of them. If a task asks for something a shared rule forbids, the
-agent should stop and say so.
+item 1 requires reading it before touching content. That is the order for
+repository files. Two other inputs sit outside it. An issue or task
+description is below all the repository files: if an issue asks for
+something a shared rule forbids, the agent should stop and say so, which is a
+team policy, not something the tools enforce. A direct instruction from the
+person at the keyboard is different. The `AGENTS.md` convention says explicit
+chat prompts override everything, so a person can knowingly override a rule
+in a session. Decide which of those you want, and write it down.
 
-**Expect Copilot to read both files.** Copilot reads `AGENTS.md` files and
-also a single root `CLAUDE.md` or `GEMINI.md`. In a repo like this one, with
-both, Copilot gets the mechanics in `CLAUDE.md` plus `AGENTS.md`, and its
-documentation doesn't say which wins if they conflict. That is one more reason
-to keep tool-specific content out of a root `CLAUDE.md` and let it carry
-shared policy only through the import.
+**Copilot may read both files.** GitHub lists both `AGENTS.md` and a root
+`CLAUDE.md` for the cloud agent and code review. Listing both doesn't say
+they load together, or which wins if they conflict, and other surfaces list
+fewer files. In a repo like this one, assume a Copilot surface might see
+`CLAUDE.md`, `AGENTS.md` or both. That is one more reason to keep
+tool-specific content out of a root `CLAUDE.md` and let it carry shared
+policy only through the import.
 
 **One writer per branch.** Two agents editing the same branch produce
 conflicts and, worse, silent overwrites. Give each task its own branch and one
