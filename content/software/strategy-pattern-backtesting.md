@@ -104,7 +104,7 @@ That feedback is an explicit input, separate from submitting an order.
 Trader has [strategy tests](https://github.com/rustyeddy/trader/blob/a2d1475bd656d47d0a6dbe135b69bba7d8d22099/strategy_test.go),
 [backtest warm-up tests](https://github.com/rustyeddy/trader/blob/a2d1475bd656d47d0a6dbe135b69bba7d8d22099/backtest_test.go),
 and a [frame-ordering test](https://github.com/rustyeddy/trader/blob/a2d1475bd656d47d0a6dbe135b69bba7d8d22099/twosymbol_test.go)
-for those cases. A fixture with just a few bars can expose an ordering
+that illustrate these checks. A fixture with just a few bars can expose an ordering
 change that a comparison of aggregate returns would miss.
 
 ## Common pitfalls
