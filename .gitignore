@@ -15,3 +15,6 @@
 .sass-cache
 .hugo_build.lock
 docs/
+
+# Hugo processed images (regenerated on build; cached in CI)
+resources/_gen/

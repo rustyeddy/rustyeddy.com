@@ -1,0 +1,20 @@
+{{- /*
+  Absolute URL for the page's sharing image (Open Graph, Twitter,
+  structured data). Returns a string.
+
+  Images in assets/ are resized to 1200px wide JPEG, the size social
+  cards expect, so the multi-megabyte original is never sent. Anything
+  else falls back to the old behavior: the path as given, made absolute.
+*/ -}}
+{{- $baseURL := strings.TrimSuffix "/" site.BaseURL -}}
+{{- $image := .Params.image | default site.Params.image | default "/img/rusty.png" -}}
+{{- $url := cond (hasPrefix $image "http") $image (printf "%s/%s" $baseURL (strings.TrimPrefix "/" $image)) -}}
+{{- if not (hasPrefix $image "http") -}}
+  {{- with resources.Get (strings.TrimPrefix "/" $image) -}}
+    {{- if in (slice "jpeg" "png" "webp") .MediaType.SubType -}}
+      {{- $spec := cond (gt .Width 1200) "1200x jpg q82" (printf "%dx jpg q82" .Width) -}}
+      {{- $url = (.Resize $spec).Permalink -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $url -}}

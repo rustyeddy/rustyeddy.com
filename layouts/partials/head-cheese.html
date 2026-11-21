@@ -14,8 +14,7 @@
   {{ with $description }}<meta name="description" content="{{ . }}" />{{ end }}
   {{ if or .Params.noindex (in (slice "taxonomy" "term") .Kind) }}<meta name="robots" content="noindex, follow" />{{ end }}
   {{ $title := cond .IsHome (printf "%s | %s" site.Title site.Params.description) (printf "%s | %s" .Title site.Title) }}
-  {{ $image := .Params.image | default site.Params.image | default "/img/rusty.png" }}
-  {{ $imageURL := cond (hasPrefix $image "http") $image (printf "%s/%s" $baseURL (strings.TrimPrefix "/" $image)) }}
+  {{ $imageURL := partial "social-image-url.html" . }}
   {{ $pageType := cond .IsPage "article" "website" }}
   <meta property="og:title" content="{{ $title }}" />
   {{ with $description }}<meta property="og:description" content="{{ . }}" />{{ end }}
