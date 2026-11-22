@@ -72,8 +72,9 @@ practices themselves, not how to apply them with an agent.
 
 - [Use Cases to Tasks](/software/use-cases-to-tasks/) turns a user goal into
   acceptance tests and focused implementation work.
-- [Organizing Software Projects with Kanban](/software/kanban/) helps you
-  limit work in progress and expose stalled tasks.
+- [Organizing Tasks with Kanban When AI Agents Do Some of the Work](/software/kanban/)
+  covers cards an agent can execute, checkable exit criteria, and a review
+  limit that keeps agent work from piling up unreviewed.
 - [Test Driven Software Development](/software/test-driven-software-development/)
   connects expected behavior to repeatable checks.
 

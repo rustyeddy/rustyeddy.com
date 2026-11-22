@@ -1,0 +1,27 @@
+// Original diagram for rustyeddy.com, issue #174.
+// A Kanban board for a team where developers and AI agents share the work.
+digraph kanban {
+  rankdir=TB;
+  // Cap intrinsic width at 288 CSS pixels for narrow article columns.
+  size="3,6";
+  bgcolor="transparent";
+  pad=0.15;
+  nodesep=0.25;
+  ranksep=0.35;
+  node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=16,
+        color="#555555", fillcolor="#f4f4f4", margin="0.18,0.12"];
+  edge [fontname="Helvetica", fontsize=12, color="#555555"];
+
+  backlog  [label="Backlog\ncards not ready yet"];
+  ready    [label="Ready\npasses the agent-readiness test"];
+  progress [label="In Progress\none owner per card:\na person or an agent"];
+  review   [label="Review  (WIP limit)\nindependent reviewer\nlimit = reviewer capacity",
+            fillcolor="#e3eefb", color="#2b6cb0"];
+  done     [label="Done\napproved by a person\nand merged"];
+
+  backlog -> ready [label="write context,\nscope, checks"];
+  ready -> progress [label="pick up"];
+  progress:w -> review:w [label="checks pass  "];
+  review -> done [label="person approves"];
+  review:e -> progress:e [label="  changes\n  requested", constraint=false];
+}
