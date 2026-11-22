@@ -14,7 +14,7 @@ summary: "A device-side architecture note for ESP32 collection stations in the O
 
 A collection station is the device-side telemetry node in the Organic
 Gardener system. Its job is to sense the physical environment and
-publish readings to the gateway. In the larger [IoT System Architecture](/iot/iot-system-architecture-device-to-cloud/),
+publish readings to the gateway. In the larger [five-layer IoT architecture](/iot/iot-system-architecture-explained/),
 this is the device layer that feeds the [OttO edge runtime](/projects/otto/).
 
 ## Why This Matters
@@ -45,7 +45,7 @@ This boundary keeps the device firmware focused. The ESP32 does not
 need to know how the dashboard is rendered or where long-term telemetry
 is stored. It only needs to publish a clear message to a stable topic.
 
-See [Adding MQTT to the IoT Gateway](/iot/iot-gateway-mqtt/) for the
+See [MQTT topic design in the OttO gateway](/iot/iot-edge-gateway/#mqtt-the-device-boundary) for the
 message boundary and [Self-Watering Garden: An IoT Architecture Case Study](/iot/self-watering-garden/)
 for the end-to-end system.
 
@@ -219,8 +219,6 @@ The collection station is one part of the larger IoT system:
 
 - [Self-Watering Garden: An IoT Architecture Case Study](/iot/self-watering-garden/)
   shows the station in the full irrigation workflow.
-- [Adding MQTT to the IoT Gateway](/iot/iot-gateway-mqtt/) explains the
-  publish/subscribe boundary.
 - [OttO: A Go-Based IoT Edge Gateway Architecture](/iot/iot-edge-gateway/)
   describes the gateway that receives collection station data.
 - [Soil Moisture Sensors](/notes/soil-moisture-sensor/) covers sensor

@@ -21,7 +21,7 @@ through small interfaces.
 This article explains the design behind the device layer used by
 [OttO](/projects/otto/), the Go-based IoT edge runtime, and its companion
 [devices](https://github.com/rustyeddy/devices) library. Read it as the implementation detail beneath the
-[device-to-cloud architecture](/iot/iot-system-architecture-device-to-cloud/).
+[five-layer IoT architecture](/iot/iot-system-architecture-explained/).
 
 ## The Architecture Boundary
 
@@ -334,7 +334,7 @@ benefits from the same boundary.
 ## Where This Fits
 
 The device abstraction layer sits between hardware drivers and the edge runtime.
-Read it after [IoT System Architecture](/iot/iot-system-architecture-device-to-cloud/)
+Read it after [The Five Layers of a Practical IoT System](/iot/iot-system-architecture-explained/)
 when you want to understand how device boundaries become Go interfaces, and
 before [OttO Edge Gateway Architecture](/iot/iot-edge-gateway/) when you want to
 see the runtime that uses those abstractions.
