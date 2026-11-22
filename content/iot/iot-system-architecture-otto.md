@@ -140,9 +140,10 @@ devices. The earlier gateway also served REST and WebSocket APIs to the
 dashboard; that server code is archived while the runtime is rebuilt.
 
 The [Gardener](https://github.com/rustyeddy/gardener) reference application
-uses this shape for irrigation: collection stations produce readings, the edge
-runtime coordinates telemetry and control, and the dashboard shows system
-state.
+uses this shape for irrigation: a soil moisture sensor and a pump relay are
+wired through OttO's registry, a controller starts the pump below a dry
+threshold and stops it above a wet one, and a small web page shows state and
+offers manual control.
 
 ## Layer 4: Backend and Control Plane
 
@@ -182,9 +183,9 @@ state and collect user intent. They should not reach around the edge runtime
 to control physical devices directly. UI-to-device shortcuts are convenient in
 a demo and expensive in production.
 
-In the Gardener example, the dashboard shows moisture readings, exposes manual
-controls, and adjusts thresholds through the edge or backend API, without
-assumptions about GPIO pins or sensor buses.
+In the Gardener example, the web page shows readings and sends manual pump
+commands through MQTT topics, with no assumptions about GPIO pins or sensor
+buses.
 
 ## Which Pieces You Actually Need
 
