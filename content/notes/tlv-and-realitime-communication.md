@@ -1,16 +1,13 @@
 ---
-title: "TLV: The Type-Length-Value Protocol"
-description: >
-  A very simple byte oriented protocol used to swap unformatted
-  messages over a variety of communication channels (i2c, SPI, UDP,
-  TCP, RF, BT, etc).
+title: "A Compact TLV Protocol Variant for Embedded Messaging"
+description: "A byte-oriented Type-Length-Value variant for small devices: 1-byte compact and 2-byte short messages beside regular TLV, and how it differs from standard TLV."
 date: 2019-04-17
+lastmod: 2026-11-22
 categories:
   - software
   - communications
 tags:
   - tlv
-image: https://mobilerobot.sfo2.cdn.digitaloceanspaces.com/display-and-motors.jpg
 ---
 
 {{< older-note >}}
@@ -38,9 +35,9 @@ things.
 ## TLV and TLString
 
 Type, Length Vector (Value) is as old as the hills, but still just as
-useful!  Type length Vector is byte oriented, with three types of
-messages: compact (1 byte), short (2 bytes) and full (up to 0xffff
-size). 
+useful!  This variant is byte oriented, with three types of
+messages: compact (1 byte), short (2 bytes) and regular (up to 255
+bytes, since the length is a single byte).
 
 ```
 +--------+--------+--------+--------+
@@ -51,6 +48,11 @@ size).
 The first byte is the type of message, the second byte is the length
 of the message, inclusive, that is the 2 bytes of the Type and Length
 field are INCLUDED in the Length of the message.
+
+That is a departure from most standard TLV encodings. In ASN.1 BER,
+DHCP options and LLDP, the length counts only the value bytes, not the
+type and length fields. If you are parsing one of those formats, don't
+assume the header is included.
 
 ### Compact Messages
 
@@ -63,7 +65,7 @@ In this case, TLV supports the message type **compact** or
 
 ### Short Messages
 
-In a similar vein, some types my contain only a single value, for
+In a similar vein, some types may contain only a single value, for
 example a sensor value between 0 & 0xff can be advertised with only
 two bytes.  
 
@@ -78,8 +80,8 @@ bytes.
 
 ### Distinguishing Compact, Short and Normal Packets
 
-The packet types can be identified by the first two bytes of the type
-field.  Compact packets always have the first two bits of the type
+The packet types can be identified by the first two bits of the type
+byte.  Compact packets always have the first two bits of the type
 set:
 
 #### Compact Packets
@@ -91,7 +93,7 @@ set:
 ```
 
 Compact packets are a single byte in the **range of 0xC0 to 0xFF**,
-depending on how the remaining 2^6 bits are set.
+depending on how the remaining 6 bits are set (2^6 = 64 types).
 
 #### Short Packets
 
@@ -107,14 +109,13 @@ depending on how the remaining 2^6 bits are set.
 +--------+--------+
 |01xxxxxx| Value  |
 +--------+--------+
-
-The reserved range can be associated with the Short or Regular packet
-types is one type is getting used up quicker than another.
-
 ```
 
+The reserved range can be associated with the Short or Regular packet
+types if one type is getting used up quicker than another.
+
 Short packets are two bytes, with the type value in the range of 0x80
-to 0xBF.  Again, short packets have (2^6 = 32)  independent types.
+to 0xBF.  Again, short packets have 2^6 = 64 independent types.
 
 #### Regular Packets
 
