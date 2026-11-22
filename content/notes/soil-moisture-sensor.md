@@ -235,7 +235,7 @@ Soil moisture sensing is one part of the larger garden architecture:
   shows how the sensor reading is used in the full system.
 - [ESP32 Collection Station Architecture for IoT Sensor Networks](/iot/iot-sensor-station/)
   explains the device-side firmware boundary.
-- [Adding MQTT to the IoT Gateway](/iot/iot-gateway-mqtt/) explains how
+- [MQTT topic design for the OttO gateway](/iot/iot-edge-gateway/#mqtt-the-device-boundary) explains how
   readings move from station to gateway.
 - [Adafruit Soil Moisture Sensor Notes for IoT Projects](/notes/soil-moisture-adafruit/)
   covers the digital sensor I would use for the next iteration.

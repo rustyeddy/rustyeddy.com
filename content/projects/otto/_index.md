@@ -17,7 +17,7 @@ OttO is an open-source IoT edge runtime written in Go, designed to manage
 a fleet of sensors and actuators on embedded Linux hardware — Raspberry Pi,
 industrial gateways, ARM SBCs — with the same codebase that runs cleanly
 on a developer's laptop. It is the reference implementation for the
-[device-to-cloud IoT architecture](/iot/iot-system-architecture-device-to-cloud/) and the
+[five-layer IoT architecture](/iot/iot-system-architecture-explained/) and the
 [device abstraction layer](/iot/building-iot-device-manager-in-go/).
 
 ## Project Status
@@ -133,8 +133,8 @@ manager, MQTT pub/sub, the REST API, local persistence, and the web UI. The
 same architecture — sensor → edge runtime → actuator + dashboard — applies
 to any IoT control system, not just irrigation.
 
-For the broader device-to-cloud architecture that OttO maps to, see
-[IoT System Architecture](/iot/iot-system-architecture-device-to-cloud/).
+For the broader architecture that OttO maps to, see
+[The Five Layers of a Practical IoT System](/iot/iot-system-architecture-explained/).
 
 ## Common Pitfalls
 
@@ -145,7 +145,7 @@ is structured to push those problems to explicit boundaries.
 
 ## Where This Fits
 
-Read OttO alongside [IoT System Architecture](/iot/iot-system-architecture-device-to-cloud/)
+Read OttO alongside [The Five Layers of a Practical IoT System](/iot/iot-system-architecture-explained/)
 and [Building an IoT Device Abstraction Layer in Go](/iot/building-iot-device-manager-in-go/).
 The articles explain the architecture; this project shows the reference runtime.
 

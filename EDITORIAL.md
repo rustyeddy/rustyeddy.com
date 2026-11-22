@@ -145,8 +145,6 @@ Work in this order:
 
 ### Sprint 2: IoT Cornerstone Content
 
-- [ ] Rewrite `content/iot/iot-edge-gateway.md` as an architecture article.
-
 ### Sprint 3: Software Section Finish
 
 - [ ] Rewrite `content/software/test-driven-software-development.md`.

@@ -14,7 +14,7 @@ summary: "A practical case study showing how a self-watering garden can be desig
 The self-watering garden is a proof-of-concept IoT system for small
 gardens and irrigation zones. The goal is simple: water plants based on
 soil conditions instead of a fixed timer. It is the case study behind the
-[IoT System Architecture](/iot/iot-system-architecture-device-to-cloud/) and the
+[five-layer IoT architecture](/iot/iot-system-architecture-explained/) and the
 [OttO edge runtime](/projects/otto/).
 
 ## Why This Matters
@@ -145,12 +145,12 @@ The project uses different protocols for different boundaries.
 MQTT is the device messaging boundary. Collection stations and control
 stations can publish or subscribe to small topic-based messages without
 knowing about the dashboard or REST API. See
-[Adding MQTT to the IoT Gateway](/iot/iot-gateway-mqtt/).
+[MQTT as the gateway's device boundary](/iot/iot-edge-gateway/#mqtt-the-device-boundary).
 
 REST is the request/response boundary for clients that need structured
 access to state and configuration. It is useful for dashboards, tests,
 admin tools, and backend services. See
-[Adding the REST API to IoT Gateway](/iot/iot-gateway-rest/).
+[REST as the gateway's application boundary](/iot/iot-edge-gateway/#rest-the-application-boundary).
 
 WebSockets are useful for live dashboard updates. The browser can stay
 connected to OttO and receive changes as new telemetry arrives instead
@@ -210,11 +210,8 @@ The self-watering garden ties together the rest of the IoT articles:
 - [Building an IoT Device Manager in Go](/iot/building-iot-device-manager-in-go/)
   explains the device abstraction behind replaceable sensors and
   actuators.
-- [IoT System Architecture: Device to Cloud](/iot/iot-system-architecture-device-to-cloud/)
+- [The Five Layers of a Practical IoT System](/iot/iot-system-architecture-explained/)
   describes the broader device-to-cloud model.
 - [OttO: A Go-Based IoT Edge Gateway Architecture](/iot/iot-edge-gateway/)
-  describes the edge gateway role.
-- [Adding MQTT to the IoT Gateway](/iot/iot-gateway-mqtt/) covers the
-  device messaging path.
-- [Adding the REST API to IoT Gateway](/iot/iot-gateway-rest/) covers
-  the client-facing API boundary.
+  describes the edge gateway role, including the MQTT device path and the
+  client-facing REST API.

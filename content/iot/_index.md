@@ -20,17 +20,14 @@ the prototype works.
 
 These are the pillar articles for the IoT section:
 
-- [IoT System Architecture: Device to Cloud](/iot/iot-system-architecture-device-to-cloud/) explains the device, gateway, API, and cloud boundaries.
-- [Five Layers of a Practical IoT System](/iot/iot-system-architecture-explained/) gives a compact model for organizing real IoT systems.
+- [The Five Layers of a Practical IoT System](/iot/iot-system-architecture-explained/) explains the device, protocol, edge, backend, and application boundaries, and when each piece is worth adding.
 - [Building an IoT Device Abstraction Layer in Go](/iot/building-iot-device-manager-in-go/) shows how to keep application logic separate from hardware details.
-- [OttO Edge Gateway Architecture](/iot/iot-edge-gateway/) describes the Go-based edge runtime behind the reference implementation.
+- [OttO Edge Gateway Architecture](/iot/iot-edge-gateway/) describes the Go-based edge runtime behind the reference implementation, with MQTT for device telemetry and REST for clients.
 
 ## Implementation Notes
 
 Use these when you want a narrower design or implementation detail:
 
-- [Adding MQTT to the IoT Gateway](/iot/iot-gateway-mqtt/) covers telemetry and publish/subscribe boundaries.
-- [REST APIs for IoT Gateways](/iot/iot-gateway-rest/) covers control, configuration, and telemetry access over HTTP.
 - [ESP32 Collection Station Architecture](/iot/iot-sensor-station/) describes the device-side responsibilities in a sensor network.
 - [Self-Watering Garden](/iot/self-watering-garden/) ties the pieces together as a small end-to-end case study.
 

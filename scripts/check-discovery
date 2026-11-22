@@ -11,7 +11,7 @@ DOCS = ROOT / "docs"
 REQUIRED_PAGES = (
     "index.html",
     "iot/index.html",
-    "iot/iot-gateway-rest/index.html",
+    "iot/iot-edge-gateway/index.html",
     "projects/index.html",
 )
 REQUIRED_OG = ("og:title", "og:description", "og:url", "og:image")
