@@ -5,7 +5,7 @@ lastmod: 2026-11-20
 description: "How to write AGENTS.md and CLAUDE.md files for a team repo: one canonical file, thin tool adapters, rules every agent can verify, and a named owner."
 tags: ["AI Agents", "Claude", "GitHub Copilot", "Codex", "Software Engineering"]
 categories: ["Software Engineering"]
-image: "/img/agents.jpeg"
+image: "/img/agents.jpg"
 image_alt: "Three robots reviewing project plans beneath the title Writing Agent Instructions for a New Software Project."
 ---
 
