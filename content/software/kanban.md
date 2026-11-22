@@ -287,10 +287,11 @@ existing tooling, and how tightly the board should connect to code changes.
 A newer group of tools treats agents as the main workers. As of November
 2026, [Cline Kanban](https://docs.cline.bot/kanban/overview) is a research
 preview that gives each card its own git worktree and terminal so several
-agents can run in parallel. [Kagan](https://github.com/kagan-sh/kagan) is a
-desktop app that runs coding agents in terminals and isolated git worktrees
-and lets you review the changes they made. It organizes work as threads
-rather than cards, so it isn't a board. These tools change quickly; judge
+agents can run in parallel. [Kagan](https://github.com/kagan-sh/kagan) is an
+OpenCode plugin that runs each task in an isolated git worktree on a board
+with Backlog, In Progress, Review and Done columns. A reviewer agent files
+findings against the task, and nothing reaches Done until a person has
+triaged them and decided whether to merge. These tools change quickly; judge
 them by whether they support a `Ready` state, a limited `Review` column, and
 a human approval step, and check what each one actually enforces.
 
