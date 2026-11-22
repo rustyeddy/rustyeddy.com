@@ -43,9 +43,10 @@ Software work gets hard to manage when it's invisible. A developer can be
 busy for days on a vague task while nobody can tell whether the project is
 moving, blocked, or drifting away from what the user needed.
 
-Agents make that problem faster. They start immediately, they don't ask
-clarifying questions unless told to, and they produce plausible-looking
-changes whether or not the task was well defined. A hidden queue of agent work
+Agents make that problem faster. They start immediately, they often don't
+stop to ask clarifying questions unless the instructions tell them to, and
+they can produce plausible-looking changes whether or not the task was well
+defined. A hidden queue of agent work
 fills up in hours, not weeks.
 
 A board turns that work into explicit cards, so anyone looking at it can see:
@@ -286,12 +287,12 @@ existing tooling, and how tightly the board should connect to code changes.
 A newer group of tools treats agents as the main workers. As of November
 2026, [Cline Kanban](https://docs.cline.bot/kanban/overview) is a research
 preview that gives each card its own git worktree and terminal so several
-agents can run in parallel, and
-[Kagan](https://github.com/kagan-sh/kagan) is a supervised board where
-nothing an agent produces reaches `Done` until a person reviews it and decides
-whether to merge. These tools
-change quickly; judge them by whether they support a `Ready` state, a limited
-`Review` column, and a human approval step.
+agents can run in parallel. [Kagan](https://github.com/kagan-sh/kagan) is a
+desktop app that runs coding agents in terminals and isolated git worktrees
+and lets you review the changes they made. It organizes work as threads
+rather than cards, so it isn't a board. These tools change quickly; judge
+them by whether they support a `Ready` state, a limited `Review` column, and
+a human approval step, and check what each one actually enforces.
 
 The tool matters less than the discipline. A maintained board in a simple tool
 beats an abandoned board in a powerful one.
@@ -324,7 +325,7 @@ fail for everyone else, agents included. Apply the readiness test.
 A board should reflect reality. If cards only move before a meeting, the board
 isn't helping the project.
 
-## Where this fits
+## Next steps in the series
 
 Kanban sits between planning and implementation:
 
