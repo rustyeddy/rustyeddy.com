@@ -1,171 +1,152 @@
 ---
-title: Trader — FX Backtesting and Live Trading Engine
+title: "Trader: A Go Framework for FX Strategy Research and Backtesting"
 date: 2026-05-22
-description: >
-  A Go engine for backtesting and live paper-trading Forex strategies against
-  OANDA, with a REST/WebSocket API, embedded UI, and Claude MCP tool
-  integration for querying accounts and running backtests from an AI assistant.
+lastmod: 2026-11-23
+description: "Trader is an open-source Go framework for FX strategy research: exact fixed-point numbers, a market-data pipeline, and a deterministic backtest engine."
 github: https://github.com/rustyeddy/trader
 project_status: Active
 tags: ["Go", "Trading Systems", "Backtesting", "Financial Software"]
 categories: ["Projects", "Financial Software"]
 ---
 
-Trader is a Forex backtesting and live paper-trading engine written in Go.
-It downloads historical candle data, runs configurable strategies against
-that data, and — using the same strategy interface — executes those same
-strategies live against an OANDA practice or live account. A REST and
-WebSocket API, an embedded web UI, and a Claude MCP server round out the
-system.
+Trader is a Go framework for researching FX trading strategies. It downloads
+historical OANDA candles into a local store, builds them into canonical bars
+with a known availability time, and runs strategies against those bars in a
+deterministic backtest with a simulated broker. Prices, quantities and money
+are exact fixed-point values throughout.
 
 ## Project Status
 
-**Active.** Trader is a current Go project and an active case study
-for trading-system architecture, testing, and exact numeric types.
+**Backtesting today; no live or paper trading.** In November 2026 Trader was
+restarted from a small, executable design. The earlier, broader code
+(including an MCP server and earlier strategy, indicator and analysis
+packages) was moved to `_archive/` and is being ported back one layer at a
+time, market data first. This page describes the code as of
+[trader@a0e3283](https://github.com/rustyeddy/trader/tree/a0e3283) (November
+2026).
+
+What works today:
+
+- Downloading OANDA bid/ask candles into a raw store, and building canonical
+  bars from them with every rejected row kept and counted
+- Data status, verification and integrity-audit commands for a date range
+- A deterministic backtest engine and simulated broker, with the EMA crossover
+  (EMAX) strategy
+- A read-only REST API over the canonical bars (`trader serve`)
+
+Not available: paper trading is planned, and real-money execution is neither
+available nor scheduled. Trader's own
+[README](https://github.com/rustyeddy/trader/blob/a0e3283/README.md) puts it
+plainly: it is not ready for real-money trading.
 
 ## Why This Matters
 
 Trader is a software architecture case study in a domain where small mistakes
-matter. It connects interface design, exact numeric types, repeatable tests, and
-release discipline to a system that must behave consistently in simulation and
-live execution.
+are expensive and easy to miss. A backtest can look profitable because it used
+a price before it was knowable, because a float rounded the wrong way, or
+because the data had a quiet gap. Trader's design treats each of those as a
+boundary with an owner and a test, which is the same discipline any system
+with money or time in it needs.
 
-## The Problem
+## Design Principles
 
-Building a trading strategy is straightforward. Knowing whether it works
-is not. The gap between "this looks good on a chart" and "this survives
-statistical scrutiny across years of data" is where most strategy ideas die.
+Trader's README states the principles the restart is built on:
 
-Trader addresses this by making the path from idea to verified result as
-short as possible: write a strategy, point it at historical data, get a
-report. The same strategy then runs live without modification.
+- **Simple and understandable:** concrete types, ordinary functions, small
+  interfaces, and no abstraction without a present use.
+- **Deterministic by design:** time, identifiers and data order are
+  controllable, so a backtest is reproducible, and a bar is usable only from
+  its availability time.
+- **Exact numbers:** prices, quantities and money are fixed-point values,
+  never floats on the authoritative path.
+- **No invented data:** no synthetic or carried-forward bars. Bad source rows
+  are kept and counted, never hidden.
+- **Layered:** transports call application services, which coordinate domain
+  services and providers, and one package owns all data-file I/O.
 
 ## Architecture
 
-The core backtest pipeline is a linear data flow:
+The data path and the backtest path are separate:
 
-```
-Config (YAML) → DataManager → Backtest → Strategy → Broker → Account → Journal
-```
-
-**Config** — a YAML file specifies the instrument, date range, starting
-balance, risk percentage per trade, stop and take-profit sizing, and which
-strategy to run.
-
-**DataManager** — loads historical candle data from the local store, built
-from Dukascopy tick data or OANDA candle downloads.
-
-**Backtest** — feeds candles one at a time to the strategy, routes the
-resulting orders through the broker, and accumulates the trade record.
-
-**Strategy** — a single Go interface:
-
-```go
-type Strategy interface {
-    Name() string
-    Reset()
-    Ready() bool
-    Update(ctx context.Context, candle *CandleTime, bt *Backtest) *StrategyPlan
-}
+```text
+OANDA ──download──> raw store ──build──> canonical bars ──> backtest engine
+                    (bid/ask, by month)   (mid price,         (strategy decides,
+                                           availability time)  simulated broker fills)
 ```
 
-`Update` receives the current candle and returns a plan — open, close, or
-hold. It knows nothing about whether it is running in a backtest or live.
-That is the key design property: the strategy is pure logic, isolated from
-execution.
+**Market data.** `trader data download` writes bid/ask candles for a UTC range
+into month partition files. `trader data build` converts them to canonical
+bars with a mid price and a modeled availability time, the moment the bar
+could actually have been observed. `status`, `verify` and `audit` commands
+report which months are loadable, whether canonical bars still match the raw
+data they came from, and where the gaps are.
 
-**Broker** — executes the plan. In backtesting, the broker simulates fills
-with configurable slippage and spread filters. In live trading, the broker
-calls the OANDA API.
+**The engine.** A strategy receives the bars that became available at one
+instant and returns the orders it wants. The simulated broker processes each
+group of bars before the strategy sees it, so an order can only fill on a
+later bar. [The Strategy Pattern in a Go Backtesting Engine](/software/strategy-pattern-backtesting/)
+walks through that boundary in detail.
 
-**Account** — tracks balance, open positions, margin, and unrealized P/L.
-Accounting invariants are enforced: `Equity = Balance + UnrealizedPL`,
-`FreeMargin = Equity − MarginUsed`.
-
-**Journal** — records every closed trade for reporting and analysis.
+**Packages.** One package owns all data-file reads and writes
+(`internal/store`), the market-data model is public (`marketdata`), the OANDA
+code is a provider (`provider/oanda`), and the command line holds no domain
+logic (`cmd/trader`). The dependency rules are enforced by tests.
 
 ## Key Design Decisions
 
-**Fixed-point arithmetic for all financial values.** `Price` is `int32`
-scaled at 100,000 (five decimal places — standard forex pip precision).
-`Money` is `int64` scaled at 1,000,000. `Pips` is `int32` scaled at 10.
-Floats appear only at I/O boundaries — parsing config and formatting output.
-See [Numeric Types in Financial Software](/software/numeric-types-financial-software/)
+**Exact fixed-point numbers.** `Price`, `Quantity`, `Rate` and `Money` are
+semantic types over a single common scale of 1e8 (eight decimal places), with
+checked arithmetic and explicit rounding. `Money` carries its currency. Code
+outside the `num` package never touches the raw scaled integers. See
+[Money in Go: Fixed-Point Types for Financial Software](/software/numeric-types-financial-software/)
 for the reasoning.
 
-**One strategy interface, two execution environments.** The `Strategy`
-interface is the only contract between business logic and the execution
-engine. Swapping the broker from a simulation to a live OANDA connection
-requires no changes to the strategy. See
-[The Strategy Pattern in a Backtesting Engine](/software/strategy-pattern-backtesting/)
-for the architecture.
+**Availability time, not candle time.** Every bar records when it could have
+been observed, and the engine groups bars by that time. A strategy can't be
+handed a completed candle before its close was knowable, which removes a
+common source of look-ahead bias.
 
-**Regression testing for strategies.** The `trader backtest regress` command
-runs every YAML config in a directory and writes JSON and org-mode reports.
-A strategy that passes unit tests but degrades on out-of-sample data is
-caught before it touches a live account.
+**Bad data is kept and counted.** The canonical build never drops or invents
+a bar silently. Rejected rows are recorded, and the audit command reports
+them, so a gap in the data shows up as a gap in the report instead of as a
+better backtest.
 
-## Strategies
+**A regression check on every change.** Every pull request must leave the
+EMAX backtest summaries byte-for-byte unchanged (the README publishes the
+checksum), so a refactor that shifts a result is caught before it merges.
 
-| Strategy | Description |
-|---|---|
-| `emacross` | EMA crossover — fast/slow moving average |
-| `emacrossadx` | EMA crossover filtered by ADX trend strength |
-| `donchian` | Donchian channel breakout |
-| `pulse` | Mechanical open/close on a fixed tick schedule |
-| `noop` | Baseline — does nothing, establishes spread/slippage cost |
-
-New strategies implement the four-method `Strategy` interface. The `tmpl`
-strategy is a documented starting point.
+**Decisions are written down.** Architecture decisions are recorded as ADRs in
+the repository, and AI agents working in the repo follow its `AGENTS.md`. That
+record is also the source for future articles on this site.
 
 ## MCP Integration
 
-`trader-mcp` is an MCP server over stdio, built on the official Go SDK, that
-exposes Trader's research capabilities as typed tools for Claude Code and
-Claude Desktop:
+An earlier version of Trader included `trader-mcp`, an MCP server that let
+Claude query market data and run backtests. It was archived with the rest of
+the earlier code during the restart. Its design decisions are kept as ADRs, and
+it is planned to return once the layers it depends on are ported.
+[Build an MCP Server in Go](/notes/mcp-claude-tools/) covers how it was built.
 
-| Tool | Description |
-|---|---|
-| `trader_version` | Build identity of the running server |
-| `trader_instruments` | Resolve symbols to instruments for a data provider |
-| `trader_marketdata_coverage` | Canonical data coverage, partitions, and gaps |
-| `trader_run_backtest` | Run a backtest and return its run ID and summary |
-| `trader_backtest_result` | Full stored report for a run ID |
-| `trader_marketdata_update` | Download and build market data (write-gated) |
-| `trader_marketdata_canonicalize` | Build canonical data from raw data (write-gated) |
+## Repository
 
-Read tools are always available. Tools that change data refuse unless the
-server is started with `--allow-writes`, so an AI assistant can explore data
-and run backtests without changing anything by accident. The server does not
-place orders.
-
-See [Build an MCP Server in Go](/notes/mcp-claude-tools/) for how it is built
-and the patterns behind it.
-
-## Data Sources
-
-- **Dukascopy** — free tick data, aggregated into OHLC candles locally:
-  `trader data sync --instruments EUR_USD --from 2022-01 --to 2024-12`
-- **OANDA** — candles via API (requires token):
-  `trader data oanda --instrument EUR_USD --granularity H1 --from 2024-01-01`
-
-Candle data is stored under `$DATA_DIR` as
-`/<source>/<INSTRUMENT>/<YYYY>/<MM>/`, keeping sources and instruments
-cleanly separated.
-
-## GitHub
-
-[rustyeddy/trader](https://github.com/rustyeddy/trader)
+[rustyeddy/trader](https://github.com/rustyeddy/trader): the
+[User's Guide](https://github.com/rustyeddy/trader/blob/a0e3283/docs/UsersGuide.md)
+covers the commands, configuration and data layout.
 
 ## Common Pitfalls
 
-Trading engines become unreliable when backtest and live code diverge, when
-strategies depend on broker-specific behavior, when floating-point arithmetic
-crosses domain boundaries, or when reports cannot be reproduced from a known
+Trading engines become unreliable when a strategy can see data before it was
+available, when strategies depend on broker-specific behavior, when
+floating-point arithmetic crosses domain boundaries, when bad source data is
+silently dropped or patched, or when results can't be reproduced from a known
 configuration and data set.
 
 ## Where This Fits
 
-Trader connects most directly to [The Strategy Pattern in a Backtesting Engine](/software/strategy-pattern-backtesting/)
-and [Fixed-Point Numeric Types in Go Financial Software](/software/numeric-types-financial-software/).
-Use the project page as the case study and those articles for the focused design lessons.
+Trader connects most directly to
+[The Strategy Pattern in a Go Backtesting Engine](/software/strategy-pattern-backtesting/)
+and [Money in Go: Fixed-Point Types for Financial Software](/software/numeric-types-financial-software/).
+Its release process is the example in
+[Software Release Process: A Checklist for Small Teams](/software/release-process/).
+Use this page as the case study and those articles for the focused design
+lessons.

@@ -267,7 +267,7 @@ intermediate step in a calculation.
 
 ## Where This Fits
 
-- [Trader: FX Backtesting and Live Trading Engine](/projects/trader/)
+- [Trader: A Go Framework for FX Strategy Research and Backtesting](/projects/trader/)
   describes the project these types come from.
 - [The Strategy Pattern in a Backtesting Engine](/software/strategy-pattern-backtesting/)
   shows how strategy logic stays separate from execution.
