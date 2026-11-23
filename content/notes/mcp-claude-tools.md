@@ -381,7 +381,7 @@ to writing your own.
 
 ## Where This Fits
 
-- [Trader: FX Backtesting and Live Trading Engine](/projects/trader/) is the
+- [Trader: A Go Framework for FX Strategy Research and Backtesting](/projects/trader/) is the
   project behind the examples.
 - [Money in Go](/software/numeric-types-financial-software/) explains why
   prices travel as strings.
