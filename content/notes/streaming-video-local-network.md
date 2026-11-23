@@ -1,75 +1,95 @@
 ---
-title: Streaming Live Video on a Local LAN vs. the Internet
+title: "Streaming Live Video on a Local LAN vs. the Internet"
 date: 2018-12-23
-description: >
-  Streaming video over a local area network can take on a
-  significantly different look than trying to live stream video over
-  the Internet.
+lastmod: 2026-11-23
+description: "Field notes from a robot camera project: why live video on a LAN needs low latency, RTSP vs. HTTP streaming, multicast consumers, and the tools I used."
 categories: ["Video", "Networking"]
-tags: ["Streaming Video", "LAN", "Networking", "Latency"]
+tags: ["Streaming Video", "LAN", "Networking", "Latency", "GStreamer"]
+aliases:
+  - /notes/streaming-video/
+  - /notes/streaming-video-tools/
 ---
 
 {{< older-note >}}
 
-- differences in local vs. internet and streaming video
+These notes come from the [RedEye](/projects/redeye/) work in 2018 and 2019:
+streaming live video from a camera on a moving vehicle, over a local network
+that might be Wi-Fi. The protocols have moved on since, but the tradeoffs
+haven't.
 
-- live stream vs. video on demand
+## Why latency matters on a LAN
 
-- what does real time mean?
+On a local network the video isn't just for watching. It feeds real-time
+control: OpenCV working through frames and passing data to the guidance
+module, or a person steering with a joystick. Either way, low latency and a
+stream without glitches are requirements.
 
-- what to do with late packets?
+The arithmetic is unforgiving. At about 60 mph a vehicle covers roughly 87
+feet a second, so a half-second delay puts it about 43.5 feet from where the
+video shows it. A half-second dropout makes it appear to jump the same
+distance. That's unsafe whether a human or an algorithm is driving.
 
-- UDP vs. TCP in the local network
+## LAN vs. the Internet
 
-- RTP and UDP
+**On the LAN, RTSP.** RTSP (with RTP over UDP) is a good fit when minimal
+delay is the top priority and the network is yours. It handles more than one
+sender and receiver per site well. It doesn't travel well over the Internet,
+because of how RTP and UDP behave across unknown links and firewalls.
 
-- RTP and RTCP
+**Over the Internet, HTTP.** Delay is unavoidable once you cross links you
+don't control, so the practical move is to wrap everything in HTTP. At the
+time the common setup was RTMP: each camera streamed to NGINX with the RTMP
+module, and NGINX published endpoints for clients. MPEG-DASH over HTTP was
+gaining ground as an open, browser-supported alternative, though Safari
+favored Apple's HLS.
 
-- RTP and RTSP
+My plan for the proof of concept was to run both, RTSP and HTTP with
+MPEG-DASH, from Raspberry Pis, generating the video with GStreamer.
 
-- RTP and Multicast 
+## One camera, several consumers
 
-- Tools used 
+I called the modules that receive video *consumers*: the web app's live
+display, a storage module that records the stream, and OpenCV running vision
+algorithms. A single camera had to serve all of them, at different
+resolutions.
 
+**Lower resolution for vision.** Computer vision algorithms run much faster on
+low-resolution frames, and the extra detail in high-resolution images can slow
+them down several times over. The vision pipeline wanted the small stream.
 
+**Snapshots too.** Some use cases needed still images: high-resolution photos,
+and quick frames pulled from the video as markers. The Raspberry Pi camera can
+produce several outputs at once, so one inexpensive camera covered both.
 
-RTSP is a good option for streaming video in a local setup up, where
-minimal delay is the highest priority.  However, RTSP does not
-typically do very well over the Internet due to the nature of
-RTP/UDP. 
+**Multicast groups per stream.** The end goal was to publish each stream to
+its own IP multicast group and let each consumer join the groups it needed:
 
-Which brings up another question: will there be more than one
-transmitter/receiver per office (which RTSP could serve well).
+```text
+225.1.1.1  high-definition video (1024x768)
+225.1.1.2  low-definition video (640x480)
+225.1.1.3  low-resolution snapshots
+225.1.1.4  high-resolution snapshots
+```
 
-In recent years people would use RTMP to stream video over the
-Internet, by adding a plugin to NGINX, each camera would
-stream to NGINX, NGINX then create the endpoints for the video,
-waiting for client connections to start receiving the video.
+The web app and the storage module join the video groups, and OpenCV joins the
+low-resolution one for object detection, navigation, or scene-change
+detection. Adding a consumer doesn't add load on the camera. See
+[IP Multicast Basics](/notes/ip-multicast/) for how the groups work.
 
-Nowadays MPEG-DASH over HTTP is building popularity, MPEG-DASH (taking
-over popularity from MJPEG) is an Open Protocol supported by most
-browsers including Chrome, but may be lagging with Safari.
+## Tools
 
-I am happy to set up a PoC with both RTSP and HTTP serving MPEG-DASH
-from Raspberry Pis.  For generating video, I'll be using gstreamer
-most likely to transmit the Raspberry Pi Video.
+The long-standing tools for streaming, snapshots and transcoding are
+**GStreamer**, **VLC** and **FFmpeg**:
 
-Video on a LAN required for Real Time control decisions, whether it is
-OpenCV churning through images while spitting out data used by _magoo_
-the guidance module. 
+- **GStreamer**: complex pipelines, but very flexible. Tees let one pipeline
+  feed several outgoing streams, including different resolutions and
+  bitrates, and NVIDIA builds its Jetson camera support on GStreamer plugins.
+  I chose it.
+- **VLC**: less complex than the others, and widely used.
+- **FFmpeg**: flexible, with long command lines. Some people reported it
+  hitting limits beyond medium-quality live streams, which was one reason I
+  stayed with GStreamer.
 
-Low latency is and a non-glitchy video stream are imperative to
-driving a high speed vehicle correctly. This is true even when the
-vehicle is being controlled by a human with a joystick.
-
-A half second delay in video translates to about 43.5 foot different
-in where the vehicle is vs. where it appears to be, or if the we have
-a .5 second drop in video, we will have "jump" that 43.5 feet.
-
-This makes safe navigation of a high speed vehicle unsafe, whether it
-is being driven by human or algorithm.
-
-## Video Over the Internet
-
-Delay is inevitable. You are crossing unknown links and firewalls.
-Must wrap it all up under HTTP to make things the easiest.
+Boards also ship their own utilities. In 2019 that meant `raspivid` for the
+Raspberry Pi camera and the `nvgst` capture and playback tools on the NVIDIA
+Jetson Nano.

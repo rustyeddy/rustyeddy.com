@@ -136,5 +136,5 @@ constraints, not surprises discovered at the end.
 RedEye is a historical project case study. For current architecture guidance,
 start with [IoT](https://rustyeddy.com/iot/) and
 [Projects](https://rustyeddy.com/projects/). For supporting background, see the
-older [streaming video notes](https://rustyeddy.com/notes/streaming-video/) and
+older [streaming video notes](/notes/streaming-video-local-network/) and
 [IP multicast notes](https://rustyeddy.com/notes/ip-multicast/).

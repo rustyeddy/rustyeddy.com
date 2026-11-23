@@ -27,7 +27,7 @@ These are useful historical references, but they should not be read as current
 recommendations without checking the surrounding context:
 
 - [MQTT for Controller Communication](/notes/mqtt-comm/) covers an older message-bus design for control software.
-- [Streaming Video Tools](/notes/streaming-video-tools/) and [Streaming Video is Complicated](/notes/streaming-video/) collect older video-system tradeoffs.
+- [Streaming Live Video on a Local LAN vs. the Internet](/notes/streaming-video-local-network/) collects older video-system tradeoffs from the RedEye camera work.
 - [IP Multicast Basics](/notes/ip-multicast/) preserves networking background that connects to later multicast work.
 
 ## How Notes Fit the Site
