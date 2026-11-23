@@ -6,7 +6,7 @@ description: "How to write AGENTS.md and CLAUDE.md files for a team repo: one ca
 tags: ["AI Agents", "Claude", "GitHub Copilot", "Codex", "Software Engineering"]
 categories: ["Software Engineering"]
 image: "/img/agents.jpg"
-image_alt: "Three robots reviewing project plans beneath the title Writing Agent Instructions for a New Software Project."
+image_alt: "Three robots study a printed project plan at a workbench, in front of a chalkboard with diagrams labeled Agent Instructions and Project Specification."
 ---
 
 ## For leads
