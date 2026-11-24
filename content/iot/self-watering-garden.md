@@ -76,10 +76,9 @@ the local network, and publish data using the expected message contract.
 ![Collection station diagram showing soil moisture and telemetry sensors sending data over Wi-Fi](/img/collection-station.png)
 
 Soil moisture sensing deserves special attention because cheap sensors
-can be noisy or unreliable. These notes cover that layer in more detail:
+can be noisy or unreliable. This note covers that layer in more detail:
 
-- [Soil Moisture Sensors](/notes/soil-moisture-sensor/)
-- [Adafruit Soil Moisture Sensor Notes for IoT Projects](/notes/soil-moisture-adafruit/)
+- [Adafruit Soil Moisture Sensor (I2C) vs. Cheap Capacitive Sensors](/notes/soil-moisture-adafruit/)
 
 ### Control Station
 

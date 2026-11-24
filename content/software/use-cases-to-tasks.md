@@ -99,7 +99,7 @@ enough to finish in one to two days and specific enough to review.
 {{% requirement "Measure soil moisture" %}}
 Build a sensor reader that returns a normalized soil moisture value and an
 error when the sensor cannot be read. For the garden project, the hardware
-notes are in [Adafruit Soil Moisture Sensor Notes for IoT Projects](/notes/soil-moisture-adafruit/).
+notes are in [Adafruit Soil Moisture Sensor (I2C) vs. Cheap Capacitive Sensors](/notes/soil-moisture-adafruit/).
 {{% /requirement %}}
 
 Good task card:
