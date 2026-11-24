@@ -18,14 +18,24 @@ The useful boundary is a device abstraction layer: hardware-specific drivers
 stay below it, application logic stays above it, and the two communicate
 through small interfaces.
 
-This article explains the design behind the device layer used by
+This article explains the design behind the original device layer in
 [OttO](/projects/otto/), the Go-based IoT edge runtime, and its companion
-[devices](https://github.com/rustyeddy/devices) library. Read it as the implementation detail beneath the
+[devices](https://github.com/rustyeddy/devices) library. Read it as the
+implementation detail beneath the
 [five-layer IoT architecture](/iot/iot-system-architecture-explained/).
+
+> **Status, November 2026:** this describes the original design, with a
+> `Get`/`Set` device interface and a device manager. In January 2026 OttO
+> and `devices` were rebuilt around channel-based devices: a small `Device`
+> lifecycle contract (`Name`, `Run`, `Close`, `Events`), typed `Source` and
+> `Sink` channels, and a messenger registry that wires devices to MQTT topics.
+> The boundary this article argues for (hardware below, application logic
+> above, mocks for testing) is the same; the code shapes have changed. See the
+> [OttO project page](/projects/otto/) for the current contract.
 
 ## The Architecture Boundary
 
-OttO separates the system into three layers:
+The original OttO separated the system into three layers:
 
 ```text
 Application logic
@@ -322,8 +332,10 @@ The ecosystem around this design has three roles:
 
 - [devices](https://github.com/rustyeddy/devices): device interfaces,
   hardware wrappers, and mocks.
-- [OttO](https://github.com/rustyeddy/otto): the edge runtime, device manager,
-  MQTT, REST API, WebSocket API, and persistence.
+- [OttO](https://github.com/rustyeddy/otto): the edge runtime. In the
+  original design it also held the device manager, REST and WebSocket APIs,
+  and persistence; the rebuilt OttO wires devices to MQTT through a messenger
+  registry, and those other pieces are archived.
 - [Gardener](https://github.com/rustyeddy/gardener): the reference irrigation
   application that exercises the full stack.
 

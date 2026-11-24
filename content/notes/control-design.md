@@ -1,10 +1,7 @@
 ---
 title: Control System Design
 date: 2018-05-05
-description: >
-  Boy do I gotta lotta learn. This control systems is pretty serious
-  stuff!  I'll have to learn some of this stuff to incorporate back
-  into our driving algorithms. 
+description: "Early robot-building notes on splitting control between a Raspberry Pi and an Arduino, and linking controllers over serial, I2C, and other buses."
 categories: ["Control Systems", "Robotics"]
 tags: ["Control Systems", "Robotics", "Raspberry Pi", "Arduino"]
 ---

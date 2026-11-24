@@ -1,10 +1,6 @@
 ---
 title: Why Choose Go for Your Project?
-description: >
-  The programming language Go has taken the development world by storm
-  over the last few years. This article will discuss reasons why Go
-  has become so popular and why you might choose it for your next
-  project. 
+description: "A 2019 note on why Go suits many projects: simplicity, speed, single-binary deployment with no external runtime or build tools, and built-in concurrency."
 date: 2019-09-22
 categories: ["Go", "Software Engineering"]
 tags: ["Go", "Software Architecture", "Concurrency", "Tooling"]

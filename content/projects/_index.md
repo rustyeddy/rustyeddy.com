@@ -18,7 +18,7 @@ tradeoffs, or implementation lessons are still useful.
 Start here when you want current project context:
 
 - **Reference implementation**: [OttO](/projects/otto/) is a Go-based IoT edge runtime for coordinating sensors, actuators, APIs, and gateway behavior.
-- **Active**: [Trader](/projects/trader/) is a Go backtesting and trading engine used to discuss strategy boundaries, numeric correctness, and testable trading logic.
+- **Active**: [Trader](/projects/trader/) is a Go framework for FX strategy research and backtesting, used to discuss strategy boundaries, numeric correctness, and testable trading logic.
 
 ## Historical Case Studies
 

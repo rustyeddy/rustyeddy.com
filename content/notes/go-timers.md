@@ -9,8 +9,8 @@ tags: ["Go", "Timers", "IoT Gateway", "Device State"]
 
 {{< older-note >}}
 
-This article introduces Go timers as the mechanism the
-[IoTa gateway](https://github.com/rustyeddy/iota) uses to identify
+This article introduces Go timers as the mechanism the IoTa gateway
+(its repository is no longer public) used to identify
 _stale_ IoT stations. Modifying the Station with with a new _Go
 timestamp_ field will allow IoTe to determine how long it has been
 since the last time it has heard from a given Station.

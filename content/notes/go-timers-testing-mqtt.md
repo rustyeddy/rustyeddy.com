@@ -54,9 +54,10 @@ function indicating a successful message.
 We will wait for half a second before we determine the test has
 failed. 
 
-The follow test taken directly from the iote test cases [see
-mqtt_test.go](https://github.com/rustyeddy/iote/blob/main/mqtt_test.go)
-as a reference. Let's check out the code.
+The following test is taken directly from the iote test cases (iote is
+now OttO); see
+[mqtt_test.go](https://github.com/rustyeddy/otto/blob/19cbb114c485d8d4b39265d0dea11edc9be30545/mqtt_test.go)
+as it was in May 2022. Let's check out the code.
 
 
 ```go
