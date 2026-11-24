@@ -1,15 +1,35 @@
 ---
-title: "Peer Reviews"
+title: "Peer Review When AI Agents Write Some of the Code"
 date: 2026-05-21
+lastmod: 2026-11-23
 weight: 60
-description: >
-  How peer review catches bugs before users do, spreads knowledge across
-  the team, and keeps code maintainable through clear author and reviewer
-  responsibilities.
-tags: ["Peer Review", "Pull Requests", "Software Engineering", "Code Review"]
+description: "Code review for teams using AI coding agents: independent review, what to check in an agent's pull request, recorded approvals, and a human merge."
+tags: ["Peer Review", "Pull Requests", "Software Engineering", "Code Review", "AI Agents"]
 categories: ["Software Engineering"]
-summary: "A practical guide to code review: what authors should prepare, what reviewers should check, and how pull requests fit into release quality."
+summary: "A practical guide to code review when AI agents write some of the code: what authors prepare, what reviewers check, how to review an agent's pull request, and why the review has to be independent and recorded."
 ---
+
+## For leads
+
+When AI agents write some of your code, review is the gate that decides what
+reaches production. Require five things:
+
+1. **Independent review.** The author never certifies its own work. That
+   applies to an agent reviewing its own change, and to a person approving
+   code they asked an agent to write without reading it.
+2. **A named person approves the merge.** Agents can draft and review. A
+   person decides what merges.
+3. **Review capacity is the limit.** Agents produce changes faster than people
+   can review them well. Cap the queue, not just the work in progress.
+4. **Reviews are recorded and attributed.** A review that isn't written down
+   looks the same, later, as no review at all.
+5. **Comments are resolved before merge.** Turn on the branch-protection
+   setting that blocks merging with unresolved conversations.
+
+What doesn't change: review exists to catch mistakes while they're cheap, and
+to spread context across the team.
+
+## What peer review is
 
 Peer review is the practice of having another engineer inspect a change
 before it merges into the main branch. It comes after a focused task has been
@@ -37,6 +57,7 @@ Peer review should answer a few concrete questions:
 - Does it fit the existing architecture and style?
 - Does it change public contracts, data, configuration, or operations?
 - Can another engineer maintain this code later?
+- Does it stay within the scope of the card it was written for?
 
 Review is not a ceremony and it is not a personality test. It is a shared
 engineering checkpoint before code becomes part of the permanent system.
@@ -54,6 +75,11 @@ A good pull request description explains:
 - What alternatives were considered, if relevant.
 - How the change was tested.
 - Any risky areas the reviewer should inspect closely.
+- Who or what drafted it: a person, an agent, or both.
+
+That last line matters more than it looks. On a team where agents commit
+under a person's account, the history can't otherwise tell which changes a
+person wrote and which they only asked for.
 
 The description matters because it becomes part of the project history.
 Six months later, the pull request often explains the decision better than
@@ -77,6 +103,12 @@ Before requesting review, the author should:
 A reviewer should not have to reverse-engineer the intent from the diff.
 Context is part of the author's job.
 
+When an agent drafts the change, the person who assigned the card is still
+the accountable author. The agent should run the checks and report the
+results in the description, including anything it couldn't verify. A good
+agent pull request says "I couldn't reach X, so Y is unchecked" instead of
+quietly guessing.
+
 ## Reviewer Responsibilities
 
 The reviewer is responsible for judging the change, not rewriting it from
@@ -96,6 +128,46 @@ A reviewer should check:
 The reviewer should separate blocking issues from questions and optional
 suggestions. A small naming suggestion should not carry the same weight as
 a data-loss bug.
+
+## Reviewing a Change an Agent Wrote
+
+Agent-written changes fail in recognizable ways. Check for these on top of
+the usual list:
+
+- **Scope drift.** The card asked for one function; the diff also refactors
+  a neighbor "while it was there." Ask for the extra work as its own change.
+- **Plausible but wrong.** The code reads well and compiles, but calls an API
+  that doesn't exist, misreads a requirement, or handles the common case and
+  silently skips the edge case the card named.
+- **Tests that agree with the code instead of checking it.** Expected values
+  computed the way the implementation computes them, or an existing test
+  weakened to reach green. See
+  [Test-Driven Development When AI Agents Write the Code](/software/test-driven-software-development/).
+- **Claims about outside systems.** Documentation, library behavior, version
+  numbers. Check them against the primary source, not against what sounds
+  right.
+
+That last check cuts both ways. While this site was being rewritten, a
+reviewer flagged a claim about how Claude Code reads `AGENTS.md` as wrong. A
+second reviewer said it was right. The official documentation settled it: the
+drafter had been right all along, and the first reviewer had checked against
+an outdated copy of the page. The lesson isn't "trust the reviewer" or "trust
+the author." It's that disagreements get settled by the source, and a
+reviewer can be wrong too.
+
+## Independent Review
+
+"Independent" means the reviewer didn't write the change and isn't simply
+trusting the author's account of it.
+
+- **A person** is the strongest independent reviewer for anything that
+  matters, and a person approves every merge.
+- **A different model, or a fresh agent without the drafter's context,** is a
+  useful additional reviewer. It's fast and it catches a different set of
+  mistakes. Agents from the same model family can share blind spots, so for
+  high-stakes changes, mix models or add a person.
+- **The drafting agent reviewing its own work** isn't review. Self-checks are
+  useful before asking for review; they don't replace it.
 
 ## Giving Useful Feedback
 
@@ -133,6 +205,11 @@ If a disagreement reveals a larger design question, move the discussion out
 of line comments and resolve the decision directly. Review threads are good
 for focused comments, but they are a poor place for open-ended design debate.
 
+Make the review visible, too. On GitHub an author can't approve their own pull
+request, so if agents open pull requests under your account, your review can
+only be recorded as a comment. Leave one anyway, even a single line, so the
+history shows the change was checked and by whom.
+
 ## Pull Request Checklist
 
 Before merge, a practical checklist should be boring:
@@ -144,8 +221,10 @@ Before merge, a practical checklist should be boring:
 - Public API, schema, configuration, or command changes are called out.
 - Documentation or examples are updated when behavior changes.
 - The release or rollback impact is understood.
-- Blocking review comments are resolved.
-- At least one reviewer has approved.
+- Blocking review comments are resolved, and the branch settings enforce it.
+- At least one independent reviewer has approved, and the review is recorded.
+- The description says who or what drafted the change.
+- A person made the merge decision.
 
 The checklist is not a substitute for judgment. It is a guardrail against
 forgetting common failure modes.
@@ -181,14 +260,35 @@ Approval means the reviewer has done enough work to stand behind the change.
 For risky code, that may include pulling the branch, running tests, or trying
 the workflow manually.
 
+### Approving Because the Tests Pass
+
+Green checks are evidence about the behavior the tests cover, nothing more.
+For an agent's change in particular, read the diff, including any changes to
+the tests.
+
+### Merging With Unresolved Comments
+
+It's easy to approve, merge, and forget that a review comment asked for a
+change. On this site a pull request once merged with two inline comments
+unapplied, and the fix had to follow in a second pull request
+([#232](https://github.com/rustyeddy/rustyeddy.com/pull/232)). GitHub's
+"require conversation resolution before merging" setting prevents it.
+
+### Unrecorded Reviews
+
+A review done in your head, or in a chat with the author, leaves no trace.
+Six months later nobody can tell a reviewed change from an unreviewed one.
+
 ## Where This Fits
 
-Peer review sits between implementation and release. It depends on good
-version-control habits and feeds into the release process.
+This page is the sixth step in the delivery series. Peer review sits between
+implementation and release.
 
-- [Version Control Systems](/software/version-control-systems/) explains the
-  branch and history practices that make review possible.
-- [Test Driven Software Development](/software/test-driven-software-development/)
-  explains how tests give reviewers something concrete to verify.
-- [Release Process](/software/release-process/) explains how reviewed and
-  tested changes become a shipped artifact.
+- Previous: [Version Control Systems](/software/version-control-systems/)
+  explains the branch and history practices that make review possible.
+- Earlier: [Test-Driven Development When AI Agents Write the Code](/software/test-driven-software-development/)
+  explains how tests give reviewers something concrete to verify, and
+  [Organizing Tasks with Kanban When AI Agents Do Some of the Work](/software/kanban/)
+  puts a review gate on the board.
+- Next: [Software Release Process](/software/release-process/) explains how
+  reviewed and tested changes become a shipped artifact.
