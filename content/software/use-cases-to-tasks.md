@@ -1,17 +1,37 @@
 ---
-title: Use Cases to Tasks
+title: "From Use Cases to Task Cards an AI Agent Can Execute"
 date: 2024-12-26
-description: >
-  How to turn use cases into requirements, acceptance tests, and small Kanban
-  cards that are ready for implementation.
+lastmod: 2026-11-23
+description: "Turn use cases into requirements, acceptance tests, and task cards small and specific enough for a developer or an AI coding agent to finish and verify."
 weight: 21
-tags: ["Use Cases", "Tasks", "Acceptance Tests", "Kanban", "Software Engineering"]
+tags: ["Use Cases", "Tasks", "Acceptance Tests", "Kanban", "AI Agents", "Software Engineering"]
 categories: ["Software Engineering"]
 ---
 
+## For leads
+
+When AI coding agents pick up some of your team's tasks, the task card stops
+being a reminder and becomes the specification. Require three things before
+any card is started:
+
+1. **Acceptance tests come first, and a person owns them.** They define done
+   from the outside, and they're what an agent checks its own work against.
+2. **Every card passes the "could an agent do this from the card alone?"
+   test.** If it couldn't, a new developer couldn't either.
+3. **Cards trace back to a use case.** A card that can't name the user goal it
+   serves is work nobody asked for, and agents produce that kind of work
+   quickly.
+
+What doesn't change: deciding what users need, and slicing it well, is still
+the team's job.
+
+## From user value to work
+
 A use case describes value from the user's point of view. A task describes a
-piece of work a developer can finish. Confusing those two is one of the
-fastest ways to turn a software plan into a vague backlog.
+piece of work someone can finish, whether that's a developer or an AI agent.
+Confusing those two is one of the fastest ways to turn a software plan into a
+vague backlog, and with agents on the team a vague backlog turns into
+confident, wrong code faster than it used to.
 
 ## Why This Matters
 
@@ -46,7 +66,7 @@ The translation matters because each artifact has a different audience:
 | Use case | User, product owner, team | Describe user value |
 | Requirement | Team | State required behavior |
 | Acceptance test | User, reviewer, team | Define observable success |
-| Task card | Developer | Describe a small implementation step |
+| Task card | Developer or agent | Describe a small implementation step |
 
 If a Kanban card is just a copied use case, it is usually too large. If a use
 case is written as a technical task, it loses the user's intent.
@@ -88,6 +108,18 @@ These tests give the developer and reviewer a shared target. They also make
 it obvious when a requirement is too vague. For example, "record historic
 moisture data" is not testable until we name the minimum fields that must be
 recorded.
+
+That vagueness matters more with agents. A developer who hits "record historic
+moisture data" will usually ask which fields. An agent will often pick some,
+write code and tests that agree with each other, and report the card done.
+The acceptance test is what catches it, which is why it has to exist before
+the card is picked up.
+
+An agent can help draft these tests: give it the use case and ask for
+Given/When/Then cases, including the edge cases a person tends to skip. But a
+person decides which ones are right. If the same agent writes the acceptance
+tests and the code that satisfies them, nothing independent has checked that
+either one matches what the user needed.
 
 ## Slice the Work into Task Cards
 
@@ -183,10 +215,25 @@ Good task card:
 > Done when a test subscriber receives the expected JSON payload for one
 > reading.
 
+## Make Each Card Executable
+
+The cards above are enough for a developer who knows the project. A card an
+agent can pick up needs the context a teammate would get in conversation:
+
+- **Scope.** What it may change, and what it must not touch.
+- **Checks.** The commands or named tests to run before asking for review.
+  "Tests pass" isn't a check; a named test suite is.
+- **What needs a person.** The judgments no automated check covers, such as a
+  bench test with real hardware.
+
+Repository-wide rules (how to build, how to run the checks, which branches are
+off limits) belong in the repository's instruction file, not repeated on every
+card. See [AGENTS.md and CLAUDE.md for Teams](/software/writing-agent-instructions/).
+
 ## Example Kanban Card
 
-A finished card should make the work and exit criteria obvious. Here is one
-card that is small enough to pull into `In Progress`:
+A finished card should make the work and exit criteria obvious, whoever picks
+it up. Here is one card that is small enough to pull into `In Progress`:
 
 ```text
 Title: Implement moisture threshold decision function
@@ -206,14 +253,24 @@ Acceptance criteria:
 - Damp threshold turns pump off when pump is already running
 - Invalid threshold configuration returns an error
 
+Scope:
+- Add the decision function and its tests only
+- Don't change the pump driver, the sensor reader, or the MQTT payload
+
+Checks (run before moving to Review):
+- Table-driven unit tests for the threshold decision pass
+- The package builds and the existing tests still pass
+
 Links:
 - Use case: Water plants when soil is too dry
-- Tests: table-driven unit tests for threshold decisions
 ```
 
 That card is not the whole watering system. It is one piece of the watering
 system. When it is done, the board moves forward and the next card can build
-on a tested decision boundary.
+on a tested decision boundary. Notice what the scope line does: without it, an
+agent fixing the decision logic might "helpfully" refactor the pump driver in
+the same change, and the reviewer gets a much bigger diff than the card asked
+for.
 
 ## Common Pitfalls
 
@@ -227,6 +284,10 @@ on a tested decision boundary.
   system behavior and need explicit tests.
 - Creating cards that name technologies but not outcomes, such as "add MQTT"
   without saying what message must be published and how it will be verified.
+- Letting the same agent write the acceptance tests and the code. They will
+  agree with each other; that doesn't make either one right.
+- Writing cards that depend on hallway context. They work for the person who
+  wrote them and fail for everyone else, agents included.
 
 ## Ready for the Backlog
 
@@ -237,14 +298,21 @@ A task is ready for the Kanban board when it has:
 - Acceptance criteria that can be tested or demonstrated.
 - Enough detail for a developer to start without rediscovering the whole
   design.
-- A size small enough for one person to complete in one or two days.
+- A scope line and named checks, so an agent could start from the card and
+  the repository's instructions alone.
+- A size small enough for one person to complete in one or two days, and a
+  result small enough to review in one sitting.
 
 This is the bridge from design to development: use cases explain value,
 requirements define behavior, acceptance tests define done, and task cards
-make the work visible.
+make the work visible and executable.
 
 ## Where This Fits
 
-This page sits between [Use Cases](/software/use-cases/) and [Kanban](/software/kanban/).
-Use cases define the user goal; task slicing turns that goal into work small
-enough to track, test, review, and release.
+This page is the second step in the delivery series:
+
+- Previous: [Use Cases](/software/use-cases/) defines the user goal.
+- Next: [Organizing Tasks with Kanban When AI Agents Do Some of the Work](/software/kanban/)
+  runs these cards on a board, with a review gate before Done.
+- Later: [Test Driven Software Development](/software/test-driven-software-development/)
+  turns acceptance criteria into repeatable checks.
