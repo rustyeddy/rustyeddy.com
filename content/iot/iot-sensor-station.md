@@ -221,7 +221,5 @@ The collection station is one part of the larger IoT system:
   shows the station in the full irrigation workflow.
 - [OttO: A Go-Based IoT Edge Gateway Architecture](/iot/iot-edge-gateway/)
   describes the gateway that receives collection station data.
-- [Soil Moisture Sensors](/notes/soil-moisture-sensor/) covers sensor
-  selection problems.
-- [Adafruit Soil Moisture Sensor Notes for IoT Projects](/notes/soil-moisture-adafruit/)
-  discusses a more reliable digital soil sensor option.
+- [Adafruit Soil Moisture Sensor (I2C) vs. Cheap Capacitive Sensors](/notes/soil-moisture-adafruit/)
+  covers sensor selection problems and a more reliable digital sensor.

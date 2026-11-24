@@ -23,6 +23,12 @@ example was built and exercised against
 v1.8.0, and the Trader details come from its `trader-mcp` server at
 [commit `3f8dd53`](https://github.com/rustyeddy/trader/tree/3f8dd531e562f9cb2c6bb5e80c560e81e35408c9/cmd/trader-mcp).
 
+> **Status, November 2026:** Trader was restarted from a smaller design, and
+> `trader-mcp` is archived while the layers it depends on are rebuilt. It's
+> planned to return. The tutorial's own server stands on its own, and the
+> Trader sections describe the server at the commit above. See the
+> [Trader project page](/projects/trader/) for current status.
+
 ## Why This Matters
 
 An MCP server is a boundary between a model and a real system. Everything the

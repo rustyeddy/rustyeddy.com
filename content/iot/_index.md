@@ -1,40 +1,44 @@
 ---
-title: Internet of Things (IoT)
-description: >
-  A software-first guide to IoT systems: device boundaries, edge gateways,
-  APIs, messaging, and maintainable embedded-to-cloud architecture.
+title: "IoT Architecture Case Studies"
+description: "IoT case studies from OttO and a self-watering garden: device boundaries, edge gateways, MQTT messaging, and the delivery lessons behind each design."
 tags: [iot, maker, software-architecture]
 date: 2023-01-13
+lastmod: 2026-11-23
 show_articles: false
 ---
 
-This section is for engineers who want IoT systems to behave like software
-systems, not one-off hardware demos.
+These are case studies, not a separate track. The main subject of this site
+is delivering software well, increasingly with AI agents doing part of the
+work; see [Software Delivery for Small Teams](/software/). IoT is where I
+test those ideas against hardware, flaky networks, and devices that fail in
+the field, which makes the tradeoffs hard to ignore.
 
-If you care about device boundaries, gateway responsibilities, APIs, messaging,
-observability, and long-term maintainability, start here. Wiring details and
-board bring-up matter, but the main focus is how the pieces fit together after
-the prototype works.
+The reference implementation is [OttO](/projects/otto/), a Go runtime for
+edge devices, and the running example is a self-watering garden built on it.
 
-## Start With the Architecture
+## Architecture
 
-These are the pillar articles for the IoT section:
+- [The Five Layers of a Practical IoT System](/iot/iot-system-architecture-explained/)
+  explains the device, protocol, edge, backend, and application boundaries,
+  and when each piece is worth adding.
+- [OttO: A Go-Based IoT Edge Gateway Architecture](/iot/iot-edge-gateway/)
+  covers the gateway: MQTT as the device boundary, and how the original 2022
+  design compares with the rebuilt OttO.
+- [Building an IoT Device Abstraction Layer in Go](/iot/building-iot-device-manager-in-go/)
+  shows how to keep application logic separate from hardware details.
 
-- [The Five Layers of a Practical IoT System](/iot/iot-system-architecture-explained/) explains the device, protocol, edge, backend, and application boundaries, and when each piece is worth adding.
-- [Building an IoT Device Abstraction Layer in Go](/iot/building-iot-device-manager-in-go/) shows how to keep application logic separate from hardware details.
-- [OttO Edge Gateway Architecture](/iot/iot-edge-gateway/) describes the Go-based edge runtime behind the reference implementation, with MQTT for device telemetry and REST for clients.
+## The garden case study
 
-## Implementation Notes
+- [Self-Watering Garden](/iot/self-watering-garden/) ties the pieces together
+  end to end.
+- [ESP32 Collection Station Architecture](/iot/iot-sensor-station/) describes
+  the device-side responsibilities in a sensor network.
+- [Adafruit Soil Moisture Sensor (I2C) vs. Cheap Capacitive Sensors](/notes/soil-moisture-adafruit/)
+  covers the sensor layer, where bad readings start.
 
-Use these when you want a narrower design or implementation detail:
+## Older project work
 
-- [ESP32 Collection Station Architecture](/iot/iot-sensor-station/) describes the device-side responsibilities in a sensor network.
-- [Self-Watering Garden](/iot/self-watering-garden/) ties the pieces together as a small end-to-end case study.
-
-## Related Project Work
-
-The IoT articles connect most directly to [OttO](/projects/otto/), the edge
-runtime, and to older robotics/video work such as [RedEye](/projects/redeye/).
-Project pages are case studies and reference implementations. Notes are smaller
-working references. The articles in this section are the canonical architecture
-path.
+[RedEye](/projects/redeye/), an earlier robot-camera project, is documented
+as a historical case study, with field notes on
+[streaming live video over a LAN](/notes/streaming-video-local-network/) and
+[motor controllers](/notes/motor-controlor-notes/).

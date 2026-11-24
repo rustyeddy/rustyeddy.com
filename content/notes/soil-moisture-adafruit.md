@@ -1,63 +1,215 @@
 ---
-title: Adafruit Soil Moisture Sensor Notes for IoT Projects
+title: "Adafruit Soil Moisture Sensor (I2C) vs. Cheap Capacitive Sensors"
 date: 2024-03-13
-lastmod: 2026-05-31
-canonical: "https://rustyeddy.com/notes/soil-moisture-adafruit/"
-description: >
-  Notes on using the Adafruit STEMMA soil moisture sensor after unreliable
-  results from cheap capacitive sensors in an ESP32 garden project.
+lastmod: 2026-11-23
+description: "Soil moisture sensors for an ESP32 garden: why cheap capacitive boards fail, calibration and protection, and the Adafruit STEMMA I2C sensor with code."
 categories:
   - electronic-components
 tags:
   - soil moisture
+  - sensors
+  - iot
+  - i2c
 github: https://github.com/rustyeddy/iotesp
+aliases:
+  - /notes/soil-moisture-sensor/
 ---
 
-# Adafruit Soil Moisture Sensor Notes for IoT Projects
+Soil moisture sensing looks simple until you try to build a reliable system
+around it. Many inexpensive sensors work well enough for a bench demo, but
+behave poorly once they're pushed into soil, powered from a battery, sampled by
+a sleeping microcontroller, and left outside.
 
-Notes on using the Adafruit STEMMA soil moisture sensor after unreliable
-results from cheap capacitive sensors in an ESP32 garden project.
+These notes come from the [self-watering garden](/iot/self-watering-garden/)
+project, where each watering station is part of a larger system: ESP32
+collection stations publish readings, the OttO gateway collects them, and a
+dashboard or control loop uses the data. The sensor is one small part of that
+system, and that's the point. Bad readings at the edge leak into every layer
+above it, so a slightly more expensive sensor that behaves predictably is
+cheaper than days spent debugging noisy readings.
 
-<https://github.com/rustyeddy/iotesp>
+## Recommendation
 
-Cheap capacitive soil moisture sensors are attractive for garden automation
-because they are inexpensive and easy to find. In practice, the ones I tried
-were inconsistent enough that they became a distraction from the larger system
-design — and that is the whole point of this note. When the sensor is one small
-part of a larger system (collection stations, an edge gateway, MQTT data flow,
-REST APIs, and a dashboard), a slightly more expensive sensor that behaves
-predictably is cheaper than spending days debugging noisy readings.
+For a real garden system, I wouldn't start with the cheapest bare capacitive
+boards again. They're useful for learning, but the quality variance and
+protection work can consume more time than they save.
 
-So this note explains why I moved to the
-[Adafruit STEMMA Soil Sensor](https://www.adafruit.com/product/4026), what
-changes when the sensor communicates over I2C, and where it fits in the
-[self-watering garden](https://rustyeddy.com/iot/self-watering-garden/)
-architecture.
+- Avoid resistive probes for long-term outdoor use.
+- Prefer capacitive sensing over resistive sensing.
+- If you use cheap capacitive boards, inspect the components before deployment
+  and protect the electronics from moisture.
+- For a more predictable project, use a better-supported digital sensor such as
+  the [Adafruit STEMMA Soil Sensor](https://www.adafruit.com/product/4026) and
+  treat it as an I2C device. The rest of this note explains why, and how.
 
-## Why I Tried the Adafruit Sensor
+## Resistive vs. Capacitive Sensors
 
-The broader sensor-selection problem is covered in my earlier
-[soil moisture sensor notes](https://rustyeddy.com/notes/soil-moisture-sensor/).
-The short version is that many low-cost capacitive sensors have quality
-problems: questionable timer chips, missing support components, slow settling
-behavior, and awkward analog readings from an ESP32 ADC.
+The two common low-cost soil moisture sensor types are resistive and
+capacitive.
 
-None of those issues are impossible to work around, but they add friction, and
-friction in the sensor layer leaks into every layer above it.
+Resistive sensors measure conductivity through exposed metal traces or
+probes. They are cheap and easy to understand, but the exposed metal is
+part of the measurement path. In wet soil, those probes corrode and the
+readings change over time.
 
-## What Changed
+Capacitive sensors estimate moisture without relying on exposed metal in
+the same way. They are generally the better starting point for a garden
+project, but cheap capacitive boards still have problems: inconsistent
+parts, missing components, slow response, noisy readings, and weak
+protection around the electronics.
+
+That makes capacitive sensors preferable, not automatically reliable.
+
+## Research Notes
+
+A few public teardown and test videos were useful while sorting through
+which cheap capacitive sensors were worth trying.
+
+This video discusses quality problems in common capacitive soil moisture
+boards and claims a high failure rate among tested sensors:
+
+{{< youtube IGP38bz-K48 >}}
+
+The most useful takeaway was not the exact percentage. It was the
+component-level checklist: inspect the regulator, timer chip, and support
+components before assuming two boards with the same shape behave the same
+way.
+
+Another useful video discusses response time and a possible resistor
+change for some boards:
+
+{{< youtube QGCrtXf8YSs >}}
+
+I kept these links because they explain the failure modes better than a
+short text summary can. The exact board revisions in the market change,
+so treat them as diagnostic guidance, not as a permanent buying guide.
+
+## Common Problems With Cheap Capacitive Boards
+
+### Missing or Wrong Voltage Regulator
+
+Some boards are advertised as working with either 3.3V or 5V, but not
+all boards are populated the same way. If a board is missing the expected
+regulator, battery-powered operation can become unreliable as voltage
+falls.
+
+Before deploying a batch, inspect the actual boards you received. Do not
+assume the product photo and the delivered board are identical.
+
+### Wrong Timer Chip
+
+Some boards use a TLC555-style timer, while others use an NE555-style
+chip. The distinction matters because the NE555 may require a higher
+operating voltage than a battery-powered 3.3V design can reliably
+provide.
+
+For a low-power ESP32 station, that can turn into intermittent readings
+that look like software bugs but are really hardware mismatch.
+
+### Missing Support Resistors
+
+Some boards appear to be missing support components that affect response
+time. The practical symptom is that readings settle slowly after power is
+applied.
+
+That matters for a sleeping sensor station. If the firmware wakes up,
+powers the sensor, samples immediately, and goes back to sleep, the
+reading may reflect sensor settling behavior instead of actual soil
+moisture.
+
+### Board-to-Board Variation
+
+Cheap capacitive boards are not all equivalent. Two boards can have the
+same general shape and still use different components or produce
+different ranges. Calibration should happen per board or per batch.
+
+## Reading an Analog Capacitive Sensor
+
+Most low-cost capacitive sensors expose three pins:
+
+- Power.
+- Ground.
+- Analog signal.
+
+That signal can be read directly by a microcontroller with an ADC, such
+as an ESP32 or Raspberry Pi Pico. A full Raspberry Pi does not have
+analog input pins, so it needs an external ADC or a small microcontroller
+acting as the sensor interface.
+
+The basic firmware loop should account for settling and calibration:
+
+1. Wake the microcontroller.
+2. Power or enable the sensor.
+3. Wait long enough for the reading to settle.
+4. Sample multiple times.
+5. Average or filter the samples.
+6. Publish the reading.
+7. Return to sleep.
+
+The right delay depends on the specific sensor board. Measure it instead
+of guessing.
+
+## Calibration
+
+Do not assume the raw value means the same thing across boards.
+
+A practical calibration process is:
+
+1. Record the value in air or dry soil.
+2. Record the value in saturated soil or water, depending on the test
+   setup.
+3. Repeat with each sensor board.
+4. Convert raw readings into a normalized percentage or named range.
+5. Store calibration values with the station or gateway configuration.
+
+For irrigation control, stable relative readings are often more useful
+than pretending the sensor reports a precise physical moisture unit.
+
+## Protecting the Electronics
+
+The sensor blade goes into soil, but the electronics should not be left
+unprotected. Moisture can creep into exposed components and eventually
+ruin the board.
+
+This article collects several practical protection options:
+[Protecting Capacitive Soil Moisture Sensors](https://medium.com/@d.robertson/protecting-capacitive-soil-moisture-sensors-e1ab81f1c4fb).
+
+The methods I considered were:
+
+- Clear nail polish over exposed electronics.
+- Urethane or conformal coating.
+- Heat shrink tubing over the protected electronics area.
+
+The goal is to protect the electronics while leaving the sensing area
+able to interact with the soil. Do not coat the entire board blindly
+without understanding which section is the sensing surface.
+
+## Personal Experiment Notes
+
+The cheap capacitive sensors I bought were not the ideal variant. The
+boards appeared to use the less desirable timer chip, and the response
+behavior was not something I would trust without additional testing.
+
+That does not make them useless. They can still be used for learning,
+bench testing, and understanding the sensor path. But they are not where
+I would spend most of the effort for a reliable self-watering garden.
+
+The better engineering move is to reduce uncertainty at the sensor layer
+so the rest of the system can be tested against cleaner data.
+
+## The Adafruit STEMMA Sensor: What Changes
 
 The Adafruit sensor is still a capacitive soil moisture sensor, but it has a
 different integration model:
 
 - It communicates over I2C instead of returning a raw analog voltage.
 - It uses Adafruit's SeeSaw firmware interface.
-- It is smaller than the common bare capacitive boards.
-- It is designed for STEMMA QT / Qwiic-style wiring.
+- It's smaller than the common bare capacitive boards.
+- It's designed for STEMMA QT / Qwiic-style wiring.
 
-The important difference is not the shape or color of the board. The important
-difference is that the microcontroller talks to a digital peripheral instead of
-interpreting a raw analog signal directly.
+The important difference isn't the shape or color of the board. It's that the
+microcontroller talks to a digital peripheral instead of interpreting a raw
+analog signal directly.
 
 ## I2C and SeeSaw Integration Notes
 
@@ -209,33 +361,61 @@ The full version lives in the [iotesp repository](https://github.com/rustyeddy/i
 
 ## Common Pitfalls
 
-- Treating I2C as automatically reliable. Loose wires, long runs, missing
-  pull-ups, and mixed voltage assumptions can still produce intermittent
-  failures.
-- Ignoring address conflicts. Multiple I2C devices on one bus need unique
-  addresses.
-- Assuming cleaner hardware removes calibration. Soil type, placement, and
-  moisture range still need to be tested in the real garden.
-- Hiding sensor failures. The collection station should report read errors so
-  the gateway can distinguish "dry soil" from "sensor not responding." The
-  return contracts in the code above are written with exactly this in mind.
+### Sampling Before the Sensor Settles
 
-## Where It Fits
+A sleeping station may wake, read, and sleep too quickly. If the sensor
+needs time to settle after power-up, the first reading may be wrong.
 
-The Adafruit sensor is a better fit for my garden project because it moves the
-collection station away from fragile analog interpretation and toward a cleaner
-device abstraction. The station can read the sensor over I2C, publish the
-measurement to the gateway, and let the rest of the system treat soil moisture
-as telemetry instead of a hardware debugging problem.
+### Ignoring Calibration
 
-That is the real value: not that the sensor is perfect, but that it lets the
-software architecture stay focused on device management, messaging, storage,
-and control decisions.
+Raw ADC values are not portable across boards. Calibrate each board or
+at least each batch.
 
-## Related reading
+### Confusing Sensor Failure with Software Failure
 
-[More in Notes On Software](https://rustyeddy.com/notes/)
+Noisy or drifting readings can look like bugs in MQTT, the gateway, or
+the dashboard. Check the physical sensor before debugging every software
+layer above it.
 
-- [Soil Moisture Sensors](https://rustyeddy.com/notes/soil-moisture-sensor/) —
-  Plenty has been written about resistive vs. capacitive soil moisture sensors
-  and how riddled with problems they are. After a lot of research …
+### Leaving Electronics Exposed
+
+A sensor that works indoors for a day may fail outside after moisture
+gets into the electronics. Protection is part of the design, not a final
+detail.
+
+### Treating I2C as Automatically Reliable
+
+Loose wires, long runs, missing pull-ups, and mixed voltage assumptions can
+still produce intermittent failures on an I2C bus.
+
+### Ignoring Address Conflicts
+
+Multiple I2C devices on one bus need unique addresses.
+
+### Assuming Cleaner Hardware Removes Calibration
+
+Soil type, placement, and moisture range still need to be tested in the real
+garden, digital sensor or not.
+
+### Hiding Sensor Failures
+
+The collection station should report read errors so the gateway can tell "dry
+soil" from "sensor not responding." The return contracts in the code above are
+written with exactly this in mind.
+
+## Where This Fits
+
+The Adafruit sensor moves the collection station away from fragile analog
+interpretation and toward a cleaner device abstraction. The station reads the
+sensor over I2C, publishes the measurement to the gateway, and the rest of the
+system treats soil moisture as telemetry instead of a hardware debugging
+problem. That's the real value: not that the sensor is perfect, but that it
+lets the software architecture stay focused on device management, messaging,
+storage, and control decisions.
+
+- [Self-Watering Garden: An IoT Architecture Case Study](/iot/self-watering-garden/)
+  shows how the sensor reading is used in the full system.
+- [ESP32 Collection Station Architecture for IoT Sensor Networks](/iot/iot-sensor-station/)
+  explains the device-side firmware boundary.
+- [MQTT topic design for the OttO gateway](/iot/iot-edge-gateway/#mqtt-the-device-boundary)
+  explains how readings move from station to gateway.
