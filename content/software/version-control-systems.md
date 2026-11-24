@@ -1,15 +1,30 @@
 ---
-title: "Version Control Systems"
+title: "Version Control Practices for Teams Working with AI Agents"
 date: 2026-05-22
+lastmod: 2026-11-23
 weight: 50
-description: >
-  Git, branching strategies, tags, pull requests, and commit discipline:
-  how a version control system becomes the source of truth for a software
-  project.
-tags: ["Git", "Version Control", "Software Engineering", "Pull Requests"]
+description: "Git branches, commits, pull requests and tags for teams where AI agents write some of the code: one writer per branch, attribution, and branch protection."
+tags: ["Git", "Version Control", "Software Engineering", "Pull Requests", "AI Agents"]
 categories: ["Software Engineering"]
-summary: "A practical guide to using Git history, branches, pull requests, and tags as the permanent record of a software project."
+summary: "A practical guide to Git history, branches, pull requests, and tags as the permanent record of a software project, and the extra discipline a team needs when AI agents commit too."
 ---
+
+## For leads
+
+When AI agents commit code, version control is how you keep track of what
+they did. Require four things:
+
+1. **One writer per branch.** A person or an agent, never two agents at once.
+2. **Attribution.** Commits or pull requests say who or what drafted the
+   change, even when an agent commits under a person's account.
+3. **Branch protection on the deploy branch.** Changes arrive by pull request,
+   with passing checks, review, and resolved conversations. Nobody pushes
+   directly, people included.
+4. **Small commits and pull requests.** Agents can produce large changes
+   quickly; history is only useful if each change is reviewable.
+
+What doesn't change: the repository is the permanent record, and its value
+depends on discipline.
 
 The first sign of an undisciplined software project is source code managed
 as a folder of files, with copies passed around by email or shared drives.
@@ -102,6 +117,12 @@ Feature branches are the common pattern:
 Branch names should describe the work. `add-moisture-threshold-config` is
 more useful than `feature-1`.
 
+**One writer per branch.** Two people on one branch coordinate in
+conversation; two agents don't. Give each task its own branch and exactly one
+writer, a person or an agent, until it merges. On this site a second agent
+once pushed to a branch while another was still working on it, and the second
+push was rejected. Git caught it that time, but it won't always.
+
 Trunk-based development is another option. Developers integrate into main
 frequently, often using feature flags to keep incomplete work inactive. It
 requires strong CI discipline, but it reduces the integration pain created by
@@ -126,8 +147,13 @@ A good pull request should answer:
 The pull request becomes part of the project history. It explains the
 conversation around the change, while the commit records the final result.
 
-See [Peer Reviews](/software/peer-review/) for the review process around pull
-requests.
+When an agent drafts the change, say so in the pull request, and ideally in
+a co-author line on the commit. Agents often commit under a person's account,
+and without that line the history can't tell what a person wrote from what
+they asked for.
+
+See [Peer Review When AI Agents Write Some of the Code](/software/peer-review/)
+for the review process around pull requests.
 
 ## Tags
 
@@ -160,6 +186,9 @@ A small team can keep the workflow simple:
 - Resolve blocking review comments.
 - Merge with a clean history.
 - Tag releases from known-good commits.
+- Say who or what drafted each change.
+- Protect the deploy branch: no direct pushes, required checks and review,
+  conversations resolved before merge.
 
 The exact Git commands matter less than the discipline: small changes,
 visible review, passing checks, and reproducible releases.
@@ -189,7 +218,15 @@ The message should explain why the change exists.
 ### Mixing Unrelated Work
 
 A formatting cleanup, feature change, and bug fix in the same commit make the
-history noisy. Keep unrelated edits separate.
+history noisy. Keep unrelated edits separate. Agents are prone to this:
+"while I was there" refactors arrive in the same change as the task.
+
+### Pushing Straight to the Deploy Branch
+
+On this site, a change once went straight to `master`, skipping review and
+CI. It broke the deploy build, and the fix had to go through a pull request
+anyway ([#217](https://github.com/rustyeddy/rustyeddy.com/pull/217)). Branch
+protection turns "please don't" into "can't."
 
 ## The Commit History as Documentation
 
@@ -203,7 +240,14 @@ into a communication system for everyone who will work on the project later.
 
 ## Where This Fits
 
-Version control supports the whole delivery workflow. It gives [Kanban](/software/kanban/)
-work a durable history, gives [Peer Reviews](/software/peer-review/) something
-specific to inspect, and gives the [Release Process](/software/release-process/)
-a reproducible source of truth.
+This page is the fifth step in the delivery series. Version control supports
+the whole workflow:
+
+- Previous: [Test-Driven Development When AI Agents Write the Code](/software/test-driven-software-development/)
+  produces the checks each branch has to pass.
+- It gives [Kanban](/software/kanban/) work a durable history, one branch per
+  card.
+- Next: [Peer Review When AI Agents Write Some of the Code](/software/peer-review/)
+  inspects each pull request.
+- Then: the [Software Release Process](/software/release-process/) tags a
+  reproducible source of truth.

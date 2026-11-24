@@ -1,14 +1,27 @@
 ---
-title: Use Cases
+title: "Use Cases: Defining User Goals Before Anyone Writes Code"
 date: 2024-09-27
-description: >
-  How to capture what users need through customer discovery and translate
-  their stories into concrete, testable use cases that drive the entire
-  development project.
+lastmod: 2026-11-23
+description: "How to turn customer discovery into focused, testable use cases, and why defining user goals matters more when AI agents can write code from vague ideas."
 weight: 20
-tags: ["Use Cases", "Customer Discovery", "Requirements", "Software Engineering"]
+tags: ["Use Cases", "Customer Discovery", "Requirements", "AI Agents", "Software Engineering"]
 categories: ["Software Engineering"]
 ---
+
+## For leads
+
+Use cases are the first step in the delivery series, and the one AI changes
+least. Require three things:
+
+1. **Talk to real users.** An agent can summarize interviews and draft use
+   cases from them; it can't do the interviews or know what your users value.
+2. **One goal, one observable success condition per use case.** That
+   condition becomes the acceptance test every later step is checked against.
+3. **A person approves the use cases** before they're sliced into work. They
+   decide what gets built.
+
+What AI changes: code is now cheap to produce, so a vague goal turns into a
+lot of working software that solves the wrong problem, fast.
 
 ## Why This Matters
 
@@ -24,6 +37,24 @@ condition: you can observe or measure when it worked.
 
 The technique was established by Swedish computer scientist Ivar Jacobson in
 1987 and has been a cornerstone of requirements engineering ever since.
+
+## Where AI Helps, and Where It Doesn't
+
+AI agents are good at the mechanical parts of this step. Given interview notes
+or a transcript, an agent can draft candidate use cases, split a rambling
+story into separate goals, propose Given/When/Then acceptance tests, and point
+out the edge cases nobody mentioned.
+
+It can't replace the discovery itself. It wasn't in the conversation, it
+doesn't know which of Kelly's requests matter most to her, and it will
+happily produce a confident, well-formatted use case for a goal she never
+had. Treat its drafts as a starting point for the next conversation with the
+user, not as the requirements.
+
+The stakes are higher than they used to be. When writing code took weeks, a
+fuzzy goal got questioned along the way. An agent can turn a fuzzy goal into
+working code in an afternoon, so the clarity has to exist before the work
+starts.
 
 ## Customer Discovery
 
@@ -121,9 +152,13 @@ stories. Common mistakes include combining several goals into one use case,
 writing from the developer's point of view, skipping the observable success
 condition, and treating the first user story as the full product scope.
 
+A newer one: accepting an AI-drafted use case without checking it against what
+the user actually said. It reads well, which makes it easy to approve.
+
 ## Where This Fits
 
-With use cases in hand, you have the inputs to everything else in the project:
+This page is the first step in the delivery series. With use cases in hand,
+you have the inputs to everything else in the project:
 
 - **Requirements** — derived directly from the use case narratives
 - **Acceptance tests** — the measurable criteria that define done
@@ -131,4 +166,6 @@ With use cases in hand, you have the inputs to everything else in the project:
 - **Kanban backlog** — tasks broken out from the requirements
 
 The next step is slicing use cases into concrete development tasks, covered in
-[Use Cases to Tasks](/software/use-cases-to-tasks/).
+[From Use Cases to Task Cards an AI Agent Can Execute](/software/use-cases-to-tasks/).
+For the bigger picture, see
+[Software Delivery for Small Teams: Using AI with Guardrails](/software/).
