@@ -113,10 +113,17 @@ The dashboard is the human-facing application. It should let a user
 observe current readings, inspect zone state, adjust thresholds, and
 manually override a zone when needed.
 
-The dashboard should use the gateway's REST and WebSocket APIs. It
-should not subscribe directly to raw device topics or depend on internal
-Go data structures. That keeps the UI replaceable and keeps device
-messaging hidden behind the gateway boundary.
+In the design this case study describes, the dashboard uses the
+gateway's REST and WebSocket APIs. It doesn't subscribe directly to raw
+device topics or depend on internal Go data structures. That keeps the UI
+replaceable and keeps device messaging hidden behind the gateway
+boundary.
+
+The current Gardener build takes a simpler path: its web page connects to
+the MQTT broker over WebSockets, subscribes to the sensor state topics,
+and sends manual pump commands on the pump's `set` topic. That works well
+for one garden on a local network, but it couples the page to the topic
+layout, which is the tradeoff the gateway API exists to avoid.
 
 ## Data and Control Flow
 
@@ -152,8 +159,10 @@ admin tools, and backend services. See
 [REST as the gateway's application boundary](/iot/iot-edge-gateway/#rest-the-application-boundary).
 
 WebSockets are useful for live dashboard updates. The browser can stay
-connected to OttO and receive changes as new telemetry arrives instead
-of polling repeatedly.
+connected and receive changes as new telemetry arrives instead of polling
+repeatedly. (The rebuilt OttO doesn't serve a REST or WebSocket API yet;
+today's Gardener page gets live updates from the broker directly, as
+described above.)
 
 These boundaries keep the system easier to reason about. Devices speak
 MQTT. Applications use HTTP and WebSockets. The gateway translates

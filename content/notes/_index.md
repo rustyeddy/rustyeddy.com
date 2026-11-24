@@ -18,12 +18,13 @@ These are the strongest current notes:
 
 - [Build an MCP Server in Go](/notes/mcp-claude-tools/) builds a typed, write-gated MCP server with the official Go SDK and connects it to Claude Code.
 - [Adafruit Soil Moisture Sensor (I2C) vs. Cheap Capacitive Sensors](/notes/soil-moisture-adafruit/) covers sensor reliability, calibration, protection, and an I2C sensor with code.
-- [Using Go timers for MQTT testing](/notes/go-timers-testing-mqtt/) captures a focused Go/MQTT testing pattern.
 
 ## Older Project Notes
 
 These are useful historical references, but they should not be read as current
 recommendations without checking the surrounding context:
+
+- [Using Go timers for MQTT testing](/notes/go-timers-testing-mqtt/) captures a focused Go/MQTT testing pattern from the original gateway.
 
 - [MQTT for Controller Communication](/notes/mqtt-comm/) covers an older message-bus design for control software.
 - [Streaming Live Video on a Local LAN vs. the Internet](/notes/streaming-video-local-network/) collects older video-system tradeoffs from the RedEye camera work.
