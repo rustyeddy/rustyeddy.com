@@ -1,0 +1,29 @@
+// Original diagram for rustyeddy.com, issue #121.
+// A proof of concept ends in an explicit decision, never a default.
+digraph poc {
+  rankdir=TB;
+  // Cap intrinsic width at 288 CSS pixels for narrow article columns.
+  size="3,6";
+  bgcolor="transparent";
+  pad=0.15;
+  nodesep=0.3;
+  ranksep=0.35;
+  node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=16,
+        color="#555555", fillcolor="#f4f4f4", margin="0.18,0.12"];
+  edge [fontname="Helvetica", fontsize=12, color="#555555"];
+
+  poc      [label="Proof of concept\none question, an expiry date"];
+  decide   [label="Explicit decision\nagainst the checklist", shape=diamond,
+            fillcolor="#e3eefb", color="#2b6cb0", margin="0.05,0.05"];
+  rebuild  [label="Rebuild\nfrom a smaller design"];
+  harden   [label="Harden in place\nsmall, sound, understood"];
+  stop     [label="Stop\nthe answer was no"];
+  prod     [label="Production\ntested, operable, owned"];
+
+  poc -> decide [label="question answered"];
+  decide -> rebuild;
+  decide -> harden;
+  decide -> stop;
+  rebuild -> prod;
+  harden -> prod;
+}
