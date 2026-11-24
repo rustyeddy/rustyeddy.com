@@ -1,7 +1,7 @@
 ---
 title: "Version Control Systems"
 date: 2026-05-22
-weight: 30
+weight: 50
 description: >
   Git, branching strategies, tags, pull requests, and commit discipline:
   how a version control system becomes the source of truth for a software
