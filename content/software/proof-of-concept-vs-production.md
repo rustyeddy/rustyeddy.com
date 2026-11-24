@@ -54,7 +54,7 @@ It used to take days or weeks to build a convincing demo, and the effort
 itself was a signal: by the time something looked finished, a fair amount of
 real engineering had usually gone into it.
 
-That signal is gone. An agent can produce a working demo of a new feature in
+That reality is gone. An agent can produce a working demo of a new feature in
 an afternoon, with a clean UI, plausible data and a happy path that runs
 every time. That's genuinely useful. Discovery is cheaper than it has ever
 been, and a team can try three approaches in the time one used to take.
@@ -135,8 +135,9 @@ backtest engine, several strategies, an MCP server and more. In November
 describes the approach: the repository was restarted from a small, executable
 design, and the earlier, broader code now lives in `_archive/` "as a donor"
 that is ported one layer at a time, market data first. The README is also
-blunt about status: backtesting is available, paper trading is planned, and
-real-money execution is unavailable and not scheduled. The earlier code
+blunt about status: backtesting is available and paper trading is planned.
+Real-money execution is planned too, but it isn't available and isn't
+scheduled yet. The earlier code
 answered a lot of questions. The restart is the promotion path, done on
 purpose, with each layer re-earned. See the
 [Trader project page](/projects/trader/).

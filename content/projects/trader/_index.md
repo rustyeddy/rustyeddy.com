@@ -34,8 +34,8 @@ What works today:
   (EMAX) strategy
 - A read-only REST API over the canonical bars (`trader serve`)
 
-Not available: paper trading is planned, and real-money execution is neither
-available nor scheduled. Trader's own
+Not available yet: paper trading is planned, and real-money execution is
+planned but not scheduled. Trader's own
 [README](https://github.com/rustyeddy/trader/blob/a0e3283/README.md) puts it
 plainly: it is not ready for real-money trading.
 
