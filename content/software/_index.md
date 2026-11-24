@@ -58,8 +58,8 @@ you're looking at a proof of concept or production?
 [Proof of Concept vs. Production](/software/proof-of-concept-vs-production/)
 covers how to tell them apart and promote a demo on purpose.
 
-Most of the articles below predate this AI guidance and describe the
-practices themselves, not how to apply them with an agent.
+The articles below cover each practice in the delivery path. Each one says
+what changes when agents do some of the work, and what doesn't.
 
 ## Choose a starting point
 
@@ -68,27 +68,31 @@ practices themselves, not how to apply them with an agent.
 - [Software is Hard](/software/software-is-hard/) explains how projects drift
   and where feedback helps. Start here if the team is busy but delivery is
   unpredictable.
-- [Use Cases](/software/use-cases/) captures user goals before the team
-  commits to a design.
+- [Use Cases: Defining User Goals Before Anyone Writes Code](/software/use-cases/)
+  captures user goals before the team commits to a design.
 - [Wireframes and Storyboards](/software/wireframes-and-storyboards/) makes
   user flows and failure states visible before implementation.
 
 ### Make changes small and verifiable
 
-- [Use Cases to Tasks](/software/use-cases-to-tasks/) turns a user goal into
-  acceptance tests and focused implementation work.
+- [From Use Cases to Task Cards an AI Agent Can Execute](/software/use-cases-to-tasks/)
+  turns a user goal into acceptance tests and cards a developer or an agent
+  can finish.
 - [Organizing Tasks with Kanban When AI Agents Do Some of the Work](/software/kanban/)
   covers cards an agent can execute, checkable exit criteria, and a review
   limit that keeps agent work from piling up unreviewed.
-- [Test Driven Software Development](/software/test-driven-software-development/)
-  connects expected behavior to repeatable checks.
+- [Test-Driven Development When AI Agents Write the Code](/software/test-driven-software-development/)
+  connects expected behavior to repeatable checks, and covers who owns the
+  acceptance tests.
 
 ### Review, release, and recover
 
-- [Peer Reviews](/software/peer-review/) defines what authors should provide
-  and what reviewers should inspect before a change merges.
-- [Version Control Systems](/software/version-control-systems/) covers the
-  commits, branches, and tags that make changes traceable.
+- [Version Control Practices for Teams Working with AI Agents](/software/version-control-systems/)
+  covers the commits, branches, and tags that make changes traceable, with one
+  writer per branch.
+- [Peer Review When AI Agents Write Some of the Code](/software/peer-review/)
+  defines what authors should provide and what reviewers should inspect before
+  a change merges.
 - [Software Release Process](/software/release-process/) connects automated
   checks, independent review, versioned artifacts, smoke tests, and rollback.
   Start here if finished code keeps getting stuck before production.
