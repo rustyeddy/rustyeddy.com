@@ -53,6 +53,11 @@ the right thing. For a worked example of giving an AI tool a defined,
 testable interface, see
 [Build an MCP Server in Go](/notes/mcp-claude-tools/).
 
+Agents also make demos nearly free, which raises a new question: is what
+you're looking at a proof of concept or production?
+[Proof of Concept vs. Production](/software/proof-of-concept-vs-production/)
+covers how to tell them apart and promote a demo on purpose.
+
 Most of the articles below predate this AI guidance and describe the
 practices themselves, not how to apply them with an agent.
 
